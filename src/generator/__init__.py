@@ -6,11 +6,13 @@ from model import RuleModel, SourceModel, ClientEnum
 from .egern import EgernGenerator
 from .loon import LoonGenerator
 from .surge import SurgeGenerator
+from .clash import ClashGenerator
 
 CLIENT_GENERATOR = {
     ClientEnum.Egern: EgernGenerator,
     ClientEnum.Loon: LoonGenerator,
     ClientEnum.Surge: SurgeGenerator,
+    ClientEnum.Clash: ClashGenerator,
 }
 
 

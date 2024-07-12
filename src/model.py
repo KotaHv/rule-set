@@ -8,6 +8,7 @@ class ClientEnum(str, Enum):
     Surge = "Surge"
     Loon = "Loon"
     Egern = "Egern"
+    Clash = "Clash"
 
 
 Url = Annotated[str, HttpUrl]
