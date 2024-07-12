@@ -73,6 +73,26 @@ SOURCES = [
         filename="Speedtest",
     ),
     SourceModel(
+        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/SteamCN/SteamCN.list",
+        filename="SteamCN",
+    ),
+    SourceModel(
+        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/Steam/Steam.list",
+        filename="Steam",
+    ),
+    SourceModel(
+        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/Game/GameDownloadCN/GameDownloadCN.list",
+        filename="GameDownloadCN",
+    ),
+    SourceModel(
+        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/Game/GameDownload/GameDownload.list",
+        filename="GameDownload",
+    ),
+    SourceModel(
+        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/Game/Game.list",
+        filename="Game",
+    ),
+    SourceModel(
         urls="https://ruleset.skk.moe/List/non_ip/domestic.conf", filename="Domestic"
     ),
     SourceModel(
