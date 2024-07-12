@@ -3,6 +3,7 @@ from loguru import logger
 from model import RuleModel, SourceModel, ClientEnum
 
 from .egern import EgernGenerator
+from .loon import LoonGenerator
 
 
 class Generator:
@@ -10,7 +11,10 @@ class Generator:
         self.info = info
         self.rules = rules
         self.sort()
-        self.client_generator = {ClientEnum.Egern: EgernGenerator}
+        self.client_generator = {
+            ClientEnum.Egern: EgernGenerator,
+            ClientEnum.Loon: LoonGenerator,
+        }
 
     def sort(self):
         rules = self.rules.model_dump()
@@ -20,7 +24,7 @@ class Generator:
 
     def generate(self):
         logger.info(f"Start generating {self.info.filename}")
-        clients = [ClientEnum.Egern]
+        clients = [ClientEnum.Egern, ClientEnum.Loon]
         if self.info.include:
             clients = self.info.include
         elif self.info.exclude:
