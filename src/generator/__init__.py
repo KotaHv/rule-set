@@ -7,12 +7,14 @@ from .egern import EgernGenerator
 from .loon import LoonGenerator
 from .surge import SurgeGenerator
 from .clash import ClashGenerator
+from .sing_box import SingBoxGenerator
 
 CLIENT_GENERATOR = {
     ClientEnum.Egern: EgernGenerator,
     ClientEnum.Loon: LoonGenerator,
     ClientEnum.Surge: SurgeGenerator,
     ClientEnum.Clash: ClashGenerator,
+    ClientEnum.Sing_Box: SingBoxGenerator,
 }
 
 

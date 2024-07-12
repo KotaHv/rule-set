@@ -13,6 +13,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Install sing-box
+        run: |
+          set -e -o pipefail
+          bash <(curl -fsSL https://sing-box.app/deb-install.sh)
       - name: Install the latest version of rye
         uses: eifinger/setup-rye@v3
       - run: |

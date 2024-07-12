@@ -4,12 +4,12 @@ SOURCES = [
     SourceModel(
         urls="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
         filename="Sukka-ad-reject-no-drop",
-        exclude=[ClientEnum.Egern, ClientEnum.Clash],
+        exclude=[ClientEnum.Egern, ClientEnum.Clash, ClientEnum.Sing_Box],
     ),
     SourceModel(
         urls="https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
         filename="Sukka-ad-reject-drop",
-        exclude=ClientEnum.Egern,
+        exclude=[ClientEnum.Egern, ClientEnum.Sing_Box],
     ),
     SourceModel(
         urls=[
@@ -18,7 +18,7 @@ SOURCES = [
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
         filename="Sukka-ad",
-        exclude=ClientEnum.Egern,
+        exclude=[ClientEnum.Egern, ClientEnum.Sing_Box],
     ),
     SourceModel(
         urls=[
@@ -39,7 +39,7 @@ SOURCES = [
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
         filename="Sukka-ad",
-        include=ClientEnum.Egern,
+        include=[ClientEnum.Egern, ClientEnum.Sing_Box],
     ),
     SourceModel(
         urls="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
