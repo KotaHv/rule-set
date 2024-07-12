@@ -18,7 +18,7 @@ SOURCES = [
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
         filename="Sukka-ad",
-        exclude=[ClientEnum.Egern, ClientEnum.Sing_Box],
+        exclude=[ClientEnum.Egern, ClientEnum.Sing_Box, ClientEnum.Clash],
     ),
     SourceModel(
         urls=[
