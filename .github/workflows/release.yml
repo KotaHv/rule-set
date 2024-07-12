@@ -51,6 +51,10 @@ jobs:
 
           cd deploy_temp
           rsync -av --delete --exclude='.git' ../rule-set/ .
-          git add .
-          git commit -m "Update release"
-          git push origin release
+          if [[ -z $(git status --porcelain) ]]; then
+              echo "No changes to commit."
+          else
+              git add .
+              git commit -m "Update release"
+              git push origin release
+          fi
