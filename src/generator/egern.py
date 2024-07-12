@@ -1,5 +1,6 @@
 import yaml
 
+from yaml import CDumper
 from loguru import logger
 
 from model import RuleModel, SourceModel
@@ -30,5 +31,5 @@ class EgernGenerator:
             yaml_data["asn_set"] = self.rules.ip_asn
         if len(yaml_data.keys()) > 1:
             with self.path.open("w") as f:
-                yaml.dump(yaml_data, f, sort_keys=False)
+                yaml.dump(yaml_data, f, sort_keys=False, Dumper=CDumper)
             logger.success(f"{self.path} generated successfully")

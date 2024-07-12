@@ -1,5 +1,6 @@
 import yaml
 
+from yaml import CDumper
 from loguru import logger
 
 from model import RuleModel, SourceModel
@@ -66,5 +67,5 @@ class ClashGenerator:
             )
         if payload:
             with self.path.open("w") as f:
-                yaml.dump({"payload": payload}, f, sort_keys=False)
+                yaml.dump({"payload": payload}, f, sort_keys=False, Dumper=CDumper)
             logger.success(f"{self.path} generated successfully")
