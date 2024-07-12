@@ -46,7 +46,7 @@ jobs:
           set -e -o pipefail
 
           cd deploy_temp
-          rsync -av --delete ../rule-set/ .
+          rsync -av --delete --exclude='.git' ../rule-set/ .
           git add .
           git commit -m "Update release"
           git push origin release
