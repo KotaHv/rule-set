@@ -1,15 +1,14 @@
-from pathlib import Path
-
 from loguru import logger
 
 from model import RuleModel, SourceModel
+from config import DIR_PATH
 
 
 class LoonGenerator:
     def __init__(self, *, info: SourceModel, rules: RuleModel) -> None:
         self.info = info
         self.rules = rules
-        dir_path = Path("Loon")
+        dir_path = DIR_PATH / "Loon"
         dir_path.mkdir(exist_ok=True)
         self.path = dir_path / (info.filename + ".list")
 
