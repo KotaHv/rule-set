@@ -18,7 +18,6 @@ class Fetcher:
     def get(self, url: Url) -> str:
         logger.info(url)
         if cache := self.cache.get(url):
-            logger.success(f"{url} hit fetcher cache")
             return cache
         err = None
         for _ in range(self.retries):

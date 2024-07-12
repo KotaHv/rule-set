@@ -18,7 +18,6 @@ def main():
             rules = RuleModel()
             for url in source.urls:
                 if result := cache.get(url):
-                    logger.success(f"{url} hit parser cache")
                     result = RuleModel.model_validate_json(result)
                 else:
                     data = fetcher.get(url)

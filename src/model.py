@@ -34,6 +34,8 @@ class SourceModel(BaseModel):
     no_resolve: bool = True
 
     def __repr__(self) -> str:
+        if len(self.urls) == 1:
+            return f'{self.filename}: "{self.urls[0]}"'
         return f"{self.filename}: {self.urls}"
 
     def __str__(self) -> str:
