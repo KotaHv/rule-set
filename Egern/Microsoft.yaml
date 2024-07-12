@@ -1,10 +1,6 @@
 no_resolve: true
 domain_set:
 - officecdn-microsoft-com.akamaized.net
-domain_keyword_set:
-- 1drv
-- hotmail
-- microsoft
 domain_suffix_set:
 - 1drv.com
 - aadrm.com
@@ -89,3 +85,7 @@ domain_suffix_set:
 - xboxservices.com
 - yammer.com
 - yammerusercontent.com
+domain_keyword_set:
+- 1drv
+- hotmail
+- microsoft
