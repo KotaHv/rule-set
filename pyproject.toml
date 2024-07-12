@@ -1,0 +1,32 @@
+[project]
+name = "rule-set"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "KotaHv", email = "92137267+KotaHv@users.noreply.github.com" },
+]
+dependencies = [
+    "pydantic>=2.8.2",
+    "httpx[http2]>=0.27.0",
+    "loguru>=0.7.2",
+    "pyyaml>=6.0.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+"rule-set" = "main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/main.py"]

@@ -1,0 +1,30 @@
+from loguru import logger
+
+from model import RuleModel, SourceModel, ClientEnum
+
+from .egern import EgernGenerator
+
+
+class Generator:
+    def __init__(self, *, info: SourceModel, rules: RuleModel) -> None:
+        self.info = info
+        self.rules = rules
+        self.sort()
+        self.client_generator = {ClientEnum.Egern: EgernGenerator}
+
+    def sort(self):
+        rules = self.rules.model_dump()
+        for key, value in rules.items():
+            rules[key] = sorted(value)
+        self.rules = RuleModel(**rules)
+
+    def generate(self):
+        logger.info(f"Start generating {self.info.filename}")
+        clients = [ClientEnum.Egern]
+        if self.info.include:
+            clients = self.info.include
+        elif self.info.exclude:
+            for client in self.info.exclude:
+                clients.remove(client)
+        for client in clients:
+            self.client_generator[client](info=self.info, rules=self.rules).generate()

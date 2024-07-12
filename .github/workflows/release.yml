@@ -1,0 +1,48 @@
+name: Build
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the latest version of rye
+        uses: eifinger/setup-rye@v3
+      - run: |
+          set -e -o pipefail
+          rye sync
+          rye run rule-set
+      - run: |
+          set -e -o pipefail
+
+          mkdir deploy_temp
+          cd deploy_temp
+          git init
+          git config --local user.email "github-action@users.noreply.github.com"
+          git config --local user.name "GitHub Action"
+          git remote add origin https://github-action:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git fetch origin release
+          git checkout -B release origin/release
+          cd ..
+      - name: Pre-deploy check
+        run: |
+          if [ -f .failure ]; then
+            echo "rule-set generation failed"
+            exit 1
+          fi
+      - name: Deploy to release branch
+        run: |
+          set -e -o pipefail
+
+          cd deploy_temp
+          rsync -av --delete ../Egern Egern
+          git add .
+          git commit -m "Update release"
+          git push origin release
