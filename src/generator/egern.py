@@ -13,7 +13,7 @@ class EgernGenerator:
         self.rules = rules
         dir_path = Path("Egern")
         dir_path.mkdir(exist_ok=True)
-        self.path = Path("Egern") / (info.filename + ".yaml")
+        self.path = dir_path / (info.filename + ".yaml")
 
     def generate(self):
         yaml_data = {"no_resolve": self.info.no_resolve}
