@@ -5,6 +5,13 @@ from model import RuleModel, SourceModel, ClientEnum
 
 from .egern import EgernGenerator
 from .loon import LoonGenerator
+from .surge import SurgeGenerator
+
+CLIENT_GENERATOR = {
+    ClientEnum.Egern: EgernGenerator,
+    ClientEnum.Loon: LoonGenerator,
+    ClientEnum.Surge: SurgeGenerator,
+}
 
 
 class Generator:
@@ -12,10 +19,6 @@ class Generator:
         self.info = info
         self.rules = rules
         self.sort()
-        self.client_generator = {
-            ClientEnum.Egern: EgernGenerator,
-            ClientEnum.Loon: LoonGenerator,
-        }
 
     def sort(self):
         rules = self.rules.model_dump()
@@ -41,7 +44,7 @@ class Generator:
 
     def generate(self):
         logger.info(f"Start generating {self.info.filename}")
-        clients = [ClientEnum.Egern, ClientEnum.Loon]
+        clients = list(CLIENT_GENERATOR.keys())
         if self.info.include:
             clients = self.info.include
         elif self.info.exclude:
