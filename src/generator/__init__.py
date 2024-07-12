@@ -1,3 +1,4 @@
+import ipaddress
 from loguru import logger
 
 from model import RuleModel, SourceModel, ClientEnum
@@ -19,7 +20,23 @@ class Generator:
     def sort(self):
         rules = self.rules.model_dump()
         for key, value in rules.items():
-            rules[key] = sorted(value)
+            if key == "ip_cidr":
+                rules[key] = sorted(
+                    value,
+                    key=lambda x: ipaddress.IPv4Network(x).network_address,
+                )
+            elif key == "ip_cidr6":
+                rules[key] = sorted(
+                    value,
+                    key=lambda x: ipaddress.IPv6Network(x).network_address,
+                )
+            elif key == "ip_asn":
+                rules[key] = sorted(
+                    value,
+                    key=lambda x: int(x),
+                )
+            else:
+                rules[key] = sorted(value)
         self.rules = RuleModel(**rules)
 
     def generate(self):
