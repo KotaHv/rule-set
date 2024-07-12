@@ -19,6 +19,12 @@ jobs:
           set -e -o pipefail
           rye sync
           rye run rule-set
+      - name: Pre-deploy check
+        run: |
+          if [ -f .failure ]; then
+            echo "rule-set generation failed"
+            exit 1
+          fi
       - run: |
           set -e -o pipefail
 
@@ -28,14 +34,13 @@ jobs:
           git config --local user.email "github-action@users.noreply.github.com"
           git config --local user.name "GitHub Action"
           git remote add origin https://github-action:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git checkout -B release origin/release
-          cd ..
-      - name: Pre-deploy check
-        run: |
-          if [ -f .failure ]; then
-            echo "rule-set generation failed"
-            exit 1
+          git fetch origin
+          if git rev-parse --verify origin/release >/dev/null 2>&1; then
+            git checkout release
+          else
+            git checkout --orphan release
           fi
+          cd ..
       - name: Deploy to release branch
         run: |
           set -e -o pipefail
