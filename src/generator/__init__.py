@@ -51,4 +51,4 @@ class Generator:
             for client in self.info.exclude:
                 clients.remove(client)
         for client in clients:
-            self.client_generator[client](info=self.info, rules=self.rules).generate()
+            CLIENT_GENERATOR[client](info=self.info, rules=self.rules).generate()
