@@ -14,9 +14,6 @@ class SurgeGenerator:
 
     def generate(self):
         content = ""
-        if self.rules.logical:
-            content += "\n".join(self.rules.logical)
-            content += "\n"
         if self.rules.domain:
             content += "\n".join([f"DOMAIN,{domain}" for domain in self.rules.domain])
             content += "\n"
@@ -86,6 +83,9 @@ class SurgeGenerator:
             content += "\n".join(
                 [f"PROCESS-NAME,{process}" for process in self.rules.process]
             )
+            content += "\n"
+        if self.rules.logical:
+            content += "\n".join(self.rules.logical)
             content += "\n"
         if content:
             with self.path.open("w") as f:

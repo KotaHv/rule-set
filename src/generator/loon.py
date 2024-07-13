@@ -14,9 +14,6 @@ class LoonGenerator:
 
     def generate(self):
         content = ""
-        if self.rules.logical:
-            content += "\n".join(self.rules.logical)
-            content += "\n"
         if self.rules.domain:
             content += "\n".join([f"DOMAIN,{domain}" for domain in self.rules.domain])
             content += "\n"
@@ -51,6 +48,9 @@ class LoonGenerator:
             content += "\n"
         if self.rules.ua:
             content += "\n".join([f"USER-AGENT,{ua}" for ua in self.rules.ua])
+            content += "\n"
+        if self.rules.logical:
+            content += "\n".join(self.rules.logical)
             content += "\n"
         if content:
             with self.path.open("w") as f:

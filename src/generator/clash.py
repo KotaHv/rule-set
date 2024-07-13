@@ -17,8 +17,6 @@ class ClashGenerator:
 
     def generate(self):
         payload = []
-        if self.rules.logical:
-            payload.extend(self.rules.logical)
         if self.rules.domain:
             payload.extend([f"DOMAIN,{domain}" for domain in self.rules.domain])
         if self.rules.domain_suffix:
@@ -65,6 +63,8 @@ class ClashGenerator:
             payload.extend(
                 [f"PROCESS-NAME,{process}" for process in self.rules.process]
             )
+        if self.rules.logical:
+            payload.extend(self.rules.logical)
         if payload:
             with self.path.open("w") as f:
                 yaml.dump({"payload": payload}, f, sort_keys=False, Dumper=CDumper)
