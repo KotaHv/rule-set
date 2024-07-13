@@ -3,26 +3,25 @@ from loguru import logger
 
 from model import RuleModel, SourceModel, ClientEnum
 
-from .egern import EgernGenerator
-from .loon import LoonGenerator
-from .surge import SurgeGenerator
-from .clash import ClashGenerator
-from .sing_box import SingBoxGenerator
-
-CLIENT_GENERATOR = {
-    ClientEnum.Egern: EgernGenerator,
-    ClientEnum.Loon: LoonGenerator,
-    ClientEnum.Surge: SurgeGenerator,
-    ClientEnum.Clash: ClashGenerator,
-    ClientEnum.Sing_Box: SingBoxGenerator,
-}
-
 
 class Generator:
     def __init__(self, *, info: SourceModel, rules: RuleModel) -> None:
         self.info = info
         self.rules = rules
         self.sort()
+        from .egern import EgernGenerator
+        from .loon import LoonGenerator
+        from .surge import SurgeGenerator
+        from .clash import ClashGenerator
+        from .sing_box import SingBoxGenerator
+
+        self.client_generator = {
+            ClientEnum.Egern: EgernGenerator,
+            ClientEnum.Loon: LoonGenerator,
+            ClientEnum.Surge: SurgeGenerator,
+            ClientEnum.Clash: ClashGenerator,
+            ClientEnum.Sing_Box: SingBoxGenerator,
+        }
 
     def sort(self):
         rules = self.rules.model_dump()
@@ -48,11 +47,11 @@ class Generator:
 
     def generate(self):
         logger.info(f"Start generating {self.info.filename}")
-        clients = list(CLIENT_GENERATOR.keys())
+        clients = list(self.client_generator.keys())
         if self.info.include:
             clients = self.info.include
         elif self.info.exclude:
             for client in self.info.exclude:
                 clients.remove(client)
         for client in clients:
-            CLIENT_GENERATOR[client](info=self.info, rules=self.rules).generate()
+            self.client_generator[client](info=self.info, rules=self.rules).generate()
