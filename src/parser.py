@@ -141,7 +141,7 @@ if __name__ == "__main__":
         (DOMAIN-SUFFIX,cibntv.net,extended-matching)
     )), 
     (SRC-IP,10.0.1.7)
-)""".replace("\n", "").replace("\n", "")
+)""".replace("\n", "")
     print(rule)
 
     node = Parser.parse_logical_rule(rule)
