@@ -1,6 +1,38 @@
+import re
+
 from loguru import logger
+from anytree import Node
 
 from model import RuleModel
+
+parentheses_re = re.compile(r"^\((.*)\)$")
+
+
+def split_outside_parentheses(s: str) -> str:
+    result = []
+    current = []
+    level = 0
+
+    for char in s:
+        if char == "," and level == 0:
+            result.append("".join(current))
+            current = []
+        else:
+            if char == "(":
+                level += 1
+            elif char == ")":
+                level -= 1
+            current.append(char)
+
+    result.append("".join(current))
+    return result
+
+
+def remove_outer_parentheses(text: str) -> str:
+    match = parentheses_re.match(text)
+    if match:
+        return match.group(1)
+    return text
 
 
 class Parser:
@@ -65,3 +97,25 @@ class Parser:
             self.parse_domain_set()
         else:
             self.parse_rule_set()
+
+    @staticmethod
+    def build_logical_tree_from_expression(parent_node: Node, logical_expression: str):
+        logical_expression = remove_outer_parentheses(logical_expression)
+        sub_expressions = split_outside_parentheses(logical_expression)
+        for sub in sub_expressions:
+            sub = remove_outer_parentheses(sub)
+            parent_str, sub_str = split_outside_parentheses(sub)
+
+            if parent_str not in ["and", "or", "not"]:
+                Node((parent_str, sub_str), parent=parent_node)
+            else:
+                sub_node = Node(parent_str, parent=parent_node)
+                Parser.build_logical_tree_from_expression(sub_node, sub_str)
+
+    @staticmethod
+    def parse_logical_rule(logical_rule: str) -> Node:
+        logical_rule = logical_rule.replace(" ", "").lower()
+        parent_str, sub_str = split_outside_parentheses(logical_rule)
+        parent_node = Node(parent_str)
+        Parser.build_logical_tree_from_expression(parent_node, sub_str)
+        return parent_node
