@@ -41,10 +41,10 @@ class GenerateLogicalError(SingBoxError): ...
 def format_rule(rule_type: str, rule: str) -> Dict[str, str]:
     if formatted_rule_type := field_format.get(rule_type):
         return {formatted_rule_type: rule}
-    if rule_type == "protocol":
-        if rule in ["tcp", "udp"]:
-            return {"network": rule}
-        raise InvalidProtocolError(rule)
+    # if rule_type == "protocol":
+    #     if rule in ["tcp", "udp"]:
+    #         return {"network": rule}
+    #     raise InvalidProtocolError(rule)
 
     raise UnsupportedRuleTypeError(rule_type)
 
@@ -57,6 +57,8 @@ class SingBoxGenerator:
         dir_path.mkdir(exist_ok=True)
         self.json_path = dir_path / (info.filename + ".json")
         self.srs_path = self.json_path.with_suffix(".srs")
+        self.json_with_logical_path = dir_path / (info.filename + "-logical" + ".json")
+        self.srs_with_logical_path = self.json_with_logical_path.with_suffix(".srs")
 
     def generate(self):
         json_data = {"version": 1, "rules": [{}]}
@@ -78,12 +80,6 @@ class SingBoxGenerator:
                 json_data["rules"].append({"process_name": rules})
             else:
                 json_data["rules"][0]["process_name"] = rules
-        if rules := self.rules.logical:
-            for rule in rules:
-                try:
-                    json_data["rules"].append(self.generate_logical(rule))
-                except SingBoxError as e:
-                    logger.error(f"rule: {rule}, err: {e}")
 
         if json_data["rules"][0]:
             with self.json_path.open("w") as f:
@@ -100,6 +96,35 @@ class SingBoxGenerator:
                 logger.error(
                     f"{self.srs_path} generated failed, result: {result.stderr}"
                 )
+        else:
+            return
+        if rules := self.rules.logical:
+            logical_rule_generated = False
+            for rule in rules:
+                try:
+                    json_data["rules"].append(self.generate_logical(rule))
+                    logical_rule_generated = True
+                except SingBoxError as e:
+                    logger.error(f"rule: {rule}, err: {e}")
+            if not logical_rule_generated:
+                return
+            if json_data["rules"][0]:
+                with self.json_with_logical_path.open("w") as f:
+                    json.dump(json_data, f)
+                logger.success(f"{self.json_with_logical_path} generated successfully")
+                result = subprocess.run(
+                    ["sing-box", "rule-set", "compile", self.json_with_logical_path],
+                    capture_output=True,
+                    text=True,
+                )
+                if result.returncode == 0:
+                    logger.success(
+                        f"{self.srs_with_logical_path} generated successfully"
+                    )
+                else:
+                    logger.error(
+                        f"{self.srs_with_logical_path} generated failed, result: {result.stderr}"
+                    )
 
     @staticmethod
     def _generate_logical_node(node: Node) -> Dict[str, str | List[dict]]:
