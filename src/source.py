@@ -42,6 +42,10 @@ SOURCES = [
         include=[ClientEnum.Egern, ClientEnum.Sing_Box],
     ),
     SourceModel(
+        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/OpenAI/OpenAI.list",
+        filename="OpenAI",
+    ),
+    SourceModel(
         urls="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
         filename="Apple_cdn",
     ),
