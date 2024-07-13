@@ -77,6 +77,10 @@ SOURCES = [
         filename="Speedtest",
     ),
     SourceModel(
+        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
+        filename="Dropbox",
+    ),
+    SourceModel(
         urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/SteamCN/SteamCN.list",
         filename="SteamCN",
     ),
