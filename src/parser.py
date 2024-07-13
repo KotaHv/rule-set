@@ -1,4 +1,5 @@
 import re
+from typing import List
 
 from loguru import logger
 from anytree import Node
@@ -8,7 +9,7 @@ from model import RuleModel
 parentheses_re = re.compile(r"^\((.*)\)$")
 
 
-def split_outside_parentheses(s: str) -> str:
+def split_outside_parentheses(s: str) -> List[str]:
     result = []
     current = []
     level = 0
@@ -104,13 +105,13 @@ class Parser:
         sub_expressions = split_outside_parentheses(logical_expression)
         for sub in sub_expressions:
             sub = remove_outer_parentheses(sub)
-            parent_str, sub_str = split_outside_parentheses(sub)
-
+            sub_parts = split_outside_parentheses(sub)
+            parent_str = sub_parts[0]
             if parent_str not in ["and", "or", "not"]:
-                Node((parent_str, sub_str), parent=parent_node)
+                Node(tuple(sub_parts), parent=parent_node)
             else:
                 sub_node = Node(parent_str, parent=parent_node)
-                Parser.build_logical_tree_from_expression(sub_node, sub_str)
+                Parser.build_logical_tree_from_expression(sub_node, sub_parts[1])
 
     @staticmethod
     def parse_logical_rule(logical_rule: str) -> Node:
@@ -119,3 +120,30 @@ class Parser:
         parent_node = Node(parent_str)
         Parser.build_logical_tree_from_expression(parent_node, sub_str)
         return parent_node
+
+
+if __name__ == "__main__":
+    from anytree import RenderTree
+
+    rule = """AND,(
+    (OR,(
+        (AND,(
+            (NOT,(
+                (OR,(
+                    (DEST-PORT,6095), 
+                    (DEST-PORT,80), 
+                    (DEST-PORT,443)
+                ))
+            )), 
+            (DEST-PORT,1-65535)
+        )), 
+        (DOMAIN,milink.pandora.xiaomi.com,extended-matching), 
+        (DOMAIN-SUFFIX,cibntv.net,extended-matching)
+    )), 
+    (SRC-IP,10.0.1.7)
+)""".replace("\n", "").replace("\n", "")
+    print(rule)
+
+    node = Parser.parse_logical_rule(rule)
+    for pre, _, node in RenderTree(node):
+        print("%s%s" % (pre, node.name))
