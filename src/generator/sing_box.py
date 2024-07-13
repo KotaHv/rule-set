@@ -22,19 +22,20 @@ field_format = {
 }
 
 
-class RuleFormatError(Exception): ...
+class SingBoxError(Exception): ...
 
 
-class UnsupportedRuleTypeError(RuleFormatError):
+class UnsupportedRuleTypeError(SingBoxError):
     def __init__(self, rule_type: str):
         super().__init__(f"Unsupported rule type: {rule_type}")
-        self.rule_type = rule_type
 
 
-class InvalidProtocolError(RuleFormatError):
+class InvalidProtocolError(SingBoxError):
     def __init__(self, rule: str):
         super().__init__(f"Protocol only supports 'tcp' and 'udp'. Current: {rule}")
-        self.rule = rule
+
+
+class GenerateLogicalError(SingBoxError): ...
 
 
 def format_rule(rule_type: str, rule: str) -> Dict[str, str]:
@@ -81,7 +82,7 @@ class SingBoxGenerator:
             for rule in rules:
                 try:
                     json_data["rules"].append(self.generate_logical(rule))
-                except RuleFormatError as e:
+                except SingBoxError as e:
                     logger.error(f"rule: {rule}, err: {e}")
 
         if json_data["rules"][0]:
@@ -122,6 +123,10 @@ class SingBoxGenerator:
             rule = format_rule(sub_node.name[0], sub_node.name[1])
             rule["invert"] = True
             return rule
+        if sub_node.name == "not":
+            raise GenerateLogicalError(
+                "The sub-rule of a 'not' logic cannot be another 'not' logic"
+            )
         rule = {"type": "logical", "rules": [], "mode": sub_node.name, "invert": True}
         for child in sub_node.children:
             rule["rules"].append(SingBoxGenerator._generate_logical_node(child))
@@ -167,3 +172,12 @@ if __name__ == "__main__":
             "NOT,((AND,((DOMAIN-SUFFIX,baidu.com), (NOT,((PROTOCOL,UDP))))))"
         )
     )
+
+    try:
+        logger.debug(
+            SingBoxGenerator.generate_logical(
+                "NOT,((NOT,((DOMAIN-SUFFiX, baidu.com))))"
+            )
+        )
+    except Exception as e:
+        logger.error(e)
