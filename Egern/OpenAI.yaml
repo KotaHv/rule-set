@@ -1,14 +1,19 @@
 no_resolve: true
 domain_set:
 - browser-intake-datadoghq.com
+- chat.openai.com.cdn.cloudflare.net
+- gemini.google.com
+- openai-api.arkoselabs.com
+- openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+- openaicomproductionae4b.blob.core.windows.net
+- production-openaicom-storage.azureedge.net
 - static.cloudflareinsights.com
 domain_suffix_set:
 - ai.com
 - algolia.net
 - api.statsig.com
 - auth0.com
-- cdn.cloudflare.net
-- challenges.cloudflare.com
+- chatgpt.com
 - chatgpt.livekit.cloud
 - client-api.arkoselabs.com
 - events.statsigapi.net
@@ -21,7 +26,9 @@ domain_suffix_set:
 - oaistatic.com
 - oaiusercontent.com
 - observeit.net
-- poe.com
+- openai.com
+- openaiapi-site.azureedge.net
+- openaicom.imgix.net
 - segment.io
 - sentry.io
 - stripe.com
