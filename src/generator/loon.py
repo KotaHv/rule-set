@@ -1,7 +1,23 @@
 from loguru import logger
 
+import logic_rule_proc
 from model import RuleModel, SourceModel
 from config import DIR_PATH
+
+include_rule_types = [
+    "DOMAIN",
+    "DOMAIN-SUFFIX",
+    "DOMAIN-KEYWORD",
+    "IP-CIDR",
+    "IP-CIDR6",
+    "GEOIP",
+    "IP-ASN",
+    "USER-AGENT",
+    "URL-REGEX",
+    "SRC-PORT",
+    "DEST-PORT",
+    "PROTOCOL",
+]
 
 
 class LoonGenerator:
@@ -50,7 +66,15 @@ class LoonGenerator:
             content += "\n".join([f"USER-AGENT,{ua}" for ua in self.rules.ua])
             content += "\n"
         if self.rules.logical:
-            content += "\n".join(self.rules.logical)
+            content += "\n".join(
+                filter(
+                    None,
+                    [
+                        logic_rule_proc.serialize(node=node, include=include_rule_types)
+                        for node in self.rules.logical
+                    ],
+                )
+            )
             content += "\n"
         if content:
             with self.path.open("w") as f:

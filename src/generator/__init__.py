@@ -1,4 +1,5 @@
 import ipaddress
+
 from loguru import logger
 
 from model import RuleModel, SourceModel, ClientEnum

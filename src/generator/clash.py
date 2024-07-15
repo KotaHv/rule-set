@@ -3,8 +3,40 @@ import yaml
 from yaml import CDumper
 from loguru import logger
 
+import logic_rule_proc
 from model import RuleModel, SourceModel
 from config import DIR_PATH
+
+include_rule_types = [
+    "DOMAIN",
+    "DOMAIN-SUFFIX",
+    "DOMAIN-KEYWORD",
+    "DOMAIN-REGEX",
+    "GEOSITE",
+    "IP-CIDR",
+    "IP-CIDR6",
+    "IP-SUFFIX",
+    "IP-ASN",
+    "GEOIP",
+    "SRC-GEOIP",
+    "SRC-IP-ASN",
+    "SRC-IP-CIDR",
+    "SRC-IP-SUFFIX",
+    "DST-PORT",
+    "SRC-PORT",
+    "IN-PORT",
+    "IN-TYPE",
+    "IN-USER",
+    "IN-NAME",
+    "PROCESS-PATH",
+    "PROCESS-PATH-REGEX",
+    "PROCESS-NAME",
+    "PROCESS-NAME-REGEX",
+    "UID",
+    "NETWORK",
+    "DSCP",
+    "RULE-SET",
+]
 
 
 class ClashGenerator:
@@ -64,7 +96,15 @@ class ClashGenerator:
                 [f"PROCESS-NAME,{process}" for process in self.rules.process]
             )
         if self.rules.logical:
-            payload.extend(self.rules.logical)
+            payload.extend(
+                filter(
+                    None,
+                    [
+                        logic_rule_proc.serialize(node=node, include=include_rule_types)
+                        for node in self.rules.logical
+                    ],
+                )
+            )
         if payload:
             with self.path.open("w") as f:
                 yaml.dump(

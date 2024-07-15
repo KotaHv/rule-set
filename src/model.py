@@ -1,7 +1,19 @@
-from typing import List, Annotated, Set
+from typing import List, Annotated, Set, Any
 from enum import Enum
 
-from pydantic import BaseModel, HttpUrl, BeforeValidator
+from pydantic import (
+    BaseModel,
+    HttpUrl,
+    BeforeValidator,
+    GetCoreSchemaHandler,
+    GetJsonSchemaHandler,
+)
+from pydantic_core import core_schema
+from pydantic.json_schema import JsonSchemaValue
+
+from anytree import Node
+
+import logic_rule_proc
 
 
 class ClientEnum(str, Enum):
@@ -42,6 +54,49 @@ class SourceModel(BaseModel):
         return self.__repr__()
 
 
+class AnyTreeNodePydanticAnnotation:
+    @classmethod
+    def __get_pydantic_core_schema__(
+        cls,
+        _source_type: Any,
+        _handler: GetCoreSchemaHandler,
+    ) -> core_schema.CoreSchema:
+        def validate_from_str(value: str) -> Node:
+            node = logic_rule_proc.deserialize(value)
+            if node is None:
+                raise ValueError("Invalid rule format")
+            return node
+
+        from_str_schema = core_schema.chain_schema(
+            [
+                core_schema.str_schema(),
+                core_schema.no_info_plain_validator_function(validate_from_str),
+            ]
+        )
+
+        return core_schema.json_or_python_schema(
+            json_schema=from_str_schema,
+            python_schema=core_schema.union_schema(
+                [
+                    core_schema.is_instance_schema(Node),
+                    from_str_schema,
+                ]
+            ),
+            serialization=core_schema.plain_serializer_function_ser_schema(
+                lambda instance: logic_rule_proc.serialize(node=instance)
+            ),
+        )
+
+    @classmethod
+    def __get_pydantic_json_schema__(
+        cls, _core_schema: core_schema.CoreSchema, handler: GetJsonSchemaHandler
+    ) -> JsonSchemaValue:
+        return handler(core_schema.dict_schema())
+
+
+AnyTreeNode = Annotated[Node, AnyTreeNodePydanticAnnotation]
+
+
 class RuleModel(BaseModel):
     domain: Set[str] | List[str] = set()
     domain_suffix: Set[str] | List[str] = set()
@@ -50,7 +105,7 @@ class RuleModel(BaseModel):
     ip_cidr: Set[str] | List[str] = set()
     ip_cidr6: Set[str] | List[str] = set()
     ip_asn: Set[str] | List[str] = set()
-    logical: Set[str] | List[str] = set()
+    logical: List[AnyTreeNode] = []
     process: Set[str] | List[str] = set()
     ua: Set[str] | List[str] = set()
 
@@ -62,6 +117,11 @@ class RuleModel(BaseModel):
         self.ip_cidr.update(other.ip_cidr)
         self.ip_cidr6.update(other.ip_cidr6)
         self.ip_asn.update(other.ip_asn)
-        self.logical.update(other.logical)
+        if other.logical:
+            node_list = [logic_rule_proc.serialize(node=node) for node in self.logical]
+            for node in other.logical:
+                if logic_rule_proc.serialize(node=node) in node_list:
+                    continue
+                self.logical.append(node)
         self.process.update(other.process)
         self.ua.update(other.ua)
