@@ -67,5 +67,11 @@ class ClashGenerator:
             payload.extend(self.rules.logical)
         if payload:
             with self.path.open("w") as f:
-                yaml.dump({"payload": payload}, f, sort_keys=False, Dumper=CDumper)
+                yaml.dump(
+                    {"payload": payload},
+                    f,
+                    sort_keys=False,
+                    Dumper=CDumper,
+                    width=-1,
+                )
             logger.success(f"{self.path} generated successfully")
