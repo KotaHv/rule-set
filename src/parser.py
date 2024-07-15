@@ -107,8 +107,8 @@ class Parser:
         for sub in sub_expressions:
             sub = remove_outer_parentheses(sub)
             sub_parts = split_outside_parentheses(sub)
-            parent_str = sub_parts[0]
-            if parent_str not in ["and", "or", "not"]:
+            parent_str = sub_parts[0] = sub_parts[0].upper()
+            if parent_str not in ["AND", "OR", "NOT"]:
                 Node(tuple(sub_parts), parent=parent_node)
             else:
                 sub_node = Node(parent_str, parent=parent_node)
@@ -116,9 +116,9 @@ class Parser:
 
     @staticmethod
     def parse_logical_rule(logical_rule: str) -> Node:
-        logical_rule = logical_rule.replace(" ", "").lower()
+        logical_rule = logical_rule.replace(" ", "")
         parent_str, sub_str = split_outside_parentheses(logical_rule)
-        parent_node = Node(parent_str)
+        parent_node = Node(parent_str.upper())
         Parser.build_logical_tree_from_expression(parent_node, sub_str)
         return parent_node
 

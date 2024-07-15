@@ -39,6 +39,7 @@ class GenerateLogicalError(SingBoxError): ...
 
 
 def format_rule(rule_type: str, rule: str) -> Dict[str, str]:
+    rule_type = rule_type.lower()
     if formatted_rule_type := field_format.get(rule_type):
         return {formatted_rule_type: rule}
     # if rule_type == "protocol":
@@ -161,11 +162,14 @@ class SingBoxGenerator:
     def generate_logical(rule: str) -> Dict[str, List[Dict[str, str]] | str]:
         logical_rule = {"type": "logical", "rules": []}
         root_node = Parser.parse_logical_rule(rule)
-
-        if root_node.name == "not":
+        for node in root_node.descendants:
+            if isinstance(node.name, str):
+                node.name = node.name.lower()
+        mode = root_node.name.lower()
+        if mode == "not":
             logical_rule = SingBoxGenerator._generate_logical_not(root_node)
         else:
-            logical_rule["mode"] = root_node.name
+            logical_rule["mode"] = mode
             for child in root_node.children:
                 logical_rule["rules"].append(
                     SingBoxGenerator._generate_logical_node(child)
