@@ -1,8 +1,9 @@
 import re
+import sys
 from typing import List
 
 from loguru import logger
-from anytree import Node
+from anytree import Node, RenderTree
 
 from model import RuleModel
 
@@ -120,6 +121,17 @@ class Parser:
         parent_node = Node(parent_str)
         Parser.build_logical_tree_from_expression(parent_node, sub_str)
         return parent_node
+
+    @staticmethod
+    def print_logical_rule_tree(logical_rule: str | None = None):
+        if logical_rule is None:
+            try:
+                logical_rule = sys.argv[1]
+            except IndexError:
+                logical_rule = input("Please enter the logical rule: ")
+        node = Parser.parse_logical_rule(logical_rule)
+        for pre, _, node in RenderTree(node):
+            print(f"{pre}{node.name}")
 
 
 if __name__ == "__main__":

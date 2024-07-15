@@ -17,6 +17,7 @@ requires-python = ">= 3.8"
 
 [project.scripts]
 "rule-set" = "main:main"
+"logical" = "parser:Parser.print_logical_rule_tree"
 
 [build-system]
 requires = ["hatchling"]
