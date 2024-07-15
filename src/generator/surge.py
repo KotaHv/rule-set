@@ -39,88 +39,68 @@ class SurgeGenerator:
         self.path = dir_path / (info.filename + ".list")
 
     def generate(self):
-        content = ""
+        rules = []
         if self.rules.domain:
-            content += "\n".join([f"DOMAIN,{domain}" for domain in self.rules.domain])
-            content += "\n"
+            rules.extend([f"DOMAIN,{domain}" for domain in self.rules.domain])
         if self.rules.domain_suffix:
-            content += "\n".join(
+            rules.extend(
                 [
                     f"DOMAIN-SUFFIX,{domain_suffix}"
                     for domain_suffix in self.rules.domain_suffix
                 ]
             )
-            content += "\n"
         if self.rules.domain_keyword:
-            content += "\n".join(
+            rules.extend(
                 [
                     f"DOMAIN-KEYWORD,{domain_keyword}"
                     for domain_keyword in self.rules.domain_keyword
                 ]
             )
-            content += "\n"
         if self.rules.domain_wildcard:
-            content += "\n".join(
+            rules.extend(
                 [
                     f"DOMAIN-WILDCARD,{domain_wildcard}"
                     for domain_wildcard in self.rules.domain_wildcard
                 ]
             )
-            content += "\n"
         if self.info.no_resolve:
             if self.rules.ip_cidr:
-                content += "\n".join(
+                rules.extend(
                     [f"IP-CIDR,{ip_cidr},no-resolve" for ip_cidr in self.rules.ip_cidr]
                 )
-                content += "\n"
             if self.rules.ip_cidr6:
-                content += "\n".join(
+                rules.extend(
                     [
                         f"IP-CIDR6,{ip_cidr6},no-resolve"
                         for ip_cidr6 in self.rules.ip_cidr6
                     ]
                 )
-                content += "\n"
             if self.rules.ip_asn:
-                content += "\n".join(
+                rules.extend(
                     [f"IP-ASN,{ip_asn},no-resolve" for ip_asn in self.rules.ip_asn]
                 )
-                content += "\n"
         else:
             if self.rules.ip_cidr:
-                content += "\n".join(
-                    [f"IP-CIDR,{ip_cidr}" for ip_cidr in self.rules.ip_cidr]
-                )
-                content += "\n"
+                rules.extend([f"IP-CIDR,{ip_cidr}" for ip_cidr in self.rules.ip_cidr])
+
             if self.rules.ip_cidr6:
-                content += "\n".join(
+                rules.extend(
                     [f"IP-CIDR6,{ip_cidr6}" for ip_cidr6 in self.rules.ip_cidr6]
                 )
-                content += "\n"
             if self.rules.ip_asn:
-                content += "\n".join(
-                    [f"IP-ASN,{ip_asn}" for ip_asn in self.rules.ip_asn]
-                )
-                content += "\n"
+                rules.extend([f"IP-ASN,{ip_asn}" for ip_asn in self.rules.ip_asn])
         if self.rules.ua:
-            content += "\n".join([f"USER-AGENT,{ua}" for ua in self.rules.ua])
-            content += "\n"
+            rules.extend([f"USER-AGENT,{ua}" for ua in self.rules.ua])
         if self.rules.process:
-            content += "\n".join(
-                [f"PROCESS-NAME,{process}" for process in self.rules.process]
-            )
-            content += "\n"
+            rules.extend([f"PROCESS-NAME,{process}" for process in self.rules.process])
         if self.rules.logical:
-            content += "\n".join(
-                filter(
-                    None,
-                    [
-                        logic_rule_proc.serialize(node=node, include=include_rule_types)
-                        for node in self.rules.logical
-                    ],
-                )
+            rules.extend(
+                [
+                    logic_rule_proc.serialize(node=node, include=include_rule_types)
+                    for node in self.rules.logical
+                ]
             )
-            content += "\n"
+        content = "\n".join(filter(None, rules))
         if content:
             with self.path.open("w") as f:
                 f.write(content)
