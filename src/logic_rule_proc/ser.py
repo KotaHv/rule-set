@@ -3,32 +3,43 @@ from typing import Dict, List
 from anytree import Node
 from loguru import logger
 
-from .error import UnsupportedRuleTypeError
+from .error import UnsupportedRuleTypeError, SerializeError
 
 
 def _serialize(*, node: Node, include: List[str] | None = None) -> str:
-    if not node.is_root:
-        if isinstance(node.name, tuple):
-            if include is not None and node.name[0].upper() not in include:
-                raise UnsupportedRuleTypeError(node.name[0])
-            return f"({",".join(node.name)}),"
-        rule = f"({node.name},("
-        for child in node.children:
-            rule += _serialize(node=child, include=include)
-        rule = rule.rstrip(",") + ")),"
-        return rule
-    rule = f"{node.name},("
+    if isinstance(node.name, tuple):
+        if include is not None and node.name[0].upper() not in include:
+            raise UnsupportedRuleTypeError(node.name[0])
+        return f"({",".join(node.name)}),"
+    if node.name.upper() not in ["AND", "OR", "NOT"]:
+        raise SerializeError(
+            f"{node.name} is not a valid logical operator. Valid operators are: AND, OR, NOT",
+            node=node.root,
+        )
+    if node.name == "NOT" and len(node.children) != 1:
+        raise SerializeError(
+            "NOT rule must only have one sub-rule",
+            node=node.root,
+        )
+    elif node.name in ("AND", "OR") and len(node.children) < 2:
+        raise SerializeError(
+            "AND/OR rule must have at least two sub-rules",
+            node=node.root,
+        )
+    rule = f"({node.name},("
     for child in node.children:
         rule += _serialize(node=child, include=include)
-    rule = rule.rstrip(",") + ")"
+    rule = rule.rstrip(",") + ")),"
     return rule
 
 
 def serialize(*, node: Node, include: List[str] | None = None) -> str | None:
     try:
-        return _serialize(node=node, include=include)
+        return _serialize(node=node, include=include)[1:-2]
     except UnsupportedRuleTypeError as e:
         logger.error(f"rule: {_serialize(node=node)}, err: {e}")
+    except SerializeError as e:
+        logger.error(e)
 
 
 class SingBoxSerialize:
@@ -72,26 +83,11 @@ class SingBoxSerialize:
                 node.name = node.name.lower()
         self.root_node = root_node
 
-    def generate_logical(root_node: Node) -> Dict[str, List[Dict[str, str]] | str]:
-        logical_rule = {"type": "logical", "rules": []}
-        root_node = root_node
-        for node in root_node.descendants:
-            if isinstance(node.name, str):
-                node.name = node.name.lower()
-        mode = root_node.name.lower()
-        if mode == "not":
-            logical_rule = SingBoxSerialize._generate_logical_not(root_node)
-        else:
-            logical_rule["mode"] = mode
-            for child in root_node.children:
-                logical_rule["rules"].append(
-                    SingBoxSerialize._generate_logical_node(child)
-                )
-        return logical_rule
-
     def serialize(self) -> Dict[str, List[Dict[str, str]] | str] | None:
         try:
             return self._serialize(self.root_node)
+        except SerializeError as e:
+            logger.error(e)
         except Exception as e:
             logger.error(f"rule: '{_serialize(node=self.root_node)}', err: {e}")
 
@@ -99,6 +95,21 @@ class SingBoxSerialize:
         if isinstance(node.name, tuple):
             return self.format_rule(node.name[0], node.name[1])
         mode = node.name
+        if mode not in ["and", "or", "not"]:
+            raise SerializeError(
+                f"{mode} is not a valid logical operator. Valid operators are: AND, OR, NOT",
+                node=node.root,
+            )
+        if mode == "not" and len(node.children) != 1:
+            raise SerializeError(
+                "NOT rule must only have one sub-rule",
+                node=node.root,
+            )
+        elif mode in ("and", "or") and len(node.children) < 2:
+            raise SerializeError(
+                "AND/OR rule must have at least two sub-rules",
+                node=node.root,
+            )
         if mode == "not":
             rule = self._serialize_not(node)
         else:
@@ -112,6 +123,8 @@ class SingBoxSerialize:
     ) -> Dict[str, List[Dict[str, str]] | str]:
         child_node = node.children[0]
         if isinstance(child_node.name, tuple):
+            if len(node.children) != 1:
+                raise SerializeError("NOT rule must only have one sub-rule")
             rule = self.format_rule(child_node.name[0], child_node.name[1])
             rule["invert"] = invert
             return rule

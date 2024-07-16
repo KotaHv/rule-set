@@ -40,6 +40,14 @@ def remove_outer_parentheses(text: str) -> str:
 def _deserialize(parent: Node, expression: str):
     expression = remove_outer_parentheses(expression)
     sub_expressions = split_outside_parentheses(expression)
+    if parent.name.upper() not in ["AND", "OR", "NOT"]:
+        raise DeserializeError(
+            f"{parent.name} is not a valid logical operator. Valid operators are: AND, OR, NOT"
+        )
+    if parent.name == "NOT" and len(sub_expressions) != 1:
+        raise DeserializeError("NOT rule must only have one sub-rule")
+    elif parent.name in ("AND", "OR") and len(sub_expressions) < 2:
+        raise DeserializeError("AND/OR rule must have at least two sub-rules")
     for sub_expression in sub_expressions:
         sub_expression = remove_outer_parentheses(sub_expression)
         sub_parts = split_outside_parentheses(sub_expression)
