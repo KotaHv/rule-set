@@ -42,6 +42,14 @@ SOURCES = [
         include=[ClientEnum.Egern, ClientEnum.Sing_Box],
     ),
     SourceModel(
+        urls="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list",
+        filename="Cats-ad",
+    ),
+    SourceModel(
+        urls="https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt",
+        filename="Anti-ad",
+    ),
+    SourceModel(
         urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
         filename="OpenAI",
     ),
