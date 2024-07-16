@@ -1,15 +1,12 @@
 no_resolve: true
 domain_set:
-- apap.fhsdkc.sbs
 - discovery-v4.syncthing.net
 - discovery-v6.syncthing.net
-- jw.cccp.sbs
 - me.plexapp.com
 - pubsub.plex.tv
 - resources-cdn.plexapp.com
 - stun.moonlight-stream.org
 - stun.syncthing.net
-- tqos-yun.anticheatexpert.com
 - v16m-default.akamaized.net
 domain_suffix_set:
 - 6mh67.com
