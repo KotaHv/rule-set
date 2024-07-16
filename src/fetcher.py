@@ -3,7 +3,6 @@ from time import sleep
 from httpx import Client, HTTPTransport
 from loguru import logger
 
-from model import Url
 from cache import Cache
 
 
@@ -15,7 +14,7 @@ class Fetcher:
         )
         self.cache = Cache(path="fetcher")
 
-    def get(self, url: Url) -> str:
+    def get(self, url: str) -> str:
         logger.info(url)
         if cache := self.cache.get(url):
             return cache

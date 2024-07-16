@@ -8,8 +8,7 @@ from pydantic import (
     BeforeValidator,
     GetCoreSchemaHandler,
     GetJsonSchemaHandler,
-    FilePath,
-    DirectoryPath,
+    AfterValidator,
     model_validator,
 )
 from pydantic_core import core_schema
@@ -29,14 +28,6 @@ class ClientEnum(str, Enum):
     Sing_Box = "sing-box"
 
 
-Url = Annotated[str, HttpUrl]
-
-Urls = Annotated[
-    List[Url],
-    BeforeValidator(lambda x: [x] if isinstance(x, str) else x),
-    List[HttpUrl],
-]
-
 ClientEnums = Annotated[
     List[ClientEnum],
     BeforeValidator(lambda x: [x] if isinstance(x, ClientEnum) else x),
@@ -44,25 +35,40 @@ ClientEnums = Annotated[
 
 
 class SourceModel(BaseModel):
-    resource: Urls | FilePath | DirectoryPath
-    target_name: str | None = None
+    resources: Annotated[
+        List[Annotated[HttpUrl, AfterValidator(lambda x: x.unicode_string())] | Path],
+        BeforeValidator(lambda x: [x] if not isinstance(x, list) else x),
+    ]
+    target_name: Path | None = None
     exclude: ClientEnums = []
     include: ClientEnums | None = None
     no_resolve: bool = True
 
     @model_validator(mode="after")
     def check_target_name(self) -> Self:
-        if isinstance(self.resource, list):
+        if len(self.resources) > 1:
             if self.target_name is None:
-                raise ValueError("target_name cannot be empty when resource is Urls")
+                raise ValueError(
+                    "target_name cannot be empty when there are multiple resources"
+                )
+        if self.target_name is None:
+            resource = self.resources[0]
+            if isinstance(resource, Path):
+                if resource.is_dir():
+                    self.target_name = resource
+                else:
+                    self.target_name = resource.name
+            else:
+                self.target_name = resource.split("/")[-1]
         return self
 
     def __repr__(self) -> str:
-        if isinstance(self.resource, Path):
-            return f"{self.resource}"
-        if len(self.resource) == 1:
-            return f'{self.target_name}: "{self.resource[0]}"'
-        return f"{self.target_name}: {self.resource}"
+        if len(self.resources) == 1:
+            resource = self.resources[0]
+            if isinstance(resource, Path) and resource.is_dir():
+                return f'{self.target_name}: "{list(resource.iterdir())}"'
+            return f'{self.target_name}: "{resource}"'
+        return f"{self.target_name}: {self.resources}"
 
     def __str__(self) -> str:
         return self.__repr__()

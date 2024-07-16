@@ -12,7 +12,7 @@ class EgernGenerator:
         self.info = info
         self.rules = rules
         dir_path = DIR_PATH / "Egern"
-        self.path = dir_path / (info.target_name + ".yaml")
+        self.path = dir_path / info.target_name.with_suffix(".yaml")
         self.path.parent.mkdir(parents=True, exist_ok=True)
 
     def generate(self):

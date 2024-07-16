@@ -35,7 +35,7 @@ class SurgeGenerator:
         self.info = info
         self.rules = rules
         dir_path = DIR_PATH / "Surge"
-        self.path = dir_path / (info.target_name + ".list")
+        self.path = dir_path / info.target_name.with_suffix(".list")
         self.path.parent.mkdir(parents=True, exist_ok=True)
 
     def generate(self):

@@ -1,20 +1,18 @@
-from pathlib import Path
-
 from model import ClientEnum, SourceModel
 
 SOURCES = [
     SourceModel(
-        resource="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
+        resources="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
         target_name="Sukka-ad-reject-no-drop",
         exclude=[ClientEnum.Egern, ClientEnum.Clash, ClientEnum.Sing_Box],
     ),
     SourceModel(
-        resource="https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
+        resources="https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
         target_name="Sukka-ad-reject-drop",
         exclude=[ClientEnum.Egern, ClientEnum.Sing_Box],
     ),
     SourceModel(
-        resource=[
+        resources=[
             "https://ruleset.skk.moe/List/domainset/reject.conf",
             "https://ruleset.skk.moe/List/non_ip/reject.conf",
             "https://ruleset.skk.moe/List/ip/reject.conf",
@@ -23,7 +21,7 @@ SOURCES = [
         exclude=[ClientEnum.Egern, ClientEnum.Sing_Box, ClientEnum.Clash],
     ),
     SourceModel(
-        resource=[
+        resources=[
             "https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
             "https://ruleset.skk.moe/List/domainset/reject.conf",
             "https://ruleset.skk.moe/List/non_ip/reject.conf",
@@ -33,7 +31,7 @@ SOURCES = [
         include=ClientEnum.Clash,
     ),
     SourceModel(
-        resource=[
+        resources=[
             "https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
             "https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
             "https://ruleset.skk.moe/List/domainset/reject.conf",
@@ -44,84 +42,84 @@ SOURCES = [
         include=[ClientEnum.Egern, ClientEnum.Sing_Box],
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list",
+        resources="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list",
         target_name="Cats-ad",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt",
+        resources="https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt",
         target_name="Anti-ad",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
         target_name="OpenAI",
     ),
     SourceModel(
-        resource="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
+        resources="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
         target_name="Apple_cdn",
     ),
     SourceModel(
-        resource="https://ruleset.skk.moe/List/non_ip/apple_cn.conf",
+        resources="https://ruleset.skk.moe/List/non_ip/apple_cn.conf",
         target_name="Apple_cn",
     ),
     SourceModel(
-        resource="https://ruleset.skk.moe/List/non_ip/apple_services.conf",
+        resources="https://ruleset.skk.moe/List/non_ip/apple_services.conf",
         target_name="Apple_services",
     ),
     SourceModel(
-        resource="https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf",
+        resources="https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf",
         target_name="Microsoft_cdn",
     ),
     SourceModel(
-        resource="https://ruleset.skk.moe/List/non_ip/microsoft.conf",
+        resources="https://ruleset.skk.moe/List/non_ip/microsoft.conf",
         target_name="Microsoft",
     ),
     SourceModel(
-        resource=[
+        resources=[
             "https://ruleset.skk.moe/List/non_ip/telegram.conf",
             "https://ruleset.skk.moe/List/ip/telegram.conf",
         ],
         target_name="Telegram",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/KotaHv/SukkaW-Surge/release/List/domainset/speedtest.conf",
+        resources="https://raw.githubusercontent.com/KotaHv/SukkaW-Surge/release/List/domainset/speedtest.conf",
         target_name="Speedtest",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
         target_name="Dropbox",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list",
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list",
         target_name="SteamCN",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list",
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list",
         target_name="Steam",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownloadCN/GameDownloadCN.list",
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownloadCN/GameDownloadCN.list",
         target_name="GameDownloadCN",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownload/GameDownload.list",
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownload/GameDownload.list",
         target_name="GameDownload",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
         target_name="Game",
     ),
     SourceModel(
-        resource="https://ruleset.skk.moe/List/non_ip/domestic.conf",
+        resources="https://ruleset.skk.moe/List/non_ip/domestic.conf",
         target_name="Domestic",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list",
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list",
         target_name="Global",
     ),
     SourceModel(
-        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan_Resolve.list",
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan_Resolve.list",
         target_name="Lan",
         no_resolve=False,
     ),
-    SourceModel(resource=Path("my-rules")),
+    SourceModel(resources="my-rules"),
 ]
