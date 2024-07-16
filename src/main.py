@@ -16,17 +16,36 @@ def main():
         for source in SOURCES:
             logger.info(source)
             rules = RuleModel()
-            for url in source.urls:
-                if result := cache.get(url):
-                    result = RuleModel.model_validate_json(result)
+            if isinstance(source.resource, Path):
+                if source.resource.is_dir():
+                    filepaths = [filepath for filepath in source.resource.iterdir()]
                 else:
-                    data = fetcher.get(url)
-                    parser = Parser(data)
-                    parser.parse()
-                    result = parser.result
-                    cache.set(url, result.model_dump_json())
-                rules.merge_with(result)
-            Generator(info=source, rules=rules).generate()
+                    filepaths = [source.resource]
+                for filepath in filepaths:
+                    with filepath.open() as f:
+                        parser = Parser(f.read())
+                        parser.parse()
+                        result = parser.result
+                    rules.merge_with(result)
+                    file_info = source.model_copy(
+                        update={
+                            "resource": filepath,
+                            "target_name": str(filepath.parent / filepath.stem),
+                        }
+                    )
+                    Generator(info=file_info, rules=rules).generate()
+            else:
+                for resource in source.resource:
+                    if result := cache.get(resource):
+                        result = RuleModel.model_validate_json(result)
+                    else:
+                        data = fetcher.get(resource)
+                        parser = Parser(data)
+                        parser.parse()
+                        result = parser.result
+                        cache.set(resource, result.model_dump_json())
+                    rules.merge_with(result)
+                Generator(info=source, rules=rules).generate()
     except Exception as e:
         logger.exception(e)
         Path(".failure").touch()

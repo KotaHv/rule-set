@@ -44,8 +44,8 @@ class ClashGenerator:
         self.info = info
         self.rules = rules
         dir_path = DIR_PATH / "Clash"
-        dir_path.mkdir(exist_ok=True)
-        self.path = dir_path / (info.filename + ".yaml")
+        self.path = dir_path / (info.target_name + ".yaml")
+        self.path.parent.mkdir(parents=True, exist_ok=True)
 
     def generate(self):
         payload = []

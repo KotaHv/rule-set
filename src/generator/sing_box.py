@@ -25,11 +25,13 @@ class SingBoxGenerator:
         self.info = info
         self.rules = rules
         dir_path = DIR_PATH / "sing-box"
-        dir_path.mkdir(exist_ok=True)
-        self.json_path = dir_path / (info.filename + ".json")
+        self.json_path = dir_path / (info.target_name + ".json")
         self.srs_path = self.json_path.with_suffix(".srs")
-        self.json_with_logical_path = dir_path / (info.filename + "-logical" + ".json")
+        self.json_with_logical_path = dir_path / (
+            info.target_name + "-logical" + ".json"
+        )
         self.srs_with_logical_path = self.json_with_logical_path.with_suffix(".srs")
+        self.json_path.parent.mkdir(parents=True, exist_ok=True)
 
     def generate(self):
         json_data = {"version": 1, "rules": [{}]}

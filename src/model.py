@@ -1,4 +1,5 @@
-from typing import List, Annotated, Set, Any
+from pathlib import Path
+from typing import List, Annotated, Set, Any, Self
 from enum import Enum
 
 from pydantic import (
@@ -7,9 +8,13 @@ from pydantic import (
     BeforeValidator,
     GetCoreSchemaHandler,
     GetJsonSchemaHandler,
+    FilePath,
+    DirectoryPath,
+    model_validator,
 )
 from pydantic_core import core_schema
 from pydantic.json_schema import JsonSchemaValue
+
 
 from anytree import Node
 
@@ -39,16 +44,25 @@ ClientEnums = Annotated[
 
 
 class SourceModel(BaseModel):
-    urls: Urls
-    filename: str
+    resource: Urls | FilePath | DirectoryPath
+    target_name: str | None = None
     exclude: ClientEnums = []
     include: ClientEnums | None = None
     no_resolve: bool = True
 
+    @model_validator(mode="after")
+    def check_target_name(self) -> Self:
+        if isinstance(self.resource, list):
+            if self.target_name is None:
+                raise ValueError("target_name cannot be empty when resource is Urls")
+        return self
+
     def __repr__(self) -> str:
-        if len(self.urls) == 1:
-            return f'{self.filename}: "{self.urls[0]}"'
-        return f"{self.filename}: {self.urls}"
+        if isinstance(self.resource, Path):
+            return f"{self.resource}"
+        if len(self.resource) == 1:
+            return f'{self.target_name}: "{self.resource[0]}"'
+        return f"{self.target_name}: {self.resource}"
 
     def __str__(self) -> str:
         return self.__repr__()

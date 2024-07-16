@@ -1,123 +1,127 @@
+from pathlib import Path
+
 from model import ClientEnum, SourceModel
 
 SOURCES = [
     SourceModel(
-        urls="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
-        filename="Sukka-ad-reject-no-drop",
+        resource="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
+        target_name="Sukka-ad-reject-no-drop",
         exclude=[ClientEnum.Egern, ClientEnum.Clash, ClientEnum.Sing_Box],
     ),
     SourceModel(
-        urls="https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
-        filename="Sukka-ad-reject-drop",
+        resource="https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
+        target_name="Sukka-ad-reject-drop",
         exclude=[ClientEnum.Egern, ClientEnum.Sing_Box],
     ),
     SourceModel(
-        urls=[
+        resource=[
             "https://ruleset.skk.moe/List/domainset/reject.conf",
             "https://ruleset.skk.moe/List/non_ip/reject.conf",
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
-        filename="Sukka-ad",
+        target_name="Sukka-ad",
         exclude=[ClientEnum.Egern, ClientEnum.Sing_Box, ClientEnum.Clash],
     ),
     SourceModel(
-        urls=[
+        resource=[
             "https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
             "https://ruleset.skk.moe/List/domainset/reject.conf",
             "https://ruleset.skk.moe/List/non_ip/reject.conf",
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
-        filename="Sukka-ad",
+        target_name="Sukka-ad",
         include=ClientEnum.Clash,
     ),
     SourceModel(
-        urls=[
+        resource=[
             "https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
             "https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
             "https://ruleset.skk.moe/List/domainset/reject.conf",
             "https://ruleset.skk.moe/List/non_ip/reject.conf",
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
-        filename="Sukka-ad",
+        target_name="Sukka-ad",
         include=[ClientEnum.Egern, ClientEnum.Sing_Box],
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list",
-        filename="Cats-ad",
+        resource="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list",
+        target_name="Cats-ad",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt",
-        filename="Anti-ad",
+        resource="https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt",
+        target_name="Anti-ad",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
-        filename="OpenAI",
+        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        target_name="OpenAI",
     ),
     SourceModel(
-        urls="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
-        filename="Apple_cdn",
+        resource="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
+        target_name="Apple_cdn",
     ),
     SourceModel(
-        urls="https://ruleset.skk.moe/List/non_ip/apple_cn.conf",
-        filename="Apple_cn",
+        resource="https://ruleset.skk.moe/List/non_ip/apple_cn.conf",
+        target_name="Apple_cn",
     ),
     SourceModel(
-        urls="https://ruleset.skk.moe/List/non_ip/apple_services.conf",
-        filename="Apple_services",
+        resource="https://ruleset.skk.moe/List/non_ip/apple_services.conf",
+        target_name="Apple_services",
     ),
     SourceModel(
-        urls="https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf",
-        filename="Microsoft_cdn",
+        resource="https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf",
+        target_name="Microsoft_cdn",
     ),
     SourceModel(
-        urls="https://ruleset.skk.moe/List/non_ip/microsoft.conf",
-        filename="Microsoft",
+        resource="https://ruleset.skk.moe/List/non_ip/microsoft.conf",
+        target_name="Microsoft",
     ),
     SourceModel(
-        urls=[
+        resource=[
             "https://ruleset.skk.moe/List/non_ip/telegram.conf",
             "https://ruleset.skk.moe/List/ip/telegram.conf",
         ],
-        filename="Telegram",
+        target_name="Telegram",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/KotaHv/SukkaW-Surge/release/List/domainset/speedtest.conf",
-        filename="Speedtest",
+        resource="https://raw.githubusercontent.com/KotaHv/SukkaW-Surge/release/List/domainset/speedtest.conf",
+        target_name="Speedtest",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
-        filename="Dropbox",
+        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
+        target_name="Dropbox",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list",
-        filename="SteamCN",
+        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list",
+        target_name="SteamCN",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list",
-        filename="Steam",
+        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list",
+        target_name="Steam",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownloadCN/GameDownloadCN.list",
-        filename="GameDownloadCN",
+        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownloadCN/GameDownloadCN.list",
+        target_name="GameDownloadCN",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownload/GameDownload.list",
-        filename="GameDownload",
+        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownload/GameDownload.list",
+        target_name="GameDownload",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
-        filename="Game",
+        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
+        target_name="Game",
     ),
     SourceModel(
-        urls="https://ruleset.skk.moe/List/non_ip/domestic.conf", filename="Domestic"
+        resource="https://ruleset.skk.moe/List/non_ip/domestic.conf",
+        target_name="Domestic",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list",
-        filename="Global",
+        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list",
+        target_name="Global",
     ),
     SourceModel(
-        urls="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan_Resolve.list",
-        filename="Lan",
+        resource="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan_Resolve.list",
+        target_name="Lan",
         no_resolve=False,
     ),
+    SourceModel(resource=Path("my-rules")),
 ]

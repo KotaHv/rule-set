@@ -47,7 +47,7 @@ class Generator:
         self.rules = RuleModel(**rules)
 
     def generate(self):
-        logger.info(f"Start generating {self.info.filename}")
+        logger.info(f"Start generating {self.info.target_name}")
         clients = list(self.client_generator.keys())
         if self.info.include:
             clients = self.info.include
