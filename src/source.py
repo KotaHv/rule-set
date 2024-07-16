@@ -122,4 +122,12 @@ SOURCES = [
         no_resolve=False,
     ),
     SourceModel(resources="my-rules"),
+    SourceModel(
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/EHGallery/EHGallery.list",
+        target_name="ExHentai",
+    ),
+    SourceModel(
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list",
+        target_name="Reddit",
+    ),
 ]
