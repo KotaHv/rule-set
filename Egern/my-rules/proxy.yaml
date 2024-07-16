@@ -1,17 +1,28 @@
 no_resolve: true
 domain_set:
-- cache.agilebits.com
+- immich.app
+- ipinfo.io
 - opgg-static.akamaized.net
 - static.adtidy.org
 domain_suffix_set:
+- agilebits.com
 - akile.io
 - anti-ad.net
+- betterdisplay.pro
+- bgm.tv
 - coze.com
 - grafana.com
+- home-assistant.io
+- istatmenus.app
 - keygen.sh
 - linuxcontainers.org
+- lscr.io
 - mikanani.me
 - myqnapcloud.com
+- myqnapcloud.io
+- nighteye.app
 - nio.gs
+- photoprism.app
 - qnap.com
+- rclone.org
 - scufgaming.com
