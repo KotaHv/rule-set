@@ -49,12 +49,17 @@ class Parser:
     def process(self):
         for i in range(len(self.data_lines) - 1, -1, -1):
             line = self.data_lines[i]
+            line = line.strip()
             if (
                 not line
                 or line.startswith("#")
+                or line.startswith("//")
                 or any(keyword in line for keyword in self.exclude_keywords)
             ):
                 del self.data_lines[i]
+            for comment in ["#", "//"]:
+                if comment in line:
+                    self.data_lines[i] = line.split(comment)[0].strip()
 
     def parse_domain_set(self):
         for hostname in self.data_lines:

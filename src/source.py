@@ -62,7 +62,10 @@ SOURCES = [
         target_name="Apple_cn",
     ),
     SourceModel(
-        resources="https://ruleset.skk.moe/List/non_ip/apple_services.conf",
+        resources=[
+            "https://ruleset.skk.moe/List/non_ip/apple_services.conf",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All.list",
+        ],
         target_name="Apple_services",
     ),
     SourceModel(
