@@ -17,7 +17,7 @@ requires-python = ">= 3.8"
 
 [project.scripts]
 "rule-set" = "main:main"
-"logical" = "logic_rule_proc:print_rule_tree"
+"logical" = "deserialize:logical.print_rule_tree"
 
 [build-system]
 requires = ["hatchling"]

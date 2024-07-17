@@ -74,6 +74,6 @@ DOMAIN-SUFFIX,bfengbf.com
 DOMAIN-SUFFIX,ntdm9.com
 DOMAIN-SUFFIX,yinghuazy.xyz
 DOMAIN-SUFFIX,darkreader.org
-DOMAIN-SUFFIX,nz99.xyz # New字幕组
+DOMAIN-SUFFIX,nz99.xyz // New字幕组
 
 AND,((PROTOCOL,UDP),(DEST-PORT,123))

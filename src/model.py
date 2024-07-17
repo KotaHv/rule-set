@@ -8,7 +8,6 @@ from pydantic import (
     BeforeValidator,
     GetCoreSchemaHandler,
     GetJsonSchemaHandler,
-    AfterValidator,
     model_validator,
 )
 from pydantic_core import core_schema
@@ -34,9 +33,43 @@ ClientEnums = Annotated[
 ]
 
 
+class ResourceFormat(str, Enum):
+    RuleSet = "RULE-SET"
+    DomainSet = "DOMAIN-SET"
+
+
+class SourceResource(BaseModel):
+    path: HttpUrl | Path
+    format: ResourceFormat = ResourceFormat.RuleSet
+
+    @model_validator(mode="before")
+    @classmethod
+    def validate_input(cls, data: Any) -> Any:
+        if isinstance(data, str):
+            return {"path": data}
+        if isinstance(data, tuple) and len(data) == 2:
+            return {"path": data[0], "format": data[1]}
+        return data
+
+    def is_path(self) -> bool:
+        return isinstance(self.path, Path)
+
+    def is_dir(self) -> bool:
+        try:
+            return self.path.is_dir()
+        except AttributeError:
+            return False
+
+    def is_file(self) -> bool:
+        try:
+            return self.path.is_file()
+        except AttributeError:
+            return False
+
+
 class SourceModel(BaseModel):
     resources: Annotated[
-        List[Annotated[HttpUrl, AfterValidator(lambda x: x.unicode_string())] | Path],
+        List[SourceResource],
         BeforeValidator(lambda x: [x] if not isinstance(x, list) else x),
     ]
     target_name: Path | None = None
@@ -53,20 +86,20 @@ class SourceModel(BaseModel):
                 )
         if self.target_name is None:
             resource = self.resources[0]
-            if isinstance(resource, Path):
+            if resource.is_path():
                 if resource.is_dir():
-                    self.target_name = resource
+                    self.target_name = resource.path
                 else:
-                    self.target_name = resource.name
+                    self.target_name = resource.path.name
             else:
-                self.target_name = resource.split("/")[-1]
+                self.target_name = resource.path.unicode_string().split("/")[-1]
         return self
 
     def __repr__(self) -> str:
         if len(self.resources) == 1:
             resource = self.resources[0]
-            if isinstance(resource, Path) and resource.is_dir():
-                return f'{self.target_name}: "{list(resource.iterdir())}"'
+            if resource.is_dir():
+                return f'{self.target_name}: "{list(resource.path.iterdir())}"'
             return f'{self.target_name}: "{resource}"'
         return f"{self.target_name}: {self.resources}"
 

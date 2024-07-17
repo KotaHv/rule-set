@@ -13,7 +13,7 @@ SOURCES = [
     ),
     SourceModel(
         resources=[
-            "https://ruleset.skk.moe/List/domainset/reject.conf",
+            ("https://ruleset.skk.moe/List/domainset/reject.conf", "DOMAIN-SET"),
             "https://ruleset.skk.moe/List/non_ip/reject.conf",
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
@@ -23,7 +23,7 @@ SOURCES = [
     SourceModel(
         resources=[
             "https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
-            "https://ruleset.skk.moe/List/domainset/reject.conf",
+            ("https://ruleset.skk.moe/List/domainset/reject.conf", "DOMAIN-SET"),
             "https://ruleset.skk.moe/List/non_ip/reject.conf",
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
@@ -34,7 +34,7 @@ SOURCES = [
         resources=[
             "https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
             "https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
-            "https://ruleset.skk.moe/List/domainset/reject.conf",
+            ("https://ruleset.skk.moe/List/domainset/reject.conf", "DOMAIN-SET"),
             "https://ruleset.skk.moe/List/non_ip/reject.conf",
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
@@ -46,7 +46,10 @@ SOURCES = [
         target_name="Cats-ad",
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt",
+        resources=(
+            "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt",
+            "DOMAIN-SET",
+        ),
         target_name="Anti-ad",
     ),
     SourceModel(
@@ -84,7 +87,10 @@ SOURCES = [
         target_name="Telegram",
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/KotaHv/SukkaW-Surge/release/List/domainset/speedtest.conf",
+        resources=(
+            "https://raw.githubusercontent.com/KotaHv/SukkaW-Surge/release/List/domainset/speedtest.conf",
+            "DOMAIN-SET",
+        ),
         target_name="Speedtest",
     ),
     SourceModel(

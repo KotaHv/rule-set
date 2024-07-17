@@ -1,7 +1,9 @@
 from time import sleep
+from pathlib import Path
 
 from httpx import Client, HTTPTransport
 from loguru import logger
+from pydantic import HttpUrl
 
 from cache import Cache
 
@@ -14,8 +16,12 @@ class Fetcher:
         )
         self.cache = Cache(path="fetcher")
 
-    def get(self, url: str) -> str:
-        logger.info(url)
+    def get(self, path: HttpUrl | Path) -> str:
+        logger.info(path)
+        if isinstance(path, Path):
+            with path.open() as f:
+                return f.read()
+        url = path.unicode_string()
         if cache := self.cache.get(url):
             return cache
         err = None

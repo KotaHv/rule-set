@@ -1,5 +1,7 @@
 import hashlib
+
 from pathlib import Path
+from typing import Any
 
 from loguru import logger
 
@@ -10,10 +12,10 @@ class Cache:
         self.path.mkdir(exist_ok=True, parents=True)
 
     @staticmethod
-    def generate_key(key: str):
-        return hashlib.sha256(key.encode()).hexdigest()
+    def generate_key(key: Any) -> str:
+        return hashlib.sha256(str(key).encode()).hexdigest()
 
-    def get(self, key: str) -> str | None:
+    def get(self, key: Any) -> str | None:
         hash_key = self.generate_key(key)
         filepath = self.path / hash_key
         try:
@@ -25,7 +27,7 @@ class Cache:
         except FileNotFoundError:
             return None
 
-    def set(self, key: str, value: str):
+    def set(self, key: Any, value: str):
         key = self.generate_key(key)
         filepath = self.path / key
         with filepath.open("w") as f:
