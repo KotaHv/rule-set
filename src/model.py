@@ -42,6 +42,16 @@ class SourceResource(BaseModel):
     path: HttpUrl | Path
     format: ResourceFormat = ResourceFormat.RuleSet
 
+    @property
+    def name(self) -> str:
+        if self.is_dir():
+            name = self.path
+        elif self.is_path():
+            name = self.path.name
+        else:
+            name = self.path.unicode_string().split("/")[-1]
+        return str(name)
+
     @model_validator(mode="before")
     @classmethod
     def validate_input(cls, data: Any) -> Any:
@@ -85,14 +95,7 @@ class SourceModel(BaseModel):
                     "target_name cannot be empty when there are multiple resources"
                 )
         if self.target_name is None:
-            resource = self.resources[0]
-            if resource.is_path():
-                if resource.is_dir():
-                    self.target_name = resource.path
-                else:
-                    self.target_name = resource.path.name
-            else:
-                self.target_name = resource.path.unicode_string().split("/")[-1]
+            self.target_name = Path(self.resources[0].name)
         return self
 
     def __repr__(self) -> str:

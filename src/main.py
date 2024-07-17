@@ -36,8 +36,9 @@ def process_sources() -> List[SourceModel]:
             else:
                 resources.append(resource)
 
-        if isinstance(source.target_name, Path) and source.target_name.is_dir():
+        if source.target_name.is_dir():
             for resource in resources:
+                logger.debug(resource)
                 sources.append(
                     source.model_copy(
                         update={
