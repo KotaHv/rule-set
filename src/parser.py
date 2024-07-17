@@ -57,6 +57,7 @@ class Parser:
                 or any(keyword in line for keyword in self.exclude_keywords)
             ):
                 del self.data_lines[i]
+                continue
             for comment in ["#", "//"]:
                 if comment in line:
                     self.data_lines[i] = line.split(comment)[0].strip()
