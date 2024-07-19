@@ -1,9 +1,8 @@
 from abc import ABC, abstractmethod
 from pathlib import Path
 
-from loguru import logger
-
 from config import DIR_PATH
+from .write import write
 
 
 class BaseFileWriter(ABC):
@@ -21,6 +20,4 @@ class BaseFileWriter(ABC):
     def suffix(self) -> str: ...
 
     def write(self):
-        with self.filepath.open("w") as f:
-            f.write(self.data)
-        logger.success(f"{self.filepath} generated successfully")
+        write(self.filepath, self.data)

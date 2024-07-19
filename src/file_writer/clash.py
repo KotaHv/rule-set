@@ -1,9 +1,8 @@
 from pathlib import Path
 from typing import List, Tuple, Dict
 
-from loguru import logger
-
 from config import DIR_PATH
+from .write import write
 
 
 class FileWriter:
@@ -32,6 +31,4 @@ class FileWriter:
 
     def write(self) -> None:
         for filepath, content in self.file_data_map.items():
-            with filepath.open("w") as f:
-                f.write(content)
-            logger.success(f"{filepath} generated successfully")
+            write(filepath, content)

@@ -8,6 +8,7 @@ from fetcher import fetcher
 from model import RuleModel, SourceModel, ResourceFormat, ClientEnum
 from cache import Cache
 from deserialize.surge import DomainSetDeserialize, RuleSetDeserialize
+from deserialize import mmdb
 from serialize.client import (
     SurgeSerialize,
     LoonSerialize,
@@ -25,7 +26,7 @@ from file_writer import (
 )
 from file_writer.base import BaseFileWriter
 
-client_ser_write: Dict[ClientEnum, Tuple[BaseSerialize, BaseFileWriter]] = {
+client_serializers_writers: Dict[ClientEnum, Tuple[BaseSerialize, BaseFileWriter]] = {
     ClientEnum.Surge: (SurgeSerialize, SurgeFileWriter),
     ClientEnum.Loon: (LoonSerialize, LoonFileWriter),
     ClientEnum.Clash: (ClashSerialize, ClashFileWriter),
@@ -34,14 +35,16 @@ client_ser_write: Dict[ClientEnum, Tuple[BaseSerialize, BaseFileWriter]] = {
 }
 
 
-def deserialize(data: str | list, format: ResourceFormat) -> RuleModel:
+def deserialize_data(data: str | list | Path, format: ResourceFormat) -> RuleModel:
     if format == ResourceFormat.RuleSet:
         de = RuleSetDeserialize(data)
         return de.deserialize()
     elif format == ResourceFormat.DomainSet:
         de = DomainSetDeserialize(data)
         return de.deserialize()
-    raise Exception(f"unknown format: {format}")
+    elif format == ResourceFormat.MaxMindDB:
+        return mmdb.deserialize(data)
+    raise Exception(f"Unknown format: {format}")
 
 
 def process_sources() -> List[SourceModel]:
@@ -78,27 +81,34 @@ def _main():
     cache = Cache(path="parser")
     sources = process_sources()
     for source in sources:
-        rules = RuleModel()
+        aggregated_rules = RuleModel()
         for resource in source.resources:
-            if result := cache.get(resource.path):
-                result = RuleModel.model_validate_json(result)
+            if cached_result := cache.retrieve(resource.path):
+                deserialized_rules = RuleModel.model_validate_json(cached_result)
             else:
-                data = fetcher.get(resource.path)
-                result = deserialize(data, resource.format)
-                cache.set(resource.path, result.model_dump_json())
-            rules.merge_with(result)
-        rules.sort()
+                if resource.format == ResourceFormat.MaxMindDB:
+                    data = fetcher.download_file(resource.path)
+                else:
+                    data = fetcher.get_content(resource.path)
+                deserialized_rules = deserialize_data(data, resource.format)
+                cache.store(resource.path, deserialized_rules.model_dump_json())
+            aggregated_rules.merge_with(deserialized_rules)
+        aggregated_rules.sort()
 
-        if source.include:
-            clients = source.include
-        else:
-            clients = list(client_ser_write.keys())
-            for client in source.exclude:
-                clients.remove(client)
-        for client in clients:
-            ser, write = client_ser_write[client]
-            data = ser(rules=rules, option=source.option).serialize()
-            write(data=data, target_path=source.target_path).write()
+        target_clients = (
+            source.include
+            if source.include
+            else filter(
+                lambda x: x not in source.exclude,
+                client_serializers_writers.keys(),
+            )
+        )
+        for client in target_clients:
+            serializer_cls, writer_cls = client_serializers_writers[client]
+            serialized_data = serializer_cls(
+                rules=aggregated_rules, option=source.option
+            ).serialize()
+            writer_cls(data=serialized_data, target_path=source.target_path).write()
 
 
 def main():

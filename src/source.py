@@ -4,7 +4,7 @@ SOURCES = [
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
         target_path="Sukka-ad-reject-no-drop",
-        exclude=[ClientEnum.Egern, ClientEnum.Clash, ClientEnum.Sing_Box],
+        include=[ClientEnum.Surge, ClientEnum.Loon],
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
@@ -18,7 +18,7 @@ SOURCES = [
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
         target_path="Sukka-ad",
-        exclude=[ClientEnum.Egern, ClientEnum.Sing_Box, ClientEnum.Clash],
+        include=[ClientEnum.Surge, ClientEnum.Loon],
     ),
     SourceModel(
         resources=[
@@ -138,5 +138,13 @@ SOURCES = [
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list",
         target_path="Reddit",
+    ),
+    SourceModel(
+        resources=(
+            "https://raw.githubusercontent.com/NobyDa/geoip/release/Private-GeoIP-CN.mmdb",
+            "MaxMind DB",
+        ),
+        target_path="CN",
+        option=SerializeOption(no_resolve=False),
     ),
 ]

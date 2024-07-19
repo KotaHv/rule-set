@@ -38,6 +38,7 @@ ClientEnums = Annotated[
 class ResourceFormat(str, Enum):
     RuleSet = "RULE-SET"
     DomainSet = "DOMAIN-SET"
+    MaxMindDB = "MaxMind DB"
 
 
 class SourceResource(BaseModel):
