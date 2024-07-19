@@ -38,6 +38,8 @@ loguru==0.7.2
     # via rule-set
 maxminddb==2.6.2
     # via rule-set
+protobuf==5.27.2
+    # via rule-set
 pydantic==2.8.2
     # via rule-set
 pydantic-core==2.20.1

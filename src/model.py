@@ -21,17 +21,18 @@ from serialize.logical import surge_logical_serialize
 from deserialize.logical import deserialize as logical_deserialize
 
 
-class ClientEnum(str, Enum):
+class SerializeFormat(str, Enum):
     Surge = "Surge"
     Loon = "Loon"
     Egern = "Egern"
     Clash = "Clash"
     Sing_Box = "sing-box"
+    GeoIP = "GeoIP"
 
 
-ClientEnums = Annotated[
-    List[ClientEnum],
-    BeforeValidator(lambda x: [x] if isinstance(x, ClientEnum) else x),
+SerializeFormats = Annotated[
+    List[SerializeFormat],
+    BeforeValidator(lambda x: [x] if isinstance(x, SerializeFormat) else x),
 ]
 
 
@@ -83,6 +84,7 @@ class SourceResource(BaseModel):
 class SerializeOption(BaseModel):
     no_resolve: bool = True
     clash_optimize: bool = True
+    geoip_country_code: str | None = None
 
 
 class SourceModel(BaseModel):
@@ -91,8 +93,8 @@ class SourceModel(BaseModel):
         BeforeValidator(lambda x: [x] if not isinstance(x, list) else x),
     ]
     target_path: Path | None = None
-    exclude: ClientEnums = []
-    include: ClientEnums | None = None
+    exclude: SerializeFormats = []
+    include: SerializeFormats | None = None
     option: SerializeOption = SerializeOption()
 
     @model_validator(mode="after")
@@ -217,3 +219,12 @@ class RuleModel(BaseModel):
             else:
                 value = sorted(value)
             setattr(self, key, value)
+
+    def is_only_ip_cidr_rules(self) -> bool:
+        rule_types = list(self.model_fields.keys())
+        rule_types.remove("ip_cidr")
+        rule_types.remove("ip_cidr6")
+        for rule_type in rule_types:
+            if getattr(self, rule_type):
+                return False
+        return any(getattr(self, rule_type) for rule_type in ("ip_cidr", "ip_cidr6"))

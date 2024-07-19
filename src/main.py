@@ -5,7 +5,7 @@ from loguru import logger
 
 from source import SOURCES
 from fetcher import fetcher
-from model import RuleModel, SourceModel, ResourceFormat, ClientEnum
+from model import RuleModel, SourceModel, ResourceFormat, SerializeFormat
 from cache import Cache
 from deserialize.surge import DomainSetDeserialize, RuleSetDeserialize
 from deserialize import mmdb
@@ -16,6 +16,7 @@ from serialize.client import (
     EgernSerialize,
     SingBoxSerialize,
 )
+from serialize.geoip import GeoIPSerialize
 from serialize.client.base import BaseSerialize
 from file_writer import (
     SurgeFileWriter,
@@ -23,15 +24,19 @@ from file_writer import (
     ClashFileWriter,
     EgernFileWriter,
     SingBoxFileWriter,
+    GeoIPFileWriter,
 )
 from file_writer.base import BaseFileWriter
 
-client_serializers_writers: Dict[ClientEnum, Tuple[BaseSerialize, BaseFileWriter]] = {
-    ClientEnum.Surge: (SurgeSerialize, SurgeFileWriter),
-    ClientEnum.Loon: (LoonSerialize, LoonFileWriter),
-    ClientEnum.Clash: (ClashSerialize, ClashFileWriter),
-    ClientEnum.Egern: (EgernSerialize, EgernFileWriter),
-    ClientEnum.Sing_Box: (SingBoxSerialize, SingBoxFileWriter),
+client_serializers_writers: Dict[
+    SerializeFormat, Tuple[BaseSerialize, BaseFileWriter]
+] = {
+    SerializeFormat.Surge: (SurgeSerialize, SurgeFileWriter),
+    SerializeFormat.Loon: (LoonSerialize, LoonFileWriter),
+    SerializeFormat.Clash: (ClashSerialize, ClashFileWriter),
+    SerializeFormat.Egern: (EgernSerialize, EgernFileWriter),
+    SerializeFormat.Sing_Box: (SingBoxSerialize, SingBoxFileWriter),
+    SerializeFormat.GeoIP: (GeoIPSerialize, GeoIPFileWriter),
 }
 
 

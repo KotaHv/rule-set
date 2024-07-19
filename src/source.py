@@ -1,15 +1,15 @@
-from model import ClientEnum, SourceModel, SerializeOption
+from model import SerializeFormat, SourceModel, SerializeOption
 
 SOURCES = [
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
         target_path="Sukka-ad-reject-no-drop",
-        include=[ClientEnum.Surge, ClientEnum.Loon],
+        include=[SerializeFormat.Surge, SerializeFormat.Loon],
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
         target_path="Sukka-ad-reject-drop",
-        exclude=[ClientEnum.Egern, ClientEnum.Sing_Box],
+        exclude=[SerializeFormat.Egern, SerializeFormat.Sing_Box],
     ),
     SourceModel(
         resources=[
@@ -18,7 +18,7 @@ SOURCES = [
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
         target_path="Sukka-ad",
-        include=[ClientEnum.Surge, ClientEnum.Loon],
+        include=[SerializeFormat.Surge, SerializeFormat.Loon],
     ),
     SourceModel(
         resources=[
@@ -28,7 +28,7 @@ SOURCES = [
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
         target_path="Sukka-ad",
-        include=ClientEnum.Clash,
+        include=SerializeFormat.Clash,
     ),
     SourceModel(
         resources=[
@@ -39,7 +39,7 @@ SOURCES = [
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
         target_path="Sukka-ad",
-        include=[ClientEnum.Egern, ClientEnum.Sing_Box],
+        include=[SerializeFormat.Egern, SerializeFormat.Sing_Box],
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list",
@@ -145,6 +145,6 @@ SOURCES = [
             "MaxMind DB",
         ),
         target_path="CN",
-        option=SerializeOption(no_resolve=False),
+        option=SerializeOption(no_resolve=False, geoip_country_code="CN"),
     ),
 ]

@@ -75,3 +75,5 @@ DOMAIN-SUFFIX,darkreader.org
 DOMAIN-SUFFIX,nz99.xyz // New字幕组
 
 AND,((PROTOCOL,UDP),(DEST-PORT,123))
+
+DOMAIN-SUFFIX,dynv6.com

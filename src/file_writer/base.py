@@ -6,10 +6,9 @@ from .write import write
 
 
 class BaseFileWriter(ABC):
-    def __init__(self, *, data: str, target_path: Path) -> None:
+    def __init__(self, *, data: str | bytes, target_path: Path) -> None:
         self.data = data
         self.filepath = DIR_PATH / self.base_path / target_path.with_suffix(self.suffix)
-        self.filepath.parent.mkdir(parents=True, exist_ok=True)
 
     @property
     @abstractmethod
@@ -20,4 +19,6 @@ class BaseFileWriter(ABC):
     def suffix(self) -> str: ...
 
     def write(self):
-        write(self.filepath, self.data)
+        if self.data:
+            self.filepath.parent.mkdir(parents=True, exist_ok=True)
+            write(self.filepath, self.data)
