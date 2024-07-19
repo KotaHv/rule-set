@@ -1,12 +1,22 @@
+from loguru import logger
+
 from model import RuleModel
 from .base import BaseDeserialize
+from utils import validate_domain
 
 
 class DomainSetDeserialize(BaseDeserialize):
     def deserialize(self) -> RuleModel:
-        for hostname in self.data_lines:
-            if hostname.startswith("."):
-                self.result.domain_suffix.add(hostname.lstrip("."))
+        for domain in self.data_lines:
+            if domain.startswith("."):
+                domain = domain.lstrip(".")
+                if not validate_domain(domain):
+                    logger.warning(f"Invalid domain: '{domain}'")
+                    continue
+                self.result.domain_suffix.add(domain)
             else:
-                self.result.domain.add(hostname)
+                if not validate_domain(domain):
+                    logger.warning(f"Invalid domain: '{domain}'")
+                    continue
+                self.result.domain.add(domain)
         return self.result

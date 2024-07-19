@@ -11,8 +11,9 @@ class BaseDeserialize(ABC):
         self.data_lines = data
         self.result = RuleModel()
         self.exclude_keywords = [
-            "ruleset.skk.moe",
+            "this_ruleset_is_made_by_sukkaw.ruleset.skk.moe",
             "this_rule_set_is_made_by_sukkaw.skk.moe",
+            "acl4.ssr",
         ]
         self.process()
 

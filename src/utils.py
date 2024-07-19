@@ -1,3 +1,5 @@
+import validators
+
 from config import LOGICAL_KEYWORDS, LOGICAL_AND_OR, LOGICAL_NOT
 
 
@@ -11,3 +13,7 @@ def is_logical_and_or(logical: str) -> bool:
 
 def is_logical_not(logical: str) -> bool:
     return logical.upper() == LOGICAL_NOT
+
+
+def validate_domain(domain: str) -> bool:
+    return validators.domain(domain, rfc_2782=True)

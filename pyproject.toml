@@ -11,6 +11,7 @@ dependencies = [
     "loguru>=0.7.2",
     "pyyaml[libyaml]>=6.0.1",
     "anytree>=2.12.1",
+    "validators>=0.33.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

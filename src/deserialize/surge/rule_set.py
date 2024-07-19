@@ -3,7 +3,7 @@ from loguru import logger
 from model import RuleModel
 from .base import BaseDeserialize
 from deserialize import logical
-from utils import is_logical_keyword
+from utils import is_logical_keyword, validate_domain
 
 
 class RuleSetDeserialize(BaseDeserialize):
@@ -13,8 +13,14 @@ class RuleSetDeserialize(BaseDeserialize):
             processed_line = line.split(",")
             rule_type, rule = processed_line[0].lower(), processed_line[1].strip()
             if rule_type == "domain":
+                if not validate_domain(rule):
+                    logger.warning(f"Invalid domain: '{rule}'")
+                    continue
                 self.result.domain.add(rule)
             elif rule_type == "domain-suffix":
+                if not validate_domain(rule):
+                    logger.warning(f"Invalid domain: '{rule}'")
+                    continue
                 self.result.domain_suffix.add(rule)
             elif rule_type == "domain-keyword":
                 self.result.domain_keyword.add(rule)

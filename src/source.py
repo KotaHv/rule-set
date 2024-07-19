@@ -88,7 +88,7 @@ SOURCES = [
     ),
     SourceModel(
         resources=(
-            "https://raw.githubusercontent.com/KotaHv/SukkaW-Surge/release/List/domainset/speedtest.conf",
+            "https://ruleset.skk.moe/List/domainset/speedtest.conf",
             "DOMAIN-SET",
         ),
         target_path="Speedtest",
