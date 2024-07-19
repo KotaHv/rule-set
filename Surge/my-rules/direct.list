@@ -70,6 +70,4 @@ DOMAIN-SUFFIX,xiaowanjutv.com
 DOMAIN-SUFFIX,yinghuazy.xyz
 DOMAIN-SUFFIX,ykmh.com
 DOMAIN-SUFFIX,zerobyw5090.com
-DOMAIN-KEYWORD,yanetflix
-DOMAIN-KEYWORD,yaplayer
 AND,((PROTOCOL,UDP),(DEST-PORT,123))
