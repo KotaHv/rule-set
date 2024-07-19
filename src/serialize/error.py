@@ -19,4 +19,3 @@ class SerializeError(Exception):
         super().__init__("\n".join(err_list))
 
 
-class DeserializeError(Exception): ...

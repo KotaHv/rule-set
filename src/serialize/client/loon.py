@@ -1,8 +1,6 @@
-from loguru import logger
+from .base import BaseSerialize
+from ..logical import surge_logical_serialize
 
-import logic_rule_proc
-from model import RuleModel, SourceModel
-from config import DIR_PATH
 
 include_rule_types = [
     "DOMAIN",
@@ -20,15 +18,8 @@ include_rule_types = [
 ]
 
 
-class LoonGenerator:
-    def __init__(self, *, info: SourceModel, rules: RuleModel) -> None:
-        self.info = info
-        self.rules = rules
-        dir_path = DIR_PATH / "Loon"
-        self.path = dir_path / info.target_name.with_suffix(".list")
-        self.path.parent.mkdir(parents=True, exist_ok=True)
-
-    def generate(self):
+class Serialize(BaseSerialize):
+    def serialize(self) -> str:
         rules = []
         if self.rules.domain:
             rules.extend([f"DOMAIN,{domain}" for domain in self.rules.domain])
@@ -57,12 +48,8 @@ class LoonGenerator:
         if self.rules.logical:
             rules.extend(
                 [
-                    logic_rule_proc.serialize(node=node, include=include_rule_types)
+                    surge_logical_serialize(root_node=node, include=include_rule_types)
                     for node in self.rules.logical
                 ]
             )
-        content = "\n".join(filter(None, rules))
-        if content:
-            with self.path.open("w") as f:
-                f.write(content)
-            logger.success(f"{self.path} generated successfully")
+        return "\n".join(filter(None, rules))

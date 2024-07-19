@@ -1,3 +1,4 @@
+import ipaddress
 from pathlib import Path
 from typing import List, Annotated, Set, Any, Self
 from enum import Enum
@@ -16,7 +17,8 @@ from pydantic.json_schema import JsonSchemaValue
 
 from anytree import Node
 
-import logic_rule_proc
+from serialize.logical import surge_logical_serialize
+from deserialize.logical import deserialize as logical_deserialize
 
 
 class ClientEnum(str, Enum):
@@ -77,34 +79,39 @@ class SourceResource(BaseModel):
             return False
 
 
+class SerializeOption(BaseModel):
+    no_resolve: bool = True
+    clash_optimize: bool = True
+
+
 class SourceModel(BaseModel):
     resources: Annotated[
         List[SourceResource],
         BeforeValidator(lambda x: [x] if not isinstance(x, list) else x),
     ]
-    target_name: Path | None = None
+    target_path: Path | None = None
     exclude: ClientEnums = []
     include: ClientEnums | None = None
-    no_resolve: bool = True
+    option: SerializeOption = SerializeOption()
 
     @model_validator(mode="after")
-    def check_target_name(self) -> Self:
+    def check_target_path(self) -> Self:
         if len(self.resources) > 1:
-            if self.target_name is None:
+            if self.target_path is None:
                 raise ValueError(
-                    "target_name cannot be empty when there are multiple resources"
+                    "target_path cannot be empty when there are multiple resources"
                 )
-        if self.target_name is None:
-            self.target_name = Path(self.resources[0].name)
+        if self.target_path is None:
+            self.target_path = Path(self.resources[0].name)
         return self
 
     def __repr__(self) -> str:
         if len(self.resources) == 1:
             resource = self.resources[0]
             if resource.is_dir():
-                return f'{self.target_name}: "{list(resource.path.iterdir())}"'
-            return f'{self.target_name}: "{resource}"'
-        return f"{self.target_name}: {self.resources}"
+                return f'{self.target_path}: "{list(resource.path.iterdir())}"'
+            return f'{self.target_path}: "{resource}"'
+        return f"{self.target_path}: {self.resources}"
 
     def __str__(self) -> str:
         return self.__repr__()
@@ -118,7 +125,7 @@ class AnyTreeNodePydanticAnnotation:
         _handler: GetCoreSchemaHandler,
     ) -> core_schema.CoreSchema:
         def validate_from_str(value: str) -> Node:
-            node = logic_rule_proc.deserialize(value)
+            node = logical_deserialize(value)
             if node is None:
                 raise ValueError("Invalid rule format")
             return node
@@ -139,7 +146,7 @@ class AnyTreeNodePydanticAnnotation:
                 ]
             ),
             serialization=core_schema.plain_serializer_function_ser_schema(
-                lambda instance: logic_rule_proc.serialize(node=instance)
+                lambda instance: surge_logical_serialize(root_node=instance)
             ),
         )
 
@@ -174,10 +181,38 @@ class RuleModel(BaseModel):
         self.ip_cidr6.update(other.ip_cidr6)
         self.ip_asn.update(other.ip_asn)
         if other.logical:
-            node_list = [logic_rule_proc.serialize(node=node) for node in self.logical]
+            node_list = [
+                surge_logical_serialize(root_node=node) for node in self.logical
+            ]
             for node in other.logical:
-                if logic_rule_proc.serialize(node=node) in node_list:
+                if surge_logical_serialize(root_node=node) in node_list:
                     continue
                 self.logical.append(node)
         self.process.update(other.process)
         self.ua.update(other.ua)
+
+    def sort(self):
+        for key in self.model_fields.keys():
+            value = getattr(self, key)
+            if key == "ip_cidr":
+                value = sorted(
+                    value,
+                    key=lambda x: ipaddress.IPv4Network(x).network_address,
+                )
+            elif key == "ip_cidr6":
+                value = sorted(
+                    value,
+                    key=lambda x: ipaddress.IPv6Network(x).network_address,
+                )
+            elif key == "ip_asn":
+                value = sorted(
+                    value,
+                    key=lambda x: int(x),
+                )
+            elif key == "logical":
+                value = sorted(
+                    value, key=lambda x: surge_logical_serialize(root_node=x)
+                )
+            else:
+                value = sorted(value)
+            setattr(self, key, value)

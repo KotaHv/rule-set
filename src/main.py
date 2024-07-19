@@ -1,22 +1,45 @@
 from pathlib import Path
-from typing import List
+from typing import Dict, List, Tuple
 
 from loguru import logger
 
 from source import SOURCES
 from fetcher import fetcher
-from model import RuleModel, SourceModel, ResourceFormat
-from generator import Generator
+from model import RuleModel, SourceModel, ResourceFormat, ClientEnum
 from cache import Cache
-from deserialize import SurgeDomainSetDeserialize, SurgeRuleSetDeserialize
+from deserialize.surge import DomainSetDeserialize, RuleSetDeserialize
+from serialize.client import (
+    SurgeSerialize,
+    LoonSerialize,
+    ClashSerialize,
+    EgernSerialize,
+    SingBoxSerialize,
+)
+from serialize.client.base import BaseSerialize
+from file_writer import (
+    SurgeFileWriter,
+    LoonFileWriter,
+    ClashFileWriter,
+    EgernFileWriter,
+    SingBoxFileWriter,
+)
+from file_writer.base import BaseFileWriter
+
+client_ser_write: Dict[ClientEnum, Tuple[BaseSerialize, BaseFileWriter]] = {
+    ClientEnum.Surge: (SurgeSerialize, SurgeFileWriter),
+    ClientEnum.Loon: (LoonSerialize, LoonFileWriter),
+    ClientEnum.Clash: (ClashSerialize, ClashFileWriter),
+    ClientEnum.Egern: (EgernSerialize, EgernFileWriter),
+    ClientEnum.Sing_Box: (SingBoxSerialize, SingBoxFileWriter),
+}
 
 
 def deserialize(data: str | list, format: ResourceFormat) -> RuleModel:
     if format == ResourceFormat.RuleSet:
-        de = SurgeRuleSetDeserialize(data)
+        de = RuleSetDeserialize(data)
         return de.deserialize()
     elif format == ResourceFormat.DomainSet:
-        de = SurgeDomainSetDeserialize(data)
+        de = DomainSetDeserialize(data)
         return de.deserialize()
     raise Exception(f"unknown format: {format}")
 
@@ -36,14 +59,13 @@ def process_sources() -> List[SourceModel]:
             else:
                 resources.append(resource)
 
-        if source.target_name.is_dir():
+        if source.target_path.is_dir():
             for resource in resources:
-                logger.debug(resource)
                 sources.append(
                     source.model_copy(
                         update={
                             "resources": [resource],
-                            "target_name": source.target_name / resource.path.stem,
+                            "target_path": source.target_path / resource.path.stem,
                         }
                     )
                 )
@@ -65,7 +87,18 @@ def _main():
                 result = deserialize(data, resource.format)
                 cache.set(resource.path, result.model_dump_json())
             rules.merge_with(result)
-        Generator(info=source, rules=rules).generate()
+        rules.sort()
+
+        if source.include:
+            clients = source.include
+        else:
+            clients = list(client_ser_write.keys())
+            for client in source.exclude:
+                clients.remove(client)
+        for client in clients:
+            ser, write = client_ser_write[client]
+            data = ser(rules=rules, option=source.option).serialize()
+            write(data=data, target_path=source.target_path).write()
 
 
 def main():
