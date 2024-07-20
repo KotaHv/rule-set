@@ -1,6 +1,6 @@
 import ipaddress
 
-from . import geoip_pb2
+from . import geo_ip_pb2
 from model import RuleModel, SerializeOption
 
 
@@ -10,22 +10,22 @@ class Serialize:
         self.option = option
 
     def serialize(self) -> bytes | None:
-        if not self.rules.is_only_ip_cidr_rules():
+        if not self.rules.has_only_ip_cidr_rules():
             return
         ip_list = []
         ip_list.extend(self.rules.ip_cidr)
         ip_list.extend(self.rules.ip_cidr6)
-        geoip = geoip_pb2.GeoIP()
-        geoip.country_code = self.option.geoip_country_code
-        geoip.inverse_match = False
+        geo_ip = geo_ip_pb2.GeoIP()
+        geo_ip.country_code = self.option.geo_ip_country_code
+        geo_ip.inverse_match = False
         for ip in ip_list:
-            cidr = geoip_pb2.CIDR()
+            cidr = geo_ip_pb2.CIDR()
             ip = ipaddress.ip_network(ip)
             cidr.ip = ip.network_address.packed
             cidr.prefix = ip.prefixlen
-            geoip.cidr.append(cidr)
+            geo_ip.cidr.append(cidr)
 
-        geoip_list = geoip_pb2.GeoIPList()
-        geoip_list.entry.append(geoip)
-        serialized_data = geoip_list.SerializeToString()
+        geo_ip_list = geo_ip_pb2.GeoIPList()
+        geo_ip_list.entry.append(geo_ip)
+        serialized_data = geo_ip_list.SerializeToString()
         return serialized_data

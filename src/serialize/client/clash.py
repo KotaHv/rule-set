@@ -2,6 +2,8 @@ from typing import List, Tuple
 import yaml
 from yaml import CDumper
 
+from model import RuleModel, SerializeOption
+
 from .base import BaseSerialize
 from ..logical import surge_logical_serialize
 
@@ -37,16 +39,21 @@ include_rule_types = [
     "RULE-SET",
 ]
 
+ignore_types = ["domain_wildcard", "ua", "logical"]
+
 
 class Serialize(BaseSerialize):
-    def is_domain(self) -> bool:
-        rule_types = list(self.rules.model_fields.keys())
-        rule_types.remove("domain")
-        rule_types.remove("domain_suffix")
-        for rule_type in rule_types:
-            if getattr(self.rules, rule_type):
-                return False
-        return True
+    def __init__(self, *, rules: RuleModel, option: SerializeOption) -> None:
+        super().__init__(rules=rules, option=option)
+        self.serialized_logical_rules = list(
+            filter(
+                None,
+                [
+                    surge_logical_serialize(root_node=node, include=include_rule_types)
+                    for node in self.rules.logical
+                ],
+            )
+        )
 
     def domain(self) -> list:
         payload = []
@@ -55,17 +62,6 @@ class Serialize(BaseSerialize):
             [f"+.{domain_suffix}" for domain_suffix in self.rules.domain_suffix]
         )
         return payload
-
-    def is_ip_cidr(self) -> bool:
-        if self.option.no_resolve:
-            return False
-        rule_types = list(self.rules.model_fields.keys())
-        rule_types.remove("ip_cidr")
-        rule_types.remove("ip_cidr6")
-        for rule_type in rule_types:
-            if getattr(self.rules, rule_type):
-                return False
-        return True
 
     def ip_cidr(self) -> list:
         payload = []
@@ -109,33 +105,8 @@ class Serialize(BaseSerialize):
 
         payload.extend([f"PROCESS-NAME,{process}" for process in self.rules.process])
 
-        payload.extend(
-            filter(
-                None,
-                [
-                    surge_logical_serialize(root_node=node, include=include_rule_types)
-                    for node in self.rules.logical
-                ],
-            )
-        )
+        payload.extend(self.serialized_logical_rules)
         return payload
-
-    def count_rules(self) -> int:
-        count = 0
-        for rule_type in self.rules.model_fields:
-            if rule_type not in [
-                "domain",
-                "domain_suffix",
-                "domain_keyword",
-                "ip_cidr",
-                "ip_cidr6",
-                "ip_asn",
-                "logical",
-                "process",
-            ]:
-                continue
-            count += len(getattr(self.rules, rule_type))
-        return count
 
     def _serialize_payload(
         self, payload: str, behavior: str, style: str
@@ -153,11 +124,16 @@ class Serialize(BaseSerialize):
 
     def serialize(self) -> Tuple[str, str] | List[Tuple[str, str]]:
         if self.option.clash_optimize:
-            if self.is_domain():
-                return self._serialize_payload(self.domain(), "domain", "'")
-            if self.is_ip_cidr():
-                return self._serialize_payload(self.ip_cidr(), "ipcidr", "'")
-            if self.count_rules() > 10000:
+            if not self.serialized_logical_rules:
+                if self.rules.has_only_domain_rules(ignore_types):
+                    return self._serialize_payload(self.domain(), "domain", "'")
+                if self.rules.has_only_ip_cidr_rules(ignore_types):
+                    return self._serialize_payload(self.ip_cidr(), "ipcidr", "'")
+            if (
+                self.rules.count_rules(ignore_types)
+                + len(self.serialized_logical_rules)
+                > 10000
+            ):
                 domain_payload = self.domain()
                 classical_payload = self.classical(skip_domain=True)
                 return [

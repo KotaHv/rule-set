@@ -16,7 +16,7 @@ from serialize.client import (
     EgernSerialize,
     SingBoxSerialize,
 )
-from serialize.v2ray_geoip import GeoIPSerialize
+from serialize.v2ray_geo_ip import GeoIPSerialize
 from serialize.client.base import BaseSerialize
 from file_writer import (
     SurgeFileWriter,

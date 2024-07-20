@@ -145,6 +145,6 @@ SOURCES = [
             "MaxMind DB",
         ),
         target_path="CN",
-        option=SerializeOption(no_resolve=False, geoip_country_code="CN"),
+        option=SerializeOption(no_resolve=False, geo_ip_country_code="CN"),
     ),
 ]

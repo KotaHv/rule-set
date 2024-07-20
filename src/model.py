@@ -84,7 +84,7 @@ class SourceResource(BaseModel):
 class SerializeOption(BaseModel):
     no_resolve: bool = True
     clash_optimize: bool = True
-    geoip_country_code: str | None = None
+    geo_ip_country_code: str | None = None
 
 
 class SourceModel(BaseModel):
@@ -220,11 +220,29 @@ class RuleModel(BaseModel):
                 value = sorted(value)
             setattr(self, key, value)
 
-    def is_only_ip_cidr_rules(self) -> bool:
+    def has_only_ip_cidr_rules(self, ignore_types: list = []) -> bool:
+        return self._has_only_rules_of_type(["ip_cidr", "ip_cidr6"], ignore_types)
+
+    def has_only_domain_rules(self, ignore_types: list = []) -> bool:
+        return self._has_only_rules_of_type(["domain", "domain_suffix"], ignore_types)
+
+    def _has_only_rules_of_type(
+        self, allowed_types: list, ignore_types: list = []
+    ) -> bool:
         rule_types = list(self.model_fields.keys())
-        rule_types.remove("ip_cidr")
-        rule_types.remove("ip_cidr6")
+        ignore_types = set(allowed_types + ignore_types)
+        for rule_type in ignore_types:
+            rule_types.remove(rule_type)
         for rule_type in rule_types:
             if getattr(self, rule_type):
                 return False
-        return any(getattr(self, rule_type) for rule_type in ("ip_cidr", "ip_cidr6"))
+        return any(getattr(self, rule_type) for rule_type in allowed_types)
+
+    def count_rules(self, ignore_types: list = []) -> int:
+        count = 0
+        rule_types = list(self.model_fields.keys())
+        for rule_type in ignore_types:
+            rule_types.remove(rule_type)
+        for rule_type in rule_types:
+            count += len(getattr(self, rule_type))
+        return count
