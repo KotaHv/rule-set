@@ -147,4 +147,8 @@ SOURCES = [
         target_path="CN",
         option=SerializeOption(no_resolve=False, geo_ip_country_code="CN"),
     ),
+    SourceModel(
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OneDrive/OneDrive.list",
+        target_path="OneDrive",
+    ),
 ]
