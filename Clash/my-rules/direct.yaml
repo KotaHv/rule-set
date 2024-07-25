@@ -9,6 +9,7 @@ payload:
 - DOMAIN,v16m-default.akamaized.net
 - DOMAIN-SUFFIX,6mh67.com
 - DOMAIN-SUFFIX,amazon.cn
+- DOMAIN-SUFFIX,app.plex.tv
 - DOMAIN-SUFFIX,baozicdn.com
 - DOMAIN-SUFFIX,baozimh.com
 - DOMAIN-SUFFIX,baozimh.org
@@ -57,8 +58,6 @@ payload:
 - DOMAIN-SUFFIX,pilisf.com
 - DOMAIN-SUFFIX,pilishuwu.com
 - DOMAIN-SUFFIX,pilixiaoshuo.com
-- DOMAIN-SUFFIX,plex.direct
-- DOMAIN-SUFFIX,plex.tv
 - DOMAIN-SUFFIX,rrmh.net
 - DOMAIN-SUFFIX,shadouyou369.com
 - DOMAIN-SUFFIX,snplayer.com
