@@ -2,8 +2,8 @@
 DOMAIN,me.plexapp.com
 DOMAIN,pubsub.plex.tv
 DOMAIN,resources-cdn.plexapp.com
-DOMAIN-SUFFIX,plex.direct
-DOMAIN-SUFFIX,plex.tv
+#DOMAIN-SUFFIX,plex.direct
+DOMAIN-SUFFIX,app.plex.tv
 # Manga
 DOMAIN-SUFFIX,baozicdn.com
 DOMAIN-SUFFIX,godamanga.online
