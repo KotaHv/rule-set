@@ -32,10 +32,10 @@ class RuleSetDeserialize(BaseDeserialize):
                 self.result.ip_cidr6.add(rule)
             elif rule_type == "ip-asn":
                 self.result.ip_asn.add(rule)
-            elif rule_type == "user-agent":
-                self.result.ua.add(rule)
-            elif rule_type == "process-name":
-                self.result.process.add(rule)
+            # elif rule_type == "user-agent":
+            #     self.result.ua.add(rule)
+            # elif rule_type == "process-name":
+            #     self.result.process.add(rule)
             elif is_logical_keyword(rule_type):
                 node = logical.deserialize(line)
                 if node is None:
