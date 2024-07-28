@@ -48,7 +48,11 @@ def _deserialize(parent: Node, expression: str):
     if is_logical_not(parent.name) and len(sub_expressions) != 1:
         raise DeserializeError("NOT rule must only have one sub-rule")
     elif is_logical_and_or(parent.name) and len(sub_expressions) < 2:
-        raise DeserializeError("AND/OR rule must have at least two sub-rules")
+        raise DeserializeError(
+            f"Invalid AND/OR rule: expected at least two sub-rules but found {len(sub_expressions)}.\n"
+            f"Sub-rules:\n"
+            f"{', '.join(sub_expressions)}"
+        )
     for sub_expression in sub_expressions:
         sub_expression = remove_outer_parentheses(sub_expression)
         sub_parts = split_outside_parentheses(sub_expression)
@@ -57,8 +61,11 @@ def _deserialize(parent: Node, expression: str):
             sub_node = Node(parent_expression, parent=parent)
             _deserialize(sub_node, sub_parts[1])
         else:
-            if len(sub_parts) < 2:
-                raise DeserializeError(f"Format error of '{expression}': {sub_parts}")
+            sub_rules = "".join(sub_parts)
+            if len(sub_parts) < 2 or "(" in sub_rules or ")" in sub_rules:
+                raise DeserializeError(
+                    f"The format of '({sub_expression})' in '{expression}' is incorrect."
+                )
             Node(tuple(sub_parts), parent=parent)
 
 
