@@ -1,5 +1,6 @@
 no_resolve: true
 domain_set:
+- app.plex.tv
 - discovery-v4.syncthing.net
 - discovery-v6.syncthing.net
 - me.plexapp.com
@@ -11,7 +12,6 @@ domain_set:
 domain_suffix_set:
 - 6mh67.com
 - amazon.cn
-- app.plex.tv
 - baozicdn.com
 - baozimh.com
 - baozimh.org
