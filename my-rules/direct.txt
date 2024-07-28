@@ -1,9 +1,8 @@
 # plex
 DOMAIN,me.plexapp.com
-DOMAIN,pubsub.plex.tv
 DOMAIN,resources-cdn.plexapp.com
-#DOMAIN-SUFFIX,plex.direct
-DOMAIN-SUFFIX,app.plex.tv
+DOMAIN,app.plex.tv
+DOMAIN,pubsub.plex.tv
 # Manga
 DOMAIN-SUFFIX,baozicdn.com
 DOMAIN-SUFFIX,godamanga.online
@@ -73,7 +72,6 @@ DOMAIN-SUFFIX,ntdm9.com
 DOMAIN-SUFFIX,yinghuazy.xyz
 DOMAIN-SUFFIX,darkreader.org
 DOMAIN-SUFFIX,nz99.xyz // New字幕组
+DOMAIN-SUFFIX,dynv6.com
 
 AND,((PROTOCOL,UDP),(DEST-PORT,123))
-
-DOMAIN-SUFFIX,dynv6.com
