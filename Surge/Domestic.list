@@ -148,6 +148,7 @@ DOMAIN-SUFFIX,bilibili.tv
 DOMAIN-SUFFIX,bilibilipay.cn
 DOMAIN-SUFFIX,bilibilipay.com
 DOMAIN-SUFFIX,bilicdn1.com
+DOMAIN-SUFFIX,bilicomic.com
 DOMAIN-SUFFIX,bilicomics.com
 DOMAIN-SUFFIX,biligame.cn
 DOMAIN-SUFFIX,biligame.com
@@ -750,10 +751,3 @@ DOMAIN-SUFFIX,zol.com.cn
 DOMAIN-SUFFIX,zui.com
 DOMAIN-SUFFIX,zuimeitianqi.com
 DOMAIN-SUFFIX,zuoyebang.com
-USER-AGENT,%E4%BC%98%E9%85%B7*
-USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
-USER-AGENT,MicroMessenger Client
-USER-AGENT,TeslaMap
-USER-AGENT,WeChat*
-PROCESS-NAME,WeChat
-PROCESS-NAME,WeCom
