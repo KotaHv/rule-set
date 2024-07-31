@@ -126,8 +126,16 @@ SOURCES = [
         target_path="Global",
     ),
     SourceModel(
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list",
+        target_path="Proxy",
+    ),
+    SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ProxyLite/ProxyLite.list",
         target_path="ProxyLite",
+    ),
+    SourceModel(
+        resources="https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt",
+        target_path="GFW",
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan_Resolve.list",
