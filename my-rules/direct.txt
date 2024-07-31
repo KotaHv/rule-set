@@ -1,3 +1,4 @@
+AND,((PROTOCOL,UDP),(DEST-PORT,123))
 # plex
 DOMAIN,me.plexapp.com
 DOMAIN,resources-cdn.plexapp.com
@@ -64,7 +65,7 @@ DOMAIN-SUFFIX,pilixiaoshuo.com
 DOMAIN-SUFFIX,pilibook.net
 DOMAIN-SUFFIX,amazon.cn
 DOMAIN-SUFFIX,jb51.net
-DOMAIN-SUFFIX,oyunfor.com
+#DOMAIN-SUFFIX,oyunfor.com
 DOMAIN-SUFFIX,lg.saltyfish.cloud
 DOMAIN-SUFFIX,lg.saltyfish.io
 DOMAIN-SUFFIX,bfengbf.com
@@ -73,5 +74,5 @@ DOMAIN-SUFFIX,yinghuazy.xyz
 DOMAIN-SUFFIX,darkreader.org
 DOMAIN-SUFFIX,nz99.xyz // New字幕组
 DOMAIN-SUFFIX,dynv6.com
-
-AND,((PROTOCOL,UDP),(DEST-PORT,123))
+DOMAIN-SUFFIX,turgame.com
+DOMAIN-SUFFIX,myself-bbs.com

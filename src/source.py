@@ -67,7 +67,7 @@ SOURCES = [
     SourceModel(
         resources=[
             "https://ruleset.skk.moe/List/non_ip/apple_services.conf",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All.list",
+            # "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All.list",
         ],
         target_path="Apple_services",
     ),
@@ -124,6 +124,10 @@ SOURCES = [
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list",
         target_path="Global",
+    ),
+    SourceModel(
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ProxyLite/ProxyLite.list",
+        target_path="ProxyLite",
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan_Resolve.list",
