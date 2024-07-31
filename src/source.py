@@ -126,7 +126,7 @@ SOURCES = [
         target_path="Global",
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list",
+        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy_All.list",
         target_path="Proxy",
     ),
     SourceModel(
