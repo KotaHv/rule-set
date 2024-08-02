@@ -2,23 +2,26 @@ no_resolve: true
 domain_set:
 - immich.app
 - ipinfo.io
-- opgg-static.akamaized.net
 - static.adtidy.org
 domain_suffix_set:
+- 1password.com
 - 1stream.icu
+- adguard.com
+- adtidy.org
 - agilebits.com
 - akile.io
-- anti-ad.net
 - betterdisplay.pro
 - bgm.tv
 - coze.com
+- deepl.com
+- digicert.com
 - easytier.top
 - egernapp.com
-- fqewew4rferhgq4355t3.top
 - grafana.com
 - home-assistant.io
 - istatmenus.app
 - keygen.sh
+- lencr.org
 - linuxcontainers.org
 - lobehub.com
 - lscr.io
@@ -32,6 +35,7 @@ domain_suffix_set:
 - nio.gs
 - orbstack.dev
 - photoprism.app
+- plex.tv
 - plexvideos.com
 - pola.rs
 - protobuf.dev
@@ -42,5 +46,6 @@ domain_suffix_set:
 - rclone.org
 - replit.com
 - scufgaming.com
+- sectigo.com
 - syncthing.net
 - zerossl.com
