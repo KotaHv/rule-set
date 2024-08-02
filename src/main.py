@@ -116,6 +116,8 @@ def _main():
                 )
                 cache.store(resource.path, deserialized_rules.model_dump_json())
             aggregated_rules.merge_with(deserialized_rules)
+        for rule_types in source.option.exclude_rule_types:
+            setattr(aggregated_rules, rule_types, set())
         aggregated_rules.filter()
         aggregated_rules.sort()
 

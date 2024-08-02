@@ -87,6 +87,7 @@ class Option(BaseModel):
     geo_ip_country_code: str | None = None
     exclude_keywords: list[str] = []
     exclude_suffixes: list[str] = []
+    exclude_rule_types: list[str] = []
 
 
 class SourceModel(BaseModel):

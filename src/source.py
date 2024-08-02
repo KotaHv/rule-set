@@ -128,6 +128,9 @@ SOURCES = [
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list",
         target_path="Global",
+        option=Option(
+            exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
+        ),
     ),
     SourceModel(
         resources=[
@@ -162,7 +165,10 @@ SOURCES = [
             "my-rules/proxy.txt",
         ],
         target_path="Proxy",
-        option=Option(exclude_suffixes=[".cn"]),
+        option=Option(
+            exclude_suffixes=[".cn"],
+            exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
+        ),
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt",
