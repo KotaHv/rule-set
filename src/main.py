@@ -116,6 +116,7 @@ def _main():
                 )
                 cache.store(resource.path, deserialized_rules.model_dump_json())
             aggregated_rules.merge_with(deserialized_rules)
+        aggregated_rules.filter()
         aggregated_rules.sort()
 
         target_clients = (
