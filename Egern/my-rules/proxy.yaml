@@ -1,8 +1,4 @@
 no_resolve: true
-domain_set:
-- immich.app
-- ipinfo.io
-- static.adtidy.org
 domain_suffix_set:
 - 1password.com
 - 1stream.icu
@@ -10,6 +6,9 @@ domain_suffix_set:
 - adtidy.org
 - agilebits.com
 - akile.io
+- apkmirror.com
+- arc.net
+- archive.org
 - betterdisplay.pro
 - bgm.tv
 - coze.com
@@ -17,8 +16,11 @@ domain_suffix_set:
 - digicert.com
 - easytier.top
 - egernapp.com
+- exp-tas.com
 - grafana.com
 - home-assistant.io
+- immich.app
+- ipinfo.io
 - istatmenus.app
 - keygen.sh
 - lencr.org
@@ -38,14 +40,22 @@ domain_suffix_set:
 - plex.tv
 - plexvideos.com
 - pola.rs
+- prismic.io
 - protobuf.dev
+- proton.me
 - pydantic.dev
 - qnap.com
 - ray.so
 - raycast.com
 - rclone.org
+- readthedocs.io
+- readthedocs.org
 - replit.com
 - scufgaming.com
 - sectigo.com
+- skk.moe
 - syncthing.net
 - zerossl.com
+domain_keyword_set:
+- jav
+- porn

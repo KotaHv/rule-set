@@ -1,4 +1,6 @@
 no_resolve: true
+domain_set:
+- dataflow.biliapi.com
 domain_suffix_set:
 - cm.bilibili.com
 - collector.github.com
