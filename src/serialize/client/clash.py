@@ -2,7 +2,7 @@ from typing import List, Tuple
 import yaml
 from yaml import CDumper
 
-from model import RuleModel, SerializeOption
+from model import RuleModel, Option
 
 from .base import BaseSerialize
 from ..logical import surge_logical_serialize
@@ -43,7 +43,7 @@ ignore_types = ["domain_wildcard", "ua", "logical"]
 
 
 class Serialize(BaseSerialize):
-    def __init__(self, *, rules: RuleModel, option: SerializeOption) -> None:
+    def __init__(self, *, rules: RuleModel, option: Option) -> None:
         super().__init__(rules=rules, option=option)
         self.serialized_logical_rules = list(
             filter(

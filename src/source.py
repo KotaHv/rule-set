@@ -1,4 +1,4 @@
-from model import SerializeFormat, SourceModel, SerializeOption
+from model import SerializeFormat, SourceModel, Option
 
 SOURCES = [
     SourceModel(
@@ -147,11 +147,21 @@ SOURCES = [
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitch/Twitch.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Vercel/Vercel.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OP/OP.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Oracle/Oracle.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Amazon/Amazon.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Mozilla/Mozilla.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Docker/Docker.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitBook/GitBook.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Npmjs/Npmjs.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Notion/Notion.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list",
             "my-rules/proxy.txt",
         ],
         target_path="Proxy",
+        option=Option(exclude_suffixes=[".cn"]),
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt",
@@ -160,9 +170,9 @@ SOURCES = [
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan_Resolve.list",
         target_path="Lan",
-        option=SerializeOption(no_resolve=False),
+        option=Option(no_resolve=False),
     ),
-    SourceModel(resources="my-rules", option=SerializeOption(clash_optimize=False)),
+    SourceModel(resources="my-rules", option=Option(clash_optimize=False)),
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/EHGallery/EHGallery.list",
         target_path="ExHentai",
@@ -177,7 +187,7 @@ SOURCES = [
             "MaxMind DB",
         ),
         target_path="CN",
-        option=SerializeOption(no_resolve=False, geo_ip_country_code="CN"),
+        option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OneDrive/OneDrive.list",

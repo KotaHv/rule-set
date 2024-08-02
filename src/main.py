@@ -5,7 +5,13 @@ from loguru import logger
 
 from source import SOURCES
 from fetcher import fetcher
-from model import RuleModel, SourceModel, ResourceFormat, SerializeFormat
+from model import (
+    RuleModel,
+    SourceModel,
+    ResourceFormat,
+    SerializeFormat,
+    Option,
+)
 from cache import Cache
 from deserialize.surge import DomainSetDeserialize, RuleSetDeserialize
 from deserialize import mmdb
@@ -40,12 +46,22 @@ client_serializers_writers: Dict[
 }
 
 
-def deserialize_data(data: str | list | Path, format: ResourceFormat) -> RuleModel:
+def deserialize_data(
+    data: str | list | Path, format: ResourceFormat, option: Option
+) -> RuleModel:
     if format == ResourceFormat.RuleSet:
-        de = RuleSetDeserialize(data)
+        de = RuleSetDeserialize(
+            data,
+            exclude_keywords=option.exclude_keywords,
+            exclude_suffixes=option.exclude_suffixes,
+        )
         return de.deserialize()
     elif format == ResourceFormat.DomainSet:
-        de = DomainSetDeserialize(data)
+        de = DomainSetDeserialize(
+            data,
+            exclude_keywords=option.exclude_keywords,
+            exclude_suffixes=option.exclude_suffixes,
+        )
         return de.deserialize()
     elif format == ResourceFormat.MaxMindDB:
         return mmdb.deserialize(data)
@@ -95,7 +111,9 @@ def _main():
                     data = fetcher.download_file(resource.path)
                 else:
                     data = fetcher.get_content(resource.path)
-                deserialized_rules = deserialize_data(data, resource.format)
+                deserialized_rules = deserialize_data(
+                    data, resource.format, source.option
+                )
                 cache.store(resource.path, deserialized_rules.model_dump_json())
             aggregated_rules.merge_with(deserialized_rules)
         aggregated_rules.sort()

@@ -81,10 +81,12 @@ class SourceResource(BaseModel):
             return False
 
 
-class SerializeOption(BaseModel):
+class Option(BaseModel):
     no_resolve: bool = True
     clash_optimize: bool = True
     geo_ip_country_code: str | None = None
+    exclude_keywords: list[str] = []
+    exclude_suffixes: list[str] = []
 
 
 class SourceModel(BaseModel):
@@ -95,7 +97,7 @@ class SourceModel(BaseModel):
     target_path: Path | None = None
     exclude: SerializeFormats = []
     include: SerializeFormats | None = None
-    option: SerializeOption = SerializeOption()
+    option: Option = Option()
 
     @model_validator(mode="after")
     def check_target_path(self) -> Self:
