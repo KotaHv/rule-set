@@ -1,6 +1,13 @@
 no_resolve: true
+domain_set:
+- api.privacy.com
+- api.pwnedpasswords.com
+- in.appcenter.ms
 domain_suffix_set:
+- 1infra.net
 - 1password.com
+- 1passwordservices.com
+- 1passwordusercontent.com
 - 1stream.icu
 - adguard.com
 - adtidy.org
@@ -11,18 +18,23 @@ domain_suffix_set:
 - archive.org
 - betterdisplay.pro
 - bgm.tv
+- brex.com
+- canonical.com
 - coze.com
 - deepl.com
 - digicert.com
 - easytier.top
 - egernapp.com
 - exp-tas.com
+- fastmail.com
+- globalsign.com
 - grafana.com
 - home-assistant.io
 - immich.app
 - ipinfo.io
 - istatmenus.app
 - keygen.sh
+- lastpass.com
 - lencr.org
 - linuxcontainers.org
 - lobehub.com
@@ -35,6 +47,7 @@ domain_suffix_set:
 - myqnapcloud.io
 - nighteye.app
 - nio.gs
+- nssurge.com
 - orbstack.dev
 - photoprism.app
 - plex.tv
@@ -54,7 +67,12 @@ domain_suffix_set:
 - scufgaming.com
 - sectigo.com
 - skk.moe
+- stackoverflow.com
+- surge-activation.com
 - syncthing.net
+- thetvdb.com
+- tickstep.com
+- vsassets.io
 - zerossl.com
 domain_keyword_set:
 - jav
