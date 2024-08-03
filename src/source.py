@@ -164,6 +164,7 @@ SOURCES = [
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Notion/Notion.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Akamai/Akamai.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nvidia/Nvidia.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list",
             "my-rules/proxy.txt",

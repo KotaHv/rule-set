@@ -1,4 +1,17 @@
+# 1password
+DOMAIN-SUFFIX,1infra.net
 DOMAIN-SUFFIX,1password.com
+DOMAIN-SUFFIX,1passwordservices.com
+DOMAIN-SUFFIX,1passwordusercontent.com
+DOMAIN-SUFFIX,brex.com
+DOMAIN-SUFFIX,fastmail.com
+DOMAIN-SUFFIX,globalsign.com
+DOMAIN-SUFFIX,lastpass.com
+DOMAIN,api.privacy.com
+DOMAIN,api.pwnedpasswords.com
+DOMAIN,cache.agilebits.com
+DOMAIN,in.appcenter.ms
+# ------
 DOMAIN-SUFFIX,1stream.icu
 DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,adtidy.org
@@ -9,6 +22,7 @@ DOMAIN-SUFFIX,arc.net
 DOMAIN-SUFFIX,archive.org
 DOMAIN-SUFFIX,betterdisplay.pro
 DOMAIN-SUFFIX,bgm.tv
+DOMAIN-SUFFIX,canonical.com
 DOMAIN-SUFFIX,coze.com
 DOMAIN-SUFFIX,deepl.com
 DOMAIN-SUFFIX,digicert.com
@@ -33,6 +47,7 @@ DOMAIN-SUFFIX,myqnapcloud.com
 DOMAIN-SUFFIX,myqnapcloud.io
 DOMAIN-SUFFIX,nighteye.app
 DOMAIN-SUFFIX,nio.gs
+DOMAIN-SUFFIX,nssurge.com
 DOMAIN-SUFFIX,orbstack.dev
 DOMAIN-SUFFIX,photoprism.app
 DOMAIN-SUFFIX,plex.tv
@@ -52,7 +67,12 @@ DOMAIN-SUFFIX,replit.com
 DOMAIN-SUFFIX,scufgaming.com
 DOMAIN-SUFFIX,sectigo.com
 DOMAIN-SUFFIX,skk.moe
+DOMAIN-SUFFIX,stackoverflow.com
+DOMAIN-SUFFIX,surge-activation.com
 DOMAIN-SUFFIX,syncthing.net
+DOMAIN-SUFFIX,thetvdb.com
+DOMAIN-SUFFIX,tickstep.com
+DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,zerossl.com
 DOMAIN-KEYWORD,jav
 DOMAIN-KEYWORD,porn
