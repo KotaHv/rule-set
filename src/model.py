@@ -226,12 +226,23 @@ class RuleModel(BaseModel):
     def _filter_domain(self, domain: str):
         domain_parts = domain.split(".")
         suffixes_to_check = [
-            ".".join(domain_parts[-i:]) for i in range(2, len(domain_parts) + 1)
+            ".".join(domain_parts[i:]) for i in range(len(domain_parts))
+        ]
+        return not any(suffix in self.domain_suffix for suffix in suffixes_to_check)
+
+    def _filter_domain_suffix(self, domain_suffix: str):
+        domain_suffix_parts = domain_suffix.split(".")
+        suffixes_to_check = [
+            ".".join(domain_suffix_parts[i:])
+            for i in range(1, len(domain_suffix_parts))
         ]
         return not any(suffix in self.domain_suffix for suffix in suffixes_to_check)
 
     def filter(self):
-        self.domain = filter(lambda x: self._filter_domain(x), self.domain)
+        self.domain = list(filter(self._filter_domain, self.domain))
+        self.domain_suffix = list(
+            filter(self._filter_domain_suffix, self.domain_suffix)
+        )
 
     def has_only_ip_cidr_rules(self, ignore_types: list = []) -> bool:
         return self._has_only_rules_of_type(["ip_cidr", "ip_cidr6"], ignore_types)

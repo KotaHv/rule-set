@@ -118,7 +118,11 @@ SOURCES = [
         target_path="GameDownload",
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
+        resources=[
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
+            "sources/game.txt",
+            "sources/apex.txt",
+        ],
         target_path="Game",
     ),
     SourceModel(
