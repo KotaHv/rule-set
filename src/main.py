@@ -118,7 +118,9 @@ def _main():
             aggregated_rules.merge_with(deserialized_rules)
         for rule_types in source.option.exclude_rule_types:
             setattr(aggregated_rules, rule_types, set())
-        aggregated_rules.filter()
+        aggregated_rules.filter(
+            source.option.optimize_domains, source.option.exclude_optimized_domains
+        )
         aggregated_rules.sort()
 
         target_clients = (

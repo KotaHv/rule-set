@@ -1,4 +1,5 @@
 import validators
+import tldextract
 
 from config import LOGICAL_KEYWORDS, LOGICAL_AND_OR, LOGICAL_NOT
 
@@ -17,3 +18,8 @@ def is_logical_not(logical: str) -> bool:
 
 def validate_domain(domain: str) -> bool:
     return validators.domain(domain, rfc_2782=True)
+
+
+def is_eTLD(domain: str) -> bool:
+    result = tldextract.extract(domain)
+    return domain == result.suffix

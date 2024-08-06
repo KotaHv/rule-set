@@ -1,3 +1,4 @@
+from collections import defaultdict
 import ipaddress
 from pathlib import Path
 from typing import List, Annotated, Set, Any, Self
@@ -13,12 +14,14 @@ from pydantic import (
 )
 from pydantic_core import core_schema
 from pydantic.json_schema import JsonSchemaValue
+from loguru import logger
 
 
 from anytree import Node
 
 from serialize.logical import surge_logical_serialize
 from deserialize.logical import deserialize as logical_deserialize
+from utils import is_eTLD
 
 
 class SerializeFormat(str, Enum):
@@ -88,6 +91,8 @@ class Option(BaseModel):
     exclude_keywords: list[str] = []
     exclude_suffixes: list[str] = []
     exclude_rule_types: list[str] = []
+    optimize_domains: bool = False
+    exclude_optimized_domains: list[str] = []
 
 
 class SourceModel(BaseModel):
@@ -238,11 +243,53 @@ class RuleModel(BaseModel):
         ]
         return not any(suffix in self.domain_suffix for suffix in suffixes_to_check)
 
-    def filter(self):
-        self.domain = list(filter(self._filter_domain, self.domain))
-        self.domain_suffix = list(
-            filter(self._filter_domain_suffix, self.domain_suffix)
+    def _filter_domain_suffix_by_keyword(self, domain_suffix: str):
+        for keyword in self.domain_keyword:
+            if keyword in domain_suffix:
+                return False
+        return True
+
+    def _optimize_domains(self, exclude_optimized_domains: list[str] = []):
+        self.domain_suffix = set(
+            filter(self._filter_domain_suffix_by_keyword, self.domain_suffix)
         )
+        for domain in self.domain:
+            domain_parts = domain.split(".")
+            for index in range(len(domain_parts) - 1, -1, -1):
+                current_suffix = ".".join(domain_parts[index:])
+                if is_eTLD(current_suffix):
+                    continue
+                logger.error(f"DOMAIN,{domain} -> DOMAIN-SUFFIX,{current_suffix}")
+                self.domain_suffix.add(current_suffix)
+                break
+        self.domain.clear()
+        domain_suffix_count = defaultdict(int)
+        for domain_suffix in self.domain_suffix:
+            domain_suffix_parts = domain_suffix.split(".")
+            if len(domain_suffix) <= 2:
+                continue
+            for index in range(len(domain_suffix_parts) - 2, 0, -1):
+                current_suffix = ".".join(domain_suffix_parts[index:])
+                if is_eTLD(current_suffix):
+                    continue
+                if current_suffix in self.domain_suffix:
+                    break
+                domain_suffix_count[current_suffix] += 1
+        for domain_suffix, count in domain_suffix_count.items():
+            if count > 1 and domain_suffix not in exclude_optimized_domains:
+                logger.error(domain_suffix)
+                if isinstance(self.domain_suffix, set):
+                    self.domain_suffix.add(domain_suffix)
+                elif isinstance(self.domain_suffix, list):
+                    self.domain_suffix.append(domain_suffix)
+
+    def filter(
+        self, optimize_domains: bool = False, exclude_optimized_domains: list[str] = []
+    ):
+        self.domain = set(filter(self._filter_domain, self.domain))
+        if optimize_domains:
+            self._optimize_domains(exclude_optimized_domains)
+        self.domain_suffix = set(filter(self._filter_domain_suffix, self.domain_suffix))
 
     def has_only_ip_cidr_rules(self, ignore_types: list = []) -> bool:
         return self._has_only_rules_of_type(["ip_cidr", "ip_cidr6"], ignore_types)

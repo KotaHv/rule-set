@@ -14,6 +14,7 @@ dependencies = [
     "validators>=0.33.0",
     "maxminddb>=2.6.2",
     "protobuf>=5.27.2",
+    "tldextract>=5.1.2",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

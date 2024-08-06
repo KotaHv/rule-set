@@ -173,6 +173,8 @@ SOURCES = [
         option=Option(
             exclude_suffixes=[".cn"],
             exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
+            optimize_domains=True,
+            exclude_optimized_domains=["aliyuncs.com"],
         ),
     ),
     SourceModel(
