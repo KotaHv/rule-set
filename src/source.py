@@ -55,6 +55,9 @@ SOURCES = [
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All.list",
         target_path="Privacy",
+        option=Option(
+            optimize_domains_by_keyword=True,
+        ),
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
@@ -71,7 +74,6 @@ SOURCES = [
     SourceModel(
         resources=[
             "https://ruleset.skk.moe/List/non_ip/apple_services.conf",
-            # "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All.list",
         ],
         target_path="Apple_services",
     ),
@@ -184,6 +186,7 @@ SOURCES = [
             exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
             optimize_domains=True,
             exclude_optimized_domains=["aliyuncs.com"],
+            optimize_domains_by_keyword=True,
         ),
     ),
     SourceModel(

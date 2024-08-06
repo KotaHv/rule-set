@@ -84,6 +84,12 @@ class SourceResource(BaseModel):
             return False
 
 
+SourceResources = Annotated[
+    list[SourceResource],
+    BeforeValidator(lambda x: [x] if not isinstance(x, list) else x),
+]
+
+
 class Option(BaseModel):
     no_resolve: bool = True
     clash_optimize: bool = True
@@ -93,13 +99,11 @@ class Option(BaseModel):
     exclude_rule_types: list[str] = []
     optimize_domains: bool = False
     exclude_optimized_domains: list[str] = []
+    optimize_domains_by_keyword: bool = False
 
 
 class SourceModel(BaseModel):
-    resources: Annotated[
-        list[SourceResource],
-        BeforeValidator(lambda x: [x] if not isinstance(x, list) else x),
-    ]
+    resources: SourceResources
     target_path: Path | None = None
     exclude: SerializeFormats = []
     include: SerializeFormats | None = None
@@ -261,9 +265,6 @@ class RuleModel(BaseModel):
         return True
 
     def _optimize_domains(self, exclude_optimized_domains: list[str] = []):
-        self.domain_suffix = set(
-            filter(self._filter_domain_suffix_by_keyword, self.domain_suffix)
-        )
         for domain in self.domain:
             domain_parts = domain.split(".")
             for index in range(len(domain_parts) - 1, -1, -1):
@@ -294,12 +295,14 @@ class RuleModel(BaseModel):
                 elif isinstance(self.domain_suffix, list):
                     self.domain_suffix.append(domain_suffix)
 
-    def filter(
-        self, optimize_domains: bool = False, exclude_optimized_domains: list[str] = []
-    ):
+    def filter(self, option: Option):
         self.domain = set(filter(self._filter_domain, self.domain))
-        if optimize_domains:
-            self._optimize_domains(exclude_optimized_domains)
+        if option.optimize_domains_by_keyword:
+            self.domain_suffix = set(
+                filter(self._filter_domain_suffix_by_keyword, self.domain_suffix)
+            )
+        if option.optimize_domains:
+            self._optimize_domains(option.exclude_optimized_domains)
         self.domain_suffix = set(filter(self._filter_domain_suffix, self.domain_suffix))
 
     def has_only_ip_cidr_rules(self, ignore_types: list = []) -> bool:
