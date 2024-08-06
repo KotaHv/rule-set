@@ -1,5 +1,3 @@
-from typing import List
-
 from anytree import Node
 from loguru import logger
 
@@ -7,7 +5,7 @@ from serialize.error import UnsupportedRuleTypeError, SerializeError
 from utils import is_logical_keyword, is_logical_not, is_logical_and_or
 
 
-def _serialize(*, node: Node, include: List[str] | None = None) -> str:
+def _serialize(*, node: Node, include: list[str] | None = None) -> str:
     if isinstance(node.name, tuple):
         if include is not None and node.name[0].upper() not in include:
             raise UnsupportedRuleTypeError(node.name[0])
@@ -34,7 +32,7 @@ def _serialize(*, node: Node, include: List[str] | None = None) -> str:
     return rule
 
 
-def serialize(*, root_node: Node, include: List[str] | None = None) -> str | None:
+def serialize(*, root_node: Node, include: list[str] | None = None) -> str | None:
     try:
         return _serialize(node=root_node, include=include)[1:-2]
     except UnsupportedRuleTypeError as e:

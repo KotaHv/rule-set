@@ -1,7 +1,7 @@
 from collections import defaultdict
 import ipaddress
 from pathlib import Path
-from typing import List, Annotated, Set, Any, Self
+from typing import Annotated, Any, Self
 from enum import Enum
 
 from pydantic import (
@@ -34,7 +34,7 @@ class SerializeFormat(str, Enum):
 
 
 SerializeFormats = Annotated[
-    List[SerializeFormat],
+    list[SerializeFormat],
     BeforeValidator(lambda x: [x] if isinstance(x, SerializeFormat) else x),
 ]
 
@@ -97,7 +97,7 @@ class Option(BaseModel):
 
 class SourceModel(BaseModel):
     resources: Annotated[
-        List[SourceResource],
+        list[SourceResource],
         BeforeValidator(lambda x: [x] if not isinstance(x, list) else x),
     ]
     target_path: Path | None = None
@@ -172,16 +172,16 @@ AnyTreeNode = Annotated[Node, AnyTreeNodePydanticAnnotation]
 
 
 class RuleModel(BaseModel):
-    domain: Set[str] | List[str] = set()
-    domain_suffix: Set[str] | List[str] = set()
-    domain_keyword: Set[str] | List[str] = set()
-    domain_wildcard: Set[str] | List[str] = set()
-    ip_cidr: Set[str] | List[str] = set()
-    ip_cidr6: Set[str] | List[str] = set()
-    ip_asn: Set[str] | List[str] = set()
-    logical: List[AnyTreeNode] = []
-    process: Set[str] | List[str] = set()
-    ua: Set[str] | List[str] = set()
+    domain: set[str] | list[str] = set()
+    domain_suffix: set[str] | list[str] = set()
+    domain_keyword: set[str] | list[str] = set()
+    domain_wildcard: set[str] | list[str] = set()
+    ip_cidr: set[str] | list[str] = set()
+    ip_cidr6: set[str] | list[str] = set()
+    ip_asn: set[str] | list[str] = set()
+    logical: list[AnyTreeNode] = []
+    process: set[str] | list[str] = set()
+    ua: set[str] | list[str] = set()
 
     def merge_with(self, other: "RuleModel") -> None:
         self.domain.update(other.domain)

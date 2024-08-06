@@ -1,4 +1,3 @@
-from typing import List, Tuple
 import yaml
 from yaml import CDumper
 
@@ -110,7 +109,7 @@ class Serialize(BaseSerialize):
 
     def _serialize_payload(
         self, payload: str, behavior: str, style: str
-    ) -> Tuple[str, str]:
+    ) -> tuple[str, str]:
         return (
             behavior,
             yaml.dump(
@@ -122,7 +121,7 @@ class Serialize(BaseSerialize):
             ),
         )
 
-    def serialize(self) -> Tuple[str, str] | List[Tuple[str, str]]:
+    def serialize(self) -> tuple[str, str] | list[tuple[str, str]]:
         if self.option.clash_optimize:
             if not self.serialized_logical_rules:
                 if self.rules.has_only_domain_rules(ignore_types):

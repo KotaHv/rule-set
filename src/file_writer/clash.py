@@ -1,5 +1,4 @@
 from pathlib import Path
-from typing import List, Tuple, Dict
 
 from config import DIR_PATH
 from .write import write
@@ -7,15 +6,15 @@ from .write import write
 
 class FileWriter:
     def __init__(
-        self, *, data: Tuple[str, str] | List[Tuple[str, str]], target_path: Path
+        self, *, data: tuple[str, str] | list[tuple[str, str]], target_path: Path
     ) -> None:
         self.base_dir = DIR_PATH / "Clash"
         self.target_path = target_path
         data = [data] if isinstance(data, tuple) else data
-        self.file_data_map: Dict[Path, str] = {}
+        self.file_data_map: dict[Path, str] = {}
         self._prepare_filepaths(data)
 
-    def _prepare_filepaths(self, data: List[Tuple[str, str]]) -> None:
+    def _prepare_filepaths(self, data: list[tuple[str, str]]) -> None:
         single_entry = len(data) == 1
         parent_path = self.base_dir / self.target_path.parent
 

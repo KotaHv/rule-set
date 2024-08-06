@@ -1,5 +1,3 @@
-from typing import Dict, List
-
 from anytree import Node
 from loguru import logger
 
@@ -56,7 +54,7 @@ def serialize(*, root_node: Node) -> dict | None:
         )
 
 
-def _serialize(node: Node) -> Dict[str, List[Dict[str, str]] | str]:
+def _serialize(node: Node) -> dict[str, list[dict[str, str]] | str]:
     if isinstance(node.name, tuple):
         return format_rule(node.name[0], node.name[1])
     mode = node.name
@@ -86,7 +84,7 @@ def _serialize(node: Node) -> Dict[str, List[Dict[str, str]] | str]:
 
 def _serialize_not(
     node: Node, invert: bool = True
-) -> Dict[str, List[Dict[str, str]] | str]:
+) -> dict[str, list[dict[str, str]] | str]:
     child_node = node.children[0]
     if isinstance(child_node.name, tuple):
         if len(node.children) != 1:
@@ -107,7 +105,7 @@ def _serialize_not(
     return rule
 
 
-def format_rule(rule_type: str, rule: str) -> Dict[str, str]:
+def format_rule(rule_type: str, rule: str) -> dict[str, str]:
     rule_type = rule_type.lower()
     rule_type = type_format.get(rule_type, rule_type)
     if rule_type in include_types:

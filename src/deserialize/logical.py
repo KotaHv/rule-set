@@ -1,6 +1,5 @@
 import re
 import sys
-from typing import List
 
 from anytree import Node, RenderTree
 from loguru import logger
@@ -11,7 +10,7 @@ from utils import is_logical_keyword, is_logical_and_or, is_logical_not
 parentheses_re = re.compile(r"^\((.*)\)$")
 
 
-def split_outside_parentheses(s: str) -> List[str]:
+def split_outside_parentheses(s: str) -> list[str]:
     result = []
     current = []
     level = 0

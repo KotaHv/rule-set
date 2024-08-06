@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from typing import List
 
 from model import RuleModel
 
@@ -7,7 +6,7 @@ from model import RuleModel
 class BaseDeserialize(ABC):
     def __init__(
         self,
-        data: str | List[str],
+        data: str | list[str],
         exclude_keywords: list[str] = [],
         exclude_suffixes: list[str] = [],
     ) -> None:

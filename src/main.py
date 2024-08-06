@@ -1,5 +1,4 @@
 from pathlib import Path
-from typing import Dict, List, Tuple
 
 from loguru import logger
 
@@ -34,8 +33,8 @@ from file_writer import (
 )
 from file_writer.base import BaseFileWriter
 
-client_serializers_writers: Dict[
-    SerializeFormat, Tuple[BaseSerialize, BaseFileWriter]
+client_serializers_writers: dict[
+    SerializeFormat, tuple[BaseSerialize, BaseFileWriter]
 ] = {
     SerializeFormat.Surge: (SurgeSerialize, SurgeFileWriter),
     SerializeFormat.Loon: (LoonSerialize, LoonFileWriter),
@@ -68,7 +67,7 @@ def deserialize_data(
     raise Exception(f"Unknown format: {format}")
 
 
-def process_sources() -> List[SourceModel]:
+def process_sources() -> list[SourceModel]:
     sources = []
     for source in SOURCES:
         resources = []
