@@ -233,7 +233,11 @@ class RuleModel(BaseModel):
         suffixes_to_check = [
             ".".join(domain_parts[i:]) for i in range(len(domain_parts))
         ]
-        return not any(suffix in self.domain_suffix for suffix in suffixes_to_check)
+        for suffix in suffixes_to_check:
+            if suffix in self.domain_suffix:
+                logger.error(f"DOMAIN,{domain} -> DOMAIN-SUFFIX,{suffix}")
+                return False
+        return True
 
     def _filter_domain_suffix(self, domain_suffix: str):
         domain_suffix_parts = domain_suffix.split(".")
@@ -241,11 +245,18 @@ class RuleModel(BaseModel):
             ".".join(domain_suffix_parts[i:])
             for i in range(1, len(domain_suffix_parts))
         ]
-        return not any(suffix in self.domain_suffix for suffix in suffixes_to_check)
+        for suffix in suffixes_to_check:
+            if suffix in self.domain_suffix:
+                logger.error(f"DOMAIN-SUFFIX,{domain_suffix} -> DOMAIN-SUFFIX,{suffix}")
+                return False
+        return True
 
     def _filter_domain_suffix_by_keyword(self, domain_suffix: str):
         for keyword in self.domain_keyword:
             if keyword in domain_suffix:
+                logger.error(
+                    f"DOMAIN-SUFFIX,{domain_suffix} -> DOMAIN-KEYWORD,{keyword}"
+                )
                 return False
         return True
 
