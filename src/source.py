@@ -134,6 +134,9 @@ SOURCES = [
         target_path="Global",
         option=Option(
             exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
+            exclude_keywords=[
+                "-cn.",
+            ],
         ),
     ),
     SourceModel(
@@ -165,13 +168,19 @@ SOURCES = [
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Akamai/Akamai.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nvidia/Nvidia.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pinterest/Pinterest.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list",
             "my-rules/proxy.txt",
         ],
         target_path="Proxy",
         option=Option(
-            exclude_suffixes=[".cn"],
+            exclude_suffixes=[
+                ".cn",
+            ],
+            exclude_keywords=[
+                "-cn.",
+            ],
             exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
             optimize_domains=True,
             exclude_optimized_domains=["aliyuncs.com"],
