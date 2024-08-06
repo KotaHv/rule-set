@@ -1,4 +1,7 @@
 AND,((PROTOCOL,UDP),(DEST-PORT,123))
+DOMAIN,stun.moonlight-stream.org
+DOMAIN,stun.syncthing.net
+DOMAIN,v16m-default.akamaized.net
 # plex
 DOMAIN,app.plex.tv
 DOMAIN,me.plexapp.com
@@ -40,11 +43,13 @@ DOMAIN-SUFFIX,zerobyw5090.com
 DOMAIN-SUFFIX,amazon.cn
 DOMAIN-SUFFIX,bfengbf.com
 DOMAIN-SUFFIX,bqgka.com
+DOMAIN-SUFFIX,brovod.top
 DOMAIN-SUFFIX,cdnlz14.com
 DOMAIN-SUFFIX,darkreader.org
 DOMAIN-SUFFIX,decrypt.day
 DOMAIN-SUFFIX,dynv6.com
 DOMAIN-SUFFIX,e15f.net
+DOMAIN-SUFFIX,ffzy-play7.com
 DOMAIN-SUFFIX,ffzyread.com
 DOMAIN-SUFFIX,hfyrw.com
 DOMAIN-SUFFIX,ipv6-test.com
@@ -52,6 +57,7 @@ DOMAIN-SUFFIX,italkdd.com
 DOMAIN-SUFFIX,jb51.net
 DOMAIN-SUFFIX,lg.saltyfish.cloud
 DOMAIN-SUFFIX,lg.saltyfish.io
+DOMAIN-SUFFIX,lige.chat
 DOMAIN-SUFFIX,local.adguard.org
 DOMAIN-SUFFIX,mdxs123.com
 DOMAIN-SUFFIX,miduxs.com
@@ -70,9 +76,9 @@ DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN-SUFFIX,turgame.com
 DOMAIN-SUFFIX,ukubf4.com
 DOMAIN-SUFFIX,xiaowanjutv.com
+DOMAIN-SUFFIX,xn--sss604efuw.com
+DOMAIN-SUFFIX,xn--z7x900a.com
+DOMAIN-SUFFIX,yingheapp.com
 DOMAIN-SUFFIX,yinghuazy.xyz
 DOMAIN,discovery-v4.syncthing.net
 DOMAIN,discovery-v6.syncthing.net
-DOMAIN,stun.moonlight-stream.org
-DOMAIN,stun.syncthing.net
-DOMAIN,v16m-default.akamaized.net
