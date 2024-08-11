@@ -30,14 +30,20 @@ domain_suffix_set:
 - exp-tas.com
 - f-droid.org
 - fastmail.com
+- fontawesome.com
+- fork.dev
+- gamepad-tester.com
 - geotrust.com
 - globalsign.com
 - godaddy.com
 - grafana.com
+- hardwaretester.com
 - home-assistant.io
 - immich.app
 - ipinfo.io
 - istatmenus.app
+- iterm2.com
+- jquery.com
 - jsdelivr.com
 - jsdelivr.net
 - keygen.sh
@@ -52,6 +58,7 @@ domain_suffix_set:
 - myanimelist.net
 - myqnapcloud.com
 - myqnapcloud.io
+- nefarius.systems
 - nighteye.app
 - nio.gs
 - nssurge.com
@@ -67,6 +74,7 @@ domain_suffix_set:
 - protobuf.dev
 - proton.me
 - pydantic.dev
+- pylogmon.com
 - qnap.com
 - rapidssl.com
 - ray.so
@@ -75,6 +83,7 @@ domain_suffix_set:
 - readthedocs.io
 - readthedocs.org
 - replit.com
+- schemastore.org
 - scufgaming.com
 - sectigo.com
 - skk.moe
@@ -90,11 +99,17 @@ domain_suffix_set:
 - zendesk.com
 - zerossl.com
 domain_keyword_set:
+- amazon
+- cloudflare
 - discord
 - dropbox
 - facebook
 - jav
+- kindle
+- nvidia
 - pinterest
 - porn
 - sci-hub
+- spotify
+- vercel
 - whatsapp
