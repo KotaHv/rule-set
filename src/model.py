@@ -295,8 +295,23 @@ class RuleModel(BaseModel):
                 elif isinstance(self.domain_suffix, list):
                     self.domain_suffix.append(domain_suffix)
 
+    def _filter_domain_keyword(self, candidate_keyword: str):
+        for current_keyword in self.domain_keyword:
+            if (
+                current_keyword != candidate_keyword
+                and current_keyword in candidate_keyword
+            ):
+                logger.error(
+                    f"DOMAIN-KEYWORD,{candidate_keyword} -> DOMAIN-KEYWORD,{current_keyword}"
+                )
+                return False
+        return True
+
     def filter(self, option: Option):
         self.domain = set(filter(self._filter_domain, self.domain))
+        self.domain_keyword = set(
+            filter(self._filter_domain_keyword, self.domain_keyword)
+        )
         if option.optimize_domains_by_keyword:
             self.domain_suffix = set(
                 filter(self._filter_domain_suffix_by_keyword, self.domain_suffix)
