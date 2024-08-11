@@ -110,6 +110,11 @@ SOURCES = [
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list",
         target_path="Steam",
+        option=Option(
+            exclude_suffixes=[
+                ".cn",
+            ],
+        ),
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownloadCN/GameDownloadCN.list",
@@ -118,6 +123,11 @@ SOURCES = [
     SourceModel(
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownload/GameDownload.list",
         target_path="GameDownload",
+        option=Option(
+            exclude_suffixes=[
+                ".cn",
+            ],
+        ),
     ),
     SourceModel(
         resources=[
