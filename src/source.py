@@ -126,6 +126,11 @@ SOURCES = [
             "sources/apex.txt",
         ],
         target_path="Game",
+        option=Option(
+            exclude_suffixes=[
+                ".cn",
+            ],
+        ),
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/domestic.conf",
@@ -173,6 +178,7 @@ SOURCES = [
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pinterest/Pinterest.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
             "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/EHGallery/EHGallery.list",
             "my-rules/proxy.txt",
         ],
         target_path="Proxy",
