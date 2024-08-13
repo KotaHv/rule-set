@@ -2,32 +2,21 @@ no_resolve: true
 domain_set:
 - steammobile.akamaized.net
 domain_suffix_set:
-- cdn-ali.content.steamchina.com
-- cdn-qc.content.steamchina.com
-- cdn-ws.content.steamchina.com
-- dl.steam.clngaa.com
-- dl.steam.ksyna.com
 - fanatical.com
 - humblebundle.com
 - playartifact.com
 - s.team
-- st.dl.bscstorage.net
-- st.dl.eccdnx.com
-- st.dl.pinyuncloud.com
 - steam-api.com
 - steam-chat.com
 - steambroadcast.akamaized.net
 - steamcdn-a.akamaihd.net
 - steamcommunity-a.akamaihd.net
 - steamcommunity.com
-- steamcontent.tnkjmec.com
 - steamgames.com
 - steampipe.akamaized.net
 - steampowered.com
-- steampowered.com.8686c.com
 - steamstat.us
 - steamstatic.com
-- steamstatic.com.8686c.com
 - steamstore-a.akamaihd.net
 - steamunlocked.net
 - steamusercontent-a.akamaihd.net
@@ -35,7 +24,6 @@ domain_suffix_set:
 - steamvideo-a.akamaihd.net
 - underlords.com
 - valvesoftware.com
-- wmsjsteam.com
 domain_keyword_set:
 - steambroadcast
 - steamstore
