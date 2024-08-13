@@ -64,6 +64,18 @@ SOURCES = [
         target_path="OpenAI",
     ),
     SourceModel(
+        resources=[
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list",
+            "sources/ai.txt",
+        ],
+        target_path="AI",
+        option=Option(
+            exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
+        ),
+    ),
+    SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
         target_path="Apple_cdn",
     ),
