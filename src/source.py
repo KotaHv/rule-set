@@ -113,6 +113,15 @@ SOURCES = [
         option=Option(
             exclude_suffixes=[
                 ".cn",
+                "steamchina.com",
+                "clngaa.com",
+                "ksyna.com",
+                "bscstorage.net",
+                "eccdnx.com",
+                "pinyuncloud.com",
+                "tnkjmec.com",
+                "8686c.com",
+                "wmsjsteam.com",
             ],
         ),
     ),
