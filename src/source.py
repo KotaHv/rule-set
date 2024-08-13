@@ -140,7 +140,23 @@ SOURCES = [
     ),
     SourceModel(
         resources=[
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
+            "sources/game-cn.txt",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list",
+        ],
+        target_path="GameCN",
+    ),
+    SourceModel(
+        resources=[
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/EA/EA.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gog/Gog.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nintendo/Nintendo.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PlayStation/PlayStation.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Xbox/Xbox.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/UBI/UBI.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Battle/Battle.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Blizzard/Blizzard.list",
             "sources/game.txt",
             "sources/apex.txt",
         ],
@@ -148,7 +164,17 @@ SOURCES = [
         option=Option(
             exclude_suffixes=[
                 ".cn",
+                "china.com",
+                "clngaa.com",
+                "ksyna.com",
+                "bscstorage.net",
+                "eccdnx.com",
+                "pinyuncloud.com",
+                "tnkjmec.com",
+                "8686c.com",
+                "wmsjsteam.com",
             ],
+            exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
         ),
     ),
     SourceModel(
