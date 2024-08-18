@@ -1,7 +1,5 @@
 no_resolve: true
 domain_set:
-- cdn.bootcdn.net
-- cdn.bootcss.com
 - cn.download.nvidia.com
 - lv.queniujq.cn
 - www.intel.cn
@@ -243,6 +241,7 @@ domain_suffix_set:
 - didistatic.com
 - digicert.cn
 - dingtalk.com
+- dizzylab.net
 - dl.bscstorage.net
 - dl.delivery.mp.microsoft.com
 - dl.eccdnx.com
@@ -621,8 +620,6 @@ domain_suffix_set:
 - speedtest.cn
 - sspai.com
 - staticdn.net
-- staticfile.net
-- staticfile.org
 - steam.clngaa.com
 - steam.ksyna.com
 - steamchina.com
