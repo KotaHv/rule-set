@@ -45,6 +45,7 @@ DOMAIN-SUFFIX,akamaistream.net
 DOMAIN-SUFFIX,akamaized.net
 DOMAIN-SUFFIX,akile.io
 DOMAIN-SUFFIX,alexa.com
+DOMAIN-SUFFIX,altstore.io
 DOMAIN-SUFFIX,amaaozn.com
 DOMAIN-SUFFIX,amp.dev
 DOMAIN-SUFFIX,amplifyapp.com
@@ -66,6 +67,7 @@ DOMAIN-SUFFIX,apigee.com
 DOMAIN-SUFFIX,apkmirror.com
 DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,app-measurement.net
+DOMAIN-SUFFIX,app-us1.com
 DOMAIN-SUFFIX,appbridge.ca
 DOMAIN-SUFFIX,appbridge.io
 DOMAIN-SUFFIX,appbridge.it
@@ -119,6 +121,7 @@ DOMAIN-SUFFIX,blogger.com
 DOMAIN-SUFFIX,bluekai.com
 DOMAIN-SUFFIX,bml.info
 DOMAIN-SUFFIX,booth.pm
+DOMAIN-SUFFIX,bootstrapcdn.com
 DOMAIN-SUFFIX,boxofficemojo.com
 DOMAIN-SUFFIX,braintreegateway.com
 DOMAIN-SUFFIX,braintreegateway.tv
@@ -128,6 +131,7 @@ DOMAIN-SUFFIX,braintreepayments.org
 DOMAIN-SUFFIX,braintreepayments.tv
 DOMAIN-SUFFIX,braintreepaymentsolutions.com
 DOMAIN-SUFFIX,braintreeps.com
+DOMAIN-SUFFIX,brew.sh
 DOMAIN-SUFFIX,brex.com
 DOMAIN-SUFFIX,briantreepayments.net
 DOMAIN-SUFFIX,briantreepayments.tv
@@ -150,6 +154,7 @@ DOMAIN-SUFFIX,cash2.com
 DOMAIN-SUFFIX,cashify.com
 DOMAIN-SUFFIX,cashify.net
 DOMAIN-SUFFIX,cdkworkshop.com
+DOMAIN-SUFFIX,cdnst.net
 DOMAIN-SUFFIX,certificate-transparency.dev
 DOMAIN-SUFFIX,certificate-transparency.org
 DOMAIN-SUFFIX,cf-ipfs.com
@@ -236,6 +241,7 @@ DOMAIN-SUFFIX,edgesuite.net
 DOMAIN-SUFFIX,egernapp.com
 DOMAIN-SUFFIX,ehgt.org
 DOMAIN-SUFFIX,ehwiki.org
+DOMAIN-SUFFIX,elaina.moe
 DOMAIN-SUFFIX,elasticbeanstalk.com
 DOMAIN-SUFFIX,eloqua.com
 DOMAIN-SUFFIX,eloquaeditors.com
@@ -250,6 +256,8 @@ DOMAIN-SUFFIX,experiencebillmelater.com
 DOMAIN-SUFFIX,ext-twitch.tv
 DOMAIN-SUFFIX,extensionworkshop.com
 DOMAIN-SUFFIX,f-droid.org
+DOMAIN-SUFFIX,faceit-cdn.net
+DOMAIN-SUFFIX,faceit.com
 DOMAIN-SUFFIX,fanbox.cc
 DOMAIN-SUFFIX,fastlane.ci
 DOMAIN-SUFFIX,fastlane.tools
@@ -270,6 +278,7 @@ DOMAIN-SUFFIX,flutterapp.com
 DOMAIN-SUFFIX,fontawesome.com
 DOMAIN-SUFFIX,foofle.com
 DOMAIN-SUFFIX,fork.dev
+DOMAIN-SUFFIX,freedif.org
 DOMAIN-SUFFIX,froogle.com
 DOMAIN-SUFFIX,fuchsia.dev
 DOMAIN-SUFFIX,g-tun.com
@@ -396,6 +405,7 @@ DOMAIN-SUFFIX,lastpass.com
 DOMAIN-SUFFIX,lencr.org
 DOMAIN-SUFFIX,lige.chat
 DOMAIN-SUFFIX,like.com
+DOMAIN-SUFFIX,lineageos.org
 DOMAIN-SUFFIX,linuxcontainers.org
 DOMAIN-SUFFIX,live-video.net
 DOMAIN-SUFFIX,llnwd.net
@@ -414,6 +424,7 @@ DOMAIN-SUFFIX,mediawiki.org
 DOMAIN-SUFFIX,meet.new
 DOMAIN-SUFFIX,metacubex.one
 DOMAIN-SUFFIX,mfg-inspector.com
+DOMAIN-SUFFIX,mihomo.party
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,mobileview.page
 DOMAIN-SUFFIX,mofoprod.net
@@ -448,6 +459,7 @@ DOMAIN-SUFFIX,npm.community
 DOMAIN-SUFFIX,npmjs.com
 DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,nssurge.com
+DOMAIN-SUFFIX,ntdm9.com
 DOMAIN-SUFFIX,nvda.d2.sc.omtrdc.net
 DOMAIN-SUFFIX,oasisfeng.com
 DOMAIN-SUFFIX,oauthz.com
@@ -541,6 +553,7 @@ DOMAIN-SUFFIX,protobuf.dev
 DOMAIN-SUFFIX,proton.me
 DOMAIN-SUFFIX,pscdn.co
 DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,pub.dev
 DOMAIN-SUFFIX,publishproxy.com
 DOMAIN-SUFFIX,pv-cdn.net
 DOMAIN-SUFFIX,pwnedpasswords.com
@@ -565,6 +578,7 @@ DOMAIN-SUFFIX,questvisual.com
 DOMAIN-SUFFIX,quickoffice.com
 DOMAIN-SUFFIX,quiksee.com
 DOMAIN-SUFFIX,rapidssl.com
+DOMAIN-SUFFIX,raspberrypi.com
 DOMAIN-SUFFIX,rawgit.com
 DOMAIN-SUFFIX,ray.so
 DOMAIN-SUFFIX,raycast.com
@@ -588,6 +602,7 @@ DOMAIN-SUFFIX,run.app
 DOMAIN-SUFFIX,rust-lang.org
 DOMAIN-SUFFIX,rustup.rs
 DOMAIN-SUFFIX,s-xoom.com
+DOMAIN-SUFFIX,sagernet.org
 DOMAIN-SUFFIX,savethedate.foo
 DOMAIN-SUFFIX,saynow.com
 DOMAIN-SUFFIX,scdn.co
@@ -609,6 +624,7 @@ DOMAIN-SUFFIX,skk.moe
 DOMAIN-SUFFIX,sms-activate.io
 DOMAIN-SUFFIX,snapseed.com
 DOMAIN-SUFFIX,solveforx.com
+DOMAIN-SUFFIX,sourceforge.net
 DOMAIN-SUFFIX,splunkcloud.com
 DOMAIN-SUFFIX,spoti.fi
 DOMAIN-SUFFIX,spotilocal.com
@@ -623,6 +639,7 @@ DOMAIN-SUFFIX,stxmosquito.com
 DOMAIN-SUFFIX,stxmosquitoproject.com
 DOMAIN-SUFFIX,stxmosquitoproject.net
 DOMAIN-SUFFIX,stxmosquitoproject.org
+DOMAIN-SUFFIX,sub.store
 DOMAIN-SUFFIX,sun.com
 DOMAIN-SUFFIX,surge-activation.com
 DOMAIN-SUFFIX,swiftbank.info
@@ -635,6 +652,7 @@ DOMAIN-SUFFIX,swiftgram.app
 DOMAIN-SUFFIX,syncthing.net
 DOMAIN-SUFFIX,synergyse.com
 DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,teachparentstech.org
 DOMAIN-SUFFIX,tegrazone.co
 DOMAIN-SUFFIX,tegrazone.co.kr
@@ -676,9 +694,11 @@ DOMAIN-SUFFIX,txvia.com
 DOMAIN-SUFFIX,unfiltered.news
 DOMAIN-SUFFIX,urchin.com
 DOMAIN-SUFFIX,useplannr.com
+DOMAIN-SUFFIX,usertrust.com
 DOMAIN-SUFFIX,usvimosquito.com
 DOMAIN-SUFFIX,usvimosquitoproject.com
 DOMAIN-SUFFIX,v2ex.com
+DOMAIN-SUFFIX,v2fly.org
 DOMAIN-SUFFIX,v8.dev
 DOMAIN-SUFFIX,v8project.org
 DOMAIN-SUFFIX,velostrata.com
@@ -771,6 +791,8 @@ DOMAIN-SUFFIX,zeit.sh
 DOMAIN-SUFFIX,zeitworld.com
 DOMAIN-SUFFIX,zendesk.com
 DOMAIN-SUFFIX,zerossl.com
+DOMAIN-SUFFIX,ziffstatic.com
+DOMAIN-SUFFIX,znipe.tv
 DOMAIN-SUFFIX,zukunftswerkstatt.de
 DOMAIN-SUFFIX,zynamics.com
 DOMAIN-KEYWORD,amazon
