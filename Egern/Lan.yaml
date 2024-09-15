@@ -1,7 +1,6 @@
 no_resolve: false
 domain_set:
 - asusrouter.com
-- connect.rom.miui.com
 - instant.arubanetworks.com
 - oasisauth.h3c.com
 - router.asus.com
@@ -104,27 +103,17 @@ domain_suffix_set:
 - 99.100.in-addr.arpa
 - a.e.f.ip6.arpa
 - b.e.f.ip6.arpa
-- captive.apple.com
-- connectivitycheck.gstatic.com
-- cp.cloudflare.com
 - d.f.ip6.arpa
-- detectportal.firefox.com
 - hiwifi.com
 - home.arpa
 - leike.cc
 - localhost.ptlogin2.qq.com
 - localhost.sec.qq.com
-- location.services.mozilla.com
-- msftconnecttest.com
-- msftncsi.com
 - my.router
-- networkcheck.kde.org
 - p.to
 - peiluyou.com
 - phicomm.me
-- ping.archlinux.org
 - plex.direct
-- push.services.mozilla.com
 - router.ctc
 - routerlogin.com
 - tendawifi.com
