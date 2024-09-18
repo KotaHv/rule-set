@@ -223,4 +223,3 @@ payload:
 - IP-CIDR,222.221.5.252/32,no-resolve
 - IP-CIDR,222.221.5.253/32,no-resolve
 - IP-CIDR,223.82.248.117/32,no-resolve
-- AND,((DOMAIN-KEYWORD,genuine),(DOMAIN-KEYWORD,autodesk))
