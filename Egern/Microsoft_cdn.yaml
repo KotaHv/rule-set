@@ -1,6 +1,8 @@
 no_resolve: true
 domain_set:
+- res-1.cdn.office.net
 - res.cdn.office.net
+- statics.teams.cdn.office.net
 domain_suffix_set:
 - build.microsoft.com
 - cn.windowssearch.com
