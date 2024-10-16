@@ -1,10 +1,13 @@
 no_resolve: true
 domain_set:
+- acg.tv
+- b23.tv
 - cn.download.nvidia.com
 - config.ubnt.com
 - dl.ubnt.com
 - gstore.val.manlaxy.com
 - lv.queniujq.cn
+- url.cn
 - www.intel.cn
 - www.layuicdn.com
 domain_suffix_set:
@@ -63,6 +66,7 @@ domain_suffix_set:
 - 56.com
 - 58.com
 - 58cdn.com.cn
+- 6.cn
 - 6600.org
 - 66law.cn
 - 71.am.com
@@ -81,7 +85,6 @@ domain_suffix_set:
 - abchina.com
 - abchina.com.cn
 - acfun.cn
-- acg.tv
 - acgvideo.com
 - aicdn.com
 - aicoinstorge.com
@@ -122,7 +125,6 @@ domain_suffix_set:
 - authing.co
 - autohome.com.cn
 - autonavi.com
-- b23.tv
 - baidu.cn
 - baidu.com
 - baidubce.com
@@ -257,15 +259,12 @@ domain_suffix_set:
 - dl.delivery.mp.microsoft.com
 - dl.eccdnx.com
 - dl.pinyuncloud.com
-- dns.pub
 - dnspod.cn
 - dnspod.com
 - dnsv1.com
 - docer.com
 - docin.com
 - docschina.org
-- doh.pub
-- dot.pub
 - douban.com
 - douban.fm
 - doubanio.com
@@ -311,6 +310,7 @@ domain_suffix_set:
 - fqnovelpic.com
 - frdic.com
 - freshhema.com
+- fun.tv
 - funshion.com
 - futu5.com
 - futunn.com
@@ -430,6 +430,7 @@ domain_suffix_set:
 - ksord.com
 - ksosoft.com
 - ksyun.com
+- ku6.com
 - kuaishou.com
 - kuaishouzt.com
 - kugou.com
@@ -482,7 +483,6 @@ domain_suffix_set:
 - mmstat.com
 - mobike.com
 - mobileservice.cn
-- moegirl.org.cn
 - msstatic.com
 - mtyun.com
 - mubu.com
@@ -502,7 +502,6 @@ domain_suffix_set:
 - netstatic.net
 - nmc.cn
 - npmmirror.com
-- ntp.org.cn
 - nubia.cn
 - nubia.com
 - officewebapps.cn
@@ -521,6 +520,7 @@ domain_suffix_set:
 - oray.com
 - oray.net
 - orayimg.com
+- org.cn
 - oschina.net
 - ourdvs.com
 - outlook.cn
@@ -537,9 +537,11 @@ domain_suffix_set:
 - pingan.com
 - pingwest.com
 - pphimalayanrt.com
+- pplive.cn
 - pplive.com
 - pps.tv
 - ppsimg.com
+- pptv.com
 - psbc.com
 - pstatp.com
 - pubyun.com
@@ -560,6 +562,7 @@ domain_suffix_set:
 - qichacha.com
 - qidian.com
 - qihucdn.com
+- qiku.com
 - qingcdn.com
 - qiniu.com
 - qixin.com
@@ -670,7 +673,6 @@ domain_suffix_set:
 - ui.com.cn
 - unionpay.com
 - upyun.com
-- url.cn
 - v-56.com
 - vip.com
 - vivo.com
