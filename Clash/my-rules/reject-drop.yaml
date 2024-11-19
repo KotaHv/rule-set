@@ -1,9 +1,11 @@
 payload:
+- DOMAIN,ca.iadsdk.apple.com
 - DOMAIN,dataflow.biliapi.com
 - DOMAIN-SUFFIX,cm.bilibili.com
 - DOMAIN-SUFFIX,collector.github.com
 - DOMAIN-SUFFIX,data.bilibili.com
 - DOMAIN-SUFFIX,im-x.jd.com
+- DOMAIN-SUFFIX,in.appcenter.ms
 - DOMAIN-SUFFIX,launches.appsflyer.com
 - DOMAIN-SUFFIX,mars.jd.com
 - DOMAIN-SUFFIX,s.deepl.com
