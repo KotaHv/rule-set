@@ -12,7 +12,10 @@ class Fetcher:
     def __init__(self) -> None:
         self.max_retries = 5
         self.http_client = Client(
-            http2=True, timeout=10, transport=HTTPTransport(retries=self.max_retries)
+            http2=True,
+            timeout=10,
+            transport=HTTPTransport(retries=self.max_retries),
+            follow_redirects=True,
         )
         self.cache = Cache(path="fetcher")
 
@@ -20,9 +23,8 @@ class Fetcher:
         last_exception = None
         for _ in range(self.max_retries):
             try:
-                response = self.http_client.get(url)
-                if response.is_success:
-                    return response
+                response = self.http_client.get(url).raise_for_status()
+                return response
             except Exception as e:
                 last_exception = e
                 sleep(2)
