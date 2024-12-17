@@ -6,7 +6,6 @@ domain_set:
 - login.live.com
 - logincdn.msauth.net
 - originasserts.akamaized.net
-- steammobile.akamaized.net
 - store-images.s-microsoft.com
 domain_suffix_set:
 - 100classicbooks.com
@@ -117,11 +116,13 @@ domain_suffix_set:
 - eastore.com
 - easy.ac
 - easyanticheat.net
+- edge.steam-dns.top.comcast.net
 - electronicarts.com
 - electronicarts.fr
 - epicgames.com
 - epicgames.dev
 - excitebots.com
+- f3b7q2p3.ssl.hwcdn.net
 - fanatical.com
 - fifastreet.com
 - fifastreet3.com
@@ -315,11 +316,24 @@ domain_suffix_set:
 - starwarstheoldrepublic.com
 - steam-api.com
 - steam-chat.com
+- steam.apac.qtlglb.com
+- steam.cdn.on.net
+- steam.cdn.orcon.net.nz
+- steam.cdn.slingshot.co.nz
+- steam.cdn.webra.ru
+- steam.eca.qtlglb.com
+- steam.naeu.qtlglb.com
+- steam.ru.qtlglb.com
+- steam.tv
 - steambroadcast.akamaized.net
 - steamcdn-a.akamaihd.net
 - steamcommunity-a.akamaihd.net
 - steamcommunity.com
+- steamdeck.com
 - steamgames.com
+- steammobile.akamaized.net
+- steampipe-kr.akamaized.net
+- steampipe-partner.akamaized.net
 - steampipe.akamaized.net
 - steampowered.com
 - steamstat.us
