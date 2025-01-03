@@ -1,5 +1,6 @@
 payload:
 - DOMAIN-KEYWORD,-logging.nextmedia.com
+- DOMAIN-KEYWORD,-rtb.gravite.net
 - DOMAIN-KEYWORD,-s2s.sensic.net
 - DOMAIN-KEYWORD,-spiky.clevertap-prod.com
 - DOMAIN-KEYWORD,-tracker.biliapi.net
@@ -22,8 +23,12 @@ payload:
 - DOMAIN-KEYWORD,adsyndication
 - DOMAIN-KEYWORD,advertmarket
 - DOMAIN-KEYWORD,adwords
+- DOMAIN-KEYWORD,analytics-cdn.
 - DOMAIN-KEYWORD,anybest.
 - DOMAIN-KEYWORD,appsflyer
+- DOMAIN-KEYWORD,backstory.ebay.
+- DOMAIN-KEYWORD,click.rum.
+- DOMAIN-KEYWORD,cmpworker.
 - DOMAIN-KEYWORD,cp-home-pl-
 - DOMAIN-KEYWORD,dnserror
 - DOMAIN-KEYWORD,doubleclick.
@@ -35,6 +40,7 @@ payload:
 - DOMAIN-KEYWORD,flightsy
 - DOMAIN-KEYWORD,gettate
 - DOMAIN-KEYWORD,hostingcloud
+- DOMAIN-KEYWORD,insights-collector.
 - DOMAIN-KEYWORD,jshosting
 - DOMAIN-KEYWORD,marketing.net
 - DOMAIN-KEYWORD,mighbest
@@ -42,6 +48,7 @@ payload:
 - DOMAIN-KEYWORD,smetrics.marketing.
 - DOMAIN-KEYWORD,sunnimiq
 - DOMAIN-KEYWORD,telemetry.officeapps.live.com
+- DOMAIN-KEYWORD,track.opentable.
 - DOMAIN-KEYWORD,track.tiara
 - DOMAIN-KEYWORD,umeng
 - DOMAIN-KEYWORD,wxsnsdy
