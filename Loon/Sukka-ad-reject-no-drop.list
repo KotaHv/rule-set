@@ -1,4 +1,5 @@
 DOMAIN-SUFFIX,mcdn.bilivideo.cn
 DOMAIN-SUFFIX,p2p.huya.com
+DOMAIN-SUFFIX,szbdyd.com
 AND,((DOMAIN-KEYWORD,stun),(DOMAIN-KEYWORD,douyu))
 AND,((PROTOCOL,UDP),(DOMAIN-SUFFIX,googlevideo.com))
