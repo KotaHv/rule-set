@@ -221,4 +221,14 @@ payload:
 - IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
 - IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
 - IP-CIDR6,240e:928:1400:10::25/128,no-resolve
+- IP-ASN,945,no-resolve
+- IP-ASN,1012,no-resolve
+- IP-ASN,7257,no-resolve
+- IP-ASN,7719,no-resolve
+- IP-ASN,18044,no-resolve
+- IP-ASN,27523,no-resolve
+- IP-ASN,54625,no-resolve
+- IP-ASN,62489,no-resolve
+- IP-ASN,62853,no-resolve
+- IP-ASN,401111,no-resolve
 - AND,((DOMAIN-KEYWORD,stun),(DOMAIN-KEYWORD,douyu))
