@@ -63,7 +63,7 @@ def deserialize_data(
         )
         return de.deserialize()
     elif format == ResourceFormat.MaxMindDB:
-        return mmdb.deserialize(data)
+        return mmdb.deserialize(data, country_code=option.geo_ip_country_code)
     raise Exception(f"Unknown format: {format}")
 
 

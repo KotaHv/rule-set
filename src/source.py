@@ -18,28 +18,13 @@ SOURCES = [
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
         target_path="Sukka-ad",
-        include=[SerializeFormat.Surge, SerializeFormat.Loon],
     ),
     SourceModel(
-        resources=[
-            "https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
-            ("https://ruleset.skk.moe/List/domainset/reject.conf", "DOMAIN-SET"),
-            "https://ruleset.skk.moe/List/non_ip/reject.conf",
-            "https://ruleset.skk.moe/List/ip/reject.conf",
-        ],
-        target_path="Sukka-ad",
-        include=SerializeFormat.Clash,
-    ),
-    SourceModel(
-        resources=[
-            "https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
-            "https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
-            ("https://ruleset.skk.moe/List/domainset/reject.conf", "DOMAIN-SET"),
-            "https://ruleset.skk.moe/List/non_ip/reject.conf",
-            "https://ruleset.skk.moe/List/ip/reject.conf",
-        ],
-        target_path="Sukka-ad",
-        include=[SerializeFormat.Egern, SerializeFormat.Sing_Box],
+        resources=(
+            "https://ruleset.skk.moe/List/domainset/reject_extra.conf",
+            "DOMAIN-SET",
+        ),
+        target_path="Sukka-ad-extra",
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list",
@@ -277,6 +262,22 @@ SOURCES = [
             "MaxMind DB",
         ),
         target_path="CN",
+        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+    ),
+    SourceModel(
+        resources=(
+            "https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb",
+            "MaxMind DB",
+        ),
+        target_path="CN-IPinfo",
+        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+    ),
+    SourceModel(
+        resources=(
+            "https://github.com/xream/geoip/releases/latest/download/ip2location.country.mmdb",
+            "MaxMind DB",
+        ),
+        target_path="CN-IP2Location",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
     SourceModel(
