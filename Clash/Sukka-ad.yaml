@@ -33,6 +33,7 @@ payload:
 - DOMAIN-KEYWORD,click.rum.
 - DOMAIN-KEYWORD,cmpworker.
 - DOMAIN-KEYWORD,cp-home-pl-
+- DOMAIN-KEYWORD,dc.pimentaafricana
 - DOMAIN-KEYWORD,dnserror
 - DOMAIN-KEYWORD,doubleclick.
 - DOMAIN-KEYWORD,dubester.
@@ -52,13 +53,13 @@ payload:
 - DOMAIN-KEYWORD,smetrics.
 - DOMAIN-KEYWORD,sunnimiq
 - DOMAIN-KEYWORD,telemetry.officeapps.live.com
+- DOMAIN-KEYWORD,track.msadcenter
 - DOMAIN-KEYWORD,track.opentable.
 - DOMAIN-KEYWORD,track.tiara
 - DOMAIN-KEYWORD,umeng
 - DOMAIN-KEYWORD,wxsnsdy
 - DOMAIN-KEYWORD,zymerget
 - IP-CIDR,0.0.0.0/24,no-resolve
-- IP-CIDR,5.253.59.162/32,no-resolve
 - IP-CIDR,10.72.25.0/24,no-resolve
 - IP-CIDR,23.202.231.167/32,no-resolve
 - IP-CIDR,23.217.138.108/32,no-resolve
