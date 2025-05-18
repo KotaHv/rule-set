@@ -1,11 +1,16 @@
 payload:
 - DOMAIN-KEYWORD,-analytics-events.apple.com
 - DOMAIN-KEYWORD,-logging.nextmedia.com
+- DOMAIN-KEYWORD,-logsdk.kwai-pro.com^
 - DOMAIN-KEYWORD,-rtb.gravite.net
 - DOMAIN-KEYWORD,-s2s.sensic.net
 - DOMAIN-KEYWORD,-spiky.clevertap-prod.com
 - DOMAIN-KEYWORD,-tracker.biliapi.net
 - DOMAIN-KEYWORD,-txtagstore
+- DOMAIN-KEYWORD,-ulog.ksapisrv.com
+- DOMAIN-KEYWORD,-ulog.kwai-pro.com
+- DOMAIN-KEYWORD,-ulogl2.kwai-pro.com
+- DOMAIN-KEYWORD,-ulogl2.kwaipros.com
 - DOMAIN-KEYWORD,.engage.3m.
 - DOMAIN-KEYWORD,.estream.
 - DOMAIN-KEYWORD,.freecontent.
@@ -146,7 +151,6 @@ payload:
 - IP-CIDR,125.211.213.130/31,no-resolve
 - IP-CIDR,125.211.213.132/31,no-resolve
 - IP-CIDR,125.211.213.134/32,no-resolve
-- IP-CIDR,155.138.203.91/32,no-resolve
 - IP-CIDR,162.243.103.246/32,no-resolve
 - IP-CIDR,169.254.169.254/32,no-resolve
 - IP-CIDR,175.6.223.15/32,no-resolve
