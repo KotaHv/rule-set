@@ -46,9 +46,9 @@ class Format:
 
     def parse(self):
         for rule in self.data:
+            rule = rule.strip()
             if not rule:
                 continue
-            rule = rule.strip()
             if self.is_comment(rule):
                 comment_rule = rule[1:]
                 comment_rule = comment_rule.split(",")
