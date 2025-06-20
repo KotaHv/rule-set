@@ -284,4 +284,12 @@ SOURCES = [
         resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OneDrive/OneDrive.list",
         target_path="OneDrive",
     ),
+    SourceModel(
+        resources=(
+            "https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/Country.mmdb",
+            "MaxMind DB",
+        ),
+        target_path="CN-MMDBChinaIPList",
+        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+    ),  
 ]
