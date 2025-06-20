@@ -291,5 +291,10 @@ SOURCES = [
         ),
         target_path="CN-MMDBChinaIPList",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
-    ),  
+    ),
+    SourceModel(
+        resources=["https://ruleset.skk.moe/List/ip/china_ip.conf", "https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf"],
+        target_path="CN-Sukka",
+        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+    ),
 ]
