@@ -1,4 +1,8 @@
 # 1password
+DOMAIN,api.privacy.com
+DOMAIN,api.pwnedpasswords.com
+DOMAIN,cache.agilebits.com
+DOMAIN,in.appcenter.ms
 DOMAIN-SUFFIX,1infra.net
 DOMAIN-SUFFIX,1password.com
 DOMAIN-SUFFIX,1passwordservices.com
@@ -7,11 +11,11 @@ DOMAIN-SUFFIX,brex.com
 DOMAIN-SUFFIX,fastmail.com
 DOMAIN-SUFFIX,globalsign.com
 DOMAIN-SUFFIX,lastpass.com
-DOMAIN,api.privacy.com
-DOMAIN,api.pwnedpasswords.com
-DOMAIN,cache.agilebits.com
-DOMAIN,in.appcenter.ms
+
 # ------
+DOMAIN,bunnycdn-video-assets.b-cdn.net
+DOMAIN,dl.ubnt.com
+DOMAIN,dynv6.com
 DOMAIN-SUFFIX,188399.xyz
 DOMAIN-SUFFIX,1stream.icu
 DOMAIN-SUFFIX,2bdm.cc
@@ -169,5 +173,3 @@ DOMAIN-KEYWORD,sci-hub
 DOMAIN-KEYWORD,spotify
 DOMAIN-KEYWORD,vercel
 DOMAIN-KEYWORD,whatsapp
-DOMAIN,dl.ubnt.com
-DOMAIN,dynv6.com

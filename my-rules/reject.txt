@@ -3,6 +3,7 @@ DOMAIN,api.simpleallowcopy.com
 DOMAIN,ca.iadsdk.apple.com
 DOMAIN,dataflow.biliapi.com
 DOMAIN,jw.cccp.sbs
+DOMAIN,local.passport.douyu.com
 DOMAIN,tqos-yun.anticheatexpert.com
 DOMAIN-SUFFIX,a-cn.duoyi.com
 DOMAIN-SUFFIX,a.cn.duoyi.com
@@ -16,5 +17,5 @@ DOMAIN-SUFFIX,mars.jd.com
 DOMAIN-SUFFIX,s.deepl.com
 DOMAIN-SUFFIX,sjarvis.taobao.com
 DOMAIN-SUFFIX,swappdl.duoyi.com
-AND,((PROCESS-NAME,QQMusic),(PROTOCOL,UDP),(DEST-PORT,3478))
 DOMAIN-WILDCARD,stun*.bilibili.com
+AND,((PROCESS-NAME,QQMusic),(PROTOCOL,UDP),(DEST-PORT,3478))

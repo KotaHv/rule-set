@@ -1,12 +1,14 @@
-# AND,((PROTOCOL,UDP),(DEST-PORT,123))
 DOMAIN,stun.moonlight-stream.org
 DOMAIN,stun.syncthing.net
 DOMAIN,v16m-default.akamaized.net
+# AND,((PROTOCOL,UDP),(DEST-PORT,123))
+
 # plex
 DOMAIN,app.plex.tv
 DOMAIN,me.plexapp.com
 DOMAIN,pubsub.plex.tv
 DOMAIN,resources-cdn.plexapp.com
+
 # Manga
 DOMAIN-SUFFIX,6mh67.com
 DOMAIN-SUFFIX,baozicdn.com
@@ -39,7 +41,18 @@ DOMAIN-SUFFIX,webmota.com
 DOMAIN-SUFFIX,xiaoqinre.com
 DOMAIN-SUFFIX,ykmh.com
 DOMAIN-SUFFIX,zerobyw5090.com
+
 # ---------------------------
+DOMAIN,discovery-v4.syncthing.net
+DOMAIN,discovery-v6.syncthing.net
+DOMAIN,humblebundleinc.sjv.io
+DOMAIN,jx.557784.xyz
+DOMAIN,p16a.hypstarcdn.com // Added for: p16a.hypstarcdn.com:443
+DOMAIN,pic2.imge.cc
+DOMAIN,s3.2233778.xyz
+DOMAIN,sf-coze-web-cdn.coze.com
+DOMAIN,vip.dytt-img.com
+DOMAIN,xgct-video.vzcdn.net
 DOMAIN-SUFFIX,1anime2025.com
 DOMAIN-SUFFIX,233dm.cc
 DOMAIN-SUFFIX,3zj55vots.com
@@ -83,7 +96,6 @@ DOMAIN-SUFFIX,dplayerstatic.com
 DOMAIN-SUFFIX,e15f.net
 DOMAIN-SUFFIX,fcx4l8rn4ts.com
 DOMAIN-SUFFIX,ffzy-play3.com
-DOMAIN-SUFFIX,ffzy-play3.com
 DOMAIN-SUFFIX,ffzy-play7.com
 DOMAIN-SUFFIX,ffzy-play8.com
 DOMAIN-SUFFIX,ffzy888.com
@@ -105,7 +117,6 @@ DOMAIN-SUFFIX,huyall.com
 DOMAIN-SUFFIX,imandao.org
 DOMAIN-SUFFIX,imandaow.com
 DOMAIN-SUFFIX,imgtbl.com
-DOMAIN-SUFFIX,imgyzzy.com
 DOMAIN-SUFFIX,imgyzzy.com
 DOMAIN-SUFFIX,ipv6-test.com
 DOMAIN-SUFFIX,italkdd.com
@@ -192,12 +203,4 @@ DOMAIN-SUFFIX,yzzy5-play.com
 DOMAIN-SUFFIX,ziyedm.com
 DOMAIN-SUFFIX,zyc888.top
 DOMAIN-SUFFIX,zykbf.com
-DOMAIN,discovery-v4.syncthing.net
-DOMAIN,discovery-v6.syncthing.net
-DOMAIN,humblebundleinc.sjv.io
-DOMAIN,jx.557784.xyz
-DOMAIN,pic2.imge.cc
-DOMAIN,s3.2233778.xyz
-DOMAIN,sf-coze-web-cdn.coze.com
-DOMAIN,xgct-video.vzcdn.net
 DOMAIN-WILDCARD,api*.ip.sb
