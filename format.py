@@ -114,8 +114,8 @@ class Format:
 if __name__ == "__main__":
     parent_dir = Path(__file__).parent
     for format_dir in [parent_dir / "my-rules", parent_dir / "sources"]:
-        for filepath in format_dir.iterdir():
-            if filepath.suffix in [".txt", ".list"]:
+        for pattern in ("*.txt", "*.list"):
+            for filepath in format_dir.rglob(pattern):
                 print(filepath)
                 f = Format(filepath)
                 f.format()
