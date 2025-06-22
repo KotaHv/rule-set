@@ -156,6 +156,7 @@ SOURCES = [
             ("https://ruleset.skk.moe/List/domainset/cdn.conf", "DOMAIN-SET"),
         ],
         target_path="cdn",
+        option=Option(optimize_domains_by_keyword=True),
     ),
     SourceModel(
         resources=[
