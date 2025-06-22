@@ -96,6 +96,7 @@ class V2rayAttrMode(str, Enum):
     ALL = "ALL"
     NO_ATTR = "NO_ATTR"
     ATTRS = "ATTRS"
+    EXCLUDE_ATTRS = "EXCLUDE_ATTRS"
 
 
 class V2rayDomainAttr(BaseModel):
@@ -114,6 +115,13 @@ class V2rayDomainAttr(BaseModel):
     def ATTRS(cls, attr: str | list[str]) -> "V2rayDomainAttr":
         return cls(
             mode=V2rayAttrMode.ATTRS,
+            attrs=[attr] if isinstance(attr, str) else attr,
+        )
+
+    @classmethod
+    def EXCLUDE_ATTRS(cls, attr: str | list[str]) -> "V2rayDomainAttr":
+        return cls(
+            mode=V2rayAttrMode.EXCLUDE_ATTRS,
             attrs=[attr] if isinstance(attr, str) else attr,
         )
 
@@ -138,6 +146,10 @@ class V2rayDomainAttr(BaseModel):
             if not rule_attrs:
                 return False
             return bool(set(rule_attrs) & set(self.attrs))
+        elif self.mode == V2rayAttrMode.EXCLUDE_ATTRS:
+            if not rule_attrs:
+                return True
+            return not bool(set(rule_attrs) & set(self.attrs))
         return False
 
     def __repr__(self) -> str:
