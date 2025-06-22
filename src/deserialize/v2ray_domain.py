@@ -19,14 +19,14 @@ def deserialize(data: str, attrs: V2rayDomainAttr) -> V2rayDomainResult:
           attributes, each beginning with '@' and separated by spaces (e.g., @ads @cn).
     """
     rules = RuleModel()
-    dependencies = []
+    includes = []
 
     for line in data.splitlines():
         line = line.strip()
         if not line or line.startswith("#"):
             continue
         if line.startswith("include:"):
-            dependencies.append(line[8:].strip())
+            includes.append(line[8:].strip())
             continue
         explicit_match = EXPLICIT_RULE.match(line)
         if explicit_match:
@@ -44,4 +44,4 @@ def deserialize(data: str, attrs: V2rayDomainAttr) -> V2rayDomainResult:
         elif rule_type == "full":
             rules.domain.add(rule)
 
-    return V2rayDomainResult(rules=rules, dependencies=dependencies)
+    return V2rayDomainResult(rules=rules, includes=includes)

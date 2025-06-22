@@ -31,9 +31,9 @@ def is_eTLD(domain: str) -> bool:
     return domain == result.suffix
 
 
-def build_dependency_url(base_url: HttpUrl, dependency: str) -> HttpUrl:
+def build_v2ray_include_url(base_url: HttpUrl, include: str) -> HttpUrl:
     parsed = urlparse(str(base_url))
-    new_path = parsed.path.rsplit("/", 1)[0] + f"/{dependency}"
+    new_path = parsed.path.rsplit("/", 1)[0] + f"/{include}"
 
     new_url = urlunparse(
         (

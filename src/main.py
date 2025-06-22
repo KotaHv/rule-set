@@ -34,7 +34,7 @@ from file_writer import (
     GeoIPFileWriter,
 )
 from file_writer.base import BaseFileWriter
-from utils import build_dependency_url
+from utils import build_v2ray_include_url
 
 client_serializers_writers: dict[
     SerializeFormat, tuple[BaseSerialize, BaseFileWriter]
@@ -132,9 +132,10 @@ def _main():
                     )
                     cache.store(cache_key, deserialized_rules.model_dump_json())
                 if isinstance(deserialized_rules, V2rayDomainResult):
-                    dependencies = deserialized_rules.dependencies
-                    for dependency in dependencies:
-                        paths.append(build_dependency_url(path, dependency))
+                    for include in deserialized_rules.includes:
+                        if include in source.option.v2ray_domain_exclude_includes:
+                            continue
+                        paths.append(build_v2ray_include_url(path, include))
                     aggregated_rules.merge_with(deserialized_rules.rules)
                 else:
                     aggregated_rules.merge_with(deserialized_rules)

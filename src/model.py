@@ -172,6 +172,7 @@ class Option(BaseModel):
     exclude_optimized_domains: list[str] = []
     optimize_domains_by_keyword: bool = False
     v2ray_domain_attrs: V2rayDomainAttr = V2rayDomainAttr.ALL()
+    v2ray_domain_exclude_includes: list[str] = []
 
 
 class SourceModel(BaseModel):
@@ -422,4 +423,4 @@ class RuleModel(BaseModel):
 
 class V2rayDomainResult(BaseModel):
     rules: RuleModel = RuleModel()
-    dependencies: list[str] = []
+    includes: list[str] = []
