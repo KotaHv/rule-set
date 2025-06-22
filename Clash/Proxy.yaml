@@ -87,6 +87,7 @@ payload:
 - DOMAIN-SUFFIX,atom.io
 - DOMAIN-SUFFIX,audible.com
 - DOMAIN-SUFFIX,autodraw.com
+- DOMAIN-SUFFIX,aws
 - DOMAIN-SUFFIX,aws-iot-hackathon.com
 - DOMAIN-SUFFIX,awsautopilot.com
 - DOMAIN-SUFFIX,awsautoscaling.com
@@ -307,7 +308,6 @@ payload:
 - DOMAIN-SUFFIX,geforce.co.kr
 - DOMAIN-SUFFIX,geforce.co.uk
 - DOMAIN-SUFFIX,geforce.com
-- DOMAIN-SUFFIX,geforce.com.tw
 - DOMAIN-SUFFIX,geotrust.com
 - DOMAIN-SUFFIX,gerritcodereview.com
 - DOMAIN-SUFFIX,get.app
@@ -358,10 +358,8 @@ payload:
 - DOMAIN-SUFFIX,gputechconf.co.kr
 - DOMAIN-SUFFIX,gputechconf.com
 - DOMAIN-SUFFIX,gputechconf.com.au
-- DOMAIN-SUFFIX,gputechconf.com.tw
 - DOMAIN-SUFFIX,gputechconf.eu
 - DOMAIN-SUFFIX,gputechconf.in
-- DOMAIN-SUFFIX,gputechconf.jp
 - DOMAIN-SUFFIX,grafana.com
 - DOMAIN-SUFFIX,greasyfork.org
 - DOMAIN-SUFFIX,gridaware.app
@@ -392,6 +390,7 @@ payload:
 - DOMAIN-SUFFIX,i-o-u.info
 - DOMAIN-SUFFIX,iam.soy
 - DOMAIN-SUFFIX,iamremarkable.org
+- DOMAIN-SUFFIX,imdb
 - DOMAIN-SUFFIX,imdb.com
 - DOMAIN-SUFFIX,imdb.to
 - DOMAIN-SUFFIX,immich.app
@@ -403,6 +402,7 @@ payload:
 - DOMAIN-SUFFIX,iterm2.com
 - DOMAIN-SUFFIX,j2objc.org
 - DOMAIN-SUFFIX,jibemobile.com
+- DOMAIN-SUFFIX,jp
 - DOMAIN-SUFFIX,jquery.com
 - DOMAIN-SUFFIX,jsdelivr.com
 - DOMAIN-SUFFIX,jsdelivr.net
@@ -497,6 +497,7 @@ payload:
 - DOMAIN-SUFFIX,opensourceinsights.dev
 - DOMAIN-SUFFIX,openthread.io
 - DOMAIN-SUFFIX,openweave.io
+- DOMAIN-SUFFIX,oracle
 - DOMAIN-SUFFIX,oracle.com
 - DOMAIN-SUFFIX,oraclecloud.com
 - DOMAIN-SUFFIX,oraclefoundation.org
@@ -542,7 +543,6 @@ payload:
 - DOMAIN-SUFFIX,pittpatt.com
 - DOMAIN-SUFFIX,pixate.com
 - DOMAIN-SUFFIX,pixiv.cat
-- DOMAIN-SUFFIX,pixiv.co.jp
 - DOMAIN-SUFFIX,pixiv.me
 - DOMAIN-SUFFIX,pixiv.net
 - DOMAIN-SUFFIX,pixiv.org
@@ -681,7 +681,6 @@ payload:
 - DOMAIN-SUFFIX,tegrazone.co
 - DOMAIN-SUFFIX,tegrazone.co.kr
 - DOMAIN-SUFFIX,tegrazone.com
-- DOMAIN-SUFFIX,tegrazone.jp
 - DOMAIN-SUFFIX,tegrazone.kr
 - DOMAIN-SUFFIX,telephony.goog
 - DOMAIN-SUFFIX,tellapart.com
@@ -700,6 +699,7 @@ payload:
 - DOMAIN-SUFFIX,title.sh
 - DOMAIN-SUFFIX,tmdb.org
 - DOMAIN-SUFFIX,turborepo.org
+- DOMAIN-SUFFIX,tw
 - DOMAIN-SUFFIX,tweetdeck.com
 - DOMAIN-SUFFIX,twimg.co
 - DOMAIN-SUFFIX,twimg.com
@@ -790,10 +790,12 @@ payload:
 - DOMAIN-SUFFIX,x.team
 - DOMAIN-SUFFIX,xn--9kr7l.com
 - DOMAIN-SUFFIX,xn--9trs65b.com
+- DOMAIN-SUFFIX,xn--cckwcxetd
 - DOMAIN-SUFFIX,xn--flw351e.com
 - DOMAIN-SUFFIX,xn--ggle-55da.com
 - DOMAIN-SUFFIX,xn--gogl-0nd52e.com
 - DOMAIN-SUFFIX,xn--gogl-1nd42e.com
+- DOMAIN-SUFFIX,xn--jlq480n2rg
 - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 - DOMAIN-SUFFIX,xn--p8j9a0d9c9a.xn--q9jyb4c
 - DOMAIN-SUFFIX,xn--yhqu5zs87a.top
@@ -803,10 +805,12 @@ payload:
 - DOMAIN-SUFFIX,xoom.us
 - DOMAIN-SUFFIX,xoomcom.com
 - DOMAIN-SUFFIX,xplr.co
+- DOMAIN-SUFFIX,yamaxun
 - DOMAIN-SUFFIX,yamaxun.com
 - DOMAIN-SUFFIX,youtu.be
 - DOMAIN-SUFFIX,yt.be
 - DOMAIN-SUFFIX,ytimg.com
+- DOMAIN-SUFFIX,zappos
 - DOMAIN-SUFFIX,zeit-world.co.uk
 - DOMAIN-SUFFIX,zeit-world.com
 - DOMAIN-SUFFIX,zeit-world.net

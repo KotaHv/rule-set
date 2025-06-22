@@ -88,6 +88,7 @@ domain_suffix_set:
 - atom.io
 - audible.com
 - autodraw.com
+- aws
 - aws-iot-hackathon.com
 - awsautopilot.com
 - awsautoscaling.com
@@ -308,7 +309,6 @@ domain_suffix_set:
 - geforce.co.kr
 - geforce.co.uk
 - geforce.com
-- geforce.com.tw
 - geotrust.com
 - gerritcodereview.com
 - get.app
@@ -359,10 +359,8 @@ domain_suffix_set:
 - gputechconf.co.kr
 - gputechconf.com
 - gputechconf.com.au
-- gputechconf.com.tw
 - gputechconf.eu
 - gputechconf.in
-- gputechconf.jp
 - grafana.com
 - greasyfork.org
 - gridaware.app
@@ -393,6 +391,7 @@ domain_suffix_set:
 - i-o-u.info
 - iam.soy
 - iamremarkable.org
+- imdb
 - imdb.com
 - imdb.to
 - immich.app
@@ -404,6 +403,7 @@ domain_suffix_set:
 - iterm2.com
 - j2objc.org
 - jibemobile.com
+- jp
 - jquery.com
 - jsdelivr.com
 - jsdelivr.net
@@ -498,6 +498,7 @@ domain_suffix_set:
 - opensourceinsights.dev
 - openthread.io
 - openweave.io
+- oracle
 - oracle.com
 - oraclecloud.com
 - oraclefoundation.org
@@ -543,7 +544,6 @@ domain_suffix_set:
 - pittpatt.com
 - pixate.com
 - pixiv.cat
-- pixiv.co.jp
 - pixiv.me
 - pixiv.net
 - pixiv.org
@@ -682,7 +682,6 @@ domain_suffix_set:
 - tegrazone.co
 - tegrazone.co.kr
 - tegrazone.com
-- tegrazone.jp
 - tegrazone.kr
 - telephony.goog
 - tellapart.com
@@ -701,6 +700,7 @@ domain_suffix_set:
 - title.sh
 - tmdb.org
 - turborepo.org
+- tw
 - tweetdeck.com
 - twimg.co
 - twimg.com
@@ -791,10 +791,12 @@ domain_suffix_set:
 - x.team
 - xn--9kr7l.com
 - xn--9trs65b.com
+- xn--cckwcxetd
 - xn--flw351e.com
 - xn--ggle-55da.com
 - xn--gogl-0nd52e.com
 - xn--gogl-1nd42e.com
+- xn--jlq480n2rg
 - xn--ngstr-lra8j.com
 - xn--p8j9a0d9c9a.xn--q9jyb4c
 - xn--yhqu5zs87a.top
@@ -804,10 +806,12 @@ domain_suffix_set:
 - xoom.us
 - xoomcom.com
 - xplr.co
+- yamaxun
 - yamaxun.com
 - youtu.be
 - yt.be
 - ytimg.com
+- zappos
 - zeit-world.co.uk
 - zeit-world.com
 - zeit-world.net
