@@ -122,6 +122,7 @@ SOURCES = [
                 "V2RAY-DOMAIN",
             ),
             "sources/game/cn.txt",
+            "rule-set/surge/steam/cn.list",
         ],
         target_path="game/cn",
         option=Option(

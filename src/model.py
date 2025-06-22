@@ -26,12 +26,12 @@ from utils import is_eTLD
 
 
 class SerializeFormat(str, Enum):
-    Surge = "Surge"
-    Loon = "Loon"
-    Egern = "Egern"
-    Clash = "Clash"
+    Surge = "surge"
+    Loon = "loon"
+    Egern = "egern"
+    Clash = "clash"
     Sing_Box = "sing-box"
-    GeoIP = "GeoIP"
+    GeoIP = "geoip"
 
 
 SerializeFormats = Annotated[

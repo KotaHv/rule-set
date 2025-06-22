@@ -8,7 +8,7 @@ class FileWriter:
     def __init__(
         self, *, data: tuple[str, str] | list[tuple[str, str]], target_path: Path
     ) -> None:
-        self.base_dir = DIR_PATH / "Clash"
+        self.base_dir = DIR_PATH / "clash"
         self.target_path = target_path
         data = [data] if isinstance(data, tuple) else data
         self.file_data_map: dict[Path, str] = {}
