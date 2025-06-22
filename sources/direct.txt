@@ -1,0 +1,17 @@
+# plex
+DOMAIN,app.plex.tv
+DOMAIN,me.plexapp.com
+DOMAIN,pubsub.plex.tv
+DOMAIN,resources-cdn.plexapp.com
+
+# syncthing
+DOMAIN,discovery-v4.syncthing.net
+DOMAIN,discovery-v6.syncthing.net
+DOMAIN,stun.syncthing.net
+
+# -----------
+DOMAIN,stun.moonlight-stream.org
+DOMAIN,v16m-default.akamaized.net
+DOMAIN-SUFFIX,cn
+DOMAIN-SUFFIX,humblebundle.com
+DOMAIN-SUFFIX,nz99.xyz // New字幕组

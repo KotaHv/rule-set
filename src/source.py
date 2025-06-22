@@ -1,14 +1,14 @@
-from model import SerializeFormat, SourceModel, Option
+from model import SerializeFormat, SourceModel, Option, V2rayDomainAttr
 
 SOURCES = [
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
-        target_path="Sukka-ad-reject-no-drop",
+        target_path="adblock/sukka/reject-no-drop",
         include=[SerializeFormat.Surge, SerializeFormat.Loon],
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
-        target_path="Sukka-ad-reject-drop",
+        target_path="adblock/sukka/reject-drop",
         exclude=[SerializeFormat.Egern, SerializeFormat.Sing_Box],
     ),
     SourceModel(
@@ -17,214 +17,143 @@ SOURCES = [
             "https://ruleset.skk.moe/List/non_ip/reject.conf",
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
-        target_path="Sukka-ad",
+        target_path="adblock/sukka/reject",
     ),
     SourceModel(
         resources=(
             "https://ruleset.skk.moe/List/domainset/reject_extra.conf",
             "DOMAIN-SET",
         ),
-        target_path="Sukka-ad-extra",
+        target_path="adblock/sukka/reject-extra",
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list",
-        target_path="Cats-ad",
+        target_path="adblock/cats-team",
     ),
     SourceModel(
         resources=(
             "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt",
             "DOMAIN-SET",
         ),
-        target_path="Anti-ad",
+        target_path="adblock/anti-ad",
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All.list",
-        target_path="Privacy",
-        option=Option(
-            optimize_domains_by_keyword=True,
-        ),
-    ),
-    SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
-        target_path="OpenAI",
-    ),
-    SourceModel(
-        resources=[
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list",
-            "sources/ai.txt",
-        ],
-        target_path="AI",
-        option=Option(
-            exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
-        ),
+        resources="https://ruleset.skk.moe/List/non_ip/ai.conf", target_path="ai"
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
-        target_path="Apple_cdn",
+        target_path="apple/cdn",
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/apple_cn.conf",
-        target_path="Apple_cn",
+        target_path="apple/cn",
     ),
     SourceModel(
         resources=[
             "https://ruleset.skk.moe/List/non_ip/apple_services.conf",
         ],
-        target_path="Apple_services",
+        target_path="apple/services",
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf",
-        target_path="Microsoft_cdn",
+        target_path="microsoft/cdn",
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/microsoft.conf",
-        target_path="Microsoft",
+        target_path="microsoft/global",
     ),
     SourceModel(
         resources=[
             "https://ruleset.skk.moe/List/non_ip/telegram.conf",
             "https://ruleset.skk.moe/List/ip/telegram.conf",
         ],
-        target_path="Telegram",
+        target_path="telegram",
     ),
     SourceModel(
         resources=(
             "https://ruleset.skk.moe/List/domainset/speedtest.conf",
             "DOMAIN-SET",
         ),
-        target_path="Speedtest",
+        target_path="speedtest",
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
-        target_path="Dropbox",
+        resources="sources/global/dropbox.txt",
+        target_path="dropbox",
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list",
-        target_path="SteamCN",
-    ),
-    SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list",
-        target_path="Steam",
-        option=Option(
-            exclude_suffixes=[
-                ".cn",
-                "steamchina.com",
-                "clngaa.com",
-                "ksyna.com",
-                "bscstorage.net",
-                "eccdnx.com",
-                "pinyuncloud.com",
-                "tnkjmec.com",
-                "8686c.com",
-                "wmsjsteam.com",
-            ],
+        resources=(
+            "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam",
+            "V2RAY-DOMAIN",
         ),
+        target_path="steam/cn",
+        option=Option(v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn")),
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownloadCN/GameDownloadCN.list",
-        target_path="GameDownloadCN",
+        resources=(
+            "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam",
+            "V2RAY-DOMAIN",
+        ),
+        target_path="steam/global",
+        option=Option(v2ray_domain_attrs=V2rayDomainAttr.NO_ATTR()),
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/GameDownload/GameDownload.list",
-        target_path="GameDownload",
+        resources=(
+            "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download",
+            "V2RAY-DOMAIN",
+        ),
+        target_path="game/download-cn",
+        option=Option(v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn")),
+    ),
+    SourceModel(
+        resources=[
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download",
+                "V2RAY-DOMAIN",
+            ),
+            "sources/game/download.txt",
+        ],
+        target_path="game/download",
+        option=Option(v2ray_domain_attrs=V2rayDomainAttr.NO_ATTR()),
+    ),
+    SourceModel(
+        resources=[
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-games-cn",
+                "V2RAY-DOMAIN",
+            ),
+            "sources/game/cn.txt",
+        ],
+        target_path="game/cn",
         option=Option(
-            exclude_suffixes=[
-                ".cn",
-            ],
+            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("!cn"),
         ),
     ),
     SourceModel(
         resources=[
-            "sources/game-cn.txt",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list",
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-games-!cn",
+                "V2RAY-DOMAIN",
+            ),
+            "sources/game/global.txt",
         ],
-        target_path="GameCN",
-    ),
-    SourceModel(
-        resources=[
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/EA/EA.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gog/Gog.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nintendo/Nintendo.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PlayStation/PlayStation.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Xbox/Xbox.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/UBI/UBI.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Battle/Battle.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Blizzard/Blizzard.list",
-            "sources/game.txt",
-            "sources/apex.txt",
-        ],
-        target_path="Game",
+        target_path="game/global",
         option=Option(
-            exclude_suffixes=[
-                ".cn",
-                "china.com",
-                "clngaa.com",
-                "ksyna.com",
-                "bscstorage.net",
-                "eccdnx.com",
-                "pinyuncloud.com",
-                "tnkjmec.com",
-                "8686c.com",
-                "wmsjsteam.com",
-            ],
-            exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
-        ),
-    ),
-    SourceModel(
-        resources="https://ruleset.skk.moe/List/non_ip/domestic.conf",
-        target_path="Domestic",
-    ),
-    SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list",
-        target_path="Global",
-        option=Option(
-            exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
-            exclude_keywords=[
-                "-cn.",
-            ],
+            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("cn"),
         ),
     ),
     SourceModel(
         resources=[
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Instagram/Instagram.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Discord/Discord.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitLab/GitLab.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/IMDB/IMDB.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pixiv/Pixiv.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Patreon/Patreon.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Python/Python.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Tmdb/Tmdb.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitch/Twitch.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Vercel/Vercel.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OP/OP.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Oracle/Oracle.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Amazon/Amazon.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Mozilla/Mozilla.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Docker/Docker.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitBook/GitBook.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Npmjs/Npmjs.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Notion/Notion.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Wikipedia/Wikipedia.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Akamai/Akamai.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nvidia/Nvidia.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pinterest/Pinterest.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list",
-            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/EHGallery/EHGallery.list",
-            "my-rules/proxy.txt",
+            "https://ruleset.skk.moe/List/non_ip/domestic.conf",
+            "sources/direct.txt",
         ],
-        target_path="Proxy",
+        target_path="direct",
+    ),
+    SourceModel(
+        resources=[
+            "https://ruleset.skk.moe/List/non_ip/global.conf",
+            "sources/global",
+        ],
+        target_path="global",
         option=Option(
             exclude_suffixes=[
                 ".cn",
@@ -233,35 +162,32 @@ SOURCES = [
                 "-cn.",
             ],
             exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
-            optimize_domains=True,
-            exclude_optimized_domains=["aliyuncs.com"],
             optimize_domains_by_keyword=True,
         ),
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt",
-        target_path="GFW",
-    ),
-    SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan_Resolve.list",
-        target_path="Lan",
+        resources=[
+            "https://ruleset.skk.moe/List/non_ip/lan.conf",
+            "https://ruleset.skk.moe/List/ip/lan.conf",
+        ],
+        target_path="lan",
         option=Option(no_resolve=False),
     ),
-    SourceModel(resources="my-rules", option=Option(clash_optimize=False)),
+    SourceModel(resources="sources/my-rules", option=Option(clash_optimize=False)),
     SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Surge/EHGallery/EHGallery.list",
-        target_path="ExHentai",
+        resources="sources/global/ehentai.txt",
+        target_path="exhentai",
     ),
     SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list",
-        target_path="Reddit",
+        resources="sources/global/reddit.txt",
+        target_path="reddit",
     ),
     SourceModel(
         resources=(
             "https://raw.githubusercontent.com/NobyDa/geoip/release/Private-GeoIP-CN.mmdb",
             "MaxMind DB",
         ),
-        target_path="CN",
+        target_path="cn-ip/nobyda",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
     SourceModel(
@@ -269,7 +195,7 @@ SOURCES = [
             "https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb",
             "MaxMind DB",
         ),
-        target_path="CN-IPinfo",
+        target_path="cn-ip/ipinfo",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
     SourceModel(
@@ -277,24 +203,23 @@ SOURCES = [
             "https://github.com/xream/geoip/releases/latest/download/ip2location.country.mmdb",
             "MaxMind DB",
         ),
-        target_path="CN-IP2Location",
+        target_path="cn-ip/ip2location",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
-    ),
-    SourceModel(
-        resources="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OneDrive/OneDrive.list",
-        target_path="OneDrive",
     ),
     SourceModel(
         resources=(
             "https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/Country.mmdb",
             "MaxMind DB",
         ),
-        target_path="CN-MMDBChinaIPList",
+        target_path="cn-ip/alecthw",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
     SourceModel(
-        resources=["https://ruleset.skk.moe/List/ip/china_ip.conf", "https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf"],
-        target_path="CN-Sukka",
+        resources=[
+            "https://ruleset.skk.moe/List/ip/china_ip.conf",
+            "https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf",
+        ],
+        target_path="cn-ip/sukka",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
 ]
