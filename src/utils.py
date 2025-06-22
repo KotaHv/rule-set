@@ -1,5 +1,9 @@
+from urllib.parse import urlparse, urlunparse
+
 import validators
 import tldextract
+from pydantic import HttpUrl
+
 
 from config import LOGICAL_KEYWORDS, LOGICAL_AND_OR, LOGICAL_NOT
 
@@ -25,3 +29,20 @@ def validate_domain(domain: str) -> bool:
 def is_eTLD(domain: str) -> bool:
     result = tldextract.extract(domain)
     return domain == result.suffix
+
+
+def build_dependency_url(base_url: HttpUrl, dependency: str) -> HttpUrl:
+    parsed = urlparse(str(base_url))
+    new_path = parsed.path.rsplit("/", 1)[0] + f"/{dependency}"
+
+    new_url = urlunparse(
+        (
+            parsed.scheme,
+            parsed.netloc,
+            new_path,
+            parsed.params,
+            parsed.query,
+            parsed.fragment,
+        )
+    )
+    return HttpUrl(new_url)

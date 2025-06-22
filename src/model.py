@@ -406,3 +406,8 @@ class RuleModel(BaseModel):
         for rule_type in rule_types:
             count += len(getattr(self, rule_type))
         return count
+
+
+class V2rayDomainResult(BaseModel):
+    rules: RuleModel = RuleModel()
+    dependencies: list[str] = []

@@ -10,6 +10,7 @@ from model import (
     ResourceFormat,
     SerializeFormat,
     Option,
+    V2rayDomainResult,
 )
 from cache import Cache
 from deserialize.surge import DomainSetDeserialize, RuleSetDeserialize
@@ -33,6 +34,7 @@ from file_writer import (
     GeoIPFileWriter,
 )
 from file_writer.base import BaseFileWriter
+from utils import build_dependency_url
 
 client_serializers_writers: dict[
     SerializeFormat, tuple[BaseSerialize, BaseFileWriter]
@@ -48,7 +50,7 @@ client_serializers_writers: dict[
 
 def deserialize_data(
     data: str | list | Path, format: ResourceFormat, option: Option
-) -> RuleModel:
+) -> RuleModel | V2rayDomainResult:
     if format == ResourceFormat.RuleSet:
         de = RuleSetDeserialize(
             data,
@@ -106,21 +108,36 @@ def _main():
     for source in sources:
         aggregated_rules = RuleModel()
         for resource in source.resources:
-            cache_key = str(resource.path)
-            if resource.format == ResourceFormat.V2RayDomain:
-                cache_key += f"::attrs={source.option.v2ray_domain_attrs}"
-            if cached_result := cache.retrieve(cache_key):
-                deserialized_rules = RuleModel.model_validate_json(cached_result)
-            else:
-                if resource.format == ResourceFormat.MaxMindDB:
-                    data = fetcher.download_file(resource.path)
+            paths = [resource.path]
+            for path in paths:
+                cache_key = str(path)
+                if resource.format == ResourceFormat.V2RayDomain:
+                    cache_key += f"::attrs={source.option.v2ray_domain_attrs}"
+                if cached_result := cache.retrieve(cache_key):
+                    if resource.format == ResourceFormat.V2RayDomain:
+                        deserialized_rules = V2rayDomainResult.model_validate_json(
+                            cached_result
+                        )
+                    else:
+                        deserialized_rules = RuleModel.model_validate_json(
+                            cached_result
+                        )
                 else:
-                    data = fetcher.get_content(resource.path)
-                deserialized_rules = deserialize_data(
-                    data, resource.format, source.option
-                )
-                cache.store(cache_key, deserialized_rules.model_dump_json())
-            aggregated_rules.merge_with(deserialized_rules)
+                    if resource.format == ResourceFormat.MaxMindDB:
+                        data = fetcher.download_file(path)
+                    else:
+                        data = fetcher.get_content(path)
+                    deserialized_rules = deserialize_data(
+                        data, resource.format, source.option
+                    )
+                    cache.store(cache_key, deserialized_rules.model_dump_json())
+                if isinstance(deserialized_rules, V2rayDomainResult):
+                    dependencies = deserialized_rules.dependencies
+                    for dependency in dependencies:
+                        paths.append(build_dependency_url(path, dependency))
+                    aggregated_rules.merge_with(deserialized_rules.rules)
+                else:
+                    aggregated_rules.merge_with(deserialized_rules)
         for rule_types in source.option.exclude_rule_types:
             setattr(aggregated_rules, rule_types, set())
         aggregated_rules.filter(source.option)
