@@ -43,6 +43,7 @@ class ResourceFormat(str, Enum):
     RuleSet = "RULE-SET"
     DomainSet = "DOMAIN-SET"
     MaxMindDB = "MaxMind DB"
+    V2RayDomain = "V2RAY-DOMAIN"
 
 
 class SourceResource(BaseModel):

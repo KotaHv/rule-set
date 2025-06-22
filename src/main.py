@@ -14,6 +14,7 @@ from model import (
 from cache import Cache
 from deserialize.surge import DomainSetDeserialize, RuleSetDeserialize
 from deserialize import mmdb
+from deserialize import v2ray_domain
 from serialize.client import (
     SurgeSerialize,
     LoonSerialize,
@@ -64,6 +65,8 @@ def deserialize_data(
         return de.deserialize()
     elif format == ResourceFormat.MaxMindDB:
         return mmdb.deserialize(data, country_code=option.geo_ip_country_code)
+    elif format == ResourceFormat.V2RayDomain:
+        return v2ray_domain.deserialize(data)
     raise Exception(f"Unknown format: {format}")
 
 
