@@ -17,6 +17,8 @@ def is_logical_not(logical: str) -> bool:
 
 
 def validate_domain(domain: str) -> bool:
+    if "." not in domain:
+        return True
     return validators.domain(domain, rfc_2782=True)
 
 
