@@ -145,6 +145,20 @@ SOURCES = [
     ),
     SourceModel(
         resources=[
+            "https://ruleset.skk.moe/List/non_ip/download.conf",
+            ("https://ruleset.skk.moe/List/domainset/download.conf", "DOMAIN-SET"),
+        ],
+        target_path="download",
+    ),
+    SourceModel(
+        resources=[
+            "https://ruleset.skk.moe/List/non_ip/cdn.conf",
+            ("https://ruleset.skk.moe/List/domainset/cdn.conf", "DOMAIN-SET"),
+        ],
+        target_path="cdn",
+    ),
+    SourceModel(
+        resources=[
             "https://ruleset.skk.moe/List/non_ip/domestic.conf",
             "sources/direct.txt",
         ],
