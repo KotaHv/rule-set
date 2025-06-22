@@ -2,7 +2,7 @@ import re
 from model import RuleModel, V2rayDomainAttr, V2rayDomainResult
 
 EXPLICIT_RULE = re.compile(
-    r"^(domain|keyword|full|regex):(.+?)(?:\s+(@\w+(?:\s+@\w+)*))?$"
+    r"^(domain|keyword|full|regexp):(.+?)(?:\s+(@\w+(?:\s+@\w+)*))?$"
 )
 
 
@@ -27,6 +27,7 @@ def deserialize(data: str, attrs: V2rayDomainAttr) -> V2rayDomainResult:
             continue
         if line.startswith("include:"):
             dependencies.append(line[8:].strip())
+            continue
         explicit_match = EXPLICIT_RULE.match(line)
         if explicit_match:
             rule_type, rule, attributes = explicit_match.groups()
