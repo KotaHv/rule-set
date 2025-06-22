@@ -1,12 +1,12 @@
 import re
-from model import RuleModel
+from model import RuleModel, V2rayDomainAttr
 
 EXPLICIT_RULE = re.compile(
     r"^(domain|keyword|full|regex):(.+?)(?:\s+(@\w+(?:\s+@\w+)*))?$"
 )
 
 
-def deserialize(data: str) -> RuleModel:
+def deserialize(data: str, attrs: V2rayDomainAttr) -> RuleModel:
     """
     V2Ray domain syntax:
         - Lines starting with '#' are comments and ignored.
@@ -33,6 +33,8 @@ def deserialize(data: str) -> RuleModel:
         else:
             rule_type = "domain"
             rule, *attributes = line.split()
+        if not attrs.filter_attrs(attributes):
+            continue
         if rule_type == "domain":
             rules.domain_suffix.add(rule)
         elif rule_type == "keyword":

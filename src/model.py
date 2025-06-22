@@ -10,6 +10,7 @@ from pydantic import (
     BeforeValidator,
     GetCoreSchemaHandler,
     GetJsonSchemaHandler,
+    field_validator,
     model_validator,
 )
 from pydantic_core import core_schema
@@ -91,6 +92,63 @@ SourceResources = Annotated[
 ]
 
 
+class V2rayAttrMode(str, Enum):
+    ALL = "ALL"
+    NO_ATTR = "NO_ATTR"
+    ATTRS = "ATTRS"
+
+
+class V2rayDomainAttr(BaseModel):
+    mode: V2rayAttrMode
+    attrs: list[str] = []
+
+    @classmethod
+    def ALL(cls) -> "V2rayDomainAttr":
+        return cls(mode=V2rayAttrMode.ALL)
+
+    @classmethod
+    def NO_ATTR(cls) -> "V2rayDomainAttr":
+        return cls(mode=V2rayAttrMode.NO_ATTR)
+
+    @classmethod
+    def ATTRS(cls, attr: str | list[str]) -> "V2rayDomainAttr":
+        return cls(
+            mode=V2rayAttrMode.ATTRS,
+            attrs=[attr] if isinstance(attr, str) else attr,
+        )
+
+    @field_validator("attrs")
+    @classmethod
+    def ensure_at_prefix(cls, v: list[str]) -> list[str]:
+        result = []
+        for a in v:
+            a = a.strip()
+            if not a.startswith("@"):
+                a = f"@{a}"
+            if a not in result:
+                result.append(a)
+        return result
+
+    def filter_attrs(self, rule_attrs: list[str]) -> bool:
+        if self.mode == V2rayAttrMode.ALL:
+            return True
+        elif self.mode == V2rayAttrMode.NO_ATTR:
+            return len(rule_attrs) == 0
+        elif self.mode == V2rayAttrMode.ATTRS:
+            if not rule_attrs:
+                return False
+            return bool(set(rule_attrs) & set(self.attrs))
+        return False
+
+    def __repr__(self) -> str:
+        if self.mode == V2rayAttrMode.ATTRS:
+            return f"ATTRS<{'|'.join(self.attrs)}>"
+        return self.mode.value
+
+    def __str__(self) -> str:
+        return self.__repr__()
+
+
 class Option(BaseModel):
     no_resolve: bool = True
     clash_optimize: bool = True
@@ -101,6 +159,7 @@ class Option(BaseModel):
     optimize_domains: bool = False
     exclude_optimized_domains: list[str] = []
     optimize_domains_by_keyword: bool = False
+    v2ray_domain_attrs: V2rayDomainAttr = V2rayDomainAttr.ALL()
 
 
 class SourceModel(BaseModel):

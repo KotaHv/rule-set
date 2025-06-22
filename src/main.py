@@ -66,7 +66,7 @@ def deserialize_data(
     elif format == ResourceFormat.MaxMindDB:
         return mmdb.deserialize(data, country_code=option.geo_ip_country_code)
     elif format == ResourceFormat.V2RayDomain:
-        return v2ray_domain.deserialize(data)
+        return v2ray_domain.deserialize(data, option.v2ray_domain_attrs)
     raise Exception(f"Unknown format: {format}")
 
 
@@ -106,7 +106,10 @@ def _main():
     for source in sources:
         aggregated_rules = RuleModel()
         for resource in source.resources:
-            if cached_result := cache.retrieve(resource.path):
+            cache_key = str(resource.path)
+            if resource.format == ResourceFormat.V2RayDomain:
+                cache_key += f"::attrs={source.option.v2ray_domain_attrs}"
+            if cached_result := cache.retrieve(cache_key):
                 deserialized_rules = RuleModel.model_validate_json(cached_result)
             else:
                 if resource.format == ResourceFormat.MaxMindDB:
@@ -116,7 +119,7 @@ def _main():
                 deserialized_rules = deserialize_data(
                     data, resource.format, source.option
                 )
-                cache.store(resource.path, deserialized_rules.model_dump_json())
+                cache.store(cache_key, deserialized_rules.model_dump_json())
             aggregated_rules.merge_with(deserialized_rules)
         for rule_types in source.option.exclude_rule_types:
             setattr(aggregated_rules, rule_types, set())
