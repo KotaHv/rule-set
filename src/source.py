@@ -127,6 +127,7 @@ SOURCES = [
         target_path="game/cn",
         option=Option(
             v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("!cn"),
+            v2ray_domain_exclude_includes=["4399", "cowlevel", "tgbus", "vrzwk"],
         ),
     ),
     SourceModel(
