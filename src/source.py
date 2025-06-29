@@ -3,12 +3,12 @@ from model import SerializeFormat, SourceModel, Option, V2rayDomainAttr
 SOURCES = [
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
-        target_path="adblock/sukka/reject-no-drop",
+        target_path="adblock/sukka/sukka-reject-no-drop",
         include=[SerializeFormat.Surge, SerializeFormat.Loon],
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
-        target_path="adblock/sukka/reject-drop",
+        target_path="adblock/sukka/sukka-reject-drop",
         exclude=[SerializeFormat.Egern, SerializeFormat.Sing_Box],
     ),
     SourceModel(
@@ -17,18 +17,18 @@ SOURCES = [
             "https://ruleset.skk.moe/List/non_ip/reject.conf",
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
-        target_path="adblock/sukka/reject",
+        target_path="adblock/sukka/sukka-reject",
     ),
     SourceModel(
         resources=(
             "https://ruleset.skk.moe/List/domainset/reject_extra.conf",
             "DOMAIN-SET",
         ),
-        target_path="adblock/sukka/reject-extra",
+        target_path="adblock/sukka/sukka-reject-extra",
     ),
     SourceModel(
         resources="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list",
-        target_path="adblock/cats-team",
+        target_path="adblock/cats-team-ad",
     ),
     SourceModel(
         resources=(
@@ -42,25 +42,25 @@ SOURCES = [
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
-        target_path="apple/cdn",
+        target_path="apple/apple-cdn",
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/apple_cn.conf",
-        target_path="apple/cn",
+        target_path="apple/apple-cn",
     ),
     SourceModel(
         resources=[
             "https://ruleset.skk.moe/List/non_ip/apple_services.conf",
         ],
-        target_path="apple/services",
+        target_path="apple/apple-services",
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf",
-        target_path="microsoft/cdn",
+        target_path="microsoft/microsoft-cdn",
     ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/microsoft.conf",
-        target_path="microsoft/global",
+        target_path="microsoft/microsoft",
     ),
     SourceModel(
         resources=[
@@ -85,7 +85,7 @@ SOURCES = [
             "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam",
             "V2RAY-DOMAIN",
         ),
-        target_path="steam/cn",
+        target_path="steam/steam-cn",
         option=Option(v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn")),
     ),
     SourceModel(
@@ -93,7 +93,7 @@ SOURCES = [
             "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam",
             "V2RAY-DOMAIN",
         ),
-        target_path="steam/global",
+        target_path="steam/steam",
         option=Option(v2ray_domain_attrs=V2rayDomainAttr.NO_ATTR()),
     ),
     SourceModel(
@@ -124,7 +124,7 @@ SOURCES = [
             "sources/game/cn.txt",
             "rule-set/surge/steam/cn.list",
         ],
-        target_path="game/cn",
+        target_path="game/game-cn",
         option=Option(
             v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("!cn"),
             v2ray_domain_exclude_includes=["4399", "cowlevel", "tgbus", "vrzwk"],
@@ -138,7 +138,7 @@ SOURCES = [
             ),
             "sources/game/global.txt",
         ],
-        target_path="game/global",
+        target_path="game/game",
         option=Option(
             v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("cn"),
         ),
@@ -193,7 +193,7 @@ SOURCES = [
     SourceModel(resources="sources/my-rules", option=Option(clash_optimize=False)),
     SourceModel(
         resources="sources/global/ehentai.txt",
-        target_path="exhentai",
+        target_path="e-hentai",
     ),
     SourceModel(
         resources="sources/global/reddit.txt",
@@ -204,7 +204,7 @@ SOURCES = [
             "https://raw.githubusercontent.com/NobyDa/geoip/release/Private-GeoIP-CN.mmdb",
             "MaxMind DB",
         ),
-        target_path="cn-ip/nobyda",
+        target_path="cn-ip/cn-nobyda",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
     SourceModel(
@@ -212,7 +212,7 @@ SOURCES = [
             "https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb",
             "MaxMind DB",
         ),
-        target_path="cn-ip/ipinfo",
+        target_path="cn-ip/cn-ipinfo",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
     SourceModel(
@@ -220,7 +220,7 @@ SOURCES = [
             "https://github.com/xream/geoip/releases/latest/download/ip2location.country.mmdb",
             "MaxMind DB",
         ),
-        target_path="cn-ip/ip2location",
+        target_path="cn-ip/cn-ip2location",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
     SourceModel(
@@ -228,7 +228,7 @@ SOURCES = [
             "https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/Country.mmdb",
             "MaxMind DB",
         ),
-        target_path="cn-ip/alecthw",
+        target_path="cn-ip/cn-alecthw",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
     SourceModel(
@@ -236,7 +236,7 @@ SOURCES = [
             "https://ruleset.skk.moe/List/ip/china_ip.conf",
             "https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf",
         ],
-        target_path="cn-ip/sukka",
+        target_path="cn-ip/cn-sukka",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
 ]
