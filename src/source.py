@@ -101,7 +101,7 @@ SOURCES = [
             "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download",
             "V2RAY-DOMAIN",
         ),
-        target_path="game/download-cn",
+        target_path="game/game-download-cn",
         option=Option(v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn")),
     ),
     SourceModel(
@@ -112,7 +112,7 @@ SOURCES = [
             ),
             "sources/game/download.txt",
         ],
-        target_path="game/download",
+        target_path="game/game-download",
         option=Option(v2ray_domain_attrs=V2rayDomainAttr.NO_ATTR()),
     ),
     SourceModel(
