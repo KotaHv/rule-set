@@ -9,6 +9,7 @@ payload:
 - DOMAIN-KEYWORD,-analytics-events.apple.com
 - DOMAIN-KEYWORD,-be-pack-sign.pglstatp-toutiao.com
 - DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com
+- DOMAIN-KEYWORD,-business.vodafone.com
 - DOMAIN-KEYWORD,-go.experian.com
 - DOMAIN-KEYWORD,-logging.nextmedia.com
 - DOMAIN-KEYWORD,-logsdk.kwai-pro.com
@@ -17,6 +18,7 @@ payload:
 - DOMAIN-KEYWORD,-rtb.gravite.net
 - DOMAIN-KEYWORD,-s2s.sensic.net
 - DOMAIN-KEYWORD,-spiky.clevertap-prod.com
+- DOMAIN-KEYWORD,-ss.checkoutera.com
 - DOMAIN-KEYWORD,-tracker.biliapi.net
 - DOMAIN-KEYWORD,-txtagstore
 - DOMAIN-KEYWORD,-ulog.ksapisrv.com
@@ -71,6 +73,7 @@ payload:
 - DOMAIN-KEYWORD,jshosting
 - DOMAIN-KEYWORD,marketing.net
 - DOMAIN-KEYWORD,mighbest
+- DOMAIN-KEYWORD,mon.zijieapi.com
 - DOMAIN-KEYWORD,nimiqpool
 - DOMAIN-KEYWORD,pangolin-sdk-toutiao
 - DOMAIN-KEYWORD,plausible.
@@ -82,10 +85,18 @@ payload:
 - DOMAIN-KEYWORD,track.msadcenter
 - DOMAIN-KEYWORD,track.opentable.
 - DOMAIN-KEYWORD,track.tiara
-- DOMAIN-KEYWORD,trkcmb.business.hsbc.
-- DOMAIN-KEYWORD,trkgbm.business.hsbc.
-- DOMAIN-KEYWORD,trkhinv.business.hsbc.
-- DOMAIN-KEYWORD,trksvg.business.hsbc.
+- DOMAIN-KEYWORD,trkcmb.business.
+- DOMAIN-KEYWORD,trkcmb.gbm.
+- DOMAIN-KEYWORD,trkcmb.sustainablefinance.
+- DOMAIN-KEYWORD,trkgbm.business.
+- DOMAIN-KEYWORD,trkgbm.gbm.
+- DOMAIN-KEYWORD,trkgbm.sustainablefinance.
+- DOMAIN-KEYWORD,trkhinv.business.
+- DOMAIN-KEYWORD,trkhinv.gbm.
+- DOMAIN-KEYWORD,trkhinv.sustainablefinance.
+- DOMAIN-KEYWORD,trksvg.business.
+- DOMAIN-KEYWORD,trksvg.gbm.
+- DOMAIN-KEYWORD,trksvg.sustainablefinance.
 - DOMAIN-KEYWORD,umeng
 - DOMAIN-KEYWORD,wxsnsdy
 - DOMAIN-KEYWORD,zymerget
