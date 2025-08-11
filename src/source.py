@@ -18,6 +18,7 @@ SOURCES = [
             "https://ruleset.skk.moe/List/ip/reject.conf",
         ],
         target_path="adblock/sukka/sukka-reject",
+        option=Option(exclude_suffixes=["juejin.cn", "juejin.im"]),
     ),
     SourceModel(
         resources=(
