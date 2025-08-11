@@ -201,6 +201,10 @@ SOURCES = [
         target_path="reddit",
     ),
     SourceModel(
+        resources="sources/anime.txt",
+        target_path="anime",
+    ),
+    SourceModel(
         resources=(
             "https://raw.githubusercontent.com/NobyDa/geoip/release/Private-GeoIP-CN.mmdb",
             "MaxMind DB",
