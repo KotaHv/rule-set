@@ -166,7 +166,3 @@ def main():
     except Exception as e:
         logger.exception(e)
         Path(".failure").touch()
-
-
-if __name__ == "__main__":
-    main()
