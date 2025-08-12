@@ -523,7 +523,6 @@ payload:
 - DOMAIN,cdn.evbstatic.com
 - DOMAIN,cdn.faire.com
 - DOMAIN,cdn.fastcomments.com
-- DOMAIN,cdn.fastmediaing.com
 - DOMAIN,cdn.fera.ai
 - DOMAIN,cdn.filen.io
 - DOMAIN,cdn.firebase.com
@@ -1184,6 +1183,7 @@ payload:
 - DOMAIN,freeshippingbar.herokuapp.com
 - DOMAIN,front-resource.fs.com
 - DOMAIN,frontend-apps.workos.com
+- DOMAIN,frontend-assets.supabase.com
 - DOMAIN,frontend.floatplane.com
 - DOMAIN,fs2.onlyhentaistuff.com
 - DOMAIN,fscdn.eppo.cloud
@@ -1640,6 +1640,7 @@ payload:
 - DOMAIN,map.vesselfinder.net
 - DOMAIN,maps.geoapify.com
 - DOMAIN,maps.gstatic.com
+- DOMAIN,maps.wplace.live
 - DOMAIN,maptile.osmand.net
 - DOMAIN,marber-cdn.economist.com
 - DOMAIN,marfeelexperimentsexperienceengine.mrf.io
@@ -1834,7 +1835,6 @@ payload:
 - DOMAIN,pcdn-my.pcloud.com
 - DOMAIN,pcdn-www.pcloud.com
 - DOMAIN,pcz.javidol.org
-- DOMAIN,pengtu.cc
 - DOMAIN,perf-na1.hsforms.com
 - DOMAIN,perf.hsforms.com
 - DOMAIN,pg2dhpc3p5ec22g3.jkforum.net
@@ -2201,6 +2201,7 @@ payload:
 - DOMAIN,static-media.fox.com
 - DOMAIN,static-mh.content.disney.io
 - DOMAIN,static-overlay.ubisoft.com
+- DOMAIN,static-production.npmjs.com
 - DOMAIN,static-r.kamihimeproject.net
 - DOMAIN,static-redesign.cnbcfm.com
 - DOMAIN,static-resource.np.community.playstation.net
@@ -2345,6 +2346,7 @@ payload:
 - DOMAIN,static.news.bitcoin.com
 - DOMAIN,static.nhentai.net
 - DOMAIN,static.nicehash.com
+- DOMAIN,static.npmjs.com
 - DOMAIN,static.nrk.no
 - DOMAIN,static.nyse.com
 - DOMAIN,static.observablehq.com
@@ -2510,6 +2512,7 @@ payload:
 - DOMAIN,talk.hyvor.com
 - DOMAIN,talk.washingtonpost.com
 - DOMAIN,talon-website-prod.ecosec.on.epicgames.com
+- DOMAIN,tanju.vip
 - DOMAIN,telemetry.1passwordservices.com
 - DOMAIN,telemetry.business.githubcopilot.com
 - DOMAIN,telemetry.individual.githubcopilot.com
@@ -2763,7 +2766,6 @@ payload:
 - DOMAIN-SUFFIX,ant.design
 - DOMAIN-SUFFIX,anyhentai.com
 - DOMAIN-SUFFIX,aolcdn.com
-- DOMAIN-SUFFIX,aosikaimage.com
 - DOMAIN-SUFFIX,api.instabug.com
 - DOMAIN-SUFFIX,api.loganalytics.io
 - DOMAIN-SUFFIX,app-analytics-services.com
@@ -3342,7 +3344,7 @@ payload:
 - DOMAIN-SUFFIX,msftconnecttest.com
 - DOMAIN-SUFFIX,msftncsi.com
 - DOMAIN-SUFFIX,msftstatic.com
-- DOMAIN-SUFFIX,mubicdn.com
+- DOMAIN-SUFFIX,mubicdn.net
 - DOMAIN-SUFFIX,muscache.com
 - DOMAIN-SUFFIX,mxmcdn.net
 - DOMAIN-SUFFIX,myanalytics.cdn.office.net
@@ -3717,7 +3719,7 @@ payload:
 - DOMAIN-SUFFIX,watchlycdn.com
 - DOMAIN-SUFFIX,wdfiles.com
 - DOMAIN-SUFFIX,web.app
-- DOMAIN-SUFFIX,webinfcdn.com
+- DOMAIN-SUFFIX,webinfcdn.net
 - DOMAIN-SUFFIX,webp.se
 - DOMAIN-SUFFIX,webpkgcache.com
 - DOMAIN-SUFFIX,website-files.com
