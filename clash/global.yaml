@@ -62,6 +62,7 @@ payload:
 - DOMAIN-SUFFIX,airav.io
 - DOMAIN-SUFFIX,airtable.com
 - DOMAIN-SUFFIX,airtableusercontent.com
+- DOMAIN-SUFFIX,ajay.app
 - DOMAIN-SUFFIX,akamai.net
 - DOMAIN-SUFFIX,akamaihd.net
 - DOMAIN-SUFFIX,altstore.io
@@ -84,7 +85,6 @@ payload:
 - DOMAIN-SUFFIX,apkpure.com
 - DOMAIN-SUFFIX,apkpure.net
 - DOMAIN-SUFFIX,apnews.com
-- DOMAIN-SUFFIX,app
 - DOMAIN-SUFFIX,appspot.com
 - DOMAIN-SUFFIX,aptoide.com
 - DOMAIN-SUFFIX,arc.net
@@ -122,6 +122,7 @@ payload:
 - DOMAIN-SUFFIX,bandcamp.com
 - DOMAIN-SUFFIX,bandwagonhost.com
 - DOMAIN-SUFFIX,bang.com
+- DOMAIN-SUFFIX,bangumi.moe
 - DOMAIN-SUFFIX,bbc.com
 - DOMAIN-SUFFIX,bblmw.com
 - DOMAIN-SUFFIX,be
@@ -130,6 +131,7 @@ payload:
 - DOMAIN-SUFFIX,bestbuy.com
 - DOMAIN-SUFFIX,bet365.com
 - DOMAIN-SUFFIX,betterdisplay.pro
+- DOMAIN-SUFFIX,bgp.tools
 - DOMAIN-SUFFIX,bibox.com
 - DOMAIN-SUFFIX,bikaa.xyz
 - DOMAIN-SUFFIX,bikac.xyz
@@ -146,7 +148,6 @@ payload:
 - DOMAIN-SUFFIX,bitmex.com
 - DOMAIN-SUFFIX,bleepingcomputer.com
 - DOMAIN-SUFFIX,blizzard.com
-- DOMAIN-SUFFIX,blog
 - DOMAIN-SUFFIX,blogblog.com
 - DOMAIN-SUFFIX,blogger.com
 - DOMAIN-SUFFIX,bloomberg.com
@@ -156,6 +157,7 @@ payload:
 - DOMAIN-SUFFIX,box.com
 - DOMAIN-SUFFIX,brave.com
 - DOMAIN-SUFFIX,broadcom.com
+- DOMAIN-SUFFIX,bsky.app
 - DOMAIN-SUFFIX,businessinsider.com
 - DOMAIN-SUFFIX,bwh1.net
 - DOMAIN-SUFFIX,bybit.com
@@ -228,6 +230,7 @@ payload:
 - DOMAIN-SUFFIX,cuty.io
 - DOMAIN-SUFFIX,cx
 - DOMAIN-SUFFIX,cy
+- DOMAIN-SUFFIX,cyberghost.app
 - DOMAIN-SUFFIX,cz
 - DOMAIN-SUFFIX,dailymail.com
 - DOMAIN-SUFFIX,dailymotion.com
@@ -245,7 +248,6 @@ payload:
 - DOMAIN-SUFFIX,deno.com
 - DOMAIN-SUFFIX,desmos.com
 - DOMAIN-SUFFIX,detnews.com
-- DOMAIN-SUFFIX,dev
 - DOMAIN-SUFFIX,deviantart.com
 - DOMAIN-SUFFIX,deviantart.net
 - DOMAIN-SUFFIX,diagrams.net
@@ -262,6 +264,7 @@ payload:
 - DOMAIN-SUFFIX,dns-check.info
 - DOMAIN-SUFFIX,dns-leak.com
 - DOMAIN-SUFFIX,dns-oarc.net
+- DOMAIN-SUFFIX,dnscheck.tools
 - DOMAIN-SUFFIX,dnschecker.org
 - DOMAIN-SUFFIX,dnsleak.asn247.net
 - DOMAIN-SUFFIX,dnsleak.com
@@ -290,6 +293,7 @@ payload:
 - DOMAIN-SUFFIX,economist.com
 - DOMAIN-SUFFIX,edgeapp.net
 - DOMAIN-SUFFIX,edgecastcdn.net
+- DOMAIN-SUFFIX,edgecompute.app
 - DOMAIN-SUFFIX,edns.ip-api.com
 - DOMAIN-SUFFIX,edu
 - DOMAIN-SUFFIX,ee
@@ -341,11 +345,13 @@ payload:
 - DOMAIN-SUFFIX,flightradar24.com
 - DOMAIN-SUFFIX,flipboard.com
 - DOMAIN-SUFFIX,flipkart.com
+- DOMAIN-SUFFIX,fly.dev
 - DOMAIN-SUFFIX,fly.io
 - DOMAIN-SUFFIX,fm
 - DOMAIN-SUFFIX,fo
 - DOMAIN-SUFFIX,fontawesome.com
 - DOMAIN-SUFFIX,forbes.com
+- DOMAIN-SUFFIX,fork.dev
 - DOMAIN-SUFFIX,fosshub.com
 - DOMAIN-SUFFIX,foxnews.com
 - DOMAIN-SUFFIX,fr
@@ -381,15 +387,19 @@ payload:
 - DOMAIN-SUFFIX,git.io
 - DOMAIN-SUFFIX,gitbook.com
 - DOMAIN-SUFFIX,gitbook.io
+- DOMAIN-SUFFIX,github.blog
 - DOMAIN-SUFFIX,github.com
+- DOMAIN-SUFFIX,github.dev
 - DOMAIN-SUFFIX,github.io
 - DOMAIN-SUFFIX,github.media
 - DOMAIN-SUFFIX,githubapp.com
 - DOMAIN-SUFFIX,githubassets.com
 - DOMAIN-SUFFIX,githubcopilot.com
+- DOMAIN-SUFFIX,githubpreview.dev
 - DOMAIN-SUFFIX,githubstatus.com
 - DOMAIN-SUFFIX,githubusercontent.com
 - DOMAIN-SUFFIX,gitkraken.com
+- DOMAIN-SUFFIX,gitkraken.dev
 - DOMAIN-SUFFIX,gitlab.com
 - DOMAIN-SUFFIX,gitlab.io
 - DOMAIN-SUFFIX,gitlab.net
@@ -401,6 +411,7 @@ payload:
 - DOMAIN-SUFFIX,gmail.com
 - DOMAIN-SUFFIX,gmodules.com
 - DOMAIN-SUFFIX,gnc.com
+- DOMAIN-SUFFIX,go.dev
 - DOMAIN-SUFFIX,godaddy.com
 - DOMAIN-SUFFIX,godoc.org
 - DOMAIN-SUFFIX,gofundme.com
@@ -416,6 +427,7 @@ payload:
 - DOMAIN-SUFFIX,greasyfork.org
 - DOMAIN-SUFFIX,greatfire.org
 - DOMAIN-SUFFIX,greenhouse.io
+- DOMAIN-SUFFIX,grep.app
 - DOMAIN-SUFFIX,grindr.com
 - DOMAIN-SUFFIX,gs
 - DOMAIN-SUFFIX,gstatic.com
@@ -504,6 +516,7 @@ payload:
 - DOMAIN-SUFFIX,ipleak.net
 - DOMAIN-SUFFIX,is
 - DOMAIN-SUFFIX,issuu.com
+- DOMAIN-SUFFIX,istatmenus.app
 - DOMAIN-SUFFIX,istockphoto.com
 - DOMAIN-SUFFIX,it
 - DOMAIN-SUFFIX,itasoftware.com
@@ -531,6 +544,7 @@ payload:
 - DOMAIN-SUFFIX,kinja.com
 - DOMAIN-SUFFIX,kisscos.net
 - DOMAIN-SUFFIX,kknews.cc
+- DOMAIN-SUFFIX,knock.app
 - DOMAIN-SUFFIX,ko-fi.com
 - DOMAIN-SUFFIX,kobo.com
 - DOMAIN-SUFFIX,komoot.com
@@ -555,6 +569,7 @@ payload:
 - DOMAIN-SUFFIX,line-scdn.net
 - DOMAIN-SUFFIX,line.biz
 - DOMAIN-SUFFIX,line.me
+- DOMAIN-SUFFIX,linear.app
 - DOMAIN-SUFFIX,linecorp.com
 - DOMAIN-SUFFIX,linefriends.com
 - DOMAIN-SUFFIX,linemobile.com
@@ -607,6 +622,7 @@ payload:
 - DOMAIN-SUFFIX,mil
 - DOMAIN-SUFFIX,minecraft-services.net
 - DOMAIN-SUFFIX,minecraft.net
+- DOMAIN-SUFFIX,minecraft.tools
 - DOMAIN-SUFFIX,minecraft.wiki
 - DOMAIN-SUFFIX,minecraftforum.net
 - DOMAIN-SUFFIX,minecraftservices.com
@@ -617,7 +633,6 @@ payload:
 - DOMAIN-SUFFIX,mn
 - DOMAIN-SUFFIX,mobile01.com
 - DOMAIN-SUFFIX,modrinth.com
-- DOMAIN-SUFFIX,moe
 - DOMAIN-SUFFIX,mojang.com
 - DOMAIN-SUFFIX,monica.im
 - DOMAIN-SUFFIX,moomoo.com
@@ -710,6 +725,7 @@ payload:
 - DOMAIN-SUFFIX,opentable.com
 - DOMAIN-SUFFIX,openwrt.org
 - DOMAIN-SUFFIX,oracle.com
+- DOMAIN-SUFFIX,orbstack.dev
 - DOMAIN-SUFFIX,osmand.net
 - DOMAIN-SUFFIX,overdrive.com
 - DOMAIN-SUFFIX,ovpnleaktest.com
@@ -766,6 +782,7 @@ payload:
 - DOMAIN-SUFFIX,pttweb.cc
 - DOMAIN-SUFFIX,pusher.com
 - DOMAIN-SUFFIX,pximg.net
+- DOMAIN-SUFFIX,pydantic.dev
 - DOMAIN-SUFFIX,qnap.com
 - DOMAIN-SUFFIX,quad9.net
 - DOMAIN-SUFFIX,quillbot.com
@@ -812,6 +829,7 @@ payload:
 - DOMAIN-SUFFIX,ru
 - DOMAIN-SUFFIX,rule34video.com
 - DOMAIN-SUFFIX,rumble.com
+- DOMAIN-SUFFIX,run.app
 - DOMAIN-SUFFIX,sa
 - DOMAIN-SUFFIX,sagernet.org
 - DOMAIN-SUFFIX,saucenao.com
@@ -827,6 +845,7 @@ payload:
 - DOMAIN-SUFFIX,se
 - DOMAIN-SUFFIX,sendbird.com
 - DOMAIN-SUFFIX,sendgrid.net
+- DOMAIN-SUFFIX,sentry.dev
 - DOMAIN-SUFFIX,sentry.io
 - DOMAIN-SUFFIX,serverfault.com
 - DOMAIN-SUFFIX,setapp.com
@@ -850,6 +869,7 @@ payload:
 - DOMAIN-SUFFIX,sk
 - DOMAIN-SUFFIX,sketch.cloud
 - DOMAIN-SUFFIX,sketch.com
+- DOMAIN-SUFFIX,skk.moe
 - DOMAIN-SUFFIX,slack.com
 - DOMAIN-SUFFIX,sleazyfork.org
 - DOMAIN-SUFFIX,slideshare.net
@@ -950,7 +970,6 @@ payload:
 - DOMAIN-SUFFIX,tokyomotion.net
 - DOMAIN-SUFFIX,tokyonline.com
 - DOMAIN-SUFFIX,toolforge.org
-- DOMAIN-SUFFIX,tools
 - DOMAIN-SUFFIX,tr
 - DOMAIN-SUFFIX,tradingview.com
 - DOMAIN-SUFFIX,travis-ci.com
@@ -987,6 +1006,7 @@ payload:
 - DOMAIN-SUFFIX,v2fly.org
 - DOMAIN-SUFFIX,v2ray.com
 - DOMAIN-SUFFIX,va
+- DOMAIN-SUFFIX,vercel.app
 - DOMAIN-SUFFIX,vercel.com
 - DOMAIN-SUFFIX,vercel.live
 - DOMAIN-SUFFIX,verizon.com
@@ -1020,6 +1040,7 @@ payload:
 - DOMAIN-SUFFIX,waze.com
 - DOMAIN-SUFFIX,wdfiles.com
 - DOMAIN-SUFFIX,weather.com
+- DOMAIN-SUFFIX,web.dev
 - DOMAIN-SUFFIX,webflow.com
 - DOMAIN-SUFFIX,webmproject.org
 - DOMAIN-SUFFIX,webpkgcache.com
@@ -1059,6 +1080,7 @@ payload:
 - DOMAIN-SUFFIX,wordpress.org
 - DOMAIN-SUFFIX,wordtune.com
 - DOMAIN-SUFFIX,workday.com
+- DOMAIN-SUFFIX,workers.dev
 - DOMAIN-SUFFIX,wp.com
 - DOMAIN-SUFFIX,ws
 - DOMAIN-SUFFIX,wsj.com
