@@ -1,4 +1,6 @@
 no_resolve: true
+domain_set:
+- 7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 domain_suffix_set:
 - a1.mzstatic.com
 - a2.mzstatic.com
@@ -30,6 +32,7 @@ domain_suffix_set:
 - cds.apple.com
 - cds.apple.com.akadns.net
 - cdsassets.apple.com
+- certs.apple.com
 - cl1-cdn.origin-apple.com.akadns.net
 - cl1.apple.com
 - cl2-cn.apple.com
@@ -51,6 +54,8 @@ domain_suffix_set:
 - cstat.cdn-apple.com
 - dd-cdn.origin-apple.com.akadns.net
 - dejavu.apple.com
+- devimages-cdn.apple.com
+- devstreaming-cdn.apple.com
 - download.developer.apple.com
 - experiments.apple.com
 - gs-loc-cn.apple.com
