@@ -42,7 +42,10 @@ SOURCES = [
         resources="https://ruleset.skk.moe/List/non_ip/ai.conf", target_path="ai"
     ),
     SourceModel(
-        resources="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
+        resources=[
+            "https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
+            ("https://ruleset.skk.moe/List/domainset/apple_cdn.conf", "DOMAIN-SET"),
+        ],
         target_path="apple/apple-cdn",
     ),
     SourceModel(
@@ -163,8 +166,15 @@ SOURCES = [
         resources=[
             "https://ruleset.skk.moe/List/non_ip/domestic.conf",
             "sources/direct.txt",
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon",
+                "V2RAY-DOMAIN",
+            ),
         ],
         target_path="direct",
+        option=Option(
+            v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn"),
+        ),
     ),
     SourceModel(
         resources=[

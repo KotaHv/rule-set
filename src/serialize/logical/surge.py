@@ -9,7 +9,7 @@ def _serialize(*, node: Node, include: list[str] | None = None) -> str:
     if isinstance(node.name, tuple):
         if include is not None and node.name[0].upper() not in include:
             raise UnsupportedRuleTypeError(node.name[0])
-        return f"({",".join(node.name)}),"
+        return f"({','.join(node.name)}),"
     if not is_logical_keyword(node.name):
         raise SerializeError(
             f"{node.name} is not a valid logical operator. Valid operators are: AND, OR, NOT",

@@ -17,5 +17,3 @@ class SerializeError(Exception):
         else:
             err_list = [err]
         super().__init__("\n".join(err_list))
-
-
