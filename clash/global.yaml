@@ -221,6 +221,7 @@ payload:
 - DOMAIN-SUFFIX,coveralls.io
 - DOMAIN-SUFFIX,cpuid.com
 - DOMAIN-SUFFIX,crashlytics.com
+- DOMAIN-SUFFIX,crates.io
 - DOMAIN-SUFFIX,creaders.net
 - DOMAIN-SUFFIX,creativelab5.com
 - DOMAIN-SUFFIX,crunchyroll.com
@@ -345,6 +346,8 @@ payload:
 - DOMAIN-SUFFIX,flightradar24.com
 - DOMAIN-SUFFIX,flipboard.com
 - DOMAIN-SUFFIX,flipkart.com
+- DOMAIN-SUFFIX,flutter.dev
+- DOMAIN-SUFFIX,flutterapp.com
 - DOMAIN-SUFFIX,fly.dev
 - DOMAIN-SUFFIX,fly.io
 - DOMAIN-SUFFIX,fm
@@ -781,6 +784,7 @@ payload:
 - DOMAIN-SUFFIX,ps
 - DOMAIN-SUFFIX,ptt.cc
 - DOMAIN-SUFFIX,pttweb.cc
+- DOMAIN-SUFFIX,pub.dev
 - DOMAIN-SUFFIX,pusher.com
 - DOMAIN-SUFFIX,pximg.net
 - DOMAIN-SUFFIX,pycon.org
@@ -837,6 +841,7 @@ payload:
 - DOMAIN-SUFFIX,rule34video.com
 - DOMAIN-SUFFIX,rumble.com
 - DOMAIN-SUFFIX,run.app
+- DOMAIN-SUFFIX,rust-lang.org
 - DOMAIN-SUFFIX,sa
 - DOMAIN-SUFFIX,sagernet.org
 - DOMAIN-SUFFIX,saucenao.com
