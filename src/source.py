@@ -184,6 +184,14 @@ SOURCES = [
                 "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/python",
                 "V2RAY-DOMAIN",
             ),
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/rust",
+                "V2RAY-DOMAIN",
+            ),
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/flutter",
+                "V2RAY-DOMAIN",
+            ),
         ],
         target_path="global",
         option=Option(
