@@ -180,6 +180,10 @@ SOURCES = [
         resources=[
             "https://ruleset.skk.moe/List/non_ip/global.conf",
             "sources/global",
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/python",
+                "V2RAY-DOMAIN",
+            ),
         ],
         target_path="global",
         option=Option(
