@@ -28,6 +28,7 @@ def deserialize(data: str, attrs: V2rayDomainAttr) -> V2rayDomainResult:
         if line.startswith("include:"):
             includes.append(line[8:].strip())
             continue
+        line = line.split("#", 1)[0].strip()
         explicit_match = EXPLICIT_RULE.match(line)
         if explicit_match:
             rule_type, rule, attributes = explicit_match.groups()
