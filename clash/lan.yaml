@@ -12,6 +12,8 @@ payload:
 - DOMAIN,setmeup.arubanetworks.com
 - DOMAIN,unifi
 - DOMAIN-SUFFIX,10.in-addr.arpa
+- DOMAIN-SUFFIX,127.0.0.1.sslip.io
+- DOMAIN-SUFFIX,127.atlas.skk.moe
 - DOMAIN-SUFFIX,16.172.in-addr.arpa
 - DOMAIN-SUFFIX,168.192.in-addr.arpa
 - DOMAIN-SUFFIX,17.172.in-addr.arpa

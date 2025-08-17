@@ -14,6 +14,8 @@ domain_set:
 - unifi
 domain_suffix_set:
 - 10.in-addr.arpa
+- 127.0.0.1.sslip.io
+- 127.atlas.skk.moe
 - 16.172.in-addr.arpa
 - 168.192.in-addr.arpa
 - 17.172.in-addr.arpa
