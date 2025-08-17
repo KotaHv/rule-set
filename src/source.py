@@ -130,7 +130,7 @@ SOURCES = [
         ],
         target_path="game/game-cn",
         option=Option(
-            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("!cn"),
+            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["!cn", "ads"]),
             v2ray_domain_exclude_includes=["4399", "cowlevel", "tgbus", "vrzwk"],
         ),
     ),
@@ -144,7 +144,7 @@ SOURCES = [
         ],
         target_path="game/game",
         option=Option(
-            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("cn"),
+            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
         ),
     ),
     SourceModel(
@@ -177,6 +177,16 @@ SOURCES = [
         ),
     ),
     SourceModel(
+        resources=(
+            "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-dev",
+            "V2RAY-DOMAIN",
+        ),
+        target_path="dev",
+        option=Option(
+            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
+        ),
+    ),
+    SourceModel(
         resources=[
             "https://ruleset.skk.moe/List/non_ip/global.conf",
             "sources/global",
@@ -196,17 +206,13 @@ SOURCES = [
                 "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/paypal",
                 "V2RAY-DOMAIN",
             ),
+            "rule-set/surge/dev.list",
         ],
         target_path="global",
         option=Option(
-            exclude_suffixes=[
-                ".cn",
-            ],
-            exclude_keywords=[
-                "-cn.",
-            ],
             exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
             optimize_domains_by_keyword=True,
+            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("ads"),
         ),
     ),
     SourceModel(
