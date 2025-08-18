@@ -1,6 +1,35 @@
 from model import SerializeFormat, SourceModel, Option, V2rayDomainAttr
 
-SOURCES = [
+sources = [
+    SourceModel(
+        resources=[
+            "https://ruleset.skk.moe/List/non_ip/global.conf",
+            "sources/global",
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/python",
+                "V2RAY-DOMAIN",
+            ),
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/rust",
+                "V2RAY-DOMAIN",
+            ),
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/flutter",
+                "V2RAY-DOMAIN",
+            ),
+            (
+                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/paypal",
+                "V2RAY-DOMAIN",
+            ),
+            "@dev",
+        ],
+        target_path="global",
+        option=Option(
+            exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
+            optimize_domains_by_keyword=True,
+            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("ads"),
+        ),
+    ),
     SourceModel(
         resources="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
         target_path="adblock/sukka/sukka-reject-no-drop",
@@ -126,7 +155,7 @@ SOURCES = [
                 "V2RAY-DOMAIN",
             ),
             "sources/game/cn.txt",
-            "rule-set/surge/steam/steam-cn.list",
+            "@steam/steam-cn",
         ],
         target_path="game/game-cn",
         option=Option(
@@ -184,35 +213,6 @@ SOURCES = [
         target_path="dev",
         option=Option(
             v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
-        ),
-    ),
-    SourceModel(
-        resources=[
-            "https://ruleset.skk.moe/List/non_ip/global.conf",
-            "sources/global",
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/python",
-                "V2RAY-DOMAIN",
-            ),
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/rust",
-                "V2RAY-DOMAIN",
-            ),
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/flutter",
-                "V2RAY-DOMAIN",
-            ),
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/paypal",
-                "V2RAY-DOMAIN",
-            ),
-            "rule-set/surge/dev.list",
-        ],
-        target_path="global",
-        option=Option(
-            exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
-            optimize_domains_by_keyword=True,
-            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("ads"),
         ),
     ),
     SourceModel(

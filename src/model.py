@@ -45,6 +45,7 @@ class ResourceFormat(str, Enum):
     DomainSet = "DOMAIN-SET"
     MaxMindDB = "MaxMind DB"
     V2RayDomain = "V2RAY-DOMAIN"
+    SourceReference = "SOURCE-REF"
 
 
 class SourceResource(BaseModel):
@@ -65,6 +66,8 @@ class SourceResource(BaseModel):
     @classmethod
     def validate_input(cls, data: Any) -> Any:
         if isinstance(data, str):
+            if data.startswith("@"):
+                return {"path": data, "format": ResourceFormat.SourceReference}
             return {"path": data}
         if isinstance(data, tuple) and len(data) == 2:
             return {"path": data[0], "format": data[1]}
@@ -84,6 +87,15 @@ class SourceResource(BaseModel):
             return self.path.is_file()
         except AttributeError:
             return False
+
+    def is_source_reference(self) -> bool:
+        return self.format == ResourceFormat.SourceReference
+
+    def get_reference_target(self) -> str:
+        if self.is_source_reference():
+            path_str = str(self.path)
+            return path_str[1:] if path_str.startswith("@") else path_str
+        raise ValueError("Not a source reference")
 
 
 SourceResources = Annotated[
@@ -260,6 +272,12 @@ class RuleModel(BaseModel):
     process: set[str] | list[str] = set()
     ua: set[str] | list[str] = set()
 
+    @field_validator("*", mode="before")
+    def ensure_list(cls, v: Any) -> Any:
+        if isinstance(v, set):
+            return list(v)
+        return v
+
     def merge_with(self, other: "RuleModel") -> None:
         self.domain.update(other.domain)
         self.domain_suffix.update(other.domain_suffix)
@@ -280,7 +298,7 @@ class RuleModel(BaseModel):
         self.ua.update(other.ua)
 
     def sort(self):
-        for key in self.model_fields.keys():
+        for key in RuleModel.model_fields.keys():
             value = getattr(self, key)
             if key == "ip_cidr":
                 value = sorted(

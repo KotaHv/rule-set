@@ -10,6 +10,7 @@ from model import (
     ResourceFormat,
     SerializeFormat,
     Option,
+    SourceResources,
     V2rayDomainResult,
 )
 from cache import Cache
@@ -46,6 +47,8 @@ client_serializers_writers: dict[
     SerializeFormat.Sing_Box: (SingBoxSerialize, SingBoxFileWriter),
     SerializeFormat.GeoIP: (GeoIPSerialize, GeoIPFileWriter),
 }
+resource_cache = Cache(path="resource")
+source_cache = Cache(path="source")
 
 
 def deserialize_data(
@@ -72,7 +75,7 @@ def deserialize_data(
     raise Exception(f"Unknown format: {format}")
 
 
-def process_sources() -> list[SourceModel]:
+def pre_process_sources() -> list[SourceModel]:
     sources = []
     for source in SOURCES:
         resources = []
@@ -102,47 +105,12 @@ def process_sources() -> list[SourceModel]:
     return sources
 
 
-def _main():
-    cache = Cache(path="parser")
-    sources = process_sources()
+def process_sources(sources: list[SourceModel]):
     for source in sources:
-        aggregated_rules = RuleModel()
-        for resource in source.resources:
-            paths = [resource.path]
-            for path in paths:
-                cache_key = str(path)
-                if resource.format == ResourceFormat.V2RayDomain:
-                    cache_key += f"::attrs={source.option.v2ray_domain_attrs}"
-                if cached_result := cache.retrieve(cache_key):
-                    if resource.format == ResourceFormat.V2RayDomain:
-                        deserialized_rules = V2rayDomainResult.model_validate_json(
-                            cached_result
-                        )
-                    else:
-                        deserialized_rules = RuleModel.model_validate_json(
-                            cached_result
-                        )
-                else:
-                    if resource.format == ResourceFormat.MaxMindDB:
-                        data = fetcher.download_file(path)
-                    else:
-                        data = fetcher.get_content(path)
-                    deserialized_rules = deserialize_data(
-                        data, resource.format, source.option
-                    )
-                    cache.store(cache_key, deserialized_rules.model_dump_json())
-                if isinstance(deserialized_rules, V2rayDomainResult):
-                    for include in deserialized_rules.includes:
-                        if include in source.option.v2ray_domain_exclude_includes:
-                            continue
-                        paths.append(build_v2ray_include_url(path, include))
-                    aggregated_rules.merge_with(deserialized_rules.rules)
-                else:
-                    aggregated_rules.merge_with(deserialized_rules)
-        for rule_types in source.option.exclude_rule_types:
-            setattr(aggregated_rules, rule_types, set())
-        aggregated_rules.filter(source.option)
-        aggregated_rules.sort()
+        if cached_result := source_cache.retrieve(source.target_path):
+            aggregated_rules = RuleModel.model_validate_json(cached_result, strict=True)
+        else:
+            aggregated_rules = process_source(source)
 
         target_clients = (
             source.include
@@ -160,9 +128,61 @@ def _main():
             writer_cls(data=serialized_data, target_path=source.target_path).write()
 
 
+def process_source(source: SourceModel) -> RuleModel:
+    aggregated_rules = RuleModel()
+
+    for resource in source.resources:
+        if resource.is_source_reference():
+            referenced_target = resource.get_reference_target()
+            aggregated_rules.merge_with(
+                RuleModel.model_validate_json(source_cache.retrieve(referenced_target))
+            )
+        else:
+            aggregated_rules.merge_with(process_resource(resource, source.option))
+
+    for rule_types in source.option.exclude_rule_types:
+        setattr(aggregated_rules, rule_types, set())
+    aggregated_rules.filter(source.option)
+    aggregated_rules.sort()
+    source_cache.store(source.target_path, aggregated_rules.model_dump_json())
+    return aggregated_rules
+
+
+def process_resource(resource: SourceResources, source_option: Option) -> RuleModel:
+    aggregated_rules = RuleModel()
+    paths = [resource.path]
+    for path in paths:
+        cache_key = str(path)
+        if resource.format == ResourceFormat.V2RayDomain:
+            cache_key += f"::attrs={source_option.v2ray_domain_attrs}"
+        if cached_result := resource_cache.retrieve(cache_key):
+            if resource.format == ResourceFormat.V2RayDomain:
+                deserialized_rules = V2rayDomainResult.model_validate_json(
+                    cached_result
+                )
+            else:
+                deserialized_rules = RuleModel.model_validate_json(cached_result)
+        else:
+            if resource.format == ResourceFormat.MaxMindDB:
+                data = fetcher.download_file(path)
+            else:
+                data = fetcher.get_content(path)
+            deserialized_rules = deserialize_data(data, resource.format, source_option)
+            resource_cache.store(cache_key, deserialized_rules.model_dump_json())
+        if isinstance(deserialized_rules, V2rayDomainResult):
+            for include in deserialized_rules.includes:
+                if include in source_option.v2ray_domain_exclude_includes:
+                    continue
+                paths.append(build_v2ray_include_url(path, include))
+            deserialized_rules = deserialized_rules.rules
+        aggregated_rules.merge_with(deserialized_rules)
+    return aggregated_rules
+
+
 def main():
     try:
-        _main()
+        sources = pre_process_sources()
+        process_sources(sources)
     except Exception as e:
         logger.exception(e)
         Path(".failure").touch()
