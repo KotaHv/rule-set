@@ -82,25 +82,8 @@ def deserialize_data(
 def pre_process_sources() -> list[SourceModel]:
     sources = []
     for source in SOURCES:
-        resources = []
-        for resource in source.resources:
-            if (
-                isinstance(resource, BaseResource)
-                and isinstance(resource.source, Path)
-                and resource.source.is_dir()
-            ):
-                # Handle directory resources, create new resource objects for each file
-                resources.extend(
-                    [
-                        resource.model_copy(update={"source": filepath})
-                        for filepath in resource.source.iterdir()
-                    ]
-                )
-            else:
-                resources.append(resource)
-
         if source.name.is_dir():
-            for resource in resources:
+            for resource in source.resources:
                 if isinstance(resource, BaseResource):
                     stem = (
                         resource.source.stem
@@ -118,7 +101,7 @@ def pre_process_sources() -> list[SourceModel]:
                     )
                 )
         else:
-            sources.append(source.model_copy(update={"resources": resources}))
+            sources.append(source)
     return sources
 
 

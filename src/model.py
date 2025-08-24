@@ -1,7 +1,7 @@
 from collections import defaultdict
 import ipaddress
 from pathlib import Path
-from typing import Annotated, Any
+from typing import Annotated, Any, Self
 from enum import Enum
 
 from pydantic import (
@@ -11,6 +11,7 @@ from pydantic import (
     GetCoreSchemaHandler,
     GetJsonSchemaHandler,
     field_validator,
+    model_validator,
 )
 from pydantic_core import core_schema
 from pydantic.json_schema import JsonSchemaValue
@@ -180,6 +181,29 @@ class SourceModel(BaseModel):
     exclude: SerializeFormats = []
     include: SerializeFormats | None = None
     option: Option = Option()
+
+    @model_validator(mode="after")
+    def expand_directory_resources(self) -> Self:
+        """Expand directory resources to individual file resources"""
+        expanded_resources = []
+
+        for resource in self.resources:
+            if (
+                isinstance(resource, BaseResource)
+                and isinstance(resource.source, Path)
+                and resource.source.is_dir()
+            ):
+                # Recursively find all files in directory and subdirectories
+                for root, _, files in resource.source.walk():
+                    for file in files:
+                        filepath = root / file
+                        expanded_resources.append(
+                            resource.model_copy(update={"source": filepath})
+                        )
+            else:
+                expanded_resources.append(resource)
+        self.resources = expanded_resources
+        return self
 
     def __repr__(self) -> str:
         return f"{self.name}: {self.resources}"
