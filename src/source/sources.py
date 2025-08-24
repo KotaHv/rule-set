@@ -1,29 +1,35 @@
-from model import SerializeFormat, SourceModel, Option, V2rayDomainAttr
+from model import (
+    SerializeFormat,
+    SourceModel,
+    Option,
+    V2rayDomainAttr,
+    RuleSetResource,
+    DomainSetResource,
+    V2rayDomainResource,
+    MaxMindDBResource,
+    SourceReference,
+)
 
 sources = [
     SourceModel(
         resources=[
-            "https://ruleset.skk.moe/List/non_ip/global.conf",
-            "sources/global",
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/python",
-                "V2RAY-DOMAIN",
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/global.conf"),
+            RuleSetResource(source="sources/global"),
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/python"
             ),
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/rust",
-                "V2RAY-DOMAIN",
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/rust"
             ),
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/flutter",
-                "V2RAY-DOMAIN",
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/flutter"
             ),
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/paypal",
-                "V2RAY-DOMAIN",
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/paypal"
             ),
-            "@dev",
+            SourceReference(target="dev"),
         ],
-        target_path="global",
+        name="global",
         option=Option(
             exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
             optimize_domains_by_keyword=True,
@@ -31,133 +37,168 @@ sources = [
         ),
     ),
     SourceModel(
-        resources="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
-        target_path="adblock/sukka/sukka-reject-no-drop",
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf"
+            )
+        ],
+        name="adblock/sukka/sukka-reject-no-drop",
         include=[SerializeFormat.Surge, SerializeFormat.Loon],
     ),
     SourceModel(
-        resources="https://ruleset.skk.moe/List/non_ip/reject-drop.conf",
-        target_path="adblock/sukka/sukka-reject-drop",
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/reject-drop.conf"
+            )
+        ],
+        name="adblock/sukka/sukka-reject-drop",
         exclude=[SerializeFormat.Egern, SerializeFormat.Sing_Box],
     ),
     SourceModel(
         resources=[
-            ("https://ruleset.skk.moe/List/domainset/reject.conf", "DOMAIN-SET"),
-            "https://ruleset.skk.moe/List/non_ip/reject.conf",
-            "https://ruleset.skk.moe/List/ip/reject.conf",
+            DomainSetResource(
+                source="https://ruleset.skk.moe/List/domainset/reject.conf"
+            ),
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/reject.conf"),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/reject.conf"),
         ],
-        target_path="adblock/sukka/sukka-reject",
+        name="adblock/sukka/sukka-reject",
         option=Option(exclude_suffixes=["juejin.cn", "juejin.im"]),
     ),
     SourceModel(
-        resources=(
-            "https://ruleset.skk.moe/List/domainset/reject_extra.conf",
-            "DOMAIN-SET",
-        ),
-        target_path="adblock/sukka/sukka-reject-extra",
-    ),
-    SourceModel(
-        resources="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list",
-        target_path="adblock/cats-team-ad",
-    ),
-    SourceModel(
-        resources=(
-            "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt",
-            "DOMAIN-SET",
-        ),
-        target_path="adblock/anti-ad",
-    ),
-    SourceModel(
-        resources="https://ruleset.skk.moe/List/non_ip/ai.conf", target_path="ai"
+        resources=[
+            DomainSetResource(
+                source="https://ruleset.skk.moe/List/domainset/reject_extra.conf"
+            )
+        ],
+        name="adblock/sukka/sukka-reject-extra",
     ),
     SourceModel(
         resources=[
-            "https://ruleset.skk.moe/List/non_ip/apple_cdn.conf",
-            ("https://ruleset.skk.moe/List/domainset/apple_cdn.conf", "DOMAIN-SET"),
+            RuleSetResource(
+                source="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list"
+            )
         ],
-        target_path="apple/apple-cdn",
-    ),
-    SourceModel(
-        resources="https://ruleset.skk.moe/List/non_ip/apple_cn.conf",
-        target_path="apple/apple-cn",
+        name="adblock/cats-team-ad",
     ),
     SourceModel(
         resources=[
-            "https://ruleset.skk.moe/List/non_ip/apple_services.conf",
+            DomainSetResource(
+                source="https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
+            )
         ],
-        target_path="apple/apple-services",
-    ),
-    SourceModel(
-        resources="https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf",
-        target_path="microsoft/microsoft-cdn",
-    ),
-    SourceModel(
-        resources="https://ruleset.skk.moe/List/non_ip/microsoft.conf",
-        target_path="microsoft/microsoft",
+        name="adblock/anti-ad",
     ),
     SourceModel(
         resources=[
-            "https://ruleset.skk.moe/List/non_ip/telegram.conf",
-            "https://ruleset.skk.moe/List/ip/telegram.conf",
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/ai.conf")
         ],
-        target_path="telegram",
+        name="ai",
     ),
     SourceModel(
-        resources=(
-            "https://ruleset.skk.moe/List/domainset/speedtest.conf",
-            "DOMAIN-SET",
-        ),
-        target_path="speedtest",
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/apple_cdn.conf"
+            ),
+            DomainSetResource(
+                source="https://ruleset.skk.moe/List/domainset/apple_cdn.conf"
+            ),
+        ],
+        name="apple/apple-cdn",
     ),
     SourceModel(
-        resources="sources/global/dropbox.txt",
-        target_path="dropbox",
+        resources=[
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/apple_cn.conf")
+        ],
+        name="apple/apple-cn",
     ),
     SourceModel(
-        resources=(
-            "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam",
-            "V2RAY-DOMAIN",
-        ),
-        target_path="steam/steam-cn",
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/apple_services.conf"
+            ),
+        ],
+        name="apple/apple-services",
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf"
+            )
+        ],
+        name="microsoft/microsoft-cdn",
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/microsoft.conf")
+        ],
+        name="microsoft/microsoft",
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/telegram.conf"),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/telegram.conf"),
+        ],
+        name="telegram",
+    ),
+    SourceModel(
+        resources=[
+            DomainSetResource(
+                source="https://ruleset.skk.moe/List/domainset/speedtest.conf"
+            )
+        ],
+        name="speedtest",
+    ),
+    SourceModel(
+        resources=[RuleSetResource(source="sources/global/dropbox.txt")],
+        name="dropbox",
+    ),
+    SourceModel(
+        resources=[
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam"
+            )
+        ],
+        name="steam/steam-cn",
         option=Option(v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn")),
     ),
     SourceModel(
-        resources=(
-            "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam",
-            "V2RAY-DOMAIN",
-        ),
-        target_path="steam/steam",
+        resources=[
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam"
+            )
+        ],
+        name="steam/steam",
         option=Option(v2ray_domain_attrs=V2rayDomainAttr.NO_ATTR()),
     ),
     SourceModel(
-        resources=(
-            "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download",
-            "V2RAY-DOMAIN",
-        ),
-        target_path="game/game-download-cn",
+        resources=[
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download"
+            )
+        ],
+        name="game/game-download-cn",
         option=Option(v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn")),
     ),
     SourceModel(
         resources=[
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download",
-                "V2RAY-DOMAIN",
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download"
             ),
-            "sources/game/download.txt",
+            RuleSetResource(source="sources/game/download.txt"),
         ],
-        target_path="game/game-download",
+        name="game/game-download",
         option=Option(v2ray_domain_attrs=V2rayDomainAttr.NO_ATTR()),
     ),
     SourceModel(
         resources=[
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-games-cn",
-                "V2RAY-DOMAIN",
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-games-cn"
             ),
-            "sources/game/cn.txt",
-            "@steam/steam-cn",
+            RuleSetResource(source="sources/game/cn.txt"),
+            SourceReference(target="steam/steam-cn"),
         ],
-        target_path="game/game-cn",
+        name="game/game-cn",
         option=Option(
             v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["!cn", "ads"]),
             v2ray_domain_exclude_includes=["4399", "cowlevel", "tgbus", "vrzwk"],
@@ -165,115 +206,126 @@ sources = [
     ),
     SourceModel(
         resources=[
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-games-!cn",
-                "V2RAY-DOMAIN",
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-games-!cn"
             ),
-            "sources/game/global.txt",
+            RuleSetResource(source="sources/game/global.txt"),
         ],
-        target_path="game/game",
+        name="game/game",
         option=Option(
             v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
         ),
     ),
     SourceModel(
         resources=[
-            "https://ruleset.skk.moe/List/non_ip/download.conf",
-            ("https://ruleset.skk.moe/List/domainset/download.conf", "DOMAIN-SET"),
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/download.conf"),
+            DomainSetResource(
+                source="https://ruleset.skk.moe/List/domainset/download.conf"
+            ),
         ],
-        target_path="download",
+        name="download",
     ),
     SourceModel(
         resources=[
-            "https://ruleset.skk.moe/List/non_ip/cdn.conf",
-            ("https://ruleset.skk.moe/List/domainset/cdn.conf", "DOMAIN-SET"),
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/cdn.conf"),
+            DomainSetResource(source="https://ruleset.skk.moe/List/domainset/cdn.conf"),
         ],
-        target_path="cdn",
+        name="cdn",
         option=Option(optimize_domains_by_keyword=True),
     ),
     SourceModel(
         resources=[
-            "https://ruleset.skk.moe/List/non_ip/domestic.conf",
-            "sources/direct.txt",
-            (
-                "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon",
-                "V2RAY-DOMAIN",
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/domestic.conf"),
+            RuleSetResource(source="sources/direct.txt"),
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon"
             ),
         ],
-        target_path="direct",
+        name="direct",
         option=Option(
             v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn"),
         ),
     ),
     SourceModel(
-        resources=(
-            "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-dev",
-            "V2RAY-DOMAIN",
-        ),
-        target_path="dev",
+        resources=[
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-dev"
+            )
+        ],
+        name="dev",
         option=Option(
             v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
         ),
     ),
     SourceModel(
         resources=[
-            "https://ruleset.skk.moe/List/non_ip/lan.conf",
-            "https://ruleset.skk.moe/List/ip/lan.conf",
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/lan.conf"),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/lan.conf"),
         ],
-        target_path="lan",
+        name="lan",
         option=Option(no_resolve=False),
     ),
-    SourceModel(resources="sources/my-rules", option=Option(clash_optimize=False)),
     SourceModel(
-        resources="sources/global/ehentai.txt",
-        target_path="e-hentai",
+        resources=[RuleSetResource(source="sources/my-rules")],
+        name="my-rules",
+        option=Option(clash_optimize=False),
     ),
     SourceModel(
-        resources="sources/global/reddit.txt",
-        target_path="reddit",
+        resources=[RuleSetResource(source="sources/global/ehentai.txt")],
+        name="e-hentai",
     ),
     SourceModel(
-        resources="sources/anime.txt",
-        target_path="anime",
+        resources=[RuleSetResource(source="sources/global/reddit.txt")],
+        name="reddit",
     ),
     SourceModel(
-        resources=(
-            "https://raw.githubusercontent.com/NobyDa/geoip/release/Private-GeoIP-CN.mmdb",
-            "MaxMind DB",
-        ),
-        target_path="cn-ip/cn-nobyda",
-        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+        resources=[RuleSetResource(source="sources/anime.txt")],
+        name="anime",
     ),
     SourceModel(
-        resources=(
-            "https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb",
-            "MaxMind DB",
-        ),
-        target_path="cn-ip/cn-ipinfo",
-        option=Option(no_resolve=False, geo_ip_country_code="CN"),
-    ),
-    SourceModel(
-        resources=(
-            "https://github.com/xream/geoip/releases/latest/download/ip2location.country.mmdb",
-            "MaxMind DB",
-        ),
-        target_path="cn-ip/cn-ip2location",
-        option=Option(no_resolve=False, geo_ip_country_code="CN"),
-    ),
-    SourceModel(
-        resources=(
-            "https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/Country.mmdb",
-            "MaxMind DB",
-        ),
-        target_path="cn-ip/cn-alecthw",
+        resources=[
+            MaxMindDBResource(
+                source="https://raw.githubusercontent.com/NobyDa/geoip/release/Private-GeoIP-CN.mmdb"
+            )
+        ],
+        name="cn-ip/cn-nobyda",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
     SourceModel(
         resources=[
-            "https://ruleset.skk.moe/List/ip/china_ip.conf",
-            "https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf",
+            MaxMindDBResource(
+                source="https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb"
+            )
         ],
-        target_path="cn-ip/cn-sukka",
+        name="cn-ip/cn-ipinfo",
+        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+    ),
+    SourceModel(
+        resources=[
+            MaxMindDBResource(
+                source="https://github.com/xream/geoip/releases/latest/download/ip2location.country.mmdb"
+            )
+        ],
+        name="cn-ip/cn-ip2location",
+        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+    ),
+    SourceModel(
+        resources=[
+            MaxMindDBResource(
+                source="https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/Country.mmdb"
+            )
+        ],
+        name="cn-ip/cn-alecthw",
+        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/china_ip.conf"),
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf"
+            ),
+        ],
+        name="cn-ip/cn-sukka",
         option=Option(no_resolve=False, geo_ip_country_code="CN"),
     ),
 ]

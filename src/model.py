@@ -1,7 +1,7 @@
 from collections import defaultdict
 import ipaddress
 from pathlib import Path
-from typing import Annotated, Any, Self
+from typing import Annotated, Any
 from enum import Enum
 
 from pydantic import (
@@ -11,7 +11,6 @@ from pydantic import (
     GetCoreSchemaHandler,
     GetJsonSchemaHandler,
     field_validator,
-    model_validator,
 )
 from pydantic_core import core_schema
 from pydantic.json_schema import JsonSchemaValue
@@ -40,68 +39,56 @@ SerializeFormats = Annotated[
 ]
 
 
-class ResourceFormat(str, Enum):
-    RuleSet = "RULE-SET"
-    DomainSet = "DOMAIN-SET"
-    MaxMindDB = "MaxMind DB"
-    V2RayDomain = "V2RAY-DOMAIN"
-    SourceReference = "SOURCE-REF"
+# New resource type system - using Python 3.13 syntax
+type Source = HttpUrl | Path
 
 
-class SourceResource(BaseModel):
-    path: HttpUrl | Path
-    format: ResourceFormat = ResourceFormat.RuleSet
+class BaseResource(BaseModel):
+    """Base class for actual resources"""
 
-    @property
-    def name(self) -> str:
-        if self.is_dir():
-            name = self.path
-        elif self.is_path():
-            name = self.path.name
-        else:
-            name = self.path.unicode_string().split("/")[-1]
-        return str(name)
-
-    @model_validator(mode="before")
-    @classmethod
-    def validate_input(cls, data: Any) -> Any:
-        if isinstance(data, str):
-            if data.startswith("@"):
-                return {"path": data, "format": ResourceFormat.SourceReference}
-            return {"path": data}
-        if isinstance(data, tuple) and len(data) == 2:
-            return {"path": data[0], "format": data[1]}
-        return data
-
-    def is_path(self) -> bool:
-        return isinstance(self.path, Path)
-
-    def is_dir(self) -> bool:
-        try:
-            return self.path.is_dir()
-        except AttributeError:
-            return False
-
-    def is_file(self) -> bool:
-        try:
-            return self.path.is_file()
-        except AttributeError:
-            return False
-
-    def is_source_reference(self) -> bool:
-        return self.format == ResourceFormat.SourceReference
-
-    def get_reference_target(self) -> str:
-        if self.is_source_reference():
-            path_str = str(self.path)
-            return path_str[1:] if path_str.startswith("@") else path_str
-        raise ValueError("Not a source reference")
+    source: Source
 
 
-SourceResources = Annotated[
-    list[SourceResource],
-    BeforeValidator(lambda x: [x] if not isinstance(x, list) else x),
-]
+class RuleSetResource(BaseResource):
+    """Rule set resource"""
+
+    pass
+
+
+class DomainSetResource(BaseResource):
+    """Domain set resource"""
+
+    pass
+
+
+class V2rayDomainResource(BaseResource):
+    """V2Ray domain resource"""
+
+    pass
+
+
+class MaxMindDBResource(BaseResource):
+    """MaxMind database resource"""
+
+    pass
+
+
+class SourceReference(BaseModel):
+    """Source reference - not an actual resource"""
+
+    target: str
+
+
+type ResourceType = (
+    RuleSetResource
+    | DomainSetResource
+    | V2rayDomainResource
+    | MaxMindDBResource
+    | SourceReference
+)
+
+# Resource list type
+type ResourceList = list[ResourceType]
 
 
 class V2rayAttrMode(str, Enum):
@@ -188,30 +175,14 @@ class Option(BaseModel):
 
 
 class SourceModel(BaseModel):
-    resources: SourceResources
-    target_path: Path | None = None
+    resources: ResourceList
+    name: Path
     exclude: SerializeFormats = []
     include: SerializeFormats | None = None
     option: Option = Option()
 
-    @model_validator(mode="after")
-    def check_target_path(self) -> Self:
-        if len(self.resources) > 1:
-            if self.target_path is None:
-                raise ValueError(
-                    "target_path cannot be empty when there are multiple resources"
-                )
-        if self.target_path is None:
-            self.target_path = Path(self.resources[0].name)
-        return self
-
     def __repr__(self) -> str:
-        if len(self.resources) == 1:
-            resource = self.resources[0]
-            if resource.is_dir():
-                return f'{self.target_path}: "{list(resource.path.iterdir())}"'
-            return f'{self.target_path}: "{resource}"'
-        return f"{self.target_path}: {self.resources}"
+        return f"{self.name}: {self.resources}"
 
     def __str__(self) -> str:
         return self.__repr__()
