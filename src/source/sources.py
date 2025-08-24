@@ -268,6 +268,7 @@ sources = [
     SourceModel(
         resources=[RuleSetResource(source="sources/my-rules")],
         name="my-rules",
+        split_resources=True,
         option=Option(clash_optimize=False),
     ),
     SourceModel(

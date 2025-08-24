@@ -181,6 +181,7 @@ class SourceModel(BaseModel):
     exclude: SerializeFormats = []
     include: SerializeFormats | None = None
     option: Option = Option()
+    split_resources: bool = False
 
     @model_validator(mode="after")
     def expand_directory_resources(self) -> Self:

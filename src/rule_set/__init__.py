@@ -79,32 +79,6 @@ def deserialize_data(
     raise Exception(f"Unknown resource type: {type(resource)}")
 
 
-def pre_process_sources() -> list[SourceModel]:
-    sources = []
-    for source in SOURCES:
-        if source.name.is_dir():
-            for resource in source.resources:
-                if isinstance(resource, BaseResource):
-                    stem = (
-                        resource.source.stem
-                        if isinstance(resource.source, Path)
-                        else resource.source.unicode_string().split("/")[-1]
-                    )
-                else:
-                    stem = resource.target
-                sources.append(
-                    source.model_copy(
-                        update={
-                            "resources": [resource],
-                            "name": source.name / stem,
-                        }
-                    )
-                )
-        else:
-            sources.append(source)
-    return sources
-
-
 def process_sources(sources: list[SourceModel]):
     for source in sources:
         if cached_result := source_cache.retrieve(source.name):
@@ -185,8 +159,7 @@ def process_resource(resource: BaseResource, source_option: Option) -> RuleModel
 
 def main():
     try:
-        sources = pre_process_sources()
-        process_sources(sources)
+        process_sources(SOURCES)
     except Exception as e:
         logger.exception(e)
         Path(".failure").touch()
