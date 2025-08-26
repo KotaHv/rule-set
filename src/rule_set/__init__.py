@@ -9,6 +9,7 @@ from model import (
     SourceModel,
     SerializeFormat,
     Option,
+    V2rayDomainOption,
     V2rayDomainResult,
     BaseResource,
     RuleSetResource,
@@ -56,7 +57,7 @@ source_cache = Cache(path="source")
 
 
 def deserialize_data(
-    data: str | list | Path, resource: BaseResource, option: Option
+    data: str | list | Path, resource: BaseResource, option: Option | V2rayDomainOption
 ) -> RuleModel | V2rayDomainResult:
     if isinstance(resource, RuleSetResource):
         de = RuleSetDeserialize(data)
@@ -123,7 +124,7 @@ def process_resource(resource: BaseResource, source_option: Option) -> RuleModel
     for path in paths:
         cache_key = str(path)
         if isinstance(resource, V2rayDomainResource):
-            cache_key += f"::attrs={source_option.v2ray_domain.attrs}"
+            cache_key += f"::attrs={resource.option.attrs}"
 
         if cached_result := resource_cache.retrieve(cache_key):
             if isinstance(resource, V2rayDomainResource):
@@ -137,7 +138,10 @@ def process_resource(resource: BaseResource, source_option: Option) -> RuleModel
                 data = fetcher.download_file(path)
             else:
                 data = fetcher.get_content(path)
-            deserialized_rules = deserialize_data(data, resource, source_option)
+            if isinstance(resource, V2rayDomainResource):
+                deserialized_rules = deserialize_data(data, resource, resource.option)
+            else:
+                deserialized_rules = deserialize_data(data, resource, source_option)
             resource_cache.store(cache_key, deserialized_rules.model_dump_json())
 
         if isinstance(deserialized_rules, V2rayDomainResult):

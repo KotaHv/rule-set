@@ -46,54 +46,6 @@ SerializeFormats = Annotated[
 type Source = HttpUrl | Path
 
 
-class BaseResource(BaseModel):
-    """Base class for actual resources"""
-
-    source: Source
-
-
-class RuleSetResource(BaseResource):
-    """Rule set resource"""
-
-    pass
-
-
-class DomainSetResource(BaseResource):
-    """Domain set resource"""
-
-    pass
-
-
-class V2rayDomainResource(BaseResource):
-    """V2Ray domain resource"""
-
-    pass
-
-
-class MaxMindDBResource(BaseResource):
-    """MaxMind database resource"""
-
-    pass
-
-
-class SourceReference(BaseModel):
-    """Source reference - not an actual resource"""
-
-    target: str
-
-
-type ResourceType = (
-    RuleSetResource
-    | DomainSetResource
-    | V2rayDomainResource
-    | MaxMindDBResource
-    | SourceReference
-)
-
-# Resource list type
-type ResourceList = list[ResourceType]
-
-
 class V2rayAttrMode(str, Enum):
     ALL = "ALL"
     NO_ATTR = "NO_ATTR"
@@ -157,6 +109,8 @@ class V2rayDomainAttr(BaseModel):
     def __repr__(self) -> str:
         if self.mode == V2rayAttrMode.ATTRS:
             return f"ATTRS<{'|'.join(self.attrs)}>"
+        if self.mode == V2rayAttrMode.EXCLUDE_ATTRS:
+            return f"EXCLUDE_ATTRS<{'|'.join(self.attrs)}>"
         return self.mode.value
 
     def __str__(self) -> str:
@@ -177,8 +131,8 @@ class ProcessingOption(BaseModel):
 
 
 class V2rayDomainOption(BaseModel):
-    attrs: V2rayDomainAttr = V2rayDomainAttr.ALL()
-    exclude_includes: list[str] = []
+    attrs: V2rayDomainAttr | None = None
+    exclude_includes: list[str] | None = None
 
 
 class GeoIPOption(BaseModel):
@@ -190,8 +144,67 @@ class Option(BaseModel):
 
     serialization: SerializationOption = SerializationOption()
     processing: ProcessingOption = ProcessingOption()
-    v2ray_domain: V2rayDomainOption = V2rayDomainOption()
+    v2ray_domain: V2rayDomainOption = V2rayDomainOption(
+        attrs=V2rayDomainAttr.ALL(), exclude_includes=[]
+    )
     geo_ip: GeoIPOption = GeoIPOption()
+
+    @field_validator("v2ray_domain", mode="before")
+    def set_default_v2ray_domain_option(cls, v: V2rayDomainOption) -> V2rayDomainOption:
+        """Set default values for V2rayDomainOption fields if they are None."""
+        if v.attrs is None:
+            v.attrs = V2rayDomainAttr.ALL()
+        if v.exclude_includes is None:
+            v.exclude_includes = []
+        return v
+
+
+class BaseResource(BaseModel):
+    """Base class for actual resources"""
+
+    source: Source
+
+
+class RuleSetResource(BaseResource):
+    """Rule set resource"""
+
+    pass
+
+
+class DomainSetResource(BaseResource):
+    """Domain set resource"""
+
+    pass
+
+
+class V2rayDomainResource(BaseResource):
+    """V2Ray domain resource"""
+
+    option: V2rayDomainOption = V2rayDomainOption()
+
+
+class MaxMindDBResource(BaseResource):
+    """MaxMind database resource"""
+
+    pass
+
+
+class SourceReference(BaseModel):
+    """Source reference - not an actual resource"""
+
+    target: str
+
+
+type ResourceType = (
+    RuleSetResource
+    | DomainSetResource
+    | V2rayDomainResource
+    | MaxMindDBResource
+    | SourceReference
+)
+
+# Resource list type
+type ResourceList = list[ResourceType]
 
 
 class SourceModel(BaseModel):
@@ -223,6 +236,23 @@ class SourceModel(BaseModel):
             else:
                 expanded_resources.append(resource)
         self.resources = expanded_resources
+        return self
+
+    @model_validator(mode="after")
+    def merge_v2ray_domain_options(self) -> Self:
+        """Merge V2rayDomainOption from global option to individual V2rayDomainResource"""
+        for resource in self.resources:
+            if isinstance(resource, V2rayDomainResource):
+                # Merge attrs field
+                if resource.option.attrs is None:
+                    resource.option.attrs = self.option.v2ray_domain.attrs
+
+                # Merge exclude_includes field
+                if resource.option.exclude_includes is None:
+                    resource.option.exclude_includes = (
+                        self.option.v2ray_domain.exclude_includes
+                    )
+
         return self
 
     def __repr__(self) -> str:
