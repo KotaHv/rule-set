@@ -82,7 +82,11 @@ def process_sources(sources: list[SourceModel]):
             source.include
             if source.include
             else filter(
-                lambda x: x not in source.exclude,
+                lambda x: x not in source.exclude
+                and not (
+                    source.option.geo_ip_country_code is None
+                    and x == SerializeFormat.GeoIP
+                ),
                 client_serializers_writers.keys(),
             )
         )

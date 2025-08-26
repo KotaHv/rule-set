@@ -10,8 +10,6 @@ class Serialize:
         self.option = option
 
     def serialize(self) -> bytes | None:
-        if not self.rules.has_only_ip_cidr_rules():
-            return
         ip_list = []
         ip_list.extend(self.rules.ip_cidr)
         ip_list.extend(self.rules.ip_cidr6)
