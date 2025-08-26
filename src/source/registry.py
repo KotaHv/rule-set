@@ -1,6 +1,6 @@
 from typing import Iterator
 from pathlib import Path
-from model import SourceModel, BaseResource, SourceReference
+from model import SourceModel, BaseResource
 from .dep_resolver import DependencyResolver
 
 
