@@ -32,7 +32,6 @@ sources = [
         name="global",
         option=Option(
             exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
-            optimize_domains_by_keyword=True,
             v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("ads"),
         ),
     ),
@@ -231,7 +230,6 @@ sources = [
             DomainSetResource(source="https://ruleset.skk.moe/List/domainset/cdn.conf"),
         ],
         name="cdn",
-        option=Option(optimize_domains_by_keyword=True),
     ),
     SourceModel(
         resources=[

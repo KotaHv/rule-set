@@ -59,18 +59,10 @@ def deserialize_data(
     data: str | list | Path, resource: BaseResource, option: Option
 ) -> RuleModel | V2rayDomainResult:
     if isinstance(resource, RuleSetResource):
-        de = RuleSetDeserialize(
-            data,
-            exclude_keywords=option.exclude_keywords,
-            exclude_suffixes=option.exclude_suffixes,
-        )
+        de = RuleSetDeserialize(data)
         return de.deserialize()
     elif isinstance(resource, DomainSetResource):
-        de = DomainSetDeserialize(
-            data,
-            exclude_keywords=option.exclude_keywords,
-            exclude_suffixes=option.exclude_suffixes,
-        )
+        de = DomainSetDeserialize(data)
         return de.deserialize()
     elif isinstance(resource, MaxMindDBResource):
         return mmdb.deserialize(data, country_code=option.geo_ip_country_code)
@@ -114,8 +106,6 @@ def process_source(source: SourceModel) -> RuleModel:
         else:
             aggregated_rules.merge_with(process_resource(resource, source.option))
 
-    for rule_types in source.option.exclude_rule_types:
-        setattr(aggregated_rules, rule_types, set())
     aggregated_rules.filter(source.option)
     aggregated_rules.sort()
     source_cache.store(source.name, aggregated_rules.model_dump_json())

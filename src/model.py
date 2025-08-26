@@ -1,5 +1,7 @@
-from collections import defaultdict
+import re
 import ipaddress
+
+from collections import defaultdict
 from pathlib import Path
 from typing import Annotated, Any, Self
 from enum import Enum
@@ -170,7 +172,6 @@ class Option(BaseModel):
     exclude_rule_types: list[str] = []
     optimize_domains: bool = False
     exclude_optimized_domains: list[str] = []
-    optimize_domains_by_keyword: bool = False
     v2ray_domain_attrs: V2rayDomainAttr = V2rayDomainAttr.ALL()
     v2ray_domain_exclude_includes: list[str] = []
 
@@ -319,7 +320,8 @@ class RuleModel(BaseModel):
                 value = sorted(value)
             setattr(self, key, value)
 
-    def _filter_domain(self, domain: str):
+    def _deduplicate_domain(self, domain: str):
+        """Remove domains that are already covered by domain-suffix rules."""
         domain_parts = domain.split(".")
         suffixes_to_check = [
             ".".join(domain_parts[i:]) for i in range(len(domain_parts))
@@ -330,7 +332,8 @@ class RuleModel(BaseModel):
                 return False
         return True
 
-    def _filter_domain_suffix(self, domain_suffix: str):
+    def _deduplicate_domain_suffix(self, domain_suffix: str):
+        """Remove domain-suffix rules that are already covered by shorter suffixes."""
         domain_suffix_parts = domain_suffix.split(".")
         suffixes_to_check = [
             ".".join(domain_suffix_parts[i:])
@@ -342,7 +345,8 @@ class RuleModel(BaseModel):
                 return False
         return True
 
-    def _filter_domain_suffix_by_keyword(self, domain_suffix: str):
+    def _deduplicate_domain_suffix_by_keyword(self, domain_suffix: str):
+        """Remove domain-suffix rules that are already covered by domain-keyword rules."""
         for keyword in self.domain_keyword:
             if keyword in domain_suffix:
                 logger.error(
@@ -351,7 +355,24 @@ class RuleModel(BaseModel):
                 return False
         return True
 
+    def _deduplicate_domain_keyword(self, candidate_keyword: str):
+        """Remove domain-keyword rules that are already covered by shorter keywords."""
+        for current_keyword in self.domain_keyword:
+            if (
+                current_keyword != candidate_keyword
+                and current_keyword in candidate_keyword
+            ):
+                logger.error(
+                    f"DOMAIN-KEYWORD,{candidate_keyword} -> DOMAIN-KEYWORD,{current_keyword}"
+                )
+                return False
+        return True
+
     def _optimize_domains(self, exclude_optimized_domains: list[str] = []):
+        """
+        Optimize domains by converting them to domain-suffix rules and aggregating common suffixes.
+
+        """
         for domain in self.domain:
             domain_parts = domain.split(".")
             for index in range(len(domain_parts) - 1, -1, -1):
@@ -382,30 +403,46 @@ class RuleModel(BaseModel):
                 elif isinstance(self.domain_suffix, list):
                     self.domain_suffix.append(domain_suffix)
 
-    def _filter_domain_keyword(self, candidate_keyword: str):
-        for current_keyword in self.domain_keyword:
-            if (
-                current_keyword != candidate_keyword
-                and current_keyword in candidate_keyword
-            ):
-                logger.error(
-                    f"DOMAIN-KEYWORD,{candidate_keyword} -> DOMAIN-KEYWORD,{current_keyword}"
-                )
-                return False
-        return True
+    def _exclude_domains_by_keywords(self, exclude_keywords: list[str]):
+        escaped_keywords = map(re.escape, exclude_keywords)
+        pattern = re.compile(f"({'|'.join(escaped_keywords)})")
+
+        self.domain = {d for d in self.domain if not pattern.search(d)}
+        self.domain_suffix = {d for d in self.domain_suffix if not pattern.search(d)}
+        self.domain_wildcard = {
+            d for d in self.domain_wildcard if not pattern.search(d)
+        }
+
+    def _exclude_domains_by_suffixes(self, exclude_suffixes: list[str]):
+        escaped_suffixes = map(re.escape, exclude_suffixes)
+        pattern = re.compile(f"({'|'.join(escaped_suffixes)})$")
+
+        self.domain = {d for d in self.domain if not pattern.search(d)}
+        self.domain_suffix = {d for d in self.domain_suffix if not pattern.search(d)}
+        self.domain_wildcard = {
+            d for d in self.domain_wildcard if not pattern.search(d)
+        }
 
     def filter(self, option: Option):
-        self.domain = set(filter(self._filter_domain, self.domain))
+        """Apply various optimization and filtering rules to clean up and optimize the rule set."""
+        for rule_type in option.exclude_rule_types:
+            setattr(self, rule_type, set())
+        self.domain = set(filter(self._deduplicate_domain, self.domain))
         self.domain_keyword = set(
-            filter(self._filter_domain_keyword, self.domain_keyword)
+            filter(self._deduplicate_domain_keyword, self.domain_keyword)
         )
-        if option.optimize_domains_by_keyword:
-            self.domain_suffix = set(
-                filter(self._filter_domain_suffix_by_keyword, self.domain_suffix)
-            )
+        self.domain_suffix = set(
+            filter(self._deduplicate_domain_suffix_by_keyword, self.domain_suffix)
+        )
+        self.domain_suffix = set(
+            filter(self._deduplicate_domain_suffix, self.domain_suffix)
+        )
         if option.optimize_domains:
             self._optimize_domains(option.exclude_optimized_domains)
-        self.domain_suffix = set(filter(self._filter_domain_suffix, self.domain_suffix))
+        if option.exclude_keywords:
+            self._exclude_domains_by_keywords(option.exclude_keywords)
+        if option.exclude_suffixes:
+            self._exclude_domains_by_suffixes(option.exclude_suffixes)
 
     def has_only_ip_cidr_rules(self, ignore_types: list = []) -> bool:
         return self._has_only_rules_of_type(["ip_cidr", "ip_cidr6"], ignore_types)
