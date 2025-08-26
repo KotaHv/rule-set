@@ -1,12 +1,12 @@
 import re
-from model import RuleModel, V2rayDomainAttr, V2rayDomainResult
+from model import RuleModel, V2rayDomainResult, Option
 
 EXPLICIT_RULE = re.compile(
     r"^(domain|keyword|full|regexp):(.+?)(?:\s+(@\w+(?:\s+@\w+)*))?$"
 )
 
 
-def deserialize(data: str, attrs: V2rayDomainAttr) -> V2rayDomainResult:
+def deserialize(data: str, option: Option) -> V2rayDomainResult:
     """
     V2Ray domain syntax:
         - Lines starting with '#' are comments and ignored.
@@ -18,6 +18,8 @@ def deserialize(data: str, attrs: V2rayDomainAttr) -> V2rayDomainResult:
         - Domain rules (domain, keyword, regexp, full) may include one or more
           attributes, each beginning with '@' and separated by spaces (e.g., @ads @cn).
     """
+    attrs = option.v2ray_domain_attrs
+    exclude_includes = option.v2ray_domain_exclude_includes
     rules = RuleModel()
     includes = []
 
@@ -26,7 +28,9 @@ def deserialize(data: str, attrs: V2rayDomainAttr) -> V2rayDomainResult:
         if not line or line.startswith("#"):
             continue
         if line.startswith("include:"):
-            includes.append(line[8:].strip())
+            include = line[8:].strip()
+            if include not in exclude_includes:
+                includes.append(include)
             continue
         line = line.split("#", 1)[0].strip()
         explicit_match = EXPLICIT_RULE.match(line)

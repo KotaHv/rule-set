@@ -75,7 +75,7 @@ def deserialize_data(
     elif isinstance(resource, MaxMindDBResource):
         return mmdb.deserialize(data, country_code=option.geo_ip_country_code)
     elif isinstance(resource, V2rayDomainResource):
-        return v2ray_domain.deserialize(data, option.v2ray_domain_attrs)
+        return v2ray_domain.deserialize(data, option)
     raise Exception(f"Unknown resource type: {type(resource)}")
 
 
@@ -148,8 +148,6 @@ def process_resource(resource: BaseResource, source_option: Option) -> RuleModel
 
         if isinstance(deserialized_rules, V2rayDomainResult):
             for include in deserialized_rules.includes:
-                if include in source_option.v2ray_domain_exclude_includes:
-                    continue
                 paths.append(build_v2ray_include_url(path, include))
             deserialized_rules = deserialized_rules.rules
 

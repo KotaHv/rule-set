@@ -416,7 +416,7 @@ class RuleModel(BaseModel):
     def _has_only_rules_of_type(
         self, allowed_types: list, ignore_types: list = []
     ) -> bool:
-        rule_types = list(self.model_fields.keys())
+        rule_types = list(RuleModel.model_fields.keys())
         ignore_types = set(allowed_types + ignore_types)
         for rule_type in ignore_types:
             rule_types.remove(rule_type)
@@ -427,7 +427,7 @@ class RuleModel(BaseModel):
 
     def count_rules(self, ignore_types: list = []) -> int:
         count = 0
-        rule_types = list(self.model_fields.keys())
+        rule_types = list(RuleModel.model_fields.keys())
         for rule_type in ignore_types:
             rule_types.remove(rule_type)
         for rule_type in rule_types:
