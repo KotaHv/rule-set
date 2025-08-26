@@ -8,6 +8,10 @@ from model import (
     V2rayDomainResource,
     MaxMindDBResource,
     SourceReference,
+    ProcessingOption,
+    V2rayDomainOption,
+    SerializationOption,
+    GeoIPOption,
 )
 
 sources = [
@@ -31,13 +35,12 @@ sources = [
         ],
         name="global",
         option=Option(
-            exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
-            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS("ads"),
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
+            processing=ProcessingOption(
+                exclude_rule_types=["ip_cidr", "ip_cidr6", "ip_asn"],
+            ),
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttr.EXCLUDE_ATTRS("ads"),
+            ),
         ),
     ),
     SourceModel(
@@ -48,13 +51,6 @@ sources = [
         ],
         name="adblock/sukka/sukka-reject-no-drop",
         include=[SerializeFormat.Surge, SerializeFormat.Loon],
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
@@ -64,13 +60,6 @@ sources = [
         ],
         name="adblock/sukka/sukka-reject-drop",
         exclude=[SerializeFormat.Egern, SerializeFormat.Sing_Box],
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
@@ -82,13 +71,12 @@ sources = [
         ],
         name="adblock/sukka/sukka-reject",
         option=Option(
-            exclude_suffixes=[
-                "juejin.cn",
-                "juejin.im",
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ]
+            processing=ProcessingOption(
+                exclude_suffixes=[
+                    "juejin.cn",
+                    "juejin.im",
+                ]
+            ),
         ),
     ),
     SourceModel(
@@ -98,13 +86,6 @@ sources = [
             )
         ],
         name="adblock/sukka/sukka-reject-extra",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
@@ -127,13 +108,6 @@ sources = [
             RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/ai.conf")
         ],
         name="ai",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
@@ -145,26 +119,12 @@ sources = [
             ),
         ],
         name="apple/apple-cdn",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
             RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/apple_cn.conf")
         ],
         name="apple/apple-cn",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
@@ -173,13 +133,6 @@ sources = [
             ),
         ],
         name="apple/apple-services",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
@@ -188,26 +141,12 @@ sources = [
             )
         ],
         name="microsoft/microsoft-cdn",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
             RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/microsoft.conf")
         ],
         name="microsoft/microsoft",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
@@ -215,13 +154,6 @@ sources = [
             RuleSetResource(source="https://ruleset.skk.moe/List/ip/telegram.conf"),
         ],
         name="telegram",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
@@ -230,13 +162,6 @@ sources = [
             )
         ],
         name="speedtest",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[RuleSetResource(source="sources/global/dropbox.txt")],
@@ -249,7 +174,11 @@ sources = [
             )
         ],
         name="steam/steam-cn",
-        option=Option(v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn")),
+        option=Option(
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttr.ATTRS("cn"),
+            ),
+        ),
     ),
     SourceModel(
         resources=[
@@ -258,7 +187,11 @@ sources = [
             )
         ],
         name="steam/steam",
-        option=Option(v2ray_domain_attrs=V2rayDomainAttr.NO_ATTR()),
+        option=Option(
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttr.NO_ATTR(),
+            ),
+        ),
     ),
     SourceModel(
         resources=[
@@ -267,7 +200,11 @@ sources = [
             )
         ],
         name="game/game-download-cn",
-        option=Option(v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn")),
+        option=Option(
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttr.ATTRS("cn"),
+            ),
+        ),
     ),
     SourceModel(
         resources=[
@@ -277,7 +214,11 @@ sources = [
             RuleSetResource(source="sources/game/download.txt"),
         ],
         name="game/game-download",
-        option=Option(v2ray_domain_attrs=V2rayDomainAttr.NO_ATTR()),
+        option=Option(
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttr.NO_ATTR(),
+            ),
+        ),
     ),
     SourceModel(
         resources=[
@@ -289,8 +230,10 @@ sources = [
         ],
         name="game/game-cn",
         option=Option(
-            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["!cn", "ads"]),
-            v2ray_domain_exclude_includes=["4399", "cowlevel", "tgbus", "vrzwk"],
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["!cn", "ads"]),
+                exclude_includes=["4399", "cowlevel", "tgbus", "vrzwk"],
+            ),
         ),
     ),
     SourceModel(
@@ -302,7 +245,9 @@ sources = [
         ],
         name="game/game",
         option=Option(
-            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
+            ),
         ),
     ),
     SourceModel(
@@ -313,13 +258,6 @@ sources = [
             ),
         ],
         name="download",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
@@ -327,13 +265,6 @@ sources = [
             DomainSetResource(source="https://ruleset.skk.moe/List/domainset/cdn.conf"),
         ],
         name="cdn",
-        option=Option(
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
-        ),
     ),
     SourceModel(
         resources=[
@@ -345,12 +276,9 @@ sources = [
         ],
         name="direct",
         option=Option(
-            v2ray_domain_attrs=V2rayDomainAttr.ATTRS("cn"),
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttr.ATTRS("cn"),
+            ),
         ),
     ),
     SourceModel(
@@ -361,7 +289,9 @@ sources = [
         ],
         name="dev",
         option=Option(
-            v2ray_domain_attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
+            ),
         ),
     ),
     SourceModel(
@@ -371,19 +301,16 @@ sources = [
         ],
         name="lan",
         option=Option(
-            no_resolve=False,
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
+            serialization=SerializationOption(no_resolve=False),
         ),
     ),
     SourceModel(
         resources=[RuleSetResource(source="sources/my-rules")],
         name="my-rules",
         split_resources=True,
-        option=Option(clash_optimize=False),
+        option=Option(
+            serialization=SerializationOption(clash_optimize=False),
+        ),
     ),
     SourceModel(
         resources=[RuleSetResource(source="sources/global/ehentai.txt")],
@@ -404,7 +331,10 @@ sources = [
             )
         ],
         name="cn-ip/cn-nobyda",
-        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+        option=Option(
+            serialization=SerializationOption(no_resolve=False),
+            geo_ip=GeoIPOption(country_code="CN"),
+        ),
     ),
     SourceModel(
         resources=[
@@ -413,7 +343,10 @@ sources = [
             )
         ],
         name="cn-ip/cn-ipinfo",
-        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+        option=Option(
+            serialization=SerializationOption(no_resolve=False),
+            geo_ip=GeoIPOption(country_code="CN"),
+        ),
     ),
     SourceModel(
         resources=[
@@ -422,7 +355,10 @@ sources = [
             )
         ],
         name="cn-ip/cn-ip2location",
-        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+        option=Option(
+            serialization=SerializationOption(no_resolve=False),
+            geo_ip=GeoIPOption(country_code="CN"),
+        ),
     ),
     SourceModel(
         resources=[
@@ -431,7 +367,10 @@ sources = [
             )
         ],
         name="cn-ip/cn-alecthw",
-        option=Option(no_resolve=False, geo_ip_country_code="CN"),
+        option=Option(
+            serialization=SerializationOption(no_resolve=False),
+            geo_ip=GeoIPOption(country_code="CN"),
+        ),
     ),
     SourceModel(
         resources=[
@@ -442,13 +381,23 @@ sources = [
         ],
         name="cn-ip/cn-sukka",
         option=Option(
-            no_resolve=False,
-            geo_ip_country_code="CN",
-            exclude_suffixes=[
-                ".ruleset.skk.moe",
-                "-ruleset.skk.moe",
-                "_ruleset.skk.moe",
-            ],
+            serialization=SerializationOption(no_resolve=False),
+            geo_ip=GeoIPOption(country_code="CN"),
         ),
     ),
 ]
+
+
+for source in sources:
+    for resource in source.resources:
+        if isinstance(resource, SourceReference):
+            continue
+        if str(resource.source).startswith("https://ruleset.skk.moe"):
+            source.option.processing.exclude_suffixes.extend(
+                [
+                    ".ruleset.skk.moe",
+                    "-ruleset.skk.moe",
+                    "_ruleset.skk.moe",
+                ],
+            )
+            break

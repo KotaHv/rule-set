@@ -65,7 +65,7 @@ def deserialize_data(
         de = DomainSetDeserialize(data)
         return de.deserialize()
     elif isinstance(resource, MaxMindDBResource):
-        return mmdb.deserialize(data, country_code=option.geo_ip_country_code)
+        return mmdb.deserialize(data, country_code=option.geo_ip.country_code)
     elif isinstance(resource, V2rayDomainResource):
         return v2ray_domain.deserialize(data, option)
     raise Exception(f"Unknown resource type: {type(resource)}")
@@ -84,7 +84,7 @@ def process_sources(sources: list[SourceModel]):
             else filter(
                 lambda x: x not in source.exclude
                 and not (
-                    source.option.geo_ip_country_code is None
+                    source.option.geo_ip.country_code is None
                     and x == SerializeFormat.GeoIP
                 ),
                 client_serializers_writers.keys(),
@@ -123,7 +123,7 @@ def process_resource(resource: BaseResource, source_option: Option) -> RuleModel
     for path in paths:
         cache_key = str(path)
         if isinstance(resource, V2rayDomainResource):
-            cache_key += f"::attrs={source_option.v2ray_domain_attrs}"
+            cache_key += f"::attrs={source_option.v2ray_domain.attrs}"
 
         if cached_result := resource_cache.retrieve(cache_key):
             if isinstance(resource, V2rayDomainResource):

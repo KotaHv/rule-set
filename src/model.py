@@ -163,17 +163,35 @@ class V2rayDomainAttr(BaseModel):
         return self.__repr__()
 
 
-class Option(BaseModel):
+class SerializationOption(BaseModel):
     no_resolve: bool = True
     clash_optimize: bool = True
-    geo_ip_country_code: str | None = None
-    exclude_keywords: list[str] = []
-    exclude_suffixes: list[str] = []
+
+
+class ProcessingOption(BaseModel):
     exclude_rule_types: list[str] = []
     optimize_domains: bool = False
     exclude_optimized_domains: list[str] = []
-    v2ray_domain_attrs: V2rayDomainAttr = V2rayDomainAttr.ALL()
-    v2ray_domain_exclude_includes: list[str] = []
+    exclude_keywords: list[str] = []
+    exclude_suffixes: list[str] = []
+
+
+class V2rayDomainOption(BaseModel):
+    attrs: V2rayDomainAttr = V2rayDomainAttr.ALL()
+    exclude_includes: list[str] = []
+
+
+class GeoIPOption(BaseModel):
+    country_code: str | None = None
+
+
+class Option(BaseModel):
+    """Unified configuration option container"""
+
+    serialization: SerializationOption = SerializationOption()
+    processing: ProcessingOption = ProcessingOption()
+    v2ray_domain: V2rayDomainOption = V2rayDomainOption()
+    geo_ip: GeoIPOption = GeoIPOption()
 
 
 class SourceModel(BaseModel):
@@ -425,7 +443,7 @@ class RuleModel(BaseModel):
 
     def filter(self, option: Option):
         """Apply various optimization and filtering rules to clean up and optimize the rule set."""
-        for rule_type in option.exclude_rule_types:
+        for rule_type in option.processing.exclude_rule_types:
             setattr(self, rule_type, set())
         self.domain = set(filter(self._deduplicate_domain, self.domain))
         self.domain_keyword = set(
@@ -437,12 +455,12 @@ class RuleModel(BaseModel):
         self.domain_suffix = set(
             filter(self._deduplicate_domain_suffix, self.domain_suffix)
         )
-        if option.optimize_domains:
-            self._optimize_domains(option.exclude_optimized_domains)
-        if option.exclude_keywords:
-            self._exclude_domains_by_keywords(option.exclude_keywords)
-        if option.exclude_suffixes:
-            self._exclude_domains_by_suffixes(option.exclude_suffixes)
+        if option.processing.optimize_domains:
+            self._optimize_domains(option.processing.exclude_optimized_domains)
+        if option.processing.exclude_keywords:
+            self._exclude_domains_by_keywords(option.processing.exclude_keywords)
+        if option.processing.exclude_suffixes:
+            self._exclude_domains_by_suffixes(option.processing.exclude_suffixes)
 
     def has_only_ip_cidr_rules(self, ignore_types: list = []) -> bool:
         return self._has_only_rules_of_type(["ip_cidr", "ip_cidr6"], ignore_types)

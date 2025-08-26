@@ -85,7 +85,7 @@ class Serialize(BaseSerialize):
                 for domain_keyword in self.rules.domain_keyword
             ]
         )
-        if self.option.no_resolve:
+        if self.option.serialization.no_resolve:
             payload.extend(
                 [f"IP-CIDR,{ip_cidr},no-resolve" for ip_cidr in self.rules.ip_cidr]
             )
@@ -122,7 +122,7 @@ class Serialize(BaseSerialize):
         )
 
     def serialize(self) -> tuple[str, str] | list[tuple[str, str]]:
-        if self.option.clash_optimize:
+        if self.option.serialization.clash_optimize:
             if not self.serialized_logical_rules:
                 if self.rules.has_only_domain_rules(ignore_types):
                     return self._serialize_payload(self.domain(), "domain", "'")

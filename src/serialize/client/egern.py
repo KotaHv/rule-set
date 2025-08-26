@@ -6,7 +6,7 @@ from .base import BaseSerialize
 
 class Serialize(BaseSerialize):
     def serialize(self) -> str:
-        yaml_data = {"no_resolve": self.option.no_resolve}
+        yaml_data = {"no_resolve": self.option.serialization.no_resolve}
         if self.rules.domain:
             yaml_data["domain_set"] = self.rules.domain
         if self.rules.domain_suffix:

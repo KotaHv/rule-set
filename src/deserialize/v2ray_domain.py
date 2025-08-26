@@ -18,8 +18,8 @@ def deserialize(data: str, option: Option) -> V2rayDomainResult:
         - Domain rules (domain, keyword, regexp, full) may include one or more
           attributes, each beginning with '@' and separated by spaces (e.g., @ads @cn).
     """
-    attrs = option.v2ray_domain_attrs
-    exclude_includes = option.v2ray_domain_exclude_includes
+    attrs = option.v2ray_domain.attrs
+    exclude_includes = option.v2ray_domain.exclude_includes
     rules = RuleModel()
     includes = []
 

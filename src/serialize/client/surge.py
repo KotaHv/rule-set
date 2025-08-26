@@ -54,7 +54,7 @@ class Serialize(BaseSerialize):
                     for domain_wildcard in self.rules.domain_wildcard
                 ]
             )
-        if self.option.no_resolve:
+        if self.option.serialization.no_resolve:
             if self.rules.ip_cidr:
                 rules.extend(
                     [f"IP-CIDR,{ip_cidr},no-resolve" for ip_cidr in self.rules.ip_cidr]

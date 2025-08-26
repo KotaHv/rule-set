@@ -14,7 +14,7 @@ class Serialize:
         ip_list.extend(self.rules.ip_cidr)
         ip_list.extend(self.rules.ip_cidr6)
         geo_ip = geo_ip_pb2.GeoIP()
-        geo_ip.country_code = self.option.geo_ip_country_code
+        geo_ip.country_code = self.option.geo_ip.country_code
         geo_ip.inverse_match = False
         for ip in ip_list:
             cidr = geo_ip_pb2.CIDR()
