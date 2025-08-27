@@ -1,7 +1,7 @@
 import ipaddress
-from typing import Any, Self
+from typing import Self
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field
 from loguru import logger
 
 from model.enum import DomainType
@@ -14,19 +14,13 @@ from serialize.logical import surge_logical_serialize
 
 
 class BaseRuleModel(BaseModel):
-    ip_cidr: set[str] | list[str] = set()
-    ip_cidr6: set[str] | list[str] = set()
-    ip_asn: set[str] | list[str] = set()
+    ip_cidr: list[str] | set[str] = set()
+    ip_cidr6: list[str] | set[str] = set()
+    ip_asn: list[str] | set[str] = set()
     logical: list[AnyTreeNode] = []
-    process: set[str] | list[str] = set()
-    ua: set[str] | list[str] = set()
-    domain_keyword: set[str] | list[str] = set()
-
-    @field_validator("*", mode="before")
-    def ensure_list(cls, v: Any) -> Any:
-        if isinstance(v, set):
-            return list(v)
-        return v
+    process: list[str] | set[str] = set()
+    ua: list[str] | set[str] = set()
+    domain_keyword: list[str] | set[str] = set()
 
     def merge_with(self, other: Self) -> None:
         self.domain_keyword.update(other.domain_keyword)
@@ -46,9 +40,9 @@ class BaseRuleModel(BaseModel):
 
 
 class RuleModel(BaseRuleModel):
-    domain: set[str] | list[str] = set()
-    domain_suffix: set[str] | list[str] = set()
-    domain_wildcard: set[str] | list[str] = set()
+    domain: list[str] | set[str] = set()
+    domain_suffix: list[str] | set[str] = set()
+    domain_wildcard: list[str] | set[str] = set()
 
     def merge_with(self, other: Self) -> None:
         self.domain.update(other.domain)
