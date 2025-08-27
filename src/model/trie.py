@@ -1,10 +1,8 @@
-from socket import AF_INET, AF_INET6
-
 from typing import Any, Iterator, Self
 from pygtrie import StringTrie
 from pydantic_core import core_schema
 from pydantic import GetCoreSchemaHandler
-from radix import Radix
+from pytricia import PyTricia
 
 from .enum import DomainType
 
@@ -112,25 +110,25 @@ class DomainTrie:
 
 class IPTrie:
     def __init__(self):
-        self._trie = Radix()
+        self._trie = PyTricia()
 
     def add(self, ip: str):
-        if self._trie.search_covering(ip):
+        if self._trie.get_key(ip):
             return
-        for node in self._trie.search_covered(ip):
-            self._trie.delete(node.prefix)
-        self._trie.add(ip)
+        self._trie[ip] = None
+        for prefix in self._trie.children(ip):
+            del self._trie[prefix]
 
-    def iteritems(self) -> Iterator[tuple[str, AF_INET | AF_INET6]]:
-        for node in self._trie.nodes():
-            yield node.prefix, node.family
+    def iteritems(self) -> Iterator[str]:
+        for ip in self._trie:
+            yield ip
 
     def merge(self, other: Self):
-        for ip, _ in other.iteritems():
+        for ip in other.iteritems():
             self.add(ip)
 
     def __repr__(self) -> str:
-        return ", ".join(ip for ip, _ in self.iteritems())
+        return ", ".join(ip for ip in self.iteritems())
 
     @classmethod
     def __get_pydantic_core_schema__(
@@ -147,7 +145,7 @@ class IPTrie:
 
         def serialize_to_list(instance: Self) -> list[str]:
             """Serialize to list"""
-            return list(ip for ip, _ in instance.iteritems())
+            return list(ip for ip in instance.iteritems())
 
         list_schema = core_schema.list_schema(core_schema.str_schema())
         chain_schema = core_schema.chain_schema(
@@ -165,3 +163,8 @@ class IPTrie:
                 return_schema=list_schema,
             ),
         )
+
+
+class IPTrie6(IPTrie):
+    def __init__(self):
+        self._trie = PyTricia(128)

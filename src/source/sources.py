@@ -36,7 +36,7 @@ sources = [
         name="global",
         option=Option(
             processing=ProcessingOption(
-                exclude_rule_types=["ip_trie", "ip_asn"],
+                exclude_rule_types=["ip_trie", "ip_trie6", "ip_asn"],
             ),
             v2ray_domain=V2rayDomainOption(
                 attrs=V2rayDomainAttr.EXCLUDE_ATTRS("ads"),

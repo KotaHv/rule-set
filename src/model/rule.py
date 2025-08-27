@@ -1,4 +1,3 @@
-from socket import AF_INET, AF_INET6
 from typing import Self
 
 from pydantic import BaseModel, Field
@@ -7,7 +6,7 @@ from loguru import logger
 from .enum import DomainType
 from .type import AnyTreeNode
 from .option import Option
-from .trie import DomainTrie, IPTrie
+from .trie import DomainTrie, IPTrie, IPTrie6
 from .aho import Aho
 from serialize.logical import surge_logical_serialize
 
@@ -28,6 +27,7 @@ class SerializableRuleModel(BaseModel):
 class RuleModel(BaseModel):
     domain_trie: DomainTrie = Field(default_factory=DomainTrie)
     ip_trie: IPTrie = Field(default_factory=IPTrie)
+    ip_trie6: IPTrie6 = Field(default_factory=IPTrie6)
     ip_asn: list[str] | set[str] = set()
     logical: list[AnyTreeNode] = []
     process: list[str] | set[str] = set()
@@ -38,6 +38,7 @@ class RuleModel(BaseModel):
         self.domain_trie.merge(other.domain_trie)
         self.domain_keyword.update(other.domain_keyword)
         self.ip_trie.merge(other.ip_trie)
+        self.ip_trie6.merge(other.ip_trie6)
         self.ip_asn.update(other.ip_asn)
         if other.logical:
             node_list = [
@@ -70,6 +71,8 @@ class RuleModel(BaseModel):
         for rule_type in option.processing.exclude_rule_types:
             if rule_type == "ip_trie":
                 setattr(self, rule_type, IPTrie())
+            elif rule_type == "ip_trie6":
+                setattr(self, rule_type, IPTrie6())
             elif rule_type == "domain_trie":
                 setattr(self, rule_type, DomainTrie())
             else:
@@ -91,7 +94,7 @@ class RuleModel(BaseModel):
 
     def sort(self):
         for key in RuleModel.model_fields.keys():
-            if key in ["domain_trie", "ip_trie"]:
+            if key in ["domain_trie", "ip_trie", "ip_trie6"]:
                 continue
             value = getattr(self, key)
             if key == "ip_asn":
@@ -117,13 +120,8 @@ class RuleModel(BaseModel):
             elif domain_type == DomainType.DOMAIN_WILDCARD:
                 serializable_rule.domain_wildcard.append(domain)
         serializable_rule.domain_keyword.extend(self.domain_keyword)
-        for ip, family in self.ip_trie.iteritems():
-            if family == AF_INET:
-                serializable_rule.ip_cidr.append(ip)
-            elif family == AF_INET6:
-                serializable_rule.ip_cidr6.append(ip)
-            else:
-                raise ValueError(f"Invalid {ip} family: {family}")
+        serializable_rule.ip_cidr.extend(self.ip_trie.iteritems())
+        serializable_rule.ip_cidr6.extend(self.ip_trie6.iteritems())
         serializable_rule.ip_asn.extend(self.ip_asn)
         serializable_rule.logical.extend(self.logical)
         serializable_rule.process.extend(self.process)

@@ -29,7 +29,7 @@ class RuleSetDeserialize(BaseDeserialize):
             elif rule_type == "ip-cidr":
                 self.result.ip_trie.add(rule)
             elif rule_type == "ip-cidr6":
-                self.result.ip_trie.add(rule)
+                self.result.ip_trie6.add(rule)
             elif rule_type == "ip-asn":
                 self.result.ip_asn.add(rule)
             # elif rule_type == "user-agent":
