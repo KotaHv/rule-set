@@ -2,11 +2,11 @@ from pathlib import Path
 
 import maxminddb
 
-from model import TrieRuleModel
+from model import RuleModel
 
 
-def deserialize(filepath: Path, country_code: str | None = None) -> TrieRuleModel:
-    rules = TrieRuleModel()
+def deserialize(filepath: Path, country_code: str | None = None) -> RuleModel:
+    rules = RuleModel()
     with maxminddb.open_database(filepath) as reader:
         if country_code is None:
             for ip, _ in reader:

@@ -1,12 +1,12 @@
 from loguru import logger
 
-from model import TrieRuleModel, DomainType
+from model import RuleModel, DomainType
 from .base import BaseDeserialize
 from utils import validate_domain
 
 
 class DomainSetDeserialize(BaseDeserialize):
-    def deserialize(self) -> TrieRuleModel:
+    def deserialize(self) -> RuleModel:
         for domain in self.data_lines:
             if domain.startswith("."):
                 domain = domain.lstrip(".")

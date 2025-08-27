@@ -6,7 +6,6 @@ from source import SOURCES
 from fetcher import fetcher
 from model import (
     RuleModel,
-    TrieRuleModel,
     SourceModel,
     SerializeFormat,
     Option,
@@ -79,6 +78,7 @@ def process_sources(sources: list[SourceModel]):
             aggregated_rules = RuleModel.model_validate_json(cached_result, strict=True)
         else:
             aggregated_rules = process_source(source)
+        serializable_rules = aggregated_rules.to_serializable_rule_model()
 
         target_clients = (
             source.include
@@ -95,32 +95,30 @@ def process_sources(sources: list[SourceModel]):
         for client in target_clients:
             serializer_cls, writer_cls = client_serializers_writers[client]
             serialized_data = serializer_cls(
-                rules=aggregated_rules, option=source.option
+                rules=serializable_rules, option=source.option
             ).serialize()
             writer_cls(data=serialized_data, target_path=source.name).write()
 
 
 def process_source(source: SourceModel) -> RuleModel:
-    aggregated_rules = TrieRuleModel()
+    aggregated_rules = RuleModel()
 
     for resource in source.resources:
         if isinstance(resource, SourceReference):
             referenced_target = resource.target
-            aggregated_rules.merge_with_rule_model(
+            aggregated_rules.merge_with(
                 RuleModel.model_validate_json(source_cache.retrieve(referenced_target))
             )
         else:
             aggregated_rules.merge_with(process_resource(resource, source.option))
     aggregated_rules.filter(source.option)
-    aggregated_rules = aggregated_rules.to_rule_model()
-
     aggregated_rules.sort()
     source_cache.store(source.name, aggregated_rules.model_dump_json())
     return aggregated_rules
 
 
-def process_resource(resource: BaseResource, source_option: Option) -> TrieRuleModel:
-    aggregated_rules = TrieRuleModel()
+def process_resource(resource: BaseResource, source_option: Option) -> RuleModel:
+    aggregated_rules = RuleModel()
     paths = [resource.source]
 
     for path in paths:
@@ -134,7 +132,7 @@ def process_resource(resource: BaseResource, source_option: Option) -> TrieRuleM
                     cached_result
                 )
             else:
-                deserialized_rules = TrieRuleModel.model_validate_json(cached_result)
+                deserialized_rules = RuleModel.model_validate_json(cached_result)
         else:
             if isinstance(resource, MaxMindDBResource):
                 data = fetcher.download_file(path)

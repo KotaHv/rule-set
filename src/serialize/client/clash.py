@@ -1,7 +1,7 @@
 import yaml
 from yaml import CDumper
 
-from model import RuleModel, Option
+from model import SerializableRuleModel, Option
 
 from .base import BaseSerialize
 from ..logical import surge_logical_serialize
@@ -42,7 +42,7 @@ ignore_types = ["domain_wildcard", "ua", "logical"]
 
 
 class Serialize(BaseSerialize):
-    def __init__(self, *, rules: RuleModel, option: Option) -> None:
+    def __init__(self, *, rules: SerializableRuleModel, option: Option) -> None:
         super().__init__(rules=rules, option=option)
         self.serialized_logical_rules = list(
             filter(
@@ -124,13 +124,12 @@ class Serialize(BaseSerialize):
     def serialize(self) -> tuple[str, str] | list[tuple[str, str]]:
         if self.option.serialization.clash_optimize:
             if not self.serialized_logical_rules:
-                if self.rules.has_only_domain_rules(ignore_types):
+                if self.has_only_domain_rules(ignore_types):
                     return self._serialize_payload(self.domain(), "domain", "'")
-                if self.rules.has_only_ip_cidr_rules(ignore_types):
+                if self.has_only_ip_cidr_rules(ignore_types):
                     return self._serialize_payload(self.ip_cidr(), "ipcidr", "'")
             if (
-                self.rules.count_rules(ignore_types)
-                + len(self.serialized_logical_rules)
+                self.count_rules(ignore_types) + len(self.serialized_logical_rules)
                 > 10000
             ):
                 domain_payload = self.domain()
@@ -145,3 +144,30 @@ class Serialize(BaseSerialize):
             return self._serialize_payload(payload, "classical", None)
 
         return ""
+
+    def has_only_ip_cidr_rules(self, ignore_types: list = []) -> bool:
+        return self._has_only_rule_types(["ip_cidr", "ip_cidr6"], ignore_types)
+
+    def has_only_domain_rules(self, ignore_types: list = []) -> bool:
+        return self._has_only_rule_types(["domain", "domain_suffix"], ignore_types)
+
+    def _has_only_rule_types(
+        self, allowed_types: list, ignore_types: list = []
+    ) -> bool:
+        rule_types = list(SerializableRuleModel.model_fields.keys())
+        ignore_types = set(allowed_types + ignore_types)
+        for rule_type in rule_types:
+            if rule_type in ignore_types:
+                continue
+            if getattr(self.rules, rule_type):
+                return False
+        return any(getattr(self.rules, rule_type) for rule_type in allowed_types)
+
+    def count_rules(self, ignore_types: list = []) -> int:
+        count = 0
+        rule_types = list(SerializableRuleModel.model_fields.keys())
+        for rule_type in rule_types:
+            if rule_type in ignore_types:
+                continue
+            count += len(getattr(self.rules, rule_type))
+        return count

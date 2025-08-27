@@ -4,8 +4,7 @@ from typing import Self
 from pydantic import BaseModel, Field
 from loguru import logger
 
-from model.enum import DomainType
-
+from .enum import DomainType
 from .type import AnyTreeNode
 from .option import Option
 from .trie import DomainTrie
@@ -13,7 +12,21 @@ from .aho import Aho
 from serialize.logical import surge_logical_serialize
 
 
-class BaseRuleModel(BaseModel):
+class SerializableRuleModel(BaseModel):
+    domain: list[str] = []
+    domain_suffix: list[str] = []
+    domain_wildcard: list[str] = []
+    domain_keyword: list[str] = []
+    ip_cidr: list[str] = []
+    ip_cidr6: list[str] = []
+    ip_asn: list[str] = []
+    logical: list[AnyTreeNode] = []
+    process: list[str] = []
+    ua: list[str] = []
+
+
+class RuleModel(BaseModel):
+    domain_trie: DomainTrie = Field(default_factory=DomainTrie)
     ip_cidr: list[str] | set[str] = set()
     ip_cidr6: list[str] | set[str] = set()
     ip_asn: list[str] | set[str] = set()
@@ -23,6 +36,7 @@ class BaseRuleModel(BaseModel):
     domain_keyword: list[str] | set[str] = set()
 
     def merge_with(self, other: Self) -> None:
+        self.domain_trie.merge(other.domain_trie)
         self.domain_keyword.update(other.domain_keyword)
         self.ip_cidr.update(other.ip_cidr)
         self.ip_cidr6.update(other.ip_cidr6)
@@ -37,88 +51,6 @@ class BaseRuleModel(BaseModel):
                 self.logical.append(node)
         self.process.update(other.process)
         self.ua.update(other.ua)
-
-
-class RuleModel(BaseRuleModel):
-    domain: list[str] | set[str] = set()
-    domain_suffix: list[str] | set[str] = set()
-    domain_wildcard: list[str] | set[str] = set()
-
-    def merge_with(self, other: Self) -> None:
-        self.domain.update(other.domain)
-        self.domain_suffix.update(other.domain_suffix)
-        self.domain_wildcard.update(other.domain_wildcard)
-        super().merge_with(other)
-
-    def sort(self):
-        for key in RuleModel.model_fields.keys():
-            value = getattr(self, key)
-            if key == "ip_cidr":
-                value = sorted(
-                    value,
-                    key=lambda x: ipaddress.IPv4Network(x).network_address,
-                )
-            elif key == "ip_cidr6":
-                value = sorted(
-                    value,
-                    key=lambda x: ipaddress.IPv6Network(x).network_address,
-                )
-            elif key == "ip_asn":
-                value = sorted(
-                    value,
-                    key=lambda x: int(x),
-                )
-            elif key == "logical":
-                value = sorted(
-                    value, key=lambda x: surge_logical_serialize(root_node=x)
-                )
-            else:
-                value = sorted(value)
-            setattr(self, key, value)
-
-    def has_only_ip_cidr_rules(self, ignore_types: list = []) -> bool:
-        return self._has_only_rules_of_type(["ip_cidr", "ip_cidr6"], ignore_types)
-
-    def has_only_domain_rules(self, ignore_types: list = []) -> bool:
-        return self._has_only_rules_of_type(["domain", "domain_suffix"], ignore_types)
-
-    def _has_only_rules_of_type(
-        self, allowed_types: list, ignore_types: list = []
-    ) -> bool:
-        rule_types = list(RuleModel.model_fields.keys())
-        ignore_types = set(allowed_types + ignore_types)
-        for rule_type in ignore_types:
-            rule_types.remove(rule_type)
-        for rule_type in rule_types:
-            if getattr(self, rule_type):
-                return False
-        return any(getattr(self, rule_type) for rule_type in allowed_types)
-
-    def count_rules(self, ignore_types: list = []) -> int:
-        count = 0
-        rule_types = list(RuleModel.model_fields.keys())
-        for rule_type in ignore_types:
-            rule_types.remove(rule_type)
-        for rule_type in rule_types:
-            count += len(getattr(self, rule_type))
-        return count
-
-
-class TrieRuleModel(BaseRuleModel):
-    domain_trie: DomainTrie = Field(default_factory=DomainTrie)
-
-    def merge_with(self, other: Self) -> None:
-        self.domain_trie.merge(other.domain_trie)
-        super().merge_with(other)
-
-    def merge_with_rule_model(self, other: RuleModel) -> None:
-        for domain in other.domain:
-            self.domain_trie.add(domain, DomainType.DOMAIN)
-        for domain_suffix in other.domain_suffix:
-            self.domain_trie.add(domain_suffix, DomainType.DOMAIN_SUFFIX)
-        for domain_wildcard in other.domain_wildcard:
-            self.domain_trie.add(domain_wildcard, DomainType.DOMAIN_WILDCARD)
-        super().merge_with(other)
 
     def _deduplicate_domain_keyword(self):
         """Remove domain-keyword rules that are already covered by shorter keywords."""
@@ -154,25 +86,53 @@ class TrieRuleModel(BaseRuleModel):
                     self.domain_trie.remove(domain)
                     logger.error(f"{domain_type},{domain} -> DOMAIN-KEYWORD,{keyword}")
 
-    def to_rule_model(self) -> RuleModel:
-        rule_model = RuleModel()
+    def sort(self):
+        for key in RuleModel.model_fields.keys():
+            if key == "domain_trie":
+                continue
+            value = getattr(self, key)
+            if key == "ip_cidr":
+                value = sorted(
+                    value,
+                    key=lambda x: ipaddress.IPv4Network(x).network_address,
+                )
+            elif key == "ip_cidr6":
+                value = sorted(
+                    value,
+                    key=lambda x: ipaddress.IPv6Network(x).network_address,
+                )
+            elif key == "ip_asn":
+                value = sorted(
+                    value,
+                    key=lambda x: int(x),
+                )
+            elif key == "logical":
+                value = sorted(
+                    value, key=lambda x: surge_logical_serialize(root_node=x)
+                )
+            else:
+                value = sorted(value)
+            setattr(self, key, value)
+
+    def to_serializable_rule_model(self) -> SerializableRuleModel:
+        serializable_rule = SerializableRuleModel()
         for domain, domain_type in self.domain_trie.sorted_iteritems():
             if domain_type == DomainType.DOMAIN:
-                rule_model.domain.add(domain)
+                serializable_rule.domain.append(domain)
             elif domain_type == DomainType.DOMAIN_SUFFIX:
-                rule_model.domain_suffix.add(domain)
+                serializable_rule.domain_suffix.append(domain)
             elif domain_type == DomainType.DOMAIN_WILDCARD:
-                rule_model.domain_wildcard.add(domain)
-        rule_model.domain_keyword.update(self.domain_keyword)
-        rule_model.ip_cidr.update(self.ip_cidr)
-        rule_model.ip_cidr6.update(self.ip_cidr6)
-        rule_model.ip_asn.update(self.ip_asn)
-        rule_model.logical.extend(self.logical)
-        rule_model.process.update(self.process)
-        rule_model.ua.update(self.ua)
-        return rule_model
+                serializable_rule.domain_wildcard.append(domain)
+        serializable_rule.domain_keyword.extend(self.domain_keyword)
+        serializable_rule.ip_cidr.extend(self.ip_cidr)
+        serializable_rule.ip_cidr6.extend(self.ip_cidr6)
+        serializable_rule.ip_asn.extend(self.ip_asn)
+        serializable_rule.logical.extend(self.logical)
+        serializable_rule.process.extend(self.process)
+        serializable_rule.ua.extend(self.ua)
+        return serializable_rule
 
 
 class V2rayDomainResult(BaseModel):
-    rules: TrieRuleModel = TrieRuleModel()
+    rules: RuleModel = RuleModel()
     includes: list[str] = []

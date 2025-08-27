@@ -1,13 +1,13 @@
 from loguru import logger
 
-from model import TrieRuleModel, DomainType
+from model import RuleModel, DomainType
 from .base import BaseDeserialize
 from deserialize import logical
 from utils import is_logical_keyword, validate_domain
 
 
 class RuleSetDeserialize(BaseDeserialize):
-    def deserialize(self) -> TrieRuleModel:
+    def deserialize(self) -> RuleModel:
         unique_node_list = []
         for line in self.data_lines:
             processed_line = line.split(",")

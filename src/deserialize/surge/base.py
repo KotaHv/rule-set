@@ -1,7 +1,7 @@
 import re
 from abc import ABC, abstractmethod
 
-from model import TrieRuleModel
+from model import RuleModel
 
 
 class BaseDeserialize(ABC):
@@ -14,7 +14,7 @@ class BaseDeserialize(ABC):
         if isinstance(data, str):
             data = data.splitlines()
         self.data_lines = data
-        self.result = TrieRuleModel()
+        self.result = RuleModel()
         self._compile_patterns()
         self.process()
 
@@ -36,4 +36,4 @@ class BaseDeserialize(ABC):
         self.data_lines = processed_lines
 
     @abstractmethod
-    def deserialize(self) -> TrieRuleModel: ...
+    def deserialize(self) -> RuleModel: ...

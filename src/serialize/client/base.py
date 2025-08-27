@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
 
-from model import RuleModel, Option
+from model import SerializableRuleModel, Option
 
 
 class BaseSerialize(ABC):
-    def __init__(self, *, rules: RuleModel, option: Option) -> None:
+    def __init__(self, *, rules: SerializableRuleModel, option: Option) -> None:
         self.rules = rules
         self.option = option
 
