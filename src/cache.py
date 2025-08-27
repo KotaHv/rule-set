@@ -1,19 +1,15 @@
-import hashlib
-
 from pathlib import Path
 from typing import Any
 
 from loguru import logger
+
+from utils import generate_cache_key
 
 
 class Cache:
     def __init__(self, *, path: Path | str) -> None:
         self.cache_directory = Path(".cache") / Path(path)
         self.cache_directory.mkdir(exist_ok=True, parents=True)
-
-    @staticmethod
-    def generate_cache_key(key: Any) -> str:
-        return hashlib.sha256(str(key).encode()).hexdigest()
 
     def retrieve(self, key: Any, as_bytes: bool = False) -> str | bytes | None:
         filepath = self.get_file_path(key)
@@ -45,5 +41,5 @@ class Cache:
         return filepath
 
     def get_file_path(self, key: Any) -> Path:
-        hash_key = self.generate_cache_key(key)
+        hash_key = generate_cache_key(key)
         return self.cache_directory / hash_key

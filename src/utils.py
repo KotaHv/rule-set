@@ -1,3 +1,5 @@
+import hashlib
+from typing import Any
 from urllib.parse import urlparse, urlunparse
 
 import validators
@@ -46,3 +48,7 @@ def build_v2ray_include_url(base_url: HttpUrl, include: str) -> HttpUrl:
         )
     )
     return HttpUrl(new_url)
+
+
+def generate_cache_key(key: Any) -> str:
+    return hashlib.sha256(str(key).encode()).hexdigest()

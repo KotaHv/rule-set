@@ -111,10 +111,9 @@ def process_source(source: SourceModel) -> RuleModel:
             )
         else:
             aggregated_rules.merge_with(process_resource(resource, source.option))
-
+    aggregated_rules.filter(source.option)
     aggregated_rules = aggregated_rules.to_rule_model()
 
-    aggregated_rules.filter(source.option)
     aggregated_rules.sort()
     source_cache.store(source.name, aggregated_rules.model_dump_json())
     return aggregated_rules

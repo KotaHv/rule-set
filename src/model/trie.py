@@ -28,6 +28,18 @@ class DomainTrie:
                 continue
             del self._trie[d]
 
+    def remove(self, domain: str):
+        domain = self._reversed_domain(domain)
+        self._trie.pop(domain, None)
+
+    def filter_by_domain(self, domain: str):
+        try:
+            domain = self._reversed_domain(domain)
+            for d in self._trie.keys(prefix=domain):
+                del self._trie[d]
+        except KeyError:
+            pass
+
     def merge(self, other: Self):
         for d, dt in other.iteritems():
             self.add(d, dt)
@@ -36,6 +48,9 @@ class DomainTrie:
         for d, dt in self._trie.iteritems():
             d = self._reversed_domain(d)
             yield d, dt
+
+    def items(self) -> list[tuple[str, DomainType]]:
+        return list(self.iteritems())
 
     def sorted_iteritems(self) -> Iterator[tuple[str, DomainType]]:
         self.enable_sorting(True)
