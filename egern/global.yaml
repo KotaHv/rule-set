@@ -1,7 +1,6 @@
 no_resolve: true
 domain_set:
 - amp.akamaized.net
-- android.googlesource.com
 - api.privacy.com
 - api.pwnedpasswords.com
 - app.hellosign.com
@@ -13,22 +12,8 @@ domain_set:
 - community.oneplus.com
 - default.exp-tas.com
 - developer.microsoft.com
-- developers.facebook.com
-- docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 - download.visualstudio.microsoft.com
 - ees.elsevier.com
-- firebase.google.com
-- firebase.googleapis.com
-- firebaseappcheck.googleapis.com
-- firebasedynamiclinks-ipv4.googleapis.com
-- firebasedynamiclinks-ipv6.googleapis.com
-- firebasedynamiclinks.googleapis.com
-- firebaseinappmessaging.googleapis.com
-- firebaseinstallations.googleapis.com
-- firebaselogging-pa.googleapis.com
-- firebaselogging.googleapis.com
-- firebaseperusertopics-pa.googleapis.com
-- firebaseremoteconfig.googleapis.com
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
 - help.ubnt.com
 - news.ycombinator.com

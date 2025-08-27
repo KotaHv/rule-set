@@ -1,6 +1,5 @@
 payload:
 - DOMAIN,amp.akamaized.net
-- DOMAIN,android.googlesource.com
 - DOMAIN,api.privacy.com
 - DOMAIN,api.pwnedpasswords.com
 - DOMAIN,app.hellosign.com
@@ -12,22 +11,8 @@ payload:
 - DOMAIN,community.oneplus.com
 - DOMAIN,default.exp-tas.com
 - DOMAIN,developer.microsoft.com
-- DOMAIN,developers.facebook.com
-- DOMAIN,docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 - DOMAIN,download.visualstudio.microsoft.com
 - DOMAIN,ees.elsevier.com
-- DOMAIN,firebase.google.com
-- DOMAIN,firebase.googleapis.com
-- DOMAIN,firebaseappcheck.googleapis.com
-- DOMAIN,firebasedynamiclinks-ipv4.googleapis.com
-- DOMAIN,firebasedynamiclinks-ipv6.googleapis.com
-- DOMAIN,firebasedynamiclinks.googleapis.com
-- DOMAIN,firebaseinappmessaging.googleapis.com
-- DOMAIN,firebaseinstallations.googleapis.com
-- DOMAIN,firebaselogging-pa.googleapis.com
-- DOMAIN,firebaselogging.googleapis.com
-- DOMAIN,firebaseperusertopics-pa.googleapis.com
-- DOMAIN,firebaseremoteconfig.googleapis.com
 - DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 - DOMAIN,help.ubnt.com
 - DOMAIN,news.ycombinator.com
