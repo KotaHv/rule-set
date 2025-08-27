@@ -1,22 +1,22 @@
 no_resolve: true
 domain_set:
-- apap.fhsdkc.sbs
-- api.simpleallowcopy.com
+- tqos-yun.anticheatexpert.com
 - ca.iadsdk.apple.com
 - dataflow.biliapi.com
-- jw.cccp.sbs
 - local.passport.douyu.com
-- tqos-yun.anticheatexpert.com
+- api.simpleallowcopy.com
+- jw.cccp.sbs
+- apap.fhsdkc.sbs
 domain_suffix_set:
+- launches.appsflyer.com
+- cm.bilibili.com
+- data.bilibili.com
+- s.deepl.com
 - a-cn.duoyi.com
 - a.cn.duoyi.com
-- cm.bilibili.com
-- collector.github.com
-- data.bilibili.com
-- im-x.jd.com
-- in.appcenter.ms
-- launches.appsflyer.com
-- mars.jd.com
-- s.deepl.com
-- sjarvis.taobao.com
 - swappdl.duoyi.com
+- collector.github.com
+- im-x.jd.com
+- mars.jd.com
+- sjarvis.taobao.com
+- in.appcenter.ms

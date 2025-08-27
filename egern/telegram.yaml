@@ -1,19 +1,19 @@
 no_resolve: true
 domain_suffix_set:
+- tdesktop.com
+- tg.dev
+- telegram.dog
+- t.me
+- telegram.me
+- tx.me
+- telega.one
 - cdn-telegram.org
 - graph.org
-- legra.ph
-- t.me
-- tdesktop.com
-- telega.one
-- telegra.ph
-- telegram.dog
-- telegram.me
 - telegram.org
-- telegram.space
 - telesco.pe
-- tg.dev
-- tx.me
+- legra.ph
+- telegra.ph
+- telegram.space
 ip_cidr_set:
 - 5.28.195.1/32
 - 5.28.195.2/32

@@ -1,18 +1,18 @@
 no_resolve: true
 domain_set:
-- alibaba.cdn.steampipe.steamcontent.com
 - lv.queniujq.cn
 - xz.pphimalayanrt.com
+- alibaba.cdn.steampipe.steamcontent.com
 domain_suffix_set:
-- client-update.queniuqe.com
 - csgo.wmsj.cn
-- dl.steam.clngaa.com
 - dota2.wmsj.cn
-- gstore.val.manlaxy.com
-- st.dl.bscstorage.net
-- st.dl.eccdnx.com
-- st.dl.pinyuncloud.com
-- steamchina.com
 - steampowered.com.8686c.com
 - steamstatic.com.8686c.com
+- dl.steam.clngaa.com
+- st.dl.eccdnx.com
+- gstore.val.manlaxy.com
+- st.dl.pinyuncloud.com
+- client-update.queniuqe.com
+- steamchina.com
 - wmsjsteam.com
+- st.dl.bscstorage.net

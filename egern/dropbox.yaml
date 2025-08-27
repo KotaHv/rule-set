@@ -1,10 +1,10 @@
 no_resolve: true
 domain_set:
-- app.hellosign.com
 - paper-attachments.s3.amazonaws.com
+- app.hellosign.com
 domain_suffix_set:
 - dash.ai
-- db.tt
 - docsend.com
+- db.tt
 domain_keyword_set:
 - dropbox

@@ -1,7 +1,7 @@
 payload:
-- DOMAIN,app.hellosign.com
 - DOMAIN,paper-attachments.s3.amazonaws.com
+- DOMAIN,app.hellosign.com
 - DOMAIN-SUFFIX,dash.ai
-- DOMAIN-SUFFIX,db.tt
 - DOMAIN-SUFFIX,docsend.com
+- DOMAIN-SUFFIX,db.tt
 - DOMAIN-KEYWORD,dropbox

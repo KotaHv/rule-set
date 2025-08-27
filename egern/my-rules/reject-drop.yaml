@@ -3,12 +3,12 @@ domain_set:
 - ca.iadsdk.apple.com
 - dataflow.biliapi.com
 domain_suffix_set:
-- cm.bilibili.com
-- collector.github.com
-- data.bilibili.com
-- im-x.jd.com
-- in.appcenter.ms
 - launches.appsflyer.com
-- mars.jd.com
+- cm.bilibili.com
+- data.bilibili.com
 - s.deepl.com
+- collector.github.com
+- im-x.jd.com
+- mars.jd.com
 - sjarvis.taobao.com
+- in.appcenter.ms
