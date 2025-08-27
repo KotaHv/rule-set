@@ -1,5 +1,5 @@
 import re
-from model import RuleModel, V2rayDomainResult, V2rayDomainOption
+from model import TrieRuleModel, V2rayDomainResult, V2rayDomainOption, DomainType
 
 EXPLICIT_RULE = re.compile(
     r"^(domain|keyword|full|regexp):(.+?)(?:\s+(@\w+(?:\s+@\w+)*))?$"
@@ -20,7 +20,7 @@ def deserialize(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
     """
     attrs = option.attrs
     exclude_includes = option.exclude_includes
-    rules = RuleModel()
+    rules = TrieRuleModel()
     includes = []
 
     for line in data.splitlines():
@@ -43,10 +43,10 @@ def deserialize(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
         if not attrs.filter_attrs(attributes):
             continue
         if rule_type == "domain":
-            rules.domain_suffix.add(rule)
+            rules.domain_trie.add(rule, DomainType.DOMAIN_SUFFIX)
         elif rule_type == "keyword":
             rules.domain_keyword.add(rule)
         elif rule_type == "full":
-            rules.domain.add(rule)
+            rules.domain_trie.add(rule, DomainType.DOMAIN)
 
     return V2rayDomainResult(rules=rules, includes=includes)

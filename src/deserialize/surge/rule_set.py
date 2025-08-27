@@ -1,13 +1,13 @@
 from loguru import logger
 
-from model import RuleModel
+from model import TrieRuleModel, DomainType
 from .base import BaseDeserialize
 from deserialize import logical
 from utils import is_logical_keyword, validate_domain
 
 
 class RuleSetDeserialize(BaseDeserialize):
-    def deserialize(self) -> RuleModel:
+    def deserialize(self) -> TrieRuleModel:
         unique_node_list = []
         for line in self.data_lines:
             processed_line = line.split(",")
@@ -16,16 +16,16 @@ class RuleSetDeserialize(BaseDeserialize):
                 if not validate_domain(rule):
                     logger.warning(f"Invalid domain: '{rule}'")
                     continue
-                self.result.domain.add(rule)
+                self.result.domain_trie.add(rule, DomainType.DOMAIN)
             elif rule_type == "domain-suffix":
                 if not validate_domain(rule):
                     logger.warning(f"Invalid domain: '{rule}'")
                     continue
-                self.result.domain_suffix.add(rule)
+                self.result.domain_trie.add(rule, DomainType.DOMAIN_SUFFIX)
             elif rule_type == "domain-keyword":
                 self.result.domain_keyword.add(rule)
             elif rule_type == "domain-wildcard":
-                self.result.domain_wildcard.add(rule)
+                self.result.domain_trie.add(rule, DomainType.DOMAIN_WILDCARD)
             elif rule_type == "ip-cidr":
                 self.result.ip_cidr.add(rule)
             elif rule_type == "ip-cidr6":

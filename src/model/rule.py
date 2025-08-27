@@ -1,28 +1,28 @@
 import re
 import ipaddress
 from collections import defaultdict
-from typing import Any
+from typing import Any, Self
 
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel, Field, field_validator
 from loguru import logger
+
+from model.enum import DomainType
 
 from .type import AnyTreeNode
 from .option import Option
+from .trie import DomainTrie
 from utils import is_eTLD
 from serialize.logical import surge_logical_serialize
 
 
-class RuleModel(BaseModel):
-    domain: set[str] | list[str] = set()
-    domain_suffix: set[str] | list[str] = set()
-    domain_keyword: set[str] | list[str] = set()
-    domain_wildcard: set[str] | list[str] = set()
+class BaseRuleModel(BaseModel):
     ip_cidr: set[str] | list[str] = set()
     ip_cidr6: set[str] | list[str] = set()
     ip_asn: set[str] | list[str] = set()
     logical: list[AnyTreeNode] = []
     process: set[str] | list[str] = set()
     ua: set[str] | list[str] = set()
+    domain_keyword: set[str] | list[str] = set()
 
     @field_validator("*", mode="before")
     def ensure_list(cls, v: Any) -> Any:
@@ -30,11 +30,8 @@ class RuleModel(BaseModel):
             return list(v)
         return v
 
-    def merge_with(self, other: "RuleModel") -> None:
-        self.domain.update(other.domain)
-        self.domain_suffix.update(other.domain_suffix)
+    def merge_with(self, other: Self) -> None:
         self.domain_keyword.update(other.domain_keyword)
-        self.domain_wildcard.update(other.domain_wildcard)
         self.ip_cidr.update(other.ip_cidr)
         self.ip_cidr6.update(other.ip_cidr6)
         self.ip_asn.update(other.ip_asn)
@@ -48,6 +45,18 @@ class RuleModel(BaseModel):
                 self.logical.append(node)
         self.process.update(other.process)
         self.ua.update(other.ua)
+
+
+class RuleModel(BaseRuleModel):
+    domain: set[str] | list[str] = set()
+    domain_suffix: set[str] | list[str] = set()
+    domain_wildcard: set[str] | list[str] = set()
+
+    def merge_with(self, other: Self) -> None:
+        self.domain.update(other.domain)
+        self.domain_suffix.update(other.domain_suffix)
+        self.domain_wildcard.update(other.domain_wildcard)
+        super().merge_with(other)
 
     def sort(self):
         for key in RuleModel.model_fields.keys():
@@ -227,6 +236,41 @@ class RuleModel(BaseModel):
         return count
 
 
+class TrieRuleModel(BaseRuleModel):
+    domain_trie: DomainTrie = Field(default_factory=DomainTrie)
+
+    def merge_with(self, other: Self) -> None:
+        self.domain_trie.merge(other.domain_trie)
+        super().merge_with(other)
+
+    def merge_with_rule_model(self, other: RuleModel) -> None:
+        for domain in other.domain:
+            self.domain_trie.add(domain, DomainType.DOMAIN)
+        for domain_suffix in other.domain_suffix:
+            self.domain_trie.add(domain_suffix, DomainType.DOMAIN_SUFFIX)
+        for domain_wildcard in other.domain_wildcard:
+            self.domain_trie.add(domain_wildcard, DomainType.DOMAIN_WILDCARD)
+        super().merge_with(other)
+
+    def to_rule_model(self) -> RuleModel:
+        rule_model = RuleModel()
+        for domain, domain_type in self.domain_trie.sorted_iteritems():
+            if domain_type == DomainType.DOMAIN:
+                rule_model.domain.add(domain)
+            elif domain_type == DomainType.DOMAIN_SUFFIX:
+                rule_model.domain_suffix.add(domain)
+            elif domain_type == DomainType.DOMAIN_WILDCARD:
+                rule_model.domain_wildcard.add(domain)
+        rule_model.domain_keyword.update(self.domain_keyword)
+        rule_model.ip_cidr.update(self.ip_cidr)
+        rule_model.ip_cidr6.update(self.ip_cidr6)
+        rule_model.ip_asn.update(self.ip_asn)
+        rule_model.logical.extend(self.logical)
+        rule_model.process.update(self.process)
+        rule_model.ua.update(self.ua)
+        return rule_model
+
+
 class V2rayDomainResult(BaseModel):
-    rules: RuleModel = RuleModel()
+    rules: TrieRuleModel = TrieRuleModel()
     includes: list[str] = []

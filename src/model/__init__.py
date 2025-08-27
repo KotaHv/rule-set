@@ -4,7 +4,7 @@ Contains all data models and related types.
 """
 
 from .type import Source, AnyTreeNode, SerializeFormats
-from .enum import SerializeFormat, V2rayAttrMode
+from .enum import SerializeFormat, V2rayAttrMode, DomainType
 from .option import (
     V2rayDomainAttr,
     SerializationOption,
@@ -23,7 +23,8 @@ from .resource import (
     ResourceType,
     ResourceList,
 )
-from .rule import RuleModel, V2rayDomainResult
+
+from .rule import RuleModel, TrieRuleModel, V2rayDomainResult
 from .source import SourceModel
 
 # For backward compatibility and convenience
@@ -34,6 +35,7 @@ __all__ = [
     # Enums
     "SerializeFormat",
     "V2rayAttrMode",
+    "DomainType",
     # Options
     "SerializeFormats",
     "V2rayDomainAttr",
@@ -53,6 +55,7 @@ __all__ = [
     "ResourceList",
     # Rules
     "RuleModel",
+    "TrieRuleModel",
     "V2rayDomainResult",
     # Sources
     "SourceModel",

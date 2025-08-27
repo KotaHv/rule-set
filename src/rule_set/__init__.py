@@ -6,6 +6,7 @@ from source import SOURCES
 from fetcher import fetcher
 from model import (
     RuleModel,
+    TrieRuleModel,
     SourceModel,
     SerializeFormat,
     Option,
@@ -100,16 +101,18 @@ def process_sources(sources: list[SourceModel]):
 
 
 def process_source(source: SourceModel) -> RuleModel:
-    aggregated_rules = RuleModel()
+    aggregated_rules = TrieRuleModel()
 
     for resource in source.resources:
         if isinstance(resource, SourceReference):
             referenced_target = resource.target
-            aggregated_rules.merge_with(
+            aggregated_rules.merge_with_rule_model(
                 RuleModel.model_validate_json(source_cache.retrieve(referenced_target))
             )
         else:
             aggregated_rules.merge_with(process_resource(resource, source.option))
+
+    aggregated_rules = aggregated_rules.to_rule_model()
 
     aggregated_rules.filter(source.option)
     aggregated_rules.sort()
@@ -117,8 +120,8 @@ def process_source(source: SourceModel) -> RuleModel:
     return aggregated_rules
 
 
-def process_resource(resource: BaseResource, source_option: Option) -> RuleModel:
-    aggregated_rules = RuleModel()
+def process_resource(resource: BaseResource, source_option: Option) -> TrieRuleModel:
+    aggregated_rules = TrieRuleModel()
     paths = [resource.source]
 
     for path in paths:
@@ -132,7 +135,8 @@ def process_resource(resource: BaseResource, source_option: Option) -> RuleModel
                     cached_result
                 )
             else:
-                deserialized_rules = RuleModel.model_validate_json(cached_result)
+                deserialized_rules = TrieRuleModel.model_validate_json(cached_result)
+            print(deserialized_rules)
         else:
             if isinstance(resource, MaxMindDBResource):
                 data = fetcher.download_file(path)
