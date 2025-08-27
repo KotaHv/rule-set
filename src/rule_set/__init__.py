@@ -136,7 +136,6 @@ def process_resource(resource: BaseResource, source_option: Option) -> TrieRuleM
                 )
             else:
                 deserialized_rules = TrieRuleModel.model_validate_json(cached_result)
-            print(deserialized_rules)
         else:
             if isinstance(resource, MaxMindDBResource):
                 data = fetcher.download_file(path)
