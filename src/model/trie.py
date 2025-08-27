@@ -69,33 +69,31 @@ class DomainTrie:
         _source_type: Any,
         _handler: GetCoreSchemaHandler,
     ) -> core_schema.CoreSchema:
-        def validate_from_list(value: list[tuple[str, DomainType]]) -> Self:
-            """Validate from list of tuples"""
+        def validate_from_dict(value: dict[DomainType, list[str]]) -> Self:
+            """Validate from dict"""
             trie = cls()
-            for domain, domain_type in value:
-                trie.add(domain, domain_type)
+            for domain_type, domains in value.items():
+                for domain in domains:
+                    trie.add(domain, domain_type)
             return trie
 
-        def serialize_to_list(instance: Self) -> list[tuple[str, DomainType]]:
-            """Serialize to list of tuples"""
-            return [
-                (domain, domain_type) for domain, domain_type in instance.iteritems()
-            ]
+        def serialize_to_dict(instance: Self) -> dict[DomainType, list[str]]:
+            """Serialize to dict"""
+            data = {domain_type: [] for domain_type in DomainType}
+            for domain, domain_type in instance.iteritems():
+                data[domain_type].append(domain)
+            return data
 
-        list_schema = core_schema.list_schema(
-            items_schema=core_schema.tuple_schema(
-                [
-                    core_schema.str_schema(),
-                    core_schema.enum_schema(
-                        DomainType, list(DomainType.__members__.values())
-                    ),
-                ],
-            )
+        dict_schema = core_schema.dict_schema(
+            keys_schema=core_schema.enum_schema(
+                DomainType, list(DomainType.__members__.values())
+            ),
+            values_schema=core_schema.list_schema(core_schema.str_schema()),
         )
         chain_schema = core_schema.chain_schema(
             [
-                list_schema,
-                core_schema.no_info_plain_validator_function(validate_from_list),
+                dict_schema,
+                core_schema.no_info_plain_validator_function(validate_from_dict),
             ]
         )
 
@@ -103,7 +101,7 @@ class DomainTrie:
             json_schema=chain_schema,
             python_schema=chain_schema,
             serialization=core_schema.plain_serializer_function_ser_schema(
-                serialize_to_list,
-                return_schema=list_schema,
+                serialize_to_dict,
+                return_schema=dict_schema,
             ),
         )
