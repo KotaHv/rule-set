@@ -84,31 +84,6 @@ class RuleModel(BaseRuleModel):
                 value = sorted(value)
             setattr(self, key, value)
 
-    def _deduplicate_domain(self, domain: str):
-        """Remove domains that are already covered by domain-suffix rules."""
-        domain_parts = domain.split(".")
-        suffixes_to_check = [
-            ".".join(domain_parts[i:]) for i in range(len(domain_parts))
-        ]
-        for suffix in suffixes_to_check:
-            if suffix in self.domain_suffix:
-                logger.error(f"DOMAIN,{domain} -> DOMAIN-SUFFIX,{suffix}")
-                return False
-        return True
-
-    def _deduplicate_domain_suffix(self, domain_suffix: str):
-        """Remove domain-suffix rules that are already covered by shorter suffixes."""
-        domain_suffix_parts = domain_suffix.split(".")
-        suffixes_to_check = [
-            ".".join(domain_suffix_parts[i:])
-            for i in range(1, len(domain_suffix_parts))
-        ]
-        for suffix in suffixes_to_check:
-            if suffix in self.domain_suffix:
-                logger.error(f"DOMAIN-SUFFIX,{domain_suffix} -> DOMAIN-SUFFIX,{suffix}")
-                return False
-        return True
-
     def _deduplicate_domain_suffix_by_keyword(self, domain_suffix: str):
         """Remove domain-suffix rules that are already covered by domain-keyword rules."""
         for keyword in self.domain_keyword:
@@ -191,15 +166,11 @@ class RuleModel(BaseRuleModel):
         """Apply various optimization and filtering rules to clean up and optimize the rule set."""
         for rule_type in option.processing.exclude_rule_types:
             setattr(self, rule_type, set())
-        self.domain = set(filter(self._deduplicate_domain, self.domain))
         self.domain_keyword = set(
             filter(self._deduplicate_domain_keyword, self.domain_keyword)
         )
         self.domain_suffix = set(
             filter(self._deduplicate_domain_suffix_by_keyword, self.domain_suffix)
-        )
-        self.domain_suffix = set(
-            filter(self._deduplicate_domain_suffix, self.domain_suffix)
         )
         if option.processing.optimize_domains:
             self._optimize_domains(option.processing.exclude_optimized_domains)
