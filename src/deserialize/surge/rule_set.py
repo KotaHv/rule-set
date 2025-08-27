@@ -27,9 +27,9 @@ class RuleSetDeserialize(BaseDeserialize):
             elif rule_type == "domain-wildcard":
                 self.result.domain_trie.add(rule, DomainType.DOMAIN_WILDCARD)
             elif rule_type == "ip-cidr":
-                self.result.ip_cidr.add(rule)
+                self.result.ip_trie.add(rule)
             elif rule_type == "ip-cidr6":
-                self.result.ip_cidr6.add(rule)
+                self.result.ip_trie.add(rule)
             elif rule_type == "ip-asn":
                 self.result.ip_asn.add(rule)
             # elif rule_type == "user-agent":

@@ -245,6 +245,12 @@ wheels = [
 ]
 
 [[package]]
+name = "py-radix"
+version = "0.10.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/bf/4e/47d9e7f4dfd0630662e19d2cc1b2f1d307ec52df11f4a66f6ed6f0cce138/py-radix-0.10.0.tar.gz", hash = "sha256:b8dbd1344bb30c6a1097d4103203c7b117d92931620365985018de4bef5aede3", size = 21815, upload-time = "2017-10-09T14:48:33.035Z" }
+
+[[package]]
 name = "pyahocorasick"
 version = "2.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -363,6 +369,7 @@ dependencies = [
     { name = "loguru" },
     { name = "maxminddb" },
     { name = "protobuf" },
+    { name = "py-radix" },
     { name = "pyahocorasick" },
     { name = "pydantic" },
     { name = "pygtrie" },
@@ -378,6 +385,7 @@ requires-dist = [
     { name = "loguru", specifier = ">=0.7.3" },
     { name = "maxminddb", specifier = ">=2.8.2" },
     { name = "protobuf", specifier = ">=6.31.1" },
+    { name = "py-radix", specifier = ">=0.10.0" },
     { name = "pyahocorasick", specifier = ">=2.2.0" },
     { name = "pydantic", specifier = ">=2.11.7" },
     { name = "pygtrie", specifier = ">=2.5.0" },

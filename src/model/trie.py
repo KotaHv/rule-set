@@ -1,7 +1,10 @@
+from socket import AF_INET, AF_INET6
+
 from typing import Any, Iterator, Self
 from pygtrie import StringTrie
 from pydantic_core import core_schema
 from pydantic import GetCoreSchemaHandler
+from radix import Radix
 
 from .enum import DomainType
 
@@ -103,5 +106,62 @@ class DomainTrie:
             serialization=core_schema.plain_serializer_function_ser_schema(
                 serialize_to_dict,
                 return_schema=dict_schema,
+            ),
+        )
+
+
+class IPTrie:
+    def __init__(self):
+        self._trie = Radix()
+
+    def add(self, ip: str):
+        if self._trie.search_covering(ip):
+            return
+        for node in self._trie.search_covered(ip):
+            self._trie.delete(node.prefix)
+        self._trie.add(ip)
+
+    def iteritems(self) -> Iterator[tuple[str, AF_INET | AF_INET6]]:
+        for node in self._trie.nodes():
+            yield node.prefix, node.family
+
+    def merge(self, other: Self):
+        for ip, _ in other.iteritems():
+            self.add(ip)
+
+    def __repr__(self) -> str:
+        return ", ".join(ip for ip, _ in self.iteritems())
+
+    @classmethod
+    def __get_pydantic_core_schema__(
+        cls,
+        _source_type: Any,
+        _handler: GetCoreSchemaHandler,
+    ) -> core_schema.CoreSchema:
+        def validate_from_list(value: list[str]) -> Self:
+            """Validate from list"""
+            trie = cls()
+            for ip in value:
+                trie.add(ip)
+            return trie
+
+        def serialize_to_list(instance: Self) -> list[str]:
+            """Serialize to list"""
+            return list(ip for ip, _ in instance.iteritems())
+
+        list_schema = core_schema.list_schema(core_schema.str_schema())
+        chain_schema = core_schema.chain_schema(
+            [
+                list_schema,
+                core_schema.no_info_plain_validator_function(validate_from_list),
+            ]
+        )
+
+        return core_schema.json_or_python_schema(
+            json_schema=chain_schema,
+            python_schema=chain_schema,
+            serialization=core_schema.plain_serializer_function_ser_schema(
+                serialize_to_list,
+                return_schema=list_schema,
             ),
         )
