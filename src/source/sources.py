@@ -105,6 +105,14 @@ sources = [
     ),
     SourceModel(
         resources=[
+            RuleSetResource(
+                source="https://raw.githubusercontent.com/EAlyce/conf/main/Rule/FQNovelAdvertising.list"
+            )
+        ],
+        name="adblock/fqnovel-ad",
+    ),
+    SourceModel(
+        resources=[
             RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/ai.conf")
         ],
         name="ai",
