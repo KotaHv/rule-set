@@ -204,12 +204,12 @@ def generate_directory_index(directory: pathlib.Path, parent_path: str = "") -> 
     # Add breadcrumb navigation
     if parent_path:
         path_parts = parent_path.strip("/").split("/")
-        current_path = ""
         html += """
             <div class="breadcrumb">"""
-        for part in path_parts:
-            current_path += f"/{part}"
-            html += f'<a href="{current_path}/">{part}</a> / '
+        for i, part in enumerate(path_parts):
+            # Calculate relative path: go up (len(path_parts) - i) levels
+            relative_path = "../" * (len(path_parts) - i)
+            html += f'<a href="{relative_path}">{part}</a> / '
         html += f"{directory.name}"
         html += """
             </div>"""
