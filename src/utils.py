@@ -7,7 +7,10 @@ import tldextract
 from pydantic import HttpUrl
 
 
-from config import LOGICAL_KEYWORDS, LOGICAL_AND_OR, LOGICAL_NOT
+# Logical rule constants
+LOGICAL_KEYWORDS = ["AND", "OR", "NOT"]
+LOGICAL_AND_OR = ["AND", "OR"]
+LOGICAL_NOT = "NOT"
 
 
 def is_logical_keyword(logical: str) -> bool:

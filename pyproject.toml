@@ -12,6 +12,7 @@ dependencies = [
     "protobuf>=6.31.1",
     "pyahocorasick>=2.2.0",
     "pydantic>=2.11.7",
+    "pydantic-settings>=2.10.1",
     "pygtrie>=2.5.0",
     "pytricia>=1.2.0",
     "pyyaml>=6.0.2",

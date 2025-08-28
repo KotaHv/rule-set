@@ -1,14 +1,16 @@
 from abc import ABC, abstractmethod
 from pathlib import Path
 
-from config import DIR_PATH
+from config import settings
 from .write import write
 
 
 class BaseFileWriter(ABC):
     def __init__(self, *, data: str | bytes, target_path: Path) -> None:
         self.data = data
-        self.filepath = DIR_PATH / self.base_path / target_path.with_suffix(self.suffix)
+        self.filepath = (
+            settings.dir_path / self.base_path / target_path.with_suffix(self.suffix)
+        )
 
     @property
     @abstractmethod

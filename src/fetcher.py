@@ -6,15 +6,18 @@ from loguru import logger
 from pydantic import HttpUrl
 
 from cache import Cache
+from config import settings
 
 
 class Fetcher:
     def __init__(self) -> None:
-        self.max_retries = 5
+        self.max_retries = settings.http_max_retries
         self.http_client = Client(
             http2=True,
-            timeout=10,
-            transport=HTTPTransport(retries=self.max_retries),
+            timeout=settings.http_timeout,
+            transport=HTTPTransport(
+                retries=self.max_retries, verify=settings.http_verify_ssl
+            ),
             follow_redirects=True,
         )
         self.cache = Cache(path="fetcher")

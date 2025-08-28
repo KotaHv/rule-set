@@ -5,13 +5,14 @@ from datetime import datetime, timedelta
 from loguru import logger
 
 from utils import generate_cache_key
+from config import settings
 
 
 class Cache:
-    def __init__(self, *, path: Path | str, ttl_hours: int = 1) -> None:
-        self.cache_directory = Path(".cache") / Path(path)
+    def __init__(self, *, path: Path | str, ttl_hours: int | None = None) -> None:
+        self.cache_directory = settings.cache_dir / Path(path)
         self.cache_directory.mkdir(exist_ok=True, parents=True)
-        self.ttl_hours = ttl_hours
+        self.ttl_hours = ttl_hours or settings.cache_ttl_hours
 
         # Automatically clean up expired files on initialization
         self.clear_expired()
