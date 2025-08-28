@@ -1,5 +1,7 @@
 import json
 
+from utils import domain
+
 from .base import BaseSerialize
 from ..logical import sing_box_logical_serialize
 
@@ -11,6 +13,10 @@ class Serialize(BaseSerialize):
             json_data["rules"][0]["domain"] = rules
         if rules := self.rules.domain_suffix:
             json_data["rules"][0]["domain_suffix"] = rules
+        if rules := self.rules.domain_wildcard:
+            json_data["rules"][0]["domain_regex"] = [
+                domain.wildcard_to_regex(domain_wildcard) for domain_wildcard in rules
+            ]
         if rules := self.rules.domain_keyword:
             json_data["rules"][0]["domain_keyword"] = rules
         if rules := self.rules.ip_cidr:

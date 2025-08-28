@@ -1,6 +1,8 @@
 import yaml
 from yaml import CDumper
 
+from utils import domain
+
 from .base import BaseSerialize
 
 
@@ -11,6 +13,11 @@ class Serialize(BaseSerialize):
             yaml_data["domain_set"] = self.rules.domain
         if self.rules.domain_suffix:
             yaml_data["domain_suffix_set"] = self.rules.domain_suffix
+        if self.rules.domain_wildcard:
+            yaml_data["domain_regex_set"] = [
+                domain.wildcard_to_regex(domain_wildcard)
+                for domain_wildcard in self.rules.domain_wildcard
+            ]
         if self.rules.domain_keyword:
             yaml_data["domain_keyword_set"] = self.rules.domain_keyword
         if self.rules.ip_cidr:
