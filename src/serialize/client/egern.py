@@ -20,5 +20,14 @@ class Serialize(BaseSerialize):
         if self.rules.ip_asn:
             yaml_data["asn_set"] = self.rules.ip_asn
         if len(yaml_data.keys()) > 1:
-            return yaml.dump(yaml_data, sort_keys=False, Dumper=CDumper)
+            # Calculate total rules count
+            rule_count = 0
+            for key, value in yaml_data.items():
+                if key != "no_resolve" and isinstance(value, list):
+                    rule_count += len(value)
+
+            yaml_content = yaml.dump(yaml_data, sort_keys=False, Dumper=CDumper)
+            if rule_count > 0:
+                return f"# Total: {rule_count} rules\n{yaml_content}"
+            return yaml_content
         return ""

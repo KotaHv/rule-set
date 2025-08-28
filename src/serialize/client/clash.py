@@ -110,15 +110,19 @@ class Serialize(BaseSerialize):
     def _serialize_payload(
         self, payload: str, behavior: str, style: str
     ) -> tuple[str, str]:
+        yaml_content = yaml.dump(
+            {"payload": payload},
+            sort_keys=False,
+            Dumper=CDumper,
+            width=-1,
+            default_style=style,
+        )
+        # Add rule count comment for clash format
+        rule_count = len(payload)
+        comment = f"# Total: {rule_count} rules\n"
         return (
             behavior,
-            yaml.dump(
-                {"payload": payload},
-                sort_keys=False,
-                Dumper=CDumper,
-                width=-1,
-                default_style=style,
-            ),
+            comment + yaml_content,
         )
 
     def serialize(self) -> tuple[str, str] | list[tuple[str, str]]:

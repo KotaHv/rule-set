@@ -91,4 +91,8 @@ class Serialize(BaseSerialize):
                     for node in self.rules.logical
                 ]
             )
-        return "\n".join(filter(None, rules))
+        filtered_rules = list(filter(None, rules))
+        content = "\n".join(filtered_rules)
+        if content:
+            return f"# Total: {len(filtered_rules)} rules\n{content}"
+        return content
