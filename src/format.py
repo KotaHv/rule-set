@@ -1,6 +1,5 @@
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Set, Optional, Union
 from dataclasses import dataclass, field
 import ipaddress
 
@@ -61,8 +60,8 @@ class Rule:
 class Section:
     """Represents a rule section"""
 
-    comment: Optional[str] = None
-    rules: Set[Rule] = field(default_factory=set)
+    comment: str | None = None
+    rules: set[Rule] = field(default_factory=set)
 
     def add_rule(self, rule: Rule) -> None:
         """Add rule with automatic deduplication"""
@@ -79,9 +78,9 @@ class Section:
         """Check if section has content"""
         return self.comment is not None or bool(self.rules)
 
-    def get_sorted_rules(self) -> Dict[str, List[Rule]]:
+    def get_sorted_rules(self) -> dict[str, list[Rule]]:
         """Group and sort rules by type"""
-        grouped: Dict[str, List[Rule]] = defaultdict(list)
+        grouped: dict[str, list[Rule]] = defaultdict(list)
 
         for rule in self.rules:
             grouped[rule.rule_type].append(rule)
@@ -92,7 +91,7 @@ class Section:
 
         return dict(grouped)
 
-    def _sort_rules_by_type(self, rule_type: str, rules: List[Rule]) -> List[Rule]:
+    def _sort_rules_by_type(self, rule_type: str, rules: list[Rule]) -> list[Rule]:
         """Sort rules by type"""
         if rule_type == "IP-CIDR":
             return sorted(
@@ -117,12 +116,12 @@ class Section:
 
 
 class Format:
-    def __init__(self, filepath: Union[str, Path]) -> None:
+    def __init__(self, filepath: str | Path) -> None:
         self.filepath = Path(filepath) if isinstance(filepath, str) else filepath
-        self.sections: List[Section] = []
+        self.sections: list[Section] = []
         self._original_count = 0
 
-    def _read_file(self) -> List[str]:
+    def _read_file(self) -> list[str]:
         """Read file content"""
         with self.filepath.open(encoding="utf-8") as f:
             return [line.strip() for line in f if line.strip()]
@@ -131,7 +130,7 @@ class Format:
         """Check if line is a comment"""
         return any(line.startswith(comment) for comment in COMMENTS)
 
-    def _parse_rule(self, line: str, is_commented: bool = False) -> Optional[Rule]:
+    def _parse_rule(self, line: str, is_commented: bool = False) -> Rule | None:
         """Parse rule line"""
         original_line = line
 
@@ -164,7 +163,7 @@ class Format:
 
         return Rule(rule_type=rule_type, content=content, is_commented=is_commented)
 
-    def _parse_lines(self, lines: List[str]) -> None:
+    def _parse_lines(self, lines: list[str]) -> None:
         """Parse all lines"""
         current_section = Section()
 
@@ -192,9 +191,9 @@ class Format:
         if current_section.has_content():
             self.sections.append(current_section)
 
-    def _generate_output(self) -> List[str]:
+    def _generate_output(self) -> list[str]:
         """Generate output content"""
-        output_lines: List[str] = []
+        output_lines: list[str] = []
 
         for i, section in enumerate(self.sections):
             # Add empty line between sections
@@ -214,15 +213,15 @@ class Format:
 
         return output_lines
 
-    def _write_file(self, lines: List[str]) -> None:
+    def _write_file(self, lines: list[str]) -> None:
         """Write to file"""
         with self.filepath.open("w", encoding="utf-8") as f:
             f.write("\n".join(lines))
 
     def _calculate_stats(self) -> None:
         """Calculate and print statistics"""
-        rule_counts: Dict[str, int] = defaultdict(int)
-        commented_counts: Dict[str, int] = defaultdict(int)
+        rule_counts: dict[str, int] = defaultdict(int)
+        commented_counts: dict[str, int] = defaultdict(int)
         total_rules = 0
 
         for section in self.sections:
@@ -275,11 +274,10 @@ class Format:
             raise
 
 
-if __name__ == "__main__":
-    parent_dir = Path(__file__).parent
-    for format_dir in [parent_dir / "my-rules", parent_dir / "sources"]:
+def main():
+    parent_dir = Path(__file__).parent.parent
+    for format_dir in [parent_dir / "sources"]:
         for pattern in ("*.txt", "*.list"):
             for filepath in format_dir.rglob(pattern):
-                print(filepath)
                 f = Format(filepath)
                 f.format()
