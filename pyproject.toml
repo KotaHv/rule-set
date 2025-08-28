@@ -24,6 +24,7 @@ dependencies = [
 "rule-set" = "rule_set:main"
 "logical" = "deserialize:print_rule_tree"
 "format" = "format:main"
+"gen-pages" = "gen_pages:generate_all_indexes"
 
 
 [build-system]

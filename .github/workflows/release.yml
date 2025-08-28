@@ -29,6 +29,9 @@ jobs:
             echo "rule-set generation failed"
             exit 1
           fi
+      - name: Generate GitHub Pages navigation
+        run: |
+          uv run gen-pages
       - run: |
           set -e -o pipefail
 
