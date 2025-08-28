@@ -11,6 +11,7 @@ include_rule_types = [
     "DOMAIN",
     "DOMAIN-SUFFIX",
     "DOMAIN-KEYWORD",
+    "DOMAIN-WILDCARD",
     "DOMAIN-REGEX",
     "GEOSITE",
     "IP-CIDR",
@@ -38,7 +39,7 @@ include_rule_types = [
     "RULE-SET",
 ]
 
-ignore_types = ["domain_wildcard", "ua", "logical"]
+ignore_types = ["ua", "logical"]
 
 
 class Serialize(BaseSerialize):
@@ -78,6 +79,13 @@ class Serialize(BaseSerialize):
                     for domain_suffix in self.rules.domain_suffix
                 ]
             )
+
+        payload.extend(
+            [
+                f"DOMAIN-WILDCARD,{domain_wildcard}"
+                for domain_wildcard in self.rules.domain_wildcard
+            ]
+        )
 
         payload.extend(
             [
