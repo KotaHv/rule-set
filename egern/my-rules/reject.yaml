@@ -1,4 +1,4 @@
-# Total: 19 rules
+# Total: 20 rules
 no_resolve: true
 domain_set:
 - tqos-yun.anticheatexpert.com
@@ -21,3 +21,5 @@ domain_suffix_set:
 - mars.jd.com
 - sjarvis.taobao.com
 - in.appcenter.ms
+domain_regex_set:
+- ^stun[\w.-]*?\.bilibili\.com$

@@ -1,4 +1,4 @@
-# Total: 1596 rules
+# Total: 1598 rules
 payload:
 - DOMAIN,store.ui.com.cn
 - DOMAIN,ccmdl.adobe.com
@@ -235,6 +235,7 @@ payload:
 - DOMAIN-SUFFIX,cnet.com
 - DOMAIN-SUFFIX,cnn.com
 - DOMAIN-SUFFIX,cnyes.com
+- DOMAIN-SUFFIX,codeforces.com
 - DOMAIN-SUFFIX,codethemicrobit.com
 - DOMAIN-SUFFIX,coinbase.com
 - DOMAIN-SUFFIX,coindesk.com
@@ -1311,6 +1312,7 @@ payload:
 - DOMAIN-SUFFIX,clojure.org
 - DOMAIN-SUFFIX,cnpmjs.org
 - DOMAIN-SUFFIX,codeberg.org
+- DOMAIN-SUFFIX,codeforces.org
 - DOMAIN-SUFFIX,componentkit.org
 - DOMAIN-SUFFIX,cpan.org
 - DOMAIN-SUFFIX,cups.org

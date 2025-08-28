@@ -1,7 +1,9 @@
-# Total: 4 rules
+# Total: 5 rules
 no_resolve: true
 domain_suffix_set:
 - brovod.com
 - ddys.mov
 - ddys.pro
 - brovod.top
+domain_regex_set:
+- ^api[\w.-]*?\.ip\.sb$

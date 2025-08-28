@@ -1,4 +1,4 @@
-# Total: 3811 rules
+# Total: 3877 rules
 payload:
 - DOMAIN,rules.ac
 - DOMAIN,cdn.aimerce.ai
@@ -456,6 +456,7 @@ payload:
 - DOMAIN,cdn.cnx-software.com
 - DOMAIN,cdn.codeblackbelt.com
 - DOMAIN,static-assets.codecademy.com
+- DOMAIN,st.codeforces.com
 - DOMAIN,cloudfront.codeproject.com
 - DOMAIN,assets.coinbase.com
 - DOMAIN,dynamic-assets.coinbase.com
@@ -1340,6 +1341,7 @@ payload:
 - DOMAIN,cdn.privacy.com
 - DOMAIN,cdn.privacy-mgmt.com
 - DOMAIN,image.prntscr.com
+- DOMAIN,st.prntscr.com
 - DOMAIN,static.probit.com
 - DOMAIN,api.producthunt.com
 - DOMAIN,s3.producthunt.com
@@ -2461,6 +2463,7 @@ payload:
 - DOMAIN,api.indexnow.org
 - DOMAIN,pcz.javidol.org
 - DOMAIN,proxy.joinmastodon.org
+- DOMAIN,design.keyoxide.org
 - DOMAIN,cdn.libravatar.org
 - DOMAIN,seccdn.libravatar.org
 - DOMAIN,demotiles.maplibre.org
@@ -2535,6 +2538,7 @@ payload:
 - DOMAIN,gfx-data.news-engineering.aws.wapo.pub
 - DOMAIN,assets.yande.re
 - DOMAIN,files.yande.re
+- DOMAIN,i.mij.rip
 - DOMAIN,docs.rs
 - DOMAIN,avatars.dzeninfra.ru
 - DOMAIN,s3.dzeninfra.ru
@@ -2570,6 +2574,7 @@ payload:
 - DOMAIN,udata.namespace.so
 - DOMAIN,bucket1.notaku.so
 - DOMAIN,image-forwarder.notaku.so
+- DOMAIN,cdn.seline.so
 - DOMAIN,images.spr.so
 - DOMAIN,assets-v2.super.so
 - DOMAIN,sites.super.so
@@ -2644,6 +2649,7 @@ payload:
 - DOMAIN,clips-media-assets2.twitch.tv
 - DOMAIN,embed.twitch.tv
 - DOMAIN,cdn.vidible.tv
+- DOMAIN,static.yfsp.tv
 - DOMAIN,img.4gamers.com.tw
 - DOMAIN,puku-dist.4gamers.com.tw
 - DOMAIN,thumbor.4gamers.com.tw
@@ -2790,6 +2796,7 @@ payload:
 - DOMAIN-SUFFIX,v2ex.co
 - DOMAIN-SUFFIX,1a-1791.com
 - DOMAIN-SUFFIX,1passwordusercontent.com
+- DOMAIN-SUFFIX,52netflix.com
 - DOMAIN-SUFFIX,9cache.com
 - DOMAIN-SUFFIX,a1tb.com
 - DOMAIN-SUFFIX,assets.brightspot.abebooks.a2z.com
@@ -2998,6 +3005,8 @@ payload:
 - DOMAIN-SUFFIX,gravatar.com
 - DOMAIN-SUFFIX,widget.cluster.groovehq.com
 - DOMAIN-SUFFIX,metric.gstatic.com
+- DOMAIN-SUFFIX,gsuus.com
+- DOMAIN-SUFFIX,gszyi.com
 - DOMAIN-SUFFIX,h-cdn.com
 - DOMAIN-SUFFIX,hackerone-user-content.com
 - DOMAIN-SUFFIX,img.haiwaikan.com
@@ -3080,6 +3089,7 @@ payload:
 - DOMAIN-SUFFIX,liangzipic.com
 - DOMAIN-SUFFIX,livemediahost.com
 - DOMAIN-SUFFIX,localizecdn.com
+- DOMAIN-SUFFIX,locimg.com
 - DOMAIN-SUFFIX,lodash.com
 - DOMAIN-SUFFIX,loggly.com
 - DOMAIN-SUFFIX,lowendbox.com
@@ -3674,6 +3684,7 @@ payload:
 - DOMAIN-SUFFIX,ipfs.busy.org
 - DOMAIN-SUFFIX,bytebucket.org
 - DOMAIN-SUFFIX,cdn-telegram.org
+- DOMAIN-SUFFIX,codeforces.org
 - DOMAIN-SUFFIX,cdn.cookielaw.org
 - DOMAIN-SUFFIX,doppiocdn.org
 - DOMAIN-SUFFIX,eggjs.org
@@ -3765,6 +3776,8 @@ payload:
 - DOMAIN-SUFFIX,pimg.tw
 - DOMAIN-SUFFIX,files.bbci.co.uk
 - DOMAIN-SUFFIX,imageshack.us
+- DOMAIN-SUFFIX,cloudforfun.vip
+- DOMAIN-SUFFIX,cloudlin.vip
 - DOMAIN-SUFFIX,javcdn.vip
 - DOMAIN-SUFFIX,imglink.win
 - DOMAIN-SUFFIX,ipfs.litnet.work
@@ -3791,6 +3804,59 @@ payload:
 - DOMAIN-SUFFIX,skyearth8.xyz
 - DOMAIN-SUFFIX,zorocdn.xyz
 - DOMAIN-SUFFIX,ipfs.yt
+- DOMAIN-WILDCARD,image*.cloudokyo.cloud
+- DOMAIN-WILDCARD,video*.cloudokyo.cloud
+- DOMAIN-WILDCARD,assets.*.imaga.co
+- DOMAIN-WILDCARD,cdn?.18girlssex.com
+- DOMAIN-WILDCARD,blog-imgs-??.2nt.com
+- DOMAIN-WILDCARD,ocsp.*.amazontrust.com
+- DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
+- DOMAIN-WILDCARD,proxy-*.dailymotion.com
+- DOMAIN-WILDCARD,blog-imgs-??.fc2.com
+- DOMAIN-WILDCARD,video-thumbnail2.fc2.com
+- DOMAIN-WILDCARD,video?-thumbnail?.fc2.com
+- DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
+- DOMAIN-WILDCARD,s3-*.figma.com
+- DOMAIN-WILDCARD,assets*.freshdesk.com
+- DOMAIN-WILDCARD,*.fsvod?.com
+- DOMAIN-WILDCARD,cdns.*.gigya.com
+- DOMAIN-WILDCARD,uploads-*.insided.com
+- DOMAIN-WILDCARD,stream?.kissjav.com
+- DOMAIN-WILDCARD,stream??.kissjav.com
+- DOMAIN-WILDCARD,*.kuaikan-cdn?.com
+- DOMAIN-WILDCARD,cdn.*.microsoft.com
+- DOMAIN-WILDCARD,cdn-*.microsoft.com
+- DOMAIN-WILDCARD,chunk-*.mux.com
+- DOMAIN-WILDCARD,img-*.now.com
+- DOMAIN-WILDCARD,img?.porngo.com
+- DOMAIN-WILDCARD,img??.porngo.com
+- DOMAIN-WILDCARD,cdn?-dl.pornhost.com
+- DOMAIN-WILDCARD,s???.pornone.com
+- DOMAIN-WILDCARD,th-*.pornone.com
+- DOMAIN-WILDCARD,*.img.*.sendibm?.com
+- DOMAIN-WILDCARD,s3.*.wasabisys.com
+- DOMAIN-WILDCARD,sdk.*.braze.eu
+- DOMAIN-WILDCARD,cdn?.mikuclub.fun
+- DOMAIN-WILDCARD,file?.mikuclub.fun
+- DOMAIN-WILDCARD,s*.hanime1
+- DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
+- DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
+- DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
+- DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
+- DOMAIN-WILDCARD,i?.nhentai.net
+- DOMAIN-WILDCARD,t?.nhentai.net
+- DOMAIN-WILDCARD,cdn.*.office.net
+- DOMAIN-WILDCARD,object-storage-*.vexxhost.net
+- DOMAIN-WILDCARD,cdn-msp?.jmcomic-zzz.one
+- DOMAIN-WILDCARD,cdn-msp?.18comic.org
+- DOMAIN-WILDCARD,s?.maxstream.org
+- DOMAIN-WILDCARD,s??.maxstream.org
+- DOMAIN-WILDCARD,static?.tgstat.ru
+- DOMAIN-WILDCARD,static??.tgstat.ru
+- DOMAIN-WILDCARD,rr?---??.ouo.si
+- DOMAIN-WILDCARD,cdn-msp?.18comic.vip
+- DOMAIN-WILDCARD,v.rn???.xyz
+- DOMAIN-WILDCARD,*.skyearth?.xyz
 - DOMAIN-KEYWORD,-assets.worldsex.com
 - DOMAIN-KEYWORD,-cdn.eporner.com
 - DOMAIN-KEYWORD,-files.gitbook.io

@@ -1,4 +1,4 @@
-# Total: 871 rules
+# Total: 872 rules
 no_resolve: true
 domain_set:
 - www.intel.cn
@@ -873,3 +873,5 @@ domain_suffix_set:
 - landian.vip
 - c-t.work
 - nz99.xyz
+domain_regex_set:
+- ^[\w.-]*?\.qhimgs[\w.-]\.com$

@@ -1,4 +1,4 @@
-# Total: 19 rules
+# Total: 20 rules
 payload:
 - DOMAIN,tqos-yun.anticheatexpert.com
 - DOMAIN,ca.iadsdk.apple.com
@@ -19,3 +19,4 @@ payload:
 - DOMAIN-SUFFIX,mars.jd.com
 - DOMAIN-SUFFIX,sjarvis.taobao.com
 - DOMAIN-SUFFIX,in.appcenter.ms
+- DOMAIN-WILDCARD,stun*.bilibili.com

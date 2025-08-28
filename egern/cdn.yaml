@@ -1,4 +1,4 @@
-# Total: 3811 rules
+# Total: 3877 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -457,6 +457,7 @@ domain_set:
 - cdn.cnx-software.com
 - cdn.codeblackbelt.com
 - static-assets.codecademy.com
+- st.codeforces.com
 - cloudfront.codeproject.com
 - assets.coinbase.com
 - dynamic-assets.coinbase.com
@@ -1341,6 +1342,7 @@ domain_set:
 - cdn.privacy.com
 - cdn.privacy-mgmt.com
 - image.prntscr.com
+- st.prntscr.com
 - static.probit.com
 - api.producthunt.com
 - s3.producthunt.com
@@ -2462,6 +2464,7 @@ domain_set:
 - api.indexnow.org
 - pcz.javidol.org
 - proxy.joinmastodon.org
+- design.keyoxide.org
 - cdn.libravatar.org
 - seccdn.libravatar.org
 - demotiles.maplibre.org
@@ -2536,6 +2539,7 @@ domain_set:
 - gfx-data.news-engineering.aws.wapo.pub
 - assets.yande.re
 - files.yande.re
+- i.mij.rip
 - docs.rs
 - avatars.dzeninfra.ru
 - s3.dzeninfra.ru
@@ -2571,6 +2575,7 @@ domain_set:
 - udata.namespace.so
 - bucket1.notaku.so
 - image-forwarder.notaku.so
+- cdn.seline.so
 - images.spr.so
 - assets-v2.super.so
 - sites.super.so
@@ -2645,6 +2650,7 @@ domain_set:
 - clips-media-assets2.twitch.tv
 - embed.twitch.tv
 - cdn.vidible.tv
+- static.yfsp.tv
 - img.4gamers.com.tw
 - puku-dist.4gamers.com.tw
 - thumbor.4gamers.com.tw
@@ -2792,6 +2798,7 @@ domain_suffix_set:
 - v2ex.co
 - 1a-1791.com
 - 1passwordusercontent.com
+- 52netflix.com
 - 9cache.com
 - a1tb.com
 - assets.brightspot.abebooks.a2z.com
@@ -3000,6 +3007,8 @@ domain_suffix_set:
 - gravatar.com
 - widget.cluster.groovehq.com
 - metric.gstatic.com
+- gsuus.com
+- gszyi.com
 - h-cdn.com
 - hackerone-user-content.com
 - img.haiwaikan.com
@@ -3082,6 +3091,7 @@ domain_suffix_set:
 - liangzipic.com
 - livemediahost.com
 - localizecdn.com
+- locimg.com
 - lodash.com
 - loggly.com
 - lowendbox.com
@@ -3676,6 +3686,7 @@ domain_suffix_set:
 - ipfs.busy.org
 - bytebucket.org
 - cdn-telegram.org
+- codeforces.org
 - cdn.cookielaw.org
 - doppiocdn.org
 - eggjs.org
@@ -3767,6 +3778,8 @@ domain_suffix_set:
 - pimg.tw
 - files.bbci.co.uk
 - imageshack.us
+- cloudforfun.vip
+- cloudlin.vip
 - javcdn.vip
 - imglink.win
 - ipfs.litnet.work
@@ -3793,6 +3806,60 @@ domain_suffix_set:
 - skyearth8.xyz
 - zorocdn.xyz
 - ipfs.yt
+domain_regex_set:
+- ^image[\w.-]*?\.cloudokyo\.cloud$
+- ^video[\w.-]*?\.cloudokyo\.cloud$
+- ^assets\.[\w.-]*?\.imaga\.co$
+- ^cdn[\w.-]\.18girlssex\.com$
+- ^blog-imgs-[\w.-][\w.-]\.2nt\.com$
+- ^ocsp\.[\w.-]*?\.amazontrust\.com$
+- ^browser-intake-[\w.-]*?-datadoghq\.com$
+- ^proxy-[\w.-]*?\.dailymotion\.com$
+- ^blog-imgs-[\w.-][\w.-]\.fc2\.com$
+- ^video-thumbnail2\.fc2\.com$
+- ^video[\w.-]-thumbnail[\w.-]\.fc2\.com$
+- ^vip-videoprem[\w.-]*?-thumbnail[\w.-]\.fc2\.com$
+- ^s3-[\w.-]*?\.figma\.com$
+- ^assets[\w.-]*?\.freshdesk\.com$
+- ^[\w.-]*?\.fsvod[\w.-]\.com$
+- ^cdns\.[\w.-]*?\.gigya\.com$
+- ^uploads-[\w.-]*?\.insided\.com$
+- ^stream[\w.-]\.kissjav\.com$
+- ^stream[\w.-][\w.-]\.kissjav\.com$
+- ^[\w.-]*?\.kuaikan-cdn[\w.-]\.com$
+- ^cdn\.[\w.-]*?\.microsoft\.com$
+- ^cdn-[\w.-]*?\.microsoft\.com$
+- ^chunk-[\w.-]*?\.mux\.com$
+- ^img-[\w.-]*?\.now\.com$
+- ^img[\w.-]\.porngo\.com$
+- ^img[\w.-][\w.-]\.porngo\.com$
+- ^cdn[\w.-]-dl\.pornhost\.com$
+- ^s[\w.-][\w.-][\w.-]\.pornone\.com$
+- ^th-[\w.-]*?\.pornone\.com$
+- ^[\w.-]*?\.img\.[\w.-]*?\.sendibm[\w.-]\.com$
+- ^s3\.[\w.-]*?\.wasabisys\.com$
+- ^sdk\.[\w.-]*?\.braze\.eu$
+- ^cdn[\w.-]\.mikuclub\.fun$
+- ^file[\w.-]\.mikuclub\.fun$
+- ^s[\w.-]*?\.hanime1$
+- ^cdn-msp[\w.-]\.jmcomic\.me$
+- ^appcenter-filemanagement-[\w.-]*?\.cloudapp\.net$
+- ^video-thumbnail[\w.-]\.liaoningmovie\.net$
+- ^video[\w.-]-thumbnail[\w.-]\.liaoningmovie\.net$
+- ^i[\w.-]\.nhentai\.net$
+- ^t[\w.-]\.nhentai\.net$
+- ^cdn\.[\w.-]*?\.office\.net$
+- ^object-storage-[\w.-]*?\.vexxhost\.net$
+- ^cdn-msp[\w.-]\.jmcomic-zzz\.one$
+- ^cdn-msp[\w.-]\.18comic\.org$
+- ^s[\w.-]\.maxstream\.org$
+- ^s[\w.-][\w.-]\.maxstream\.org$
+- ^static[\w.-]\.tgstat\.ru$
+- ^static[\w.-][\w.-]\.tgstat\.ru$
+- ^rr[\w.-]---[\w.-][\w.-]\.ouo\.si$
+- ^cdn-msp[\w.-]\.18comic\.vip$
+- ^v\.rn[\w.-][\w.-][\w.-]\.xyz$
+- ^[\w.-]*?\.skyearth[\w.-]\.xyz$
 domain_keyword_set:
 - -assets.worldsex.com
 - -cdn.eporner.com

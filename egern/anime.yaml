@@ -1,4 +1,4 @@
-# Total: 68 rules
+# Total: 70 rules
 no_resolve: true
 domain_set:
 - vr2.libvio.cloud
@@ -70,3 +70,6 @@ domain_suffix_set:
 - mifun.tw
 - agedm.vip
 - mxdm.xyz
+domain_regex_set:
+- ^svip\.high[\w.-]*?-playback\.com$
+- ^v16[\w.-]*?\.akamaized\.net$

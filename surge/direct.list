@@ -1,4 +1,4 @@
-# Total: 876 rules
+# Total: 872 rules
 DOMAIN,www.intel.cn
 DOMAIN,lv.queniujq.cn
 DOMAIN,url.cn
@@ -870,8 +870,4 @@ DOMAIN-SUFFIX,pps.tv
 DOMAIN-SUFFIX,landian.vip
 DOMAIN-SUFFIX,c-t.work
 DOMAIN-SUFFIX,nz99.xyz
-DOMAIN-WILDCARD,*.ffzy-online?.com
-DOMAIN-WILDCARD,*.ffzy-play?.com
-DOMAIN-WILDCARD,*.lz-cdn?.com
-DOMAIN-WILDCARD,*.lz-cdn??.com
 DOMAIN-WILDCARD,*.qhimgs?.com

@@ -1,4 +1,4 @@
-# Total: 1169 rules
+# Total: 1176 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -1171,3 +1171,11 @@ domain_suffix_set:
 - mirror.globo.tech
 - mirrors.nublue.co.uk
 - mirror.ac.za
+domain_regex_set:
+- ^cdn-[\w.-]*?\.comaps\.app$
+- ^cdn-[\w.-]*?\.organicmaps\.app$
+- ^[\w.-]*?\.s3\.[\w.-]*?\.backblazeb2\.com$
+- ^download[\w.-]*?\.mediafire\.com$
+- ^ftp\.[\w.-][\w.-]\.debian\.org$
+- ^ftp\.[\w.-][\w.-]\.freebsd\.org$
+- ^cdn-[\w.-]*?\.comaps\.tech$

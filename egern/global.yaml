@@ -1,4 +1,4 @@
-# Total: 1596 rules
+# Total: 1598 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -237,6 +237,7 @@ domain_suffix_set:
 - cnet.com
 - cnn.com
 - cnyes.com
+- codeforces.com
 - codethemicrobit.com
 - coinbase.com
 - coindesk.com
@@ -1313,6 +1314,7 @@ domain_suffix_set:
 - clojure.org
 - cnpmjs.org
 - codeberg.org
+- codeforces.org
 - componentkit.org
 - cpan.org
 - cups.org
