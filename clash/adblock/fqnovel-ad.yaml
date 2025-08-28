@@ -1,0 +1,6 @@
+# Total: 4 rules
+payload:
+- DOMAIN-KEYWORD,dig.bdurl
+- DOMAIN-KEYWORD,dig.zjurl
+- DOMAIN-KEYWORD,snssdk.com
+- AND,((DOMAIN-KEYWORD,zijieapi),(DOMAIN-KEYWORD,ads))

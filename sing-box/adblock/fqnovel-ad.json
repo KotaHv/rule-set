@@ -1,0 +1,1 @@
+{"version": 2, "rules": [{"domain_keyword": ["dig.bdurl", "dig.zjurl", "snssdk.com"]}, {"type": "logical", "rules": [{"domain_keyword": "zijieapi"}, {"domain_keyword": "ads"}], "mode": "and"}]}
