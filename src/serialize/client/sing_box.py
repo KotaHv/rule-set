@@ -6,7 +6,7 @@ from ..logical import sing_box_logical_serialize
 
 class Serialize(BaseSerialize):
     def serialize(self) -> str:
-        json_data = {"version": 1, "rules": [{}]}
+        json_data = {"version": 2, "rules": [{}]}
         if rules := self.rules.domain:
             json_data["rules"][0]["domain"] = rules
         if rules := self.rules.domain_suffix:
