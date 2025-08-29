@@ -109,5 +109,9 @@ def format_rule(rule_type: str, rule: str) -> dict[str, str]:
     rule_type = rule_type.lower()
     rule_type = type_format.get(rule_type, rule_type)
     if rule_type in include_types:
+        if rule_type == "port":
+            return {"port": int(rule)}
         return {rule_type: rule}
+    if rule_type == "protocol" and rule.upper() in ["UDP", "TCP"]:
+        return {"network": rule.lower()}
     raise UnsupportedRuleTypeError(rule_type)

@@ -4,40 +4,8 @@ from yaml import CDumper
 from model import SerializableRuleModel, Option
 
 from .base import BaseSerialize
-from ..logical import surge_logical_serialize
+from ..logical.clash import serialize as logical_serialize
 
-
-include_rule_types = [
-    "DOMAIN",
-    "DOMAIN-SUFFIX",
-    "DOMAIN-KEYWORD",
-    "DOMAIN-WILDCARD",
-    "DOMAIN-REGEX",
-    "GEOSITE",
-    "IP-CIDR",
-    "IP-CIDR6",
-    "IP-SUFFIX",
-    "IP-ASN",
-    "GEOIP",
-    "SRC-GEOIP",
-    "SRC-IP-ASN",
-    "SRC-IP-CIDR",
-    "SRC-IP-SUFFIX",
-    "DST-PORT",
-    "SRC-PORT",
-    "IN-PORT",
-    "IN-TYPE",
-    "IN-USER",
-    "IN-NAME",
-    "PROCESS-PATH",
-    "PROCESS-PATH-REGEX",
-    "PROCESS-NAME",
-    "PROCESS-NAME-REGEX",
-    "UID",
-    "NETWORK",
-    "DSCP",
-    "RULE-SET",
-]
 
 ignore_types = ["ua", "logical"]
 
@@ -48,10 +16,7 @@ class Serialize(BaseSerialize):
         self.serialized_logical_rules = list(
             filter(
                 None,
-                [
-                    surge_logical_serialize(root_node=node, include=include_rule_types)
-                    for node in self.rules.logical
-                ],
+                [logical_serialize(root_node=node) for node in self.rules.logical],
             )
         )
 

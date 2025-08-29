@@ -36,6 +36,6 @@ def serialize(*, root_node: Node, include: list[str] | None = None) -> str | Non
     try:
         return _serialize(node=root_node, include=include)[1:-2]
     except UnsupportedRuleTypeError as e:
-        logger.error(f"rule: {_serialize(node=root_node)}, err: {e}")
+        logger.error(f"rule: {serialize(root_node=root_node)}, err: {e}")
     except SerializeError as e:
         logger.error(e)
