@@ -4,11 +4,17 @@ from yaml import CDumper
 from utils import domain
 
 from .base import BaseSerialize
+from ..logical.egern import serialize as logical_serialize
 
 
 class Serialize(BaseSerialize):
     def serialize(self) -> str:
         yaml_data = {"no_resolve": self.option.serialization.no_resolve}
+        logical_rules = list(
+            filter(
+                None, [logical_serialize(root_node=rule) for rule in self.rules.logical]
+            )
+        )
         if self.rules.domain:
             yaml_data["domain_set"] = self.rules.domain
         if self.rules.domain_suffix:
@@ -18,6 +24,11 @@ class Serialize(BaseSerialize):
                 domain.wildcard_to_regex(domain_wildcard)
                 for domain_wildcard in self.rules.domain_wildcard
             ]
+        if logical_rules:
+            if yaml_data.get("domain_regex_set"):
+                yaml_data["domain_regex_set"].extend(logical_rules)
+            else:
+                yaml_data["domain_regex_set"] = logical_rules
         if self.rules.domain_keyword:
             yaml_data["domain_keyword_set"] = self.rules.domain_keyword
         if self.rules.ip_cidr:
