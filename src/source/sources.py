@@ -157,6 +157,7 @@ sources = [
         resources=[
             RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/telegram.conf"),
             RuleSetResource(source="https://ruleset.skk.moe/List/ip/telegram.conf"),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/telegram_asn.conf"),
         ],
         name="telegram",
     ),
@@ -389,6 +390,67 @@ sources = [
             serialization=SerializationOption(no_resolve=False),
             geo_ip=GeoIPOption(country_code="CN"),
         ),
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/stream_us.conf"
+            ),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/stream_us.conf"),
+        ],
+        name="stream/stream-us",
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/stream_eu.conf"
+            ),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/stream_eu.conf"),
+        ],
+        name="stream/stream-eu",
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/stream_jp.conf"
+            ),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/stream_jp.conf"),
+        ],
+        name="stream/stream-jp",
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/stream_kr.conf"
+            ),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/stream_kr.conf"),
+        ],
+        name="stream/stream-kr",
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/stream_hk.conf"
+            ),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/stream_hk.conf"),
+        ],
+        name="stream/stream-hk",
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/stream_tw.conf"
+            ),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/stream_tw.conf"),
+        ],
+        name="stream/stream-tw",
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/stream.conf"),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/stream.conf"),
+        ],
+        name="stream/stream",
     ),
 ]
 
