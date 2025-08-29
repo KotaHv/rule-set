@@ -1,4 +1,4 @@
-# Total: 33 rules
+# Total: 34 rules
 payload:
 - DOMAIN,livewebbs2pcdn.msstatic.com
 - DOMAIN,qn-cdnfile1pcdn.msstatic.com
@@ -33,3 +33,4 @@ payload:
 - DOMAIN-KEYWORD,-p2p-v2.pull.yximgs.com
 - DOMAIN-KEYWORD,-p2p.pull.yximgs.com
 - AND,((DOMAIN-KEYWORD,stun),(DOMAIN-KEYWORD,douyu))
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,googlevideo.com))

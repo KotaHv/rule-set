@@ -1,4 +1,4 @@
-# Total: 31 rules
+# Total: 36 rules
 no_resolve: true
 domain_suffix_set:
 - tdesktop.com
@@ -34,3 +34,9 @@ ip_cidr6_set:
 - 2001:b28:f23d::/48
 - 2001:b28:f23f::/48
 - 2a0a:f280::/32
+asn_set:
+- '44907'
+- '59930'
+- '62014'
+- '62041'
+- '211157'

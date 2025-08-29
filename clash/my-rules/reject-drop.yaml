@@ -1,4 +1,4 @@
-# Total: 11 rules
+# Total: 12 rules
 payload:
 - DOMAIN,ca.iadsdk.apple.com
 - DOMAIN,dataflow.biliapi.com
@@ -11,3 +11,4 @@ payload:
 - DOMAIN-SUFFIX,mars.jd.com
 - DOMAIN-SUFFIX,sjarvis.taobao.com
 - DOMAIN-SUFFIX,in.appcenter.ms
+- AND,((PROCESS-NAME,QQMusic),(NETWORK,UDP),(DST-PORT,3478))

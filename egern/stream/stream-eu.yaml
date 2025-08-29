@@ -1,0 +1,13 @@
+# Total: 8 rules
+no_resolve: true
+domain_set:
+- bbc.mp-pxcdn.com
+- itvpnpmobile-a.akamaihd.net
+domain_suffix_set:
+- itv.com
+- bbc.co.uk
+- bbci.co.uk
+- tvlicensing.co.uk
+domain_keyword_set:
+- bbcfmt
+- uk-live
