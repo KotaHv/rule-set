@@ -1,4 +1,4 @@
-# Total: 1087 rules
+# Total: 1089 rules
 payload:
 - DOMAIN-WILDCARD,support-metahelpcenter-id*.netlify.app
 - DOMAIN-WILDCARD,tw-726620180914.*.run.app
@@ -7,6 +7,7 @@ payload:
 - DOMAIN-WILDCARD,plum-binder-*.typedream.app
 - DOMAIN-WILDCARD,azuki-*.vercel.app
 - DOMAIN-WILDCARD,base-swap-frontend-*.vercel.app
+- DOMAIN-WILDCARD,download-wetransfer-*.vercel.app
 - DOMAIN-WILDCARD,facture-pdf-secure-*.vercel.app
 - DOMAIN-WILDCARD,govern-assessment-validation-*.vercel.app
 - DOMAIN-WILDCARD,nhantienquocte*.vercel.app
@@ -185,6 +186,7 @@ payload:
 - DOMAIN-WILDCARD,customerevents.us-east-*.internal.dradis.netflix.com
 - DOMAIN-WILDCARD,dw-informer-*.newsru.com
 - DOMAIN-WILDCARD,mob*.novanewsapp.com
+- DOMAIN-WILDCARD,lnkdeka.standard.*.oortech.com
 - DOMAIN-WILDCARD,events-api*.outfit7.com
 - DOMAIN-WILDCARD,livetracker.*.pangea-cms.com
 - DOMAIN-WILDCARD,cdn*.pdmntn.com
