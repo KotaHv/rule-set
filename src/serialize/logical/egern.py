@@ -1,7 +1,7 @@
 from anytree import Node
 from loguru import logger
 
-from utils import domain, is_logical_keyword, is_logical_not, is_logical_and_or
+from utils import is_logical_keyword, is_logical_not, is_logical_and_or
 
 from ..error import SerializeError, UnsupportedRuleTypeError
 from .surge import serialize as surge_logical_serialize
@@ -12,18 +12,45 @@ include_type = [
     "DOMAIN-WILDCARD",
     "DOMAIN-KEYWORD",
     "DOMAIN-REGEX",
+    "GEOIP",
+    "IP-CIDR",
+    "IP-CIDR6",
+    "IP-ASN",
+    "URL-REGEX",
+    "USER-AGENT",
+    "SSID",
+    "BSSID",
+    "PROTOCOL",
+    "DEST-PORT",
 ]
+type_format = {
+    "DOMAIN": "domain",
+    "DOMAIN-SUFFIX": "domain_suffix",
+    "DOMAIN-WILDCARD": "domain_wildcard",
+    "DOMAIN-KEYWORD": "domain_keyword",
+    "DOMAIN-REGEX": "domain_regex",
+    "GEOIP": "geoip",
+    "IP-CIDR": "ip_cidr",
+    "IP-CIDR6": "ip_cidr",
+    "IP-ASN": "asn",
+    "URL-REGEX": "url_regex",
+    "USER-AGENT": "user_agent",
+    "SSID": "ssid",
+    "BSSID": "bssid",
+    "PROTOCOL": "protocol",
+    "DEST-PORT": "dest_port",
+}
 
 
-def serialize(*, root_node: Node) -> str | None:
+def serialize(
+    *, root_node: Node
+) -> tuple[str, list[dict[str, str]] | dict[str, str]] | None:
     for node in [root_node, *root_node.descendants]:
         if isinstance(node.name, str):
             node.name = node.name.lower()
     try:
-        rule = _serialize(root_node.name, root_node)
-        if isinstance(rule, list):
-            rule = "|".join(rule)
-        return rule
+        logical_set, logical_type = f"{root_node.name}_set", f"!{root_node.name}"
+        return logical_set, _serialize(root_node)[logical_type]
     except SerializeError as e:
         logger.error(e)
     except Exception as e:
@@ -32,9 +59,9 @@ def serialize(*, root_node: Node) -> str | None:
         )
 
 
-def _serialize(logical_type: str, node: Node) -> list[str] | str:
+def _serialize(node: Node) -> dict[str, str]:
     if isinstance(node.name, tuple):
-        rule = format_rule(logical_type, node.name[0], node.name[1])
+        rule = format_rule(node.name[0], node.name[1])
         return rule
     if not is_logical_keyword(node.name):
         raise SerializeError(
@@ -51,66 +78,19 @@ def _serialize(logical_type: str, node: Node) -> list[str] | str:
             "AND/OR rule must have at least two sub-rules",
             node=node.root,
         )
-    rule = []
-    for child_node in node.children:
-        rule.append(_serialize(node.name, child_node))
-    if node.name == "not":
-        rule = rule[0]
-        if isinstance(rule, list):
-            for i, r in enumerate(rule):
-                rule[i] = f"(?!{r})"
-            rule = f"(^{''.join(rule)})"
-        else:
-            rule = f"(?!{rule})"
-    elif node.name == "and":
-        for i, r in enumerate(rule):
-            if isinstance(r, list):
-                rule[i] = rf"(?=[\w.-]*?({'|'.join(r)}))"
-            else:
-                if not r.startswith("(?") or r.startswith("(^"):
-                    rule[i] = rf"(?=[\w.-]*?{r})"
-        rule = "".join(rule)
+    rule = {}
+    logical_type = f"!{node.name}"
+    if is_logical_not(node.name):
+        rule[logical_type] = _serialize(node.children[0])
+    else:
+        rule[logical_type] = []
+        for child_node in node.children:
+            rule[logical_type].append(_serialize(child_node))
     return rule
 
 
-def _format_rule(rule_type: str, rule: str) -> str:
+def format_rule(rule_type: str, rule: str) -> dict[str, str]:
+    rule_type = rule_type.upper()
     if rule_type not in include_type:
         raise UnsupportedRuleTypeError(rule_type)
-    if rule_type == "DOMAIN":
-        return domain.domain_to_regex(rule)
-    if rule_type == "DOMAIN-SUFFIX":
-        return domain.suffix_to_regex(rule)
-    if rule_type == "DOMAIN-WILDCARD":
-        return domain.wildcard_to_regex(rule)
-    if rule_type == "DOMAIN-KEYWORD":
-        return domain.keyword_to_regex(rule)
-    if rule_type == "DOMAIN-REGEX":
-        return rule
-
-
-def format_rule(logical_type: str, rule_type: str, rule: str) -> str:
-    rule = _format_rule(rule_type, rule)
-    if logical_type == "not":
-        if rule_type in ["DOMAIN", "DOMAIN-WILDCARD"]:
-            rule = rule.replace("^", "^(?!") + ")"
-        elif rule_type in ["DOMAIN-KEYWORD", "DOMAIN-REGEX"]:
-            rule = rf"(?![\w.-]*?{rule})"
-        else:
-            rule = rf"(?!{rule})"
-    elif logical_type == "and":
-        if rule_type in ["DOMAIN", "DOMAIN-WILDCARD"]:
-            rule = rule.replace("^", "^(?=") + ")"
-        elif rule_type in ["DOMAIN-KEYWORD", "DOMAIN-REGEX"]:
-            rule = rf"(?=[\w.-]*?{rule})"
-        else:
-            rule = rf"(?={rule})"
-    return rule
-
-
-if __name__ == "__main__":
-    from deserialize.logical import deserialize as logical_deserialize
-
-    root_node = logical_deserialize(
-        "OR,((DOMAIN-KEYWORD,xxx), (AND,((DOMAIN-KEYWORD,yyy), (DOMAIN-SUFFIX,cn))))"
-    )
-    print(serialize(root_node=root_node))
+    return {f"!{type_format[rule_type]}": rule}

@@ -8,19 +8,12 @@ from ..logical.egern import serialize as logical_serialize
 class Serialize(BaseSerialize):
     def serialize(self) -> str:
         yaml_data = {"no_resolve": self.option.serialization.no_resolve}
-        logical_rules = list(
-            filter(
-                None, [logical_serialize(root_node=rule) for rule in self.rules.logical]
-            )
-        )
         if self.rules.domain:
             yaml_data["domain_set"] = self.rules.domain
         if self.rules.domain_suffix:
             yaml_data["domain_suffix_set"] = self.rules.domain_suffix
         if self.rules.domain_wildcard:
             yaml_data["domain_wildcard_set"] = self.rules.domain_wildcard
-        if logical_rules:
-            yaml_data["domain_regex_set"] = logical_rules
         if self.rules.domain_keyword:
             yaml_data["domain_keyword_set"] = self.rules.domain_keyword
         if self.rules.ip_cidr:
@@ -29,6 +22,20 @@ class Serialize(BaseSerialize):
             yaml_data["ip_cidr6_set"] = self.rules.ip_cidr6
         if self.rules.ip_asn:
             yaml_data["asn_set"] = self.rules.ip_asn
+        if self.rules.logical:
+            yaml_data["and_set"] = []
+            yaml_data["or_set"] = []
+            yaml_data["not_set"] = []
+            for rule in self.rules.logical:
+                if result := logical_serialize(root_node=rule):
+                    logical_set, rule = result
+                    yaml_data[logical_set].append(rule)
+            if not yaml_data["and_set"]:
+                del yaml_data["and_set"]
+            if not yaml_data["or_set"]:
+                del yaml_data["or_set"]
+            if not yaml_data["not_set"]:
+                del yaml_data["not_set"]
         if len(yaml_data.keys()) > 1:
             # Calculate total rules count
             rule_count = 0

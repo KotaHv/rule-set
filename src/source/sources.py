@@ -1,5 +1,4 @@
 from model import (
-    SerializeFormat,
     SourceModel,
     Option,
     V2rayDomainAttr,
@@ -50,7 +49,6 @@ sources = [
             )
         ],
         name="adblock/sukka/sukka-reject-no-drop",
-        include=[SerializeFormat.Surge, SerializeFormat.Loon],
     ),
     SourceModel(
         resources=[
@@ -59,7 +57,6 @@ sources = [
             )
         ],
         name="adblock/sukka/sukka-reject-drop",
-        exclude=[SerializeFormat.Egern, SerializeFormat.Sing_Box],
     ),
     SourceModel(
         resources=[
