@@ -1,0 +1,43 @@
+# Total: 34 rules
+no_resolve: true
+domain_set:
+- livewebbs2pcdn.msstatic.com
+- qn-cdnfile1pcdn.msstatic.com
+domain_suffix_set:
+- ppio.cloud
+- mcdn.bilivideo.cn
+- cdnnodedns.cn
+- p2perrorlog.douyucdn.cn
+- p2plog.douyucdn.cn
+- p2p.huya.com
+- kuiniuca.com
+- onethingpcs.com
+- p2cdn.com
+- pkoplink.com
+- p2pupdate.gamedl.qq.com
+- p2pupgrade.gamedl.qq.com
+- p2p.qq.com
+- p2ptun.qq.com
+- saxysec.com
+- szbdyd.com
+- tianwenca.com
+- uhabo.com
+- xycdn.com
+- yfcloud.com
+- pcdn.yximgs.com
+- yfcdn.net
+- yfp2p.net
+domain_wildcard_set:
+- dyp2p-*.douyucdn.cn
+- p2p*-ws.douyucdn.cn
+- p2p-*.douyucdn.cn
+- p2pchunk-*.douyucdn.cn
+- p2plive-*.douyucdn.cn
+domain_keyword_set:
+- -p2p-v2.pull.yximgs.com
+- -p2p.pull.yximgs.com
+and_set:
+- - '!domain_keyword': stun
+  - '!domain_keyword': douyu
+- - '!protocol': UDP
+  - '!domain_suffix': googlevideo.com

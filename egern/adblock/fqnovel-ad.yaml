@@ -1,8 +1,9 @@
 # Total: 4 rules
 no_resolve: true
-domain_regex_set:
-- (?=[\w.-]*?zijieapi)(?=[\w.-]*?ads)
 domain_keyword_set:
 - dig.bdurl
 - dig.zjurl
 - snssdk.com
+and_set:
+- - '!domain_keyword': zijieapi
+  - '!domain_keyword': ads
