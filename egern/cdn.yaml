@@ -1,4 +1,4 @@
-# Total: 3877 rules
+# Total: 3880 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -931,6 +931,7 @@ domain_set:
 - img3.javmost.com
 - img4.javmost.com
 - cdn.javsts.com
+- icdn.javxx.com
 - cdn.jetphotos.com
 - cdn.jitbit.com
 - cdn.joinhoney.com
@@ -2127,6 +2128,7 @@ domain_set:
 - pic.7mmtv.me
 - emoji-css.afeld.me
 - api.crashguard.me
+- cdn.daradara.me
 - media.e4le.me
 - static.fboom.me
 - static-cache.fboom.me
@@ -3756,6 +3758,7 @@ domain_suffix_set:
 - gitapp.si
 - gitpage.si
 - registry.gitplac.si
+- zenwave56.site
 - cdn-zlib.sk
 - pstorage.space
 - shoppulse88.store
