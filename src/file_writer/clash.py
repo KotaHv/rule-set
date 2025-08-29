@@ -28,7 +28,7 @@ class FileWriter:
         for filepath, (behavior, content) in self.file_data_map.items():
             write(filepath, content)
             if behavior in ("domain", "ipcidr"):
-                msr_path = filepath.with_suffix(".srs")
+                msr_path = filepath.with_suffix(".mrs")
                 result = subprocess.run(
                     ["mihomo", "convert-ruleset", behavior, "yaml", filepath, msr_path],
                     capture_output=True,
