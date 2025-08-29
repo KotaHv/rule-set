@@ -1,8 +1,6 @@
 import yaml
 from yaml import CDumper
 
-from utils import domain
-
 from .base import BaseSerialize
 from ..logical.egern import serialize as logical_serialize
 
@@ -20,15 +18,9 @@ class Serialize(BaseSerialize):
         if self.rules.domain_suffix:
             yaml_data["domain_suffix_set"] = self.rules.domain_suffix
         if self.rules.domain_wildcard:
-            yaml_data["domain_regex_set"] = [
-                domain.wildcard_to_regex(domain_wildcard)
-                for domain_wildcard in self.rules.domain_wildcard
-            ]
+            yaml_data["domain_wildcard_set"] = self.rules.domain_wildcard
         if logical_rules:
-            if yaml_data.get("domain_regex_set"):
-                yaml_data["domain_regex_set"].extend(logical_rules)
-            else:
-                yaml_data["domain_regex_set"] = logical_rules
+            yaml_data["domain_regex_set"] = logical_rules
         if self.rules.domain_keyword:
             yaml_data["domain_keyword_set"] = self.rules.domain_keyword
         if self.rules.ip_cidr:
