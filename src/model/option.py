@@ -69,7 +69,6 @@ class V2rayDomainAttr(BaseModel):
 
 class SerializationOption(BaseModel):
     no_resolve: bool = True
-    clash_optimize: bool = True
 
 
 class ProcessingOption(BaseModel):

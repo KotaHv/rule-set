@@ -17,6 +17,26 @@ jobs:
         run: |
           set -e -o pipefail
           bash <(curl -fsSL https://sing-box.app/install.sh)
+      - name: Install mihomo
+        run: |
+          set -e -o pipefail
+
+          sudo apt-get update && sudo apt-get install -y jq
+
+          DOWNLOAD_URL=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | jq -r '.assets[] | select(.name | contains("linux-amd64-v3") and endswith(".gz") and contains("go") == false) | .browser_download_url' | head -n1)
+          if [ -z "$DOWNLOAD_URL" ] || [ "$DOWNLOAD_URL" = "null" ]; then
+            echo "Error: Could not find linux-amd64-v3.gz asset"
+            exit 1
+          fi
+
+          echo "Downloading from: $DOWNLOAD_URL"
+          curl -L -o mihomo.gz "$DOWNLOAD_URL"
+          gunzip mihomo.gz
+          chmod +x mihomo
+          sudo mv mihomo /usr/local/bin/
+
+          # Verify installation
+          mihomo -v
       - name: Install uv
         uses: astral-sh/setup-uv@v6
       - run: |

@@ -1,4 +1,7 @@
+import subprocess
 from pathlib import Path
+
+from loguru import logger
 
 from config import settings
 from .write import write
@@ -15,19 +18,25 @@ class FileWriter:
         self._prepare_filepaths(data)
 
     def _prepare_filepaths(self, data: list[tuple[str, str]]) -> None:
-        single_entry = len(data) == 1
-        parent_path = self.base_dir / self.target_path.parent
-
         for behavior, content in data:
-            is_special = behavior in ("domain", "ipcidr")
-            dir_path = (
-                parent_path / behavior if is_special and single_entry else parent_path
-            )
-            suffix = f".{behavior}.yaml" if is_special and not single_entry else ".yaml"
-            filepath = dir_path / self.target_path.with_suffix(suffix).name
+            dir_path = self.base_dir / behavior / self.target_path.parent
+            filepath = dir_path / self.target_path.with_suffix(".yaml").name
             dir_path.mkdir(parents=True, exist_ok=True)
-            self.file_data_map[filepath] = content
+            self.file_data_map[filepath] = (behavior, content)
 
     def write(self) -> None:
-        for filepath, content in self.file_data_map.items():
+        for filepath, (behavior, content) in self.file_data_map.items():
             write(filepath, content)
+            if behavior in ("domain", "ipcidr"):
+                msr_path = filepath.with_suffix(".srs")
+                result = subprocess.run(
+                    ["mihomo", "convert-ruleset", behavior, "yaml", filepath, msr_path],
+                    capture_output=True,
+                    text=True,
+                )
+                if result.returncode == 0:
+                    logger.success(f"{msr_path} generated successfully")
+                else:
+                    logger.error(
+                        f"{msr_path} generated failed, result: {result.stderr}"
+                    )

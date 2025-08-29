@@ -34,7 +34,7 @@ class Serialize(BaseSerialize):
         payload.extend(self.rules.ip_cidr6)
         return payload
 
-    def classical(self, skip_domain: bool = False) -> list:
+    def classical(self, skip_domain: bool = False, skip_ip_cidr: bool = False) -> list:
         payload = []
         if not skip_domain:
             payload.extend([f"DOMAIN,{domain}" for domain in self.rules.domain])
@@ -58,22 +58,32 @@ class Serialize(BaseSerialize):
                 for domain_keyword in self.rules.domain_keyword
             ]
         )
-        if self.option.serialization.no_resolve:
+        if not skip_ip_cidr:
             payload.extend(
-                [f"IP-CIDR,{ip_cidr},no-resolve" for ip_cidr in self.rules.ip_cidr]
+                [
+                    f"IP-CIDR,{ip_cidr},no-resolve"
+                    if self.option.serialization.no_resolve
+                    else f"IP-CIDR,{ip_cidr}"
+                    for ip_cidr in self.rules.ip_cidr
+                ]
             )
             payload.extend(
-                [f"IP-CIDR6,{ip_cidr6},no-resolve" for ip_cidr6 in self.rules.ip_cidr6]
+                [
+                    f"IP-CIDR6,{ip_cidr6},no-resolve"
+                    if self.option.serialization.no_resolve
+                    else f"IP-CIDR6,{ip_cidr6}"
+                    for ip_cidr6 in self.rules.ip_cidr6
+                ]
             )
-            payload.extend(
-                [f"IP-ASN,{ip_asn},no-resolve" for ip_asn in self.rules.ip_asn]
-            )
-        else:
-            payload.extend([f"IP-CIDR,{ip_cidr}" for ip_cidr in self.rules.ip_cidr])
 
-            payload.extend([f"IP-CIDR6,{ip_cidr6}" for ip_cidr6 in self.rules.ip_cidr6])
-
-            payload.extend([f"IP-ASN,{ip_asn}" for ip_asn in self.rules.ip_asn])
+        payload.extend(
+            [
+                f"IP-ASN,{ip_asn},no-resolve"
+                if self.option.serialization.no_resolve
+                else f"IP-ASN,{ip_asn}"
+                for ip_asn in self.rules.ip_asn
+            ]
+        )
 
         payload.extend([f"PROCESS-NAME,{process}" for process in self.rules.process])
 
@@ -99,52 +109,15 @@ class Serialize(BaseSerialize):
         )
 
     def serialize(self) -> tuple[str, str] | list[tuple[str, str]]:
-        if self.option.serialization.clash_optimize:
-            if not self.serialized_logical_rules:
-                if self.has_only_domain_rules(ignore_types):
-                    return self._serialize_payload(self.domain(), "domain", "'")
-                if self.has_only_ip_cidr_rules(ignore_types):
-                    return self._serialize_payload(self.ip_cidr(), "ipcidr", "'")
-            if (
-                self.count_rules(ignore_types) + len(self.serialized_logical_rules)
-                > 10000
-            ):
-                domain_payload = self.domain()
-                classical_payload = self.classical(skip_domain=True)
-                return [
-                    self._serialize_payload(domain_payload, "domain", "'"),
-                    self._serialize_payload(classical_payload, "classical", None),
-                ]
-
-        payload = self.classical()
-        if payload:
-            return self._serialize_payload(payload, "classical", None)
-
-        return ""
-
-    def has_only_ip_cidr_rules(self, ignore_types: list = []) -> bool:
-        return self._has_only_rule_types(["ip_cidr", "ip_cidr6"], ignore_types)
-
-    def has_only_domain_rules(self, ignore_types: list = []) -> bool:
-        return self._has_only_rule_types(["domain", "domain_suffix"], ignore_types)
-
-    def _has_only_rule_types(
-        self, allowed_types: list, ignore_types: list = []
-    ) -> bool:
-        rule_types = list(SerializableRuleModel.model_fields.keys())
-        ignore_types = set(allowed_types + ignore_types)
-        for rule_type in rule_types:
-            if rule_type in ignore_types:
-                continue
-            if getattr(self.rules, rule_type):
-                return False
-        return any(getattr(self.rules, rule_type) for rule_type in allowed_types)
-
-    def count_rules(self, ignore_types: list = []) -> int:
-        count = 0
-        rule_types = list(SerializableRuleModel.model_fields.keys())
-        for rule_type in rule_types:
-            if rule_type in ignore_types:
-                continue
-            count += len(getattr(self.rules, rule_type))
-        return count
+        if self.option.geo_ip.country_code is not None:
+            return self._serialize_payload(self.ip_cidr(), "ipcidr", "'")
+        payloads = []
+        if domain_payload := self.domain():
+            payloads.append(self._serialize_payload(domain_payload, "domain", "'"))
+        if ip_cidr_payload := self.ip_cidr():
+            payloads.append(self._serialize_payload(ip_cidr_payload, "ipcidr", "'"))
+        if classical_payload := self.classical(skip_domain=True, skip_ip_cidr=True):
+            payloads.append(
+                self._serialize_payload(classical_payload, "classical", None)
+            )
+        return payloads
