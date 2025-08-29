@@ -16,7 +16,7 @@ class Serialize(BaseSerialize):
         self.serialized_logical_rules = list(
             filter(
                 None,
-                [logical_serialize(root_node=node) for node in self.rules.logical],
+                [logical_serialize(tree=tree) for tree in self.rules.logical],
             )
         )
 

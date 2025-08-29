@@ -3,7 +3,7 @@ Models package for rule-set project.
 Contains all data models and related types.
 """
 
-from .type import Source, AnyTreeNode, SerializeFormats
+from .type import Source, SerializeFormats
 from .enum import SerializeFormat, V2rayAttrMode, DomainType
 from .option import (
     V2rayDomainAttr,
@@ -31,7 +31,6 @@ from .source import SourceModel
 __all__ = [
     # Types
     "Source",
-    "AnyTreeNode",
     # Enums
     "SerializeFormat",
     "V2rayAttrMode",

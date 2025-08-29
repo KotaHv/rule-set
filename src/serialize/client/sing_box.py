@@ -33,7 +33,7 @@ class Serialize(BaseSerialize):
                 json_data["rules"][0]["process_name"] = rules
         if rules := self.rules.logical:
             for rule in rules:
-                logical_rule = sing_box_logical_serialize(root_node=rule)
+                logical_rule = sing_box_logical_serialize(tree=rule)
                 if logical_rule:
                     json_data["rules"].append(logical_rule)
         if json_data["rules"][0]:

@@ -1,9 +1,13 @@
-from anytree import Node
 from loguru import logger
 
-from serialize.error import UnsupportedRuleTypeError, SerializeError
-from utils import is_logical_keyword, is_logical_not, is_logical_and_or
-from serialize.logical import surge_logical_serialize
+from ..error import UnsupportedRuleTypeError, SerializeError
+from .surge import serialize as surge_serialize
+from model.logical import (
+    LogicalTree,
+    NotNode,
+    RuleNode,
+    LogicalNodeUnion,
+)
 
 type_format = {
     "domain-suffix": "domain_suffix",
@@ -40,69 +44,50 @@ include_types = [
 ]
 
 
-def serialize(*, root_node: Node) -> dict | None:
-    for node in [root_node, *root_node.descendants]:
-        if isinstance(node.name, str):
-            node.name = node.name.lower()
-    try:
-        return _serialize(root_node)
-    except SerializeError as e:
-        logger.error(e)
-    except Exception as e:
-        logger.error(
-            f"rule: '{surge_logical_serialize(root_node=root_node)}', err: {e}"
-        )
-
-
-def _serialize(node: Node) -> dict[str, list[dict[str, str]] | str]:
-    if isinstance(node.name, tuple):
-        return format_rule(node.name[0], node.name[1])
-    mode = node.name
-    if not is_logical_keyword(mode):
-        raise SerializeError(
-            f"{mode} is not a valid logical operator. Valid operators are: AND, OR, NOT",
-            node=node.root,
-        )
-    if is_logical_not(mode) and len(node.children) != 1:
-        raise SerializeError(
-            "NOT rule must only have one sub-rule",
-            node=node.root,
-        )
-    elif is_logical_and_or(mode) and len(node.children) < 2:
-        raise SerializeError(
-            "AND/OR rule must have at least two sub-rules",
-            node=node.root,
-        )
-    if mode == "not":
-        rule = _serialize_not(node)
-    else:
-        rule = {"type": "logical", "rules": [], "mode": mode}
-        for child_node in node.children:
-            rule["rules"].append(_serialize(child_node))
-    return rule
-
-
-def _serialize_not(
-    node: Node, invert: bool = True
+def _serialize_logical(
+    *, node: LogicalNodeUnion
 ) -> dict[str, list[dict[str, str]] | str]:
-    child_node = node.children[0]
-    if isinstance(child_node.name, tuple):
-        if len(node.children) != 1:
-            raise SerializeError("NOT rule must only have one sub-rule")
-        rule = format_rule(child_node.name[0], child_node.name[1])
+    """Serialize logical node to string."""
+    if isinstance(node, RuleNode):
+        return format_rule(node.rule.rule_type, node.rule.rule_values[0])
+    if isinstance(node, NotNode):
+        return _serialize_not_logical(node=node)
+
+    else:
+        rule = {"type": "logical", "rules": [], "mode": node.operator.lower()}
+        for child_node in node.get_children():
+            rule["rules"].append(_serialize_logical(node=child_node))
+        return rule
+
+
+def _serialize_not_logical(
+    *, node: LogicalNodeUnion, invert: bool = True
+) -> dict[str, list[dict[str, str]] | str]:
+    child_node = node.child
+    if isinstance(child_node, RuleNode):
+        rule = format_rule(child_node.rule.rule_type, child_node.rule.rule_values[0])
         rule["invert"] = invert
         return rule
-    if child_node.name == "not":
-        return _serialize_not(child_node, invert=not invert)
+    if isinstance(child_node, NotNode):
+        return _serialize_not_logical(node=child_node, invert=not invert)
     rule = {
         "type": "logical",
         "rules": [],
-        "mode": child_node.name,
+        "mode": child_node.operator.lower(),
         "invert": invert,
     }
-    for child_node in child_node.children:
-        rule["rules"].append(_serialize(child_node))
+    for child_node in child_node.get_children():
+        rule["rules"].append(_serialize_logical(node=child_node))
     return rule
+
+
+def serialize(*, tree: LogicalTree) -> dict | None:
+    try:
+        return _serialize_logical(node=tree.root)
+    except UnsupportedRuleTypeError as e:
+        logger.error(f"rule: {surge_serialize(tree=tree)}, err: {e}")
+    except SerializeError as e:
+        logger.error(e)
 
 
 def format_rule(rule_type: str, rule: str) -> dict[str, str]:

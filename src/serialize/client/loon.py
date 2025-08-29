@@ -48,8 +48,8 @@ class Serialize(BaseSerialize):
         if self.rules.logical:
             rules.extend(
                 [
-                    surge_logical_serialize(root_node=node, include=include_rule_types)
-                    for node in self.rules.logical
+                    surge_logical_serialize(tree=tree, include=include_rule_types)
+                    for tree in self.rules.logical
                 ]
             )
         filtered_rules = list(filter(None, rules))

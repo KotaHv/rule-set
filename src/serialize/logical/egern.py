@@ -1,10 +1,13 @@
-from anytree import Node
 from loguru import logger
 
-from utils import is_logical_keyword, is_logical_not, is_logical_and_or
-
-from ..error import SerializeError, UnsupportedRuleTypeError
-from .surge import serialize as surge_logical_serialize
+from ..error import UnsupportedRuleTypeError, SerializeError
+from .surge import serialize as surge_serialize
+from model.logical import (
+    LogicalTree,
+    NotNode,
+    RuleNode,
+    LogicalNodeUnion,
+)
 
 include_type = [
     "DOMAIN",
@@ -42,55 +45,44 @@ type_format = {
 }
 
 
-def serialize(
-    *, root_node: Node
-) -> tuple[str, list[dict[str, str]] | dict[str, str]] | None:
-    for node in [root_node, *root_node.descendants]:
-        if isinstance(node.name, str):
-            node.name = node.name.lower()
-    try:
-        logical_set, logical_type = f"{root_node.name}_set", f"!{root_node.name}"
-        return logical_set, _serialize(root_node)[logical_type]
-    except SerializeError as e:
-        logger.error(e)
-    except Exception as e:
-        logger.error(
-            f"rule: '{surge_logical_serialize(root_node=root_node)}', err: {e}"
-        )
+def _serialize_logical(*, node: LogicalNodeUnion) -> dict[str, dict[str, str | bool]]:
+    if isinstance(node, RuleNode):
+        return format_rule(node.rule.rule_type, node.rule.rule_values)
 
-
-def _serialize(node: Node) -> dict[str, str]:
-    if isinstance(node.name, tuple):
-        rule = format_rule(node.name[0], node.name[1])
-        return rule
-    if not is_logical_keyword(node.name):
-        raise SerializeError(
-            f"{node.name} is not a valid logical operator. Valid operators are: AND, OR, NOT",
-            node=node.root,
-        )
-    if is_logical_not(node.name) and len(node.children) != 1:
-        raise SerializeError(
-            "NOT rule must only have one sub-rule",
-            node=node.root,
-        )
-    elif is_logical_and_or(node.name) and len(node.children) < 2:
-        raise SerializeError(
-            "AND/OR rule must have at least two sub-rules",
-            node=node.root,
-        )
     rule = {}
-    logical_type = f"!{node.name}"
-    if is_logical_not(node.name):
-        rule[logical_type] = _serialize(node.children[0])
+    logical_type = f"!{node.operator.lower()}"
+    if isinstance(node, NotNode):
+        rule[logical_type] = {"match": _serialize_logical(node=node.child)}
     else:
-        rule[logical_type] = []
-        for child_node in node.children:
-            rule[logical_type].append(_serialize(child_node))
+        rule[logical_type] = {"match": []}
+        for child in node.get_children():
+            rule[logical_type]["match"].append(_serialize_logical(node=child))
     return rule
 
 
-def format_rule(rule_type: str, rule: str) -> dict[str, str]:
+def serialize(
+    *, tree: LogicalTree
+) -> tuple[str, list[dict[str, str]] | dict[str, str]] | None:
+    try:
+        logical_type = tree.root.operator.lower()
+        logical_set, logical_type = f"{logical_type}_set", f"!{logical_type}"
+        return logical_set, _serialize_logical(node=tree.root)[logical_type]
+    except UnsupportedRuleTypeError as e:
+        logger.error(f"rule: {surge_serialize(tree=tree)}, err: {e}")
+    except SerializeError as e:
+        logger.error(e)
+
+
+def format_rule(
+    rule_type: str, rule_values: list[str]
+) -> dict[str, dict[str, str | bool]]:
     rule_type = rule_type.upper()
     if rule_type not in include_type:
         raise UnsupportedRuleTypeError(rule_type)
-    return {f"!{type_format[rule_type]}": rule}
+    rule = {f"!{type_format[rule_type]}": {"match": rule_values[0]}}
+    for value in rule_values[1:]:
+        if value.lower() == "no-resolve":
+            rule["match"]["no-resolve"] = True
+            break
+
+    return rule

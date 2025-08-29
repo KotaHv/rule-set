@@ -27,7 +27,7 @@ class Serialize(BaseSerialize):
             yaml_data["or_set"] = []
             yaml_data["not_set"] = []
             for rule in self.rules.logical:
-                if result := logical_serialize(root_node=rule):
+                if result := logical_serialize(tree=rule):
                     logical_set, rule = result
                     yaml_data[logical_set].append(rule)
             if not yaml_data["and_set"]:

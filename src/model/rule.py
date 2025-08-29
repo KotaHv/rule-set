@@ -4,10 +4,10 @@ from pydantic import BaseModel, Field
 from loguru import logger
 
 from .enum import DomainType
-from .type import AnyTreeNode
 from .option import Option
 from .trie import DomainTrie, IPTrie, IPTrie6
 from .aho import Aho
+from .logical import LogicalTree
 from serialize.logical import surge_logical_serialize
 
 
@@ -19,7 +19,7 @@ class SerializableRuleModel(BaseModel):
     ip_cidr: list[str] = []
     ip_cidr6: list[str] = []
     ip_asn: list[str] = []
-    logical: list[AnyTreeNode] = []
+    logical: list[LogicalTree] = []
     process: list[str] = []
     ua: list[str] = []
 
@@ -29,7 +29,7 @@ class RuleModel(BaseModel):
     ip_trie: IPTrie = Field(default_factory=IPTrie)
     ip_trie6: IPTrie6 = Field(default_factory=IPTrie6)
     ip_asn: list[str] | set[str] = set()
-    logical: list[AnyTreeNode] = []
+    logical: list[LogicalTree] = []
     process: list[str] | set[str] = set()
     ua: list[str] | set[str] = set()
     domain_keyword: list[str] | set[str] = set()
@@ -41,13 +41,12 @@ class RuleModel(BaseModel):
         self.ip_trie6.merge(other.ip_trie6)
         self.ip_asn.update(other.ip_asn)
         if other.logical:
-            node_list = [
-                surge_logical_serialize(root_node=node) for node in self.logical
+            logical_rules = [
+                surge_logical_serialize(tree=tree) for tree in self.logical
             ]
-            for node in other.logical:
-                if surge_logical_serialize(root_node=node) in node_list:
-                    continue
-                self.logical.append(node)
+            for tree in other.logical:
+                if surge_logical_serialize(tree=tree) not in logical_rules:
+                    self.logical.append(tree)
         self.process.update(other.process)
         self.ua.update(other.ua)
 
@@ -103,9 +102,7 @@ class RuleModel(BaseModel):
                     key=lambda x: int(x),
                 )
             elif key == "logical":
-                value = sorted(
-                    value, key=lambda x: surge_logical_serialize(root_node=x)
-                )
+                value = sorted(value, key=lambda x: surge_logical_serialize(tree=x))
             else:
                 value = sorted(value)
             setattr(self, key, value)
