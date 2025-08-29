@@ -1,0 +1,3 @@
+# Total: 1 rules
+payload:
+- AND,((PROCESS-NAME,QQMusic),(NETWORK,UDP),(DST-PORT,3478))

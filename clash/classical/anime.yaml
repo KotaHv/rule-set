@@ -1,0 +1,4 @@
+# Total: 2 rules
+payload:
+- DOMAIN-WILDCARD,svip.high*-playback.com
+- DOMAIN-WILDCARD,v16*.akamaized.net
