@@ -70,6 +70,6 @@ domain_suffix_set:
 - mifun.tw
 - agedm.vip
 - mxdm.xyz
-domain_regex_set:
-- ^svip\.high[\w.-]*?-playback\.com$
-- ^v16[\w.-]*?\.akamaized\.net$
+domain_wildcard_set:
+- svip.high*-playback.com
+- v16*.akamaized.net

@@ -1171,11 +1171,11 @@ domain_suffix_set:
 - mirror.globo.tech
 - mirrors.nublue.co.uk
 - mirror.ac.za
-domain_regex_set:
-- ^cdn-[\w.-]*?\.comaps\.app$
-- ^cdn-[\w.-]*?\.organicmaps\.app$
-- ^[\w.-]*?\.s3\.[\w.-]*?\.backblazeb2\.com$
-- ^download[\w.-]*?\.mediafire\.com$
-- ^ftp\.[\w.-][\w.-]\.debian\.org$
-- ^ftp\.[\w.-][\w.-]\.freebsd\.org$
-- ^cdn-[\w.-]*?\.comaps\.tech$
+domain_wildcard_set:
+- cdn-*.comaps.app
+- cdn-*.organicmaps.app
+- '*.s3.*.backblazeb2.com'
+- download*.mediafire.com
+- ftp.??.debian.org
+- ftp.??.freebsd.org
+- cdn-*.comaps.tech

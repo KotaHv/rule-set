@@ -873,5 +873,5 @@ domain_suffix_set:
 - landian.vip
 - c-t.work
 - nz99.xyz
-domain_regex_set:
-- ^[\w.-]*?\.qhimgs[\w.-]\.com$
+domain_wildcard_set:
+- '*.qhimgs?.com'
