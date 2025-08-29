@@ -37,7 +37,13 @@ domain_keyword_set:
 - -p2p-v2.pull.yximgs.com
 - -p2p.pull.yximgs.com
 and_set:
-- - '!domain_keyword': stun
-  - '!domain_keyword': douyu
-- - '!protocol': UDP
-  - '!domain_suffix': googlevideo.com
+- match:
+  - '!domain_keyword':
+      match: stun
+  - '!domain_keyword':
+      match: douyu
+- match:
+  - '!protocol':
+      match: UDP
+  - '!domain_suffix':
+      match: googlevideo.com

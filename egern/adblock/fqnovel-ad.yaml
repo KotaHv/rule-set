@@ -5,5 +5,8 @@ domain_keyword_set:
 - dig.zjurl
 - snssdk.com
 and_set:
-- - '!domain_keyword': zijieapi
-  - '!domain_keyword': ads
+- match:
+  - '!domain_keyword':
+      match: zijieapi
+  - '!domain_keyword':
+      match: ads
