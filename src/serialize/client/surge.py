@@ -54,32 +54,36 @@ class Serialize(BaseSerialize):
                     for domain_wildcard in self.rules.domain_wildcard
                 ]
             )
-        if self.option.serialization.no_resolve:
-            if self.rules.ip_cidr:
-                rules.extend(
-                    [f"IP-CIDR,{ip_cidr},no-resolve" for ip_cidr in self.rules.ip_cidr]
-                )
-            if self.rules.ip_cidr6:
-                rules.extend(
-                    [
-                        f"IP-CIDR6,{ip_cidr6},no-resolve"
-                        for ip_cidr6 in self.rules.ip_cidr6
-                    ]
-                )
-            if self.rules.ip_asn:
-                rules.extend(
-                    [f"IP-ASN,{ip_asn},no-resolve" for ip_asn in self.rules.ip_asn]
-                )
-        else:
-            if self.rules.ip_cidr:
-                rules.extend([f"IP-CIDR,{ip_cidr}" for ip_cidr in self.rules.ip_cidr])
 
-            if self.rules.ip_cidr6:
-                rules.extend(
-                    [f"IP-CIDR6,{ip_cidr6}" for ip_cidr6 in self.rules.ip_cidr6]
-                )
-            if self.rules.ip_asn:
-                rules.extend([f"IP-ASN,{ip_asn}" for ip_asn in self.rules.ip_asn])
+        if self.rules.ip_cidr:
+            rules.extend(
+                [
+                    f"IP-CIDR,{ip_cidr},no-resolve"
+                    if self.option.serialization.no_resolve
+                    else f"IP-CIDR,{ip_cidr}"
+                    for ip_cidr in self.rules.ip_cidr
+                ]
+            )
+
+        if self.rules.ip_cidr6:
+            rules.extend(
+                [
+                    f"IP-CIDR6,{ip_cidr6},no-resolve"
+                    if self.option.serialization.no_resolve
+                    else f"IP-CIDR6,{ip_cidr6}"
+                    for ip_cidr6 in self.rules.ip_cidr6
+                ]
+            )
+        if self.rules.ip_asn:
+            rules.extend(
+                [
+                    f"IP-ASN,{ip_asn},no-resolve"
+                    if self.option.serialization.no_resolve
+                    else f"IP-ASN,{ip_asn}"
+                    for ip_asn in self.rules.ip_asn
+                ]
+            )
+
         if self.rules.ua:
             rules.extend([f"USER-AGENT,{ua}" for ua in self.rules.ua])
         if self.rules.process:
