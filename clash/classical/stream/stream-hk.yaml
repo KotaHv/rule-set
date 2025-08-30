@@ -1,4 +1,9 @@
-# Total: 2 rules
+# Total: 7 rules
 payload:
 - DOMAIN-KEYWORD,nowtv100
 - DOMAIN-KEYWORD,rthklive
+- PROCESS-NAME,com.bstar.intl
+- PROCESS-NAME,com.hktve.viutv
+- PROCESS-NAME,com.viu.pad
+- PROCESS-NAME,com.viu.phone
+- PROCESS-NAME,com.vuclip.viu

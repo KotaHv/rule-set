@@ -1,4 +1,4 @@
-# Total: 25 rules
+# Total: 27 rules
 DOMAIN,ds-linear-abematv.akamaized.net
 DOMAIN-SUFFIX,abema-tv.com
 DOMAIN-SUFFIX,amebame.com
@@ -24,3 +24,5 @@ DOMAIN-SUFFIX,winticket.jp
 DOMAIN-SUFFIX,hayabusa.media
 DOMAIN-SUFFIX,dmc.nico
 DOMAIN-SUFFIX,abema.tv
+USER-AGENT,AbemaTV*
+USER-AGENT,Niconico*

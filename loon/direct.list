@@ -1,4 +1,4 @@
-# Total: 871 rules
+# Total: 874 rules
 DOMAIN,www.intel.cn
 DOMAIN,lv.queniujq.cn
 DOMAIN,url.cn
@@ -870,3 +870,6 @@ DOMAIN-SUFFIX,pps.tv
 DOMAIN-SUFFIX,landian.vip
 DOMAIN-SUFFIX,c-t.work
 DOMAIN-SUFFIX,nz99.xyz
+USER-AGENT,%E4%BC%98%E9%85%B7*
+USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
+USER-AGENT,TeslaMap

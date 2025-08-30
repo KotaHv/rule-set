@@ -1,4 +1,4 @@
-# Total: 14 rules
+# Total: 28 rules
 payload:
 - DOMAIN-KEYWORD,-spotify-com
 - DOMAIN-KEYWORD,-tiktokcdn-com
@@ -14,3 +14,17 @@ payload:
 - DOMAIN-KEYWORD,tvbanywhere
 - DOMAIN-KEYWORD,uk-live
 - DOMAIN-KEYWORD,voddazn
+- PROCESS-NAME,com.amazon.avod.thirdpartyclient
+- PROCESS-NAME,com.bstar.intl
+- PROCESS-NAME,com.hktve.viutv
+- PROCESS-NAME,com.hulu.plus
+- PROCESS-NAME,com.linecorp.linetv
+- PROCESS-NAME,com.netflix.mediaclient
+- PROCESS-NAME,com.tencent.ibg.joox
+- PROCESS-NAME,com.twgood.android
+- PROCESS-NAME,com.viu.pad
+- PROCESS-NAME,com.viu.phone
+- PROCESS-NAME,com.vuclip.viu
+- PROCESS-NAME,music
+- PROCESS-NAME,tv
+- PROCESS-NAME,tv.twitch.android.app

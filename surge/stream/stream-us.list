@@ -1,4 +1,4 @@
-# Total: 36 rules
+# Total: 46 rules
 DOMAIN,edge.api.brightcove.com
 DOMAIN,prod-api.crackle.com
 DOMAIN,cbsi.live.ott.irdeto.com
@@ -35,3 +35,13 @@ DOMAIN-SUFFIX,hulu.tv
 DOMAIN-SUFFIX,pluto.tv
 DOMAIN-SUFFIX,discoveryplus.co.uk
 DOMAIN-SUFFIX,hulu.us
+USER-AGENT,DPlus*
+USER-AGENT,FOX NOW*
+USER-AGENT,FOXPlus*
+USER-AGENT,Hulu*
+USER-AGENT,PPlus*
+USER-AGENT,PeacockMobile*
+USER-AGENT,TVer-Release*
+USER-AGENT,discovery+*
+USER-AGENT,encoreTVB*
+PROCESS-NAME,com.hulu.plus

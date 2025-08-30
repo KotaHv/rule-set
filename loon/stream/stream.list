@@ -1,4 +1,4 @@
-# Total: 282 rules
+# Total: 331 rules
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 DOMAIN,hls.itunes.apple.com
 DOMAIN,hls-amt.itunes.apple.com
@@ -281,3 +281,52 @@ IP-CIDR6,2607:fb10::/32
 IP-CIDR6,2620:10c:7000::/44
 IP-CIDR6,2a00:86c0::/32
 IP-CIDR6,2a03:5640::/32
+USER-AGENT,*Spotify*
+USER-AGENT,AbemaTV*
+USER-AGENT,All4*
+USER-AGENT,Anime*
+USER-AGENT,AppleTV*
+USER-AGENT,Argo*
+USER-AGENT,BBCiPlayer*
+USER-AGENT,DAZN*
+USER-AGENT,DPlus*
+USER-AGENT,Deezer*
+USER-AGENT,Disney+*
+USER-AGENT,FOX NOW*
+USER-AGENT,FOXPlus*
+USER-AGENT,HBO NOW*
+USER-AGENT,HBOMAX*
+USER-AGENT,HWTVMobile*
+USER-AGENT,Himalaya*
+USER-AGENT,Hulu*
+USER-AGENT,ITV_Player*
+USER-AGENT,InstantVideo.US*
+USER-AGENT,JOOX*
+USER-AGENT,KKTV*
+USER-AGENT,LINE TV*
+USER-AGENT,My5*
+USER-AGENT,Naver TV*
+USER-AGENT,Niconico*
+USER-AGENT,Overcast*
+USER-AGENT,PBS*
+USER-AGENT,PPlus*
+USER-AGENT,Pandora*
+USER-AGENT,PeacockMobile*
+USER-AGENT,Prime Video*
+USER-AGENT,SoundCloud*
+USER-AGENT,TIDAL*
+USER-AGENT,TVer-Release*
+USER-AGENT,TaiwanGood*
+USER-AGENT,TikTok*
+USER-AGENT,Viu*
+USER-AGENT,WeMusic*
+USER-AGENT,WeTV*
+USER-AGENT,YouTube*
+USER-AGENT,YouTubeMusic*
+USER-AGENT,com.apple.tv*
+USER-AGENT,com.google.ios.youtube*
+USER-AGENT,com.google.ios.youtubemusic*
+USER-AGENT,com.kktv.ios.kktv*
+USER-AGENT,discovery+*
+USER-AGENT,encoreTVB*
+USER-AGENT,mytv*

@@ -1,4 +1,4 @@
-# Total: 29 rules
+# Total: 31 rules
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 DOMAIN,hbounify-prod.evergent.com
 DOMAIN,hbolb.onwardsmg.com
@@ -28,3 +28,5 @@ DOMAIN-SUFFIX,viu.tv
 DOMAIN-SUFFIX,hbogoasia.tw
 DOMAIN-KEYWORD,nowtv100
 DOMAIN-KEYWORD,rthklive
+USER-AGENT,Viu*
+USER-AGENT,mytv*

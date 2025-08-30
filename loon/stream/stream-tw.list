@@ -1,4 +1,4 @@
-# Total: 30 rules
+# Total: 34 rules
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 DOMAIN,hbounify-prod.evergent.com
 DOMAIN,cdi.ofiii.com
@@ -29,3 +29,7 @@ DOMAIN-SUFFIX,ani.gamer.com.tw
 DOMAIN-SUFFIX,kktv.com.tw
 DOMAIN-SUFFIX,hbogoasia.tw
 DOMAIN-SUFFIX,linetv.tw
+USER-AGENT,Anime*
+USER-AGENT,KKTV*
+USER-AGENT,LINE TV*
+USER-AGENT,com.kktv.ios.kktv*
