@@ -8,7 +8,6 @@ from utils import is_logical_keyword, validate_domain
 
 class RuleSetDeserialize(BaseDeserialize):
     def deserialize(self) -> RuleModel:
-        unique_node_list = []
         for line in self.data_lines:
             processed_line = line.split(",")
             rule_type, rule = processed_line[0].lower(), processed_line[1].strip()
@@ -32,17 +31,15 @@ class RuleSetDeserialize(BaseDeserialize):
                 self.result.ip_trie6.add(rule)
             elif rule_type == "ip-asn":
                 self.result.ip_asn.add(rule)
-            # elif rule_type == "user-agent":
-            #     self.result.ua.add(rule)
-            # elif rule_type == "process-name":
-            #     self.result.process.add(rule)
+            elif rule_type == "user-agent":
+                self.result.ua.add(rule)
+            elif rule_type == "process-name":
+                self.result.process.add(rule)
             elif is_logical_keyword(rule_type):
                 node = logical.deserialize(line)
                 if node is None:
                     continue
-                if line not in unique_node_list:
-                    unique_node_list.append(line)
-                    self.result.logical.append(node)
+                self.result.logical.add(node)
             else:
                 logger.warning(line)
         return self.result

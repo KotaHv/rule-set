@@ -105,9 +105,7 @@ def _deserialize_logical_node(
 def _create_rule_node(rule_type: str, *rule_values: str) -> RuleNode:
     """Create a rule node from type and values."""
     try:
-        rule = ConcreteRule(
-            rule_type=RuleType(rule_type), rule_values=list(rule_values)
-        )
+        rule = ConcreteRule(rule_type=RuleType(rule_type), rule_values=rule_values)
         return RuleNode(rule=rule)
     except ValueError as e:
         raise DeserializeError(f"Invalid rule type '{rule_type}': {e}")

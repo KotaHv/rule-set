@@ -41,27 +41,46 @@ class ConcreteRule(BaseModel):
     """Represents a concrete rule with type and values."""
 
     rule_type: RuleType
-    rule_values: list[str]
+    rule_values: tuple[str, ...]
 
     @field_validator("rule_values")
     @classmethod
-    def validate_rule_values(cls, v: list[str]) -> list[str]:
+    def validate_rule_values(cls, v: tuple[str, ...]) -> tuple[str, ...]:
         """Validate rule values are not empty."""
         if not v:
             raise ValueError("Rule values cannot be empty")
-        return [val.strip() for val in v if val.strip()]
+        return tuple(val.strip() for val in v if val.strip())
 
     def render(self) -> str:
         return f"({self.rule_type.value},{','.join(self.rule_values)})"
+
+    def __eq__(self, other: object) -> bool:
+        """Compare two concrete rules for equality."""
+        if not isinstance(other, ConcreteRule):
+            return False
+        return (
+            self.rule_type == other.rule_type and self.rule_values == other.rule_values
+        )
+
+    def __hash__(self) -> int:
+        """Hash based on rule type and values."""
+        return hash((self.rule_type, self.rule_values))
+
+    def __lt__(self, other: object) -> bool:
+        if not isinstance(other, ConcreteRule):
+            return NotImplemented
+        if self.rule_type == other.rule_type:
+            return self.rule_values < other.rule_values
+        return self.rule_type < other.rule_type
 
 
 class LogicalNode(BaseModel, ABC):
     """Abstract base class for all logical nodes."""
 
-    parent: LogicalNode | None = Field(default=None, exclude=True)
+    parent: LogicalNode | None = Field(default=None, exclude=True, repr=False)
 
     @abstractmethod
-    def get_children(self) -> list[LogicalNode]:
+    def get_children(self) -> tuple[LogicalNode, ...]:
         """Get child nodes."""
         pass
 
@@ -74,7 +93,9 @@ class LogicalNode(BaseModel, ABC):
 class AndNode(LogicalNode):
     """Represents an AND logical operation."""
 
-    children: list[LogicalNodeAnnotated] = Field(default_factory=list, min_length=2)
+    children: tuple[LogicalNodeAnnotated, ...] = Field(
+        default_factory=tuple, min_length=2
+    )
     node_type: Literal[LogicalNodeType.AND] = LogicalNodeType.AND
 
     @property
@@ -91,7 +112,7 @@ class AndNode(LogicalNode):
             child.parent = self
         return self
 
-    def get_children(self) -> list[LogicalNode]:
+    def get_children(self) -> tuple[LogicalNode, ...]:
         return self.children
 
     def render(self, prefix: str = "", is_last: bool = True) -> str:
@@ -108,11 +129,35 @@ class AndNode(LogicalNode):
 
         return result
 
+    def __eq__(self, other: object) -> bool:
+        """Compare two AND nodes for equality."""
+        if not isinstance(other, AndNode):
+            return False
+        if len(self.children) != len(other.children):
+            return False
+        return all(
+            self_child == other_child
+            for self_child, other_child in zip(self.children, other.children)
+        )
+
+    def __hash__(self) -> int:
+        """Hash based on node type and children."""
+        return hash((self.node_type, self.children))
+
+    def __lt__(self, other: object) -> bool:
+        if not isinstance(other, LogicalNode):
+            return NotImplemented
+        if type(self) is not type(other):
+            return NODE_PRIORITY[type(self)] < NODE_PRIORITY[type(other)]
+        return self.children < other.children
+
 
 class OrNode(LogicalNode):
     """Represents an OR logical operation."""
 
-    children: list[LogicalNodeAnnotated] = Field(default_factory=list, min_length=2)
+    children: tuple[LogicalNodeAnnotated, ...] = Field(
+        default_factory=tuple, min_length=2
+    )
     node_type: Literal[LogicalNodeType.OR] = LogicalNodeType.OR
 
     @property
@@ -129,7 +174,7 @@ class OrNode(LogicalNode):
             child.parent = self
         return self
 
-    def get_children(self) -> list[LogicalNode]:
+    def get_children(self) -> tuple[LogicalNode, ...]:
         return self.children
 
     def render(self, prefix: str = "", is_last: bool = True) -> str:
@@ -145,6 +190,28 @@ class OrNode(LogicalNode):
             result += child.render(new_prefix, i == len(self.children) - 1)
 
         return result
+
+    def __eq__(self, other: object) -> bool:
+        """Compare two OR nodes for equality."""
+        if not isinstance(other, OrNode):
+            return False
+        if len(self.children) != len(other.children):
+            return False
+        return all(
+            self_child == other_child
+            for self_child, other_child in zip(self.children, other.children)
+        )
+
+    def __hash__(self) -> int:
+        """Hash based on node type and children."""
+        return hash((self.node_type, self.children))
+
+    def __lt__(self, other: object) -> bool:
+        if not isinstance(other, LogicalNode):
+            return NotImplemented
+        if type(self) is not type(other):
+            return NODE_PRIORITY[type(self)] < NODE_PRIORITY[type(other)]
+        return self.children < other.children
 
 
 class NotNode(LogicalNode):
@@ -168,8 +235,8 @@ class NotNode(LogicalNode):
         self.child.parent = self
         return self
 
-    def get_children(self) -> list[LogicalNode]:
-        return [self.child]
+    def get_children(self) -> tuple[LogicalNode, ...]:
+        return (self.child,)
 
     def render(self, prefix: str = "", is_last: bool = True) -> str:
         """Render NOT node."""
@@ -183,6 +250,23 @@ class NotNode(LogicalNode):
         result += self.child.render(new_prefix, True)
         return result
 
+    def __eq__(self, other: object) -> bool:
+        """Compare two NOT nodes for equality."""
+        if not isinstance(other, NotNode):
+            return False
+        return self.child == other.child
+
+    def __hash__(self) -> int:
+        """Hash based on node type and child."""
+        return hash((self.node_type, self.child))
+
+    def __lt__(self, other: object) -> bool:
+        if not isinstance(other, LogicalNode):
+            return NotImplemented
+        if type(self) is not type(other):
+            return NODE_PRIORITY[type(self)] < NODE_PRIORITY[type(other)]
+        return self.child < other.child
+
 
 class RuleNode(LogicalNode):
     """Represents a concrete rule."""
@@ -190,14 +274,37 @@ class RuleNode(LogicalNode):
     rule: ConcreteRule
     node_type: Literal[LogicalNodeType.RULE] = LogicalNodeType.RULE
 
-    def get_children(self) -> list[LogicalNode]:
-        return []
+    def get_children(self) -> tuple[LogicalNode, ...]:
+        return ()
 
     def render(self, prefix: str = "", is_last: bool = True) -> str:
         """Render rule node."""
         return f"{prefix}{'└── ' if is_last else '├── '}{self.rule.render()}\n"
 
+    def __eq__(self, other: object) -> bool:
+        """Compare two rule nodes for equality."""
+        if not isinstance(other, RuleNode):
+            return False
+        return self.rule == other.rule
 
+    def __hash__(self) -> int:
+        """Hash based on node type and rule."""
+        return hash((self.node_type, self.rule))
+
+    def __lt__(self, other: object) -> bool:
+        if not isinstance(other, LogicalNode):
+            return NotImplemented
+        if type(self) is not type(other):
+            return NODE_PRIORITY[type(self)] < NODE_PRIORITY[type(other)]
+        return self.rule < other.rule
+
+
+NODE_PRIORITY = {
+    RuleNode: 0,
+    NotNode: 1,
+    OrNode: 2,
+    AndNode: 3,
+}
 LogicalNodeUnion = AndNode | OrNode | NotNode | RuleNode
 LogicalNodeAnnotated = Annotated[LogicalNodeUnion, Field(discriminator="node_type")]
 
@@ -212,3 +319,18 @@ class LogicalTree(BaseModel):
     def render(self) -> str:
         """Render tree as string for debugging."""
         return self.root.render()
+
+    def __eq__(self, other: object) -> bool:
+        """Compare two logical trees for equality."""
+        if not isinstance(other, LogicalTree):
+            return False
+        return self.root == other.root
+
+    def __hash__(self) -> int:
+        """Hash based on root node."""
+        return hash(self.root)
+
+    def __lt__(self, other: object) -> bool:
+        if not isinstance(other, LogicalTree):
+            return NotImplemented
+        return self.root < other.root
