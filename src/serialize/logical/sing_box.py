@@ -43,6 +43,20 @@ include_types = [
     "wifi_bssid",
 ]
 
+protocol_types = [
+    "http",
+    "tls",
+    "quic",
+    "stun",
+    "dns",
+    "bittorrent",
+    "dtls",
+    "ssh",
+    "rdp",
+    "ntp",
+]
+protocol_types_format = {"https": "tls"}
+
 
 def _serialize_logical(
     *, node: LogicalNodeUnion
@@ -97,6 +111,12 @@ def format_rule(rule_type: str, rule: str) -> dict[str, str]:
         if rule_type == "port":
             return {"port": int(rule)}
         return {rule_type: rule}
-    if rule_type == "protocol" and rule.upper() in ["UDP", "TCP"]:
-        return {"network": rule.lower()}
+    if rule_type == "protocol":
+        rule = rule.lower()
+        rule = protocol_types_format.get(rule, rule)
+        if rule in ["udp", "tcp"]:
+            return {"network": rule}
+        if rule in protocol_types:
+            return {"protocol": rule}
+
     raise UnsupportedRuleTypeError(rule_type)
