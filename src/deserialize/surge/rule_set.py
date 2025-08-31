@@ -40,6 +40,8 @@ class RuleSetDeserialize(BaseDeserialize):
                 if node is None:
                     continue
                 self.result.logical.add(node)
+            elif rule_type == "url-regex":
+                self.result.url_regex.add(rule)
             else:
                 logger.warning(line)
         return self.result

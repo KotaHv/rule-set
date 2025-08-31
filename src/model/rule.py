@@ -21,6 +21,7 @@ class SerializableRuleModel(BaseModel):
     logical: list[LogicalTree] = []
     process: list[str] = []
     ua: list[str] = []
+    url_regex: list[str] = []
 
 
 class RuleModel(BaseModel):
@@ -32,6 +33,7 @@ class RuleModel(BaseModel):
     process: list[str] | set[str] = set()
     ua: list[str] | set[str] = set()
     domain_keyword: list[str] | set[str] = set()
+    url_regex: list[str] | set[str] = set()
 
     def merge_with(self, other: Self) -> None:
         self.domain_trie.merge(other.domain_trie)
@@ -42,6 +44,7 @@ class RuleModel(BaseModel):
         self.logical.update(other.logical)
         self.process.update(other.process)
         self.ua.update(other.ua)
+        self.url_regex.update(other.url_regex)
 
     def _deduplicate_domain_keyword(self):
         """Remove domain-keyword rules that are already covered by shorter keywords."""
@@ -114,6 +117,7 @@ class RuleModel(BaseModel):
         serializable_rule.logical.extend(self.logical)
         serializable_rule.process.extend(self.process)
         serializable_rule.ua.extend(self.ua)
+        serializable_rule.url_regex.extend(self.url_regex)
         return serializable_rule
 
 

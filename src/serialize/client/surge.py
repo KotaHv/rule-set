@@ -95,6 +95,10 @@ class Serialize(BaseSerialize):
                     for tree in self.rules.logical
                 ]
             )
+        if self.rules.url_regex:
+            rules.extend(
+                [f"URL-REGEX,{url_regex}" for url_regex in self.rules.url_regex]
+            )
         filtered_rules = list(filter(None, rules))
         content = "\n".join(filtered_rules)
         if content:

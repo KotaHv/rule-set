@@ -36,6 +36,8 @@ class Serialize(BaseSerialize):
                 del yaml_data["or_set"]
             if not yaml_data["not_set"]:
                 del yaml_data["not_set"]
+        if self.rules.url_regex:
+            yaml_data["url_regex_set"] = self.rules.url_regex
         if len(yaml_data.keys()) > 1:
             # Calculate total rules count
             rule_count = 0
