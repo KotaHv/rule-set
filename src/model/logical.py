@@ -301,9 +301,9 @@ class RuleNode(LogicalNode):
 
 NODE_PRIORITY = {
     RuleNode: 0,
-    NotNode: 1,
-    OrNode: 2,
-    AndNode: 3,
+    AndNode: 1,
+    NotNode: 2,
+    OrNode: 3,
 }
 LogicalNodeUnion = AndNode | OrNode | NotNode | RuleNode
 LogicalNodeAnnotated = Annotated[LogicalNodeUnion, Field(discriminator="node_type")]
