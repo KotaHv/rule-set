@@ -14,17 +14,17 @@ class DomainTrie:
     def _domain_to_reversed_parts(
         self, domain: str, domain_type: DomainType
     ) -> tuple[str, ...]:
-        sep = "." if domain_type != DomainType.DOMAIN_REGEXP else r"\."
-        if domain_type == DomainType.DOMAIN_REGEXP:
+        sep = "." if domain_type != DomainType.DOMAIN_REGEX else r"\."
+        if domain_type == DomainType.DOMAIN_REGEX:
             domain = domain.rstrip("$")
         return tuple(domain.split(sep)[::-1])
 
     def _reversed_parts_to_domain(
         self, parts: tuple[str, ...], domain_type: DomainType
     ) -> str:
-        sep = "." if domain_type != DomainType.DOMAIN_REGEXP else r"\."
+        sep = "." if domain_type != DomainType.DOMAIN_REGEX else r"\."
         domain = sep.join(parts[::-1])
-        if domain_type == DomainType.DOMAIN_REGEXP:
+        if domain_type == DomainType.DOMAIN_REGEX:
             domain += "$"
         return domain
 

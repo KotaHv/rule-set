@@ -13,7 +13,7 @@ def deserialize(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
         - 'include:' reference external files.
         - 'domain:' defines a domain-suffix rule (prefix can be omitted).
         - 'keyword:' defines a domain-keyword rule.
-        - 'regexp:' defines a domain-regexp rule.
+        - 'regexp:' defines a domain-regex rule.
         - 'full:' defines a domain rule.
         - Domain rules (domain, keyword, regexp, full) may include one or more
           attributes, each beginning with '@' and separated by spaces (e.g., @ads @cn).
@@ -49,6 +49,6 @@ def deserialize(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
         elif rule_type == "full":
             rules.domain_trie.add(rule, DomainType.DOMAIN)
         elif rule_type == "regexp":
-            rules.domain_trie.add(rule, DomainType.DOMAIN_REGEXP)
+            rules.domain_trie.add(rule, DomainType.DOMAIN_REGEX)
 
     return V2rayDomainResult(rules=rules, includes=includes)

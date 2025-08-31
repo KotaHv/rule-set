@@ -49,8 +49,7 @@ class Serialize(BaseSerialize):
         )
 
         payload.extend(
-            f"DOMAIN-REGEXP,{domain_regexp}"
-            for domain_regexp in self.rules.domain_regexp
+            f"DOMAIN-REGEX,{domain_regex}" for domain_regex in self.rules.domain_regex
         )
 
         payload.extend(

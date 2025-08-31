@@ -83,7 +83,7 @@ class Serialize(BaseSerialize):
         rules.extend(f"URL-REGEX,{url_regex}" for url_regex in self.rules.url_regex)
         rules.extend(
             f"DOMAIN-WILDCARD,{w}"
-            for domain_regex in self.rules.domain_regexp
+            for domain_regex in self.rules.domain_regex
             for w in regex_to_wildcard(domain_regex)
         )
         filtered_rules = list(filter(None, rules))
