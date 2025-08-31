@@ -597,5 +597,5 @@ domain_suffix_set:
 - xbox
 - nintendo.co.za
 - itch.zone
-domain_regexp_set:
+domain_regex_set:
 - ^epicgames-download\d\.akamaized\.net$

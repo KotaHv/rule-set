@@ -1,4 +1,4 @@
-# Total: 595 rules
+# Total: 596 rules
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
@@ -594,3 +594,4 @@ DOMAIN-SUFFIX,minecraft.wiki
 DOMAIN-SUFFIX,xbox
 DOMAIN-SUFFIX,nintendo.co.za
 DOMAIN-SUFFIX,itch.zone
+DOMAIN-WILDCARD,epicgames-download?.akamaized.net

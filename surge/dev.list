@@ -1,4 +1,4 @@
-# Total: 493 rules
+# Total: 495 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -492,3 +492,5 @@ DOMAIN-SUFFIX,fastlane.tools
 DOMAIN-SUFFIX,researchkit.tv
 DOMAIN-SUFFIX,visualstudio.co.uk
 DOMAIN-SUFFIX,greenend.org.uk
+DOMAIN-WILDCARD,*.dkr.ecr.*.amazonaws.com
+DOMAIN-WILDCARD,github-production-release-asset-??????.s3.amazonaws.com
