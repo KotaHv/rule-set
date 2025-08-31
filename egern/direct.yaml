@@ -1,4 +1,4 @@
-# Total: 872 rules
+# Total: 874 rules
 no_resolve: true
 domain_set:
 - www.intel.cn
@@ -875,3 +875,6 @@ domain_suffix_set:
 - nz99.xyz
 domain_wildcard_set:
 - '*.qhimgs?.com'
+domain_regexp_set:
+- .+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$
+- .+\.awsdns-cn-[0-9][a-e0-9]\.cn$

@@ -1,4 +1,4 @@
-# Total: 493 rules
+# Total: 495 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -495,3 +495,6 @@ domain_suffix_set:
 - researchkit.tv
 - visualstudio.co.uk
 - greenend.org.uk
+domain_regexp_set:
+- .+\.dkr\.ecr\.[^\.]+\.amazonaws\.com$
+- ^github-production-release-asset-[0-9a-zA-Z]{6}\.s3\.amazonaws\.com$

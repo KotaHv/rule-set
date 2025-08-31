@@ -1,4 +1,4 @@
-# Total: 595 rules
+# Total: 596 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -597,3 +597,5 @@ domain_suffix_set:
 - xbox
 - nintendo.co.za
 - itch.zone
+domain_regexp_set:
+- ^epicgames-download\d\.akamaized\.net$
