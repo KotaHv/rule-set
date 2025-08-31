@@ -1,5 +1,6 @@
 from .base import BaseSerialize
 from ..logical import surge_logical_serialize
+from utils.domain import regex_to_wildcard
 
 
 include_rule_types = [
@@ -54,7 +55,6 @@ class Serialize(BaseSerialize):
                     for domain_wildcard in self.rules.domain_wildcard
                 ]
             )
-
         if self.rules.ip_cidr:
             rules.extend(
                 [
@@ -98,6 +98,10 @@ class Serialize(BaseSerialize):
         if self.rules.url_regex:
             rules.extend(
                 [f"URL-REGEX,{url_regex}" for url_regex in self.rules.url_regex]
+            )
+        for domain_regex in self.rules.domain_regexp:
+            rules.extend(
+                f"DOMAIN-WILDCARD,{w}" for w in regex_to_wildcard(domain_regex)
             )
         filtered_rules = list(filter(None, rules))
         content = "\n".join(filtered_rules)
