@@ -1,4 +1,4 @@
-# Total: 596 rules
+# Total: 595 rules
 payload:
 - DOMAIN-WILDCARD,support-metahelpcenter-id*.netlify.app
 - DOMAIN-WILDCARD,tw-726620180914.*.run.app
@@ -141,7 +141,6 @@ payload:
 - DOMAIN-WILDCARD,bdlm*.hc360.com
 - DOMAIN-WILDCARD,hba*.hepsiburada.com
 - DOMAIN-WILDCARD,hstats*.hepsiburada.com
-- DOMAIN-WILDCARD,highcpmrevenue*.com
 - DOMAIN-WILDCARD,api-*.hismarttv.com
 - DOMAIN-WILDCARD,auth-*.hismarttv.com
 - DOMAIN-WILDCARD,clickstream-*.homedepot.com

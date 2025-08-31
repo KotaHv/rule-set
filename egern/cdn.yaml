@@ -1,4 +1,4 @@
-# Total: 3880 rules
+# Total: 3881 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1674,6 +1674,7 @@ domain_set:
 - cdn.uptimia.com
 - static.uptimia.com
 - asset-cdn.uscardforum.com
+- www-cdn.uscardforum.com
 - apichatwidget.usepylon.com
 - chatwidgetmetrics-proxy.usepylon.com
 - widget.usepylon.com
