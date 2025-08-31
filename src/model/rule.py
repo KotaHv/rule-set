@@ -14,6 +14,7 @@ class SerializableRuleModel(BaseModel):
     domain: list[str] = []
     domain_suffix: list[str] = []
     domain_wildcard: list[str] = []
+    domain_regexp: list[str] = []
     domain_keyword: list[str] = []
     ip_cidr: list[str] = []
     ip_cidr6: list[str] = []
@@ -82,9 +83,14 @@ class RuleModel(BaseModel):
         if keywords:
             aho = Aho(keywords)
             for domain, domain_type in self.domain_trie.items():
-                is_matched, keyword = aho.matched(domain)
+                processed_domain = (
+                    domain
+                    if domain_type != DomainType.DOMAIN_REGEXP
+                    else domain.replace(r"\.", ".")
+                )
+                is_matched, keyword = aho.matched(processed_domain)
                 if is_matched:
-                    self.domain_trie.remove(domain)
+                    self.domain_trie.remove(domain, domain_type)
                     logger.error(f"{domain_type},{domain} -> DOMAIN-KEYWORD,{keyword}")
 
     def sort(self):
@@ -110,6 +116,8 @@ class RuleModel(BaseModel):
                 serializable_rule.domain_suffix.append(domain)
             elif domain_type == DomainType.DOMAIN_WILDCARD:
                 serializable_rule.domain_wildcard.append(domain)
+            elif domain_type == DomainType.DOMAIN_REGEXP:
+                serializable_rule.domain_regexp.append(domain)
         serializable_rule.domain_keyword.extend(self.domain_keyword)
         serializable_rule.ip_cidr.extend(self.ip_trie.iteritems())
         serializable_rule.ip_cidr6.extend(self.ip_trie6.iteritems())

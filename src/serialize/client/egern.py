@@ -14,6 +14,8 @@ class Serialize(BaseSerialize):
             yaml_data["domain_suffix_set"] = self.rules.domain_suffix
         if self.rules.domain_wildcard:
             yaml_data["domain_wildcard_set"] = self.rules.domain_wildcard
+        if self.rules.domain_regexp:
+            yaml_data["domain_regexp_set"] = self.rules.domain_regexp
         if self.rules.domain_keyword:
             yaml_data["domain_keyword_set"] = self.rules.domain_keyword
         if self.rules.ip_cidr:

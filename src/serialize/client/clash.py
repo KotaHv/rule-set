@@ -54,6 +54,13 @@ class Serialize(BaseSerialize):
 
         payload.extend(
             [
+                f"DOMAIN-REGEXP,{domain_regexp}"
+                for domain_regexp in self.rules.domain_regexp
+            ]
+        )
+
+        payload.extend(
+            [
                 f"DOMAIN-KEYWORD,{domain_keyword}"
                 for domain_keyword in self.rules.domain_keyword
             ]

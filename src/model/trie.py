@@ -1,5 +1,5 @@
 from typing import Any, Iterator, Self
-from pygtrie import StringTrie
+from pygtrie import Trie
 from pydantic_core import core_schema
 from pydantic import GetCoreSchemaHandler
 from pytricia import PyTricia
@@ -9,34 +9,48 @@ from .enum import DomainType
 
 class DomainTrie:
     def __init__(self):
-        self._trie = StringTrie(separator=".")
+        self._trie = Trie()
 
-    def _reversed_domain(self, domain: str) -> str:
-        return ".".join(reversed(domain.split(".")))
+    def _domain_to_reversed_parts(
+        self, domain: str, domain_type: DomainType
+    ) -> tuple[str, ...]:
+        sep = "." if domain_type != DomainType.DOMAIN_REGEXP else r"\."
+        if domain_type == DomainType.DOMAIN_REGEXP:
+            domain = domain.rstrip("$")
+        return tuple(domain.split(sep)[::-1])
+
+    def _reversed_parts_to_domain(
+        self, parts: tuple[str, ...], domain_type: DomainType
+    ) -> str:
+        sep = "." if domain_type != DomainType.DOMAIN_REGEXP else r"\."
+        domain = sep.join(parts[::-1])
+        if domain_type == DomainType.DOMAIN_REGEXP:
+            domain += "$"
+        return domain
 
     def add(self, domain: str, domain_type: DomainType):
-        domain = self._reversed_domain(domain)
+        parts = self._domain_to_reversed_parts(domain, domain_type)
         # Check if already covered by parent suffix or self is already a suffix
-        for _, dt in self._trie.prefixes(domain):
+        for _, dt in self._trie.prefixes(parts):
             if dt == DomainType.DOMAIN_SUFFIX:
                 return
-        self._trie[domain] = domain_type
+        self._trie[parts] = domain_type
         if domain_type != DomainType.DOMAIN_SUFFIX:
             return
         # Clear children if suffix
-        for d in self._trie.keys(prefix=domain):
-            if d == domain:
+        for d in self._trie.keys(prefix=parts):
+            if d == parts:
                 continue
             del self._trie[d]
 
-    def remove(self, domain: str):
-        domain = self._reversed_domain(domain)
-        self._trie.pop(domain, None)
+    def remove(self, domain: str, domain_type: DomainType):
+        parts = self._domain_to_reversed_parts(domain, domain_type)
+        self._trie.pop(parts, None)
 
     def filter_by_domain(self, domain: str):
         try:
-            domain = self._reversed_domain(domain)
-            for d in self._trie.keys(prefix=domain):
+            parts = self._domain_to_reversed_parts(domain, DomainType.DOMAIN_SUFFIX)
+            for d in self._trie.keys(prefix=parts):
                 del self._trie[d]
         except KeyError:
             pass
@@ -47,7 +61,7 @@ class DomainTrie:
 
     def iteritems(self) -> Iterator[tuple[str, DomainType]]:
         for d, dt in self._trie.iteritems():
-            d = self._reversed_domain(d)
+            d = self._reversed_parts_to_domain(d, dt)
             yield d, dt
 
     def items(self) -> list[tuple[str, DomainType]]:
@@ -60,6 +74,9 @@ class DomainTrie:
 
     def __repr__(self) -> str:
         return ", ".join(f"<'{d}' - {dt}>" for d, dt in self.iteritems())
+
+    def __len__(self) -> int:
+        return len(self._trie)
 
     def enable_sorting(self, enable: bool = True):
         self._trie.enable_sorting(enable)

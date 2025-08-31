@@ -17,6 +17,11 @@ class Serialize(BaseSerialize):
             json_data["rules"][0]["domain_regex"] = [
                 domain.wildcard_to_regex(domain_wildcard) for domain_wildcard in rules
             ]
+        if rules := self.rules.domain_regexp:
+            if json_data["rules"][0].get("domain_regex"):
+                json_data["rules"][0]["domain_regex"].extend(rules)
+            else:
+                json_data["rules"][0]["domain_regex"] = rules
         if rules := self.rules.domain_keyword:
             json_data["rules"][0]["domain_keyword"] = rules
         if rules := self.rules.ip_cidr:
