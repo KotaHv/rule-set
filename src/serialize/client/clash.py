@@ -24,7 +24,7 @@ class Serialize(BaseSerialize):
         payload = []
         payload.extend(self.rules.domain)
         payload.extend(
-            [f"+.{domain_suffix}" for domain_suffix in self.rules.domain_suffix]
+            f"+.{domain_suffix}" for domain_suffix in self.rules.domain_suffix
         )
         return payload
 
@@ -37,62 +37,48 @@ class Serialize(BaseSerialize):
     def classical(self, skip_domain: bool = False, skip_ip_cidr: bool = False) -> list:
         payload = []
         if not skip_domain:
-            payload.extend([f"DOMAIN,{domain}" for domain in self.rules.domain])
+            payload.extend(f"DOMAIN,{domain}" for domain in self.rules.domain)
             payload.extend(
-                [
-                    f"DOMAIN-SUFFIX,{domain_suffix}"
-                    for domain_suffix in self.rules.domain_suffix
-                ]
+                f"DOMAIN-SUFFIX,{domain_suffix}"
+                for domain_suffix in self.rules.domain_suffix
             )
 
         payload.extend(
-            [
-                f"DOMAIN-WILDCARD,{domain_wildcard}"
-                for domain_wildcard in self.rules.domain_wildcard
-            ]
+            f"DOMAIN-WILDCARD,{domain_wildcard}"
+            for domain_wildcard in self.rules.domain_wildcard
         )
 
         payload.extend(
-            [
-                f"DOMAIN-REGEXP,{domain_regexp}"
-                for domain_regexp in self.rules.domain_regexp
-            ]
+            f"DOMAIN-REGEXP,{domain_regexp}"
+            for domain_regexp in self.rules.domain_regexp
         )
 
         payload.extend(
-            [
-                f"DOMAIN-KEYWORD,{domain_keyword}"
-                for domain_keyword in self.rules.domain_keyword
-            ]
+            f"DOMAIN-KEYWORD,{domain_keyword}"
+            for domain_keyword in self.rules.domain_keyword
         )
         if not skip_ip_cidr:
             payload.extend(
-                [
-                    f"IP-CIDR,{ip_cidr},no-resolve"
-                    if self.option.serialization.no_resolve
-                    else f"IP-CIDR,{ip_cidr}"
-                    for ip_cidr in self.rules.ip_cidr
-                ]
+                f"IP-CIDR,{ip_cidr},no-resolve"
+                if self.option.serialization.no_resolve
+                else f"IP-CIDR,{ip_cidr}"
+                for ip_cidr in self.rules.ip_cidr
             )
             payload.extend(
-                [
-                    f"IP-CIDR6,{ip_cidr6},no-resolve"
-                    if self.option.serialization.no_resolve
-                    else f"IP-CIDR6,{ip_cidr6}"
-                    for ip_cidr6 in self.rules.ip_cidr6
-                ]
+                f"IP-CIDR6,{ip_cidr6},no-resolve"
+                if self.option.serialization.no_resolve
+                else f"IP-CIDR6,{ip_cidr6}"
+                for ip_cidr6 in self.rules.ip_cidr6
             )
 
         payload.extend(
-            [
-                f"IP-ASN,{ip_asn},no-resolve"
-                if self.option.serialization.no_resolve
-                else f"IP-ASN,{ip_asn}"
-                for ip_asn in self.rules.ip_asn
-            ]
+            f"IP-ASN,{ip_asn},no-resolve"
+            if self.option.serialization.no_resolve
+            else f"IP-ASN,{ip_asn}"
+            for ip_asn in self.rules.ip_asn
         )
 
-        payload.extend([f"PROCESS-NAME,{process}" for process in self.rules.process])
+        payload.extend(f"PROCESS-NAME,{process}" for process in self.rules.process)
 
         payload.extend(self.serialized_logical_rules)
         return payload
