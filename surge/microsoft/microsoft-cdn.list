@@ -1,4 +1,4 @@
-# Total: 21 rules
+# Total: 23 rules
 DOMAIN,res-h3.public.cdn.office.net
 DOMAIN,res.cdn.office.net
 DOMAIN,res-1.cdn.office.net
@@ -20,3 +20,5 @@ DOMAIN-SUFFIX,download.visualstudio.microsoft.com
 DOMAIN-SUFFIX,cn.windowssearch.com
 DOMAIN-SUFFIX,ctldl.windowsupdate.com
 DOMAIN-SUFFIX,download.windowsupdate.com
+URL-REGEX,^http://www\.microsoft\.com/pki/
+URL-REGEX,^http://www\.microsoft\.com/pkiops/

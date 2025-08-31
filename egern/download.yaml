@@ -1,4 +1,4 @@
-# Total: 1176 rules
+# Total: 1177 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -1179,3 +1179,5 @@ domain_wildcard_set:
 - ftp.??.debian.org
 - ftp.??.freebsd.org
 - cdn-*.comaps.tech
+url_regex_set:
+- ^http://(.+)\.gvt\d\.com/edgedl

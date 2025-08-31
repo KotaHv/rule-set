@@ -1,4 +1,4 @@
-# Total: 21 rules
+# Total: 23 rules
 no_resolve: true
 domain_set:
 - res-h3.public.cdn.office.net
@@ -23,3 +23,6 @@ domain_suffix_set:
 - cn.windowssearch.com
 - ctldl.windowsupdate.com
 - download.windowsupdate.com
+url_regex_set:
+- ^http://www\.microsoft\.com/pki/
+- ^http://www\.microsoft\.com/pkiops/
