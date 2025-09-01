@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>steam - Rule Set</title>
+    <title>rule-set - Rule Set</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
     <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
@@ -91,10 +91,12 @@
                             <!-- Center content -->
                             <div class="flex items-center justify-center flex-1">
                                 <div class="glass rounded-xl p-2 mr-2 shadow-lg w-10 h-10 flex items-center justify-center">
-                                    <img src="../../../icons/loon.svg" alt="Loon" class="w-6 h-6">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+            </svg>
                                 </div>
                                 <h1 class="text-xl font-bold text-white drop-shadow-lg">
-                                    Steam
+                                    Rule-Set
                                 </h1>
                             </div>
                             
@@ -108,53 +110,16 @@
 
         <!-- Content -->
         <div class="space-y-8">
-            <div class="animate-slide-up" style="animation-delay: 0.1s;">
+            <div class="animate-slide-up">
                 <div class="card-bg rounded-3xl overflow-hidden shadow-xl">
-                    <div class="px-6 py-5 border-b border-rose-200/30 bg-gradient-to-r from-rose-50/50 to-pink-50/50">
-                        <h2 class="text-xl font-bold text-gray-800 flex items-center">
-                            <div class="p-2 bg-gradient-to-br from-rose-500 to-pink-600 rounded-lg mr-4 shadow-lg">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                </svg>
-                            </div>
-                            文件
-                        </h2>
-                    </div>
-                    <div class="p-6">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                            <a href="steam.list" class="group block card-hover">
-                                <div class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-rose-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
-                                    <div class="flex items-center mb-4">
-                                        <div class="p-3 bg-gradient-to-br from-rose-100 to-pink-100 group-hover:from-rose-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
-                                            <svg class="w-7 h-7 text-rose-600 group-hover:text-rose-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="min-w-0 flex-1">
-                                            <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">steam.list</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:02.608276+00:00">2025-09-01 11:36:02 UTC</div>
-                                            <div class="text-sm text-gray-600">1.3 KB</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="steam-cn.list" class="group block card-hover">
-                                <div class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-rose-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
-                                    <div class="flex items-center mb-4">
-                                        <div class="p-3 bg-gradient-to-br from-rose-100 to-pink-100 group-hover:from-rose-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
-                                            <svg class="w-7 h-7 text-rose-600 group-hover:text-rose-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="min-w-0 flex-1">
-                                            <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">steam-cn.list</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:02.580276+00:00">2025-09-01 11:36:02 UTC</div>
-                                            <div class="text-sm text-gray-600">520 B</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                    <div class="p-20 text-center">
+                        <div class="mx-auto w-20 h-20 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full flex items-center justify-center mb-6 shadow-lg">
+                            <svg class="w-10 h-10 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path>
+                            </svg>
                         </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">此目录为空</h3>
+                        <p class="text-gray-600 text-lg">没有找到任何文件或子目录</p>
                     </div>
                 </div>
             </div>

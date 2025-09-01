@@ -132,7 +132,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">game-download.list</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:38.856634+00:00">2025-09-01 10:39:38 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:02.848277+00:00">2025-09-01 11:36:02 UTC</div>
                                             <div class="text-sm text-gray-600">1.9 KB</div>
                                         </div>
                                     </div>
@@ -148,7 +148,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">game-cn.list</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:20.252315+00:00">2025-09-01 10:40:20 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:59.289478+00:00">2025-09-01 11:36:59 UTC</div>
                                             <div class="text-sm text-gray-600">4.0 KB</div>
                                         </div>
                                     </div>
@@ -164,7 +164,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">game-download-cn.list</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:38.819634+00:00">2025-09-01 10:39:38 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:02.813277+00:00">2025-09-01 11:36:02 UTC</div>
                                             <div class="text-sm text-gray-600">812 B</div>
                                         </div>
                                     </div>
@@ -180,7 +180,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">game.list</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:40.138610+00:00">2025-09-01 10:39:40 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:08.140298+00:00">2025-09-01 11:36:08 UTC</div>
                                             <div class="text-sm text-gray-600">17.7 KB</div>
                                         </div>
                                     </div>
@@ -208,7 +208,14 @@
                         
                         // 更新显示内容，移除UTC后缀
                         element.textContent = element.textContent.replace(' UTC', '');
-                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 处理不同格式的时间显示
+                        if (element.textContent.includes('更新时间：')) {
+                            element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        } else {
+                            // 处理文件时间（直接替换整个时间部分）
+                            element.textContent = formattedTime;
+                        }
                         
                         // 添加时区信息到title
                         const timezone = dayjs.tz.guess();

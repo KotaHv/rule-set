@@ -134,7 +134,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-sukka.dat</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.824326+00:00">2025-09-01 10:40:18 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:57.325471+00:00">2025-09-01 11:36:57 UTC</div>
                                             <div class="text-sm text-gray-600">100.3 KB</div>
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-ipinfo.dat</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:04.960420+00:00">2025-09-01 10:40:04 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:42.415420+00:00">2025-09-01 11:36:42 UTC</div>
                                             <div class="text-sm text-gray-600">1.9 MB</div>
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-ip2location.dat</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:14.457356+00:00">2025-09-01 10:40:14 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:52.285454+00:00">2025-09-01 11:36:52 UTC</div>
                                             <div class="text-sm text-gray-600">663.9 KB</div>
                                         </div>
                                     </div>
@@ -182,7 +182,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-nobyda.dat</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:45.338578+00:00">2025-09-01 10:39:45 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:22.246351+00:00">2025-09-01 11:36:22 UTC</div>
                                             <div class="text-sm text-gray-600">581.6 KB</div>
                                         </div>
                                     </div>
@@ -198,7 +198,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-alecthw.dat</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.458328+00:00">2025-09-01 10:40:18 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:56.989470+00:00">2025-09-01 11:36:56 UTC</div>
                                             <div class="text-sm text-gray-600">131.8 KB</div>
                                         </div>
                                     </div>
@@ -226,7 +226,14 @@
                         
                         // 更新显示内容，移除UTC后缀
                         element.textContent = element.textContent.replace(' UTC', '');
-                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 处理不同格式的时间显示
+                        if (element.textContent.includes('更新时间：')) {
+                            element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        } else {
+                            // 处理文件时间（直接替换整个时间部分）
+                            element.textContent = formattedTime;
+                        }
                         
                         // 添加时区信息到title
                         const timezone = dayjs.tz.guess();

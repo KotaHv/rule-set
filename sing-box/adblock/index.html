@@ -135,7 +135,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:24.659725+00:00">更新时间：2025-09-01 10:39:24 UTC</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T11:35:49.245223+00:00">更新时间：2025-09-01 11:35:49 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -167,7 +167,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cats-team-ad.srs</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:32.392690+00:00">2025-09-01 10:39:32 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:35:56.545252+00:00">2025-09-01 11:35:56 UTC</div>
                                             <div class="text-sm text-gray-600">1.1 MB</div>
                                         </div>
                                     </div>
@@ -183,7 +183,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">fqnovel-ad.srs</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:37.687655+00:00">2025-09-01 10:39:37 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:01.498272+00:00">2025-09-01 11:36:01 UTC</div>
                                             <div class="text-sm text-gray-600">77 B</div>
                                         </div>
                                     </div>
@@ -199,7 +199,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">anti-ad.json</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:36.960668+00:00">2025-09-01 10:39:36 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:00.678268+00:00">2025-09-01 11:36:00 UTC</div>
                                             <div class="text-sm text-gray-600">1.9 MB</div>
                                         </div>
                                     </div>
@@ -215,7 +215,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">anti-ad.srs</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:37.614657+00:00">2025-09-01 10:39:37 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:01.335271+00:00">2025-09-01 11:36:01 UTC</div>
                                             <div class="text-sm text-gray-600">707.5 KB</div>
                                         </div>
                                     </div>
@@ -231,7 +231,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cats-team-ad.json</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:31.367695+00:00">2025-09-01 10:39:31 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:35:55.529248+00:00">2025-09-01 11:35:55 UTC</div>
                                             <div class="text-sm text-gray-600">2.9 MB</div>
                                         </div>
                                     </div>
@@ -247,7 +247,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">fqnovel-ad.json</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:37.678655+00:00">2025-09-01 10:39:37 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:01.489272+00:00">2025-09-01 11:36:01 UTC</div>
                                             <div class="text-sm text-gray-600">193 B</div>
                                         </div>
                                     </div>
@@ -275,7 +275,14 @@
                         
                         // 更新显示内容，移除UTC后缀
                         element.textContent = element.textContent.replace(' UTC', '');
-                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 处理不同格式的时间显示
+                        if (element.textContent.includes('更新时间：')) {
+                            element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        } else {
+                            // 处理文件时间（直接替换整个时间部分）
+                            element.textContent = formattedTime;
+                        }
                         
                         // 添加时区信息到title
                         const timezone = dayjs.tz.guess();

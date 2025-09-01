@@ -132,7 +132,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-sukka.yaml</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.732326+00:00">2025-09-01 10:40:18 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:57.234471+00:00">2025-09-01 11:36:57 UTC</div>
                                             <div class="text-sm text-gray-600">96.0 KB</div>
                                         </div>
                                     </div>
@@ -148,7 +148,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-alecthw.yaml</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.338329+00:00">2025-09-01 10:40:18 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:56.869469+00:00">2025-09-01 11:36:56 UTC</div>
                                             <div class="text-sm text-gray-600">148.5 KB</div>
                                         </div>
                                     </div>
@@ -164,7 +164,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-ipinfo.yaml</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:03.647429+00:00">2025-09-01 10:40:03 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:41.091414+00:00">2025-09-01 11:36:41 UTC</div>
                                             <div class="text-sm text-gray-600">1.2 MB</div>
                                         </div>
                                     </div>
@@ -180,7 +180,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-nobyda.yaml</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:44.823584+00:00">2025-09-01 10:39:44 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:21.747349+00:00">2025-09-01 11:36:21 UTC</div>
                                             <div class="text-sm text-gray-600">378.7 KB</div>
                                         </div>
                                     </div>
@@ -196,7 +196,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-ip2location.yaml</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:13.928360+00:00">2025-09-01 10:40:13 UTC</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T11:36:51.751452+00:00">2025-09-01 11:36:51 UTC</div>
                                             <div class="text-sm text-gray-600">417.9 KB</div>
                                         </div>
                                     </div>
@@ -224,7 +224,14 @@
                         
                         // 更新显示内容，移除UTC后缀
                         element.textContent = element.textContent.replace(' UTC', '');
-                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 处理不同格式的时间显示
+                        if (element.textContent.includes('更新时间：')) {
+                            element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        } else {
+                            // 处理文件时间（直接替换整个时间部分）
+                            element.textContent = formattedTime;
+                        }
                         
                         // 添加时区信息到title
                         const timezone = dayjs.tz.guess();
