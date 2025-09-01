@@ -74,7 +74,7 @@ jobs:
           set -e -o pipefail
 
           cd deploy_temp
-          rsync -av --delete --exclude='.git' ../rule-set/ .
+          rsync -rvc --delete --exclude='.git' ../rule-set/ .
 
           # Generate GitHub Pages navigation
           echo "Generating pages in deploy_temp directory..."
