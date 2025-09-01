@@ -49,9 +49,6 @@ jobs:
             echo "rule-set generation failed"
             exit 1
           fi
-      - name: Generate GitHub Pages navigation
-        run: |
-          uv run gen-pages
       - run: |
           set -e -o pipefail
 
@@ -74,6 +71,11 @@ jobs:
 
           cd deploy_temp
           rsync -av --delete --exclude='.git' ../rule-set/ .
+
+          # Generate GitHub Pages navigation
+          echo "Generating pages in deploy_temp directory..."
+          uv run gen-pages --target-path .
+
           if [[ -z $(git status --porcelain) ]]; then
               echo "No changes to commit."
           else

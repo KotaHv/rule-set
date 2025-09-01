@@ -7,6 +7,7 @@ import pathlib
 import shutil
 from datetime import datetime, timezone
 
+import typer
 
 from pydantic import BaseModel
 
@@ -116,7 +117,7 @@ class PageGenerator:
 
     def _copy_icons(self):
         """Copy icons from fixed location to rule-set directory"""
-        source_icons_dir = pathlib.Path("icons")
+        source_icons_dir = pathlib.Path(__file__).parent.parent / "icons"
         target_icons_dir = self.rule_set_path / "icons"
 
         if not source_icons_dir.exists():
@@ -345,7 +346,14 @@ class PageGenerator:
                         
                         // 更新显示内容，移除UTC后缀
                         element.textContent = element.textContent.replace(' UTC', '');
-                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 处理不同格式的时间显示
+                        if (element.textContent.includes('更新时间：')) {
+                            element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        } else {
+                            // 处理文件时间（直接替换整个时间部分）
+                            element.textContent = formattedTime;
+                        }
                         
                         // 添加时区信息到title
                         const timezone = dayjs.tz.guess();
@@ -650,7 +658,14 @@ class PageGenerator:
                         
                         // 更新显示内容，移除UTC后缀
                         element.textContent = element.textContent.replace(' UTC', '');
-                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 处理不同格式的时间显示
+                        if (element.textContent.includes('更新时间：')) {
+                            element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        } else {
+                            // 处理文件时间（直接替换整个时间部分）
+                            element.textContent = formattedTime;
+                        }
                         
                         // 添加时区信息到title
                         const timezone = dayjs.tz.guess();
@@ -704,11 +719,46 @@ class PageGenerator:
             print(f"Generated: {index_file}")
 
 
-def generate_all_indexes() -> None:
+def main():
+    typer.run(_main)
+
+
+def _main(
+    target_path: pathlib.Path | None = typer.Option(
+        None,
+        "--target-path",
+        "-t",
+        help="Target path for generating pages, e.g., deploy_temp, ./rule-set, etc. If not specified, uses the default path from config file.",
+    ),
+) -> None:
+    """Generate GitHub Pages navigation files for rule-set directories.
+
+    This script generates index.html files for all directories in the rule-set,
+    creating a beautiful GitHub Pages navigation interface.
+    """
+    if target_path:
+        print(f"Generating pages for target path: {target_path}")
+        generate_all_indexes(target_path)
+    else:
+        print("Generating pages for default path from settings")
+        generate_all_indexes()
+
+
+def generate_all_indexes(target_path: str | None = None) -> None:
     """Generate index.html files for all directories"""
-    generator = PageGenerator(settings.dir_path)
+    if target_path:
+        # Use the specified target path instead of settings.dir_path
+        target_rule_set_path = pathlib.Path(target_path)
+        if not target_rule_set_path.exists():
+            print(f"Error: Target path {target_path} does not exist")
+            return
+        generator = PageGenerator(target_rule_set_path)
+    else:
+        # Use default path from settings
+        generator = PageGenerator(settings.dir_path)
+
     generator.generate_all_indexes()
 
 
 if __name__ == "__main__":
-    generate_all_indexes()
+    typer.run(_main)

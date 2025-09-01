@@ -16,6 +16,7 @@ dependencies = [
     "pytricia>=1.2.0",
     "pyyaml>=6.0.2",
     "tldextract>=5.3.0",
+    "typer>=0.17.3",
     "validators>=0.35.0",
 ]
 
@@ -23,7 +24,7 @@ dependencies = [
 "rule-set" = "rule_set:main"
 "logical" = "deserialize:print_rule_tree"
 "format" = "format:main"
-"gen-pages" = "gen_pages:generate_all_indexes"
+"gen-pages" = "gen_pages:main"
 
 
 [build-system]
