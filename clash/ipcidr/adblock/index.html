@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adblock - Rule Set</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/timezone.js"></script>
     <script>
+        // 配置dayjs插件
+        dayjs.extend(dayjs_plugin_utc);
+        dayjs.extend(dayjs_plugin_timezone);
+        
         tailwind.config = {
             theme: {
                 extend: {
@@ -128,7 +135,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：2025-09-01 10:01:19</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:20.811743+00:00">更新时间：2025-09-01 10:39:20 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -138,5 +145,34 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        // 时区转换：将UTC时间转换为用户本地时区
+        document.addEventListener('DOMContentLoaded', function() {
+            const timeElements = document.querySelectorAll('[data-utc-time]');
+            
+            timeElements.forEach(element => {
+                const utcTime = element.getAttribute('data-utc-time');
+                if (utcTime) {
+                    try {
+                        // 解析UTC时间并转换为本地时间
+                        const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
+                        const formattedTime = localTime.format('YYYY-MM-DD HH:mm:ss');
+                        
+                        // 更新显示内容，移除UTC后缀
+                        element.textContent = element.textContent.replace(' UTC', '');
+                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 添加时区信息到title
+                        const timezone = dayjs.tz.guess();
+                        element.setAttribute('title', `UTC时间: ${utcTime}
+本地时区: ${timezone}`);
+                    } catch (error) {
+                        console.error('时间转换错误:', error);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

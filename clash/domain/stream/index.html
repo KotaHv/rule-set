@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stream - Rule Set</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/timezone.js"></script>
     <script>
+        // 配置dayjs插件
+        dayjs.extend(dayjs_plugin_utc);
+        dayjs.extend(dayjs_plugin_timezone);
+        
         tailwind.config = {
             theme: {
                 extend: {
@@ -125,7 +132,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-kr.mrs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.356322+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">80 B</div>
                                         </div>
                                     </div>
@@ -141,7 +148,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-kr.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.345322+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">71 B</div>
                                         </div>
                                     </div>
@@ -157,7 +164,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-jp.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.207323+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">502 B</div>
                                         </div>
                                     </div>
@@ -173,7 +180,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-eu.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.060324+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">152 B</div>
                                         </div>
                                     </div>
@@ -189,7 +196,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-us.mrs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.942325+00:00">2025-09-01 10:40:18 UTC</div>
                                             <div class="text-sm text-gray-600">471 B</div>
                                         </div>
                                     </div>
@@ -205,7 +212,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-tw.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:20</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.625320+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">750 B</div>
                                         </div>
                                     </div>
@@ -221,7 +228,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-eu.mrs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.072324+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">150 B</div>
                                         </div>
                                     </div>
@@ -237,7 +244,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:20</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.769319+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">5.4 KB</div>
                                         </div>
                                     </div>
@@ -253,7 +260,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-hk.mrs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.510321+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">453 B</div>
                                         </div>
                                     </div>
@@ -269,7 +276,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-hk.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.496321+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">695 B</div>
                                         </div>
                                     </div>
@@ -285,7 +292,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-jp.mrs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.221323+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">340 B</div>
                                         </div>
                                     </div>
@@ -301,7 +308,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-us.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.928325+00:00">2025-09-01 10:40:18 UTC</div>
                                             <div class="text-sm text-gray-600">788 B</div>
                                         </div>
                                     </div>
@@ -317,7 +324,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream-tw.mrs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:20</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.639320+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">469 B</div>
                                         </div>
                                     </div>
@@ -333,7 +340,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">stream.mrs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:20</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.795319+00:00">2025-09-01 10:40:19 UTC</div>
                                             <div class="text-sm text-gray-600">2.5 KB</div>
                                         </div>
                                     </div>
@@ -345,5 +352,34 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        // 时区转换：将UTC时间转换为用户本地时区
+        document.addEventListener('DOMContentLoaded', function() {
+            const timeElements = document.querySelectorAll('[data-utc-time]');
+            
+            timeElements.forEach(element => {
+                const utcTime = element.getAttribute('data-utc-time');
+                if (utcTime) {
+                    try {
+                        // 解析UTC时间并转换为本地时间
+                        const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
+                        const formattedTime = localTime.format('YYYY-MM-DD HH:mm:ss');
+                        
+                        // 更新显示内容，移除UTC后缀
+                        element.textContent = element.textContent.replace(' UTC', '');
+                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 添加时区信息到title
+                        const timezone = dayjs.tz.guess();
+                        element.setAttribute('title', `UTC时间: ${utcTime}
+本地时区: ${timezone}`);
+                    } catch (error) {
+                        console.error('时间转换错误:', error);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

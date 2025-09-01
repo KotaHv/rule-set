@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adblock - Rule Set</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/timezone.js"></script>
     <script>
+        // 配置dayjs插件
+        dayjs.extend(dayjs_plugin_utc);
+        dayjs.extend(dayjs_plugin_timezone);
+        
         tailwind.config = {
             theme: {
                 extend: {
@@ -128,7 +135,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：2025-09-01 10:01:22</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:24.169728+00:00">更新时间：2025-09-01 10:39:24 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -160,7 +167,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">anti-ad.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:33</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:35.453675+00:00">2025-09-01 10:39:35 UTC</div>
                                             <div class="text-sm text-gray-600">2.2 MB</div>
                                         </div>
                                     </div>
@@ -176,7 +183,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cats-team-ad.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:27</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:29.254705+00:00">2025-09-01 10:39:29 UTC</div>
                                             <div class="text-sm text-gray-600">3.3 MB</div>
                                         </div>
                                     </div>
@@ -192,7 +199,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">anti-ad.mrs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:34</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:36.655669+00:00">2025-09-01 10:39:36 UTC</div>
                                             <div class="text-sm text-gray-600">782.7 KB</div>
                                         </div>
                                     </div>
@@ -208,7 +215,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cats-team-ad.mrs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:28</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:31.018696+00:00">2025-09-01 10:39:31 UTC</div>
                                             <div class="text-sm text-gray-600">1.2 MB</div>
                                         </div>
                                     </div>
@@ -220,5 +227,34 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        // 时区转换：将UTC时间转换为用户本地时区
+        document.addEventListener('DOMContentLoaded', function() {
+            const timeElements = document.querySelectorAll('[data-utc-time]');
+            
+            timeElements.forEach(element => {
+                const utcTime = element.getAttribute('data-utc-time');
+                if (utcTime) {
+                    try {
+                        // 解析UTC时间并转换为本地时间
+                        const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
+                        const formattedTime = localTime.format('YYYY-MM-DD HH:mm:ss');
+                        
+                        // 更新显示内容，移除UTC后缀
+                        element.textContent = element.textContent.replace(' UTC', '');
+                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 添加时区信息到title
+                        const timezone = dayjs.tz.guess();
+                        element.setAttribute('title', `UTC时间: ${utcTime}
+本地时区: ${timezone}`);
+                    } catch (error) {
+                        console.error('时间转换错误:', error);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

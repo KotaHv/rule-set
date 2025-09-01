@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cn-ip - Rule Set</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/timezone.js"></script>
     <script>
+        // 配置dayjs插件
+        dayjs.extend(dayjs_plugin_utc);
+        dayjs.extend(dayjs_plugin_timezone);
+        
         tailwind.config = {
             theme: {
                 extend: {
@@ -125,8 +132,8 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-ip2location.json</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:14</div>
-                                            <div class="text-sm text-gray-600">433.4 KB</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:13.931360+00:00">2025-09-01 10:40:13 UTC</div>
+                                            <div class="text-sm text-gray-600">437.6 KB</div>
                                         </div>
                                     </div>
                                 </div>
@@ -141,7 +148,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-alecthw.json</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:18</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.339329+00:00">2025-09-01 10:40:18 UTC</div>
                                             <div class="text-sm text-gray-600">156.7 KB</div>
                                         </div>
                                     </div>
@@ -157,7 +164,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-ipinfo.srs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:04</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:04.377424+00:00">2025-09-01 10:40:04 UTC</div>
                                             <div class="text-sm text-gray-600">161.0 KB</div>
                                         </div>
                                     </div>
@@ -173,7 +180,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-alecthw.srs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:18</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.410329+00:00">2025-09-01 10:40:18 UTC</div>
                                             <div class="text-sm text-gray-600">32.0 KB</div>
                                         </div>
                                     </div>
@@ -189,8 +196,8 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-ip2location.srs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:14</div>
-                                            <div class="text-sm text-gray-600">77.3 KB</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:14.251357+00:00">2025-09-01 10:40:14 UTC</div>
+                                            <div class="text-sm text-gray-600">77.7 KB</div>
                                         </div>
                                     </div>
                                 </div>
@@ -205,7 +212,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-ipinfo.json</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:03</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:03.653429+00:00">2025-09-01 10:40:03 UTC</div>
                                             <div class="text-sm text-gray-600">1.2 MB</div>
                                         </div>
                                     </div>
@@ -221,7 +228,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-sukka.json</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.733326+00:00">2025-09-01 10:40:18 UTC</div>
                                             <div class="text-sm text-gray-600">101.2 KB</div>
                                         </div>
                                     </div>
@@ -237,7 +244,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-nobyda.json</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:44</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:44.825584+00:00">2025-09-01 10:39:44 UTC</div>
                                             <div class="text-sm text-gray-600">397.1 KB</div>
                                         </div>
                                     </div>
@@ -253,7 +260,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-sukka.srs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:19</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.790326+00:00">2025-09-01 10:40:18 UTC</div>
                                             <div class="text-sm text-gray-600">20.7 KB</div>
                                         </div>
                                     </div>
@@ -269,7 +276,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cn-nobyda.srs</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:45</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:45.150581+00:00">2025-09-01 10:39:45 UTC</div>
                                             <div class="text-sm text-gray-600">79.4 KB</div>
                                         </div>
                                     </div>
@@ -281,5 +288,34 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        // 时区转换：将UTC时间转换为用户本地时区
+        document.addEventListener('DOMContentLoaded', function() {
+            const timeElements = document.querySelectorAll('[data-utc-time]');
+            
+            timeElements.forEach(element => {
+                const utcTime = element.getAttribute('data-utc-time');
+                if (utcTime) {
+                    try {
+                        // 解析UTC时间并转换为本地时间
+                        const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
+                        const formattedTime = localTime.format('YYYY-MM-DD HH:mm:ss');
+                        
+                        // 更新显示内容，移除UTC后缀
+                        element.textContent = element.textContent.replace(' UTC', '');
+                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 添加时区信息到title
+                        const timezone = dayjs.tz.guess();
+                        element.setAttribute('title', `UTC时间: ${utcTime}
+本地时区: ${timezone}`);
+                    } catch (error) {
+                        console.error('时间转换错误:', error);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

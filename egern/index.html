@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>egern - Rule Set</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/timezone.js"></script>
     <script>
+        // 配置dayjs插件
+        dayjs.extend(dayjs_plugin_utc);
+        dayjs.extend(dayjs_plugin_timezone);
+        
         tailwind.config = {
             theme: {
                 extend: {
@@ -128,7 +135,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：2025-09-01 10:01:36</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:38.759635+00:00">更新时间：2025-09-01 10:39:38 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -145,7 +152,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：2025-09-01 10:02:19</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:18.732326+00:00">更新时间：2025-09-01 10:40:18 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -162,7 +169,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：2025-09-01 10:01:43</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:44.077587+00:00">更新时间：2025-09-01 10:39:44 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -179,7 +186,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：2025-09-01 10:02:20</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:20.277315+00:00">更新时间：2025-09-01 10:40:20 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -196,7 +203,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：2025-09-01 10:01:35</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:38.111647+00:00">更新时间：2025-09-01 10:39:38 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -213,7 +220,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：2025-09-01 10:01:36</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:38.271644+00:00">更新时间：2025-09-01 10:39:38 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -230,7 +237,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：2025-09-01 10:01:35</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:37.678655+00:00">更新时间：2025-09-01 10:39:37 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -247,7 +254,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：2025-09-01 10:02:20</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:19.814318+00:00">更新时间：2025-09-01 10:40:19 UTC</p>
                                 </div>
                             </div>
                         </a>
@@ -279,7 +286,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">anime.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:44</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:44.163587+00:00">2025-09-01 10:39:44 UTC</div>
                                             <div class="text-sm text-gray-600">1.2 KB</div>
                                         </div>
                                     </div>
@@ -295,7 +302,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">lan.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:43</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:43.966588+00:00">2025-09-01 10:39:43 UTC</div>
                                             <div class="text-sm text-gray-600">1.1 KB</div>
                                         </div>
                                     </div>
@@ -311,7 +318,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">reddit.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:44</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:44.130587+00:00">2025-09-01 10:39:44 UTC</div>
                                             <div class="text-sm text-gray-600">148 B</div>
                                         </div>
                                     </div>
@@ -327,7 +334,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">ai.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:35</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:37.789653+00:00">2025-09-01 10:39:37 UTC</div>
                                             <div class="text-sm text-gray-600">758 B</div>
                                         </div>
                                     </div>
@@ -343,7 +350,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">direct.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:39</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:41.167601+00:00">2025-09-01 10:39:41 UTC</div>
                                             <div class="text-sm text-gray-600">12.1 KB</div>
                                         </div>
                                     </div>
@@ -359,7 +366,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">download.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:38</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:40.416605+00:00">2025-09-01 10:39:40 UTC</div>
                                             <div class="text-sm text-gray-600">30.8 KB</div>
                                         </div>
                                     </div>
@@ -375,7 +382,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cdn.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:39</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:40.734603+00:00">2025-09-01 10:39:40 UTC</div>
                                             <div class="text-sm text-gray-600">78.5 KB</div>
                                         </div>
                                     </div>
@@ -391,7 +398,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">global.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:02:21</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:40:20.506313+00:00">2025-09-01 10:40:20 UTC</div>
                                             <div class="text-sm text-gray-600">23.3 KB</div>
                                         </div>
                                     </div>
@@ -407,7 +414,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">dropbox.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:36</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:38.653637+00:00">2025-09-01 10:39:38 UTC</div>
                                             <div class="text-sm text-gray-600">184 B</div>
                                         </div>
                                     </div>
@@ -423,7 +430,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">telegram.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:36</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:38.440641+00:00">2025-09-01 10:39:38 UTC</div>
                                             <div class="text-sm text-gray-600">631 B</div>
                                         </div>
                                     </div>
@@ -439,7 +446,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">speedtest.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:36</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:38.614638+00:00">2025-09-01 10:39:38 UTC</div>
                                             <div class="text-sm text-gray-600">39.8 KB</div>
                                         </div>
                                     </div>
@@ -455,7 +462,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">dev.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:43</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:43.803589+00:00">2025-09-01 10:39:43 UTC</div>
                                             <div class="text-sm text-gray-600">8.6 KB</div>
                                         </div>
                                     </div>
@@ -471,7 +478,7 @@
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">e-hentai.yaml</div>
-                                            <div class="text-sm text-gray-600">2025-09-01 10:01:44</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T10:39:44.104587+00:00">2025-09-01 10:39:44 UTC</div>
                                             <div class="text-sm text-gray-600">175 B</div>
                                         </div>
                                     </div>
@@ -483,5 +490,34 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        // 时区转换：将UTC时间转换为用户本地时区
+        document.addEventListener('DOMContentLoaded', function() {
+            const timeElements = document.querySelectorAll('[data-utc-time]');
+            
+            timeElements.forEach(element => {
+                const utcTime = element.getAttribute('data-utc-time');
+                if (utcTime) {
+                    try {
+                        // 解析UTC时间并转换为本地时间
+                        const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
+                        const formattedTime = localTime.format('YYYY-MM-DD HH:mm:ss');
+                        
+                        // 更新显示内容，移除UTC后缀
+                        element.textContent = element.textContent.replace(' UTC', '');
+                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 添加时区信息到title
+                        const timezone = dayjs.tz.guess();
+                        element.setAttribute('title', `UTC时间: ${utcTime}
+本地时区: ${timezone}`);
+                    } catch (error) {
+                        console.error('时间转换错误:', error);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
