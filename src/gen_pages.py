@@ -3,119 +3,91 @@
 Generate index.html files for GitHub Pages directory browsing
 """
 
-import pathlib
 import shutil
 from datetime import datetime, timezone
+from pathlib import Path
+from typing import Self
 
 import typer
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
-class FileInfo(BaseModel):
+class PathInfo(BaseModel):
     name: str
-    size: str
-    is_dir: bool
-    path: str
+    size: int
     mtime: float = 0
+    path: Path
+
+
+class DirNode(BaseModel):
+    info: PathInfo
+    children: list[Self | "FileNode"] = Field(
+        default_factory=list, exclude=True, repr=False
+    )
+    parent: Self | None = Field(exclude=True, repr=False)
+
+
+class FileNode(BaseModel):
+    info: PathInfo
+    parent: DirNode = Field(exclude=True, repr=False)
+
+
+class PathTree(BaseModel):
+    root: DirNode
 
 
 class PageGenerator:
     """Main class for generating HTML pages"""
 
-    def __init__(self, rule_set_path: pathlib.Path):
+    def __init__(self, rule_set_path: Path):
         self.rule_set_path = rule_set_path
-        self.directories: dict[str, dict[str, object]] = {}
-        self.files: dict[str, dict[str, object]] = {}
-        self.global_latest_time = 0
-
-        # Scan filesystem once during initialization
-        self._scan_filesystem()
+        self.path_tree = PathTree(
+            root=DirNode(
+                info=PathInfo(
+                    name=rule_set_path.name,
+                    size=0,
+                    mtime=0,
+                    path=rule_set_path,
+                ),
+                parent=None,
+            )
+        )
+        self._build_tree(self.path_tree.root)
         self._copy_icons()
 
-    def _scan_filesystem(self):
-        """Scan entire filesystem and build data structures"""
-        # First pass: collect all directories and their files
-        for root in pathlib.Path(self.rule_set_path).rglob("*"):
-            if root.is_file():
+    def _build_tree(self, node: DirNode):
+        for child in node.info.path.iterdir():
+            if (
+                child.name.startswith(".")
+                or child.name == "icons"
+                or child.name == "index.html"
+            ):
                 continue
-
-            # Skip hidden and icons directories
-            if root.name.startswith(".") or root.name == "icons":
-                continue
-
-            # Process files in this directory
-            dir_items = []
-            dir_latest_time = 0
-
-            for file_path in root.iterdir():
-                if file_path.is_file():
-                    if file_path.name == "index.html":
-                        continue
-
-                    file_mtime = file_path.stat().st_mtime
-                    file_size = file_path.stat().st_size
-
-                    file_info = {
-                        "name": file_path.name,
-                        "size": file_size,
-                        "mtime": file_mtime,
-                        "path": str(file_path),
-                        "is_dir": False,
-                    }
-
-                    dir_items.append(file_info)
-                    self.files[str(file_path)] = file_info
-
-                    if file_mtime > dir_latest_time:
-                        dir_latest_time = file_mtime
-
-                elif (
-                    file_path.is_dir()
-                    and not file_path.name.startswith(".")
-                    and file_path.name != "icons"
-                ):
-                    # Calculate latest time for this subdirectory
-                    subdir_latest_time = 0
-                    try:
-                        for subfile_path in file_path.rglob("*"):
-                            if (
-                                subfile_path.is_file()
-                                and subfile_path.name != "index.html"
-                            ):
-                                subfile_mtime = subfile_path.stat().st_mtime
-                                if subfile_mtime > subdir_latest_time:
-                                    subdir_latest_time = subfile_mtime
-                    except (OSError, PermissionError):
-                        subdir_latest_time = file_path.stat().st_mtime
-
-                    dir_info = {
-                        "name": file_path.name,
-                        "size": 0,
-                        "mtime": subdir_latest_time,
-                        "path": str(file_path),
-                        "is_dir": True,
-                    }
-
-                    dir_items.append(dir_info)
-
-                    if subdir_latest_time > dir_latest_time:
-                        dir_latest_time = subdir_latest_time
-
-            # Store directory info
-            if root != self.rule_set_path:  # Don't store root directory
-                self.directories[str(root)] = {
-                    "name": root.name,
-                    "latest_time": dir_latest_time,
-                    "items": dir_items,
-                }
-
-                if dir_latest_time > self.global_latest_time:
-                    self.global_latest_time = dir_latest_time
+            if child.is_dir():
+                child_node = DirNode(
+                    info=PathInfo(name=child.name, size=0, mtime=0, path=child),
+                    parent=node,
+                )
+                self._build_tree(child_node)
+            else:
+                stat = child.stat()
+                child_node = FileNode(
+                    info=PathInfo(
+                        name=child.name,
+                        size=stat.st_size,
+                        mtime=stat.st_mtime,
+                        path=child,
+                    ),
+                    parent=node,
+                )
+            node.children.append(child_node)
+            if child_node.info.mtime > node.info.mtime:
+                node.info.mtime = child_node.info.mtime
 
     def _copy_icons(self):
         """Copy icons from fixed location to rule-set directory"""
-        source_icons_dir = pathlib.Path(__file__).parent.parent / "icons"
+        source_icons_dir = Path(__file__).parent.parent / "icons"
         target_icons_dir = self.rule_set_path / "icons"
 
         if not source_icons_dir.exists():
@@ -140,45 +112,9 @@ class PageGenerator:
         else:
             return f"{size / (1024 * 1024):.1f} MB"
 
-    def get_main_directories(self) -> list[dict[str, object]]:
-        """Get main directories (direct children of root)"""
-        main_dirs = []
-        for path, dir_info in self.directories.items():
-            if pathlib.Path(path).parent == self.rule_set_path:
-                main_dirs.append(
-                    {
-                        "name": dir_info["name"],
-                        "path": path,
-                        "latest_time": dir_info["latest_time"],
-                    }
-                )
-        return main_dirs
-
-    def get_directory_items(self, directory_path: str) -> list[FileInfo]:
-        """Get items in a specific directory"""
-        items = []
-
-        if directory_path in self.directories:
-            dir_info = self.directories[directory_path]
-            for item_info in dir_info["items"]:
-                file_info = FileInfo(
-                    name=item_info["name"],
-                    size=self._format_file_size(item_info["size"])
-                    if not item_info["is_dir"]
-                    else "",
-                    is_dir=item_info["is_dir"],
-                    path=item_info["path"],
-                    mtime=item_info["mtime"],
-                )
-                items.append(file_info)
-
-        return items
-
     def generate_root_index(self) -> str:
         """Generate root index.html content"""
-        dirs = self.get_main_directories()
-        latest_update_time = self.global_latest_time
-
+        latest_update_time = self.path_tree.root.info.mtime
         icons = {
             "clash": """<img src="icons/clash.svg" alt="Clash" class="w-8 h-8">""",
             "surge": """<img src="icons/surge.svg" alt="Surge" class="w-8 h-8">""",
@@ -283,8 +219,8 @@ class PageGenerator:
                 <div class="bg-gradient-to-r from-purple-900 via-pink-800 to-rose-800 px-8 py-12 relative">
                     <div class="relative z-10">
                         <h1 class="text-5xl font-bold text-white mb-4">Rule Set</h1>
-                        <p class="text-purple-200 text-lg" data-utc-time="{datetime.fromtimestamp(latest_update_time, tz=timezone.utc).isoformat() if latest_update_time > 0 else datetime.now(tz=timezone.utc).isoformat()}">
-                            更新时间：{datetime.fromtimestamp(latest_update_time, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S") if latest_update_time > 0 else datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC
+                        <p class="text-purple-200 text-lg" data-utc-time="{datetime.fromtimestamp(latest_update_time, tz=timezone.utc).isoformat()}">
+                            更新时间：{datetime.fromtimestamp(latest_update_time, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC
                         </p>
                     </div>
                 </div>
@@ -294,9 +230,9 @@ class PageGenerator:
         <!-- Directory Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">"""
 
-        for i, dir_item in enumerate(dirs):
+        for i, dir_item in enumerate(self.path_tree.root.children):
             icon = icons.get(
-                dir_item["name"],
+                dir_item.info.name,
                 """<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
                 </svg>""",
@@ -304,7 +240,7 @@ class PageGenerator:
 
             html += f"""
             <div class="animate-slide-up" style="animation-delay: {i * 0.1}s;">
-                <a href="{dir_item["name"]}/" class="group block card-hover">
+                <a href="{dir_item.info.name}/" class="group block card-hover">
                     <div class="card-bg rounded-3xl p-8 h-full border border-white/50 hover:border-purple-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
                         <div class="flex flex-col items-center justify-center mb-6">
                             <div class="p-4 bg-gradient-to-br from-purple-100 to-pink-100 group-hover:from-purple-200 group-hover:to-pink-200 rounded-2xl mb-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
@@ -313,12 +249,12 @@ class PageGenerator:
                                 </div>
                             </div>
                             <div class="text-center">
-                                <h3 class="text-2xl font-bold text-gray-800 group-hover:text-purple-700 transition-colors">{dir_item["name"].title() if dir_item["name"] != "geoip" else "GeoIP"}</h3>
+                                <h3 class="text-2xl font-bold text-gray-800 group-hover:text-purple-700 transition-colors">{dir_item.info.name.title() if dir_item.info.name != "geoip" else "GeoIP"}</h3>
                             </div>
                         </div>
                         <div class="text-center">
-                            <p class="text-sm text-gray-600" data-utc-time="{datetime.fromtimestamp(dir_item["latest_time"], tz=timezone.utc).isoformat()}">
-                                更新时间：{datetime.fromtimestamp(dir_item["latest_time"], tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC
+                            <p class="text-sm text-gray-600" data-utc-time="{datetime.fromtimestamp(dir_item.info.mtime, tz=timezone.utc).isoformat()}">
+                                更新时间：{datetime.fromtimestamp(dir_item.info.mtime, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC
                             </p>
                         </div>
                     </div>
@@ -368,20 +304,23 @@ class PageGenerator:
 
         return html
 
-    def generate_directory_index(
-        self, directory: pathlib.Path, parent_path: str = ""
-    ) -> str:
+    def generate_directory_index(self, node: DirNode) -> str:
         """Generate index.html content for a directory"""
-        items = self.get_directory_items(str(directory))
+        dirs: list[DirNode] = []
+        files: list[FileNode] = []
+        for child in node.children:
+            if isinstance(child, DirNode):
+                dirs.append(child)
+            else:
+                files.append(child)
+        parent = node
+        icon_depth = 0
+        app_name = None
+        while parent != self.path_tree.root:
+            icon_depth += 1
+            app_name = parent.info.name
+            parent = parent.parent
 
-        # Separate files and directories
-        dirs = [item for item in items if item.is_dir]
-        files = [item for item in items if not item.is_dir]
-
-        # Calculate the correct relative path for icons based on current directory depth
-        icon_depth = (
-            len(parent_path.strip("/").split("/")) + 2 if parent_path else 1
-        )  # +2 for icons directory
         icon_prefix = "../" * icon_depth
 
         # Define icons for specific directories
@@ -396,16 +335,6 @@ class PageGenerator:
             </svg>""",
         }
 
-        # Get the appropriate icon for this directory
-        # For subdirectories, we need to get the parent directory name to determine the app icon
-        # Get the first part of the path to determine the app (e.g., "clash" from "clash/domain/classical")
-        path_parts = str(directory).split("/")
-        app_name = None
-        for part in path_parts:
-            if part in directory_icons:
-                app_name = part
-                break
-
         icon = directory_icons.get(
             app_name,
             """<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -419,7 +348,7 @@ class PageGenerator:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{directory.name} - Rule Set</title>
+    <title>{node.info.name} - Rule Set</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
     <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
@@ -510,7 +439,7 @@ class PageGenerator:
                                     {icon}
                                 </div>
                                 <h1 class="text-xl font-bold text-white drop-shadow-lg">
-                                    {directory.name.title() if directory.name != "geoip" else "GeoIP"}
+                                    {node.info.name.title() if node.info.name != "geoip" else "GeoIP"}
                                 </h1>
                             </div>
                             
@@ -547,26 +476,21 @@ class PageGenerator:
 
             for dir_item in dirs:
                 # Get the appropriate icon for this directory
-                icon = directory_icons.get(
-                    dir_item.name,
-                    """<svg class="w-7 h-7 text-purple-600 group-hover:text-purple-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
-                    </svg>""",
-                )
-
                 html += f"""
-                        <a href="{dir_item.name}/" class="group block card-hover">
+                        <a href="{dir_item.info.name}/" class="group block card-hover">
                             <div class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-purple-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
                                 <div class="flex items-center mb-4">
                                     <div class="p-3 bg-gradient-to-br from-purple-100 to-pink-100 group-hover:from-purple-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
-                                        {icon}
+                                        <svg class="w-7 h-7 text-purple-600 group-hover:text-purple-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+                    </svg>
                                     </div>
                                     <div>
-                                        <div class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors text-lg">{dir_item.name.title() if dir_item.name != "geoip" else "GeoIP"}</div>
+                                        <div class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors text-lg">{dir_item.info.name}</div>
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600" data-utc-time="{datetime.fromtimestamp(dir_item.mtime, tz=timezone.utc).isoformat()}">更新时间：{datetime.fromtimestamp(dir_item.mtime, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="{datetime.fromtimestamp(dir_item.info.mtime, tz=timezone.utc).isoformat()}">更新时间：{datetime.fromtimestamp(dir_item.info.mtime, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC</p>
                                 </div>
                             </div>
                         </a>"""
@@ -597,7 +521,7 @@ class PageGenerator:
 
             for file_item in files:
                 html += f"""
-                            <a href="{file_item.name}" class="group block card-hover">
+                            <a href="{file_item.info.name}" class="group block card-hover">
                                 <div class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-rose-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
                                     <div class="flex items-center mb-4">
                                         <div class="p-3 bg-gradient-to-br from-rose-100 to-pink-100 group-hover:from-rose-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
@@ -606,9 +530,9 @@ class PageGenerator:
                                             </svg>
                                         </div>
                                         <div class="min-w-0 flex-1">
-                                            <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">{file_item.name}</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="{datetime.fromtimestamp(file_item.mtime, tz=timezone.utc).isoformat()}">{datetime.fromtimestamp(file_item.mtime, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC</div>
-                                            <div class="text-sm text-gray-600">{file_item.size}</div>
+                                            <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">{file_item.info.name}</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="{datetime.fromtimestamp(file_item.info.mtime, tz=timezone.utc).isoformat()}">{datetime.fromtimestamp(file_item.info.mtime, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC</div>
+                                            <div class="text-sm text-gray-600">{self._format_file_size(file_item.info.size)}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -692,29 +616,21 @@ class PageGenerator:
             f.write(root_html)
         print(f"Generated: {self.rule_set_path}/index.html")
 
-        # Generate index files for all subdirectories
-        for directory in self.rule_set_path.rglob("*"):
-            if not directory.is_dir() or directory == self.rule_set_path:
-                continue
+        dirs = [
+            child
+            for child in self.path_tree.root.children
+            if isinstance(child, DirNode)
+        ]
 
-            # Skip hidden directories and icons directory
-            if directory.name.startswith(".") or directory.name == "icons":
-                continue
-
-            # Calculate relative path for breadcrumb
-            rel_path = directory.relative_to(self.rule_set_path)
-            parent_path = (
-                str(rel_path.parent) if rel_path.parent != pathlib.Path(".") else ""
-            )
-
-            # Generate index.html for this directory
-            html_content = self.generate_directory_index(directory, parent_path)
-            index_file = directory / "index.html"
-
-            with open(index_file, "w", encoding="utf-8") as f:
+        while dirs:
+            dir_node = dirs.pop()
+            html_content = self.generate_directory_index(dir_node)
+            with open(dir_node.info.path / "index.html", "w", encoding="utf-8") as f:
                 f.write(html_content)
-
-            print(f"Generated: {index_file}")
+            print(f"Generated: {dir_node.info.path}/index.html")
+            dirs.extend(
+                child for child in dir_node.children if isinstance(child, DirNode)
+            )
 
 
 def main():
@@ -722,7 +638,7 @@ def main():
 
 
 def _main(
-    target_path: pathlib.Path | None = typer.Option(
+    target_path: Path | None = typer.Option(
         None,
         "--target-path",
         "-t",
@@ -742,11 +658,11 @@ def _main(
         generate_all_indexes()
 
 
-def generate_all_indexes(target_path: pathlib.Path | None = None) -> None:
+def generate_all_indexes(target_path: Path | None = None) -> None:
     """Generate index.html files for all directories"""
     if target_path:
         # Use the specified target path instead of settings.dir_path
-        target_rule_set_path = pathlib.Path(target_path)
+        target_rule_set_path = Path(target_path)
         if not target_rule_set_path.exists():
             print(f"Error: Target path {target_path} does not exist")
             return
