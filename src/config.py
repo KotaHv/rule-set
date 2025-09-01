@@ -50,7 +50,6 @@ class Settings(BaseSettings):
 
     @field_validator("http_verify_ssl", mode="after")
     def set_http_verify_ssl(cls, _: bool, info: ValidationInfo) -> bool:
-        print(info)
         if info.data["environment"] == "development":
             return False
         return True
