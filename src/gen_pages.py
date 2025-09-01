@@ -5,7 +5,7 @@ Generate index.html files for GitHub Pages directory browsing
 
 import pathlib
 import shutil
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 from pydantic import BaseModel
@@ -198,7 +198,14 @@ class PageGenerator:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rule Set - 规则集</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/timezone.js"></script>
     <script>
+        // 配置dayjs插件
+        dayjs.extend(dayjs_plugin_utc);
+        dayjs.extend(dayjs_plugin_timezone);
+        
         tailwind.config = {{
             theme: {{
                 extend: {{
@@ -277,7 +284,9 @@ class PageGenerator:
                 <div class="bg-gradient-to-r from-purple-900 via-pink-800 to-rose-800 px-8 py-12 relative">
                     <div class="relative z-10">
                         <h1 class="text-5xl font-bold text-white mb-4">Rule Set</h1>
-                        <p class="text-purple-200 text-lg">更新时间：{datetime.fromtimestamp(latest_update_time).strftime("%Y-%m-%d %H:%M:%S") if latest_update_time > 0 else datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>
+                        <p class="text-purple-200 text-lg" data-utc-time="{datetime.fromtimestamp(latest_update_time, tz=timezone.utc).isoformat() if latest_update_time > 0 else datetime.now(tz=timezone.utc).isoformat()}">
+                            更新时间：{datetime.fromtimestamp(latest_update_time, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S") if latest_update_time > 0 else datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC
+                        </p>
                     </div>
                 </div>
             </div>
@@ -309,7 +318,9 @@ class PageGenerator:
                             </div>
                         </div>
                         <div class="text-center">
-                            <p class="text-sm text-gray-600">更新时间：{datetime.fromtimestamp(dir_item["latest_time"]).strftime("%Y-%m-%d %H:%M:%S")}</p>
+                            <p class="text-sm text-gray-600" data-utc-time="{datetime.fromtimestamp(dir_item["latest_time"], tz=timezone.utc).isoformat()}">
+                                更新时间：{datetime.fromtimestamp(dir_item["latest_time"], tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC
+                            </p>
                         </div>
                     </div>
                 </a>
@@ -318,6 +329,34 @@ class PageGenerator:
         html += """
         </div>
     </div>
+    
+    <script>
+        // 时区转换：将UTC时间转换为用户本地时区
+        document.addEventListener('DOMContentLoaded', function() {
+            const timeElements = document.querySelectorAll('[data-utc-time]');
+            
+            timeElements.forEach(element => {
+                const utcTime = element.getAttribute('data-utc-time');
+                if (utcTime) {
+                    try {
+                        // 解析UTC时间并转换为本地时间
+                        const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
+                        const formattedTime = localTime.format('YYYY-MM-DD HH:mm:ss');
+                        
+                        // 更新显示内容，移除UTC后缀
+                        element.textContent = element.textContent.replace(' UTC', '');
+                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 添加时区信息到title
+                        const timezone = dayjs.tz.guess();
+                        element.setAttribute('title', `UTC时间: ${utcTime}\n本地时区: ${timezone}`);
+                    } catch (error) {
+                        console.error('时间转换错误:', error);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>"""
 
@@ -376,7 +415,14 @@ class PageGenerator:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{directory.name} - Rule Set</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/timezone.js"></script>
     <script>
+        // 配置dayjs插件
+        dayjs.extend(dayjs_plugin_utc);
+        dayjs.extend(dayjs_plugin_timezone);
+        
         tailwind.config = {{
             theme: {{
                 extend: {{
@@ -514,7 +560,7 @@ class PageGenerator:
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-sm text-gray-600">更新时间：{datetime.fromtimestamp(dir_item.mtime).strftime("%Y-%m-%d %H:%M:%S")}</p>
+                                    <p class="text-sm text-gray-600" data-utc-time="{datetime.fromtimestamp(dir_item.mtime, tz=timezone.utc).isoformat()}">更新时间：{datetime.fromtimestamp(dir_item.mtime, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC</p>
                                 </div>
                             </div>
                         </a>"""
@@ -555,7 +601,7 @@ class PageGenerator:
                                         </div>
                                         <div class="min-w-0 flex-1">
                                             <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">{file_item.name}</div>
-                                            <div class="text-sm text-gray-600">{datetime.fromtimestamp(file_item.mtime).strftime("%Y-%m-%d %H:%M:%S")}</div>
+                                            <div class="text-sm text-gray-600" data-utc-time="{datetime.fromtimestamp(file_item.mtime, tz=timezone.utc).isoformat()}">{datetime.fromtimestamp(file_item.mtime, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC</div>
                                             <div class="text-sm text-gray-600">{file_item.size}</div>
                                         </div>
                                     </div>
@@ -588,6 +634,34 @@ class PageGenerator:
         html += """
         </div>
     </div>
+    
+    <script>
+        // 时区转换：将UTC时间转换为用户本地时区
+        document.addEventListener('DOMContentLoaded', function() {
+            const timeElements = document.querySelectorAll('[data-utc-time]');
+            
+            timeElements.forEach(element => {
+                const utcTime = element.getAttribute('data-utc-time');
+                if (utcTime) {
+                    try {
+                        // 解析UTC时间并转换为本地时间
+                        const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
+                        const formattedTime = localTime.format('YYYY-MM-DD HH:mm:ss');
+                        
+                        // 更新显示内容，移除UTC后缀
+                        element.textContent = element.textContent.replace(' UTC', '');
+                        element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
+                        
+                        // 添加时区信息到title
+                        const timezone = dayjs.tz.guess();
+                        element.setAttribute('title', `UTC时间: ${utcTime}\n本地时区: ${timezone}`);
+                    } catch (error) {
+                        console.error('时间转换错误:', error);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>"""
 
