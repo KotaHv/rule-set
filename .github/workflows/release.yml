@@ -65,6 +65,10 @@ jobs:
             git checkout --orphan release
           fi
           cd ..
+      - name: restore timestamps
+        uses: chetan/git-restore-mtime-action@v2
+        with:
+          working-directory: "deploy_temp"
       - name: Deploy to release branch
         run: |
           set -e -o pipefail
