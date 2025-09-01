@@ -9,7 +9,7 @@ class BaseFileWriter(ABC):
     def __init__(self, *, data: str | bytes, target_path: Path) -> None:
         self.data = data
         self.filepath = (
-            settings.dir_path / self.base_path / target_path.with_suffix(self.suffix)
+            settings.build_dir / self.base_path / target_path.with_suffix(self.suffix)
         )
 
     @property

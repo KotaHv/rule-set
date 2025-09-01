@@ -11,8 +11,6 @@ import typer
 
 from pydantic import BaseModel
 
-from config import settings
-
 
 class FileInfo(BaseModel):
     name: str
@@ -744,7 +742,7 @@ def _main(
         generate_all_indexes()
 
 
-def generate_all_indexes(target_path: str | None = None) -> None:
+def generate_all_indexes(target_path: pathlib.Path | None = None) -> None:
     """Generate index.html files for all directories"""
     if target_path:
         # Use the specified target path instead of settings.dir_path
@@ -755,7 +753,9 @@ def generate_all_indexes(target_path: str | None = None) -> None:
         generator = PageGenerator(target_rule_set_path)
     else:
         # Use default path from settings
-        generator = PageGenerator(settings.dir_path)
+        from config import settings
+
+        generator = PageGenerator(settings.build_dir)
 
     generator.generate_all_indexes()
 

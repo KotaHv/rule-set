@@ -5,15 +5,20 @@ Configuration settings for the rule-set project.
 from pathlib import Path
 from typing import Literal
 
-from pydantic import Field
+from pydantic import Field, ValidationInfo, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+ROOT_DIR = Path(__file__).parent.parent
 
 
 class Settings(BaseSettings):
     """Application settings with environment-based configuration."""
 
     model_config = SettingsConfigDict(
-        env_file=".env", env_file_encoding="utf-8", case_sensitive=False, extra="ignore"
+        env_file=ROOT_DIR / ".env",
+        env_file_encoding="utf-8",
+        case_sensitive=False,
+        extra="ignore",
     )
 
     # Environment configuration
@@ -22,12 +27,13 @@ class Settings(BaseSettings):
     )
 
     # Output directory configuration
-    dir_path: Path = Field(
-        default=Path("rule-set"), description="Output directory for rule sets"
+    build_dir: Path = Field(
+        default=ROOT_DIR / "rule-set",
+        description="Output directory for rule sets",
     )
 
     # Cache configuration
-    cache_dir: Path = Field(default=Path(".cache"), description="Cache directory")
+    cache_dir: Path = Field(default=ROOT_DIR / ".cache", description="Cache directory")
 
     cache_ttl_hours: int = Field(default=1, ge=0, description="Cache TTL in hours")
 
@@ -42,18 +48,15 @@ class Settings(BaseSettings):
 
     http_verify_ssl: bool = Field(default=True, description="Verify SSL certificates")
 
-    def __init__(self, **kwargs) -> None:
-        super().__init__(**kwargs)
-        # Create directories if they don't exist
-        self.dir_path.mkdir(exist_ok=True)
-        self.cache_dir.mkdir(exist_ok=True)
-
-        # Set SSL verification based on environment
-        if self.environment == "development":
-            self.http_verify_ssl = False
-        else:
-            self.http_verify_ssl = True
+    @field_validator("http_verify_ssl", mode="after")
+    def set_http_verify_ssl(cls, _: bool, info: ValidationInfo) -> bool:
+        print(info)
+        if info.data["environment"] == "development":
+            return False
+        return True
 
 
 # Global settings instance
 settings = Settings()
+settings.build_dir.mkdir(exist_ok=True)
+settings.cache_dir.mkdir(exist_ok=True)

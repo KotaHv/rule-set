@@ -11,7 +11,7 @@ class FileWriter:
     def __init__(
         self, *, data: tuple[str, str] | list[tuple[str, str]], target_path: Path
     ) -> None:
-        self.base_dir = settings.dir_path / "clash"
+        self.base_dir = settings.build_dir / "clash"
         self.target_path = target_path
         data = [data] if isinstance(data, tuple) else data
         self.file_data_map: dict[Path, str] = {}
