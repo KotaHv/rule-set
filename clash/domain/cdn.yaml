@@ -1,4 +1,4 @@
-# Total: 3808 rules
+# Total: 3811 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -525,6 +525,7 @@
 - 'images.design-editor.com'
 - 'images7.design-editor.com'
 - 'images8.design-editor.com'
+- 'cdn.devdojo.com'
 - 'cdn.dexscreener.com'
 - 'dd.dexscreener.com'
 - 'api.dicebear.com'
@@ -1334,6 +1335,7 @@
 - 'assets.positional-bucket.com'
 - 'app-static.eu.posthog.com'
 - 'newsletter.postmarkapp.com'
+- 'public-assets.postmarkapp.com'
 - 'rebound.postmarkapp.com'
 - 'content.powerapps.com'
 - 'ui.powerreviews.com'
@@ -2794,6 +2796,7 @@
 - '+.prcdn.co'
 - '+.ipfs.sloppyta.co'
 - '+.smilecdn.co'
+- '+.supabase.co'
 - '+.ipfs.tribecap.co'
 - '+.unpkg.co'
 - '+.v2ex.co'
