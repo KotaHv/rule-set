@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adblock - Rule Set</title>
+    <title>Adblock - Rule Set</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
     <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
@@ -12,7 +13,7 @@
         // 配置dayjs插件
         dayjs.extend(dayjs_plugin_utc);
         dayjs.extend(dayjs_plugin_timezone);
-        
+
         tailwind.config = {
             theme: {
                 extend: {
@@ -45,31 +46,41 @@
             backdrop-filter: blur(24px);
             border: 1px solid rgba(255, 255, 255, 0.15);
         }
+
         .card-hover {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .card-hover:hover {
             transform: translateY(-6px) scale(1.02);
             box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
         }
+
         .glow {
             box-shadow: 0 0 30px rgba(240, 147, 251, 0.3);
         }
+
         .glow:hover {
             box-shadow: 0 0 40px rgba(240, 147, 251, 0.5);
         }
+
         .card-bg {
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
             backdrop-filter: blur(20px);
         }
     </style>
 </head>
+
 <body class="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50 relative overflow-x-hidden">
     <!-- Background decoration -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-200/30 to-rose-200/30 rounded-full mix-blend-multiply filter blur-3xl animate-float"></div>
-        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-pink-200/30 to-rose-200/30 rounded-full mix-blend-multiply filter blur-3xl animate-float" style="animation-delay: -2s;"></div>
-        <div class="absolute top-40 left-40 w-80 h-80 bg-gradient-to-br from-purple-200/20 to-rose-200/20 rounded-full mix-blend-multiply filter blur-3xl animate-float" style="animation-delay: -4s;"></div>
+        <div
+            class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-200/30 to-rose-200/30 rounded-full mix-blend-multiply filter blur-3xl animate-float">
+        </div>
+        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-pink-200/30 to-rose-200/30 rounded-full mix-blend-multiply filter blur-3xl animate-float"
+            style="animation-delay: -2s;"></div>
+        <div class="absolute top-40 left-40 w-80 h-80 bg-gradient-to-br from-purple-200/20 to-rose-200/20 rounded-full mix-blend-multiply filter blur-3xl animate-float"
+            style="animation-delay: -4s;"></div>
     </div>
 
     <div class="relative z-10 max-w-6xl mx-auto p-6 lg:p-8">
@@ -81,23 +92,27 @@
                         <div class="flex items-center justify-between">
                             <!-- Back Button -->
                             <div class="flex-shrink-0">
-                                <a href=".." class="inline-flex items-center justify-center w-10 h-10 glass text-white rounded-xl hover:bg-white/20 transition-all duration-300 group card-hover">
-                                    <svg class="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                <a href=".."
+                                    class="inline-flex items-center justify-center w-10 h-10 glass text-white rounded-xl hover:bg-white/20 transition-all duration-300 group card-hover">
+                                    <svg class="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 19l-7-7 7-7"></path>
                                     </svg>
                                 </a>
                             </div>
-                            
+
                             <!-- Center content -->
                             <div class="flex items-center justify-center flex-1">
-                                <div class="glass rounded-xl p-2 mr-2 shadow-lg w-10 h-10 flex items-center justify-center">
+                                <div
+                                    class="glass rounded-xl p-2 mr-2 shadow-lg w-10 h-10 flex items-center justify-center">
                                     <img src="../../icons/loon.svg" alt="Loon" class="w-6 h-6">
                                 </div>
                                 <h1 class="text-xl font-bold text-white drop-shadow-lg">
                                     Adblock
                                 </h1>
                             </div>
-                            
+
                             <!-- Spacer to balance the layout -->
                             <div class="flex-shrink-0 w-10"></div>
                         </div>
@@ -110,11 +125,13 @@
         <div class="space-y-8">
             <div class="animate-slide-up">
                 <div class="card-bg rounded-3xl overflow-hidden shadow-xl">
-                    <div class="px-6 py-5 border-b border-purple-200/30 bg-gradient-to-r from-purple-50/50 to-pink-50/50">
+                    <div
+                        class="px-6 py-5 border-b border-purple-200/30 bg-gradient-to-r from-purple-50/50 to-pink-50/50">
                         <h2 class="text-xl font-bold text-gray-800 flex items-center">
                             <div class="p-2 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg mr-4 shadow-lg">
                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
                                 </svg>
                             </div>
                             目录
@@ -122,34 +139,45 @@
                     </div>
                     <div class="p-6">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        <a href="sukka/" class="group block card-hover">
-                            <div class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-purple-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
-                                <div class="flex items-center mb-4">
-                                    <div class="p-3 bg-gradient-to-br from-purple-100 to-pink-100 group-hover:from-purple-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
-                                        <svg class="w-7 h-7 text-purple-600 group-hover:text-purple-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
-                    </svg>
+                            <a href="sukka/" class="group block card-hover">
+                                <div
+                                    class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-purple-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
+                                    <div class="flex items-center mb-4">
+                                        <div
+                                            class="p-3 bg-gradient-to-br from-purple-100 to-pink-100 group-hover:from-purple-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                                            <svg class="w-7 h-7 text-purple-600 group-hover:text-purple-700 transition-colors"
+                                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div
+                                                class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors text-lg">
+                                                sukka</div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <div class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors text-lg">sukka</div>
+                                    <div class="text-center">
+                                        <p class="text-sm text-gray-600"
+                                            data-utc-time="2025-09-02T06:54:53.473586+00:00">更新时间：2025-09-02 06:54:53 UTC</p>
                                     </div>
                                 </div>
-                                <div class="text-center">
-                                    <p class="text-sm text-gray-600" data-utc-time="2025-09-01T19:37:04+00:00">更新时间：2025-09-01 19:37:04 UTC</p>
-                                </div>
-                            </div>
-                        </a>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="animate-slide-up" style="animation-delay: 0.1s;">
                 <div class="card-bg rounded-3xl overflow-hidden shadow-xl">
                     <div class="px-6 py-5 border-b border-rose-200/30 bg-gradient-to-r from-rose-50/50 to-pink-50/50">
                         <h2 class="text-xl font-bold text-gray-800 flex items-center">
                             <div class="p-2 bg-gradient-to-br from-rose-500 to-pink-600 rounded-lg mr-4 shadow-lg">
                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
                                 </svg>
                             </div>
                             文件
@@ -158,48 +186,72 @@
                     <div class="p-6">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                             <a href="anti-ad.list" class="group block card-hover">
-                                <div class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-rose-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
+                                <div
+                                    class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-rose-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
                                     <div class="flex items-center mb-4">
-                                        <div class="p-3 bg-gradient-to-br from-rose-100 to-pink-100 group-hover:from-rose-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
-                                            <svg class="w-7 h-7 text-rose-600 group-hover:text-rose-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                        <div
+                                            class="p-3 bg-gradient-to-br from-rose-100 to-pink-100 group-hover:from-rose-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                                            <svg class="w-7 h-7 text-rose-600 group-hover:text-rose-700 transition-colors"
+                                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                                </path>
                                             </svg>
                                         </div>
                                         <div class="min-w-0 flex-1">
-                                            <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">anti-ad.list</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T19:37:04+00:00">2025-09-01 19:37:04 UTC</div>
+                                            <div
+                                                class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors text-lg break-words">
+                                                anti-ad.list</div>
+                                            <div class="text-sm text-gray-600"
+                                                data-utc-time="2025-09-01T19:37:04+00:00">2025-09-01 19:37:04 UTC</div>
                                             <div class="text-sm text-gray-600">2.9 MB</div>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                             <a href="cats-team-ad.list" class="group block card-hover">
-                                <div class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-rose-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
+                                <div
+                                    class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-rose-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
                                     <div class="flex items-center mb-4">
-                                        <div class="p-3 bg-gradient-to-br from-rose-100 to-pink-100 group-hover:from-rose-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
-                                            <svg class="w-7 h-7 text-rose-600 group-hover:text-rose-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                        <div
+                                            class="p-3 bg-gradient-to-br from-rose-100 to-pink-100 group-hover:from-rose-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                                            <svg class="w-7 h-7 text-rose-600 group-hover:text-rose-700 transition-colors"
+                                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                                </path>
                                             </svg>
                                         </div>
                                         <div class="min-w-0 flex-1">
-                                            <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">cats-team-ad.list</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-09-01T19:37:04+00:00">2025-09-01 19:37:04 UTC</div>
+                                            <div
+                                                class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors text-lg break-words">
+                                                cats-team-ad.list</div>
+                                            <div class="text-sm text-gray-600"
+                                                data-utc-time="2025-09-02T06:54:53.464586+00:00">2025-09-02 06:54:53 UTC</div>
                                             <div class="text-sm text-gray-600">4.5 MB</div>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                             <a href="fqnovel-ad.list" class="group block card-hover">
-                                <div class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-rose-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
+                                <div
+                                    class="card-bg rounded-2xl p-6 h-full border border-white/40 hover:border-rose-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
                                     <div class="flex items-center mb-4">
-                                        <div class="p-3 bg-gradient-to-br from-rose-100 to-pink-100 group-hover:from-rose-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
-                                            <svg class="w-7 h-7 text-rose-600 group-hover:text-rose-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                        <div
+                                            class="p-3 bg-gradient-to-br from-rose-100 to-pink-100 group-hover:from-rose-200 group-hover:to-pink-200 rounded-xl mr-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                                            <svg class="w-7 h-7 text-rose-600 group-hover:text-rose-700 transition-colors"
+                                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                                </path>
                                             </svg>
                                         </div>
                                         <div class="min-w-0 flex-1">
-                                            <div class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors truncate text-lg">fqnovel-ad.list</div>
-                                            <div class="text-sm text-gray-600" data-utc-time="2025-08-28T16:25:26+00:00">2025-08-28 16:25:26 UTC</div>
+                                            <div
+                                                class="font-bold text-gray-800 group-hover:text-rose-700 transition-colors text-lg break-words">
+                                                fqnovel-ad.list</div>
+                                            <div class="text-sm text-gray-600"
+                                                data-utc-time="2025-08-28T16:25:26+00:00">2025-08-28 16:25:26 UTC</div>
                                             <div class="text-sm text-gray-600">145 B</div>
                                         </div>
                                     </div>
@@ -209,14 +261,15 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-    
+
     <script>
         // 时区转换：将UTC时间转换为用户本地时区
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const timeElements = document.querySelectorAll('[data-utc-time]');
-            
+
             timeElements.forEach(element => {
                 const utcTime = element.getAttribute('data-utc-time');
                 if (utcTime) {
@@ -224,10 +277,10 @@
                         // 解析UTC时间并转换为本地时间
                         const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
                         const formattedTime = localTime.format('YYYY-MM-DD HH:mm:ss');
-                        
+
                         // 更新显示内容，移除UTC后缀
                         element.textContent = element.textContent.replace(' UTC', '');
-                        
+
                         // 处理不同格式的时间显示
                         if (element.textContent.includes('更新时间：')) {
                             element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
@@ -235,11 +288,10 @@
                             // 处理文件时间（直接替换整个时间部分）
                             element.textContent = formattedTime;
                         }
-                        
+
                         // 添加时区信息到title
                         const timezone = dayjs.tz.guess();
-                        element.setAttribute('title', `UTC时间: ${utcTime}
-本地时区: ${timezone}`);
+                        element.setAttribute('title', `UTC时间: ${utcTime}\n本地时区: ${timezone}`);
                     } catch (error) {
                         console.error('时间转换错误:', error);
                     }
@@ -248,4 +300,5 @@
         });
     </script>
 </body>
+
 </html>
