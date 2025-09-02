@@ -1,4 +1,4 @@
-# Total: 3811 rules
+# Total: 3815 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -253,6 +253,8 @@
 - 'cdn77-t.ashemaletube.com'
 - 'assets.atlasobscura.com'
 - 'img.atlasobscura.com'
+- 'atl-global.atlassian.com'
+- 'api.media.atlassian.com'
 - 'media-cdn.atlassian.com'
 - 'wac-cdn.atlassian.com'
 - 'img.atom.com'
@@ -1809,6 +1811,7 @@
 - 'jac.yahoosandbox.com'
 - 'bookface-static.ycombinator.com'
 - 'design-system.yext.com'
+- 'cdn-loyalty.yotpo.com'
 - 'cdn-swell-assets.yotpo.com'
 - 'cdn-widgetsrepository.yotpo.com'
 - 'cdn-yotpo-images-production.yotpo.com'
@@ -2202,7 +2205,6 @@
 - 'cdn.c1.amplience.net'
 - 's3.arkjp.net'
 - 'cdn.arstechnica.net'
-- 'jira-frontend-bifrost.prod-east.frontend.public.atl-paas.net'
 - 'damassets.autodesk.net'
 - 'amp.azure.net'
 - 'claritystatic.azureedge.net'
@@ -3108,6 +3110,7 @@
 - '+.macysassets.com'
 - '+.ipfsgateway.makersplace.com'
 - '+.makeuseofimages.com'
+- '+.tiles.mapbox.com'
 - '+.mcusercontent.com'
 - '+.cdn.medallia.com'
 - '+.cdn.survey.medallia.com'
@@ -3549,6 +3552,7 @@
 - '+.img3.acsta.net'
 - '+.media.amplience.net'
 - '+.static.amplience.net'
+- '+.prod-east.frontend.public.atl-paas.net'
 - '+.prod.public.atl-paas.net'
 - '+.cdn.prod.atlassian-dev.net'
 - '+.edgestorewebcdn.azureedge.net'

@@ -1,4 +1,4 @@
-# Total: 3884 rules
+# Total: 3888 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -254,6 +254,8 @@ domain_set:
 - cdn77-t.ashemaletube.com
 - assets.atlasobscura.com
 - img.atlasobscura.com
+- atl-global.atlassian.com
+- api.media.atlassian.com
 - media-cdn.atlassian.com
 - wac-cdn.atlassian.com
 - img.atom.com
@@ -1810,6 +1812,7 @@ domain_set:
 - jac.yahoosandbox.com
 - bookface-static.ycombinator.com
 - design-system.yext.com
+- cdn-loyalty.yotpo.com
 - cdn-swell-assets.yotpo.com
 - cdn-widgetsrepository.yotpo.com
 - cdn-yotpo-images-production.yotpo.com
@@ -2203,7 +2206,6 @@ domain_set:
 - cdn.c1.amplience.net
 - s3.arkjp.net
 - cdn.arstechnica.net
-- jira-frontend-bifrost.prod-east.frontend.public.atl-paas.net
 - damassets.autodesk.net
 - amp.azure.net
 - claritystatic.azureedge.net
@@ -3110,6 +3112,7 @@ domain_suffix_set:
 - macysassets.com
 - ipfsgateway.makersplace.com
 - makeuseofimages.com
+- tiles.mapbox.com
 - mcusercontent.com
 - cdn.medallia.com
 - cdn.survey.medallia.com
@@ -3551,6 +3554,7 @@ domain_suffix_set:
 - img3.acsta.net
 - media.amplience.net
 - static.amplience.net
+- prod-east.frontend.public.atl-paas.net
 - prod.public.atl-paas.net
 - cdn.prod.atlassian-dev.net
 - edgestorewebcdn.azureedge.net

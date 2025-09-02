@@ -1,4 +1,4 @@
-# Total: 3884 rules
+# Total: 3888 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,assets.cloudpilot.ai
@@ -252,6 +252,8 @@ DOMAIN,cdn77.ashemaletube.com
 DOMAIN,cdn77-t.ashemaletube.com
 DOMAIN,assets.atlasobscura.com
 DOMAIN,img.atlasobscura.com
+DOMAIN,atl-global.atlassian.com
+DOMAIN,api.media.atlassian.com
 DOMAIN,media-cdn.atlassian.com
 DOMAIN,wac-cdn.atlassian.com
 DOMAIN,img.atom.com
@@ -1808,6 +1810,7 @@ DOMAIN,yep.video.yahoo.com
 DOMAIN,jac.yahoosandbox.com
 DOMAIN,bookface-static.ycombinator.com
 DOMAIN,design-system.yext.com
+DOMAIN,cdn-loyalty.yotpo.com
 DOMAIN,cdn-swell-assets.yotpo.com
 DOMAIN,cdn-widgetsrepository.yotpo.com
 DOMAIN,cdn-yotpo-images-production.yotpo.com
@@ -2201,7 +2204,6 @@ DOMAIN,d4.alternativeto.net
 DOMAIN,cdn.c1.amplience.net
 DOMAIN,s3.arkjp.net
 DOMAIN,cdn.arstechnica.net
-DOMAIN,jira-frontend-bifrost.prod-east.frontend.public.atl-paas.net
 DOMAIN,damassets.autodesk.net
 DOMAIN,amp.azure.net
 DOMAIN,claritystatic.azureedge.net
@@ -3107,6 +3109,7 @@ DOMAIN-SUFFIX,lzzypic.com
 DOMAIN-SUFFIX,macysassets.com
 DOMAIN-SUFFIX,ipfsgateway.makersplace.com
 DOMAIN-SUFFIX,makeuseofimages.com
+DOMAIN-SUFFIX,tiles.mapbox.com
 DOMAIN-SUFFIX,mcusercontent.com
 DOMAIN-SUFFIX,cdn.medallia.com
 DOMAIN-SUFFIX,cdn.survey.medallia.com
@@ -3548,6 +3551,7 @@ DOMAIN-SUFFIX,img2.acsta.net
 DOMAIN-SUFFIX,img3.acsta.net
 DOMAIN-SUFFIX,media.amplience.net
 DOMAIN-SUFFIX,static.amplience.net
+DOMAIN-SUFFIX,prod-east.frontend.public.atl-paas.net
 DOMAIN-SUFFIX,prod.public.atl-paas.net
 DOMAIN-SUFFIX,cdn.prod.atlassian-dev.net
 DOMAIN-SUFFIX,edgestorewebcdn.azureedge.net
