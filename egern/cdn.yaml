@@ -1,4 +1,4 @@
-# Total: 3888 rules
+# Total: 3896 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -651,6 +651,7 @@ domain_set:
 - cdn.firebase.com
 - cdn.accounts.firefox.com
 - detectportal.firefox.com
+- cdn-icons-png.flaticon.com
 - cdn-share-sprites.flaticon.com
 - cdn-uicons.flaticon.com
 - media.flaticon.com
@@ -1148,6 +1149,7 @@ domain_set:
 - static.mypikpak.com
 - cdn.myportfolio.com
 - pro2-ui-assets-s3-fy.myportfolio.com
+- r2cdn.myshopline.com
 - static.namebeta.com
 - files.namecheap.com
 - s.namemc.com
@@ -1464,6 +1466,7 @@ domain_set:
 - dassets.shimano.com
 - cdn.shopify.com
 - media.shopimind.com
+- cdn.shoplineapp.com
 - img.shoplineapp.com
 - cdn.shoppinggives.com
 - image.shutterstock.com
@@ -1839,6 +1842,8 @@ domain_set:
 - hello.zonos.com
 - ws-assets.zoominfo.com
 - public.zoorix.com
+- barracuda-assets.zoovu.com
+- barracuda-cdn.zoovu.com
 - static.zuora.com
 - cimg.cnyes.cool
 - sfiles.cnyes.cool
@@ -2216,6 +2221,7 @@ domain_set:
 - edgestatic.azureedge.net
 - mobilecenter.azureedge.net
 - ni-assets.azureedge.net
+- trekcdnprod.azureedge.net
 - typescript.azureedge.net
 - xpaywalletcdn.azureedge.net
 - consentdeliveryfd.azurefd.net
@@ -2223,6 +2229,7 @@ domain_set:
 - edgestorewebpme-d2hnhfgbgnfmfuha.z01.azurefd.net
 - oct8neproxy.azurewebsites.net
 - bunnycdn-video-assets.b-cdn.net
+- c-bin.b-cdn.net
 - cdntube.b-cdn.net
 - dh-site.b-cdn.net
 - divhunt.b-cdn.net
@@ -3249,6 +3256,7 @@ domain_suffix_set:
 - sfdcstatic.com
 - shgcdn.com
 - shopifycdn.com
+- shoplineimg.com
 - cdn.signalfx.com
 - simgbb.com
 - similarcdn.com

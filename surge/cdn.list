@@ -1,4 +1,4 @@
-# Total: 3888 rules
+# Total: 3896 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,assets.cloudpilot.ai
@@ -649,6 +649,7 @@ DOMAIN,images.findagrave.com
 DOMAIN,cdn.firebase.com
 DOMAIN,cdn.accounts.firefox.com
 DOMAIN,detectportal.firefox.com
+DOMAIN,cdn-icons-png.flaticon.com
 DOMAIN,cdn-share-sprites.flaticon.com
 DOMAIN,cdn-uicons.flaticon.com
 DOMAIN,media.flaticon.com
@@ -1146,6 +1147,7 @@ DOMAIN,sg-thumbnail-drive.mypikpak.com
 DOMAIN,static.mypikpak.com
 DOMAIN,cdn.myportfolio.com
 DOMAIN,pro2-ui-assets-s3-fy.myportfolio.com
+DOMAIN,r2cdn.myshopline.com
 DOMAIN,static.namebeta.com
 DOMAIN,files.namecheap.com
 DOMAIN,s.namemc.com
@@ -1462,6 +1464,7 @@ DOMAIN,cdn.sheetjs.com
 DOMAIN,dassets.shimano.com
 DOMAIN,cdn.shopify.com
 DOMAIN,media.shopimind.com
+DOMAIN,cdn.shoplineapp.com
 DOMAIN,img.shoplineapp.com
 DOMAIN,cdn.shoppinggives.com
 DOMAIN,image.shutterstock.com
@@ -1837,6 +1840,8 @@ DOMAIN,widgets.zohosalesiq.com
 DOMAIN,hello.zonos.com
 DOMAIN,ws-assets.zoominfo.com
 DOMAIN,public.zoorix.com
+DOMAIN,barracuda-assets.zoovu.com
+DOMAIN,barracuda-cdn.zoovu.com
 DOMAIN,static.zuora.com
 DOMAIN,cimg.cnyes.cool
 DOMAIN,sfiles.cnyes.cool
@@ -2214,6 +2219,7 @@ DOMAIN,edgeassetservice.azureedge.net
 DOMAIN,edgestatic.azureedge.net
 DOMAIN,mobilecenter.azureedge.net
 DOMAIN,ni-assets.azureedge.net
+DOMAIN,trekcdnprod.azureedge.net
 DOMAIN,typescript.azureedge.net
 DOMAIN,xpaywalletcdn.azureedge.net
 DOMAIN,consentdeliveryfd.azurefd.net
@@ -2221,6 +2227,7 @@ DOMAIN,edgecdn-embza6g8cacagcbn.z01.azurefd.net
 DOMAIN,edgestorewebpme-d2hnhfgbgnfmfuha.z01.azurefd.net
 DOMAIN,oct8neproxy.azurewebsites.net
 DOMAIN,bunnycdn-video-assets.b-cdn.net
+DOMAIN,c-bin.b-cdn.net
 DOMAIN,cdntube.b-cdn.net
 DOMAIN,dh-site.b-cdn.net
 DOMAIN,divhunt.b-cdn.net
@@ -3246,6 +3253,7 @@ DOMAIN-SUFFIX,sfbassets.com
 DOMAIN-SUFFIX,sfdcstatic.com
 DOMAIN-SUFFIX,shgcdn.com
 DOMAIN-SUFFIX,shopifycdn.com
+DOMAIN-SUFFIX,shoplineimg.com
 DOMAIN-SUFFIX,cdn.signalfx.com
 DOMAIN-SUFFIX,simgbb.com
 DOMAIN-SUFFIX,similarcdn.com

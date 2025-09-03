@@ -1,4 +1,4 @@
-# Total: 595 rules
+# Total: 592 rules
 payload:
 - DOMAIN-WILDCARD,support-metahelpcenter-id*.netlify.app
 - DOMAIN-WILDCARD,tw-726620180914.*.run.app
@@ -413,6 +413,7 @@ payload:
 - DOMAIN-WILDCARD,bitvavo*.top
 - DOMAIN-WILDCARD,informed.delivery*.top
 - DOMAIN-WILDCARD,dichvucong*.top
+- DOMAIN-WILDCARD,dwp-yous*.top
 - DOMAIN-WILDCARD,pttavm.*.com.tr
 - DOMAIN-WILDCARD,ad*.tmgrup.com.tr
 - DOMAIN-WILDCARD,stat*.1internet.tv
@@ -584,14 +585,10 @@ payload:
 - IP-ASN,7719,no-resolve
 - IP-ASN,14651,no-resolve
 - IP-ASN,18044,no-resolve
-- IP-ASN,40115,no-resolve
-- IP-ASN,44324,no-resolve
-- IP-ASN,53808,no-resolve
 - IP-ASN,54625,no-resolve
 - IP-ASN,60539,no-resolve
 - IP-ASN,60842,no-resolve
 - IP-ASN,61302,no-resolve
 - IP-ASN,62489,no-resolve
 - IP-ASN,62853,no-resolve
-- IP-ASN,140915,no-resolve
 - IP-ASN,401111,no-resolve
