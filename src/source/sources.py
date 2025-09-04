@@ -275,7 +275,7 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/domestic.conf"),
-            RuleSetResource(source="sources/direct.txt"),
+            RuleSetResource(source="sources/direct/direct.txt"),
             V2rayDomainResource(
                 source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon"
             ),
@@ -311,14 +311,6 @@ sources = [
         ),
     ),
     SourceModel(
-        resources=[RuleSetResource(source="sources/my-rules")],
-        name="my-rules",
-        split_resources=True,
-        option=Option(
-            serialization=SerializationOption(clash_optimize=False),
-        ),
-    ),
-    SourceModel(
         resources=[RuleSetResource(source="sources/global/ehentai.txt")],
         name="e-hentai",
     ),
@@ -327,7 +319,7 @@ sources = [
         name="reddit",
     ),
     SourceModel(
-        resources=[RuleSetResource(source="sources/anime.txt")],
+        resources=[RuleSetResource(source="sources/direct/anime.txt")],
         name="anime",
     ),
     SourceModel(
@@ -451,6 +443,10 @@ sources = [
             RuleSetResource(source="https://ruleset.skk.moe/List/ip/stream.conf"),
         ],
         name="stream/stream",
+    ),
+    SourceModel(
+        resources=[RuleSetResource(source="sources/direct/process.txt")],
+        name="direct/process",
     ),
 ]
 

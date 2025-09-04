@@ -9,6 +9,19 @@ DOMAIN,discovery-v4.syncthing.net
 DOMAIN,discovery-v6.syncthing.net
 DOMAIN,stun.syncthing.net
 
+# ddys
+DOMAIN-SUFFIX,ddys.mov
+DOMAIN-SUFFIX,ddys.pro
+
+# Brovod
+DOMAIN-SUFFIX,brovod.com
+DOMAIN-SUFFIX,brovod.top
+DOMAIN-SUFFIX,xdys.vip
+
+# Adguard
+DOMAIN,injections.adguard.org
+DOMAIN,local.adguard.org
+
 # -----------
 DOMAIN,stun.moonlight-stream.org
 DOMAIN,v16m-default.akamaized.net
