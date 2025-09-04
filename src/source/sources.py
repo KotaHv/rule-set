@@ -279,6 +279,8 @@ sources = [
             V2rayDomainResource(
                 source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon"
             ),
+            SourceReference(target="game/game-cn"),
+            SourceReference(target="game/game-download-cn"),
         ],
         name="direct",
         option=Option(
@@ -453,6 +455,10 @@ sources = [
             SourceReference(target="global"),
             SourceReference(target="cdn"),
             SourceReference(target="download"),
+            SourceReference(target="telegram"),
+            SourceReference(target="stream/stream"),
+            SourceReference(target="game/game"),
+            SourceReference(target="game/game-download"),
         ],
         name="global-all",
     ),
