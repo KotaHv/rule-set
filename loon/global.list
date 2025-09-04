@@ -1,4 +1,4 @@
-# Total: 1618 rules
+# Total: 1601 rules
 DOMAIN,store.ui.com.cn
 DOMAIN,ccmdl.adobe.com
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -242,7 +242,6 @@ DOMAIN-SUFFIX,coinex.com
 DOMAIN-SUFFIX,coingecko.com
 DOMAIN-SUFFIX,coinmarketcap.com
 DOMAIN-SUFFIX,cool18.com
-DOMAIN-SUFFIX,cosplay-jav.com
 DOMAIN-SUFFIX,costco.com
 DOMAIN-SUFFIX,cpuid.com
 DOMAIN-SUFFIX,crashlytics.com
@@ -449,16 +448,6 @@ DOMAIN-SUFFIX,issuu.com
 DOMAIN-SUFFIX,istockphoto.com
 DOMAIN-SUFFIX,itasoftware.com
 DOMAIN-SUFFIX,ixxx.com
-DOMAIN-SUFFIX,java.com
-DOMAIN-SUFFIX,javbus.com
-DOMAIN-SUFFIX,javdb.com
-DOMAIN-SUFFIX,javdove.com
-DOMAIN-SUFFIX,javhd.com
-DOMAIN-SUFFIX,javlibrary.com
-DOMAIN-SUFFIX,javmost.com
-DOMAIN-SUFFIX,javtrailers.com
-DOMAIN-SUFFIX,javtsunami.com
-DOMAIN-SUFFIX,javwind.com
 DOMAIN-SUFFIX,jdbstatic.com
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,jfrog.com
@@ -579,7 +568,6 @@ DOMAIN-SUFFIX,nhentai.com
 DOMAIN-SUFFIX,nicehash.com
 DOMAIN-SUFFIX,nikkei.com
 DOMAIN-SUFFIX,nj.com
-DOMAIN-SUFFIX,njav.com
 DOMAIN-SUFFIX,nodeseek.com
 DOMAIN-SUFFIX,nodesource.com
 DOMAIN-SUFFIX,noip.com
@@ -749,7 +737,6 @@ DOMAIN-SUFFIX,strongleakstest.com
 DOMAIN-SUFFIX,sublimetext.com
 DOMAIN-SUFFIX,substack.com
 DOMAIN-SUFFIX,superuser.com
-DOMAIN-SUFFIX,supjav.com
 DOMAIN-SUFFIX,surfshark.com
 DOMAIN-SUFFIX,surfsharkdns.com
 DOMAIN-SUFFIX,surge-activation.com
@@ -840,7 +827,6 @@ DOMAIN-SUFFIX,vimeo.com
 DOMAIN-SUFFIX,visualstudio.com
 DOMAIN-SUFFIX,visualstudio-staging.com
 DOMAIN-SUFFIX,vivaldi.com
-DOMAIN-SUFFIX,vjav.com
 DOMAIN-SUFFIX,vk.com
 DOMAIN-SUFFIX,vmware.com
 DOMAIN-SUFFIX,voachinese.com
@@ -1094,7 +1080,6 @@ DOMAIN-SUFFIX,wasmer.io
 DOMAIN-SUFFIX,xoom.io
 DOMAIN-SUFFIX,is
 DOMAIN-SUFFIX,it
-DOMAIN-SUFFIX,java
 DOMAIN-SUFFIX,jp
 DOMAIN-SUFFIX,kg
 DOMAIN-SUFFIX,kr
@@ -1200,7 +1185,6 @@ DOMAIN-SUFFIX,hubspotstarter.net
 DOMAIN-SUFFIX,intellij.net
 DOMAIN-SUFFIX,intellinuxgraphics.net
 DOMAIN-SUFFIX,ipleak.net
-DOMAIN-SUFFIX,java.net
 DOMAIN-SUFFIX,jetbrains.net
 DOMAIN-SUFFIX,jkforum.net
 DOMAIN-SUFFIX,jsdelivr.net
@@ -1544,7 +1528,6 @@ DOMAIN-SUFFIX,pm
 DOMAIN-SUFFIX,betterdisplay.pro
 DOMAIN-SUFFIX,huobi.pro
 DOMAIN-SUFFIX,ps
-DOMAIN-SUFFIX,jav.pw
 DOMAIN-SUFFIX,re
 DOMAIN-SUFFIX,rip
 DOMAIN-SUFFIX,rs
@@ -1571,7 +1554,6 @@ DOMAIN-SUFFIX,taipei
 DOMAIN-SUFFIX,jetbrains.team
 DOMAIN-SUFFIX,to
 DOMAIN-SUFFIX,archive.today
-DOMAIN-SUFFIX,javhd.today
 DOMAIN-SUFFIX,bgp.tools
 DOMAIN-SUFFIX,dnscheck.tools
 DOMAIN-SUFFIX,fastlane.tools
@@ -1607,8 +1589,9 @@ DOMAIN-KEYWORD,discord
 DOMAIN-KEYWORD,dropbox
 DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,google
+DOMAIN-KEYWORD,jav
 DOMAIN-KEYWORD,kindle
-DOMAIN-KEYWORD,missav.
+DOMAIN-KEYWORD,missav
 DOMAIN-KEYWORD,nvidia
 DOMAIN-KEYWORD,paypal
 DOMAIN-KEYWORD,pinterest

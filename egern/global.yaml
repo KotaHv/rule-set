@@ -1,4 +1,4 @@
-# Total: 1617 rules
+# Total: 1600 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -245,7 +245,6 @@ domain_suffix_set:
 - coingecko.com
 - coinmarketcap.com
 - cool18.com
-- cosplay-jav.com
 - costco.com
 - cpuid.com
 - crashlytics.com
@@ -452,16 +451,6 @@ domain_suffix_set:
 - istockphoto.com
 - itasoftware.com
 - ixxx.com
-- java.com
-- javbus.com
-- javdb.com
-- javdove.com
-- javhd.com
-- javlibrary.com
-- javmost.com
-- javtrailers.com
-- javtsunami.com
-- javwind.com
 - jdbstatic.com
 - jetbrains.com
 - jfrog.com
@@ -582,7 +571,6 @@ domain_suffix_set:
 - nicehash.com
 - nikkei.com
 - nj.com
-- njav.com
 - nodeseek.com
 - nodesource.com
 - noip.com
@@ -752,7 +740,6 @@ domain_suffix_set:
 - sublimetext.com
 - substack.com
 - superuser.com
-- supjav.com
 - surfshark.com
 - surfsharkdns.com
 - surge-activation.com
@@ -843,7 +830,6 @@ domain_suffix_set:
 - visualstudio.com
 - visualstudio-staging.com
 - vivaldi.com
-- vjav.com
 - vk.com
 - vmware.com
 - voachinese.com
@@ -1097,7 +1083,6 @@ domain_suffix_set:
 - xoom.io
 - is
 - it
-- java
 - jp
 - kg
 - kr
@@ -1203,7 +1188,6 @@ domain_suffix_set:
 - intellij.net
 - intellinuxgraphics.net
 - ipleak.net
-- java.net
 - jetbrains.net
 - jkforum.net
 - jsdelivr.net
@@ -1547,7 +1531,6 @@ domain_suffix_set:
 - betterdisplay.pro
 - huobi.pro
 - ps
-- jav.pw
 - re
 - rip
 - rs
@@ -1574,7 +1557,6 @@ domain_suffix_set:
 - jetbrains.team
 - to
 - archive.today
-- javhd.today
 - bgp.tools
 - dnscheck.tools
 - fastlane.tools
@@ -1611,8 +1593,9 @@ domain_keyword_set:
 - dropbox
 - facebook
 - google
+- jav
 - kindle
-- missav.
+- missav
 - nvidia
 - paypal
 - pinterest

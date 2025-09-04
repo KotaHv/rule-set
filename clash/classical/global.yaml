@@ -1,4 +1,4 @@
-# Total: 17 rules
+# Total: 18 rules
 payload:
 - DOMAIN-KEYWORD,amazon
 - DOMAIN-KEYWORD,blogspot
@@ -8,8 +8,9 @@ payload:
 - DOMAIN-KEYWORD,dropbox
 - DOMAIN-KEYWORD,facebook
 - DOMAIN-KEYWORD,google
+- DOMAIN-KEYWORD,jav
 - DOMAIN-KEYWORD,kindle
-- DOMAIN-KEYWORD,missav.
+- DOMAIN-KEYWORD,missav
 - DOMAIN-KEYWORD,nvidia
 - DOMAIN-KEYWORD,paypal
 - DOMAIN-KEYWORD,pinterest
