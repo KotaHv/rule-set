@@ -1,4 +1,0 @@
-# Total: 2 rules
-payload:
-- DOMAIN-WILDCARD,stun*.bilibili.com
-- AND,((PROCESS-NAME,QQMusic),(NETWORK,UDP),(DST-PORT,3478))

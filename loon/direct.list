@@ -1,4 +1,4 @@
-# Total: 876 rules
+# Total: 884 rules
 DOMAIN,www.intel.cn
 DOMAIN,lv.queniujq.cn
 DOMAIN,url.cn
@@ -23,6 +23,8 @@ DOMAIN,discovery-v4.syncthing.net
 DOMAIN,discovery-v6.syncthing.net
 DOMAIN,stun.syncthing.net
 DOMAIN,kms.03k.org
+DOMAIN,injections.adguard.org
+DOMAIN,local.adguard.org
 DOMAIN,stun.moonlight-stream.org
 DOMAIN,doh.pub
 DOMAIN,acg.tv
@@ -178,6 +180,7 @@ DOMAIN-SUFFIX,t3go.cn
 DOMAIN-SUFFIX,taptap.cn
 DOMAIN-SUFFIX,tb.cn
 DOMAIN-SUFFIX,tbcdn.cn
+DOMAIN-SUFFIX,tencent-cloud.cn
 DOMAIN-SUFFIX,tencentcs.cn
 DOMAIN-SUFFIX,toutiaoimg.cn
 DOMAIN-SUFFIX,tripcdn.cn
@@ -307,6 +310,7 @@ DOMAIN-SUFFIX,biliimg.com
 DOMAIN-SUFFIX,bilivideo.com
 DOMAIN-SUFFIX,blizzard.com
 DOMAIN-SUFFIX,bosszhipin.com
+DOMAIN-SUFFIX,brovod.com
 DOMAIN-SUFFIX,bulicdn2.com
 DOMAIN-SUFFIX,byteacctimg.com
 DOMAIN-SUFFIX,bytecdntp.com
@@ -792,6 +796,7 @@ DOMAIN-SUFFIX,oppoer.me
 DOMAIN-SUFFIX,qbox.me
 DOMAIN-SUFFIX,chunyu.mobi
 DOMAIN-SUFFIX,xunyou.mobi
+DOMAIN-SUFFIX,ddys.mov
 DOMAIN-SUFFIX,115cdn.net
 DOMAIN-SUFFIX,126.net
 DOMAIN-SUFFIX,127.net
@@ -862,14 +867,17 @@ DOMAIN-SUFFIX,icourse163.org
 DOMAIN-SUFFIX,miot-spec.org
 DOMAIN-SUFFIX,solidot.org
 DOMAIN-SUFFIX,taobao.org
+DOMAIN-SUFFIX,ddys.pro
 DOMAIN-SUFFIX,mrw.so
 DOMAIN-SUFFIX,mijia.tech
+DOMAIN-SUFFIX,brovod.top
 DOMAIN-SUFFIX,chushou.tv
 DOMAIN-SUFFIX,douyu.tv
 DOMAIN-SUFFIX,fun.tv
 DOMAIN-SUFFIX,maoyun.tv
 DOMAIN-SUFFIX,pps.tv
 DOMAIN-SUFFIX,landian.vip
+DOMAIN-SUFFIX,xdys.vip
 DOMAIN-SUFFIX,c-t.work
 DOMAIN-SUFFIX,nz99.xyz
 USER-AGENT,%E4%BC%98%E9%85%B7*

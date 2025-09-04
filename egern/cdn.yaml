@@ -1,4 +1,4 @@
-# Total: 3896 rules
+# Total: 3897 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -944,6 +944,7 @@ domain_set:
 - files.jotform.com
 - js.jotform.com
 - moodular.jotform.com
+- cdn.joypixels.com
 - code.jquery.com
 - null.jsbin.com
 - static.jsbin.com

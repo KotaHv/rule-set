@@ -1,4 +1,4 @@
-# Total: 876 rules
+# Total: 884 rules
 no_resolve: true
 domain_set:
 - www.intel.cn
@@ -25,6 +25,8 @@ domain_set:
 - discovery-v6.syncthing.net
 - stun.syncthing.net
 - kms.03k.org
+- injections.adguard.org
+- local.adguard.org
 - stun.moonlight-stream.org
 - doh.pub
 - acg.tv
@@ -181,6 +183,7 @@ domain_suffix_set:
 - taptap.cn
 - tb.cn
 - tbcdn.cn
+- tencent-cloud.cn
 - tencentcs.cn
 - toutiaoimg.cn
 - tripcdn.cn
@@ -310,6 +313,7 @@ domain_suffix_set:
 - bilivideo.com
 - blizzard.com
 - bosszhipin.com
+- brovod.com
 - bulicdn2.com
 - byteacctimg.com
 - bytecdntp.com
@@ -795,6 +799,7 @@ domain_suffix_set:
 - qbox.me
 - chunyu.mobi
 - xunyou.mobi
+- ddys.mov
 - 115cdn.net
 - 126.net
 - 127.net
@@ -865,14 +870,17 @@ domain_suffix_set:
 - miot-spec.org
 - solidot.org
 - taobao.org
+- ddys.pro
 - mrw.so
 - mijia.tech
+- brovod.top
 - chushou.tv
 - douyu.tv
 - fun.tv
 - maoyun.tv
 - pps.tv
 - landian.vip
+- xdys.vip
 - c-t.work
 - nz99.xyz
 domain_wildcard_set:
