@@ -75,7 +75,7 @@ def _ast_to_wildcard(ast: sre_parser.SubPattern) -> list[str]:
                         new_wildcards.append(w + sw * min_r)
                     elif max_r == sre_parser.MAXREPEAT:
                         new_wildcards.append(
-                            w + (sw * min_r + "*" if min_r > 0 else "*")
+                            w + (sw * min_r + "*" if min_r > 1 else "*")
                         )
                     else:
                         new_wildcards.extend(
@@ -95,13 +95,7 @@ def _ast_to_wildcard(ast: sre_parser.SubPattern) -> list[str]:
             sub_wildcards = _ast_to_wildcard(arg[-1])
             wildcards = [w + sw for w in wildcards for sw in sub_wildcards]
         elif op == sre_parser.BRANCH:
-            _, branches = arg
-            branch_wildcards = []
-            for branch in branches:
-                branch_wildcards.extend(
-                    w + b for w in wildcards for b in _ast_to_wildcard(branch)
-                )
-            wildcards = branch_wildcards
+            wildcards = [w + "*" for w in wildcards]
         elif op == sre_parser.AT:
             continue
     for i, w in enumerate(wildcards):
