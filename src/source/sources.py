@@ -448,6 +448,14 @@ sources = [
         resources=[RuleSetResource(source="sources/direct/process.txt")],
         name="direct/process",
     ),
+    SourceModel(
+        resources=[
+            SourceReference(target="global"),
+            SourceReference(target="cdn"),
+            SourceReference(target="download"),
+        ],
+        name="global-all",
+    ),
 ]
 
 
