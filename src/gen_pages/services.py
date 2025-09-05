@@ -72,6 +72,7 @@ class PageGenerator:
             node.children.append(child_node)
             if child_node.info.mtime > node.info.mtime:
                 node.info.mtime = child_node.info.mtime
+        node.children.sort()
 
     def _copy_icons(self):
         """Copy icons from package icons directory to rule-set directory"""
