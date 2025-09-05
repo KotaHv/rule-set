@@ -1,4 +1,4 @@
-# Total: 26 rules
+# Total: 25 rules
 DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple.com
@@ -24,4 +24,3 @@ PROCESS-NAME,findmydevice-user-agent
 PROCESS-NAME,fmfd
 PROCESS-NAME,mapspushd
 PROCESS-NAME,netbiosd
-PROCESS-NAME,trustd

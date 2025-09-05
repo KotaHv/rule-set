@@ -1,4 +1,4 @@
-# Total: 3897 rules
+# Total: 3898 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1399,6 +1399,7 @@ domain_set:
 - cloud.redhat.com
 - static.redhat.com
 - redircdn.com
+- staticsource1.redotpay.com
 - tools.refokus.com
 - sp.replit.com
 - cdn.report-uri.com

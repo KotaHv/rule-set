@@ -1,4 +1,4 @@
-# Total: 10 rules
+# Total: 9 rules
 payload:
 - PROCESS-NAME,CoreLocationAgent
 - PROCESS-NAME,WeatherWidget
@@ -9,4 +9,3 @@ payload:
 - PROCESS-NAME,fmfd
 - PROCESS-NAME,mapspushd
 - PROCESS-NAME,netbiosd
-- PROCESS-NAME,trustd
