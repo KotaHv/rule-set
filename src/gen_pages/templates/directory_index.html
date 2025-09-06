@@ -108,12 +108,12 @@
                                 {{ dir_item.info.name }}
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">目录</span>
-                            <span class="text-gray-500 w-16">—</span>
-                            <span class="text-gray-500 font-mono w-24"
+                            <span class="text-gray-500 w-20">—</span>
+                            <span class="text-gray-500 font-mono w-48"
                                 data-utc-time="{{ format_iso(dir_item.info.mtime) }}">
-                                {{ format_datetime(dir_item.info.mtime).split(' ')[0] }}
+                                {{ format_datetime(dir_item.info.mtime) }}
                             </span>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                             <span class="text-sm text-gray-500">目录</span>
                             <span class="text-sm text-gray-500 font-mono"
                                 data-utc-time="{{ format_iso(dir_item.info.mtime) }}">
-                                {{ format_datetime(dir_item.info.mtime).split(' ')[0] }}
+                                {{ format_datetime(dir_item.info.mtime) }}
                             </span>
                         </div>
                     </div>
@@ -150,13 +150,13 @@
                                 {{ file_item.info.name }}
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">{{ format_file_size(file_item.info.size)
+                            <span class="text-gray-500 font-mono w-20">{{ format_file_size(file_item.info.size)
                                 }}</span>
-                            <span class="text-gray-500 font-mono w-24"
+                            <span class="text-gray-500 font-mono w-48"
                                 data-utc-time="{{ format_iso(file_item.info.mtime) }}">
-                                {{ format_datetime(file_item.info.mtime).split(' ')[0] }}
+                                {{ format_datetime(file_item.info.mtime) }}
                             </span>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                             <span class="text-sm text-gray-500">{{ format_file_size(file_item.info.size) }}</span>
                             <span class="text-sm text-gray-500 font-mono"
                                 data-utc-time="{{ format_iso(file_item.info.mtime) }}">
-                                {{ format_datetime(file_item.info.mtime).split(' ')[0] }}
+                                {{ format_datetime(file_item.info.mtime) }}
                             </span>
                         </div>
                     </div>
@@ -211,10 +211,6 @@
                         const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
                         const formattedDateTime = localTime.format('YYYY-MM-DD HH:mm:ss');
                         element.textContent = formattedDateTime;
-
-                        // 添加时区信息到title
-                        const timezone = dayjs.tz.guess();
-                        element.setAttribute('title', `UTC时间: ${utcTime}\n本地时区: ${timezone}`);
                     } catch (error) {
                         console.error('时间转换错误:', error);
                     }
