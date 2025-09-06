@@ -152,15 +152,15 @@ class PageGenerator:
             else:
                 files.append(child)
 
-        parent = node
-        icon_depth = 0
-        app_name = None
-        while parent != self.path_tree.root:
-            icon_depth += 1
-            app_name = parent.info.name
-            parent = parent.parent
+        breadcrumb_path = []
+        current = node
+        while current != self.path_tree.root:
+            breadcrumb_path.append(current.info.name)
+            current = current.parent
 
-        icon_prefix = "../" * icon_depth
+        breadcrumb_path.reverse()
+
+        icon_prefix = "../" * len(breadcrumb_path)
         icons = self._get_directory_icon_data(icon_prefix)
 
         context = {
@@ -168,7 +168,8 @@ class PageGenerator:
             "directories": dirs,
             "files": files,
             "icons": icons,
-            "app_name": app_name,
+            "app_name": breadcrumb_path[0],
+            "breadcrumb_path": breadcrumb_path,
             "format_datetime": format_datetime,
             "format_iso": format_iso,
             "format_name": format_name,

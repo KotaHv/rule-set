@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,6 @@
     <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
     <script src="https://unpkg.com/dayjs@1.11.10/plugin/timezone.js"></script>
     <script>
-        // 配置dayjs插件
         dayjs.extend(dayjs_plugin_utc);
         dayjs.extend(dayjs_plugin_timezone);
 
@@ -18,137 +17,90 @@
             theme: {
                 extend: {
                     animation: {
-                        'fade-in': 'fadeIn 0.8s ease-out',
-                        'slide-up': 'slideUp 0.6s ease-out',
-                        'float': 'float 8s ease-in-out infinite',
-                        'pulse-gentle': 'pulseGentle 4s ease-in-out infinite',
+                        'fade-in': 'fadeIn 0.6s ease-out forwards',
                     },
                     keyframes: {
                         fadeIn: {
-                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
                             '100%': { opacity: '1', transform: 'translateY(0)' }
-                        },
-                        slideUp: {
-                            '0%': { opacity: '0', transform: 'translateY(40px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' }
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-20px)' }
-                        },
-                        pulseGentle: {
-                            '0%, 100%': { opacity: '0.4' },
-                            '50%': { opacity: '0.8' }
                         }
+                    },
+                    fontFamily: {
+                        'display': ['Inter', 'system-ui', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
-    <style>
-        .glass {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(24px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        .card-hover {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .card-hover:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .glow {
-            box-shadow: 0 0 30px rgba(240, 147, 251, 0.3);
-        }
-
-        .glow:hover {
-            box-shadow: 0 0 40px rgba(240, 147, 251, 0.5);
-        }
-
-        .card-bg {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
-            backdrop-filter: blur(20px);
-        }
-    </style>
 </head>
 
-<body class="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50 relative overflow-x-hidden">
-    <!-- Background elements -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div
-            class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-200/40 to-pink-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-float">
-        </div>
-        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-pink-200/40 to-rose-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-float"
-            style="animation-delay: -4s;"></div>
-        <div class="absolute top-40 left-40 w-80 h-80 bg-gradient-to-br from-purple-200/30 to-rose-200/30 rounded-full mix-blend-multiply filter blur-3xl animate-float"
-            style="animation-delay: -2s;"></div>
-        <div
-            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-purple-100/20 to-pink-100/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-gentle">
-        </div>
-    </div>
-
-    <div class="relative z-10 max-w-6xl mx-auto p-6 lg:p-8">
-        <!-- Header -->
-        <div class="text-center mb-16 animate-fade-in">
-            <div class="glass rounded-3xl overflow-hidden shadow-2xl mb-8 glow">
-                <div class="bg-gradient-to-r from-purple-900 via-pink-800 to-rose-800 px-8 py-12 relative">
-                    <div class="relative z-10">
-                        <h1 class="text-5xl font-bold text-white mb-4">Rule Set</h1>
-                        <p class="text-purple-200 text-lg" data-utc-time="{{ format_iso(latest_update_time) }}">
-                            更新时间：{{ format_datetime(latest_update_time) }} UTC
-                        </p>
-                    </div>
+<body class="min-h-screen bg-gray-50 font-display antialiased">
+    <!-- 顶部导航栏 -->
+    <nav class="bg-white/80 backdrop-blur-xl border-b border-gray-200/50 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div>
+                    <h1 class="text-2xl font-light text-gray-900 tracking-wide">Rule Set</h1>
+                </div>
+                <div class="text-sm text-gray-600" data-utc-time="{{ format_iso(latest_update_time) }}">
+                    {{ format_datetime(latest_update_time) }}
                 </div>
             </div>
         </div>
+    </nav>
 
-        <!-- Directory Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {% for i, dir_item in enumerate(directories) %}
-            <div class="animate-slide-up" style="animation-delay: {{ i * 0.1 }}s;">
-                <a href="{{ dir_item.info.name }}/" class="group block card-hover">
-                    <div
-                        class="card-bg rounded-3xl p-8 h-full border border-white/50 hover:border-purple-300/60 transition-all duration-300 shadow-xl hover:shadow-2xl">
-                        <div class="flex flex-col items-center justify-center mb-6">
+    <!-- 主要内容区域 -->
+    <main class="max-w-6xl mx-auto px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for dir_item in directories %}
+            <a href="{{ dir_item.info.name }}/" class="group block">
+                <div
+                    class="relative bg-white/60 backdrop-blur-sm rounded-xl border border-gray-200/60 hover:border-purple-500/80 hover:bg-white/80 hover:shadow-xl hover:shadow-gray-700/15 hover:-translate-y-1 transition-all duration-300 p-6 h-full">
+                    <div class="flex flex-col h-full">
+                        <!-- 图标区域 -->
+                        <div class="flex justify-center mb-6">
                             <div
-                                class="p-3 bg-gradient-to-br from-purple-100 to-pink-100 group-hover:from-purple-200 group-hover:to-pink-200 rounded-2xl mb-4 transition-all duration-300 shadow-lg group-hover:shadow-xl">
-                                <div class="text-purple-600 group-hover:text-purple-700 transition-colors">
+                                class="w-16 h-16 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl flex items-center justify-center">
+                                <div class="text-gray-500 group-hover:text-purple-500 transition-colors duration-300">
                                     {{ icons.get(dir_item.info.name, '<svg class="w-8 h-8" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
                                         </path>
                                     </svg>') | safe }}
                                 </div>
                             </div>
-                            <div class="text-center">
-                                <h3
-                                    class="text-2xl font-bold text-gray-800 group-hover:text-purple-700 transition-colors">
-                                    {{ format_name(dir_item.info.name) }}</h3>
+                        </div>
+
+                        <!-- 标题 -->
+                        <div class="text-center mb-4 flex-1">
+                            <h3 class="text-xl font-medium text-gray-900 mb-3">
+                                {{ format_name(dir_item.info.name) }}
+                            </h3>
+                        </div>
+
+                        <!-- 时间 -->
+                        <div class="text-center mt-auto">
+                            <div class="text-sm text-gray-500 font-mono bg-gray-50/50 rounded-lg px-3 py-2"
+                                data-utc-time="{{ format_iso(dir_item.info.mtime) }}">
+                                {{ format_datetime(dir_item.info.mtime) }}
                             </div>
                         </div>
-                        <div class="text-center">
-                            <p class="text-sm text-gray-600" data-utc-time="{{ format_iso(dir_item.info.mtime) }}">
-                                更新时间：{{ format_datetime(dir_item.info.mtime) }} UTC
-                            </p>
+
+                        <!-- 悬停箭头 -->
+                        <div
+                            class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
             {% endfor %}
         </div>
-    </div>
+    </main>
 
     <script>
         // 时区转换：将UTC时间转换为用户本地时区
@@ -161,18 +113,11 @@
                     try {
                         // 解析UTC时间并转换为本地时间
                         const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
-                        const formattedTime = localTime.format('YYYY-MM-DD HH:mm:ss');
+                        const formattedDate = localTime.format('YYYY-MM-DD');
 
-                        // 更新显示内容，移除UTC后缀
-                        element.textContent = element.textContent.replace(' UTC', '');
-
-                        // 处理不同格式的时间显示
-                        if (element.textContent.includes('更新时间：')) {
-                            element.textContent = element.textContent.replace(/更新时间：.*/, `更新时间：${formattedTime}`);
-                        } else {
-                            // 处理文件时间（直接替换整个时间部分）
-                            element.textContent = formattedTime;
-                        }
+                        // 更新显示内容
+                        const formattedDateTime = localTime.format('YYYY-MM-DD HH:mm:ss');
+                        element.textContent = formattedDateTime;
 
                         // 添加时区信息到title
                         const timezone = dayjs.tz.guess();
