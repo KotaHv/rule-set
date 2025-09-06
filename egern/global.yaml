@@ -1,4 +1,4 @@
-# Total: 1600 rules
+# Total: 1605 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -160,6 +160,8 @@ domain_suffix_set:
 - atlassian.com
 - atom.com
 - atscaleconference.com
+- augment-assets.com
+- augmentcode.com
 - auth0.com
 - autodesk.com
 - autodraw.com
@@ -253,6 +255,7 @@ domain_suffix_set:
 - crypto.com
 - cryptocompare.com
 - curseforge.com
+- cursor.com
 - cygwin.com
 - dailymail.com
 - dailymotion.com
@@ -404,6 +407,7 @@ domain_suffix_set:
 - hardwaretester.com
 - hashicorp.com
 - hbg.com
+- hcaptcha.com
 - hclips.com
 - hentaifox.com
 - hentaipaw.com
@@ -736,6 +740,7 @@ domain_suffix_set:
 - strikingly.com
 - strikinglycdn.com
 - stripchat.com
+- stripe.com
 - strongleakstest.com
 - sublimetext.com
 - substack.com

@@ -189,6 +189,7 @@ domain_set:
 - news-assets.apple.com
 - ocvideo.apple.com
 - pba.apple.com
+- time.apple.com
 - linear.tv.apple.com
 - img.applealmond.com
 - images.applegamingwiki.com
@@ -395,7 +396,6 @@ domain_set:
 - images.store.crowdstrike.com
 - images.crunchbase.com
 - proxy.csidetm.com
-- downloads.cursor.com
 - script.custobar.com
 - cdn.cxense.com
 - assets.cyberghostvpn.com
@@ -589,8 +589,6 @@ domain_set:
 - rest.happierleads.com
 - public.hare200.com
 - cdn.hashnode.com
-- imgs3.hcaptcha.com
-- newassets.hcaptcha.com
 - cdn.heapanalytics.com
 - assets.hearstapps.com
 - hips.hearstapps.com
@@ -1122,9 +1120,6 @@ domain_set:
 - assets.stickpng.com
 - cdn.streamlabs.com
 - sp.streamlabs.com
-- checkout.stripe.com
-- connect-js.stripe.com
-- js.stripe.com
 - cdn-service.jp.sumologic.com
 - cdn.sunofbeaches.com
 - frontend-assets.supabase.com
@@ -2326,6 +2321,8 @@ domain_suffix_set:
 - atlassian.com
 - atom.com
 - atscaleconference.com
+- augment-assets.com
+- augmentcode.com
 - auth0.com
 - autodesk.com
 - autodraw.com
@@ -2539,6 +2536,7 @@ domain_suffix_set:
 - cryptocompare.com
 - cubicmotion.com
 - curseforge.com
+- cursor.com
 - customerioforms.com
 - customeriomail.com
 - cwwcdn.com
@@ -2866,6 +2864,7 @@ domain_suffix_set:
 - hbomax.com
 - hbomaxcdn.com
 - hbonow.com
+- hcaptcha.com
 - hclips.com
 - hdzyk-cdn.com
 - supercell.helpshift.com
@@ -3676,6 +3675,7 @@ domain_suffix_set:
 - strikinglycdn.com
 - stripcdn.com
 - stripchat.com
+- stripe.com
 - stripeassets.com
 - stripecdn.com
 - stripst.com

@@ -1,4 +1,4 @@
-# Total: 1177 rules
+# Total: 1181 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -394,6 +394,10 @@ domain_set:
 - mirror.marwan.ma
 - releases.obsidian.md
 - mirror.klaus-uwe.me
+- chnroutes2.cdn.skk.moe
+- filters.cdn.skk.moe
+- speedtest-net-servers.cdn.skk.moe
+- ruleset.skk.moe
 - download.nust.na
 - cpan.lagoon.nc
 - mirror.lagoon.nc

@@ -1,4 +1,4 @@
-# Total: 1169 rules
+# Total: 1173 rules
 'payload':
 - 'mirror.host.ag'
 - 'updates.istatmenus.app'
@@ -393,6 +393,10 @@
 - 'mirror.marwan.ma'
 - 'releases.obsidian.md'
 - 'mirror.klaus-uwe.me'
+- 'chnroutes2.cdn.skk.moe'
+- 'filters.cdn.skk.moe'
+- 'speedtest-net-servers.cdn.skk.moe'
+- 'ruleset.skk.moe'
 - 'download.nust.na'
 - 'cpan.lagoon.nc'
 - 'mirror.lagoon.nc'
