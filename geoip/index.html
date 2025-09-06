@@ -92,12 +92,12 @@
                                 cn-ip
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">目录</span>
-                            <span class="text-gray-500 w-16">—</span>
-                            <span class="text-gray-500 font-mono w-24"
-                                data-utc-time="2025-09-06T18:16:13.167926+00:00">
-                                2025-09-06
+                            <span class="text-gray-500 w-20">—</span>
+                            <span class="text-gray-500 font-mono w-48"
+                                data-utc-time="2025-09-06T18:16:14+00:00">
+                                2025-09-06 18:16:14
                             </span>
                         </div>
                     </div>
@@ -113,8 +113,8 @@
                         <div class="flex flex-col items-end space-y-1 flex-shrink-0 ml-4">
                             <span class="text-sm text-gray-500">目录</span>
                             <span class="text-sm text-gray-500 font-mono"
-                                data-utc-time="2025-09-06T18:16:13.167926+00:00">
-                                2025-09-06
+                                data-utc-time="2025-09-06T18:16:14+00:00">
+                                2025-09-06 18:16:14
                             </span>
                         </div>
                     </div>
@@ -137,10 +137,6 @@
                         const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
                         const formattedDateTime = localTime.format('YYYY-MM-DD HH:mm:ss');
                         element.textContent = formattedDateTime;
-
-                        // 添加时区信息到title
-                        const timezone = dayjs.tz.guess();
-                        element.setAttribute('title', `UTC时间: ${utcTime}\n本地时区: ${timezone}`);
                     } catch (error) {
                         console.error('时间转换错误:', error);
                     }

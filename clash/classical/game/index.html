@@ -103,12 +103,12 @@
                                 game-cn.yaml
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">69 B</span>
-                            <span class="text-gray-500 font-mono w-24"
+                            <span class="text-gray-500 font-mono w-20">69 B</span>
+                            <span class="text-gray-500 font-mono w-48"
                                 data-utc-time="2025-08-31T13:38:39+00:00">
-                                2025-08-31
+                                2025-08-31 13:38:39
                             </span>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                             <span class="text-sm text-gray-500">69 B</span>
                             <span class="text-sm text-gray-500 font-mono"
                                 data-utc-time="2025-08-31T13:38:39+00:00">
-                                2025-08-31
+                                2025-08-31 13:38:39
                             </span>
                         </div>
                     </div>
@@ -142,12 +142,12 @@
                                 game.yaml
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">80 B</span>
-                            <span class="text-gray-500 font-mono w-24"
+                            <span class="text-gray-500 font-mono w-20">80 B</span>
+                            <span class="text-gray-500 font-mono w-48"
                                 data-utc-time="2025-08-31T13:38:39+00:00">
-                                2025-08-31
+                                2025-08-31 13:38:39
                             </span>
                         </div>
                     </div>
@@ -164,7 +164,7 @@
                             <span class="text-sm text-gray-500">80 B</span>
                             <span class="text-sm text-gray-500 font-mono"
                                 data-utc-time="2025-08-31T13:38:39+00:00">
-                                2025-08-31
+                                2025-08-31 13:38:39
                             </span>
                         </div>
                     </div>
@@ -186,10 +186,6 @@
                         const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
                         const formattedDateTime = localTime.format('YYYY-MM-DD HH:mm:ss');
                         element.textContent = formattedDateTime;
-
-                        // 添加时区信息到title
-                        const timezone = dayjs.tz.guess();
-                        element.setAttribute('title', `UTC时间: ${utcTime}\n本地时区: ${timezone}`);
                     } catch (error) {
                         console.error('时间转换错误:', error);
                     }

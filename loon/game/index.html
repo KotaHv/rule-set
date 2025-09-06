@@ -98,12 +98,12 @@
                                 game-cn.list
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">4.0 KB</span>
-                            <span class="text-gray-500 font-mono w-24"
+                            <span class="text-gray-500 font-mono w-20">4.0 KB</span>
+                            <span class="text-gray-500 font-mono w-48"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                             <span class="text-sm text-gray-500">4.0 KB</span>
                             <span class="text-sm text-gray-500 font-mono"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -137,12 +137,12 @@
                                 game-download-cn.list
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">812 B</span>
-                            <span class="text-gray-500 font-mono w-24"
+                            <span class="text-gray-500 font-mono w-20">812 B</span>
+                            <span class="text-gray-500 font-mono w-48"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                             <span class="text-sm text-gray-500">812 B</span>
                             <span class="text-sm text-gray-500 font-mono"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -176,12 +176,12 @@
                                 game-download.list
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">1.9 KB</span>
-                            <span class="text-gray-500 font-mono w-24"
+                            <span class="text-gray-500 font-mono w-20">1.9 KB</span>
+                            <span class="text-gray-500 font-mono w-48"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -198,7 +198,7 @@
                             <span class="text-sm text-gray-500">1.9 KB</span>
                             <span class="text-sm text-gray-500 font-mono"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -215,12 +215,12 @@
                                 game.list
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">17.7 KB</span>
-                            <span class="text-gray-500 font-mono w-24"
+                            <span class="text-gray-500 font-mono w-20">17.7 KB</span>
+                            <span class="text-gray-500 font-mono w-48"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -237,7 +237,7 @@
                             <span class="text-sm text-gray-500">17.7 KB</span>
                             <span class="text-sm text-gray-500 font-mono"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -259,10 +259,6 @@
                         const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
                         const formattedDateTime = localTime.format('YYYY-MM-DD HH:mm:ss');
                         element.textContent = formattedDateTime;
-
-                        // 添加时区信息到title
-                        const timezone = dayjs.tz.guess();
-                        element.setAttribute('title', `UTC时间: ${utcTime}\n本地时区: ${timezone}`);
                     } catch (error) {
                         console.error('时间转换错误:', error);
                     }

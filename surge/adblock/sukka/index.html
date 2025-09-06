@@ -103,12 +103,12 @@
                                 sukka-reject-drop.list
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">135 B</span>
-                            <span class="text-gray-500 font-mono w-24"
+                            <span class="text-gray-500 font-mono w-20">135 B</span>
+                            <span class="text-gray-500 font-mono w-48"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                             <span class="text-sm text-gray-500">135 B</span>
                             <span class="text-sm text-gray-500 font-mono"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -142,12 +142,12 @@
                                 sukka-reject-extra.list
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">1.6 MB</span>
-                            <span class="text-gray-500 font-mono w-24"
-                                data-utc-time="2025-09-06T18:16:13.245926+00:00">
-                                2025-09-06
+                            <span class="text-gray-500 font-mono w-20">1.6 MB</span>
+                            <span class="text-gray-500 font-mono w-48"
+                                data-utc-time="2025-09-06T18:16:14+00:00">
+                                2025-09-06 18:16:14
                             </span>
                         </div>
                     </div>
@@ -163,8 +163,8 @@
                         <div class="flex flex-col items-end space-y-1 flex-shrink-0 ml-4">
                             <span class="text-sm text-gray-500">1.6 MB</span>
                             <span class="text-sm text-gray-500 font-mono"
-                                data-utc-time="2025-09-06T18:16:13.245926+00:00">
-                                2025-09-06
+                                data-utc-time="2025-09-06T18:16:14+00:00">
+                                2025-09-06 18:16:14
                             </span>
                         </div>
                     </div>
@@ -181,12 +181,12 @@
                                 sukka-reject-no-drop.list
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">1.1 KB</span>
-                            <span class="text-gray-500 font-mono w-24"
+                            <span class="text-gray-500 font-mono w-20">1.1 KB</span>
+                            <span class="text-gray-500 font-mono w-48"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -203,7 +203,7 @@
                             <span class="text-sm text-gray-500">1.1 KB</span>
                             <span class="text-sm text-gray-500 font-mono"
                                 data-utc-time="2025-08-28T10:50:31+00:00">
-                                2025-08-28
+                                2025-08-28 10:50:31
                             </span>
                         </div>
                     </div>
@@ -220,12 +220,12 @@
                                 sukka-reject.list
                             </h3>
                         </div>
-                        <div class="flex items-center space-x-8 flex-shrink-0">
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
                             <span class="text-gray-500 w-12">文件</span>
-                            <span class="text-gray-500 font-mono w-16">3.4 MB</span>
-                            <span class="text-gray-500 font-mono w-24"
-                                data-utc-time="2025-09-06T18:16:13.253926+00:00">
-                                2025-09-06
+                            <span class="text-gray-500 font-mono w-20">3.4 MB</span>
+                            <span class="text-gray-500 font-mono w-48"
+                                data-utc-time="2025-09-06T18:16:14+00:00">
+                                2025-09-06 18:16:14
                             </span>
                         </div>
                     </div>
@@ -241,8 +241,8 @@
                         <div class="flex flex-col items-end space-y-1 flex-shrink-0 ml-4">
                             <span class="text-sm text-gray-500">3.4 MB</span>
                             <span class="text-sm text-gray-500 font-mono"
-                                data-utc-time="2025-09-06T18:16:13.253926+00:00">
-                                2025-09-06
+                                data-utc-time="2025-09-06T18:16:14+00:00">
+                                2025-09-06 18:16:14
                             </span>
                         </div>
                     </div>
@@ -264,10 +264,6 @@
                         const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
                         const formattedDateTime = localTime.format('YYYY-MM-DD HH:mm:ss');
                         element.textContent = formattedDateTime;
-
-                        // 添加时区信息到title
-                        const timezone = dayjs.tz.guess();
-                        element.setAttribute('title', `UTC时间: ${utcTime}\n本地时区: ${timezone}`);
                     } catch (error) {
                         console.error('时间转换错误:', error);
                     }
