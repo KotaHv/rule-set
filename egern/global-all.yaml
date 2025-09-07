@@ -1,4 +1,4 @@
-# Total: 5276 rules
+# Total: 5280 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -1052,6 +1052,7 @@ domain_set:
 - assets.shazam.com
 - cdn.sheetjs.com
 - dassets.shimano.com
+- sourcemap.webfe.shopeemobile.com
 - cdn.shopify.com
 - media.shopimind.com
 - cdn.shoplineapp.com
@@ -1290,6 +1291,7 @@ domain_set:
 - i.xxxshake.com
 - static.xxxshake.com
 - jac.yahoosandbox.com
+- cdn.yamibuy.com
 - mirror.yannic-bonenberger.com
 - bookface-static.ycombinator.com
 - news.ycombinator.com
@@ -1491,6 +1493,7 @@ domain_set:
 - assets.safing.io
 - cdn.sanity.io
 - images.scalero.io
+- files.webfe.shopee.io
 - cdn.simplelocalize.io
 - edge.sitecorecloud.io
 - js.smile.io
@@ -1835,6 +1838,7 @@ domain_set:
 - dl2.xmind.net
 - dl3.xmind.net
 - assets.video.yahoo.net
+- cdn.yamibuy.net
 - cdn.ywxi.net
 - vjs.zencdn.net
 - mixin-images.zeromesh.net

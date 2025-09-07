@@ -1,4 +1,4 @@
-# Total: 3898 rules
+# Total: 3903 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -60,6 +60,7 @@ domain_set:
 - cdn.micro.blog
 - turbo.build
 - cdn.adsninja.ca
+- img.apk.cafe
 - assets.toot.cafe
 - oss.moe.cat
 - cdn.arduino.cc
@@ -1467,6 +1468,7 @@ domain_set:
 - assets.shazam.com
 - cdn.sheetjs.com
 - dassets.shimano.com
+- sourcemap.webfe.shopeemobile.com
 - cdn.shopify.com
 - media.shopimind.com
 - cdn.shoplineapp.com
@@ -1816,6 +1818,7 @@ domain_set:
 - content-cdn.y2mate.com
 - yep.video.yahoo.com
 - jac.yahoosandbox.com
+- cdn.yamibuy.com
 - bookface-static.ycombinator.com
 - design-system.yext.com
 - cdn-loyalty.yotpo.com
@@ -2040,6 +2043,7 @@ domain_set:
 - cdn.sanity.io
 - images.scalero.io
 - wire.shodan.io
+- files.webfe.shopee.io
 - js.short.io
 - cdn.simplelocalize.io
 - edge.sitecorecloud.io
@@ -2410,6 +2414,7 @@ domain_set:
 - cdn.xeiaso.net
 - assets.xmind.net
 - assets.video.yahoo.net
+- cdn.yamibuy.net
 - favicon.yandex.net
 - avatars.mds.yandex.net
 - s3-zen.mds.yandex.net
