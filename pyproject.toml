@@ -22,12 +22,42 @@ dependencies = [
 ]
 
 [project.scripts]
-"rule-set" = "rule_set:main"
-"logical" = "deserialize:print_rule_tree"
-"format" = "format:main"
-"gen-pages" = "gen_pages:main"
+"rule-set" = "rule_set.__main__:main"
+"logic" = "rule_set.parsers.logic:print_rule_tree"
+"format" = "rule_set.format:main"
+"gen-pages" = "rule_set.pages.cli:main"
 
 
 [build-system]
 requires = ["uv_build>=0.8.8,<0.9.0"]
 build-backend = "uv_build"
+
+[tool.ruff]
+target-version = "py313"
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+    "B",      # flake8-bugbear
+    "C4",     # flake8-comprehensions
+    "UP",     # pyupgrade
+    "ARG001", # unused arguments in functions
+]
+
+ignore = [
+    "E501", # line too long
+]
+
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = [
+    # Whitelisted default arguments
+    "typer.Option",
+]
+
+[tool.ruff.lint.pyupgrade]
+# Preserve types, even if a file imports `from __future__ import annotations`.
+keep-runtime-typing = true

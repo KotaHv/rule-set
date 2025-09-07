@@ -1,0 +1,48 @@
+from loguru import logger
+
+from rule_set.models import DomainType, RuleModel
+from rule_set.parsers import logic
+from rule_set.utils import is_logical_keyword, validate_domain
+
+from .base import BaseParser
+
+
+class RuleSetParser(BaseParser):
+    def parse(self) -> RuleModel:
+        for line in self.data_lines:
+            processed_line = line.split(",")
+            rule_type, rule = processed_line[0].lower(), processed_line[1].strip()
+            if rule_type == "domain":
+                if not validate_domain(rule):
+                    logger.warning(f"Invalid domain: '{rule}'")
+                    continue
+                self.result.domain_trie.add(rule, DomainType.DOMAIN)
+            elif rule_type == "domain-suffix":
+                if not validate_domain(rule):
+                    logger.warning(f"Invalid domain: '{rule}'")
+                    continue
+                self.result.domain_trie.add(rule, DomainType.DOMAIN_SUFFIX)
+            elif rule_type == "domain-keyword":
+                self.result.domain_keyword.add(rule)
+            elif rule_type == "domain-wildcard":
+                self.result.domain_trie.add(rule, DomainType.DOMAIN_WILDCARD)
+            elif rule_type == "ip-cidr":
+                self.result.ip_trie.add(rule)
+            elif rule_type == "ip-cidr6":
+                self.result.ip_trie6.add(rule)
+            elif rule_type == "ip-asn":
+                self.result.ip_asn.add(rule)
+            elif rule_type == "user-agent":
+                self.result.ua.add(rule)
+            elif rule_type == "process-name":
+                self.result.process.add(rule)
+            elif is_logical_keyword(rule_type):
+                node = logic.parse(line)
+                if node is None:
+                    continue
+                self.result.logical.add(node)
+            elif rule_type == "url-regex":
+                self.result.url_regex.add(rule)
+            else:
+                logger.warning(line)
+        return self.result
