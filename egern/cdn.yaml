@@ -1,4 +1,4 @@
-# Total: 3903 rules
+# Total: 3908 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -46,6 +46,7 @@ domain_set:
 - cdn.matterhorn.app
 - disco-static.productessentials.app
 - cdn.rive.app
+- assets.slater.app
 - phishing.army
 - i.snap.as
 - tags.news.com.au
@@ -411,7 +412,9 @@ domain_set:
 - assets.chess24.com
 - cdn.chess24.com
 - static.chessarena.com
+- banners.chessbase.com
 - resources.chessbase.com
+- share.chessbase.com
 - js.chilipiper.com
 - sf-flow-web-cdn.ciciai.com
 - assets-app.circleci.com
@@ -2148,6 +2151,7 @@ domain_set:
 - api.crashguard.me
 - cdn.daradara.me
 - media.e4le.me
+- cdn.fasterthanli.me
 - static.fboom.me
 - static-cache.fboom.me
 - static.fbot.me
@@ -3784,6 +3788,7 @@ domain_suffix_set:
 - zenwave56.site
 - cdn-zlib.sk
 - pstorage.space
+- tutu1.space
 - shoppulse88.store
 - surrit.store
 - photocdn.stream

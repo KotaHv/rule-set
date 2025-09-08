@@ -1,4 +1,4 @@
-# Total: 5280 rules
+# Total: 5285 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -19,6 +19,7 @@ domain_set:
 - builds.parsec.app
 - disco-static.productessentials.app
 - cdn.rive.app
+- assets.slater.app
 - dl.vanadium.app
 - su.virtualbuddy.app
 - apache.mesi.com.ar
@@ -328,7 +329,9 @@ domain_set:
 - assets.chess24.com
 - cdn.chess24.com
 - static.chessarena.com
+- banners.chessbase.com
 - resources.chessbase.com
+- share.chessbase.com
 - js.chilipiper.com
 - sf-flow-web-cdn.ciciai.com
 - image.civitai.com
@@ -1547,6 +1550,7 @@ domain_set:
 - api.crashguard.me
 - cdn.daradara.me
 - media.e4le.me
+- cdn.fasterthanli.me
 - static.fboom.me
 - static-cache.fboom.me
 - static.fbot.me
@@ -5081,6 +5085,7 @@ domain_suffix_set:
 - jetbrains.space
 - pstorage.space
 - telegram.space
+- tutu1.space
 - st
 - shoppulse88.store
 - surrit.store

@@ -1,4 +1,4 @@
-# Total: 5156 rules
+# Total: 5161 rules
 'payload':
 - 'mirror.host.ag'
 - 'cdn.7tv.app'
@@ -18,6 +18,7 @@
 - 'builds.parsec.app'
 - 'disco-static.productessentials.app'
 - 'cdn.rive.app'
+- 'assets.slater.app'
 - 'dl.vanadium.app'
 - 'su.virtualbuddy.app'
 - 'apache.mesi.com.ar'
@@ -327,7 +328,9 @@
 - 'assets.chess24.com'
 - 'cdn.chess24.com'
 - 'static.chessarena.com'
+- 'banners.chessbase.com'
 - 'resources.chessbase.com'
+- 'share.chessbase.com'
 - 'js.chilipiper.com'
 - 'sf-flow-web-cdn.ciciai.com'
 - 'image.civitai.com'
@@ -1546,6 +1549,7 @@
 - 'api.crashguard.me'
 - 'cdn.daradara.me'
 - 'media.e4le.me'
+- 'cdn.fasterthanli.me'
 - 'static.fboom.me'
 - 'static-cache.fboom.me'
 - 'static.fbot.me'
@@ -5079,6 +5083,7 @@
 - '+.jetbrains.space'
 - '+.pstorage.space'
 - '+.telegram.space'
+- '+.tutu1.space'
 - '+.st'
 - '+.shoppulse88.store'
 - '+.surrit.store'

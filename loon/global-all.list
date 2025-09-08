@@ -1,4 +1,4 @@
-# Total: 5297 rules
+# Total: 5302 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -17,6 +17,7 @@ DOMAIN,cdn.organicmaps.app
 DOMAIN,builds.parsec.app
 DOMAIN,disco-static.productessentials.app
 DOMAIN,cdn.rive.app
+DOMAIN,assets.slater.app
 DOMAIN,dl.vanadium.app
 DOMAIN,su.virtualbuddy.app
 DOMAIN,apache.mesi.com.ar
@@ -326,7 +327,9 @@ DOMAIN,app.chatwoot.com
 DOMAIN,assets.chess24.com
 DOMAIN,cdn.chess24.com
 DOMAIN,static.chessarena.com
+DOMAIN,banners.chessbase.com
 DOMAIN,resources.chessbase.com
+DOMAIN,share.chessbase.com
 DOMAIN,js.chilipiper.com
 DOMAIN,sf-flow-web-cdn.ciciai.com
 DOMAIN,image.civitai.com
@@ -1545,6 +1548,7 @@ DOMAIN,emoji-css.afeld.me
 DOMAIN,api.crashguard.me
 DOMAIN,cdn.daradara.me
 DOMAIN,media.e4le.me
+DOMAIN,cdn.fasterthanli.me
 DOMAIN,static.fboom.me
 DOMAIN,static-cache.fboom.me
 DOMAIN,static.fbot.me
@@ -5078,6 +5082,7 @@ DOMAIN-SUFFIX,social
 DOMAIN-SUFFIX,jetbrains.space
 DOMAIN-SUFFIX,pstorage.space
 DOMAIN-SUFFIX,telegram.space
+DOMAIN-SUFFIX,tutu1.space
 DOMAIN-SUFFIX,st
 DOMAIN-SUFFIX,shoppulse88.store
 DOMAIN-SUFFIX,surrit.store

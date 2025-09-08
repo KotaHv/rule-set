@@ -1,4 +1,4 @@
-# Total: 3850 rules
+# Total: 3855 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,assets.cloudpilot.ai
@@ -44,6 +44,7 @@ DOMAIN,pic.macked.app
 DOMAIN,cdn.matterhorn.app
 DOMAIN,disco-static.productessentials.app
 DOMAIN,cdn.rive.app
+DOMAIN,assets.slater.app
 DOMAIN,phishing.army
 DOMAIN,i.snap.as
 DOMAIN,tags.news.com.au
@@ -409,7 +410,9 @@ DOMAIN,assets-themes.chess.com
 DOMAIN,assets.chess24.com
 DOMAIN,cdn.chess24.com
 DOMAIN,static.chessarena.com
+DOMAIN,banners.chessbase.com
 DOMAIN,resources.chessbase.com
+DOMAIN,share.chessbase.com
 DOMAIN,js.chilipiper.com
 DOMAIN,sf-flow-web-cdn.ciciai.com
 DOMAIN,assets-app.circleci.com
@@ -2146,6 +2149,7 @@ DOMAIN,emoji-css.afeld.me
 DOMAIN,api.crashguard.me
 DOMAIN,cdn.daradara.me
 DOMAIN,media.e4le.me
+DOMAIN,cdn.fasterthanli.me
 DOMAIN,static.fboom.me
 DOMAIN,static-cache.fboom.me
 DOMAIN,static.fbot.me
@@ -3781,6 +3785,7 @@ DOMAIN-SUFFIX,registry.gitplac.si
 DOMAIN-SUFFIX,zenwave56.site
 DOMAIN-SUFFIX,cdn-zlib.sk
 DOMAIN-SUFFIX,pstorage.space
+DOMAIN-SUFFIX,tutu1.space
 DOMAIN-SUFFIX,shoppulse88.store
 DOMAIN-SUFFIX,surrit.store
 DOMAIN-SUFFIX,photocdn.stream

@@ -1,4 +1,4 @@
-# Total: 592 rules
+# Total: 593 rules
 payload:
 - DOMAIN-WILDCARD,support-metahelpcenter-id*.netlify.app
 - DOMAIN-WILDCARD,tw-726620180914.*.run.app
@@ -383,6 +383,7 @@ payload:
 - DOMAIN-WILDCARD,marketplace-item-*.000.pe
 - DOMAIN-WILDCARD,zbb.bbb.*.pics
 - DOMAIN-WILDCARD,ad*.bilgin.pro
+- DOMAIN-WILDCARD,gov.*.qpon
 - DOMAIN-WILDCARD,alishop*.ru
 - DOMAIN-WILDCARD,ssp*.rtb.beeline.ru
 - DOMAIN-WILDCARD,rum*.cdnvideo.ru
