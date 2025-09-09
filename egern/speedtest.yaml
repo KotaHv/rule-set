@@ -1,4 +1,4 @@
-# Total: 1467 rules
+# Total: 1469 rules
 no_resolve: true
 domain_set:
 - speedtest.58243.as
@@ -1107,6 +1107,7 @@ domain_set:
 - speed.telcomnetwork.net
 - speedtest.telerys.net
 - hkthspeedtest02.telstraglobal.net
+- ookla.mia.teracast.net
 - dal-speedtest.transtelco.net
 - st0.dal.tularosa.net
 - speedtest.turnkeyinternet.net
@@ -1220,6 +1221,7 @@ domain_set:
 - speedtest.singnet.com.sg
 - speedtest-sg1.simba.sg
 - speedtest2.telin.sg
+- ogtm-speedtest.f5.si
 - speedtest.nehost.site
 - speedtest.sits.su
 - speedtest.vnet.su

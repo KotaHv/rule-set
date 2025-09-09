@@ -1,4 +1,4 @@
-# Total: 5285 rules
+# Total: 5292 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -140,6 +140,7 @@ domain_set:
 - wwwimages2.adobe.com
 - assets.adobedtm.com
 - mirrors.advancedhosters.com
+- cdn1.affirm.com
 - static.afterpay.com
 - static-us.afterpay.com
 - static.ahrefs.com
@@ -479,6 +480,8 @@ domain_set:
 - mirror2.evolution-host.com
 - mirror.evowise.com
 - mirrors.evowise.com
+- web-sdk.eyefitu.com
+- web-sdk-cdn.eyefitu.com
 - cdn.faire.com
 - images.fandango.com
 - live.fanmingming.com
@@ -553,6 +556,8 @@ domain_set:
 - cdn.gettr.com
 - media.gettr.com
 - mirror.ghproxy.com
+- images2.giant-bicycles.com
+- static.giant-bicycles.com
 - download.gigabyte.com
 - mirrors.gigenet.com
 - cdn.gigya.com
@@ -638,6 +643,7 @@ domain_set:
 - static.incapsula.com
 - spcdn.incartupsell.com
 - jssocdn.indiatimes.com
+- static.inflect.com
 - static.iris.informa.com
 - img.informer.com
 - cwsimages.ingramcontent.com
@@ -1232,6 +1238,7 @@ domain_set:
 - static-assets.vinted.com
 - app.viral-loops.com
 - cdn.virtuoussoftware.com
+- bigfiles.virustotal.com
 - static.global.visioncritical.com
 - static.na1.visioncritical.com
 - live.visually-io.com

@@ -1,4 +1,4 @@
-# Total: 1173 rules
+# Total: 1177 rules
 'payload':
 - 'mirror.host.ag'
 - 'updates.istatmenus.app'
@@ -76,6 +76,9 @@
 - 'go-updater.brave.com'
 - 'updates.bravesoftware.com'
 - 'updates-cdn.bravesoftware.com'
+- 'downloads.broadcom.com'
+- 'downloads2.broadcom.com'
+- 'ftpdownloads.broadcom.com'
 - 'dl.circleci.com'
 - 'vfat.classicreload.com'
 - 'dl.cleverfiles.com'
@@ -203,6 +206,7 @@
 - 'download.todesktop.com'
 - 'security.ubuntu.com'
 - 'dl.ui.com'
+- 'bigfiles.virustotal.com'
 - 'update.code.visualstudio.com'
 - 'dl.wechat.com'
 - 'mirrors.whoishostingthis.com'

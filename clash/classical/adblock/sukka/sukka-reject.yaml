@@ -1,4 +1,4 @@
-# Total: 593 rules
+# Total: 594 rules
 payload:
 - DOMAIN-WILDCARD,support-metahelpcenter-id*.netlify.app
 - DOMAIN-WILDCARD,tw-726620180914.*.run.app
@@ -170,6 +170,7 @@ payload:
 - DOMAIN-WILDCARD,log*-normal-useast1a.lemon8-app.com
 - DOMAIN-WILDCARD,mcs-*.lemon8-app.com
 - DOMAIN-WILDCARD,mon-*.lemon8-app.com
+- DOMAIN-WILDCARD,*.libaishuo.com
 - DOMAIN-WILDCARD,msoftupdate.*.linodeobjects.com
 - DOMAIN-WILDCARD,collector-*.luigisbox.com
 - DOMAIN-WILDCARD,tracking.*.miui.com

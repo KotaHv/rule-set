@@ -1,4 +1,4 @@
-# Total: 1181 rules
+# Total: 1185 rules
 DOMAIN,mirror.host.ag
 DOMAIN,updates.istatmenus.app
 DOMAIN,dl.motrix.app
@@ -75,6 +75,9 @@ DOMAIN,componentupdater.brave.com
 DOMAIN,go-updater.brave.com
 DOMAIN,updates.bravesoftware.com
 DOMAIN,updates-cdn.bravesoftware.com
+DOMAIN,downloads.broadcom.com
+DOMAIN,downloads2.broadcom.com
+DOMAIN,ftpdownloads.broadcom.com
 DOMAIN,dl.circleci.com
 DOMAIN,vfat.classicreload.com
 DOMAIN,dl.cleverfiles.com
@@ -202,6 +205,7 @@ DOMAIN,autoupdate.termius.com
 DOMAIN,download.todesktop.com
 DOMAIN,security.ubuntu.com
 DOMAIN,dl.ui.com
+DOMAIN,bigfiles.virustotal.com
 DOMAIN,update.code.visualstudio.com
 DOMAIN,dl.wechat.com
 DOMAIN,mirrors.whoishostingthis.com

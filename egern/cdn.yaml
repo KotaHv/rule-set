@@ -1,4 +1,4 @@
-# Total: 3908 rules
+# Total: 3915 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -173,6 +173,7 @@ domain_set:
 - assets.fonts.adobe.com
 - wwwimages2.adobe.com
 - assets.adobedtm.com
+- cdn1.affirm.com
 - static.afterpay.com
 - static-us.afterpay.com
 - static.ahrefs.com
@@ -616,6 +617,8 @@ domain_set:
 - cdn.evbstatic.com
 - cdntranscend.eventbrite.com
 - images.everyplate.com
+- web-sdk.eyefitu.com
+- web-sdk-cdn.eyefitu.com
 - graph.facebook.com
 - cdn.faire.com
 - images.fandango.com
@@ -739,6 +742,8 @@ domain_set:
 - static.gettyimages.com
 - cdn-1.ggjav.com
 - cdn.ghostery.com
+- images2.giant-bicycles.com
+- static.giant-bicycles.com
 - cdn.gigya.com
 - cdns.gigya.com
 - i.giphy.com
@@ -909,6 +914,7 @@ domain_set:
 - static.incapsula.com
 - spcdn.incartupsell.com
 - jssocdn.indiatimes.com
+- static.inflect.com
 - w2.influxdata.com
 - cdn.infoq.com
 - imgopt.infoq.com
@@ -2724,6 +2730,7 @@ domain_set:
 - media.orz.uno
 - cdn.donmai.us
 - eu01ccistatic.zoom.us
+- file.zoom.us
 - st1.zoom.us
 - st2.zoom.us
 - st3.zoom.us
