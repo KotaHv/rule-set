@@ -1,4 +1,4 @@
-# Total: 5174 rules
+# Total: 5176 rules
 'payload':
 - 'mirror.host.ag'
 - 'cdn.7tv.app'
@@ -646,6 +646,8 @@
 - 'go.imperva.com'
 - 'static.incapsula.com'
 - 'spcdn.incartupsell.com'
+- 'images.indianexpress.com'
+- 'media-central.indianexpress.com'
 - 'jssocdn.indiatimes.com'
 - 'static.inflect.com'
 - 'static.iris.informa.com'

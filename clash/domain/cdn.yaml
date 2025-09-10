@@ -1,4 +1,4 @@
-# Total: 3853 rules
+# Total: 3855 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -917,6 +917,8 @@
 - 'go.imperva.com'
 - 'static.incapsula.com'
 - 'spcdn.incartupsell.com'
+- 'images.indianexpress.com'
+- 'media-central.indianexpress.com'
 - 'jssocdn.indiatimes.com'
 - 'static.inflect.com'
 - 'w2.influxdata.com'

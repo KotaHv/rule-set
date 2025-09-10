@@ -1,4 +1,4 @@
-# Total: 3926 rules
+# Total: 3928 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -918,6 +918,8 @@ domain_set:
 - go.imperva.com
 - static.incapsula.com
 - spcdn.incartupsell.com
+- images.indianexpress.com
+- media-central.indianexpress.com
 - jssocdn.indiatimes.com
 - static.inflect.com
 - w2.influxdata.com

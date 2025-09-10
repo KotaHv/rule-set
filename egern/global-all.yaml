@@ -1,4 +1,4 @@
-# Total: 5298 rules
+# Total: 5300 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -647,6 +647,8 @@ domain_set:
 - go.imperva.com
 - static.incapsula.com
 - spcdn.incartupsell.com
+- images.indianexpress.com
+- media-central.indianexpress.com
 - jssocdn.indiatimes.com
 - static.inflect.com
 - static.iris.informa.com
