@@ -1,4 +1,4 @@
-# Total: 5292 rules
+# Total: 5298 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -26,6 +26,8 @@ domain_set:
 - cpan.mmgdesigns.com.ar
 - phishing.army
 - i.snap.as
+- bucket.noy.asia
+- img.noy.asia
 - mirror.yer.az
 - mirror.amberit.com.bd
 - i.111666.best
@@ -75,6 +77,7 @@ domain_set:
 - static.bit.cloud
 - cdn.bullwhip.cloud
 - media.cleanshot.cloud
+- cdn.craft.cloud
 - fscdn.eppo.cloud
 - patterns.hiive.cloud
 - cdn-builds.paw.cloud
@@ -323,6 +326,7 @@ domain_set:
 - js.chargebee.com
 - js1.chargebee.com
 - webstatic.chargebee.com
+- js.chargify.com
 - asset.chase.com
 - sites.chase.com
 - w.chatlio.com
@@ -545,6 +549,7 @@ domain_set:
 - certona.gap.com
 - a.gawby.com
 - i.gawby.com
+- account-widget-mfe.gcore.com
 - i.geekflare.com
 - maps.geoapify.com
 - geoip-js.com
@@ -766,6 +771,7 @@ domain_set:
 - lift-ai-js.marketlinc.com
 - c.marsflag.com
 - assets.mastercard.com
+- images.mathworks.com
 - twemoji.maxcdn.com
 - download.maxmind.com
 - static.maxmind.com
@@ -954,6 +960,8 @@ domain_set:
 - cdn.plus500.com
 - cdn-main.plus500.com
 - www.pngmart.com
+- js.pngtree.com
+- png.pngtree.com
 - media.pointandplace.com
 - assets.polarbyte.com
 - static.politico.com
@@ -1144,6 +1152,7 @@ domain_set:
 - events.tableplus.com
 - c.tadst.com
 - cdn-static.talent.com
+- gravatar.tapglb.com
 - www.tbstat.com
 - wpmedia.tealium.com
 - mirror.team-cymru.com
@@ -1338,8 +1347,6 @@ domain_set:
 - api.iconify.design
 - code.iconify.design
 - npm.antfu.dev
-- cdn.builderprofile.aws.dev
-- cdn.us-east-1.prod.moon.dubai.aws.dev
 - cdn.bfe.dev
 - static.bit.dev
 - download.clashverge.dev
@@ -1506,6 +1513,7 @@ domain_set:
 - files.webfe.shopee.io
 - cdn.simplelocalize.io
 - edge.sitecorecloud.io
+- static.smartframe.io
 - js.smile.io
 - cdn.smooch.io
 - media.smooch.io
@@ -3584,6 +3592,7 @@ domain_suffix_set:
 - sfdcstatic.com
 - shadowcomplex.com
 - shgcdn.com
+- cdn.shift8web.com
 - sho.com
 - shopifycdn.com
 - shoplineimg.com
@@ -4056,10 +4065,7 @@ domain_suffix_set:
 - ipfs.1-2.dev
 - amp.dev
 - angular.dev
-- marketing.aws.dev
-- cdn.chrome.marketplace.aws.dev
-- widgets.marketplace.aws.dev
-- assets.shortbread.aws.dev
+- aws.dev
 - dart.dev
 - dartpad.dev
 - delegated-ipfs.dev

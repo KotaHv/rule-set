@@ -1,4 +1,4 @@
-# Total: 5309 rules
+# Total: 5315 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -24,6 +24,8 @@ DOMAIN,apache.mesi.com.ar
 DOMAIN,cpan.mmgdesigns.com.ar
 DOMAIN,phishing.army
 DOMAIN,i.snap.as
+DOMAIN,bucket.noy.asia
+DOMAIN,img.noy.asia
 DOMAIN,mirror.yer.az
 DOMAIN,mirror.amberit.com.bd
 DOMAIN,i.111666.best
@@ -73,6 +75,7 @@ DOMAIN,cdn.bigcloud.click
 DOMAIN,static.bit.cloud
 DOMAIN,cdn.bullwhip.cloud
 DOMAIN,media.cleanshot.cloud
+DOMAIN,cdn.craft.cloud
 DOMAIN,fscdn.eppo.cloud
 DOMAIN,patterns.hiive.cloud
 DOMAIN,cdn-builds.paw.cloud
@@ -321,6 +324,7 @@ DOMAIN,cdn.changelog.com
 DOMAIN,js.chargebee.com
 DOMAIN,js1.chargebee.com
 DOMAIN,webstatic.chargebee.com
+DOMAIN,js.chargify.com
 DOMAIN,asset.chase.com
 DOMAIN,sites.chase.com
 DOMAIN,w.chatlio.com
@@ -543,6 +547,7 @@ DOMAIN,media.gamestop.com
 DOMAIN,certona.gap.com
 DOMAIN,a.gawby.com
 DOMAIN,i.gawby.com
+DOMAIN,account-widget-mfe.gcore.com
 DOMAIN,i.geekflare.com
 DOMAIN,maps.geoapify.com
 DOMAIN,geoip-js.com
@@ -764,6 +769,7 @@ DOMAIN,clickup.marketlinc.com
 DOMAIN,lift-ai-js.marketlinc.com
 DOMAIN,c.marsflag.com
 DOMAIN,assets.mastercard.com
+DOMAIN,images.mathworks.com
 DOMAIN,twemoji.maxcdn.com
 DOMAIN,download.maxmind.com
 DOMAIN,static.maxmind.com
@@ -952,6 +958,8 @@ DOMAIN,images.pling.com
 DOMAIN,cdn.plus500.com
 DOMAIN,cdn-main.plus500.com
 DOMAIN,www.pngmart.com
+DOMAIN,js.pngtree.com
+DOMAIN,png.pngtree.com
 DOMAIN,media.pointandplace.com
 DOMAIN,assets.polarbyte.com
 DOMAIN,static.politico.com
@@ -1142,6 +1150,7 @@ DOMAIN,cdn4.sysgears.com
 DOMAIN,events.tableplus.com
 DOMAIN,c.tadst.com
 DOMAIN,cdn-static.talent.com
+DOMAIN,gravatar.tapglb.com
 DOMAIN,www.tbstat.com
 DOMAIN,wpmedia.tealium.com
 DOMAIN,mirror.team-cymru.com
@@ -1336,8 +1345,6 @@ DOMAIN,mirrors.ucr.ac.cr
 DOMAIN,api.iconify.design
 DOMAIN,code.iconify.design
 DOMAIN,npm.antfu.dev
-DOMAIN,cdn.builderprofile.aws.dev
-DOMAIN,cdn.us-east-1.prod.moon.dubai.aws.dev
 DOMAIN,cdn.bfe.dev
 DOMAIN,static.bit.dev
 DOMAIN,download.clashverge.dev
@@ -1504,6 +1511,7 @@ DOMAIN,images.scalero.io
 DOMAIN,files.webfe.shopee.io
 DOMAIN,cdn.simplelocalize.io
 DOMAIN,edge.sitecorecloud.io
+DOMAIN,static.smartframe.io
 DOMAIN,js.smile.io
 DOMAIN,cdn.smooch.io
 DOMAIN,media.smooch.io
@@ -3581,6 +3589,7 @@ DOMAIN-SUFFIX,sfbassets.com
 DOMAIN-SUFFIX,sfdcstatic.com
 DOMAIN-SUFFIX,shadowcomplex.com
 DOMAIN-SUFFIX,shgcdn.com
+DOMAIN-SUFFIX,cdn.shift8web.com
 DOMAIN-SUFFIX,sho.com
 DOMAIN-SUFFIX,shopifycdn.com
 DOMAIN-SUFFIX,shoplineimg.com
@@ -4053,10 +4062,7 @@ DOMAIN-SUFFIX,ant.design
 DOMAIN-SUFFIX,ipfs.1-2.dev
 DOMAIN-SUFFIX,amp.dev
 DOMAIN-SUFFIX,angular.dev
-DOMAIN-SUFFIX,marketing.aws.dev
-DOMAIN-SUFFIX,cdn.chrome.marketplace.aws.dev
-DOMAIN-SUFFIX,widgets.marketplace.aws.dev
-DOMAIN-SUFFIX,assets.shortbread.aws.dev
+DOMAIN-SUFFIX,aws.dev
 DOMAIN-SUFFIX,dart.dev
 DOMAIN-SUFFIX,dartpad.dev
 DOMAIN-SUFFIX,delegated-ipfs.dev

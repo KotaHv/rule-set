@@ -1,4 +1,4 @@
-# Total: 3862 rules
+# Total: 3873 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,assets.cloudpilot.ai
@@ -47,6 +47,8 @@ DOMAIN,cdn.rive.app
 DOMAIN,assets.slater.app
 DOMAIN,phishing.army
 DOMAIN,i.snap.as
+DOMAIN,bucket.noy.asia
+DOMAIN,img.noy.asia
 DOMAIN,tags.news.com.au
 DOMAIN,styleguide-assets.shannons.com.au
 DOMAIN,res.abc.net.au
@@ -88,6 +90,7 @@ DOMAIN,cdn.bigcloud.click
 DOMAIN,static.bit.cloud
 DOMAIN,cdn.bullwhip.cloud
 DOMAIN,media.cleanshot.cloud
+DOMAIN,cdn.craft.cloud
 DOMAIN,fscdn.eppo.cloud
 DOMAIN,patterns.hiive.cloud
 DOMAIN,cdn-static.paw.cloud
@@ -403,6 +406,7 @@ DOMAIN,cdn.changelog.com
 DOMAIN,js.chargebee.com
 DOMAIN,js1.chargebee.com
 DOMAIN,webstatic.chargebee.com
+DOMAIN,js.chargify.com
 DOMAIN,asset.chase.com
 DOMAIN,sites.chase.com
 DOMAIN,w.chatlio.com
@@ -725,6 +729,7 @@ DOMAIN,media.gamestop.com
 DOMAIN,certona.gap.com
 DOMAIN,a.gawby.com
 DOMAIN,i.gawby.com
+DOMAIN,account-widget-mfe.gcore.com
 DOMAIN,i.geekflare.com
 DOMAIN,assets.genius.com
 DOMAIN,maps.geoapify.com
@@ -1080,6 +1085,7 @@ DOMAIN,clickup.marketlinc.com
 DOMAIN,lift-ai-js.marketlinc.com
 DOMAIN,c.marsflag.com
 DOMAIN,assets.mastercard.com
+DOMAIN,images.mathworks.com
 DOMAIN,twemoji.maxcdn.com
 DOMAIN,static.maxmind.com
 DOMAIN,resources.digital-cloud.medallia.com
@@ -1332,6 +1338,8 @@ DOMAIN,s.plurk.com
 DOMAIN,cdn.plus500.com
 DOMAIN,cdn-main.plus500.com
 DOMAIN,www.pngmart.com
+DOMAIN,js.pngtree.com
+DOMAIN,png.pngtree.com
 DOMAIN,pbcdn1.podbean.com
 DOMAIN,media.pointandplace.com
 DOMAIN,assets.polarbyte.com
@@ -1577,6 +1585,7 @@ DOMAIN,events.tableplus.com
 DOMAIN,c.tadst.com
 DOMAIN,cdn.tailwindcss.com
 DOMAIN,cdn-static.talent.com
+DOMAIN,gravatar.tapglb.com
 DOMAIN,www.tbstat.com
 DOMAIN,wpmedia.tealium.com
 DOMAIN,cdn0.techbang.com
@@ -2054,6 +2063,7 @@ DOMAIN,files.webfe.shopee.io
 DOMAIN,js.short.io
 DOMAIN,cdn.simplelocalize.io
 DOMAIN,edge.sitecorecloud.io
+DOMAIN,static.smartframe.io
 DOMAIN,js.smile.io
 DOMAIN,cdn.smooch.io
 DOMAIN,media.smooch.io
@@ -3271,6 +3281,7 @@ DOMAIN-SUFFIX,cdn.serverable.com
 DOMAIN-SUFFIX,sfbassets.com
 DOMAIN-SUFFIX,sfdcstatic.com
 DOMAIN-SUFFIX,shgcdn.com
+DOMAIN-SUFFIX,cdn.shift8web.com
 DOMAIN-SUFFIX,shopifycdn.com
 DOMAIN-SUFFIX,shoplineimg.com
 DOMAIN-SUFFIX,cdn.signalfx.com

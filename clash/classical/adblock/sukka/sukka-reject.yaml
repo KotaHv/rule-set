@@ -1,4 +1,4 @@
-# Total: 594 rules
+# Total: 595 rules
 payload:
 - DOMAIN-WILDCARD,support-metahelpcenter-id*.netlify.app
 - DOMAIN-WILDCARD,tw-726620180914.*.run.app
@@ -22,6 +22,7 @@ payload:
 - DOMAIN-WILDCARD,my-ee-*.web.app
 - DOMAIN-WILDCARD,mf*.advantage.as
 - DOMAIN-WILDCARD,banner*.kinogo.by
+- DOMAIN-WILDCARD,logstash-*.radio-canada.ca
 - DOMAIN-WILDCARD,vssid.*.cc
 - DOMAIN-WILDCARD,bitvavo*.cc
 - DOMAIN-WILDCARD,info-tracking*.cc

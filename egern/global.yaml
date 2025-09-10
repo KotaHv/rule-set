@@ -1,4 +1,4 @@
-# Total: 1605 rules
+# Total: 1606 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -912,6 +912,7 @@ domain_suffix_set:
 - de
 - ant.design
 - amp.dev
+- aws.dev
 - dart.dev
 - dartpad.dev
 - flow.dev

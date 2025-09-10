@@ -1,4 +1,4 @@
-# Total: 1587 rules
+# Total: 1588 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -910,6 +910,7 @@
 - '+.de'
 - '+.ant.design'
 - '+.amp.dev'
+- '+.aws.dev'
 - '+.dart.dev'
 - '+.dartpad.dev'
 - '+.flow.dev'
