@@ -1,6 +1,7 @@
-# Total: 3928 rules
+# Total: 3946 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
+DOMAIN,cdn.candy.ai
 DOMAIN,assets.cloudpilot.ai
 DOMAIN,limitless.cmax.ai
 DOMAIN,sdk.customfit.ai
@@ -204,10 +205,15 @@ DOMAIN,code.buywithprime.amazon.com
 DOMAIN,amazon-omni-cdn.com
 DOMAIN,ip-ranges.amazonaws.com
 DOMAIN,cdn.amcharts.com
+DOMAIN,cm1.aminoapps.com
 DOMAIN,images.anandtech.com
 DOMAIN,connectivitycheck.android.com
 DOMAIN,c.animaapp.com
 DOMAIN,static.animaapp.com
+DOMAIN,pa1.aninoapps.com
+DOMAIN,pm1.aninoapps.com
+DOMAIN,static.aninoapps.com
+DOMAIN,wa1.aninoapps.com
 DOMAIN,cdn.answeroverflow.com
 DOMAIN,a-cdn.anthropic.com
 DOMAIN,s-cdn.anthropic.com
@@ -257,6 +263,7 @@ DOMAIN,cdnb.artstation.com
 DOMAIN,cdn.ashbyprd.com
 DOMAIN,cdn77.ashemaletube.com
 DOMAIN,cdn77-t.ashemaletube.com
+DOMAIN,js.assemblyexchange.com
 DOMAIN,assets.atlasobscura.com
 DOMAIN,img.atlasobscura.com
 DOMAIN,atl-global.atlassian.com
@@ -731,6 +738,9 @@ DOMAIN,a.gawby.com
 DOMAIN,i.gawby.com
 DOMAIN,account-widget-mfe.gcore.com
 DOMAIN,i.geekflare.com
+DOMAIN,img2.gelbooru.com
+DOMAIN,img4.gelbooru.com
+DOMAIN,img5.gelbooru.com
 DOMAIN,assets.genius.com
 DOMAIN,maps.geoapify.com
 DOMAIN,geoip-js.com
@@ -1305,6 +1315,7 @@ DOMAIN,c6.patreon.com
 DOMAIN,c7.patreon.com
 DOMAIN,c8.patreon.com
 DOMAIN,pics.paypal.com
+DOMAIN,www.paypalobjects.com
 DOMAIN,pcdn-my.pcloud.com
 DOMAIN,pcdn-www.pcloud.com
 DOMAIN,i.pcmag.com
@@ -1695,6 +1706,9 @@ DOMAIN,cdn.unrealengine.com
 DOMAIN,cdn1.unrealengine.com
 DOMAIN,cdn2.unrealengine.com
 DOMAIN,cdn3.unrealengine.com
+DOMAIN,cms-assets.unrealengine.com
+DOMAIN,components.unrealengine.com
+DOMAIN,static-assets-prod.unrealengine.com
 DOMAIN,images.unsplash.com
 DOMAIN,plus.unsplash.com
 DOMAIN,source.unsplash.com
@@ -1871,6 +1885,7 @@ DOMAIN,barracuda-cdn.zoovu.com
 DOMAIN,static.zuora.com
 DOMAIN,cimg.cnyes.cool
 DOMAIN,sfiles.cnyes.cool
+DOMAIN,www.acgpix.de
 DOMAIN,cdn.ionos.de
 DOMAIN,sp-spiegel-de.spiegel.de
 DOMAIN,cdn.prod.www.spiegel.de
@@ -1889,6 +1904,7 @@ DOMAIN,plugins.dprint.dev
 DOMAIN,fiddle.fastly.dev
 DOMAIN,assets.github.dev
 DOMAIN,stats.setapp.macpaw.dev
+DOMAIN,ah-cdn.merge.dev
 DOMAIN,cdn-web.orbstack.dev
 DOMAIN,cdn.pika.dev
 DOMAIN,pkg-size.dev
@@ -2441,6 +2457,8 @@ DOMAIN,s3-zen.mds.yandex.net
 DOMAIN,resize.yandex.net
 DOMAIN,cdn.ywxi.net
 DOMAIN,vjs.zencdn.net
+DOMAIN,s1.zerochan.net
+DOMAIN,static.zerochan.net
 DOMAIN,mixin-images.zeromesh.net
 DOMAIN,content.api.news
 DOMAIN,static.bad.news

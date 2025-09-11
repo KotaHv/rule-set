@@ -1,4 +1,4 @@
-# Total: 5364 rules
+# Total: 5372 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -87,8 +87,6 @@ DOMAIN,store.ui.com.cn
 DOMAIN,cdn.17app.co
 DOMAIN,log-collector.17app.co
 DOMAIN,webcdn.17app.co
-DOMAIN,s3.anilist.co
-DOMAIN,s4.anilist.co
 DOMAIN,cdn.cloudcraft.co
 DOMAIN,load.csell.co
 DOMAIN,cdn.decrypt.co
@@ -167,9 +165,14 @@ DOMAIN,mirrors.aliyun.com
 DOMAIN,oaos-resources.allstate.com
 DOMAIN,resources.allstate.com
 DOMAIN,cdn.amcharts.com
+DOMAIN,cm1.aminoapps.com
 DOMAIN,images.anandtech.com
 DOMAIN,c.animaapp.com
 DOMAIN,static.animaapp.com
+DOMAIN,pa1.aninoapps.com
+DOMAIN,pm1.aninoapps.com
+DOMAIN,static.aninoapps.com
+DOMAIN,wa1.aninoapps.com
 DOMAIN,cdn.answeroverflow.com
 DOMAIN,a-cdn.anthropic.com
 DOMAIN,s-cdn.anthropic.com
@@ -208,6 +211,7 @@ DOMAIN,files.armorgames.com
 DOMAIN,wa.arounddeal.com
 DOMAIN,cdn.ashbyprd.com
 DOMAIN,gnu.askapache.com
+DOMAIN,js.assemblyexchange.com
 DOMAIN,dlcdnets.asus.com
 DOMAIN,assets.atlasobscura.com
 DOMAIN,img.atlasobscura.com
@@ -1359,6 +1363,7 @@ DOMAIN,fiddle.fastly.dev
 DOMAIN,dl.getaurora.dev
 DOMAIN,stats.setapp.macpaw.dev
 DOMAIN,drive.massgrave.dev
+DOMAIN,ah-cdn.merge.dev
 DOMAIN,cdn.pika.dev
 DOMAIN,pkg-size.dev
 DOMAIN,static.reo.dev
@@ -2175,6 +2180,7 @@ DOMAIN-SUFFIX,xoom.net.cn
 DOMAIN-SUFFIX,softonic.cn
 DOMAIN-SUFFIX,szjal.cn
 DOMAIN-SUFFIX,xn--bnq297cix3a.cn
+DOMAIN-SUFFIX,anilist.co
 DOMAIN-SUFFIX,widget.clutch.co
 DOMAIN-SUFFIX,convertio.co
 DOMAIN-SUFFIX,doodcdn.co
@@ -2803,6 +2809,7 @@ DOMAIN-SUFFIX,scripts.gatorapi.com
 DOMAIN-SUFFIX,gayzyimage.com
 DOMAIN-SUFFIX,gcld-line.com
 DOMAIN-SUFFIX,geekbench.com
+DOMAIN-SUFFIX,gelbooru.com
 DOMAIN-SUFFIX,gemfury.com
 DOMAIN-SUFFIX,genius.com
 DOMAIN-SUFFIX,genshinimpact.com
@@ -4736,6 +4743,7 @@ DOMAIN-SUFFIX,storage.yandexcloud.net
 DOMAIN-SUFFIX,yastatic.net
 DOMAIN-SUFFIX,ynoproject.net
 DOMAIN-SUFFIX,z4a.net
+DOMAIN-SUFFIX,zerochan.net
 DOMAIN-SUFFIX,network
 DOMAIN-SUFFIX,cdn.neustar
 DOMAIN-SUFFIX,new

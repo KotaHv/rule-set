@@ -1,8 +1,9 @@
-# Total: 3928 rules
+# Total: 3946 rules
 no_resolve: true
 domain_set:
 - rules.ac
 - cdn.aimerce.ai
+- cdn.candy.ai
 - assets.cloudpilot.ai
 - limitless.cmax.ai
 - sdk.customfit.ai
@@ -206,10 +207,15 @@ domain_set:
 - amazon-omni-cdn.com
 - ip-ranges.amazonaws.com
 - cdn.amcharts.com
+- cm1.aminoapps.com
 - images.anandtech.com
 - connectivitycheck.android.com
 - c.animaapp.com
 - static.animaapp.com
+- pa1.aninoapps.com
+- pm1.aninoapps.com
+- static.aninoapps.com
+- wa1.aninoapps.com
 - cdn.answeroverflow.com
 - a-cdn.anthropic.com
 - s-cdn.anthropic.com
@@ -259,6 +265,7 @@ domain_set:
 - cdn.ashbyprd.com
 - cdn77.ashemaletube.com
 - cdn77-t.ashemaletube.com
+- js.assemblyexchange.com
 - assets.atlasobscura.com
 - img.atlasobscura.com
 - atl-global.atlassian.com
@@ -733,6 +740,9 @@ domain_set:
 - i.gawby.com
 - account-widget-mfe.gcore.com
 - i.geekflare.com
+- img2.gelbooru.com
+- img4.gelbooru.com
+- img5.gelbooru.com
 - assets.genius.com
 - maps.geoapify.com
 - geoip-js.com
@@ -1307,6 +1317,7 @@ domain_set:
 - c7.patreon.com
 - c8.patreon.com
 - pics.paypal.com
+- www.paypalobjects.com
 - pcdn-my.pcloud.com
 - pcdn-www.pcloud.com
 - i.pcmag.com
@@ -1697,6 +1708,9 @@ domain_set:
 - cdn1.unrealengine.com
 - cdn2.unrealengine.com
 - cdn3.unrealengine.com
+- cms-assets.unrealengine.com
+- components.unrealengine.com
+- static-assets-prod.unrealengine.com
 - images.unsplash.com
 - plus.unsplash.com
 - source.unsplash.com
@@ -1873,6 +1887,7 @@ domain_set:
 - static.zuora.com
 - cimg.cnyes.cool
 - sfiles.cnyes.cool
+- www.acgpix.de
 - cdn.ionos.de
 - sp-spiegel-de.spiegel.de
 - cdn.prod.www.spiegel.de
@@ -1891,6 +1906,7 @@ domain_set:
 - fiddle.fastly.dev
 - assets.github.dev
 - stats.setapp.macpaw.dev
+- ah-cdn.merge.dev
 - cdn-web.orbstack.dev
 - cdn.pika.dev
 - pkg-size.dev
@@ -2443,6 +2459,8 @@ domain_set:
 - resize.yandex.net
 - cdn.ywxi.net
 - vjs.zencdn.net
+- s1.zerochan.net
+- static.zerochan.net
 - mixin-images.zeromesh.net
 - content.api.news
 - static.bad.news

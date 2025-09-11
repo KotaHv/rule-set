@@ -1,4 +1,4 @@
-# Total: 1606 rules
+# Total: 1609 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -81,6 +81,7 @@ domain_suffix_set:
 - xoom.net.cn
 - softonic.cn
 - xn--bnq297cix3a.cn
+- anilist.co
 - convertio.co
 - feeder.co
 - fury.co
@@ -354,6 +355,7 @@ domain_suffix_set:
 - gartner.com
 - gcld-line.com
 - geekbench.com
+- gelbooru.com
 - gemfury.com
 - genius.com
 - getbootstrap.com
@@ -1277,6 +1279,7 @@ domain_suffix_set:
 - windows.net
 - wsj.net
 - yandex.net
+- zerochan.net
 - network
 - new
 - bad.news
