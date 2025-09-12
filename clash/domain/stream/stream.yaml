@@ -1,4 +1,4 @@
-# Total: 249 rules
+# Total: 250 rules
 'payload':
 - '44wilhpljf.execute-api.ap-southeast-1.amazonaws.com'
 - 'hls.itunes.apple.com'
@@ -236,6 +236,7 @@
 - '+.viu.tv'
 - '+.bahamut.com.tw'
 - '+.ani.gamer.com.tw'
+- '+.api.gamer.com.tw'
 - '+.kkbox.com.tw'
 - '+.kktv.com.tw'
 - '+.skyking.com.tw'

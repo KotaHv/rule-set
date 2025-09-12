@@ -1,4 +1,4 @@
-# Total: 282 rules
+# Total: 283 rules
 no_resolve: true
 domain_set:
 - 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
@@ -238,6 +238,7 @@ domain_suffix_set:
 - viu.tv
 - bahamut.com.tw
 - ani.gamer.com.tw
+- api.gamer.com.tw
 - kkbox.com.tw
 - kktv.com.tw
 - skyking.com.tw

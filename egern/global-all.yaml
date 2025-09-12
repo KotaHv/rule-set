@@ -1,4 +1,4 @@
-# Total: 5308 rules
+# Total: 5311 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -342,6 +342,7 @@ domain_set:
 - resources.chessbase.com
 - share.chessbase.com
 - js.chilipiper.com
+- static.chrome-stats.com
 - sf-flow-web-cdn.ciciai.com
 - image.civitai.com
 - vfat.classicreload.com
@@ -880,6 +881,7 @@ domain_set:
 - cdn.nfcube.com
 - i.niupic.com
 - cms-assets.nodecraft.com
+- cdn.northropgrumman.com
 - connect.nosto.com
 - images.now-tv.com
 - cdn.nperf.com
@@ -3704,6 +3706,7 @@ domain_suffix_set:
 - strava.com
 - streamable.com
 - streamhk.com
+- striiiipst.com
 - strikingly.com
 - strikinglycdn.com
 - stripcdn.com

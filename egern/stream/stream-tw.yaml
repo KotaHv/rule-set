@@ -1,4 +1,4 @@
-# Total: 30 rules
+# Total: 31 rules
 no_resolve: true
 domain_set:
 - 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
@@ -29,6 +29,7 @@ domain_suffix_set:
 - 4gtv.tv
 - bahamut.com.tw
 - ani.gamer.com.tw
+- api.gamer.com.tw
 - kktv.com.tw
 - hbogoasia.tw
 - linetv.tw

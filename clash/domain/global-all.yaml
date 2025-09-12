@@ -1,4 +1,4 @@
-# Total: 5184 rules
+# Total: 5187 rules
 'payload':
 - 'mirror.host.ag'
 - 'cdn.7tv.app'
@@ -341,6 +341,7 @@
 - 'resources.chessbase.com'
 - 'share.chessbase.com'
 - 'js.chilipiper.com'
+- 'static.chrome-stats.com'
 - 'sf-flow-web-cdn.ciciai.com'
 - 'image.civitai.com'
 - 'vfat.classicreload.com'
@@ -879,6 +880,7 @@
 - 'cdn.nfcube.com'
 - 'i.niupic.com'
 - 'cms-assets.nodecraft.com'
+- 'cdn.northropgrumman.com'
 - 'connect.nosto.com'
 - 'images.now-tv.com'
 - 'cdn.nperf.com'
@@ -3702,6 +3704,7 @@
 - '+.strava.com'
 - '+.streamable.com'
 - '+.streamhk.com'
+- '+.striiiipst.com'
 - '+.strikingly.com'
 - '+.strikinglycdn.com'
 - '+.stripcdn.com'

@@ -1,4 +1,4 @@
-# Total: 3946 rules
+# Total: 3949 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -428,6 +428,7 @@ domain_set:
 - resources.chessbase.com
 - share.chessbase.com
 - js.chilipiper.com
+- static.chrome-stats.com
 - sf-flow-web-cdn.ciciai.com
 - assets-app.circleci.com
 - assets-docs.circleci.com
@@ -1229,6 +1230,7 @@ domain_set:
 - i.niupic.com
 - cms-assets.nodecraft.com
 - edge.nodeseek.com
+- cdn.northropgrumman.com
 - connect.nosto.com
 - images-news.now.com
 - images-sports.now.com
@@ -3350,6 +3352,7 @@ domain_suffix_set:
 - a.storyblok.com
 - media.strapiapp.com
 - streamhk.com
+- striiiipst.com
 - stripcdn.com
 - stripeassets.com
 - stripecdn.com
