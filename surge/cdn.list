@@ -1,4 +1,4 @@
-# Total: 3949 rules
+# Total: 3954 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -1411,6 +1411,7 @@ DOMAIN,quriobot.com
 DOMAIN,s1.qwant.com
 DOMAIN,s2.qwant.com
 DOMAIN,static.rakuten.com
+DOMAIN,cacerts.rapidssl.com
 DOMAIN,assets.raspberrypi.com
 DOMAIN,cdn-rdstaticassets.readdle.com
 DOMAIN,assets-www.readspeaker.com
@@ -1440,6 +1441,8 @@ DOMAIN,img.riskified.com
 DOMAIN,api.roboflow.com
 DOMAIN,app.roboflow.com
 DOMAIN,cdn.roboflow.com
+DOMAIN,cdnassets.roboflow.com
+DOMAIN,static.roboflow.com
 DOMAIN,apps-static.route4me.com
 DOMAIN,cdn.royaleapi.com
 DOMAIN,i.rtings.com
@@ -1591,6 +1594,7 @@ DOMAIN,frontend-assets.supabase.com
 DOMAIN,img.supjav.com
 DOMAIN,cdn.svgator.com
 DOMAIN,assets.swoogo.com
+DOMAIN,cdn.syftdata.com
 DOMAIN,cdn1.sysgears.com
 DOMAIN,cdn2.sysgears.com
 DOMAIN,cdn3.sysgears.com
@@ -2021,6 +2025,7 @@ DOMAIN,badge.fury.io
 DOMAIN,cdn-web.fydeos.io
 DOMAIN,geojson.io
 DOMAIN,static.getbutton.io
+DOMAIN,sdk.gleap.io
 DOMAIN,gohugo.io
 DOMAIN,statics.goorm.io
 DOMAIN,boards.greenhouse.io

@@ -1,6 +1,8 @@
-# Total: 34 rules
+# Total: 36 rules
 no_resolve: true
 domain_set:
+- stun.douyucdn.cn
+- stun1.douyucdn.cn
 - livewebbs2pcdn.msstatic.com
 - qn-cdnfile1pcdn.msstatic.com
 domain_suffix_set:
@@ -29,19 +31,15 @@ domain_suffix_set:
 - yfp2p.net
 domain_wildcard_set:
 - dyp2p-*.douyucdn.cn
-- p2p*-ws.douyucdn.cn
 - p2p-*.douyucdn.cn
 - p2pchunk-*.douyucdn.cn
 - p2plive-*.douyucdn.cn
+- p2p*.qq.com
+- stun*
 domain_keyword_set:
 - -p2p-v2.pull.yximgs.com
 - -p2p.pull.yximgs.com
 and_set:
-- match:
-  - '!domain_keyword':
-      match: stun
-  - '!domain_keyword':
-      match: douyu
 - match:
   - '!protocol':
       match: UDP

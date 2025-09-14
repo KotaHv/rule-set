@@ -1,4 +1,4 @@
-# Total: 3949 rules
+# Total: 3954 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1413,6 +1413,7 @@ domain_set:
 - s1.qwant.com
 - s2.qwant.com
 - static.rakuten.com
+- cacerts.rapidssl.com
 - assets.raspberrypi.com
 - cdn-rdstaticassets.readdle.com
 - assets-www.readspeaker.com
@@ -1442,6 +1443,8 @@ domain_set:
 - api.roboflow.com
 - app.roboflow.com
 - cdn.roboflow.com
+- cdnassets.roboflow.com
+- static.roboflow.com
 - apps-static.route4me.com
 - cdn.royaleapi.com
 - i.rtings.com
@@ -1593,6 +1596,7 @@ domain_set:
 - img.supjav.com
 - cdn.svgator.com
 - assets.swoogo.com
+- cdn.syftdata.com
 - cdn1.sysgears.com
 - cdn2.sysgears.com
 - cdn3.sysgears.com
@@ -2023,6 +2027,7 @@ domain_set:
 - cdn-web.fydeos.io
 - geojson.io
 - static.getbutton.io
+- sdk.gleap.io
 - gohugo.io
 - statics.goorm.io
 - boards.greenhouse.io

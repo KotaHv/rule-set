@@ -1,4 +1,6 @@
-# Total: 34 rules
+# Total: 36 rules
+DOMAIN,stun.douyucdn.cn
+DOMAIN,stun1.douyucdn.cn
 DOMAIN,livewebbs2pcdn.msstatic.com
 DOMAIN,qn-cdnfile1pcdn.msstatic.com
 DOMAIN-SUFFIX,ppio.cloud
@@ -27,9 +29,9 @@ DOMAIN-SUFFIX,yfp2p.net
 DOMAIN-KEYWORD,-p2p-v2.pull.yximgs.com
 DOMAIN-KEYWORD,-p2p.pull.yximgs.com
 DOMAIN-WILDCARD,dyp2p-*.douyucdn.cn
-DOMAIN-WILDCARD,p2p*-ws.douyucdn.cn
 DOMAIN-WILDCARD,p2p-*.douyucdn.cn
 DOMAIN-WILDCARD,p2pchunk-*.douyucdn.cn
 DOMAIN-WILDCARD,p2plive-*.douyucdn.cn
-AND,((DOMAIN-KEYWORD,stun),(DOMAIN-KEYWORD,douyu))
+DOMAIN-WILDCARD,p2p*.qq.com
+DOMAIN-WILDCARD,stun*
 AND,((PROTOCOL,UDP),(DOMAIN-SUFFIX,googlevideo.com))

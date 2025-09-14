@@ -1,4 +1,6 @@
-# Total: 29 rules
+# Total: 30 rules
+DOMAIN,stun.douyucdn.cn
+DOMAIN,stun1.douyucdn.cn
 DOMAIN,livewebbs2pcdn.msstatic.com
 DOMAIN,qn-cdnfile1pcdn.msstatic.com
 DOMAIN-SUFFIX,ppio.cloud
@@ -26,5 +28,4 @@ DOMAIN-SUFFIX,yfcdn.net
 DOMAIN-SUFFIX,yfp2p.net
 DOMAIN-KEYWORD,-p2p-v2.pull.yximgs.com
 DOMAIN-KEYWORD,-p2p.pull.yximgs.com
-AND,((DOMAIN-KEYWORD,stun),(DOMAIN-KEYWORD,douyu))
 AND,((PROTOCOL,UDP),(DOMAIN-SUFFIX,googlevideo.com))

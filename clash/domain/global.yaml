@@ -1,4 +1,4 @@
-# Total: 1591 rules
+# Total: 1592 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -689,6 +689,7 @@
 - '+.returnyoutubedislike.com'
 - '+.returnyoutubedislikeapi.com'
 - '+.reuters.com'
+- '+.roboflow.com'
 - '+.rocksdb.com'
 - '+.rottentomatoes.com'
 - '+.rtings.com'

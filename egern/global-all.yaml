@@ -1,4 +1,4 @@
-# Total: 5311 rules
+# Total: 5312 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -1004,6 +1004,7 @@ domain_set:
 - s2.qwant.com
 - mirrors.rackhosting.com
 - static.rakuten.com
+- cacerts.rapidssl.com
 - cdn-rdstaticassets.readdle.com
 - assets-www.readspeaker.com
 - cdn-eu.readspeaker.com
@@ -1022,9 +1023,6 @@ domain_set:
 - cdn.report-uri.com
 - img.represent.com
 - img.riskified.com
-- api.roboflow.com
-- app.roboflow.com
-- cdn.roboflow.com
 - apps-static.route4me.com
 - cdn.royaleapi.com
 - micro.rubiconproject.com
@@ -1150,6 +1148,7 @@ domain_set:
 - frontend-assets.supabase.com
 - cdn.svgator.com
 - assets.swoogo.com
+- cdn.syftdata.com
 - cbsplaylistserver.aws.syncbak.com
 - cbsservice.aws.syncbak.com
 - cdn1.sysgears.com
@@ -1458,6 +1457,7 @@ domain_set:
 - thingproxy.freeboard.io
 - geojson.io
 - static.getbutton.io
+- sdk.gleap.io
 - store1.gofile.io
 - gohugo.io
 - statics.goorm.io
@@ -3554,6 +3554,7 @@ domain_suffix_set:
 - riotpin.com
 - riotpoints.com
 - rlcdn.com
+- roboflow.com
 - roborecall.com
 - rocksdb.com
 - rockstargames.com

@@ -1,4 +1,4 @@
-# Total: 5187 rules
+# Total: 5188 rules
 'payload':
 - 'mirror.host.ag'
 - 'cdn.7tv.app'
@@ -1003,6 +1003,7 @@
 - 's2.qwant.com'
 - 'mirrors.rackhosting.com'
 - 'static.rakuten.com'
+- 'cacerts.rapidssl.com'
 - 'cdn-rdstaticassets.readdle.com'
 - 'assets-www.readspeaker.com'
 - 'cdn-eu.readspeaker.com'
@@ -1021,9 +1022,6 @@
 - 'cdn.report-uri.com'
 - 'img.represent.com'
 - 'img.riskified.com'
-- 'api.roboflow.com'
-- 'app.roboflow.com'
-- 'cdn.roboflow.com'
 - 'apps-static.route4me.com'
 - 'cdn.royaleapi.com'
 - 'micro.rubiconproject.com'
@@ -1149,6 +1147,7 @@
 - 'frontend-assets.supabase.com'
 - 'cdn.svgator.com'
 - 'assets.swoogo.com'
+- 'cdn.syftdata.com'
 - 'cbsplaylistserver.aws.syncbak.com'
 - 'cbsservice.aws.syncbak.com'
 - 'cdn1.sysgears.com'
@@ -1457,6 +1456,7 @@
 - 'thingproxy.freeboard.io'
 - 'geojson.io'
 - 'static.getbutton.io'
+- 'sdk.gleap.io'
 - 'store1.gofile.io'
 - 'gohugo.io'
 - 'statics.goorm.io'
@@ -3552,6 +3552,7 @@
 - '+.riotpin.com'
 - '+.riotpoints.com'
 - '+.rlcdn.com'
+- '+.roboflow.com'
 - '+.roborecall.com'
 - '+.rocksdb.com'
 - '+.rockstargames.com'

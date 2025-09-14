@@ -1,5 +1,7 @@
-# Total: 25 rules
+# Total: 27 rules
 'payload':
+- 'stun.douyucdn.cn'
+- 'stun1.douyucdn.cn'
 - 'livewebbs2pcdn.msstatic.com'
 - 'qn-cdnfile1pcdn.msstatic.com'
 - '+.ppio.cloud'

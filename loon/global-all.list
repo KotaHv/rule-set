@@ -1,4 +1,4 @@
-# Total: 5328 rules
+# Total: 5329 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -1002,6 +1002,7 @@ DOMAIN,s1.qwant.com
 DOMAIN,s2.qwant.com
 DOMAIN,mirrors.rackhosting.com
 DOMAIN,static.rakuten.com
+DOMAIN,cacerts.rapidssl.com
 DOMAIN,cdn-rdstaticassets.readdle.com
 DOMAIN,assets-www.readspeaker.com
 DOMAIN,cdn-eu.readspeaker.com
@@ -1020,9 +1021,6 @@ DOMAIN,tools.refokus.com
 DOMAIN,cdn.report-uri.com
 DOMAIN,img.represent.com
 DOMAIN,img.riskified.com
-DOMAIN,api.roboflow.com
-DOMAIN,app.roboflow.com
-DOMAIN,cdn.roboflow.com
 DOMAIN,apps-static.route4me.com
 DOMAIN,cdn.royaleapi.com
 DOMAIN,micro.rubiconproject.com
@@ -1148,6 +1146,7 @@ DOMAIN,cdn.sunofbeaches.com
 DOMAIN,frontend-assets.supabase.com
 DOMAIN,cdn.svgator.com
 DOMAIN,assets.swoogo.com
+DOMAIN,cdn.syftdata.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
 DOMAIN,cdn1.sysgears.com
@@ -1456,6 +1455,7 @@ DOMAIN,down.filen.io
 DOMAIN,thingproxy.freeboard.io
 DOMAIN,geojson.io
 DOMAIN,static.getbutton.io
+DOMAIN,sdk.gleap.io
 DOMAIN,store1.gofile.io
 DOMAIN,gohugo.io
 DOMAIN,statics.goorm.io
@@ -3551,6 +3551,7 @@ DOMAIN-SUFFIX,riotgames.com
 DOMAIN-SUFFIX,riotpin.com
 DOMAIN-SUFFIX,riotpoints.com
 DOMAIN-SUFFIX,rlcdn.com
+DOMAIN-SUFFIX,roboflow.com
 DOMAIN-SUFFIX,roborecall.com
 DOMAIN-SUFFIX,rocksdb.com
 DOMAIN-SUFFIX,rockstargames.com
