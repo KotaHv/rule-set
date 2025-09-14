@@ -960,10 +960,10 @@ domain_set:
 - creator-image.javhd.com
 - static.javhd.com
 - cdn.javmg.com
+- cdn.javmiku.com
 - img2.javmost.com
 - img3.javmost.com
 - img4.javmost.com
-- cdn.javsts.com
 - icdn.javxx.com
 - cdn.jetphotos.com
 - cdn.jitbit.com
@@ -1500,7 +1500,6 @@ domain_set:
 - assets.shazam.com
 - cdn.sheetjs.com
 - dassets.shimano.com
-- sourcemap.webfe.shopeemobile.com
 - cdn.shopify.com
 - media.shopimind.com
 - cdn.shoplineapp.com
@@ -2081,7 +2080,6 @@ domain_set:
 - cdn.sanity.io
 - images.scalero.io
 - wire.shodan.io
-- files.webfe.shopee.io
 - js.short.io
 - cdn.simplelocalize.io
 - edge.sitecorecloud.io
@@ -3411,6 +3409,7 @@ domain_suffix_set:
 - ut-assets.com
 - uvcdn.com
 - valnetcdn.com
+- vancdn.com
 - vanillicon.com
 - vcmdiawe.com
 - via0.com
@@ -3565,6 +3564,7 @@ domain_suffix_set:
 - ingest.sentry.io
 - ingest.us.sentry.io
 - shields.io
+- webfe.shopee.io
 - ipfs.smartholdem.io
 - sourceforge.io
 - stackblitz.io

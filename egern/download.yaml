@@ -1,4 +1,4 @@
-# Total: 1185 rules
+# Total: 1184 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -528,7 +528,6 @@ domain_set:
 - gnuftp.uib.no
 - ftp.auckland.ac.nz
 - mirror.aut.ac.nz
-- cpan.catalyst.net.nz
 - cpan.inspire.net.nz
 - mirror.squ.edu.om
 - mirrors.gethosted.online
