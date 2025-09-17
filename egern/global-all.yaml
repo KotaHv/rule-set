@@ -1,4 +1,4 @@
-# Total: 5313 rules
+# Total: 5320 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -289,6 +289,7 @@ domain_set:
 - designsystem.brevo.com
 - app.brightback.com
 - edge.api.brightcove.com
+- player.interactivity.brightcove.com
 - cdn.britannica.com
 - img.bttimg.com
 - icons.buffer.com
@@ -642,6 +643,8 @@ domain_set:
 - video-meta.humix.com
 - cdn.hyperbeam.com
 - cdn.hypershort.com
+- cdn.icon-icons.com
+- images.icon-icons.com
 - static-00.iconduck.com
 - bst.icons8.com
 - img.icons8.com
@@ -733,6 +736,7 @@ domain_set:
 - v2.listenloop.com
 - aurora-customization-usw2.lithium.com
 - cdn.livechatinc.com
+- app-cdn.logo.com
 - cdn.loom.com
 - media.loom-app.com
 - assets1.lottiefiles.com
@@ -1238,6 +1242,7 @@ domain_set:
 - ocsp.usertrust.com
 - widget.uservoice.com
 - img.utdstc.com
+- stc.utdstc.com
 - static.vanta.com
 - cdn.verifypass.com
 - crl.verisign.com
@@ -1842,6 +1847,7 @@ domain_set:
 - use.typekit.net
 - static.underhentai.net
 - craftassets.unraid.net
+- dw.uptodown.net
 - cdn.viafoura.net
 - images1.vinted.net
 - install.virtfusion.net
@@ -2452,6 +2458,7 @@ domain_suffix_set:
 - braveux.com
 - brawlstars.com
 - brawlstarsgame.com
+- brightcovecdn.com
 - brightspotcdn.com
 - broadcom.com
 - bstarstatic.com

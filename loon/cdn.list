@@ -1,4 +1,4 @@
-# Total: 3902 rules
+# Total: 3911 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -367,6 +367,7 @@ DOMAIN,assets.brevo.com
 DOMAIN,corp-backend.brevo.com
 DOMAIN,designsystem.brevo.com
 DOMAIN,app.brightback.com
+DOMAIN,player.interactivity.brightcove.com
 DOMAIN,cdn.britannica.com
 DOMAIN,img.bttimg.com
 DOMAIN,icons.buffer.com
@@ -897,6 +898,8 @@ DOMAIN,assets.humix.com
 DOMAIN,video-meta.humix.com
 DOMAIN,cdn.hypershort.com
 DOMAIN,talk.hyvor.com
+DOMAIN,cdn.icon-icons.com
+DOMAIN,images.icon-icons.com
 DOMAIN,static-00.iconduck.com
 DOMAIN,cdn.iconfinder.com
 DOMAIN,cdn0.iconfinder.com
@@ -1048,6 +1051,7 @@ DOMAIN,pbs-prod.linustechtips.com
 DOMAIN,v2.listenloop.com
 DOMAIN,aurora-customization-usw2.lithium.com
 DOMAIN,cdn.livechatinc.com
+DOMAIN,app-cdn.logo.com
 DOMAIN,cdn.loom.com
 DOMAIN,media.loom-app.com
 DOMAIN,assets1.lottiefiles.com
@@ -1739,6 +1743,7 @@ DOMAIN,crt.usertrust.com
 DOMAIN,ocsp.usertrust.com
 DOMAIN,widget.uservoice.com
 DOMAIN,img.utdstc.com
+DOMAIN,stc.utdstc.com
 DOMAIN,cdn.v2ex.com
 DOMAIN,static.v2ex.com
 DOMAIN,static.vanta.com
@@ -2593,6 +2598,9 @@ DOMAIN,upload.wikimedia.org
 DOMAIN,tools-static.wmflabs.org
 DOMAIN,files.writefreely.org
 DOMAIN,files.mastodon.ktachibana.party
+DOMAIN,cdn1.telesco.pe
+DOMAIN,cdn4.telesco.pe
+DOMAIN,cdn5.telesco.pe
 DOMAIN,asset.booth.pm
 DOMAIN,img.foresightnews.pro
 DOMAIN,assets.gcore.pro
@@ -2927,6 +2935,7 @@ DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,boomio-cdn.com
 DOMAIN-SUFFIX,bootstrapcdn.com
 DOMAIN-SUFFIX,botsrv2.com
+DOMAIN-SUFFIX,brightcovecdn.com
 DOMAIN-SUFFIX,brightspotcdn.com
 DOMAIN-SUFFIX,bstarstatic.com
 DOMAIN-SUFFIX,bstatic.com

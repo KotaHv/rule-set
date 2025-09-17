@@ -1,4 +1,4 @@
-# Total: 1176 rules
+# Total: 1177 rules
 'payload':
 - 'mirror.host.ag'
 - 'updates.istatmenus.app'
@@ -497,6 +497,7 @@
 - 'mirror.transip.net'
 - 'download-core.sys.truenas.net'
 - 'ftp.twaren.net'
+- 'dw.uptodown.net'
 - 'install.virtfusion.net'
 - 'os-cdn.virtfusion.net'
 - 'packages.virtfusion.net'

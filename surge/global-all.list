@@ -1,4 +1,4 @@
-# Total: 5377 rules
+# Total: 5384 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -287,6 +287,7 @@ DOMAIN,corp-backend.brevo.com
 DOMAIN,designsystem.brevo.com
 DOMAIN,app.brightback.com
 DOMAIN,edge.api.brightcove.com
+DOMAIN,player.interactivity.brightcove.com
 DOMAIN,cdn.britannica.com
 DOMAIN,img.bttimg.com
 DOMAIN,icons.buffer.com
@@ -640,6 +641,8 @@ DOMAIN,assets.humix.com
 DOMAIN,video-meta.humix.com
 DOMAIN,cdn.hyperbeam.com
 DOMAIN,cdn.hypershort.com
+DOMAIN,cdn.icon-icons.com
+DOMAIN,images.icon-icons.com
 DOMAIN,static-00.iconduck.com
 DOMAIN,bst.icons8.com
 DOMAIN,img.icons8.com
@@ -731,6 +734,7 @@ DOMAIN,mirror.liquidtelecom.com
 DOMAIN,v2.listenloop.com
 DOMAIN,aurora-customization-usw2.lithium.com
 DOMAIN,cdn.livechatinc.com
+DOMAIN,app-cdn.logo.com
 DOMAIN,cdn.loom.com
 DOMAIN,media.loom-app.com
 DOMAIN,assets1.lottiefiles.com
@@ -1236,6 +1240,7 @@ DOMAIN,crt.usertrust.com
 DOMAIN,ocsp.usertrust.com
 DOMAIN,widget.uservoice.com
 DOMAIN,img.utdstc.com
+DOMAIN,stc.utdstc.com
 DOMAIN,static.vanta.com
 DOMAIN,cdn.verifypass.com
 DOMAIN,crl.verisign.com
@@ -1840,6 +1845,7 @@ DOMAIN,platform-assets.typekit.net
 DOMAIN,use.typekit.net
 DOMAIN,static.underhentai.net
 DOMAIN,craftassets.unraid.net
+DOMAIN,dw.uptodown.net
 DOMAIN,cdn.viafoura.net
 DOMAIN,images1.vinted.net
 DOMAIN,install.virtfusion.net
@@ -2449,6 +2455,7 @@ DOMAIN-SUFFIX,braventures.com
 DOMAIN-SUFFIX,braveux.com
 DOMAIN-SUFFIX,brawlstars.com
 DOMAIN-SUFFIX,brawlstarsgame.com
+DOMAIN-SUFFIX,brightcovecdn.com
 DOMAIN-SUFFIX,brightspotcdn.com
 DOMAIN-SUFFIX,broadcom.com
 DOMAIN-SUFFIX,bstarstatic.com

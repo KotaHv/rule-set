@@ -1,4 +1,4 @@
-# Total: 1184 rules
+# Total: 1185 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -498,6 +498,7 @@ domain_set:
 - mirror.transip.net
 - download-core.sys.truenas.net
 - ftp.twaren.net
+- dw.uptodown.net
 - install.virtfusion.net
 - os-cdn.virtfusion.net
 - packages.virtfusion.net

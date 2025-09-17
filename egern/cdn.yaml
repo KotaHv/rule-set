@@ -1,4 +1,4 @@
-# Total: 3955 rules
+# Total: 3964 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -369,6 +369,7 @@ domain_set:
 - corp-backend.brevo.com
 - designsystem.brevo.com
 - app.brightback.com
+- player.interactivity.brightcove.com
 - cdn.britannica.com
 - img.bttimg.com
 - icons.buffer.com
@@ -899,6 +900,8 @@ domain_set:
 - video-meta.humix.com
 - cdn.hypershort.com
 - talk.hyvor.com
+- cdn.icon-icons.com
+- images.icon-icons.com
 - static-00.iconduck.com
 - cdn.iconfinder.com
 - cdn0.iconfinder.com
@@ -1050,6 +1053,7 @@ domain_set:
 - v2.listenloop.com
 - aurora-customization-usw2.lithium.com
 - cdn.livechatinc.com
+- app-cdn.logo.com
 - cdn.loom.com
 - media.loom-app.com
 - assets1.lottiefiles.com
@@ -1741,6 +1745,7 @@ domain_set:
 - ocsp.usertrust.com
 - widget.uservoice.com
 - img.utdstc.com
+- stc.utdstc.com
 - cdn.v2ex.com
 - static.v2ex.com
 - static.vanta.com
@@ -2595,6 +2600,9 @@ domain_set:
 - tools-static.wmflabs.org
 - files.writefreely.org
 - files.mastodon.ktachibana.party
+- cdn1.telesco.pe
+- cdn4.telesco.pe
+- cdn5.telesco.pe
 - asset.booth.pm
 - img.foresightnews.pro
 - assets.gcore.pro
@@ -2930,6 +2938,7 @@ domain_suffix_set:
 - boomio-cdn.com
 - bootstrapcdn.com
 - botsrv2.com
+- brightcovecdn.com
 - brightspotcdn.com
 - bstarstatic.com
 - bstatic.com
