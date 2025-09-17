@@ -1,4 +1,4 @@
-# Total: 5337 rules
+# Total: 5348 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -124,6 +124,7 @@ DOMAIN,e3.365dm.com
 DOMAIN,img.4khd.com
 DOMAIN,bundle.5gtb.com
 DOMAIN,images.991.com
+DOMAIN,bundle.9gtb.com
 DOMAIN,uim.9uu22.com
 DOMAIN,assets-cdn.abcnews.com
 DOMAIN,keyframe-cdn.abcnews.com
@@ -506,6 +507,7 @@ DOMAIN,s3.filebase.com
 DOMAIN,static.filehorse.com
 DOMAIN,static.filestackapi.com
 DOMAIN,images.financemagnates.com
+DOMAIN,widget.finlogix.com
 DOMAIN,cdn-icons-png.flaticon.com
 DOMAIN,cdn-share-sprites.flaticon.com
 DOMAIN,cdn-uicons.flaticon.com
@@ -882,6 +884,7 @@ DOMAIN,mta.newfold.com
 DOMAIN,stbff.newfold.com
 DOMAIN,static.newmobilelife.com
 DOMAIN,cdn.nfcube.com
+DOMAIN,instafeed.nfcube.com
 DOMAIN,i.niupic.com
 DOMAIN,cms-assets.nodecraft.com
 DOMAIN,cdn.northropgrumman.com
@@ -1083,6 +1086,8 @@ DOMAIN,media.shopimind.com
 DOMAIN,cdn.shoplineapp.com
 DOMAIN,img.shoplineapp.com
 DOMAIN,cdn.shoppinggives.com
+DOMAIN,data.cdn.siemens.com
+DOMAIN,cache.industry.siemens.com
 DOMAIN,cdn.sift.com
 DOMAIN,api.simplesvg.com
 DOMAIN,icons.simplesvg.com
@@ -1227,6 +1232,7 @@ DOMAIN,cdn.uptimia.com
 DOMAIN,static.uptimia.com
 DOMAIN,asset-cdn.uscardforum.com
 DOMAIN,www-cdn.uscardforum.com
+DOMAIN,backinstock.useamp.com
 DOMAIN,apichatwidget.usepylon.com
 DOMAIN,chatwidgetmetrics-proxy.usepylon.com
 DOMAIN,widget.usepylon.com
@@ -1690,6 +1696,8 @@ DOMAIN,manifest.prod.boltdns.net
 DOMAIN,cf-images.us-east-1.prod.boltdns.net
 DOMAIN,players.brightcove.net
 DOMAIN,fonts.bunny.net
+DOMAIN,app.cart-bot.net
+DOMAIN,cdn-app.cart-bot.net
 DOMAIN,ajax.cat.net
 DOMAIN,cdnjs.cat.net
 DOMAIN,fonts.cat.net
@@ -1983,6 +1991,7 @@ DOMAIN,httpd-mirror.sergal.org
 DOMAIN,simpleicons.org
 DOMAIN,cdn.simpleicons.org
 DOMAIN,s.slideme.org
+DOMAIN,light.spicegems.org
 DOMAIN,proxy.spigotmc.org
 DOMAIN,static.spigotmc.org
 DOMAIN,assets.squarewebsites.org
@@ -2704,6 +2713,7 @@ DOMAIN-SUFFIX,envato-static.com
 DOMAIN-SUFFIX,envatousercontent.com
 DOMAIN-SUFFIX,epicgames.com
 DOMAIN-SUFFIX,epicgamescdn.com
+DOMAIN-SUFFIX,esc-apps-cdn.com
 DOMAIN-SUFFIX,escapefromtarkov.com
 DOMAIN-SUFFIX,espncdn.com
 DOMAIN-SUFFIX,etsy.com
@@ -3154,6 +3164,7 @@ DOMAIN-SUFFIX,mb3admin.com
 DOMAIN-SUFFIX,mcusercontent.com
 DOMAIN-SUFFIX,medallia.com
 DOMAIN-SUFFIX,media-imdb.com
+DOMAIN-SUFFIX,mediadecathlon.com
 DOMAIN-SUFFIX,mediafire.com
 DOMAIN-SUFFIX,medium.com
 DOMAIN-SUFFIX,meetup.com

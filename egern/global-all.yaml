@@ -1,4 +1,4 @@
-# Total: 5320 rules
+# Total: 5331 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -126,6 +126,7 @@ domain_set:
 - img.4khd.com
 - bundle.5gtb.com
 - images.991.com
+- bundle.9gtb.com
 - uim.9uu22.com
 - assets-cdn.abcnews.com
 - keyframe-cdn.abcnews.com
@@ -508,6 +509,7 @@ domain_set:
 - static.filehorse.com
 - static.filestackapi.com
 - images.financemagnates.com
+- widget.finlogix.com
 - cdn-icons-png.flaticon.com
 - cdn-share-sprites.flaticon.com
 - cdn-uicons.flaticon.com
@@ -884,6 +886,7 @@ domain_set:
 - stbff.newfold.com
 - static.newmobilelife.com
 - cdn.nfcube.com
+- instafeed.nfcube.com
 - i.niupic.com
 - cms-assets.nodecraft.com
 - cdn.northropgrumman.com
@@ -1085,6 +1088,8 @@ domain_set:
 - cdn.shoplineapp.com
 - img.shoplineapp.com
 - cdn.shoppinggives.com
+- data.cdn.siemens.com
+- cache.industry.siemens.com
 - cdn.sift.com
 - api.simplesvg.com
 - icons.simplesvg.com
@@ -1229,6 +1234,7 @@ domain_set:
 - static.uptimia.com
 - asset-cdn.uscardforum.com
 - www-cdn.uscardforum.com
+- backinstock.useamp.com
 - apichatwidget.usepylon.com
 - chatwidgetmetrics-proxy.usepylon.com
 - widget.usepylon.com
@@ -1692,6 +1698,8 @@ domain_set:
 - cf-images.us-east-1.prod.boltdns.net
 - players.brightcove.net
 - fonts.bunny.net
+- app.cart-bot.net
+- cdn-app.cart-bot.net
 - ajax.cat.net
 - cdnjs.cat.net
 - fonts.cat.net
@@ -1985,6 +1993,7 @@ domain_set:
 - simpleicons.org
 - cdn.simpleicons.org
 - s.slideme.org
+- light.spicegems.org
 - proxy.spigotmc.org
 - static.spigotmc.org
 - assets.squarewebsites.org
@@ -2707,6 +2716,7 @@ domain_suffix_set:
 - envatousercontent.com
 - epicgames.com
 - epicgamescdn.com
+- esc-apps-cdn.com
 - escapefromtarkov.com
 - espncdn.com
 - etsy.com
@@ -3157,6 +3167,7 @@ domain_suffix_set:
 - mcusercontent.com
 - medallia.com
 - media-imdb.com
+- mediadecathlon.com
 - mediafire.com
 - medium.com
 - meetup.com

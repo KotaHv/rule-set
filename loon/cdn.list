@@ -1,4 +1,4 @@
-# Total: 3911 rules
+# Total: 3923 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -21,6 +21,7 @@ DOMAIN,s3.masto.ai
 DOMAIN,static.netify.ai
 DOMAIN,pplx-next-static-public.perplexity.ai
 DOMAIN,r2cdn.perplexity.ai
+DOMAIN,static.returngo.ai
 DOMAIN,cdn1.suno.ai
 DOMAIN,cdn2.suno.ai
 DOMAIN,vetted.ai
@@ -159,6 +160,7 @@ DOMAIN,static.4shared.com
 DOMAIN,bundle.5gtb.com
 DOMAIN,images.991.com
 DOMAIN,accounts-cdn.9gag.com
+DOMAIN,bundle.9gtb.com
 DOMAIN,uim.9uu22.com
 DOMAIN,assets-cdn.abcnews.com
 DOMAIN,keyframe-cdn.abcnews.com
@@ -667,6 +669,7 @@ DOMAIN,static.filehorse.com
 DOMAIN,static.filestackapi.com
 DOMAIN,images.financemagnates.com
 DOMAIN,images.findagrave.com
+DOMAIN,widget.finlogix.com
 DOMAIN,cdn.firebase.com
 DOMAIN,cdn.accounts.firefox.com
 DOMAIN,detectportal.firefox.com
@@ -1225,6 +1228,7 @@ DOMAIN,g.newsweek.com
 DOMAIN,media.newyorker.com
 DOMAIN,fesdk.nexon.com
 DOMAIN,cdn.nfcube.com
+DOMAIN,instafeed.nfcube.com
 DOMAIN,assets.nflxext.com
 DOMAIN,static.nicehash.com
 DOMAIN,article-image-ix.nikkei.com
@@ -1512,6 +1516,8 @@ DOMAIN,cdn.shoplineapp.com
 DOMAIN,img.shoplineapp.com
 DOMAIN,cdn.shoppinggives.com
 DOMAIN,image.shutterstock.com
+DOMAIN,data.cdn.siemens.com
+DOMAIN,cache.industry.siemens.com
 DOMAIN,cdn.sift.com
 DOMAIN,api.simplesvg.com
 DOMAIN,icons.simplesvg.com
@@ -1729,6 +1735,7 @@ DOMAIN,cdn.uptimia.com
 DOMAIN,static.uptimia.com
 DOMAIN,asset-cdn.uscardforum.com
 DOMAIN,www-cdn.uscardforum.com
+DOMAIN,backinstock.useamp.com
 DOMAIN,apichatwidget.usepylon.com
 DOMAIN,chatwidgetmetrics-proxy.usepylon.com
 DOMAIN,widget.usepylon.com
@@ -2305,6 +2312,8 @@ DOMAIN,cf-images.ap-northeast-1.prod.boltdns.net
 DOMAIN,cf-images.us-east-1.prod.boltdns.net
 DOMAIN,players.brightcove.net
 DOMAIN,fonts.bunny.net
+DOMAIN,app.cart-bot.net
+DOMAIN,cdn-app.cart-bot.net
 DOMAIN,ajax.cat.net
 DOMAIN,cdnjs.cat.net
 DOMAIN,fonts.cat.net
@@ -2576,6 +2585,7 @@ DOMAIN,updates2.signal.org
 DOMAIN,simpleicons.org
 DOMAIN,cdn.simpleicons.org
 DOMAIN,s.slideme.org
+DOMAIN,light.spicegems.org
 DOMAIN,proxy.spigotmc.org
 DOMAIN,static.spigotmc.org
 DOMAIN,assets.squarewebsites.org
@@ -3017,6 +3027,7 @@ DOMAIN-SUFFIX,embedgram.com
 DOMAIN-SUFFIX,ensighten.com
 DOMAIN-SUFFIX,envato-static.com
 DOMAIN-SUFFIX,envatousercontent.com
+DOMAIN-SUFFIX,esc-apps-cdn.com
 DOMAIN-SUFFIX,espncdn.com
 DOMAIN-SUFFIX,etsystatic.com
 DOMAIN-SUFFIX,exp-tas.com
@@ -3186,6 +3197,7 @@ DOMAIN-SUFFIX,cdn.medallia.com
 DOMAIN-SUFFIX,cdn.survey.medallia.com
 DOMAIN-SUFFIX,media-amazon.com
 DOMAIN-SUFFIX,media-imdb.com
+DOMAIN-SUFFIX,mediadecathlon.com
 DOMAIN-SUFFIX,meetupstatic.com
 DOMAIN-SUFFIX,mfcimg.com
 DOMAIN-SUFFIX,smartscreen.microsoft.com

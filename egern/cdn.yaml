@@ -1,4 +1,4 @@
-# Total: 3964 rules
+# Total: 3976 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -23,6 +23,7 @@ domain_set:
 - static.netify.ai
 - pplx-next-static-public.perplexity.ai
 - r2cdn.perplexity.ai
+- static.returngo.ai
 - cdn1.suno.ai
 - cdn2.suno.ai
 - vetted.ai
@@ -161,6 +162,7 @@ domain_set:
 - bundle.5gtb.com
 - images.991.com
 - accounts-cdn.9gag.com
+- bundle.9gtb.com
 - uim.9uu22.com
 - assets-cdn.abcnews.com
 - keyframe-cdn.abcnews.com
@@ -669,6 +671,7 @@ domain_set:
 - static.filestackapi.com
 - images.financemagnates.com
 - images.findagrave.com
+- widget.finlogix.com
 - cdn.firebase.com
 - cdn.accounts.firefox.com
 - detectportal.firefox.com
@@ -1227,6 +1230,7 @@ domain_set:
 - media.newyorker.com
 - fesdk.nexon.com
 - cdn.nfcube.com
+- instafeed.nfcube.com
 - assets.nflxext.com
 - static.nicehash.com
 - article-image-ix.nikkei.com
@@ -1514,6 +1518,8 @@ domain_set:
 - img.shoplineapp.com
 - cdn.shoppinggives.com
 - image.shutterstock.com
+- data.cdn.siemens.com
+- cache.industry.siemens.com
 - cdn.sift.com
 - api.simplesvg.com
 - icons.simplesvg.com
@@ -1731,6 +1737,7 @@ domain_set:
 - static.uptimia.com
 - asset-cdn.uscardforum.com
 - www-cdn.uscardforum.com
+- backinstock.useamp.com
 - apichatwidget.usepylon.com
 - chatwidgetmetrics-proxy.usepylon.com
 - widget.usepylon.com
@@ -2307,6 +2314,8 @@ domain_set:
 - cf-images.us-east-1.prod.boltdns.net
 - players.brightcove.net
 - fonts.bunny.net
+- app.cart-bot.net
+- cdn-app.cart-bot.net
 - ajax.cat.net
 - cdnjs.cat.net
 - fonts.cat.net
@@ -2578,6 +2587,7 @@ domain_set:
 - simpleicons.org
 - cdn.simpleicons.org
 - s.slideme.org
+- light.spicegems.org
 - proxy.spigotmc.org
 - static.spigotmc.org
 - assets.squarewebsites.org
@@ -3020,6 +3030,7 @@ domain_suffix_set:
 - ensighten.com
 - envato-static.com
 - envatousercontent.com
+- esc-apps-cdn.com
 - espncdn.com
 - etsystatic.com
 - exp-tas.com
@@ -3189,6 +3200,7 @@ domain_suffix_set:
 - cdn.survey.medallia.com
 - media-amazon.com
 - media-imdb.com
+- mediadecathlon.com
 - meetupstatic.com
 - mfcimg.com
 - smartscreen.microsoft.com
