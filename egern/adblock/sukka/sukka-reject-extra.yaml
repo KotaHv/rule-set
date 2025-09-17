@@ -1,11 +1,34 @@
-# Total: 55328 rules
+# Total: 55369 rules
 no_resolve: true
 domain_set:
+- t.email1.samsung.ca
+- s.w-x.co
 - mpush-api.aliyun.com
+- huawei.facebook.com
+- healthdata.hicloud.com
+- mepodownload.mediatek.com
+- mgepodownload.mediatek.com
 - contents.meituan.com
 - m.jr.mi.com
+- samsungeurope.eu.qualtrics.com
+- otn.samsungcloudcdn.com
+- acr0.samsungcloudsolution.com
+- fkp.samsungcloudsolution.com
+- oempprd.samsungcloudsolution.com
+- invitation.samsungiotcloud.com
+- gpm.samsungqbe.com
+- osb.samsungqbe.com
+- osb-krsvc.samsungqbe.com
+- osb-ussvc.samsungqbe.com
+- api-hub.samsungyosemite.com
+- lockersamsungs8.r.xoxknct.com
+- lockersamsungs8.s.xoxknct.com
+- a460.cell.phone.ringtone.samsung.sms13.de
+- ns11.whois.co.kr
 - loan-supermarket.faas.ele.me
 - d1e1rbybdt265x.cloudfront.net
+- d1oxlq5h9kq8q5.cloudfront.net
+- d2tnx644ijgq6i.cloudfront.net
 - d3ddidv77grh0f.cloudfront.net
 - 543874163.ddns.net
 - bowserlab.ddns.net
@@ -19,6 +42,14 @@ domain_set:
 - radpool.ddns.net
 - scx.ddns.net
 - vbk-reb0rn.ddns.net
+- adx-dre.op.dbankcloud.com.edgekey.net
+- fkp.samsungcloudsolution.net
+- samsungotn.net
+- samsungrm.net
+- test.samsungrm.net
+- samsung-klimatyzacja.pl
+- sso.internetat.tv
+- osscach2023.hicloud.tw
 - vietpool.vddns.vn
 domain_suffix_set:
 - flw.camcaps.ac
@@ -92,7 +123,6 @@ domain_suffix_set:
 - native.ai
 - nrich.ai
 - orquidea.ai
-- pcare.ai
 - presco.ai
 - probid.ai
 - pubcircle.ai
@@ -330,6 +360,7 @@ domain_suffix_set:
 - tm.creditcheck.illion.com.au
 - tm.creditprotect.illion.com.au
 - tm.verify.illion.com.au
+- kingstreetdental.com.au
 - ladbrokesaffiliates.com.au
 - t.liberty.com.au
 - lovittco.com.au
@@ -759,6 +790,7 @@ domain_suffix_set:
 - content.nubank.com.br
 - navegador.oi.com.br
 - share.openenglish.com.br
+- p4man.com.br
 - palharesinformatica.com.br
 - paulomatosconsultores.com.br
 - pensebig.com.br
@@ -778,6 +810,7 @@ domain_suffix_set:
 - rpperformance.com.br
 - sanpelmaquinas.com.br
 - scainseto.com.br
+- schenckel.com.br
 - seeproc.com.br
 - seomaster.com.br
 - shopconvert.com.br
@@ -1195,6 +1228,7 @@ domain_suffix_set:
 - vnvietcombank.cc
 - vnvietcombanks.cc
 - vssid.cc
+- w22554844132065184848541514.cc
 - walemo.cc
 - in.webcounter.cc
 - webshopping.cc
@@ -1917,7 +1951,6 @@ domain_suffix_set:
 - antex.cl
 - pool.chaucha.cl
 - declarateenquiebra.cl
-- buscascolegios.diit.cl
 - ads-redis.ecn.cl
 - mundocarnes.cl
 - abc.pema.cl
@@ -2861,6 +2894,7 @@ domain_suffix_set:
 - lnstagramsupport.cm
 - 1s8pj.cn
 - wowjs.1www.cn
+- softdl4.360.cn
 - 666pool.cn
 - m.91heima.cn
 - rdm.91yunma.cn
@@ -6187,7 +6221,6 @@ domain_suffix_set:
 - assumeflippers.com
 - assured-peace.com
 - assured-sandwich.com
-- assuredfix.com
 - asterbiscusys.com
 - asterpix.com
 - asterrakionor.com
@@ -9058,7 +9091,6 @@ domain_suffix_set:
 - core-pool.com
 - coremetrics.com
 - coremotives.com
-- corepilatesnicaragua.com
 - app.corn-staging.com
 - cornflowershallow.com
 - coronappzz.com
@@ -13182,7 +13214,6 @@ domain_suffix_set:
 - gcirm.greatfallstribune.com
 - share.greatfallstribune.com
 - grebibablo.com
-- grecokitchens.com
 - d.greece-search.com
 - green-mine.com
 - green4762.com
@@ -14486,7 +14517,6 @@ domain_suffix_set:
 - static.indforh-serving.com
 - xml.indforh-serving.com
 - indiads.com
-- indialign.com
 - indianbannerexchange.com
 - indianfriendfinder.com
 - indianlinkexchange.com
@@ -14715,7 +14745,6 @@ domain_suffix_set:
 - intelligent-business-wisdom.com
 - intelligent-company-365.com
 - intelligent-consortium.com
-- intelligentopennetworkingawards.com
 - intelserviceupdate.com
 - intencysrv.com
 - intended9.com
@@ -16289,6 +16318,7 @@ domain_suffix_set:
 - loading-delivery2.com
 - loading-domain.com
 - loading321.com
+- loadstopdocs.com
 - loadthatpage.com
 - loafoushuho.com
 - loanmoney-th.com
@@ -17219,7 +17249,6 @@ domain_suffix_set:
 - mikellli.com
 - milawka.com
 - mildcauliflower.com
-- milder-go.com
 - mildwave.com
 - mileesidesukbein.com
 - mileporn.com
@@ -17815,6 +17844,7 @@ domain_suffix_set:
 - mutenessdollyheadlong.com
 - mutinycdn.com
 - muwmedia.com
+- muzzumilruheel.com
 - mvblxbuxe.com
 - mvbxohfife.com
 - mvcpool.com
@@ -20680,6 +20710,7 @@ domain_suffix_set:
 - protectorincorporatehush.com
 - protectsubrev.com
 - protectwborcn.com
+- protherapycenter.com
 - proton-tm.com
 - protonge.com
 - prototypeboats.com
@@ -21243,6 +21274,7 @@ domain_suffix_set:
 - raw-solid.com
 - rawpool.com
 - rays-counter.com
+- razorcrypter.com
 - rb-on1in-sec.com
 - d3tracking.rbc.com
 - webftm.rbc.com
@@ -22088,6 +22120,7 @@ domain_suffix_set:
 - safestsniffingconfessed.com
 - safety-line-message.com
 - safewarns.com
+- safewatertech.com
 - safsdvc.com
 - share.na.sage.com
 - refer.sage.com
@@ -25158,7 +25191,6 @@ domain_suffix_set:
 - toplov.com
 - topmalaysia.com
 - topmeds10.com
-- topmedsolution.com
 - topmomo3s.com
 - topnewsgo.com
 - topofblogs.com
@@ -25537,6 +25569,7 @@ domain_suffix_set:
 - trripwire.com
 - trrxitte.com
 - a.trstplse.com
+- trtmyanmar.com
 - truanet.com
 - vib.truc-tuyen-cham-socthekhachhang.com
 - trucktirehotline.com
@@ -28274,6 +28307,7 @@ domain_suffix_set:
 - yohtads.com
 - click-v4.yojnclk.com
 - xml.yojnxl.com
+- yokobd.com
 - click-v4.yolkclknu.com
 - xml.yolkdirxl.com
 - yollamedia.com
@@ -28560,6 +28594,7 @@ domain_suffix_set:
 - adn.zone-telechargement.com
 - zonealta.com
 - zonedummy.com
+- static.zongheng.com
 - zontera.com
 - zonupiza.com
 - zoologyfibre.com
@@ -29215,6 +29250,7 @@ domain_suffix_set:
 - putana.cz
 - r2b2.cz
 - banik.redigy.cz
+- petrjanicek.savana-hosting.cz
 - semnicneposilejte.cz
 - cileni.seznam.cz
 - i.seznam.cz
@@ -30891,6 +30927,7 @@ domain_suffix_set:
 - webads.eu
 - stats.x14.eu
 - xmrpool.eu
+- hostphpwindowsdriversapp.ydns.eu
 - publicnode.ydns.eu
 - yiimp.eu
 - zet-tech.eu
@@ -33188,6 +33225,7 @@ domain_suffix_set:
 - ad.depo.hu
 - dmdamedia.hu
 - egeszsegespont.hu
+- elevenhold.hu
 - fischereszter.hu
 - fm3cafe.hu
 - adv.forpsi.hu
@@ -36701,7 +36739,6 @@ domain_suffix_set:
 - a8ww.net
 - aarth.net
 - abacho.net
-- abissnet.net
 - ablida.net
 - abmr.net
 - academy-internet.net
@@ -36911,7 +36948,6 @@ domain_suffix_set:
 - altcoiner.net
 - altenergo.net
 - altminer.net
-- body.alwaysdata.net
 - amaprop.net
 - amateurporn.net
 - amazing5.net
@@ -39717,6 +39753,8 @@ domain_suffix_set:
 - salonoshirase.net
 - saltpool.net
 - samaidougniphu.net
+- lcprd1.samsungcloudsolution.net
+- lcprd2.samsungcloudsolution.net
 - san-dast.net
 - sancdn.net
 - sanjagh.net
@@ -40732,6 +40770,7 @@ domain_suffix_set:
 - setrise.nl
 - sexadvertentiesite.nl
 - kaartenhuis.nl.site-id.nl
+- smeetspost.nl
 - smitt.nl
 - speeltuintalud.nl
 - spookypool.nl
@@ -40759,6 +40798,8 @@ domain_suffix_set:
 - webcash.nl
 - westreclameadvies.nl
 - ads.wiezoekje.nl
+- cat.xiaoshabi.nl
+- sec.xiaoshabi.nl
 - xpartners.nl
 - track.xtrasize.nl
 - z-lib.nl
@@ -41979,6 +42020,7 @@ domain_suffix_set:
 - adway.org
 - moneroseeds.ae.org
 - share.affinityfcu.org
+- afrihealthexpo.org
 - agrolifecoin.org
 - aintydevelelas.org
 - aionmine.org
@@ -45292,6 +45334,9 @@ domain_suffix_set:
 - freeavalanche.ru
 - freeexchange.ru
 - fxnow.ru
+- m3.g-22.ru
+- qz7.g-22.ru
+- v.g-22.ru
 - galaxymeet.ru
 - r6.galya.ru
 - game02-com.ru
@@ -45399,6 +45444,7 @@ domain_suffix_set:
 - ivz7x63ymy.ru
 - j1oxqq05ry.ru
 - i.j2j.ru
+- md.jaxusoo.ru
 - mesotherapy.jino-net.ru
 - sunhe.jinr.ru
 - jqk2me2mzf.ru
@@ -45408,9 +45454,6 @@ domain_suffix_set:
 - jux9ms4vc7.ru
 - jwduahujge.ru
 - enot.k-yroky.ru
-- a1.k26i.ru
-- k3x.k26i.ru
-- r.k26i.ru
 - k50.ru
 - kadam.ru
 - media.kahoxa.ru
@@ -45728,6 +45771,7 @@ domain_suffix_set:
 - banner.relcom.ru
 - release-me.ru
 - a.resr.ru
+- md.rexykye2.ru
 - rezhiv.ru
 - rb.rfn.ru
 - rg-be.ru
@@ -45761,7 +45805,6 @@ domain_suffix_set:
 - ssp.rutube.ru
 - stat.ruvr.ru
 - promo.rzonline.ru
-- z.s57o.ru
 - saf-oil.ru
 - tr.samoresim.ru
 - sape.ru
@@ -45804,6 +45847,7 @@ domain_suffix_set:
 - socgate.ru
 - widget.socialmart.ru
 - socialsend.ru
+- softcatalog.ru
 - solodar.ru
 - sp9hb5jy81iw.ru
 - spacepush.ru
@@ -46008,7 +46052,6 @@ domain_suffix_set:
 - ban.zab.ru
 - cdn.zamunda.ru
 - zapbox.ru
-- zapchast-gazkotel.ru
 - zarabotki.ru
 - jet.zbp.ru
 - banners.zbs.ru
@@ -46124,7 +46167,6 @@ domain_suffix_set:
 - tracking.dagligvarunytt.se
 - tracking.etidning.dalademokraten.se
 - tracking.dalademokraten.se
-- records.dennisign.se
 - stat.devote.se
 - tracking.borssnack.di.se
 - tracking.ditv.di.se
@@ -47902,7 +47944,6 @@ domain_suffix_set:
 - oyuqmyebotcls.site
 - p0rte.site
 - payplintelverify3.site
-- pbymzmwwopnlm.site
 - pccdirect.site
 - pdainpzfelpch.site
 - pdzxeaxlqnvac.site
@@ -48284,7 +48325,6 @@ domain_suffix_set:
 - wwwroot.forent.sk
 - free-money.host.sk
 - naj.sk
-- oknoplastik.sk
 - pocitadlo.sk
 - rsz.sk
 - mas.sector.sk
@@ -50310,6 +50350,7 @@ domain_suffix_set:
 - bylbnayqajgqa.top
 - byyngjmoylwoj.top
 - c3j7rk-rtbix.top
+- dw.c4kdeliver.top
 - cachuadirked.top
 - camballcovisit.top
 - catgutssendal.top
@@ -51171,7 +51212,6 @@ domain_suffix_set:
 - ad-plus.com.tr
 - admatic.com.tr
 - cdbs.com.tr
-- chinesegarden.com.tr
 - adsp.ciner.com.tr
 - eue.d-teknoloji.com.tr
 - ad.dline.com.tr
@@ -51667,6 +51707,7 @@ domain_suffix_set:
 - com-http.us
 - pub-referral-widget.current.us
 - date-till-late.us
+- dongyu.us
 - dontwatch.us
 - faceu.us
 - freakhouse.us

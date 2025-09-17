@@ -1,4 +1,4 @@
-# Total: 1478 rules
+# Total: 1492 rules
 no_resolve: true
 domain_set:
 - speedtest.58243.as
@@ -57,6 +57,7 @@ domain_set:
 - melndm1speed1.wireline.com.au
 - sydgs2speed4.wireline.com.au
 - speedtest.yless4u.com.au
+- speedtest.syd.hawknetlabs.au
 - speed.as151799.net.au
 - speed.coralis.net.au
 - speedtest.dcsi.net.au
@@ -77,6 +78,7 @@ domain_set:
 - speedtest.syd01.launtel.net.au
 - ookla.b2.neptune.net.au
 - ookla.me1.neptune.net.au
+- ookla.p2.neptune.net.au
 - ookla.sy1.neptune.net.au
 - speedtest.syd.netsg.net.au
 - speedtest01.per1.spintel.net.au
@@ -108,6 +110,7 @@ domain_set:
 - test.beamtelecom.com.br
 - speed.bitnettecnologia.com.br
 - sp1.boomerangtelecom.com.br
+- speed.brandaonet.com.br
 - acrenettecnologia.brsserver.com.br
 - asanet.brsserver.com.br
 - asanet1.brsserver.com.br
@@ -158,6 +161,7 @@ domain_set:
 - speedtest.fibernetwork.com.br
 - velocimetro.fibernetwork.com.br
 - sp1.fibramaisce.com.br
+- speedtest.fibranex.com.br
 - teste.firenetwork.com.br
 - speedtest1.flashwifi.com.br
 - speed.flttelecom.com.br
@@ -215,7 +219,9 @@ domain_set:
 - teste.mwhtelecom.com.br
 - navegaooklafortaleza.navegamais.com.br
 - speedtest.nbntelecom.com.br
+- velocidade.ndtelecom.com.br
 - spx.neonetce.com.br
+- speedtest.netgotelecom.com.br
 - speedtest.netlinkce.com.br
 - speed.netmasterce.com.br
 - velocidade.netshowtelecom.com.br
@@ -227,6 +233,7 @@ domain_set:
 - sp1.nokeconsultoria.com.br
 - medidor.nortelecom.com.br
 - stczs.norteultrafibra.com.br
+- speedtest1.nossanetfortaleza.com.br
 - speedtest.ollatelecom.com.br
 - speedtest.omegasul.com.br
 - speedtest.opennetfortaleza.com.br
@@ -322,6 +329,7 @@ domain_set:
 - speedtest-cam1.cyberlink.net.br
 - teste.dstelecom.net.br
 - srvteste.edntelecom.net.br
+- speedtest.foxnettelecom.net.br
 - teste.i9va.net.br
 - speedtest.idnet.net.br
 - speedtest.iftecnologia.net.br
@@ -361,6 +369,7 @@ domain_set:
 - teste.mov.pro.br
 - velocimetro.esolution.srv.br
 - ookla-ita.asanet.tec.br
+- spx.mixtelecom.tec.br
 - speedtest.aquitelecom.tv.br
 - speedtest.307net.ca
 - speedtest.45networks.ca
@@ -378,6 +387,7 @@ domain_set:
 - speedtest.lsvl.cooptel.ca
 - speedtest.cooptel.ca
 - speedtest.dcnord.ca
+- speedtest3r.dcnord.ca
 - speedtest-east.eastlink.ca
 - speedtest-nl.eastlink.ca
 - speedtest-west.eastlink.ca
@@ -387,6 +397,7 @@ domain_set:
 - speedtest.execulink.ca
 - speedtest.fibernetics.ca
 - srv12.mtlcx03.fibrenoire.ca
+- speedtest-mtl1.fleettel.ca
 - east-speedtest.frontiernetworks.ca
 - west-speedtest.frontiernetworks.ca
 - speedtest.gosfieldtel.ca
@@ -948,6 +959,7 @@ domain_set:
 - perf-01.ixn.as42689.net
 - speedtest.ams0.nl.as61049.net
 - speedtest-ookla-par.as62000.net
+- ookla.pvu.as6453.net
 - sp3.atcc-gns.net
 - sp7.atcc-gns.net
 - spd.basefix.net
@@ -1031,6 +1043,7 @@ domain_set:
 - speedtest-eqx-sg1.ixtelecom.net
 - speedtest.jbarbieri.net
 - speedtest.k-fo.net
+- speedtest.kazzara.net
 - perf.keyyo.net
 - speedtest.kos.net
 - ookla.lanetcie.net
@@ -1396,6 +1409,7 @@ domain_set:
 - speedtest02a.web.zen.net.uk
 - speedtest.octaplus.uk
 - speedtest.w-net.us
+- speed.way2.us
 - btestmcp.vocetelecom.vc
 - hkgspeedtest.cmctelecom.vn
 - koreaspeedtest.cmctelecom.vn

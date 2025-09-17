@@ -1,4 +1,4 @@
-# Total: 800 rules
+# Total: 801 rules
 'payload':
 - 'i.dell.com'
 - 'ocsp.globalsign.com'
@@ -697,6 +697,7 @@
 - '+.id6.me'
 - '+.oppoer.me'
 - '+.qbox.me'
+- '+.zhale.me'
 - '+.chunyu.mobi'
 - '+.goto-game.mobi'
 - '+.xunyou.mobi'
