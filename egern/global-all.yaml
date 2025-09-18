@@ -1,4 +1,4 @@
-# Total: 5331 rules
+# Total: 5334 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -2059,6 +2059,8 @@ domain_set:
 - mstdn-s3.o3o.studio
 - bcdn.starapps.studio
 - cdn.starapps.studio
+- embed.zenn.studio
+- static.zenn.studio
 - eslint.style
 - vanilla-extract.style
 - static.ada.support
@@ -4131,6 +4133,7 @@ domain_suffix_set:
 - vsmarketplacebadges.dev
 - web.dev
 - workers.dev
+- zenn.dev
 - dk
 - linux.do
 - telegram.dog

@@ -1,4 +1,4 @@
-# Total: 5348 rules
+# Total: 5351 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -2057,6 +2057,8 @@ DOMAIN,public.flourish.studio
 DOMAIN,mstdn-s3.o3o.studio
 DOMAIN,bcdn.starapps.studio
 DOMAIN,cdn.starapps.studio
+DOMAIN,embed.zenn.studio
+DOMAIN,static.zenn.studio
 DOMAIN,eslint.style
 DOMAIN,vanilla-extract.style
 DOMAIN,static.ada.support
@@ -4128,6 +4130,7 @@ DOMAIN-SUFFIX,vscode.dev
 DOMAIN-SUFFIX,vsmarketplacebadges.dev
 DOMAIN-SUFFIX,web.dev
 DOMAIN-SUFFIX,workers.dev
+DOMAIN-SUFFIX,zenn.dev
 DOMAIN-SUFFIX,dk
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,telegram.dog

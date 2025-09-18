@@ -1,4 +1,4 @@
-# Total: 1592 rules
+# Total: 1593 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -934,6 +934,7 @@
 - '+.vscode.dev'
 - '+.web.dev'
 - '+.workers.dev'
+- '+.zenn.dev'
 - '+.dk'
 - '+.linux.do'
 - '+.edu'

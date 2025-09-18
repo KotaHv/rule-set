@@ -1,4 +1,4 @@
-# Total: 5207 rules
+# Total: 5210 rules
 'payload':
 - 'mirror.host.ag'
 - 'cdn.7tv.app'
@@ -2058,6 +2058,8 @@
 - 'mstdn-s3.o3o.studio'
 - 'bcdn.starapps.studio'
 - 'cdn.starapps.studio'
+- 'embed.zenn.studio'
+- 'static.zenn.studio'
 - 'eslint.style'
 - 'vanilla-extract.style'
 - 'static.ada.support'
@@ -4129,6 +4131,7 @@
 - '+.vsmarketplacebadges.dev'
 - '+.web.dev'
 - '+.workers.dev'
+- '+.zenn.dev'
 - '+.dk'
 - '+.linux.do'
 - '+.telegram.dog'

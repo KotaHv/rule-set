@@ -1,4 +1,4 @@
-# Total: 3903 rules
+# Total: 3905 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -2685,6 +2685,8 @@
 - 'mstdn-s3.o3o.studio'
 - 'bcdn.starapps.studio'
 - 'cdn.starapps.studio'
+- 'embed.zenn.studio'
+- 'static.zenn.studio'
 - 'eslint.style'
 - 'vanilla-extract.style'
 - 'img.coomer.su'
