@@ -1,4 +1,4 @@
-# Total: 1185 rules
+# Total: 1188 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -315,6 +315,7 @@ domain_set:
 - www-ftp.lip6.fr
 - cpan.mines-albi.fr
 - ctan.mines-albi.fr
+- maven.is-quite.gay
 - download.bazzite.gg
 - apache.forthnet.gr
 - ftp.forthnet.gr
@@ -460,6 +461,7 @@ domain_set:
 - apache.mivzakim.net
 - download-installer.cdn.mozilla.net
 - az764295.vo.msecnd.net
+- maven.neoforged.net
 - mirrors.neterra.net
 - mirrors.netix.net
 - mirror.us-midwest-1.nexcess.net
@@ -670,6 +672,7 @@ domain_set:
 - repository.su
 - mirror.kumi.systems
 - ghfast.top
+- repo.sleeping.town
 - cpan.ulak.net.tr
 - mirror.twds.com.tw
 - apache.stu.edu.tw

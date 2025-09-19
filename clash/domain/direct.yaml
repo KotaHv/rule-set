@@ -1,4 +1,4 @@
-# Total: 801 rules
+# Total: 804 rules
 'payload':
 - 'i.dell.com'
 - 'ocsp.globalsign.com'
@@ -22,7 +22,9 @@
 - 'injections.adguard.org'
 - 'local.adguard.org'
 - 'stun.moonlight-stream.org'
+- 'dns.pub'
 - 'doh.pub'
+- 'dot.pub'
 - 'st-bak.viv.wanwang.space'
 - 'acg.tv'
 - 'b23.tv'
@@ -65,6 +67,7 @@
 - '+.360kuai.com'
 - '+.360os.com'
 - '+.360safe.com'
+- '+.360simg.com'
 - '+.360tpcdn.com'
 - '+.360webcache.com'
 - '+.36kr.com'

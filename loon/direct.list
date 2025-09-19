@@ -1,4 +1,4 @@
-# Total: 804 rules
+# Total: 807 rules
 DOMAIN,i.dell.com
 DOMAIN,ocsp.globalsign.com
 DOMAIN,ocsp2.globalsign.com
@@ -21,7 +21,9 @@ DOMAIN,kms.03k.org
 DOMAIN,injections.adguard.org
 DOMAIN,local.adguard.org
 DOMAIN,stun.moonlight-stream.org
+DOMAIN,dns.pub
 DOMAIN,doh.pub
+DOMAIN,dot.pub
 DOMAIN,st-bak.viv.wanwang.space
 DOMAIN,acg.tv
 DOMAIN,b23.tv
@@ -64,6 +66,7 @@ DOMAIN-SUFFIX,360in.com
 DOMAIN-SUFFIX,360kuai.com
 DOMAIN-SUFFIX,360os.com
 DOMAIN-SUFFIX,360safe.com
+DOMAIN-SUFFIX,360simg.com
 DOMAIN-SUFFIX,360tpcdn.com
 DOMAIN-SUFFIX,360webcache.com
 DOMAIN-SUFFIX,36kr.com

@@ -1,4 +1,4 @@
-# Total: 5334 rules
+# Total: 5339 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -507,6 +507,7 @@ domain_set:
 - genesis-cdn.ff.com
 - s3.filebase.com
 - static.filehorse.com
+- images.filepuma.com
 - static.filestackapi.com
 - images.financemagnates.com
 - widget.finlogix.com
@@ -810,6 +811,7 @@ domain_set:
 - developer.microsoft.com
 - images.ecomm.microsoft.com
 - edgeupdates.microsoft.com
+- learn-attachment.microsoft.com
 - msdl.microsoft.com
 - officecdnmac.microsoft.com
 - packages.microsoft.com
@@ -1398,6 +1400,7 @@ domain_set:
 - ftp.funet.fi
 - icons.llamao.fi
 - cdn.robinpro.gallery
+- maven.is-quite.gay
 - cdn.glitch.global
 - apache.forthnet.gr
 - ftp.forthnet.gr
@@ -1782,6 +1785,7 @@ domain_set:
 - az700632.vo.msecnd.net
 - az764295.vo.msecnd.net
 - cdn.myfonts.net
+- maven.neoforged.net
 - mirrors.neterra.net
 - mirrors.netix.net
 - mirror.us-midwest-1.nexcess.net
@@ -2069,6 +2073,7 @@ domain_set:
 - css.4jpg.top
 - static-cdn.bytegiftia.top
 - ghfast.top
+- repo.sleeping.town
 - ipfs.d.tube
 - js.txxx.tube
 - tn.txxx.tube

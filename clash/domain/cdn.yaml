@@ -1,4 +1,4 @@
-# Total: 3905 rules
+# Total: 3907 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -667,6 +667,7 @@
 - 'static.figma.com'
 - 's3.filebase.com'
 - 'static.filehorse.com'
+- 'images.filepuma.com'
 - 'static.filestackapi.com'
 - 'images.financemagnates.com'
 - 'images.findagrave.com'
@@ -1131,6 +1132,7 @@
 - 'cdn.create.microsoft.com'
 - 'csp.microsoft.com'
 - 'images.ecomm.microsoft.com'
+- 'learn-attachment.microsoft.com'
 - 'cmtycdn.powerpages.microsoft.com'
 - 'store-images.microsoft.com'
 - 'cdn.techcommunity.microsoft.com'

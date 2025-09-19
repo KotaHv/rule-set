@@ -1,4 +1,4 @@
-# Total: 804 rules
+# Total: 807 rules
 no_resolve: true
 domain_set:
 - i.dell.com
@@ -23,7 +23,9 @@ domain_set:
 - injections.adguard.org
 - local.adguard.org
 - stun.moonlight-stream.org
+- dns.pub
 - doh.pub
+- dot.pub
 - st-bak.viv.wanwang.space
 - acg.tv
 - b23.tv
@@ -67,6 +69,7 @@ domain_suffix_set:
 - 360kuai.com
 - 360os.com
 - 360safe.com
+- 360simg.com
 - 360tpcdn.com
 - 360webcache.com
 - 36kr.com
