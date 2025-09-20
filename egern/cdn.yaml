@@ -1,4 +1,4 @@
-# Total: 3980 rules
+# Total: 3982 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1427,6 +1427,8 @@ domain_set:
 - cacerts.rapidssl.com
 - assets.raspberrypi.com
 - cdn-rdstaticassets.readdle.com
+- cdn.readmoo.com
+- reader.readmoo.com
 - assets-www.readspeaker.com
 - cdn-eu.readspeaker.com
 - cdn-us.readspeaker.com
