@@ -1,4 +1,4 @@
-# Total: 1180 rules
+# Total: 1182 rules
 'payload':
 - 'mirror.host.ag'
 - 'updates.istatmenus.app'
@@ -433,6 +433,7 @@
 - 'mirror.datapipe.net'
 - 'cloudfront.debian.net'
 - 'cpan.excellmedia.net'
+- 'maven.fabricmc.net'
 - 'mirror.fcix.net'
 - 'down.filen.net'
 - 'down.filen-1.net'
@@ -440,6 +441,7 @@
 - 'down.filen-3.net'
 - 'down.filen-4.net'
 - 'down.filen-5.net'
+- 'mediafilez.forgecdn.net'
 - 'ota.googlezip.net'
 - 'ota-cache1.googlezip.net'
 - 'mirror.sov.uk.goscomb.net'

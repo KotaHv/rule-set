@@ -1,4 +1,4 @@
-# Total: 1188 rules
+# Total: 1190 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -434,6 +434,7 @@ domain_set:
 - mirror.datapipe.net
 - cloudfront.debian.net
 - cpan.excellmedia.net
+- maven.fabricmc.net
 - mirror.fcix.net
 - down.filen.net
 - down.filen-1.net
@@ -441,6 +442,7 @@ domain_set:
 - down.filen-3.net
 - down.filen-4.net
 - down.filen-5.net
+- mediafilez.forgecdn.net
 - ota.googlezip.net
 - ota-cache1.googlezip.net
 - mirror.sov.uk.goscomb.net
