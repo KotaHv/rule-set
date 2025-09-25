@@ -1,4 +1,4 @@
-# Total: 3983 rules
+# Total: 3988 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -56,6 +56,8 @@ domain_set:
 - tags.news.com.au
 - styleguide-assets.shannons.com.au
 - res.abc.net.au
+- components.cyclingfactory.be
+- images.cyclingfactory.be
 - i.111666.best
 - i.loli.best
 - image.nmb.best
@@ -1977,6 +1979,7 @@ domain_set:
 - newsstatic.rthk.hk
 - cdn.unwire.hk
 - cdn.masto.host
+- tile2.intervals.icu
 - sn-s3-cdn.angry.im
 - s3.c.im
 - badges.gitter.im
@@ -2307,6 +2310,7 @@ domain_set:
 - linuxiac.b-cdn.net
 - mintlify.b-cdn.net
 - panel-production-libs.b-cdn.net
+- r34xyz.b-cdn.net
 - todoist.b-cdn.net
 - vz-2222604c-50b.b-cdn.net
 - vz-c0fe498e-5ab.b-cdn.net
@@ -2766,6 +2770,7 @@ domain_set:
 - app.moegirl.tw
 - img.moegirl.tw
 - storage.moegirl.tw
+- img-fnc.ebc.net.tw
 - news-data.pts.org.tw
 - cf.shopee.tw
 - static.bbc.co.uk
