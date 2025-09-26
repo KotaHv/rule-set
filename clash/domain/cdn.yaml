@@ -1,4 +1,4 @@
-# Total: 3915 rules
+# Total: 3916 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -2673,6 +2673,7 @@
 - 'images.spr.so'
 - 'assets-v2.super.so'
 - 'sites.super.so'
+- 'storage.tally.so'
 - 'cdn.bsky.social'
 - 'assets.chaos.social'
 - 'media-cdn.comfy.social'

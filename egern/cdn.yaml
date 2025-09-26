@@ -1,4 +1,4 @@
-# Total: 3988 rules
+# Total: 3989 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2674,6 +2674,7 @@ domain_set:
 - images.spr.so
 - assets-v2.super.so
 - sites.super.so
+- storage.tally.so
 - cdn.bsky.social
 - assets.chaos.social
 - media-cdn.comfy.social

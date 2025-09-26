@@ -1,4 +1,4 @@
-# Total: 5343 rules
+# Total: 5344 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -2056,6 +2056,7 @@ domain_set:
 - images.spr.so
 - assets-v2.super.so
 - sites.super.so
+- storage.tally.so
 - cdn.arcade.software
 - cdn.deta.space
 - cdn.hiive.space

@@ -1,4 +1,4 @@
-# Total: 1190 rules
+# Total: 1191 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -698,6 +698,7 @@ domain_set:
 - cdn.zoom.us
 - espejito.fder.edu.uy
 - mac-release-static.stash.ws
+- releases.stash.ws
 - ghgo.xyz
 - boot.netboot.xyz
 - ftp.sun.ac.za
