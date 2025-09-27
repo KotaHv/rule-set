@@ -1,4 +1,4 @@
-# Total: 1505 rules
+# Total: 1508 rules
 no_resolve: true
 domain_set:
 - speedtest.58243.as
@@ -999,6 +999,7 @@ domain_set:
 - sp.esim-international.net
 - sp-sea-01.ezeefiber.net
 - speed.farknet.net
+- speedtest.hnd.fdcservers.net
 - lg-ams.fdcservers.net
 - lg-dfw.fdcservers.net
 - lg-dme.fdcservers.net
@@ -1015,6 +1016,7 @@ domain_set:
 - lg-syd.fdcservers.net
 - lg-tok.fdcservers.net
 - lg-tor.fdcservers.net
+- speedtest.mia.fdcservers.net
 - speedtest.fiberlinknetwork.net
 - speedtest.fiuc.net
 - st.fratec.net
@@ -1179,6 +1181,7 @@ domain_set:
 - speedtest.mti.network
 - ookla-speedtest.starverse.network
 - de-lg.h2.nexus
+- speed-ams.bouwhuisit.nl
 - speedtest.nik.fiber.nl
 - iperf.gakijken.nl
 - speedtest.i4networks.nl
