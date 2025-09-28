@@ -1,4 +1,4 @@
-# Total: 5222 rules
+# Total: 5223 rules
 'payload':
 - 'mirror.host.ag'
 - 'cdn.7tv.app'
@@ -316,6 +316,7 @@
 - 'static.canva.com'
 - 'static.captcha-delivery.com'
 - 'assets.capterra.com'
+- 'reviews-badge.capterra.com'
 - 'images.carfax.com'
 - 'static.carfax.com'
 - 'events.ld.catamorphic.com'

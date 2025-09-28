@@ -1,4 +1,4 @@
-# Total: 3992 rules
+# Total: 3993 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -402,6 +402,7 @@ domain_set:
 - static.canva.com
 - static.captcha-delivery.com
 - assets.capterra.com
+- reviews-badge.capterra.com
 - images.carfax.com
 - static.carfax.com
 - events.ld.catamorphic.com

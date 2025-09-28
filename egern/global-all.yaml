@@ -1,4 +1,4 @@
-# Total: 5346 rules
+# Total: 5347 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -317,6 +317,7 @@ domain_set:
 - static.canva.com
 - static.captcha-delivery.com
 - assets.capterra.com
+- reviews-badge.capterra.com
 - images.carfax.com
 - static.carfax.com
 - events.ld.catamorphic.com
