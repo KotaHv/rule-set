@@ -1,4 +1,4 @@
-# Total: 5220 rules
+# Total: 5222 rules
 'payload':
 - 'mirror.host.ag'
 - 'cdn.7tv.app'
@@ -92,6 +92,7 @@
 - 'load.csell.co'
 - 'cdn.decrypt.co'
 - 'img.decrypt.co'
+- 'assets.dub.co'
 - 'statics.erothots.co'
 - 'previews.fleek.co'
 - 'storageapi.fleek.co'
@@ -769,6 +770,7 @@
 - 'apim.m3pd.com'
 - 'img-api.mac4ever.com'
 - 'images.macrumors.com'
+- 'i.magecdn.com'
 - 'cdn-images.mailchimp.com'
 - 'form-assets.mailchimp.com'
 - 'fonts.mailerlite.com'

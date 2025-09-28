@@ -1,4 +1,4 @@
-# Total: 3936 rules
+# Total: 3939 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -31,6 +31,7 @@ DOMAIN,assets.airbuddy.app
 DOMAIN,cdn.announcekit.app
 DOMAIN,img.announcekit.app
 DOMAIN,video.bsky.app
+DOMAIN,web-cdn.bsky.app
 DOMAIN,bundle.dyn-rev.app
 DOMAIN,videos.elephas.app
 DOMAIN,do.featurebase.app
@@ -112,6 +113,7 @@ DOMAIN,static.convertio.co
 DOMAIN,load.csell.co
 DOMAIN,cdn.decrypt.co
 DOMAIN,img.decrypt.co
+DOMAIN,assets.dub.co
 DOMAIN,statics.erothots.co
 DOMAIN,previews.fleek.co
 DOMAIN,storageapi.fleek.co
@@ -1091,6 +1093,7 @@ DOMAIN,cdn2.macpaw.com
 DOMAIN,cdn2-imgix.macpaw.com
 DOMAIN,images.macrumors.com
 DOMAIN,static.macupdate.com
+DOMAIN,i.magecdn.com
 DOMAIN,cdn-images.mailchimp.com
 DOMAIN,form-assets.mailchimp.com
 DOMAIN,fonts.mailerlite.com

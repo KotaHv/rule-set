@@ -1,4 +1,4 @@
-# Total: 3916 rules
+# Total: 3919 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -32,6 +32,7 @@
 - 'cdn.announcekit.app'
 - 'img.announcekit.app'
 - 'video.bsky.app'
+- 'web-cdn.bsky.app'
 - 'bundle.dyn-rev.app'
 - 'videos.elephas.app'
 - 'do.featurebase.app'
@@ -113,6 +114,7 @@
 - 'load.csell.co'
 - 'cdn.decrypt.co'
 - 'img.decrypt.co'
+- 'assets.dub.co'
 - 'statics.erothots.co'
 - 'previews.fleek.co'
 - 'storageapi.fleek.co'
@@ -1092,6 +1094,7 @@
 - 'cdn2-imgix.macpaw.com'
 - 'images.macrumors.com'
 - 'static.macupdate.com'
+- 'i.magecdn.com'
 - 'cdn-images.mailchimp.com'
 - 'form-assets.mailchimp.com'
 - 'fonts.mailerlite.com'

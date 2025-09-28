@@ -1,4 +1,4 @@
-# Total: 3989 rules
+# Total: 3992 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -33,6 +33,7 @@ domain_set:
 - cdn.announcekit.app
 - img.announcekit.app
 - video.bsky.app
+- web-cdn.bsky.app
 - bundle.dyn-rev.app
 - videos.elephas.app
 - do.featurebase.app
@@ -114,6 +115,7 @@ domain_set:
 - load.csell.co
 - cdn.decrypt.co
 - img.decrypt.co
+- assets.dub.co
 - statics.erothots.co
 - previews.fleek.co
 - storageapi.fleek.co
@@ -1093,6 +1095,7 @@ domain_set:
 - cdn2-imgix.macpaw.com
 - images.macrumors.com
 - static.macupdate.com
+- i.magecdn.com
 - cdn-images.mailchimp.com
 - form-assets.mailchimp.com
 - fonts.mailerlite.com
