@@ -1,4 +1,4 @@
-# Total: 37 rules
+# Total: 38 rules
 DOMAIN,api.jetbrains.ai
 DOMAIN,gateway.ai.cloudflare.com
 DOMAIN,api.github.com
@@ -32,6 +32,7 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com

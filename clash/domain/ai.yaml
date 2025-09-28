@@ -1,4 +1,4 @@
-# Total: 35 rules
+# Total: 36 rules
 'payload':
 - 'api.jetbrains.ai'
 - 'gateway.ai.cloudflare.com'
@@ -33,5 +33,6 @@
 - '+.poe.com'
 - '+.sora.com'
 - '+.deepmind.google'
+- '+.gemini.google'
 - '+.generativeai.google'
 - '+.notebooklm.google'

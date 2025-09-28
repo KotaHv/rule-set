@@ -1,4 +1,4 @@
-# Total: 37 rules
+# Total: 38 rules
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
@@ -35,6 +35,7 @@ domain_suffix_set:
 - poe.com
 - sora.com
 - deepmind.google
+- gemini.google
 - generativeai.google
 - notebooklm.google
 domain_keyword_set:
