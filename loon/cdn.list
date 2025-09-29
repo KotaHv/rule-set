@@ -1,4 +1,4 @@
-# Total: 3941 rules
+# Total: 3949 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -335,6 +335,7 @@ DOMAIN,cdn7.bigcommerce.com
 DOMAIN,cdn8.bigcommerce.com
 DOMAIN,cdn9.bigcommerce.com
 DOMAIN,checkout-sdk.bigcommerce.com
+DOMAIN,spotlightimage.biggo.com
 DOMAIN,upos-sz-mirroralibstar1.bilivideo.com
 DOMAIN,upos-sz-mirrorcosbstar1.bilivideo.com
 DOMAIN,th.bing.com
@@ -501,7 +502,6 @@ DOMAIN,cdn.commandbar.com
 DOMAIN,frames-commandbar-prod.commandbar.com
 DOMAIN,crt.comodoca.com
 DOMAIN,cdn.comparitech.com
-DOMAIN,ddcdn.comtucdncom.com
 DOMAIN,cdn.configcat.com
 DOMAIN,cds.connatix.com
 DOMAIN,img.connatix.com
@@ -752,7 +752,6 @@ DOMAIN,account-widget-mfe.gcore.com
 DOMAIN,i.geekflare.com
 DOMAIN,img2.gelbooru.com
 DOMAIN,img4.gelbooru.com
-DOMAIN,img5.gelbooru.com
 DOMAIN,assets.genius.com
 DOMAIN,maps.geoapify.com
 DOMAIN,geoip-js.com
@@ -991,6 +990,8 @@ DOMAIN,null.jsbin.com
 DOMAIN,static.jsbin.com
 DOMAIN,data.jsdelivr.com
 DOMAIN,img.jsdelivr.com
+DOMAIN,assets.juksy.com
+DOMAIN,static-assets.juksy.com
 DOMAIN,components.justanswer.com
 DOMAIN,ww2.justanswer.com
 DOMAIN,ww2-secure.justanswer.com
@@ -1626,6 +1627,8 @@ DOMAIN,c.tadst.com
 DOMAIN,cdn.tailwindcss.com
 DOMAIN,cdn-static.talent.com
 DOMAIN,gravatar.tapglb.com
+DOMAIN,assets.tatlerasia.com
+DOMAIN,cdn.tatlerasia.com
 DOMAIN,www.tbstat.com
 DOMAIN,wpmedia.tealium.com
 DOMAIN,cdn0.techbang.com
@@ -1687,6 +1690,7 @@ DOMAIN,flows.trysavvy.com
 DOMAIN,cdn.ttgtmedia.com
 DOMAIN,cdn.ttloli.com
 DOMAIN,cdn2.ttloli.com
+DOMAIN,tn.tubepornclassic.com
 DOMAIN,static.tumblr.com
 DOMAIN,cdn-cms.tunein.com
 DOMAIN,cdn-web.tunein.com
@@ -1797,6 +1801,7 @@ DOMAIN,tn.vjav.com
 DOMAIN,st6-20.vk.com
 DOMAIN,cdn.vnoc.com
 DOMAIN,assets.vogue.com
+DOMAIN,images.voguehk.com
 DOMAIN,assets.volvo.com
 DOMAIN,platform.vox.com
 DOMAIN,apps.voxmedia.com
@@ -1973,7 +1978,6 @@ DOMAIN,cdn.glitch.global
 DOMAIN,c.pki.goog
 DOMAIN,images-assets.nasa.gov
 DOMAIN,assets.science.nasa.gov
-DOMAIN,smd-cms.nasa.gov
 DOMAIN,time-a.nist.gov
 DOMAIN,node.green
 DOMAIN,assets.gorgias.help
@@ -2358,7 +2362,9 @@ DOMAIN,cdnmedia.ero-video.net
 DOMAIN,jnmedia.ero-video.net
 DOMAIN,static.eroterest.net
 DOMAIN,static.esimplus.net
+DOMAIN,cdn1.ettoday.net
 DOMAIN,cdn2.ettoday.net
+DOMAIN,media.ettoday.net
 DOMAIN,static.ettoday.net
 DOMAIN,connect.facebook.net
 DOMAIN,brick.freetls.fastly.net
@@ -2394,6 +2400,7 @@ DOMAIN,static-r.kamihimeproject.net
 DOMAIN,tourpic-vector.maps.komoot.net
 DOMAIN,texture.laby.net
 DOMAIN,sdk.loyaltylion.net
+DOMAIN,static.lwn.net
 DOMAIN,cdn.macstories.net
 DOMAIN,images.mattel.net
 DOMAIN,static.edge.microsoftapp.net
@@ -3495,6 +3502,7 @@ DOMAIN-SUFFIX,yammerusercontent.com
 DOMAIN-SUFFIX,yelpcdn.com
 DOMAIN-SUFFIX,yimg.com
 DOMAIN-SUFFIX,yourimageshare.com
+DOMAIN-SUFFIX,ypcdn.com
 DOMAIN-SUFFIX,ypncdn.com
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,zdassets.com

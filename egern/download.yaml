@@ -1,4 +1,4 @@
-# Total: 1191 rules
+# Total: 1190 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -254,7 +254,6 @@ domain_set:
 - ftp.mpi-inf.mpg.de
 - ftp.mpi-sb.mpg.de
 - mirror.netcologne.de
-- cpan.noris.de
 - packages.oth-regensburg.de
 - ftp.halifax.rwth-aachen.de
 - sunsite.informatik.rwth-aachen.de

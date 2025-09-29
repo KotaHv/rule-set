@@ -1,4 +1,4 @@
-# Total: 5348 rules
+# Total: 5359 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -265,6 +265,7 @@ domain_set:
 - cdn8.bigcommerce.com
 - cdn9.bigcommerce.com
 - checkout-sdk.bigcommerce.com
+- spotlightimage.biggo.com
 - upos-sz-mirroralibstar1.bilivideo.com
 - upos-sz-mirrorcosbstar1.bilivideo.com
 - static.news.bitcoin.com
@@ -384,7 +385,6 @@ domain_set:
 - frames-commandbar-prod.commandbar.com
 - crt.comodoca.com
 - cdn.comparitech.com
-- ddcdn.comtucdncom.com
 - mirrors.concertpass.com
 - cdn.configcat.com
 - cds.connatix.com
@@ -690,6 +690,8 @@ domain_set:
 - blob.jortage.com
 - pool.jortage.com
 - cdn.joypixels.com
+- assets.juksy.com
+- static-assets.juksy.com
 - components.justanswer.com
 - ww2.justanswer.com
 - ww2-secure.justanswer.com
@@ -1175,6 +1177,8 @@ domain_set:
 - c.tadst.com
 - cdn-static.talent.com
 - gravatar.tapglb.com
+- assets.tatlerasia.com
+- cdn.tatlerasia.com
 - www.tbstat.com
 - wpmedia.tealium.com
 - mirror.team-cymru.com
@@ -1278,6 +1282,7 @@ domain_set:
 - useruploads.visualwebsiteoptimizer.com
 - cdn.vnoc.com
 - assets.vogue.com
+- images.voguehk.com
 - assets.volvo.com
 - platform.vox.com
 - apps.voxmedia.com
@@ -1739,7 +1744,9 @@ domain_set:
 - steamcommunity-a.akamaihd.net.edgesuite.net
 - hamifans.emome.net
 - static.esimplus.net
+- cdn1.ettoday.net
 - cdn2.ettoday.net
+- media.ettoday.net
 - static.ettoday.net
 - cpan.excellmedia.net
 - mirror.fcix.net
@@ -1777,6 +1784,7 @@ domain_set:
 - mirror.nl.leaseweb.net
 - mirror.low-orbit.net
 - sdk.loyaltylion.net
+- static.lwn.net
 - mirror.macomnet.net
 - cdn.macstories.net
 - images.mattel.net
@@ -2893,6 +2901,7 @@ domain_suffix_set:
 - goodreads.com
 - googl.com
 - gooogle.com
+- gqhongkong.com
 - grafana.com
 - grammarly.com
 - gravatar.com
@@ -4083,6 +4092,7 @@ domain_suffix_set:
 - youtubeeducation.com
 - youtubegaming.com
 - youtubekids.com
+- ypcdn.com
 - ypncdn.com
 - ytimg.com
 - z.com
@@ -4398,6 +4408,7 @@ domain_suffix_set:
 - deno.land
 - nest.land
 - nyaa.land
+- archive.li
 - xascdn.li
 - dweb.link
 - gitcdn.link

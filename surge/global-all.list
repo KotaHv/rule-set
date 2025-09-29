@@ -1,4 +1,4 @@
-# Total: 5412 rules
+# Total: 5423 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -263,6 +263,7 @@ DOMAIN,cdn7.bigcommerce.com
 DOMAIN,cdn8.bigcommerce.com
 DOMAIN,cdn9.bigcommerce.com
 DOMAIN,checkout-sdk.bigcommerce.com
+DOMAIN,spotlightimage.biggo.com
 DOMAIN,upos-sz-mirroralibstar1.bilivideo.com
 DOMAIN,upos-sz-mirrorcosbstar1.bilivideo.com
 DOMAIN,static.news.bitcoin.com
@@ -382,7 +383,6 @@ DOMAIN,cdn.commandbar.com
 DOMAIN,frames-commandbar-prod.commandbar.com
 DOMAIN,crt.comodoca.com
 DOMAIN,cdn.comparitech.com
-DOMAIN,ddcdn.comtucdncom.com
 DOMAIN,mirrors.concertpass.com
 DOMAIN,cdn.configcat.com
 DOMAIN,cds.connatix.com
@@ -688,6 +688,8 @@ DOMAIN,cdn.joinhoney.com
 DOMAIN,blob.jortage.com
 DOMAIN,pool.jortage.com
 DOMAIN,cdn.joypixels.com
+DOMAIN,assets.juksy.com
+DOMAIN,static-assets.juksy.com
 DOMAIN,components.justanswer.com
 DOMAIN,ww2.justanswer.com
 DOMAIN,ww2-secure.justanswer.com
@@ -1173,6 +1175,8 @@ DOMAIN,events.tableplus.com
 DOMAIN,c.tadst.com
 DOMAIN,cdn-static.talent.com
 DOMAIN,gravatar.tapglb.com
+DOMAIN,assets.tatlerasia.com
+DOMAIN,cdn.tatlerasia.com
 DOMAIN,www.tbstat.com
 DOMAIN,wpmedia.tealium.com
 DOMAIN,mirror.team-cymru.com
@@ -1276,6 +1280,7 @@ DOMAIN,live.visually-io.com
 DOMAIN,useruploads.visualwebsiteoptimizer.com
 DOMAIN,cdn.vnoc.com
 DOMAIN,assets.vogue.com
+DOMAIN,images.voguehk.com
 DOMAIN,assets.volvo.com
 DOMAIN,platform.vox.com
 DOMAIN,apps.voxmedia.com
@@ -1737,7 +1742,9 @@ DOMAIN,assets.dwncdn.net
 DOMAIN,steamcommunity-a.akamaihd.net.edgesuite.net
 DOMAIN,hamifans.emome.net
 DOMAIN,static.esimplus.net
+DOMAIN,cdn1.ettoday.net
 DOMAIN,cdn2.ettoday.net
+DOMAIN,media.ettoday.net
 DOMAIN,static.ettoday.net
 DOMAIN,cpan.excellmedia.net
 DOMAIN,mirror.fcix.net
@@ -1775,6 +1782,7 @@ DOMAIN,mirror.de.leaseweb.net
 DOMAIN,mirror.nl.leaseweb.net
 DOMAIN,mirror.low-orbit.net
 DOMAIN,sdk.loyaltylion.net
+DOMAIN,static.lwn.net
 DOMAIN,mirror.macomnet.net
 DOMAIN,cdn.macstories.net
 DOMAIN,images.mattel.net
@@ -2890,6 +2898,7 @@ DOMAIN-SUFFIX,golang.com
 DOMAIN-SUFFIX,goodreads.com
 DOMAIN-SUFFIX,googl.com
 DOMAIN-SUFFIX,gooogle.com
+DOMAIN-SUFFIX,gqhongkong.com
 DOMAIN-SUFFIX,grafana.com
 DOMAIN-SUFFIX,grammarly.com
 DOMAIN-SUFFIX,gravatar.com
@@ -4080,6 +4089,7 @@ DOMAIN-SUFFIX,youtube-nocookie.com
 DOMAIN-SUFFIX,youtubeeducation.com
 DOMAIN-SUFFIX,youtubegaming.com
 DOMAIN-SUFFIX,youtubekids.com
+DOMAIN-SUFFIX,ypcdn.com
 DOMAIN-SUFFIX,ypncdn.com
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,z.com
@@ -4395,6 +4405,7 @@ DOMAIN-SUFFIX,la
 DOMAIN-SUFFIX,deno.land
 DOMAIN-SUFFIX,nest.land
 DOMAIN-SUFFIX,nyaa.land
+DOMAIN-SUFFIX,archive.li
 DOMAIN-SUFFIX,xascdn.li
 DOMAIN-SUFFIX,dweb.link
 DOMAIN-SUFFIX,gitcdn.link

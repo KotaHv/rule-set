@@ -1,4 +1,4 @@
-# Total: 1594 rules
+# Total: 1596 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -389,6 +389,7 @@
 - '+.goodreads.com'
 - '+.googl.com'
 - '+.gooogle.com'
+- '+.gqhongkong.com'
 - '+.grafana.com'
 - '+.grammarly.com'
 - '+.grindr.com'
@@ -1098,6 +1099,7 @@
 - '+.la'
 - '+.deno.land'
 - '+.nyaa.land'
+- '+.archive.li'
 - '+.dweb.link'
 - '+.page.link'
 - '+.vercel.live'

@@ -1,4 +1,4 @@
-# Total: 1612 rules
+# Total: 1614 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -391,6 +391,7 @@ domain_suffix_set:
 - goodreads.com
 - googl.com
 - gooogle.com
+- gqhongkong.com
 - grafana.com
 - grammarly.com
 - grindr.com
@@ -1100,6 +1101,7 @@ domain_suffix_set:
 - la
 - deno.land
 - nyaa.land
+- archive.li
 - dweb.link
 - page.link
 - vercel.live
