@@ -1,4 +1,4 @@
-# Total: 5359 rules
+# Total: 5362 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -188,6 +188,7 @@ domain_set:
 - fast.appcues.com
 - vsmarketplacebadge.apphb.com
 - apple-relay.apple.com
+- static.ess.apple.com
 - events-delivery.apple.com
 - events-live.apple.com
 - hls.itunes.apple.com
@@ -4434,7 +4435,9 @@ domain_suffix_set:
 - about.me
 - binance.me
 - disconnect.me
+- dnvodcdn.me
 - fb.me
+- global-cdn.me
 - hanime1.me
 - hanimeone.me
 - kktv.me

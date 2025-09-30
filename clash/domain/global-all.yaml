@@ -1,4 +1,4 @@
-# Total: 5235 rules
+# Total: 5238 rules
 'payload':
 - 'mirror.host.ag'
 - 'cdn.7tv.app'
@@ -187,6 +187,7 @@
 - 'fast.appcues.com'
 - 'vsmarketplacebadge.apphb.com'
 - 'apple-relay.apple.com'
+- 'static.ess.apple.com'
 - 'events-delivery.apple.com'
 - 'events-live.apple.com'
 - 'hls.itunes.apple.com'
@@ -4432,7 +4433,9 @@
 - '+.about.me'
 - '+.binance.me'
 - '+.disconnect.me'
+- '+.dnvodcdn.me'
 - '+.fb.me'
+- '+.global-cdn.me'
 - '+.hanime1.me'
 - '+.hanimeone.me'
 - '+.kktv.me'

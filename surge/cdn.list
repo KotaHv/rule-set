@@ -1,4 +1,4 @@
-# Total: 4002 rules
+# Total: 4008 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -10,6 +10,7 @@ DOMAIN,widget.docsbot.ai
 DOMAIN,cdn.engagement.ai
 DOMAIN,media.evolv.ai
 DOMAIN,participants.evolv.ai
+DOMAIN,cdn.fellou.ai
 DOMAIN,cdn.fera.ai
 DOMAIN,solve-widget.forethought.ai
 DOMAIN,api.instantly.ai
@@ -241,6 +242,7 @@ DOMAIN,app-spm.com
 DOMAIN,fast.appcues.com
 DOMAIN,vsmarketplacebadge.apphb.com
 DOMAIN,apple-relay.apple.com
+DOMAIN,static.ess.apple.com
 DOMAIN,events-delivery.apple.com
 DOMAIN,events-live.apple.com
 DOMAIN,lcdn-locator.apple.com
@@ -2743,6 +2745,8 @@ DOMAIN,imgcn5.bgmbk.tv
 DOMAIN,cloudflare.tv
 DOMAIN,cdn1.hotmoza.tv
 DOMAIN,i.iwara.tv
+DOMAIN,pptstatic.iyf.tv
+DOMAIN,static.iyf.tv
 DOMAIN,assets.jable.tv
 DOMAIN,assets-cdn.jable.tv
 DOMAIN,assetscdn.jable.tv
@@ -3648,6 +3652,8 @@ DOMAIN-SUFFIX,doppiocdn.live
 DOMAIN-SUFFIX,cloudflare.ltd
 DOMAIN-SUFFIX,iframe.ly
 DOMAIN-SUFFIX,disconnect.me
+DOMAIN-SUFFIX,dnvodcdn.me
+DOMAIN-SUFFIX,global-cdn.me
 DOMAIN-SUFFIX,javplayer.me
 DOMAIN-SUFFIX,mycdn.me
 DOMAIN-SUFFIX,randomuser.me

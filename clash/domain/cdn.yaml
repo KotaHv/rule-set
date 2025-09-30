@@ -1,4 +1,4 @@
-# Total: 3929 rules
+# Total: 3935 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -11,6 +11,7 @@
 - 'cdn.engagement.ai'
 - 'media.evolv.ai'
 - 'participants.evolv.ai'
+- 'cdn.fellou.ai'
 - 'cdn.fera.ai'
 - 'solve-widget.forethought.ai'
 - 'api.instantly.ai'
@@ -242,6 +243,7 @@
 - 'fast.appcues.com'
 - 'vsmarketplacebadge.apphb.com'
 - 'apple-relay.apple.com'
+- 'static.ess.apple.com'
 - 'events-delivery.apple.com'
 - 'events-live.apple.com'
 - 'lcdn-locator.apple.com'
@@ -2744,6 +2746,8 @@
 - 'cloudflare.tv'
 - 'cdn1.hotmoza.tv'
 - 'i.iwara.tv'
+- 'pptstatic.iyf.tv'
+- 'static.iyf.tv'
 - 'assets.jable.tv'
 - 'assets-cdn.jable.tv'
 - 'assetscdn.jable.tv'
@@ -3649,6 +3653,8 @@
 - '+.cloudflare.ltd'
 - '+.iframe.ly'
 - '+.disconnect.me'
+- '+.dnvodcdn.me'
+- '+.global-cdn.me'
 - '+.javplayer.me'
 - '+.mycdn.me'
 - '+.randomuser.me'

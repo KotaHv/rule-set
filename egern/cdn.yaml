@@ -1,4 +1,4 @@
-# Total: 4002 rules
+# Total: 4008 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -12,6 +12,7 @@ domain_set:
 - cdn.engagement.ai
 - media.evolv.ai
 - participants.evolv.ai
+- cdn.fellou.ai
 - cdn.fera.ai
 - solve-widget.forethought.ai
 - api.instantly.ai
@@ -243,6 +244,7 @@ domain_set:
 - fast.appcues.com
 - vsmarketplacebadge.apphb.com
 - apple-relay.apple.com
+- static.ess.apple.com
 - events-delivery.apple.com
 - events-live.apple.com
 - lcdn-locator.apple.com
@@ -2745,6 +2747,8 @@ domain_set:
 - cloudflare.tv
 - cdn1.hotmoza.tv
 - i.iwara.tv
+- pptstatic.iyf.tv
+- static.iyf.tv
 - assets.jable.tv
 - assets-cdn.jable.tv
 - assetscdn.jable.tv
@@ -3651,6 +3655,8 @@ domain_suffix_set:
 - cloudflare.ltd
 - iframe.ly
 - disconnect.me
+- dnvodcdn.me
+- global-cdn.me
 - javplayer.me
 - mycdn.me
 - randomuser.me

@@ -1,4 +1,4 @@
-# Total: 5376 rules
+# Total: 5379 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -186,6 +186,7 @@ DOMAIN,app-spm.com
 DOMAIN,fast.appcues.com
 DOMAIN,vsmarketplacebadge.apphb.com
 DOMAIN,apple-relay.apple.com
+DOMAIN,static.ess.apple.com
 DOMAIN,events-delivery.apple.com
 DOMAIN,events-live.apple.com
 DOMAIN,hls.itunes.apple.com
@@ -4431,7 +4432,9 @@ DOMAIN-SUFFIX,7mmtv.me
 DOMAIN-SUFFIX,about.me
 DOMAIN-SUFFIX,binance.me
 DOMAIN-SUFFIX,disconnect.me
+DOMAIN-SUFFIX,dnvodcdn.me
 DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,global-cdn.me
 DOMAIN-SUFFIX,hanime1.me
 DOMAIN-SUFFIX,hanimeone.me
 DOMAIN-SUFFIX,kktv.me
