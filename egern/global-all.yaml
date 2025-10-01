@@ -1,4 +1,4 @@
-# Total: 5362 rules
+# Total: 5365 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -61,6 +61,7 @@ domain_set:
 - t2.picb.cc
 - t3.picb.cc
 - t4.picb.cc
+- pixoraa.cc
 - cdn.road.cc
 - mirrors.saswata.cc
 - images.tg.cc
@@ -324,6 +325,7 @@ domain_set:
 - static.carfax.com
 - events.ld.catamorphic.com
 - public-pages.cbinsights.com
+- sequoia.cdn-apple.com
 - eu.cdnbye.com
 - opensignal.cdnbye.com
 - signal.cdnbye.com
@@ -441,6 +443,7 @@ domain_set:
 - cacerts.digicert.com
 - ocsp.digicert.com
 - chat.digitalgenius.com
+- ui-cdn.digitalocean-ui.com
 - cdn-node.diskpart.com
 - global.divhunt.com
 - s1.divhunt.com
