@@ -1,4 +1,4 @@
-# Total: 23 rules
+# Total: 24 rules
 DOMAIN,res-h3.public.cdn.office.net
 DOMAIN,res.cdn.office.net
 DOMAIN,res-1.cdn.office.net
@@ -16,6 +16,7 @@ DOMAIN-SUFFIX,storeedgefd.dsx.mp.microsoft.com
 DOMAIN-SUFFIX,officecdn.microsoft.com
 DOMAIN-SUFFIX,download.prss.microsoft.com
 DOMAIN-SUFFIX,sdx.microsoft.com
+DOMAIN-SUFFIX,storeedge.microsoft.com
 DOMAIN-SUFFIX,download.visualstudio.microsoft.com
 DOMAIN-SUFFIX,cn.windowssearch.com
 DOMAIN-SUFFIX,ctldl.windowsupdate.com

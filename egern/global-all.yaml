@@ -1,4 +1,4 @@
-# Total: 5365 rules
+# Total: 5369 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -282,6 +282,7 @@ domain_set:
 - static.registration.bluehost.com
 - cdn-www.bluestacks.com
 - assets.bnidx.com
+- static.bodor.com
 - static.prd.borderfree.com
 - cc.boyfriendtv.com
 - cdn77.boyfriendtv.com
@@ -538,6 +539,7 @@ domain_set:
 - imgproxy.fourthwall.com
 - themes.fourthwall.com
 - static.foxbusiness.com
+- static-cf.foxdata.com
 - badges.frapsoft.com
 - cdn.freebiesupply.com
 - images.freeimages.com
@@ -936,6 +938,7 @@ domain_set:
 - registry.oomol.com
 - static.oomol.com
 - cdn.openai.com
+- static.openreplay.com
 - openseauserdata.com
 - assets.openshift.com
 - optimizely.com
@@ -1432,6 +1435,7 @@ domain_set:
 - mirror.szerverem.hu
 - tile2.intervals.icu
 - ftp.heanet.ie
+- js.nagich.co.il
 - apache.spd.co.il
 - sn-s3-cdn.angry.im
 - s3.c.im

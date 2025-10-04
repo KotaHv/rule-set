@@ -1,4 +1,4 @@
-# Total: 23 rules
+# Total: 24 rules
 no_resolve: true
 domain_set:
 - res-h3.public.cdn.office.net
@@ -19,6 +19,7 @@ domain_suffix_set:
 - officecdn.microsoft.com
 - download.prss.microsoft.com
 - sdx.microsoft.com
+- storeedge.microsoft.com
 - download.visualstudio.microsoft.com
 - cn.windowssearch.com
 - ctldl.windowsupdate.com

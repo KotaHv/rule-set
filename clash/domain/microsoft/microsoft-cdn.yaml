@@ -1,4 +1,4 @@
-# Total: 21 rules
+# Total: 22 rules
 'payload':
 - 'res-h3.public.cdn.office.net'
 - 'res.cdn.office.net'
@@ -17,6 +17,7 @@
 - '+.officecdn.microsoft.com'
 - '+.download.prss.microsoft.com'
 - '+.sdx.microsoft.com'
+- '+.storeedge.microsoft.com'
 - '+.download.visualstudio.microsoft.com'
 - '+.cn.windowssearch.com'
 - '+.ctldl.windowsupdate.com'

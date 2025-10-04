@@ -1,4 +1,4 @@
-# Total: 4012 rules
+# Total: 4017 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -363,6 +363,7 @@ domain_set:
 - static.registration.bluehost.com
 - cdn-www.bluestacks.com
 - assets.bnidx.com
+- static.bodor.com
 - static.prd.borderfree.com
 - cdn.botframework.com
 - cc.boyfriendtv.com
@@ -715,6 +716,7 @@ domain_set:
 - themes.fourthwall.com
 - static-media.fox.com
 - static.foxbusiness.com
+- static-cf.foxdata.com
 - assets.foxdcg.com
 - a57.foxnews.com
 - hp.foxnews.com
@@ -984,6 +986,7 @@ domain_set:
 - img4.javmost.com
 - icdn.javxx.com
 - cdn.jetphotos.com
+- speedmedia2.jfrog.com
 - cdn.jitbit.com
 - cdn.joinhoney.com
 - blob.jortage.com
@@ -1304,6 +1307,7 @@ domain_set:
 - cdn.openai.com
 - images.opencollective.com
 - next-images.opencollective.com
+- static.openreplay.com
 - openseauserdata.com
 - assets.openshift.com
 - optimizely.com
@@ -1994,6 +1998,7 @@ domain_set:
 - cdn.unwire.hk
 - cdn.masto.host
 - tile2.intervals.icu
+- js.nagich.co.il
 - sn-s3-cdn.angry.im
 - s3.c.im
 - badges.gitter.im
