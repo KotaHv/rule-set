@@ -1,4 +1,4 @@
-# Total: 5245 rules
+# Total: 5247 rules
 'payload':
 - 'mirror.host.ag'
 - 'cdn.7tv.app'
@@ -270,6 +270,7 @@
 - 'upos-sz-mirroralibstar1.bilivideo.com'
 - 'upos-sz-mirrorcosbstar1.bilivideo.com'
 - 'static.news.bitcoin.com'
+- 'assets.bitwarden.com'
 - 'mirror.biznetgio.com'
 - 'organizer.bizzabo.com'
 - 'css.blackmagicdesign.com'
@@ -1507,6 +1508,7 @@
 - 'cdn.ip2location.io'
 - 'website-cdn.ipinfo.io'
 - 'cdn.jetboost.io'
+- 'cdn-blocks.karte.io'
 - 'cdn-edge.karte.io'
 - 'u.keka.io'
 - 'assets.keysquare.io'

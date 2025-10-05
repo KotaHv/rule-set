@@ -1,4 +1,4 @@
-# Total: 3944 rules
+# Total: 3950 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -352,6 +352,7 @@
 - 'static-files.bitchute.com'
 - 'static.news.bitcoin.com'
 - 'static.bitfinex.com'
+- 'assets.bitwarden.com'
 - 'organizer.bizzabo.com'
 - 'css.blackmagicdesign.com'
 - 'images.blackmagicdesign.com'
@@ -1473,6 +1474,7 @@
 - 'app.roboflow.com'
 - 'cdn.roboflow.com'
 - 'cdnassets.roboflow.com'
+- 'source.roboflow.com'
 - 'static.roboflow.com'
 - 'apps-static.route4me.com'
 - 'cdn.royaleapi.com'
@@ -1743,6 +1745,9 @@
 - 'demo.unified-streaming.com'
 - 'tag.unifyintent.com'
 - 'api.unisvg.com'
+- 'cdn.cloud.unity.com'
+- 'idportal-cdn-prd.unity.com'
+- 'cdn.login.unity.com'
 - 'cdn.unrealengine.com'
 - 'cdn1.unrealengine.com'
 - 'cdn2.unrealengine.com'
@@ -2085,6 +2090,7 @@
 - 'website-cdn.ipinfo.io'
 - 'static.itch.io'
 - 'cdn.jetboost.io'
+- 'cdn-blocks.karte.io'
 - 'cdn-edge.karte.io'
 - 'assets.keysquare.io'
 - 'media.lantern.io'

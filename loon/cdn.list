@@ -1,4 +1,4 @@
-# Total: 3964 rules
+# Total: 3970 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -351,6 +351,7 @@ DOMAIN,static-4.bitchute.com
 DOMAIN,static-files.bitchute.com
 DOMAIN,static.news.bitcoin.com
 DOMAIN,static.bitfinex.com
+DOMAIN,assets.bitwarden.com
 DOMAIN,organizer.bizzabo.com
 DOMAIN,css.blackmagicdesign.com
 DOMAIN,images.blackmagicdesign.com
@@ -1472,6 +1473,7 @@ DOMAIN,api.roboflow.com
 DOMAIN,app.roboflow.com
 DOMAIN,cdn.roboflow.com
 DOMAIN,cdnassets.roboflow.com
+DOMAIN,source.roboflow.com
 DOMAIN,static.roboflow.com
 DOMAIN,apps-static.route4me.com
 DOMAIN,cdn.royaleapi.com
@@ -1742,6 +1744,9 @@ DOMAIN,assets.unifi-ai.com
 DOMAIN,demo.unified-streaming.com
 DOMAIN,tag.unifyintent.com
 DOMAIN,api.unisvg.com
+DOMAIN,cdn.cloud.unity.com
+DOMAIN,idportal-cdn-prd.unity.com
+DOMAIN,cdn.login.unity.com
 DOMAIN,cdn.unrealengine.com
 DOMAIN,cdn1.unrealengine.com
 DOMAIN,cdn2.unrealengine.com
@@ -2084,6 +2089,7 @@ DOMAIN,cdn.ip2location.io
 DOMAIN,website-cdn.ipinfo.io
 DOMAIN,static.itch.io
 DOMAIN,cdn.jetboost.io
+DOMAIN,cdn-blocks.karte.io
 DOMAIN,cdn-edge.karte.io
 DOMAIN,assets.keysquare.io
 DOMAIN,media.lantern.io

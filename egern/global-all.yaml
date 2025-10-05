@@ -1,4 +1,4 @@
-# Total: 5369 rules
+# Total: 5371 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -271,6 +271,7 @@ domain_set:
 - upos-sz-mirroralibstar1.bilivideo.com
 - upos-sz-mirrorcosbstar1.bilivideo.com
 - static.news.bitcoin.com
+- assets.bitwarden.com
 - mirror.biznetgio.com
 - organizer.bizzabo.com
 - css.blackmagicdesign.com
@@ -1508,6 +1509,7 @@ domain_set:
 - cdn.ip2location.io
 - website-cdn.ipinfo.io
 - cdn.jetboost.io
+- cdn-blocks.karte.io
 - cdn-edge.karte.io
 - u.keka.io
 - assets.keysquare.io
