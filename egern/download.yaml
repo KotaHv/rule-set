@@ -1,4 +1,4 @@
-# Total: 1190 rules
+# Total: 1191 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -349,6 +349,7 @@ domain_set:
 - docker.cloudsmith.io
 - cdn.cypress.io
 - download.cypress.io
+- registry-1.docker.io
 - down.filen.io
 - download.fydeos.io
 - store1.gofile.io

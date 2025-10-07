@@ -1,4 +1,4 @@
-# Total: 1182 rules
+# Total: 1183 rules
 'payload':
 - 'mirror.host.ag'
 - 'updates.istatmenus.app'
@@ -348,6 +348,7 @@
 - 'docker.cloudsmith.io'
 - 'cdn.cypress.io'
 - 'download.cypress.io'
+- 'registry-1.docker.io'
 - 'down.filen.io'
 - 'download.fydeos.io'
 - 'store1.gofile.io'
