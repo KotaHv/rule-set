@@ -1,4 +1,4 @@
-# Total: 5435 rules
+# Total: 5444 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -594,6 +594,7 @@ DOMAIN,media3.giphy.com
 DOMAIN,media4.giphy.com
 DOMAIN,m3u8.girigirilove.com
 DOMAIN,static.gl-inet.com
+DOMAIN,static.gmgard.com
 DOMAIN,cdn.registerdisney.go.com
 DOMAIN,s3.go2778.com
 DOMAIN,assets.goat.com
@@ -1603,6 +1604,8 @@ DOMAIN,static.salidzini.lv
 DOMAIN,marwan.ma
 DOMAIN,mirror.marwan.ma
 DOMAIN,emoji-css.afeld.me
+DOMAIN,dynamic-cdn.cms.ayoba.me
+DOMAIN,media-cms.ayoba.me
 DOMAIN,api.crashguard.me
 DOMAIN,cdn.daradara.me
 DOMAIN,media.e4le.me
@@ -1628,6 +1631,8 @@ DOMAIN,jssdk.opin.media
 DOMAIN,cms.therecord.media
 DOMAIN,townsquare.media
 DOMAIN,s3.m.0x.mk
+DOMAIN,cdn.amh.moe
+DOMAIN,assets-cdn.anh.moe
 DOMAIN,pic.cangku.moe
 DOMAIN,static.chaika.moe
 DOMAIN,objects.hit.moe
@@ -1703,6 +1708,7 @@ DOMAIN,cdntube.b-cdn.net
 DOMAIN,dh-site.b-cdn.net
 DOMAIN,divhunt.b-cdn.net
 DOMAIN,divhunt-site.b-cdn.net
+DOMAIN,groundnews.b-cdn.net
 DOMAIN,hentaiworldtv.b-cdn.net
 DOMAIN,jsdelivr.b-cdn.net
 DOMAIN,linuxiac.b-cdn.net
@@ -1911,6 +1917,7 @@ DOMAIN,cdn.ywxi.net
 DOMAIN,vjs.zencdn.net
 DOMAIN,mixin-images.zeromesh.net
 DOMAIN,content.api.news
+DOMAIN,web-api-cdn.ground.news
 DOMAIN,assets.matters.news
 DOMAIN,assets-next.matters.news
 DOMAIN,image.dooo.ng
@@ -4818,6 +4825,7 @@ DOMAIN-SUFFIX,ipfs.uploads.nu
 DOMAIN-SUFFIX,nz
 DOMAIN-SUFFIX,one
 DOMAIN-SUFFIX,2kcoretech.online
+DOMAIN-SUFFIX,am-cdn.online
 DOMAIN-SUFFIX,01.org
 DOMAIN-SUFFIX,18comic.org
 DOMAIN-SUFFIX,4cdn.org
@@ -5129,6 +5137,7 @@ DOMAIN-SUFFIX,party
 DOMAIN-SUFFIX,pe
 DOMAIN-SUFFIX,ph
 DOMAIN-SUFFIX,picsum.photos
+DOMAIN-SUFFIX,am-cdn.pics
 DOMAIN-SUFFIX,pl
 DOMAIN-SUFFIX,playstation
 DOMAIN-SUFFIX,pm

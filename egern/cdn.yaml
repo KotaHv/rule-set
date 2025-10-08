@@ -1,4 +1,4 @@
-# Total: 4023 rules
+# Total: 4032 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -801,6 +801,7 @@ domain_set:
 - static.gl-inet.com
 - cdn.glitch.com
 - content.product.glitch.com
+- static.gmgard.com
 - widgets.coaches.gnc.com
 - cdn.registerdisney.go.com
 - s3.go2778.com
@@ -2234,6 +2235,8 @@ domain_set:
 - cdn.123av.me
 - pic.7mmtv.me
 - emoji-css.afeld.me
+- dynamic-cdn.cms.ayoba.me
+- media-cms.ayoba.me
 - api.crashguard.me
 - cdn.daradara.me
 - media.e4le.me
@@ -2262,6 +2265,8 @@ domain_set:
 - townsquare.media
 - s3.m.0x.mk
 - s3.acg.mn
+- cdn.amh.moe
+- assets-cdn.anh.moe
 - static.bangumi.moe
 - pic.cangku.moe
 - static.chaika.moe
@@ -2331,6 +2336,7 @@ domain_set:
 - dh-site.b-cdn.net
 - divhunt.b-cdn.net
 - divhunt-site.b-cdn.net
+- groundnews.b-cdn.net
 - hentaiworldtv.b-cdn.net
 - jsdelivr.b-cdn.net
 - linuxiac.b-cdn.net
@@ -2522,6 +2528,7 @@ domain_set:
 - mixin-images.zeromesh.net
 - content.api.news
 - static.bad.news
+- web-api-cdn.ground.news
 - assets.matters.news
 - assets-next.matters.news
 - image.dooo.ng
@@ -3821,6 +3828,7 @@ domain_suffix_set:
 - static.mega.co.nz
 - ipfs.jbb.one
 - usercontent.one
+- am-cdn.online
 - 4cdn.org
 - 91pic.org
 - adtidy.org
@@ -3879,6 +3887,7 @@ domain_suffix_set:
 - instant.page
 - kinsta.page
 - picsum.photos
+- am-cdn.pics
 - fakeimg.pl
 - pixiv.re
 - ipfs.kavin.rocks

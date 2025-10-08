@@ -1,4 +1,4 @@
-# Total: 5371 rules
+# Total: 5380 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -596,6 +596,7 @@ domain_set:
 - media4.giphy.com
 - m3u8.girigirilove.com
 - static.gl-inet.com
+- static.gmgard.com
 - cdn.registerdisney.go.com
 - s3.go2778.com
 - assets.goat.com
@@ -1605,6 +1606,8 @@ domain_set:
 - marwan.ma
 - mirror.marwan.ma
 - emoji-css.afeld.me
+- dynamic-cdn.cms.ayoba.me
+- media-cms.ayoba.me
 - api.crashguard.me
 - cdn.daradara.me
 - media.e4le.me
@@ -1630,6 +1633,8 @@ domain_set:
 - cms.therecord.media
 - townsquare.media
 - s3.m.0x.mk
+- cdn.amh.moe
+- assets-cdn.anh.moe
 - pic.cangku.moe
 - static.chaika.moe
 - objects.hit.moe
@@ -1705,6 +1710,7 @@ domain_set:
 - dh-site.b-cdn.net
 - divhunt.b-cdn.net
 - divhunt-site.b-cdn.net
+- groundnews.b-cdn.net
 - hentaiworldtv.b-cdn.net
 - jsdelivr.b-cdn.net
 - linuxiac.b-cdn.net
@@ -1913,6 +1919,7 @@ domain_set:
 - vjs.zencdn.net
 - mixin-images.zeromesh.net
 - content.api.news
+- web-api-cdn.ground.news
 - assets.matters.news
 - assets-next.matters.news
 - image.dooo.ng
@@ -4821,6 +4828,7 @@ domain_suffix_set:
 - nz
 - one
 - 2kcoretech.online
+- am-cdn.online
 - 01.org
 - 18comic.org
 - 4cdn.org
@@ -5132,6 +5140,7 @@ domain_suffix_set:
 - pe
 - ph
 - picsum.photos
+- am-cdn.pics
 - pl
 - playstation
 - pm
