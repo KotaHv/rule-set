@@ -1,9 +1,11 @@
-# Total: 38 rules
+# Total: 40 rules
 DOMAIN,api.jetbrains.ai
 DOMAIN,gateway.ai.cloudflare.com
 DOMAIN,api.github.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,jules.google.com
+DOMAIN,aisandbox-pa.googleapis.com
+DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,ai.google.dev
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,dify.ai

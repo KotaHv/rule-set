@@ -1,4 +1,4 @@
-# Total: 38 rules
+# Total: 40 rules
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
@@ -6,6 +6,8 @@ domain_set:
 - api.github.com
 - alkalicore-pa.clients6.google.com
 - jules.google.com
+- aisandbox-pa.googleapis.com
+- robinfrontend-pa.googleapis.com
 - ai.google.dev
 domain_suffix_set:
 - claude.ai
