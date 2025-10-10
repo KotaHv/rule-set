@@ -4,11 +4,11 @@ payload:
 - DOMAIN-WILDCARD,pixel*.adswizz.com
 - DOMAIN-WILDCARD,info.*.aleragroup.com
 - DOMAIN-WILDCARD,mon-*.byteoversea.com
-- DOMAIN-WILDCARD,beacons*.gvt?.com
 - DOMAIN-WILDCARD,tracking.*.miui.com
 - DOMAIN-WILDCARD,*.tracking.*.miui.com
 - DOMAIN-WILDCARD,ads-*.tiktok.com
 - DOMAIN-WILDCARD,ads-*.xhscdn.com
+- DOMAIN-WILDCARD,beacons*.gvt
 - DOMAIN-WILDCARD,f-log*.grammarly.io
 - DOMAIN-WILDCARD,*-pcdn-*.biliapi.net
 - DOMAIN-WILDCARD,adv0*.msa.cdn.mediaset.net

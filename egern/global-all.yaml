@@ -1,4 +1,4 @@
-# Total: 5380 rules
+# Total: 5387 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -460,6 +460,7 @@ domain_set:
 - mirror.downloadvn.com
 - cdn.drata.com
 - images.drata.com
+- tiles.meteoguard.dtn.com
 - s3.duellinksmeta.com
 - cdn.dynamicyield.com
 - cdn-eu.dynamicyield.com
@@ -5259,38 +5260,44 @@ domain_suffix_set:
 - za
 - itch.zone
 domain_wildcard_set:
+- ftp.
 - cdn-*.comaps.app
 - cdn-*.organicmaps.app
+- blog-imgs-
+- cdn
+- cdn-msp
 - image*.cloudokyo.cloud
 - video*.cloudokyo.cloud
 - assets.*.imaga.co
-- cdn?.18girlssex.com
-- blog-imgs-??.2nt.com
 - '*.s3.*.backblazeb2.com'
 - browser-intake-*-datadoghq.com
 - assets*.freshdesk.com
-- '*.fsvod?.com'
 - cdns.*.gigya.com
 - uploads-*.insided.com
-- '*.kuaikan-cdn?.com'
 - cdn.*.microsoft.com
 - cdn-*.microsoft.com
 - chunk-*.mux.com
-- '*.img.*.sendibm?.com'
 - s3.*.wasabisys.com
-- cdn?.mikuclub.fun
-- file?.mikuclub.fun
+- file
+- '*.fsvod'
 - s*.hanime1
-- cdn-msp?.jmcomic.me
-- video-thumbnail?.liaoningmovie.net
-- video?-thumbnail?.liaoningmovie.net
+- i
+- img
+- '*.kuaikan-cdn'
 - cdn.*.office.net
 - object-storage-*.vexxhost.net
-- s?.maxstream.org
-- s??.maxstream.org
+- v.rn
+- rr
+- s
+- '*.img.*.sendibm'
+- '*.skyearth'
+- static
+- stream
+- t
 - cdn-*.comaps.tech
-- v.rn???.xyz
-- '*.skyearth?.xyz'
+- video
+- video-thumbnail
+- vip-videoprem*-thumbnail
 domain_regex_set:
 - ^epicgames-download\d\.akamaized\.net$
 domain_keyword_set:

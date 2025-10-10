@@ -1,4 +1,4 @@
-# Total: 1191 rules
+# Total: 1190 rules
 DOMAIN,mirror.host.ag
 DOMAIN,updates.istatmenus.app
 DOMAIN,dl.motrix.app
@@ -1182,11 +1182,10 @@ DOMAIN-SUFFIX,apache.si
 DOMAIN-SUFFIX,mirror.globo.tech
 DOMAIN-SUFFIX,mirrors.nublue.co.uk
 DOMAIN-SUFFIX,mirror.ac.za
+DOMAIN-WILDCARD,ftp.
 DOMAIN-WILDCARD,cdn-*.comaps.app
 DOMAIN-WILDCARD,cdn-*.organicmaps.app
 DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
 DOMAIN-WILDCARD,download*.mediafire.com
-DOMAIN-WILDCARD,ftp.??.debian.org
-DOMAIN-WILDCARD,ftp.??.freebsd.org
 DOMAIN-WILDCARD,cdn-*.comaps.tech
 URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl
