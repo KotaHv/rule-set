@@ -1,4 +1,4 @@
-# Total: 3980 rules
+# Total: 3982 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -507,6 +507,7 @@ DOMAIN,s3.cointelegraph.com
 DOMAIN,cdn.commandbar.com
 DOMAIN,frames-commandbar-prod.commandbar.com
 DOMAIN,crt.comodoca.com
+DOMAIN,ocsp.comodoca.com
 DOMAIN,cdn.comparitech.com
 DOMAIN,cdn.configcat.com
 DOMAIN,cds.connatix.com
@@ -1151,6 +1152,7 @@ DOMAIN,cdn.create.microsoft.com
 DOMAIN,csp.microsoft.com
 DOMAIN,images.ecomm.microsoft.com
 DOMAIN,learn-attachment.microsoft.com
+DOMAIN,oneocsp.microsoft.com
 DOMAIN,cmtycdn.powerpages.microsoft.com
 DOMAIN,store-images.microsoft.com
 DOMAIN,cdn.techcommunity.microsoft.com

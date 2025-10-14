@@ -1,4 +1,4 @@
-# Total: 5387 rules
+# Total: 5389 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -389,6 +389,7 @@ domain_set:
 - cdn.commandbar.com
 - frames-commandbar-prod.commandbar.com
 - crt.comodoca.com
+- ocsp.comodoca.com
 - cdn.comparitech.com
 - mirrors.concertpass.com
 - cdn.configcat.com
@@ -829,6 +830,7 @@ domain_set:
 - learn-attachment.microsoft.com
 - msdl.microsoft.com
 - officecdnmac.microsoft.com
+- oneocsp.microsoft.com
 - packages.microsoft.com
 - cmtycdn.powerpages.microsoft.com
 - store-images.microsoft.com

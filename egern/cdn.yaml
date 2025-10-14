@@ -1,4 +1,4 @@
-# Total: 4021 rules
+# Total: 4023 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -509,6 +509,7 @@ domain_set:
 - cdn.commandbar.com
 - frames-commandbar-prod.commandbar.com
 - crt.comodoca.com
+- ocsp.comodoca.com
 - cdn.comparitech.com
 - cdn.configcat.com
 - cds.connatix.com
@@ -1153,6 +1154,7 @@ domain_set:
 - csp.microsoft.com
 - images.ecomm.microsoft.com
 - learn-attachment.microsoft.com
+- oneocsp.microsoft.com
 - cmtycdn.powerpages.microsoft.com
 - store-images.microsoft.com
 - cdn.techcommunity.microsoft.com

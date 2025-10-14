@@ -1,4 +1,4 @@
-# Total: 5398 rules
+# Total: 5400 rules
 DOMAIN,mirror.host.ag
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
@@ -387,6 +387,7 @@ DOMAIN,s3.cointelegraph.com
 DOMAIN,cdn.commandbar.com
 DOMAIN,frames-commandbar-prod.commandbar.com
 DOMAIN,crt.comodoca.com
+DOMAIN,ocsp.comodoca.com
 DOMAIN,cdn.comparitech.com
 DOMAIN,mirrors.concertpass.com
 DOMAIN,cdn.configcat.com
@@ -827,6 +828,7 @@ DOMAIN,edgeupdates.microsoft.com
 DOMAIN,learn-attachment.microsoft.com
 DOMAIN,msdl.microsoft.com
 DOMAIN,officecdnmac.microsoft.com
+DOMAIN,oneocsp.microsoft.com
 DOMAIN,packages.microsoft.com
 DOMAIN,cmtycdn.powerpages.microsoft.com
 DOMAIN,store-images.microsoft.com
