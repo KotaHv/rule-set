@@ -1,4 +1,4 @@
-# Total: 4023 rules
+# Total: 4028 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1577,6 +1577,7 @@ domain_set:
 - img9.socialshopwave.com
 - static.socialshopwave.com
 - rv-assets.softonic.com
+- images.softwaresuggest.com
 - rum-agent.na-01.cloud.solarwinds.com
 - static.solarwinds.com
 - assets.sololearn.com
@@ -1652,6 +1653,7 @@ domain_set:
 - cdn0-i.techbang.com
 - cdn1.techbang.com
 - cdn2.techbang.com
+- media.technologycounter.com
 - embed.ted.com
 - image.telanganatoday.com
 - media.telanganatoday.com
@@ -2805,6 +2807,7 @@ domain_set:
 - p.udn.com.tw
 - pgw.udn.com.tw
 - s.udn.com.tw
+- image.yuntu.com.tw
 - cw-image-resizer.cwg.tw
 - megapx-assets.dcard.tw
 - socialpic.video.friday.tw
@@ -2946,6 +2949,7 @@ domain_suffix_set:
 - assets.brightspot.abebooks.a2z.com
 - abcnewsfe.com
 - abebookscdn.com
+- adguardcdn.com
 - assets.adidas.com
 - glass.adidas.com
 - static-assets.photoshop.adobe.com
@@ -3346,6 +3350,7 @@ domain_suffix_set:
 - siteintercept.qualtrics.com
 - quip-cdn.com
 - quip-marketing.com
+- rackcdn.com
 - radix-ui.com
 - ravencoinipfs-gateway.com
 - ravenjs.com

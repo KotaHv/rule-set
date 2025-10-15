@@ -1,4 +1,4 @@
-# Total: 1596 rules
+# Total: 1598 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -116,6 +116,8 @@
 - '+.adguard.com'
 - '+.adguard-mail.com'
 - '+.adguard-vpn.com'
+- '+.adguardaccount.com'
+- '+.adguardcdn.com'
 - '+.adidas.com'
 - '+.photoshop.adobe.com'
 - '+.adventofcode.com'

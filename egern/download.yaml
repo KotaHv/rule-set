@@ -1,7 +1,8 @@
-# Total: 1190 rules
+# Total: 1194 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
+- fdisk.5play.app
 - updates.istatmenus.app
 - dl.motrix.app
 - meta.omaps.app
@@ -347,6 +348,7 @@ domain_set:
 - registry.bower.io
 - dl.cloudsmith.io
 - docker.cloudsmith.io
+- update.cyberduck.io
 - cdn.cypress.io
 - download.cypress.io
 - registry-1.docker.io
@@ -677,6 +679,8 @@ domain_set:
 - repo.sleeping.town
 - cpan.ulak.net.tr
 - mirror.twds.com.tw
+- cisco.yuntu.com.tw
+- mirrors.yuntu.com.tw
 - apache.stu.edu.tw
 - cpan.stu.edu.tw
 - ftp.stu.edu.tw

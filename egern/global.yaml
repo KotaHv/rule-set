@@ -1,4 +1,4 @@
-# Total: 1614 rules
+# Total: 1616 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -118,6 +118,8 @@ domain_suffix_set:
 - adguard.com
 - adguard-mail.com
 - adguard-vpn.com
+- adguardaccount.com
+- adguardcdn.com
 - adidas.com
 - photoshop.adobe.com
 - adventofcode.com

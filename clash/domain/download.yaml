@@ -1,6 +1,7 @@
-# Total: 1183 rules
+# Total: 1187 rules
 'payload':
 - 'mirror.host.ag'
+- 'fdisk.5play.app'
 - 'updates.istatmenus.app'
 - 'dl.motrix.app'
 - 'meta.omaps.app'
@@ -346,6 +347,7 @@
 - 'registry.bower.io'
 - 'dl.cloudsmith.io'
 - 'docker.cloudsmith.io'
+- 'update.cyberduck.io'
 - 'cdn.cypress.io'
 - 'download.cypress.io'
 - 'registry-1.docker.io'
@@ -676,6 +678,8 @@
 - 'repo.sleeping.town'
 - 'cpan.ulak.net.tr'
 - 'mirror.twds.com.tw'
+- 'cisco.yuntu.com.tw'
+- 'mirrors.yuntu.com.tw'
 - 'apache.stu.edu.tw'
 - 'cpan.stu.edu.tw'
 - 'ftp.stu.edu.tw'

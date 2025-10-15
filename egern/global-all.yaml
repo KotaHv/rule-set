@@ -1,7 +1,8 @@
-# Total: 5389 rules
+# Total: 5396 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
+- fdisk.5play.app
 - cdn.7tv.app
 - assets.airbuddy.app
 - cdn.announcekit.app
@@ -1139,6 +1140,7 @@ domain_set:
 - img9.socialshopwave.com
 - static.socialshopwave.com
 - mirror.softaculous.com
+- images.softwaresuggest.com
 - rum-agent.na-01.cloud.solarwinds.com
 - static.solarwinds.com
 - assets.sololearn.com
@@ -1198,6 +1200,7 @@ domain_set:
 - cdn0-i.techbang.com
 - cdn1.techbang.com
 - cdn2.techbang.com
+- media.technologycounter.com
 - embed.ted.com
 - image.telanganatoday.com
 - media.telanganatoday.com
@@ -1484,6 +1487,7 @@ domain_set:
 - cdn.commento.io
 - cdn.concert.io
 - images.contentstack.io
+- update.cyberduck.io
 - cdn.cypress.io
 - download.cypress.io
 - cdn.db.io
@@ -2319,6 +2323,8 @@ domain_suffix_set:
 - adguard.com
 - adguard-mail.com
 - adguard-vpn.com
+- adguardaccount.com
+- adguardcdn.com
 - adidas.com
 - photoshop.adobe.com
 - adobeccstatic.com
@@ -3573,6 +3579,7 @@ domain_suffix_set:
 - quora.com
 - quotemedia.com
 - qz.com
+- rackcdn.com
 - radgametools.com
 - radix-ui.com
 - raspberrypi.com

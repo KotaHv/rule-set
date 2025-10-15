@@ -1,5 +1,6 @@
-# Total: 5453 rules
+# Total: 5460 rules
 DOMAIN,mirror.host.ag
+DOMAIN,fdisk.5play.app
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
 DOMAIN,cdn.announcekit.app
@@ -1137,6 +1138,7 @@ DOMAIN,img8.socialshopwave.com
 DOMAIN,img9.socialshopwave.com
 DOMAIN,static.socialshopwave.com
 DOMAIN,mirror.softaculous.com
+DOMAIN,images.softwaresuggest.com
 DOMAIN,rum-agent.na-01.cloud.solarwinds.com
 DOMAIN,static.solarwinds.com
 DOMAIN,assets.sololearn.com
@@ -1196,6 +1198,7 @@ DOMAIN,cdn0.techbang.com
 DOMAIN,cdn0-i.techbang.com
 DOMAIN,cdn1.techbang.com
 DOMAIN,cdn2.techbang.com
+DOMAIN,media.technologycounter.com
 DOMAIN,embed.ted.com
 DOMAIN,image.telanganatoday.com
 DOMAIN,media.telanganatoday.com
@@ -1482,6 +1485,7 @@ DOMAIN,docker.cloudsmith.io
 DOMAIN,cdn.commento.io
 DOMAIN,cdn.concert.io
 DOMAIN,images.contentstack.io
+DOMAIN,update.cyberduck.io
 DOMAIN,cdn.cypress.io
 DOMAIN,download.cypress.io
 DOMAIN,cdn.db.io
@@ -2316,6 +2320,8 @@ DOMAIN-SUFFIX,acpica.com
 DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,adguard-mail.com
 DOMAIN-SUFFIX,adguard-vpn.com
+DOMAIN-SUFFIX,adguardaccount.com
+DOMAIN-SUFFIX,adguardcdn.com
 DOMAIN-SUFFIX,adidas.com
 DOMAIN-SUFFIX,photoshop.adobe.com
 DOMAIN-SUFFIX,adobeccstatic.com
@@ -3570,6 +3576,7 @@ DOMAIN-SUFFIX,quixel.com
 DOMAIN-SUFFIX,quora.com
 DOMAIN-SUFFIX,quotemedia.com
 DOMAIN-SUFFIX,qz.com
+DOMAIN-SUFFIX,rackcdn.com
 DOMAIN-SUFFIX,radgametools.com
 DOMAIN-SUFFIX,radix-ui.com
 DOMAIN-SUFFIX,raspberrypi.com
