@@ -1,4 +1,4 @@
-# Total: 1552 rules
+# Total: 1557 rules
 'payload':
 - 'speedtest.58243.as'
 - 'sg.cloudhost.asia'
@@ -80,6 +80,7 @@
 - 'ookla.p2.neptune.net.au'
 - 'ookla.sy1.neptune.net.au'
 - 'speedtest.syd.netsg.net.au'
+- 'speedtest01.mel1.spintel.net.au'
 - 'speedtest01.per1.spintel.net.au'
 - 'speedtest01.syd1.spintel.net.au'
 - 'speedtest-syd.thecore.net.au'
@@ -833,7 +834,10 @@
 - 'speedtest.tushino.com'
 - 'speed-test.ukservers.com'
 - 'beijing.unicomtest.com'
+- 'speedtest-de.unihost.com'
 - 'speedtest-jp.unihost.com'
+- 'speedtest-nl.unihost.com'
+- 'speedtest-sg.unihost.com'
 - 'speedtest.unlimitedfiber.com'
 - 'speedtest.upp.com'
 - 'spt.valexcloud.com'
@@ -1083,6 +1087,7 @@
 - 'netservice01.ber01.lwlcom.net'
 - 'speedtest.maryno.net'
 - 'ookla.mbspeed.net'
+- 'ookla2.mbspeed.net'
 - 'speedtest.meerfarbig.net'
 - 'speedtest-ams.melbicom.net'
 - 'speedtest-fra.melbicom.net'
