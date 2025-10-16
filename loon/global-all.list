@@ -1,4 +1,4 @@
-# Total: 5406 rules
+# Total: 5410 rules
 DOMAIN,mirror.host.ag
 DOMAIN,fdisk.5play.app
 DOMAIN,cdn.7tv.app
@@ -317,7 +317,10 @@ DOMAIN,cdn.calibermind.com
 DOMAIN,e.calibermind.com
 DOMAIN,cdn.cameo.com
 DOMAIN,cdn.camweara.com
+DOMAIN,chunk-composing.canva.com
 DOMAIN,content-management-files.canva.com
+DOMAIN,font-public.canva.com
+DOMAIN,media.canva.com
 DOMAIN,static.canva.com
 DOMAIN,static.captcha-delivery.com
 DOMAIN,assets.capterra.com
@@ -5315,6 +5318,7 @@ DOMAIN-KEYWORD,voddazn
 DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-KEYWORD,whatsapp
 IP-CIDR,5.28.195.1/32
+IP-CIDR,5.28.195.2/32
 IP-CIDR,23.246.18.0/23
 IP-CIDR,35.186.224.47/32
 IP-CIDR,37.77.184.0/21

@@ -1,4 +1,4 @@
-# Total: 3967 rules
+# Total: 3971 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -26,6 +26,7 @@
 - 'static.returngo.ai'
 - 'cdn1.suno.ai'
 - 'cdn2.suno.ai'
+- 'tag.tvads.ai'
 - 'vetted.ai'
 - 'prod-cdn.webtune.ai'
 - 'cdn.7tv.app'
@@ -403,7 +404,10 @@
 - 'e.calibermind.com'
 - 'cdn.cameo.com'
 - 'cdn.camweara.com'
+- 'chunk-composing.canva.com'
 - 'content-management-files.canva.com'
+- 'font-public.canva.com'
+- 'media.canva.com'
 - 'static.canva.com'
 - 'static.captcha-delivery.com'
 - 'assets.capterra.com'

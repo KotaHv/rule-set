@@ -1,4 +1,4 @@
-# Total: 4028 rules
+# Total: 4032 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -25,6 +25,7 @@ DOMAIN,r2cdn.perplexity.ai
 DOMAIN,static.returngo.ai
 DOMAIN,cdn1.suno.ai
 DOMAIN,cdn2.suno.ai
+DOMAIN,tag.tvads.ai
 DOMAIN,vetted.ai
 DOMAIN,prod-cdn.webtune.ai
 DOMAIN,cdn.7tv.app
@@ -402,7 +403,10 @@ DOMAIN,cdn.calibermind.com
 DOMAIN,e.calibermind.com
 DOMAIN,cdn.cameo.com
 DOMAIN,cdn.camweara.com
+DOMAIN,chunk-composing.canva.com
 DOMAIN,content-management-files.canva.com
+DOMAIN,font-public.canva.com
+DOMAIN,media.canva.com
 DOMAIN,static.canva.com
 DOMAIN,static.captcha-delivery.com
 DOMAIN,assets.capterra.com

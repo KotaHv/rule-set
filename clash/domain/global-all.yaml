@@ -1,4 +1,4 @@
-# Total: 5266 rules
+# Total: 5269 rules
 'payload':
 - 'mirror.host.ag'
 - 'fdisk.5play.app'
@@ -318,7 +318,10 @@
 - 'e.calibermind.com'
 - 'cdn.cameo.com'
 - 'cdn.camweara.com'
+- 'chunk-composing.canva.com'
 - 'content-management-files.canva.com'
+- 'font-public.canva.com'
+- 'media.canva.com'
 - 'static.canva.com'
 - 'static.captcha-delivery.com'
 - 'assets.capterra.com'
