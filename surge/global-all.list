@@ -1,4 +1,4 @@
-# Total: 5460 rules
+# Total: 5459 rules
 DOMAIN,mirror.host.ag
 DOMAIN,fdisk.5play.app
 DOMAIN,cdn.7tv.app
@@ -5353,7 +5353,6 @@ DOMAIN-WILDCARD,video
 DOMAIN-WILDCARD,video-thumbnail
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail
 IP-CIDR,5.28.195.1/32,no-resolve
-IP-CIDR,5.28.195.2/32,no-resolve
 IP-CIDR,23.246.18.0/23,no-resolve
 IP-CIDR,35.186.224.47/32,no-resolve
 IP-CIDR,37.77.184.0/21,no-resolve
