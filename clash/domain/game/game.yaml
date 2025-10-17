@@ -1,4 +1,4 @@
-# Total: 595 rules
+# Total: 596 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -43,6 +43,7 @@
 - 'a4e8s8k3.map2.ssl.hwcdn.net'
 - 'ea.tt.omtrdc.net'
 - 'prodforza.blob.core.windows.net'
+- 'steamcloudsweden.blob.core.windows.net'
 - 'a.ppy.sh'
 - 'assets.ppy.sh'
 - 'c.ppy.sh'

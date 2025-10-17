@@ -1,9 +1,10 @@
-# Total: 1598 rules
+# Total: 1600 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'vsmarketplacebadge.apphb.com'
+- 'github-api.arkoselabs.com'
 - 'ees.elsevier.com'
 - 'default.exp-tas.com'
 - 'app.hellosign.com'
@@ -595,6 +596,7 @@
 - '+.nytstyle.com'
 - '+.nyunews.com'
 - '+.obsproject.com'
+- '+.octocaptcha.com'
 - '+.oculus.com'
 - '+.oculuscdn.com'
 - '+.odysee.com'

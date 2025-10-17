@@ -1,4 +1,4 @@
-# Total: 495 rules
+# Total: 497 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -7,6 +7,7 @@ domain_set:
 - notary-submissions-prod.s3-accelerate.amazonaws.com
 - notary-submissions-prod.s3.us-west-2.amazonaws.com
 - vsmarketplacebadge.apphb.com
+- github-api.arkoselabs.com
 - docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 - default.exp-tas.com
 - developers.facebook.com
@@ -164,6 +165,7 @@ domain_suffix_set:
 - nginx.com
 - nodesource.com
 - npmjs.com
+- octocaptcha.com
 - oneapi.com
 - opengraphprotocol.com
 - parse.com

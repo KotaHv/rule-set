@@ -1,4 +1,4 @@
-# Total: 38 rules
+# Total: 39 rules
 no_resolve: true
 domain_set:
 - steamcdn-a.akamaihd.net
@@ -15,6 +15,7 @@ domain_set:
 - steamcommunity-a.akamaihd.net.edgesuite.net
 - f3b7q2p3.ssl.hwcdn.net
 - a4e8s8k3.map2.ssl.hwcdn.net
+- steamcloudsweden.blob.core.windows.net
 domain_suffix_set:
 - playartifact.com
 - steam.apac.qtlglb.com

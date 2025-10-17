@@ -1,10 +1,11 @@
-# Total: 495 rules
+# Total: 497 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
 DOMAIN,notary-submissions-prod.s3-accelerate.amazonaws.com
 DOMAIN,notary-submissions-prod.s3.us-west-2.amazonaws.com
 DOMAIN,vsmarketplacebadge.apphb.com
+DOMAIN,github-api.arkoselabs.com
 DOMAIN,docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 DOMAIN,default.exp-tas.com
 DOMAIN,developers.facebook.com
@@ -161,6 +162,7 @@ DOMAIN-SUFFIX,mystrikingly.com
 DOMAIN-SUFFIX,nginx.com
 DOMAIN-SUFFIX,nodesource.com
 DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,octocaptcha.com
 DOMAIN-SUFFIX,oneapi.com
 DOMAIN-SUFFIX,opengraphprotocol.com
 DOMAIN-SUFFIX,parse.com

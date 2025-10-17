@@ -1,4 +1,4 @@
-# Total: 5269 rules
+# Total: 5271 rules
 'payload':
 - 'mirror.host.ag'
 - 'fdisk.5play.app'
@@ -210,6 +210,7 @@
 - 'cdn.apponic.com'
 - 'img.apponic.com'
 - 'images.arigatotravel.com'
+- 'github-api.arkoselabs.com'
 - 'cdn.designsystem.arm.com'
 - 'agi.armorgames.com'
 - 'cache.armorgames.com'
@@ -3410,6 +3411,7 @@
 - '+.observableusercontent.com'
 - '+.obsproject.com'
 - '+.ocnttv.com'
+- '+.octocaptcha.com'
 - '+.oculus.com'
 - '+.oculuscdn.com'
 - '+.od-cdn.com'

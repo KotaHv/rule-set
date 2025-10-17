@@ -1,4 +1,4 @@
-# Total: 5399 rules
+# Total: 5401 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -211,6 +211,7 @@ domain_set:
 - cdn.apponic.com
 - img.apponic.com
 - images.arigatotravel.com
+- github-api.arkoselabs.com
 - cdn.designsystem.arm.com
 - agi.armorgames.com
 - cache.armorgames.com
@@ -3412,6 +3413,7 @@ domain_suffix_set:
 - observableusercontent.com
 - obsproject.com
 - ocnttv.com
+- octocaptcha.com
 - oculus.com
 - oculuscdn.com
 - od-cdn.com
