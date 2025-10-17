@@ -1,4 +1,4 @@
-# Total: 807 rules
+# Total: 815 rules
 no_resolve: true
 domain_set:
 - i.dell.com
@@ -86,6 +86,7 @@ domain_suffix_set:
 - 91.com
 - 95516.com
 - 95588.com
+- 9xgame.com
 - 9xiu.com
 - abchina.com
 - acgvideo.com
@@ -274,9 +275,12 @@ domain_suffix_set:
 - funshion.com
 - futu5.com
 - futunn.com
+- fxt365.com
+- gameabc.com
 - gamebonfire.com
 - gameitop.com
 - gameloop.com
+- gamemei.com
 - gamersky.com
 - gaode.com
 - gcloudcs.com
@@ -400,6 +404,7 @@ domain_suffix_set:
 - livechina.com
 - ljcdn.com
 - lofter.com
+- longtugame.com
 - ludashi.com
 - luojilab.com
 - m1905.com
@@ -435,6 +440,7 @@ domain_suffix_set:
 - mmstat.com
 - mobike.com
 - mojicdn.com
+- morefreegame.com
 - msstatic.com
 - mszdld.com
 - mtyun.com
@@ -650,6 +656,7 @@ domain_suffix_set:
 - xycdn.com
 - xycloud.com
 - yangkeduo.com
+- ycgame.com
 - ydstatic.com
 - yicai.com
 - yinxiang.com
@@ -768,6 +775,7 @@ domain_suffix_set:
 - texasholdemcup.net
 - tgprocs.net
 - webok.net
+- winegame.net
 - wscn.net
 - x3322.net
 - xdcdn.net
@@ -807,7 +815,7 @@ domain_suffix_set:
 - c-t.work
 - nz99.xyz
 domain_wildcard_set:
-- '*.qhimgs'
+- '*.qhimgs?.com'
 domain_regex_set:
 - .+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$
 - ^.+-mihayo\.akamaized\.net$

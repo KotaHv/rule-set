@@ -1,4 +1,4 @@
-# Total: 5401 rules
+# Total: 5397 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -912,6 +912,7 @@ domain_set:
 - cdn.nfcube.com
 - instafeed.nfcube.com
 - i.niupic.com
+- media.nngroup.com
 - cms-assets.nodecraft.com
 - cdn.northropgrumman.com
 - connect.nosto.com
@@ -1214,6 +1215,7 @@ domain_set:
 - assets.the-independent.com
 - image.thefly.com
 - media.theresanaiforthat.com
+- cdn.thewirecutter.com
 - static.threatlocker.com
 - thumbsnap.com
 - cdn.tinypass.com
@@ -5274,44 +5276,38 @@ domain_suffix_set:
 - za
 - itch.zone
 domain_wildcard_set:
-- ftp.
 - cdn-*.comaps.app
 - cdn-*.organicmaps.app
-- blog-imgs-
-- cdn
-- cdn-msp
 - image*.cloudokyo.cloud
 - video*.cloudokyo.cloud
 - assets.*.imaga.co
+- cdn?.18girlssex.com
+- blog-imgs-??.2nt.com
 - '*.s3.*.backblazeb2.com'
 - browser-intake-*-datadoghq.com
 - assets*.freshdesk.com
+- '*.fsvod?.com'
 - cdns.*.gigya.com
 - uploads-*.insided.com
+- '*.kuaikan-cdn?.com'
 - cdn.*.microsoft.com
 - cdn-*.microsoft.com
 - chunk-*.mux.com
+- '*.img.*.sendibm?.com'
 - s3.*.wasabisys.com
-- file
-- '*.fsvod'
+- cdn?.mikuclub.fun
+- file?.mikuclub.fun
 - s*.hanime1
-- i
-- img
-- '*.kuaikan-cdn'
+- cdn-msp?.jmcomic.me
+- video-thumbnail?.liaoningmovie.net
+- video?-thumbnail?.liaoningmovie.net
 - cdn.*.office.net
 - object-storage-*.vexxhost.net
-- v.rn
-- rr
-- s
-- '*.img.*.sendibm'
-- '*.skyearth'
-- static
-- stream
-- t
+- s?.maxstream.org
+- s??.maxstream.org
 - cdn-*.comaps.tech
-- video
-- video-thumbnail
-- vip-videoprem*-thumbnail
+- v.rn???.xyz
+- '*.skyearth?.xyz'
 domain_regex_set:
 - ^epicgames-download\d\.akamaized\.net$
 domain_keyword_set:
