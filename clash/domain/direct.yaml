@@ -1,4 +1,4 @@
-# Total: 812 rules
+# Total: 811 rules
 'payload':
 - 'i.dell.com'
 - 'ocsp.globalsign.com'
@@ -766,7 +766,6 @@
 - '+.sandai.net'
 - '+.smtcdns.net'
 - '+.staticdn.net'
-- '+.steampp.net'
 - '+.steamserver.net'
 - '+.tapimg.net'
 - '+.tencent-cloud.net'
