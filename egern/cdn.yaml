@@ -836,12 +836,10 @@ domain_set:
 - widget.gotolstoy.com
 - rsi.grafana.com
 - assets.grammarly.com
-- denali-static.grammarly.com
 - assets.extension.grammarly.com
 - config.extension.grammarly.com
 - static.institution.grammarly.com
 - image.send.grammarly.com
-- static.grammarly.com
 - static-web.grammarly.com
 - media.graphassets.com
 - assets.grooveapps.com
@@ -3740,6 +3738,7 @@ domain_suffix_set:
 - fbcdn.net
 - fimfiction-static.net
 - flagpedia.net
+- flsrv.net
 - fmcdn.net
 - fonts.net
 - forgecdn.net
@@ -4046,6 +4045,7 @@ domain_keyword_set:
 - images.trustpilot.com
 - images.trustpilot.net
 - scripts.trustpilot.com
+- static.grammarly.com
 - static.trustpilot.com
 - vdownload.hanime1
 - vod-adaptive.akamaized.net

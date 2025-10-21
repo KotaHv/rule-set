@@ -1,4 +1,4 @@
-# Total: 5273 rules
+# Total: 5275 rules
 'payload':
 - 'mirror.host.ag'
 - 'fdisk.5play.app'
@@ -2433,6 +2433,7 @@
 - '+.awayoutgame.com'
 - '+.aweber.com'
 - '+.aweber-static.com'
+- '+.awscloud.com'
 - '+.awsstatic.com'
 - '+.ax1x.com'
 - '+.axios.com'
@@ -4610,6 +4611,7 @@
 - '+.fimfiction-static.net'
 - '+.finkmirrors.net'
 - '+.flagpedia.net'
+- '+.flsrv.net'
 - '+.fmcdn.net'
 - '+.fonts.net'
 - '+.forgecdn.net'

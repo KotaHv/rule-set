@@ -1,4 +1,4 @@
-# Total: 3973 rules
+# Total: 3972 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -835,12 +835,10 @@
 - 'widget.gotolstoy.com'
 - 'rsi.grafana.com'
 - 'assets.grammarly.com'
-- 'denali-static.grammarly.com'
 - 'assets.extension.grammarly.com'
 - 'config.extension.grammarly.com'
 - 'static.institution.grammarly.com'
 - 'image.send.grammarly.com'
-- 'static.grammarly.com'
 - 'static-web.grammarly.com'
 - 'media.graphassets.com'
 - 'assets.grooveapps.com'
@@ -3738,6 +3736,7 @@
 - '+.fbcdn.net'
 - '+.fimfiction-static.net'
 - '+.flagpedia.net'
+- '+.flsrv.net'
 - '+.fmcdn.net'
 - '+.fonts.net'
 - '+.forgecdn.net'

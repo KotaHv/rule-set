@@ -1,4 +1,4 @@
-# Total: 101 rules
+# Total: 102 rules
 payload:
 - DOMAIN-WILDCARD,cdn-*.comaps.app
 - DOMAIN-WILDCARD,cdn-*.organicmaps.app
@@ -74,6 +74,7 @@ payload:
 - DOMAIN-KEYWORD,sci-hub
 - DOMAIN-KEYWORD,scripts.trustpilot.com
 - DOMAIN-KEYWORD,spotify
+- DOMAIN-KEYWORD,static.grammarly.com
 - DOMAIN-KEYWORD,static.trustpilot.com
 - DOMAIN-KEYWORD,tvbanywhere
 - DOMAIN-KEYWORD,uk-live

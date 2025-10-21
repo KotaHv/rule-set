@@ -1,4 +1,4 @@
-# Total: 73 rules
+# Total: 74 rules
 payload:
 - DOMAIN-WILDCARD,image*.cloudokyo.cloud
 - DOMAIN-WILDCARD,video*.cloudokyo.cloud
@@ -69,6 +69,7 @@ payload:
 - DOMAIN-KEYWORD,images.trustpilot.com
 - DOMAIN-KEYWORD,images.trustpilot.net
 - DOMAIN-KEYWORD,scripts.trustpilot.com
+- DOMAIN-KEYWORD,static.grammarly.com
 - DOMAIN-KEYWORD,static.trustpilot.com
 - DOMAIN-KEYWORD,vdownload.hanime1
 - DOMAIN-KEYWORD,vod-adaptive.akamaized.net
