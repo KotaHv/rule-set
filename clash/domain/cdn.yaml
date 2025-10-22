@@ -1,4 +1,4 @@
-# Total: 3972 rules
+# Total: 3973 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3130,6 +3130,7 @@
 - '+.gammacdn.com'
 - '+.static.gartner.com'
 - '+.scripts.gatorapi.com'
+- '+.gauthstatic.com'
 - '+.gayzyimage.com'
 - '+.gentcdn.com'
 - '+.cdn.getfeedback.com'
