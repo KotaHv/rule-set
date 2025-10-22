@@ -1,8 +1,10 @@
-# Total: 597 rules
+# Total: 603 rules
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
 DOMAIN,ubisoft-uplay-savegames.s3.amazonaws.com
+DOMAIN,wb-agora-hydra-file-storage-k1.s3.amazonaws.com
+DOMAIN,datarouter.apps.netherrealm.com
 DOMAIN,blizzard.nefficient.co.kr
 DOMAIN,avatargarenanow-a.akamaihd.net
 DOMAIN,blizzcon-a.akamaihd.net
@@ -430,6 +432,10 @@ DOMAIN-SUFFIX,valvesoftware.com
 DOMAIN-SUFFIX,visceralgames.com
 DOMAIN-SUFFIX,wariolandshakeit.com
 DOMAIN-SUFFIX,wariowarediy.com
+DOMAIN-SUFFIX,warnerbrosgames.com
+DOMAIN-SUFFIX,wbagora.com
+DOMAIN-SUFFIX,wbgames.com
+DOMAIN-SUFFIX,wbinsights.com
 DOMAIN-SUFFIX,wii-u.com
 DOMAIN-SUFFIX,wiifit.com
 DOMAIN-SUFFIX,wiifitu.com

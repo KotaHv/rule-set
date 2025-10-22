@@ -1,9 +1,11 @@
-# Total: 596 rules
+# Total: 602 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
 - 'ubisoft-orbit-savegames.s3.amazonaws.com'
 - 'ubisoft-uplay-savegames.s3.amazonaws.com'
+- 'wb-agora-hydra-file-storage-k1.s3.amazonaws.com'
+- 'datarouter.apps.netherrealm.com'
 - 'blizzard.nefficient.co.kr'
 - 'avatargarenanow-a.akamaihd.net'
 - 'blizzcon-a.akamaihd.net'
@@ -431,6 +433,10 @@
 - '+.visceralgames.com'
 - '+.wariolandshakeit.com'
 - '+.wariowarediy.com'
+- '+.warnerbrosgames.com'
+- '+.wbagora.com'
+- '+.wbgames.com'
+- '+.wbinsights.com'
 - '+.wii-u.com'
 - '+.wiifit.com'
 - '+.wiifitu.com'

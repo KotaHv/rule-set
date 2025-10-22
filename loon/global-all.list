@@ -1,4 +1,4 @@
-# Total: 5418 rules
+# Total: 5426 rules
 DOMAIN,mirror.host.ag
 DOMAIN,fdisk.5play.app
 DOMAIN,cdn.7tv.app
@@ -662,6 +662,7 @@ DOMAIN,assets.humix.com
 DOMAIN,video-meta.humix.com
 DOMAIN,cdn.hyperbeam.com
 DOMAIN,cdn.hypershort.com
+DOMAIN,statici.icloud.com
 DOMAIN,cdn.icon-icons.com
 DOMAIN,images.icon-icons.com
 DOMAIN,static-00.iconduck.com
@@ -898,6 +899,7 @@ DOMAIN,media.nbcconnecticut.com
 DOMAIN,download.nektony.com
 DOMAIN,cdn.app.neononepay.com
 DOMAIN,cdn.nerdschalk.com
+DOMAIN,datarouter.apps.netherrealm.com
 DOMAIN,mirror.netinch.com
 DOMAIN,featureflags.netlify.com
 DOMAIN,cdn.networklessons.com
@@ -1517,6 +1519,7 @@ DOMAIN,libraries.hund.io
 DOMAIN,cdn.icomoon.io
 DOMAIN,cdn.imageengine.io
 DOMAIN,tracking.inflection.io
+DOMAIN,cdn.insightmediagroup.io
 DOMAIN,widget.intercom.io
 DOMAIN,cdn.ip2location.io
 DOMAIN,website-cdn.ipinfo.io
@@ -1536,6 +1539,7 @@ DOMAIN,images.microcms-assets.io
 DOMAIN,marfeelexperimentsexperienceengine.mrf.io
 DOMAIN,media.mstdn.io
 DOMAIN,static.mytonwallet.io
+DOMAIN,pkgs.netbird.io
 DOMAIN,cdn.nolt.io
 DOMAIN,dl.nwjs.io
 DOMAIN,dl2.nwjs.io
@@ -1583,7 +1587,6 @@ DOMAIN,telemetry.stepsecurity.io
 DOMAIN,assets.stigg.io
 DOMAIN,link.storjshare.io
 DOMAIN,img.telemetr.io
-DOMAIN,cdn.thenewstack.io
 DOMAIN,static.tokenview.io
 DOMAIN,cdn.tolt.io
 DOMAIN,s3.toot.io
@@ -4017,12 +4020,16 @@ DOMAIN-SUFFIX,wakatime.com
 DOMAIN-SUFFIX,walmartimages.com
 DOMAIN-SUFFIX,wariolandshakeit.com
 DOMAIN-SUFFIX,wariowarediy.com
+DOMAIN-SUFFIX,warnerbrosgames.com
 DOMAIN-SUFFIX,warnermediacdn.com
 DOMAIN-SUFFIX,s3.wasabisys.com
 DOMAIN-SUFFIX,washingtonpost.com
 DOMAIN-SUFFIX,watchlycdn.com
 DOMAIN-SUFFIX,waymo.com
 DOMAIN-SUFFIX,waze.com
+DOMAIN-SUFFIX,wbagora.com
+DOMAIN-SUFFIX,wbgames.com
+DOMAIN-SUFFIX,wbinsights.com
 DOMAIN-SUFFIX,wdfiles.com
 DOMAIN-SUFFIX,weather.com
 DOMAIN-SUFFIX,webflow.com
@@ -4422,6 +4429,7 @@ DOMAIN-SUFFIX,statically.io
 DOMAIN-SUFFIX,statuspage.io
 DOMAIN-SUFFIX,storj.io
 DOMAIN-SUFFIX,terraform.io
+DOMAIN-SUFFIX,thenewstack.io
 DOMAIN-SUFFIX,typora.io
 DOMAIN-SUFFIX,ubuntu-touch.io
 DOMAIN-SUFFIX,urlscan.io

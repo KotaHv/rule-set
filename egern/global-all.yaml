@@ -1,4 +1,4 @@
-# Total: 5401 rules
+# Total: 5409 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -664,6 +664,7 @@ domain_set:
 - video-meta.humix.com
 - cdn.hyperbeam.com
 - cdn.hypershort.com
+- statici.icloud.com
 - cdn.icon-icons.com
 - images.icon-icons.com
 - static-00.iconduck.com
@@ -900,6 +901,7 @@ domain_set:
 - download.nektony.com
 - cdn.app.neononepay.com
 - cdn.nerdschalk.com
+- datarouter.apps.netherrealm.com
 - mirror.netinch.com
 - featureflags.netlify.com
 - cdn.networklessons.com
@@ -1519,6 +1521,7 @@ domain_set:
 - cdn.icomoon.io
 - cdn.imageengine.io
 - tracking.inflection.io
+- cdn.insightmediagroup.io
 - widget.intercom.io
 - cdn.ip2location.io
 - website-cdn.ipinfo.io
@@ -1538,6 +1541,7 @@ domain_set:
 - marfeelexperimentsexperienceengine.mrf.io
 - media.mstdn.io
 - static.mytonwallet.io
+- pkgs.netbird.io
 - cdn.nolt.io
 - dl.nwjs.io
 - dl2.nwjs.io
@@ -1585,7 +1589,6 @@ domain_set:
 - assets.stigg.io
 - link.storjshare.io
 - img.telemetr.io
-- cdn.thenewstack.io
 - static.tokenview.io
 - cdn.tolt.io
 - s3.toot.io
@@ -4020,12 +4023,16 @@ domain_suffix_set:
 - walmartimages.com
 - wariolandshakeit.com
 - wariowarediy.com
+- warnerbrosgames.com
 - warnermediacdn.com
 - s3.wasabisys.com
 - washingtonpost.com
 - watchlycdn.com
 - waymo.com
 - waze.com
+- wbagora.com
+- wbgames.com
+- wbinsights.com
 - wdfiles.com
 - weather.com
 - webflow.com
@@ -4425,6 +4432,7 @@ domain_suffix_set:
 - statuspage.io
 - storj.io
 - terraform.io
+- thenewstack.io
 - typora.io
 - ubuntu-touch.io
 - urlscan.io
