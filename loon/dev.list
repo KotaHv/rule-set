@@ -1,4 +1,4 @@
-# Total: 495 rules
+# Total: 506 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -42,6 +42,7 @@ DOMAIN,vscode.search.windows.net
 DOMAIN-SUFFIX,github.ai
 DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,jetbrains.ai
+DOMAIN-SUFFIX,openvino.ai
 DOMAIN-SUFFIX,ecr.aws
 DOMAIN-SUFFIX,fury.blog
 DOMAIN-SUFFIX,github.blog
@@ -108,6 +109,10 @@ DOMAIN-SUFFIX,flutterapp.com
 DOMAIN-SUFFIX,fontawesome.com
 DOMAIN-SUFFIX,fortawesome.com
 DOMAIN-SUFFIX,forthebadge.com
+DOMAIN-SUFFIX,framer.com
+DOMAIN-SUFFIX,framercanvas.com
+DOMAIN-SUFFIX,framerstatic.com
+DOMAIN-SUFFIX,framerusercontent.com
 DOMAIN-SUFFIX,gamesstack.com
 DOMAIN-SUFFIX,gemfury.com
 DOMAIN-SUFFIX,getbootstrap.com
@@ -267,6 +272,8 @@ DOMAIN-SUFFIX,jenkins.io
 DOMAIN-SUFFIX,k8s.io
 DOMAIN-SUFFIX,kubernetes.io
 DOMAIN-SUFFIX,nomadproject.io
+DOMAIN-SUFFIX,oneapi.io
+DOMAIN-SUFFIX,opencas.io
 DOMAIN-SUFFIX,packer.io
 DOMAIN-SUFFIX,playerjs.io
 DOMAIN-SUFFIX,pypa.io
@@ -421,6 +428,7 @@ DOMAIN-SUFFIX,notepad-plus-plus.org
 DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,nuget.org
 DOMAIN-SUFFIX,nugettest.org
+DOMAIN-SUFFIX,opendroneid.org
 DOMAIN-SUFFIX,opengraphprotocol.org
 DOMAIN-SUFFIX,openjsf.org
 DOMAIN-SUFFIX,openresty.org
@@ -452,6 +460,7 @@ DOMAIN-SUFFIX,reactjs.org
 DOMAIN-SUFFIX,readthedocs.org
 DOMAIN-SUFFIX,recoiljs.org
 DOMAIN-SUFFIX,redhat.org
+DOMAIN-SUFFIX,renderingtoolkit.org
 DOMAIN-SUFFIX,researchandcare.org
 DOMAIN-SUFFIX,researchkit.org
 DOMAIN-SUFFIX,rocksdb.org
@@ -468,6 +477,7 @@ DOMAIN-SUFFIX,stackage.org
 DOMAIN-SUFFIX,swift.org
 DOMAIN-SUFFIX,termux.org
 DOMAIN-SUFFIX,ubuntuforums.org
+DOMAIN-SUFFIX,universalscalablefirmware.org
 DOMAIN-SUFFIX,v8project.org
 DOMAIN-SUFFIX,vfsforgit.org
 DOMAIN-SUFFIX,videolan.org
@@ -494,3 +504,4 @@ DOMAIN-SUFFIX,fastlane.tools
 DOMAIN-SUFFIX,researchkit.tv
 DOMAIN-SUFFIX,visualstudio.co.uk
 DOMAIN-SUFFIX,greenend.org.uk
+DOMAIN-SUFFIX,framer.website

@@ -1,4 +1,4 @@
-# Total: 1621 rules
+# Total: 1631 rules
 DOMAIN,store.ui.com.cn
 DOMAIN,ccmdl.adobe.com
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -343,6 +343,10 @@ DOMAIN-SUFFIX,fortawesome.com
 DOMAIN-SUFFIX,forthebadge.com
 DOMAIN-SUFFIX,fosshub.com
 DOMAIN-SUFFIX,foxnews.com
+DOMAIN-SUFFIX,framer.com
+DOMAIN-SUFFIX,framercanvas.com
+DOMAIN-SUFFIX,framerstatic.com
+DOMAIN-SUFFIX,framerusercontent.com
 DOMAIN-SUFFIX,freepik.com
 DOMAIN-SUFFIX,ft.com
 DOMAIN-SUFFIX,fuq.com
@@ -1060,6 +1064,8 @@ DOMAIN-SUFFIX,myqnapcloud.io
 DOMAIN-SUFFIX,nextdns.io
 DOMAIN-SUFFIX,nomadproject.io
 DOMAIN-SUFFIX,npm.io
+DOMAIN-SUFFIX,oneapi.io
+DOMAIN-SUFFIX,opencas.io
 DOMAIN-SUFFIX,opensea.io
 DOMAIN-SUFFIX,packer.io
 DOMAIN-SUFFIX,playerjs.io
@@ -1433,6 +1439,7 @@ DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,npr.org
 DOMAIN-SUFFIX,nuget.org
 DOMAIN-SUFFIX,nugettest.org
+DOMAIN-SUFFIX,opendroneid.org
 DOMAIN-SUFFIX,openfreemap.org
 DOMAIN-SUFFIX,opengraphprotocol.org
 DOMAIN-SUFFIX,openjsf.org
@@ -1471,6 +1478,7 @@ DOMAIN-SUFFIX,reactjs.org
 DOMAIN-SUFFIX,readthedocs.org
 DOMAIN-SUFFIX,recoiljs.org
 DOMAIN-SUFFIX,redhat.org
+DOMAIN-SUFFIX,renderingtoolkit.org
 DOMAIN-SUFFIX,researchandcare.org
 DOMAIN-SUFFIX,researchkit.org
 DOMAIN-SUFFIX,rfa.org
@@ -1505,6 +1513,7 @@ DOMAIN-SUFFIX,toolforge.org
 DOMAIN-SUFFIX,travis-ci.org
 DOMAIN-SUFFIX,tronscan.org
 DOMAIN-SUFFIX,ubuntuforums.org
+DOMAIN-SUFFIX,universalscalablefirmware.org
 DOMAIN-SUFFIX,v2fly.org
 DOMAIN-SUFFIX,v8project.org
 DOMAIN-SUFFIX,venmo.org
@@ -1589,6 +1598,7 @@ DOMAIN-SUFFIX,va
 DOMAIN-SUFFIX,18comic.vip
 DOMAIN-SUFFIX,vn
 DOMAIN-SUFFIX,watch
+DOMAIN-SUFFIX,framer.website
 DOMAIN-SUFFIX,minecraft.wiki
 DOMAIN-SUFFIX,activated.win
 DOMAIN-SUFFIX,ws

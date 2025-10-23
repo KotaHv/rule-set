@@ -1,4 +1,4 @@
-# Total: 5409 rules
+# Total: 5417 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -2855,6 +2855,8 @@ domain_suffix_set:
 - foxdcg.com
 - foxnews.com
 - foxplus.com
+- framer.com
+- framercanvas.com
 - framercdn.com
 - framerstatic.com
 - framerusercontent.com
@@ -4385,6 +4387,8 @@ domain_suffix_set:
 - npms.io
 - nxcli.io
 - nxedge.io
+- oneapi.io
+- opencas.io
 - opensea.io
 - opentelemetry.io
 - packer.io
@@ -5029,6 +5033,7 @@ domain_suffix_set:
 - pool.ntp.org
 - nuget.org
 - nugettest.org
+- opendroneid.org
 - openfreemap.org
 - opengraphprotocol.org
 - openjsf.org
@@ -5077,6 +5082,7 @@ domain_suffix_set:
 - recharts.org
 - recoiljs.org
 - redhat.org
+- renderingtoolkit.org
 - rescript-lang.org
 - researchandcare.org
 - researchkit.org
@@ -5121,6 +5127,7 @@ domain_suffix_set:
 - tronscan.org
 - typedoc.org
 - ubuntuforums.org
+- universalscalablefirmware.org
 - proxy.ustclug.org
 - v2fly.org
 - v8project.org
@@ -5250,6 +5257,7 @@ domain_suffix_set:
 - wetv.vip
 - vn
 - watch
+- framer.website
 - minecraft.wiki
 - activated.win
 - imglink.win

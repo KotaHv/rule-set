@@ -1,4 +1,4 @@
-# Total: 5473 rules
+# Total: 5481 rules
 DOMAIN,mirror.host.ag
 DOMAIN,fdisk.5play.app
 DOMAIN,cdn.7tv.app
@@ -2852,6 +2852,8 @@ DOMAIN-SUFFIX,fox.com
 DOMAIN-SUFFIX,foxdcg.com
 DOMAIN-SUFFIX,foxnews.com
 DOMAIN-SUFFIX,foxplus.com
+DOMAIN-SUFFIX,framer.com
+DOMAIN-SUFFIX,framercanvas.com
 DOMAIN-SUFFIX,framercdn.com
 DOMAIN-SUFFIX,framerstatic.com
 DOMAIN-SUFFIX,framerusercontent.com
@@ -4382,6 +4384,8 @@ DOMAIN-SUFFIX,npm.io
 DOMAIN-SUFFIX,npms.io
 DOMAIN-SUFFIX,nxcli.io
 DOMAIN-SUFFIX,nxedge.io
+DOMAIN-SUFFIX,oneapi.io
+DOMAIN-SUFFIX,opencas.io
 DOMAIN-SUFFIX,opensea.io
 DOMAIN-SUFFIX,opentelemetry.io
 DOMAIN-SUFFIX,packer.io
@@ -5026,6 +5030,7 @@ DOMAIN-SUFFIX,npr.org
 DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,nuget.org
 DOMAIN-SUFFIX,nugettest.org
+DOMAIN-SUFFIX,opendroneid.org
 DOMAIN-SUFFIX,openfreemap.org
 DOMAIN-SUFFIX,opengraphprotocol.org
 DOMAIN-SUFFIX,openjsf.org
@@ -5074,6 +5079,7 @@ DOMAIN-SUFFIX,readthedocs.org
 DOMAIN-SUFFIX,recharts.org
 DOMAIN-SUFFIX,recoiljs.org
 DOMAIN-SUFFIX,redhat.org
+DOMAIN-SUFFIX,renderingtoolkit.org
 DOMAIN-SUFFIX,rescript-lang.org
 DOMAIN-SUFFIX,researchandcare.org
 DOMAIN-SUFFIX,researchkit.org
@@ -5118,6 +5124,7 @@ DOMAIN-SUFFIX,travis-ci.org
 DOMAIN-SUFFIX,tronscan.org
 DOMAIN-SUFFIX,typedoc.org
 DOMAIN-SUFFIX,ubuntuforums.org
+DOMAIN-SUFFIX,universalscalablefirmware.org
 DOMAIN-SUFFIX,proxy.ustclug.org
 DOMAIN-SUFFIX,v2fly.org
 DOMAIN-SUFFIX,v8project.org
@@ -5247,6 +5254,7 @@ DOMAIN-SUFFIX,cloudlin.vip
 DOMAIN-SUFFIX,wetv.vip
 DOMAIN-SUFFIX,vn
 DOMAIN-SUFFIX,watch
+DOMAIN-SUFFIX,framer.website
 DOMAIN-SUFFIX,minecraft.wiki
 DOMAIN-SUFFIX,activated.win
 DOMAIN-SUFFIX,imglink.win

@@ -1,4 +1,4 @@
-# Total: 497 rules
+# Total: 508 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -45,6 +45,7 @@ domain_suffix_set:
 - github.ai
 - grazie.ai
 - jetbrains.ai
+- openvino.ai
 - ecr.aws
 - fury.blog
 - github.blog
@@ -111,6 +112,10 @@ domain_suffix_set:
 - fontawesome.com
 - fortawesome.com
 - forthebadge.com
+- framer.com
+- framercanvas.com
+- framerstatic.com
+- framerusercontent.com
 - gamesstack.com
 - gemfury.com
 - getbootstrap.com
@@ -270,6 +275,8 @@ domain_suffix_set:
 - k8s.io
 - kubernetes.io
 - nomadproject.io
+- oneapi.io
+- opencas.io
 - packer.io
 - playerjs.io
 - pypa.io
@@ -424,6 +431,7 @@ domain_suffix_set:
 - npmjs.org
 - nuget.org
 - nugettest.org
+- opendroneid.org
 - opengraphprotocol.org
 - openjsf.org
 - openresty.org
@@ -455,6 +463,7 @@ domain_suffix_set:
 - readthedocs.org
 - recoiljs.org
 - redhat.org
+- renderingtoolkit.org
 - researchandcare.org
 - researchkit.org
 - rocksdb.org
@@ -471,6 +480,7 @@ domain_suffix_set:
 - swift.org
 - termux.org
 - ubuntuforums.org
+- universalscalablefirmware.org
 - v8project.org
 - vfsforgit.org
 - videolan.org
@@ -497,6 +507,7 @@ domain_suffix_set:
 - researchkit.tv
 - visualstudio.co.uk
 - greenend.org.uk
+- framer.website
 domain_regex_set:
 - .+\.dkr\.ecr\.[^\.]+\.amazonaws\.com$
 - ^github-production-release-asset-[0-9a-zA-Z]{6}\.s3\.amazonaws\.com$
