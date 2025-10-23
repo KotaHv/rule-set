@@ -1,4 +1,4 @@
-# Total: 5417 rules
+# Total: 5418 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -2092,6 +2092,7 @@ domain_set:
 - p.inari.site
 - res2.weblium.site
 - cdn.birdie.so
+- assets.cello.so
 - cdn.circle.so
 - static.cohere.so
 - udata.namespace.so

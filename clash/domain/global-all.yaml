@@ -1,4 +1,4 @@
-# Total: 5292 rules
+# Total: 5293 rules
 'payload':
 - 'mirror.host.ag'
 - 'fdisk.5play.app'
@@ -2091,6 +2091,7 @@
 - 'p.inari.site'
 - 'res2.weblium.site'
 - 'cdn.birdie.so'
+- 'assets.cello.so'
 - 'cdn.circle.so'
 - 'static.cohere.so'
 - 'udata.namespace.so'

@@ -1,4 +1,4 @@
-# Total: 4049 rules
+# Total: 4050 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2712,6 +2712,7 @@ domain_set:
 - nextra.site
 - res2.weblium.site
 - cdn.birdie.so
+- assets.cello.so
 - cdn.circle.so
 - static.cohere.so
 - udata.namespace.so
