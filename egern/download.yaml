@@ -1,4 +1,4 @@
-# Total: 1196 rules
+# Total: 1197 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -51,6 +51,7 @@ domain_set:
 - mirror.easyname.ch
 - mirror.metanet.ch
 - mirror.switch.ch
+- download.delta.chat
 - ghp.ci
 - cpan.dcc.uchile.cl
 - ctan.dcc.uchile.cl

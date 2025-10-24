@@ -1,4 +1,4 @@
-# Total: 5418 rules
+# Total: 5419 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -72,6 +72,7 @@ domain_set:
 - pics.vpdmm.cc
 - image.crisp.chat
 - storage.crisp.chat
+- download.delta.chat
 - ghp.ci
 - cpan.dcc.uchile.cl
 - ctan.dcc.uchile.cl
