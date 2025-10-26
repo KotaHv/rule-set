@@ -1,1 +1,1 @@
-{"version": 2, "rules": [{"domain_suffix": ["geo2.adobe.com", "in.applicationinsights.azure.com", "null", "undefined"]}]}
+{"version": 2, "rules": [{"domain": ["nom.telemetrydeck.com"], "domain_suffix": ["geo2.adobe.com", "in.applicationinsights.azure.com", "null", "undefined"]}]}

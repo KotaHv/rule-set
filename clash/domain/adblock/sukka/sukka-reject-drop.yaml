@@ -1,5 +1,6 @@
-# Total: 4 rules
+# Total: 5 rules
 'payload':
+- 'nom.telemetrydeck.com'
 - '+.geo2.adobe.com'
 - '+.in.applicationinsights.azure.com'
 - '+.null'

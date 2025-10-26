@@ -1,4 +1,4 @@
-# Total: 4050 rules
+# Total: 4051 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2007,6 +2007,7 @@ domain_set:
 - assets.science.nasa.gov
 - time-a.nist.gov
 - node.green
+- img.gs
 - assets.gorgias.help
 - img.openshop.com.hk
 - image.hkhl.hk
