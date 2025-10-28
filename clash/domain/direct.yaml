@@ -1,4 +1,4 @@
-# Total: 811 rules
+# Total: 816 rules
 'payload':
 - 'i.dell.com'
 - 'ocsp.globalsign.com'
@@ -307,6 +307,9 @@
 - '+.hellobike.com'
 - '+.hemamax.com'
 - '+.hemaos.com'
+- '+.hero.com'
+- '+.heroesports.com'
+- '+.herogame.com'
 - '+.heytap.com'
 - '+.heytapcs.com'
 - '+.heytapdownload.com'
@@ -536,6 +539,7 @@
 - '+.sevencdn.com'
 - '+.shifen.com'
 - '+.shyhhema.com'
+- '+.shyxhy.com'
 - '+.sifou.com'
 - '+.sina.com'
 - '+.sinaapp.com'
@@ -657,6 +661,7 @@
 - '+.ycgame.com'
 - '+.ydstatic.com'
 - '+.yicai.com'
+- '+.yingxiong.com'
 - '+.yinxiang.com'
 - '+.yitao.com'
 - '+.ykimg.com'

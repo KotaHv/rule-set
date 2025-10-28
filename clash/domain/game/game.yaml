@@ -1,4 +1,4 @@
-# Total: 602 rules
+# Total: 605 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -209,6 +209,7 @@
 - '+.hutpromos.com'
 - '+.hyprsense.com'
 - '+.industrialtoys.com'
+- '+.joinsquad.com'
 - '+.kirbysepicyarn.com'
 - '+.kirbysuperstarultra.com'
 - '+.kyurem.com'
@@ -287,6 +288,7 @@
 - '+.nintendoswitch.com'
 - '+.nintendoswitchtogether.com'
 - '+.nintendowii.com'
+- '+.offworldindustries.com'
 - '+.origin.com'
 - '+.orithegame.com'
 - '+.pandanet-igs.com'
@@ -541,6 +543,7 @@
 - '+.nintendo.net'
 - '+.nintendonetwork.net'
 - '+.nintendoswitch.net'
+- '+.offworldindustries.net'
 - '+.steam.cdn.on.net'
 - '+.pinkcore.net'
 - '+.playstation.net'
