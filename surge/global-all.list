@@ -1,4 +1,4 @@
-# Total: 5487 rules
+# Total: 5485 rules
 DOMAIN,mirror.host.ag
 DOMAIN,fdisk.5play.app
 DOMAIN,cdn.7tv.app
@@ -212,9 +212,6 @@ DOMAIN,img.apponic.com
 DOMAIN,images.arigatotravel.com
 DOMAIN,github-api.arkoselabs.com
 DOMAIN,cdn.designsystem.arm.com
-DOMAIN,agi.armorgames.com
-DOMAIN,cache.armorgames.com
-DOMAIN,files.armorgames.com
 DOMAIN,wa.arounddeal.com
 DOMAIN,cdn.ashbyprd.com
 DOMAIN,gnu.askapache.com
@@ -2413,6 +2410,7 @@ DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,aptoide.com
 DOMAIN-SUFFIX,ipfs.arching-kaos.com
 DOMAIN-SUFFIX,images.arcpublishing.com
+DOMAIN-SUFFIX,armorgames.com
 DOMAIN-SUFFIX,artstation.com
 DOMAIN-SUFFIX,ashemaletube.com
 DOMAIN-SUFFIX,ask.com

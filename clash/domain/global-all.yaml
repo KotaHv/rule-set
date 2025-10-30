@@ -1,4 +1,4 @@
-# Total: 5298 rules
+# Total: 5296 rules
 'payload':
 - 'mirror.host.ag'
 - 'fdisk.5play.app'
@@ -213,9 +213,6 @@
 - 'images.arigatotravel.com'
 - 'github-api.arkoselabs.com'
 - 'cdn.designsystem.arm.com'
-- 'agi.armorgames.com'
-- 'cache.armorgames.com'
-- 'files.armorgames.com'
 - 'wa.arounddeal.com'
 - 'cdn.ashbyprd.com'
 - 'gnu.askapache.com'
@@ -2414,6 +2411,7 @@
 - '+.aptoide.com'
 - '+.ipfs.arching-kaos.com'
 - '+.images.arcpublishing.com'
+- '+.armorgames.com'
 - '+.artstation.com'
 - '+.ashemaletube.com'
 - '+.ask.com'
