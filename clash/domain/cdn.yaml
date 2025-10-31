@@ -1,4 +1,4 @@
-# Total: 3979 rules
+# Total: 3980 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3673,6 +3673,7 @@
 - '+.redd.it'
 - '+.unsplash.it'
 - '+.media.ci-en.jp'
+- '+.ismcdn.jp'
 - '+.misskeyusercontent.jp'
 - '+.cdn.nimg.jp'
 - '+.placehold.jp'
