@@ -1,4 +1,4 @@
-# Total: 506 rules
+# Total: 507 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -283,6 +283,7 @@
 - '+.quay.io'
 - '+.readthedocs.io'
 - '+.redis.io'
+- '+.sentry.io'
 - '+.servicetalk.io'
 - '+.shields.io'
 - '+.snap-telemetry.io'

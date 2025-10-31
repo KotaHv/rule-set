@@ -1,4 +1,4 @@
-# Total: 508 rules
+# Total: 509 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -285,6 +285,7 @@ domain_suffix_set:
 - quay.io
 - readthedocs.io
 - redis.io
+- sentry.io
 - servicetalk.io
 - shields.io
 - snap-telemetry.io

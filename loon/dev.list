@@ -1,4 +1,4 @@
-# Total: 506 rules
+# Total: 507 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -282,6 +282,7 @@ DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,quay.io
 DOMAIN-SUFFIX,readthedocs.io
 DOMAIN-SUFFIX,redis.io
+DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,servicetalk.io
 DOMAIN-SUFFIX,shields.io
 DOMAIN-SUFFIX,snap-telemetry.io
