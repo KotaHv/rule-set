@@ -1,10 +1,11 @@
-# Total: 38 rules
+# Total: 40 rules
 'payload':
 - 'api.jetbrains.ai'
 - 'gateway.ai.cloudflare.com'
 - 'api.github.com'
 - 'alkalicore-pa.clients6.google.com'
 - 'jules.google.com'
+- 'aida.googleapis.com'
 - 'aisandbox-pa.googleapis.com'
 - 'robinfrontend-pa.googleapis.com'
 - 'ai.google.dev'
@@ -26,6 +27,7 @@
 - '+.gemini.google.com'
 - '+.makersuite.google.com'
 - '+.notebooklm.google.com'
+- '+.cloudcode-pa.googleapis.com'
 - '+.geller-pa.googleapis.com'
 - '+.generativelanguage.googleapis.com'
 - '+.proactivebackend-pa.googleapis.com'
