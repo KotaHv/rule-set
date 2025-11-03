@@ -1,8 +1,14 @@
-# Total: 42 rules
+# Total: 49 rules
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
+- apple-relay.apple.com
+- guzzoni.apple.com
 - gateway.ai.cloudflare.com
+- apple-relay.cloudflare.com
+- cp2.cloudflare.com
+- cp4.cloudflare.com
+- apple-relay.fastly-edge.com
 - api.github.com
 - alkalicore-pa.clients6.google.com
 - jules.google.com
@@ -21,6 +27,7 @@ domain_suffix_set:
 - clipdrop.co
 - ai.com
 - anthropic.com
+- smoot.apple.com
 - chat.com
 - chatgpt.com
 - deepmind.com

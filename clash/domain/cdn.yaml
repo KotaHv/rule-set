@@ -1,4 +1,4 @@
-# Total: 3981 rules
+# Total: 3977 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -244,7 +244,6 @@
 - 'app-spm.com'
 - 'fast.appcues.com'
 - 'vsmarketplacebadge.apphb.com'
-- 'apple-relay.apple.com'
 - 'static.ess.apple.com'
 - 'events-delivery.apple.com'
 - 'events-live.apple.com'
@@ -473,10 +472,7 @@
 - 'static.cloudcachetci.com'
 - 'staticintl.cloudcachetci.com'
 - 'ajax.cloudflare.com'
-- 'apple-relay.cloudflare.com'
 - 'cdnjs.cloudflare.com'
-- 'cp2.cloudflare.com'
-- 'cp4.cloudflare.com'
 - 'static.dash.cloudflare.com'
 - 'info.cloudflare.com'
 - 'favicons.teams.cloudflare.com'
@@ -663,7 +659,6 @@
 - 'staticm.fastcomments.com'
 - 'img.fastcybers.com'
 - 'assets.fastly.com'
-- 'apple-relay.fastly-edge.com'
 - 'google-ohttp-relay-safebrowsing.fastly-edge.com'
 - 'ohttp-relay1.fastly-edge.com'
 - 'aimg.fc2.com'
@@ -3455,6 +3450,7 @@
 - '+.stylexjs.com'
 - '+.substackcdn.com'
 - '+.superfiliate-cdn.com'
+- '+.superhumanstatic.com'
 - '+.surrit.com'
 - '+.susercontent.com'
 - '+.svbtleusercontent.com'

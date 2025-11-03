@@ -1,4 +1,4 @@
-# Total: 4055 rules
+# Total: 4051 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -245,7 +245,6 @@ domain_set:
 - app-spm.com
 - fast.appcues.com
 - vsmarketplacebadge.apphb.com
-- apple-relay.apple.com
 - static.ess.apple.com
 - events-delivery.apple.com
 - events-live.apple.com
@@ -474,10 +473,7 @@ domain_set:
 - static.cloudcachetci.com
 - staticintl.cloudcachetci.com
 - ajax.cloudflare.com
-- apple-relay.cloudflare.com
 - cdnjs.cloudflare.com
-- cp2.cloudflare.com
-- cp4.cloudflare.com
 - static.dash.cloudflare.com
 - info.cloudflare.com
 - favicons.teams.cloudflare.com
@@ -664,7 +660,6 @@ domain_set:
 - staticm.fastcomments.com
 - img.fastcybers.com
 - assets.fastly.com
-- apple-relay.fastly-edge.com
 - google-ohttp-relay-safebrowsing.fastly-edge.com
 - ohttp-relay1.fastly-edge.com
 - aimg.fc2.com
@@ -3457,6 +3452,7 @@ domain_suffix_set:
 - stylexjs.com
 - substackcdn.com
 - superfiliate-cdn.com
+- superhumanstatic.com
 - surrit.com
 - susercontent.com
 - svbtleusercontent.com

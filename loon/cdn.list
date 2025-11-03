@@ -1,4 +1,4 @@
-# Total: 4002 rules
+# Total: 3998 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -243,7 +243,6 @@ DOMAIN,dims.apnews.com
 DOMAIN,app-spm.com
 DOMAIN,fast.appcues.com
 DOMAIN,vsmarketplacebadge.apphb.com
-DOMAIN,apple-relay.apple.com
 DOMAIN,static.ess.apple.com
 DOMAIN,events-delivery.apple.com
 DOMAIN,events-live.apple.com
@@ -472,10 +471,7 @@ DOMAIN,cdn.cliqz.com
 DOMAIN,static.cloudcachetci.com
 DOMAIN,staticintl.cloudcachetci.com
 DOMAIN,ajax.cloudflare.com
-DOMAIN,apple-relay.cloudflare.com
 DOMAIN,cdnjs.cloudflare.com
-DOMAIN,cp2.cloudflare.com
-DOMAIN,cp4.cloudflare.com
 DOMAIN,static.dash.cloudflare.com
 DOMAIN,info.cloudflare.com
 DOMAIN,favicons.teams.cloudflare.com
@@ -662,7 +658,6 @@ DOMAIN,cdn.fastcomments.com
 DOMAIN,staticm.fastcomments.com
 DOMAIN,img.fastcybers.com
 DOMAIN,assets.fastly.com
-DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,google-ohttp-relay-safebrowsing.fastly-edge.com
 DOMAIN,ohttp-relay1.fastly-edge.com
 DOMAIN,aimg.fc2.com
@@ -3454,6 +3449,7 @@ DOMAIN-SUFFIX,strpst.com
 DOMAIN-SUFFIX,stylexjs.com
 DOMAIN-SUFFIX,substackcdn.com
 DOMAIN-SUFFIX,superfiliate-cdn.com
+DOMAIN-SUFFIX,superhumanstatic.com
 DOMAIN-SUFFIX,surrit.com
 DOMAIN-SUFFIX,susercontent.com
 DOMAIN-SUFFIX,svbtleusercontent.com
