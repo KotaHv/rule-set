@@ -1,4 +1,4 @@
-# Total: 250 rules
+# Total: 252 rules
 'payload':
 - '44wilhpljf.execute-api.ap-southeast-1.amazonaws.com'
 - 'hls.itunes.apple.com'
@@ -196,6 +196,7 @@
 - '+.winticket.jp'
 - '+.musical.ly'
 - '+.kktv.me'
+- '+.mangafox.me'
 - '+.hayabusa.media'
 - '+.aiv-cdn.net'
 - '+.aiv-delivery.net'
@@ -206,6 +207,7 @@
 - '+.disney-plus.net'
 - '+.dzcdn.net'
 - '+.netflix.com.edgesuite.net'
+- '+.fanfox.net'
 - '+.jtvnw.net'
 - '+.dca-ll-livedazn-dznlivejp.s.llnwi.net'
 - '+.netflix.net'

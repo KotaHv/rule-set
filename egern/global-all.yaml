@@ -1,4 +1,4 @@
-# Total: 5424 rules
+# Total: 5426 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -759,6 +759,7 @@ domain_set:
 - aurora-customization-usw2.lithium.com
 - cdn.livechatinc.com
 - app-cdn.logo.com
+- img.logokit.com
 - cdn.loom.com
 - media.loom-app.com
 - assets1.lottiefiles.com
@@ -4622,6 +4623,7 @@ domain_suffix_set:
 - eroterest.net
 - fabricmc.net
 - faceit-cdn.net
+- fanfox.net
 - fastly.net
 - debian.map.fastlydns.net
 - fastlylb.net

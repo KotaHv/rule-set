@@ -1,4 +1,4 @@
-# Total: 1189 rules
+# Total: 1191 rules
 'payload':
 - 'mirror.host.ag'
 - 'fdisk.5play.app'
@@ -617,6 +617,8 @@
 - 'static.redox-os.org'
 - 'mirrors.hostingromania.ro.org'
 - 'mirrors.rpmfusion.org'
+- 'rubygems.org'
+- 'index.rubygems.org'
 - 'static.rust-lang.org'
 - 'searchcpan.org'
 - 'httpd-mirror.sergal.org'

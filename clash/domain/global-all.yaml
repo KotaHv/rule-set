@@ -1,4 +1,4 @@
-# Total: 5299 rules
+# Total: 5301 rules
 'payload':
 - 'mirror.host.ag'
 - 'fdisk.5play.app'
@@ -758,6 +758,7 @@
 - 'aurora-customization-usw2.lithium.com'
 - 'cdn.livechatinc.com'
 - 'app-cdn.logo.com'
+- 'img.logokit.com'
 - 'cdn.loom.com'
 - 'media.loom-app.com'
 - 'assets1.lottiefiles.com'
@@ -4620,6 +4621,7 @@
 - '+.eroterest.net'
 - '+.fabricmc.net'
 - '+.faceit-cdn.net'
+- '+.fanfox.net'
 - '+.fastly.net'
 - '+.debian.map.fastlydns.net'
 - '+.fastlylb.net'

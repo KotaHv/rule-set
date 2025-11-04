@@ -1,4 +1,4 @@
-# Total: 31 rules
+# Total: 33 rules
 'payload':
 - '44wilhpljf.execute-api.ap-southeast-1.amazonaws.com'
 - 'hbounify-prod.evergent.com'
@@ -21,6 +21,8 @@
 - '+.hbogoasia.hk'
 - '+.hbogoasia.id'
 - '+.kktv.me'
+- '+.mangafox.me'
+- '+.fanfox.net'
 - '+.hbogoasia.ph'
 - '+.hbogoasia.sg'
 - '+.kk.stream'

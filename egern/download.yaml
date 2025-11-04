@@ -1,4 +1,4 @@
-# Total: 1197 rules
+# Total: 1199 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -618,6 +618,8 @@ domain_set:
 - static.redox-os.org
 - mirrors.hostingromania.ro.org
 - mirrors.rpmfusion.org
+- rubygems.org
+- index.rubygems.org
 - static.rust-lang.org
 - searchcpan.org
 - httpd-mirror.sergal.org
