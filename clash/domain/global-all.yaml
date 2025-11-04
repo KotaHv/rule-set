@@ -1,4 +1,4 @@
-# Total: 5296 rules
+# Total: 5299 rules
 'payload':
 - 'mirror.host.ag'
 - 'fdisk.5play.app'
@@ -334,6 +334,7 @@
 - 'signal.cdnbye.com'
 - 'signalcloud.cdnbye.com'
 - 'video.cdnbye.com'
+- 'static.cdnlogo.com'
 - 'dc-cdn.cdw.com'
 - 'webobjects2.cdw.com'
 - 'assets-s3-us-east-1.ceros.com'
@@ -1208,6 +1209,7 @@
 - 'image.telanganatoday.com'
 - 'media.telanganatoday.com'
 - 'cdnstatic.tencentcs.com'
+- 'nel.teo-rum.com'
 - 'static.test-beta.com'
 - 'ci.testling.com'
 - 'assets.the-independent.com'
@@ -1514,6 +1516,7 @@
 - 'media.hachyderm.io'
 - 'packages.httpie.io'
 - 'libraries.hund.io'
+- 'icon.icepanel.io'
 - 'cdn.icomoon.io'
 - 'cdn.imageengine.io'
 - 'tracking.inflection.io'

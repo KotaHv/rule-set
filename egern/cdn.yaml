@@ -1,4 +1,4 @@
-# Total: 4051 rules
+# Total: 4054 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -428,6 +428,7 @@ domain_set:
 - signalcloud.cdnbye.com
 - video.cdnbye.com
 - ajax.cdnjs.com
+- static.cdnlogo.com
 - dc-cdn.cdw.com
 - webobjects2.cdw.com
 - assets-s3-us-east-1.ceros.com
@@ -1661,6 +1662,7 @@ domain_set:
 - cdnstatic.tencentcs.com
 - media.tenor.com
 - media1.tenor.com
+- nel.teo-rum.com
 - cdn.termius.com
 - static.test-beta.com
 - ci.testling.com
@@ -2093,6 +2095,7 @@ domain_set:
 - assets.hackmd.io
 - assets.holopin.io
 - libraries.hund.io
+- icon.icepanel.io
 - cdn.icomoon.io
 - cdn.imageengine.io
 - tracking.inflection.io

@@ -4,8 +4,8 @@ payload:
 - DOMAIN-WILDCARD,p2p-*.douyucdn.cn
 - DOMAIN-WILDCARD,p2pchunk-*.douyucdn.cn
 - DOMAIN-WILDCARD,p2plive-*.douyucdn.cn
+- DOMAIN-WILDCARD,stun*.douyucdn.cn
 - DOMAIN-WILDCARD,p2p*.qq.com
-- DOMAIN-WILDCARD,stun*
 - DOMAIN-KEYWORD,-p2p-v2.pull.yximgs.com
 - DOMAIN-KEYWORD,-p2p.pull.yximgs.com
 - AND,((NETWORK,UDP),(DOMAIN-SUFFIX,googlevideo.com))

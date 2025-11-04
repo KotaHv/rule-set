@@ -36,8 +36,8 @@ domain_wildcard_set:
 - p2p-*.douyucdn.cn
 - p2pchunk-*.douyucdn.cn
 - p2plive-*.douyucdn.cn
+- stun*.douyucdn.cn
 - p2p*.qq.com
-- stun*
 domain_keyword_set:
 - -p2p-v2.pull.yximgs.com
 - -p2p.pull.yximgs.com
