@@ -1,4 +1,4 @@
-# Total: 4055 rules
+# Total: 4057 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1868,6 +1868,8 @@ domain_set:
 - images4.welcomesoftware.com
 - content.wepik.com
 - image.westinyou.com
+- cdn.whoer.com
+- images.whoer.com
 - images.wikia.com
 - assets.wikiwand.com
 - cdn.wikiwand.com
