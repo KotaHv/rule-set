@@ -1,10 +1,8 @@
-# Total: 49 rules
+# Total: 46 rules
 DOMAIN,api.jetbrains.ai
 DOMAIN,apple-relay.apple.com
-DOMAIN,guzzoni.apple.com
 DOMAIN,gateway.ai.cloudflare.com
 DOMAIN,apple-relay.cloudflare.com
-DOMAIN,cp2.cloudflare.com
 DOMAIN,cp4.cloudflare.com
 DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,api.github.com
@@ -24,7 +22,6 @@ DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,clipdrop.co
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,deepmind.com
