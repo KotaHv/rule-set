@@ -1,4 +1,4 @@
-# Total: 4058 rules
+# Total: 4077 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -73,6 +73,7 @@ domain_set:
 - img.apk.cafe
 - assets.toot.cafe
 - oss.moe.cat
+- a.pomf.cat
 - cdn.arduino.cc
 - content.arduino.cc
 - fonts.gishan.cc
@@ -291,6 +292,7 @@ domain_set:
 - sdks.automizely.com
 - widget.automizely.com
 - widgets.automizely.com
+- imgs02.aventertainments.com
 - static2.avg.com
 - static-clst.avgle.com
 - assets.awwwards.com
@@ -588,6 +590,7 @@ domain_set:
 - cdn.docsbot.com
 - img.domaintools.com
 - source.domaintools.com
+- cdn.doofinder.com
 - cdn.dotaoutpost.com
 - static.doujins.com
 - cdn.downdetector.com
@@ -763,6 +766,8 @@ domain_set:
 - a.gawby.com
 - i.gawby.com
 - account-widget-mfe.gcore.com
+- r2.gear4music.com
+- static-r2.gear4music.com
 - i.geekflare.com
 - img2.gelbooru.com
 - img4.gelbooru.com
@@ -1019,6 +1024,7 @@ domain_set:
 - content.kaspersky-labs.com
 - img.kbhgames.com
 - kdata1.com
+- tour-content-cdn.kellymadisonmedia.com
 - assets.khoros.com
 - clips.kick.com
 - files.kick.com
@@ -1537,6 +1543,7 @@ domain_set:
 - cdn.setapp.com
 - imgix.setapp.com
 - stats.setapp.com
+- attach.setn.com
 - b.sf-syn.com
 - static2.sharepointonline.com
 - assets.shazam.com
@@ -1716,6 +1723,11 @@ domain_set:
 - cdn.ttloli.com
 - cdn2.ttloli.com
 - tn.tubepornclassic.com
+- cdn1.tubeteen18.com
+- cdn2.tubeteen18.com
+- cdn3.tubeteen18.com
+- cdn4.tubeteen18.com
+- cdn5.tubeteen18.com
 - static.tumblr.com
 - cdn-cms.tunein.com
 - cdn-web.tunein.com
@@ -2295,6 +2307,7 @@ domain_set:
 - latency-test.skk.moe
 - pic.skk.moe
 - ovo.wxw.moe
+- zzz.wxw.moe
 - cdn.jotfor.ms
 - cdn01.jotfor.ms
 - cdn02.jotfor.ms
@@ -2548,6 +2561,7 @@ domain_set:
 - web-api-cdn.ground.news
 - assets.matters.news
 - assets-next.matters.news
+- statics-prod.mirrordaily.news
 - image.dooo.ng
 - cdn.episode.ninja
 - images.weserv.nl
@@ -2675,6 +2689,7 @@ domain_set:
 - cdn1.telesco.pe
 - cdn4.telesco.pe
 - cdn5.telesco.pe
+- static.generated.photos
 - asset.booth.pm
 - img.foresightnews.pro
 - assets.gcore.pro
@@ -2825,10 +2840,12 @@ domain_set:
 - megapx-assets.dcard.tw
 - socialpic.video.friday.tw
 - vbmspic.video.friday.tw
+- statics.mnnews.tw
 - app.moegirl.tw
 - img.moegirl.tw
 - storage.moegirl.tw
 - img-fnc.ebc.net.tw
+- img.news.ebc.net.tw
 - news-data.pts.org.tw
 - cf.shopee.tw
 - static.bbc.co.uk
@@ -3207,6 +3224,7 @@ domain_suffix_set:
 - ignimgs.com
 - illiweb.com
 - imagebam.com
+- images-dnxlive.com
 - images-iherb.com
 - imagetwist.com
 - img-dpreview.com
@@ -3229,6 +3247,7 @@ domain_suffix_set:
 - intercomcdn.com
 - invisionapp-cdn.com
 - itvstatic.com
+- javhucdn.com
 - javtxt.com
 - jbkcdn.com
 - jdbstatic.com

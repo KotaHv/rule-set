@@ -1,4 +1,4 @@
-# Total: 5426 rules
+# Total: 5449 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -223,6 +223,7 @@ domain_set:
 - sdks.automizely.com
 - widget.automizely.com
 - widgets.automizely.com
+- imgs02.aventertainments.com
 - assets.awwwards.com
 - axiecdn.axieinfinity.com
 - cdn.axieinfinity.com
@@ -459,6 +460,7 @@ domain_set:
 - cdn.docsbot.com
 - img.domaintools.com
 - source.domaintools.com
+- cdn.doofinder.com
 - cdn.dotaoutpost.com
 - screenshots.downloadtorrentfile.com
 - mirror.downloadvn.com
@@ -574,6 +576,8 @@ domain_set:
 - a.gawby.com
 - i.gawby.com
 - account-widget-mfe.gcore.com
+- r2.gear4music.com
+- static-r2.gear4music.com
 - i.geekflare.com
 - maps.geoapify.com
 - geoip-js.com
@@ -717,6 +721,7 @@ domain_set:
 - content.kaspersky-labs.com
 - img.kbhgames.com
 - kdata1.com
+- tour-content-cdn.kellymadisonmedia.com
 - assets.khoros.com
 - a.kickstarter.com
 - i.kickstarter.com
@@ -1014,6 +1019,7 @@ domain_set:
 - content.powerapps.com
 - repo.powerdns.com
 - ui.powerreviews.com
+- cdn.powershellgallery.com
 - cdn.pricespider.com
 - media.printables.com
 - api.privacy.com
@@ -1105,6 +1111,7 @@ domain_set:
 - mirror.serverion.com
 - cdn.servicebell.com
 - i.servimg.com
+- attach.setn.com
 - b.sf-syn.com
 - static2.sharepointonline.com
 - assets.shazam.com
@@ -1241,6 +1248,11 @@ domain_set:
 - cdn.ttgtmedia.com
 - cdn.ttloli.com
 - cdn2.ttloli.com
+- cdn1.tubeteen18.com
+- cdn2.tubeteen18.com
+- cdn3.tubeteen18.com
+- cdn4.tubeteen18.com
+- cdn5.tubeteen18.com
 - widgets.turnto.com
 - twenty-icons.com
 - embed.typeform.com
@@ -1389,7 +1401,6 @@ domain_set:
 - webfonts.zoho.com
 - widgets.zohosalesiq.com
 - hello.zonos.com
-- ws-assets.zoominfo.com
 - public.zoorix.com
 - barracuda-assets.zoovu.com
 - barracuda-cdn.zoovu.com
@@ -1652,11 +1663,11 @@ domain_set:
 - s3.m.0x.mk
 - cdn.amh.moe
 - assets-cdn.anh.moe
-- pic.cangku.moe
 - static.chaika.moe
 - objects.hit.moe
 - touchgal-image.moyu.moe
 - ovo.wxw.moe
+- zzz.wxw.moe
 - img.m.mw
 - download.nust.na
 - pics.hentai.name
@@ -1936,9 +1947,9 @@ domain_set:
 - vjs.zencdn.net
 - mixin-images.zeromesh.net
 - content.api.news
-- web-api-cdn.ground.news
 - assets.matters.news
 - assets-next.matters.news
+- statics-prod.mirrordaily.news
 - image.dooo.ng
 - cdn.episode.ninja
 - media.masto.nu
@@ -2022,6 +2033,7 @@ domain_set:
 - nobara-images.nobaraproject.org
 - assets.nxtrace.org
 - videos.ohentai.org
+- cdn.oneget.org
 - open-vsx.org
 - ciscobinary.openh264.org
 - ftp.osuosl.org
@@ -2168,6 +2180,7 @@ domain_set:
 domain_suffix_set:
 - ac
 - ai
+- instagr.am
 - ajay.app
 - bsky.app
 - csb.app
@@ -2206,6 +2219,7 @@ domain_suffix_set:
 - ca
 - cafe
 - pixiv.cat
+- pomf.cat
 - 520cc.cc
 - airav.cc
 - aayinltcs.arduino.cc
@@ -2435,6 +2449,7 @@ domain_suffix_set:
 - autodesk.com
 - autodraw.com
 - cdn.autoevolution.com
+- av28.com
 - avg.com
 - avgle.com
 - avximg.com
@@ -3054,6 +3069,7 @@ domain_suffix_set:
 - imagebam.com
 - imagefap.com
 - imagepost.com
+- images-dnxlive.com
 - images-iherb.com
 - imagetwist.com
 - imagevenue.com
@@ -4149,6 +4165,7 @@ domain_suffix_set:
 - ytimg.com
 - z.com
 - zdassets.com
+- zdnet.com
 - zdusercontent.com
 - zello.com
 - zendesk.com
@@ -4161,6 +4178,7 @@ domain_suffix_set:
 - zohocdn.com
 - zohostatic.com
 - zohowebstatic.com
+- zoominfo.com
 - community
 - x.company
 - ymq.cool
@@ -4521,6 +4539,7 @@ domain_suffix_set:
 - mil
 - mn
 - bangumi.moe
+- cangku.moe
 - catbox.moe
 - skk.moe
 - ddys.mov
@@ -4862,6 +4881,7 @@ domain_suffix_set:
 - cdn.neustar
 - new
 - bad.news
+- ground.news
 - dmc.nico
 - nl
 - 'no'
@@ -5183,6 +5203,7 @@ domain_suffix_set:
 - party
 - pe
 - ph
+- generated.photos
 - picsum.photos
 - am-cdn.pics
 - pl
@@ -5204,6 +5225,7 @@ domain_suffix_set:
 - sa
 - sb
 - cktu01.sbs
+- 2ch.sc
 - rsg.sc
 - se
 - fnbuilds.services
@@ -5268,6 +5290,7 @@ domain_suffix_set:
 - watch
 - framer.website
 - minecraft.wiki
+- w.wiki
 - activated.win
 - imglink.win
 - ipfs.litnet.work

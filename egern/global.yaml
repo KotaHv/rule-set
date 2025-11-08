@@ -1,4 +1,4 @@
-# Total: 1632 rules
+# Total: 1644 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -32,6 +32,7 @@ domain_set:
 domain_suffix_set:
 - ac
 - ai
+- instagr.am
 - ajay.app
 - bsky.app
 - cyberghost.app
@@ -55,6 +56,7 @@ domain_suffix_set:
 - buck.build
 - ca
 - cafe
+- pomf.cat
 - 520cc.cc
 - airav.cc
 - binance.cc
@@ -170,6 +172,7 @@ domain_suffix_set:
 - auth0.com
 - autodesk.com
 - autodraw.com
+- av28.com
 - avg.com
 - avgle.com
 - aweber.com
@@ -917,9 +920,11 @@ domain_suffix_set:
 - youtube.com
 - ytimg.com
 - z.com
+- zdnet.com
 - zello.com
 - zendesk.com
 - zndsk.com
+- zoominfo.com
 - community
 - x.company
 - cx
@@ -1054,6 +1059,7 @@ domain_suffix_set:
 - iina.io
 - imagekit.io
 - ipfs.io
+- itch.io
 - ius.io
 - jenkins.io
 - jsr.io
@@ -1147,6 +1153,8 @@ domain_suffix_set:
 - mil
 - mn
 - bangumi.moe
+- cangku.moe
+- catbox.moe
 - skk.moe
 - ddys.mov
 - j.mp
@@ -1302,6 +1310,7 @@ domain_suffix_set:
 - network
 - new
 - bad.news
+- ground.news
 - nl
 - 'no'
 - nz
@@ -1557,6 +1566,7 @@ domain_suffix_set:
 - party
 - pe
 - ph
+- generated.photos
 - pl
 - pm
 - betterdisplay.pro
@@ -1569,6 +1579,7 @@ domain_suffix_set:
 - esm.run
 - sa
 - sb
+- 2ch.sc
 - se
 - sex
 - sg
@@ -1605,6 +1616,7 @@ domain_suffix_set:
 - watch
 - framer.website
 - minecraft.wiki
+- w.wiki
 - activated.win
 - ws
 - xxx

@@ -1,4 +1,4 @@
-# Total: 1191 rules
+# Total: 1193 rules
 'payload':
 - 'mirror.host.ag'
 - 'fdisk.5play.app'
@@ -181,6 +181,7 @@
 - 'oss-binaries.phusionpassenger.com'
 - 'softwareupdate.pilotmoon.com'
 - 'repo.powerdns.com'
+- 'cdn.powershellgallery.com'
 - 'enterprise.proxmox.com'
 - 'download.proxyman.com'
 - 'steam.apac.qtlglb.com'
@@ -602,6 +603,7 @@
 - 'd.myani.org'
 - 'nobara-images.nobaraproject.org'
 - 'registry.npmjs.org'
+- 'cdn.oneget.org'
 - 'ciscobinary.openh264.org'
 - 'cdn.opensuse.org'
 - 'download.opensuse.org'

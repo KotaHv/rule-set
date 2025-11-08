@@ -1,4 +1,4 @@
-# Total: 5443 rules
+# Total: 5466 rules
 DOMAIN,mirror.host.ag
 DOMAIN,fdisk.5play.app
 DOMAIN,cdn.7tv.app
@@ -221,6 +221,7 @@ DOMAIN,img.atlasobscura.com
 DOMAIN,sdks.automizely.com
 DOMAIN,widget.automizely.com
 DOMAIN,widgets.automizely.com
+DOMAIN,imgs02.aventertainments.com
 DOMAIN,assets.awwwards.com
 DOMAIN,axiecdn.axieinfinity.com
 DOMAIN,cdn.axieinfinity.com
@@ -457,6 +458,7 @@ DOMAIN,cdn.dnsimple.com
 DOMAIN,cdn.docsbot.com
 DOMAIN,img.domaintools.com
 DOMAIN,source.domaintools.com
+DOMAIN,cdn.doofinder.com
 DOMAIN,cdn.dotaoutpost.com
 DOMAIN,screenshots.downloadtorrentfile.com
 DOMAIN,mirror.downloadvn.com
@@ -572,6 +574,8 @@ DOMAIN,certona.gap.com
 DOMAIN,a.gawby.com
 DOMAIN,i.gawby.com
 DOMAIN,account-widget-mfe.gcore.com
+DOMAIN,r2.gear4music.com
+DOMAIN,static-r2.gear4music.com
 DOMAIN,i.geekflare.com
 DOMAIN,maps.geoapify.com
 DOMAIN,geoip-js.com
@@ -715,6 +719,7 @@ DOMAIN,cfvod.kaltura.com
 DOMAIN,content.kaspersky-labs.com
 DOMAIN,img.kbhgames.com
 DOMAIN,kdata1.com
+DOMAIN,tour-content-cdn.kellymadisonmedia.com
 DOMAIN,assets.khoros.com
 DOMAIN,a.kickstarter.com
 DOMAIN,i.kickstarter.com
@@ -1012,6 +1017,7 @@ DOMAIN,app-static.eu.posthog.com
 DOMAIN,content.powerapps.com
 DOMAIN,repo.powerdns.com
 DOMAIN,ui.powerreviews.com
+DOMAIN,cdn.powershellgallery.com
 DOMAIN,cdn.pricespider.com
 DOMAIN,media.printables.com
 DOMAIN,api.privacy.com
@@ -1103,6 +1109,7 @@ DOMAIN,static.serverhunter.com
 DOMAIN,mirror.serverion.com
 DOMAIN,cdn.servicebell.com
 DOMAIN,i.servimg.com
+DOMAIN,attach.setn.com
 DOMAIN,b.sf-syn.com
 DOMAIN,static2.sharepointonline.com
 DOMAIN,assets.shazam.com
@@ -1239,6 +1246,11 @@ DOMAIN,flows.trysavvy.com
 DOMAIN,cdn.ttgtmedia.com
 DOMAIN,cdn.ttloli.com
 DOMAIN,cdn2.ttloli.com
+DOMAIN,cdn1.tubeteen18.com
+DOMAIN,cdn2.tubeteen18.com
+DOMAIN,cdn3.tubeteen18.com
+DOMAIN,cdn4.tubeteen18.com
+DOMAIN,cdn5.tubeteen18.com
 DOMAIN,widgets.turnto.com
 DOMAIN,twenty-icons.com
 DOMAIN,embed.typeform.com
@@ -1387,7 +1399,6 @@ DOMAIN,assets.zilliz.com
 DOMAIN,webfonts.zoho.com
 DOMAIN,widgets.zohosalesiq.com
 DOMAIN,hello.zonos.com
-DOMAIN,ws-assets.zoominfo.com
 DOMAIN,public.zoorix.com
 DOMAIN,barracuda-assets.zoovu.com
 DOMAIN,barracuda-cdn.zoovu.com
@@ -1650,11 +1661,11 @@ DOMAIN,townsquare.media
 DOMAIN,s3.m.0x.mk
 DOMAIN,cdn.amh.moe
 DOMAIN,assets-cdn.anh.moe
-DOMAIN,pic.cangku.moe
 DOMAIN,static.chaika.moe
 DOMAIN,objects.hit.moe
 DOMAIN,touchgal-image.moyu.moe
 DOMAIN,ovo.wxw.moe
+DOMAIN,zzz.wxw.moe
 DOMAIN,img.m.mw
 DOMAIN,download.nust.na
 DOMAIN,pics.hentai.name
@@ -1934,9 +1945,9 @@ DOMAIN,cdn.ywxi.net
 DOMAIN,vjs.zencdn.net
 DOMAIN,mixin-images.zeromesh.net
 DOMAIN,content.api.news
-DOMAIN,web-api-cdn.ground.news
 DOMAIN,assets.matters.news
 DOMAIN,assets-next.matters.news
+DOMAIN,statics-prod.mirrordaily.news
 DOMAIN,image.dooo.ng
 DOMAIN,cdn.episode.ninja
 DOMAIN,media.masto.nu
@@ -2020,6 +2031,7 @@ DOMAIN,o.n1mp.org
 DOMAIN,nobara-images.nobaraproject.org
 DOMAIN,assets.nxtrace.org
 DOMAIN,videos.ohentai.org
+DOMAIN,cdn.oneget.org
 DOMAIN,open-vsx.org
 DOMAIN,ciscobinary.openh264.org
 DOMAIN,ftp.osuosl.org
@@ -2165,6 +2177,7 @@ DOMAIN,storage.withfabric.xyz
 DOMAIN,cdn.yinghuazy.xyz
 DOMAIN-SUFFIX,ac
 DOMAIN-SUFFIX,ai
+DOMAIN-SUFFIX,instagr.am
 DOMAIN-SUFFIX,ajay.app
 DOMAIN-SUFFIX,bsky.app
 DOMAIN-SUFFIX,csb.app
@@ -2203,6 +2216,7 @@ DOMAIN-SUFFIX,addons.business
 DOMAIN-SUFFIX,ca
 DOMAIN-SUFFIX,cafe
 DOMAIN-SUFFIX,pixiv.cat
+DOMAIN-SUFFIX,pomf.cat
 DOMAIN-SUFFIX,520cc.cc
 DOMAIN-SUFFIX,airav.cc
 DOMAIN-SUFFIX,aayinltcs.arduino.cc
@@ -2432,6 +2446,7 @@ DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,autodesk.com
 DOMAIN-SUFFIX,autodraw.com
 DOMAIN-SUFFIX,cdn.autoevolution.com
+DOMAIN-SUFFIX,av28.com
 DOMAIN-SUFFIX,avg.com
 DOMAIN-SUFFIX,avgle.com
 DOMAIN-SUFFIX,avximg.com
@@ -3051,6 +3066,7 @@ DOMAIN-SUFFIX,iloveimg.com
 DOMAIN-SUFFIX,imagebam.com
 DOMAIN-SUFFIX,imagefap.com
 DOMAIN-SUFFIX,imagepost.com
+DOMAIN-SUFFIX,images-dnxlive.com
 DOMAIN-SUFFIX,images-iherb.com
 DOMAIN-SUFFIX,imagetwist.com
 DOMAIN-SUFFIX,imagevenue.com
@@ -4146,6 +4162,7 @@ DOMAIN-SUFFIX,ypncdn.com
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,z.com
 DOMAIN-SUFFIX,zdassets.com
+DOMAIN-SUFFIX,zdnet.com
 DOMAIN-SUFFIX,zdusercontent.com
 DOMAIN-SUFFIX,zello.com
 DOMAIN-SUFFIX,zendesk.com
@@ -4158,6 +4175,7 @@ DOMAIN-SUFFIX,zndsk.com
 DOMAIN-SUFFIX,zohocdn.com
 DOMAIN-SUFFIX,zohostatic.com
 DOMAIN-SUFFIX,zohowebstatic.com
+DOMAIN-SUFFIX,zoominfo.com
 DOMAIN-SUFFIX,community
 DOMAIN-SUFFIX,x.company
 DOMAIN-SUFFIX,ymq.cool
@@ -4518,6 +4536,7 @@ DOMAIN-SUFFIX,static.microsoft
 DOMAIN-SUFFIX,mil
 DOMAIN-SUFFIX,mn
 DOMAIN-SUFFIX,bangumi.moe
+DOMAIN-SUFFIX,cangku.moe
 DOMAIN-SUFFIX,catbox.moe
 DOMAIN-SUFFIX,skk.moe
 DOMAIN-SUFFIX,ddys.mov
@@ -4859,6 +4878,7 @@ DOMAIN-SUFFIX,network
 DOMAIN-SUFFIX,cdn.neustar
 DOMAIN-SUFFIX,new
 DOMAIN-SUFFIX,bad.news
+DOMAIN-SUFFIX,ground.news
 DOMAIN-SUFFIX,dmc.nico
 DOMAIN-SUFFIX,nl
 DOMAIN-SUFFIX,no
@@ -5180,6 +5200,7 @@ DOMAIN-SUFFIX,kinsta.page
 DOMAIN-SUFFIX,party
 DOMAIN-SUFFIX,pe
 DOMAIN-SUFFIX,ph
+DOMAIN-SUFFIX,generated.photos
 DOMAIN-SUFFIX,picsum.photos
 DOMAIN-SUFFIX,am-cdn.pics
 DOMAIN-SUFFIX,pl
@@ -5201,6 +5222,7 @@ DOMAIN-SUFFIX,esm.run
 DOMAIN-SUFFIX,sa
 DOMAIN-SUFFIX,sb
 DOMAIN-SUFFIX,cktu01.sbs
+DOMAIN-SUFFIX,2ch.sc
 DOMAIN-SUFFIX,rsg.sc
 DOMAIN-SUFFIX,se
 DOMAIN-SUFFIX,fnbuilds.services
@@ -5265,6 +5287,7 @@ DOMAIN-SUFFIX,vn
 DOMAIN-SUFFIX,watch
 DOMAIN-SUFFIX,framer.website
 DOMAIN-SUFFIX,minecraft.wiki
+DOMAIN-SUFFIX,w.wiki
 DOMAIN-SUFFIX,activated.win
 DOMAIN-SUFFIX,imglink.win
 DOMAIN-SUFFIX,ipfs.litnet.work

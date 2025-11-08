@@ -1,4 +1,4 @@
-# Total: 1199 rules
+# Total: 1201 rules
 no_resolve: true
 domain_set:
 - mirror.host.ag
@@ -182,6 +182,7 @@ domain_set:
 - oss-binaries.phusionpassenger.com
 - softwareupdate.pilotmoon.com
 - repo.powerdns.com
+- cdn.powershellgallery.com
 - enterprise.proxmox.com
 - download.proxyman.com
 - steam.apac.qtlglb.com
@@ -603,6 +604,7 @@ domain_set:
 - d.myani.org
 - nobara-images.nobaraproject.org
 - registry.npmjs.org
+- cdn.oneget.org
 - ciscobinary.openh264.org
 - cdn.opensuse.org
 - download.opensuse.org
