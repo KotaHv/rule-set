@@ -1,4 +1,4 @@
-# Total: 4057 rules
+# Total: 4058 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1630,6 +1630,7 @@ domain_set:
 - sp.streamlabs.com
 - checkout.stripe.com
 - connect-js.stripe.com
+- files.stripe.com
 - js.stripe.com
 - cdn.substack.com
 - cdn-service.jp.sumologic.com

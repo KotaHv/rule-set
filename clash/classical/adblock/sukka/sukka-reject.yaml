@@ -1,4 +1,4 @@
-# Total: 161 rules
+# Total: 162 rules
 payload:
 - DOMAIN-WILDCARD,analytics-*.aasaam.com
 - DOMAIN-WILDCARD,pixel*.adswizz.com
@@ -8,6 +8,7 @@ payload:
 - DOMAIN-WILDCARD,tracking.*.miui.com
 - DOMAIN-WILDCARD,*.tracking.*.miui.com
 - DOMAIN-WILDCARD,ads-*.tiktok.com
+- DOMAIN-WILDCARD,log*-normal-*.tiktokv.com
 - DOMAIN-WILDCARD,ads-*.xhscdn.com
 - DOMAIN-WILDCARD,f-log*.grammarly.io
 - DOMAIN-WILDCARD,v*.thenewstack.io

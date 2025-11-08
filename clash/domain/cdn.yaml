@@ -1,4 +1,4 @@
-# Total: 3983 rules
+# Total: 3984 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1629,6 +1629,7 @@
 - 'sp.streamlabs.com'
 - 'checkout.stripe.com'
 - 'connect-js.stripe.com'
+- 'files.stripe.com'
 - 'js.stripe.com'
 - 'cdn.substack.com'
 - 'cdn-service.jp.sumologic.com'
