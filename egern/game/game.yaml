@@ -1,4 +1,4 @@
-# Total: 606 rules
+# Total: 607 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -173,6 +173,7 @@ domain_suffix_set:
 - excitebots.com
 - fab.com
 - fanatical.com
+- egdownload.fastly-edge.com
 - fifastreet.com
 - fifastreet3.com
 - fire-emblem-heroes.com

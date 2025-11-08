@@ -1,4 +1,4 @@
-# Total: 605 rules
+# Total: 606 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -171,6 +171,7 @@
 - '+.excitebots.com'
 - '+.fab.com'
 - '+.fanatical.com'
+- '+.egdownload.fastly-edge.com'
 - '+.fifastreet.com'
 - '+.fifastreet3.com'
 - '+.fire-emblem-heroes.com'

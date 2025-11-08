@@ -1,4 +1,4 @@
-# Total: 58 rules
+# Total: 59 rules
 DOMAIN,eu.cdn.blizzard.com
 DOMAIN,kr.cdn.blizzard.com
 DOMAIN,us.cdn.blizzard.com
@@ -56,4 +56,5 @@ DOMAIN,valorant.secure.dyn.riotcdn.net
 DOMAIN,wildrift.secure.dyn.riotcdn.net
 DOMAIN,valorant.dyn.riotcdn.net
 DOMAIN,wildrift.dyn.riotcdn.net
+DOMAIN-SUFFIX,egdownload.fastly-edge.com
 DOMAIN-SUFFIX,steamcontent.com
