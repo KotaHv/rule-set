@@ -1,4 +1,4 @@
-# Total: 4003 rules
+# Total: 4004 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3042,6 +3042,7 @@
 - '+.sessions.bugsnag.com'
 - '+.bunnycdn.com'
 - '+.bytedapm.com'
+- '+.capcutstatic.com'
 - '+.cartocdn.com'
 - '+.vodvideo.cbsnews.com'
 - '+.cbsnewsstatic.com'
