@@ -1,4 +1,4 @@
-# Total: 4078 rules
+# Total: 4069 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -445,8 +445,6 @@ domain_set:
 - w.chatlio.com
 - app.chatwoot.com
 - assets-themes.chess.com
-- assets.chess24.com
-- cdn.chess24.com
 - static.chessarena.com
 - banners.chessbase.com
 - resources.chessbase.com
@@ -1842,7 +1840,7 @@ domain_set:
 - cdn.vnoc.com
 - gdb.voanews.com
 - assets.vogue.com
-- images.voguehk.com
+- img.voguehk.com
 - assets.volvo.com
 - platform.vox.com
 - apps.voxmedia.com
@@ -1925,7 +1923,6 @@ domain_set:
 - cdn.xvidzz.com
 - i.xxxshake.com
 - static.xxxshake.com
-- content-cdn.y2mate.com
 - yep.video.yahoo.com
 - jac.yahoosandbox.com
 - cdn.yamibuy.com
@@ -2047,7 +2044,6 @@ domain_set:
 - static.snaptube.in
 - cdn.adguard.info
 - busuanzi.ibruce.info
-- static.javcdn.info
 - image.theblockbeats.info
 - lm.visualon.info
 - cdn.cbd.int
@@ -2095,7 +2091,6 @@ domain_set:
 - eep.io
 - static.ffx.io
 - cdn.filen.io
-- thingproxy.freeboard.io
 - badge.fury.io
 - cdn-web.fydeos.io
 - geojson.io
@@ -2276,7 +2271,6 @@ domain_set:
 - cdn.glitch.me
 - s4.itho.me
 - cf.javfree.me
-- img.jjbb.me
 - cdn-msp.jmcomic.me
 - cdn.judge.me
 - cdn.picrew.me
@@ -2294,7 +2288,6 @@ domain_set:
 - townsquare.media
 - s3.m.0x.mk
 - s3.acg.mn
-- cdn.amh.moe
 - assets-cdn.anh.moe
 - static.bangumi.moe
 - pic.cangku.moe
@@ -2427,7 +2420,6 @@ domain_set:
 - practicaldev-herokuapp-com.freetls.fastly.net
 - brick.a.ssl.fastly.net
 - cache-05.filehippo.net
-- static-assets.freeanimehentai.net
 - headway-widget.net
 - cdn.highporn.net
 - img.highporn.net
@@ -2818,7 +2810,6 @@ domain_set:
 - assets.twitch.tv
 - clips-media-assets2.twitch.tv
 - embed.twitch.tv
-- cdn.vidible.tv
 - static.yfsp.tv
 - img.4gamers.com.tw
 - puku-dist.4gamers.com.tw
@@ -2840,7 +2831,6 @@ domain_set:
 - megapx-assets.dcard.tw
 - socialpic.video.friday.tw
 - vbmspic.video.friday.tw
-- statics.mnnews.tw
 - app.moegirl.tw
 - img.moegirl.tw
 - storage.moegirl.tw
@@ -3759,6 +3749,7 @@ domain_suffix_set:
 - ctfassets.net
 - cdn.cwinfo.net
 - daumcdn.net
+- directupload.net
 - divio-media.net
 - dlunar.net
 - dmcdn.net

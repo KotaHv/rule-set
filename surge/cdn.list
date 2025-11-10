@@ -1,4 +1,4 @@
-# Total: 4078 rules
+# Total: 4069 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -443,8 +443,6 @@ DOMAIN,sites.chase.com
 DOMAIN,w.chatlio.com
 DOMAIN,app.chatwoot.com
 DOMAIN,assets-themes.chess.com
-DOMAIN,assets.chess24.com
-DOMAIN,cdn.chess24.com
 DOMAIN,static.chessarena.com
 DOMAIN,banners.chessbase.com
 DOMAIN,resources.chessbase.com
@@ -1840,7 +1838,7 @@ DOMAIN,st6-20.vk.com
 DOMAIN,cdn.vnoc.com
 DOMAIN,gdb.voanews.com
 DOMAIN,assets.vogue.com
-DOMAIN,images.voguehk.com
+DOMAIN,img.voguehk.com
 DOMAIN,assets.volvo.com
 DOMAIN,platform.vox.com
 DOMAIN,apps.voxmedia.com
@@ -1923,7 +1921,6 @@ DOMAIN,imgs.xkcd.com
 DOMAIN,cdn.xvidzz.com
 DOMAIN,i.xxxshake.com
 DOMAIN,static.xxxshake.com
-DOMAIN,content-cdn.y2mate.com
 DOMAIN,yep.video.yahoo.com
 DOMAIN,jac.yahoosandbox.com
 DOMAIN,cdn.yamibuy.com
@@ -2045,7 +2042,6 @@ DOMAIN,object.innei.in
 DOMAIN,static.snaptube.in
 DOMAIN,cdn.adguard.info
 DOMAIN,busuanzi.ibruce.info
-DOMAIN,static.javcdn.info
 DOMAIN,image.theblockbeats.info
 DOMAIN,lm.visualon.info
 DOMAIN,cdn.cbd.int
@@ -2093,7 +2089,6 @@ DOMAIN,cdn.document360.io
 DOMAIN,eep.io
 DOMAIN,static.ffx.io
 DOMAIN,cdn.filen.io
-DOMAIN,thingproxy.freeboard.io
 DOMAIN,badge.fury.io
 DOMAIN,cdn-web.fydeos.io
 DOMAIN,geojson.io
@@ -2274,7 +2269,6 @@ DOMAIN,static.fbot.me
 DOMAIN,cdn.glitch.me
 DOMAIN,s4.itho.me
 DOMAIN,cf.javfree.me
-DOMAIN,img.jjbb.me
 DOMAIN,cdn-msp.jmcomic.me
 DOMAIN,cdn.judge.me
 DOMAIN,cdn.picrew.me
@@ -2292,7 +2286,6 @@ DOMAIN,cms.therecord.media
 DOMAIN,townsquare.media
 DOMAIN,s3.m.0x.mk
 DOMAIN,s3.acg.mn
-DOMAIN,cdn.amh.moe
 DOMAIN,assets-cdn.anh.moe
 DOMAIN,static.bangumi.moe
 DOMAIN,pic.cangku.moe
@@ -2425,7 +2418,6 @@ DOMAIN,lastfm.freetls.fastly.net
 DOMAIN,practicaldev-herokuapp-com.freetls.fastly.net
 DOMAIN,brick.a.ssl.fastly.net
 DOMAIN,cache-05.filehippo.net
-DOMAIN,static-assets.freeanimehentai.net
 DOMAIN,headway-widget.net
 DOMAIN,cdn.highporn.net
 DOMAIN,img.highporn.net
@@ -2816,7 +2808,6 @@ DOMAIN,images.pluto.tv
 DOMAIN,assets.twitch.tv
 DOMAIN,clips-media-assets2.twitch.tv
 DOMAIN,embed.twitch.tv
-DOMAIN,cdn.vidible.tv
 DOMAIN,static.yfsp.tv
 DOMAIN,img.4gamers.com.tw
 DOMAIN,puku-dist.4gamers.com.tw
@@ -2838,7 +2829,6 @@ DOMAIN,cw-image-resizer.cwg.tw
 DOMAIN,megapx-assets.dcard.tw
 DOMAIN,socialpic.video.friday.tw
 DOMAIN,vbmspic.video.friday.tw
-DOMAIN,statics.mnnews.tw
 DOMAIN,app.moegirl.tw
 DOMAIN,img.moegirl.tw
 DOMAIN,storage.moegirl.tw
@@ -3756,6 +3746,7 @@ DOMAIN-SUFFIX,coral.coralproject.net
 DOMAIN-SUFFIX,ctfassets.net
 DOMAIN-SUFFIX,cdn.cwinfo.net
 DOMAIN-SUFFIX,daumcdn.net
+DOMAIN-SUFFIX,directupload.net
 DOMAIN-SUFFIX,divio-media.net
 DOMAIN-SUFFIX,dlunar.net
 DOMAIN-SUFFIX,dmcdn.net
