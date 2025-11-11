@@ -1,4 +1,4 @@
-# Total: 1626 rules
+# Total: 1627 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -1545,6 +1545,7 @@
 - '+.wikidata.org'
 - '+.wikileaks.org'
 - '+.wikimedia.org'
+- '+.wikimediafoundation.org'
 - '+.wikinews.org'
 - '+.wikipedia.org'
 - '+.wikiquote.org'
