@@ -1,4 +1,4 @@
-# Total: 5682 rules
+# Total: 5683 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -4740,6 +4740,7 @@
 - '+.ipfs.mrh.io'
 - '+.myqnapcloud.io'
 - '+.ipfs.namebase.io'
+- '+.neovim.io'
 - '+.nexon.io'
 - '+.nextdns.io'
 - '+.nomadproject.io'

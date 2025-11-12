@@ -1,4 +1,4 @@
-# Total: 509 rules
+# Total: 510 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -274,6 +274,7 @@ domain_suffix_set:
 - jenkins.io
 - k8s.io
 - kubernetes.io
+- neovim.io
 - nomadproject.io
 - oneapi.io
 - opencas.io

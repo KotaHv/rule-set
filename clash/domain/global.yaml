@@ -1,4 +1,4 @@
-# Total: 1628 rules
+# Total: 1629 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -1070,6 +1070,7 @@
 - '+.metamask.io'
 - '+.misskey.io'
 - '+.myqnapcloud.io'
+- '+.neovim.io'
 - '+.nextdns.io'
 - '+.nomadproject.io'
 - '+.npm.io'
