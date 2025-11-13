@@ -1,7 +1,8 @@
-# Total: 5 rules
+# Total: 6 rules
 'payload':
 - 'nom.telemetrydeck.com'
 - '+.geo2.adobe.com'
 - '+.in.applicationinsights.azure.com'
+- '+.beacon.qq.com'
 - '+.null'
 - '+.undefined'

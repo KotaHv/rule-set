@@ -1,9 +1,10 @@
-# Total: 5 rules
+# Total: 6 rules
 no_resolve: true
 domain_set:
 - nom.telemetrydeck.com
 domain_suffix_set:
 - geo2.adobe.com
 - in.applicationinsights.azure.com
+- beacon.qq.com
 - 'null'
 - undefined
