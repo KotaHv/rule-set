@@ -1,4 +1,4 @@
-# Total: 4069 rules
+# Total: 4095 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -25,6 +25,7 @@ domain_set:
 - pplx-next-static-public.perplexity.ai
 - r2cdn.perplexity.ai
 - static.returngo.ai
+- cdn.roof.ai
 - cdn1.suno.ai
 - cdn2.suno.ai
 - tag.tvads.ai
@@ -210,6 +211,8 @@ domain_set:
 - seo-wp.airdroid.com
 - static.airtable.com
 - time.akamai.com
+- fastly-gce.allmovie.com
+- fastly-s3.allmovie.com
 - oaos-resources.allstate.com
 - resources.allstate.com
 - d2c.aws.amazon.com
@@ -845,6 +848,7 @@ domain_set:
 - media.graphassets.com
 - assets.grooveapps.com
 - app.groovefunnels.com
+- media-hls.growcdnssedge.com
 - snippet.growsumo.com
 - sig.grumpybumpers.com
 - fdn.gsmarena.com
@@ -948,6 +952,7 @@ domain_set:
 - vids.imagepost.com
 - imagizer.imageshack.com
 - cdn-thumbs.imagevenue.com
+- cdn.imago-images.com
 - img.imgdd.com
 - i.imgflip.com
 - s.imgflip.com
@@ -993,6 +998,7 @@ domain_set:
 - img3.javmost.com
 - img4.javmost.com
 - icdn.javxx.com
+- img.javynow.com
 - cdn.jetphotos.com
 - speedmedia2.jfrog.com
 - cdn.jitbit.com
@@ -1073,6 +1079,7 @@ domain_set:
 - cdn.lihkg.com
 - scdn.line-apps.com
 - cdn.linearicons.com
+- cdn.lineicons.com
 - static.lingq.com
 - staging-pubfeed.linkby.com
 - linkstorage.linkfire.com
@@ -1187,6 +1194,7 @@ domain_set:
 - launcher-files.modrinth.com
 - images.moegoat.com
 - static.moegoat.com
+- cdn.moeload.com
 - launchercontent.mojang.com
 - momentjs.com
 - assets.monei.com
@@ -1405,7 +1413,13 @@ domain_set:
 - assets-cdn.porn.com
 - pictures-cdn.porn.com
 - m.porn3dx.com
+- cdn-1.porn87.com
+- cdn-2.porn87.com
+- cdn-3.porn87.com
+- assets.porndig.com
+- cdn-static-push.porndig.com
 - celebrities-small.porndig.com
+- image-cdn.porndig.com
 - pics.pornfhd.com
 - cdnstatic.porno-cum.com
 - cdn77.pornoxo.com
@@ -1478,6 +1492,7 @@ domain_set:
 - redircdn.com
 - staticsource1.redotpay.com
 - tools.refokus.com
+- static-images.remax.com
 - sp.replit.com
 - cdn.report-uri.com
 - img.represent.com
@@ -2404,7 +2419,6 @@ domain_set:
 - images-ext-2.discordapp.net
 - media.discordapp.net
 - hub-assets.displaycal.net
-- assets.dwncdn.net
 - static1.e621.net
 - cdnmedia.ero-video.net
 - jnmedia.ero-video.net
@@ -2432,6 +2446,7 @@ domain_set:
 - images.idgesg.net
 - ik.imgkit.net
 - static-act.imoim.net
+- img.imoutomoe.net
 - jsdelivr.ioiox.net
 - cdn.iporntv.net
 - cdn-img2.iporntv.net
@@ -2457,6 +2472,7 @@ domain_set:
 - media.minecraftforum.net
 - static.monei.net
 - interactive-examples.mdn.mozilla.net
+- alcdn.msauth.net
 - az700632.vo.msecnd.net
 - akamai-origin.myanimelist.net
 - cdn.myanimelist.net
@@ -2769,6 +2785,7 @@ domain_set:
 - video2.7mmtv.sx
 - packages.jetbrains.team
 - pkg-cdn.jetbrains.team
+- media.remax-prod.eng.remax.tech
 - assets.dev.to
 - media.dev.to
 - media2.dev.to
@@ -2920,6 +2937,7 @@ domain_suffix_set:
 - ipfs.greyh.at
 - newscdn.com.au
 - abc-cdn.net.au
+- lllcdn.autos
 - addons.business
 - 1passwordusercontent.ca
 - pixiv.cat
@@ -3215,6 +3233,7 @@ domain_suffix_set:
 - ignimgs.com
 - illiweb.com
 - imagebam.com
+- images-amazon.com
 - images-dnxlive.com
 - images-iherb.com
 - imagetwist.com
@@ -3476,6 +3495,7 @@ domain_suffix_set:
 - sway-cdn.com
 - swiftypecdn.com
 - sxccdn.com
+- t8cdn.com
 - targetimg1.com
 - teamtailor-cdn.com
 - tedcdn.com
@@ -3755,6 +3775,7 @@ domain_suffix_set:
 - dmcdn.net
 - doppiocdn.net
 - dwcdn.net
+- dwncdn.net
 - epimg.net
 - eroimg.net
 - faceit-cdn.net
@@ -4003,7 +4024,9 @@ domain_wildcard_set:
 - assets.*.imaga.co
 - cdn?.18girlssex.com
 - blog-imgs-??.2nt.com
+- fastly-*.allmovie.com
 - ocsp.*.amazontrust.com
+- cdn*.boysfood.com
 - browser-intake-*-datadoghq.com
 - proxy-*.dailymotion.com
 - blog-imgs-??.fc2.com
@@ -4022,8 +4045,11 @@ domain_wildcard_set:
 - cdn-*.microsoft.com
 - chunk-*.mux.com
 - img-*.now.com
+- cdn*.pigav.com
+- cdn*.porn87.com
 - img?.porngo.com
 - img??.porngo.com
+- cdn*.pornhost.com
 - cdn?-dl.pornhost.com
 - s???.pornone.com
 - th-*.pornone.com

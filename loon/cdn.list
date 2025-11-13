@@ -1,4 +1,4 @@
-# Total: 4016 rules
+# Total: 4037 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -23,6 +23,7 @@ DOMAIN,static.netify.ai
 DOMAIN,pplx-next-static-public.perplexity.ai
 DOMAIN,r2cdn.perplexity.ai
 DOMAIN,static.returngo.ai
+DOMAIN,cdn.roof.ai
 DOMAIN,cdn1.suno.ai
 DOMAIN,cdn2.suno.ai
 DOMAIN,tag.tvads.ai
@@ -208,6 +209,8 @@ DOMAIN,js-1-cdn.airdroid.com
 DOMAIN,seo-wp.airdroid.com
 DOMAIN,static.airtable.com
 DOMAIN,time.akamai.com
+DOMAIN,fastly-gce.allmovie.com
+DOMAIN,fastly-s3.allmovie.com
 DOMAIN,oaos-resources.allstate.com
 DOMAIN,resources.allstate.com
 DOMAIN,d2c.aws.amazon.com
@@ -843,6 +846,7 @@ DOMAIN,static-web.grammarly.com
 DOMAIN,media.graphassets.com
 DOMAIN,assets.grooveapps.com
 DOMAIN,app.groovefunnels.com
+DOMAIN,media-hls.growcdnssedge.com
 DOMAIN,snippet.growsumo.com
 DOMAIN,sig.grumpybumpers.com
 DOMAIN,fdn.gsmarena.com
@@ -946,6 +950,7 @@ DOMAIN,i.imagepost.com
 DOMAIN,vids.imagepost.com
 DOMAIN,imagizer.imageshack.com
 DOMAIN,cdn-thumbs.imagevenue.com
+DOMAIN,cdn.imago-images.com
 DOMAIN,img.imgdd.com
 DOMAIN,i.imgflip.com
 DOMAIN,s.imgflip.com
@@ -991,6 +996,7 @@ DOMAIN,img2.javmost.com
 DOMAIN,img3.javmost.com
 DOMAIN,img4.javmost.com
 DOMAIN,icdn.javxx.com
+DOMAIN,img.javynow.com
 DOMAIN,cdn.jetphotos.com
 DOMAIN,speedmedia2.jfrog.com
 DOMAIN,cdn.jitbit.com
@@ -1071,6 +1077,7 @@ DOMAIN,static-exp3.licdn.com
 DOMAIN,cdn.lihkg.com
 DOMAIN,scdn.line-apps.com
 DOMAIN,cdn.linearicons.com
+DOMAIN,cdn.lineicons.com
 DOMAIN,static.lingq.com
 DOMAIN,staging-pubfeed.linkby.com
 DOMAIN,linkstorage.linkfire.com
@@ -1185,6 +1192,7 @@ DOMAIN,cdn-raw.modrinth.com
 DOMAIN,launcher-files.modrinth.com
 DOMAIN,images.moegoat.com
 DOMAIN,static.moegoat.com
+DOMAIN,cdn.moeload.com
 DOMAIN,launchercontent.mojang.com
 DOMAIN,momentjs.com
 DOMAIN,assets.monei.com
@@ -1403,7 +1411,13 @@ DOMAIN,static.polldaddy.com
 DOMAIN,assets-cdn.porn.com
 DOMAIN,pictures-cdn.porn.com
 DOMAIN,m.porn3dx.com
+DOMAIN,cdn-1.porn87.com
+DOMAIN,cdn-2.porn87.com
+DOMAIN,cdn-3.porn87.com
+DOMAIN,assets.porndig.com
+DOMAIN,cdn-static-push.porndig.com
 DOMAIN,celebrities-small.porndig.com
+DOMAIN,image-cdn.porndig.com
 DOMAIN,pics.pornfhd.com
 DOMAIN,cdnstatic.porno-cum.com
 DOMAIN,cdn77.pornoxo.com
@@ -1476,6 +1490,7 @@ DOMAIN,static.redhat.com
 DOMAIN,redircdn.com
 DOMAIN,staticsource1.redotpay.com
 DOMAIN,tools.refokus.com
+DOMAIN,static-images.remax.com
 DOMAIN,sp.replit.com
 DOMAIN,cdn.report-uri.com
 DOMAIN,img.represent.com
@@ -2402,7 +2417,6 @@ DOMAIN,images-ext-1.discordapp.net
 DOMAIN,images-ext-2.discordapp.net
 DOMAIN,media.discordapp.net
 DOMAIN,hub-assets.displaycal.net
-DOMAIN,assets.dwncdn.net
 DOMAIN,static1.e621.net
 DOMAIN,cdnmedia.ero-video.net
 DOMAIN,jnmedia.ero-video.net
@@ -2430,6 +2444,7 @@ DOMAIN,alt.idgesg.net
 DOMAIN,images.idgesg.net
 DOMAIN,ik.imgkit.net
 DOMAIN,static-act.imoim.net
+DOMAIN,img.imoutomoe.net
 DOMAIN,jsdelivr.ioiox.net
 DOMAIN,cdn.iporntv.net
 DOMAIN,cdn-img2.iporntv.net
@@ -2455,6 +2470,7 @@ DOMAIN,cdn.gatherings.franchise.minecraft-services.net
 DOMAIN,media.minecraftforum.net
 DOMAIN,static.monei.net
 DOMAIN,interactive-examples.mdn.mozilla.net
+DOMAIN,alcdn.msauth.net
 DOMAIN,az700632.vo.msecnd.net
 DOMAIN,akamai-origin.myanimelist.net
 DOMAIN,cdn.myanimelist.net
@@ -2767,6 +2783,7 @@ DOMAIN,video1.7mmtv.sx
 DOMAIN,video2.7mmtv.sx
 DOMAIN,packages.jetbrains.team
 DOMAIN,pkg-cdn.jetbrains.team
+DOMAIN,media.remax-prod.eng.remax.tech
 DOMAIN,assets.dev.to
 DOMAIN,media.dev.to
 DOMAIN,media2.dev.to
@@ -2917,6 +2934,7 @@ DOMAIN-SUFFIX,porn5.asia
 DOMAIN-SUFFIX,ipfs.greyh.at
 DOMAIN-SUFFIX,newscdn.com.au
 DOMAIN-SUFFIX,abc-cdn.net.au
+DOMAIN-SUFFIX,lllcdn.autos
 DOMAIN-SUFFIX,addons.business
 DOMAIN-SUFFIX,1passwordusercontent.ca
 DOMAIN-SUFFIX,pixiv.cat
@@ -3212,6 +3230,7 @@ DOMAIN-SUFFIX,iggcdn.com
 DOMAIN-SUFFIX,ignimgs.com
 DOMAIN-SUFFIX,illiweb.com
 DOMAIN-SUFFIX,imagebam.com
+DOMAIN-SUFFIX,images-amazon.com
 DOMAIN-SUFFIX,images-dnxlive.com
 DOMAIN-SUFFIX,images-iherb.com
 DOMAIN-SUFFIX,imagetwist.com
@@ -3473,6 +3492,7 @@ DOMAIN-SUFFIX,svbtleusercontent.com
 DOMAIN-SUFFIX,sway-cdn.com
 DOMAIN-SUFFIX,swiftypecdn.com
 DOMAIN-SUFFIX,sxccdn.com
+DOMAIN-SUFFIX,t8cdn.com
 DOMAIN-SUFFIX,targetimg1.com
 DOMAIN-SUFFIX,teamtailor-cdn.com
 DOMAIN-SUFFIX,tedcdn.com
@@ -3752,6 +3772,7 @@ DOMAIN-SUFFIX,dlunar.net
 DOMAIN-SUFFIX,dmcdn.net
 DOMAIN-SUFFIX,doppiocdn.net
 DOMAIN-SUFFIX,dwcdn.net
+DOMAIN-SUFFIX,dwncdn.net
 DOMAIN-SUFFIX,epimg.net
 DOMAIN-SUFFIX,eroimg.net
 DOMAIN-SUFFIX,faceit-cdn.net

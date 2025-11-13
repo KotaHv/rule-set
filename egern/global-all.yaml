@@ -1,4 +1,4 @@
-# Total: 5808 rules
+# Total: 5830 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -232,6 +232,8 @@ domain_set:
 - time.akamai.com
 - mirror.alastyr.com
 - mirrors.aliyun.com
+- fastly-gce.allmovie.com
+- fastly-s3.allmovie.com
 - oaos-resources.allstate.com
 - resources.allstate.com
 - mirror.nl.altushost.com
@@ -703,6 +705,7 @@ domain_set:
 - media.graphassets.com
 - assets.grooveapps.com
 - app.groovefunnels.com
+- media-hls.growcdnssedge.com
 - snippet.growsumo.com
 - sig.grumpybumpers.com
 - fdn.gsmarena.com
@@ -767,6 +770,7 @@ domain_set:
 - mirror.debian.ikoula.com
 - mirror.ubuntu.ikoula.com
 - imagizer.imageshack.com
+- cdn.imago-images.com
 - img.imgdd.com
 - gearbox.imgix.com
 - go.imperva.com
@@ -872,6 +876,7 @@ domain_set:
 - static-exp2.licdn.com
 - static-exp3.licdn.com
 - cdn.linearicons.com
+- cdn.lineicons.com
 - staging-pubfeed.linkby.com
 - mirror.linkdata.com
 - linkstorage.linkfire.com
@@ -1196,6 +1201,7 @@ domain_set:
 - redircdn.com
 - staticsource1.redotpay.com
 - tools.refokus.com
+- static-images.remax.com
 - cdn.report-uri.com
 - img.represent.com
 - img.riskified.com
@@ -2011,7 +2017,6 @@ domain_set:
 - telemetry2.devolutions.net
 - hub-assets.displaycal.net
 - mirror.duocast.net
-- assets.dwncdn.net
 - steamcommunity-a.akamaihd.net.edgesuite.net
 - hamifans.emome.net
 - static.esimplus.net
@@ -2045,6 +2050,7 @@ domain_set:
 - images.idgesg.net
 - ik.imgkit.net
 - static-act.imoim.net
+- img.imoutomoe.net
 - ftpmirror1.infania.net
 - mirror.init7.net
 - jsdelivr.ioiox.net
@@ -2082,6 +2088,7 @@ domain_set:
 - static.monei.net
 - interactive-examples.mdn.mozilla.net
 - mirror.mrjester.net
+- alcdn.msauth.net
 - az700632.vo.msecnd.net
 - az764295.vo.msecnd.net
 - cdn.myfonts.net
@@ -2368,7 +2375,6 @@ domain_set:
 - s.w.org
 - releases.whatpulse.org
 - resources.whatwg.org
-- tools-static.wmflabs.org
 - files.writefreely.org
 - downloads.xiph.org
 - ftpmirror.your.org
@@ -2442,6 +2448,7 @@ domain_set:
 - vanilla-extract.style
 - static.ada.support
 - mirror.kumi.systems
+- media.remax-prod.eng.remax.tech
 - mirror.kku.ac.th
 - mirror1.ku.ac.th
 - mirrors.cloudforest.co.th
@@ -2532,6 +2539,7 @@ domain_suffix_set:
 - signal.art
 - at
 - au
+- lllcdn.autos
 - aws
 - mirror.ba
 - be
@@ -3336,6 +3344,7 @@ domain_suffix_set:
 - hentaiera.com
 - hentaifox.com
 - hentaipaw.com
+- hentaistream.com
 - heroesofdragonage.com
 - heroesofthestorm.com
 - heroku.com
@@ -3486,6 +3495,7 @@ domain_suffix_set:
 - kkbox-prime.com
 - kktix.com
 - kleecks-cdn.com
+- knowyourmeme.com
 - ko-fi.com
 - kobo.com
 - komoot.com
@@ -3624,6 +3634,7 @@ domain_suffix_set:
 - mngbcn.com
 - mobile01.com
 - modrinth.com
+- moeload.com
 - mojang.com
 - download.mokeedev.com
 - molesports.com
@@ -3648,6 +3659,7 @@ domain_suffix_set:
 - muscdn.com
 - cfcdn.mux.com
 - mvnrepository.com
+- myanimeshelf.com
 - myavlive.com
 - mydnsleaktest.com
 - myfilebase.com
@@ -3788,6 +3800,7 @@ domain_suffix_set:
 - okx.com
 - olelive.com
 - olemovienews.com
+- olevod.com
 - olympics.com
 - mirrors.omnilance.com
 - omnisnippet1.com
@@ -3848,6 +3861,7 @@ domain_suffix_set:
 - picacgp.com
 - picacgy.com
 - picacomic.com
+- pigav.com
 - pinimg.com
 - pinkcore.com
 - pipedriveassets.com
@@ -4065,6 +4079,7 @@ domain_suffix_set:
 - slack.com
 - slack-edge.com
 - slack-imgs.com
+- slackhq.com
 - slidesharecdn.com
 - smartmailcloud.com
 - smartmediarep.com
@@ -4189,6 +4204,7 @@ domain_suffix_set:
 - sxccdn.com
 - synergyse.com
 - t66y.com
+- t8cdn.com
 - tailscale.com
 - tailwindcss.com
 - take2games.com
@@ -4283,6 +4299,7 @@ domain_suffix_set:
 - truthsocial.com
 - ttcache.com
 - ttwstatic.com
+- tube8.com
 - tumblr.com
 - tunein.com
 - cdn.turner.com
@@ -4305,6 +4322,7 @@ domain_suffix_set:
 - ulol.com
 - ultimaforever.com
 - ultimaonline.com
+- umblr.com
 - underlords.com
 - majsoul.union-game.com
 - unity.com
@@ -4975,6 +4993,7 @@ domain_suffix_set:
 - doppiocdn.net
 - dot.net
 - dwcdn.net
+- dwncdn.net
 - dynu.net
 - dzcdn.net
 - e621.net
@@ -5541,6 +5560,7 @@ domain_suffix_set:
 - wikivoyage.org
 - wiktionary.org
 - wireshark.org
+- wmflabs.org
 - wmfusercontent.org
 - wordpress.org
 - wpewebkit.org
@@ -5693,7 +5713,9 @@ domain_wildcard_set:
 - assets.*.imaga.co
 - cdn?.18girlssex.com
 - blog-imgs-??.2nt.com
+- fastly-*.allmovie.com
 - '*.s3.*.backblazeb2.com'
+- cdn*.boysfood.com
 - browser-intake-*-datadoghq.com
 - assets*.freshdesk.com
 - '*.fsvod?.com'

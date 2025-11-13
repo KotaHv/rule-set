@@ -1,4 +1,4 @@
-# Total: 5872 rules
+# Total: 5894 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -230,6 +230,8 @@ DOMAIN,seo-wp.airdroid.com
 DOMAIN,time.akamai.com
 DOMAIN,mirror.alastyr.com
 DOMAIN,mirrors.aliyun.com
+DOMAIN,fastly-gce.allmovie.com
+DOMAIN,fastly-s3.allmovie.com
 DOMAIN,oaos-resources.allstate.com
 DOMAIN,resources.allstate.com
 DOMAIN,mirror.nl.altushost.com
@@ -701,6 +703,7 @@ DOMAIN,widget.gotolstoy.com
 DOMAIN,media.graphassets.com
 DOMAIN,assets.grooveapps.com
 DOMAIN,app.groovefunnels.com
+DOMAIN,media-hls.growcdnssedge.com
 DOMAIN,snippet.growsumo.com
 DOMAIN,sig.grumpybumpers.com
 DOMAIN,fdn.gsmarena.com
@@ -765,6 +768,7 @@ DOMAIN,sm.ign.com
 DOMAIN,mirror.debian.ikoula.com
 DOMAIN,mirror.ubuntu.ikoula.com
 DOMAIN,imagizer.imageshack.com
+DOMAIN,cdn.imago-images.com
 DOMAIN,img.imgdd.com
 DOMAIN,gearbox.imgix.com
 DOMAIN,go.imperva.com
@@ -870,6 +874,7 @@ DOMAIN,static-exp1.licdn.com
 DOMAIN,static-exp2.licdn.com
 DOMAIN,static-exp3.licdn.com
 DOMAIN,cdn.linearicons.com
+DOMAIN,cdn.lineicons.com
 DOMAIN,staging-pubfeed.linkby.com
 DOMAIN,mirror.linkdata.com
 DOMAIN,linkstorage.linkfire.com
@@ -1194,6 +1199,7 @@ DOMAIN,userpic.redgifs.com
 DOMAIN,redircdn.com
 DOMAIN,staticsource1.redotpay.com
 DOMAIN,tools.refokus.com
+DOMAIN,static-images.remax.com
 DOMAIN,cdn.report-uri.com
 DOMAIN,img.represent.com
 DOMAIN,img.riskified.com
@@ -2009,7 +2015,6 @@ DOMAIN,cdnweb.devolutions.net
 DOMAIN,telemetry2.devolutions.net
 DOMAIN,hub-assets.displaycal.net
 DOMAIN,mirror.duocast.net
-DOMAIN,assets.dwncdn.net
 DOMAIN,steamcommunity-a.akamaihd.net.edgesuite.net
 DOMAIN,hamifans.emome.net
 DOMAIN,static.esimplus.net
@@ -2043,6 +2048,7 @@ DOMAIN,alt.idgesg.net
 DOMAIN,images.idgesg.net
 DOMAIN,ik.imgkit.net
 DOMAIN,static-act.imoim.net
+DOMAIN,img.imoutomoe.net
 DOMAIN,ftpmirror1.infania.net
 DOMAIN,mirror.init7.net
 DOMAIN,jsdelivr.ioiox.net
@@ -2080,6 +2086,7 @@ DOMAIN,apache.mivzakim.net
 DOMAIN,static.monei.net
 DOMAIN,interactive-examples.mdn.mozilla.net
 DOMAIN,mirror.mrjester.net
+DOMAIN,alcdn.msauth.net
 DOMAIN,az700632.vo.msecnd.net
 DOMAIN,az764295.vo.msecnd.net
 DOMAIN,cdn.myfonts.net
@@ -2366,7 +2373,6 @@ DOMAIN,ps.w.org
 DOMAIN,s.w.org
 DOMAIN,releases.whatpulse.org
 DOMAIN,resources.whatwg.org
-DOMAIN,tools-static.wmflabs.org
 DOMAIN,files.writefreely.org
 DOMAIN,downloads.xiph.org
 DOMAIN,ftpmirror.your.org
@@ -2440,6 +2446,7 @@ DOMAIN,eslint.style
 DOMAIN,vanilla-extract.style
 DOMAIN,static.ada.support
 DOMAIN,mirror.kumi.systems
+DOMAIN,media.remax-prod.eng.remax.tech
 DOMAIN,mirror.kku.ac.th
 DOMAIN,mirror1.ku.ac.th
 DOMAIN,mirrors.cloudforest.co.th
@@ -2529,6 +2536,7 @@ DOMAIN-SUFFIX,ipfs.kaleido.art
 DOMAIN-SUFFIX,signal.art
 DOMAIN-SUFFIX,at
 DOMAIN-SUFFIX,au
+DOMAIN-SUFFIX,lllcdn.autos
 DOMAIN-SUFFIX,aws
 DOMAIN-SUFFIX,mirror.ba
 DOMAIN-SUFFIX,be
@@ -3333,6 +3341,7 @@ DOMAIN-SUFFIX,images.hentaicity.com
 DOMAIN-SUFFIX,hentaiera.com
 DOMAIN-SUFFIX,hentaifox.com
 DOMAIN-SUFFIX,hentaipaw.com
+DOMAIN-SUFFIX,hentaistream.com
 DOMAIN-SUFFIX,heroesofdragonage.com
 DOMAIN-SUFFIX,heroesofthestorm.com
 DOMAIN-SUFFIX,heroku.com
@@ -3483,6 +3492,7 @@ DOMAIN-SUFFIX,kkbox.com
 DOMAIN-SUFFIX,kkbox-prime.com
 DOMAIN-SUFFIX,kktix.com
 DOMAIN-SUFFIX,kleecks-cdn.com
+DOMAIN-SUFFIX,knowyourmeme.com
 DOMAIN-SUFFIX,ko-fi.com
 DOMAIN-SUFFIX,kobo.com
 DOMAIN-SUFFIX,komoot.com
@@ -3621,6 +3631,7 @@ DOMAIN-SUFFIX,mmtcdn.com
 DOMAIN-SUFFIX,mngbcn.com
 DOMAIN-SUFFIX,mobile01.com
 DOMAIN-SUFFIX,modrinth.com
+DOMAIN-SUFFIX,moeload.com
 DOMAIN-SUFFIX,mojang.com
 DOMAIN-SUFFIX,download.mokeedev.com
 DOMAIN-SUFFIX,molesports.com
@@ -3645,6 +3656,7 @@ DOMAIN-SUFFIX,muscache.com
 DOMAIN-SUFFIX,muscdn.com
 DOMAIN-SUFFIX,cfcdn.mux.com
 DOMAIN-SUFFIX,mvnrepository.com
+DOMAIN-SUFFIX,myanimeshelf.com
 DOMAIN-SUFFIX,myavlive.com
 DOMAIN-SUFFIX,mydnsleaktest.com
 DOMAIN-SUFFIX,myfilebase.com
@@ -3785,6 +3797,7 @@ DOMAIN-SUFFIX,oktacdn.com
 DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,olelive.com
 DOMAIN-SUFFIX,olemovienews.com
+DOMAIN-SUFFIX,olevod.com
 DOMAIN-SUFFIX,olympics.com
 DOMAIN-SUFFIX,mirrors.omnilance.com
 DOMAIN-SUFFIX,omnisnippet1.com
@@ -3845,6 +3858,7 @@ DOMAIN-SUFFIX,phprcdn.com
 DOMAIN-SUFFIX,picacgp.com
 DOMAIN-SUFFIX,picacgy.com
 DOMAIN-SUFFIX,picacomic.com
+DOMAIN-SUFFIX,pigav.com
 DOMAIN-SUFFIX,pinimg.com
 DOMAIN-SUFFIX,pinkcore.com
 DOMAIN-SUFFIX,pipedriveassets.com
@@ -4062,6 +4076,7 @@ DOMAIN-SUFFIX,skypeassets.com
 DOMAIN-SUFFIX,slack.com
 DOMAIN-SUFFIX,slack-edge.com
 DOMAIN-SUFFIX,slack-imgs.com
+DOMAIN-SUFFIX,slackhq.com
 DOMAIN-SUFFIX,slidesharecdn.com
 DOMAIN-SUFFIX,smartmailcloud.com
 DOMAIN-SUFFIX,smartmediarep.com
@@ -4186,6 +4201,7 @@ DOMAIN-SUFFIX,swtor.com
 DOMAIN-SUFFIX,sxccdn.com
 DOMAIN-SUFFIX,synergyse.com
 DOMAIN-SUFFIX,t66y.com
+DOMAIN-SUFFIX,t8cdn.com
 DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,tailwindcss.com
 DOMAIN-SUFFIX,take2games.com
@@ -4280,6 +4296,7 @@ DOMAIN-SUFFIX,trustpilot.com
 DOMAIN-SUFFIX,truthsocial.com
 DOMAIN-SUFFIX,ttcache.com
 DOMAIN-SUFFIX,ttwstatic.com
+DOMAIN-SUFFIX,tube8.com
 DOMAIN-SUFFIX,tumblr.com
 DOMAIN-SUFFIX,tunein.com
 DOMAIN-SUFFIX,cdn.turner.com
@@ -4302,6 +4319,7 @@ DOMAIN-SUFFIX,ui.com
 DOMAIN-SUFFIX,ulol.com
 DOMAIN-SUFFIX,ultimaforever.com
 DOMAIN-SUFFIX,ultimaonline.com
+DOMAIN-SUFFIX,umblr.com
 DOMAIN-SUFFIX,underlords.com
 DOMAIN-SUFFIX,majsoul.union-game.com
 DOMAIN-SUFFIX,unity.com
@@ -4972,6 +4990,7 @@ DOMAIN-SUFFIX,dns-oarc.net
 DOMAIN-SUFFIX,doppiocdn.net
 DOMAIN-SUFFIX,dot.net
 DOMAIN-SUFFIX,dwcdn.net
+DOMAIN-SUFFIX,dwncdn.net
 DOMAIN-SUFFIX,dynu.net
 DOMAIN-SUFFIX,dzcdn.net
 DOMAIN-SUFFIX,e621.net
@@ -5538,6 +5557,7 @@ DOMAIN-SUFFIX,wikiversity.org
 DOMAIN-SUFFIX,wikivoyage.org
 DOMAIN-SUFFIX,wiktionary.org
 DOMAIN-SUFFIX,wireshark.org
+DOMAIN-SUFFIX,wmflabs.org
 DOMAIN-SUFFIX,wmfusercontent.org
 DOMAIN-SUFFIX,wordpress.org
 DOMAIN-SUFFIX,wpewebkit.org
@@ -5739,7 +5759,9 @@ DOMAIN-WILDCARD,video*.cloudokyo.cloud
 DOMAIN-WILDCARD,assets.*.imaga.co
 DOMAIN-WILDCARD,cdn?.18girlssex.com
 DOMAIN-WILDCARD,blog-imgs-??.2nt.com
+DOMAIN-WILDCARD,fastly-*.allmovie.com
 DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
+DOMAIN-WILDCARD,cdn*.boysfood.com
 DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
 DOMAIN-WILDCARD,assets*.freshdesk.com
 DOMAIN-WILDCARD,*.fsvod?.com

@@ -1,11 +1,13 @@
-# Total: 74 rules
+# Total: 79 rules
 payload:
 - DOMAIN-WILDCARD,image*.cloudokyo.cloud
 - DOMAIN-WILDCARD,video*.cloudokyo.cloud
 - DOMAIN-WILDCARD,assets.*.imaga.co
 - DOMAIN-WILDCARD,cdn?.18girlssex.com
 - DOMAIN-WILDCARD,blog-imgs-??.2nt.com
+- DOMAIN-WILDCARD,fastly-*.allmovie.com
 - DOMAIN-WILDCARD,ocsp.*.amazontrust.com
+- DOMAIN-WILDCARD,cdn*.boysfood.com
 - DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
 - DOMAIN-WILDCARD,proxy-*.dailymotion.com
 - DOMAIN-WILDCARD,blog-imgs-??.fc2.com
@@ -24,8 +26,11 @@ payload:
 - DOMAIN-WILDCARD,cdn-*.microsoft.com
 - DOMAIN-WILDCARD,chunk-*.mux.com
 - DOMAIN-WILDCARD,img-*.now.com
+- DOMAIN-WILDCARD,cdn*.pigav.com
+- DOMAIN-WILDCARD,cdn*.porn87.com
 - DOMAIN-WILDCARD,img?.porngo.com
 - DOMAIN-WILDCARD,img??.porngo.com
+- DOMAIN-WILDCARD,cdn*.pornhost.com
 - DOMAIN-WILDCARD,cdn?-dl.pornhost.com
 - DOMAIN-WILDCARD,s???.pornone.com
 - DOMAIN-WILDCARD,th-*.pornone.com
