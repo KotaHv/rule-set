@@ -1,4 +1,4 @@
-# Total: 5841 rules
+# Total: 5843 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -186,6 +186,7 @@ domain_set:
 - r2.1hanime.com
 - oss.1p3a.com
 - mirror.23m.com
+- img.321cdn.com
 - e3.365dm.com
 - img.4khd.com
 - mirror.eu.4psacloud.com
@@ -3072,6 +3073,7 @@ domain_suffix_set:
 - docker.com
 - dockerstatic.com
 - docsend.com
+- dolphin-anty-cdn.com
 - donkeykongcountryreturns.com
 - doom.com
 - doppiocdn.com

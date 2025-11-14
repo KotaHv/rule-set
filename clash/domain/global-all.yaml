@@ -1,4 +1,4 @@
-# Total: 5714 rules
+# Total: 5716 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -185,6 +185,7 @@
 - 'r2.1hanime.com'
 - 'oss.1p3a.com'
 - 'mirror.23m.com'
+- 'img.321cdn.com'
 - 'e3.365dm.com'
 - 'img.4khd.com'
 - 'mirror.eu.4psacloud.com'
@@ -3070,6 +3071,7 @@
 - '+.docker.com'
 - '+.dockerstatic.com'
 - '+.docsend.com'
+- '+.dolphin-anty-cdn.com'
 - '+.donkeykongcountryreturns.com'
 - '+.doom.com'
 - '+.doppiocdn.com'

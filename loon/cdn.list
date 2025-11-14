@@ -1,4 +1,4 @@
-# Total: 4044 rules
+# Total: 4050 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -162,6 +162,7 @@ DOMAIN,i.1password.com
 DOMAIN,b5x-sentry.1passwordservices.com
 DOMAIN,telemetry.1passwordservices.com
 DOMAIN,evt.24.com
+DOMAIN,img.321cdn.com
 DOMAIN,e3.365dm.com
 DOMAIN,img.3movs.com
 DOMAIN,img.4khd.com
@@ -2812,6 +2813,9 @@ DOMAIN,imgcn4.bgmbk.tv
 DOMAIN,imgcn5.bgmbk.tv
 DOMAIN,cloudflare.tv
 DOMAIN,cdn1.hotmoza.tv
+DOMAIN,clara.iwara.tv
+DOMAIN,files.iwara.tv
+DOMAIN,himeko.iwara.tv
 DOMAIN,i.iwara.tv
 DOMAIN,pptstatic.iyf.tv
 DOMAIN,static.iyf.tv
@@ -2827,6 +2831,7 @@ DOMAIN,s-cdnstatic.svc.litv.tv
 DOMAIN,static.svc.litv.tv
 DOMAIN,images.pluto.tv
 DOMAIN,static-homepage-en.pluto.tv
+DOMAIN,static.tella.tv
 DOMAIN,mcdn.tubi.tv
 DOMAIN,assets.twitch.tv
 DOMAIN,clips-media-assets2.twitch.tv
@@ -3114,6 +3119,7 @@ DOMAIN-SUFFIX,cdn.discordapp.com
 DOMAIN-SUFFIX,discourse-cdn.com
 DOMAIN-SUFFIX,disquscdn.com
 DOMAIN-SUFFIX,dockerstatic.com
+DOMAIN-SUFFIX,dolphin-anty-cdn.com
 DOMAIN-SUFFIX,doppiocdn.com
 DOMAIN-SUFFIX,drivecdn.com
 DOMAIN-SUFFIX,dropboxstatic.com

@@ -1,4 +1,4 @@
-# Total: 4102 rules
+# Total: 4108 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -164,6 +164,7 @@ domain_set:
 - b5x-sentry.1passwordservices.com
 - telemetry.1passwordservices.com
 - evt.24.com
+- img.321cdn.com
 - e3.365dm.com
 - img.3movs.com
 - img.4khd.com
@@ -2814,6 +2815,9 @@ domain_set:
 - imgcn5.bgmbk.tv
 - cloudflare.tv
 - cdn1.hotmoza.tv
+- clara.iwara.tv
+- files.iwara.tv
+- himeko.iwara.tv
 - i.iwara.tv
 - pptstatic.iyf.tv
 - static.iyf.tv
@@ -2829,6 +2833,7 @@ domain_set:
 - static.svc.litv.tv
 - images.pluto.tv
 - static-homepage-en.pluto.tv
+- static.tella.tv
 - mcdn.tubi.tv
 - assets.twitch.tv
 - clips-media-assets2.twitch.tv
@@ -3117,6 +3122,7 @@ domain_suffix_set:
 - discourse-cdn.com
 - disquscdn.com
 - dockerstatic.com
+- dolphin-anty-cdn.com
 - doppiocdn.com
 - drivecdn.com
 - dropboxstatic.com
