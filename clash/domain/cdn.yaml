@@ -1,4 +1,4 @@
-# Total: 4016 rules
+# Total: 4023 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1018,6 +1018,7 @@
 - 'components.justanswer.com'
 - 'ww2.justanswer.com'
 - 'ww2-secure.justanswer.com'
+- 'images.justwatch.com'
 - 'content.jwplatform.com'
 - 'cdn.jwplayer.com'
 - 'assets.kagi.com'
@@ -1740,6 +1741,7 @@
 - 'cdn3.tubeteen18.com'
 - 'cdn4.tubeteen18.com'
 - 'cdn5.tubeteen18.com'
+- 'canvas-lb.tubitv.com'
 - 'static.tumblr.com'
 - 'cdn-cms.tunein.com'
 - 'cdn-web.tunein.com'
@@ -1861,6 +1863,8 @@
 - 'mcdn.vrporn.com'
 - 'mcdnds.vrporn.com'
 - 'mcdns.vrporn.com'
+- 'images.vudu.com'
+- 'images2.vudu.com'
 - 'cdn.vuukle.com'
 - 'image.vuukle.com'
 - 'scache.vzw.com'
@@ -2823,6 +2827,8 @@
 - 's-cdnstatic.svc.litv.tv'
 - 'static.svc.litv.tv'
 - 'images.pluto.tv'
+- 'static-homepage-en.pluto.tv'
+- 'mcdn.tubi.tv'
 - 'assets.twitch.tv'
 - 'clips-media-assets2.twitch.tv'
 - 'embed.twitch.tv'
@@ -2883,6 +2889,7 @@
 - 'st3.zoom.us'
 - 'us01ccistatic.zoom.us'
 - 'img.api.video'
+- 'tubi.video'
 - 'cdn.violet.vin'
 - 'cdn-msp.18comic.vip'
 - 'tanju.vip'

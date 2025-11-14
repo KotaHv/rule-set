@@ -1,12 +1,18 @@
-# Total: 45 rules
+# Total: 51 rules
 DOMAIN,edge.api.brightcove.com
 DOMAIN,prod-api.crackle.com
+DOMAIN,athome.fandango.com
 DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
+DOMAIN,tubitv.com
+DOMAIN,www.tubitv.com
+DOMAIN,vudu.com
 DOMAIN,bcbolt446c5271-a.akamaihd.net
 DOMAIN,dashasiafox.akamaized.net
 DOMAIN,staticasiafox.akamaized.net
+DOMAIN,tubi.tv
+DOMAIN,www.tubi.tv
 DOMAIN-SUFFIX,cbsaavideo.com
 DOMAIN-SUFFIX,cbsi.com
 DOMAIN-SUFFIX,cbsivideo.com
@@ -26,8 +32,8 @@ DOMAIN-SUFFIX,sho.com
 DOMAIN-SUFFIX,showtime.com
 DOMAIN-SUFFIX,theplatform.com
 DOMAIN-SUFFIX,uplynk.com
-DOMAIN-SUFFIX,vudu.com
 DOMAIN-SUFFIX,discoveryplus.in
+DOMAIN-SUFFIX,production-public.tubi.io
 DOMAIN-SUFFIX,happyon.jp
 DOMAIN-SUFFIX,hjholdings.jp
 DOMAIN-SUFFIX,hulu.jp

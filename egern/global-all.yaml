@@ -1,4 +1,4 @@
-# Total: 5830 rules
+# Total: 5839 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -594,6 +594,7 @@ domain_set:
 - web-sdk.eyefitu.com
 - web-sdk-cdn.eyefitu.com
 - cdn.faire.com
+- athome.fandango.com
 - images.fandango.com
 - live.fanmingming.com
 - static.fastboostcdn.com
@@ -818,6 +819,7 @@ domain_set:
 - components.justanswer.com
 - ww2.justanswer.com
 - ww2-secure.justanswer.com
+- images.justwatch.com
 - content.jwplatform.com
 - cdn.jwplayer.com
 - cdnapi.kaltura.com
@@ -1402,6 +1404,9 @@ domain_set:
 - cdn3.tubeteen18.com
 - cdn4.tubeteen18.com
 - cdn5.tubeteen18.com
+- tubitv.com
+- canvas-lb.tubitv.com
+- www.tubitv.com
 - widgets.turnto.com
 - ubuntu.tuxuri.com
 - twenty-icons.com
@@ -1479,6 +1484,9 @@ domain_set:
 - apps.voxmedia.com
 - mirror.vpsnet.com
 - ubuntu.vpsttt.com
+- vudu.com
+- images.vudu.com
+- images2.vudu.com
 - cdn.vuukle.com
 - image.vuukle.com
 - cdnstatic.w1mp.com
@@ -2483,6 +2491,7 @@ domain_set:
 - repos.interior.edu.uy
 - mirror.dc.uz
 - img.api.video
+- tubi.video
 - cdn.violet.vin
 - tanju.vip
 - www.10086.win
@@ -4388,7 +4397,6 @@ domain_suffix_set:
 - vox-cdn.com
 - vpnunlimited.com
 - swupdate.vray.com
-- vudu.com
 - vultrobjects.com
 - vx-cdn.com
 - vxtwitter.com
@@ -4818,6 +4826,7 @@ domain_suffix_set:
 - storj.io
 - terraform.io
 - thenewstack.io
+- production-public.tubi.io
 - typora.io
 - ubuntu-touch.io
 - urlscan.io

@@ -1,4 +1,4 @@
-# Total: 285 rules
+# Total: 291 rules
 no_resolve: true
 domain_set:
 - 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
@@ -12,6 +12,7 @@ domain_set:
 - edge.api.brightcove.com
 - prod-api.crackle.com
 - hbounify-prod.evergent.com
+- athome.fandango.com
 - cdn.registerdisney.go.com
 - youtube.googleapis.com
 - youtubei.googleapis.com
@@ -21,6 +22,9 @@ domain_set:
 - hbolb.onwardsmg.com
 - cbsplaylistserver.aws.syncbak.com
 - cbsservice.aws.syncbak.com
+- tubitv.com
+- www.tubitv.com
+- vudu.com
 - bcbolt446c5271-a.akamaihd.net
 - itvpnpmobile-a.akamaihd.net
 - dashasiafox.akamaized.net
@@ -52,6 +56,8 @@ domain_set:
 - gamer2-cds.cdn.hinet.net
 - akmcdnoversea-tw.inter.ptqy.gitv.tv
 - chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+- tubi.tv
+- www.tubi.tv
 - video.friday.tw
 - ana.video.friday.tw
 domain_suffix_set:
@@ -167,7 +173,6 @@ domain_suffix_set:
 - uplynk.com
 - viblast.com
 - viu.com
-- vudu.com
 - wetvinfo.com
 - withyoutube.com
 - youtube.com
@@ -187,6 +192,7 @@ domain_suffix_set:
 - abema.io
 - hayabusa.io
 - kfs.io
+- production-public.tubi.io
 - ameba.jp
 - ameblo.jp
 - dmm.co.jp

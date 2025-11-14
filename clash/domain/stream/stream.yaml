@@ -1,4 +1,4 @@
-# Total: 252 rules
+# Total: 258 rules
 'payload':
 - '44wilhpljf.execute-api.ap-southeast-1.amazonaws.com'
 - 'hls.itunes.apple.com'
@@ -11,6 +11,7 @@
 - 'edge.api.brightcove.com'
 - 'prod-api.crackle.com'
 - 'hbounify-prod.evergent.com'
+- 'athome.fandango.com'
 - 'cdn.registerdisney.go.com'
 - 'youtube.googleapis.com'
 - 'youtubei.googleapis.com'
@@ -20,6 +21,9 @@
 - 'hbolb.onwardsmg.com'
 - 'cbsplaylistserver.aws.syncbak.com'
 - 'cbsservice.aws.syncbak.com'
+- 'tubitv.com'
+- 'www.tubitv.com'
+- 'vudu.com'
 - 'bcbolt446c5271-a.akamaihd.net'
 - 'itvpnpmobile-a.akamaihd.net'
 - 'dashasiafox.akamaized.net'
@@ -51,6 +55,8 @@
 - 'gamer2-cds.cdn.hinet.net'
 - 'akmcdnoversea-tw.inter.ptqy.gitv.tv'
 - 'chuangcachecdnoversea-tw.inter.ptqy.gitv.tv'
+- 'tubi.tv'
+- 'www.tubi.tv'
 - 'video.friday.tw'
 - 'ana.video.friday.tw'
 - '+.netflix.ca'
@@ -165,7 +171,6 @@
 - '+.uplynk.com'
 - '+.viblast.com'
 - '+.viu.com'
-- '+.vudu.com'
 - '+.wetvinfo.com'
 - '+.withyoutube.com'
 - '+.youtube.com'
@@ -185,6 +190,7 @@
 - '+.abema.io'
 - '+.hayabusa.io'
 - '+.kfs.io'
+- '+.production-public.tubi.io'
 - '+.ameba.jp'
 - '+.ameblo.jp'
 - '+.dmm.co.jp'

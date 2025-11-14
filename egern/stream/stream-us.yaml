@@ -1,14 +1,20 @@
-# Total: 36 rules
+# Total: 42 rules
 no_resolve: true
 domain_set:
 - edge.api.brightcove.com
 - prod-api.crackle.com
+- athome.fandango.com
 - cbsi.live.ott.irdeto.com
 - cbsplaylistserver.aws.syncbak.com
 - cbsservice.aws.syncbak.com
+- tubitv.com
+- www.tubitv.com
+- vudu.com
 - bcbolt446c5271-a.akamaihd.net
 - dashasiafox.akamaized.net
 - staticasiafox.akamaized.net
+- tubi.tv
+- www.tubi.tv
 domain_suffix_set:
 - cbsaavideo.com
 - cbsi.com
@@ -29,8 +35,8 @@ domain_suffix_set:
 - showtime.com
 - theplatform.com
 - uplynk.com
-- vudu.com
 - discoveryplus.in
+- production-public.tubi.io
 - happyon.jp
 - hjholdings.jp
 - hulu.jp

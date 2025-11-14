@@ -1,4 +1,4 @@
-# Total: 5894 rules
+# Total: 5903 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -592,6 +592,7 @@ DOMAIN,mirrors.evowise.com
 DOMAIN,web-sdk.eyefitu.com
 DOMAIN,web-sdk-cdn.eyefitu.com
 DOMAIN,cdn.faire.com
+DOMAIN,athome.fandango.com
 DOMAIN,images.fandango.com
 DOMAIN,live.fanmingming.com
 DOMAIN,static.fastboostcdn.com
@@ -816,6 +817,7 @@ DOMAIN,static-assets.juksy.com
 DOMAIN,components.justanswer.com
 DOMAIN,ww2.justanswer.com
 DOMAIN,ww2-secure.justanswer.com
+DOMAIN,images.justwatch.com
 DOMAIN,content.jwplatform.com
 DOMAIN,cdn.jwplayer.com
 DOMAIN,cdnapi.kaltura.com
@@ -1400,6 +1402,9 @@ DOMAIN,cdn2.tubeteen18.com
 DOMAIN,cdn3.tubeteen18.com
 DOMAIN,cdn4.tubeteen18.com
 DOMAIN,cdn5.tubeteen18.com
+DOMAIN,tubitv.com
+DOMAIN,canvas-lb.tubitv.com
+DOMAIN,www.tubitv.com
 DOMAIN,widgets.turnto.com
 DOMAIN,ubuntu.tuxuri.com
 DOMAIN,twenty-icons.com
@@ -1477,6 +1482,9 @@ DOMAIN,platform.vox.com
 DOMAIN,apps.voxmedia.com
 DOMAIN,mirror.vpsnet.com
 DOMAIN,ubuntu.vpsttt.com
+DOMAIN,vudu.com
+DOMAIN,images.vudu.com
+DOMAIN,images2.vudu.com
 DOMAIN,cdn.vuukle.com
 DOMAIN,image.vuukle.com
 DOMAIN,cdnstatic.w1mp.com
@@ -2481,6 +2489,7 @@ DOMAIN,espejito.fder.edu.uy
 DOMAIN,repos.interior.edu.uy
 DOMAIN,mirror.dc.uz
 DOMAIN,img.api.video
+DOMAIN,tubi.video
 DOMAIN,cdn.violet.vin
 DOMAIN,tanju.vip
 DOMAIN,www.10086.win
@@ -4385,7 +4394,6 @@ DOMAIN-SUFFIX,voanews.com
 DOMAIN-SUFFIX,vox-cdn.com
 DOMAIN-SUFFIX,vpnunlimited.com
 DOMAIN-SUFFIX,swupdate.vray.com
-DOMAIN-SUFFIX,vudu.com
 DOMAIN-SUFFIX,vultrobjects.com
 DOMAIN-SUFFIX,vx-cdn.com
 DOMAIN-SUFFIX,vxtwitter.com
@@ -4815,6 +4823,7 @@ DOMAIN-SUFFIX,statuspage.io
 DOMAIN-SUFFIX,storj.io
 DOMAIN-SUFFIX,terraform.io
 DOMAIN-SUFFIX,thenewstack.io
+DOMAIN-SUFFIX,production-public.tubi.io
 DOMAIN-SUFFIX,typora.io
 DOMAIN-SUFFIX,ubuntu-touch.io
 DOMAIN-SUFFIX,urlscan.io

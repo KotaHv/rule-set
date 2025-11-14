@@ -1,4 +1,4 @@
-# Total: 348 rules
+# Total: 354 rules
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 DOMAIN,hls.itunes.apple.com
 DOMAIN,hls-amt.itunes.apple.com
@@ -10,6 +10,7 @@ DOMAIN,linear.tv.apple.com
 DOMAIN,edge.api.brightcove.com
 DOMAIN,prod-api.crackle.com
 DOMAIN,hbounify-prod.evergent.com
+DOMAIN,athome.fandango.com
 DOMAIN,cdn.registerdisney.go.com
 DOMAIN,youtube.googleapis.com
 DOMAIN,youtubei.googleapis.com
@@ -19,6 +20,9 @@ DOMAIN,bbc.mp-pxcdn.com
 DOMAIN,hbolb.onwardsmg.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
+DOMAIN,tubitv.com
+DOMAIN,www.tubitv.com
+DOMAIN,vudu.com
 DOMAIN,bcbolt446c5271-a.akamaihd.net
 DOMAIN,itvpnpmobile-a.akamaihd.net
 DOMAIN,dashasiafox.akamaized.net
@@ -50,6 +54,8 @@ DOMAIN,gamer-cds.cdn.hinet.net
 DOMAIN,gamer2-cds.cdn.hinet.net
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN,tubi.tv
+DOMAIN,www.tubi.tv
 DOMAIN,video.friday.tw
 DOMAIN,ana.video.friday.tw
 DOMAIN-SUFFIX,netflix.ca
@@ -164,7 +170,6 @@ DOMAIN-SUFFIX,tvb.com
 DOMAIN-SUFFIX,uplynk.com
 DOMAIN-SUFFIX,viblast.com
 DOMAIN-SUFFIX,viu.com
-DOMAIN-SUFFIX,vudu.com
 DOMAIN-SUFFIX,wetvinfo.com
 DOMAIN-SUFFIX,withyoutube.com
 DOMAIN-SUFFIX,youtube.com
@@ -184,6 +189,7 @@ DOMAIN-SUFFIX,primevideo.info
 DOMAIN-SUFFIX,abema.io
 DOMAIN-SUFFIX,hayabusa.io
 DOMAIN-SUFFIX,kfs.io
+DOMAIN-SUFFIX,production-public.tubi.io
 DOMAIN-SUFFIX,ameba.jp
 DOMAIN-SUFFIX,ameblo.jp
 DOMAIN-SUFFIX,dmm.co.jp
