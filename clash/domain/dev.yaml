@@ -1,4 +1,4 @@
-# Total: 508 rules
+# Total: 510 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -272,6 +272,7 @@
 - '+.jenkins.io'
 - '+.k8s.io'
 - '+.kubernetes.io'
+- '+.mpv.io'
 - '+.neovim.io'
 - '+.nomadproject.io'
 - '+.oneapi.io'
@@ -399,6 +400,7 @@
 - '+.hacklang.org'
 - '+.haskell.org'
 - '+.haskellstack.org'
+- '+.imageglass.org'
 - '+.intellij.org'
 - '+.jfrog.org'
 - '+.js.org'

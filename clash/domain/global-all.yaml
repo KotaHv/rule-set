@@ -1,4 +1,4 @@
-# Total: 5712 rules
+# Total: 5714 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -4763,6 +4763,7 @@
 - '+.mega.io'
 - '+.metamask.io'
 - '+.misskey.io'
+- '+.mpv.io'
 - '+.ipfs.mrh.io'
 - '+.myqnapcloud.io'
 - '+.ipfs.namebase.io'
@@ -5385,6 +5386,7 @@
 - '+.iana.org'
 - '+.icann.org'
 - '+.ietf.org'
+- '+.imageglass.org'
 - '+.instituteofwar.org'
 - '+.intellij.org'
 - '+.internet.org'

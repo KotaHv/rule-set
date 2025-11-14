@@ -1,4 +1,4 @@
-# Total: 1657 rules
+# Total: 1659 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -1080,6 +1080,7 @@ domain_suffix_set:
 - mega.io
 - metamask.io
 - misskey.io
+- mpv.io
 - myqnapcloud.io
 - neovim.io
 - nextdns.io
@@ -1420,6 +1421,7 @@ domain_suffix_set:
 - iana.org
 - icann.org
 - ietf.org
+- imageglass.org
 - intellij.org
 - internet.org
 - jfrog.org
