@@ -1,4 +1,4 @@
-# Total: 36 rules
+# Total: 35 rules
 DOMAIN-SUFFIX,tdesktop.com
 DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,telegram.dog
@@ -14,7 +14,6 @@ DOMAIN-SUFFIX,legra.ph
 DOMAIN-SUFFIX,telegra.ph
 DOMAIN-SUFFIX,telegram.space
 IP-CIDR,5.28.195.1/32,no-resolve
-IP-CIDR,5.28.195.2/32,no-resolve
 IP-CIDR,91.105.192.0/23,no-resolve
 IP-CIDR,91.108.4.0/22,no-resolve
 IP-CIDR,91.108.8.0/21,no-resolve
