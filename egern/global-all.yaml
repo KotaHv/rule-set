@@ -1,4 +1,4 @@
-# Total: 5845 rules
+# Total: 5850 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -994,6 +994,7 @@ domain_set:
 - static.moegoat.com
 - momentjs.com
 - assets.monei.com
+- pp-static.monotype.com
 - cdn-public-apis.moonlock.com
 - static.moonpay.com
 - static-main.moovit.com
@@ -1013,6 +1014,8 @@ domain_set:
 - int.mwbbiz.com
 - download.mxfast.com
 - i.mydramalist.com
+- cms.myfonts.com
+- static-webfonts.myfonts.com
 - cdn.myportfolio.com
 - pro2-ui-assets-s3-fy.myportfolio.com
 - r2cdn.myshopline.com
@@ -3408,6 +3411,7 @@ domain_suffix_set:
 - iboysoft.com
 - ibytedtos.com
 - ibyteimg.com
+- icfcdn.com
 - iconfinder.com
 - idrive.com
 - ifixit.com
@@ -5147,6 +5151,7 @@ domain_suffix_set:
 - nitter.net
 - wikia.nocookie.net
 - nodecdn.net
+- nsimg.net
 - myanalytics.cdn.office.net
 - public.cdn.office.net
 - nel.measure.office.net

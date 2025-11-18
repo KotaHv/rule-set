@@ -1,4 +1,4 @@
-# Total: 4111 rules
+# Total: 4118 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -319,6 +319,7 @@ domain_set:
 - s3.us-west-001.backblazeb2.com
 - s3.us-west-002.backblazeb2.com
 - s3.us-west-004.backblazeb2.com
+- hiveplayer-static.bamgrid.com
 - i.bang.com
 - cloudfront.barilliance.com
 - assets.basehub.com
@@ -1201,6 +1202,7 @@ domain_set:
 - launchercontent.mojang.com
 - momentjs.com
 - assets.monei.com
+- pp-static.monotype.com
 - static.moomoo.com
 - cdn-public-apis.moonlock.com
 - static.moonpay.com
@@ -1223,6 +1225,8 @@ domain_set:
 - appassets.mvtdev.com
 - int.mwbbiz.com
 - i.mydramalist.com
+- cms.myfonts.com
+- static-webfonts.myfonts.com
 - cdn.myfutanari.com
 - res-etl-ssl.mypikpak.com
 - sg-thumbnail-drive.mypikpak.com
@@ -2662,6 +2666,7 @@ domain_set:
 - videos.ohentai.org
 - open-vsx.org
 - tiles.openfreemap.org
+- static.opensuse.org
 - cdn.pagic.org
 - jaws.pbs.org
 - user-uploads.perchance.org
@@ -3244,6 +3249,7 @@ domain_suffix_set:
 - assets.ibm.com
 - ibytedtos.com
 - ibyteimg.com
+- icfcdn.com
 - cdn.ifixit.com
 - iggcdn.com
 - ignimgs.com
@@ -3851,6 +3857,7 @@ domain_suffix_set:
 - cdn.nintendo.net
 - wikia.nocookie.net
 - nodecdn.net
+- nsimg.net
 - myanalytics.cdn.office.net
 - public.cdn.office.net
 - nel.measure.office.net

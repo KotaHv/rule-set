@@ -1,4 +1,4 @@
-# Total: 4053 rules
+# Total: 4060 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -317,6 +317,7 @@ DOMAIN,s3.us-west-000.backblazeb2.com
 DOMAIN,s3.us-west-001.backblazeb2.com
 DOMAIN,s3.us-west-002.backblazeb2.com
 DOMAIN,s3.us-west-004.backblazeb2.com
+DOMAIN,hiveplayer-static.bamgrid.com
 DOMAIN,i.bang.com
 DOMAIN,cloudfront.barilliance.com
 DOMAIN,assets.basehub.com
@@ -1199,6 +1200,7 @@ DOMAIN,cdn.moeload.com
 DOMAIN,launchercontent.mojang.com
 DOMAIN,momentjs.com
 DOMAIN,assets.monei.com
+DOMAIN,pp-static.monotype.com
 DOMAIN,static.moomoo.com
 DOMAIN,cdn-public-apis.moonlock.com
 DOMAIN,static.moonpay.com
@@ -1221,6 +1223,8 @@ DOMAIN,stream.mux.com
 DOMAIN,appassets.mvtdev.com
 DOMAIN,int.mwbbiz.com
 DOMAIN,i.mydramalist.com
+DOMAIN,cms.myfonts.com
+DOMAIN,static-webfonts.myfonts.com
 DOMAIN,cdn.myfutanari.com
 DOMAIN,res-etl-ssl.mypikpak.com
 DOMAIN,sg-thumbnail-drive.mypikpak.com
@@ -2660,6 +2664,7 @@ DOMAIN,assets.nxtrace.org
 DOMAIN,videos.ohentai.org
 DOMAIN,open-vsx.org
 DOMAIN,tiles.openfreemap.org
+DOMAIN,static.opensuse.org
 DOMAIN,cdn.pagic.org
 DOMAIN,jaws.pbs.org
 DOMAIN,user-uploads.perchance.org
@@ -3241,6 +3246,7 @@ DOMAIN-SUFFIX,hugoal.com
 DOMAIN-SUFFIX,assets.ibm.com
 DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,ibyteimg.com
+DOMAIN-SUFFIX,icfcdn.com
 DOMAIN-SUFFIX,cdn.ifixit.com
 DOMAIN-SUFFIX,iggcdn.com
 DOMAIN-SUFFIX,ignimgs.com
@@ -3848,6 +3854,7 @@ DOMAIN-SUFFIX,nelreports.net
 DOMAIN-SUFFIX,cdn.nintendo.net
 DOMAIN-SUFFIX,wikia.nocookie.net
 DOMAIN-SUFFIX,nodecdn.net
+DOMAIN-SUFFIX,nsimg.net
 DOMAIN-SUFFIX,myanalytics.cdn.office.net
 DOMAIN-SUFFIX,public.cdn.office.net
 DOMAIN-SUFFIX,nel.measure.office.net
