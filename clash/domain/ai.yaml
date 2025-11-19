@@ -1,4 +1,4 @@
-# Total: 40 rules
+# Total: 41 rules
 'payload':
 - 'api.jetbrains.ai'
 - 'gateway.ai.cloudflare.com'
@@ -9,6 +9,7 @@
 - 'aisandbox-pa.googleapis.com'
 - 'robinfrontend-pa.googleapis.com'
 - 'ai.google.dev'
+- 'antigravity.google'
 - '+.claude.ai'
 - '+.dify.ai'
 - '+.jasper.ai'

@@ -1,4 +1,4 @@
-# Total: 42 rules
+# Total: 43 rules
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
@@ -10,6 +10,7 @@ domain_set:
 - aisandbox-pa.googleapis.com
 - robinfrontend-pa.googleapis.com
 - ai.google.dev
+- antigravity.google
 domain_suffix_set:
 - claude.ai
 - dify.ai
