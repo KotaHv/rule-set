@@ -1,4 +1,4 @@
-# Total: 815 rules
+# Total: 814 rules
 'payload':
 - 'i.dell.com'
 - 'ocsp.globalsign.com'
@@ -31,7 +31,6 @@
 - 'app.plex.tv'
 - 'pubsub.plex.tv'
 - '+.amzndns-cn.biz'
-- '+.chaoxing.cc'
 - '+.heavenlywind.cc'
 - '+.cn'
 - '+.authing.co'

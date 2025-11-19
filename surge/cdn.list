@@ -1,4 +1,4 @@
-# Total: 4122 rules
+# Total: 4144 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -369,6 +369,7 @@ DOMAIN,jslibs.blackmagicdesign.com
 DOMAIN,blade-public-static.blade-group.com
 DOMAIN,cms.blavity.com
 DOMAIN,images.blockscan.com
+DOMAIN,cdn.blogarama.com
 DOMAIN,static.registration.bluehost.com
 DOMAIN,cdn-www.bluestacks.com
 DOMAIN,assets.bnidx.com
@@ -501,6 +502,7 @@ DOMAIN,cdn.cnx-software.com
 DOMAIN,cdn.codeblackbelt.com
 DOMAIN,static-assets.codecademy.com
 DOMAIN,st.codeforces.com
+DOMAIN,assets.codeguru.com
 DOMAIN,cloudfront.codeproject.com
 DOMAIN,assets.coinbase.com
 DOMAIN,dynamic-assets.coinbase.com
@@ -732,6 +734,10 @@ DOMAIN,a57.foxnews.com
 DOMAIN,hp.foxnews.com
 DOMAIN,static.foxnews.com
 DOMAIN,badges.frapsoft.com
+DOMAIN,s1.freebeacon.com
+DOMAIN,s2.freebeacon.com
+DOMAIN,s3.freebeacon.com
+DOMAIN,s4.freebeacon.com
 DOMAIN,cdn.freebiesupply.com
 DOMAIN,images.freeimages.com
 DOMAIN,static.freeimages.com
@@ -881,8 +887,14 @@ DOMAIN,cache.hackedfreegames.com
 DOMAIN,cdn.hackernoon.com
 DOMAIN,cf.hamreus.com
 DOMAIN,eu.hamreus.com
+DOMAIN,eu1.hamreus.com
+DOMAIN,eu2.hamreus.com
+DOMAIN,eu3.hamreus.com
 DOMAIN,i.hamreus.com
 DOMAIN,us.hamreus.com
+DOMAIN,us1.hamreus.com
+DOMAIN,us2.hamreus.com
+DOMAIN,us3.hamreus.com
 DOMAIN,rest.happierleads.com
 DOMAIN,public.hare200.com
 DOMAIN,cdn.hashnode.com
@@ -1164,6 +1176,7 @@ DOMAIN,meteorclient.com
 DOMAIN,cdn.mewe.com
 DOMAIN,public-img.mewe.com
 DOMAIN,image.mgstage.com
+DOMAIN,cf.mhgui.com
 DOMAIN,ajax.microsoft.com
 DOMAIN,cdn-dynmedia-1.microsoft.com
 DOMAIN,cdn.create.microsoft.com
@@ -1618,6 +1631,7 @@ DOMAIN,w.soundcloud.com
 DOMAIN,static.spankbang.com
 DOMAIN,img.sparemin.com
 DOMAIN,img.sparknotes.com
+DOMAIN,images.spectrumnews1.com
 DOMAIN,c.speedtestcustom.com
 DOMAIN,logos.speedtestcustom.com
 DOMAIN,assets.speedvitals.com
@@ -1867,6 +1881,7 @@ DOMAIN,img.voguehk.com
 DOMAIN,assets.volvo.com
 DOMAIN,platform.vox.com
 DOMAIN,apps.voxmedia.com
+DOMAIN,swan.prod.merch.vpsvc.com
 DOMAIN,mcdn.vrporn.com
 DOMAIN,mcdnds.vrporn.com
 DOMAIN,mcdns.vrporn.com
@@ -1932,6 +1947,7 @@ DOMAIN,cdn.worldvectorlogo.com
 DOMAIN,website-prod.cache.wpscdn.com
 DOMAIN,pbc.wsj.com
 DOMAIN,cdn.scripts.wtwhmedia.com
+DOMAIN,img.xbooru.com
 DOMAIN,assets-www.xbox.com
 DOMAIN,assets.play.xbox.com
 DOMAIN,dlassets-ssl.xboxlive.com
@@ -2529,6 +2545,7 @@ DOMAIN,www-static.ripe.net
 DOMAIN,cdn.mcauto-images-production.sendgrid.net
 DOMAIN,cdn.softswiss.net
 DOMAIN,fonts.sony.net
+DOMAIN,cdn.pi.spectrum.net
 DOMAIN,sourcemaps.squarespace.net
 DOMAIN,blacklist.tampermonkey.net
 DOMAIN,assets.tokopedia.net
@@ -2584,6 +2601,7 @@ DOMAIN,web-api-cdn.ground.news
 DOMAIN,assets.matters.news
 DOMAIN,assets-next.matters.news
 DOMAIN,statics-prod.mirrordaily.news
+DOMAIN,media.raven.news
 DOMAIN,image.dooo.ng
 DOMAIN,cdn.episode.ninja
 DOMAIN,images.weserv.nl
@@ -2668,6 +2686,7 @@ DOMAIN,assets.nxtrace.org
 DOMAIN,videos.ohentai.org
 DOMAIN,open-vsx.org
 DOMAIN,tiles.openfreemap.org
+DOMAIN,covers.openlibrary.org
 DOMAIN,static.opensuse.org
 DOMAIN,cdn.pagic.org
 DOMAIN,jaws.pbs.org
@@ -3507,6 +3526,7 @@ DOMAIN-SUFFIX,stripcdn.com
 DOMAIN-SUFFIX,stripeassets.com
 DOMAIN-SUFFIX,stripecdn.com
 DOMAIN-SUFFIX,stripst.com
+DOMAIN-SUFFIX,strpssts-ana.com
 DOMAIN-SUFFIX,strpst.com
 DOMAIN-SUFFIX,stylexjs.com
 DOMAIN-SUFFIX,substackcdn.com
@@ -3570,6 +3590,7 @@ DOMAIN-SUFFIX,via0.com
 DOMAIN-SUFFIX,vimeocdn.com
 DOMAIN-SUFFIX,tunnels.api.visualstudio.com
 DOMAIN-SUFFIX,vox-cdn.com
+DOMAIN-SUFFIX,cloudinary.vpsvc.com
 DOMAIN-SUFFIX,vx-cdn.com
 DOMAIN-SUFFIX,w-corp-staticblitz.com
 DOMAIN-SUFFIX,w-credentialless-staticblitz.com
@@ -3878,6 +3899,7 @@ DOMAIN-SUFFIX,sitescdn.net
 DOMAIN-SUFFIX,smassets.net
 DOMAIN-SUFFIX,smmallcdn.net
 DOMAIN-SUFFIX,sstatic.net
+DOMAIN-SUFFIX,staticstack.net
 DOMAIN-SUFFIX,staticworld.net
 DOMAIN-SUFFIX,tapecontent.net
 DOMAIN-SUFFIX,tildacdn.net

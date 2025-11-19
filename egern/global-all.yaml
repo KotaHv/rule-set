@@ -1,4 +1,4 @@
-# Total: 5852 rules
+# Total: 5846 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -50,16 +50,9 @@ domain_set:
 - i.loli.best
 - image.nmb.best
 - debian.ipsys.bf
-- debian.a1.bg
-- debian.mnet.bg
-- debian.telecoms.bg
-- mirror.telepoint.bg
-- ftp.uni-sofia.bg
 - apache.cbox.biz
 - pics.mf8.biz
 - ns-cdn.neustar.biz
-- avatars.micro.blog
-- cdn.micro.blog
 - mirror.blue3.com.br
 - ubuntu-archive.locaweb.com.br
 - mirror.nbtelecom.com.br
@@ -355,6 +348,7 @@ domain_set:
 - blade-public-static.blade-group.com
 - cms.blavity.com
 - images.blockscan.com
+- cdn.blogarama.com
 - static.registration.bluehost.com
 - cdn-www.bluestacks.com
 - assets.bnidx.com
@@ -462,6 +456,7 @@ domain_set:
 - cdn.cnx-software.com
 - cdn.codeblackbelt.com
 - static-assets.codecademy.com
+- assets.codeguru.com
 - cloudfront.codeproject.com
 - mirror.cogentco.com
 - s1.coincarp.com
@@ -719,8 +714,14 @@ domain_set:
 - cdn.hackernoon.com
 - cf.hamreus.com
 - eu.hamreus.com
+- eu1.hamreus.com
+- eu2.hamreus.com
+- eu3.hamreus.com
 - i.hamreus.com
 - us.hamreus.com
+- us1.hamreus.com
+- us2.hamreus.com
+- us3.hamreus.com
 - free.hands.com
 - rest.happierleads.com
 - public.hare200.com
@@ -923,8 +924,6 @@ domain_set:
 - mirror.ams.macarne.com
 - images.macrumors.com
 - i.magecdn.com
-- cdn-images.mailchimp.com
-- form-assets.mailchimp.com
 - fonts.mailerlite.com
 - assets.mailgun.com
 - downloads.majestic.com
@@ -953,6 +952,7 @@ domain_set:
 - cdn.mewe.com
 - public-img.mewe.com
 - image.mgstage.com
+- cf.mhgui.com
 - ajax.microsoft.com
 - amupdatedl.microsoft.com
 - amupdatedl2.microsoft.com
@@ -1314,6 +1314,7 @@ domain_set:
 - lecontent.sololearn.com
 - img.sparemin.com
 - img.sparknotes.com
+- images.spectrumnews1.com
 - assets.speedvitals.com
 - cdn.sphlabs.com
 - rs-cdn.splashtop.com
@@ -1489,6 +1490,7 @@ domain_set:
 - apps.voxmedia.com
 - mirror.vpsnet.com
 - ubuntu.vpsttt.com
+- swan.prod.merch.vpsvc.com
 - vudu.com
 - images.vudu.com
 - images2.vudu.com
@@ -1615,7 +1617,6 @@ domain_set:
 - secure-res.craft.do
 - i.jpg.dog
 - cdn.onetime.dog
-- mirror.cedia.org.ec
 - assets.buttondown.email
 - media.infosec.exchange
 - cdn.usd.fan
@@ -1659,13 +1660,6 @@ domain_set:
 - mirror.szerverem.hu
 - mirror.gsl.icu
 - tile2.intervals.icu
-- ftp.heanet.ie
-- mirror.webworld.ie
-- debian.interhost.co.il
-- ubuntu-archive.interhost.co.il
-- js.nagich.co.il
-- apache.spd.co.il
-- mirror.isoc.org.il
 - sn-s3-cdn.angry.im
 - s3.c.im
 - badges.gitter.im
@@ -1828,13 +1822,6 @@ domain_set:
 - apt.xpipe.io
 - rpm.xpipe.io
 - v2uploads.zopim.io
-- repo.iut.ac.ir
-- ctan.um.ac.ir
-- ctan.yazd.ac.ir
-- lib.arvancloud.ir
-- mirror.arvancloud.ir
-- mirror.kernel.ir
-- repo.linuxmirrors.ir
 - mirror.sabay.com.kh
 - mirror.fst.kz
 - mirror.hoster.kz
@@ -1885,7 +1872,6 @@ domain_set:
 - jssdk.opin.media
 - cms.therecord.media
 - townsquare.media
-- ubuntu.dts.mg
 - s3.m.0x.mk
 - mirror.a1.mk
 - mirror.t-home.mk
@@ -2135,7 +2121,6 @@ domain_set:
 - mirror.fi.ossplanet.net
 - mirror.ossplanet.net
 - storage.gra.cloud.ovh.net
-- img.pawoo.net
 - cdn.perfops.net
 - devnull.perfops.net
 - img.perfops.net
@@ -2158,7 +2143,6 @@ domain_set:
 - mirror.reenigne.net
 - mirror.reverse.net
 - ftp.rezopole.net
-- share.riseup.net
 - fr2.rpmfind.net
 - ftp.rpmfind.net
 - mirror.rustytel.net
@@ -2171,6 +2155,7 @@ domain_set:
 - cdn.softswiss.net
 - mirrors.sonic.net
 - ftp.sotirov-bg.net
+- cdn.pi.spectrum.net
 - sourcemaps.squarespace.net
 - blacklist.tampermonkey.net
 - apt.tetaneutral.net
@@ -2194,7 +2179,6 @@ domain_set:
 - platform-assets.typekit.net
 - use.typekit.net
 - ftp.ubuntu-tw.net
-- static.underhentai.net
 - craftassets.unraid.net
 - dw.uptodown.net
 - mirror.mia.velocihost.net
@@ -2235,6 +2219,7 @@ domain_set:
 - assets.matters.news
 - assets-next.matters.news
 - statics-prod.mirrordaily.news
+- media.raven.news
 - image.dooo.ng
 - ca.dyi.ng
 - us.dyi.ng
@@ -2283,10 +2268,6 @@ domain_set:
 - repo.extreme-ix.org
 - mirror.faraso.org
 - cdn.fosstodon.org
-- cdn.freecodecamp.org
-- cdn-media-0.freecodecamp.org
-- cdn-media-1.freecodecamp.org
-- cdn-media-2.freecodecamp.org
 - mirror.freedif.org
 - gnu.freemirror.org
 - cdn.freesound.org
@@ -2415,19 +2396,6 @@ domain_set:
 - badbits.dwebops.pub
 - ca.nfs.pub
 - gfx-data.news-engineering.aws.wapo.pub
-- mirror.flo.c-f.ro
-- mirrors.chroot.ro
-- mirrors.datapark.ro
-- mirror.efect.ro
-- mirrors.hosterion.ro
-- mirrors.hostico.ro
-- ftp.linux.ro
-- ftp.lug.ro
-- mirrors.m247.ro
-- mirrors.nav.ro
-- mirrors.xservers.ro
-- jing.rocks
-- dl.thorium.rocks
 - mirror.bgp.rodeo
 - content.any.run
 - mirror.jeonnam.school
@@ -2555,13 +2523,17 @@ domain_suffix_set:
 - signal.art
 - at
 - au
+- fish.audio
 - lllcdn.autos
 - aws
 - mirror.ba
 - be
+- bet
+- bg
 - line.biz
 - fury.blog
 - github.blog
+- micro.blog
 - stackmod.blog
 - stackoverflow.blog
 - buck.build
@@ -3078,6 +3050,7 @@ domain_suffix_set:
 - dnsleaktest.com
 - docker.com
 - dockerstatic.com
+- dockerstatus.com
 - docsend.com
 - dolphin-anty-cdn.com
 - donkeykongcountryreturns.com
@@ -3233,6 +3206,7 @@ domain_suffix_set:
 - framercdn.com
 - framerstatic.com
 - framerusercontent.com
+- freebeacon.com
 - freepik.com
 - frontapp.com
 - frostbite.com
@@ -3391,6 +3365,7 @@ domain_suffix_set:
 - js.hs-banner.com
 - hs-scripts.com
 - hsforms.com
+- html5rocks.com
 - js.hubspot.com
 - js-eu1.hubspot.com
 - static2cdn.hubspot.com
@@ -3480,6 +3455,7 @@ domain_suffix_set:
 - jdbstatic.com
 - jetbrains.com
 - jfrog.com
+- jiji.com
 - jinyingimage.com
 - jirachecklist.com
 - jisuimage.com
@@ -3517,6 +3493,7 @@ domain_suffix_set:
 - ko-fi.com
 - kobo.com
 - komoot.com
+- konachan.com
 - kraken.com
 - krakenjs.com
 - ks3-cn-hk-1.ksyuncs.com
@@ -3589,12 +3566,14 @@ domain_suffix_set:
 - maddenchampionship.com
 - maddenrewards.com
 - madewithcode.com
+- mailchimp.com
 - makeitopen.com
 - ipfsgateway.makersplace.com
 - makerworld.com
 - makeuseofimages.com
 - malwarebytes.com
 - manhuabika.com
+- manhuagui.com
 - mapbox.com
 - maptiler.com
 - marioandluigidreamteam.com
@@ -3794,6 +3773,7 @@ domain_suffix_set:
 - nsfwr34.com
 - nssurge.com
 - nv7s.com
+- ny1.com
 - nypost.com
 - nyt.com
 - nytco.com
@@ -4188,6 +4168,7 @@ domain_suffix_set:
 - stripecdn.com
 - stripst.com
 - strongleakstest.com
+- strpssts-ana.com
 - strpst.com
 - stylexjs.com
 - sublimetext.com
@@ -4406,6 +4387,7 @@ domain_suffix_set:
 - voanews.com
 - vox-cdn.com
 - vpnunlimited.com
+- cloudinary.vpsvc.com
 - swupdate.vray.com
 - vultrobjects.com
 - vx-cdn.com
@@ -4477,6 +4459,7 @@ domain_suffix_set:
 - x.com
 - x-art.com
 - xamarin.com
+- xbooru.com
 - xbox.com
 - xbox360.com
 - xboxab.com
@@ -4510,6 +4493,7 @@ domain_suffix_set:
 - xoom-experience.com
 - xoomcom.com
 - xpressunblock.com
+- xvideo-jp.com
 - xvideos.com
 - xvideos-cdn.com
 - xxx.com
@@ -4607,6 +4591,7 @@ domain_suffix_set:
 - dodi-repacks.download
 - kali.download
 - nitro.download
+- ec
 - edu
 - ee
 - stackoverflow.email
@@ -4640,7 +4625,10 @@ domain_suffix_set:
 - sr.ht
 - cthd.icu
 - id
+- ie
+- il
 - elgoog.im
+- ff.im
 - imo.im
 - monica.im
 - npm.im
@@ -4848,8 +4836,7 @@ domain_suffix_set:
 - local.webcontainer.io
 - wixstudio.io
 - xoom.io
-- debian.petiak.ir
-- ubuntu.petiak.ir
+- ir
 - is
 - it
 - jp
@@ -4915,6 +4902,7 @@ domain_suffix_set:
 - hayabusa.media
 - smashing.media
 - hsex.men
+- mg
 - ipfs.telos.miami
 - static.microsoft
 - mil
@@ -4958,6 +4946,7 @@ domain_suffix_set:
 - prod.public.atl-paas.net
 - atlassian.net
 - cdn.prod.atlassian-dev.net
+- av-wiki.net
 - azure-mobile.net
 - edgestorewebcdn.azureedge.net
 - azurestaticapps.net
@@ -5164,6 +5153,7 @@ domain_suffix_set:
 - ospray.net
 - mirrors.ovh.net
 - paily.net
+- pawoo.net
 - php.net
 - pinkcore.net
 - pixelcdn.net
@@ -5191,6 +5181,7 @@ domain_suffix_set:
 - riotcdn.net
 - riotgames.net
 - ripe.net
+- riseup.net
 - rocksdb.net
 - rsb.net
 - rspcdn.net
@@ -5217,6 +5208,7 @@ domain_suffix_set:
 - sstatic.net
 - stackoverflow.net
 - stacksnippets.net
+- staticstack.net
 - staticworld.net
 - steamserver.net
 - steamunlocked.net
@@ -5245,6 +5237,7 @@ domain_suffix_set:
 - ubuntu.net
 - uicdn.net
 - mirrors.uk2.net
+- underhentai.net
 - ungrounded.net
 - v-cdn.net
 - venmo.net
@@ -5369,6 +5362,7 @@ domain_suffix_set:
 - flowtype.org
 - foundationdb.org
 - freebsd.org
+- freecodecamp.org
 - freedownloadmanager.org
 - frescolib.org
 - ipfs.genenetwork.org
@@ -5461,6 +5455,7 @@ domain_suffix_set:
 - openfreemap.org
 - opengraphprotocol.org
 - openjsf.org
+- openlibrary.org
 - openresty.org
 - openssl.org
 - openstreetmap.org
@@ -5604,6 +5599,7 @@ domain_suffix_set:
 - generated.photos
 - picsum.photos
 - am-cdn.pics
+- pk
 - pl
 - playstation
 - pm
@@ -5615,10 +5611,8 @@ domain_suffix_set:
 - ubuntumirror.dei.uc.pt
 - re
 - rip
-- mirror.linux.ro
-- mirrors.linux.ro
-- repo.jing.rocks
-- ipfs.kavin.rocks
+- ro
+- rocks
 - rs
 - ru
 - bundle.run

@@ -1,4 +1,4 @@
-# Total: 4122 rules
+# Total: 4144 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -371,6 +371,7 @@ domain_set:
 - blade-public-static.blade-group.com
 - cms.blavity.com
 - images.blockscan.com
+- cdn.blogarama.com
 - static.registration.bluehost.com
 - cdn-www.bluestacks.com
 - assets.bnidx.com
@@ -503,6 +504,7 @@ domain_set:
 - cdn.codeblackbelt.com
 - static-assets.codecademy.com
 - st.codeforces.com
+- assets.codeguru.com
 - cloudfront.codeproject.com
 - assets.coinbase.com
 - dynamic-assets.coinbase.com
@@ -734,6 +736,10 @@ domain_set:
 - hp.foxnews.com
 - static.foxnews.com
 - badges.frapsoft.com
+- s1.freebeacon.com
+- s2.freebeacon.com
+- s3.freebeacon.com
+- s4.freebeacon.com
 - cdn.freebiesupply.com
 - images.freeimages.com
 - static.freeimages.com
@@ -883,8 +889,14 @@ domain_set:
 - cdn.hackernoon.com
 - cf.hamreus.com
 - eu.hamreus.com
+- eu1.hamreus.com
+- eu2.hamreus.com
+- eu3.hamreus.com
 - i.hamreus.com
 - us.hamreus.com
+- us1.hamreus.com
+- us2.hamreus.com
+- us3.hamreus.com
 - rest.happierleads.com
 - public.hare200.com
 - cdn.hashnode.com
@@ -1166,6 +1178,7 @@ domain_set:
 - cdn.mewe.com
 - public-img.mewe.com
 - image.mgstage.com
+- cf.mhgui.com
 - ajax.microsoft.com
 - cdn-dynmedia-1.microsoft.com
 - cdn.create.microsoft.com
@@ -1620,6 +1633,7 @@ domain_set:
 - static.spankbang.com
 - img.sparemin.com
 - img.sparknotes.com
+- images.spectrumnews1.com
 - c.speedtestcustom.com
 - logos.speedtestcustom.com
 - assets.speedvitals.com
@@ -1869,6 +1883,7 @@ domain_set:
 - assets.volvo.com
 - platform.vox.com
 - apps.voxmedia.com
+- swan.prod.merch.vpsvc.com
 - mcdn.vrporn.com
 - mcdnds.vrporn.com
 - mcdns.vrporn.com
@@ -1934,6 +1949,7 @@ domain_set:
 - website-prod.cache.wpscdn.com
 - pbc.wsj.com
 - cdn.scripts.wtwhmedia.com
+- img.xbooru.com
 - assets-www.xbox.com
 - assets.play.xbox.com
 - dlassets-ssl.xboxlive.com
@@ -2531,6 +2547,7 @@ domain_set:
 - cdn.mcauto-images-production.sendgrid.net
 - cdn.softswiss.net
 - fonts.sony.net
+- cdn.pi.spectrum.net
 - sourcemaps.squarespace.net
 - blacklist.tampermonkey.net
 - assets.tokopedia.net
@@ -2586,6 +2603,7 @@ domain_set:
 - assets.matters.news
 - assets-next.matters.news
 - statics-prod.mirrordaily.news
+- media.raven.news
 - image.dooo.ng
 - cdn.episode.ninja
 - images.weserv.nl
@@ -2670,6 +2688,7 @@ domain_set:
 - videos.ohentai.org
 - open-vsx.org
 - tiles.openfreemap.org
+- covers.openlibrary.org
 - static.opensuse.org
 - cdn.pagic.org
 - jaws.pbs.org
@@ -3510,6 +3529,7 @@ domain_suffix_set:
 - stripeassets.com
 - stripecdn.com
 - stripst.com
+- strpssts-ana.com
 - strpst.com
 - stylexjs.com
 - substackcdn.com
@@ -3573,6 +3593,7 @@ domain_suffix_set:
 - vimeocdn.com
 - tunnels.api.visualstudio.com
 - vox-cdn.com
+- cloudinary.vpsvc.com
 - vx-cdn.com
 - w-corp-staticblitz.com
 - w-credentialless-staticblitz.com
@@ -3881,6 +3902,7 @@ domain_suffix_set:
 - smassets.net
 - smmallcdn.net
 - sstatic.net
+- staticstack.net
 - staticworld.net
 - tapecontent.net
 - tildacdn.net

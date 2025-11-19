@@ -1,4 +1,4 @@
-# Total: 1660 rules
+# Total: 1689 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -46,11 +46,15 @@ domain_suffix_set:
 - signal.art
 - at
 - au
+- fish.audio
 - aws
 - be
+- bet
+- bg
 - line.biz
 - fury.blog
 - github.blog
+- micro.blog
 - stackmod.blog
 - stackoverflow.blog
 - buck.build
@@ -292,6 +296,7 @@ domain_suffix_set:
 - dnsleaktest.com
 - docker.com
 - dockerstatic.com
+- dockerstatus.com
 - docsend.com
 - doujins.com
 - downdetector.com
@@ -354,6 +359,7 @@ domain_suffix_set:
 - framercanvas.com
 - framerstatic.com
 - framerusercontent.com
+- freebeacon.com
 - freepik.com
 - ft.com
 - fuq.com
@@ -437,6 +443,7 @@ domain_suffix_set:
 - homedepot.com
 - hostloc.com
 - hsforms.com
+- html5rocks.com
 - hubspotlinksstarter.com
 - huffpost.com
 - huobi.com
@@ -475,6 +482,7 @@ domain_suffix_set:
 - jdbstatic.com
 - jetbrains.com
 - jfrog.com
+- jiji.com
 - jirachecklist.com
 - jotform.com
 - jquery.com
@@ -493,6 +501,7 @@ domain_suffix_set:
 - ko-fi.com
 - kobo.com
 - komoot.com
+- konachan.com
 - kraken.com
 - krakenjs.com
 - kucoin.com
@@ -522,10 +531,12 @@ domain_suffix_set:
 - macruby.com
 - macupdate.com
 - madewithcode.com
+- mailchimp.com
 - makeitopen.com
 - makerworld.com
 - malwarebytes.com
 - manhuabika.com
+- manhuagui.com
 - mapbox.com
 - maptiler.com
 - mb3admin.com
@@ -606,6 +617,7 @@ domain_suffix_set:
 - npmjs.com
 - nsfwr34.com
 - nssurge.com
+- ny1.com
 - nypost.com
 - nyt.com
 - nytco.com
@@ -903,6 +915,7 @@ domain_suffix_set:
 - x.com
 - x-art.com
 - xamarin.com
+- xbooru.com
 - xdaforums.com
 - xfinity.com
 - xgroovy.com
@@ -917,6 +930,7 @@ domain_suffix_set:
 - xoom-experience.com
 - xoomcom.com
 - xpressunblock.com
+- xvideo-jp.com
 - xvideos.com
 - xvideos-cdn.com
 - xxx.com
@@ -967,6 +981,7 @@ domain_suffix_set:
 - zenn.dev
 - dk
 - linux.do
+- ec
 - edu
 - ee
 - stackoverflow.email
@@ -993,7 +1008,10 @@ domain_suffix_set:
 - hk
 - sr.ht
 - id
+- ie
+- il
 - elgoog.im
+- ff.im
 - imo.im
 - monica.im
 - npm.im
@@ -1125,6 +1143,7 @@ domain_suffix_set:
 - wapm.io
 - wasmer.io
 - xoom.io
+- ir
 - is
 - it
 - jp
@@ -1162,6 +1181,7 @@ domain_suffix_set:
 - github.media
 - smashing.media
 - hsex.men
+- mg
 - mil
 - mn
 - bangumi.moe
@@ -1184,6 +1204,7 @@ domain_suffix_set:
 - arc.net
 - dnsleak.asn247.net
 - atlassian.net
+- av-wiki.net
 - azure-mobile.net
 - azurewebsites.net
 - badgen.net
@@ -1267,6 +1288,7 @@ domain_suffix_set:
 - osmand.net
 - ospray.net
 - paily.net
+- pawoo.net
 - php.net
 - pixelscan.net
 - pixiv.net
@@ -1280,6 +1302,7 @@ domain_suffix_set:
 - researchkit.net
 - reutersmedia.net
 - ripe.net
+- riseup.net
 - rocksdb.net
 - sankie.net
 - sc-cdn.net
@@ -1308,6 +1331,7 @@ domain_suffix_set:
 - trustpilot.net
 - turbobit.net
 - ubuntu.net
+- underhentai.net
 - venmo.net
 - vesselfinder.net
 - visualstudio.net
@@ -1398,6 +1422,7 @@ domain_suffix_set:
 - flowtype.org
 - foundationdb.org
 - freebsd.org
+- freecodecamp.org
 - freedownloadmanager.org
 - frescolib.org
 - gentoo.org
@@ -1470,6 +1495,7 @@ domain_suffix_set:
 - openfreemap.org
 - opengraphprotocol.org
 - openjsf.org
+- openlibrary.org
 - openresty.org
 - openssl.org
 - openstreetmap.org
@@ -1583,6 +1609,7 @@ domain_suffix_set:
 - pe
 - ph
 - generated.photos
+- pk
 - pl
 - pm
 - betterdisplay.pro
@@ -1590,6 +1617,8 @@ domain_suffix_set:
 - ps
 - re
 - rip
+- ro
+- rocks
 - rs
 - ru
 - esm.run
