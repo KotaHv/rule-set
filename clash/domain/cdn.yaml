@@ -1,4 +1,4 @@
-# Total: 4065 rules
+# Total: 4068 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1297,6 +1297,7 @@
 - 'i.niupic.com'
 - 'media.nngroup.com'
 - 'cms-assets.nodecraft.com'
+- 'cdn.nodeimage.com'
 - 'edge.nodeseek.com'
 - 'cdn.northropgrumman.com'
 - 'connect.nosto.com'
@@ -3145,6 +3146,7 @@
 - '+.dellcdn.com'
 - '+.denopkg.com'
 - '+.descopecdn.com'
+- '+.digikeyassets.com'
 - '+.assets.digitalocean.com'
 - '+.dilcdn.com'
 - '+.cdn.discordapp.com'
@@ -3814,6 +3816,7 @@
 - '+.ctfassets.net'
 - '+.cdn.cwinfo.net'
 - '+.daumcdn.net'
+- '+.dc-telemetry.net'
 - '+.directupload.net'
 - '+.divio-media.net'
 - '+.dlunar.net'

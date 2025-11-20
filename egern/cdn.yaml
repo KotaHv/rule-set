@@ -1,4 +1,4 @@
-# Total: 4144 rules
+# Total: 4147 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1298,6 +1298,7 @@ domain_set:
 - i.niupic.com
 - media.nngroup.com
 - cms-assets.nodecraft.com
+- cdn.nodeimage.com
 - edge.nodeseek.com
 - cdn.northropgrumman.com
 - connect.nosto.com
@@ -3147,6 +3148,7 @@ domain_suffix_set:
 - dellcdn.com
 - denopkg.com
 - descopecdn.com
+- digikeyassets.com
 - assets.digitalocean.com
 - dilcdn.com
 - cdn.discordapp.com
@@ -3816,6 +3818,7 @@ domain_suffix_set:
 - ctfassets.net
 - cdn.cwinfo.net
 - daumcdn.net
+- dc-telemetry.net
 - directupload.net
 - divio-media.net
 - dlunar.net

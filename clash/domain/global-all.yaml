@@ -1,4 +1,4 @@
-# Total: 5719 rules
+# Total: 5722 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1057,6 +1057,7 @@
 - 'i.niupic.com'
 - 'media.nngroup.com'
 - 'cms-assets.nodecraft.com'
+- 'cdn.nodeimage.com'
 - 'mirror.nodesdirect.com'
 - 'cdn.northropgrumman.com'
 - 'connect.nosto.com'
@@ -3025,6 +3026,7 @@
 - '+.dicela.com'
 - '+.dictionary.com'
 - '+.diddykongracing.com'
+- '+.digikeyassets.com'
 - '+.digitalocean.com'
 - '+.digitaloceanspaces.com'
 - '+.dilcdn.com'
@@ -4987,6 +4989,7 @@
 - '+.daoc.net'
 - '+.daum.net'
 - '+.daumcdn.net'
+- '+.dc-telemetry.net'
 - '+.deviantart.net'
 - '+.devopsassessment.net'
 - '+.diagrams.net'
