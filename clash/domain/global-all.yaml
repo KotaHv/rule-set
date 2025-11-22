@@ -1,4 +1,4 @@
-# Total: 5722 rules
+# Total: 5724 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -271,6 +271,7 @@
 - 'photos5.appleinsider.com'
 - 'cdn.apponic.com'
 - 'img.apponic.com'
+- 'server.arcgisonline.com'
 - 'images.arigatotravel.com'
 - 'github-api.arkoselabs.com'
 - 'cdn.designsystem.arm.com'
@@ -2850,6 +2851,7 @@
 - '+.bloomberg.com'
 - '+.blz-contentstack.com'
 - '+.bnbstatic.com'
+- '+.storage.boilerplate.com'
 - '+.boombeach.com'
 - '+.boomio-cdn.com'
 - '+.bootstrapcdn.com'

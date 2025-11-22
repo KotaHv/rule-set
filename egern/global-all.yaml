@@ -1,4 +1,4 @@
-# Total: 5849 rules
+# Total: 5851 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -272,6 +272,7 @@ domain_set:
 - photos5.appleinsider.com
 - cdn.apponic.com
 - img.apponic.com
+- server.arcgisonline.com
 - images.arigatotravel.com
 - github-api.arkoselabs.com
 - cdn.designsystem.arm.com
@@ -2852,6 +2853,7 @@ domain_suffix_set:
 - bloomberg.com
 - blz-contentstack.com
 - bnbstatic.com
+- storage.boilerplate.com
 - boombeach.com
 - boomio-cdn.com
 - bootstrapcdn.com

@@ -1,4 +1,4 @@
-# Total: 4068 rules
+# Total: 4071 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -267,6 +267,7 @@
 - 'cdn6.aptoide.com'
 - 'images.en.aptoide.com'
 - 'ws2-cache.aptoide.com'
+- 'server.arcgisonline.com'
 - 'images.arigatotravel.com'
 - 'cdn.designsystem.arm.com'
 - 'agi.armorgames.com'
@@ -1589,6 +1590,7 @@
 - 'cdn.shoplineapp.com'
 - 'img.shoplineapp.com'
 - 'cdn.shoppinggives.com'
+- 'api-cdn.shutterstock.com'
 - 'image.shutterstock.com'
 - 'data.cdn.siemens.com'
 - 'cache.industry.siemens.com'
@@ -3083,6 +3085,7 @@
 - '+.blogblog.com'
 - '+.bp.blogspot.com'
 - '+.bnbstatic.com'
+- '+.storage.boilerplate.com'
 - '+.boomio-cdn.com'
 - '+.bootstrapcdn.com'
 - '+.botsrv2.com'
