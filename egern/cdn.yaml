@@ -1,4 +1,4 @@
-# Total: 4150 rules
+# Total: 4152 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -705,6 +705,7 @@ domain_set:
 - detectportal.firefox.com
 - cdn-icons-png.flaticon.com
 - cdn-share-sprites.flaticon.com
+- cdn-teams-slug.flaticon.com
 - cdn-uicons.flaticon.com
 - media.flaticon.com
 - embedr.flickr.com
@@ -3356,6 +3357,7 @@ domain_suffix_set:
 - mfcimg.com
 - smartscreen.microsoft.com
 - static-prod-web.miniclip.com
+- mintcdn.com
 - video.missav.com
 - misskeyusercontent.com
 - mktgcdn.com

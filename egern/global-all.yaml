@@ -1,4 +1,4 @@
-# Total: 5851 rules
+# Total: 5853 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -613,6 +613,7 @@ domain_set:
 - rsync.fjordos.com
 - cdn-icons-png.flaticon.com
 - cdn-share-sprites.flaticon.com
+- cdn-teams-slug.flaticon.com
 - cdn-uicons.flaticon.com
 - media.flaticon.com
 - static-assets-web.flixcart.com
@@ -3622,6 +3623,7 @@ domain_suffix_set:
 - minecraftservices.com
 - minecraftshop.com
 - miniclip.com
+- mintcdn.com
 - mirrorsedge.com
 - mirrorsedge2.com
 - mirrorsedge2d.com
