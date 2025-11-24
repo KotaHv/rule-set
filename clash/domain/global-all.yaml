@@ -1,4 +1,4 @@
-# Total: 5726 rules
+# Total: 5727 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2499,6 +2499,7 @@
 - '+.ai'
 - '+.mirror.gnc.am'
 - '+.instagr.am'
+- '+.android'
 - '+.ajay.app'
 - '+.bsky.app'
 - '+.csb.app'

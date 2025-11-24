@@ -1,4 +1,4 @@
-# Total: 510 rules
+# Total: 511 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -43,6 +43,7 @@ DOMAIN-SUFFIX,github.ai
 DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,jetbrains.ai
 DOMAIN-SUFFIX,openvino.ai
+DOMAIN-SUFFIX,android
 DOMAIN-SUFFIX,ecr.aws
 DOMAIN-SUFFIX,fury.blog
 DOMAIN-SUFFIX,github.blog

@@ -1,4 +1,4 @@
-# Total: 512 rules
+# Total: 513 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -46,6 +46,7 @@ domain_suffix_set:
 - grazie.ai
 - jetbrains.ai
 - openvino.ai
+- android
 - ecr.aws
 - fury.blog
 - github.blog

@@ -1,4 +1,4 @@
-# Total: 510 rules
+# Total: 511 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -44,6 +44,7 @@
 - '+.grazie.ai'
 - '+.jetbrains.ai'
 - '+.openvino.ai'
+- '+.android'
 - '+.ecr.aws'
 - '+.fury.blog'
 - '+.github.blog'
