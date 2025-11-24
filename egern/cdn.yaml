@@ -1,4 +1,4 @@
-# Total: 4152 rules
+# Total: 4153 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -3850,6 +3850,7 @@ domain_suffix_set:
 - hs-scripts.net
 - hsappstatic.net
 - hscollectedforms.net
+- hsstatic.net
 - cdn2.hubspot.net
 - f.hubspotemail.net
 - f.hubspotfree.net

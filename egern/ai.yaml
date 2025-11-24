@@ -1,4 +1,4 @@
-# Total: 43 rules
+# Total: 44 rules
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
@@ -24,6 +24,7 @@ domain_suffix_set:
 - anthropic.com
 - chat.com
 - chatgpt.com
+- claude.com
 - deepmind.com
 - aistudio.google.com
 - bard.google.com

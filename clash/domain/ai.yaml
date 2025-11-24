@@ -1,4 +1,4 @@
-# Total: 41 rules
+# Total: 42 rules
 'payload':
 - 'api.jetbrains.ai'
 - 'gateway.ai.cloudflare.com'
@@ -22,6 +22,7 @@
 - '+.anthropic.com'
 - '+.chat.com'
 - '+.chatgpt.com'
+- '+.claude.com'
 - '+.deepmind.com'
 - '+.aistudio.google.com'
 - '+.bard.google.com'

@@ -1,4 +1,4 @@
-# Total: 43 rules
+# Total: 44 rules
 DOMAIN,api.jetbrains.ai
 DOMAIN,gateway.ai.cloudflare.com
 DOMAIN,api.github.com
@@ -21,6 +21,7 @@ DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,bard.google.com

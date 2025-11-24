@@ -1,4 +1,4 @@
-# Total: 5727 rules
+# Total: 5728 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -5063,6 +5063,7 @@
 - '+.hsappstatic.net'
 - '+.hscollectedforms.net'
 - '+.hsforms.net'
+- '+.hsstatic.net'
 - '+.cdn2.hubspot.net'
 - '+.f.hubspotemail.net'
 - '+.f.hubspotfree.net'

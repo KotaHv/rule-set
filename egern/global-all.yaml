@@ -1,4 +1,4 @@
-# Total: 5854 rules
+# Total: 5855 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -5065,6 +5065,7 @@ domain_suffix_set:
 - hsappstatic.net
 - hscollectedforms.net
 - hsforms.net
+- hsstatic.net
 - cdn2.hubspot.net
 - f.hubspotemail.net
 - f.hubspotfree.net
