@@ -1,4 +1,4 @@
-# Total: 88952 rules
+# Total: 89005 rules
 DOMAIN,api.cortana.ai
 DOMAIN,api.ts.feedback.71.am
 DOMAIN,msga.71.am
@@ -103,6 +103,7 @@ DOMAIN,ad.cyapi.cn
 DOMAIN,hwpub-s01-drcn.cloud.dbankcloud.cn
 DOMAIN,grs.dbankcloud.cn
 DOMAIN,recommend-drcn.hms.dbankcloud.cn
+DOMAIN,httpdns.platform.dbankcloud.cn
 DOMAIN,httpdns-browser.platform.dbankcloud.cn
 DOMAIN,rms-drcn.platform.dbankcloud.cn
 DOMAIN,weather-community-drcn.weather.dbankcloud.cn
@@ -454,6 +455,8 @@ DOMAIN,ping.ifixit.com
 DOMAIN,ads.ign.com
 DOMAIN,analytics.immersivetranslate.com
 DOMAIN,analytics.infomaniak.com
+DOMAIN,apidns.kwd.inkuai.com
+DOMAIN,apidns-js.kwd.inkuai.com
 DOMAIN,httpdns.kwd.inkuai.com
 DOMAIN,avn.innity.com
 DOMAIN,cast.innity.com
@@ -465,6 +468,7 @@ DOMAIN,i.ipinyou.com
 DOMAIN,stats.ipinyou.com
 DOMAIN,vt.ipinyou.com
 DOMAIN,puma.api.iqiyi.com
+DOMAIN,dns.iqiyi.com
 DOMAIN,doh.iqiyi.com
 DOMAIN,static.g.iqiyi.com
 DOMAIN,gamecenter.iqiyi.com
@@ -481,6 +485,7 @@ DOMAIN,paopao.iqiyi.com
 DOMAIN,paopao-monitor.iqiyi.com
 DOMAIN,cm.passport.iqiyi.com
 DOMAIN,puma-api.iqiyi.com
+DOMAIN,dns.qiyipic.iqiyi.com
 DOMAIN,nl.rcd.iqiyi.com
 DOMAIN,emoticon.sns.iqiyi.com
 DOMAIN,tracker.sns.iqiyi.com
@@ -667,6 +672,7 @@ DOMAIN,as.aplus.pptv.com
 DOMAIN,jp.as.pptv.com
 DOMAIN,static.g.pptv.com
 DOMAIN,tj.g.pptv.com
+DOMAIN,dns2.q2cdn.com
 DOMAIN,top.h.qhimg.com
 DOMAIN,news.qhstatic.com
 DOMAIN,hs.qhupdate.com
@@ -1020,10 +1026,6 @@ DOMAIN,tvupgrade.yunos.com
 DOMAIN,uuidapi.yunos.com
 DOMAIN,httpdns.yunxindns.com
 DOMAIN,dsp-ad.yy.com
-DOMAIN,httpdns.gslb.yy.com
-DOMAIN,httpdns-v6.gslb.yy.com
-DOMAIN,union-httpdns.gslb.yy.com
-DOMAIN,yyapp-httpdns.gslb.yy.com
 DOMAIN,splash.yy.com
 DOMAIN,adapi.yynetwk.com
 DOMAIN,mqtt.zhihu.com
@@ -7885,6 +7887,7 @@ DOMAIN-SUFFIX,fbi34mfje1hjohq6.cfd
 DOMAIN-SUFFIX,fbjyovv8t2i7ltkpx.cfd
 DOMAIN-SUFFIX,feuagescowing.cfd
 DOMAIN-SUFFIX,fgq6et26l8tyq5.cfd
+DOMAIN-SUFFIX,fidibusbezzlerefaces.cfd
 DOMAIN-SUFFIX,filchesminium.cfd
 DOMAIN-SUFFIX,fiutv8rhxlijtx98g.cfd
 DOMAIN-SUFFIX,fkemyu2j61pkqy3yf.cfd
@@ -7928,6 +7931,7 @@ DOMAIN-SUFFIX,hrvvqcnilgti34uhxcgcigcn33.cfd
 DOMAIN-SUFFIX,humusfeuding.cfd
 DOMAIN-SUFFIX,i2ij7inr7kbiw8423rwiticev1xbzjo6jxh.cfd
 DOMAIN-SUFFIX,i3ppkm9wjy5zmz79hffp1euclp.cfd
+DOMAIN-SUFFIX,i8gvqybn8q6uwrw.cfd
 DOMAIN-SUFFIX,i95jgmcw3wy2ptj5wcfbzojwkn4.cfd
 DOMAIN-SUFFIX,i9zk5xq49plll2g.cfd
 DOMAIN-SUFFIX,ib1y9etg6xen3ok6frkj6xzr8xu.cfd
@@ -8120,6 +8124,7 @@ DOMAIN-SUFFIX,unawarepozzy.cfd
 DOMAIN-SUFFIX,unflushunsee.cfd
 DOMAIN-SUFFIX,unfoolvenines.cfd
 DOMAIN-SUFFIX,unmoraldisband.cfd
+DOMAIN-SUFFIX,unoptedtapuyan.cfd
 DOMAIN-SUFFIX,up7xj35i2ourcgt36kf12cvqfnmmxkqyxp.cfd
 DOMAIN-SUFFIX,uqngq1bnu125rr8m7elfbybwxon4.cfd
 DOMAIN-SUFFIX,uqpyje44lk2gy3e.cfd
@@ -8821,6 +8826,7 @@ DOMAIN-SUFFIX,noechoinfit.click
 DOMAIN-SUFFIX,o18.click
 DOMAIN-SUFFIX,odinlists.click
 DOMAIN-SUFFIX,osmaniedaimyos.click
+DOMAIN-SUFFIX,outbakecalaber.click
 DOMAIN-SUFFIX,overgunfaailk.click
 DOMAIN-SUFFIX,pargeseloise.click
 DOMAIN-SUFFIX,pavoissamanid.click
@@ -8846,6 +8852,7 @@ DOMAIN-SUFFIX,qhnojvbyxfgcf.click
 DOMAIN-SUFFIX,quickpcfixer.click
 DOMAIN-SUFFIX,quoddedrh.click
 DOMAIN-SUFFIX,rameepoufs.click
+DOMAIN-SUFFIX,rboundpacked.click
 DOMAIN-SUFFIX,reallotpycnia.click
 DOMAIN-SUFFIX,reclineanomura.click
 DOMAIN-SUFFIX,resowsproser.click
@@ -13004,6 +13011,7 @@ DOMAIN-SUFFIX,link-app.agvisorpro.com
 DOMAIN-SUFFIX,link-app-dev.agvisorpro.com
 DOMAIN-SUFFIX,link-app-preprod.agvisorpro.com
 DOMAIN-SUFFIX,link-app-staging.agvisorpro.com
+DOMAIN-SUFFIX,agzzpjnyx.com
 DOMAIN-SUFFIX,ssb.ah499.com
 DOMAIN-SUFFIX,log.ahamo.com
 DOMAIN-SUFFIX,ip186269007.ahcdn.com
@@ -16409,6 +16417,7 @@ DOMAIN-SUFFIX,bhegilut.com
 DOMAIN-SUFFIX,bheirqrol.com
 DOMAIN-SUFFIX,bhelzun.com
 DOMAIN-SUFFIX,metrics.bhgfinancial.com
+DOMAIN-SUFFIX,bhgqghtitr.com
 DOMAIN-SUFFIX,bhhgvedfr.com
 DOMAIN-SUFFIX,bhl401f8g.com
 DOMAIN-SUFFIX,bhohreatz.com
@@ -21808,6 +21817,7 @@ DOMAIN-SUFFIX,op.dbankcloud.com
 DOMAIN-SUFFIX,openlocation-drcn.platform.dbankcloud.com
 DOMAIN-SUFFIX,info.dbbest.com
 DOMAIN-SUFFIX,marketing.dbh-group.com
+DOMAIN-SUFFIX,dbhtyjnfsv.com
 DOMAIN-SUFFIX,ao-marketing.dbiyes.com
 DOMAIN-SUFFIX,dblowthrou.com
 DOMAIN-SUFFIX,dblsgdxfaxre.com
@@ -28977,6 +28987,7 @@ DOMAIN-SUFFIX,a.guzhilin.com
 DOMAIN-SUFFIX,gv0oi9ecji.com
 DOMAIN-SUFFIX,mdws.gvccu.com
 DOMAIN-SUFFIX,gvepgfdjnbk.com
+DOMAIN-SUFFIX,gvertxvxazd.com
 DOMAIN-SUFFIX,gvlwlfilpjaj.com
 DOMAIN-SUFFIX,gvt2.com
 DOMAIN-SUFFIX,gw100-10.com
@@ -30085,6 +30096,7 @@ DOMAIN-SUFFIX,hmphmehfailing.com
 DOMAIN-SUFFIX,stp.hmstrafegoeperformance.com
 DOMAIN-SUFFIX,hmtqtokulp.com
 DOMAIN-SUFFIX,hmxg5mhyx.com
+DOMAIN-SUFFIX,hnetdybpikax.com
 DOMAIN-SUFFIX,online.hnoexpo.com
 DOMAIN-SUFFIX,hnsgpw.com
 DOMAIN-SUFFIX,rcytet.hnsmall.com
@@ -32840,6 +32852,7 @@ DOMAIN-SUFFIX,mfqdo.jpcycles.com
 DOMAIN-SUFFIX,jpgtrk.com
 DOMAIN-SUFFIX,jpjqfhvwny.com
 DOMAIN-SUFFIX,jplmzaksiplng.com
+DOMAIN-SUFFIX,jpmcqouplqkrwh.com
 DOMAIN-SUFFIX,pbstats.jpmorgan.com
 DOMAIN-SUFFIX,metrics.jpmorganfunds.com
 DOMAIN-SUFFIX,jqjfatotsbe.com
@@ -37284,6 +37297,7 @@ DOMAIN-SUFFIX,news.mipim-asia.com
 DOMAIN-SUFFIX,news.mipmarkets.com
 DOMAIN-SUFFIX,news.miptv.com
 DOMAIN-SUFFIX,miqdigital.com
+DOMAIN-SUFFIX,miqoplraxov.com
 DOMAIN-SUFFIX,a8.mira-feel.com
 DOMAIN-SUFFIX,sst.miraaya.com
 DOMAIN-SUFFIX,mirabelanalytics.com
@@ -42743,6 +42757,7 @@ DOMAIN-SUFFIX,pik.pling.com
 DOMAIN-SUFFIX,plinksplanet.com
 DOMAIN-SUFFIX,farm-cn.plista.com
 DOMAIN-SUFFIX,static-cn.plista.com
+DOMAIN-SUFFIX,plmmekjxsqyjsh.com
 DOMAIN-SUFFIX,icon.eu.plmndw.com
 DOMAIN-SUFFIX,track.ploclicktrack.com
 DOMAIN-SUFFIX,plokij1.com
@@ -43154,6 +43169,7 @@ DOMAIN-SUFFIX,my.powur.com
 DOMAIN-SUFFIX,r.powuta.com
 DOMAIN-SUFFIX,counter.powweb.com
 DOMAIN-SUFFIX,t.poyry.com
+DOMAIN-SUFFIX,poysxaeyarmw.com
 DOMAIN-SUFFIX,gtm.ppajetflex.com
 DOMAIN-SUFFIX,soap.ppc4laundry.com
 DOMAIN-SUFFIX,ppcmate.com
@@ -44205,7 +44221,7 @@ DOMAIN-SUFFIX,mdt.qq.com
 DOMAIN-SUFFIX,mpush.qq.com
 DOMAIN-SUFFIX,mtrace.qq.com
 DOMAIN-SUFFIX,monitor.music.qq.com
-DOMAIN-SUFFIX,twns.p2ptun.qq.com
+DOMAIN-SUFFIX,p2ptun.qq.com
 DOMAIN-SUFFIX,pingjs.qq.com
 DOMAIN-SUFFIX,pingma.qq.com
 DOMAIN-SUFFIX,pingtas.qq.com
@@ -45838,6 +45854,7 @@ DOMAIN-SUFFIX,info.rodenhiser.com
 DOMAIN-SUFFIX,sst.rodeodental.com
 DOMAIN-SUFFIX,stats.roderickduenas.com
 DOMAIN-SUFFIX,rodesquad.com
+DOMAIN-SUFFIX,rodlikemortal.com
 DOMAIN-SUFFIX,server.rodrigots.com
 DOMAIN-SUFFIX,roduster.com
 DOMAIN-SUFFIX,gqfoi.roewellness.com
@@ -52037,6 +52054,7 @@ DOMAIN-SUFFIX,tkbo.com
 DOMAIN-SUFFIX,tkfqnkhcktulp.com
 DOMAIN-SUFFIX,tkgpwuuqjrdhu.com
 DOMAIN-SUFFIX,creative.tklivechat.com
+DOMAIN-SUFFIX,tkliwyxp.com
 DOMAIN-SUFFIX,tkrconnector.com
 DOMAIN-SUFFIX,uhqunq.tktimport.com
 DOMAIN-SUFFIX,tkvudnysg.com
@@ -52130,6 +52148,7 @@ DOMAIN-SUFFIX,track.togetherprice.com
 DOMAIN-SUFFIX,sbttlj.togetter.com
 DOMAIN-SUFFIX,toglooman.com
 DOMAIN-SUFFIX,togmoxwnw.com
+DOMAIN-SUFFIX,tognousseegije.com
 DOMAIN-SUFFIX,togothermany.com
 DOMAIN-SUFFIX,adservice.tohsoft.com
 DOMAIN-SUFFIX,load.abc.toilesxxl.com
@@ -54129,6 +54148,7 @@ DOMAIN-SUFFIX,sjanff.v-moda.com
 DOMAIN-SUFFIX,v2cigs.com
 DOMAIN-SUFFIX,ad.v3mh.com
 DOMAIN-SUFFIX,ads.v3mh.com
+DOMAIN-SUFFIX,v3pnvck24.com
 DOMAIN-SUFFIX,v46uj91gh.com
 DOMAIN-SUFFIX,americanos.v4company.com
 DOMAIN-SUFFIX,mediabr.v4company.com
@@ -56943,6 +56963,7 @@ DOMAIN-SUFFIX,xjx11231ts.com
 DOMAIN-SUFFIX,xjx11240ts.com
 DOMAIN-SUFFIX,xjx11241ts.com
 DOMAIN-SUFFIX,xjx11250ts.com
+DOMAIN-SUFFIX,xjx11251ts.com
 DOMAIN-SUFFIX,xknxirdtecs.com
 DOMAIN-SUFFIX,xkpbcd.com
 DOMAIN-SUFFIX,app.xlcenter.com
@@ -66336,6 +66357,7 @@ DOMAIN-SUFFIX,horsingusine.help
 DOMAIN-SUFFIX,hypnoscagoule.help
 DOMAIN-SUFFIX,ickerskuvera.help
 DOMAIN-SUFFIX,intnlintire.help
+DOMAIN-SUFFIX,jellabtravest.help
 DOMAIN-SUFFIX,jettyauryl.help
 DOMAIN-SUFFIX,jilletwagweno.help
 DOMAIN-SUFFIX,jocunoditty.help
@@ -76950,6 +76972,7 @@ DOMAIN-SUFFIX,adsmarch.online
 DOMAIN-SUFFIX,adxapi.online
 DOMAIN-SUFFIX,adxtag.online
 DOMAIN-SUFFIX,aeiptbtyknklq.online
+DOMAIN-SUFFIX,aelyjabjzxcrg.online
 DOMAIN-SUFFIX,tr.email.aeroexpo.online
 DOMAIN-SUFFIX,afmfaaoswjfdl.online
 DOMAIN-SUFFIX,stape.agendacheia.online
@@ -77003,6 +77026,7 @@ DOMAIN-SUFFIX,ayjhwszmzqsxv.online
 DOMAIN-SUFFIX,ayoqplihqjpvv.online
 DOMAIN-SUFFIX,azwcgilcgsveu.online
 DOMAIN-SUFFIX,bacrtcqhpkmbp.online
+DOMAIN-SUFFIX,baqczoryagbvi.online
 DOMAIN-SUFFIX,bboqtryjpdndp.online
 DOMAIN-SUFFIX,bczmrdfjkesgf.online
 DOMAIN-SUFFIX,bestcleaner.online
@@ -77042,6 +77066,7 @@ DOMAIN-SUFFIX,clintlex-d.online
 DOMAIN-SUFFIX,clwiyvjfjlwva.online
 DOMAIN-SUFFIX,cmbqnjwjyqzvv.online
 DOMAIN-SUFFIX,cmdtubyfwosoa.online
+DOMAIN-SUFFIX,cnrsyxxkcjlor.online
 DOMAIN-SUFFIX,api.comboplay.online
 DOMAIN-SUFFIX,s.commissie.online
 DOMAIN-SUFFIX,lp.comosersaudavel.online
@@ -77159,6 +77184,7 @@ DOMAIN-SUFFIX,hnozowvjowsgw.online
 DOMAIN-SUFFIX,gtm.homemdeverdade.online
 DOMAIN-SUFFIX,hpdjwvrkacvvv.online
 DOMAIN-SUFFIX,hpilzison-r.online
+DOMAIN-SUFFIX,hpixajguwomwn.online
 DOMAIN-SUFFIX,htwyrncutjxzf.online
 DOMAIN-SUFFIX,partner.hubnu.online
 DOMAIN-SUFFIX,hvtsiigtowhzm.online
@@ -77259,6 +77285,7 @@ DOMAIN-SUFFIX,logicalmind.online
 DOMAIN-SUFFIX,lopwzmrujomxm.online
 DOMAIN-SUFFIX,lqudxquypbsvl.online
 DOMAIN-SUFFIX,lrvttzvsdgywx.online
+DOMAIN-SUFFIX,lscudygcxiqnn.online
 DOMAIN-SUFFIX,lsykbtaljztxr.online
 DOMAIN-SUFFIX,api.lumvixautomacao.online
 DOMAIN-SUFFIX,lupmsbacuqlwm.online
@@ -77307,6 +77334,7 @@ DOMAIN-SUFFIX,app.nalogi.online
 DOMAIN-SUFFIX,nt.naturecorehealth.online
 DOMAIN-SUFFIX,nbnojxraxpaub.online
 DOMAIN-SUFFIX,nbrwkwvgiafpk.online
+DOMAIN-SUFFIX,neztlwbosrksr.online
 DOMAIN-SUFFIX,ngcluster-a.online
 DOMAIN-SUFFIX,ngjemhyhqlwil.online
 DOMAIN-SUFFIX,nivrdypzuecnd.online
@@ -79554,6 +79582,7 @@ DOMAIN-SUFFIX,judicious-being.pro
 DOMAIN-SUFFIX,jumbo-insurance.pro
 DOMAIN-SUFFIX,just-news.pro
 DOMAIN-SUFFIX,stat.khanate.pro
+DOMAIN-SUFFIX,kindhearted-member.pro
 DOMAIN-SUFFIX,kindhearted-side.pro
 DOMAIN-SUFFIX,pxl.knam.pro
 DOMAIN-SUFFIX,knobby-classic.pro
@@ -80016,6 +80045,7 @@ DOMAIN-SUFFIX,onagracorrals.qpon
 DOMAIN-SUFFIX,onagrifoussa.qpon
 DOMAIN-SUFFIX,orbitarsnoop.qpon
 DOMAIN-SUFFIX,peinmanto.qpon
+DOMAIN-SUFFIX,peronesutoria.qpon
 DOMAIN-SUFFIX,peugeotenlock.qpon
 DOMAIN-SUFFIX,phecdacushier.qpon
 DOMAIN-SUFFIX,philiculitis.qpon
@@ -80139,6 +80169,7 @@ DOMAIN-SUFFIX,6hptpq6butq5jbn.rest
 DOMAIN-SUFFIX,6im21hxi9gv6wvpenkp.rest
 DOMAIN-SUFFIX,6l5n7o51okcqm4.rest
 DOMAIN-SUFFIX,6r62of82koce9kxubykknfnfj.rest
+DOMAIN-SUFFIX,6u3tyip7l4tqvzh6ec7i1xfjq.rest
 DOMAIN-SUFFIX,6zflwz8p8q15wbf9h.rest
 DOMAIN-SUFFIX,74kxnn22e2km3w.rest
 DOMAIN-SUFFIX,7bhyymw4ebrm2c7fwplxv8p.rest
@@ -80283,6 +80314,7 @@ DOMAIN-SUFFIX,iq6y1kfqcnmnvehnhzuftm3uey8klzbhhgwii.rest
 DOMAIN-SUFFIX,ixtzjbifle28hpku.rest
 DOMAIN-SUFFIX,j3m5wpxbvtqpty8mx2kmh6ft9kuyww5h3h7z.rest
 DOMAIN-SUFFIX,j6ibkoc9l9ff68pqm2t2lfr1659.rest
+DOMAIN-SUFFIX,jaglessberendo.rest
 DOMAIN-SUFFIX,jalapswaganda.rest
 DOMAIN-SUFFIX,jantquintet.rest
 DOMAIN-SUFFIX,jobbetkatik.rest
@@ -80330,6 +80362,7 @@ DOMAIN-SUFFIX,moggedtilaka.rest
 DOMAIN-SUFFIX,montanesunland.rest
 DOMAIN-SUFFIX,moocherflaps.rest
 DOMAIN-SUFFIX,moonerycinched.rest
+DOMAIN-SUFFIX,moralessuther.rest
 DOMAIN-SUFFIX,muringoppida.rest
 DOMAIN-SUFFIX,muscattepanec.rest
 DOMAIN-SUFFIX,nfzgytorkj9g7pwz2f3cwubvhtk.rest
@@ -80396,6 +80429,7 @@ DOMAIN-SUFFIX,t55yjgbbp4r5i4.rest
 DOMAIN-SUFFIX,talonedveldman.rest
 DOMAIN-SUFFIX,teddingupsun.rest
 DOMAIN-SUFFIX,thorpdetract.rest
+DOMAIN-SUFFIX,thowhr.rest
 DOMAIN-SUFFIX,tillysices.rest
 DOMAIN-SUFFIX,tonnmaximon.rest
 DOMAIN-SUFFIX,tossutrhinion.rest
@@ -82396,6 +82430,7 @@ DOMAIN-SUFFIX,fycppnvbtqoyp.site
 DOMAIN-SUFFIX,fydhxqfmuiuza.site
 DOMAIN-SUFFIX,fyewrocgieeog.site
 DOMAIN-SUFFIX,fynil.site
+DOMAIN-SUFFIX,gaflphlwqqhch.site
 DOMAIN-SUFFIX,galrnswqwqlik.site
 DOMAIN-SUFFIX,gatnzlayrscdc.site
 DOMAIN-SUFFIX,gbblpbibctqex.site
@@ -82405,6 +82440,7 @@ DOMAIN-SUFFIX,gbzxgadljursj.site
 DOMAIN-SUFFIX,gcnwsapozwpgv.site
 DOMAIN-SUFFIX,gctolasgflhnc.site
 DOMAIN-SUFFIX,gdolghljsbysz.site
+DOMAIN-SUFFIX,gegqyfewpclyb.site
 DOMAIN-SUFFIX,tag.gersonkawa.site
 DOMAIN-SUFFIX,gevfbkxymoois.site
 DOMAIN-SUFFIX,gfspbekkvtech.site
@@ -82769,6 +82805,7 @@ DOMAIN-SUFFIX,vmhrqjvddhnwp.site
 DOMAIN-SUFFIX,vmktjnikltwjm.site
 DOMAIN-SUFFIX,vmngxjiczmmzm.site
 DOMAIN-SUFFIX,vmxneqttwxhcv.site
+DOMAIN-SUFFIX,vqzoqqnjolnbl.site
 DOMAIN-SUFFIX,vrnfgjkurfxcl.site
 DOMAIN-SUFFIX,vsofglbfeiewy.site
 DOMAIN-SUFFIX,vtuowmzjyyavc.site
@@ -82790,6 +82827,7 @@ DOMAIN-SUFFIX,wxlatgcemmkkv.site
 DOMAIN-SUFFIX,wzvthohdheobm.site
 DOMAIN-SUFFIX,xafrpqyhbpboe.site
 DOMAIN-SUFFIX,xbrvpsrrklbya.site
+DOMAIN-SUFFIX,xcqfaclqifemm.site
 DOMAIN-SUFFIX,xdisplay.site
 DOMAIN-SUFFIX,xdyxzdkconsev.site
 DOMAIN-SUFFIX,xeuesswygmuso.site
@@ -83250,6 +83288,7 @@ DOMAIN-SUFFIX,grsfjulsqrvdg.space
 DOMAIN-SUFFIX,gscftqryahymh.space
 DOMAIN-SUFFIX,gsedkytitvtsp.space
 DOMAIN-SUFFIX,gwrsyyrghwnuo.space
+DOMAIN-SUFFIX,gzqfpkponqief.space
 DOMAIN-SUFFIX,hboylaaafqqwl.space
 DOMAIN-SUFFIX,hbxpjlbmhffda.space
 DOMAIN-SUFFIX,hcknzbetfacar.space
@@ -83279,6 +83318,7 @@ DOMAIN-SUFFIX,igcvczotebzhr.space
 DOMAIN-SUFFIX,igvnifgscilia.space
 DOMAIN-SUFFIX,ihaawwkyyicvs.space
 DOMAIN-SUFFIX,ijfilqxkgrchg.space
+DOMAIN-SUFFIX,iklzkvvbogjsi.space
 DOMAIN-SUFFIX,imjprkvybgfdw.space
 DOMAIN-SUFFIX,inwmizqchqjlk.space
 DOMAIN-SUFFIX,iofeguoyhemey.space
@@ -83539,6 +83579,7 @@ DOMAIN-SUFFIX,vfigkfjtvaepv.space
 DOMAIN-SUFFIX,vfpasudskjdiw.space
 DOMAIN-SUFFIX,vfwyauglvjcfl.space
 DOMAIN-SUFFIX,vgpjkpqwiqgie.space
+DOMAIN-SUFFIX,vhwmscbmuopmm.space
 DOMAIN-SUFFIX,vjfdzpydatidx.space
 DOMAIN-SUFFIX,vjuaeivpigdei.space
 DOMAIN-SUFFIX,vkopdujowxvao.space
@@ -83570,6 +83611,7 @@ DOMAIN-SUFFIX,wssnddllssomv.space
 DOMAIN-SUFFIX,wuftxlsebipkd.space
 DOMAIN-SUFFIX,wvvoousaenpzv.space
 DOMAIN-SUFFIX,wvyyowuowsrsz.space
+DOMAIN-SUFFIX,wwewuqdsxgcei.space
 DOMAIN-SUFFIX,wxfkoumryksdk.space
 DOMAIN-SUFFIX,wxzfixuiickyu.space
 DOMAIN-SUFFIX,xbxtuzjcujqgg.space
@@ -84941,6 +84983,7 @@ DOMAIN-SUFFIX,rubmdu.top
 DOMAIN-SUFFIX,rudhjah.top
 DOMAIN-SUFFIX,rvgtaai.top
 DOMAIN-SUFFIX,rwbqll.top
+DOMAIN-SUFFIX,rwqovmoezrerk.top
 DOMAIN-SUFFIX,rxdxzb.top
 DOMAIN-SUFFIX,ryaqlywkokbj.top
 DOMAIN-SUFFIX,rythtg.top
@@ -86996,6 +87039,7 @@ DOMAIN-SUFFIX,adldjzbilxgpu.website
 DOMAIN-SUFFIX,aechvabpjjskr.website
 DOMAIN-SUFFIX,agedycsmjwbtt.website
 DOMAIN-SUFFIX,ahsyxlyqjzkcz.website
+DOMAIN-SUFFIX,ahvxmwukrdlkk.website
 DOMAIN-SUFFIX,aiiyoosioydfm.website
 DOMAIN-SUFFIX,aiojgikjbhzqe.website
 DOMAIN-SUFFIX,aiyrmwheuqzla.website
@@ -87231,6 +87275,7 @@ DOMAIN-SUFFIX,kpqyxuicnazqf.website
 DOMAIN-SUFFIX,kpzdophqurlbw.website
 DOMAIN-SUFFIX,kqhzkvhcafxwn.website
 DOMAIN-SUFFIX,kqyjyxyjpuiqr.website
+DOMAIN-SUFFIX,kspyqwogczssl.website
 DOMAIN-SUFFIX,ktxdyoptkircd.website
 DOMAIN-SUFFIX,kzprzseknkpmb.website
 DOMAIN-SUFFIX,lblfcddvvsnbi.website
@@ -87259,6 +87304,7 @@ DOMAIN-SUFFIX,mithzwvtbybug.website
 DOMAIN-SUFFIX,mjiillaizjckm.website
 DOMAIN-SUFFIX,mjkjatrhfvjsd.website
 DOMAIN-SUFFIX,mkoldozdzxssb.website
+DOMAIN-SUFFIX,mkrplsblistuf.website
 DOMAIN-SUFFIX,mlfyllnkqsizp.website
 DOMAIN-SUFFIX,mmyyrvyjekrlw.website
 DOMAIN-SUFFIX,mnmiunmojyncy.website
@@ -87268,6 +87314,7 @@ DOMAIN-SUFFIX,mpniplgzpqmlx.website
 DOMAIN-SUFFIX,mswixhhndjakt.website
 DOMAIN-SUFFIX,mtlpbqvbapwzk.website
 DOMAIN-SUFFIX,mtnubxvkutteu.website
+DOMAIN-SUFFIX,muxzipacympze.website
 DOMAIN-SUFFIX,mvqwxwnmwhbzb.website
 DOMAIN-SUFFIX,mvrptblhcuehu.website
 DOMAIN-SUFFIX,mxfuwvrxudpkr.website
@@ -87281,6 +87328,7 @@ DOMAIN-SUFFIX,njdapsyolatla.website
 DOMAIN-SUFFIX,nkjeclbpgotxd.website
 DOMAIN-SUFFIX,nmvttnpnvkmwp.website
 DOMAIN-SUFFIX,nscnpwjcxsslq.website
+DOMAIN-SUFFIX,nsmakurrecuhk.website
 DOMAIN-SUFFIX,ntgdwjrbgmocn.website
 DOMAIN-SUFFIX,nujmsvdnhqctb.website
 DOMAIN-SUFFIX,nuojjvmmrriee.website
@@ -87400,6 +87448,7 @@ DOMAIN-SUFFIX,tulsmcvbuzvsk.website
 DOMAIN-SUFFIX,tunwgntfqgbsw.website
 DOMAIN-SUFFIX,tymdzzpyxbuzq.website
 DOMAIN-SUFFIX,typzixryphvmd.website
+DOMAIN-SUFFIX,ucqvrreziifwz.website
 DOMAIN-SUFFIX,uegonhnxbiyrc.website
 DOMAIN-SUFFIX,uflzxeqahgtvk.website
 DOMAIN-SUFFIX,ufwsddjbezkny.website
@@ -88350,6 +88399,8 @@ DOMAIN-KEYWORD,fb-restriction-case
 DOMAIN-KEYWORD,flightsy
 DOMAIN-KEYWORD,gettate
 DOMAIN-KEYWORD,hostingcloud
+DOMAIN-KEYWORD,httpdns-v6.gslb.yy.com
+DOMAIN-KEYWORD,httpdns.gslb.yy.com
 DOMAIN-KEYWORD,insights-collector.
 DOMAIN-KEYWORD,iqmetrics.
 DOMAIN-KEYWORD,jshosting
@@ -88754,7 +88805,9 @@ IP-CIDR,178.162.203.226/32,no-resolve
 IP-CIDR,178.162.217.107/32,no-resolve
 IP-CIDR,178.238.235.145/32,no-resolve
 IP-CIDR,180.76.2.18/32,no-resolve
+IP-CIDR,180.76.76.112/32,no-resolve
 IP-CIDR,180.76.76.200/32,no-resolve
+IP-CIDR,180.76.76.220/32,no-resolve
 IP-CIDR,180.153.103.224/32,no-resolve
 IP-CIDR,180.166.52.24/32,no-resolve
 IP-CIDR,180.168.41.175/32,no-resolve

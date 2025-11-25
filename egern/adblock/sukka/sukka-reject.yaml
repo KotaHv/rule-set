@@ -1,4 +1,4 @@
-# Total: 88952 rules
+# Total: 89005 rules
 no_resolve: true
 domain_set:
 - api.cortana.ai
@@ -105,6 +105,7 @@ domain_set:
 - hwpub-s01-drcn.cloud.dbankcloud.cn
 - grs.dbankcloud.cn
 - recommend-drcn.hms.dbankcloud.cn
+- httpdns.platform.dbankcloud.cn
 - httpdns-browser.platform.dbankcloud.cn
 - rms-drcn.platform.dbankcloud.cn
 - weather-community-drcn.weather.dbankcloud.cn
@@ -456,6 +457,8 @@ domain_set:
 - ads.ign.com
 - analytics.immersivetranslate.com
 - analytics.infomaniak.com
+- apidns.kwd.inkuai.com
+- apidns-js.kwd.inkuai.com
 - httpdns.kwd.inkuai.com
 - avn.innity.com
 - cast.innity.com
@@ -467,6 +470,7 @@ domain_set:
 - stats.ipinyou.com
 - vt.ipinyou.com
 - puma.api.iqiyi.com
+- dns.iqiyi.com
 - doh.iqiyi.com
 - static.g.iqiyi.com
 - gamecenter.iqiyi.com
@@ -483,6 +487,7 @@ domain_set:
 - paopao-monitor.iqiyi.com
 - cm.passport.iqiyi.com
 - puma-api.iqiyi.com
+- dns.qiyipic.iqiyi.com
 - nl.rcd.iqiyi.com
 - emoticon.sns.iqiyi.com
 - tracker.sns.iqiyi.com
@@ -669,6 +674,7 @@ domain_set:
 - jp.as.pptv.com
 - static.g.pptv.com
 - tj.g.pptv.com
+- dns2.q2cdn.com
 - top.h.qhimg.com
 - news.qhstatic.com
 - hs.qhupdate.com
@@ -1022,10 +1028,6 @@ domain_set:
 - uuidapi.yunos.com
 - httpdns.yunxindns.com
 - dsp-ad.yy.com
-- httpdns.gslb.yy.com
-- httpdns-v6.gslb.yy.com
-- union-httpdns.gslb.yy.com
-- yyapp-httpdns.gslb.yy.com
 - splash.yy.com
 - adapi.yynetwk.com
 - mqtt.zhihu.com
@@ -7888,6 +7890,7 @@ domain_suffix_set:
 - fbjyovv8t2i7ltkpx.cfd
 - feuagescowing.cfd
 - fgq6et26l8tyq5.cfd
+- fidibusbezzlerefaces.cfd
 - filchesminium.cfd
 - fiutv8rhxlijtx98g.cfd
 - fkemyu2j61pkqy3yf.cfd
@@ -7931,6 +7934,7 @@ domain_suffix_set:
 - humusfeuding.cfd
 - i2ij7inr7kbiw8423rwiticev1xbzjo6jxh.cfd
 - i3ppkm9wjy5zmz79hffp1euclp.cfd
+- i8gvqybn8q6uwrw.cfd
 - i95jgmcw3wy2ptj5wcfbzojwkn4.cfd
 - i9zk5xq49plll2g.cfd
 - ib1y9etg6xen3ok6frkj6xzr8xu.cfd
@@ -8123,6 +8127,7 @@ domain_suffix_set:
 - unflushunsee.cfd
 - unfoolvenines.cfd
 - unmoraldisband.cfd
+- unoptedtapuyan.cfd
 - up7xj35i2ourcgt36kf12cvqfnmmxkqyxp.cfd
 - uqngq1bnu125rr8m7elfbybwxon4.cfd
 - uqpyje44lk2gy3e.cfd
@@ -8824,6 +8829,7 @@ domain_suffix_set:
 - o18.click
 - odinlists.click
 - osmaniedaimyos.click
+- outbakecalaber.click
 - overgunfaailk.click
 - pargeseloise.click
 - pavoissamanid.click
@@ -8849,6 +8855,7 @@ domain_suffix_set:
 - quickpcfixer.click
 - quoddedrh.click
 - rameepoufs.click
+- rboundpacked.click
 - reallotpycnia.click
 - reclineanomura.click
 - resowsproser.click
@@ -13007,6 +13014,7 @@ domain_suffix_set:
 - link-app-dev.agvisorpro.com
 - link-app-preprod.agvisorpro.com
 - link-app-staging.agvisorpro.com
+- agzzpjnyx.com
 - ssb.ah499.com
 - log.ahamo.com
 - ip186269007.ahcdn.com
@@ -16412,6 +16420,7 @@ domain_suffix_set:
 - bheirqrol.com
 - bhelzun.com
 - metrics.bhgfinancial.com
+- bhgqghtitr.com
 - bhhgvedfr.com
 - bhl401f8g.com
 - bhohreatz.com
@@ -21811,6 +21820,7 @@ domain_suffix_set:
 - openlocation-drcn.platform.dbankcloud.com
 - info.dbbest.com
 - marketing.dbh-group.com
+- dbhtyjnfsv.com
 - ao-marketing.dbiyes.com
 - dblowthrou.com
 - dblsgdxfaxre.com
@@ -28980,6 +28990,7 @@ domain_suffix_set:
 - gv0oi9ecji.com
 - mdws.gvccu.com
 - gvepgfdjnbk.com
+- gvertxvxazd.com
 - gvlwlfilpjaj.com
 - gvt2.com
 - gw100-10.com
@@ -30088,6 +30099,7 @@ domain_suffix_set:
 - stp.hmstrafegoeperformance.com
 - hmtqtokulp.com
 - hmxg5mhyx.com
+- hnetdybpikax.com
 - online.hnoexpo.com
 - hnsgpw.com
 - rcytet.hnsmall.com
@@ -32843,6 +32855,7 @@ domain_suffix_set:
 - jpgtrk.com
 - jpjqfhvwny.com
 - jplmzaksiplng.com
+- jpmcqouplqkrwh.com
 - pbstats.jpmorgan.com
 - metrics.jpmorganfunds.com
 - jqjfatotsbe.com
@@ -37287,6 +37300,7 @@ domain_suffix_set:
 - news.mipmarkets.com
 - news.miptv.com
 - miqdigital.com
+- miqoplraxov.com
 - a8.mira-feel.com
 - sst.miraaya.com
 - mirabelanalytics.com
@@ -42746,6 +42760,7 @@ domain_suffix_set:
 - plinksplanet.com
 - farm-cn.plista.com
 - static-cn.plista.com
+- plmmekjxsqyjsh.com
 - icon.eu.plmndw.com
 - track.ploclicktrack.com
 - plokij1.com
@@ -43157,6 +43172,7 @@ domain_suffix_set:
 - r.powuta.com
 - counter.powweb.com
 - t.poyry.com
+- poysxaeyarmw.com
 - gtm.ppajetflex.com
 - soap.ppc4laundry.com
 - ppcmate.com
@@ -44208,7 +44224,7 @@ domain_suffix_set:
 - mpush.qq.com
 - mtrace.qq.com
 - monitor.music.qq.com
-- twns.p2ptun.qq.com
+- p2ptun.qq.com
 - pingjs.qq.com
 - pingma.qq.com
 - pingtas.qq.com
@@ -45841,6 +45857,7 @@ domain_suffix_set:
 - sst.rodeodental.com
 - stats.roderickduenas.com
 - rodesquad.com
+- rodlikemortal.com
 - server.rodrigots.com
 - roduster.com
 - gqfoi.roewellness.com
@@ -52040,6 +52057,7 @@ domain_suffix_set:
 - tkfqnkhcktulp.com
 - tkgpwuuqjrdhu.com
 - creative.tklivechat.com
+- tkliwyxp.com
 - tkrconnector.com
 - uhqunq.tktimport.com
 - tkvudnysg.com
@@ -52133,6 +52151,7 @@ domain_suffix_set:
 - sbttlj.togetter.com
 - toglooman.com
 - togmoxwnw.com
+- tognousseegije.com
 - togothermany.com
 - adservice.tohsoft.com
 - load.abc.toilesxxl.com
@@ -54132,6 +54151,7 @@ domain_suffix_set:
 - v2cigs.com
 - ad.v3mh.com
 - ads.v3mh.com
+- v3pnvck24.com
 - v46uj91gh.com
 - americanos.v4company.com
 - mediabr.v4company.com
@@ -56946,6 +56966,7 @@ domain_suffix_set:
 - xjx11240ts.com
 - xjx11241ts.com
 - xjx11250ts.com
+- xjx11251ts.com
 - xknxirdtecs.com
 - xkpbcd.com
 - app.xlcenter.com
@@ -66339,6 +66360,7 @@ domain_suffix_set:
 - hypnoscagoule.help
 - ickerskuvera.help
 - intnlintire.help
+- jellabtravest.help
 - jettyauryl.help
 - jilletwagweno.help
 - jocunoditty.help
@@ -76953,6 +76975,7 @@ domain_suffix_set:
 - adxapi.online
 - adxtag.online
 - aeiptbtyknklq.online
+- aelyjabjzxcrg.online
 - tr.email.aeroexpo.online
 - afmfaaoswjfdl.online
 - stape.agendacheia.online
@@ -77006,6 +77029,7 @@ domain_suffix_set:
 - ayoqplihqjpvv.online
 - azwcgilcgsveu.online
 - bacrtcqhpkmbp.online
+- baqczoryagbvi.online
 - bboqtryjpdndp.online
 - bczmrdfjkesgf.online
 - bestcleaner.online
@@ -77045,6 +77069,7 @@ domain_suffix_set:
 - clwiyvjfjlwva.online
 - cmbqnjwjyqzvv.online
 - cmdtubyfwosoa.online
+- cnrsyxxkcjlor.online
 - api.comboplay.online
 - s.commissie.online
 - lp.comosersaudavel.online
@@ -77162,6 +77187,7 @@ domain_suffix_set:
 - gtm.homemdeverdade.online
 - hpdjwvrkacvvv.online
 - hpilzison-r.online
+- hpixajguwomwn.online
 - htwyrncutjxzf.online
 - partner.hubnu.online
 - hvtsiigtowhzm.online
@@ -77262,6 +77288,7 @@ domain_suffix_set:
 - lopwzmrujomxm.online
 - lqudxquypbsvl.online
 - lrvttzvsdgywx.online
+- lscudygcxiqnn.online
 - lsykbtaljztxr.online
 - api.lumvixautomacao.online
 - lupmsbacuqlwm.online
@@ -77310,6 +77337,7 @@ domain_suffix_set:
 - nt.naturecorehealth.online
 - nbnojxraxpaub.online
 - nbrwkwvgiafpk.online
+- neztlwbosrksr.online
 - ngcluster-a.online
 - ngjemhyhqlwil.online
 - nivrdypzuecnd.online
@@ -79557,6 +79585,7 @@ domain_suffix_set:
 - jumbo-insurance.pro
 - just-news.pro
 - stat.khanate.pro
+- kindhearted-member.pro
 - kindhearted-side.pro
 - pxl.knam.pro
 - knobby-classic.pro
@@ -80019,6 +80048,7 @@ domain_suffix_set:
 - onagrifoussa.qpon
 - orbitarsnoop.qpon
 - peinmanto.qpon
+- peronesutoria.qpon
 - peugeotenlock.qpon
 - phecdacushier.qpon
 - philiculitis.qpon
@@ -80142,6 +80172,7 @@ domain_suffix_set:
 - 6im21hxi9gv6wvpenkp.rest
 - 6l5n7o51okcqm4.rest
 - 6r62of82koce9kxubykknfnfj.rest
+- 6u3tyip7l4tqvzh6ec7i1xfjq.rest
 - 6zflwz8p8q15wbf9h.rest
 - 74kxnn22e2km3w.rest
 - 7bhyymw4ebrm2c7fwplxv8p.rest
@@ -80286,6 +80317,7 @@ domain_suffix_set:
 - ixtzjbifle28hpku.rest
 - j3m5wpxbvtqpty8mx2kmh6ft9kuyww5h3h7z.rest
 - j6ibkoc9l9ff68pqm2t2lfr1659.rest
+- jaglessberendo.rest
 - jalapswaganda.rest
 - jantquintet.rest
 - jobbetkatik.rest
@@ -80333,6 +80365,7 @@ domain_suffix_set:
 - montanesunland.rest
 - moocherflaps.rest
 - moonerycinched.rest
+- moralessuther.rest
 - muringoppida.rest
 - muscattepanec.rest
 - nfzgytorkj9g7pwz2f3cwubvhtk.rest
@@ -80399,6 +80432,7 @@ domain_suffix_set:
 - talonedveldman.rest
 - teddingupsun.rest
 - thorpdetract.rest
+- thowhr.rest
 - tillysices.rest
 - tonnmaximon.rest
 - tossutrhinion.rest
@@ -82399,6 +82433,7 @@ domain_suffix_set:
 - fydhxqfmuiuza.site
 - fyewrocgieeog.site
 - fynil.site
+- gaflphlwqqhch.site
 - galrnswqwqlik.site
 - gatnzlayrscdc.site
 - gbblpbibctqex.site
@@ -82408,6 +82443,7 @@ domain_suffix_set:
 - gcnwsapozwpgv.site
 - gctolasgflhnc.site
 - gdolghljsbysz.site
+- gegqyfewpclyb.site
 - tag.gersonkawa.site
 - gevfbkxymoois.site
 - gfspbekkvtech.site
@@ -82772,6 +82808,7 @@ domain_suffix_set:
 - vmktjnikltwjm.site
 - vmngxjiczmmzm.site
 - vmxneqttwxhcv.site
+- vqzoqqnjolnbl.site
 - vrnfgjkurfxcl.site
 - vsofglbfeiewy.site
 - vtuowmzjyyavc.site
@@ -82793,6 +82830,7 @@ domain_suffix_set:
 - wzvthohdheobm.site
 - xafrpqyhbpboe.site
 - xbrvpsrrklbya.site
+- xcqfaclqifemm.site
 - xdisplay.site
 - xdyxzdkconsev.site
 - xeuesswygmuso.site
@@ -83253,6 +83291,7 @@ domain_suffix_set:
 - gscftqryahymh.space
 - gsedkytitvtsp.space
 - gwrsyyrghwnuo.space
+- gzqfpkponqief.space
 - hboylaaafqqwl.space
 - hbxpjlbmhffda.space
 - hcknzbetfacar.space
@@ -83282,6 +83321,7 @@ domain_suffix_set:
 - igvnifgscilia.space
 - ihaawwkyyicvs.space
 - ijfilqxkgrchg.space
+- iklzkvvbogjsi.space
 - imjprkvybgfdw.space
 - inwmizqchqjlk.space
 - iofeguoyhemey.space
@@ -83542,6 +83582,7 @@ domain_suffix_set:
 - vfpasudskjdiw.space
 - vfwyauglvjcfl.space
 - vgpjkpqwiqgie.space
+- vhwmscbmuopmm.space
 - vjfdzpydatidx.space
 - vjuaeivpigdei.space
 - vkopdujowxvao.space
@@ -83573,6 +83614,7 @@ domain_suffix_set:
 - wuftxlsebipkd.space
 - wvvoousaenpzv.space
 - wvyyowuowsrsz.space
+- wwewuqdsxgcei.space
 - wxfkoumryksdk.space
 - wxzfixuiickyu.space
 - xbxtuzjcujqgg.space
@@ -84944,6 +84986,7 @@ domain_suffix_set:
 - rudhjah.top
 - rvgtaai.top
 - rwbqll.top
+- rwqovmoezrerk.top
 - rxdxzb.top
 - ryaqlywkokbj.top
 - rythtg.top
@@ -86999,6 +87042,7 @@ domain_suffix_set:
 - aechvabpjjskr.website
 - agedycsmjwbtt.website
 - ahsyxlyqjzkcz.website
+- ahvxmwukrdlkk.website
 - aiiyoosioydfm.website
 - aiojgikjbhzqe.website
 - aiyrmwheuqzla.website
@@ -87234,6 +87278,7 @@ domain_suffix_set:
 - kpzdophqurlbw.website
 - kqhzkvhcafxwn.website
 - kqyjyxyjpuiqr.website
+- kspyqwogczssl.website
 - ktxdyoptkircd.website
 - kzprzseknkpmb.website
 - lblfcddvvsnbi.website
@@ -87262,6 +87307,7 @@ domain_suffix_set:
 - mjiillaizjckm.website
 - mjkjatrhfvjsd.website
 - mkoldozdzxssb.website
+- mkrplsblistuf.website
 - mlfyllnkqsizp.website
 - mmyyrvyjekrlw.website
 - mnmiunmojyncy.website
@@ -87271,6 +87317,7 @@ domain_suffix_set:
 - mswixhhndjakt.website
 - mtlpbqvbapwzk.website
 - mtnubxvkutteu.website
+- muxzipacympze.website
 - mvqwxwnmwhbzb.website
 - mvrptblhcuehu.website
 - mxfuwvrxudpkr.website
@@ -87284,6 +87331,7 @@ domain_suffix_set:
 - nkjeclbpgotxd.website
 - nmvttnpnvkmwp.website
 - nscnpwjcxsslq.website
+- nsmakurrecuhk.website
 - ntgdwjrbgmocn.website
 - nujmsvdnhqctb.website
 - nuojjvmmrriee.website
@@ -87403,6 +87451,7 @@ domain_suffix_set:
 - tunwgntfqgbsw.website
 - tymdzzpyxbuzq.website
 - typzixryphvmd.website
+- ucqvrreziifwz.website
 - uegonhnxbiyrc.website
 - uflzxeqahgtvk.website
 - ufwsddjbezkny.website
@@ -88370,6 +88419,8 @@ domain_keyword_set:
 - flightsy
 - gettate
 - hostingcloud
+- httpdns-v6.gslb.yy.com
+- httpdns.gslb.yy.com
 - insights-collector.
 - iqmetrics.
 - jshosting
@@ -88760,7 +88811,9 @@ ip_cidr_set:
 - 178.162.217.107/32
 - 178.238.235.145/32
 - 180.76.2.18/32
+- 180.76.76.112/32
 - 180.76.76.200/32
+- 180.76.76.220/32
 - 180.153.103.224/32
 - 180.166.52.24/32
 - 180.168.41.175/32
