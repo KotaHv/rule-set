@@ -1,4 +1,4 @@
-# Total: 511 rules
+# Total: 512 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -183,6 +183,7 @@
 - '+.redislabs.com'
 - '+.regex101.com'
 - '+.rocksdb.com'
+- '+.sentry-cdn.com'
 - '+.serverfault.com'
 - '+.sourcegraph.com'
 - '+.sqlserveronlinux.com'

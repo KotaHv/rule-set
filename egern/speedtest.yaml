@@ -1,4 +1,4 @@
-# Total: 1587 rules
+# Total: 1589 rules
 no_resolve: true
 domain_set:
 - speedtest.58243.as
@@ -805,6 +805,7 @@ domain_set:
 - test.slic.com
 - kami.smartone.com
 - speedtest.solutechzk.com
+- dfw01.speedtest.soraxus.com
 - speedtest.spectrumvoip.com
 - speedtest.sptel.com
 - speedtest-server-lax.starry.com
@@ -933,6 +934,7 @@ domain_set:
 - ookla-speedtest-central.hgconair.hgc.com.hk
 - sosimhk.datapath.three.com.hk
 - speedtest.three.com.hk
+- speedtest.infrawire.host
 - dc-spdtst.treas.host
 - speedtest-ca.pq.hosting
 - speedtest-de.pq.hosting

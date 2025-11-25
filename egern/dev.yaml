@@ -1,4 +1,4 @@
-# Total: 513 rules
+# Total: 514 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -185,6 +185,7 @@ domain_suffix_set:
 - redislabs.com
 - regex101.com
 - rocksdb.com
+- sentry-cdn.com
 - serverfault.com
 - sourcegraph.com
 - sqlserveronlinux.com

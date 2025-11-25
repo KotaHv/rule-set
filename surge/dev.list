@@ -1,4 +1,4 @@
-# Total: 513 rules
+# Total: 514 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -182,6 +182,7 @@ DOMAIN-SUFFIX,redhat.com
 DOMAIN-SUFFIX,redislabs.com
 DOMAIN-SUFFIX,regex101.com
 DOMAIN-SUFFIX,rocksdb.com
+DOMAIN-SUFFIX,sentry-cdn.com
 DOMAIN-SUFFIX,serverfault.com
 DOMAIN-SUFFIX,sourcegraph.com
 DOMAIN-SUFFIX,sqlserveronlinux.com
