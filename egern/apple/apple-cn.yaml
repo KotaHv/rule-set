@@ -1,7 +1,8 @@
-# Total: 8 rules
+# Total: 9 rules
 no_resolve: true
 domain_set:
 - api.smoot.apple.cn
+- appleintelligencefeedback.care.apple.com
 - gs-loc-cn.apple.com
 domain_suffix_set:
 - apple.com.cn

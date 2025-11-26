@@ -1,4 +1,4 @@
-# Total: 5855 rules
+# Total: 5865 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -462,6 +462,10 @@ domain_set:
 - mirror.cogentco.com
 - s1.coincarp.com
 - s3.cointelegraph.com
+- cover.comicbz.com
+- css.comicbz.com
+- image.comicbz.com
+- static.comicbz.com
 - cdn.commandbar.com
 - frames-commandbar-prod.commandbar.com
 - crt.comodoca.com
@@ -863,6 +867,7 @@ domain_set:
 - static-forms.klaviyo.com
 - brand-sdk.kmsmep.com
 - info.knak.com
+- public.komiic.com
 - media.ra.kroll.com
 - searchanise-ef84.kxcdn.com
 - wandi-6402.kxcdn.com
@@ -1566,6 +1571,9 @@ domain_set:
 - rapid-cdn.yottaa.com
 - images.youracclaim.com
 - oss.ypt.com
+- cover.yymanhua.com
+- css.yymanhua.com
+- image.yymanhua.com
 - static.zaobao.com
 - cdn.zapier.com
 - fonts.zapier.com
@@ -2206,8 +2214,10 @@ domain_set:
 - avts.wmlabs.net
 - cdn.writeas.net
 - images.wsjcommerce.net
+- images.wurstclient.net
 - cdn.xeiaso.net
 - mirror.xenyth.net
+- image.xmanhua.net
 - assets.xmind.net
 - dl2.xmind.net
 - dl3.xmind.net

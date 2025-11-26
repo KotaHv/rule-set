@@ -1,4 +1,4 @@
-# Total: 4153 rules
+# Total: 4163 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -518,6 +518,10 @@ domain_set:
 - s2.coinmarketcap.com
 - s3.coinmarketcap.com
 - s3.cointelegraph.com
+- cover.comicbz.com
+- css.comicbz.com
+- image.comicbz.com
+- static.comicbz.com
 - cdn.commandbar.com
 - frames-commandbar-prod.commandbar.com
 - crt.comodoca.com
@@ -1070,6 +1074,7 @@ domain_set:
 - storage.ko-fi.com
 - cdn.kobo.com
 - static.kobo.com
+- public.komiic.com
 - assets.kraken.com
 - assets-cms.kraken.com
 - media.ra.kroll.com
@@ -1985,6 +1990,9 @@ domain_set:
 - cdne-pics.youjizz.com
 - images.youracclaim.com
 - img.youtube.com
+- cover.yymanhua.com
+- css.yymanhua.com
+- image.yymanhua.com
 - static.zaobao.com
 - cdn.zapier.com
 - fonts.zapier.com
@@ -2588,7 +2596,9 @@ domain_set:
 - sts3.wsj.net
 - vir.wsj.net
 - images.wsjcommerce.net
+- images.wurstclient.net
 - cdn.xeiaso.net
+- image.xmanhua.net
 - assets.xmind.net
 - assets.video.yahoo.net
 - cdn.yamibuy.net

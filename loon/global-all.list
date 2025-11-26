@@ -1,4 +1,4 @@
-# Total: 5870 rules
+# Total: 5880 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -460,6 +460,10 @@ DOMAIN,cloudfront.codeproject.com
 DOMAIN,mirror.cogentco.com
 DOMAIN,s1.coincarp.com
 DOMAIN,s3.cointelegraph.com
+DOMAIN,cover.comicbz.com
+DOMAIN,css.comicbz.com
+DOMAIN,image.comicbz.com
+DOMAIN,static.comicbz.com
 DOMAIN,cdn.commandbar.com
 DOMAIN,frames-commandbar-prod.commandbar.com
 DOMAIN,crt.comodoca.com
@@ -861,6 +865,7 @@ DOMAIN,static.klaviyo.com
 DOMAIN,static-forms.klaviyo.com
 DOMAIN,brand-sdk.kmsmep.com
 DOMAIN,info.knak.com
+DOMAIN,public.komiic.com
 DOMAIN,media.ra.kroll.com
 DOMAIN,searchanise-ef84.kxcdn.com
 DOMAIN,wandi-6402.kxcdn.com
@@ -1564,6 +1569,9 @@ DOMAIN,staticw2.yotpo.com
 DOMAIN,rapid-cdn.yottaa.com
 DOMAIN,images.youracclaim.com
 DOMAIN,oss.ypt.com
+DOMAIN,cover.yymanhua.com
+DOMAIN,css.yymanhua.com
+DOMAIN,image.yymanhua.com
 DOMAIN,static.zaobao.com
 DOMAIN,cdn.zapier.com
 DOMAIN,fonts.zapier.com
@@ -2204,8 +2212,10 @@ DOMAIN,fast.wistia.net
 DOMAIN,avts.wmlabs.net
 DOMAIN,cdn.writeas.net
 DOMAIN,images.wsjcommerce.net
+DOMAIN,images.wurstclient.net
 DOMAIN,cdn.xeiaso.net
 DOMAIN,mirror.xenyth.net
+DOMAIN,image.xmanhua.net
 DOMAIN,assets.xmind.net
 DOMAIN,dl2.xmind.net
 DOMAIN,dl3.xmind.net

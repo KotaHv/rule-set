@@ -1,4 +1,4 @@
-# Total: 4095 rules
+# Total: 4105 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -516,6 +516,10 @@ DOMAIN,academy-public.coinmarketcap.com
 DOMAIN,s2.coinmarketcap.com
 DOMAIN,s3.coinmarketcap.com
 DOMAIN,s3.cointelegraph.com
+DOMAIN,cover.comicbz.com
+DOMAIN,css.comicbz.com
+DOMAIN,image.comicbz.com
+DOMAIN,static.comicbz.com
 DOMAIN,cdn.commandbar.com
 DOMAIN,frames-commandbar-prod.commandbar.com
 DOMAIN,crt.comodoca.com
@@ -1068,6 +1072,7 @@ DOMAIN,cdn.ko-fi.com
 DOMAIN,storage.ko-fi.com
 DOMAIN,cdn.kobo.com
 DOMAIN,static.kobo.com
+DOMAIN,public.komiic.com
 DOMAIN,assets.kraken.com
 DOMAIN,assets-cms.kraken.com
 DOMAIN,media.ra.kroll.com
@@ -1983,6 +1988,9 @@ DOMAIN,cdn.you.com
 DOMAIN,cdne-pics.youjizz.com
 DOMAIN,images.youracclaim.com
 DOMAIN,img.youtube.com
+DOMAIN,cover.yymanhua.com
+DOMAIN,css.yymanhua.com
+DOMAIN,image.yymanhua.com
 DOMAIN,static.zaobao.com
 DOMAIN,cdn.zapier.com
 DOMAIN,fonts.zapier.com
@@ -2586,7 +2594,9 @@ DOMAIN,s.wsj.net
 DOMAIN,sts3.wsj.net
 DOMAIN,vir.wsj.net
 DOMAIN,images.wsjcommerce.net
+DOMAIN,images.wurstclient.net
 DOMAIN,cdn.xeiaso.net
+DOMAIN,image.xmanhua.net
 DOMAIN,assets.xmind.net
 DOMAIN,assets.video.yahoo.net
 DOMAIN,cdn.yamibuy.net
