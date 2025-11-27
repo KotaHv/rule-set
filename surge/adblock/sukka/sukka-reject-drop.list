@@ -1,7 +1,15 @@
-# Total: 6 rules
+# Total: 14 rules
+DOMAIN,stat.youpin.mi.com
 DOMAIN,nom.telemetrydeck.com
+DOMAIN-SUFFIX,jpush.cn
 DOMAIN-SUFFIX,geo2.adobe.com
 DOMAIN-SUFFIX,in.applicationinsights.azure.com
+DOMAIN-SUFFIX,easytomessage.com
+DOMAIN-SUFFIX,getui.com
+DOMAIN-SUFFIX,tracking.intl.miui.com
+DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,jpush.io
+DOMAIN-SUFFIX,getui.net
 DOMAIN-SUFFIX,null
 DOMAIN-SUFFIX,undefined

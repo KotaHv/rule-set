@@ -1,10 +1,18 @@
-# Total: 6 rules
+# Total: 14 rules
 no_resolve: true
 domain_set:
+- stat.youpin.mi.com
 - nom.telemetrydeck.com
 domain_suffix_set:
+- jpush.cn
 - geo2.adobe.com
 - in.applicationinsights.azure.com
+- easytomessage.com
+- getui.com
+- tracking.intl.miui.com
+- tracking.miui.com
 - beacon.qq.com
+- jpush.io
+- getui.net
 - 'null'
 - undefined

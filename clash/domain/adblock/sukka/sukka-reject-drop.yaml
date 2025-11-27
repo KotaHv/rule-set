@@ -1,8 +1,16 @@
-# Total: 6 rules
+# Total: 14 rules
 'payload':
+- 'stat.youpin.mi.com'
 - 'nom.telemetrydeck.com'
+- '+.jpush.cn'
 - '+.geo2.adobe.com'
 - '+.in.applicationinsights.azure.com'
+- '+.easytomessage.com'
+- '+.getui.com'
+- '+.tracking.intl.miui.com'
+- '+.tracking.miui.com'
 - '+.beacon.qq.com'
+- '+.jpush.io'
+- '+.getui.net'
 - '+.null'
 - '+.undefined'
