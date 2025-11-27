@@ -1,4 +1,4 @@
-# Total: 5739 rules
+# Total: 5745 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2078,6 +2078,7 @@
 - 'mirror.nl.leaseweb.net'
 - 'mirror.us.leaseweb.net'
 - 'mirror.limda.net'
+- 'robloxcorp.s.llnwi.net'
 - 'mirror.low-orbit.net'
 - 'sdk.loyaltylion.net'
 - 'debian.ludost.net'
@@ -2606,6 +2607,7 @@
 - '+.szjal.cn'
 - '+.xn--bnq297cix3a.cn'
 - '+.anilist.co'
+- '+.roblox-api.arkoselabs.co'
 - '+.widget.clutch.co'
 - '+.convertio.co'
 - '+.doodcdn.co'
@@ -3986,6 +3988,7 @@
 - '+.rawgithub.com'
 - '+.raxcdn.com'
 - '+.raycast.com'
+- '+.rbx.com'
 - '+.rbxcdn.com'
 - '+.rdtcdn.com'
 - '+.react.com'
@@ -4022,6 +4025,8 @@
 - '+.riotpin.com'
 - '+.riotpoints.com'
 - '+.rlcdn.com'
+- '+.roblox.com'
+- '+.robloxlabs.com'
 - '+.roboflow.com'
 - '+.roborecall.com'
 - '+.rocksdb.com'
@@ -5512,6 +5517,7 @@
 - '+.raspberrypi.org'
 - '+.raspbian.org'
 - '+.rawgit.org'
+- '+.rblx.org'
 - '+.rclone.org'
 - '+.reactjs.org'
 - '+.iso.reactos.org'

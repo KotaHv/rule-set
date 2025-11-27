@@ -1,4 +1,4 @@
-# Total: 5866 rules
+# Total: 5872 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2079,6 +2079,7 @@ domain_set:
 - mirror.nl.leaseweb.net
 - mirror.us.leaseweb.net
 - mirror.limda.net
+- robloxcorp.s.llnwi.net
 - mirror.low-orbit.net
 - sdk.loyaltylion.net
 - debian.ludost.net
@@ -2608,6 +2609,7 @@ domain_suffix_set:
 - szjal.cn
 - xn--bnq297cix3a.cn
 - anilist.co
+- roblox-api.arkoselabs.co
 - widget.clutch.co
 - convertio.co
 - doodcdn.co
@@ -3988,6 +3990,7 @@ domain_suffix_set:
 - rawgithub.com
 - raxcdn.com
 - raycast.com
+- rbx.com
 - rbxcdn.com
 - rdtcdn.com
 - react.com
@@ -4024,6 +4027,8 @@ domain_suffix_set:
 - riotpin.com
 - riotpoints.com
 - rlcdn.com
+- roblox.com
+- robloxlabs.com
 - roboflow.com
 - roborecall.com
 - rocksdb.com
@@ -5514,6 +5519,7 @@ domain_suffix_set:
 - raspberrypi.org
 - raspbian.org
 - rawgit.org
+- rblx.org
 - rclone.org
 - reactjs.org
 - iso.reactos.org
