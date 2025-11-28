@@ -1,4 +1,4 @@
-# Total: 14 rules
+# Total: 15 rules
 no_resolve: true
 domain_set:
 - stat.youpin.mi.com
@@ -8,6 +8,7 @@ domain_suffix_set:
 - geo2.adobe.com
 - in.applicationinsights.azure.com
 - easytomessage.com
+- gepush.com
 - getui.com
 - tracking.intl.miui.com
 - tracking.miui.com
