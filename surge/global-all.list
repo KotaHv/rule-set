@@ -5828,8 +5828,8 @@ DOMAIN-WILDCARD,s??.maxstream.org
 DOMAIN-WILDCARD,cdn-*.comaps.tech
 DOMAIN-WILDCARD,v.rn???.xyz
 DOMAIN-WILDCARD,*.skyearth?.xyz
-IP-CIDR,5.28.195.1/32,no-resolve
 IP-CIDR,5.28.195.2/32,no-resolve
+IP-CIDR,5.28.195.4/32,no-resolve
 IP-CIDR,23.246.18.0/23,no-resolve
 IP-CIDR,35.186.224.47/32,no-resolve
 IP-CIDR,37.77.184.0/21,no-resolve
