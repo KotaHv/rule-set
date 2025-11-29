@@ -1,4 +1,4 @@
-# Total: 4163 rules
+# Total: 4167 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -354,6 +354,7 @@ domain_set:
 - spotlightimage.biggo.com
 - upos-sz-mirroralibstar1.bilivideo.com
 - upos-sz-mirrorcosbstar1.bilivideo.com
+- r.bing.com
 - th.bing.com
 - api.bintray.com
 - bcmedia.bitchute.com
@@ -2056,6 +2057,7 @@ domain_set:
 - st.agrd.eu
 - cravatar.eu
 - cdn.european-alternatives.eu
+- upload.movim.eu
 - media.infosec.exchange
 - cdn.usd.fan
 - icons.llamao.fi
@@ -2579,6 +2581,7 @@ domain_set:
 - static.vesselfinder.net
 - cdn.viafoura.net
 - images1.vinted.net
+- ecn.dev.virtualearth.net
 - assets.visioncritical.net
 - social-cdn.vivaldi.net
 - static.vocadb.net
@@ -3931,6 +3934,7 @@ domain_suffix_set:
 - v-cdn.net
 - video-cdn.net
 - videodelivery.net
+- tiles.virtualearth.net
 - vscode-cdn.net
 - vscode-unpkg.net
 - vusercontent.net

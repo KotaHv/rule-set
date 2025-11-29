@@ -1,4 +1,4 @@
-# Total: 1866 rules
+# Total: 1868 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -944,6 +944,7 @@ domain_set:
 - apt.tetaneutral.net
 - cpan.tetaneutral.net
 - ctan.tetaneutral.net
+- fdroid.tetaneutral.net
 - mirror.tochlab.net
 - mirror1.totbb.net
 - debian-archive.trafficmanager.net
@@ -970,6 +971,7 @@ domain_set:
 - opensource.xtdv.net
 - mirrors.esto.network
 - mirror.hostiko.network
+- mirror.level66.network
 - mirror.nishi.network
 - ca.dyi.ng
 - us.dyi.ng

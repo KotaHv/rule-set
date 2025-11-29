@@ -1,4 +1,4 @@
-# Total: 5936 rules
+# Total: 5939 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -2171,6 +2171,7 @@ DOMAIN,blacklist.tampermonkey.net
 DOMAIN,apt.tetaneutral.net
 DOMAIN,cpan.tetaneutral.net
 DOMAIN,ctan.tetaneutral.net
+DOMAIN,fdroid.tetaneutral.net
 DOMAIN,mirror.tochlab.net
 DOMAIN,assets.tokopedia.net
 DOMAIN,images.tokopedia.net
@@ -2198,6 +2199,7 @@ DOMAIN,images1.vinted.net
 DOMAIN,install.virtfusion.net
 DOMAIN,os-cdn.virtfusion.net
 DOMAIN,packages.virtfusion.net
+DOMAIN,ecn.dev.virtualearth.net
 DOMAIN,assets.visioncritical.net
 DOMAIN,social-cdn.vivaldi.net
 DOMAIN,static.vocadb.net
@@ -5266,6 +5268,7 @@ DOMAIN-SUFFIX,venmo.net
 DOMAIN-SUFFIX,vesselfinder.net
 DOMAIN-SUFFIX,video-cdn.net
 DOMAIN-SUFFIX,videodelivery.net
+DOMAIN-SUFFIX,tiles.virtualearth.net
 DOMAIN-SUFFIX,visualstudio.net
 DOMAIN-SUFFIX,vscode-cdn.net
 DOMAIN-SUFFIX,vscode-unpkg.net

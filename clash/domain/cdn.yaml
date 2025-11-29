@@ -1,4 +1,4 @@
-# Total: 4084 rules
+# Total: 4088 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -353,6 +353,7 @@
 - 'spotlightimage.biggo.com'
 - 'upos-sz-mirroralibstar1.bilivideo.com'
 - 'upos-sz-mirrorcosbstar1.bilivideo.com'
+- 'r.bing.com'
 - 'th.bing.com'
 - 'api.bintray.com'
 - 'bcmedia.bitchute.com'
@@ -2055,6 +2056,7 @@
 - 'st.agrd.eu'
 - 'cravatar.eu'
 - 'cdn.european-alternatives.eu'
+- 'upload.movim.eu'
 - 'media.infosec.exchange'
 - 'cdn.usd.fan'
 - 'icons.llamao.fi'
@@ -2578,6 +2580,7 @@
 - 'static.vesselfinder.net'
 - 'cdn.viafoura.net'
 - 'images1.vinted.net'
+- 'ecn.dev.virtualearth.net'
 - 'assets.visioncritical.net'
 - 'social-cdn.vivaldi.net'
 - 'static.vocadb.net'
@@ -3929,6 +3932,7 @@
 - '+.v-cdn.net'
 - '+.video-cdn.net'
 - '+.videodelivery.net'
+- '+.tiles.virtualearth.net'
 - '+.vscode-cdn.net'
 - '+.vscode-unpkg.net'
 - '+.vusercontent.net'

@@ -1,4 +1,4 @@
-# Total: 5745 rules
+# Total: 5748 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2172,6 +2172,7 @@
 - 'apt.tetaneutral.net'
 - 'cpan.tetaneutral.net'
 - 'ctan.tetaneutral.net'
+- 'fdroid.tetaneutral.net'
 - 'mirror.tochlab.net'
 - 'assets.tokopedia.net'
 - 'images.tokopedia.net'
@@ -2199,6 +2200,7 @@
 - 'install.virtfusion.net'
 - 'os-cdn.virtfusion.net'
 - 'packages.virtfusion.net'
+- 'ecn.dev.virtualearth.net'
 - 'assets.visioncritical.net'
 - 'social-cdn.vivaldi.net'
 - 'static.vocadb.net'
@@ -5267,6 +5269,7 @@
 - '+.vesselfinder.net'
 - '+.video-cdn.net'
 - '+.videodelivery.net'
+- '+.tiles.virtualearth.net'
 - '+.visualstudio.net'
 - '+.vscode-cdn.net'
 - '+.vscode-unpkg.net'

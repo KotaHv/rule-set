@@ -1,4 +1,4 @@
-# Total: 5872 rules
+# Total: 5875 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2173,6 +2173,7 @@ domain_set:
 - apt.tetaneutral.net
 - cpan.tetaneutral.net
 - ctan.tetaneutral.net
+- fdroid.tetaneutral.net
 - mirror.tochlab.net
 - assets.tokopedia.net
 - images.tokopedia.net
@@ -2200,6 +2201,7 @@ domain_set:
 - install.virtfusion.net
 - os-cdn.virtfusion.net
 - packages.virtfusion.net
+- ecn.dev.virtualearth.net
 - assets.visioncritical.net
 - social-cdn.vivaldi.net
 - static.vocadb.net
@@ -5269,6 +5271,7 @@ domain_suffix_set:
 - vesselfinder.net
 - video-cdn.net
 - videodelivery.net
+- tiles.virtualearth.net
 - visualstudio.net
 - vscode-cdn.net
 - vscode-unpkg.net

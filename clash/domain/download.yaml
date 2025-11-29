@@ -1,4 +1,4 @@
-# Total: 1858 rules
+# Total: 1860 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -943,6 +943,7 @@
 - 'apt.tetaneutral.net'
 - 'cpan.tetaneutral.net'
 - 'ctan.tetaneutral.net'
+- 'fdroid.tetaneutral.net'
 - 'mirror.tochlab.net'
 - 'mirror1.totbb.net'
 - 'debian-archive.trafficmanager.net'
@@ -969,6 +970,7 @@
 - 'opensource.xtdv.net'
 - 'mirrors.esto.network'
 - 'mirror.hostiko.network'
+- 'mirror.level66.network'
 - 'mirror.nishi.network'
 - 'ca.dyi.ng'
 - 'us.dyi.ng'
