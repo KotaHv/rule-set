@@ -1,4 +1,4 @@
-# Total: 1860 rules
+# Total: 1866 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -688,6 +688,7 @@
 - 'ubuntu-mirror.snu.edu.in'
 - 'gopkg.in'
 - 'ctan.imsc.res.in'
+- 'go.yaml.in'
 - 'centos-stream.ip-connect.info'
 - 'gimp.ip-connect.info'
 - 'ubuntu.lafibre.info'
@@ -716,6 +717,7 @@
 - 'repo.nextdns.io'
 - 'dl.nwjs.io'
 - 'dl2.nwjs.io'
+- 'go.opentelemetry.io'
 - 'packagecloud.io'
 - 'assets-production.packagecloud.io'
 - 'download.projectbluefin.io'
@@ -1090,7 +1092,10 @@
 - 'download.savannah.gnu.org'
 - 'www.gnu.org'
 - 'www.gnupg.org'
+- 'google.golang.org'
+- 'index.golang.org'
 - 'proxy.golang.org'
+- 'sum.golang.org'
 - 'plugins-artifacts.gradle.org'
 - 'repo.gradle.org'
 - 'releases.grapheneos.org'
@@ -1270,6 +1275,7 @@
 - 'mirrors.cloudforest.co.th'
 - 'mirror.ati.tn'
 - 'ubuntu-mirror.ati.tn'
+- 'gotest.tools'
 - 'ghfast.top'
 - 'repo.sleeping.town'
 - 'mirror.kapteyan.com.tr'

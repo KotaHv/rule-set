@@ -1,4 +1,4 @@
-# Total: 1861 rules
+# Total: 1867 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -687,6 +687,7 @@ DOMAIN,mirror.del.albony.in
 DOMAIN,ubuntu-mirror.snu.edu.in
 DOMAIN,gopkg.in
 DOMAIN,ctan.imsc.res.in
+DOMAIN,go.yaml.in
 DOMAIN,centos-stream.ip-connect.info
 DOMAIN,gimp.ip-connect.info
 DOMAIN,ubuntu.lafibre.info
@@ -715,6 +716,7 @@ DOMAIN,pkgs.netbird.io
 DOMAIN,repo.nextdns.io
 DOMAIN,dl.nwjs.io
 DOMAIN,dl2.nwjs.io
+DOMAIN,go.opentelemetry.io
 DOMAIN,packagecloud.io
 DOMAIN,assets-production.packagecloud.io
 DOMAIN,download.projectbluefin.io
@@ -1089,7 +1091,10 @@ DOMAIN,ftpmirror.gnu.org
 DOMAIN,download.savannah.gnu.org
 DOMAIN,www.gnu.org
 DOMAIN,www.gnupg.org
+DOMAIN,google.golang.org
+DOMAIN,index.golang.org
 DOMAIN,proxy.golang.org
+DOMAIN,sum.golang.org
 DOMAIN,plugins-artifacts.gradle.org
 DOMAIN,repo.gradle.org
 DOMAIN,releases.grapheneos.org
@@ -1269,6 +1274,7 @@ DOMAIN,mirror1.ku.ac.th
 DOMAIN,mirrors.cloudforest.co.th
 DOMAIN,mirror.ati.tn
 DOMAIN,ubuntu-mirror.ati.tn
+DOMAIN,gotest.tools
 DOMAIN,ghfast.top
 DOMAIN,repo.sleeping.town
 DOMAIN,mirror.kapteyan.com.tr

@@ -1,4 +1,4 @@
-# Total: 1868 rules
+# Total: 1874 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -689,6 +689,7 @@ domain_set:
 - ubuntu-mirror.snu.edu.in
 - gopkg.in
 - ctan.imsc.res.in
+- go.yaml.in
 - centos-stream.ip-connect.info
 - gimp.ip-connect.info
 - ubuntu.lafibre.info
@@ -717,6 +718,7 @@ domain_set:
 - repo.nextdns.io
 - dl.nwjs.io
 - dl2.nwjs.io
+- go.opentelemetry.io
 - packagecloud.io
 - assets-production.packagecloud.io
 - download.projectbluefin.io
@@ -1091,7 +1093,10 @@ domain_set:
 - download.savannah.gnu.org
 - www.gnu.org
 - www.gnupg.org
+- google.golang.org
+- index.golang.org
 - proxy.golang.org
+- sum.golang.org
 - plugins-artifacts.gradle.org
 - repo.gradle.org
 - releases.grapheneos.org
@@ -1271,6 +1276,7 @@ domain_set:
 - mirrors.cloudforest.co.th
 - mirror.ati.tn
 - ubuntu-mirror.ati.tn
+- gotest.tools
 - ghfast.top
 - repo.sleeping.town
 - mirror.kapteyan.com.tr

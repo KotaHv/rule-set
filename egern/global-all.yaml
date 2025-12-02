@@ -1,4 +1,4 @@
-# Total: 5875 rules
+# Total: 5877 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1378,6 +1378,7 @@ domain_set:
 - cdn2.techbang.com
 - media.technologycounter.com
 - embed.ted.com
+- upload.teftera.com
 - image.telanganatoday.com
 - media.telanganatoday.com
 - cdnstatic.tencentcs.com
@@ -2453,6 +2454,7 @@ domain_set:
 - mirrors.cloudforest.co.th
 - mirror.ati.tn
 - ubuntu-mirror.ati.tn
+- gotest.tools
 - namedotcom-cdn.name.tools
 - css.4jpg.top
 - static-cdn.bytegiftia.top
