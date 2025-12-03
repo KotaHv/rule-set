@@ -1,4 +1,4 @@
-# Total: 5941 rules
+# Total: 5962 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -2574,6 +2574,7 @@ DOMAIN-SUFFIX,pravatar.cc
 DOMAIN-SUFFIX,primevideo.cc
 DOMAIN-SUFFIX,ptt.cc
 DOMAIN-SUFFIX,pttweb.cc
+DOMAIN-SUFFIX,roblox.cc
 DOMAIN-SUFFIX,silca.cc
 DOMAIN-SUFFIX,tailfin.cc
 DOMAIN-SUFFIX,tiny.cc
@@ -2582,6 +2583,7 @@ DOMAIN-SUFFIX,whoer.cc
 DOMAIN-SUFFIX,ch
 DOMAIN-SUFFIX,chrome
 DOMAIN-SUFFIX,fastlane.ci
+DOMAIN-SUFFIX,roblox.cl
 DOMAIN-SUFFIX,anaconda.cloud
 DOMAIN-SUFFIX,cloud-object-storage.appdomain.cloud
 DOMAIN-SUFFIX,dreamscape.cloud
@@ -2610,7 +2612,6 @@ DOMAIN-SUFFIX,softonic.cn
 DOMAIN-SUFFIX,szjal.cn
 DOMAIN-SUFFIX,xn--bnq297cix3a.cn
 DOMAIN-SUFFIX,anilist.co
-DOMAIN-SUFFIX,roblox-api.arkoselabs.co
 DOMAIN-SUFFIX,widget.clutch.co
 DOMAIN-SUFFIX,convertio.co
 DOMAIN-SUFFIX,doodcdn.co
@@ -2633,6 +2634,7 @@ DOMAIN-SUFFIX,pcdn.co
 DOMAIN-SUFFIX,placehold.co
 DOMAIN-SUFFIX,prcdn.co
 DOMAIN-SUFFIX,pscdn.co
+DOMAIN-SUFFIX,rblx.co
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,ipfs.sloppyta.co
 DOMAIN-SUFFIX,smilecdn.co
@@ -2769,6 +2771,7 @@ DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,aptoide.com
 DOMAIN-SUFFIX,ipfs.arching-kaos.com
 DOMAIN-SUFFIX,images.arcpublishing.com
+DOMAIN-SUFFIX,roblox-api.arkoselabs.com
 DOMAIN-SUFFIX,armorgames.com
 DOMAIN-SUFFIX,artstation.com
 DOMAIN-SUFFIX,ashemaletube.com
@@ -2866,6 +2869,7 @@ DOMAIN-SUFFIX,blogblog.com
 DOMAIN-SUFFIX,blogger.com
 DOMAIN-SUFFIX,blogoverflow.com
 DOMAIN-SUFFIX,bloomberg.com
+DOMAIN-SUFFIX,blox.com
 DOMAIN-SUFFIX,blz-contentstack.com
 DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,storage.boilerplate.com
@@ -3299,11 +3303,14 @@ DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,gmodules.com
 DOMAIN-SUFFIX,gnc.com
 DOMAIN-SUFFIX,go-lang.com
+DOMAIN-SUFFIX,goblocks.com
+DOMAIN-SUFFIX,goblox.com
 DOMAIN-SUFFIX,godaddy.com
 DOMAIN-SUFFIX,gofundme.com
 DOMAIN-SUFFIX,gog.com
 DOMAIN-SUFFIX,gog-statics.com
 DOMAIN-SUFFIX,golang.com
+DOMAIN-SUFFIX,gooblox.com
 DOMAIN-SUFFIX,goodreads.com
 DOMAIN-SUFFIX,googl.com
 DOMAIN-SUFFIX,gooogle.com
@@ -3398,6 +3405,7 @@ DOMAIN-SUFFIX,hugoal.com
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,huluim.com
 DOMAIN-SUFFIX,hulustream.com
+DOMAIN-SUFFIX,humancoexperience.com
 DOMAIN-SUFFIX,humblebundle.com
 DOMAIN-SUFFIX,huobi.com
 DOMAIN-SUFFIX,hutpromos.com
@@ -3991,8 +3999,11 @@ DOMAIN-SUFFIX,rawgit.com
 DOMAIN-SUFFIX,rawgithub.com
 DOMAIN-SUFFIX,raxcdn.com
 DOMAIN-SUFFIX,raycast.com
+DOMAIN-SUFFIX,rblx.com
 DOMAIN-SUFFIX,rbx.com
 DOMAIN-SUFFIX,rbxcdn.com
+DOMAIN-SUFFIX,rbxlabs.com
+DOMAIN-SUFFIX,rbxtrk.com
 DOMAIN-SUFFIX,rdtcdn.com
 DOMAIN-SUFFIX,react.com
 DOMAIN-SUFFIX,reactjs.com
@@ -4028,6 +4039,9 @@ DOMAIN-SUFFIX,riotgames.com
 DOMAIN-SUFFIX,riotpin.com
 DOMAIN-SUFFIX,riotpoints.com
 DOMAIN-SUFFIX,rlcdn.com
+DOMAIN-SUFFIX,ro-blox.com
+DOMAIN-SUFFIX,roadblocks.com
+DOMAIN-SUFFIX,roblocks.com
 DOMAIN-SUFFIX,roblox.com
 DOMAIN-SUFFIX,robloxlabs.com
 DOMAIN-SUFFIX,roboflow.com
@@ -4037,6 +4051,8 @@ DOMAIN-SUFFIX,rockstargames.com
 DOMAIN-SUFFIX,cdn.rollbar.com
 DOMAIN-SUFFIX,roseimgs.com
 DOMAIN-SUFFIX,rottentomatoes.com
+DOMAIN-SUFFIX,rowblocks.com
+DOMAIN-SUFFIX,rowblox.com
 DOMAIN-SUFFIX,rrcdnbf3.com
 DOMAIN-SUFFIX,rtings.com
 DOMAIN-SUFFIX,dataplane.rudderstack.com
@@ -4647,6 +4663,7 @@ DOMAIN-SUFFIX,hk
 DOMAIN-SUFFIX,icon.horse
 DOMAIN-SUFFIX,assets-servd.host
 DOMAIN-SUFFIX,sr.ht
+DOMAIN-SUFFIX,roblox.hu
 DOMAIN-SUFFIX,cthd.icu
 DOMAIN-SUFFIX,id
 DOMAIN-SUFFIX,ie
@@ -5196,6 +5213,7 @@ DOMAIN-SUFFIX,pximg.net
 DOMAIN-SUFFIX,pypl.net
 DOMAIN-SUFFIX,quad9.net
 DOMAIN-SUFFIX,quoracdn.net
+DOMAIN-SUFFIX,rbxinfra.net
 DOMAIN-SUFFIX,reasoningtheory.net
 DOMAIN-SUFFIX,recaptcha.net
 DOMAIN-SUFFIX,redcdn.net
@@ -5208,6 +5226,7 @@ DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,riotgames.net
 DOMAIN-SUFFIX,ripe.net
 DOMAIN-SUFFIX,riseup.net
+DOMAIN-SUFFIX,roblox.net
 DOMAIN-SUFFIX,rocksdb.net
 DOMAIN-SUFFIX,rsb.net
 DOMAIN-SUFFIX,rspcdn.net
@@ -5536,6 +5555,7 @@ DOMAIN-SUFFIX,researchkit.org
 DOMAIN-SUFFIX,rfa.org
 DOMAIN-SUFFIX,rfc-editor.org
 DOMAIN-SUFFIX,rferl.org
+DOMAIN-SUFFIX,roblox.org
 DOMAIN-SUFFIX,rocksdb.org
 DOMAIN-SUFFIX,rollupjs.org
 DOMAIN-SUFFIX,rpmfusion.org
@@ -5636,6 +5656,7 @@ DOMAIN-SUFFIX,huobi.pro
 DOMAIN-SUFFIX,ps
 DOMAIN-SUFFIX,nintendo.com.pt
 DOMAIN-SUFFIX,nintendo.pt
+DOMAIN-SUFFIX,roblox.pt
 DOMAIN-SUFFIX,ubuntumirror.dei.uc.pt
 DOMAIN-SUFFIX,re
 DOMAIN-SUFFIX,rip

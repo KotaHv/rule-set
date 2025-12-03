@@ -1,4 +1,4 @@
-# Total: 5877 rules
+# Total: 5898 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2577,6 +2577,7 @@ domain_suffix_set:
 - primevideo.cc
 - ptt.cc
 - pttweb.cc
+- roblox.cc
 - silca.cc
 - tailfin.cc
 - tiny.cc
@@ -2585,6 +2586,7 @@ domain_suffix_set:
 - ch
 - chrome
 - fastlane.ci
+- roblox.cl
 - anaconda.cloud
 - cloud-object-storage.appdomain.cloud
 - dreamscape.cloud
@@ -2613,7 +2615,6 @@ domain_suffix_set:
 - szjal.cn
 - xn--bnq297cix3a.cn
 - anilist.co
-- roblox-api.arkoselabs.co
 - widget.clutch.co
 - convertio.co
 - doodcdn.co
@@ -2636,6 +2637,7 @@ domain_suffix_set:
 - placehold.co
 - prcdn.co
 - pscdn.co
+- rblx.co
 - scdn.co
 - ipfs.sloppyta.co
 - smilecdn.co
@@ -2772,6 +2774,7 @@ domain_suffix_set:
 - aptoide.com
 - ipfs.arching-kaos.com
 - images.arcpublishing.com
+- roblox-api.arkoselabs.com
 - armorgames.com
 - artstation.com
 - ashemaletube.com
@@ -2869,6 +2872,7 @@ domain_suffix_set:
 - blogger.com
 - blogoverflow.com
 - bloomberg.com
+- blox.com
 - blz-contentstack.com
 - bnbstatic.com
 - storage.boilerplate.com
@@ -3302,11 +3306,14 @@ domain_suffix_set:
 - gmodules.com
 - gnc.com
 - go-lang.com
+- goblocks.com
+- goblox.com
 - godaddy.com
 - gofundme.com
 - gog.com
 - gog-statics.com
 - golang.com
+- gooblox.com
 - goodreads.com
 - googl.com
 - gooogle.com
@@ -3401,6 +3408,7 @@ domain_suffix_set:
 - hulu.com
 - huluim.com
 - hulustream.com
+- humancoexperience.com
 - humblebundle.com
 - huobi.com
 - hutpromos.com
@@ -3994,8 +4002,11 @@ domain_suffix_set:
 - rawgithub.com
 - raxcdn.com
 - raycast.com
+- rblx.com
 - rbx.com
 - rbxcdn.com
+- rbxlabs.com
+- rbxtrk.com
 - rdtcdn.com
 - react.com
 - reactjs.com
@@ -4031,6 +4042,9 @@ domain_suffix_set:
 - riotpin.com
 - riotpoints.com
 - rlcdn.com
+- ro-blox.com
+- roadblocks.com
+- roblocks.com
 - roblox.com
 - robloxlabs.com
 - roboflow.com
@@ -4040,6 +4054,8 @@ domain_suffix_set:
 - cdn.rollbar.com
 - roseimgs.com
 - rottentomatoes.com
+- rowblocks.com
+- rowblox.com
 - rrcdnbf3.com
 - rtings.com
 - dataplane.rudderstack.com
@@ -4650,6 +4666,7 @@ domain_suffix_set:
 - icon.horse
 - assets-servd.host
 - sr.ht
+- roblox.hu
 - cthd.icu
 - id
 - ie
@@ -5199,6 +5216,7 @@ domain_suffix_set:
 - pypl.net
 - quad9.net
 - quoracdn.net
+- rbxinfra.net
 - reasoningtheory.net
 - recaptcha.net
 - redcdn.net
@@ -5211,6 +5229,7 @@ domain_suffix_set:
 - riotgames.net
 - ripe.net
 - riseup.net
+- roblox.net
 - rocksdb.net
 - rsb.net
 - rspcdn.net
@@ -5539,6 +5558,7 @@ domain_suffix_set:
 - rfa.org
 - rfc-editor.org
 - rferl.org
+- roblox.org
 - rocksdb.org
 - rollupjs.org
 - rpmfusion.org
@@ -5639,6 +5659,7 @@ domain_suffix_set:
 - ps
 - nintendo.com.pt
 - nintendo.pt
+- roblox.pt
 - ubuntumirror.dei.uc.pt
 - re
 - rip
