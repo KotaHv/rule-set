@@ -1,4 +1,4 @@
-# Total: 5771 rules
+# Total: 5774 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2164,6 +2164,8 @@
 - 'ftp.saix.net'
 - 'gpl.savoirfairelinux.net'
 - 'mirror.server.net'
+- 'icms-image.slatic.net'
+- 'lzd-img-global.slatic.net'
 - 'cdn.softswiss.net'
 - 'mirrors.sonic.net'
 - 'ftp.sotirov-bg.net'
@@ -3536,6 +3538,7 @@
 - '+.larksuitecdn.com'
 - '+.launchdarkly.com'
 - '+.launchpadlibrarian.com'
+- '+.lazcdn.com'
 - '+.lbpicpic.com'
 - '+.lbpictupian.com'
 - '+.lcsmerch.com'

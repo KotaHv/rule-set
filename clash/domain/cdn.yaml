@@ -1,4 +1,4 @@
-# Total: 4089 rules
+# Total: 4092 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -2559,6 +2559,8 @@
 - 'img.reimu.net'
 - 'www-static.ripe.net'
 - 'cdn.mcauto-images-production.sendgrid.net'
+- 'icms-image.slatic.net'
+- 'lzd-img-global.slatic.net'
 - 'cdn.softswiss.net'
 - 'fonts.sony.net'
 - 'cdn.pi.spectrum.net'
@@ -3339,6 +3341,7 @@
 - '+.kwcdn.com'
 - '+.kym-cdn.com'
 - '+.larksuitecdn.com'
+- '+.lazcdn.com'
 - '+.lbpicpic.com'
 - '+.lbpictupian.com'
 - '+.ldstatic.com'

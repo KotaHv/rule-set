@@ -1,4 +1,4 @@
-# Total: 5898 rules
+# Total: 5901 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2165,6 +2165,8 @@ domain_set:
 - ftp.saix.net
 - gpl.savoirfairelinux.net
 - mirror.server.net
+- icms-image.slatic.net
+- lzd-img-global.slatic.net
 - cdn.softswiss.net
 - mirrors.sonic.net
 - ftp.sotirov-bg.net
@@ -3538,6 +3540,7 @@ domain_suffix_set:
 - larksuitecdn.com
 - launchdarkly.com
 - launchpadlibrarian.com
+- lazcdn.com
 - lbpicpic.com
 - lbpictupian.com
 - lcsmerch.com

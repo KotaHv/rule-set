@@ -1,4 +1,4 @@
-# Total: 4168 rules
+# Total: 4171 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2560,6 +2560,8 @@ domain_set:
 - img.reimu.net
 - www-static.ripe.net
 - cdn.mcauto-images-production.sendgrid.net
+- icms-image.slatic.net
+- lzd-img-global.slatic.net
 - cdn.softswiss.net
 - fonts.sony.net
 - cdn.pi.spectrum.net
@@ -3341,6 +3343,7 @@ domain_suffix_set:
 - kwcdn.com
 - kym-cdn.com
 - larksuitecdn.com
+- lazcdn.com
 - lbpicpic.com
 - lbpictupian.com
 - ldstatic.com
