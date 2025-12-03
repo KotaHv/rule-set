@@ -1,4 +1,4 @@
-# Total: 15 rules
+# Total: 16 rules
 'payload':
 - 'stat.youpin.mi.com'
 - 'nom.telemetrydeck.com'
@@ -11,6 +11,7 @@
 - '+.tracking.intl.miui.com'
 - '+.tracking.miui.com'
 - '+.beacon.qq.com'
+- '+.f-log-extension.grammarly.io'
 - '+.jpush.io'
 - '+.getui.net'
 - '+.null'
