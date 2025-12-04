@@ -1,6 +1,7 @@
-# Total: 1596 rules
+# Total: 1598 rules
 no_resolve: true
 domain_set:
+- speedtest-ams.baremetal.ae
 - speedtest.58243.as
 - sg.cloudhost.asia
 - speedtest.qld.checknetworks.au
@@ -81,6 +82,7 @@ domain_set:
 - ookla.p2.neptune.net.au
 - ookla.sy1.neptune.net.au
 - speedtest.syd.netsg.net.au
+- speedtest01.bne1.spintel.net.au
 - speedtest01.mel1.spintel.net.au
 - speedtest01.per1.spintel.net.au
 - speedtest01.syd1.spintel.net.au
