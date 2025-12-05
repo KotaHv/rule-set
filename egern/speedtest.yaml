@@ -1,4 +1,4 @@
-# Total: 1598 rules
+# Total: 1600 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1199,6 +1199,7 @@ domain_set:
 - ca00svp-speed11.svc.tds.net
 - ny00svp-speed11.svc.tds.net
 - wa01svp-speed11.svc.tds.net
+- qspt.technofiber.net
 - speed.telcomnetwork.net
 - speedtest.telerys.net
 - hkthspeedtest02.telstraglobal.net
@@ -1351,6 +1352,7 @@ domain_set:
 - hiztesti.codit.com.tr
 - hiztesti-ist.codit.com.tr
 - speedtest.datafex.com.tr
+- speedtest2.datafex.com.tr
 - speedtest.didimnet.com.tr
 - hizaydin.durunet.com.tr
 - hizbalikesir.durunet.com.tr
