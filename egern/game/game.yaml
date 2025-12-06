@@ -1,4 +1,4 @@
-# Total: 655 rules
+# Total: 661 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -85,6 +85,7 @@ domain_suffix_set:
 - anthemgame.com
 - anthemthegame.com
 - apexlegends.com
+- arcraiders.com
 - roblox-api.arkoselabs.com
 - artstation.com
 - asobostudio.com
@@ -177,11 +178,13 @@ domain_suffix_set:
 - eft-store.com
 - elderscrolls.com
 - electronicarts.com
+- embark-studios.com
 - epicgames.com
 - epicgamescdn.com
 - escapefromtarkov.com
 - excitebots.com
 - fab.com
+- faceit.com
 - fanatical.com
 - egdownload.fastly-edge.com
 - fifastreet.com
@@ -364,6 +367,7 @@ domain_suffix_set:
 - rbxcdn.com
 - rbxlabs.com
 - rbxtrk.com
+- reachthefinals.com
 - realityscan.com
 - renovacionxboxlive.com
 - respawn.com
@@ -508,6 +512,7 @@ domain_suffix_set:
 - nintendo.fr
 - roblox.fr
 - beth.games
+- embark.games
 - op.gg
 - nintendo.com.hk
 - roblox.hu
@@ -566,6 +571,7 @@ domain_suffix_set:
 - eamythic.net
 - easyanticheat.net
 - fabricmc.net
+- faceit-cdn.net
 - forgecdn.net
 - forza.net
 - forzamotorsport.net
