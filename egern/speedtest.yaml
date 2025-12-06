@@ -1,4 +1,4 @@
-# Total: 1600 rules
+# Total: 1601 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -325,6 +325,7 @@ domain_set:
 - sp1.virtualnet.log.br
 - teste.jsnet.manaus.br
 - speedtest.syscom.manaus.br
+- speedtest.3dnet.net.br
 - velocidade-mns.4wnet.net.br
 - test.accesso.net.br
 - speedtest.americatelecom.net.br
