@@ -1,4 +1,4 @@
-# Total: 823 rules
+# Total: 824 rules
 'payload':
 - 'i.dell.com'
 - 'ocsp.globalsign.com'
@@ -286,6 +286,7 @@
 - '+.gcloudcstestonly.com'
 - '+.gclouddolphin.com'
 - '+.gcloudsdk.com'
+- '+.gcloudsvcs.com'
 - '+.gdtimg.com'
 - '+.geetest.com'
 - '+.geilicdn.com'

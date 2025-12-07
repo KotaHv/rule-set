@@ -1,4 +1,4 @@
-# Total: 826 rules
+# Total: 827 rules
 no_resolve: true
 domain_set:
 - i.dell.com
@@ -288,6 +288,7 @@ domain_suffix_set:
 - gcloudcstestonly.com
 - gclouddolphin.com
 - gcloudsdk.com
+- gcloudsvcs.com
 - gdtimg.com
 - geetest.com
 - geilicdn.com
