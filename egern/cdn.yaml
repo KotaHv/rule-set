@@ -484,7 +484,6 @@ domain_set:
 - staticintl.cloudcachetci.com
 - ajax.cloudflare.com
 - cdnjs.cloudflare.com
-- static.dash.cloudflare.com
 - info.cloudflare.com
 - favicons.teams.cloudflare.com
 - time.cloudflare.com
@@ -3146,6 +3145,7 @@ domain_suffix_set:
 - cloudatacdn.com
 - storage.cloudconvert.com
 - csp-reporting.cloudflare.com
+- static.dash.cloudflare.com
 - nel.cloudflare.com
 - privacy-gateway.cloudflare.com
 - cloudflare-ipfs.com
