@@ -1,4 +1,4 @@
-# Total: 5780 rules
+# Total: 5782 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1134,6 +1134,7 @@
 - 'js.partnerstack.com'
 - 'cdn.pathfactory.com'
 - 'cdn-app.pathfactory.com'
+- 'hawky.pcgamer.com'
 - 'pcdn-my.pcloud.com'
 - 'pcdn-www.pcloud.com'
 - 'i.pcmag.com'
@@ -1739,6 +1740,7 @@
 - 'cdn.growthbook.io'
 - 'gtranslate.io'
 - 'media.hachyderm.io'
+- 'cdn.hackaday.io'
 - 'packages.httpie.io'
 - 'libraries.hund.io'
 - 'icon.icepanel.io'

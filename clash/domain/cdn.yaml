@@ -1,4 +1,4 @@
-# Total: 4093 rules
+# Total: 4095 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1398,6 +1398,7 @@
 - 'c8.patreon.com'
 - 'pics.paypal.com'
 - 'www.paypalobjects.com'
+- 'hawky.pcgamer.com'
 - 'pcdn-my.pcloud.com'
 - 'pcdn-www.pcloud.com'
 - 'i.pcmag.com'
@@ -2163,6 +2164,7 @@
 - 'cdn.growthbook.io'
 - 'gtranslate.io'
 - 'media.hachyderm.io'
+- 'cdn.hackaday.io'
 - 'assets.hackmd.io'
 - 'assets.holopin.io'
 - 'libraries.hund.io'

@@ -1,4 +1,4 @@
-# Total: 5907 rules
+# Total: 5909 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1135,6 +1135,7 @@ domain_set:
 - js.partnerstack.com
 - cdn.pathfactory.com
 - cdn-app.pathfactory.com
+- hawky.pcgamer.com
 - pcdn-my.pcloud.com
 - pcdn-www.pcloud.com
 - i.pcmag.com
@@ -1740,6 +1741,7 @@ domain_set:
 - cdn.growthbook.io
 - gtranslate.io
 - media.hachyderm.io
+- cdn.hackaday.io
 - packages.httpie.io
 - libraries.hund.io
 - icon.icepanel.io
