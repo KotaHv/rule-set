@@ -1,4 +1,4 @@
-# Total: 1866 rules
+# Total: 1865 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -687,7 +687,6 @@
 - 'mirror.del.albony.in'
 - 'ubuntu-mirror.snu.edu.in'
 - 'gopkg.in'
-- 'ctan.imsc.res.in'
 - 'go.yaml.in'
 - 'centos-stream.ip-connect.info'
 - 'gimp.ip-connect.info'
@@ -1080,7 +1079,6 @@
 - 'ftp.kr.freebsd.org'
 - 'mirror.freedif.org'
 - 'files2.freedownloadmanager.org'
-- 'gnu.freemirror.org'
 - 'directory.fsf.org'
 - 'cdn.fwupd.org'
 - 'dennou-k.gfd-dennou.org'
@@ -1843,6 +1841,7 @@
 - '+.ftp-master.debian.org'
 - '+.mirrors.dotsrc.org'
 - '+.copr.fedorainfracloud.org'
+- '+.freemirror.org'
 - '+.getcomposer.org'
 - '+.mirrors.ionfish.org'
 - '+.mirrorservice.org'

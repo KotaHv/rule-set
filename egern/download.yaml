@@ -1,4 +1,4 @@
-# Total: 1874 rules
+# Total: 1873 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -688,7 +688,6 @@ domain_set:
 - mirror.del.albony.in
 - ubuntu-mirror.snu.edu.in
 - gopkg.in
-- ctan.imsc.res.in
 - go.yaml.in
 - centos-stream.ip-connect.info
 - gimp.ip-connect.info
@@ -1081,7 +1080,6 @@ domain_set:
 - ftp.kr.freebsd.org
 - mirror.freedif.org
 - files2.freedownloadmanager.org
-- gnu.freemirror.org
 - directory.fsf.org
 - cdn.fwupd.org
 - dennou-k.gfd-dennou.org
@@ -1845,6 +1843,7 @@ domain_suffix_set:
 - ftp-master.debian.org
 - mirrors.dotsrc.org
 - copr.fedorainfracloud.org
+- freemirror.org
 - getcomposer.org
 - mirrors.ionfish.org
 - mirrorservice.org

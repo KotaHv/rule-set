@@ -1,4 +1,4 @@
-# Total: 1867 rules
+# Total: 1866 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -686,7 +686,6 @@ DOMAIN,mirror.bom2.albony.in
 DOMAIN,mirror.del.albony.in
 DOMAIN,ubuntu-mirror.snu.edu.in
 DOMAIN,gopkg.in
-DOMAIN,ctan.imsc.res.in
 DOMAIN,go.yaml.in
 DOMAIN,centos-stream.ip-connect.info
 DOMAIN,gimp.ip-connect.info
@@ -1079,7 +1078,6 @@ DOMAIN,distcache.freebsd.org
 DOMAIN,ftp.kr.freebsd.org
 DOMAIN,mirror.freedif.org
 DOMAIN,files2.freedownloadmanager.org
-DOMAIN,gnu.freemirror.org
 DOMAIN,directory.fsf.org
 DOMAIN,cdn.fwupd.org
 DOMAIN,dennou-k.gfd-dennou.org
@@ -1842,6 +1840,7 @@ DOMAIN-SUFFIX,ftp.debian.org
 DOMAIN-SUFFIX,ftp-master.debian.org
 DOMAIN-SUFFIX,mirrors.dotsrc.org
 DOMAIN-SUFFIX,copr.fedorainfracloud.org
+DOMAIN-SUFFIX,freemirror.org
 DOMAIN-SUFFIX,getcomposer.org
 DOMAIN-SUFFIX,mirrors.ionfish.org
 DOMAIN-SUFFIX,mirrorservice.org

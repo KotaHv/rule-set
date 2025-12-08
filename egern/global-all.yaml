@@ -1,4 +1,4 @@
-# Total: 5909 rules
+# Total: 5904 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -145,7 +145,6 @@ domain_set:
 - img.decrypt.co
 - assets.dub.co
 - mirror.unimagdalena.edu.co
-- statics.erothots.co
 - previews.fleek.co
 - storageapi.fleek.co
 - storageapi2.fleek.co
@@ -310,7 +309,6 @@ domain_set:
 - assets.basehub.com
 - apps.bazaarvoice.com
 - www.bbthat.com
-- chat-content.beanfun.com
 - static.beebom.com
 - media.beehiiv.com
 - download.beeper.com
@@ -2291,7 +2289,6 @@ domain_set:
 - mirror.faraso.org
 - cdn.fosstodon.org
 - mirror.freedif.org
-- gnu.freemirror.org
 - cdn.freesound.org
 - directory.fsf.org
 - cdn.fwupd.org
@@ -2325,11 +2322,8 @@ domain_set:
 - cdn.mathjax.org
 - repo1.maven.org
 - s1.maxstream.org
-- s10.maxstream.org
-- s11.maxstream.org
 - s13.maxstream.org
 - s8.maxstream.org
-- s9.maxstream.org
 - img.moedog.org
 - d.myani.org
 - o.n1mp.org
@@ -5424,6 +5418,7 @@ domain_suffix_set:
 - freebsd.org
 - freecodecamp.org
 - freedownloadmanager.org
+- freemirror.org
 - frescolib.org
 - ipfs.genenetwork.org
 - gentoo.org

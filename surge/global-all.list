@@ -1,4 +1,4 @@
-# Total: 5973 rules
+# Total: 5968 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -143,7 +143,6 @@ DOMAIN,cdn.decrypt.co
 DOMAIN,img.decrypt.co
 DOMAIN,assets.dub.co
 DOMAIN,mirror.unimagdalena.edu.co
-DOMAIN,statics.erothots.co
 DOMAIN,previews.fleek.co
 DOMAIN,storageapi.fleek.co
 DOMAIN,storageapi2.fleek.co
@@ -308,7 +307,6 @@ DOMAIN,cloudfront.barilliance.com
 DOMAIN,assets.basehub.com
 DOMAIN,apps.bazaarvoice.com
 DOMAIN,www.bbthat.com
-DOMAIN,chat-content.beanfun.com
 DOMAIN,static.beebom.com
 DOMAIN,media.beehiiv.com
 DOMAIN,download.beeper.com
@@ -2289,7 +2287,6 @@ DOMAIN,repo.extreme-ix.org
 DOMAIN,mirror.faraso.org
 DOMAIN,cdn.fosstodon.org
 DOMAIN,mirror.freedif.org
-DOMAIN,gnu.freemirror.org
 DOMAIN,cdn.freesound.org
 DOMAIN,directory.fsf.org
 DOMAIN,cdn.fwupd.org
@@ -2323,11 +2320,8 @@ DOMAIN,demotiles.maplibre.org
 DOMAIN,cdn.mathjax.org
 DOMAIN,repo1.maven.org
 DOMAIN,s1.maxstream.org
-DOMAIN,s10.maxstream.org
-DOMAIN,s11.maxstream.org
 DOMAIN,s13.maxstream.org
 DOMAIN,s8.maxstream.org
-DOMAIN,s9.maxstream.org
 DOMAIN,img.moedog.org
 DOMAIN,d.myani.org
 DOMAIN,o.n1mp.org
@@ -5421,6 +5415,7 @@ DOMAIN-SUFFIX,foundationdb.org
 DOMAIN-SUFFIX,freebsd.org
 DOMAIN-SUFFIX,freecodecamp.org
 DOMAIN-SUFFIX,freedownloadmanager.org
+DOMAIN-SUFFIX,freemirror.org
 DOMAIN-SUFFIX,frescolib.org
 DOMAIN-SUFFIX,ipfs.genenetwork.org
 DOMAIN-SUFFIX,gentoo.org

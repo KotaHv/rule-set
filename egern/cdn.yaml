@@ -1,4 +1,4 @@
-# Total: 4174 rules
+# Total: 4168 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -121,7 +121,6 @@ domain_set:
 - cdn.decrypt.co
 - img.decrypt.co
 - assets.dub.co
-- statics.erothots.co
 - previews.fleek.co
 - storageapi.fleek.co
 - storageapi2.fleek.co
@@ -329,7 +328,6 @@ domain_set:
 - makerworld.bblmw.com
 - public-cdn.bblmw.com
 - www.bbthat.com
-- chat-content.beanfun.com
 - static.beebom.com
 - media.beehiiv.com
 - secure.beer7live.com
@@ -2692,11 +2690,8 @@ domain_set:
 - demotiles.maplibre.org
 - cdn.mathjax.org
 - s1.maxstream.org
-- s10.maxstream.org
-- s11.maxstream.org
 - s13.maxstream.org
 - s8.maxstream.org
-- s9.maxstream.org
 - assets.mayoclinic.org
 - design.mayoclinic.org
 - img.moedog.org
@@ -2887,7 +2882,6 @@ domain_set:
 - images.pluto.tv
 - static-homepage-en.pluto.tv
 - static.tella.tv
-- mcdn.tubi.tv
 - assets.twitch.tv
 - clips-media-assets2.twitch.tv
 - embed.twitch.tv
