@@ -1,4 +1,4 @@
-# Total: 4110 rules
+# Total: 4111 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -2172,7 +2172,6 @@ DOMAIN,tracking.inflection.io
 DOMAIN,cdn.insightmediagroup.io
 DOMAIN,widget.intercom.io
 DOMAIN,cdn.ip2location.io
-DOMAIN,website-cdn.ipinfo.io
 DOMAIN,static.itch.io
 DOMAIN,cdn.jetboost.io
 DOMAIN,cdn-blocks.karte.io
@@ -2944,6 +2943,7 @@ DOMAIN,tubi.video
 DOMAIN,cdn.violet.vin
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,tanju.vip
+DOMAIN,website-cdn
 DOMAIN,www.10086.win
 DOMAIN,api.allorigins.win
 DOMAIN,static.frame.work
@@ -3729,6 +3729,7 @@ DOMAIN-SUFFIX,infura-ipfs.io
 DOMAIN-SUFFIX,intercomcdn.io
 DOMAIN-SUFFIX,ipfs.io
 DOMAIN-SUFFIX,ipfscdn.io
+DOMAIN-SUFFIX,assets.ipinfo.io
 DOMAIN-SUFFIX,cdn.ipinfo.io
 DOMAIN-SUFFIX,jbkcdn.io
 DOMAIN-SUFFIX,jspm.io
