@@ -1,4 +1,4 @@
-# Total: 1604 rules
+# Total: 1605 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -800,6 +800,7 @@ domain_set:
 - dalspeedtest.rtatel.com
 - st1.scaleway.com
 - speedtest.sercomm.com
+- ookla-anc.seroficom.com
 - speed.serveroyun.com
 - speedtest.serveroyun.com
 - speedtest.serverpronto.com
