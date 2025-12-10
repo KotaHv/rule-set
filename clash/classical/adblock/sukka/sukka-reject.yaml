@@ -1,4 +1,4 @@
-# Total: 164 rules
+# Total: 165 rules
 payload:
 - DOMAIN-WILDCARD,analytics-*.aasaam.com
 - DOMAIN-WILDCARD,pixel*.adswizz.com
@@ -107,6 +107,7 @@ payload:
 - DOMAIN-KEYWORD,insights-collector.
 - DOMAIN-KEYWORD,iqmetrics.
 - DOMAIN-KEYWORD,jshosting
+- DOMAIN-KEYWORD,load.tracking.
 - DOMAIN-KEYWORD,marketing.net
 - DOMAIN-KEYWORD,mighbest
 - DOMAIN-KEYWORD,mon.zijieapi.com
