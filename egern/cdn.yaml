@@ -1,4 +1,4 @@
-# Total: 4169 rules
+# Total: 4171 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1003,6 +1003,7 @@ domain_set:
 - media.invisioncic.com
 - i.ioiox.com
 - code.ionicframework.com
+- cdn.ip2location.com
 - assets.ipstack.com
 - isitmaintained.com
 - media.istockphoto.com
@@ -2174,6 +2175,8 @@ domain_set:
 - cdn.insightmediagroup.io
 - widget.intercom.io
 - cdn.ip2location.io
+- website-cdn.ipinfo.io
+- cdn.ipwhois.io
 - static.itch.io
 - cdn.jetboost.io
 - cdn-blocks.karte.io
@@ -2945,7 +2948,6 @@ domain_set:
 - cdn.violet.vin
 - cdn-msp.18comic.vip
 - tanju.vip
-- website-cdn
 - www.10086.win
 - api.allorigins.win
 - static.frame.work

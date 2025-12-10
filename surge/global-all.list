@@ -1,4 +1,4 @@
-# Total: 5969 rules
+# Total: 5971 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -802,6 +802,7 @@ DOMAIN,content.invisioncic.com
 DOMAIN,media.invisioncic.com
 DOMAIN,i.ioiox.com
 DOMAIN,code.ionicframework.com
+DOMAIN,cdn.ip2location.com
 DOMAIN,debian.ipacct.com
 DOMAIN,ubuntu.ipacct.com
 DOMAIN,mirrors.ipserverone.com
@@ -1747,6 +1748,8 @@ DOMAIN,tracking.inflection.io
 DOMAIN,cdn.insightmediagroup.io
 DOMAIN,widget.intercom.io
 DOMAIN,cdn.ip2location.io
+DOMAIN,website-cdn.ipinfo.io
+DOMAIN,cdn.ipwhois.io
 DOMAIN,cdn.jetboost.io
 DOMAIN,cdn-blocks.karte.io
 DOMAIN,cdn-edge.karte.io
@@ -2483,7 +2486,6 @@ DOMAIN,img.api.video
 DOMAIN,tubi.video
 DOMAIN,cdn.violet.vin
 DOMAIN,tanju.vip
-DOMAIN,website-cdn
 DOMAIN,www.10086.win
 DOMAIN,api.allorigins.win
 DOMAIN,static.frame.work

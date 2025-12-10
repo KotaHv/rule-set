@@ -1,4 +1,4 @@
-# Total: 5778 rules
+# Total: 5780 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -803,6 +803,7 @@
 - 'media.invisioncic.com'
 - 'i.ioiox.com'
 - 'code.ionicframework.com'
+- 'cdn.ip2location.com'
 - 'debian.ipacct.com'
 - 'ubuntu.ipacct.com'
 - 'mirrors.ipserverone.com'
@@ -1748,6 +1749,8 @@
 - 'cdn.insightmediagroup.io'
 - 'widget.intercom.io'
 - 'cdn.ip2location.io'
+- 'website-cdn.ipinfo.io'
+- 'cdn.ipwhois.io'
 - 'cdn.jetboost.io'
 - 'cdn-blocks.karte.io'
 - 'cdn-edge.karte.io'
@@ -2484,7 +2487,6 @@
 - 'tubi.video'
 - 'cdn.violet.vin'
 - 'tanju.vip'
-- 'website-cdn'
 - 'www.10086.win'
 - 'api.allorigins.win'
 - 'static.frame.work'

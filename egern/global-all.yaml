@@ -1,4 +1,4 @@
-# Total: 5905 rules
+# Total: 5907 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -804,6 +804,7 @@ domain_set:
 - media.invisioncic.com
 - i.ioiox.com
 - code.ionicframework.com
+- cdn.ip2location.com
 - debian.ipacct.com
 - ubuntu.ipacct.com
 - mirrors.ipserverone.com
@@ -1749,6 +1750,8 @@ domain_set:
 - cdn.insightmediagroup.io
 - widget.intercom.io
 - cdn.ip2location.io
+- website-cdn.ipinfo.io
+- cdn.ipwhois.io
 - cdn.jetboost.io
 - cdn-blocks.karte.io
 - cdn-edge.karte.io
@@ -2485,7 +2488,6 @@ domain_set:
 - tubi.video
 - cdn.violet.vin
 - tanju.vip
-- website-cdn
 - www.10086.win
 - api.allorigins.win
 - static.frame.work
