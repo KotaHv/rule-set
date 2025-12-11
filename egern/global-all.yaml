@@ -1,4 +1,4 @@
-# Total: 5910 rules
+# Total: 5919 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -674,6 +674,9 @@ domain_set:
 - cdn.gethypervisual.com
 - assets.getkirby.com
 - cdn.getkoala.com
+- assets.getpostman.com
+- identity-assets.getpostman.com
+- static.getpostman.com
 - sync.getpublica.com
 - cdn.gettr.com
 - media.gettr.com
@@ -804,9 +807,11 @@ domain_set:
 - media.invisioncic.com
 - i.ioiox.com
 - code.ionicframework.com
+- cache.ip-api.com
 - cdn.ip2location.com
 - debian.ipacct.com
 - ubuntu.ipacct.com
+- assets.ipapi.com
 - mirrors.ipserverone.com
 - assets.ipstack.com
 - cache.video.iqiyi.com
@@ -1752,7 +1757,9 @@ domain_set:
 - cdn.insightmediagroup.io
 - widget.intercom.io
 - cdn.ip2location.io
+- static.ipgeolocation.io
 - website-cdn.ipinfo.io
+- static.iplocate.io
 - cdn.ipwhois.io
 - cdn.jetboost.io
 - cdn-blocks.karte.io
@@ -1795,6 +1802,7 @@ domain_set:
 - download.projectbluefin.io
 - js.prosopo.io
 - dl.pstmn.io
+- documenter-assets.pstmn.io
 - skills-assets.pstmn.io
 - cdn.readme.io
 - files.readme.io
@@ -5109,6 +5117,7 @@ domain_suffix_set:
 - hentaiplay.net
 - hinet.net
 - historyofdota.net
+- hrcdn.net
 - hs-scripts.net
 - hsappstatic.net
 - hscollectedforms.net

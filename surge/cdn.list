@@ -1,4 +1,4 @@
-# Total: 4174 rules
+# Total: 4183 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -791,6 +791,9 @@ DOMAIN,connect.getflowbox.com
 DOMAIN,cdn.gethypervisual.com
 DOMAIN,assets.getkirby.com
 DOMAIN,cdn.getkoala.com
+DOMAIN,assets.getpostman.com
+DOMAIN,identity-assets.getpostman.com
+DOMAIN,static.getpostman.com
 DOMAIN,sync.getpublica.com
 DOMAIN,cdn.gettr.com
 DOMAIN,media.gettr.com
@@ -1002,7 +1005,9 @@ DOMAIN,content.invisioncic.com
 DOMAIN,media.invisioncic.com
 DOMAIN,i.ioiox.com
 DOMAIN,code.ionicframework.com
+DOMAIN,cache.ip-api.com
 DOMAIN,cdn.ip2location.com
+DOMAIN,assets.ipapi.com
 DOMAIN,assets.ipstack.com
 DOMAIN,isitmaintained.com
 DOMAIN,media.istockphoto.com
@@ -2176,7 +2181,9 @@ DOMAIN,tracking.inflection.io
 DOMAIN,cdn.insightmediagroup.io
 DOMAIN,widget.intercom.io
 DOMAIN,cdn.ip2location.io
+DOMAIN,static.ipgeolocation.io
 DOMAIN,website-cdn.ipinfo.io
+DOMAIN,static.iplocate.io
 DOMAIN,cdn.ipwhois.io
 DOMAIN,static.itch.io
 DOMAIN,cdn.jetboost.io
@@ -2212,6 +2219,7 @@ DOMAIN,cdn.plyr.io
 DOMAIN,prettier.io
 DOMAIN,images.prismic.io
 DOMAIN,js.prosopo.io
+DOMAIN,documenter-assets.pstmn.io
 DOMAIN,skills-assets.pstmn.io
 DOMAIN,cdn.readme.io
 DOMAIN,files.readme.io
@@ -3864,6 +3872,7 @@ DOMAIN-SUFFIX,gitlab-static.net
 DOMAIN-SUFFIX,gold-usergeneratedcontent.net
 DOMAIN-SUFFIX,gtranslate.net
 DOMAIN-SUFFIX,hbfile.net
+DOMAIN-SUFFIX,hrcdn.net
 DOMAIN-SUFFIX,hs-scripts.net
 DOMAIN-SUFFIX,hsappstatic.net
 DOMAIN-SUFFIX,hscollectedforms.net

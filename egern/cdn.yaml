@@ -1,4 +1,4 @@
-# Total: 4174 rules
+# Total: 4183 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -793,6 +793,9 @@ domain_set:
 - cdn.gethypervisual.com
 - assets.getkirby.com
 - cdn.getkoala.com
+- assets.getpostman.com
+- identity-assets.getpostman.com
+- static.getpostman.com
 - sync.getpublica.com
 - cdn.gettr.com
 - media.gettr.com
@@ -1004,7 +1007,9 @@ domain_set:
 - media.invisioncic.com
 - i.ioiox.com
 - code.ionicframework.com
+- cache.ip-api.com
 - cdn.ip2location.com
+- assets.ipapi.com
 - assets.ipstack.com
 - isitmaintained.com
 - media.istockphoto.com
@@ -2178,7 +2183,9 @@ domain_set:
 - cdn.insightmediagroup.io
 - widget.intercom.io
 - cdn.ip2location.io
+- static.ipgeolocation.io
 - website-cdn.ipinfo.io
+- static.iplocate.io
 - cdn.ipwhois.io
 - static.itch.io
 - cdn.jetboost.io
@@ -2214,6 +2221,7 @@ domain_set:
 - prettier.io
 - images.prismic.io
 - js.prosopo.io
+- documenter-assets.pstmn.io
 - skills-assets.pstmn.io
 - cdn.readme.io
 - files.readme.io
@@ -3867,6 +3875,7 @@ domain_suffix_set:
 - gold-usergeneratedcontent.net
 - gtranslate.net
 - hbfile.net
+- hrcdn.net
 - hs-scripts.net
 - hsappstatic.net
 - hscollectedforms.net
