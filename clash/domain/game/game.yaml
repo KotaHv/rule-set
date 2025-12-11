@@ -1,4 +1,4 @@
-# Total: 660 rules
+# Total: 661 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -287,6 +287,7 @@
 - '+.needforspeedundergroundeast.com'
 - '+.newsupermariobrosu.com'
 - '+.nexon.com'
+- '+.nexus-cdn.com'
 - '+.nexusmods.com'
 - '+.nfsworld.com'
 - '+.nikke-de.com'
