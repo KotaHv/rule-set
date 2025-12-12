@@ -1,9 +1,10 @@
-# Total: 59 rules
+# Total: 61 rules
 DOMAIN,eu.cdn.blizzard.com
 DOMAIN,kr.cdn.blizzard.com
 DOMAIN,us.cdn.blizzard.com
 DOMAIN,level3.blizzard.com
 DOMAIN,level3.ssl.blizzard.com
+DOMAIN,prod.cloudflare.cdn.ea.com
 DOMAIN,download.epicgames.com
 DOMAIN,download2.epicgames.com
 DOMAIN,download3.epicgames.com
@@ -48,6 +49,7 @@ DOMAIN,riot-client.dyn.riotcdn.net
 DOMAIN,ares.secure.dyn.riotcdn.net
 DOMAIN,bacon.secure.dyn.riotcdn.net
 DOMAIN,ks-foundation.secure.dyn.riotcdn.net
+DOMAIN,lion.secure.dyn.riotcdn.net
 DOMAIN,lol.secure.dyn.riotcdn.net
 DOMAIN,mock-game.secure.dyn.riotcdn.net
 DOMAIN,riot-client.secure.dyn.riotcdn.net

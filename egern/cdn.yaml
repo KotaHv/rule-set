@@ -1,4 +1,4 @@
-# Total: 4183 rules
+# Total: 4185 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1687,6 +1687,7 @@ domain_set:
 - ui-statics-cf.streamable.com
 - cdn.streamlabs.com
 - sp.streamlabs.com
+- assets.streamlinehq.com
 - checkout.stripe.com
 - connect-js.stripe.com
 - files.stripe.com
@@ -2810,6 +2811,7 @@ domain_set:
 - assets.cello.so
 - cdn.circle.so
 - static.cohere.so
+- cdn.mida.so
 - udata.namespace.so
 - bucket1.notaku.so
 - image-forwarder.notaku.so

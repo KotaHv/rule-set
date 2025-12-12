@@ -1,4 +1,4 @@
-# Total: 5792 rules
+# Total: 5794 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1356,6 +1356,7 @@
 - 'mirrors.storpool.com'
 - 'cdn.streamlabs.com'
 - 'sp.streamlabs.com'
+- 'assets.streamlinehq.com'
 - 'cdn-service.jp.sumologic.com'
 - 'cdn.sunofbeaches.com'
 - 'frontend-assets.supabase.com'
@@ -2434,6 +2435,7 @@
 - 'assets.cello.so'
 - 'cdn.circle.so'
 - 'static.cohere.so'
+- 'cdn.mida.so'
 - 'udata.namespace.so'
 - 'bucket1.notaku.so'
 - 'image-forwarder.notaku.so'

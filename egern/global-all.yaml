@@ -1,4 +1,4 @@
-# Total: 5919 rules
+# Total: 5921 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1357,6 +1357,7 @@ domain_set:
 - mirrors.storpool.com
 - cdn.streamlabs.com
 - sp.streamlabs.com
+- assets.streamlinehq.com
 - cdn-service.jp.sumologic.com
 - cdn.sunofbeaches.com
 - frontend-assets.supabase.com
@@ -2435,6 +2436,7 @@ domain_set:
 - assets.cello.so
 - cdn.circle.so
 - static.cohere.so
+- cdn.mida.so
 - udata.namespace.so
 - bucket1.notaku.so
 - image-forwarder.notaku.so

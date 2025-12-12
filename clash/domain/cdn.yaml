@@ -1,4 +1,4 @@
-# Total: 4104 rules
+# Total: 4106 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1686,6 +1686,7 @@
 - 'ui-statics-cf.streamable.com'
 - 'cdn.streamlabs.com'
 - 'sp.streamlabs.com'
+- 'assets.streamlinehq.com'
 - 'checkout.stripe.com'
 - 'connect-js.stripe.com'
 - 'files.stripe.com'
@@ -2809,6 +2810,7 @@
 - 'assets.cello.so'
 - 'cdn.circle.so'
 - 'static.cohere.so'
+- 'cdn.mida.so'
 - 'udata.namespace.so'
 - 'bucket1.notaku.so'
 - 'image-forwarder.notaku.so'
