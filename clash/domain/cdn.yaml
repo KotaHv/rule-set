@@ -1,4 +1,4 @@
-# Total: 4106 rules
+# Total: 4108 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -2362,6 +2362,8 @@
 - 'townsquare.media'
 - 's3.m.0x.mk'
 - 's3.acg.mn'
+- 'file.ahu.moe'
+- 'static.ahu.moe'
 - 'assets-cdn.anh.moe'
 - 'static.bangumi.moe'
 - 'pic.cangku.moe'
@@ -2646,6 +2648,7 @@
 - 'cdn.geekzone.co.nz'
 - 'storageapi.fleek.one'
 - 'cdn-msp.jmcomic-zzz.one'
+- 'wiki.metacubex.one'
 - 'static.xns.one'
 - 'files.mastodon.online'
 - 'ooo.0o0.ooo'
@@ -3990,7 +3993,6 @@
 - '+.ehgt.org'
 - '+.dweb.eu.org'
 - '+.permaweb.eu.org'
-- '+.f-droid.org'
 - '+.featureassets.org'
 - '+.ipfs.genenetwork.org'
 - '+.graphql.org'

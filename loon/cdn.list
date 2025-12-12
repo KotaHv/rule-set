@@ -1,4 +1,4 @@
-# Total: 4127 rules
+# Total: 4129 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -2361,6 +2361,8 @@ DOMAIN,cms.therecord.media
 DOMAIN,townsquare.media
 DOMAIN,s3.m.0x.mk
 DOMAIN,s3.acg.mn
+DOMAIN,file.ahu.moe
+DOMAIN,static.ahu.moe
 DOMAIN,assets-cdn.anh.moe
 DOMAIN,static.bangumi.moe
 DOMAIN,pic.cangku.moe
@@ -2645,6 +2647,7 @@ DOMAIN,secure.fanboy.co.nz
 DOMAIN,cdn.geekzone.co.nz
 DOMAIN,storageapi.fleek.one
 DOMAIN,cdn-msp.jmcomic-zzz.one
+DOMAIN,wiki.metacubex.one
 DOMAIN,static.xns.one
 DOMAIN,files.mastodon.online
 DOMAIN,ooo.0o0.ooo
@@ -3989,7 +3992,6 @@ DOMAIN-SUFFIX,eggjs.org
 DOMAIN-SUFFIX,ehgt.org
 DOMAIN-SUFFIX,dweb.eu.org
 DOMAIN-SUFFIX,permaweb.eu.org
-DOMAIN-SUFFIX,f-droid.org
 DOMAIN-SUFFIX,featureassets.org
 DOMAIN-SUFFIX,ipfs.genenetwork.org
 DOMAIN-SUFFIX,graphql.org

@@ -1,4 +1,4 @@
-# Total: 1873 rules
+# Total: 1878 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -915,6 +915,7 @@ DOMAIN,dl4.osmand.net
 DOMAIN,dl8.osmand.net
 DOMAIN,dl9.osmand.net
 DOMAIN,download.osmand.net
+DOMAIN,mirror.eu.ossplanet.net
 DOMAIN,mirror.fi.ossplanet.net
 DOMAIN,mirror.ossplanet.net
 DOMAIN,ftp.piotrkosoft.net
@@ -1069,6 +1070,8 @@ DOMAIN,artifacts.electronjs.org
 DOMAIN,ctan.gutenberg.eu.org
 DOMAIN,repos.del.extreme-ix.org
 DOMAIN,repo.extreme-ix.org
+DOMAIN,f-droid.org
+DOMAIN,cloudflare.f-droid.org
 DOMAIN,mirror.faraso.org
 DOMAIN,fedorapeople.org
 DOMAIN,mirrors.fedoraproject.org
@@ -1159,6 +1162,8 @@ DOMAIN,mirror.team-cymru.org
 DOMAIN,s3.teckids.org
 DOMAIN,ftp.ticklers.org
 DOMAIN,mirrors.tino.org
+DOMAIN,deb.torproject.org
+DOMAIN,static.torproject.org
 DOMAIN,tug.org
 DOMAIN,tukaani.org
 DOMAIN,mirror2.tuxinator.org

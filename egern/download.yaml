@@ -1,4 +1,4 @@
-# Total: 1873 rules
+# Total: 1878 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -917,6 +917,7 @@ domain_set:
 - dl8.osmand.net
 - dl9.osmand.net
 - download.osmand.net
+- mirror.eu.ossplanet.net
 - mirror.fi.ossplanet.net
 - mirror.ossplanet.net
 - ftp.piotrkosoft.net
@@ -1071,6 +1072,8 @@ domain_set:
 - ctan.gutenberg.eu.org
 - repos.del.extreme-ix.org
 - repo.extreme-ix.org
+- f-droid.org
+- cloudflare.f-droid.org
 - mirror.faraso.org
 - fedorapeople.org
 - mirrors.fedoraproject.org
@@ -1161,6 +1164,8 @@ domain_set:
 - s3.teckids.org
 - ftp.ticklers.org
 - mirrors.tino.org
+- deb.torproject.org
+- static.torproject.org
 - tug.org
 - tukaani.org
 - mirror2.tuxinator.org

@@ -1,4 +1,4 @@
-# Total: 1865 rules
+# Total: 1870 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -916,6 +916,7 @@
 - 'dl8.osmand.net'
 - 'dl9.osmand.net'
 - 'download.osmand.net'
+- 'mirror.eu.ossplanet.net'
 - 'mirror.fi.ossplanet.net'
 - 'mirror.ossplanet.net'
 - 'ftp.piotrkosoft.net'
@@ -1070,6 +1071,8 @@
 - 'ctan.gutenberg.eu.org'
 - 'repos.del.extreme-ix.org'
 - 'repo.extreme-ix.org'
+- 'f-droid.org'
+- 'cloudflare.f-droid.org'
 - 'mirror.faraso.org'
 - 'fedorapeople.org'
 - 'mirrors.fedoraproject.org'
@@ -1160,6 +1163,8 @@
 - 's3.teckids.org'
 - 'ftp.ticklers.org'
 - 'mirrors.tino.org'
+- 'deb.torproject.org'
+- 'static.torproject.org'
 - 'tug.org'
 - 'tukaani.org'
 - 'mirror2.tuxinator.org'

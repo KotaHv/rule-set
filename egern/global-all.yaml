@@ -1,4 +1,4 @@
-# Total: 5921 rules
+# Total: 5924 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1901,6 +1901,8 @@ domain_set:
 - s3.m.0x.mk
 - mirror.a1.mk
 - mirror.t-home.mk
+- file.ahu.moe
+- static.ahu.moe
 - assets-cdn.anh.moe
 - static.chaika.moe
 - objects.hit.moe
@@ -2145,6 +2147,7 @@ domain_set:
 - mirror.eu.oneandone.net
 - mirror.us.oneandone.net
 - assets.openshift.net
+- mirror.eu.ossplanet.net
 - mirror.fi.ossplanet.net
 - mirror.ossplanet.net
 - storage.gra.cloud.ovh.net
