@@ -1,4 +1,4 @@
-# Total: 167 rules
+# Total: 168 rules
 no_resolve: true
 domain_set:
 - lv.queniujq.cn
@@ -6,6 +6,7 @@ domain_set:
 - alibaba.cdn.steampipe.steamcontent.com
 domain_suffix_set:
 - heavenlywind.cc
+- 9game.cn
 - bilibiligame.cn
 - brawlstars.cn
 - wegame.com.cn
@@ -38,6 +39,7 @@ domain_suffix_set:
 - bilibiligame.co
 - biligame.co
 - 17roco.com
+- 7k7k.com
 - steampowered.com.8686c.com
 - steamstatic.com.8686c.com
 - 9xgame.com
@@ -127,7 +129,6 @@ domain_suffix_set:
 - tiancitycdn.com
 - timibase.com
 - tuyoo.com
-- vgtime.com
 - videoxiaoyouxi.com
 - wanmei.com
 - wcbygame.com
