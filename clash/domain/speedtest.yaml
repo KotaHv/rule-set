@@ -1,4 +1,4 @@
-# Total: 1608 rules
+# Total: 1610 rules
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'speedtest.58243.as'
@@ -1334,6 +1334,7 @@
 - 'm1speedtest1.m1net.com.sg'
 - 'speedtest.myrepublic.com.sg'
 - 'speedtest.singnet.com.sg'
+- 'pl.speedtest.singnet.com.sg'
 - 'speedtest-sg1.simba.sg'
 - 'speedtest2.telin.sg'
 - 'ogtm-speedtest.f5.si'
@@ -1510,6 +1511,7 @@
 - 'speedtest-thn.krystal.uk'
 - 'speedtest.cadence.net.uk'
 - 'speedtest-lon1.elite.net.uk'
+- 'speedtest-ookla-alpha.giant.net.uk'
 - 'speedtest-ookla-beta.giant.net.uk'
 - 'sp1.jump.net.uk'
 - 'speedtest2.lightningfibre.net.uk'
