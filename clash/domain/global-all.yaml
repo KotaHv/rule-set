@@ -1,4 +1,4 @@
-# Total: 5797 rules
+# Total: 5799 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1222,7 +1222,6 @@
 - 'staticsource1.redotpay.com'
 - 'tools.refokus.com'
 - 'static-images.remax.com'
-- 'cdn.report-uri.com'
 - 'img.represent.com'
 - 'img.riskified.com'
 - 'ubuntu.rootlicense.com'
@@ -3315,6 +3314,7 @@
 - '+.githubusercontent.com'
 - '+.gitkraken.com'
 - '+.gitlab.com'
+- '+.gitmirror.com'
 - '+.glbimg.com'
 - '+.glitch.com'
 - '+.globo.com'
@@ -4051,6 +4051,7 @@
 - '+.render.com'
 - '+.renovacionxboxlive.com'
 - '+.replit.com'
+- '+.report-uri.com'
 - '+.respawn.com'
 - '+.returnyoutubedislike.com'
 - '+.returnyoutubedislikeapi.com'
@@ -5778,6 +5779,7 @@
 - '+.cdndoe.xyz'
 - '+.chcdn.xyz'
 - '+.dogehls.xyz'
+- '+.fembeqv2.xyz'
 - '+.flk-ipfs.xyz'
 - '+.gitcdn.xyz'
 - '+.hencover.xyz'

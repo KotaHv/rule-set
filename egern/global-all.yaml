@@ -1,4 +1,4 @@
-# Total: 5924 rules
+# Total: 5926 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1223,7 +1223,6 @@ domain_set:
 - staticsource1.redotpay.com
 - tools.refokus.com
 - static-images.remax.com
-- cdn.report-uri.com
 - img.represent.com
 - img.riskified.com
 - ubuntu.rootlicense.com
@@ -3317,6 +3316,7 @@ domain_suffix_set:
 - githubusercontent.com
 - gitkraken.com
 - gitlab.com
+- gitmirror.com
 - glbimg.com
 - glitch.com
 - globo.com
@@ -4053,6 +4053,7 @@ domain_suffix_set:
 - render.com
 - renovacionxboxlive.com
 - replit.com
+- report-uri.com
 - respawn.com
 - returnyoutubedislike.com
 - returnyoutubedislikeapi.com
@@ -5780,6 +5781,7 @@ domain_suffix_set:
 - cdndoe.xyz
 - chcdn.xyz
 - dogehls.xyz
+- fembeqv2.xyz
 - flk-ipfs.xyz
 - gitcdn.xyz
 - hencover.xyz
