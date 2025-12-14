@@ -1,4 +1,4 @@
-# Total: 1610 rules
+# Total: 1611 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -921,6 +921,7 @@ domain_set:
 - ber.wsqm.telekom-dienste.de
 - ffm.wsqm.telekom-dienste.de
 - speedtest.lazco.dev
+- speedtest.nyc.elcro.digital
 - lax01.screenshot.download
 - mia01.screenshot.download
 - nyc01.screenshot.download

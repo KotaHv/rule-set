@@ -1,4 +1,4 @@
-# Total: 1878 rules
+# Total: 1880 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -259,6 +259,7 @@ domain_set:
 - download.iboysoft.com
 - mirror.debian.ikoula.com
 - mirror.ubuntu.ikoula.com
+- dl.imobie.com
 - mirror.imt-systems.com
 - mirror1.infomaniak.com
 - mirror2.infomaniak.com
@@ -1323,6 +1324,7 @@ domain_set:
 - mirrors.ukfast.co.uk
 - mirror.yuki.net.uk
 - rsync.yuki.net.uk
+- cdn.electronic.us
 - mirror.timkevin.us
 - mirror.xtom.us
 - mirrors.xtom.us
