@@ -1,4 +1,4 @@
-# Total: 825 rules
+# Total: 828 rules
 'payload':
 - 'i.dell.com'
 - 'ubisoftconnect.eo-edgefunctions7.com'
@@ -164,7 +164,9 @@
 - '+.byteeffecttos.com'
 - '+.bytegoofy.com'
 - '+.byteimg.com'
+- '+.bytescm.com'
 - '+.bytetcc.com'
+- '+.bytetos.com'
 - '+.c-ctrip.com'
 - '+.cailianpress.com'
 - '+.cainiao.com'
@@ -741,6 +743,7 @@
 - '+.baixing.net'
 - '+.battle.net'
 - '+.battlecare.net'
+- '+.bdurl.net'
 - '+.biliapi.net'
 - '+.bilibiligame.net'
 - '+.biligame.net'
