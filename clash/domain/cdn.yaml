@@ -1,4 +1,4 @@
-# Total: 4115 rules
+# Total: 4117 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -645,6 +645,7 @@
 - 'assets.embeddables.com'
 - 'cdn.embedly.com'
 - 'images.emojiterra.com'
+- 'assets.endorsely.com'
 - 's3.envato.com'
 - 'cdn1.epicgames.com'
 - 'cdn2.epicgames.com'
@@ -3595,6 +3596,7 @@
 - '+.tiktokcdn-us.com'
 - '+.tildacdn.com'
 - '+.tindiemedia.com'
+- '+.tinifycdn.com'
 - '+.tiqcdn.com'
 - '+.tkcdns.com'
 - '+.tmsimg.com'

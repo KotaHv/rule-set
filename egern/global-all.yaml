@@ -1,4 +1,4 @@
-# Total: 5928 rules
+# Total: 5930 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -574,6 +574,7 @@ domain_set:
 - ees.elsevier.com
 - assets.embeddables.com
 - images.emojiterra.com
+- assets.endorsely.com
 - s3.envato.com
 - mirror.enzu.com
 - aff.equalweb.com
@@ -4341,6 +4342,7 @@ domain_suffix_set:
 - tindie.com
 - tindiemedia.com
 - tineye.com
+- tinifycdn.com
 - tinypng.com
 - tinyurl.com
 - tiqcdn.com

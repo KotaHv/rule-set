@@ -1,4 +1,4 @@
-# Total: 5801 rules
+# Total: 5803 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -573,6 +573,7 @@
 - 'ees.elsevier.com'
 - 'assets.embeddables.com'
 - 'images.emojiterra.com'
+- 'assets.endorsely.com'
 - 's3.envato.com'
 - 'mirror.enzu.com'
 - 'aff.equalweb.com'
@@ -4339,6 +4340,7 @@
 - '+.tindie.com'
 - '+.tindiemedia.com'
 - '+.tineye.com'
+- '+.tinifycdn.com'
 - '+.tinypng.com'
 - '+.tinyurl.com'
 - '+.tiqcdn.com'
