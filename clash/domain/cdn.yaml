@@ -1,4 +1,4 @@
-# Total: 4120 rules
+# Total: 4124 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -59,6 +59,7 @@
 - 'tags.news.com.au'
 - 'styleguide-assets.shannons.com.au'
 - 'res.abc.net.au'
+- 'static.sdkassets.chime.aws'
 - 'components.cyclingfactory.be'
 - 'images.cyclingfactory.be'
 - 'i.111666.best'
@@ -570,7 +571,6 @@
 - 'media.datacenterdynamics.com'
 - 'cdn.datdota.com'
 - 'cdn.db-ip.com'
-- 'website-media.deel.com'
 - 'static.deepl.com'
 - 'import-cdn.default.com'
 - 'cdn.delight-vr.com'
@@ -1101,6 +1101,7 @@
 - 'static-lccn.leetcode.com'
 - 'assets.lemonsqueezy.com'
 - 'cdn.lemonsqueezy.com'
+- 'media.letsdeel.com'
 - 'cdn.lgrckt-in.com'
 - 'media.licdn.com'
 - 'static.licdn.com'
@@ -2014,6 +2015,7 @@
 - 'cdn.zeabur.com'
 - 'icons.zeabur.com'
 - 'service-icons.zeabur.com'
+- 'assets.zendesk.com'
 - 'assets.zerohedge.com'
 - 'cdn.zhujiwiki.com'
 - 'cdn.zigpoll.com'
@@ -2869,6 +2871,7 @@
 - 'embed.tawk.to'
 - 'embed-v2.testimonial.to'
 - 'pics.javhd.today'
+- 'openreplay-new.deel.tools'
 - 'namedotcom-cdn.name.tools'
 - 'css.4jpg.top'
 - 'static-cdn.bytegiftia.top'
@@ -2968,6 +2971,7 @@
 - 'cdn.violet.vin'
 - 'cdn-msp.18comic.vip'
 - 'tanju.vip'
+- 'website-media'
 - 'www.10086.win'
 - 'api.allorigins.win'
 - 'static.frame.work'

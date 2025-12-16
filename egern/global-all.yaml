@@ -1,4 +1,4 @@
-# Total: 5932 rules
+# Total: 5934 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -512,7 +512,6 @@ domain_set:
 - mirror.nl.datapacket.com
 - cdn.datdota.com
 - cdn.db-ip.com
-- website-media.deel.com
 - import-cdn.default.com
 - cdn.delight-vr.com
 - images.design-editor.com
@@ -889,6 +888,7 @@ domain_set:
 - assets.lemonsqueezy.com
 - cdn.lemonsqueezy.com
 - downloads.lemonsqueezy.com
+- media.letsdeel.com
 - cdn.lgrckt-in.com
 - media.licdn.com
 - static.licdn.com
@@ -2474,6 +2474,7 @@ domain_set:
 - mirrors.cloudforest.co.th
 - mirror.ati.tn
 - ubuntu-mirror.ati.tn
+- openreplay-new.deel.tools
 - gotest.tools
 - namedotcom-cdn.name.tools
 - css.4jpg.top
@@ -2507,6 +2508,7 @@ domain_set:
 - tubi.video
 - cdn.violet.vin
 - tanju.vip
+- website-media
 - www.10086.win
 - api.allorigins.win
 - static.frame.work

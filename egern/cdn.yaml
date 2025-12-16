@@ -1,4 +1,4 @@
-# Total: 4199 rules
+# Total: 4203 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -60,6 +60,7 @@ domain_set:
 - tags.news.com.au
 - styleguide-assets.shannons.com.au
 - res.abc.net.au
+- static.sdkassets.chime.aws
 - components.cyclingfactory.be
 - images.cyclingfactory.be
 - i.111666.best
@@ -571,7 +572,6 @@ domain_set:
 - media.datacenterdynamics.com
 - cdn.datdota.com
 - cdn.db-ip.com
-- website-media.deel.com
 - static.deepl.com
 - import-cdn.default.com
 - cdn.delight-vr.com
@@ -1102,6 +1102,7 @@ domain_set:
 - static-lccn.leetcode.com
 - assets.lemonsqueezy.com
 - cdn.lemonsqueezy.com
+- media.letsdeel.com
 - cdn.lgrckt-in.com
 - media.licdn.com
 - static.licdn.com
@@ -2015,6 +2016,7 @@ domain_set:
 - cdn.zeabur.com
 - icons.zeabur.com
 - service-icons.zeabur.com
+- assets.zendesk.com
 - assets.zerohedge.com
 - cdn.zhujiwiki.com
 - cdn.zigpoll.com
@@ -2870,6 +2872,7 @@ domain_set:
 - embed.tawk.to
 - embed-v2.testimonial.to
 - pics.javhd.today
+- openreplay-new.deel.tools
 - namedotcom-cdn.name.tools
 - css.4jpg.top
 - static-cdn.bytegiftia.top
@@ -2969,6 +2972,7 @@ domain_set:
 - cdn.violet.vin
 - cdn-msp.18comic.vip
 - tanju.vip
+- website-media
 - www.10086.win
 - api.allorigins.win
 - static.frame.work

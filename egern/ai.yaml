@@ -1,7 +1,8 @@
-# Total: 44 rules
+# Total: 45 rules
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
+- openrouter.ai
 - gateway.ai.cloudflare.com
 - api.github.com
 - alkalicore-pa.clients6.google.com
