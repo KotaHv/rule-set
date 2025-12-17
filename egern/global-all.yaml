@@ -1,4 +1,4 @@
-# Total: 5934 rules
+# Total: 5941 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -963,6 +963,8 @@ domain_set:
 - static.meiguo.com
 - js.memberful.com
 - static.mendeley.com
+- acdn.mercury.com
+- cdn.mercury.com
 - meteorclient.com
 - cdn.mewe.com
 - public-img.mewe.com
@@ -1616,6 +1618,7 @@ domain_set:
 - cdn.bfe.dev
 - static.bit.dev
 - download.clashverge.dev
+- logos.composio.dev
 - pkg.csb.dev
 - cdn.daily.dev
 - media.daily.dev
@@ -1730,6 +1733,7 @@ domain_set:
 - cdn.commento.io
 - cdn.concert.io
 - images.contentstack.io
+- assets.mcp.corespeed.io
 - update.cyberduck.io
 - cdn.cypress.io
 - download.cypress.io
@@ -1899,6 +1903,7 @@ domain_set:
 - static.start.me
 - i.vgy.me
 - img.xjh.me
+- circle-flags.zeljko.me
 - jssdk.opin.media
 - cms.therecord.media
 - townsquare.media
@@ -2410,6 +2415,7 @@ domain_set:
 - files.writefreely.org
 - downloads.xiph.org
 - ftpmirror.your.org
+- placeholder.pics
 - mirror.apad.pro
 - img.foresightnews.pro
 - archive.g4t1.pro
@@ -2955,6 +2961,7 @@ domain_suffix_set:
 - cdn-centaurus.com
 - cdn-cookieyes.com
 - cdn-one.com
+- cdn-plain.com
 - cdn-spurit.com
 - cdn-website.com
 - cdn1122.com

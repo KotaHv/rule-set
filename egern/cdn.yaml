@@ -1,4 +1,4 @@
-# Total: 4203 rules
+# Total: 4210 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1190,6 +1190,8 @@ domain_set:
 - static.meiguo.com
 - js.memberful.com
 - static.mendeley.com
+- acdn.mercury.com
+- cdn.mercury.com
 - meteorclient.com
 - cdn.mewe.com
 - public-img.mewe.com
@@ -2043,6 +2045,7 @@ domain_set:
 - cdn.us-east-1.prod.moon.dubai.aws.dev
 - cdn.bfe.dev
 - static.bit.dev
+- logos.composio.dev
 - pkg.csb.dev
 - cdn.daily.dev
 - media.daily.dev
@@ -2159,6 +2162,7 @@ domain_set:
 - cdn.commento.io
 - cdn.concert.io
 - images.contentstack.io
+- assets.mcp.corespeed.io
 - cdn.cuty.io
 - cdn.db.io
 - static-mh.content.disney.io
@@ -2362,6 +2366,7 @@ domain_set:
 - static.start.me
 - i.vgy.me
 - img.xjh.me
+- circle-flags.zeljko.me
 - images.github.media
 - jssdk.opin.media
 - files.smashing.media
@@ -2774,6 +2779,7 @@ domain_set:
 - cdn4.telesco.pe
 - cdn5.telesco.pe
 - static.generated.photos
+- placeholder.pics
 - asset.booth.pm
 - img.foresightnews.pro
 - assets.gcore.pro
@@ -3146,6 +3152,7 @@ domain_suffix_set:
 - cdn-centaurus.com
 - cdn-cookieyes.com
 - cdn-one.com
+- cdn-plain.com
 - cdn-spurit.com
 - cdn-website.com
 - cdn1122.com

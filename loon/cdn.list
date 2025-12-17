@@ -1,4 +1,4 @@
-# Total: 4145 rules
+# Total: 4152 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -1188,6 +1188,8 @@ DOMAIN,miro.medium.com
 DOMAIN,static.meiguo.com
 DOMAIN,js.memberful.com
 DOMAIN,static.mendeley.com
+DOMAIN,acdn.mercury.com
+DOMAIN,cdn.mercury.com
 DOMAIN,meteorclient.com
 DOMAIN,cdn.mewe.com
 DOMAIN,public-img.mewe.com
@@ -2041,6 +2043,7 @@ DOMAIN,cdn.builderprofile.aws.dev
 DOMAIN,cdn.us-east-1.prod.moon.dubai.aws.dev
 DOMAIN,cdn.bfe.dev
 DOMAIN,static.bit.dev
+DOMAIN,logos.composio.dev
 DOMAIN,pkg.csb.dev
 DOMAIN,cdn.daily.dev
 DOMAIN,media.daily.dev
@@ -2157,6 +2160,7 @@ DOMAIN,uploads.codesandbox.io
 DOMAIN,cdn.commento.io
 DOMAIN,cdn.concert.io
 DOMAIN,images.contentstack.io
+DOMAIN,assets.mcp.corespeed.io
 DOMAIN,cdn.cuty.io
 DOMAIN,cdn.db.io
 DOMAIN,static-mh.content.disney.io
@@ -2360,6 +2364,7 @@ DOMAIN,f.start.me
 DOMAIN,static.start.me
 DOMAIN,i.vgy.me
 DOMAIN,img.xjh.me
+DOMAIN,circle-flags.zeljko.me
 DOMAIN,images.github.media
 DOMAIN,jssdk.opin.media
 DOMAIN,files.smashing.media
@@ -2772,6 +2777,7 @@ DOMAIN,cdn1.telesco.pe
 DOMAIN,cdn4.telesco.pe
 DOMAIN,cdn5.telesco.pe
 DOMAIN,static.generated.photos
+DOMAIN,placeholder.pics
 DOMAIN,asset.booth.pm
 DOMAIN,img.foresightnews.pro
 DOMAIN,assets.gcore.pro
@@ -3143,6 +3149,7 @@ DOMAIN-SUFFIX,cbsnewsstatic.com
 DOMAIN-SUFFIX,cdn-centaurus.com
 DOMAIN-SUFFIX,cdn-cookieyes.com
 DOMAIN-SUFFIX,cdn-one.com
+DOMAIN-SUFFIX,cdn-plain.com
 DOMAIN-SUFFIX,cdn-spurit.com
 DOMAIN-SUFFIX,cdn-website.com
 DOMAIN-SUFFIX,cdn1122.com

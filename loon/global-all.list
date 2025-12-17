@@ -1,4 +1,4 @@
-# Total: 5949 rules
+# Total: 5956 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -961,6 +961,8 @@ DOMAIN,i.mediatek.com
 DOMAIN,static.meiguo.com
 DOMAIN,js.memberful.com
 DOMAIN,static.mendeley.com
+DOMAIN,acdn.mercury.com
+DOMAIN,cdn.mercury.com
 DOMAIN,meteorclient.com
 DOMAIN,cdn.mewe.com
 DOMAIN,public-img.mewe.com
@@ -1614,6 +1616,7 @@ DOMAIN,npm.antfu.dev
 DOMAIN,cdn.bfe.dev
 DOMAIN,static.bit.dev
 DOMAIN,download.clashverge.dev
+DOMAIN,logos.composio.dev
 DOMAIN,pkg.csb.dev
 DOMAIN,cdn.daily.dev
 DOMAIN,media.daily.dev
@@ -1728,6 +1731,7 @@ DOMAIN,docker.cloudsmith.io
 DOMAIN,cdn.commento.io
 DOMAIN,cdn.concert.io
 DOMAIN,images.contentstack.io
+DOMAIN,assets.mcp.corespeed.io
 DOMAIN,update.cyberduck.io
 DOMAIN,cdn.cypress.io
 DOMAIN,download.cypress.io
@@ -1897,6 +1901,7 @@ DOMAIN,f.start.me
 DOMAIN,static.start.me
 DOMAIN,i.vgy.me
 DOMAIN,img.xjh.me
+DOMAIN,circle-flags.zeljko.me
 DOMAIN,jssdk.opin.media
 DOMAIN,cms.therecord.media
 DOMAIN,townsquare.media
@@ -2408,6 +2413,7 @@ DOMAIN,resources.whatwg.org
 DOMAIN,files.writefreely.org
 DOMAIN,downloads.xiph.org
 DOMAIN,ftpmirror.your.org
+DOMAIN,placeholder.pics
 DOMAIN,mirror.apad.pro
 DOMAIN,img.foresightnews.pro
 DOMAIN,archive.g4t1.pro
@@ -2952,6 +2958,7 @@ DOMAIN-SUFFIX,cbsnewsstatic.com
 DOMAIN-SUFFIX,cdn-centaurus.com
 DOMAIN-SUFFIX,cdn-cookieyes.com
 DOMAIN-SUFFIX,cdn-one.com
+DOMAIN-SUFFIX,cdn-plain.com
 DOMAIN-SUFFIX,cdn-spurit.com
 DOMAIN-SUFFIX,cdn-website.com
 DOMAIN-SUFFIX,cdn1122.com
