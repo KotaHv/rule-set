@@ -1,4 +1,4 @@
-# Total: 4131 rules
+# Total: 4135 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -39,6 +39,7 @@
 - 'bundle.dyn-rev.app'
 - 'videos.elephas.app'
 - 'do.featurebase.app'
+- 'chat-assets.front.app'
 - 'cdn.giftcardpro.app'
 - 'weather.istatmenus.app'
 - 'cdn.langshop.app'
@@ -2162,6 +2163,7 @@
 - 'cdn.concert.io'
 - 'images.contentstack.io'
 - 'assets.mcp.corespeed.io'
+- 'r2cdn.corespeed.io'
 - 'cdn.cuty.io'
 - 'cdn.db.io'
 - 'static-mh.content.disney.io'
@@ -2966,6 +2968,7 @@
 - 'assets.orz.uno'
 - 'media.orz.uno'
 - 'cdn.donmai.us'
+- 'appstatico.electronic.us'
 - 'eu01ccistatic.zoom.us'
 - 'file.zoom.us'
 - 'st1.zoom.us'
@@ -3120,6 +3123,7 @@
 - '+.bestfreecdn.com'
 - '+.bestjavcdn.com'
 - '+.content001.bet365.com'
+- '+.betterstackcdn.com'
 - '+.bftuvip.com'
 - '+.bfzypic.com'
 - '+.bgstatic.com'

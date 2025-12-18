@@ -1,4 +1,4 @@
-# Total: 5941 rules
+# Total: 5944 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -13,6 +13,7 @@ domain_set:
 - bundle.dyn-rev.app
 - videos.elephas.app
 - do.featurebase.app
+- chat-assets.front.app
 - cdn.giftcardpro.app
 - cdn.langshop.app
 - pic.macked.app
@@ -1734,6 +1735,7 @@ domain_set:
 - cdn.concert.io
 - images.contentstack.io
 - assets.mcp.corespeed.io
+- r2cdn.corespeed.io
 - update.cyberduck.io
 - cdn.cypress.io
 - download.cypress.io
@@ -2870,6 +2872,7 @@ domain_suffix_set:
 - bet365.com
 - bethesdagamestudios.com
 - bethsoft.com
+- betterstackcdn.com
 - bftuvip.com
 - bfzypic.com
 - bgstatic.com

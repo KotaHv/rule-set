@@ -1,4 +1,4 @@
-# Total: 5814 rules
+# Total: 5817 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -12,6 +12,7 @@
 - 'bundle.dyn-rev.app'
 - 'videos.elephas.app'
 - 'do.featurebase.app'
+- 'chat-assets.front.app'
 - 'cdn.giftcardpro.app'
 - 'cdn.langshop.app'
 - 'pic.macked.app'
@@ -1733,6 +1734,7 @@
 - 'cdn.concert.io'
 - 'images.contentstack.io'
 - 'assets.mcp.corespeed.io'
+- 'r2cdn.corespeed.io'
 - 'update.cyberduck.io'
 - 'cdn.cypress.io'
 - 'download.cypress.io'
@@ -2868,6 +2870,7 @@
 - '+.bet365.com'
 - '+.bethesdagamestudios.com'
 - '+.bethsoft.com'
+- '+.betterstackcdn.com'
 - '+.bftuvip.com'
 - '+.bfzypic.com'
 - '+.bgstatic.com'
