@@ -1,4 +1,4 @@
-# Total: 1692 rules
+# Total: 1693 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -1120,6 +1120,7 @@ domain_suffix_set:
 - qt.io
 - quay.io
 - readthedocs.io
+- readwise.io
 - redis.io
 - saltyfish.io
 - sentry.io

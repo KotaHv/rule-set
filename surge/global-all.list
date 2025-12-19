@@ -1,4 +1,4 @@
-# Total: 6008 rules
+# Total: 6013 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,mirrors.asnet.am
@@ -33,6 +33,7 @@ DOMAIN,ubuntu.unc.edu.ar
 DOMAIN,debian.unnoba.edu.ar
 DOMAIN,mirrors.dc.clear.net.ar
 DOMAIN,phishing.army
+DOMAIN,img.fzf404.art
 DOMAIN,mirrors.sarak.as
 DOMAIN,i.snap.as
 DOMAIN,mirror.cyberbits.asia
@@ -1448,7 +1449,9 @@ DOMAIN,fastly-cloud.typenetwork.com
 DOMAIN,jsonplaceholder.typicode.com
 DOMAIN,my-json-server.typicode.com
 DOMAIN,static.typingclub.com
+DOMAIN,i.typlog.com
 DOMAIN,help.ubnt.com
+DOMAIN,prd-www-cdn.ubnt.com
 DOMAIN,mirror.ukrnames.com
 DOMAIN,mirror.cov.ukservers.com
 DOMAIN,assets.unifi-ai.com
@@ -1822,6 +1825,7 @@ DOMAIN,assets.safing.io
 DOMAIN,cdn.sanity.io
 DOMAIN,images.scalero.io
 DOMAIN,cdn.simplelocalize.io
+DOMAIN,cdn.simplesat.io
 DOMAIN,edge.sitecorecloud.io
 DOMAIN,static.smartframe.io
 DOMAIN,js.smile.io
@@ -4880,6 +4884,7 @@ DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,quay.io
 DOMAIN-SUFFIX,raygun.io
 DOMAIN-SUFFIX,readthedocs.io
+DOMAIN-SUFFIX,readwise.io
 DOMAIN-SUFFIX,redis.io
 DOMAIN-SUFFIX,rgpub.io
 DOMAIN-SUFFIX,cdn.runcloud.io

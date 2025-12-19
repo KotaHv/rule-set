@@ -1,4 +1,4 @@
-# Total: 1674 rules
+# Total: 1675 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -1118,6 +1118,7 @@
 - '+.qt.io'
 - '+.quay.io'
 - '+.readthedocs.io'
+- '+.readwise.io'
 - '+.redis.io'
 - '+.saltyfish.io'
 - '+.sentry.io'

@@ -1,4 +1,4 @@
-# Total: 4214 rules
+# Total: 4218 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -53,6 +53,7 @@ DOMAIN,disco-static.productessentials.app
 DOMAIN,cdn.rive.app
 DOMAIN,assets.slater.app
 DOMAIN,phishing.army
+DOMAIN,img.fzf404.art
 DOMAIN,i.snap.as
 DOMAIN,bucket.noy.asia
 DOMAIN,img.noy.asia
@@ -1807,11 +1808,13 @@ DOMAIN,fastly-cloud.typenetwork.com
 DOMAIN,jsonplaceholder.typicode.com
 DOMAIN,my-json-server.typicode.com
 DOMAIN,static.typingclub.com
+DOMAIN,i.typlog.com
 DOMAIN,static-dm.ubisoft.com
 DOMAIN,static-overlay.ubisoft.com
 DOMAIN,staticctf.ubisoft.com
 DOMAIN,ubistatic-a.ubisoft.com
 DOMAIN,ubistatic2-a.ubisoft.com
+DOMAIN,prd-www-cdn.ubnt.com
 DOMAIN,img.community.ui.com
 DOMAIN,assets.ecomm.ui.com
 DOMAIN,cdn.ecomm.ui.com
@@ -2242,6 +2245,7 @@ DOMAIN,images.scalero.io
 DOMAIN,wire.shodan.io
 DOMAIN,js.short.io
 DOMAIN,cdn.simplelocalize.io
+DOMAIN,cdn.simplesat.io
 DOMAIN,edge.sitecorecloud.io
 DOMAIN,static.smartframe.io
 DOMAIN,js.smile.io

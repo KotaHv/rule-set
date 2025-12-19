@@ -1,4 +1,4 @@
-# Total: 4135 rules
+# Total: 4139 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -54,6 +54,7 @@
 - 'cdn.rive.app'
 - 'assets.slater.app'
 - 'phishing.army'
+- 'img.fzf404.art'
 - 'i.snap.as'
 - 'bucket.noy.asia'
 - 'img.noy.asia'
@@ -1808,11 +1809,13 @@
 - 'jsonplaceholder.typicode.com'
 - 'my-json-server.typicode.com'
 - 'static.typingclub.com'
+- 'i.typlog.com'
 - 'static-dm.ubisoft.com'
 - 'static-overlay.ubisoft.com'
 - 'staticctf.ubisoft.com'
 - 'ubistatic-a.ubisoft.com'
 - 'ubistatic2-a.ubisoft.com'
+- 'prd-www-cdn.ubnt.com'
 - 'img.community.ui.com'
 - 'assets.ecomm.ui.com'
 - 'cdn.ecomm.ui.com'
@@ -2243,6 +2246,7 @@
 - 'wire.shodan.io'
 - 'js.short.io'
 - 'cdn.simplelocalize.io'
+- 'cdn.simplesat.io'
 - 'edge.sitecorecloud.io'
 - 'static.smartframe.io'
 - 'js.smile.io'

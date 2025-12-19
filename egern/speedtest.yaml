@@ -1,4 +1,4 @@
-# Total: 1615 rules
+# Total: 1617 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -925,6 +925,7 @@ domain_set:
 - ffm.wsqm.telekom-dienste.de
 - speedtest.lazco.dev
 - speedtest.nyc.elcro.digital
+- t-moni.nebulax.digital
 - lax01.screenshot.download
 - mia01.screenshot.download
 - nyc01.screenshot.download
@@ -1301,6 +1302,7 @@ domain_set:
 - tyo.st.spacecore.pro
 - speedtest.ddl.red
 - speedtest.byteshield.ro
+- nl.itdatatelecom.ro
 - speed.uk.lon.m247.ro
 - speed.riverside.rocks
 - speedtest2.sox.rs

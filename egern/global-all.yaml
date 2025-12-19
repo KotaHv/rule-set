@@ -1,4 +1,4 @@
-# Total: 5944 rules
+# Total: 5949 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -35,6 +35,7 @@ domain_set:
 - debian.unnoba.edu.ar
 - mirrors.dc.clear.net.ar
 - phishing.army
+- img.fzf404.art
 - mirrors.sarak.as
 - i.snap.as
 - mirror.cyberbits.asia
@@ -1450,7 +1451,9 @@ domain_set:
 - jsonplaceholder.typicode.com
 - my-json-server.typicode.com
 - static.typingclub.com
+- i.typlog.com
 - help.ubnt.com
+- prd-www-cdn.ubnt.com
 - mirror.ukrnames.com
 - mirror.cov.ukservers.com
 - assets.unifi-ai.com
@@ -1824,6 +1827,7 @@ domain_set:
 - cdn.sanity.io
 - images.scalero.io
 - cdn.simplelocalize.io
+- cdn.simplesat.io
 - edge.sitecorecloud.io
 - static.smartframe.io
 - js.smile.io
@@ -4883,6 +4887,7 @@ domain_suffix_set:
 - quay.io
 - raygun.io
 - readthedocs.io
+- readwise.io
 - redis.io
 - rgpub.io
 - cdn.runcloud.io

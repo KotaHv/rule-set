@@ -1,4 +1,4 @@
-# Total: 5817 rules
+# Total: 5822 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -34,6 +34,7 @@
 - 'debian.unnoba.edu.ar'
 - 'mirrors.dc.clear.net.ar'
 - 'phishing.army'
+- 'img.fzf404.art'
 - 'mirrors.sarak.as'
 - 'i.snap.as'
 - 'mirror.cyberbits.asia'
@@ -1449,7 +1450,9 @@
 - 'jsonplaceholder.typicode.com'
 - 'my-json-server.typicode.com'
 - 'static.typingclub.com'
+- 'i.typlog.com'
 - 'help.ubnt.com'
+- 'prd-www-cdn.ubnt.com'
 - 'mirror.ukrnames.com'
 - 'mirror.cov.ukservers.com'
 - 'assets.unifi-ai.com'
@@ -1823,6 +1826,7 @@
 - 'cdn.sanity.io'
 - 'images.scalero.io'
 - 'cdn.simplelocalize.io'
+- 'cdn.simplesat.io'
 - 'edge.sitecorecloud.io'
 - 'static.smartframe.io'
 - 'js.smile.io'
@@ -4881,6 +4885,7 @@
 - '+.quay.io'
 - '+.raygun.io'
 - '+.readthedocs.io'
+- '+.readwise.io'
 - '+.redis.io'
 - '+.rgpub.io'
 - '+.cdn.runcloud.io'
