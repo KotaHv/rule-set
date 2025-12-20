@@ -1,4 +1,4 @@
-# Total: 4218 rules
+# Total: 4220 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1686,6 +1686,7 @@ domain_set:
 - cdn.stellarhosted.com
 - image.stheadline.com
 - assets.stickpng.com
+- cdn.stonly.com
 - cdn-1.strava.com
 - content-a.strava.com
 - heatmap-external-a.strava.com
@@ -3154,6 +3155,7 @@ domain_suffix_set:
 - bunnycdn.com
 - bytedapm.com
 - capcutstatic.com
+- cartastatic.com
 - cartocdn.com
 - vodvideo.cbsnews.com
 - cbsnewsstatic.com

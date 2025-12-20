@@ -1,4 +1,4 @@
-# Total: 4139 rules
+# Total: 4141 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1685,6 +1685,7 @@
 - 'cdn.stellarhosted.com'
 - 'image.stheadline.com'
 - 'assets.stickpng.com'
+- 'cdn.stonly.com'
 - 'cdn-1.strava.com'
 - 'content-a.strava.com'
 - 'heatmap-external-a.strava.com'
@@ -3152,6 +3153,7 @@
 - '+.bunnycdn.com'
 - '+.bytedapm.com'
 - '+.capcutstatic.com'
+- '+.cartastatic.com'
 - '+.cartocdn.com'
 - '+.vodvideo.cbsnews.com'
 - '+.cbsnewsstatic.com'
