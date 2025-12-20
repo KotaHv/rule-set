@@ -1,4 +1,4 @@
-# Total: 56 rules
+# Total: 55 rules
 'payload':
 - 'res-h3.public.cdn.office.net'
 - 'res.cdn.office.net'
@@ -8,7 +8,6 @@
 - '+.wscont2.apps.microsoft.com'
 - '+.devblogs.microsoft.com'
 - '+.developer.microsoft.com'
-- '+.docs.microsoft.com'
 - '+.download.microsoft.com'
 - '+.fs.microsoft.com'
 - '+.learn.microsoft.com'
