@@ -1,4 +1,4 @@
-# Total: 4220 rules
+# Total: 4221 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2514,6 +2514,7 @@ domain_set:
 - practicaldev-herokuapp-com.freetls.fastly.net
 - brick.a.ssl.fastly.net
 - cache-05.filehippo.net
+- reload.getsentry.net
 - headway-widget.net
 - cdn.highporn.net
 - img.highporn.net
