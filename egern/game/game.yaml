@@ -1,4 +1,4 @@
-# Total: 662 rules
+# Total: 665 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -69,6 +69,7 @@ domain_suffix_set:
 - roblox.cc
 - nintendo.ch
 - roblox.cl
+- vrchat.cloud
 - dungeonkeeper.com.cn
 - dungeonkeeper.cn
 - mo.co
@@ -467,6 +468,7 @@ domain_suffix_set:
 - uplay.com
 - valvesoftware.com
 - visceralgames.com
+- vrchat.com
 - wariolandshakeit.com
 - wariowarediy.com
 - warnerbrosgames.com
@@ -606,6 +608,7 @@ domain_suffix_set:
 - supercell.net
 - supremacy.net
 - swtor.net
+- vrchat.net
 - wiivc.net
 - xn--mts47c3w9b1qr.net
 - ynoproject.net

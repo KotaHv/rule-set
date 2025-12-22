@@ -1,4 +1,4 @@
-# Total: 5825 rules
+# Total: 5828 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2635,6 +2635,7 @@
 - '+.s3.pl-waw.scw.cloud'
 - '+.s3-website.pl-waw.scw.cloud'
 - '+.sketch.cloud'
+- '+.vrchat.cloud'
 - '+.youtrack.cloud'
 - '+.sfmcompile.club'
 - '+.anfutong.cn'
@@ -4478,6 +4479,7 @@
 - '+.vpnunlimited.com'
 - '+.cloudinary.vpsvc.com'
 - '+.swupdate.vray.com'
+- '+.vrchat.com'
 - '+.vultrobjects.com'
 - '+.vx-cdn.com'
 - '+.vxtwitter.com'
@@ -5344,6 +5346,7 @@
 - '+.videodelivery.net'
 - '+.tiles.virtualearth.net'
 - '+.visualstudio.net'
+- '+.vrchat.net'
 - '+.vscode-cdn.net'
 - '+.vscode-unpkg.net'
 - '+.vusercontent.net'

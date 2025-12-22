@@ -1,4 +1,4 @@
-# Total: 5952 rules
+# Total: 5955 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2637,6 +2637,7 @@ domain_suffix_set:
 - s3.pl-waw.scw.cloud
 - s3-website.pl-waw.scw.cloud
 - sketch.cloud
+- vrchat.cloud
 - youtrack.cloud
 - sfmcompile.club
 - anfutong.cn
@@ -4480,6 +4481,7 @@ domain_suffix_set:
 - vpnunlimited.com
 - cloudinary.vpsvc.com
 - swupdate.vray.com
+- vrchat.com
 - vultrobjects.com
 - vx-cdn.com
 - vxtwitter.com
@@ -5346,6 +5348,7 @@ domain_suffix_set:
 - videodelivery.net
 - tiles.virtualearth.net
 - visualstudio.net
+- vrchat.net
 - vscode-cdn.net
 - vscode-unpkg.net
 - vusercontent.net
