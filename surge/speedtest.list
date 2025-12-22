@@ -1,4 +1,4 @@
-# Total: 1618 rules
+# Total: 1617 rules
 DOMAIN,speedtest-ams.baremetal.ae
 DOMAIN,speedtest.58243.as
 DOMAIN,sg.cloudhost.asia
@@ -505,7 +505,6 @@ DOMAIN,speedtest.absolutevalidation.com
 DOMAIN,lg-mia.advinservers.com
 DOMAIN,speedtest-lax.advinservers.com
 DOMAIN,speedtest-6.aebc.com
-DOMAIN,us.speedtest.airlinkdc.com
 DOMAIN,speedtest.alastyr.com
 DOMAIN,tsdvuspeedtest01p.allstream.com
 DOMAIN,sky.almotafael.com
@@ -808,7 +807,6 @@ DOMAIN,ookla-anc.seroficom.com
 DOMAIN,speed.serveroyun.com
 DOMAIN,speedtest.serveroyun.com
 DOMAIN,speedtest.serverpronto.com
-DOMAIN,ams.speedtest.serverside.com
 DOMAIN,mobile.shunicomtest.com
 DOMAIN,fra1speedtest01.skylogic.com
 DOMAIN,par1speedtest01.skylogic.com
@@ -816,7 +814,6 @@ DOMAIN,speedtest.slic.com
 DOMAIN,test.slic.com
 DOMAIN,kami.smartone.com
 DOMAIN,speedtest.solutechzk.com
-DOMAIN,dfw01.speedtest.soraxus.com
 DOMAIN,speedtest.spectrumvoip.com
 DOMAIN,speedtest.sptel.com
 DOMAIN,speedtest-server-lax.starry.com
@@ -1163,7 +1160,6 @@ DOMAIN,speedtest-cbr.cdn.on.net
 DOMAIN,speedgauge2.optonline.net
 DOMAIN,speedtestlon.orbital.net
 DOMAIN,speedtest.packetworks.net
-DOMAIN,txda.speedtest.pavlovmedia.net
 DOMAIN,speedtest-lax.perfectip.net
 DOMAIN,speedtest.polycomm.net
 DOMAIN,speedtest.provedoracesso.net
@@ -1180,7 +1176,6 @@ DOMAIN,speedtest-lon.retn.net
 DOMAIN,speedtest-msk.retn.net
 DOMAIN,speedtest.rfchost.net
 DOMAIN,speedtest.rfnow.net
-DOMAIN,nkf-ams.speedtest.royalehosting.net
 DOMAIN,dal-speedtest.net.sangoma.net
 DOMAIN,sea-speedtest.net.sangoma.net
 DOMAIN,tor-speedtest.net.sangoma.net
@@ -1340,8 +1335,6 @@ DOMAIN,lon-ix1-tptest1.31173.se
 DOMAIN,speedtest.axclusive.com.sg
 DOMAIN,m1speedtest1.m1net.com.sg
 DOMAIN,speedtest.myrepublic.com.sg
-DOMAIN,speedtest.singnet.com.sg
-DOMAIN,pl.speedtest.singnet.com.sg
 DOMAIN,speedtest-sg1.simba.sg
 DOMAIN,speedtest2.telin.sg
 DOMAIN,ogtm-speedtest.f5.si
@@ -1554,6 +1547,7 @@ DOMAIN-SUFFIX,speedtest.vipnetconexao.com.br
 DOMAIN-SUFFIX,linknetspeedtest.net.br
 DOMAIN-SUFFIX,srvr.bell.ca
 DOMAIN-SUFFIX,speedtest.vianet.ca
+DOMAIN-SUFFIX,speedtest.airlinkdc.com
 DOMAIN-SUFFIX,speed.cloudflare.com
 DOMAIN-SUFFIX,speedtest.dchost.com
 DOMAIN-SUFFIX,ookla.ddnsgeek.com
@@ -1567,6 +1561,8 @@ DOMAIN-SUFFIX,hizinitestet.com
 DOMAIN-SUFFIX,speedtest.kansuiun.com
 DOMAIN-SUFFIX,speedtest.linode.com
 DOMAIN-SUFFIX,netspeedtestmaster.com
+DOMAIN-SUFFIX,speedtest.serverside.com
+DOMAIN-SUFFIX,speedtest.soraxus.com
 DOMAIN-SUFFIX,speedtestcustom.com
 DOMAIN-SUFFIX,speedtestkorea.com
 DOMAIN-SUFFIX,speedtest.starhub.com
@@ -1597,7 +1593,9 @@ DOMAIN-SUFFIX,measurementlab.net
 DOMAIN-SUFFIX,nperf.net
 DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,speedtest.ozarksgo.net
+DOMAIN-SUFFIX,speedtest.pavlovmedia.net
 DOMAIN-SUFFIX,ookla.rcp.net
+DOMAIN-SUFFIX,speedtest.royalehosting.net
 DOMAIN-SUFFIX,speedtest.sbcglobal.net
 DOMAIN-SUFFIX,speedtest.net
 DOMAIN-SUFFIX,speedtest.telstra.net
@@ -1609,6 +1607,7 @@ DOMAIN-SUFFIX,measurement-lab.org
 DOMAIN-SUFFIX,speedtest.rascom.ru
 DOMAIN-SUFFIX,speedtest.rt.ru
 DOMAIN-SUFFIX,speedtest.timeweb.ru
+DOMAIN-SUFFIX,speedtest.singnet.com.sg
 DOMAIN-SUFFIX,speedtest.com.sg
 DOMAIN-SUFFIX,speedtest.comnet.com.tr
 DOMAIN-SUFFIX,speedtest.gibir.net.tr

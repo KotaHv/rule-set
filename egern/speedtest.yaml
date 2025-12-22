@@ -1,4 +1,4 @@
-# Total: 1618 rules
+# Total: 1617 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -507,7 +507,6 @@ domain_set:
 - lg-mia.advinservers.com
 - speedtest-lax.advinservers.com
 - speedtest-6.aebc.com
-- us.speedtest.airlinkdc.com
 - speedtest.alastyr.com
 - tsdvuspeedtest01p.allstream.com
 - sky.almotafael.com
@@ -810,7 +809,6 @@ domain_set:
 - speed.serveroyun.com
 - speedtest.serveroyun.com
 - speedtest.serverpronto.com
-- ams.speedtest.serverside.com
 - mobile.shunicomtest.com
 - fra1speedtest01.skylogic.com
 - par1speedtest01.skylogic.com
@@ -818,7 +816,6 @@ domain_set:
 - test.slic.com
 - kami.smartone.com
 - speedtest.solutechzk.com
-- dfw01.speedtest.soraxus.com
 - speedtest.spectrumvoip.com
 - speedtest.sptel.com
 - speedtest-server-lax.starry.com
@@ -1165,7 +1162,6 @@ domain_set:
 - speedgauge2.optonline.net
 - speedtestlon.orbital.net
 - speedtest.packetworks.net
-- txda.speedtest.pavlovmedia.net
 - speedtest-lax.perfectip.net
 - speedtest.polycomm.net
 - speedtest.provedoracesso.net
@@ -1182,7 +1178,6 @@ domain_set:
 - speedtest-msk.retn.net
 - speedtest.rfchost.net
 - speedtest.rfnow.net
-- nkf-ams.speedtest.royalehosting.net
 - dal-speedtest.net.sangoma.net
 - sea-speedtest.net.sangoma.net
 - tor-speedtest.net.sangoma.net
@@ -1342,8 +1337,6 @@ domain_set:
 - speedtest.axclusive.com.sg
 - m1speedtest1.m1net.com.sg
 - speedtest.myrepublic.com.sg
-- speedtest.singnet.com.sg
-- pl.speedtest.singnet.com.sg
 - speedtest-sg1.simba.sg
 - speedtest2.telin.sg
 - ogtm-speedtest.f5.si
@@ -1557,6 +1550,7 @@ domain_suffix_set:
 - linknetspeedtest.net.br
 - srvr.bell.ca
 - speedtest.vianet.ca
+- speedtest.airlinkdc.com
 - speed.cloudflare.com
 - speedtest.dchost.com
 - ookla.ddnsgeek.com
@@ -1570,6 +1564,8 @@ domain_suffix_set:
 - speedtest.kansuiun.com
 - speedtest.linode.com
 - netspeedtestmaster.com
+- speedtest.serverside.com
+- speedtest.soraxus.com
 - speedtestcustom.com
 - speedtestkorea.com
 - speedtest.starhub.com
@@ -1600,7 +1596,9 @@ domain_suffix_set:
 - nperf.net
 - ooklaserver.net
 - speedtest.ozarksgo.net
+- speedtest.pavlovmedia.net
 - ookla.rcp.net
+- speedtest.royalehosting.net
 - speedtest.sbcglobal.net
 - speedtest.net
 - speedtest.telstra.net
@@ -1612,6 +1610,7 @@ domain_suffix_set:
 - speedtest.rascom.ru
 - speedtest.rt.ru
 - speedtest.timeweb.ru
+- speedtest.singnet.com.sg
 - speedtest.com.sg
 - speedtest.comnet.com.tr
 - speedtest.gibir.net.tr
