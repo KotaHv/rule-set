@@ -1,4 +1,4 @@
-# Total: 1675 rules
+# Total: 1677 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -1284,6 +1284,7 @@
 - '+.myanimelist.net'
 - '+.mywaytopay.net'
 - '+.naixi.net'
+- '+.newpipe.net'
 - '+.nhentai.net'
 - '+.nitter.net'
 - '+.osdn.net'
@@ -1579,6 +1580,7 @@
 - '+.waybackmachine.org'
 - '+.webkit.org'
 - '+.webkitgtk.org'
+- '+.weblate.org'
 - '+.webmproject.org'
 - '+.webrtc.org'
 - '+.whatbrowser.org'

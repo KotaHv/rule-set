@@ -1,4 +1,4 @@
-# Total: 512 rules
+# Total: 515 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -218,6 +218,7 @@
 - '+.videojs.com'
 - '+.visualstudio.com'
 - '+.visualstudio-staging.com'
+- '+.webflow.com'
 - '+.webobjects.com'
 - '+.xamarin.com'
 - '+.yarnpkg.com'
@@ -331,6 +332,7 @@
 - '+.microsoftreactor.net'
 - '+.microsoftsilverlight.net'
 - '+.mobatek.net'
+- '+.newpipe.net'
 - '+.osdn.net'
 - '+.ospray.net'
 - '+.php.net'
@@ -491,6 +493,7 @@
 - '+.vim.org'
 - '+.webkit.org'
 - '+.webkitgtk.org'
+- '+.weblate.org'
 - '+.wireshark.org'
 - '+.wpewebkit.org'
 - '+.x.org'

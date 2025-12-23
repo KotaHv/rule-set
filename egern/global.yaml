@@ -1,4 +1,4 @@
-# Total: 1693 rules
+# Total: 1695 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -1286,6 +1286,7 @@ domain_suffix_set:
 - myanimelist.net
 - mywaytopay.net
 - naixi.net
+- newpipe.net
 - nhentai.net
 - nitter.net
 - osdn.net
@@ -1581,6 +1582,7 @@ domain_suffix_set:
 - waybackmachine.org
 - webkit.org
 - webkitgtk.org
+- weblate.org
 - webmproject.org
 - webrtc.org
 - whatbrowser.org

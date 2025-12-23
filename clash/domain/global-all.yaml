@@ -1,4 +1,4 @@
-# Total: 5828 rules
+# Total: 5830 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -5229,6 +5229,7 @@
 - '+.nelreports.net'
 - '+.nentindo.net'
 - '+.netflix.net'
+- '+.newpipe.net'
 - '+.nflximg.net'
 - '+.nflxsearch.net'
 - '+.nflxso.net'
@@ -5663,6 +5664,7 @@
 - '+.waybackmachine.org'
 - '+.webkit.org'
 - '+.webkitgtk.org'
+- '+.weblate.org'
 - '+.webmproject.org'
 - '+.webrtc.org'
 - '+.whatbrowser.org'

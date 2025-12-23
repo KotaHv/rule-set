@@ -1,4 +1,4 @@
-# Total: 514 rules
+# Total: 517 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -220,6 +220,7 @@ domain_suffix_set:
 - videojs.com
 - visualstudio.com
 - visualstudio-staging.com
+- webflow.com
 - webobjects.com
 - xamarin.com
 - yarnpkg.com
@@ -333,6 +334,7 @@ domain_suffix_set:
 - microsoftreactor.net
 - microsoftsilverlight.net
 - mobatek.net
+- newpipe.net
 - osdn.net
 - ospray.net
 - php.net
@@ -493,6 +495,7 @@ domain_suffix_set:
 - vim.org
 - webkit.org
 - webkitgtk.org
+- weblate.org
 - wireshark.org
 - wpewebkit.org
 - x.org
