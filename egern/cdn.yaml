@@ -1,4 +1,4 @@
-# Total: 4221 rules
+# Total: 4223 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2387,6 +2387,7 @@ domain_set:
 - static.bangumi.moe
 - pic.cangku.moe
 - static.chaika.moe
+- r2.dejavu.moe
 - objects.hit.moe
 - touchgal-image.moyu.moe
 - hv-monsterdb-data.skk.moe
@@ -2876,6 +2877,7 @@ domain_set:
 - video2.7mmtv.sx
 - packages.jetbrains.team
 - pkg-cdn.jetbrains.team
+- static.pepy.tech
 - media.remax-prod.eng.remax.tech
 - assets.dev.to
 - media.dev.to
