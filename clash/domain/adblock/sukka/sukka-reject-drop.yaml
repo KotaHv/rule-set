@@ -1,7 +1,8 @@
-# Total: 17 rules
+# Total: 18 rules
 'payload':
 - 'stat.youpin.mi.com'
 - 'nom.telemetrydeck.com'
+- 'stats.grafana.org'
 - '+.jpush.cn'
 - '+.geo2.adobe.com'
 - '+.in.applicationinsights.azure.com'

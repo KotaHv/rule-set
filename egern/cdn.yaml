@@ -1,4 +1,4 @@
-# Total: 4223 rules
+# Total: 4226 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -600,6 +600,7 @@ domain_set:
 - images.dmca.com
 - assets.dnsfilter.com
 - cdn.dnsimple.com
+- sessions-bugsnag.docker.com
 - cdn.docsbot.com
 - img.domaintools.com
 - source.domaintools.com
@@ -933,6 +934,7 @@ domain_set:
 - cdn2.hextom.com
 - cdn3.hextom.com
 - cdn5.hextom.com
+- themes.hibootstrap.com
 - code.highcharts.com
 - cdn.hinative.com
 - cdn.hk01.com
@@ -2174,6 +2176,7 @@ domain_set:
 - static-mh.content.disney.io
 - cdn.document360.io
 - eep.io
+- www.envoyproxy.io
 - static.ffx.io
 - cdn.filen.io
 - badge.fury.io

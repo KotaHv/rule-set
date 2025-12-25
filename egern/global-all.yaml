@@ -1,4 +1,4 @@
-# Total: 5958 rules
+# Total: 5960 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -753,6 +753,7 @@ domain_set:
 - cdn2.hextom.com
 - cdn3.hextom.com
 - cdn5.hextom.com
+- themes.hibootstrap.com
 - code.highcharts.com
 - cdn.hinative.com
 - cdn.hongkongcard.com
@@ -1749,6 +1750,7 @@ domain_set:
 - cdn.document360.io
 - eep.io
 - mirror.elice.io
+- www.envoyproxy.io
 - static.ffx.io
 - cdn.filen.io
 - down.filen.io

@@ -1,8 +1,9 @@
-# Total: 17 rules
+# Total: 18 rules
 no_resolve: true
 domain_set:
 - stat.youpin.mi.com
 - nom.telemetrydeck.com
+- stats.grafana.org
 domain_suffix_set:
 - jpush.cn
 - geo2.adobe.com
