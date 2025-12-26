@@ -1,4 +1,4 @@
-# Total: 4226 rules
+# Total: 4227 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1736,7 +1736,6 @@ domain_set:
 - cdnstatic.tencentcs.com
 - media.tenor.com
 - media1.tenor.com
-- nel.teo-rum.com
 - cdn.termius.com
 - static.test-beta.com
 - ci.testling.com
@@ -3522,6 +3521,7 @@ domain_suffix_set:
 - redditmedia.com
 - redditstatic.com
 - app.render.com
+- replicateassets.com
 - cdn.replit.com
 - cms.replit.com
 - report-uri.com
@@ -3618,6 +3618,7 @@ domain_suffix_set:
 - targetimg1.com
 - teamtailor-cdn.com
 - tedcdn.com
+- teo-rum.com
 - teraboxcdn.com
 - thesourcemediaassets.com
 - bundle.thimatic-apps.com

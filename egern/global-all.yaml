@@ -1,4 +1,4 @@
-# Total: 5960 rules
+# Total: 5961 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1399,7 +1399,6 @@ domain_set:
 - image.telanganatoday.com
 - media.telanganatoday.com
 - cdnstatic.tencentcs.com
-- nel.teo-rum.com
 - mirror.pit.teraswitch.com
 - static.test-beta.com
 - ci.testling.com
@@ -4080,6 +4079,7 @@ domain_suffix_set:
 - regex101.com
 - render.com
 - renovacionxboxlive.com
+- replicateassets.com
 - replit.com
 - report-uri.com
 - respawn.com
@@ -4313,6 +4313,7 @@ domain_suffix_set:
 - tedcdn.com
 - tellmewhygame.com
 - tenor.com
+- teo-rum.com
 - terabox.com
 - teraboxcdn.com
 - termius.com
