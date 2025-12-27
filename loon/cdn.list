@@ -1,4 +1,4 @@
-# Total: 4169 rules
+# Total: 4172 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -44,6 +44,7 @@ DOMAIN,weather.istatmenus.app
 DOMAIN,cdn.langshop.app
 DOMAIN,e.linear.app
 DOMAIN,public.linear.app
+DOMAIN,s.linear.app
 DOMAIN,static.linear.app
 DOMAIN,uploads.linear.app
 DOMAIN,webassets.linear.app
@@ -1351,6 +1352,7 @@ DOMAIN,cdn.omnicalculator.com
 DOMAIN,uploads-cdn.omnicalculator.com
 DOMAIN,cdn.onesignal.com
 DOMAIN,media-cms.onesignal.com
+DOMAIN,cdn.onfastspring.com
 DOMAIN,sbl.onfastspring.com
 DOMAIN,db.onlinewebfonts.com
 DOMAIN,pic.onlinewebfonts.com
@@ -1411,7 +1413,6 @@ DOMAIN,c6.patreon.com
 DOMAIN,c7.patreon.com
 DOMAIN,c8.patreon.com
 DOMAIN,pics.paypal.com
-DOMAIN,www.paypalobjects.com
 DOMAIN,hawky.pcgamer.com
 DOMAIN,pcdn-my.pcloud.com
 DOMAIN,pcdn-www.pcloud.com
@@ -1976,6 +1977,7 @@ DOMAIN,frontend-apps.workos.com
 DOMAIN,wctour-images.worldchess.com
 DOMAIN,cms.worldpokerdeals.com
 DOMAIN,cdn.worldvectorlogo.com
+DOMAIN,image.worthepenny.com
 DOMAIN,website-prod.cache.wpscdn.com
 DOMAIN,pbc.wsj.com
 DOMAIN,cdn.scripts.wtwhmedia.com
@@ -3480,6 +3482,7 @@ DOMAIN-SUFFIX,parsecusercontent.com
 DOMAIN-SUFFIX,pastebin.com
 DOMAIN-SUFFIX,patientpop.com
 DOMAIN-SUFFIX,patreonusercontent.com
+DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,photobucket.com
 DOMAIN-SUFFIX,phprcdn.com

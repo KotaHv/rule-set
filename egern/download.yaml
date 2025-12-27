@@ -1,8 +1,9 @@
-# Total: 1881 rules
+# Total: 1884 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
 - mirror.host.ag
+- updates.64gr.am
 - mirrors.asnet.am
 - mirrors.teamcloud.am
 - fdisk.5play.app
@@ -382,6 +383,7 @@ domain_set:
 - content-origin.steampowered.com
 - mirrors.storpool.com
 - cdn-patch.swtor.com
+- download.sysinternals.com
 - dl.tailscale.com
 - pkgs.tailscale.com
 - mirror.team-cymru.com
@@ -822,6 +824,7 @@ domain_set:
 - steampipe-kr.akamaized.net
 - steampipe-partner.akamaized.net
 - mirror.alwyzon.net
+- download.amelabs.net
 - mirror.applebred.net
 - releases.arc.net
 - mirror.nl.as215296.net

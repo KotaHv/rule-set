@@ -1,4 +1,4 @@
-# Total: 4148 rules
+# Total: 4151 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -45,6 +45,7 @@
 - 'cdn.langshop.app'
 - 'e.linear.app'
 - 'public.linear.app'
+- 's.linear.app'
 - 'static.linear.app'
 - 'uploads.linear.app'
 - 'webassets.linear.app'
@@ -1352,6 +1353,7 @@
 - 'uploads-cdn.omnicalculator.com'
 - 'cdn.onesignal.com'
 - 'media-cms.onesignal.com'
+- 'cdn.onfastspring.com'
 - 'sbl.onfastspring.com'
 - 'db.onlinewebfonts.com'
 - 'pic.onlinewebfonts.com'
@@ -1412,7 +1414,6 @@
 - 'c7.patreon.com'
 - 'c8.patreon.com'
 - 'pics.paypal.com'
-- 'www.paypalobjects.com'
 - 'hawky.pcgamer.com'
 - 'pcdn-my.pcloud.com'
 - 'pcdn-www.pcloud.com'
@@ -1977,6 +1978,7 @@
 - 'wctour-images.worldchess.com'
 - 'cms.worldpokerdeals.com'
 - 'cdn.worldvectorlogo.com'
+- 'image.worthepenny.com'
 - 'website-prod.cache.wpscdn.com'
 - 'pbc.wsj.com'
 - 'cdn.scripts.wtwhmedia.com'
@@ -3481,6 +3483,7 @@
 - '+.pastebin.com'
 - '+.patientpop.com'
 - '+.patreonusercontent.com'
+- '+.paypalobjects.com'
 - '+.phncdn.com'
 - '+.photobucket.com'
 - '+.phprcdn.com'

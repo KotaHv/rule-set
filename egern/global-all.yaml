@@ -1,8 +1,9 @@
-# Total: 5961 rules
+# Total: 5963 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
 - mirror.host.ag
+- updates.64gr.am
 - mirrors.asnet.am
 - mirrors.teamcloud.am
 - fdisk.5play.app
@@ -1097,6 +1098,7 @@ domain_set:
 - community.oneplus.com
 - cdn.onesignal.com
 - media-cms.onesignal.com
+- cdn.onfastspring.com
 - sbl.onfastspring.com
 - db.onlinewebfonts.com
 - pic.onlinewebfonts.com
@@ -1380,6 +1382,7 @@ domain_set:
 - cdn2.sysgears.com
 - cdn3.sysgears.com
 - cdn4.sysgears.com
+- download.sysinternals.com
 - events.tableplus.com
 - c.tadst.com
 - cdn-static.talent.com
@@ -1535,9 +1538,6 @@ domain_set:
 - static.webclicks24.com
 - scripts.webeo.com
 - dl.wechat.com
-- sglong.wechat.com
-- sgminorshort.wechat.com
-- sgshort.wechat.com
 - cdn.weglot.com
 - analytics.welcomesoftware.com
 - images1.welcomesoftware.com
@@ -1563,6 +1563,7 @@ domain_set:
 - wctour-images.worldchess.com
 - cms.worldpokerdeals.com
 - cdn.worldvectorlogo.com
+- image.worthepenny.com
 - website-prod.cache.wpscdn.com
 - cdn.scripts.wtwhmedia.com
 - downloads.x-wrt.com
@@ -1970,6 +1971,7 @@ domain_set:
 - viu-static.akamaized.net
 - d4.alternativeto.net
 - mirror.alwyzon.net
+- download.amelabs.net
 - cdn.c1.amplience.net
 - mirror.applebred.net
 - s3.arkjp.net
