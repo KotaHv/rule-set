@@ -1,4 +1,4 @@
-# Total: 517 rules
+# Total: 519 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -360,6 +360,7 @@ domain_suffix_set:
 - apache.org
 - archlinux.org
 - archlinuxarm.org
+- archlinuxcn.org
 - artixlinux.org
 - botorch.org
 - calendarserver.org
@@ -401,6 +402,7 @@ domain_suffix_set:
 - getzola.org
 - gnu.org
 - go-lang.org
+- godbolt.org
 - godoc.org
 - golang.org
 - hacklang.org

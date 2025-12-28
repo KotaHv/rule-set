@@ -1,4 +1,4 @@
-# Total: 515 rules
+# Total: 517 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -357,6 +357,7 @@ DOMAIN-SUFFIX,anaconda.org
 DOMAIN-SUFFIX,apache.org
 DOMAIN-SUFFIX,archlinux.org
 DOMAIN-SUFFIX,archlinuxarm.org
+DOMAIN-SUFFIX,archlinuxcn.org
 DOMAIN-SUFFIX,artixlinux.org
 DOMAIN-SUFFIX,botorch.org
 DOMAIN-SUFFIX,calendarserver.org
@@ -398,6 +399,7 @@ DOMAIN-SUFFIX,getfedora.org
 DOMAIN-SUFFIX,getzola.org
 DOMAIN-SUFFIX,gnu.org
 DOMAIN-SUFFIX,go-lang.org
+DOMAIN-SUFFIX,godbolt.org
 DOMAIN-SUFFIX,godoc.org
 DOMAIN-SUFFIX,golang.org
 DOMAIN-SUFFIX,hacklang.org

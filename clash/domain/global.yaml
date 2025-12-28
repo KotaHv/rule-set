@@ -1,4 +1,4 @@
-# Total: 1674 rules
+# Total: 1676 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -1371,6 +1371,7 @@
 - '+.archiveofourown.org'
 - '+.archlinux.org'
 - '+.archlinuxarm.org'
+- '+.archlinuxcn.org'
 - '+.artixlinux.org'
 - '+.astrill.org'
 - '+.bitbucket.org'
@@ -1433,6 +1434,7 @@
 - '+.gmoney.org'
 - '+.gnu.org'
 - '+.go-lang.org'
+- '+.godbolt.org'
 - '+.godoc.org'
 - '+.golang.org'
 - '+.gradle.org'

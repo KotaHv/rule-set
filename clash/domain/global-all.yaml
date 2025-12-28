@@ -1,4 +1,4 @@
-# Total: 5836 rules
+# Total: 5838 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -5408,6 +5408,7 @@
 - '+.archiveofourown.org'
 - '+.archlinux.org'
 - '+.archlinuxarm.org'
+- '+.archlinuxcn.org'
 - '+.artfiles.org'
 - '+.artixlinux.org'
 - '+.astrill.org'
@@ -5484,6 +5485,7 @@
 - '+.gmoney.org'
 - '+.gnu.org'
 - '+.go-lang.org'
+- '+.godbolt.org'
 - '+.godoc.org'
 - '+.golang.org'
 - '+.gradle.org'

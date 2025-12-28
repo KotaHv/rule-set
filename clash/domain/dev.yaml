@@ -1,4 +1,4 @@
-# Total: 515 rules
+# Total: 517 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -358,6 +358,7 @@
 - '+.apache.org'
 - '+.archlinux.org'
 - '+.archlinuxarm.org'
+- '+.archlinuxcn.org'
 - '+.artixlinux.org'
 - '+.botorch.org'
 - '+.calendarserver.org'
@@ -399,6 +400,7 @@
 - '+.getzola.org'
 - '+.gnu.org'
 - '+.go-lang.org'
+- '+.godbolt.org'
 - '+.godoc.org'
 - '+.golang.org'
 - '+.hacklang.org'

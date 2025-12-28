@@ -1,4 +1,4 @@
-# Total: 1692 rules
+# Total: 1694 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -1373,6 +1373,7 @@ domain_suffix_set:
 - archiveofourown.org
 - archlinux.org
 - archlinuxarm.org
+- archlinuxcn.org
 - artixlinux.org
 - astrill.org
 - bitbucket.org
@@ -1435,6 +1436,7 @@ domain_suffix_set:
 - gmoney.org
 - gnu.org
 - go-lang.org
+- godbolt.org
 - godoc.org
 - golang.org
 - gradle.org

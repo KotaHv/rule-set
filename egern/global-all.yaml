@@ -1,4 +1,4 @@
-# Total: 5963 rules
+# Total: 5965 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -5410,6 +5410,7 @@ domain_suffix_set:
 - archiveofourown.org
 - archlinux.org
 - archlinuxarm.org
+- archlinuxcn.org
 - artfiles.org
 - artixlinux.org
 - astrill.org
@@ -5486,6 +5487,7 @@ domain_suffix_set:
 - gmoney.org
 - gnu.org
 - go-lang.org
+- godbolt.org
 - godoc.org
 - golang.org
 - gradle.org
