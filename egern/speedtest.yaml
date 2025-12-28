@@ -1,4 +1,4 @@
-# Total: 1620 rules
+# Total: 1621 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -952,6 +952,7 @@ domain_set:
 - dc-spdtst.treas.host
 - speedtest-ca.pq.hosting
 - speedtest-de.pq.hosting
+- speedtest-kr.the.hosting
 - speedtest-sg.cbn.id
 - speedtest.ams.atharva.co.id
 - speedtest.sin.atharva.co.id
