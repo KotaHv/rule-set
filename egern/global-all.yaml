@@ -1,4 +1,4 @@
-# Total: 5965 rules
+# Total: 5974 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -512,6 +512,7 @@ domain_set:
 - cdn3.dan.com
 - cdn.datacamp.com
 - media.datacenterdynamics.com
+- mirror.datapacket.com
 - mirror.nl.datapacket.com
 - cdn.datdota.com
 - cdn.db-ip.com
@@ -532,6 +533,7 @@ domain_set:
 - ocsp.digicert.com
 - chat.digitalgenius.com
 - ui-cdn.digitalocean-ui.com
+- mirror.dimensiondata.com
 - cdn-node.diskpart.com
 - global.divhunt.com
 - s1.divhunt.com
@@ -749,6 +751,7 @@ domain_set:
 - cdn1.hentaicity.com
 - hls.hentaicity.com
 - wego.here.com
+- cdn.hero-sms.com
 - heroicons.com
 - cdn.hextom.com
 - cdn2.hextom.com
@@ -1378,6 +1381,7 @@ domain_set:
 - cdn.syftdata.com
 - cbsplaylistserver.aws.syncbak.com
 - cbsservice.aws.syncbak.com
+- mirrors.eze.sysarmy.com
 - cdn1.sysgears.com
 - cdn2.sysgears.com
 - cdn3.sysgears.com
@@ -1675,6 +1679,7 @@ domain_set:
 - ubuntu.otenet.gr
 - ftp.cc.uoc.gr
 - node.green
+- ftp.cc.uoc.grs
 - assets.gorgias.help
 - dist.creeper.host
 - cdn.masto.host
@@ -2209,6 +2214,7 @@ domain_set:
 - ftp.sotirov-bg.net
 - cdn.pi.spectrum.net
 - sourcemaps.squarespace.net
+- mirror.steadfast.net
 - blacklist.tampermonkey.net
 - apt.tetaneutral.net
 - cpan.tetaneutral.net
@@ -2306,6 +2312,7 @@ domain_set:
 - cdn.cocoapods.org
 - mirrors.codec-cluster.org
 - cpan.cpantesters.org
+- eclats.crans.org
 - i.creativecommons.org
 - tug.ctan.org
 - embed.culturalspot.org
@@ -2402,6 +2409,8 @@ domain_set:
 - static.spigotmc.org
 - assets.squarewebsites.org
 - mirror.stjschools.org
+- deb.sury.org
+- packages.sury.org
 - mirror.team-cymru.org
 - s3.teckids.org
 - ftp.ticklers.org

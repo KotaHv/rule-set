@@ -1,4 +1,4 @@
-# Total: 1884 rules
+# Total: 1899 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -100,6 +100,7 @@ domain_set:
 - debian.linux.n0c.ca
 - ubuntu.linux.n0c.ca
 - mirror.rcg.sfu.ca
+- mirrors.switch.ca
 - mirror.it.ubc.ca
 - mirror.cpsc.ucalgary.ca
 - mirror.dsrg.utoronto.ca
@@ -116,6 +117,7 @@ domain_set:
 - rsync-linuxsoft.cern.ch
 - mirror.easyname.ch
 - debian.ethz.ch
+- mirror.ethz.ch
 - ubuntu.ethz.ch
 - mirror.infomaniak.ch
 - mirror.iway.ch
@@ -204,11 +206,13 @@ domain_set:
 - pubmirrors.dal.corespace.com
 - download.cpuid.com
 - downloads.cursor.com
+- mirror.datapacket.com
 - mirror.nl.datapacket.com
 - addins.deepl.com
 - cpan.develooper.com
 - dl.devmate.com
 - mirror.dewabiz.com
+- mirror.dimensiondata.com
 - download.dlsite.com
 - download.docker.com
 - linux.domainesia.com
@@ -383,6 +387,7 @@ domain_set:
 - content-origin.steampowered.com
 - mirrors.storpool.com
 - cdn-patch.swtor.com
+- mirrors.eze.sysarmy.com
 - download.sysinternals.com
 - dl.tailscale.com
 - pkgs.tailscale.com
@@ -599,6 +604,7 @@ domain_set:
 - ubuntu.web.trex.fi
 - ctan.crest.fr
 - apache.crihan.fr
+- ftp.crihan.fr
 - ftp.ec-m.fr
 - mirror.ibcp.fr
 - mirror.in2p3.fr
@@ -638,6 +644,7 @@ domain_set:
 - ftp.otenet.gr
 - ubuntu.otenet.gr
 - ftp.cc.uoc.gr
+- ftp.cc.uoc.grs
 - mirror.sg.gs
 - mirror.01link.hk
 - mirror.xtom.com.hk
@@ -759,6 +766,7 @@ domain_set:
 - ubuntutym.u-toyama.ac.jp
 - ftp.yz.yamagata-u.ac.jp
 - linux.yz.yamagata-u.ac.jp
+- linux2.yz.yamagata-u.ac.jp
 - ftp.iij.ad.jp
 - ftp.sakura.ad.jp
 - ftp.nara.wide.ad.jp
@@ -948,6 +956,7 @@ domain_set:
 - mirrors.sonic.net
 - ftp.sotirov-bg.net
 - downloads.sourceforge.net
+- mirror.steadfast.net
 - apt.tetaneutral.net
 - cpan.tetaneutral.net
 - ctan.tetaneutral.net
@@ -1033,6 +1042,7 @@ domain_set:
 - mirrors.codec-cluster.org
 - ftp.cpan.org
 - cpan.cpantesters.org
+- eclats.crans.org
 - tug.ctan.org
 - mirror.cyberchains.org
 - mirror.netcologne.de.org
@@ -1116,6 +1126,7 @@ domain_set:
 - cdn.kde.org
 - download.kde.org
 - invent.kde.org
+- eu.edge.kernel.org
 - mirrors.edge.kernel.org
 - mirrors.kernel.org
 - mirrors.us.kernel.org
@@ -1165,6 +1176,8 @@ domain_set:
 - mirror.siwoo.org
 - update.sleazyfork.org
 - mirror.stjschools.org
+- deb.sury.org
+- packages.sury.org
 - mirror.team-cymru.org
 - s3.teckids.org
 - ftp.ticklers.org
@@ -1296,6 +1309,7 @@ domain_set:
 - mirrors.yuntu.com.tw
 - debian.ccns.ncku.edu.tw
 - ubuntu.ccns.ncku.edu.tw
+- linux.cs.nctu.edu.tw
 - ubuntu.cs.nctu.edu.tw
 - debian.csie.ntu.edu.tw
 - debian.cs.nycu.edu.tw
@@ -1328,6 +1342,7 @@ domain_set:
 - mirrors.ukfast.co.uk
 - mirror.yuki.net.uk
 - rsync.yuki.net.uk
+- mirror.quickhost.uk
 - cdn.electronic.us
 - mirror.timkevin.us
 - mirror.xtom.us

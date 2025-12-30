@@ -1,4 +1,4 @@
-# Total: 1877 rules
+# Total: 1892 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -98,6 +98,7 @@ DOMAIN,ftp.muug.ca
 DOMAIN,debian.linux.n0c.ca
 DOMAIN,ubuntu.linux.n0c.ca
 DOMAIN,mirror.rcg.sfu.ca
+DOMAIN,mirrors.switch.ca
 DOMAIN,mirror.it.ubc.ca
 DOMAIN,mirror.cpsc.ucalgary.ca
 DOMAIN,mirror.dsrg.utoronto.ca
@@ -114,6 +115,7 @@ DOMAIN,linuxsoft.cern.ch
 DOMAIN,rsync-linuxsoft.cern.ch
 DOMAIN,mirror.easyname.ch
 DOMAIN,debian.ethz.ch
+DOMAIN,mirror.ethz.ch
 DOMAIN,ubuntu.ethz.ch
 DOMAIN,mirror.infomaniak.ch
 DOMAIN,mirror.iway.ch
@@ -202,11 +204,13 @@ DOMAIN,mirrors.concertpass.com
 DOMAIN,pubmirrors.dal.corespace.com
 DOMAIN,download.cpuid.com
 DOMAIN,downloads.cursor.com
+DOMAIN,mirror.datapacket.com
 DOMAIN,mirror.nl.datapacket.com
 DOMAIN,addins.deepl.com
 DOMAIN,cpan.develooper.com
 DOMAIN,dl.devmate.com
 DOMAIN,mirror.dewabiz.com
+DOMAIN,mirror.dimensiondata.com
 DOMAIN,download.dlsite.com
 DOMAIN,download.docker.com
 DOMAIN,linux.domainesia.com
@@ -381,6 +385,7 @@ DOMAIN,mirrors.standaloneinstaller.com
 DOMAIN,content-origin.steampowered.com
 DOMAIN,mirrors.storpool.com
 DOMAIN,cdn-patch.swtor.com
+DOMAIN,mirrors.eze.sysarmy.com
 DOMAIN,download.sysinternals.com
 DOMAIN,dl.tailscale.com
 DOMAIN,pkgs.tailscale.com
@@ -597,6 +602,7 @@ DOMAIN,debian.web.trex.fi
 DOMAIN,ubuntu.web.trex.fi
 DOMAIN,ctan.crest.fr
 DOMAIN,apache.crihan.fr
+DOMAIN,ftp.crihan.fr
 DOMAIN,ftp.ec-m.fr
 DOMAIN,mirror.ibcp.fr
 DOMAIN,mirror.in2p3.fr
@@ -636,6 +642,7 @@ DOMAIN,debian.otenet.gr
 DOMAIN,ftp.otenet.gr
 DOMAIN,ubuntu.otenet.gr
 DOMAIN,ftp.cc.uoc.gr
+DOMAIN,ftp.cc.uoc.grs
 DOMAIN,mirror.sg.gs
 DOMAIN,mirror.01link.hk
 DOMAIN,mirror.xtom.com.hk
@@ -757,6 +764,7 @@ DOMAIN,ftp.u-aizu.ac.jp
 DOMAIN,ubuntutym.u-toyama.ac.jp
 DOMAIN,ftp.yz.yamagata-u.ac.jp
 DOMAIN,linux.yz.yamagata-u.ac.jp
+DOMAIN,linux2.yz.yamagata-u.ac.jp
 DOMAIN,ftp.iij.ad.jp
 DOMAIN,ftp.sakura.ad.jp
 DOMAIN,ftp.nara.wide.ad.jp
@@ -946,6 +954,7 @@ DOMAIN,mirror.server.net
 DOMAIN,mirrors.sonic.net
 DOMAIN,ftp.sotirov-bg.net
 DOMAIN,downloads.sourceforge.net
+DOMAIN,mirror.steadfast.net
 DOMAIN,apt.tetaneutral.net
 DOMAIN,cpan.tetaneutral.net
 DOMAIN,ctan.tetaneutral.net
@@ -1031,6 +1040,7 @@ DOMAIN,cdn.cocoapods.org
 DOMAIN,mirrors.codec-cluster.org
 DOMAIN,ftp.cpan.org
 DOMAIN,cpan.cpantesters.org
+DOMAIN,eclats.crans.org
 DOMAIN,tug.ctan.org
 DOMAIN,mirror.cyberchains.org
 DOMAIN,mirror.netcologne.de.org
@@ -1114,6 +1124,7 @@ DOMAIN,http.kali.org
 DOMAIN,cdn.kde.org
 DOMAIN,download.kde.org
 DOMAIN,invent.kde.org
+DOMAIN,eu.edge.kernel.org
 DOMAIN,mirrors.edge.kernel.org
 DOMAIN,mirrors.kernel.org
 DOMAIN,mirrors.us.kernel.org
@@ -1163,6 +1174,8 @@ DOMAIN,mirror.ubuntu.serverforge.org
 DOMAIN,mirror.siwoo.org
 DOMAIN,update.sleazyfork.org
 DOMAIN,mirror.stjschools.org
+DOMAIN,deb.sury.org
+DOMAIN,packages.sury.org
 DOMAIN,mirror.team-cymru.org
 DOMAIN,s3.teckids.org
 DOMAIN,ftp.ticklers.org
@@ -1294,6 +1307,7 @@ DOMAIN,cisco.yuntu.com.tw
 DOMAIN,mirrors.yuntu.com.tw
 DOMAIN,debian.ccns.ncku.edu.tw
 DOMAIN,ubuntu.ccns.ncku.edu.tw
+DOMAIN,linux.cs.nctu.edu.tw
 DOMAIN,ubuntu.cs.nctu.edu.tw
 DOMAIN,debian.csie.ntu.edu.tw
 DOMAIN,debian.cs.nycu.edu.tw
@@ -1326,6 +1340,7 @@ DOMAIN,mirrors.melbourne.co.uk
 DOMAIN,mirrors.ukfast.co.uk
 DOMAIN,mirror.yuki.net.uk
 DOMAIN,rsync.yuki.net.uk
+DOMAIN,mirror.quickhost.uk
 DOMAIN,cdn.electronic.us
 DOMAIN,mirror.timkevin.us
 DOMAIN,mirror.xtom.us

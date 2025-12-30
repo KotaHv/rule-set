@@ -1,4 +1,4 @@
-# Total: 1621 rules
+# Total: 1622 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -920,6 +920,7 @@ domain_set:
 - speedtest.fra.plusnet.de
 - speedtest.ropa.de
 - speedtest1.synlinq.de
+- ookla.fra-01.testpub.telefonica.de
 - ber.wsqm.telekom-dienste.de
 - ffm.wsqm.telekom-dienste.de
 - speedtest.lazco.dev

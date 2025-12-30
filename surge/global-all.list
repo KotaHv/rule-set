@@ -1,4 +1,4 @@
-# Total: 6029 rules
+# Total: 6038 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -510,6 +510,7 @@ DOMAIN,cdn2.dan.com
 DOMAIN,cdn3.dan.com
 DOMAIN,cdn.datacamp.com
 DOMAIN,media.datacenterdynamics.com
+DOMAIN,mirror.datapacket.com
 DOMAIN,mirror.nl.datapacket.com
 DOMAIN,cdn.datdota.com
 DOMAIN,cdn.db-ip.com
@@ -530,6 +531,7 @@ DOMAIN,cacerts.digicert.com
 DOMAIN,ocsp.digicert.com
 DOMAIN,chat.digitalgenius.com
 DOMAIN,ui-cdn.digitalocean-ui.com
+DOMAIN,mirror.dimensiondata.com
 DOMAIN,cdn-node.diskpart.com
 DOMAIN,global.divhunt.com
 DOMAIN,s1.divhunt.com
@@ -747,6 +749,7 @@ DOMAIN,static.helpjuice.com
 DOMAIN,cdn1.hentaicity.com
 DOMAIN,hls.hentaicity.com
 DOMAIN,wego.here.com
+DOMAIN,cdn.hero-sms.com
 DOMAIN,heroicons.com
 DOMAIN,cdn.hextom.com
 DOMAIN,cdn2.hextom.com
@@ -1376,6 +1379,7 @@ DOMAIN,assets.swoogo.com
 DOMAIN,cdn.syftdata.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
+DOMAIN,mirrors.eze.sysarmy.com
 DOMAIN,cdn1.sysgears.com
 DOMAIN,cdn2.sysgears.com
 DOMAIN,cdn3.sysgears.com
@@ -1673,6 +1677,7 @@ DOMAIN,ftp.otenet.gr
 DOMAIN,ubuntu.otenet.gr
 DOMAIN,ftp.cc.uoc.gr
 DOMAIN,node.green
+DOMAIN,ftp.cc.uoc.grs
 DOMAIN,assets.gorgias.help
 DOMAIN,dist.creeper.host
 DOMAIN,cdn.masto.host
@@ -2207,6 +2212,7 @@ DOMAIN,mirrors.sonic.net
 DOMAIN,ftp.sotirov-bg.net
 DOMAIN,cdn.pi.spectrum.net
 DOMAIN,sourcemaps.squarespace.net
+DOMAIN,mirror.steadfast.net
 DOMAIN,blacklist.tampermonkey.net
 DOMAIN,apt.tetaneutral.net
 DOMAIN,cpan.tetaneutral.net
@@ -2304,6 +2310,7 @@ DOMAIN,moderate.cleantalk.org
 DOMAIN,cdn.cocoapods.org
 DOMAIN,mirrors.codec-cluster.org
 DOMAIN,cpan.cpantesters.org
+DOMAIN,eclats.crans.org
 DOMAIN,i.creativecommons.org
 DOMAIN,tug.ctan.org
 DOMAIN,embed.culturalspot.org
@@ -2400,6 +2407,8 @@ DOMAIN,proxy.spigotmc.org
 DOMAIN,static.spigotmc.org
 DOMAIN,assets.squarewebsites.org
 DOMAIN,mirror.stjschools.org
+DOMAIN,deb.sury.org
+DOMAIN,packages.sury.org
 DOMAIN,mirror.team-cymru.org
 DOMAIN,s3.teckids.org
 DOMAIN,ftp.ticklers.org
