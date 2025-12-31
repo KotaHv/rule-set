@@ -1,4 +1,4 @@
-# Total: 1694 rules
+# Total: 1698 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -236,6 +236,7 @@ domain_suffix_set:
 - cbsnews.com
 - cdninstagram.com
 - cdnjs.com
+- cf-ipfs.com
 - chess.com
 - chrome.com
 - chromeexperiments.com
@@ -970,6 +971,7 @@ domain_suffix_set:
 - gitkraken.dev
 - go.dev
 - orbstack.dev
+- pages.dev
 - pub.dev
 - pydantic.dev
 - sentry.dev
@@ -1336,6 +1338,7 @@ domain_suffix_set:
 - underhentai.net
 - venmo.net
 - vesselfinder.net
+- videodelivery.net
 - visualstudio.net
 - vscode-cdn.net
 - vscode-unpkg.net
@@ -1643,6 +1646,7 @@ domain_suffix_set:
 - social
 - jetbrains.space
 - st
+- studio
 - su
 - sx
 - taipei

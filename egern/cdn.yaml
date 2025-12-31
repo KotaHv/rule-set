@@ -1,4 +1,4 @@
-# Total: 4231 rules
+# Total: 4232 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2870,6 +2870,7 @@ domain_set:
 - mstdn-s3.o3o.studio
 - bcdn.starapps.studio
 - cdn.starapps.studio
+- assets.unicorn.studio
 - embed.zenn.studio
 - static.zenn.studio
 - eslint.style

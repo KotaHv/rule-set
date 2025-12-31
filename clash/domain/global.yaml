@@ -1,4 +1,4 @@
-# Total: 1676 rules
+# Total: 1680 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -234,6 +234,7 @@
 - '+.cbsnews.com'
 - '+.cdninstagram.com'
 - '+.cdnjs.com'
+- '+.cf-ipfs.com'
 - '+.chess.com'
 - '+.chrome.com'
 - '+.chromeexperiments.com'
@@ -968,6 +969,7 @@
 - '+.gitkraken.dev'
 - '+.go.dev'
 - '+.orbstack.dev'
+- '+.pages.dev'
 - '+.pub.dev'
 - '+.pydantic.dev'
 - '+.sentry.dev'
@@ -1334,6 +1336,7 @@
 - '+.underhentai.net'
 - '+.venmo.net'
 - '+.vesselfinder.net'
+- '+.videodelivery.net'
 - '+.visualstudio.net'
 - '+.vscode-cdn.net'
 - '+.vscode-unpkg.net'
@@ -1641,6 +1644,7 @@
 - '+.social'
 - '+.jetbrains.space'
 - '+.st'
+- '+.studio'
 - '+.su'
 - '+.sx'
 - '+.taipei'

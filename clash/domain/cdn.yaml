@@ -1,4 +1,4 @@
-# Total: 4152 rules
+# Total: 4153 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -2869,6 +2869,7 @@
 - 'mstdn-s3.o3o.studio'
 - 'bcdn.starapps.studio'
 - 'cdn.starapps.studio'
+- 'assets.unicorn.studio'
 - 'embed.zenn.studio'
 - 'static.zenn.studio'
 - 'eslint.style'

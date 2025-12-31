@@ -1,4 +1,4 @@
-# Total: 5974 rules
+# Total: 5969 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2484,12 +2484,6 @@ domain_set:
 - api.web3.storage
 - images.web3.storage
 - cdn.one.store
-- public.flourish.studio
-- mstdn-s3.o3o.studio
-- bcdn.starapps.studio
-- cdn.starapps.studio
-- embed.zenn.studio
-- static.zenn.studio
 - eslint.style
 - vanilla-extract.style
 - static.ada.support
@@ -5774,6 +5768,7 @@ domain_suffix_set:
 - surrit.store
 - kk.stream
 - photocdn.stream
+- studio
 - su
 - eth.sucks
 - sx
