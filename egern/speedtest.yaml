@@ -1,4 +1,4 @@
-# Total: 1623 rules
+# Total: 1624 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -720,6 +720,7 @@ domain_set:
 - speedapi.race.com
 - ldnspeedtest.rackdog.com
 - sydspeedtest.rackdog.com
+- mispeed.rackgenius.com
 - speedtest-obd.redeconecta.com
 - speedtest-stm.redeconecta.com
 - ooklatins.redeconexaonet.com

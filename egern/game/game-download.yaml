@@ -1,4 +1,4 @@
-# Total: 61 rules
+# Total: 62 rules
 no_resolve: true
 domain_set:
 - eu.cdn.blizzard.com
@@ -63,3 +63,4 @@ domain_set:
 domain_suffix_set:
 - egdownload.fastly-edge.com
 - steamcontent.com
+- dl.playstation.net

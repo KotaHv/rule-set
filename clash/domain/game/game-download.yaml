@@ -1,4 +1,4 @@
-# Total: 61 rules
+# Total: 62 rules
 'payload':
 - 'eu.cdn.blizzard.com'
 - 'kr.cdn.blizzard.com'
@@ -61,3 +61,4 @@
 - 'wildrift.dyn.riotcdn.net'
 - '+.egdownload.fastly-edge.com'
 - '+.steamcontent.com'
+- '+.dl.playstation.net'
