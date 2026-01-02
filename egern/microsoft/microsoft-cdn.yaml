@@ -1,4 +1,4 @@
-# Total: 57 rules
+# Total: 56 rules
 no_resolve: true
 domain_set:
 - res-h3.public.cdn.office.net
@@ -12,7 +12,6 @@ domain_suffix_set:
 - developer.microsoft.com
 - download.microsoft.com
 - fs.microsoft.com
-- learn.microsoft.com
 - dl.delivery.mp.microsoft.com
 - storeedgefd.dsx.mp.microsoft.com
 - officecdn.microsoft.com
