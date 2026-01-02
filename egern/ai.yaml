@@ -1,4 +1,4 @@
-# Total: 45 rules
+# Total: 47 rules
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
@@ -9,8 +9,10 @@ domain_set:
 - jules.google.com
 - aida.googleapis.com
 - aisandbox-pa.googleapis.com
+- daily-cloudcode-pa.googleapis.com
 - robinfrontend-pa.googleapis.com
 - ai.google.dev
+- antigravity-unleash.goog
 - antigravity.google
 domain_suffix_set:
 - claude.ai

@@ -1,4 +1,4 @@
-# Total: 43 rules
+# Total: 45 rules
 'payload':
 - 'api.jetbrains.ai'
 - 'openrouter.ai'
@@ -8,8 +8,10 @@
 - 'jules.google.com'
 - 'aida.googleapis.com'
 - 'aisandbox-pa.googleapis.com'
+- 'daily-cloudcode-pa.googleapis.com'
 - 'robinfrontend-pa.googleapis.com'
 - 'ai.google.dev'
+- 'antigravity-unleash.goog'
 - 'antigravity.google'
 - '+.claude.ai'
 - '+.dify.ai'
