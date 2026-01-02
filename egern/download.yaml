@@ -1,4 +1,4 @@
-# Total: 1899 rules
+# Total: 1895 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -20,7 +20,6 @@ domain_set:
 - ubuntu.zero.com.ar
 - ubuntu.unc.edu.ar
 - debian.unnoba.edu.ar
-- mirrors.dc.clear.net.ar
 - mirrors.sarak.as
 - mirror.cyberbits.asia
 - ftp.tu-graz.ac.at
@@ -53,8 +52,6 @@ domain_set:
 - mirror.amberit.com.bd
 - mirror.visiontech.com.bd
 - ftp.belnet.be
-- apache.cu.be
-- kde.cu.be
 - ctan.space-pro.be
 - lib.ugent.be
 - mirror.unix-solutions.be
@@ -387,7 +384,6 @@ domain_set:
 - content-origin.steampowered.com
 - mirrors.storpool.com
 - cdn-patch.swtor.com
-- mirrors.eze.sysarmy.com
 - download.sysinternals.com
 - dl.tailscale.com
 - pkgs.tailscale.com
@@ -644,7 +640,6 @@ domain_set:
 - ftp.otenet.gr
 - ubuntu.otenet.gr
 - ftp.cc.uoc.gr
-- ftp.cc.uoc.grs
 - mirror.sg.gs
 - mirror.01link.hk
 - mirror.xtom.com.hk
@@ -1383,6 +1378,7 @@ domain_suffix_set:
 - mirror.serversaustralia.com.au
 - public.ecr.aws
 - mirror.ba
+- mirrors.cu.be
 - mirror.iweb.ca
 - mirror.rafal.ca
 - ubuntu.csg.uzh.ch

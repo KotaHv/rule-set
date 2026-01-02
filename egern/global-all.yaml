@@ -1,4 +1,4 @@
-# Total: 5969 rules
+# Total: 5975 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -34,7 +34,6 @@ domain_set:
 - ubuntu.zero.com.ar
 - ubuntu.unc.edu.ar
 - debian.unnoba.edu.ar
-- mirrors.dc.clear.net.ar
 - phishing.army
 - img.fzf404.art
 - mirrors.sarak.as
@@ -435,7 +434,6 @@ domain_set:
 - image.civitai.com
 - vfat.classicreload.com
 - cmd-cdn.cleanmymac.com
-- logo.clearbit.com
 - img.clerk.com
 - scdn.clerk.com
 - segapi.clerk.com
@@ -937,7 +935,6 @@ domain_set:
 - static7.lottiefiles.com
 - static8.lottiefiles.com
 - static9.lottiefiles.com
-- player.louisvuitton.com
 - img.ltyears.com
 - img.lvv2.com
 - mirror.lyrahosting.com
@@ -956,7 +953,8 @@ domain_set:
 - asset.mansionglobal.com
 - mantisloader.mantis-awx.com
 - loader.mantis-intelligence.com
-- sato.manyse.com
+- img.manyse.com
+- test.manyse.com
 - clickup.marketlinc.com
 - lift-ai-js.marketlinc.com
 - c.marsflag.com
@@ -1190,6 +1188,8 @@ domain_set:
 - assets.positional-bucket.com
 - mirror.positive-internet.com
 - app-static.eu.posthog.com
+- eu-assets.i.posthog.com
+- us-assets.i.posthog.com
 - content.powerapps.com
 - repo.powerdns.com
 - ui.powerreviews.com
@@ -1381,7 +1381,6 @@ domain_set:
 - cdn.syftdata.com
 - cbsplaylistserver.aws.syncbak.com
 - cbsservice.aws.syncbak.com
-- mirrors.eze.sysarmy.com
 - cdn1.sysgears.com
 - cdn2.sysgears.com
 - cdn3.sysgears.com
@@ -1679,7 +1678,6 @@ domain_set:
 - ubuntu.otenet.gr
 - ftp.cc.uoc.gr
 - node.green
-- ftp.cc.uoc.grs
 - assets.gorgias.help
 - dist.creeper.host
 - cdn.masto.host
@@ -1699,6 +1697,7 @@ domain_set:
 - mirror.szerverem.hu
 - mirror.gsl.icu
 - tile2.intervals.icu
+- static.izanmei.icu
 - sn-s3-cdn.angry.im
 - s3.c.im
 - badges.gitter.im
@@ -2110,7 +2109,6 @@ domain_set:
 - cdn.iplocation.net
 - mirrors.iu13.net
 - file.izanmei.net
-- play.izanmei.net
 - static.j51.net
 - fiddle.jshell.net
 - static-r.kamihimeproject.net
@@ -2264,6 +2262,7 @@ domain_set:
 - cdn.writeas.net
 - images.wsjcommerce.net
 - images.wurstclient.net
+- static.wwto.net
 - cdn.xeiaso.net
 - mirror.xenyth.net
 - image.xmanhua.net
@@ -2502,7 +2501,7 @@ domain_set:
 - static-cdn.bytegiftia.top
 - ghfast.top
 - repo.sleeping.town
-- ipfs.d.tube
+- media.d.tube
 - js.txxx.tube
 - tn.txxx.tube
 - mirror.aptus.co.tz
@@ -3177,6 +3176,7 @@ domain_suffix_set:
 - eastore.com
 - ebayimg.com
 - ebaystatic.com
+- ipfs.ecolatam.com
 - economist.com
 - dtci-pe-vp-image-resizer.platform.edgedatg.com
 - mirror.edgeuno.com
@@ -4666,6 +4666,10 @@ domain_suffix_set:
 - go.dev
 - hayabusa.dev
 - jspm.dev
+- apac.orbitor.dev
+- eu.orbitor.dev
+- ipfs.orbitor.dev
+- latam.orbitor.dev
 - orbstack.dev
 - pages.dev
 - pub.dev
@@ -4815,6 +4819,7 @@ domain_suffix_set:
 - etherscan.io
 - explainthis.io
 - file.io
+- ipfs.filebase.io
 - firebase.io
 - fly.io
 - fury.io
@@ -5787,6 +5792,7 @@ domain_suffix_set:
 - alphafish.top
 - apperoni.top
 - balley.top
+- dget.top
 - filecunhua.top
 - gitcdn.top
 - mobilius.top

@@ -1,4 +1,4 @@
-# Total: 4233 rules
+# Total: 4241 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -29,6 +29,8 @@ DOMAIN,cdn2.suno.ai
 DOMAIN,tag.tvads.ai
 DOMAIN,vetted.ai
 DOMAIN,prod-cdn.webtune.ai
+DOMAIN,play.xiaoh.ai
+DOMAIN,file.xiaohai.ai
 DOMAIN,cdn.7tv.app
 DOMAIN,assets.airbuddy.app
 DOMAIN,cdn.announcekit.app
@@ -468,7 +470,6 @@ DOMAIN,assets-growth-common.circleci.com
 DOMAIN,cdn-assets.circleci.com
 DOMAIN,image.civitai.com
 DOMAIN,cmd-cdn.cleanmymac.com
-DOMAIN,logo.clearbit.com
 DOMAIN,img.clerk.com
 DOMAIN,scdn.clerk.com
 DOMAIN,segapi.clerk.com
@@ -789,7 +790,6 @@ DOMAIN,r2.gear4music.com
 DOMAIN,static-r2.gear4music.com
 DOMAIN,i.geekflare.com
 DOMAIN,img2.gelbooru.com
-DOMAIN,img4.gelbooru.com
 DOMAIN,assets.genius.com
 DOMAIN,maps.geoapify.com
 DOMAIN,geoip-js.com
@@ -1149,7 +1149,6 @@ DOMAIN,static6.lottiefiles.com
 DOMAIN,static7.lottiefiles.com
 DOMAIN,static8.lottiefiles.com
 DOMAIN,static9.lottiefiles.com
-DOMAIN,player.louisvuitton.com
 DOMAIN,img.ltyears.com
 DOMAIN,img.lvv2.com
 DOMAIN,apim.m3pd.com
@@ -1171,7 +1170,8 @@ DOMAIN,img-cos.mandaoo.com
 DOMAIN,asset.mansionglobal.com
 DOMAIN,mantisloader.mantis-awx.com
 DOMAIN,loader.mantis-intelligence.com
-DOMAIN,sato.manyse.com
+DOMAIN,img.manyse.com
+DOMAIN,test.manyse.com
 DOMAIN,static-assets.mapbox.com
 DOMAIN,cdn.maptiler.com
 DOMAIN,media.maptiler.com
@@ -1475,6 +1475,8 @@ DOMAIN,cdni.pornpics.com
 DOMAIN,static.pornpics.com
 DOMAIN,assets.positional-bucket.com
 DOMAIN,app-static.eu.posthog.com
+DOMAIN,eu-assets.i.posthog.com
+DOMAIN,us-assets.i.posthog.com
 DOMAIN,newsletter.postmarkapp.com
 DOMAIN,public-assets.postmarkapp.com
 DOMAIN,rebound.postmarkapp.com
@@ -2112,6 +2114,7 @@ DOMAIN,newsstatic.rthk.hk
 DOMAIN,cdn.unwire.hk
 DOMAIN,cdn.masto.host
 DOMAIN,tile2.intervals.icu
+DOMAIN,static.izanmei.icu
 DOMAIN,js.nagich.co.il
 DOMAIN,sn-s3-cdn.angry.im
 DOMAIN,s3.c.im
@@ -2539,7 +2542,6 @@ DOMAIN,cdn.iporntv.net
 DOMAIN,cdn-img2.iporntv.net
 DOMAIN,cdn-img3.iporntv.net
 DOMAIN,file.izanmei.net
-DOMAIN,play.izanmei.net
 DOMAIN,static.j51.net
 DOMAIN,img.javstore.net
 DOMAIN,pg2dhpc3p5ec22g3.jkforum.net
@@ -2643,6 +2645,7 @@ DOMAIN,sts3.wsj.net
 DOMAIN,vir.wsj.net
 DOMAIN,images.wsjcommerce.net
 DOMAIN,images.wurstclient.net
+DOMAIN,static.wwto.net
 DOMAIN,cdn.xeiaso.net
 DOMAIN,image.xmanhua.net
 DOMAIN,assets.xmind.net
@@ -2874,8 +2877,6 @@ DOMAIN,embed.zenn.studio
 DOMAIN,static.zenn.studio
 DOMAIN,eslint.style
 DOMAIN,vanilla-extract.style
-DOMAIN,img.coomer.su
-DOMAIN,img.kemono.su
 DOMAIN,static.ada.support
 DOMAIN,piccdn.7mmtv.sx
 DOMAIN,video1.7mmtv.sx
@@ -2897,7 +2898,7 @@ DOMAIN,openreplay-new.deel.tools
 DOMAIN,namedotcom-cdn.name.tools
 DOMAIN,css.4jpg.top
 DOMAIN,static-cdn.bytegiftia.top
-DOMAIN,ipfs.d.tube
+DOMAIN,media.d.tube
 DOMAIN,js.txxx.tube
 DOMAIN,tn.txxx.tube
 DOMAIN,cdn.18jav.tv
@@ -3234,6 +3235,7 @@ DOMAIN-SUFFIX,dummyjson.com
 DOMAIN-SUFFIX,dynamic-static-assets.com
 DOMAIN-SUFFIX,ebayimg.com
 DOMAIN-SUFFIX,ebaystatic.com
+DOMAIN-SUFFIX,ipfs.ecolatam.com
 DOMAIN-SUFFIX,design-system.economist.com
 DOMAIN-SUFFIX,dtci-pe-vp-image-resizer.platform.edgedatg.com
 DOMAIN-SUFFIX,els-cdn.com
@@ -3735,6 +3737,10 @@ DOMAIN-SUFFIX,widgets.marketplace.aws.dev
 DOMAIN-SUFFIX,assets.shortbread.aws.dev
 DOMAIN-SUFFIX,delegated-ipfs.dev
 DOMAIN-SUFFIX,jspm.dev
+DOMAIN-SUFFIX,apac.orbitor.dev
+DOMAIN-SUFFIX,eu.orbitor.dev
+DOMAIN-SUFFIX,ipfs.orbitor.dev
+DOMAIN-SUFFIX,latam.orbitor.dev
 DOMAIN-SUFFIX,pages.dev
 DOMAIN-SUFFIX,react.dev
 DOMAIN-SUFFIX,rss3.dev
@@ -3777,6 +3783,7 @@ DOMAIN-SUFFIX,ipfs.denarius.io
 DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,emotivecdn.io
 DOMAIN-SUFFIX,ipfs.eternum.io
+DOMAIN-SUFFIX,ipfs.filebase.io
 DOMAIN-SUFFIX,files.gitbook.io
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,gitlab.io
@@ -4116,6 +4123,7 @@ DOMAIN-SUFFIX,akidoo.top
 DOMAIN-SUFFIX,alphafish.top
 DOMAIN-SUFFIX,apperoni.top
 DOMAIN-SUFFIX,balley.top
+DOMAIN-SUFFIX,dget.top
 DOMAIN-SUFFIX,filecunhua.top
 DOMAIN-SUFFIX,gitcdn.top
 DOMAIN-SUFFIX,mobilius.top

@@ -1,4 +1,4 @@
-# Total: 1892 rules
+# Total: 1888 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -18,7 +18,6 @@ DOMAIN,mirror.sitsa.com.ar
 DOMAIN,ubuntu.zero.com.ar
 DOMAIN,ubuntu.unc.edu.ar
 DOMAIN,debian.unnoba.edu.ar
-DOMAIN,mirrors.dc.clear.net.ar
 DOMAIN,mirrors.sarak.as
 DOMAIN,mirror.cyberbits.asia
 DOMAIN,ftp.tu-graz.ac.at
@@ -51,8 +50,6 @@ DOMAIN,ubuntu-mirror.bhtelecom.ba
 DOMAIN,mirror.amberit.com.bd
 DOMAIN,mirror.visiontech.com.bd
 DOMAIN,ftp.belnet.be
-DOMAIN,apache.cu.be
-DOMAIN,kde.cu.be
 DOMAIN,ctan.space-pro.be
 DOMAIN,lib.ugent.be
 DOMAIN,mirror.unix-solutions.be
@@ -385,7 +382,6 @@ DOMAIN,mirrors.standaloneinstaller.com
 DOMAIN,content-origin.steampowered.com
 DOMAIN,mirrors.storpool.com
 DOMAIN,cdn-patch.swtor.com
-DOMAIN,mirrors.eze.sysarmy.com
 DOMAIN,download.sysinternals.com
 DOMAIN,dl.tailscale.com
 DOMAIN,pkgs.tailscale.com
@@ -642,7 +638,6 @@ DOMAIN,debian.otenet.gr
 DOMAIN,ftp.otenet.gr
 DOMAIN,ubuntu.otenet.gr
 DOMAIN,ftp.cc.uoc.gr
-DOMAIN,ftp.cc.uoc.grs
 DOMAIN,mirror.sg.gs
 DOMAIN,mirror.01link.hk
 DOMAIN,mirror.xtom.com.hk
@@ -1380,6 +1375,7 @@ DOMAIN-SUFFIX,mirror.digitalpacific.com.au
 DOMAIN-SUFFIX,mirror.serversaustralia.com.au
 DOMAIN-SUFFIX,public.ecr.aws
 DOMAIN-SUFFIX,mirror.ba
+DOMAIN-SUFFIX,mirrors.cu.be
 DOMAIN-SUFFIX,mirror.iweb.ca
 DOMAIN-SUFFIX,mirror.rafal.ca
 DOMAIN-SUFFIX,ubuntu.csg.uzh.ch

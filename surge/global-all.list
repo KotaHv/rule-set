@@ -1,4 +1,4 @@
-# Total: 6033 rules
+# Total: 6039 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -32,7 +32,6 @@ DOMAIN,mirror.sitsa.com.ar
 DOMAIN,ubuntu.zero.com.ar
 DOMAIN,ubuntu.unc.edu.ar
 DOMAIN,debian.unnoba.edu.ar
-DOMAIN,mirrors.dc.clear.net.ar
 DOMAIN,phishing.army
 DOMAIN,img.fzf404.art
 DOMAIN,mirrors.sarak.as
@@ -433,7 +432,6 @@ DOMAIN,mirror.citrahost.com
 DOMAIN,image.civitai.com
 DOMAIN,vfat.classicreload.com
 DOMAIN,cmd-cdn.cleanmymac.com
-DOMAIN,logo.clearbit.com
 DOMAIN,img.clerk.com
 DOMAIN,scdn.clerk.com
 DOMAIN,segapi.clerk.com
@@ -935,7 +933,6 @@ DOMAIN,static6.lottiefiles.com
 DOMAIN,static7.lottiefiles.com
 DOMAIN,static8.lottiefiles.com
 DOMAIN,static9.lottiefiles.com
-DOMAIN,player.louisvuitton.com
 DOMAIN,img.ltyears.com
 DOMAIN,img.lvv2.com
 DOMAIN,mirror.lyrahosting.com
@@ -954,7 +951,8 @@ DOMAIN,img-cos.mandaoo.com
 DOMAIN,asset.mansionglobal.com
 DOMAIN,mantisloader.mantis-awx.com
 DOMAIN,loader.mantis-intelligence.com
-DOMAIN,sato.manyse.com
+DOMAIN,img.manyse.com
+DOMAIN,test.manyse.com
 DOMAIN,clickup.marketlinc.com
 DOMAIN,lift-ai-js.marketlinc.com
 DOMAIN,c.marsflag.com
@@ -1188,6 +1186,8 @@ DOMAIN,static.polldaddy.com
 DOMAIN,assets.positional-bucket.com
 DOMAIN,mirror.positive-internet.com
 DOMAIN,app-static.eu.posthog.com
+DOMAIN,eu-assets.i.posthog.com
+DOMAIN,us-assets.i.posthog.com
 DOMAIN,content.powerapps.com
 DOMAIN,repo.powerdns.com
 DOMAIN,ui.powerreviews.com
@@ -1379,7 +1379,6 @@ DOMAIN,assets.swoogo.com
 DOMAIN,cdn.syftdata.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
-DOMAIN,mirrors.eze.sysarmy.com
 DOMAIN,cdn1.sysgears.com
 DOMAIN,cdn2.sysgears.com
 DOMAIN,cdn3.sysgears.com
@@ -1677,7 +1676,6 @@ DOMAIN,ftp.otenet.gr
 DOMAIN,ubuntu.otenet.gr
 DOMAIN,ftp.cc.uoc.gr
 DOMAIN,node.green
-DOMAIN,ftp.cc.uoc.grs
 DOMAIN,assets.gorgias.help
 DOMAIN,dist.creeper.host
 DOMAIN,cdn.masto.host
@@ -1697,6 +1695,7 @@ DOMAIN,xenia.sote.hu
 DOMAIN,mirror.szerverem.hu
 DOMAIN,mirror.gsl.icu
 DOMAIN,tile2.intervals.icu
+DOMAIN,static.izanmei.icu
 DOMAIN,sn-s3-cdn.angry.im
 DOMAIN,s3.c.im
 DOMAIN,badges.gitter.im
@@ -2108,7 +2107,6 @@ DOMAIN,jsdelivr.ioiox.net
 DOMAIN,cdn.iplocation.net
 DOMAIN,mirrors.iu13.net
 DOMAIN,file.izanmei.net
-DOMAIN,play.izanmei.net
 DOMAIN,static.j51.net
 DOMAIN,fiddle.jshell.net
 DOMAIN,static-r.kamihimeproject.net
@@ -2262,6 +2260,7 @@ DOMAIN,avts.wmlabs.net
 DOMAIN,cdn.writeas.net
 DOMAIN,images.wsjcommerce.net
 DOMAIN,images.wurstclient.net
+DOMAIN,static.wwto.net
 DOMAIN,cdn.xeiaso.net
 DOMAIN,mirror.xenyth.net
 DOMAIN,image.xmanhua.net
@@ -2500,7 +2499,7 @@ DOMAIN,css.4jpg.top
 DOMAIN,static-cdn.bytegiftia.top
 DOMAIN,ghfast.top
 DOMAIN,repo.sleeping.town
-DOMAIN,ipfs.d.tube
+DOMAIN,media.d.tube
 DOMAIN,js.txxx.tube
 DOMAIN,tn.txxx.tube
 DOMAIN,mirror.aptus.co.tz
@@ -3174,6 +3173,7 @@ DOMAIN-SUFFIX,easportsworld.com
 DOMAIN-SUFFIX,eastore.com
 DOMAIN-SUFFIX,ebayimg.com
 DOMAIN-SUFFIX,ebaystatic.com
+DOMAIN-SUFFIX,ipfs.ecolatam.com
 DOMAIN-SUFFIX,economist.com
 DOMAIN-SUFFIX,dtci-pe-vp-image-resizer.platform.edgedatg.com
 DOMAIN-SUFFIX,mirror.edgeuno.com
@@ -4663,6 +4663,10 @@ DOMAIN-SUFFIX,gitkraken.dev
 DOMAIN-SUFFIX,go.dev
 DOMAIN-SUFFIX,hayabusa.dev
 DOMAIN-SUFFIX,jspm.dev
+DOMAIN-SUFFIX,apac.orbitor.dev
+DOMAIN-SUFFIX,eu.orbitor.dev
+DOMAIN-SUFFIX,ipfs.orbitor.dev
+DOMAIN-SUFFIX,latam.orbitor.dev
 DOMAIN-SUFFIX,orbstack.dev
 DOMAIN-SUFFIX,pages.dev
 DOMAIN-SUFFIX,pub.dev
@@ -4812,6 +4816,7 @@ DOMAIN-SUFFIX,ipfs.eternum.io
 DOMAIN-SUFFIX,etherscan.io
 DOMAIN-SUFFIX,explainthis.io
 DOMAIN-SUFFIX,file.io
+DOMAIN-SUFFIX,ipfs.filebase.io
 DOMAIN-SUFFIX,firebase.io
 DOMAIN-SUFFIX,fly.io
 DOMAIN-SUFFIX,fury.io
@@ -5784,6 +5789,7 @@ DOMAIN-SUFFIX,akidoo.top
 DOMAIN-SUFFIX,alphafish.top
 DOMAIN-SUFFIX,apperoni.top
 DOMAIN-SUFFIX,balley.top
+DOMAIN-SUFFIX,dget.top
 DOMAIN-SUFFIX,filecunhua.top
 DOMAIN-SUFFIX,gitcdn.top
 DOMAIN-SUFFIX,mobilius.top

@@ -1,4 +1,4 @@
-# Total: 4233 rules
+# Total: 4241 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -31,6 +31,8 @@ domain_set:
 - tag.tvads.ai
 - vetted.ai
 - prod-cdn.webtune.ai
+- play.xiaoh.ai
+- file.xiaohai.ai
 - cdn.7tv.app
 - assets.airbuddy.app
 - cdn.announcekit.app
@@ -470,7 +472,6 @@ domain_set:
 - cdn-assets.circleci.com
 - image.civitai.com
 - cmd-cdn.cleanmymac.com
-- logo.clearbit.com
 - img.clerk.com
 - scdn.clerk.com
 - segapi.clerk.com
@@ -791,7 +792,6 @@ domain_set:
 - static-r2.gear4music.com
 - i.geekflare.com
 - img2.gelbooru.com
-- img4.gelbooru.com
 - assets.genius.com
 - maps.geoapify.com
 - geoip-js.com
@@ -1151,7 +1151,6 @@ domain_set:
 - static7.lottiefiles.com
 - static8.lottiefiles.com
 - static9.lottiefiles.com
-- player.louisvuitton.com
 - img.ltyears.com
 - img.lvv2.com
 - apim.m3pd.com
@@ -1173,7 +1172,8 @@ domain_set:
 - asset.mansionglobal.com
 - mantisloader.mantis-awx.com
 - loader.mantis-intelligence.com
-- sato.manyse.com
+- img.manyse.com
+- test.manyse.com
 - static-assets.mapbox.com
 - cdn.maptiler.com
 - media.maptiler.com
@@ -1477,6 +1477,8 @@ domain_set:
 - static.pornpics.com
 - assets.positional-bucket.com
 - app-static.eu.posthog.com
+- eu-assets.i.posthog.com
+- us-assets.i.posthog.com
 - newsletter.postmarkapp.com
 - public-assets.postmarkapp.com
 - rebound.postmarkapp.com
@@ -2114,6 +2116,7 @@ domain_set:
 - cdn.unwire.hk
 - cdn.masto.host
 - tile2.intervals.icu
+- static.izanmei.icu
 - js.nagich.co.il
 - sn-s3-cdn.angry.im
 - s3.c.im
@@ -2541,7 +2544,6 @@ domain_set:
 - cdn-img2.iporntv.net
 - cdn-img3.iporntv.net
 - file.izanmei.net
-- play.izanmei.net
 - static.j51.net
 - img.javstore.net
 - pg2dhpc3p5ec22g3.jkforum.net
@@ -2645,6 +2647,7 @@ domain_set:
 - vir.wsj.net
 - images.wsjcommerce.net
 - images.wurstclient.net
+- static.wwto.net
 - cdn.xeiaso.net
 - image.xmanhua.net
 - assets.xmind.net
@@ -2876,8 +2879,6 @@ domain_set:
 - static.zenn.studio
 - eslint.style
 - vanilla-extract.style
-- img.coomer.su
-- img.kemono.su
 - static.ada.support
 - piccdn.7mmtv.sx
 - video1.7mmtv.sx
@@ -2899,7 +2900,7 @@ domain_set:
 - namedotcom-cdn.name.tools
 - css.4jpg.top
 - static-cdn.bytegiftia.top
-- ipfs.d.tube
+- media.d.tube
 - js.txxx.tube
 - tn.txxx.tube
 - cdn.18jav.tv
@@ -3237,6 +3238,7 @@ domain_suffix_set:
 - dynamic-static-assets.com
 - ebayimg.com
 - ebaystatic.com
+- ipfs.ecolatam.com
 - design-system.economist.com
 - dtci-pe-vp-image-resizer.platform.edgedatg.com
 - els-cdn.com
@@ -3738,6 +3740,10 @@ domain_suffix_set:
 - assets.shortbread.aws.dev
 - delegated-ipfs.dev
 - jspm.dev
+- apac.orbitor.dev
+- eu.orbitor.dev
+- ipfs.orbitor.dev
+- latam.orbitor.dev
 - pages.dev
 - react.dev
 - rss3.dev
@@ -3780,6 +3786,7 @@ domain_suffix_set:
 - docker.io
 - emotivecdn.io
 - ipfs.eternum.io
+- ipfs.filebase.io
 - files.gitbook.io
 - github.io
 - gitlab.io
@@ -4119,6 +4126,7 @@ domain_suffix_set:
 - alphafish.top
 - apperoni.top
 - balley.top
+- dget.top
 - filecunhua.top
 - gitcdn.top
 - mobilius.top
