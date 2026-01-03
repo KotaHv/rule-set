@@ -1,4 +1,4 @@
-# Total: 18 rules
+# Total: 19 rules
 no_resolve: true
 domain_set:
 - stat.youpin.mi.com
@@ -15,6 +15,7 @@ domain_suffix_set:
 - tracking.miui.com
 - beacon.qq.com
 - trace.qq.com
+- slackb.com
 - f-log-extension.grammarly.io
 - jpush.io
 - getui.net

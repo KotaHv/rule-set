@@ -1,4 +1,4 @@
-# Total: 5980 rules
+# Total: 5982 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2353,6 +2353,7 @@ domain_set:
 - api.indexnow.org
 - repository.jboss.org
 - proxy.joinmastodon.org
+- modules.kernelsu.org
 - design.keyoxide.org
 - mirror.keystealth.org
 - http.krfoss.org
@@ -4462,6 +4463,7 @@ domain_suffix_set:
 - valvesoftware.com
 - vancdn.com
 - vanillicon.com
+- vanityfair.com
 - vcmdiawe.com
 - venmo.com
 - venmo-touch.com

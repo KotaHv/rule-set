@@ -1,4 +1,4 @@
-# Total: 18 rules
+# Total: 19 rules
 DOMAIN,stat.youpin.mi.com
 DOMAIN,nom.telemetrydeck.com
 DOMAIN,stats.grafana.org
@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,tracking.intl.miui.com
 DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,trace.qq.com
+DOMAIN-SUFFIX,slackb.com
 DOMAIN-SUFFIX,f-log-extension.grammarly.io
 DOMAIN-SUFFIX,jpush.io
 DOMAIN-SUFFIX,getui.net

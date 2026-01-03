@@ -1,4 +1,4 @@
-# Total: 4250 rules
+# Total: 4251 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2738,6 +2738,7 @@ domain_set:
 - api.indexnow.org
 - pcz.javidol.org
 - proxy.joinmastodon.org
+- modules.kernelsu.org
 - design.keyoxide.org
 - cdn.libravatar.org
 - seccdn.libravatar.org

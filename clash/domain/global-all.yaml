@@ -1,4 +1,4 @@
-# Total: 5853 rules
+# Total: 5855 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2352,6 +2352,7 @@
 - 'api.indexnow.org'
 - 'repository.jboss.org'
 - 'proxy.joinmastodon.org'
+- 'modules.kernelsu.org'
 - 'design.keyoxide.org'
 - 'mirror.keystealth.org'
 - 'http.krfoss.org'
@@ -4460,6 +4461,7 @@
 - '+.valvesoftware.com'
 - '+.vancdn.com'
 - '+.vanillicon.com'
+- '+.vanityfair.com'
 - '+.vcmdiawe.com'
 - '+.venmo.com'
 - '+.venmo-touch.com'
