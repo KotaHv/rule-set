@@ -1,4 +1,4 @@
-# Total: 2469 rules
+# Total: 2564 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -115,7 +115,9 @@ domain_set:
 - speedtest01.syd1.spintel.net.au
 - speedtest-syd.thecore.net.au
 - speed.sltry.au
+- speedtest-ash.vts.bf
 - speedtest-prs.vts.bf
+- speedtest.ette.biz
 - speedtest.link.bm
 - teste2.4cjtelecom.com.br
 - velocidade.4wnet.com.br
@@ -567,6 +569,7 @@ domain_set:
 - 7starinternet.com
 - reflector.aberythmic.com
 - speedtest.absolutevalidation.com
+- speedtest.accessoninternet.com
 - speedtest.acrospirenetworks.com
 - sp1.adnbroadband.com
 - lg-mia.advinservers.com
@@ -601,16 +604,23 @@ domain_set:
 - speedtest-mtl.beanfield.com
 - speedtest-tor.beanfield.com
 - speedtest-van.beanfield.com
+- speedtest.belmontcountygig.com
 - inbbhaldwani.speedtest.bhaukaalbaba.com
 - nms.bhrbroadband.com
 - speedtest.bigventuresmedia.com
 - speedtest.bkfiber.com
+- fast.blackbearfiber.com
 - miaspeedtest.blackburn-pr.com
 - stdel.blazencr.com
 - speedtest.bnsdfw.com
+- stceuti1.borecom.com
 - speedtest.bradfordbroadband.com
 - toronto-oh-speedtest.brdband.com
 - ookla-london.briantbroadband.com
+- btlr-speedtest-02.brightspeed.com
+- chvl-speedtest-02.brightspeed.com
+- crls-speedtest-02.brightspeed.com
+- rcmt-speedtest-02.brightspeed.com
 - chicago.speedtest.brightspeed.com
 - indianapolis.speedtest.brightspeed.com
 - wrsw-speedtest-02.brightspeed.com
@@ -630,6 +640,7 @@ domain_set:
 - nycny-speedtest-ookla-01.st.charter.com
 - oxfrma-speedtest-ookla-01.st.charter.com
 - ptldme-speedtest-ookla-01.st.charter.com
+- radnc-speedtest-ookla-01.st.charter.com
 - syrny-speedtest-ookla-02.st.charter.com
 - csfw.fj.chinamobile.com
 - speedtest.hk.chinamobile.com
@@ -658,10 +669,12 @@ domain_set:
 - speedtest.cubedns.com
 - d-pcommunications.com
 - speedtest.dakshbroadband.com
+- speedtest.dataspindle.com
 - speedtest.datatr.com
 - speedtest.dathannetworks.com
 - speedtest.datonofibra.com
 - speedtest.deltacable.com
+- mum-speedtest.digianaspeednet.com
 - digital-net-isp.com
 - de-speedtest.digitalexample.com
 - speed-mix.dimensione.com
@@ -671,9 +684,11 @@ domain_set:
 - speedtest-bos.dish-wireless.com
 - speedtest-chi.dish-wireless.com
 - speedtest-dfw.dish-wireless.com
+- speedtest-iad.dish-wireless.com
 - speedtest-lax.dish-wireless.com
 - speedtest-mia.dish-wireless.com
 - speedtest-nyc.dish-wireless.com
+- speedtest-phl.dish-wireless.com
 - speedtest-sea.dish-wireless.com
 - speedtest-sjc.dish-wireless.com
 - speedtest001.dnainfotel.com
@@ -711,6 +726,7 @@ domain_set:
 - st-5.fibrenest.com
 - speedtest.fibritel.com
 - speedtest.finovy.com
+- speedtest-zion.fireflyva.com
 - speedtest2.flowtrinidad.com
 - speedtest-eqxae1.fsg-hosting.com
 - speedtest-nxtb2.fsg-hosting.com
@@ -737,6 +753,7 @@ domain_set:
 - ookla-atl.gigsouth.com
 - ookla-mia.gigsouth.com
 - speedtest.global-layer.com
+- speed01.gonetspeed.com
 - speed02.gonetspeed.com
 - speed03.gonetspeed.com
 - speed04.gonetspeed.com
@@ -752,6 +769,7 @@ domain_set:
 - speedtestmnc.grainconnect.com
 - speedtest.greenlightnetworks.com
 - speedtest-albany.greenlightnetworks.com
+- speedtest-baltimore.greenlightnetworks.com
 - speedtest-binghamton.greenlightnetworks.com
 - speedtest-buffalo.greenlightnetworks.com
 - speedtest-rochester.greenlightnetworks.com
@@ -792,6 +810,7 @@ domain_set:
 - speedeusebio.infolinktelecom.com
 - speedfor.infolinktelecom.com
 - speedtest.inovewifi.com
+- speedtest.internetsubway.com
 - speedtest.ipcore.com
 - bombay-speedtest.ishancloud.com
 - hiztesti.isimkayit.com
@@ -858,6 +877,8 @@ domain_set:
 - speedtest-melbourne.macquarietelecom.com
 - speedtest-perth.macquarietelecom.com
 - speedtest-sydney.macquarietelecom.com
+- va-speed.magna5.com
+- wpa-speed.magna5.com
 - speedtest-mad.masmovil.com
 - speedtest-sev.masmovil.com
 - speedtest-tf.masmovil.com
@@ -872,13 +893,16 @@ domain_set:
 - speedtest.dllstx97.metronetinc.com
 - speedtest.dvnpiaaa.metronetinc.com
 - speedtest.lnngmiaa.metronetinc.com
+- speedtest.nrflvaaa.metronetinc.com
 - speedtest.oswgilaa.metronetinc.com
 - speedtest.sycmilaa.metronetinc.com
 - speedtest.zivlinaa.metronetinc.com
 - speedtest2.mfbroadband.com
 - speedtest.mhcable.com
 - speed.michwave.com
+- ookla.micrologicwv.com
 - speedtest.micron21.com
+- speedtest.mifflincountywireless.com
 - speedtest.milaninternet.com
 - speedtest.milink1.com
 - speedtest.miplhr.com
@@ -899,6 +923,7 @@ domain_set:
 - speed.navegalo.com
 - clg-105-sptest.ncri.com
 - speedtest.netafy.com
+- speedtest.netaryx.com
 - test-mi.netoip.com
 - speedtest.netravo.com
 - speedtest.nettvox.com
@@ -914,8 +939,10 @@ domain_set:
 - speedtest1.chi.nxlink.com
 - speedtest3.dal.nxlink.com
 - speedtest.nxt-telecom.com
+- speedtest.oceansls.com
 - speedtest.octelinfonet.com
 - sp1.omnetbroadband.com
+- speedtest-pit.omnifiber.com
 - speedtest.oopaya.com
 - speedtest.us.openinfra.com
 - ookla.opticaltel.com
@@ -926,9 +953,11 @@ domain_set:
 - speedtest.parishbroadband.com
 - sp.pendc.com
 - speedtest.pendc.com
+- speedash.phoenixnap.com
 - speednld.phoenixnap.com
 - speedsin.phoenixnap.com
 - speedtest.pilotfiber.com
+- speedtest.iad01.wdc.pilotfiber.com
 - speedtest.pimcommcorp.com
 - speedtest.pingless.com
 - mumbaispeedtest.pioneeronline.com
@@ -936,6 +965,7 @@ domain_set:
 - lg.mia.plasmarack.com
 - speedtest14.point-broadband.com
 - speedtest3.point-broadband.com
+- speedtest4.point-broadband.com
 - postapps.com
 - awaelisp.premiumtechiot.com
 - speedtest.pronetsuaconexao.com
@@ -947,6 +977,7 @@ domain_set:
 - speedapi.race.com
 - ldnspeedtest.rackdog.com
 - sydspeedtest.rackdog.com
+- vaspeedtest.rackdog.com
 - mispeed.rackgenius.com
 - speedtest.rackoona.com
 - speedtest.raftarnet.com
@@ -1045,14 +1076,18 @@ domain_set:
 - stwinnipegwireless.rogers.com
 - stwoodstock.rogers.com
 - stwoodstockwireless.rogers.com
+- speedtest.roweinternet.com
 - rsghost.rsgsn.com
 - chispeedtest.rtatel.com
 - dalspeedtest.rtatel.com
 - akron.speedtest.rtc1.com
 - rochester.speedtest.rtc1.com
 - st1.scaleway.com
+- speedtest.securenetfiber.com
+- brd.speedtest.secv.com
 - hzl.speedtest.secv.com
 - pnt.speedtest.secv.com
+- speedtest1.seiontec.com
 - speedtest.sercomm.com
 - ookla-anc.seroficom.com
 - speed.serveroyun.com
@@ -1080,6 +1115,7 @@ domain_set:
 - speedtest.springcom.com
 - speedtest.sptel.com
 - speedtest-server.starry.com
+- speedtest-server-ash.starry.com
 - speedtest-server-lax.starry.com
 - speedtest-server-nyc.starry.com
 - speedtest.stgscloud.com
@@ -1118,6 +1154,7 @@ domain_set:
 - spttp1.taiwanmobile.com
 - spttp1_tc.taiwanmobile.com
 - sptty1.taiwanmobile.com
+- ookla1.talkiefiber.com
 - nl.tanhost.com
 - stdel.tatatelebusiness.com
 - stmum.tatatelebusiness.com
@@ -1190,7 +1227,9 @@ domain_set:
 - atlat0001speedtestserver01.wiline.com
 - chich0003ooklaspeedtestserver01.wiline.com
 - laxla0001speedtestserver01.wiline.com
+- phlph0001speedtestserver02.wiline.com
 - sfosj0096speedtestserver01.wiline.com
+- speedtest.winchesterwireless.com
 - sp1.worldfibernet.com
 - speedtest01.wowrack.com
 - speedtest.wrinternet.com
@@ -1206,6 +1245,7 @@ domain_set:
 - speedtest.zentrointernet.com
 - speedtest.lucas.company
 - speedtest.brooketel.coop
+- speedtest.citizens.coop
 - speedtest1.claro.cr
 - speedtest.ct.co.cr
 - speedtest.tigo.co.cr
@@ -1254,6 +1294,7 @@ domain_set:
 - nico2004uk.de
 - northernaccess.de
 - speedtest.northernaccess.de
+- speedtest.pfalzkom.de
 - speedtest.dus.plusnet.de
 - speedtest.fra.plusnet.de
 - speedtest.plutex.de
@@ -1282,8 +1323,10 @@ domain_set:
 - lax01.screenshot.download
 - mia01.screenshot.download
 - nyc01.screenshot.download
+- phl01.screenshot.download
 - speedtest.clarkson.edu
 - speedtest1.net.cornell.edu
+- speedtest.oit.duke.edu
 - speedtest-coda.noc.gatech.edu
 - speedtest.gsu.edu
 - speedtest-gdrp.merit.edu
@@ -1291,6 +1334,9 @@ domain_set:
 - speedtest.rit.edu
 - speedtest1.net.rochester.edu
 - speedtest.taylor.edu
+- ookla.net.unc.edu
+- ookla-crw.wvnet.edu
+- ookla-mgw.wvnet.edu
 - speedtestmad.adamo.es
 - speedtest.aitire.es
 - sp1.alcort.es
@@ -1304,6 +1350,7 @@ domain_set:
 - speedtest.conecta-t.es
 - speedtest.differnet.es
 - speedtest1.digimobil.es
+- speedtest10.digimobil.es
 - speedtest12.digimobil.es
 - speedtest4.digimobil.es
 - speedtest6.digimobil.es
@@ -1546,6 +1593,7 @@ domain_set:
 - speedtest-re1.cloudfire.it
 - speedtest-mil.connectlife.it
 - speedtest.cpn.it
+- ookla.devitalia.it
 - st1.digitalglobe.it
 - speedtest2.dolomitesnetwork.it
 - speedtest.dolomitinet.it
@@ -1589,6 +1637,7 @@ domain_set:
 - speedt-mi.skycdn.it
 - speedtest.springo.it
 - speedtest.swnet.it
+- speedtest010.telecomitalia.it
 - speedtest011.telecomitalia.it
 - speedtest012.telecomitalia.it
 - speedtest013.telecomitalia.it
@@ -1638,6 +1687,7 @@ domain_set:
 - speedtest21.hotspot.koeln
 - teste.oriontelecom.link
 - speedtes.althuraya.live
+- sp.lvh.lol
 - spa.lvh.lol
 - speedtest.kko.me
 - speedtest.mtnetworks.mn
@@ -1649,13 +1699,16 @@ domain_set:
 - librespeed.a573.net
 - speedtest.sea.accretive-networks.net
 - speedtest2.acentek.net
+- speedtest-iad.acreto.net
 - speedtest-sjc.acreto.net
 - speedtest.par1.adky.net
 - lg-ffm.aeza.net
 - ab-jlh-ookla01.air-band.net
 - ab-thn-ookla01.air-band.net
 - speedtestbir.airjaldi.net
+- aftermath.allpointsbroadband.net
 - speed.alsalamnet.net
+- speedtest01.srv.asbnva.alticeusa.net
 - speedtest01.srv.chcgil.alticeusa.net
 - speedtest01.srv.dllstx.alticeusa.net
 - speedtest01.srv.hcvlny.alticeusa.net
@@ -1721,14 +1774,20 @@ domain_set:
 - speedtest.cdlan.net
 - speedtest.cenosnetworks.net
 - speedtest1.cirbn.net
+- ookla01.citynet.net
 - lon-hex-speedtest.cloudconnx.net
 - spd.cndd.net
 - spdfra.cndd.net
+- secretspeedsterserver2364.cpe.nj.crnrstn.comcast.net
 - qoeookla-mimi-01.sys.comcast.net
+- qoeookla-ncst-01.sys.comcast.net
 - stosat-atlt-01.sys.comcast.net
+- stosat-balt-01.sys.comcast.net
 - stosat-chic-01.sys.comcast.net
+- stosat-crls-01.sys.comcast.net
 - stosat-ndhm-01.sys.comcast.net
 - stosat-rvlt-01.sys.comcast.net
+- stosat-smil-01.sys.comcast.net
 - speedtester.comwave.net
 - sp1.contilnet.net
 - sp3.contilnet.net
@@ -1736,6 +1795,7 @@ domain_set:
 - msk-speedtest2.corbina.net
 - speedtest.coreix.net
 - warp.cronon.net
+- altoonaspeedtest.crowsnestbb.net
 - speedtest.cteducation.net
 - speedtest.currenta.net
 - speed.datahouse.net
@@ -1744,6 +1804,7 @@ domain_set:
 - ookla.delhitel.net
 - speed2.dg-sys.net
 - speedtest.dg-sys.net
+- speedtest.digitalconnections.net
 - speedtest.ecfaccess.net
 - speedtest.lon1.edgoo.net
 - speedtest.mad2.edgoo.net
@@ -1765,6 +1826,7 @@ domain_set:
 - lg-fra.fdcservers.net
 - lg-hkg.fdcservers.net
 - lg-hnd.fdcservers.net
+- lg-iad.fdcservers.net
 - lg-lax.fdcservers.net
 - lg-lon.fdcservers.net
 - lg-mad.fdcservers.net
@@ -1781,6 +1843,7 @@ domain_set:
 - speedtest.mia.fdcservers.net
 - speedtest.fibercast.net
 - speedtest.fiberlinknetwork.net
+- speedtest.fiberlync.net
 - speedtest.fiuc.net
 - spdtst-southbend.fourway.net
 - speedtest.foxcell.net
@@ -1789,6 +1852,7 @@ domain_set:
 - st02.fynncloud.net
 - speedtest01-cty-gfld-ma-prod.gcet.net
 - ptb.speedtest.gci.net
+- speedtest.getwireless.net
 - speedtest.giganetbroadband.net
 - owst.gilat.net
 - speedtest.moscow.gldn.net
@@ -1822,11 +1886,13 @@ domain_set:
 - spd-tr-istanbul.hostlayici.net
 - st1.htva.net
 - ookla.idnet.net
+- speedtest.image1tech.net
 - speedtest-txg.infinirc.net
 - speedtest.inoc.net
 - velocimetrostm.interlig.net
 - speedtestookla.itgate.net
 - speedtest-london.its-tg.net
+- ookla-speedtest.iu13.net
 - speedtest-eqx-sg1.ixtelecom.net
 - speedtest.kraus.jbarbieri.net
 - speedtest.jbarbieri.net
@@ -1847,6 +1913,7 @@ domain_set:
 - st2a.les.net
 - speed.lordnet.net
 - lsdspeed01.lsdops.net
+- speedtest.lumos.net
 - ookla.lunoxia.net
 - netservice01.ber01.lwlcom.net
 - speedtest.lwlcom.net
@@ -1877,8 +1944,10 @@ domain_set:
 - txdllsspeedtest01.mybluepeak.net
 - speedtest.il.mycci.net
 - speedtest.me.mycci.net
+- speedtest2.pa.mycci.net
 - speedtest.vt.mycci.net
 - speedtest3.myninestar.net
+- speedtest.gretna.myriverstreet.net
 - spdms.mytpn.net
 - speedtest.n4uspl.net
 - speedtest.correggio.netandwork.net
@@ -1953,6 +2022,11 @@ domain_set:
 - speedtest.gv.shawcable.net
 - speedtest.vc.shawcable.net
 - speedtest.wp.shawcable.net
+- ashbn-va.speedtest.shentel.net
+- chil-oh.speedtest.shentel.net
+- edinburg-va.speedtest.shentel.net
+- redwood-va.speedtest.shentel.net
+- weston-wv.speedtest.shentel.net
 - speedtest1.sistectelecom.net
 - speedtest.skywaywest.net
 - lnx01.smtns.net
@@ -1961,6 +2035,11 @@ domain_set:
 - speedtest.sjc.sonic.net
 - speed.sparcs.net
 - speed1.spitfireuk.net
+- speedtest13.suddenlink.net
+- speedtest15.suddenlink.net
+- speedtest17.suddenlink.net
+- speedtest19.suddenlink.net
+- speedtest31.suddenlink.net
 - speedtest.sunnysidehosting.net
 - speedtest.supersonicbb.net
 - speedtest.supranet.net
@@ -1981,6 +2060,8 @@ domain_set:
 - ookla.mia.teracast.net
 - ny2-speedtest.tier.net
 - ny3-speedtest.tier.net
+- va-speedtest.tier.net
+- speedtest.tierpoint.net
 - dal-speedtest.transtelco.net
 - ookla-london01.tropicalgames.net
 - st0.dal.tularosa.net
@@ -1996,6 +2077,7 @@ domain_set:
 - ipl3pt.fft.ops.eu.uu.net
 - speedtest.uzmansoft.net
 - speedtest.vacastelecom.net
+- sp1.vaskywire.net
 - ld1.vayutel.net
 - speedtestnet.velocity.net
 - speedtest-lon.veloxserv.net
@@ -2028,15 +2110,24 @@ domain_set:
 - speedtest.wolfpaw.net
 - speedtest.miam.fl.wtsky.net
 - speedtest.atln.ga.wtsky.net
+- speedtest.asbn.va.wtsky.net
 - speedtest.xcelx.net
+- spdtst.iad.xenyth.net
 - spdtst.xenyth.net
 - speedtest.lax01.xfernet.net
 - speed.xiber.net
 - speedtest.yalniz.net
+- speedtest.zoominternet.net
 - speedtest-ad-1.zoominternet.net
+- speedtest-bd-1.zoominternet.net
+- speedtest-cv-1.zoominternet.net
+- speedtest-hv-1.zoominternet.net
 - speedtest-rd-1.zoominternet.net
+- speedtest-rs-1.zoominternet.net
+- speedtest-zl-1.zoominternet.net
 - dfw-eqx11-ookla-1.99.network
 - ewr-csq2-ookla-1.99.network
+- iad-eqx10-ookla-1.99.network
 - mia-eqx1-ookla-1.99.network
 - speedtest.aeza.network
 - at.blackhost.network
@@ -2098,8 +2189,11 @@ domain_set:
 - speedtest-lil.one-elephant.org
 - speedtest-tls.one-elephant.org
 - finew.openspeed.org
+- speedtest.philasd.org
+- speedtest.pinerichland.org
 - speedtest1.powertel.org
 - hoshiyomi.ratatoskr.org
+- speedtest.readingsd.org
 - speed.lax-1.serverforge.org
 - test1.telitel.org
 - speedtest1.top-ix.org
@@ -2368,6 +2462,7 @@ domain_set:
 - speedtest.tnp.net.uk
 - speedtest02a.web.zen.net.uk
 - speedtest.octaplus.uk
+- dc1-speed1.alpha-tech.us
 - speedtest-wc.truestreamfiber.us
 - speedtest.unlimitednet.us
 - speedtest.w-net.us
