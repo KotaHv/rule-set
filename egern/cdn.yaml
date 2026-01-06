@@ -1,4 +1,4 @@
-# Total: 4251 rules
+# Total: 4253 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -579,6 +579,7 @@ domain_set:
 - media.datacenterdynamics.com
 - cdn.datdota.com
 - cdn.db-ip.com
+- website-media.deel.com
 - static.deepl.com
 - import-cdn.default.com
 - cdn.delight-vr.com
@@ -1840,6 +1841,7 @@ domain_set:
 - static-secure-uploads.ui.com
 - status.ui.com
 - account-cdn.svc.ui.com
+- content-cdn.svc.ui.com
 - files.svc.ui.com
 - fonts.svc.ui.com
 - images.svc.ui.com
@@ -2185,6 +2187,7 @@ domain_set:
 - images.contentstack.io
 - assets.mcp.corespeed.io
 - r2cdn.corespeed.io
+- static.corespeed.io
 - cdn.cuty.io
 - cdn.db.io
 - static-mh.content.disney.io
@@ -3006,7 +3009,6 @@ domain_set:
 - cdn.violet.vin
 - cdn-msp.18comic.vip
 - tanju.vip
-- website-media
 - www.10086.win
 - api.allorigins.win
 - static.frame.work

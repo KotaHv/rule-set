@@ -1,4 +1,4 @@
-# Total: 5982 rules
+# Total: 5983 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -515,6 +515,7 @@ domain_set:
 - mirror.nl.datapacket.com
 - cdn.datdota.com
 - cdn.db-ip.com
+- website-media.deel.com
 - import-cdn.default.com
 - cdn.delight-vr.com
 - images.design-editor.com
@@ -1749,6 +1750,7 @@ domain_set:
 - images.contentstack.io
 - assets.mcp.corespeed.io
 - r2cdn.corespeed.io
+- static.corespeed.io
 - update.cyberduck.io
 - cdn.cypress.io
 - download.cypress.io
@@ -2533,7 +2535,6 @@ domain_set:
 - tubi.video
 - cdn.violet.vin
 - tanju.vip
-- website-media
 - www.10086.win
 - api.allorigins.win
 - static.frame.work
