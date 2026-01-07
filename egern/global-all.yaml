@@ -1,4 +1,4 @@
-# Total: 5986 rules
+# Total: 5987 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2338,6 +2338,7 @@ domain_set:
 - repos.del.extreme-ix.org
 - repo.extreme-ix.org
 - mirror.faraso.org
+- media.fidoalliance.org
 - cdn.fosstodon.org
 - mirror.freedif.org
 - cdn.freesound.org

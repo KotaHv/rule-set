@@ -1,4 +1,4 @@
-# Total: 4257 rules
+# Total: 4258 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2727,6 +2727,7 @@ domain_set:
 - s3.documentcloud.org
 - eslint.org
 - assets.exercism.org
+- media.fidoalliance.org
 - cdn.fosstodon.org
 - cdn.freecodecamp.org
 - cdn-media-0.freecodecamp.org
