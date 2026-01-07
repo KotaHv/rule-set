@@ -1,4 +1,4 @@
-# Total: 5983 rules
+# Total: 5986 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1174,6 +1174,7 @@ domain_set:
 - mirror.pilotfiber.com
 - softwareupdate.pilotmoon.com
 - static.pingcap.com
+- image.pitchbook.com
 - cdn.pixabay.com
 - assets.pixlee.com
 - cdn.plaid.com
@@ -1245,6 +1246,7 @@ domain_set:
 - img.represent.com
 - prod-images.rippling.com
 - img.riskified.com
+- media-cdn.rollcall.com
 - ubuntu.rootlicense.com
 - apps-static.route4me.com
 - cdn.royaleapi.com
@@ -1630,6 +1632,7 @@ domain_set:
 - code.iconify.design
 - npm.antfu.dev
 - cdn.bfe.dev
+- biomejs.dev
 - static.bit.dev
 - download.clashverge.dev
 - logos.composio.dev

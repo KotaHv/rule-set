@@ -1,4 +1,4 @@
-# Total: 4253 rules
+# Total: 4257 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1442,6 +1442,7 @@ domain_set:
 - cdn.pickystory.com
 - static.pingcap.com
 - widgets.pinterest.com
+- image.pitchbook.com
 - cdn.pixabay.com
 - assets.pixlee.com
 - cdn.plaid.com
@@ -1563,6 +1564,7 @@ domain_set:
 - cdnassets.roboflow.com
 - source.roboflow.com
 - static.roboflow.com
+- media-cdn.rollcall.com
 - apps-static.route4me.com
 - cdn.royaleapi.com
 - i.rtings.com
@@ -2066,6 +2068,7 @@ domain_set:
 - cdn.builderprofile.aws.dev
 - cdn.us-east-1.prod.moon.dubai.aws.dev
 - cdn.bfe.dev
+- biomejs.dev
 - static.bit.dev
 - logos.composio.dev
 - pkg.csb.dev
@@ -2833,6 +2836,7 @@ domain_set:
 - content.any.run
 - curl.se
 - widget.datablocks.se
+- media-cdn.factba.se
 - cdp.sph.com.sg
 - static.mysph.sph.com.sg
 - cassette.sphdigital.com.sg
