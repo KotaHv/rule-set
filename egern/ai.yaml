@@ -1,4 +1,4 @@
-# Total: 47 rules
+# Total: 48 rules
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
@@ -17,6 +17,7 @@ domain_set:
 domain_suffix_set:
 - claude.ai
 - dify.ai
+- g.ai
 - jasper.ai
 - meta.ai
 - openart.ai

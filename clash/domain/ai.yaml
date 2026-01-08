@@ -1,4 +1,4 @@
-# Total: 45 rules
+# Total: 46 rules
 'payload':
 - 'api.jetbrains.ai'
 - 'openrouter.ai'
@@ -15,6 +15,7 @@
 - 'antigravity.google'
 - '+.claude.ai'
 - '+.dify.ai'
+- '+.g.ai'
 - '+.jasper.ai'
 - '+.meta.ai'
 - '+.openart.ai'
