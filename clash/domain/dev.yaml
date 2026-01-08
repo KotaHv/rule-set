@@ -1,4 +1,4 @@
-# Total: 517 rules
+# Total: 519 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -432,6 +432,8 @@
 - '+.mingw.org'
 - '+.mochajs.org'
 - '+.mongodb.org'
+- '+.netfilter.org'
+- '+.nftables.org'
 - '+.nginx.org'
 - '+.nixos.org'
 - '+.nodejs.org'

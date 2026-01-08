@@ -1,4 +1,4 @@
-# Total: 5987 rules
+# Total: 5989 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -5574,8 +5574,10 @@ domain_suffix_set:
 - mongodb.org
 - mozilla.org
 - mirrors.tds.net.org
+- netfilter.org
 - nextjs.org
 - nextui.org
+- nftables.org
 - nginx.org
 - nixos.org
 - nodejs.org

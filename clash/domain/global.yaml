@@ -1,4 +1,4 @@
-# Total: 1681 rules
+# Total: 1683 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -1488,7 +1488,9 @@
 - '+.mochajs.org'
 - '+.mongodb.org'
 - '+.mozilla.org'
+- '+.netfilter.org'
 - '+.nextjs.org'
+- '+.nftables.org'
 - '+.nginx.org'
 - '+.nixos.org'
 - '+.nodejs.org'

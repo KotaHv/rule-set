@@ -1,4 +1,4 @@
-# Total: 1699 rules
+# Total: 1701 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -1490,7 +1490,9 @@ domain_suffix_set:
 - mochajs.org
 - mongodb.org
 - mozilla.org
+- netfilter.org
 - nextjs.org
+- nftables.org
 - nginx.org
 - nixos.org
 - nodejs.org

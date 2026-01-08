@@ -1,4 +1,4 @@
-# Total: 519 rules
+# Total: 521 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -434,6 +434,8 @@ domain_suffix_set:
 - mingw.org
 - mochajs.org
 - mongodb.org
+- netfilter.org
+- nftables.org
 - nginx.org
 - nixos.org
 - nodejs.org
