@@ -1,4 +1,4 @@
-# Total: 4258 rules
+# Total: 4273 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -81,6 +81,7 @@ domain_set:
 - cdn.adsninja.ca
 - img.apk.cafe
 - assets.toot.cafe
+- cpp-content.bhn.cards
 - oss.moe.cat
 - a.pomf.cat
 - cdn.arduino.cc
@@ -374,6 +375,7 @@ domain_set:
 - static.bitfinex.com
 - assets.bitwarden.com
 - organizer.bizzabo.com
+- dd.blackhawknetwork.com
 - css.blackmagicdesign.com
 - images.blackmagicdesign.com
 - jslibs.blackmagicdesign.com
@@ -492,6 +494,7 @@ domain_set:
 - ajax.cloudflare.com
 - cdnjs.cloudflare.com
 - info.cloudflare.com
+- report-uri.cloudflare.com
 - favicons.teams.cloudflare.com
 - time.cloudflare.com
 - cf-assets.www.cloudflare.com
@@ -656,6 +659,7 @@ domain_set:
 - assets.embeddables.com
 - cdn.embedly.com
 - images.emojiterra.com
+- img04.en25.com
 - assets.endorsely.com
 - s3.envato.com
 - cdn1.epicgames.com
@@ -1226,12 +1230,15 @@ domain_set:
 - image.email.microsoftemail.com
 - cdn.mikrotik.com
 - cdn.minecraft-server-list.com
+- fs.mingpao.com
+- video3.mingpao.com
 - cdn.miohentai.com
 - cdn.missav.com
 - static.missav.com
 - thumbnail.missav.com
 - assets4.mist-train-girls.com
 - thumbnailer.mixcloud.com
+- imagecdn.mixlr.com
 - api.mixpanel.com
 - api-eu.mixpanel.com
 - img.ml0987.com
@@ -2020,6 +2027,7 @@ domain_set:
 - jac.yahoosandbox.com
 - cdn.yamibuy.com
 - bookface-static.ycombinator.com
+- img1.yeggi.com
 - design-system.yext.com
 - cdn-loyalty.yotpo.com
 - cdn-swell-assets.yotpo.com
@@ -2093,6 +2101,7 @@ domain_set:
 - secure-res.craft.do
 - i.jpg.dog
 - cdn.onetime.dog
+- screenshot.domains
 - assets.buttondown.email
 - utteranc.es
 - versionbadg.es
@@ -2133,6 +2142,7 @@ domain_set:
 - js.nagich.co.il
 - sn-s3-cdn.angry.im
 - s3.c.im
+- favicon.im
 - badges.gitter.im
 - img.majors.im
 - assets.monica.im
@@ -2373,6 +2383,7 @@ domain_set:
 - cdn.redoc.ly
 - cdn.123av.me
 - pic.7mmtv.me
+- assets.about.me
 - emoji-css.afeld.me
 - dynamic-cdn.cms.ayoba.me
 - media-cms.ayoba.me
@@ -2815,6 +2826,7 @@ domain_set:
 - static.generated.photos
 - placeholder.pics
 - asset.booth.pm
+- cdn.affine.pro
 - img.foresightnews.pro
 - assets.gcore.pro
 - cms-assets.webediamovies.pro
@@ -2902,6 +2914,7 @@ domain_set:
 - video2.7mmtv.sx
 - packages.jetbrains.team
 - pkg-cdn.jetbrains.team
+- docs.mrchromebox.tech
 - static.pepy.tech
 - media.remax-prod.eng.remax.tech
 - assets.dev.to
@@ -3321,6 +3334,7 @@ domain_suffix_set:
 - usercontent.google.com
 - googleadservices.com
 - clientmetrics-pa.googleapis.com
+- commondatastorage.googleapis.com
 - content-storage-upload.googleapis.com
 - crashlyticsreports-pa.googleapis.com
 - firebasestorage.googleapis.com
@@ -3516,6 +3530,7 @@ domain_suffix_set:
 - placekitten.com
 - placewaifu.com
 - pocket-image-cache.com
+- poki-cdn.com
 - porn-cdn.com
 - porndudecdn.com
 - pplusstatic.com

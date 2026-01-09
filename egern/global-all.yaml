@@ -1,4 +1,4 @@
-# Total: 5989 rules
+# Total: 6002 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -79,6 +79,7 @@ domain_set:
 - ftp.byfly.by
 - mirror.datacenter.by
 - mirror.unet.by
+- cpp-content.bhn.cards
 - ftp.caliu.cat
 - ftp.csuc.cat
 - debian.grn.cat
@@ -344,6 +345,7 @@ domain_set:
 - assets.bitwarden.com
 - mirror.biznetgio.com
 - organizer.bizzabo.com
+- dd.blackhawknetwork.com
 - css.blackmagicdesign.com
 - images.blackmagicdesign.com
 - jslibs.blackmagicdesign.com
@@ -579,6 +581,7 @@ domain_set:
 - ees.elsevier.com
 - assets.embeddables.com
 - images.emojiterra.com
+- img04.en25.com
 - assets.endorsely.com
 - s3.envato.com
 - mirror.enzu.com
@@ -1012,6 +1015,7 @@ domain_set:
 - assets4.mist-train-girls.com
 - cdnorg.d.miui.com
 - mirrors.mivocloud.com
+- imagecdn.mixlr.com
 - api.mixpanel.com
 - api-eu.mixpanel.com
 - img.ml0987.com
@@ -1594,6 +1598,7 @@ domain_set:
 - mirror.yannic-bonenberger.com
 - bookface-static.ycombinator.com
 - news.ycombinator.com
+- img1.yeggi.com
 - design-system.yext.com
 - cdn-loyalty.yotpo.com
 - cdn-swell-assets.yotpo.com
@@ -1662,6 +1667,7 @@ domain_set:
 - secure-res.craft.do
 - i.jpg.dog
 - cdn.onetime.dog
+- screenshot.domains
 - assets.buttondown.email
 - media.infosec.exchange
 - cdn.usd.fan
@@ -1708,6 +1714,7 @@ domain_set:
 - static.izanmei.icu
 - sn-s3-cdn.angry.im
 - s3.c.im
+- favicon.im
 - badges.gitter.im
 - img.majors.im
 - polyfill-fe.toss.im
@@ -2446,6 +2453,7 @@ domain_set:
 - downloads.xiph.org
 - ftpmirror.your.org
 - placeholder.pics
+- cdn.affine.pro
 - mirror.apad.pro
 - img.foresightnews.pro
 - archive.g4t1.pro
@@ -2498,6 +2506,7 @@ domain_set:
 - vanilla-extract.style
 - static.ada.support
 - mirror.kumi.systems
+- docs.mrchromebox.tech
 - static.pepy.tech
 - media.remax-prod.eng.remax.tech
 - mirror.kku.ac.th
@@ -2623,6 +2632,7 @@ domain_suffix_set:
 - imagehub.cc
 - imgimg.cc
 - kknews.cc
+- on.cc
 - ping0.cc
 - postimg.cc
 - pravatar.cc
@@ -3710,6 +3720,7 @@ domain_suffix_set:
 - mikrotik.com
 - minecraftservices.com
 - minecraftshop.com
+- mingpao.com
 - miniclip.com
 - mintcdn.com
 - mirrorsedge.com
@@ -4004,6 +4015,7 @@ domain_suffix_set:
 - pokemonswordshield.com
 - pokemonultrasunmoon.com
 - pokemonvgc.com
+- poki-cdn.com
 - popcap.com
 - porkbun.com
 - poshtestgallery.com
@@ -5822,6 +5834,7 @@ domain_suffix_set:
 - 18comic.vip
 - cloudforfun.vip
 - cloudlin.vip
+- r2.daocloud.vip
 - wetv.vip
 - vn
 - watch

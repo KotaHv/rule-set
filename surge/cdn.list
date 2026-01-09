@@ -1,4 +1,4 @@
-# Total: 4258 rules
+# Total: 4273 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -79,6 +79,7 @@ DOMAIN,turbo.build
 DOMAIN,cdn.adsninja.ca
 DOMAIN,img.apk.cafe
 DOMAIN,assets.toot.cafe
+DOMAIN,cpp-content.bhn.cards
 DOMAIN,oss.moe.cat
 DOMAIN,a.pomf.cat
 DOMAIN,cdn.arduino.cc
@@ -372,6 +373,7 @@ DOMAIN,static.news.bitcoin.com
 DOMAIN,static.bitfinex.com
 DOMAIN,assets.bitwarden.com
 DOMAIN,organizer.bizzabo.com
+DOMAIN,dd.blackhawknetwork.com
 DOMAIN,css.blackmagicdesign.com
 DOMAIN,images.blackmagicdesign.com
 DOMAIN,jslibs.blackmagicdesign.com
@@ -490,6 +492,7 @@ DOMAIN,staticintl.cloudcachetci.com
 DOMAIN,ajax.cloudflare.com
 DOMAIN,cdnjs.cloudflare.com
 DOMAIN,info.cloudflare.com
+DOMAIN,report-uri.cloudflare.com
 DOMAIN,favicons.teams.cloudflare.com
 DOMAIN,time.cloudflare.com
 DOMAIN,cf-assets.www.cloudflare.com
@@ -654,6 +657,7 @@ DOMAIN,static.elfsight.com
 DOMAIN,assets.embeddables.com
 DOMAIN,cdn.embedly.com
 DOMAIN,images.emojiterra.com
+DOMAIN,img04.en25.com
 DOMAIN,assets.endorsely.com
 DOMAIN,s3.envato.com
 DOMAIN,cdn1.epicgames.com
@@ -1224,12 +1228,15 @@ DOMAIN,wcpstatic.microsoft.com
 DOMAIN,image.email.microsoftemail.com
 DOMAIN,cdn.mikrotik.com
 DOMAIN,cdn.minecraft-server-list.com
+DOMAIN,fs.mingpao.com
+DOMAIN,video3.mingpao.com
 DOMAIN,cdn.miohentai.com
 DOMAIN,cdn.missav.com
 DOMAIN,static.missav.com
 DOMAIN,thumbnail.missav.com
 DOMAIN,assets4.mist-train-girls.com
 DOMAIN,thumbnailer.mixcloud.com
+DOMAIN,imagecdn.mixlr.com
 DOMAIN,api.mixpanel.com
 DOMAIN,api-eu.mixpanel.com
 DOMAIN,img.ml0987.com
@@ -2018,6 +2025,7 @@ DOMAIN,yep.video.yahoo.com
 DOMAIN,jac.yahoosandbox.com
 DOMAIN,cdn.yamibuy.com
 DOMAIN,bookface-static.ycombinator.com
+DOMAIN,img1.yeggi.com
 DOMAIN,design-system.yext.com
 DOMAIN,cdn-loyalty.yotpo.com
 DOMAIN,cdn-swell-assets.yotpo.com
@@ -2091,6 +2099,7 @@ DOMAIN,res.craft.do
 DOMAIN,secure-res.craft.do
 DOMAIN,i.jpg.dog
 DOMAIN,cdn.onetime.dog
+DOMAIN,screenshot.domains
 DOMAIN,assets.buttondown.email
 DOMAIN,utteranc.es
 DOMAIN,versionbadg.es
@@ -2131,6 +2140,7 @@ DOMAIN,static.izanmei.icu
 DOMAIN,js.nagich.co.il
 DOMAIN,sn-s3-cdn.angry.im
 DOMAIN,s3.c.im
+DOMAIN,favicon.im
 DOMAIN,badges.gitter.im
 DOMAIN,img.majors.im
 DOMAIN,assets.monica.im
@@ -2371,6 +2381,7 @@ DOMAIN,cdn.plot.ly
 DOMAIN,cdn.redoc.ly
 DOMAIN,cdn.123av.me
 DOMAIN,pic.7mmtv.me
+DOMAIN,assets.about.me
 DOMAIN,emoji-css.afeld.me
 DOMAIN,dynamic-cdn.cms.ayoba.me
 DOMAIN,media-cms.ayoba.me
@@ -2813,6 +2824,7 @@ DOMAIN,cdn5.telesco.pe
 DOMAIN,static.generated.photos
 DOMAIN,placeholder.pics
 DOMAIN,asset.booth.pm
+DOMAIN,cdn.affine.pro
 DOMAIN,img.foresightnews.pro
 DOMAIN,assets.gcore.pro
 DOMAIN,cms-assets.webediamovies.pro
@@ -2900,6 +2912,7 @@ DOMAIN,video1.7mmtv.sx
 DOMAIN,video2.7mmtv.sx
 DOMAIN,packages.jetbrains.team
 DOMAIN,pkg-cdn.jetbrains.team
+DOMAIN,docs.mrchromebox.tech
 DOMAIN,static.pepy.tech
 DOMAIN,media.remax-prod.eng.remax.tech
 DOMAIN,assets.dev.to
@@ -3318,6 +3331,7 @@ DOMAIN-SUFFIX,crashlytics2.l.google.com
 DOMAIN-SUFFIX,usercontent.google.com
 DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,clientmetrics-pa.googleapis.com
+DOMAIN-SUFFIX,commondatastorage.googleapis.com
 DOMAIN-SUFFIX,content-storage-upload.googleapis.com
 DOMAIN-SUFFIX,crashlyticsreports-pa.googleapis.com
 DOMAIN-SUFFIX,firebasestorage.googleapis.com
@@ -3513,6 +3527,7 @@ DOMAIN-SUFFIX,pipedriveassets.com
 DOMAIN-SUFFIX,placekitten.com
 DOMAIN-SUFFIX,placewaifu.com
 DOMAIN-SUFFIX,pocket-image-cache.com
+DOMAIN-SUFFIX,poki-cdn.com
 DOMAIN-SUFFIX,porn-cdn.com
 DOMAIN-SUFFIX,porndudecdn.com
 DOMAIN-SUFFIX,pplusstatic.com
