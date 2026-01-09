@@ -1,4 +1,4 @@
-# Total: 2576 rules
+# Total: 2582 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1110,6 +1110,7 @@ domain_set:
 - kami.smartone.com
 - speedtest.snghosting.com
 - sp1.snsinternet.com
+- sp1.sntisp.com
 - dabwali.softechinfosol.com
 - sirsa.softechinfosol.com
 - speedtest.sonepat.softechinfosol.com
@@ -1359,6 +1360,7 @@ domain_set:
 - speedtest1.digimobil.es
 - speedtest10.digimobil.es
 - speedtest12.digimobil.es
+- speedtest2.digimobil.es
 - speedtest4.digimobil.es
 - speedtest6.digimobil.es
 - speedtest8.digimobil.es
@@ -1414,12 +1416,14 @@ domain_set:
 - lens.bbr.ookla.bytel.fr
 - nancy.bbr.ookla.bytel.fr
 - nice.bbr.ookla.bytel.fr
+- pau.bbr.ookla.bytel.fr
 - idf.cubic.ookla.bytel.fr
 - lil.cubic.ookla.bytel.fr
 - lyo.cubic.ookla.bytel.fr
 - mrs.cubic.ookla.bytel.fr
 - poi.cubic.ookla.bytel.fr
 - str.cubic.ookla.bytel.fr
+- tls.cubic.ookla.bytel.fr
 - speedtest.dscw.fr
 - testdebithom.enes.fr
 - bass.fc-net.fr
@@ -1739,6 +1743,7 @@ domain_set:
 - speedtest.thn.lon.network.as201838.net
 - speedtest.as203446.net
 - speedtest.as210667.net
+- speedtest-1.london.network.as212655.net
 - speedtest-1.manchester.network.as212655.net
 - speedtest.as212683.net
 - speedtest.as214199.net
@@ -2214,6 +2219,7 @@ domain_set:
 - pl-1.node.delton.ovh
 - velocidad.fiberlink.com.pa
 - sjdm-speedtest.globe.com.ph
+- speedtest-ng.atman.pl
 - speedtest.exatel.pl
 - speed2.fiberlink.pl
 - speedtest.jmdi.pl
