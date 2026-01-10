@@ -1,4 +1,4 @@
-# Total: 4273 rules
+# Total: 4275 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -405,6 +405,7 @@ domain_set:
 - designsystem.brevo.com
 - app.brightback.com
 - player.interactivity.brightcove.com
+- assets.map.brightcove.com
 - cdn.britannica.com
 - img.bttimg.com
 - icons.buffer.com
@@ -2130,6 +2131,7 @@ domain_set:
 - assets.science.nasa.gov
 - time-a.nist.gov
 - node.green
+- global-assets.fitch.group
 - img.gs
 - assets.gorgias.help
 - img.openshop.com.hk

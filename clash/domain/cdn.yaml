@@ -1,4 +1,4 @@
-# Total: 4194 rules
+# Total: 4196 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -404,6 +404,7 @@
 - 'designsystem.brevo.com'
 - 'app.brightback.com'
 - 'player.interactivity.brightcove.com'
+- 'assets.map.brightcove.com'
 - 'cdn.britannica.com'
 - 'img.bttimg.com'
 - 'icons.buffer.com'
@@ -2129,6 +2130,7 @@
 - 'assets.science.nasa.gov'
 - 'time-a.nist.gov'
 - 'node.green'
+- 'global-assets.fitch.group'
 - 'img.gs'
 - 'assets.gorgias.help'
 - 'img.openshop.com.hk'
