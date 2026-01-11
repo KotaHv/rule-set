@@ -1,4 +1,4 @@
-# Total: 4275 rules
+# Total: 4287 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -32,6 +32,7 @@ DOMAIN,prod-cdn.webtune.ai
 DOMAIN,play.xiaoh.ai
 DOMAIN,file.xiaohai.ai
 DOMAIN,cdn.7tv.app
+DOMAIN,cdn.accessibly.app
 DOMAIN,assets.airbuddy.app
 DOMAIN,cdn.announcekit.app
 DOMAIN,img.announcekit.app
@@ -553,6 +554,7 @@ DOMAIN,media.convertkit.com
 DOMAIN,cdn.conveythis.com
 DOMAIN,cookie-cdn.cookiepro.com
 DOMAIN,app.cookieyes.com
+DOMAIN,cdn.corso.com
 DOMAIN,static-landing.probiplacehold.cot.com
 DOMAIN,static.cloud.coveo.com
 DOMAIN,sf-coze-web-cdn.coze.com
@@ -721,6 +723,7 @@ DOMAIN,widget.finlogix.com
 DOMAIN,cdn.firebase.com
 DOMAIN,cdn.accounts.firefox.com
 DOMAIN,detectportal.firefox.com
+DOMAIN,flagsapi.com
 DOMAIN,cdn-icons-png.flaticon.com
 DOMAIN,cdn-share-sprites.flaticon.com
 DOMAIN,cdn-teams-slug.flaticon.com
@@ -929,6 +932,7 @@ DOMAIN,cdn.heapanalytics.com
 DOMAIN,assets.hearstapps.com
 DOMAIN,hips.hearstapps.com
 DOMAIN,static.heavy-r.com
+DOMAIN,sdk.helloextend.com
 DOMAIN,cdn.hellofresh.com
 DOMAIN,img.hellofresh.com
 DOMAIN,static.helpjuice.com
@@ -1345,6 +1349,7 @@ DOMAIN,images-news.now.com
 DOMAIN,images-sports.now.com
 DOMAIN,images.now-tv.com
 DOMAIN,media.nownews.com
+DOMAIN,im.np-payment-gateway.com
 DOMAIN,cdn.nperf.com
 DOMAIN,ws-cdn.nperf.com
 DOMAIN,static.npmjs.com
@@ -1410,6 +1415,7 @@ DOMAIN,signature.overwolf.com
 DOMAIN,media.owcnow.com
 DOMAIN,p-smith.com
 DOMAIN,cdn.paddle.com
+DOMAIN,apps.paidy.com
 DOMAIN,cdn.paidy.com
 DOMAIN,static.parallels.com
 DOMAIN,cdn.privacy.paramount.com
@@ -1653,6 +1659,7 @@ DOMAIN,static-web-prod.skillshare.com
 DOMAIN,static.skyassets.com
 DOMAIN,cdn.skymavis.com
 DOMAIN,files.slack.com
+DOMAIN,cdn.activity.smart-bdash.com
 DOMAIN,webappassets.smartsheet.com
 DOMAIN,static.snapchat.com
 DOMAIN,sdk.snapkit.com
@@ -1993,6 +2000,7 @@ DOMAIN,embed-ssl.wistia.com
 DOMAIN,fast.wistia.com
 DOMAIN,bundler.wix-code.com
 DOMAIN,hhhhhhome86227170.wordpress.com
+DOMAIN,jetpack.wordpress.com
 DOMAIN,s0.wordpress.com
 DOMAIN,static.community.workday.com
 DOMAIN,static.workday.com
@@ -2310,6 +2318,7 @@ DOMAIN,cdn.tolt.io
 DOMAIN,s3.toot.io
 DOMAIN,cdn.transcend.io
 DOMAIN,typescript-eslint.io
+DOMAIN,unavatar.io
 DOMAIN,assets.upload.io
 DOMAIN,js.upload.io
 DOMAIN,code.upscope.io
@@ -2346,6 +2355,8 @@ DOMAIN,common-header.nimg.jp
 DOMAIN,resource.video.nimg.jp
 DOMAIN,ias.r10s.jp
 DOMAIN,r.r10s.jp
+DOMAIN,js.rtoaster.jp
+DOMAIN,rt.rtoaster.jp
 DOMAIN,static.tenki.jp
 DOMAIN,cdn.wikiwiki.jp
 DOMAIN,media.yukimochi.jp
@@ -2454,6 +2465,7 @@ DOMAIN,ubistatic2-a.akamaihd.net
 DOMAIN,amp.akamaized.net
 DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
 DOMAIN,img-s-msn-com.akamaized.net
+DOMAIN,melonbooks.akamaized.net
 DOMAIN,mwf-service.akamaized.net
 DOMAIN,mycommerce.akamaized.net
 DOMAIN,pic-bstarstatic.akamaized.net

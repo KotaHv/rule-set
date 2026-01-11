@@ -1,4 +1,4 @@
-# Total: 77513 rules
+# Total: 77486 rules
 no_resolve: true
 domain_set:
 - t.email1.samsung.ca
@@ -235,6 +235,7 @@ domain_suffix_set:
 - chatto.app
 - clickguardian.app
 - static-rtb2.clickout.app
+- clipaid.app
 - cookie.consents.app
 - ledgerapp.created.app
 - ledgersso.created.app
@@ -433,7 +434,6 @@ domain_suffix_set:
 - kirgo.at
 - kpq.at
 - legder.at
-- cpe90-146-57-238.liwest.at
 - ccm19.mindpark.at
 - analytics.momentum-institut.at
 - exodus.net-sys.at
@@ -509,7 +509,6 @@ domain_suffix_set:
 - ads.optusnet.com.au
 - refer.ozforex.com.au
 - cdn1.thm.panoramainvestor.com.au
-- pizzabyte.com.au
 - content.pnbank.com.au
 - post-status.com.au
 - affiliate.productreview.com.au
@@ -936,7 +935,6 @@ domain_suffix_set:
 - adzep.com.br
 - afilio.com.br
 - alarmline.com.br
-- alineeleuterio.com.br
 - artacom.com.br
 - banners.bol.com.br
 - banner.boostbox.com.br
@@ -961,7 +959,6 @@ domain_suffix_set:
 - contentimage.fretebras.com.br
 - fulllab.com.br
 - validafp.grupocasasbahia.com.br
-- bratusferramentas.grupomoltz.com.br
 - hotwords.com.br
 - adsrv.hpg.com.br
 - ads.ibest.com.br
@@ -1009,7 +1006,7 @@ domain_suffix_set:
 - rjr-rs.com.br
 - banners.royalpixel.com.br
 - sanpelmaquinas.com.br
-- scainseto.com.br
+- schenckel.com.br
 - seeproc.com.br
 - seomaster.com.br
 - shopconvert.com.br
@@ -1040,6 +1037,7 @@ domain_suffix_set:
 - xtrasizeoriginal.com.br
 - estudio.ythan.com.br
 - box.zap.com.br
+- treinamento.convenio.to.gov.br
 - bracell.latitude.net.br
 - ivcbrasil.org.br
 - messias.org.br
@@ -3357,7 +3355,9 @@ domain_suffix_set:
 - antex.cl
 - pool.chaucha.cl
 - declarateenquiebra.cl
+- detierra.cl
 - ads-redis.ecn.cl
+- mundocarnes.cl
 - abc.pema.cl
 - rove.cl
 - servitemequipos.cl
@@ -3990,7 +3990,6 @@ domain_suffix_set:
 - ns.nint.ac.cn
 - mail.pmo.ac.cn
 - mail.siom.ac.cn
-- disk.accord1key.cn
 - aichia.cn
 - alimabi.cn
 - bm.alimama.cn
@@ -4035,6 +4034,7 @@ domain_suffix_set:
 - a.dlads.cn
 - download.doumaibiji.cn
 - dweixin.cn
+- xww.bucea.edu.cn
 - hhbs.hhu.edu.cn
 - sea.net.edu.cn
 - pdns.nudt.edu.cn
@@ -4044,6 +4044,7 @@ domain_suffix_set:
 - fkpool.cn
 - gostats.cn
 - cms.grandcloud.cn
+- pvsa.gxfugy.cn
 - gzzkjdam.cn
 - hechaocheng.cn
 - hologramid.cn
@@ -4061,7 +4062,6 @@ domain_suffix_set:
 - ofd.meng-an.cn
 - mgzjin.cn
 - m.nanyangqiaoxiang.cn
-- dl.natgo.cn
 - fanzhuang.net.cn
 - mbbank.net.cn
 - jinshanduba.org.cn
@@ -4103,7 +4103,6 @@ domain_suffix_set:
 - bbb.xfrwu.cn
 - u.xogu.cn
 - yongtai.cn
-- static.youdm.cn
 - yrwap.cn
 - zhongwangmy.cn
 - zmdesf.cn
@@ -4403,7 +4402,6 @@ domain_suffix_set:
 - notifications.viafoura.co
 - ads.videy.co
 - ads2.videy.co
-- traffic.vietnhan.co
 - visualmirage.co
 - vivantic.co
 - vixii.co
@@ -4532,6 +4530,7 @@ domain_suffix_set:
 - 0w1rqq69fi0e.com
 - 0x01n2ptpuz3.com
 - 0x1f4b0.com
+- www2.0zz0.com
 - 1-1ads.com
 - 1-9-90.com
 - 1-bmo-client-login.com
@@ -5161,6 +5160,7 @@ domain_suffix_set:
 - 6c062330ce.54653cc53d.com
 - b141e5f455.5495d0c343.com
 - 9fa67c2dc3.54a73dbcb6.com
+- down.54nb.com
 - 55093.com
 - 550b3ikb9j.com
 - 5534a1fe5d.com
@@ -5170,6 +5170,7 @@ domain_suffix_set:
 - 558-558-559.com
 - 55b6be9d8f.com
 - 55bdsm.com
+- win.down.55kantu.com
 - 55labs.com
 - 55lotte.com
 - 56.com
@@ -5278,7 +5279,6 @@ domain_suffix_set:
 - 67fad39954.com
 - 680642cdf3.com
 - 737d5238dc.680e6a23f1.com
-- ak9.6895588.com
 - 68d48e2725.com
 - 693085b049.com
 - 693836.com
@@ -7257,7 +7257,7 @@ domain_suffix_set:
 - alertpay.com
 - alerts-microsofts.com
 - alex-kor.com
-- alexajstrack.com
+- vn.alexajstrack.com
 - alexanderjonesi.com
 - alexisceilingrelease.com
 - alfa-bitcoin.com
@@ -7305,6 +7305,7 @@ domain_suffix_set:
 - safefiles2.oss-cn-beijing.aliyuncs.com
 - shangmei-test.oss-cn-beijing.aliyuncs.com
 - uyul.oss-cn-beijing.aliyuncs.com
+- kuakuawenjian.oss-cn-hangzhou.aliyuncs.com
 - ah-scanning.oss-cn-hongkong.aliyuncs.com
 - hkuu.oss-cn-hongkong.aliyuncs.com
 - zhengxinpeixun.oss-cn-qingdao.aliyuncs.com
@@ -7985,7 +7986,6 @@ domain_suffix_set:
 - apyecom.com
 - apyoth.com
 - apytrc.com
-- aqcszh.com
 - pay.aqiu6.com
 - aqiyou.com
 - aqtracker.com
@@ -9563,7 +9563,6 @@ domain_suffix_set:
 - bidfilter.com
 - bidforclicks.com
 - bidgear.com
-- bidgear-syndication.com
 - xml.bidiology.com
 - xml.bidmonetize.com
 - filter.bidmyads.com
@@ -11508,7 +11507,6 @@ domain_suffix_set:
 - changduk26.com
 - changeflamboyant.com
 - changelly.com
-- changemyseat.com
 - changesretirereality.com
 - changesvalleyoverdo.com
 - ads.chanhtuoi.com
@@ -11678,7 +11676,6 @@ domain_suffix_set:
 - chieflyfrigilityfrigility.com
 - chiefparadise.com
 - chiefrecovery.com
-- ad.chieuhoa.com
 - nakayama.chikarakosopower.com
 - chikasinapp.com
 - chikraighotoops.com
@@ -13425,7 +13422,6 @@ domain_suffix_set:
 - croakstealing.com
 - crockadilla.com
 - crockuncomfortable.com
-- crocopop.com
 - refer.crocs.com
 - croea.com
 - crookdestinationjanuary.com
@@ -14650,7 +14646,6 @@ domain_suffix_set:
 - dienmayxanhtantam.com
 - dienmayxanhtrungtam.com
 - dietaryyurilent.com
-- mobileads.dieuviet.com
 - difference101.com
 - differenceignorant.com
 - differenceimplementation.com
@@ -15291,6 +15286,7 @@ domain_suffix_set:
 - dragoncapitalmoney.com
 - dragoncapitalvay.com
 - dragonflyproblemsubway.com
+- access.dragongolf.com
 - dragracingmagazine.com
 - drainchatter.com
 - drakedispelrealm.com
@@ -15337,7 +15333,6 @@ domain_suffix_set:
 - dreamssg.com
 - dreamteamaffiliates.com
 - dreamtgistliveliness.com
-- dreamwatchevent.com
 - dreamxdesigner.com
 - dreamy-flirt.com
 - dreamy-romance.com
@@ -15478,7 +15473,6 @@ domain_suffix_set:
 - dualinconvenientdoorman.com
 - duamilsyr.com
 - r.marketing.dubaisothebys.com
-- log.dubaotiente.com
 - dubbeenselling.com
 - dubiousgrudge.com
 - dubiouslickingwish.com
@@ -15590,6 +15584,7 @@ domain_suffix_set:
 - dysfunctionaldispel.com
 - dysoool.com
 - dzjv9gbu8a.com
+- dl.dzqzd.com
 - dzrfio.com
 - dzrs3yuexz.com
 - e-bannerx.com
@@ -19234,6 +19229,7 @@ domain_suffix_set:
 - glaters.com
 - glaubuph.com
 - glaucomaspiltunmatched.com
+- glaustralia.com
 - glazeobliteratetoys.com
 - glazepoutpattern.com
 - fss.glbank.com
@@ -19282,6 +19278,7 @@ domain_suffix_set:
 - import.globalsources.com
 - tmxapi.globalsources.com
 - globalteaser.com
+- globaltechbilling.com
 - globaltraffico.com
 - secure.globalultracdn.com
 - globalwebads.com
@@ -19292,6 +19289,7 @@ domain_suffix_set:
 - lol.globlax.com
 - ads.globo.com
 - ts.globtube.com
+- hnjgdl.geps.glodon.com
 - glomp.com
 - gloobalmart.com
 - gloomilysigning.com
@@ -19353,7 +19351,6 @@ domain_suffix_set:
 - gobetweenleague.com
 - gobetweenlenient.com
 - gobetweenperiodssledge.com
-- gobiotechpestcontrol.com
 - rhino.gocardless.com
 - gocarosel.com
 - goclicknext.com
@@ -19465,6 +19462,7 @@ domain_suffix_set:
 - googleeplay.com
 - googlefish.com
 - wintricksbanner.googlepages.com
+- googletagamnager.com
 - affiliate.googleusercontent.com
 - googoodee.com
 - gooobet.com
@@ -19483,7 +19481,6 @@ domain_suffix_set:
 - goracertech.com
 - goralpolishdeli.com
 - content.gorapidcdn.com
-- gordon-and-son.com
 - gorduk.com
 - gorej.com
 - gorgedipitself.com
@@ -20961,7 +20958,6 @@ domain_suffix_set:
 - hubrisone.com
 - hubrus.com
 - hubtraffic.com
-- download2.huduntech.com
 - hue2b.com
 - hueads.com
 - hueadsortb.com
@@ -21325,7 +21321,6 @@ domain_suffix_set:
 - ilbanner.com
 - acache.ilbe.com
 - ad.ilbe.com
-- static.ilclock.com
 - ileumoctant.com
 - ad.ilikesponsorad.com
 - tracking.ilinkmd.com
@@ -21396,7 +21391,6 @@ domain_suffix_set:
 - img.img-taboola.com
 - ww2.imgadult.com
 - s.imganalytics.com
-- imgcdnbet.com
 - imgcrazy.com
 - imgfil.com
 - imgko.com
@@ -22413,7 +22407,6 @@ domain_suffix_set:
 - izea.com
 - izearanks.com
 - izimuves.com
-- izocab.com
 - izogard.com
 - izonekala.com
 - izooto.com
@@ -25184,7 +25177,6 @@ domain_suffix_set:
 - ads.mediamayhemcorp.com
 - ads.mediaodyssey.com
 - mediapeartree.com
-- upfile16.mediaphim.com
 - mediaplazza.com
 - mediaplex.com
 - mediarithmics.com
@@ -25384,6 +25376,7 @@ domain_suffix_set:
 - merrell-skodanmark.com
 - merrellcanadaoutlets.com
 - stats.merriam-webster.com
+- mertamask.com
 - mertcancene.com
 - meshillusions.com
 - meshsensorcuriosity.com
@@ -26592,7 +26585,6 @@ domain_suffix_set:
 - share.myq.com
 - 2g312kn32qfy-1323053341.cos.ap-bangkok.myqcloud.com
 - bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com
-- j-0-09g-9bh-h-ggf-1324992141.cos.ap-bangkok.myqcloud.com
 - onlinemicrosoft-1318069902.cos.ap-chengdu.myqcloud.com
 - www999999asgasg-1327129302.cos.ap-chengdu.myqcloud.com
 - www999999safagqwhg-1327129302.cos.ap-chengdu.myqcloud.com
@@ -26692,7 +26684,6 @@ domain_suffix_set:
 - n69.com
 - n6kux3ys3lhv.com
 - n72y3cbkvxk2.com
-- n7e4t5trg0u3yegn8szj9c8xjz5wf8szcj2a5h9dzxjs50salczs8azls0zm.com
 - n91hg.com
 - na0z0thlap.com
 - na47.com
@@ -26725,7 +26716,6 @@ domain_suffix_set:
 - nakedreel.com
 - nalcbp.com
 - nalook.com
-- namaacont.com
 - landings.namapper.com
 - namastedharma.com
 - namcards.com
@@ -27277,7 +27267,6 @@ domain_suffix_set:
 - nextpay-mposruttientindung.com
 - nextpay-quettindung.com
 - nextpointkaynersave.com
-- nct1.logging.nextsmarty.com
 - nextstat.com
 - nextstep210.com
 - nextstudent.com
@@ -29992,7 +29981,6 @@ domain_suffix_set:
 - postoffrsmatch.com
 - postoken.com
 - postponeclement.com
-- posts-luxs.com
 - postsheerbrief.com
 - postten-no.com
 - postthieve.com
@@ -30329,6 +30317,7 @@ domain_suffix_set:
 - procuredsheet.com
 - procureshaft.com
 - prodentim101.com
+- prodimetal.com
 - prodlglousdates.com
 - prodtraff.com
 - produceragony.com
@@ -30452,6 +30441,7 @@ domain_suffix_set:
 - proteincalculate.com
 - proteinfasthealthy.com
 - proteinshippingwhether.com
+- protherapycenter.com
 - protocolroutetag.com
 - protocolsnappedimpure.com
 - protojsmgw.com
@@ -31832,7 +31822,6 @@ domain_suffix_set:
 - rgvqcsxqge.com
 - rgyflexibilitu.com
 - rharcometa.com
-- rheddh.com
 - rheneapfg.com
 - rhinoaffiliates.com
 - rhinoseo.com
@@ -32266,6 +32255,7 @@ domain_suffix_set:
 - rwrb66.com
 - rwulzuaqsafn.com
 - rxayc.com
+- rxquickpay.com
 - ryeweaver.com
 - refer.ryka.com
 - ryminos.com
@@ -32312,7 +32302,6 @@ domain_suffix_set:
 - sabasadara.com
 - sabavision.com
 - sabotagesophisticatedfragile.com
-- sabungkingbet189.com
 - ads.sacbee.com
 - sacchaeleduk.com
 - sachikru.com
@@ -33117,7 +33106,6 @@ domain_suffix_set:
 - sh2tiki.com
 - sha14.com
 - shabbydrewcleaning.com
-- shaderm.com
 - shadesincreasingcontents.com
 - shadyharborfrenchbulldogs.com
 - shadyobscene.com
@@ -33792,6 +33780,7 @@ domain_suffix_set:
 - sjsabb.com
 - sk-comtel.com
 - skaluneris.com
+- skanswers.com
 - access.skaparade.com
 - skapbikes.com
 - skat-skts-dk.com
@@ -34932,7 +34921,6 @@ domain_suffix_set:
 - stomatico.com
 - ston-app.com
 - stonecalcom.com
-- stonecradle.com
 - stonedpuppy.com
 - stonevillage.com
 - stonysuingtartness.com
@@ -35405,6 +35393,7 @@ domain_suffix_set:
 - supplybanalsuggest.com
 - supplyrefereesneeze.com
 - supplystamps.com
+- support-data.com
 - support-energie.com
 - apple.support-find-my-iphone.com
 - support-inicio.com
@@ -35736,6 +35725,7 @@ domain_suffix_set:
 - taitlastwebegan.com
 - taiwanesemarket.com
 - taixiumomo.com
+- tajalrayhan.com
 - tajofomaha.com
 - refer.take5oilchange.com
 - takeads.com
@@ -35898,7 +35888,6 @@ domain_suffix_set:
 - td5xffxsx4.com
 - tmx.tdbank.com
 - tdcegypt.com
-- tdejb.com
 - tdhzc.com
 - tdhzc1.com
 - tdkd00.com
@@ -36708,7 +36697,6 @@ domain_suffix_set:
 - tinkletemporalbuy.com
 - tinlequa365.com
 - tinlocvang123.com
-- log.tinnhac.com
 - tinnhanh24gio.com
 - tinql.com
 - tinselspecifically.com
@@ -36977,6 +36965,7 @@ domain_suffix_set:
 - topushes.com
 - topwebportals.com
 - topworldsraffle.com
+- static.topxgun.com
 - toquetbircher.com
 - torbit.com
 - torchestanreason.com
@@ -38168,6 +38157,7 @@ domain_suffix_set:
 - smarteucookiebanner.upsell-apps.com
 - upsellit.com
 - upsidejolly.com
+- upsinfo2025.com
 - upsjob.com
 - upsloperoyalet.com
 - upstandingwinnerjet.com
@@ -39179,7 +39169,6 @@ domain_suffix_set:
 - vn85548s.com
 - vn86414s.com
 - vn88631p.com
-- vnadssb.com
 - baohiemxahoi.vnagov.com
 - vnah567.com
 - vnc63661s.com
@@ -39925,6 +39914,7 @@ domain_suffix_set:
 - weeewow.com
 - weekly-stock.com
 - weeklysenateearlap.com
+- weendugroup.com
 - weeoffer.com
 - weephostessscissors.com
 - weight-tracking.com
@@ -41270,6 +41260,7 @@ domain_suffix_set:
 - adn.zone-telechargement.com
 - zonealta.com
 - zonedummy.com
+- static.zongheng.com
 - zontera.com
 - zonupiza.com
 - zoologyfibre.com
@@ -42398,7 +42389,6 @@ domain_suffix_set:
 - wowzazen.cyou
 - wpmskepfulscriver.cyou
 - wuthersoord.cyou
-- wwtalk.cyou
 - wyverncitralslosings.cyou
 - xenonsandpit.cyou
 - yaffingunbegun.cyou
@@ -43247,6 +43237,7 @@ domain_suffix_set:
 - octupus-versand.de
 - l.ohmymag.de
 - zkika.okyla.de
+- online-gebuehrenzaehler.de
 - advertising.online-media24.de
 - cookiemanager.onm.de
 - onyxarmorcrypt.de
@@ -43256,6 +43247,7 @@ domain_suffix_set:
 - onyxfortifypro.de
 - onyxfortitech.de
 - onyxguardify.de
+- onyxguardwave.de
 - onyxironvault.de
 - onyxnexguard.de
 - onyxphantomlock.de
@@ -43264,6 +43256,7 @@ domain_suffix_set:
 - onyxsafetrack.de
 - onyxsecuregate.de
 - onyxsentinelx.de
+- onyxshieldcore.de
 - onyxstealthnet.de
 - opendownload.de
 - openload.de
@@ -43593,9 +43586,7 @@ domain_suffix_set:
 - secure-57v.pages.dev
 - setkuttina.pages.dev
 - c066b573.smrta.pages.dev
-- 4393eb8c.solaraweb-alj.pages.dev
 - c0e5b87c.solaraweb-alj.pages.dev
-- d2314eac.solaraweb-alj.pages.dev
 - syncwallet.pages.dev
 - systemsupport.pages.dev
 - techsupport-ev2.pages.dev
@@ -43960,6 +43951,7 @@ domain_suffix_set:
 - advert.livesportmedia.eu
 - content.livesportmedia.eu
 - lowest-prices.eu
+- luuk-lifestyle.eu
 - m6r.eu
 - mcmpool.eu
 - media01.eu
@@ -47230,7 +47222,6 @@ domain_suffix_set:
 - bestplacestowork.info
 - bhzejltg.info
 - bizx.info
-- bloggiamgia.info
 - bmmwa.info
 - bnfgnbheavynuo.info
 - bobi-bobi.info
@@ -47261,6 +47252,7 @@ domain_suffix_set:
 - coin-base.info
 - coin-miners.info
 - g1-globo.com-b4.info
+- commerce-ciao.info
 - cookiescript.info
 - cooladblocker.info
 - cordinghology.info
@@ -48095,6 +48087,7 @@ domain_suffix_set:
 - megapool.io
 - memescan.io
 - metaconex.io
+- metamask-support.io
 - metomic.io
 - metrics.io
 - microanalytics.io
@@ -48550,6 +48543,7 @@ domain_suffix_set:
 - olioeroli.it
 - open-up.it
 - paintnet.it
+- paololucchesi.it
 - payclick.it
 - test.peperoncinochepassione.it
 - geo.play.it
@@ -49203,6 +49197,7 @@ domain_suffix_set:
 - ads.inven.co.kr
 - cmpv2.itworld.co.kr
 - ad-imp.jtbc.co.kr
+- lcportal.kbinsure.co.kr
 - adv.khan.co.kr
 - ad.kmib.co.kr
 - ads.kmib.co.kr
@@ -49213,7 +49208,6 @@ domain_suffix_set:
 - marketingking.co.kr
 - mci1.co.kr
 - ad.mediafarm.co.kr
-- medises.co.kr
 - middlepoint.co.kr
 - ad2.mimint.co.kr
 - ads.mncmedia.co.kr
@@ -49271,6 +49265,7 @@ domain_suffix_set:
 - finead.o00.kr
 - z.o00.kr
 - onepx.kr
+- gao.or.kr
 - keea.or.kr
 - ads.orbi.kr
 - adscdn.orbi.kr
@@ -49512,7 +49507,6 @@ domain_suffix_set:
 - freehookup.link
 - generating.link
 - globaloffers.link
-- analytics.gotama.link
 - hgame.link
 - host9.link
 - hostt.link
@@ -49847,6 +49841,7 @@ domain_suffix_set:
 - bblck.me
 - bemcll.me
 - bigclick.me
+- blaiz.me
 - breaking-news.me
 - camisetas.me
 - cashstaging.me
@@ -52843,6 +52838,7 @@ domain_suffix_set:
 - hoasoukoush.net
 - hoaveehoos.net
 - hoawhokonegro.net
+- hobobot.net
 - hobsukocmohu.net
 - hoghojoobsoang.net
 - hoglinooth.net
@@ -55478,7 +55474,6 @@ domain_suffix_set:
 - main.vodonet.net
 - vohaukrass.net
 - voidr.net
-- thtp2.volamngayxua.net
 - voltoassigesse.net
 - vongquay.net
 - vongquaymienphi.net
@@ -55631,6 +55626,7 @@ domain_suffix_set:
 - wifly.net
 - wiki-review.net
 - wileprefgurad.net
+- best10cdn.blob.core.windows.net
 - exposeboxwallashops.blob.core.windows.net
 - hotelembuguacu.blob.core.windows.net
 - optanon.blob.core.windows.net
@@ -55769,6 +55765,7 @@ domain_suffix_set:
 - youkuvideo.net
 - yourbtc.net
 - yoursweetfantasies.net
+- youtransfer.net
 - ypool.net
 - yqkyaxdt.net
 - ysesials.net
@@ -55977,6 +55974,7 @@ domain_suffix_set:
 - miningpool.hayamini.nl
 - marketing.hearstmagazines.nl
 - heusmarketing.nl
+- hitstation.nl
 - servedby.hollandhortimedia.nl
 - static.hollandhortimedia.nl
 - tm.stats.home24.nl
@@ -57451,7 +57449,6 @@ domain_suffix_set:
 - likenewvids.online
 - likeviet07.online
 - limzizffmrkkc.online
-- aff2.linksht.online
 - lirmndsuoolqv.online
 - live-breaking-news.online
 - liveonce.online
@@ -59093,7 +59090,6 @@ domain_suffix_set:
 - bitdefenderupdate.org
 - bitnet-io.org
 - blacklivesmatter1.org
-- blessdayservices.org
 - bletopreseynat.org
 - blicatedlitytleme.org
 - blockchainmeup.org
@@ -61304,7 +61300,6 @@ domain_suffix_set:
 - mortifiedassociation.pro
 - motherlyexperience.pro
 - motionless-exit.pro
-- motphimqq.pro
 - mountainousobligation.pro
 - muabannhanh.pro
 - muddyjunior.pro
@@ -61475,7 +61470,6 @@ domain_suffix_set:
 - scholarlyinteraction.pro
 - selfreliantsurgery.pro
 - selfserve.pro
-- ads.seovietnam.pro
 - separatechampionship.pro
 - serenedust.pro
 - sessions.pro
@@ -63158,7 +63152,6 @@ domain_suffix_set:
 - doortrade.ru
 - doprodavec.ru
 - b.dotbrataev.ru
-- dowonline.ru
 - drivenetwork.ru
 - drtraff.ru
 - dryum.ru
@@ -63558,6 +63551,7 @@ domain_suffix_set:
 - pc-download.ru
 - pcads.ru
 - rbig.pcyk.ru
+- pegasustour.ru
 - b13.penzainform.ru
 - perfume-yupoo.ru
 - phod.ru
@@ -63963,6 +63957,7 @@ domain_suffix_set:
 - github.sale
 - awesome.salon
 - qdssy.balistrera.sbs
+- bopsbdb.sbs
 - cingo.sbs
 - contus.sbs
 - capital-invest-can.cropvita.sbs
@@ -64349,6 +64344,7 @@ domain_suffix_set:
 - qlqd5zqefmkcr34a.onion.sh
 - revpu.sh
 - harvest.surge.sh
+- au72nuxzv2.ufs.sh
 - ufc.shoes
 - 365bet.shop
 - h5.50db8hsdoq.shop
@@ -68313,6 +68309,7 @@ domain_suffix_set:
 - loptrrfnfnsnb.space
 - loycsuoivghoy.space
 - lpbtqxqhjzsvc.space
+- lpklqoaezptbr.space
 - lpldihmevndql.space
 - lpqznnkdczxuo.space
 - lprnmzdbmkmah.space
@@ -70715,6 +70712,7 @@ domain_suffix_set:
 - getma.tech
 - tprofile.goldmansachs.tech
 - hdkokhzvalbxn.tech
+- helpdpsradar.tech
 - helpico.tech
 - htagpa.tech
 - ijtlu.tech
@@ -71672,6 +71670,7 @@ domain_suffix_set:
 - banner.kanald.com.tr
 - reklam.milliyet.com.tr
 - addserver.mtv.com.tr
+- onfiltre.com.tr
 - share.openenglish.com.tr
 - stats.ozguryazilim.com.tr
 - pixad.com.tr
@@ -71681,6 +71680,7 @@ domain_suffix_set:
 - reklam.star.com.tr
 - cookiewarden-content.teb.com.tr
 - toolshare.com.tr
+- vizyonuniversitesi.com.tr
 - xshop.com.tr
 - ttnet.yandex.com.tr
 - ads.yenimedya.com.tr
@@ -71914,7 +71914,6 @@ domain_suffix_set:
 - gn-flagpoles.api.bbci.co.uk
 - click.e.bbcmail.co.uk
 - becovi.co.uk
-- benshamcentre.co.uk
 - bestdogcare.co.uk
 - adconsole.bidspotter.co.uk
 - ads.bidspotter.co.uk
@@ -72292,7 +72291,6 @@ domain_suffix_set:
 - sitetag.us
 - squishycoin.us
 - eos.staked.us
-- synergyconsulting.us
 - t-ny.us
 - ls-dp.nj.thelotter.us
 - ls-dp.ny.thelotter.us
@@ -72303,7 +72301,6 @@ domain_suffix_set:
 - verifyaccounts.us
 - voicemessages.us
 - whitewalr.us
-- windowsclean.us
 - xtl._domainkey.zoom.us
 - click.e.zoom.us
 - tmcontent.zoom.us
@@ -72313,6 +72310,7 @@ domain_suffix_set:
 - tm.tbcbank.uz
 - tm.tbcbusiness.uz
 - agora.com.vc
+- universalgroup.com.vc
 - esp.vc
 - youku.vc
 - pmssrv.mercadolibre.com.ve
@@ -72515,7 +72513,6 @@ domain_suffix_set:
 - ysx8.vip
 - yyqxjp.vip
 - zdawvocofpfcr.vip
-- iads.vision
 - ar.stripchat.vision
 - go.stripchat.vision
 - id.stripchat.vision
@@ -72575,7 +72572,6 @@ domain_suffix_set:
 - pub.akadigital.vn
 - ads.alobacsi.vn
 - amcdn.vn
-- analytics.amedigital.vn
 - adv.anhsangvacuocsong.vn
 - beta-log.anninhthudo.vn
 - log.anninhthudo.vn
@@ -72602,7 +72598,6 @@ domain_suffix_set:
 - adx.baolongan.vn
 - log.baonghean.vn
 - log.baophapluat.vn
-- ads.baotainguyenmoitruong.vn
 - adv.baotayninh.vn
 - adv.baotintuc.vn
 - dantocmiennui-log.baotintuc.vn
@@ -72610,7 +72605,6 @@ domain_suffix_set:
 - thongke.baotintuc.vn
 - log.baovanhoa.vn
 - log.beecost.vn
-- log.bizlive.vn
 - stats.bizweb.vn
 - qcv5.blogtruyen.vn
 - thongke.bookingcare.vn
@@ -72631,7 +72625,6 @@ domain_suffix_set:
 - adx.chinmedia.vn
 - cleverads.vn
 - clevernet.vn
-- clix.vn
 - logg4u.cnnd.vn
 - sharefb.cnnd.vn
 - v20.cnnd.vn
@@ -72647,10 +72640,8 @@ domain_suffix_set:
 - analytics.admon.com.vn
 - adt.com.vn
 - agribanking.com.vn
-- ads.autonet.com.vn
 - ads.baoangiang.com.vn
 - adv.baoangiang.com.vn
-- log.baobackan.com.vn
 - ads.baobinhthuan.com.vn
 - ads.baocantho.com.vn
 - log.baogialai.com.vn
@@ -72682,8 +72673,6 @@ domain_suffix_set:
 - analytics.evn.com.vn
 - faceb00k.com.vn
 - fasebook.com.vn
-- quangcao.fff.com.vn
-- tracking.fff.com.vn
 - xoclo.fordvungtau.com.vn
 - analytics.fsoft.com.vn
 - ftpshop.com.vn
@@ -72816,7 +72805,6 @@ domain_suffix_set:
 - us.mplis.gov.vn
 - tracking.tuyenquang.gov.vn
 - gplxgovn.vn
-- tracking.hapiwork.vn
 - ad.happynest.vn
 - facebook-ads.hara.vn
 - google-ads.hara.vn
@@ -72833,12 +72821,11 @@ domain_suffix_set:
 - hp.hubs.vn
 - tracking.hubs.vn
 - ibankingshopee.vn
-- ads.ictnews.vn
 - facabook.id.vn
+- fvia.id.vn
 - hqweb.id.vn
 - ff.memberships-garena.id.vn
 - idnhanquatang.vn
-- ads.inetgroup.vn
 - shinhanbank.info.vn
 - log.infonet.vn
 - pixel.innocom.vn
@@ -72857,7 +72844,6 @@ domain_suffix_set:
 - klick.vn
 - webstag.kplus.vn
 - ktien.vn
-- adx.kul.vn
 - track.kyna.vn
 - widget.kyna.vn
 - ads.lamchame.vn
@@ -72882,7 +72868,6 @@ domain_suffix_set:
 - report.mediahub.vn
 - report2.mediahub.vn
 - mediaz.vn
-- log.mekongasean.vn
 - membership-garena.vn
 - tracking.meta.vn
 - logv3.metric.vn
@@ -72961,14 +72946,11 @@ domain_suffix_set:
 - log.sggp.org.vn
 - log-dttc.sggp.org.vn
 - log-en.sggp.org.vn
-- stats.osd.vn
 - collect.ovp.vn
 - fbuser.ovp.vn
 - analytics.pancake.vn
 - stats.petrotimes.vn
 - phanquang.vn
-- adx.phunuadong.vn
-- tracking.phunuadong.vn
 - adm.phunusuckhoe.vn
 - admin.phunusuckhoe.vn
 - adms.phunusuckhoe.vn
@@ -73090,10 +73072,8 @@ domain_suffix_set:
 - trackity.tiki.vn
 - tiki2022.vn
 - affiliate.k4.tinhte.vn
-- r.tinmoi24.vn
 - interactive.tinnhanhchungkhoan.vn
 - log.tinnhanhchungkhoan.vn
-- analytics.tintuc.vn
 - tinvay.vn
 - log.tinxe.vn
 - tracking.tinxe.vn
@@ -73103,18 +73083,15 @@ domain_suffix_set:
 - tracuugplx.vn
 - trangchusukien.vn
 - trenddigital.vn
-- vietnamdaily-log.trithuccuocsong.vn
 - trungquatang.vn
 - trungthuong.vn
 - tuanlevang.vn
 - quangcao.tuoitre.vn
 - s.tuoitre.vn
 - tuyendungtiki2024.vn
-- serving-ad.tv24.vn
 - log.tv360.vn
 - pubads-wiinvent.tv360.vn
 - analytics.ungdungtructuyen.vn
-- banner.uto.vn
 - uudainapthe.vn
 - vads.vn
 - vay247h.vn
@@ -73171,8 +73148,6 @@ domain_suffix_set:
 - la.vnbusiness.vn
 - log.vneconomy.vn
 - tracker.vneconomy.vn
-- log.vnfinance.vn
-- adv.vnnshop.vn
 - analytics.vnpt.vn
 - analytics.vnreview.vn
 - vongloai.vn
@@ -73193,7 +73168,6 @@ domain_suffix_set:
 - webpush.vn
 - wedvay.vn
 - westernbank.vn
-- track.winigroup.vn
 - xacnhan.vn
 - s.baomoi.xdn.vn
 - ads.xedoisong.vn
@@ -75658,7 +75632,6 @@ domain_suffix_set:
 - imbandptoses.world
 - irony.world
 - jargveurtocja.world
-- kalyanmatka.world
 - kobusshug.world
 - koto.world
 - labqjxrhyjufl.world
@@ -76346,7 +76319,6 @@ domain_suffix_set:
 - dxnhpimrh.xyz
 - dylop.xyz
 - dyogndyfpctbo.xyz
-- e7z9t4x6a0v5mk3zo1a0xj2z7c6g8sa6js5z7s2c3h9x0s5fh3a6sjwb8q7m.xyz
 - earlinessone.xyz
 - ebeihjqqt.xyz
 - ebovfigjrw.xyz
@@ -77465,6 +77437,7 @@ domain_suffix_set:
 - zhaner.xyz
 - zinntikumugai.xyz
 - zjd-nmdong.xyz
+- asd124asdasfasfasfa1231.zjzkzjzkz.xyz
 - zlzwhrhkavos.xyz
 - zm2rp6lqoy.xyz
 - znzfvmdtklsvv.xyz
