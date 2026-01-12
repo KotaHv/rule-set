@@ -2240,7 +2240,6 @@ domain_set:
 - cdn.pi.spectrum.net
 - sourcemaps.squarespace.net
 - mirror.steadfast.net
-- blacklist.tampermonkey.net
 - apt.tetaneutral.net
 - cpan.tetaneutral.net
 - ctan.tetaneutral.net
@@ -5370,6 +5369,7 @@ domain_suffix_set:
 - swtor.net
 - syncthing.net
 - sysctl-explorer.net
+- tampermonkey.net
 - tapecontent.net
 - mirrors.tds.net
 - mirror.tefexia.net

@@ -1,4 +1,4 @@
-# Total: 521 rules
+# Total: 522 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -346,6 +346,7 @@ domain_suffix_set:
 - sstatic.net
 - stackoverflow.net
 - stacksnippets.net
+- tampermonkey.net
 - tex-talk.net
 - ubuntu.net
 - visualstudio.net

@@ -1,4 +1,4 @@
-# Total: 519 rules
+# Total: 520 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -344,6 +344,7 @@
 - '+.sstatic.net'
 - '+.stackoverflow.net'
 - '+.stacksnippets.net'
+- '+.tampermonkey.net'
 - '+.tex-talk.net'
 - '+.ubuntu.net'
 - '+.visualstudio.net'
