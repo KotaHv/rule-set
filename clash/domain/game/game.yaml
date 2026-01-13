@@ -1,4 +1,4 @@
-# Total: 664 rules
+# Total: 669 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -145,6 +145,7 @@
 - '+.dialga.com'
 - '+.dicela.com'
 - '+.diddykongracing.com'
+- '+.dinopoloclub.com'
 - '+.dkr.com'
 - '+.donkeykongcountryreturns.com'
 - '+.doom.com'
@@ -308,6 +309,7 @@
 - '+.nintendoswitch.com'
 - '+.nintendoswitchtogether.com'
 - '+.nintendowii.com'
+- '+.noxygames.com'
 - '+.offworldindustries.com'
 - '+.origin.com'
 - '+.orithegame.com'
@@ -502,6 +504,7 @@
 - '+.nintendo.dk'
 - '+.roblox.dk'
 - '+.dodi-repacks.download'
+- '+.rayark.download'
 - '+.nintendo.es'
 - '+.nintendo.eu'
 - '+.roblox.eu'
@@ -595,6 +598,7 @@
 - '+.playstation.net'
 - '+.pokemonwifi.net'
 - '+.pvp.net'
+- '+.rayark.net'
 - '+.rbxinfra.net'
 - '+.riot.net'
 - '+.riotcdn.net'
@@ -652,6 +656,7 @@
 - '+.riotgames.tv'
 - '+.roblox.tv'
 - '+.steam.tv'
+- '+.mobimon.com.tw'
 - '+.garena.tw'
 - '+.nintendo.tw'
 - '+.nintendo.co.uk'
