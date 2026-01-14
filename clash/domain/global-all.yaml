@@ -1,4 +1,4 @@
-# Total: 5890 rules
+# Total: 5893 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2601,6 +2601,7 @@
 - '+.on-fleek.app'
 - '+.payloadcms.app'
 - '+.run.app'
+- '+.sih.app'
 - '+.tauri.app'
 - '+.udify.app'
 - '+.vercel.app'
@@ -4192,6 +4193,7 @@
 - '+.showtime.com'
 - '+.shutterstock.com'
 - '+.cdn.signalfx.com'
+- '+.sih-db.com'
 - '+.simcity.com'
 - '+.simcity-buildit.com'
 - '+.simgbb.com'
@@ -4276,6 +4278,7 @@
 - '+.steamcontent.com'
 - '+.steamdeck.com'
 - '+.steamgames.com'
+- '+.steaminventoryhelper.com'
 - '+.steampowered.com'
 - '+.steamstatic.com'
 - '+.steamusercontent.com'

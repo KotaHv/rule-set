@@ -1,4 +1,4 @@
-# Total: 670 rules
+# Total: 673 rules
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
@@ -59,6 +59,7 @@ DOMAIN,osu.ppy.sh
 DOMAIN,sentry.ppy.sh
 DOMAIN,spectator.ppy.sh
 DOMAIN-SUFFIX,easy.ac
+DOMAIN-SUFFIX,sih.app
 DOMAIN-SUFFIX,nintendo.at
 DOMAIN-SUFFIX,nintendo.be
 DOMAIN-SUFFIX,leagueoflegends.ca
@@ -392,6 +393,7 @@ DOMAIN-SUFFIX,seagroup.com
 DOMAIN-SUFFIX,seaofsolitude.com
 DOMAIN-SUFFIX,seeurlpcl.com
 DOMAIN-SUFFIX,shadowcomplex.com
+DOMAIN-SUFFIX,sih-db.com
 DOMAIN-SUFFIX,simcity.com
 DOMAIN-SUFFIX,simcity-buildit.com
 DOMAIN-SUFFIX,skate2.com
@@ -418,6 +420,7 @@ DOMAIN-SUFFIX,steamcommunity.com
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steamdeck.com
 DOMAIN-SUFFIX,steamgames.com
+DOMAIN-SUFFIX,steaminventoryhelper.com
 DOMAIN-SUFFIX,steampowered.com
 DOMAIN-SUFFIX,steamstatic.com
 DOMAIN-SUFFIX,steamusercontent.com

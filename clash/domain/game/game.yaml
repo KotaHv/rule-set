@@ -1,4 +1,4 @@
-# Total: 669 rules
+# Total: 672 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -60,6 +60,7 @@
 - 'sentry.ppy.sh'
 - 'spectator.ppy.sh'
 - '+.easy.ac'
+- '+.sih.app'
 - '+.nintendo.at'
 - '+.nintendo.be'
 - '+.leagueoflegends.ca'
@@ -393,6 +394,7 @@
 - '+.seaofsolitude.com'
 - '+.seeurlpcl.com'
 - '+.shadowcomplex.com'
+- '+.sih-db.com'
 - '+.simcity.com'
 - '+.simcity-buildit.com'
 - '+.skate2.com'
@@ -419,6 +421,7 @@
 - '+.steamcontent.com'
 - '+.steamdeck.com'
 - '+.steamgames.com'
+- '+.steaminventoryhelper.com'
 - '+.steampowered.com'
 - '+.steamstatic.com'
 - '+.steamusercontent.com'
