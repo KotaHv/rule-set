@@ -1,4 +1,4 @@
-# Total: 5893 rules
+# Total: 5895 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1646,6 +1646,7 @@
 - 'cdn.bfe.dev'
 - 'biomejs.dev'
 - 'static.bit.dev'
+- 'r2cdn.c7d.dev'
 - 'download.clashverge.dev'
 - 'logos.composio.dev'
 - 'pkg.csb.dev'
@@ -4709,6 +4710,7 @@
 - '+.latam.orbitor.dev'
 - '+.orbstack.dev'
 - '+.pages.dev'
+- '+.pkg.dev'
 - '+.pub.dev'
 - '+.pydantic.dev'
 - '+.r2.dev'

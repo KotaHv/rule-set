@@ -1,4 +1,4 @@
-# Total: 6020 rules
+# Total: 6022 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1647,6 +1647,7 @@ domain_set:
 - cdn.bfe.dev
 - biomejs.dev
 - static.bit.dev
+- r2cdn.c7d.dev
 - download.clashverge.dev
 - logos.composio.dev
 - pkg.csb.dev
@@ -4711,6 +4712,7 @@ domain_suffix_set:
 - latam.orbitor.dev
 - orbstack.dev
 - pages.dev
+- pkg.dev
 - pub.dev
 - pydantic.dev
 - r2.dev

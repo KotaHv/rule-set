@@ -1,4 +1,4 @@
-# Total: 1888 rules
+# Total: 1889 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1779,6 +1779,7 @@
 - '+.mirror.lrz.de'
 - '+.mirror.norbert-ruehl.de'
 - '+.mirror.tudos.de'
+- '+.pkg.dev'
 - '+.r2.dev'
 - '+.mirrors.utermux.dev'
 - '+.kali.download'

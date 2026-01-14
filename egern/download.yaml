@@ -1,4 +1,4 @@
-# Total: 1896 rules
+# Total: 1897 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1781,6 +1781,7 @@ domain_suffix_set:
 - mirror.lrz.de
 - mirror.norbert-ruehl.de
 - mirror.tudos.de
+- pkg.dev
 - r2.dev
 - mirrors.utermux.dev
 - kali.download
