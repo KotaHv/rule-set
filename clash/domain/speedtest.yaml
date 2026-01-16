@@ -1,4 +1,4 @@
-# Total: 2795 rules
+# Total: 2798 rules
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'speedtest.skyplay.app'
@@ -648,6 +648,7 @@
 - 'lcrs-speedtest-02.brightspeed.com'
 - 'rcmt-speedtest-02.brightspeed.com'
 - 'chicago.speedtest.brightspeed.com'
+- 'columbia.speedtest.brightspeed.com'
 - 'indianapolis.speedtest.brightspeed.com'
 - 'kansas-city.speedtest.brightspeed.com'
 - 'warrensburg.speedtest.brightspeed.com'
@@ -1595,6 +1596,7 @@
 - 'speedtest-nl.cloudlease.co.il'
 - 'speedtestdelhi.actcorp.in'
 - 'speedtestguw1.airtel.in'
+- 'speedtestjmu.airtel.in'
 - 'speedtestmrt1.airtel.in'
 - 'speedtestmum1.airtel.in'
 - 'speedtestsaha1.airtel.in'
@@ -2243,6 +2245,7 @@
 - 'lnx01.smtns.net'
 - 'speedtest1a.socket.net'
 - 'speedtest.sogetel.net'
+- 'speedtest.dfw1.sonic.net'
 - 'speedtest.dfw2.sonic.net'
 - 'speedtest.sjc.sonic.net'
 - 'speed.sparcs.net'

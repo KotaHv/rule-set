@@ -1,4 +1,4 @@
-# Total: 2795 rules
+# Total: 2798 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -649,6 +649,7 @@ domain_set:
 - lcrs-speedtest-02.brightspeed.com
 - rcmt-speedtest-02.brightspeed.com
 - chicago.speedtest.brightspeed.com
+- columbia.speedtest.brightspeed.com
 - indianapolis.speedtest.brightspeed.com
 - kansas-city.speedtest.brightspeed.com
 - warrensburg.speedtest.brightspeed.com
@@ -1596,6 +1597,7 @@ domain_set:
 - speedtest-nl.cloudlease.co.il
 - speedtestdelhi.actcorp.in
 - speedtestguw1.airtel.in
+- speedtestjmu.airtel.in
 - speedtestmrt1.airtel.in
 - speedtestmum1.airtel.in
 - speedtestsaha1.airtel.in
@@ -2244,6 +2246,7 @@ domain_set:
 - lnx01.smtns.net
 - speedtest1a.socket.net
 - speedtest.sogetel.net
+- speedtest.dfw1.sonic.net
 - speedtest.dfw2.sonic.net
 - speedtest.sjc.sonic.net
 - speed.sparcs.net
