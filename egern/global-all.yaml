@@ -1,4 +1,4 @@
-# Total: 6022 rules
+# Total: 6026 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -312,6 +312,7 @@ domain_set:
 - mirror.bacloud.com
 - cloudfront.barilliance.com
 - assets.basehub.com
+- pubg1.battleye.com
 - apps.bazaarvoice.com
 - www.bbthat.com
 - static.beebom.com
@@ -3609,6 +3610,7 @@ domain_suffix_set:
 - kobo.com
 - komoot.com
 - konachan.com
+- kraftonde.com
 - kraken.com
 - krakenjs.com
 - ks3-cn-hk-1.ksyuncs.com
@@ -3992,6 +3994,7 @@ domain_suffix_set:
 - play4free.com
 - playapex.com
 - playartifact.com
+- playbattlegrounds.com
 - playboy.com
 - playhearthstone.com
 - playnintendo.com
@@ -4057,6 +4060,7 @@ domain_suffix_set:
 - prowritingaid.com
 - proxmox.com
 - prppsn.com
+- pubg.com
 - cdn.pubnub.com
 - pusher.com
 - pvzgw2.com

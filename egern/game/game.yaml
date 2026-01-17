@@ -1,4 +1,4 @@
-# Total: 673 rules
+# Total: 677 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -7,6 +7,7 @@ domain_set:
 - ubisoft-uplay-savegames.s3.amazonaws.com
 - wb-agora-hydra-file-storage-k1.s3.amazonaws.com
 - roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
+- pubg1.battleye.com
 - datarouter.apps.netherrealm.com
 - blizzard.nefficient.co.kr
 - avatargarenanow-a.akamaihd.net
@@ -235,6 +236,7 @@ domain_suffix_set:
 - joinsquad.com
 - kirbysepicyarn.com
 - kirbysuperstarultra.com
+- kraftonde.com
 - kyurem.com
 - lcsmerch.com
 - leaguehighschool.com
@@ -325,6 +327,7 @@ domain_suffix_set:
 - play4free.com
 - playapex.com
 - playartifact.com
+- playbattlegrounds.com
 - playhearthstone.com
 - playnintendo.com
 - playoverwatch.com
@@ -359,6 +362,7 @@ domain_suffix_set:
 - popcap.com
 - projectapex.com
 - protondb.com
+- pubg.com
 - pvzgw2.com
 - pvzheroes.com
 - steam.apac.qtlglb.com
