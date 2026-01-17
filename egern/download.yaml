@@ -1,4 +1,4 @@
-# Total: 1897 rules
+# Total: 1887 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -97,7 +97,6 @@ domain_set:
 - debian.linux.n0c.ca
 - ubuntu.linux.n0c.ca
 - mirror.rcg.sfu.ca
-- mirrors.switch.ca
 - mirror.it.ubc.ca
 - mirror.cpsc.ucalgary.ca
 - mirror.dsrg.utoronto.ca
@@ -135,7 +134,6 @@ domain_set:
 - ctan.dcc.uchile.cl
 - mirror.uchile.cl
 - mirror.ufro.cl
-- mirror.0-1.cloud
 - mirror.za.abantu.cloud
 - mirrors.bangmod.cloud
 - mirrors.ubuntu.dimit.cloud
@@ -161,7 +159,6 @@ domain_set:
 - mirror.alastyr.com
 - mirrors.aliyun.com
 - mirror.nl.altushost.com
-- mirror.aminidc.com
 - mirror.anigil.com
 - download.anydesk.com
 - www2.aomeisoftware.com
@@ -290,7 +287,6 @@ domain_set:
 - mirror.us-sc.kamatera.com
 - mirror.us-tx.kamatera.com
 - mirror.keiminem.com
-- ubuntu-mirror.kimiahost.com
 - mirrors.layeronline.com
 - mirror.leitecastro.com
 - downloads.lemonsqueezy.com
@@ -739,9 +735,6 @@ domain_set:
 - disks.webvm.io
 - apt.xpipe.io
 - rpm.xpipe.io
-- repo.iut.ac.ir
-- ctan.um.ac.ir
-- ctan.yazd.ac.ir
 - mirror.arvancloud.ir
 - mirror.kernel.ir
 - repo.linuxmirrors.ir
@@ -831,7 +824,6 @@ domain_set:
 - mirror.applebred.net
 - releases.arc.net
 - mirror.nl.as215296.net
-- mirror.as24220.net
 - mirror.as29550.net
 - mirror.as35701.net
 - mirror.as43289.net
@@ -929,7 +921,6 @@ domain_set:
 - mirror.fi.ossplanet.net
 - mirror.ossplanet.net
 - ftp.piotrkosoft.net
-- ubuntu.pishgaman.net
 - mirror.plusline.net
 - mirror.pregi.net
 - ctan.mc1.root.project-creative.net
@@ -1328,7 +1319,6 @@ domain_set:
 - kde.ip-connect.vn.ua
 - ubuntu.ip-connect.vn.ua
 - mirror.renu.ac.ug
-- mirror.ucu.ac.ug
 - mirror.ox.ac.uk
 - anorien.csc.warwick.ac.uk
 - mirror.bytemark.co.uk

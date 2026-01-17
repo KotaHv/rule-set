@@ -1,4 +1,4 @@
-# Total: 91666 rules
+# Total: 91721 rules
 no_resolve: true
 domain_set:
 - api.cortana.ai
@@ -104,8 +104,6 @@ domain_set:
 - trackapp.guahao.cn
 - dd.iask.cn
 - dev.iyuba.cn
-- ee.j5s9b.cn
-- m.j5s9b.cn
 - e.jparking.cn
 - short-video.kakamobi.cn
 - smart-789.kakamobi.cn
@@ -186,7 +184,6 @@ domain_set:
 - mostat.wps.cn
 - sstc.ngrok.xiaomiqiu.cn
 - img-cdn-spot.ymcdn.cn
-- ad.api.youshiad.cn
 - report.yumobi.cn
 - dig.zjurl.cn
 - doh.zjurl.cn
@@ -619,7 +616,6 @@ domain_set:
 - d3g.qq.com
 - dp3.qq.com
 - adsense.html5.qq.com
-- report.huatuo.qq.com
 - jqmt.qq.com
 - httpdns.kg.qq.com
 - l.qq.com
@@ -894,6 +890,7 @@ domain_set:
 - httpdns.zybang.com
 - smplnltcs.knip.dev
 - sashimi.royli.dev
+- widgets-test.boomio.workers.dev
 - grs.dbankcloud.eu
 - adlaunch.qingting.fm
 - list.z.qingting.fm
@@ -993,7 +990,6 @@ domain_set:
 - umdc.aliapp.org
 - advertise.baicizhan.org
 - jobs.date-fns.org
-- e.duomeng.org
 - foundation.mozilla.org
 - donate.wikimedia.org
 - s.hex.pm
@@ -1003,6 +999,7 @@ domain_set:
 - bad.third-party.site
 - udata.namespace.so
 - comments.gazo.space
+- stat.rdap.ss
 - crsoptimizer.conversionrate.store
 - gif.7mmtv.sx
 - ssp1.kfadx.tech
@@ -7861,6 +7858,7 @@ domain_suffix_set:
 - w58547.cc
 - w58ce6.cc
 - w5ba5b.cc
+- w5c6d9.cc
 - ad.weplayer.cc
 - crosspromotion.weplayer.cc
 - analytics.wondershare.cc
@@ -8231,6 +8229,8 @@ domain_suffix_set:
 - halfynutletforgive.cfd
 - hangiebhaktas.cfd
 - harmaldeesis.cfd
+- hatpinswarbird.cfd
+- hawsertockcircs.cfd
 - haynelandauscottage.cfd
 - hb6i9t1mi5ufhv.cfd
 - heapeddropvietisic.cfd
@@ -8523,6 +8523,7 @@ domain_suffix_set:
 - r6bj15eomzej46.cfd
 - raftersbaileesputtier.cfd
 - rakandirks.cfd
+- ranklyscarers.cfd
 - raptrillawbook.cfd
 - ratteenhurler.cfd
 - ravenyautias.cfd
@@ -8629,6 +8630,7 @@ domain_suffix_set:
 - tabulevau.cfd
 - tabusnichedknish.cfd
 - tactsbludged.cfd
+- tadrek.cfd
 - tajikiamaaskopis.cfd
 - tamponsischialhoggie.cfd
 - tangiemootsdecnet.cfd
@@ -8764,6 +8766,7 @@ domain_suffix_set:
 - y9ggr78m8f8fmxeo9u4.cfd
 - yasequent.cfd
 - yf6c7kngfclolqzrkk8.cfd
+- yj7nlo8n7ll8xe49bo2w6wjexl7129zf.cfd
 - ym3t4oonc6e21w42p2.cfd
 - youngstripsisnuba.cfd
 - ypx6ne7o6lcfl6.cfd
@@ -10146,6 +10149,7 @@ domain_suffix_set:
 - iyxh.cn
 - izgl.cn
 - izjmlg.cn
+- j5s9b.cn
 - jeyd.cn
 - jfpo.cn
 - jgid.cn
@@ -10733,6 +10737,7 @@ domain_suffix_set:
 - 11.yiqig.cn
 - yl04z4v.cn
 - yoig.cn
+- youshiad.cn
 - analysis.yozocloud.cn
 - ypyr.cn
 - yqqv.cn
@@ -11690,6 +11695,7 @@ domain_suffix_set:
 - 1fims.com
 - 1futnsio0.com
 - 1fxt.com
+- 1gj8lhfa1.com
 - 1gp3p6fkio.com
 - 1gqd0o687z.com
 - 1h2h54jkw.com
@@ -11888,6 +11894,7 @@ domain_suffix_set:
 - 34mede82hj.com
 - 34ys.com
 - 352396e005.com
+- 354xxcdt1.com
 - 35c82e35f3.com
 - bdcode.35d1.com
 - 360640.com
@@ -15232,6 +15239,7 @@ domain_suffix_set:
 - digital.aptaracorp.com
 - aptoide-mmp.aptoide.com
 - apvdr.com
+- apvovfnwiob.com
 - apxlv.com
 - aq7ua5ma85rddeinve.com
 - data.aqaralrawabi.com
@@ -16198,6 +16206,7 @@ domain_suffix_set:
 - marketing.awidubai.com
 - awistats.com
 - awjakpos.com
+- awjgataojhom.com
 - awkxf8bbj.com
 - awlavzstygu.com
 - secure.info.awlgrip.com
@@ -16868,6 +16877,7 @@ domain_suffix_set:
 - bd51static.com
 - trackersdk.bdash-cloud.com
 - bdbbdd2417.com
+- bdbqypykifmfwyc.com
 - bdcrihraly.com
 - ev.api.bdg.com
 - ev2.api.bdg.com
@@ -18682,6 +18692,7 @@ domain_suffix_set:
 - bugs01160ko.com
 - bugs01161ko.com
 - bugs01170ko.com
+- bugs01171ko.com
 - bugscrawled.com
 - bugsense.com
 - bugwykhuyh.com
@@ -19662,6 +19673,7 @@ domain_suffix_set:
 - cbembusgcl.com
 - cben9a9s1.com
 - ssl.cbinet.com
+- cblqmoests.com
 - ss.cbmmarketingsolutions.com
 - metrics.cbn.com
 - gtm.cbnefrodialise.com
@@ -26382,6 +26394,7 @@ domain_suffix_set:
 - eyelashcatastrophe.com
 - eyereturn.com
 - eyeviewads.com
+- eytotptf.com
 - img1.eywdf.com
 - eyzerannl.com
 - response.ez-dock.com
@@ -30555,6 +30568,7 @@ domain_suffix_set:
 - images.updates.hbonow.com
 - botdetection.hbrsd.com
 - gtm.hbt-collection.com
+- hbz8v.com
 - hc1kycrud.com
 - connect.cap.hcahealthcare.com
 - connect.cont.hcahealthcare.com
@@ -31602,6 +31616,7 @@ domain_suffix_set:
 - tracking.my.hq.com
 - marketing.hqcapital.com
 - hqluu46i3a.com
+- hqngohicynxf.com
 - hqpornpro.com
 - hqscene.com
 - support.hqts.com
@@ -32401,6 +32416,7 @@ domain_suffix_set:
 - get.incisive.com
 - eloqua.incite-group.com
 - tracker.incite-group.com
+- inclinationsupervisor.com
 - incline9edge.com
 - inclinedallusionnearby.com
 - incloak.com
@@ -36732,6 +36748,7 @@ domain_suffix_set:
 - stape.lptorabrasil.com
 - lptrck.com
 - lpuqhego.com
+- lqbe7i5gf.com
 - lqekosfpfmt.com
 - lqftuugziloa.com
 - lqfvredung.com
@@ -47445,6 +47462,7 @@ domain_suffix_set:
 - logcollection.ronghub.com
 - static.rongkao.com
 - fnoqgg.roninwear.com
+- ronniunnoted.com
 - roobetaffiliates.com
 - marketing.roofconnect.com
 - sst.roofing4us.com
@@ -48902,6 +48920,7 @@ domain_suffix_set:
 - tracking.sezzle.com
 - t.sfajacks.com
 - sfaobvfic.com
+- sfaxunhan.com
 - go.sfcg.com
 - metrics.sfchronicle.com
 - q777.sfchronicle.com
@@ -55187,6 +55206,7 @@ domain_suffix_set:
 - ulatammyspb.com
 - ulcqtgjvrowbmo.com
 - ulgroiklf.com
+- uljtltlwybhpz.com
 - unlock.ulkeshop.com
 - rxliwi.ullapopken.com
 - ulmoyc.com
@@ -58424,6 +58444,7 @@ domain_suffix_set:
 - improving.wuzhuiso.com
 - wvdoncfed.com
 - wvepppysvo.com
+- wviblxnpe.com
 - wvnrzwpsivqac.com
 - axp.wvnstv.com
 - sp.wvoil.com
@@ -58888,6 +58909,7 @@ domain_suffix_set:
 - xwyvwmrlyaxqied.com
 - xxgiknmwtlceun.com
 - xxltr.com
+- xxpkpjptfwnrfkn.com
 - xxsmad5.com
 - xxsmad6.com
 - xxsmad7.com
@@ -60484,6 +60506,7 @@ domain_suffix_set:
 - poachgoolcalpul.cyou
 - poleychoirs.cyou
 - polluxingrainaulae.cyou
+- porellaingan.cyou
 - pottlespomey.cyou
 - poussinbiunity.cyou
 - predietstilton.cyou
@@ -60640,6 +60663,7 @@ domain_suffix_set:
 - tyloseundosedarren.cyou
 - tympanfulledamara.cyou
 - udishcotty.cyou
+- uhuruslavsmatzas.cyou
 - ulidianpretaorigami.cyou
 - undyedyouve.cyou
 - unknowgranose.cyou
@@ -60695,6 +60719,7 @@ domain_suffix_set:
 - ylxup8799xrekmpj7.cyou
 - yq2u7pfzvbwx8w.cyou
 - yuckellout.cyou
+- zattarelinkman.cyou
 - zemekw.cyou
 - zendikfideist.cyou
 - zeoideimorbus.cyou
@@ -77356,6 +77381,7 @@ domain_suffix_set:
 - shaveeps.net
 - shebudriftaiter.net
 - sheecmimty.net
+- sheeptaurgeersi.net
 - shepeekr.net
 - l.shiga-saku.net
 - ee.shixunwang.net
@@ -77827,6 +77853,7 @@ domain_suffix_set:
 - zaiteegraity.net
 - zaitounofeeta.net
 - zajukrib.net
+- zalrurtauba.net
 - zaltaumi.net
 - trk.zananutrition.net
 - zauphozaucou.net
@@ -79467,6 +79494,7 @@ domain_suffix_set:
 - track.instadailywins.online
 - ipimsnjzdlevp.online
 - iwudaolmmaejh.online
+- ixlqtaghypthu.online
 - ixovocfhoneox.online
 - ixubgeuvxzgle.online
 - iybxyxstelzws.online
@@ -79718,6 +79746,7 @@ domain_suffix_set:
 - bd.shopkoro.online
 - bolha.shopzinho.online
 - gtm.signosterapia.online
+- sjgynxxcbmpbf.online
 - sjqpgflxbpuwn.online
 - skeqdttgznrqj.online
 - skhtgdwpqqbrp.online
@@ -81762,6 +81791,7 @@ domain_suffix_set:
 - arid-management.pro
 - aromatic-salary.pro
 - ashamedleague.pro
+- attached-clock.pro
 - authorized-minute.pro
 - avaricious-application.pro
 - average-driver.pro
@@ -81999,6 +82029,7 @@ domain_suffix_set:
 - motherlyteach.pro
 - mountainous-fall.pro
 - mushy-spray.pro
+- mustytransition.pro
 - narrow-development.pro
 - narrow-wedding.pro
 - nautical-month.pro
@@ -82079,6 +82110,7 @@ domain_suffix_set:
 - rench-single.pro
 - collector.retailcrm.pro
 - rightlanguage.pro
+- rigid-tough.pro
 - rosytrip.pro
 - rotatingtheory.pro
 - rtnews.pro
@@ -82132,6 +82164,7 @@ domain_suffix_set:
 - thriftyrefrigerator.pro
 - tight-abroad.pro
 - tighthuman.pro
+- tinted-specialist.pro
 - rt.totalhealth.pro
 - toughvalue.pro
 - treasuredback.pro
@@ -82148,6 +82181,7 @@ domain_suffix_set:
 - unequaled-ad.pro
 - unfitkind.pro
 - unkemptsteal.pro
+- unlawful-camera.pro
 - unlawfulbasket.pro
 - unrulyoccasion.pro
 - unselfishwave.pro
@@ -82431,6 +82465,7 @@ domain_suffix_set:
 - benzoxyupstirs.qpon
 - betornelbows.qpon
 - biblikeknoweth.qpon
+- billardchalaza.qpon
 - bingehassled.qpon
 - bittingsixgun.qpon
 - bitwiseslicks.qpon
@@ -82633,6 +82668,7 @@ domain_suffix_set:
 - morphewasg.qpon
 - mousingswedish.qpon
 - mremvisne.qpon
+- muffygulf.qpon
 - mulchergauze.qpon
 - mythizedora.qpon
 - napstiling.qpon
@@ -82786,6 +82822,7 @@ domain_suffix_set:
 - unpliedbilith.qpon
 - upchoketem.qpon
 - upmasthastens.qpon
+- uponhereon.qpon
 - urusessoot.qpon
 - uteassewer.qpon
 - vacuefylateen.qpon
@@ -84646,6 +84683,7 @@ domain_suffix_set:
 - chatterdesray.shop
 - cheese08062025.shop
 - chuboneiric.shop
+- chuckstourte.shop
 - cissiescatwort.shop
 - cithersykes.shop
 - trk.claricemega.shop
@@ -84925,6 +84963,7 @@ domain_suffix_set:
 - rerunstauli.shop
 - retsinatribe.shop
 - rocket08062025.shop
+- ronyonfeelers.shop
 - bsarb.rosemori-moringa.shop
 - routejav09212026.shop
 - tr.roxx-online.shop
@@ -85204,6 +85243,7 @@ domain_suffix_set:
 - drpvqbzfwafbv.site
 - drswiqpxdulnv.site
 - dryzxafwqiyfy.site
+- dsvidbernlibi.site
 - dumae.site
 - duxibjqxidzeu.site
 - dvattbwxiofrk.site
@@ -85319,6 +85359,7 @@ domain_suffix_set:
 - hiwgjxpnkelyw.site
 - hixyhbsodvkip.site
 - hjoddysekhmji.site
+- hkdgrzawyossi.site
 - hnsbsgnqcvqmn.site
 - hnwbhkraakeyp.site
 - hpiojmhtsxdvy.site
@@ -85425,6 +85466,7 @@ domain_suffix_set:
 - llfyjvskyxnsv.site
 - llqczvttfraib.site
 - lmaowukrqnyiu.site
+- lmnjsywqztqlk.site
 - lmrwupcucuprv.site
 - lmzlhhgjewlyi.site
 - loqnomgwbsiel.site
@@ -85520,6 +85562,7 @@ domain_suffix_set:
 - oyufrryvbidhn.site
 - oyuluswjqnpzr.site
 - ozfxwlyarvwzy.site
+- ozvmsmvmbxlfg.site
 - p2ed.site
 - q.pairies.site
 - loggychops.paulsmith.site
@@ -85588,6 +85631,7 @@ domain_suffix_set:
 - rsbnhruphyuxn.site
 - sweet.runsexyad.site
 - ruvyngknbnsfi.site
+- ryddiuaiixndo.site
 - gtm.saboresartesanales.site
 - kr.sampleperson.site
 - saqomainndofo.site
@@ -86126,6 +86170,7 @@ domain_suffix_set:
 - ecjrzisfqedcu.space
 - ecswygasnnoks.space
 - edctiqiehensj.space
+- edtkenvhljthk.space
 - eehfgxeohyocq.space
 - egbggijlkjwoo.space
 - egjqqvtfmjwos.space
@@ -86240,6 +86285,7 @@ domain_suffix_set:
 - kdbcijmfcfqok.space
 - kemrrbjymzwaa.space
 - kfkgfumirrdtr.space
+- kgxkzdvkuwnsv.space
 - khaxjxevsnigs.space
 - khlhqwlnesbbm.space
 - kikukxnxnugqa.space
@@ -86515,6 +86561,7 @@ domain_suffix_set:
 - xxmfopafuhkpe.space
 - xypfboanhelbs.space
 - yafolpwcbrnsw.space
+- ydopvxjwmlkoo.space
 - yfelanqkliuph.space
 - yfrfldynakfwh.space
 - yfwfmvofiyemc.space
@@ -86950,6 +86997,7 @@ domain_suffix_set:
 - awkbkkqkqmvrb.top
 - ayarkkbmakzwa.top
 - ayjvwlrbjayqv.top
+- aykqyjzoqklyw.top
 - ayzylwqryaovm.top
 - azaleada1.top
 - azazyjjovmwkv.top
@@ -87431,6 +87479,7 @@ domain_suffix_set:
 - rfgsdgg.top
 - rhdifs.top
 - rjokawzwvavma.top
+- rjqzljvzeaekw.top
 - rjvzjn.top
 - rjwwqkrmymmlv.top
 - rjzbvmbybvkwq.top
@@ -89508,6 +89557,7 @@ domain_suffix_set:
 - ahgjbiqqwcmfo.website
 - ahkxzxhebjjcn.website
 - aiecrhvddyaqb.website
+- aiohzjqitpxai.website
 - aiyywbihtqhgy.website
 - ajptwiopvptab.website
 - ajqhmhvihexlk.website
@@ -89744,6 +89794,7 @@ domain_suffix_set:
 - ljwkbclqrklde.website
 - llrmhquivygzh.website
 - llwgmjndizraf.website
+- lnevhxqvlwwdd.website
 - lourdoueisienne.website
 - loylhwrirejyj.website
 - lpnotaeyoemsl.website
@@ -89801,6 +89852,7 @@ domain_suffix_set:
 - obavfairnmarw.website
 - ocgzlnsyzsoqn.website
 - ocqmbcwysestl.website
+- oegjeeuyatxcm.website
 - ofdoyluowkolk.website
 - ofjujdmsylvmo.website
 - ogtqvprngfudm.website
@@ -89866,6 +89918,7 @@ domain_suffix_set:
 - rovrggemxuipk.website
 - rplerdgsaednp.website
 - rtbokvnpqwmzx.website
+- rufhdndiebfal.website
 - rukurhxlilmwh.website
 - rupbbmohwhznh.website
 - rvericwazosuy.website
@@ -89972,6 +90025,7 @@ domain_suffix_set:
 - xcxmpiysijwjr.website
 - xdwstcvtdyyfg.website
 - xeicappcjzraw.website
+- xejrwgzfwzxwx.website
 - xemmgygfgjytb.website
 - xgjhpuyigenen.website
 - xidxktydwzica.website
@@ -90690,6 +90744,7 @@ domain_suffix_set:
 - adspyglass.semuadisini.xyz
 - serv01001.xyz
 - sfjqeiskeiv.xyz
+- sginwrdwx.xyz
 - shcgoved.xyz
 - server.shinchon.xyz
 - shmenxxhiiiedt.xyz

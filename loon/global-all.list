@@ -1,4 +1,4 @@
-# Total: 6041 rules
+# Total: 6033 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -119,7 +119,6 @@ DOMAIN,ctan.dcc.uchile.cl
 DOMAIN,mirror.uchile.cl
 DOMAIN,mirror.ufro.cl
 DOMAIN,cdn.bigcloud.click
-DOMAIN,mirror.0-1.cloud
 DOMAIN,mirror.za.abantu.cloud
 DOMAIN,mirrors.bangmod.cloud
 DOMAIN,static.bit.cloud
@@ -141,6 +140,7 @@ DOMAIN,store.ui.com.cn
 DOMAIN,cdn.17app.co
 DOMAIN,log-collector.17app.co
 DOMAIN,webcdn.17app.co
+DOMAIN,cdn.chord.co
 DOMAIN,cdn.cloudcraft.co
 DOMAIN,load.csell.co
 DOMAIN,cdn.decrypt.co
@@ -234,8 +234,6 @@ DOMAIN,oaos-resources.allstate.com
 DOMAIN,resources.allstate.com
 DOMAIN,mirror.nl.altushost.com
 DOMAIN,cdn.amcharts.com
-DOMAIN,mirror.aminidc.com
-DOMAIN,cm1.aminoapps.com
 DOMAIN,images.anandtech.com
 DOMAIN,mirror.anigil.com
 DOMAIN,c.animaapp.com
@@ -879,15 +877,14 @@ DOMAIN,tour-content-cdn.kellymadisonmedia.com
 DOMAIN,assets.khoros.com
 DOMAIN,a.kickstarter.com
 DOMAIN,i.kickstarter.com
-DOMAIN,ubuntu-mirror.kimiahost.com
 DOMAIN,cdn.kinsta.com
 DOMAIN,media.kit.com
 DOMAIN,logos.kiwibrowser.com
 DOMAIN,js.klarn.com
 DOMAIN,js.klarna.com
 DOMAIN,na-library.klarnaservices.com
-DOMAIN,a.klaviyo.com
 DOMAIN,static.klaviyo.com
+DOMAIN,static-app.klaviyo.com
 DOMAIN,static-forms.klaviyo.com
 DOMAIN,brand-sdk.kmsmep.com
 DOMAIN,info.knak.com
@@ -1123,9 +1120,8 @@ DOMAIN,cdn3.onlyfans.com
 DOMAIN,static.onlyfans.com
 DOMAIN,static2.onlyfans.com
 DOMAIN,thumbs.onlyfans.com
-DOMAIN,cdn.onlyhentaistuff.com
+DOMAIN,ca1.onlyhentaistuff.com
 DOMAIN,fs2.onlyhentaistuff.com
-DOMAIN,gt1.onlyhentaistuff.com
 DOMAIN,download.onlyoffice.com
 DOMAIN,static-www.onlyoffice.com
 DOMAIN,assets.ontrack.com
@@ -1234,6 +1230,7 @@ DOMAIN,quriobot.com
 DOMAIN,s1.qwant.com
 DOMAIN,s2.qwant.com
 DOMAIN,mirrors.rackhosting.com
+DOMAIN,devicons.railway.com
 DOMAIN,mirror.raiolanetworks.com
 DOMAIN,static.rakuten.com
 DOMAIN,cacerts.rapidssl.com
@@ -1688,7 +1685,6 @@ DOMAIN,cdn.robinpro.gallery
 DOMAIN,maven.is-quite.gay
 DOMAIN,debian.grena.ge
 DOMAIN,ubuntu.grena.ge
-DOMAIN,cdn.glitch.global
 DOMAIN,fosszone.csd.auth.gr
 DOMAIN,apache.forthnet.gr
 DOMAIN,ftp.forthnet.gr
@@ -1764,7 +1760,6 @@ DOMAIN,cdn.channel.io
 DOMAIN,cf.channel.io
 DOMAIN,dl.cloudsmith.io
 DOMAIN,docker.cloudsmith.io
-DOMAIN,cdn.commento.io
 DOMAIN,cdn.concert.io
 DOMAIN,images.contentstack.io
 DOMAIN,assets.mcp.corespeed.io
@@ -1929,7 +1924,6 @@ DOMAIN,cdn.fasterthanli.me
 DOMAIN,static.fboom.me
 DOMAIN,static-cache.fboom.me
 DOMAIN,static.fbot.me
-DOMAIN,cdn.glitch.me
 DOMAIN,s4.itho.me
 DOMAIN,cdn-msp.jmcomic.me
 DOMAIN,cdn.judge.me
@@ -2008,7 +2002,6 @@ DOMAIN,mirror.applebred.net
 DOMAIN,s3.arkjp.net
 DOMAIN,cdn.arstechnica.net
 DOMAIN,mirror.nl.as215296.net
-DOMAIN,mirror.as24220.net
 DOMAIN,mirror.as29550.net
 DOMAIN,mirror.as35701.net
 DOMAIN,mirror.as43289.net
@@ -2206,7 +2199,6 @@ DOMAIN,devnull.perfops.net
 DOMAIN,img.perfops.net
 DOMAIN,rum-cdn.perfops.net
 DOMAIN,ftp.piotrkosoft.net
-DOMAIN,ubuntu.pishgaman.net
 DOMAIN,static.plus.net
 DOMAIN,mirror.plusline.net
 DOMAIN,siloh-ns1.plutotv.net
@@ -2546,7 +2538,6 @@ DOMAIN,gimp.ip-connect.vn.ua
 DOMAIN,kde.ip-connect.vn.ua
 DOMAIN,ubuntu.ip-connect.vn.ua
 DOMAIN,mirror.renu.ac.ug
-DOMAIN,mirror.ucu.ac.ug
 DOMAIN,assets.orz.uno
 DOMAIN,media.orz.uno
 DOMAIN,debian.repo.cure.edu.uy
@@ -3601,6 +3592,7 @@ DOMAIN-SUFFIX,kirbysuperstarultra.com
 DOMAIN-SUFFIX,kkbox.com
 DOMAIN-SUFFIX,kkbox-prime.com
 DOMAIN-SUFFIX,kktix.com
+DOMAIN-SUFFIX,a.klaviyo.com
 DOMAIN-SUFFIX,kleecks-cdn.com
 DOMAIN-SUFFIX,knowyourmeme.com
 DOMAIN-SUFFIX,ko-fi.com

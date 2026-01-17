@@ -1,4 +1,4 @@
-# Total: 4230 rules
+# Total: 4226 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -123,6 +123,7 @@ DOMAIN,log-collector.17app.co
 DOMAIN,webcdn.17app.co
 DOMAIN,s3.anilist.co
 DOMAIN,s4.anilist.co
+DOMAIN,cdn.chord.co
 DOMAIN,cdn.cloudcraft.co
 DOMAIN,static.convertio.co
 DOMAIN,load.csell.co
@@ -230,7 +231,6 @@ DOMAIN,code.buywithprime.amazon.com
 DOMAIN,amazon-omni-cdn.com
 DOMAIN,ip-ranges.amazonaws.com
 DOMAIN,cdn.amcharts.com
-DOMAIN,cm1.aminoapps.com
 DOMAIN,images.anandtech.com
 DOMAIN,connectivitycheck.android.com
 DOMAIN,c.animaapp.com
@@ -845,8 +845,6 @@ DOMAIN,telemetry.business.githubcopilot.com
 DOMAIN,telemetry.individual.githubcopilot.com
 DOMAIN,static.gl-inet.com
 DOMAIN,media.glassdoor.com
-DOMAIN,cdn.glitch.com
-DOMAIN,content.product.glitch.com
 DOMAIN,static.gmgard.com
 DOMAIN,widgets.coaches.gnc.com
 DOMAIN,cdn.registerdisney.go.com
@@ -1094,8 +1092,8 @@ DOMAIN,logos.kiwibrowser.com
 DOMAIN,js.klarn.com
 DOMAIN,js.klarna.com
 DOMAIN,na-library.klarnaservices.com
-DOMAIN,a.klaviyo.com
 DOMAIN,static.klaviyo.com
+DOMAIN,static-app.klaviyo.com
 DOMAIN,static-forms.klaviyo.com
 DOMAIN,brand-sdk.kmsmep.com
 DOMAIN,info.knak.com
@@ -1385,9 +1383,8 @@ DOMAIN,cdn3.onlyfans.com
 DOMAIN,static.onlyfans.com
 DOMAIN,static2.onlyfans.com
 DOMAIN,thumbs.onlyfans.com
-DOMAIN,cdn.onlyhentaistuff.com
+DOMAIN,ca1.onlyhentaistuff.com
 DOMAIN,fs2.onlyhentaistuff.com
-DOMAIN,gt1.onlyhentaistuff.com
 DOMAIN,static-www.onlyoffice.com
 DOMAIN,assets.ontrack.com
 DOMAIN,package-assets.oomol.com
@@ -1539,6 +1536,7 @@ DOMAIN,qmod.quotemedia.com
 DOMAIN,quriobot.com
 DOMAIN,s1.qwant.com
 DOMAIN,s2.qwant.com
+DOMAIN,devicons.railway.com
 DOMAIN,static.rakuten.com
 DOMAIN,cacerts.rapidssl.com
 DOMAIN,assets.raspberrypi.com
@@ -2132,7 +2130,6 @@ DOMAIN,cdn.gdl.gg
 DOMAIN,cdn.now.gg
 DOMAIN,cms-cdn.now.gg
 DOMAIN,cdn.sc.gl
-DOMAIN,cdn.glitch.global
 DOMAIN,c.pki.goog
 DOMAIN,images-assets.nasa.gov
 DOMAIN,assets.science.nasa.gov
@@ -2204,7 +2201,6 @@ DOMAIN,sandpack-cdn-v2.codesandbox.io
 DOMAIN,screenshots.codesandbox.io
 DOMAIN,stats.codesandbox.io
 DOMAIN,uploads.codesandbox.io
-DOMAIN,cdn.commento.io
 DOMAIN,cdn.concert.io
 DOMAIN,images.contentstack.io
 DOMAIN,assets.mcp.corespeed.io
@@ -2406,7 +2402,6 @@ DOMAIN,cdn.fasterthanli.me
 DOMAIN,static.fboom.me
 DOMAIN,static-cache.fboom.me
 DOMAIN,static.fbot.me
-DOMAIN,cdn.glitch.me
 DOMAIN,s4.itho.me
 DOMAIN,cf.javfree.me
 DOMAIN,cdn-msp.jmcomic.me
@@ -3435,6 +3430,7 @@ DOMAIN-SUFFIX,ipfs.kinematiks.com
 DOMAIN-SUFFIX,kinja-img.com
 DOMAIN-SUFFIX,kinja-static.com
 DOMAIN-SUFFIX,kirafile.com
+DOMAIN-SUFFIX,a.klaviyo.com
 DOMAIN-SUFFIX,kleecks-cdn.com
 DOMAIN-SUFFIX,kwcdn.com
 DOMAIN-SUFFIX,kym-cdn.com
