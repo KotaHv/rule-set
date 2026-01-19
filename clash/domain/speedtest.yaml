@@ -1,4 +1,4 @@
-# Total: 2802 rules
+# Total: 2804 rules
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'speedtest.skyplay.app'
@@ -1225,6 +1225,7 @@
 - 'speedtest-server-ash.starry.com'
 - 'speedtest-server-lax.starry.com'
 - 'speedtest-server-nyc.starry.com'
+- 'speedtest.stellarbb.com'
 - 'speedtest.stgscloud.com'
 - 'speedtest1.stgscloud.com'
 - 'speedtest.stratoone.com'
@@ -1720,6 +1721,7 @@
 - 'speedtest.willaegis.in'
 - 'sp1.wiprabroadband.in'
 - 'speedtest.worldphone.in'
+- 'dns.yesindiacommunications.in'
 - 'sp1-mum.youbroadband.in'
 - 'speedtest26.csisp.info'
 - 'speedtest1.fleetinfo.info'
