@@ -1,4 +1,4 @@
-# Total: 4226 rules
+# Total: 4231 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -6,6 +6,7 @@ DOMAIN,assets.cloudpilot.ai
 DOMAIN,limitless.cmax.ai
 DOMAIN,sdk.customfit.ai
 DOMAIN,assets.dify.ai
+DOMAIN,assets-docs.dify.ai
 DOMAIN,widget.docsbot.ai
 DOMAIN,cdn.engagement.ai
 DOMAIN,media.evolv.ai
@@ -328,6 +329,7 @@ DOMAIN,s3.us-west-000.backblazeb2.com
 DOMAIN,s3.us-west-001.backblazeb2.com
 DOMAIN,s3.us-west-002.backblazeb2.com
 DOMAIN,s3.us-west-004.backblazeb2.com
+DOMAIN,cdn1.bambulab.com
 DOMAIN,hiveplayer-static.bamgrid.com
 DOMAIN,i.bang.com
 DOMAIN,cloudfront.barilliance.com
@@ -1211,6 +1213,8 @@ DOMAIN,js.memberful.com
 DOMAIN,static.mendeley.com
 DOMAIN,acdn.mercury.com
 DOMAIN,cdn.mercury.com
+DOMAIN,mgx-backend-cdn.metadl.com
+DOMAIN,public-frontend-cos.metadl.com
 DOMAIN,meteorclient.com
 DOMAIN,cdn.mewe.com
 DOMAIN,public-img.mewe.com
@@ -3774,6 +3778,7 @@ DOMAIN-SUFFIX,replicate.delivery
 DOMAIN-SUFFIX,ant.design
 DOMAIN-SUFFIX,ipfs.1-2.dev
 DOMAIN-SUFFIX,angular.dev
+DOMAIN-SUFFIX,ingest.atoms.dev
 DOMAIN-SUFFIX,marketing.aws.dev
 DOMAIN-SUFFIX,cdn.chrome.marketplace.aws.dev
 DOMAIN-SUFFIX,widgets.marketplace.aws.dev

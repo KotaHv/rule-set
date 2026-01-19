@@ -1,4 +1,4 @@
-# Total: 6018 rules
+# Total: 6022 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -308,6 +308,7 @@ domain_set:
 - s3.us-west-001.backblazeb2.com
 - s3.us-west-004.backblazeb2.com
 - mirror.bacloud.com
+- cdn1.bambulab.com
 - cloudfront.barilliance.com
 - assets.basehub.com
 - pubg1.battleye.com
@@ -981,6 +982,8 @@ domain_set:
 - static.mendeley.com
 - acdn.mercury.com
 - cdn.mercury.com
+- mgx-backend-cdn.metadl.com
+- public-frontend-cos.metadl.com
 - meteorclient.com
 - cdn.mewe.com
 - public-img.mewe.com
@@ -1798,7 +1801,6 @@ domain_set:
 - cdn.imageengine.io
 - tracking.inflection.io
 - cdn.insightmediagroup.io
-- widget.intercom.io
 - cdn.ip2location.io
 - static.ipgeolocation.io
 - website-cdn.ipinfo.io
@@ -4686,6 +4688,7 @@ domain_suffix_set:
 - ipfs.1-2.dev
 - amp.dev
 - angular.dev
+- ingest.atoms.dev
 - aws.dev
 - dart.dev
 - dartpad.dev
@@ -4886,6 +4889,7 @@ domain_suffix_set:
 - imagekit.io
 - ipfs.infura.io
 - infura-ipfs.io
+- intercom.io
 - intercomcdn.io
 - ipfs.io
 - ipfscdn.io

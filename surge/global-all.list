@@ -1,4 +1,4 @@
-# Total: 6082 rules
+# Total: 6086 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -306,6 +306,7 @@ DOMAIN,s3.us-west-000.backblazeb2.com
 DOMAIN,s3.us-west-001.backblazeb2.com
 DOMAIN,s3.us-west-004.backblazeb2.com
 DOMAIN,mirror.bacloud.com
+DOMAIN,cdn1.bambulab.com
 DOMAIN,cloudfront.barilliance.com
 DOMAIN,assets.basehub.com
 DOMAIN,pubg1.battleye.com
@@ -979,6 +980,8 @@ DOMAIN,js.memberful.com
 DOMAIN,static.mendeley.com
 DOMAIN,acdn.mercury.com
 DOMAIN,cdn.mercury.com
+DOMAIN,mgx-backend-cdn.metadl.com
+DOMAIN,public-frontend-cos.metadl.com
 DOMAIN,meteorclient.com
 DOMAIN,cdn.mewe.com
 DOMAIN,public-img.mewe.com
@@ -1796,7 +1799,6 @@ DOMAIN,cdn.icomoon.io
 DOMAIN,cdn.imageengine.io
 DOMAIN,tracking.inflection.io
 DOMAIN,cdn.insightmediagroup.io
-DOMAIN,widget.intercom.io
 DOMAIN,cdn.ip2location.io
 DOMAIN,static.ipgeolocation.io
 DOMAIN,website-cdn.ipinfo.io
@@ -4683,6 +4685,7 @@ DOMAIN-SUFFIX,ant.design
 DOMAIN-SUFFIX,ipfs.1-2.dev
 DOMAIN-SUFFIX,amp.dev
 DOMAIN-SUFFIX,angular.dev
+DOMAIN-SUFFIX,ingest.atoms.dev
 DOMAIN-SUFFIX,aws.dev
 DOMAIN-SUFFIX,dart.dev
 DOMAIN-SUFFIX,dartpad.dev
@@ -4883,6 +4886,7 @@ DOMAIN-SUFFIX,iina.io
 DOMAIN-SUFFIX,imagekit.io
 DOMAIN-SUFFIX,ipfs.infura.io
 DOMAIN-SUFFIX,infura-ipfs.io
+DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.io
 DOMAIN-SUFFIX,ipfs.io
 DOMAIN-SUFFIX,ipfscdn.io

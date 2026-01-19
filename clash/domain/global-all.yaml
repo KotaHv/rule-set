@@ -1,4 +1,4 @@
-# Total: 5891 rules
+# Total: 5895 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -307,6 +307,7 @@
 - 's3.us-west-001.backblazeb2.com'
 - 's3.us-west-004.backblazeb2.com'
 - 'mirror.bacloud.com'
+- 'cdn1.bambulab.com'
 - 'cloudfront.barilliance.com'
 - 'assets.basehub.com'
 - 'pubg1.battleye.com'
@@ -980,6 +981,8 @@
 - 'static.mendeley.com'
 - 'acdn.mercury.com'
 - 'cdn.mercury.com'
+- 'mgx-backend-cdn.metadl.com'
+- 'public-frontend-cos.metadl.com'
 - 'meteorclient.com'
 - 'cdn.mewe.com'
 - 'public-img.mewe.com'
@@ -1797,7 +1800,6 @@
 - 'cdn.imageengine.io'
 - 'tracking.inflection.io'
 - 'cdn.insightmediagroup.io'
-- 'widget.intercom.io'
 - 'cdn.ip2location.io'
 - 'static.ipgeolocation.io'
 - 'website-cdn.ipinfo.io'
@@ -4684,6 +4686,7 @@
 - '+.ipfs.1-2.dev'
 - '+.amp.dev'
 - '+.angular.dev'
+- '+.ingest.atoms.dev'
 - '+.aws.dev'
 - '+.dart.dev'
 - '+.dartpad.dev'
@@ -4884,6 +4887,7 @@
 - '+.imagekit.io'
 - '+.ipfs.infura.io'
 - '+.infura-ipfs.io'
+- '+.intercom.io'
 - '+.intercomcdn.io'
 - '+.ipfs.io'
 - '+.ipfscdn.io'

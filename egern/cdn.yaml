@@ -1,4 +1,4 @@
-# Total: 4284 rules
+# Total: 4289 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -8,6 +8,7 @@ domain_set:
 - limitless.cmax.ai
 - sdk.customfit.ai
 - assets.dify.ai
+- assets-docs.dify.ai
 - widget.docsbot.ai
 - cdn.engagement.ai
 - media.evolv.ai
@@ -330,6 +331,7 @@ domain_set:
 - s3.us-west-001.backblazeb2.com
 - s3.us-west-002.backblazeb2.com
 - s3.us-west-004.backblazeb2.com
+- cdn1.bambulab.com
 - hiveplayer-static.bamgrid.com
 - i.bang.com
 - cloudfront.barilliance.com
@@ -1213,6 +1215,8 @@ domain_set:
 - static.mendeley.com
 - acdn.mercury.com
 - cdn.mercury.com
+- mgx-backend-cdn.metadl.com
+- public-frontend-cos.metadl.com
 - meteorclient.com
 - cdn.mewe.com
 - public-img.mewe.com
@@ -3777,6 +3781,7 @@ domain_suffix_set:
 - ant.design
 - ipfs.1-2.dev
 - angular.dev
+- ingest.atoms.dev
 - marketing.aws.dev
 - cdn.chrome.marketplace.aws.dev
 - widgets.marketplace.aws.dev
