@@ -1,4 +1,4 @@
-# Total: 19 rules
+# Total: 20 rules
 'payload':
 - 'stat.youpin.mi.com'
 - 'nom.telemetrydeck.com'
@@ -18,4 +18,5 @@
 - '+.jpush.io'
 - '+.getui.net'
 - '+.null'
+- '+.telemetry.mozilla.org'
 - '+.undefined'

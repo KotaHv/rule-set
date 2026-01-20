@@ -1,4 +1,4 @@
-# Total: 4210 rules
+# Total: 4214 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -348,6 +348,7 @@
 - 't.betterstack.com'
 - 'cdn.bfldr.com'
 - 'images.bfmtv.com'
+- 'nel.bgptools-agent-cf.com'
 - 'affportal.bhphoto.com'
 - 'cdn1.bigcommerce.com'
 - 'cdn10.bigcommerce.com'
@@ -1561,6 +1562,7 @@
 - 'rbds-static.redbull.com'
 - 'assets.redbullshop.com'
 - 'embed.reddit.com'
+- 'w3-reporting.reddit.com'
 - 'userpic.redgifs.com'
 - 'cdn.redhat.com'
 - 'cloud.redhat.com'
@@ -2829,6 +2831,7 @@
 - 'ps.w.org'
 - 's.w.org'
 - 'resources.whatwg.org'
+- 'intake-logging.wikimedia.org'
 - 'upload.wikimedia.org'
 - 'tools-static.wmflabs.org'
 - 'files.writefreely.org'
@@ -3380,6 +3383,7 @@
 - '+.howtogeekimages.com'
 - '+.js.hs-banner.com'
 - '+.hs-scripts.com'
+- '+.hsbrowserreports.com'
 - '+.js.hubspot.com'
 - '+.js-eu1.hubspot.com'
 - '+.static2cdn.hubspot.com'

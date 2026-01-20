@@ -1,4 +1,4 @@
-# Total: 19 rules
+# Total: 20 rules
 no_resolve: true
 domain_set:
 - stat.youpin.mi.com
@@ -20,4 +20,5 @@ domain_suffix_set:
 - jpush.io
 - getui.net
 - 'null'
+- telemetry.mozilla.org
 - undefined

@@ -1,4 +1,4 @@
-# Total: 6022 rules
+# Total: 6024 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -324,6 +324,7 @@ domain_set:
 - t.betterstack.com
 - cdn.bfldr.com
 - images.bfmtv.com
+- nel.bgptools-agent-cf.com
 - mirror.bharatdatacenter.com
 - affportal.bhphoto.com
 - cdn1.bigcommerce.com
@@ -3472,6 +3473,7 @@ domain_suffix_set:
 - hoyoverse.com
 - js.hs-banner.com
 - hs-scripts.com
+- hsbrowserreports.com
 - hsforms.com
 - html5rocks.com
 - js.hubspot.com

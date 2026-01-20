@@ -1,4 +1,4 @@
-# Total: 5895 rules
+# Total: 5897 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -323,6 +323,7 @@
 - 't.betterstack.com'
 - 'cdn.bfldr.com'
 - 'images.bfmtv.com'
+- 'nel.bgptools-agent-cf.com'
 - 'mirror.bharatdatacenter.com'
 - 'affportal.bhphoto.com'
 - 'cdn1.bigcommerce.com'
@@ -3470,6 +3471,7 @@
 - '+.hoyoverse.com'
 - '+.js.hs-banner.com'
 - '+.hs-scripts.com'
+- '+.hsbrowserreports.com'
 - '+.hsforms.com'
 - '+.html5rocks.com'
 - '+.js.hubspot.com'
