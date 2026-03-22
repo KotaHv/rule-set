@@ -129,6 +129,12 @@ class RuleModel(BaseModel):
         return serializable_rule
 
 
+class V2rayDomainInclude(BaseModel):
+    name: str
+    include_attrs: list[str] = []
+    exclude_attrs: list[str] = []
+
+
 class V2rayDomainResult(BaseModel):
     rules: RuleModel = RuleModel()
-    includes: list[str] = []
+    includes: list[V2rayDomainInclude] = []

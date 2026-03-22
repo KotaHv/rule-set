@@ -3,13 +3,13 @@ Models package for rule-set project.
 Contains all data models and related types.
 """
 
-from .enum import DomainType, SerializeFormat, V2rayAttrMode
+from .enum import DomainType, SerializeFormat
 from .option import (
     GeoIPOption,
     Option,
     ProcessingOption,
     SerializationOption,
-    V2rayDomainAttr,
+    V2rayDomainAttrs,
     V2rayDomainOption,
 )
 from .resource import (
@@ -22,7 +22,12 @@ from .resource import (
     SourceReference,
     V2rayDomainResource,
 )
-from .rule import RuleModel, SerializableRuleModel, V2rayDomainResult
+from .rule import (
+    RuleModel,
+    SerializableRuleModel,
+    V2rayDomainInclude,
+    V2rayDomainResult,
+)
 from .source import SourceModel
 from .type import SerializeFormats, Source
 
@@ -32,11 +37,10 @@ __all__ = [
     "Source",
     # Enums
     "SerializeFormat",
-    "V2rayAttrMode",
     "DomainType",
     # Options
     "SerializeFormats",
-    "V2rayDomainAttr",
+    "V2rayDomainAttrs",
     "SerializationOption",
     "ProcessingOption",
     "V2rayDomainOption",
@@ -54,6 +58,7 @@ __all__ = [
     # Rules
     "RuleModel",
     "V2rayDomainResult",
+    "V2rayDomainInclude",
     "SerializableRuleModel",
     # Sources
     "SourceModel",

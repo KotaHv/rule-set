@@ -23,6 +23,7 @@ from .models import (
     SerializeFormat,
     SourceModel,
     SourceReference,
+    V2rayDomainAttrs,
     V2rayDomainOption,
     V2rayDomainResource,
     V2rayDomainResult,
@@ -83,10 +84,12 @@ def process_sources(sources: list[SourceModel]):
             source.include
             if source.include
             else filter(
-                lambda x: x not in source.exclude
-                and not (
-                    source.option.geo_ip.country_code is None
-                    and x == SerializeFormat.GeoIP
+                lambda x: (
+                    x not in source.exclude
+                    and not (
+                        source.option.geo_ip.country_code is None
+                        and x == SerializeFormat.GeoIP
+                    )
                 ),
                 client_serializers_writers.keys(),
             )
@@ -116,12 +119,12 @@ def process_source(source: SourceModel) -> RuleModel:
     return aggregated_rules
 
 
-def process_resource(resource: BaseResource, source_option: Option) -> RuleModel:
+def process_resource(root_resource: BaseResource, source_option: Option) -> RuleModel:
     aggregated_rules = RuleModel()
-    paths = [resource.source]
+    resources = [root_resource]
 
-    for path in paths:
-        cache_key = str(path)
+    for resource in resources:
+        cache_key = str(resource.source)
         if isinstance(resource, V2rayDomainResource):
             cache_key += f"::attrs={resource.option.attrs}"
 
@@ -132,9 +135,9 @@ def process_resource(resource: BaseResource, source_option: Option) -> RuleModel
                 parsed_rules = RuleModel.model_validate_json(cached_result)
         else:
             if isinstance(resource, MaxMindDBResource):
-                data = fetcher.download_file(path)
+                data = fetcher.download_file(resource.source)
             else:
-                data = fetcher.get_content(path)
+                data = fetcher.get_content(resource.source)
             if isinstance(resource, V2rayDomainResource):
                 parsed_rules = parse_data(data, resource, resource.option)
             else:
@@ -143,7 +146,20 @@ def process_resource(resource: BaseResource, source_option: Option) -> RuleModel
 
         if isinstance(parsed_rules, V2rayDomainResult):
             for include in parsed_rules.includes:
-                paths.append(build_v2ray_include_url(path, include))
+                new_resource = V2rayDomainResource(
+                    source=build_v2ray_include_url(resource.source, include.name),
+                    option=V2rayDomainOption(
+                        attrs=V2rayDomainAttrs(
+                            include_attrs=include.include_attrs
+                            + resource.option.attrs.include_attrs,
+                            exclude_attrs=include.exclude_attrs
+                            + resource.option.attrs.exclude_attrs,
+                        ),
+                        exclude_includes=resource.option.exclude_includes,
+                    ),
+                )
+
+                resources.append(new_resource)
             parsed_rules = parsed_rules.rules
 
         aggregated_rules.merge_with(parsed_rules)

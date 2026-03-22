@@ -8,7 +8,7 @@ from rule_set.models import (
     SerializationOption,
     SourceModel,
     SourceReference,
-    V2rayDomainAttr,
+    V2rayDomainAttrs,
     V2rayDomainOption,
     V2rayDomainResource,
 )
@@ -38,7 +38,7 @@ sources = [
                 exclude_rule_types=["ip_trie", "ip_trie6", "ip_asn"],
             ),
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttr.EXCLUDE_ATTRS("ads"),
+                attrs=V2rayDomainAttrs(exclude_attrs=["ads"]),
             ),
         ),
     ),
@@ -182,7 +182,7 @@ sources = [
         name="steam/steam-cn",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttr.ATTRS("cn"),
+                attrs=V2rayDomainAttrs(include_attrs=["cn"]),
             ),
         ),
     ),
@@ -195,7 +195,7 @@ sources = [
         name="steam/steam",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttr.NO_ATTR(),
+                attrs=V2rayDomainAttrs(exclude_attrs=["cn"]),
             ),
         ),
     ),
@@ -208,7 +208,7 @@ sources = [
         name="game/game-download-cn",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttr.ATTRS("cn"),
+                attrs=V2rayDomainAttrs(include_attrs=["cn"]),
             ),
         ),
     ),
@@ -222,7 +222,7 @@ sources = [
         name="game/game-download",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttr.NO_ATTR(),
+                attrs=V2rayDomainAttrs(exclude_attrs=["cn"]),
             ),
         ),
     ),
@@ -237,7 +237,7 @@ sources = [
         name="game/game-cn",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["!cn", "ads"]),
+                attrs=V2rayDomainAttrs(exclude_attrs=["!cn", "ads"]),
                 exclude_includes=["4399", "cowlevel", "tgbus", "vrzwk"],
             ),
         ),
@@ -252,7 +252,7 @@ sources = [
         name="game/game",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
+                attrs=V2rayDomainAttrs(exclude_attrs=["cn", "ads"]),
             ),
         ),
     ),
@@ -285,7 +285,7 @@ sources = [
         name="direct",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttr.ATTRS("cn"),
+                attrs=V2rayDomainAttrs(include_attrs=["cn"]),
             ),
         ),
     ),
@@ -298,7 +298,7 @@ sources = [
         name="dev",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttr.EXCLUDE_ATTRS(["cn", "ads"]),
+                attrs=V2rayDomainAttrs(exclude_attrs=["cn", "ads"]),
             ),
         ),
     ),
