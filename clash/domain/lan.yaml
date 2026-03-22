@@ -1,4 +1,4 @@
-# Total: 51 rules
+# Total: 49 rules
 'payload':
 - 'instant.arubanetworks.com'
 - 'setmeup.arubanetworks.com'
@@ -39,11 +39,9 @@
 - '+.ui.direct'
 - '+.home'
 - '+.internal'
-- '+.127.0.0.1.sslip.io'
 - '+.lan'
 - '+.local'
 - '+.localdomain'
-- '+.127.atlas.skk.moe'
 - '+.routerlogin.net'
 - '+.tplinkap.net'
 - '+.tplinkmodem.net'

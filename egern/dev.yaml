@@ -1,4 +1,4 @@
-# Total: 522 rules
+# Total: 528 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -25,6 +25,7 @@ domain_set:
 - firebaseremoteconfig.googleapis.com
 - android.googlesource.com
 - developer.microsoft.com
+- packages.microsoft.com
 - download.visualstudio.microsoft.com
 - amp.akamaized.net
 - p-events-delivery.akamaized.net
@@ -54,8 +55,10 @@ domain_suffix_set:
 - stackoverflow.blog
 - buck.build
 - fasttext.cc
+- tilda.cc
 - fastlane.ci
 - anaconda.cloud
+- jetbrains.cloud
 - youtrack.cloud
 - fury.co
 - stackoverflow.co
@@ -88,7 +91,6 @@ domain_suffix_set:
 - braveux.com
 - buckbuild.com
 - canonical.com
-- cdnjs.com
 - codethemicrobit.com
 - cygwin.com
 - deno.com
@@ -146,7 +148,6 @@ domain_suffix_set:
 - jquery.com
 - jquerymobile.com
 - jqueryui.com
-- jsdelivr.com
 - launchpadlibrarian.com
 - linuxmint.com
 - macruby.com
@@ -207,6 +208,8 @@ domain_suffix_set:
 - termux.com
 - thegithubshop.com
 - thesffblog.com
+- tildaapi.com
+- tildacdn.com
 - timelinestoryteller.com
 - topcoder.com
 - ubuntu.com
@@ -282,6 +285,7 @@ domain_suffix_set:
 - nomadproject.io
 - oneapi.io
 - opencas.io
+- packagecloud.io
 - packer.io
 - playerjs.io
 - pypa.io
@@ -324,7 +328,6 @@ domain_suffix_set:
 - intellinuxgraphics.net
 - java.net
 - jetbrains.net
-- jsdelivr.net
 - launchpad.net
 - launchpadcontent.net
 - launchpadlibrarian.net
@@ -375,6 +378,7 @@ domain_suffix_set:
 - componentkit.org
 - cpan.org
 - cups.org
+- cve.org
 - cython.org
 - dartlang.org
 - debian.org
@@ -504,6 +508,7 @@ domain_suffix_set:
 - wireshark.org
 - wpewebkit.org
 - x.org
+- ziglang.org
 - zsh.org
 - codeberg.page
 - modperl.pl
@@ -511,7 +516,7 @@ domain_suffix_set:
 - hexdocs.pm
 - docs.rs
 - rustup.rs
-- esm.run
+- tilda.ru
 - brew.sh
 - scoop.sh
 - jetbrains.space
@@ -522,6 +527,7 @@ domain_suffix_set:
 - visualstudio.co.uk
 - greenend.org.uk
 - framer.website
+- tilda.ws
 domain_regex_set:
 - .+\.dkr\.ecr\.[^\.]+\.amazonaws\.com$
 - ^github-production-release-asset-[0-9a-zA-Z]{6}\.s3\.amazonaws\.com$

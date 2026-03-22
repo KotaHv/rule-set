@@ -1,4 +1,4 @@
-# Total: 1887 rules
+# Total: 1911 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -8,6 +8,7 @@ domain_set:
 - mirrors.teamcloud.am
 - fdisk.5play.app
 - updates.istatmenus.app
+- releases.landrop.app
 - dl.motrix.app
 - meta.omaps.app
 - cdn.organicmaps.app
@@ -142,6 +143,7 @@ domain_set:
 - ir.ubuntu.sindad.cloud
 - mirror.thunderhosting.cloud
 - mirror.unimagdalena.edu.co
+- cas-bridge.xethub.hf.co
 - mirrors.atlas.net.co
 - builds.paranoidandroid.co
 - mirrors.pardisco.co
@@ -163,6 +165,7 @@ domain_set:
 - download.anydesk.com
 - www2.aomeisoftware.com
 - downloadr2.apkmirror.com
+- boot.arcboxcdn.com
 - mirrors.arpnetworks.com
 - gnu.askapache.com
 - dlcdnets.asus.com
@@ -271,6 +274,7 @@ domain_set:
 - mirror.ixirhost.com
 - download.jetbrains.com
 - download-cdn.jetbrains.com
+- downloads.marketplace.jetbrains.com
 - cdn.kagi.com
 - mirror.kakao.com
 - mirror.as.kamatera.com
@@ -293,6 +297,7 @@ domain_set:
 - mirror.linkdata.com
 - packages.linuxmint.com
 - mirrors.liquidweb.com
+- download01.logi.com
 - mirror.lyrahosting.com
 - mirror.ams.macarne.com
 - downloads.majestic.com
@@ -303,6 +308,7 @@ domain_set:
 - amupdatedl4.microsoft.com
 - amupdatedl5.microsoft.com
 - edgeupdates.microsoft.com
+- mcr.microsoft.com
 - msdl.microsoft.com
 - officecdnmac.microsoft.com
 - packages.microsoft.com
@@ -360,6 +366,7 @@ domain_set:
 - steam.ru.qtlglb.com
 - mirrors.rackhosting.com
 - mirror.raiolanetworks.com
+- archive.raspberrypi.com
 - downloads.raspberrypi.com
 - ubuntu.rootlicense.com
 - mirrors.sarata.com
@@ -389,12 +396,15 @@ domain_set:
 - mirror.tngnet.com
 - download.todesktop.com
 - ubuntu.tuxuri.com
+- typeless-static.com
 - security.ubuntu.com
 - dl.ui.com
 - mirror.ukrnames.com
 - mirror.cov.ukservers.com
+- download.umbrel.com
 - mirrors.usinternet.com
 - mirror.veesp.com
+- cdn.vemetric.com
 - mirror.verinomi.com
 - mirror.virtury.com
 - bigfiles.virustotal.com
@@ -695,11 +705,13 @@ domain_set:
 - gimp.ip-connect.info
 - ubuntu.lafibre.info
 - ubuntu.servering.info
+- cdn.affonso.io
 - download.ameliorated.io
 - registry.bower.io
 - dl.cloudsmith.io
 - docker.cloudsmith.io
 - update.cyberduck.io
+- version.cyberduck.io
 - cdn.cypress.io
 - download.cypress.io
 - mirror.datamossa.io
@@ -715,6 +727,7 @@ domain_set:
 - mirror.katapult.io
 - u.keka.io
 - ubuntu.letscloud.io
+- dl.min.io
 - pkgs.netbird.io
 - repo.nextdns.io
 - dl.nwjs.io
@@ -722,6 +735,7 @@ domain_set:
 - go.opentelemetry.io
 - packagecloud.io
 - assets-production.packagecloud.io
+- downloads.portainer.io
 - download.projectbluefin.io
 - dl.pstmn.io
 - mirror.realcompute.io
@@ -887,6 +901,7 @@ domain_set:
 - mirror.macomnet.net
 - mirror.mangohost.net
 - mirror.marcusn.net
+- mx-app-blob-prod.maxon.net
 - b2.mcarchive.net
 - apache.melbourneitmirror.net
 - mirror.metrocast.net
@@ -1068,9 +1083,11 @@ domain_set:
 - ftp.us.debian.org
 - ftp.debianclub.org
 - repo.debiancn.org
+- openvsx.eclipsecontent.org
 - apache.cs.utah.edu.org
 - artifacts.electronjs.org
 - ctan.gutenberg.eu.org
+- cdn.evolution-x.org
 - repos.del.extreme-ix.org
 - repo.extreme-ix.org
 - f-droid.org
@@ -1131,10 +1148,13 @@ domain_set:
 - aus5.mozilla.org
 - download.mozilla.org
 - d.myani.org
+- d2.myani.org
 - nobara-images.nobaraproject.org
 - lzip.nongnu.org
 - registry.npmjs.org
 - cdn.oneget.org
+- s1.animeko.openani.org
+- s2.animeko.openani.org
 - ciscobinary.openh264.org
 - cdn.opensuse.org
 - download.opensuse.org
@@ -1299,6 +1319,7 @@ domain_set:
 - ubuntu.cs.nctu.edu.tw
 - debian.csie.ntu.edu.tw
 - debian.cs.nycu.edu.tw
+- kali.cs.nycu.edu.tw
 - apache.stu.edu.tw
 - cpan.stu.edu.tw
 - ftp.stu.edu.tw
@@ -1353,6 +1374,7 @@ domain_set:
 - ghgo.xyz
 - mirror.gofoss.xyz
 - boot.netboot.xyz
+- cr.yandex
 - ftp.sun.ac.za
 - ftp.leg.uct.ac.za
 - mirror.ufs.ac.za
@@ -1650,6 +1672,7 @@ domain_suffix_set:
 - s3-accesspoint.dualstack.us-gov-east-1.amazonaws.com
 - s3-accesspoint-fips.dualstack.us-gov-east-1.amazonaws.com
 - s3-fips.dualstack.us-gov-east-1.amazonaws.com
+- s3-website.dualstack.us-gov-east-1.amazonaws.com
 - s3.us-gov-east-1.amazonaws.com
 - s3-accesspoint.us-gov-east-1.amazonaws.com
 - s3-accesspoint-fips.us-gov-east-1.amazonaws.com
@@ -1660,6 +1683,7 @@ domain_suffix_set:
 - s3-accesspoint.dualstack.us-gov-west-1.amazonaws.com
 - s3-accesspoint-fips.dualstack.us-gov-west-1.amazonaws.com
 - s3-fips.dualstack.us-gov-west-1.amazonaws.com
+- s3-website.dualstack.us-gov-west-1.amazonaws.com
 - s3.us-gov-west-1.amazonaws.com
 - s3-accesspoint.us-gov-west-1.amazonaws.com
 - s3-accesspoint-fips.us-gov-west-1.amazonaws.com
@@ -1832,7 +1856,6 @@ domain_suffix_set:
 - mirror.shastacoe.net
 - dl.sourceforge.net
 - mirrors.spacedump.net
-- steamserver.net
 - mirrors.tds.net
 - mirror.tefexia.net
 - mirrors.uk2.net
@@ -1858,6 +1881,7 @@ domain_suffix_set:
 - copr.fedorainfracloud.org
 - freemirror.org
 - getcomposer.org
+- files.ghostty.org
 - mirrors.ionfish.org
 - mirrorservice.org
 - mirrors.tds.net.org

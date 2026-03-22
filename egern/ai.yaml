@@ -1,4 +1,4 @@
-# Total: 48 rules
+# Total: 49 rules
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
@@ -51,3 +51,5 @@ domain_suffix_set:
 domain_keyword_set:
 - alkalimakersuite-pa.clients6.google.com
 - openai
+url_regex_set:
+- https://www\.google\.com/.*continue=https://gemini\.google\.com.+

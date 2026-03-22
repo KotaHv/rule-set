@@ -1,4 +1,4 @@
-# Total: 165 rules
+# Total: 166 rules
 payload:
 - DOMAIN-WILDCARD,analytics-*.aasaam.com
 - DOMAIN-WILDCARD,pixel*.adswizz.com
@@ -112,6 +112,7 @@ payload:
 - DOMAIN-KEYWORD,mighbest
 - DOMAIN-KEYWORD,mon.zijieapi.com
 - DOMAIN-KEYWORD,nimiqpool
+- DOMAIN-KEYWORD,packetsdk
 - DOMAIN-KEYWORD,pangolin-sdk-toutiao
 - DOMAIN-KEYWORD,plausible.
 - DOMAIN-KEYWORD,sanalytics.

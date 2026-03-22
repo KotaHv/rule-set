@@ -1,4 +1,4 @@
-# Total: 20 rules
+# Total: 25 rules
 no_resolve: true
 domain_set:
 - stat.youpin.mi.com
@@ -11,14 +11,20 @@ domain_suffix_set:
 - easytomessage.com
 - gepush.com
 - getui.com
+- data.grammarly.com
 - tracking.intl.miui.com
 - tracking.miui.com
 - beacon.qq.com
 - trace.qq.com
 - slackb.com
+- f-log-assistant.grammarly.io
 - f-log-extension.grammarly.io
+- femetrics.grammarly.io
 - jpush.io
+- femetrics.qagr.io
 - getui.net
 - 'null'
 - telemetry.mozilla.org
 - undefined
+domain_wildcard_set:
+- f-log*.grammarly.io

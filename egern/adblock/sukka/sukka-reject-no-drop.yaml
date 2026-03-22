@@ -1,8 +1,10 @@
-# Total: 38 rules
+# Total: 42 rules
 no_resolve: true
 domain_set:
 - stun.douyucdn.cn
 - stun1.douyucdn.cn
+- upos-sz-302kodo.bilivideo.com
+- upos-sz-302ppio.bilivideo.com
 - livewebbs2pcdn.msstatic.com
 - qn-cdnfile1pcdn.msstatic.com
 domain_suffix_set:
@@ -11,6 +13,7 @@ domain_suffix_set:
 - cdnnodedns.cn
 - p2perrorlog.douyucdn.cn
 - p2plog.douyucdn.cn
+- gjfzpt.cn
 - p2p.huya.com
 - ietheivaicai.com
 - kuiniuca.com
@@ -29,6 +32,7 @@ domain_suffix_set:
 - xycdn.com
 - yfcloud.com
 - pcdn.yximgs.com
+- bsccdn.net
 - yfcdn.net
 - yfp2p.net
 domain_wildcard_set:

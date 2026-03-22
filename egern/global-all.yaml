@@ -1,4 +1,4 @@
-# Total: 6024 rules
+# Total: 6284 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -17,6 +17,8 @@ domain_set:
 - do.featurebase.app
 - chat-assets.front.app
 - cdn.giftcardpro.app
+- widgets.goaffpro.app
+- releases.landrop.app
 - cdn.langshop.app
 - pic.macked.app
 - cdn.matterhorn.app
@@ -85,6 +87,8 @@ domain_set:
 - ftp.csuc.cat
 - debian.grn.cat
 - ubuntu.grn.cat
+- geoserveis.icgc.cat
+- tilemaps.icgc.cat
 - oss.moe.cat
 - cdn.arduino.cc
 - content.arduino.cc
@@ -130,6 +134,7 @@ domain_set:
 - mirrors.ubuntu.dimit.cloud
 - fscdn.eppo.cloud
 - patterns.hiive.cloud
+- tiles.immich.cloud
 - mirror.improve.nordlo.cloud
 - cdn-builds.paw.cloud
 - cdn-static.paw.cloud
@@ -144,9 +149,11 @@ domain_set:
 - webcdn.17app.co
 - cdn.chord.co
 - cdn.cloudcraft.co
+- js.convertflow.co
 - load.csell.co
 - cdn.decrypt.co
 - img.decrypt.co
+- cdn.delve.co
 - assets.dub.co
 - mirror.unimagdalena.edu.co
 - previews.fleek.co
@@ -158,6 +165,7 @@ domain_set:
 - imageproxy.ifunny.co
 - img.ifunny.co
 - static.ifunny.co
+- cdn.inviter.co
 - cdn.ipregistry.co
 - assets.jolipage.co
 - cdn.jolipage.co
@@ -190,6 +198,7 @@ domain_set:
 - bundle.5gtb.com
 - images.991.com
 - bundle.9gtb.com
+- content.9gtb.com
 - uim.9uu22.com
 - assets-cdn.abcnews.com
 - keyframe-cdn.abcnews.com
@@ -205,6 +214,7 @@ domain_set:
 - assets.fonts.adobe.com
 - wwwimages2.adobe.com
 - assets.adobedtm.com
+- map.adsbexchange.com
 - mirrors.advancedhosters.com
 - cdn1.affirm.com
 - static.afterpay.com
@@ -230,23 +240,31 @@ domain_set:
 - time.akamai.com
 - mirror.alastyr.com
 - mirrors.aliyun.com
+- cdn.allkeyshop.com
+- widget.allkeyshop.com
 - fastly-gce.allmovie.com
 - fastly-s3.allmovie.com
 - oaos-resources.allstate.com
 - resources.allstate.com
 - mirror.nl.altushost.com
 - cdn.amcharts.com
+- cdn.amgreatness.com
+- static.ampcode.com
 - images.anandtech.com
 - mirror.anigil.com
 - c.animaapp.com
 - static.animaapp.com
+- cdn.animenewsnetwork.com
 - pa1.aninoapps.com
 - pm1.aninoapps.com
 - static.aninoapps.com
 - wa1.aninoapps.com
+- data3.answerbase.com
 - cdn.answeroverflow.com
 - a-cdn.anthropic.com
+- assets-proxy.anthropic.com
 - s-cdn.anthropic.com
+- www-cdn.anthropic.com
 - download.anydesk.com
 - www2.aomeisoftware.com
 - g-static.ap4r.com
@@ -262,7 +280,6 @@ domain_set:
 - np-edge.itunes.apple.com
 - play-edge.itunes.apple.com
 - uts-api.itunes.apple.com
-- lcdn-locator.apple.com
 - news-assets.apple.com
 - ocvideo.apple.com
 - pba.apple.com
@@ -274,6 +291,9 @@ domain_set:
 - photos5.appleinsider.com
 - cdn.apponic.com
 - img.apponic.com
+- boot.arcboxcdn.com
+- tiledbasemaps.arcgis.com
+- tiles.arcgis.com
 - server.arcgisonline.com
 - images.arigatotravel.com
 - github-api.arkoselabs.com
@@ -308,12 +328,12 @@ domain_set:
 - s3.us-west-001.backblazeb2.com
 - s3.us-west-004.backblazeb2.com
 - mirror.bacloud.com
-- cdn1.bambulab.com
 - cloudfront.barilliance.com
 - assets.basehub.com
 - pubg1.battleye.com
 - apps.bazaarvoice.com
 - www.bbthat.com
+- schema-cf.bc0a.com
 - static.beebom.com
 - media.beehiiv.com
 - download.beeper.com
@@ -344,6 +364,7 @@ domain_set:
 - upos-sz-mirrorcosbstar1.bilivideo.com
 - mirrors.binaryracks.com
 - static.news.bitcoin.com
+- cdn.bitmovin.com
 - assets.bitwarden.com
 - mirror.biznetgio.com
 - organizer.bizzabo.com
@@ -384,6 +405,8 @@ domain_set:
 - files.buildwithfern.com
 - media.bundlehunt.com
 - bundlephobia.com
+- mms.businesswire.com
+- cdn.buttercms.com
 - static.buydomains.com
 - cdn.buymeacoffee.com
 - cdnjs.buymeacoffee.com
@@ -406,6 +429,10 @@ domain_set:
 - reviews-badge.capterra.com
 - images.carfax.com
 - static.carfax.com
+- cdn.casetify.com
+- cdn-image01.casetify.com
+- cdn-image02.casetify.com
+- cdn-stamplib.casetify.com
 - events.ld.catamorphic.com
 - public-pages.cbinsights.com
 - sequoia.cdn-apple.com
@@ -420,6 +447,9 @@ domain_set:
 - webobjects2.cdw.com
 - assets-s3-us-east-1.ceros.com
 - media-s3-us-east-1.ceros.com
+- assets.cgtrader.com
+- img-new.cgtrader.com
+- media.cgtrader.com
 - cdn.changelog.com
 - js.chargebee.com
 - js1.chargebee.com
@@ -478,6 +508,7 @@ domain_set:
 - ocsp.comodoca.com
 - cdn.comparitech.com
 - mirrors.concertpass.com
+- conf.config-security.com
 - cdn.configcat.com
 - cds.connatix.com
 - img.connatix.com
@@ -489,6 +520,7 @@ domain_set:
 - ui.contentstack.com
 - assets.controld.com
 - conversiongorilla.com
+- cdn.convertbox.com
 - assets.convertkit.com
 - f.convertkit.com
 - media.convertkit.com
@@ -498,6 +530,7 @@ domain_set:
 - pubmirrors.dal.corespace.com
 - cdn.corso.com
 - static-landing.probiplacehold.cot.com
+- storage.courtlistener.com
 - static.cloud.coveo.com
 - sf-coze-web-cdn.coze.com
 - prod-api.crackle.com
@@ -515,6 +548,7 @@ domain_set:
 - cdn1.dan.com
 - cdn2.dan.com
 - cdn3.dan.com
+- static.websites.data-crypt.com
 - cdn.datacamp.com
 - media.datacenterdynamics.com
 - mirror.datapacket.com
@@ -557,6 +591,8 @@ domain_set:
 - mirror.downloadvn.com
 - cdn.drata.com
 - images.drata.com
+- assets.driffle.com
+- static.driffle.com
 - tiles.meteoguard.dtn.com
 - s3.duellinksmeta.com
 - cdn.dynamicyield.com
@@ -650,6 +686,7 @@ domain_set:
 - themes.fourthwall.com
 - static.foxbusiness.com
 - static-cf.foxdata.com
+- cdn.foxycart.com
 - badges.frapsoft.com
 - cdn.freebiesupply.com
 - images.freeimages.com
@@ -682,6 +719,7 @@ domain_set:
 - r2.gear4music.com
 - static-r2.gear4music.com
 - i.geekflare.com
+- assets.gemcommerce.com
 - maps.geoapify.com
 - geoip-js.com
 - connect.getflowbox.com
@@ -716,6 +754,7 @@ domain_set:
 - static.gmgard.com
 - cdn.registerdisney.go.com
 - s3.go2778.com
+- static.goaffpro.com
 - assets.goat.com
 - cms-cdn.goat.com
 - image.goat.com
@@ -729,6 +768,8 @@ domain_set:
 - media-hls.growcdnssedge.com
 - snippet.growsumo.com
 - sig.grumpybumpers.com
+- event-assets.gsma.com
+- fa.gsma.com
 - fdn.gsmarena.com
 - fdn2.gsmarena.com
 - image.gyutto.com
@@ -769,6 +810,7 @@ domain_set:
 - cdn5.hextom.com
 - themes.hibootstrap.com
 - code.highcharts.com
+- cdn.himetrica.com
 - cdn.hinative.com
 - cdn.hongkongcard.com
 - mirror.hoobly.com
@@ -797,6 +839,7 @@ domain_set:
 - static-00.iconduck.com
 - bst.icons8.com
 - img.icons8.com
+- cdni.iconscout.com
 - cdn1.identitymind.com
 - sm.ign.com
 - mirror.debian.ikoula.com
@@ -890,13 +933,21 @@ domain_set:
 - static.klaviyo.com
 - static-app.klaviyo.com
 - static-forms.klaviyo.com
+- images.klipfolio.com
 - brand-sdk.kmsmep.com
 - info.knak.com
 - public.komiic.com
+- tiles-a.koordinates.com
 - media.ra.kroll.com
 - searchanise-ef84.kxcdn.com
 - wandi-6402.kxcdn.com
 - wikiwandv2-19431.kxcdn.com
+- lf16-larkversion.larksuitecdn.com
+- p16-hera-sg.larksuitecdn.com
+- p16-hera-va.larksuitecdn.com
+- sf-ibf-sg.larksuitecdn.com
+- sf-ibf-va.larksuitecdn.com
+- sf19-scmcdn.larksuitecdn.com
 - mirrors.layeronline.com
 - cdn.leandata.com
 - cdn-c.leavemealone.com
@@ -924,6 +975,8 @@ domain_set:
 - v2.listenloop.com
 - aurora-customization-usw2.lithium.com
 - cdn.livechatinc.com
+- download01.logi.com
+- resource.logitech.com
 - app-cdn.logo.com
 - img.logokit.com
 - cdn.loom.com
@@ -968,6 +1021,11 @@ domain_set:
 - loader.mantis-intelligence.com
 - img.manyse.com
 - test.manyse.com
+- tiles2.mapiful.com
+- tiles.mapilion.com
+- tiles.mapillary.com
+- tiles.mapterhorn.com
+- tile.mapzen.com
 - clickup.marketlinc.com
 - lift-ai-js.marketlinc.com
 - c.marsflag.com
@@ -1029,16 +1087,20 @@ domain_set:
 - ubuntu.mobinhost.com
 - public.mocortech.com
 - static.mocortech.com
+- play.modujx11.com
 - images.moegoat.com
 - static.moegoat.com
 - momentjs.com
 - assets.monei.com
+- antiqua-ux-cdn.monotype.com
 - pp-static.monotype.com
+- static.monotype.com
 - cdn-public-apis.moonlock.com
 - static.moonpay.com
 - static-main.moovit.com
 - images.moovitapp.com
 - bbc.mp-pxcdn.com
+- jssdkcdns.mparticle.com
 - img.mresou.com
 - assets.msn.com
 - ntp.msn.com
@@ -1090,6 +1152,7 @@ domain_set:
 - mta.newfold.com
 - stbff.newfold.com
 - static.newmobilelife.com
+- static.newsbreak.com
 - cdn.nfcube.com
 - instafeed.nfcube.com
 - mirror.nforce.com
@@ -1099,6 +1162,8 @@ domain_set:
 - cms-assets.nodecraft.com
 - cdn.nodeimage.com
 - mirror.nodesdirect.com
+- assets.northflank.com
+- ph.northflank.com
 - cdn.northropgrumman.com
 - connect.nosto.com
 - images.now-tv.com
@@ -1129,6 +1194,7 @@ domain_set:
 - ca1.onlyhentaistuff.com
 - fs2.onlyhentaistuff.com
 - download.onlyoffice.com
+- static-oforms.onlyoffice.com
 - static-www.onlyoffice.com
 - assets.ontrack.com
 - hbolb.onwardsmg.com
@@ -1154,6 +1220,7 @@ domain_set:
 - media.owcnow.com
 - p-smith.com
 - cdn.paddle.com
+- cdn.pagerduty.com
 - apps.paidy.com
 - cdn.paidy.com
 - cpan.pair.com
@@ -1190,6 +1257,11 @@ domain_set:
 - cdn.pixabay.com
 - assets.pixlee.com
 - cdn.plaid.com
+- tiles.planet.com
+- tiles0.planet.com
+- tiles1.planet.com
+- tiles2.planet.com
+- tiles3.planet.com
 - cdn.playwire.com
 - cdn1.plesk.com
 - images.pling.com
@@ -1205,6 +1277,7 @@ domain_set:
 - static.polldaddy.com
 - assets.positional-bucket.com
 - mirror.positive-internet.com
+- app-static-prod.posthog.com
 - app-static.eu.posthog.com
 - eu-assets.i.posthog.com
 - us-assets.i.posthog.com
@@ -1217,11 +1290,13 @@ domain_set:
 - api.privacy.com
 - cdn.privacy.com
 - cdn.privacy-mgmt.com
+- mma.prnewswire.com
 - image.prntscr.com
 - st.prntscr.com
 - apps.profitihub.com
 - cdn.promotekit.com
 - download.proxyman.com
+- plugins.pubtailer.com
 - images.purevpn-tools.com
 - js.puter.com
 - api.pwnedpasswords.com
@@ -1237,6 +1312,7 @@ domain_set:
 - s2.qwant.com
 - mirrors.rackhosting.com
 - devicons.railway.com
+- tilecache.rainviewer.com
 - mirror.raiolanetworks.com
 - static.rakuten.com
 - cacerts.rapidssl.com
@@ -1261,6 +1337,7 @@ domain_set:
 - img.riskified.com
 - media-cdn.rollcall.com
 - ubuntu.rootlicense.com
+- cdn.roseperl.com
 - apps-static.route4me.com
 - cdn.royaleapi.com
 - micro.rubiconproject.com
@@ -1302,6 +1379,7 @@ domain_set:
 - static.seel.com
 - cdn.segment.com
 - assets.sendinblue.com
+- static-www.sendsafely.com
 - thumbs2.sendvid.com
 - videos2-h.sendvid.com
 - cdn.seondf.com
@@ -1338,11 +1416,13 @@ domain_set:
 - cdn.activity.smart-bdash.com
 - webappassets.smartsheet.com
 - sdk.snapkit.com
+- cdn.snaptravel.com
 - dl.snipaste.com
 - download.snipaste.com
 - stats.snipaste.com
 - updater.snipaste.com
 - cdn-public.sociabble.com
+- images.socialblade.com
 - img0.socialshopwave.com
 - img1.socialshopwave.com
 - img2.socialshopwave.com
@@ -1397,6 +1477,7 @@ domain_set:
 - cdn-service.jp.sumologic.com
 - cdn.sunofbeaches.com
 - frontend-assets.supabase.com
+- cdn.super.com
 - cdn.svgator.com
 - assets.swoogo.com
 - cdn.syftdata.com
@@ -1431,16 +1512,16 @@ domain_set:
 - ci.testling.com
 - assets.the-independent.com
 - image.thefly.com
+- files.thehackernews.com
 - media.theresanaiforthat.com
 - cdn.thewirecutter.com
 - static.threatlocker.com
 - thumbsnap.com
+- tile.thunderforest.com
 - cdn.tinypass.com
 - mirror.tngnet.com
 - resource.tnlmediagene.com
 - download.todesktop.com
-- assets.toiimg.com
-- static.toiimg.com
 - hawk.tomsguide.com
 - top1cdn.top1health.com
 - static.touhoudb.com
@@ -1473,6 +1554,7 @@ domain_set:
 - public-assets.typeform.com
 - renderer-assets.typeform.com
 - use.typekit.com
+- typeless-static.com
 - cloud.typenetwork.com
 - cms.typenetwork.com
 - fastly-cloud.typenetwork.com
@@ -1484,6 +1566,7 @@ domain_set:
 - prd-www-cdn.ubnt.com
 - mirror.ukrnames.com
 - mirror.cov.ukservers.com
+- download.umbrel.com
 - assets.unifi-ai.com
 - demo.unified-streaming.com
 - tag.unifyintent.com
@@ -1497,6 +1580,7 @@ domain_set:
 - asset-cdn.uscardforum.com
 - www-cdn.uscardforum.com
 - backinstock.useamp.com
+- usehooks-ts.com
 - apichatwidget.usepylon.com
 - chatwidgetmetrics-proxy.usepylon.com
 - widget.usepylon.com
@@ -1515,6 +1599,7 @@ domain_set:
 - static.vanta.com
 - vectorified.com
 - mirror.veesp.com
+- cdn.vemetric.com
 - cdn.verifypass.com
 - mirror.verinomi.com
 - crl.verisign.com
@@ -1537,6 +1622,7 @@ domain_set:
 - static.global.visioncritical.com
 - static.na1.visioncritical.com
 - live.visually-io.com
+- dev.visualwebsiteoptimizer.com
 - useruploads.visualwebsiteoptimizer.com
 - cdn.vnoc.com
 - assets.vogue.com
@@ -1582,6 +1668,7 @@ domain_set:
 - embed-ssl.wistia.com
 - fast.wistia.com
 - bundler.wix-code.com
+- static-documents.wizards.com
 - cdn.workos.com
 - frontend-apps.workos.com
 - wctour-images.worldchess.com
@@ -1593,6 +1680,9 @@ domain_set:
 - downloads.x-wrt.com
 - mirror.xeonbd.com
 - img.xhacgn.com
+- i1.xiaoyakankan.com
+- i2.xiaoyakankan.com
+- i3.xiaoyakankan.com
 - mirror.xmission.com
 - mirrors.xmission.com
 - mirrors.xmissions.com
@@ -1624,9 +1714,11 @@ domain_set:
 - static.zaobao.com
 - cdn.zapier.com
 - fonts.zapier.com
+- nextplore.vercel.zapier-deployment.com
 - cdn.zeabur.com
 - icons.zeabur.com
 - service-icons.zeabur.com
+- assets.zephr.com
 - assets.zerohedge.com
 - cdn.zhujiwiki.com
 - cdn.zigpoll.com
@@ -1659,8 +1751,10 @@ domain_set:
 - mirror.digitaloceans.dev
 - plugins.dprint.dev
 - fiddle.fastly.dev
+- storybooks.fluentui.dev
 - dl.getaurora.dev
 - ubuntu.gjolly.dev
+- lucide.dev
 - stats.setapp.macpaw.dev
 - drive.massgrave.dev
 - ah-cdn.merge.dev
@@ -1687,6 +1781,7 @@ domain_set:
 - icons.llamao.fi
 - debian.web.trex.fi
 - ubuntu.web.trex.fi
+- tomshardware-data.community.forum
 - cdn.robinpro.gallery
 - maven.is-quite.gay
 - debian.grena.ge
@@ -1742,6 +1837,7 @@ domain_set:
 - cdn.cbd.int
 - adkit.9pub.io
 - s3.aaaaa.io
+- cdn.affonso.io
 - download.ameliorated.io
 - netlify.apollo.io
 - static.assetlab.io
@@ -1754,6 +1850,8 @@ domain_set:
 - sandpack-cdn-staging.blazingly.io
 - js-cdn.blockchair.io
 - loutre.blockchair.io
+- cdn.bogos.io
+- cdn.boostcommerce.io
 - registry.bower.io
 - cdn.branch.io
 - cdn.brandfetch.io
@@ -1762,6 +1860,7 @@ domain_set:
 - assets.canny.io
 - assets2.canny.io
 - canny-assets.io
+- fast.chameleon.io
 - cdn.channel.io
 - cf.channel.io
 - dl.cloudsmith.io
@@ -1771,7 +1870,9 @@ domain_set:
 - assets.mcp.corespeed.io
 - r2cdn.corespeed.io
 - static.corespeed.io
+- assets.customer.io
 - update.cyberduck.io
+- version.cyberduck.io
 - cdn.cypress.io
 - download.cypress.io
 - mirror.datamossa.io
@@ -1822,6 +1923,7 @@ domain_set:
 - assets-next.mattersprotocol.io
 - cdn.metadata.io
 - images.microcms-assets.io
+- dl.min.io
 - marfeelexperimentsexperienceengine.mrf.io
 - media.mstdn.io
 - static.mytonwallet.io
@@ -1829,8 +1931,6 @@ domain_set:
 - cdn.nolt.io
 - dl.nwjs.io
 - dl2.nwjs.io
-- packagecloud.io
-- assets-production.packagecloud.io
 - cdn.pagefly.io
 - cdn.pendo.io
 - data.pendo.io
@@ -1843,6 +1943,7 @@ domain_set:
 - topbar-static.piano.io
 - favicon.pirsch.io
 - cdn.plyr.io
+- downloads.portainer.io
 - prettier.io
 - images.prismic.io
 - download.projectbluefin.io
@@ -1854,6 +1955,8 @@ domain_set:
 - files.readme.io
 - mirror.realcompute.io
 - static.replay.io
+- assets.reviews.io
+- widget.reviews.io
 - release.runcloud.io
 - assets.safing.io
 - cdn.sanity.io
@@ -1861,11 +1964,14 @@ domain_set:
 - cdn.simplelocalize.io
 - cdn.simplesat.io
 - edge.sitecorecloud.io
+- tile.skybrush.io
 - static.smartframe.io
 - js.smile.io
 - cdn.smooch.io
 - media.smooch.io
 - static.snyk.io
+- cms.socialinsider.io
+- imgs.socialinsider.io
 - mirror.solnode.io
 - apps.sophi.io
 - cdn1.stamped.io
@@ -1876,7 +1982,10 @@ domain_set:
 - telemetry.stepsecurity.io
 - assets.stigg.io
 - link.storjshare.io
+- storage.synctrack.io
+- scripts.tabler.io
 - img.telemetr.io
+- tiles.terria.io
 - static.tokenview.io
 - cdn.tolt.io
 - s3.toot.io
@@ -1900,6 +2009,7 @@ domain_set:
 - mirror.hoster.kz
 - mirror.neolabs.kz
 - mirror.ps.kz
+- pomf2.lain.la
 - mirror.lc
 - wl-apps.yourwebsite.life
 - disco.headliner.link
@@ -2045,6 +2155,7 @@ domain_set:
 - panel-production-libs.b-cdn.net
 - r34xyz.b-cdn.net
 - todoist.b-cdn.net
+- vg-bunny-cdn.b-cdn.net
 - vz-2222604c-50b.b-cdn.net
 - vz-c0fe498e-5ab.b-cdn.net
 - mirror.bahnhof.net
@@ -2054,6 +2165,8 @@ domain_set:
 - img.biguz.net
 - apm-misaka.biliapi.net
 - assets.bitstamp.net
+- logs.blip.net
+- static.blip.net
 - cf-images.ap-northeast-1.prod.boltdns.net
 - manifest.prod.boltdns.net
 - cf-images.us-east-1.prod.boltdns.net
@@ -2109,6 +2222,7 @@ domain_set:
 - down.filen-3.net
 - down.filen-4.net
 - down.filen-5.net
+- files.gempages.net
 - reload.getsentry.net
 - mirrors.glesys.net
 - mirror.sov.uk.goscomb.net
@@ -2147,6 +2261,7 @@ domain_set:
 - robloxcorp.s.llnwi.net
 - mirror.low-orbit.net
 - sdk.loyaltylion.net
+- sdk-static.loyaltylion.net
 - debian.ludost.net
 - static.lwn.net
 - mirror.macomnet.net
@@ -2154,6 +2269,8 @@ domain_set:
 - mirror.mangohost.net
 - mirror.marcusn.net
 - images.mattel.net
+- assets.maxon.net
+- mx-app-blob-prod.maxon.net
 - b2.mcarchive.net
 - apache.melbourneitmirror.net
 - mirror.metrocast.net
@@ -2181,6 +2298,7 @@ domain_set:
 - mirror.novg.net
 - mirror.nyi.net
 - attachments.office.net
+- res-3.cdn.office.net
 - res-geo.cdn.office.net
 - shell.cdn.office.net
 - support.content.office.net
@@ -2207,6 +2325,7 @@ domain_set:
 - static.plus.net
 - mirror.plusline.net
 - siloh-ns1.plutotv.net
+- tile.poloha.net
 - mirror.pregi.net
 - ctan.mc1.root.project-creative.net
 - debian.proxad.net
@@ -2335,6 +2454,7 @@ domain_set:
 - mirrors.codec-cluster.org
 - cpan.cpantesters.org
 - eclats.crans.org
+- sub.creamycake.org
 - i.creativecommons.org
 - tug.ctan.org
 - embed.culturalspot.org
@@ -2348,6 +2468,7 @@ domain_set:
 - s3.documentcloud.org
 - apache.cs.utah.edu.org
 - eslint.org
+- cdn.evolution-x.org
 - assets.exercism.org
 - repos.del.extreme-ix.org
 - repo.extreme-ix.org
@@ -2365,6 +2486,7 @@ domain_set:
 - download.gimp.org
 - ftp.gnome.org
 - static.gnome.org
+- tileserver.gnome.org
 - www.gnupg.org
 - releases.grapheneos.org
 - ftp.harukasan.org
@@ -2373,6 +2495,7 @@ domain_set:
 - api.indexnow.org
 - repository.jboss.org
 - proxy.joinmastodon.org
+- jotai.org
 - modules.kernelsu.org
 - design.keyoxide.org
 - mirror.keystealth.org
@@ -2391,16 +2514,28 @@ domain_set:
 - s1.maxstream.org
 - s13.maxstream.org
 - s8.maxstream.org
+- images.mobilism.org
 - img.moedog.org
 - d.myani.org
+- d2.myani.org
 - o.n1mp.org
+- tile.nextzen.org
 - nobara-images.nobaraproject.org
 - lzip.nongnu.org
 - assets.nxtrace.org
 - videos.ohentai.org
 - cdn.oneget.org
 - open-vsx.org
+- s1.animeko.openani.org
+- s2.animeko.openani.org
+- tile2.opencyclemap.org
 - ciscobinary.openh264.org
+- tiles.openrailwaymap.org
+- tiles.openseamap.org
+- tiles.maps.opensearch.org
+- tiles.openskimap.org
+- tile.opentopomap.org
+- tile.openweathermap.org
 - debian.osuosl.org
 - ftp.osuosl.org
 - ftp-chi.osuosl.org
@@ -2448,12 +2583,14 @@ domain_set:
 - playgroundcdn.typescriptlang.org
 - www.typescriptlang.org
 - ftp.ubuntu-tw.org
+- cdn.userway.org
 - charts.verdaccio.org
 - tiles.versatiles.org
 - kebo.vlsm.org
 - vuejs.org
 - ps.w.org
 - s.w.org
+- tile.waymarkedtrails.org
 - releases.whatpulse.org
 - resources.whatwg.org
 - files.writefreely.org
@@ -2499,6 +2636,7 @@ domain_set:
 - bucket1.notaku.so
 - image-forwarder.notaku.so
 - cdn.seline.so
+- assets.shots.so
 - images.spr.so
 - assets-v2.super.so
 - sites.super.so
@@ -2513,6 +2651,8 @@ domain_set:
 - vanilla-extract.style
 - static.ada.support
 - mirror.kumi.systems
+- cdn.hubble.team
+- sdk.hubble.team
 - docs.mrchromebox.tech
 - static.pepy.tech
 - media.remax-prod.eng.remax.tech
@@ -2531,6 +2671,27 @@ domain_set:
 - media.d.tube
 - js.txxx.tube
 - tn.txxx.tube
+- imgcn.bgmbk.tv
+- imgcn2.bgmbk.tv
+- imgcn3.bgmbk.tv
+- imgcn4.bgmbk.tv
+- imgcn5.bgmbk.tv
+- akmcdnoversea-tw.inter.ptqy.gitv.tv
+- chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+- cdn1.hotmoza.tv
+- pptstatic.iyf.tv
+- static.iyf.tv
+- bulletin.svc.litv.tv
+- fino.svc.litv.tv
+- jsmodule.svc.litv.tv
+- p-cdnstatic.svc.litv.tv
+- player.svc.litv.tv
+- s-cdnstatic.svc.litv.tv
+- static.svc.litv.tv
+- static.tella.tv
+- tubi.tv
+- www.tubi.tv
+- static.yfsp.tv
 - mirror.aptus.co.tz
 - gimp.astra.in.ua
 - ftp.gnu.org.ua
@@ -2566,6 +2727,7 @@ domain_set:
 - beta.eslint-react.xyz
 - domain.expiring-soon.xyz
 - eomd1.fembeqq.xyz
+- sdk-cdn.fun.xyz
 - ghgo.xyz
 - mirror.gofoss.xyz
 - vod.jfly.xyz
@@ -2578,6 +2740,7 @@ domain_set:
 - img.timero.xyz
 - storage.withfabric.xyz
 - cdn.yinghuazy.xyz
+- cr.yandex
 domain_suffix_set:
 - ac
 - ai
@@ -2625,6 +2788,7 @@ domain_suffix_set:
 - stackoverflow.blog
 - buck.build
 - addons.business
+- tile.openstreetmap.bzh
 - ca
 - cafe
 - pixiv.cat
@@ -2649,6 +2813,7 @@ domain_suffix_set:
 - roblox.cc
 - silca.cc
 - tailfin.cc
+- tilda.cc
 - tiny.cc
 - ungh.cc
 - whoer.cc
@@ -2661,6 +2826,7 @@ domain_suffix_set:
 - dreamscape.cloud
 - dsc.cloud
 - ipfs-gateway.cloud
+- jetbrains.cloud
 - mypinata.cloud
 - gateway.pinata.cloud
 - s3.fr-par.scw.cloud
@@ -2738,6 +2904,7 @@ domain_suffix_set:
 - 24.com
 - 2k.com
 - 2kgames.com
+- 2ksports.com
 - 360ssh.com
 - 3lateral.com
 - 3movs.com
@@ -2846,8 +3013,11 @@ domain_suffix_set:
 - images.arcpublishing.com
 - arcraiders.com
 - roblox-api.arkoselabs.com
+- arma3.com
+- armaplatform.com
 - armorgames.com
 - artstation.com
+- artstorm.com
 - ashemaletube.com
 - ask.com
 - askubuntu.com
@@ -2902,6 +3072,7 @@ domain_suffix_set:
 - bbc.com
 - bblcdn.com
 - bblmw.com
+- bbystatic.com
 - bdzybf7.com
 - media.beeper.com
 - beibao.com
@@ -2926,6 +3097,7 @@ domain_suffix_set:
 - bintray.com
 - bioware.com
 - biowarestore.com
+- bistudio.com
 - bitchute.com
 - bitfinex.com
 - bitgetimg.com
@@ -3099,6 +3271,7 @@ domain_suffix_set:
 - datocms-assets.com
 - dawngate.com
 - dawngatechronicles.com
+- dayz.com
 - dazn.com
 - dazn-api.com
 - dazndn.com
@@ -3217,6 +3390,7 @@ domain_suffix_set:
 - embedgram.com
 - embedly.com
 - encoretvb.com
+- eneba.com
 - engadget.com
 - ensighten.com
 - envato-static.com
@@ -3327,6 +3501,7 @@ domain_suffix_set:
 - fxtwitter.com
 - g2.com
 - gadgets360cdn.com
+- gaijinent.com
 - gamccdn.com
 - gameflare.com
 - gameloft.com
@@ -3349,6 +3524,7 @@ domain_suffix_set:
 - genius.com
 - genshinimpact.com
 - gentcdn.com
+- getaroom-cdn.com
 - getbootstrap.com
 - getbraintree.com
 - getchu.com
@@ -3402,6 +3578,7 @@ domain_suffix_set:
 - gravatar.com
 - grindr.com
 - widget.cluster.groovehq.com
+- fonts.gsma.com
 - gstatic.com
 - gsuus.com
 - gszyi.com
@@ -3419,6 +3596,7 @@ domain_suffix_set:
 - hackerone-user-content.com
 - hackyourconsole.com
 - img.haiwaikan.com
+- hanime-cdn.com
 - hanime1.com
 - haproxy.com
 - hardbin.com
@@ -3476,6 +3654,7 @@ domain_suffix_set:
 - hsbrowserreports.com
 - hsforms.com
 - html5rocks.com
+- htv-hydaelyn.com
 - js.hubspot.com
 - js-eu1.hubspot.com
 - static2cdn.hubspot.com
@@ -3617,7 +3796,6 @@ domain_suffix_set:
 - kwcdn.com
 - kym-cdn.com
 - kyurem.com
-- larksuitecdn.com
 - launchdarkly.com
 - launchpadlibrarian.com
 - lazcdn.com
@@ -3681,6 +3859,7 @@ domain_suffix_set:
 - maddenrewards.com
 - madewithcode.com
 - mailchimp.com
+- makearmanotwar.com
 - makeitopen.com
 - ipfsgateway.makersplace.com
 - makerworld.com
@@ -3746,6 +3925,7 @@ domain_suffix_set:
 - mmtcdn.com
 - mngbcn.com
 - mobile01.com
+- modernwarships.com
 - modrinth.com
 - moeload.com
 - mojang.com
@@ -3770,6 +3950,7 @@ domain_suffix_set:
 - msropendata.com
 - muscache.com
 - muscdn.com
+- muvluv-girls-garden.com
 - cfcdn.mux.com
 - mvnrepository.com
 - myanimeshelf.com
@@ -3938,6 +4119,7 @@ domain_suffix_set:
 - oreillystatic.com
 - origin.com
 - gateway.originprotocol.com
+- orionbrowser.com
 - orithegame.com
 - otstatic.com
 - overdrive.com
@@ -4105,6 +4287,7 @@ domain_suffix_set:
 - readthedocs.com
 - readthedocs-hosted.com
 - realityscan.com
+- rechargecdn.com
 - recombee.com
 - redbull.com
 - redbullracing.com
@@ -4143,6 +4326,7 @@ domain_suffix_set:
 - roborecall.com
 - rocksdb.com
 - rockstargames.com
+- rockstarnorth.com
 - cdn.rollbar.com
 - roseimgs.com
 - rottentomatoes.com
@@ -4197,6 +4381,7 @@ domain_suffix_set:
 - shutterstock.com
 - cdn.signalfx.com
 - sih-db.com
+- silicagame.com
 - simcity.com
 - simcity-buildit.com
 - simgbb.com
@@ -4250,8 +4435,10 @@ domain_suffix_set:
 - squarespace-cdn.com
 - srcdn.com
 - ss-cdn.com
+- ss-domain.com
 - ssx3.com
 - stackapps.com
+- stackassets.com
 - stackauth.com
 - stackblitz.com
 - stackexchange.com
@@ -4261,10 +4448,13 @@ domain_suffix_set:
 - stackoverflowjobs.com
 - stackoverflowsolutions.com
 - stackoverflowteams.com
+- tile.stamen.com
 - stapecdn.com
+- star-conflict.com
 - starcraft.com
 - starcraft2.com
 - starfox.com
+- stargazer-games.com
 - startpage.com
 - starwarsbattlefront.com
 - starwarsbattlefront2.com
@@ -4342,6 +4532,7 @@ domain_suffix_set:
 - synergyse.com
 - t66y.com
 - t8cdn.com
+- tacdn.com
 - tailscale.com
 - tailwindcss.com
 - take2games.com
@@ -4405,6 +4596,7 @@ domain_suffix_set:
 - tiktokcdn-us.com
 - tiktokv.com
 - tiktokw.com
+- tildaapi.com
 - tildacdn.com
 - tiltbrush.com
 - time.com
@@ -4424,6 +4616,7 @@ domain_suffix_set:
 - tnaflix.com
 - tnastatic.com
 - tnt-ea.com
+- toiimg.com
 - tokyonline.com
 - tokyvideo.com
 - topcoder.com
@@ -4514,6 +4707,7 @@ domain_suffix_set:
 - vice.com
 - victoriassecret.com
 - videojs.com
+- vigorgame.com
 - vikacg.com
 - vimeo.com
 - vimeocdn.com
@@ -4544,6 +4738,7 @@ domain_suffix_set:
 - wariowarediy.com
 - warnerbrosgames.com
 - warnermediacdn.com
+- warthunder.com
 - s3.wasabisys.com
 - washingtonpost.com
 - watchlycdn.com
@@ -4597,6 +4792,7 @@ domain_suffix_set:
 - wpmucdn.com
 - wsimg.com
 - wsj.com
+- wtmobile.com
 - wwwxoom.com
 - x.com
 - x-art.com
@@ -4646,9 +4842,12 @@ domain_suffix_set:
 - yarnpkg.com
 - yelpcdn.com
 - yimg.com
+- ylands.com
+- yo-star.com
 - yogalayout.com
 - yogify.com
 - yoshisnewisland.com
+- yostarplat.com
 - you.com
 - youjizz.com
 - yourimageshare.com
@@ -4676,6 +4875,9 @@ domain_suffix_set:
 - zohostatic.com
 - zohowebstatic.com
 - zoominfo.com
+- zynga.com
+- zyngaplayersupport.com
+- zyngapoker.com
 - mirror.zzunipark.com
 - community
 - x.company
@@ -4754,13 +4956,17 @@ domain_suffix_set:
 - lfai.foundation
 - fr
 - libgen.fun
+- activematter.game
+- cubicodyssey.game
 - beth.games
 - embark.games
+- eneba.games
 - animes.garden
 - gd
 - gg
 - gl
 - gle
+- stellasora.global
 - goog
 - gov
 - discourse.group
@@ -4933,6 +5139,7 @@ domain_suffix_set:
 - opencas.io
 - opensea.io
 - opentelemetry.io
+- packagecloud.io
 - packer.io
 - pagecdn.io
 - papermc.io
@@ -4998,7 +5205,8 @@ domain_suffix_set:
 - mirror.ac.ke
 - kg
 - kr
-- la
+- hitomi.la
+- ipfs.lain.la
 - deno.land
 - nest.land
 - nyaa.land
@@ -5077,6 +5285,7 @@ domain_suffix_set:
 - 2img.net
 - 2mdn.net
 - mapi.4kvm.net
+- acesofthunder.net
 - img1.acsta.net
 - img2.acsta.net
 - img3.acsta.net
@@ -5117,6 +5326,7 @@ domain_suffix_set:
 - blazor.net
 - mirror.blendbyte.net
 - bloomberg.net
+- bohemia.net
 - boxcdn.net
 - briantreepayments.net
 - buyfast-paysmart.net
@@ -5139,6 +5349,8 @@ domain_suffix_set:
 - edge.steam-dns.top.comcast.net
 - coral.coralproject.net
 - creaders.net
+- crossout.net
+- crsed.net
 - ctfassets.net
 - cdn.cwinfo.net
 - daoc.net
@@ -5167,6 +5379,7 @@ domain_suffix_set:
 - edgeapp.net
 - edgecastcdn.net
 - netflix.com.edgesuite.net
+- enlisted.net
 - epimg.net
 - ero-video.net
 - eroimg.net
@@ -5195,6 +5408,7 @@ domain_suffix_set:
 - mirror.frontiernet.net
 - ftcdn.net
 - futurecdn.net
+- gaijin.net
 - gitlab.net
 - gitlab-static.net
 - go-lang.net
@@ -5426,9 +5640,11 @@ domain_suffix_set:
 - storage.yandexcloud.net
 - yastatic.net
 - ynoproject.net
+- yostar.net
 - z4a.net
 - mirrors.zagrio.net
 - zerochan.net
+- zkcdn.net
 - network
 - cdn.neustar
 - new
@@ -5440,7 +5656,9 @@ domain_suffix_set:
 - ipfs.uploads.nu
 - nz
 - one
+- 2kct.onl
 - 2kcoretech.online
+- 2kweb.online
 - am-cdn.online
 - 01.org
 - 18comic.org
@@ -5494,6 +5712,7 @@ domain_suffix_set:
 - cdn.cookielaw.org
 - cpan.org
 - cups.org
+- cve.org
 - cython.org
 - dartlang.org
 - debian.org
@@ -5504,6 +5723,7 @@ domain_suffix_set:
 - mirrors.dotsrc.org
 - draftjs.org
 - e-hentai.org
+- eclipsecontent.org
 - eggjs.org
 - ehgt.org
 - ehtracker.org
@@ -5538,6 +5758,7 @@ domain_suffix_set:
 - getfedora.org
 - getoutline.org
 - getzola.org
+- files.ghostty.org
 - gmoney.org
 - gnu.org
 - go-lang.org
@@ -5567,8 +5788,8 @@ domain_suffix_set:
 - internet.org
 - mirrors.ionfish.org
 - jfrog.org
-- jotai.org
 - js.org
+- jspm.org
 - jupyter.org
 - jw-cdn.org
 - kali.org
@@ -5624,6 +5845,7 @@ domain_suffix_set:
 - opendroneid.org
 - openfreemap.org
 - opengraphprotocol.org
+- openinframap.org
 - openjsf.org
 - openlibrary.org
 - openresty.org
@@ -5843,12 +6065,51 @@ domain_suffix_set:
 - dget.top
 - filecunhua.top
 - gitcdn.top
+- hydaelyn-25x-18.top
+- imageb.top
+- imagec.top
+- imaged.top
+- imagee.top
+- imagef.top
+- imageg.top
 - mobilius.top
 - pichost.top
 - matters.town
 - tr
 - tt
-- tv
+- 4gtv.tv
+- 5itv.tv
+- abema.tv
+- bangumi.tv
+- bgm.tv
+- bilibili.tv
+- braintreegateway.tv
+- braintreepayments.tv
+- briantreepayments.tv
+- cableav.tv
+- ext-twitch.tv
+- garena.tv
+- hanime.tv
+- hulu.tv
+- iwara.tv
+- jable.tv
+- muku.tv
+- my5.tv
+- origin.tv
+- periscope.tv
+- plex.tv
+- pluto.tv
+- primevideo.tv
+- pscp.tv
+- pvp.tv
+- pypl.tv
+- researchkit.tv
+- riotgames.tv
+- roblox.tv
+- steam.tv
+- storry.tv
+- twitch.tv
+- viu.tv
 - tw
 - uk
 - us
@@ -5989,7 +6250,6 @@ domain_keyword_set:
 - whatsapp
 ip_cidr_set:
 - 5.28.195.2/32
-- 5.28.195.4/32
 - 23.246.18.0/23
 - 35.186.224.47/32
 - 37.77.184.0/21

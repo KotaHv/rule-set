@@ -1,4 +1,4 @@
-# Total: 1887 rules
+# Total: 1911 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -6,6 +6,7 @@ DOMAIN,mirrors.asnet.am
 DOMAIN,mirrors.teamcloud.am
 DOMAIN,fdisk.5play.app
 DOMAIN,updates.istatmenus.app
+DOMAIN,releases.landrop.app
 DOMAIN,dl.motrix.app
 DOMAIN,meta.omaps.app
 DOMAIN,cdn.organicmaps.app
@@ -140,6 +141,7 @@ DOMAIN,cdn-builds.paw.cloud
 DOMAIN,ir.ubuntu.sindad.cloud
 DOMAIN,mirror.thunderhosting.cloud
 DOMAIN,mirror.unimagdalena.edu.co
+DOMAIN,cas-bridge.xethub.hf.co
 DOMAIN,mirrors.atlas.net.co
 DOMAIN,builds.paranoidandroid.co
 DOMAIN,mirrors.pardisco.co
@@ -161,6 +163,7 @@ DOMAIN,mirror.anigil.com
 DOMAIN,download.anydesk.com
 DOMAIN,www2.aomeisoftware.com
 DOMAIN,downloadr2.apkmirror.com
+DOMAIN,boot.arcboxcdn.com
 DOMAIN,mirrors.arpnetworks.com
 DOMAIN,gnu.askapache.com
 DOMAIN,dlcdnets.asus.com
@@ -269,6 +272,7 @@ DOMAIN,iterm2.com
 DOMAIN,mirror.ixirhost.com
 DOMAIN,download.jetbrains.com
 DOMAIN,download-cdn.jetbrains.com
+DOMAIN,downloads.marketplace.jetbrains.com
 DOMAIN,cdn.kagi.com
 DOMAIN,mirror.kakao.com
 DOMAIN,mirror.as.kamatera.com
@@ -291,6 +295,7 @@ DOMAIN,downloads.lemonsqueezy.com
 DOMAIN,mirror.linkdata.com
 DOMAIN,packages.linuxmint.com
 DOMAIN,mirrors.liquidweb.com
+DOMAIN,download01.logi.com
 DOMAIN,mirror.lyrahosting.com
 DOMAIN,mirror.ams.macarne.com
 DOMAIN,downloads.majestic.com
@@ -301,6 +306,7 @@ DOMAIN,amupdatedl3.microsoft.com
 DOMAIN,amupdatedl4.microsoft.com
 DOMAIN,amupdatedl5.microsoft.com
 DOMAIN,edgeupdates.microsoft.com
+DOMAIN,mcr.microsoft.com
 DOMAIN,msdl.microsoft.com
 DOMAIN,officecdnmac.microsoft.com
 DOMAIN,packages.microsoft.com
@@ -358,6 +364,7 @@ DOMAIN,steam.naeu.qtlglb.com
 DOMAIN,steam.ru.qtlglb.com
 DOMAIN,mirrors.rackhosting.com
 DOMAIN,mirror.raiolanetworks.com
+DOMAIN,archive.raspberrypi.com
 DOMAIN,downloads.raspberrypi.com
 DOMAIN,ubuntu.rootlicense.com
 DOMAIN,mirrors.sarata.com
@@ -387,12 +394,15 @@ DOMAIN,autoupdate.termius.com
 DOMAIN,mirror.tngnet.com
 DOMAIN,download.todesktop.com
 DOMAIN,ubuntu.tuxuri.com
+DOMAIN,typeless-static.com
 DOMAIN,security.ubuntu.com
 DOMAIN,dl.ui.com
 DOMAIN,mirror.ukrnames.com
 DOMAIN,mirror.cov.ukservers.com
+DOMAIN,download.umbrel.com
 DOMAIN,mirrors.usinternet.com
 DOMAIN,mirror.veesp.com
+DOMAIN,cdn.vemetric.com
 DOMAIN,mirror.verinomi.com
 DOMAIN,mirror.virtury.com
 DOMAIN,bigfiles.virustotal.com
@@ -693,11 +703,13 @@ DOMAIN,centos-stream.ip-connect.info
 DOMAIN,gimp.ip-connect.info
 DOMAIN,ubuntu.lafibre.info
 DOMAIN,ubuntu.servering.info
+DOMAIN,cdn.affonso.io
 DOMAIN,download.ameliorated.io
 DOMAIN,registry.bower.io
 DOMAIN,dl.cloudsmith.io
 DOMAIN,docker.cloudsmith.io
 DOMAIN,update.cyberduck.io
+DOMAIN,version.cyberduck.io
 DOMAIN,cdn.cypress.io
 DOMAIN,download.cypress.io
 DOMAIN,mirror.datamossa.io
@@ -713,6 +725,7 @@ DOMAIN,npm.jsr.io
 DOMAIN,mirror.katapult.io
 DOMAIN,u.keka.io
 DOMAIN,ubuntu.letscloud.io
+DOMAIN,dl.min.io
 DOMAIN,pkgs.netbird.io
 DOMAIN,repo.nextdns.io
 DOMAIN,dl.nwjs.io
@@ -720,6 +733,7 @@ DOMAIN,dl2.nwjs.io
 DOMAIN,go.opentelemetry.io
 DOMAIN,packagecloud.io
 DOMAIN,assets-production.packagecloud.io
+DOMAIN,downloads.portainer.io
 DOMAIN,download.projectbluefin.io
 DOMAIN,dl.pstmn.io
 DOMAIN,mirror.realcompute.io
@@ -885,6 +899,7 @@ DOMAIN,debian.ludost.net
 DOMAIN,mirror.macomnet.net
 DOMAIN,mirror.mangohost.net
 DOMAIN,mirror.marcusn.net
+DOMAIN,mx-app-blob-prod.maxon.net
 DOMAIN,b2.mcarchive.net
 DOMAIN,apache.melbourneitmirror.net
 DOMAIN,mirror.metrocast.net
@@ -1066,9 +1081,11 @@ DOMAIN,ftp.uk.debian.org
 DOMAIN,ftp.us.debian.org
 DOMAIN,ftp.debianclub.org
 DOMAIN,repo.debiancn.org
+DOMAIN,openvsx.eclipsecontent.org
 DOMAIN,apache.cs.utah.edu.org
 DOMAIN,artifacts.electronjs.org
 DOMAIN,ctan.gutenberg.eu.org
+DOMAIN,cdn.evolution-x.org
 DOMAIN,repos.del.extreme-ix.org
 DOMAIN,repo.extreme-ix.org
 DOMAIN,f-droid.org
@@ -1129,10 +1146,13 @@ DOMAIN,versioncheck-bg.addons.mozilla.org
 DOMAIN,aus5.mozilla.org
 DOMAIN,download.mozilla.org
 DOMAIN,d.myani.org
+DOMAIN,d2.myani.org
 DOMAIN,nobara-images.nobaraproject.org
 DOMAIN,lzip.nongnu.org
 DOMAIN,registry.npmjs.org
 DOMAIN,cdn.oneget.org
+DOMAIN,s1.animeko.openani.org
+DOMAIN,s2.animeko.openani.org
 DOMAIN,ciscobinary.openh264.org
 DOMAIN,cdn.opensuse.org
 DOMAIN,download.opensuse.org
@@ -1297,6 +1317,7 @@ DOMAIN,linux.cs.nctu.edu.tw
 DOMAIN,ubuntu.cs.nctu.edu.tw
 DOMAIN,debian.csie.ntu.edu.tw
 DOMAIN,debian.cs.nycu.edu.tw
+DOMAIN,kali.cs.nycu.edu.tw
 DOMAIN,apache.stu.edu.tw
 DOMAIN,cpan.stu.edu.tw
 DOMAIN,ftp.stu.edu.tw
@@ -1351,6 +1372,7 @@ DOMAIN,releases.stash.ws
 DOMAIN,ghgo.xyz
 DOMAIN,mirror.gofoss.xyz
 DOMAIN,boot.netboot.xyz
+DOMAIN,cr.yandex
 DOMAIN,ftp.sun.ac.za
 DOMAIN,ftp.leg.uct.ac.za
 DOMAIN,mirror.ufs.ac.za
@@ -1647,6 +1669,7 @@ DOMAIN-SUFFIX,s3.dualstack.us-gov-east-1.amazonaws.com
 DOMAIN-SUFFIX,s3-accesspoint.dualstack.us-gov-east-1.amazonaws.com
 DOMAIN-SUFFIX,s3-accesspoint-fips.dualstack.us-gov-east-1.amazonaws.com
 DOMAIN-SUFFIX,s3-fips.dualstack.us-gov-east-1.amazonaws.com
+DOMAIN-SUFFIX,s3-website.dualstack.us-gov-east-1.amazonaws.com
 DOMAIN-SUFFIX,s3.us-gov-east-1.amazonaws.com
 DOMAIN-SUFFIX,s3-accesspoint.us-gov-east-1.amazonaws.com
 DOMAIN-SUFFIX,s3-accesspoint-fips.us-gov-east-1.amazonaws.com
@@ -1657,6 +1680,7 @@ DOMAIN-SUFFIX,s3.dualstack.us-gov-west-1.amazonaws.com
 DOMAIN-SUFFIX,s3-accesspoint.dualstack.us-gov-west-1.amazonaws.com
 DOMAIN-SUFFIX,s3-accesspoint-fips.dualstack.us-gov-west-1.amazonaws.com
 DOMAIN-SUFFIX,s3-fips.dualstack.us-gov-west-1.amazonaws.com
+DOMAIN-SUFFIX,s3-website.dualstack.us-gov-west-1.amazonaws.com
 DOMAIN-SUFFIX,s3.us-gov-west-1.amazonaws.com
 DOMAIN-SUFFIX,s3-accesspoint.us-gov-west-1.amazonaws.com
 DOMAIN-SUFFIX,s3-accesspoint-fips.us-gov-west-1.amazonaws.com
@@ -1829,7 +1853,6 @@ DOMAIN-SUFFIX,mirror.uk.sargasso.net
 DOMAIN-SUFFIX,mirror.shastacoe.net
 DOMAIN-SUFFIX,dl.sourceforge.net
 DOMAIN-SUFFIX,mirrors.spacedump.net
-DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,mirrors.tds.net
 DOMAIN-SUFFIX,mirror.tefexia.net
 DOMAIN-SUFFIX,mirrors.uk2.net
@@ -1855,6 +1878,7 @@ DOMAIN-SUFFIX,mirrors.dotsrc.org
 DOMAIN-SUFFIX,copr.fedorainfracloud.org
 DOMAIN-SUFFIX,freemirror.org
 DOMAIN-SUFFIX,getcomposer.org
+DOMAIN-SUFFIX,files.ghostty.org
 DOMAIN-SUFFIX,mirrors.ionfish.org
 DOMAIN-SUFFIX,mirrorservice.org
 DOMAIN-SUFFIX,mirrors.tds.net.org

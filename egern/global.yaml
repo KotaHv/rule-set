@@ -1,4 +1,4 @@
-# Total: 1705 rules
+# Total: 1728 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -11,6 +11,7 @@ domain_set:
 - app.hellosign.com
 - wego.here.com
 - developer.microsoft.com
+- packages.microsoft.com
 - download.visualstudio.microsoft.com
 - community.oneplus.com
 - api.privacy.com
@@ -71,12 +72,14 @@ domain_suffix_set:
 - pttweb.cc
 - silca.cc
 - tailfin.cc
+- tilda.cc
 - tiny.cc
 - whoer.cc
 - ch
 - chrome
 - fastlane.ci
 - anaconda.cloud
+- jetbrains.cloud
 - sketch.cloud
 - youtrack.cloud
 - sfmcompile.club
@@ -645,6 +648,7 @@ domain_suffix_set:
 - opengraphprotocol.com
 - opentable.com
 - oracle.com
+- orionbrowser.com
 - overdrive.com
 - ovpnleaktest.com
 - pa9pal.com
@@ -822,6 +826,8 @@ domain_suffix_set:
 - thisvid.com
 - threads.com
 - thumbzilla.com
+- tildaapi.com
+- tildacdn.com
 - tiltbrush.com
 - time.com
 - timelinestoryteller.com
@@ -1114,6 +1120,7 @@ domain_suffix_set:
 - oneapi.io
 - opencas.io
 - opensea.io
+- packagecloud.io
 - packer.io
 - playerjs.io
 - prisma.io
@@ -1156,7 +1163,7 @@ domain_suffix_set:
 - jp
 - kg
 - kr
-- la
+- hitomi.la
 - deno.land
 - nyaa.land
 - archive.li
@@ -1404,6 +1411,7 @@ domain_suffix_set:
 - componentkit.org
 - cpan.org
 - cups.org
+- cve.org
 - cython.org
 - dartlang.org
 - debian.org
@@ -1618,6 +1626,7 @@ domain_suffix_set:
 - x.org
 - xhlive.org
 - xquartz.org
+- ziglang.org
 - zsh.org
 - codeberg.page
 - party
@@ -1636,7 +1645,6 @@ domain_suffix_set:
 - rocks
 - rs
 - ru
-- esm.run
 - sa
 - sb
 - 2ch.sc
@@ -1667,7 +1675,22 @@ domain_suffix_set:
 - matters.town
 - tr
 - tt
-- tv
+- bangumi.tv
+- bgm.tv
+- braintreegateway.tv
+- braintreepayments.tv
+- briantreepayments.tv
+- cableav.tv
+- hanime.tv
+- iwara.tv
+- jable.tv
+- muku.tv
+- periscope.tv
+- plex.tv
+- pscp.tv
+- pypl.tv
+- researchkit.tv
+- twitch.tv
 - tw
 - uk
 - us

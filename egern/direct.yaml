@@ -1,4 +1,4 @@
-# Total: 832 rules
+# Total: 853 rules
 no_resolve: true
 domain_set:
 - i.dell.com
@@ -208,9 +208,11 @@ domain_suffix_set:
 - coolapkmarket.com
 - cowcs.com
 - cowtransfer.com
+- cqcbank.com
 - csdn.com
 - ctfile.com
 - ctrip.com
+- d-ctrip.com
 - dancf.com
 - dangdang.com
 - dbank.com
@@ -243,6 +245,7 @@ domain_suffix_set:
 - douyin.com
 - douyincdn.com
 - douyinliving.com
+- douyinpay.com
 - douyinpic.com
 - douyinstatic.com
 - douyinvod.com
@@ -252,6 +255,7 @@ domain_suffix_set:
 - dpfile.com
 - duapp.com
 - duokan.com
+- duokanbox.com
 - dxycdn.com
 - eastmoney.com
 - eatuo.com
@@ -296,6 +300,7 @@ domain_suffix_set:
 - gdtimg.com
 - geetest.com
 - geilicdn.com
+- geovisearth.com
 - gifshow.com
 - gitcode.com
 - gitee.com
@@ -327,10 +332,12 @@ domain_suffix_set:
 - hihonor.com
 - hihonorcdn.com
 - hihonorcloud.com
+- hisense.com
 - hitv.com
 - hkgcloudcs.com
 - hongxiu.com
 - honor.com
+- huanqiu.com
 - huawei.com
 - huaweistatic.com
 - humblebundle.com
@@ -412,8 +419,10 @@ domain_suffix_set:
 - lianjia.com
 - livechina.com
 - ljcdn.com
+- lkcoffee.com
 - lofter.com
 - longtugame.com
+- luckincoffeecdn.com
 - ludashi.com
 - luojilab.com
 - m1905.com
@@ -444,7 +453,9 @@ domain_suffix_set:
 - mihoyocg.com
 - mihoyogift.com
 - mihoyomall.com
+- mipay.com
 - miui.com
+- miwifi.com
 - miyoushe.com
 - mmstat.com
 - mobike.com
@@ -459,12 +470,14 @@ domain_suffix_set:
 - myapp.com
 - myoppo.com
 - myqcloud.com
+- myssl.com
 - myzaker.com
 - mzres.com
 - nagcloudcs.com
 - netease.com
 - nextstudios.com
 - ngabbs.com
+- niu.com
 - nlark.com
 - npmmirror.com
 - nubia.com
@@ -570,6 +583,7 @@ domain_suffix_set:
 - soufunimg.com
 - sspai.com
 - steamchina.com
+- cm.steampowered.com
 - suning.com
 - syxlgame.com
 - szbdyd.com
@@ -633,6 +647,7 @@ domain_suffix_set:
 - wanmei.com
 - wcbygame.com
 - weathercn.com
+- webank.com
 - wegame.com
 - wegameplus.com
 - weibo.com
@@ -706,21 +721,26 @@ domain_suffix_set:
 - zhuoyuegame.com
 - zijieapi.com
 - zjcdn.com
+- zol.com
 - zui.com
 - zuimeitianqi.com
 - zuoyebang.com
 - zybang.com
+- cnb.cool
 - douban.fm
 - jd.hk
 - netease.im
 - gorouter.info
 - air-matters.io
 - daocloud.io
+- dcloud.io
 - gitee.io
 - jianshu.io
 - openinstall.io
+- dns.la
 - haowu.link
 - yqkk.link
+- tool.lu
 - coding.me
 - ele.me
 - id6.me
@@ -776,6 +796,7 @@ domain_suffix_set:
 - mszdld.net
 - netstatic.net
 - nextworkshop.net
+- oneplus.net
 - oray.net
 - oschina.net
 - pchome.net

@@ -1,4 +1,4 @@
-# Total: 20 rules
+# Total: 24 rules
 'payload':
 - 'stat.youpin.mi.com'
 - 'nom.telemetrydeck.com'
@@ -9,13 +9,17 @@
 - '+.easytomessage.com'
 - '+.gepush.com'
 - '+.getui.com'
+- '+.data.grammarly.com'
 - '+.tracking.intl.miui.com'
 - '+.tracking.miui.com'
 - '+.beacon.qq.com'
 - '+.trace.qq.com'
 - '+.slackb.com'
+- '+.f-log-assistant.grammarly.io'
 - '+.f-log-extension.grammarly.io'
+- '+.femetrics.grammarly.io'
 - '+.jpush.io'
+- '+.femetrics.qagr.io'
 - '+.getui.net'
 - '+.null'
 - '+.telemetry.mozilla.org'

@@ -1,4 +1,4 @@
-# Total: 36 rules
+# Total: 35 rules
 no_resolve: true
 domain_suffix_set:
 - tdesktop.com
@@ -17,7 +17,6 @@ domain_suffix_set:
 - telegram.space
 ip_cidr_set:
 - 5.28.195.2/32
-- 5.28.195.4/32
 - 91.105.192.0/23
 - 91.108.4.0/22
 - 91.108.8.0/21

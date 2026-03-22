@@ -1,4 +1,4 @@
-# Total: 522 rules
+# Total: 528 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -23,6 +23,7 @@ DOMAIN,firebaseperusertopics-pa.googleapis.com
 DOMAIN,firebaseremoteconfig.googleapis.com
 DOMAIN,android.googlesource.com
 DOMAIN,developer.microsoft.com
+DOMAIN,packages.microsoft.com
 DOMAIN,download.visualstudio.microsoft.com
 DOMAIN,amp.akamaized.net
 DOMAIN,p-events-delivery.akamaized.net
@@ -51,8 +52,10 @@ DOMAIN-SUFFIX,stackmod.blog
 DOMAIN-SUFFIX,stackoverflow.blog
 DOMAIN-SUFFIX,buck.build
 DOMAIN-SUFFIX,fasttext.cc
+DOMAIN-SUFFIX,tilda.cc
 DOMAIN-SUFFIX,fastlane.ci
 DOMAIN-SUFFIX,anaconda.cloud
+DOMAIN-SUFFIX,jetbrains.cloud
 DOMAIN-SUFFIX,youtrack.cloud
 DOMAIN-SUFFIX,fury.co
 DOMAIN-SUFFIX,stackoverflow.co
@@ -85,7 +88,6 @@ DOMAIN-SUFFIX,braventures.com
 DOMAIN-SUFFIX,braveux.com
 DOMAIN-SUFFIX,buckbuild.com
 DOMAIN-SUFFIX,canonical.com
-DOMAIN-SUFFIX,cdnjs.com
 DOMAIN-SUFFIX,codethemicrobit.com
 DOMAIN-SUFFIX,cygwin.com
 DOMAIN-SUFFIX,deno.com
@@ -143,7 +145,6 @@ DOMAIN-SUFFIX,jfrog.com
 DOMAIN-SUFFIX,jquery.com
 DOMAIN-SUFFIX,jquerymobile.com
 DOMAIN-SUFFIX,jqueryui.com
-DOMAIN-SUFFIX,jsdelivr.com
 DOMAIN-SUFFIX,launchpadlibrarian.com
 DOMAIN-SUFFIX,linuxmint.com
 DOMAIN-SUFFIX,macruby.com
@@ -204,6 +205,8 @@ DOMAIN-SUFFIX,termius.com
 DOMAIN-SUFFIX,termux.com
 DOMAIN-SUFFIX,thegithubshop.com
 DOMAIN-SUFFIX,thesffblog.com
+DOMAIN-SUFFIX,tildaapi.com
+DOMAIN-SUFFIX,tildacdn.com
 DOMAIN-SUFFIX,timelinestoryteller.com
 DOMAIN-SUFFIX,topcoder.com
 DOMAIN-SUFFIX,ubuntu.com
@@ -279,6 +282,7 @@ DOMAIN-SUFFIX,neovim.io
 DOMAIN-SUFFIX,nomadproject.io
 DOMAIN-SUFFIX,oneapi.io
 DOMAIN-SUFFIX,opencas.io
+DOMAIN-SUFFIX,packagecloud.io
 DOMAIN-SUFFIX,packer.io
 DOMAIN-SUFFIX,playerjs.io
 DOMAIN-SUFFIX,pypa.io
@@ -321,7 +325,6 @@ DOMAIN-SUFFIX,intellij.net
 DOMAIN-SUFFIX,intellinuxgraphics.net
 DOMAIN-SUFFIX,java.net
 DOMAIN-SUFFIX,jetbrains.net
-DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,launchpad.net
 DOMAIN-SUFFIX,launchpadcontent.net
 DOMAIN-SUFFIX,launchpadlibrarian.net
@@ -372,6 +375,7 @@ DOMAIN-SUFFIX,codeberg.org
 DOMAIN-SUFFIX,componentkit.org
 DOMAIN-SUFFIX,cpan.org
 DOMAIN-SUFFIX,cups.org
+DOMAIN-SUFFIX,cve.org
 DOMAIN-SUFFIX,cython.org
 DOMAIN-SUFFIX,dartlang.org
 DOMAIN-SUFFIX,debian.org
@@ -501,6 +505,7 @@ DOMAIN-SUFFIX,weblate.org
 DOMAIN-SUFFIX,wireshark.org
 DOMAIN-SUFFIX,wpewebkit.org
 DOMAIN-SUFFIX,x.org
+DOMAIN-SUFFIX,ziglang.org
 DOMAIN-SUFFIX,zsh.org
 DOMAIN-SUFFIX,codeberg.page
 DOMAIN-SUFFIX,modperl.pl
@@ -508,7 +513,7 @@ DOMAIN-SUFFIX,hex.pm
 DOMAIN-SUFFIX,hexdocs.pm
 DOMAIN-SUFFIX,docs.rs
 DOMAIN-SUFFIX,rustup.rs
-DOMAIN-SUFFIX,esm.run
+DOMAIN-SUFFIX,tilda.ru
 DOMAIN-SUFFIX,brew.sh
 DOMAIN-SUFFIX,scoop.sh
 DOMAIN-SUFFIX,jetbrains.space
@@ -519,5 +524,6 @@ DOMAIN-SUFFIX,researchkit.tv
 DOMAIN-SUFFIX,visualstudio.co.uk
 DOMAIN-SUFFIX,greenend.org.uk
 DOMAIN-SUFFIX,framer.website
+DOMAIN-SUFFIX,tilda.ws
 DOMAIN-WILDCARD,*.dkr.ecr.*.amazonaws.com
 DOMAIN-WILDCARD,github-production-release-asset-??????.s3.amazonaws.com

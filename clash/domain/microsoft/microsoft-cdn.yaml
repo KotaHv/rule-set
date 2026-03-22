@@ -1,8 +1,9 @@
-# Total: 54 rules
+# Total: 58 rules
 'payload':
 - 'res-h3.public.cdn.office.net'
 - 'res.cdn.office.net'
 - 'res-1.cdn.office.net'
+- 'res-2.cdn.office.net'
 - 'statics.teams.cdn.office.net'
 - '+.wscont1.apps.microsoft.com'
 - '+.wscont2.apps.microsoft.com'
@@ -27,13 +28,16 @@
 - '+.lex.download.prss.microsoft.com'
 - '+.lexuat.download.prss.microsoft.com'
 - '+.mbs.download.prss.microsoft.com'
+- '+.mbsuat.download.prss.microsoft.com'
 - '+.mpnbenefits.download.prss.microsoft.com'
 - '+.mpnbenefitsrtl.download.prss.microsoft.com'
 - '+.mpnbenefitsrtluat.download.prss.microsoft.com'
 - '+.msdn.download.prss.microsoft.com'
 - '+.msdprod-ad.download.prss.microsoft.com'
 - '+.msproduct.download.prss.microsoft.com'
+- '+.msproductuat.download.prss.microsoft.com'
 - '+.myvs.download.prss.microsoft.com'
+- '+.myvsuat.download.prss.microsoft.com'
 - '+.oemsoc.download.prss.microsoft.com'
 - '+.oemsocuat.download.prss.microsoft.com'
 - '+.officemkt.download.prss.microsoft.com'

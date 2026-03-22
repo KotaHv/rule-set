@@ -1,4 +1,4 @@
-# Total: 1706 rules
+# Total: 1729 rules
 DOMAIN,store.ui.com.cn
 DOMAIN,ccmdl.adobe.com
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -9,6 +9,7 @@ DOMAIN,default.exp-tas.com
 DOMAIN,app.hellosign.com
 DOMAIN,wego.here.com
 DOMAIN,developer.microsoft.com
+DOMAIN,packages.microsoft.com
 DOMAIN,download.visualstudio.microsoft.com
 DOMAIN,community.oneplus.com
 DOMAIN,api.privacy.com
@@ -68,12 +69,14 @@ DOMAIN-SUFFIX,ptt.cc
 DOMAIN-SUFFIX,pttweb.cc
 DOMAIN-SUFFIX,silca.cc
 DOMAIN-SUFFIX,tailfin.cc
+DOMAIN-SUFFIX,tilda.cc
 DOMAIN-SUFFIX,tiny.cc
 DOMAIN-SUFFIX,whoer.cc
 DOMAIN-SUFFIX,ch
 DOMAIN-SUFFIX,chrome
 DOMAIN-SUFFIX,fastlane.ci
 DOMAIN-SUFFIX,anaconda.cloud
+DOMAIN-SUFFIX,jetbrains.cloud
 DOMAIN-SUFFIX,sketch.cloud
 DOMAIN-SUFFIX,youtrack.cloud
 DOMAIN-SUFFIX,sfmcompile.club
@@ -642,6 +645,7 @@ DOMAIN-SUFFIX,opencollective.com
 DOMAIN-SUFFIX,opengraphprotocol.com
 DOMAIN-SUFFIX,opentable.com
 DOMAIN-SUFFIX,oracle.com
+DOMAIN-SUFFIX,orionbrowser.com
 DOMAIN-SUFFIX,overdrive.com
 DOMAIN-SUFFIX,ovpnleaktest.com
 DOMAIN-SUFFIX,pa9pal.com
@@ -819,6 +823,8 @@ DOMAIN-SUFFIX,thisav.com
 DOMAIN-SUFFIX,thisvid.com
 DOMAIN-SUFFIX,threads.com
 DOMAIN-SUFFIX,thumbzilla.com
+DOMAIN-SUFFIX,tildaapi.com
+DOMAIN-SUFFIX,tildacdn.com
 DOMAIN-SUFFIX,tiltbrush.com
 DOMAIN-SUFFIX,time.com
 DOMAIN-SUFFIX,timelinestoryteller.com
@@ -1111,6 +1117,7 @@ DOMAIN-SUFFIX,npm.io
 DOMAIN-SUFFIX,oneapi.io
 DOMAIN-SUFFIX,opencas.io
 DOMAIN-SUFFIX,opensea.io
+DOMAIN-SUFFIX,packagecloud.io
 DOMAIN-SUFFIX,packer.io
 DOMAIN-SUFFIX,playerjs.io
 DOMAIN-SUFFIX,prisma.io
@@ -1153,7 +1160,7 @@ DOMAIN-SUFFIX,it
 DOMAIN-SUFFIX,jp
 DOMAIN-SUFFIX,kg
 DOMAIN-SUFFIX,kr
-DOMAIN-SUFFIX,la
+DOMAIN-SUFFIX,hitomi.la
 DOMAIN-SUFFIX,deno.land
 DOMAIN-SUFFIX,nyaa.land
 DOMAIN-SUFFIX,archive.li
@@ -1401,6 +1408,7 @@ DOMAIN-SUFFIX,codeforces.org
 DOMAIN-SUFFIX,componentkit.org
 DOMAIN-SUFFIX,cpan.org
 DOMAIN-SUFFIX,cups.org
+DOMAIN-SUFFIX,cve.org
 DOMAIN-SUFFIX,cython.org
 DOMAIN-SUFFIX,dartlang.org
 DOMAIN-SUFFIX,debian.org
@@ -1615,6 +1623,7 @@ DOMAIN-SUFFIX,wpewebkit.org
 DOMAIN-SUFFIX,x.org
 DOMAIN-SUFFIX,xhlive.org
 DOMAIN-SUFFIX,xquartz.org
+DOMAIN-SUFFIX,ziglang.org
 DOMAIN-SUFFIX,zsh.org
 DOMAIN-SUFFIX,codeberg.page
 DOMAIN-SUFFIX,party
@@ -1633,7 +1642,6 @@ DOMAIN-SUFFIX,ro
 DOMAIN-SUFFIX,rocks
 DOMAIN-SUFFIX,rs
 DOMAIN-SUFFIX,ru
-DOMAIN-SUFFIX,esm.run
 DOMAIN-SUFFIX,sa
 DOMAIN-SUFFIX,sb
 DOMAIN-SUFFIX,2ch.sc
@@ -1664,7 +1672,22 @@ DOMAIN-SUFFIX,minecraft.tools
 DOMAIN-SUFFIX,matters.town
 DOMAIN-SUFFIX,tr
 DOMAIN-SUFFIX,tt
-DOMAIN-SUFFIX,tv
+DOMAIN-SUFFIX,bangumi.tv
+DOMAIN-SUFFIX,bgm.tv
+DOMAIN-SUFFIX,braintreegateway.tv
+DOMAIN-SUFFIX,braintreepayments.tv
+DOMAIN-SUFFIX,briantreepayments.tv
+DOMAIN-SUFFIX,cableav.tv
+DOMAIN-SUFFIX,hanime.tv
+DOMAIN-SUFFIX,iwara.tv
+DOMAIN-SUFFIX,jable.tv
+DOMAIN-SUFFIX,muku.tv
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,plex.tv
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,pypl.tv
+DOMAIN-SUFFIX,researchkit.tv
+DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,tw
 DOMAIN-SUFFIX,uk
 DOMAIN-SUFFIX,us

@@ -1,4 +1,4 @@
-# Total: 832 rules
+# Total: 853 rules
 DOMAIN,i.dell.com
 DOMAIN,ubisoftconnect.eo-edgefunctions7.com
 DOMAIN,ocsp.globalsign.com
@@ -205,9 +205,11 @@ DOMAIN-SUFFIX,coolapk.com
 DOMAIN-SUFFIX,coolapkmarket.com
 DOMAIN-SUFFIX,cowcs.com
 DOMAIN-SUFFIX,cowtransfer.com
+DOMAIN-SUFFIX,cqcbank.com
 DOMAIN-SUFFIX,csdn.com
 DOMAIN-SUFFIX,ctfile.com
 DOMAIN-SUFFIX,ctrip.com
+DOMAIN-SUFFIX,d-ctrip.com
 DOMAIN-SUFFIX,dancf.com
 DOMAIN-SUFFIX,dangdang.com
 DOMAIN-SUFFIX,dbank.com
@@ -240,6 +242,7 @@ DOMAIN-SUFFIX,doubao.com
 DOMAIN-SUFFIX,douyin.com
 DOMAIN-SUFFIX,douyincdn.com
 DOMAIN-SUFFIX,douyinliving.com
+DOMAIN-SUFFIX,douyinpay.com
 DOMAIN-SUFFIX,douyinpic.com
 DOMAIN-SUFFIX,douyinstatic.com
 DOMAIN-SUFFIX,douyinvod.com
@@ -249,6 +252,7 @@ DOMAIN-SUFFIX,douyutv.com
 DOMAIN-SUFFIX,dpfile.com
 DOMAIN-SUFFIX,duapp.com
 DOMAIN-SUFFIX,duokan.com
+DOMAIN-SUFFIX,duokanbox.com
 DOMAIN-SUFFIX,dxycdn.com
 DOMAIN-SUFFIX,eastmoney.com
 DOMAIN-SUFFIX,eatuo.com
@@ -293,6 +297,7 @@ DOMAIN-SUFFIX,gcloudsvcs.com
 DOMAIN-SUFFIX,gdtimg.com
 DOMAIN-SUFFIX,geetest.com
 DOMAIN-SUFFIX,geilicdn.com
+DOMAIN-SUFFIX,geovisearth.com
 DOMAIN-SUFFIX,gifshow.com
 DOMAIN-SUFFIX,gitcode.com
 DOMAIN-SUFFIX,gitee.com
@@ -324,10 +329,12 @@ DOMAIN-SUFFIX,hicloud.com
 DOMAIN-SUFFIX,hihonor.com
 DOMAIN-SUFFIX,hihonorcdn.com
 DOMAIN-SUFFIX,hihonorcloud.com
+DOMAIN-SUFFIX,hisense.com
 DOMAIN-SUFFIX,hitv.com
 DOMAIN-SUFFIX,hkgcloudcs.com
 DOMAIN-SUFFIX,hongxiu.com
 DOMAIN-SUFFIX,honor.com
+DOMAIN-SUFFIX,huanqiu.com
 DOMAIN-SUFFIX,huawei.com
 DOMAIN-SUFFIX,huaweistatic.com
 DOMAIN-SUFFIX,humblebundle.com
@@ -409,8 +416,10 @@ DOMAIN-SUFFIX,letvimg.com
 DOMAIN-SUFFIX,lianjia.com
 DOMAIN-SUFFIX,livechina.com
 DOMAIN-SUFFIX,ljcdn.com
+DOMAIN-SUFFIX,lkcoffee.com
 DOMAIN-SUFFIX,lofter.com
 DOMAIN-SUFFIX,longtugame.com
+DOMAIN-SUFFIX,luckincoffeecdn.com
 DOMAIN-SUFFIX,ludashi.com
 DOMAIN-SUFFIX,luojilab.com
 DOMAIN-SUFFIX,m1905.com
@@ -441,7 +450,9 @@ DOMAIN-SUFFIX,mihoyo.com
 DOMAIN-SUFFIX,mihoyocg.com
 DOMAIN-SUFFIX,mihoyogift.com
 DOMAIN-SUFFIX,mihoyomall.com
+DOMAIN-SUFFIX,mipay.com
 DOMAIN-SUFFIX,miui.com
+DOMAIN-SUFFIX,miwifi.com
 DOMAIN-SUFFIX,miyoushe.com
 DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,mobike.com
@@ -456,12 +467,14 @@ DOMAIN-SUFFIX,myalicdn.com
 DOMAIN-SUFFIX,myapp.com
 DOMAIN-SUFFIX,myoppo.com
 DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,myssl.com
 DOMAIN-SUFFIX,myzaker.com
 DOMAIN-SUFFIX,mzres.com
 DOMAIN-SUFFIX,nagcloudcs.com
 DOMAIN-SUFFIX,netease.com
 DOMAIN-SUFFIX,nextstudios.com
 DOMAIN-SUFFIX,ngabbs.com
+DOMAIN-SUFFIX,niu.com
 DOMAIN-SUFFIX,nlark.com
 DOMAIN-SUFFIX,npmmirror.com
 DOMAIN-SUFFIX,nubia.com
@@ -567,6 +580,7 @@ DOMAIN-SUFFIX,soso.com
 DOMAIN-SUFFIX,soufunimg.com
 DOMAIN-SUFFIX,sspai.com
 DOMAIN-SUFFIX,steamchina.com
+DOMAIN-SUFFIX,cm.steampowered.com
 DOMAIN-SUFFIX,suning.com
 DOMAIN-SUFFIX,syxlgame.com
 DOMAIN-SUFFIX,szbdyd.com
@@ -630,6 +644,7 @@ DOMAIN-SUFFIX,wangsu.com
 DOMAIN-SUFFIX,wanmei.com
 DOMAIN-SUFFIX,wcbygame.com
 DOMAIN-SUFFIX,weathercn.com
+DOMAIN-SUFFIX,webank.com
 DOMAIN-SUFFIX,wegame.com
 DOMAIN-SUFFIX,wegameplus.com
 DOMAIN-SUFFIX,weibo.com
@@ -703,21 +718,26 @@ DOMAIN-SUFFIX,zhuoyou.com
 DOMAIN-SUFFIX,zhuoyuegame.com
 DOMAIN-SUFFIX,zijieapi.com
 DOMAIN-SUFFIX,zjcdn.com
+DOMAIN-SUFFIX,zol.com
 DOMAIN-SUFFIX,zui.com
 DOMAIN-SUFFIX,zuimeitianqi.com
 DOMAIN-SUFFIX,zuoyebang.com
 DOMAIN-SUFFIX,zybang.com
+DOMAIN-SUFFIX,cnb.cool
 DOMAIN-SUFFIX,douban.fm
 DOMAIN-SUFFIX,jd.hk
 DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,gorouter.info
 DOMAIN-SUFFIX,air-matters.io
 DOMAIN-SUFFIX,daocloud.io
+DOMAIN-SUFFIX,dcloud.io
 DOMAIN-SUFFIX,gitee.io
 DOMAIN-SUFFIX,jianshu.io
 DOMAIN-SUFFIX,openinstall.io
+DOMAIN-SUFFIX,dns.la
 DOMAIN-SUFFIX,haowu.link
 DOMAIN-SUFFIX,yqkk.link
+DOMAIN-SUFFIX,tool.lu
 DOMAIN-SUFFIX,coding.me
 DOMAIN-SUFFIX,ele.me
 DOMAIN-SUFFIX,id6.me
@@ -773,6 +793,7 @@ DOMAIN-SUFFIX,meituan.net
 DOMAIN-SUFFIX,mszdld.net
 DOMAIN-SUFFIX,netstatic.net
 DOMAIN-SUFFIX,nextworkshop.net
+DOMAIN-SUFFIX,oneplus.net
 DOMAIN-SUFFIX,oray.net
 DOMAIN-SUFFIX,oschina.net
 DOMAIN-SUFFIX,pchome.net

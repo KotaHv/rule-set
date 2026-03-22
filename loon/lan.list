@@ -1,4 +1,4 @@
-# Total: 62 rules
+# Total: 60 rules
 DOMAIN,instant.arubanetworks.com
 DOMAIN,setmeup.arubanetworks.com
 DOMAIN,repeater.asus.com
@@ -38,11 +38,9 @@ DOMAIN-SUFFIX,plex.direct
 DOMAIN-SUFFIX,ui.direct
 DOMAIN-SUFFIX,home
 DOMAIN-SUFFIX,internal
-DOMAIN-SUFFIX,127.0.0.1.sslip.io
 DOMAIN-SUFFIX,lan
 DOMAIN-SUFFIX,local
 DOMAIN-SUFFIX,localdomain
-DOMAIN-SUFFIX,127.atlas.skk.moe
 DOMAIN-SUFFIX,routerlogin.net
 DOMAIN-SUFFIX,tplinkap.net
 DOMAIN-SUFFIX,tplinkmodem.net

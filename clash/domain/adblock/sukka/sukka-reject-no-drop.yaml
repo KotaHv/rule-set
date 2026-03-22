@@ -1,7 +1,9 @@
-# Total: 29 rules
+# Total: 33 rules
 'payload':
 - 'stun.douyucdn.cn'
 - 'stun1.douyucdn.cn'
+- 'upos-sz-302kodo.bilivideo.com'
+- 'upos-sz-302ppio.bilivideo.com'
 - 'livewebbs2pcdn.msstatic.com'
 - 'qn-cdnfile1pcdn.msstatic.com'
 - '+.ppio.cloud'
@@ -9,6 +11,7 @@
 - '+.cdnnodedns.cn'
 - '+.p2perrorlog.douyucdn.cn'
 - '+.p2plog.douyucdn.cn'
+- '+.gjfzpt.cn'
 - '+.p2p.huya.com'
 - '+.ietheivaicai.com'
 - '+.kuiniuca.com'
@@ -27,5 +30,6 @@
 - '+.xycdn.com'
 - '+.yfcloud.com'
 - '+.pcdn.yximgs.com'
+- '+.bsccdn.net'
 - '+.yfcdn.net'
 - '+.yfp2p.net'
