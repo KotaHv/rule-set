@@ -1,4 +1,4 @@
-# Total: 4393 rules
+# Total: 4394 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -2200,6 +2200,7 @@
 - 'plugins.dprint.dev'
 - 'fiddle.fastly.dev'
 - 'storybooks.fluentui.dev'
+- 'www.fumadocs.dev'
 - 'assets.github.dev'
 - 'lucide.dev'
 - 'stats.setapp.macpaw.dev'

@@ -1,4 +1,4 @@
-# Total: 4472 rules
+# Total: 4473 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -2199,6 +2199,7 @@ DOMAIN,p.depot.dev
 DOMAIN,plugins.dprint.dev
 DOMAIN,fiddle.fastly.dev
 DOMAIN,storybooks.fluentui.dev
+DOMAIN,www.fumadocs.dev
 DOMAIN,assets.github.dev
 DOMAIN,lucide.dev
 DOMAIN,stats.setapp.macpaw.dev
@@ -4416,12 +4417,12 @@ DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-WILDCARD,image*.cloudokyo.cloud
 DOMAIN-WILDCARD,video*.cloudokyo.cloud
 DOMAIN-WILDCARD,assets.*.imaga.co
+DOMAIN-WILDCARD,*-intake-*-datadoghq.com
 DOMAIN-WILDCARD,cdn?.18girlssex.com
 DOMAIN-WILDCARD,blog-imgs-??.2nt.com
 DOMAIN-WILDCARD,fastly-*.allmovie.com
 DOMAIN-WILDCARD,ocsp.*.amazontrust.com
 DOMAIN-WILDCARD,cdn*.boysfood.com
-DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
 DOMAIN-WILDCARD,proxy-*.dailymotion.com
 DOMAIN-WILDCARD,blog-imgs-??.fc2.com
 DOMAIN-WILDCARD,video-thumbnail2.fc2.com

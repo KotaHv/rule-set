@@ -1,4 +1,4 @@
-# Total: 6158 rules
+# Total: 6159 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1751,6 +1751,7 @@
 - 'plugins.dprint.dev'
 - 'fiddle.fastly.dev'
 - 'storybooks.fluentui.dev'
+- 'www.fumadocs.dev'
 - 'dl.getaurora.dev'
 - 'ubuntu.gjolly.dev'
 - 'lucide.dev'

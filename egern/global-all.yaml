@@ -1,4 +1,4 @@
-# Total: 6284 rules
+# Total: 6285 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1752,6 +1752,7 @@ domain_set:
 - plugins.dprint.dev
 - fiddle.fastly.dev
 - storybooks.fluentui.dev
+- www.fumadocs.dev
 - dl.getaurora.dev
 - ubuntu.gjolly.dev
 - lucide.dev
@@ -6166,12 +6167,12 @@ domain_wildcard_set:
 - image*.cloudokyo.cloud
 - video*.cloudokyo.cloud
 - assets.*.imaga.co
+- '*-intake-*-datadoghq.com'
 - cdn?.18girlssex.com
 - blog-imgs-??.2nt.com
 - fastly-*.allmovie.com
 - '*.s3.*.backblazeb2.com'
 - cdn*.boysfood.com
-- browser-intake-*-datadoghq.com
 - assets*.freshdesk.com
 - '*.fsvod?.com'
 - cdns.*.gigya.com

@@ -5,12 +5,12 @@ payload:
 - DOMAIN-WILDCARD,image*.cloudokyo.cloud
 - DOMAIN-WILDCARD,video*.cloudokyo.cloud
 - DOMAIN-WILDCARD,assets.*.imaga.co
+- DOMAIN-WILDCARD,*-intake-*-datadoghq.com
 - DOMAIN-WILDCARD,cdn?.18girlssex.com
 - DOMAIN-WILDCARD,blog-imgs-??.2nt.com
 - DOMAIN-WILDCARD,fastly-*.allmovie.com
 - DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
 - DOMAIN-WILDCARD,cdn*.boysfood.com
-- DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
 - DOMAIN-WILDCARD,assets*.freshdesk.com
 - DOMAIN-WILDCARD,*.fsvod?.com
 - DOMAIN-WILDCARD,cdns.*.gigya.com

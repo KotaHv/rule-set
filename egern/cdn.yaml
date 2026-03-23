@@ -1,4 +1,4 @@
-# Total: 4472 rules
+# Total: 4473 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2201,6 +2201,7 @@ domain_set:
 - plugins.dprint.dev
 - fiddle.fastly.dev
 - storybooks.fluentui.dev
+- www.fumadocs.dev
 - assets.github.dev
 - lucide.dev
 - stats.setapp.macpaw.dev
@@ -4399,12 +4400,12 @@ domain_wildcard_set:
 - image*.cloudokyo.cloud
 - video*.cloudokyo.cloud
 - assets.*.imaga.co
+- '*-intake-*-datadoghq.com'
 - cdn?.18girlssex.com
 - blog-imgs-??.2nt.com
 - fastly-*.allmovie.com
 - ocsp.*.amazontrust.com
 - cdn*.boysfood.com
-- browser-intake-*-datadoghq.com
 - proxy-*.dailymotion.com
 - blog-imgs-??.fc2.com
 - video-thumbnail2.fc2.com
