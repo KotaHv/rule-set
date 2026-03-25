@@ -1,4 +1,4 @@
-# Total: 4394 rules
+# Total: 4399 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -59,6 +59,7 @@
 - 'cdn.matterhorn.app'
 - 'disco-static.productessentials.app'
 - 'cdn.rive.app'
+- 'images.rss.app'
 - 'assets.slater.app'
 - 'phishing.army'
 - 'img.fzf404.art'
@@ -413,6 +414,7 @@
 - 'images.blockscan.com'
 - 'cdn.blogarama.com'
 - 'sourcepointcmp.bloomberg.com'
+- 'assets2.blubrry.com'
 - 'static.registration.bluehost.com'
 - 'cdn-www.bluestacks.com'
 - 'assets.bnidx.com'
@@ -700,6 +702,7 @@
 - 'cdn5.edgedatg.com'
 - 'cdn6.edgedatg.com'
 - 'cdn2.editmysite.com'
+- 'static.assets-stash.eet-china.com'
 - 'eightcha.com'
 - 'creative.eizzih.com'
 - 'static.elfsight.com'
@@ -2168,6 +2171,7 @@
 - 'assets.zilliz.com'
 - 'webfonts.zoho.com'
 - 'widgets.zohosalesiq.com'
+- 'cdn.zolplay.com'
 - 'hello.zonos.com'
 - 'ws-assets.zoominfo.com'
 - 'public.zoorix.com'
@@ -2360,6 +2364,7 @@
 - 'website-cdn.ipinfo.io'
 - 'static.iplocate.io'
 - 'cdn.ipwhois.io'
+- 'ipxy.io'
 - 'static.itch.io'
 - 'cdn.jetboost.io'
 - 'cdn-blocks.karte.io'

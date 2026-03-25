@@ -1,4 +1,4 @@
-# Total: 6287 rules
+# Total: 6292 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -28,6 +28,7 @@ domain_set:
 - builds.parsec.app
 - disco-static.productessentials.app
 - cdn.rive.app
+- images.rss.app
 - assets.slater.app
 - dl.vanadium.app
 - su.virtualbuddy.app
@@ -376,6 +377,7 @@ domain_set:
 - cms.blavity.com
 - images.blockscan.com
 - cdn.blogarama.com
+- assets2.blubrry.com
 - static.registration.bluehost.com
 - cdn-www.bluestacks.com
 - assets.bnidx.com
@@ -614,6 +616,7 @@ domain_set:
 - cdn2.editmysite.com
 - download.edovia.com
 - updates.edovia.com
+- static.assets-stash.eet-china.com
 - eightcha.com
 - creative.eizzih.com
 - mirror.ekiphost.com
@@ -1724,6 +1727,7 @@ domain_set:
 - assets.zilliz.com
 - webfonts.zoho.com
 - widgets.zohosalesiq.com
+- cdn.zolplay.com
 - hello.zonos.com
 - public.zoorix.com
 - barracuda-assets.zoovu.com
@@ -1908,6 +1912,7 @@ domain_set:
 - website-cdn.ipinfo.io
 - static.iplocate.io
 - cdn.ipwhois.io
+- ipxy.io
 - cdn.jetboost.io
 - cdn-blocks.karte.io
 - cdn-edge.karte.io

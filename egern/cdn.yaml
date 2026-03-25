@@ -1,4 +1,4 @@
-# Total: 4473 rules
+# Total: 4478 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -60,6 +60,7 @@ domain_set:
 - cdn.matterhorn.app
 - disco-static.productessentials.app
 - cdn.rive.app
+- images.rss.app
 - assets.slater.app
 - phishing.army
 - img.fzf404.art
@@ -414,6 +415,7 @@ domain_set:
 - images.blockscan.com
 - cdn.blogarama.com
 - sourcepointcmp.bloomberg.com
+- assets2.blubrry.com
 - static.registration.bluehost.com
 - cdn-www.bluestacks.com
 - assets.bnidx.com
@@ -701,6 +703,7 @@ domain_set:
 - cdn5.edgedatg.com
 - cdn6.edgedatg.com
 - cdn2.editmysite.com
+- static.assets-stash.eet-china.com
 - eightcha.com
 - creative.eizzih.com
 - static.elfsight.com
@@ -2169,6 +2172,7 @@ domain_set:
 - assets.zilliz.com
 - webfonts.zoho.com
 - widgets.zohosalesiq.com
+- cdn.zolplay.com
 - hello.zonos.com
 - ws-assets.zoominfo.com
 - public.zoorix.com
@@ -2361,6 +2365,7 @@ domain_set:
 - website-cdn.ipinfo.io
 - static.iplocate.io
 - cdn.ipwhois.io
+- ipxy.io
 - static.itch.io
 - cdn.jetboost.io
 - cdn-blocks.karte.io
