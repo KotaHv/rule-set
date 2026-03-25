@@ -1,4 +1,4 @@
-# Total: 6348 rules
+# Total: 6351 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -1121,7 +1121,6 @@ DOMAIN,r2cdn.myshopline.com
 DOMAIN,mirror.mythic-beasts.com
 DOMAIN,static.namebeta.com
 DOMAIN,files.namecheap.com
-DOMAIN,s.namemc.com
 DOMAIN,static.narrativ.com
 DOMAIN,3dna.nationbuilder.com
 DOMAIN,assets.nationbuilder.com
@@ -2287,7 +2286,6 @@ DOMAIN,az700632.vo.msecnd.net
 DOMAIN,az764295.vo.msecnd.net
 DOMAIN,cdn.myfonts.net
 DOMAIN,deb-mir1.naitways.net
-DOMAIN,maven.neoforged.net
 DOMAIN,mirrors.neterra.net
 DOMAIN,mirrors.netix.net
 DOMAIN,mirror.us-midwest-1.nexcess.net
@@ -2563,8 +2561,6 @@ DOMAIN,cdn.simpleicons.org
 DOMAIN,mirror.siwoo.org
 DOMAIN,s.slideme.org
 DOMAIN,light.spicegems.org
-DOMAIN,proxy.spigotmc.org
-DOMAIN,static.spigotmc.org
 DOMAIN,assets.squarewebsites.org
 DOMAIN,mirror.stjschools.org
 DOMAIN,deb.sury.org
@@ -3205,6 +3201,7 @@ DOMAIN-SUFFIX,chillingo.com
 DOMAIN-SUFFIX,chrome.com
 DOMAIN-SUFFIX,chromeexperiments.com
 DOMAIN-SUFFIX,chromestatus.com
+DOMAIN-SUFFIX,chunkbase.com
 DOMAIN-SUFFIX,circle-artifacts.com
 DOMAIN-SUFFIX,circleci.com
 DOMAIN-SUFFIX,cisco.com
@@ -3985,6 +3982,7 @@ DOMAIN-SUFFIX,mythicgames.com
 DOMAIN-SUFFIX,mytvsuper.com
 DOMAIN-SUFFIX,n0vadesktop.com
 DOMAIN-SUFFIX,aacdn.nagich.com
+DOMAIN-SUFFIX,namemc.com
 DOMAIN-SUFFIX,naver.com
 DOMAIN-SUFFIX,nbc.com
 DOMAIN-SUFFIX,nbclosangeles.com
@@ -5481,6 +5479,7 @@ DOMAIN-SUFFIX,microsoftreactor.net
 DOMAIN-SUFFIX,microsoftsilverlight.net
 DOMAIN-SUFFIX,minecraft.net
 DOMAIN-SUFFIX,minecraft-services.net
+DOMAIN-SUFFIX,minecraftforge.net
 DOMAIN-SUFFIX,minecraftforum.net
 DOMAIN-SUFFIX,minotar.net
 DOMAIN-SUFFIX,mirrorsedge.net
@@ -5500,6 +5499,7 @@ DOMAIN-SUFFIX,mywaytopay.net
 DOMAIN-SUFFIX,naixi.net
 DOMAIN-SUFFIX,nelreports.net
 DOMAIN-SUFFIX,nentindo.net
+DOMAIN-SUFFIX,neoforged.net
 DOMAIN-SUFFIX,netflix.net
 DOMAIN-SUFFIX,newpipe.net
 DOMAIN-SUFFIX,nflximg.net
@@ -5519,6 +5519,7 @@ DOMAIN-SUFFIX,public.cdn.office.net
 DOMAIN-SUFFIX,nel.measure.office.net
 DOMAIN-SUFFIX,offworldindustries.net
 DOMAIN-SUFFIX,steam.cdn.on.net
+DOMAIN-SUFFIX,optifine.net
 DOMAIN-SUFFIX,osdn.net
 DOMAIN-SUFFIX,osmand.net
 DOMAIN-SUFFIX,ospray.net
@@ -5921,6 +5922,7 @@ DOMAIN-SUFFIX,someonewhocares.org
 DOMAIN-SUFFIX,sourcehut.org
 DOMAIN-SUFFIX,south-plus.org
 DOMAIN-SUFFIX,spec.org
+DOMAIN-SUFFIX,spigotmc.org
 DOMAIN-SUFFIX,sqlite.org
 DOMAIN-SUFFIX,stackage.org
 DOMAIN-SUFFIX,streamhentai.org
@@ -6264,6 +6266,7 @@ IP-CIDR,185.2.220.0/22,no-resolve
 IP-CIDR,185.9.188.0/22,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
 IP-CIDR,192.173.64.0/18,no-resolve
+IP-CIDR,196.55.216.167/32,no-resolve
 IP-CIDR,198.38.96.0/19,no-resolve
 IP-CIDR,198.45.48.0/20,no-resolve
 IP-CIDR,208.75.76.0/22,no-resolve

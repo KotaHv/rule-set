@@ -1,4 +1,4 @@
-# Total: 740 rules
+# Total: 746 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -157,6 +157,7 @@ domain_suffix_set:
 - capturingreality.com
 - championshipseriesleague.com
 - chillingo.com
+- chunkbase.com
 - clash.com
 - clashmini.com
 - clashofclans.com
@@ -313,6 +314,7 @@ domain_suffix_set:
 - mythicentertainment.com
 - mythicgames.com
 - n0vadesktop.com
+- namemc.com
 - needforspeed.com
 - needforspeedboost.com
 - needforspeeddriftkings.com
@@ -655,14 +657,17 @@ domain_suffix_set:
 - maddenseason.net
 - minecraft.net
 - minecraft-services.net
+- minecraftforge.net
 - mirrorsedge.net
 - mythicentertainment.net
 - nentindo.net
+- neoforged.net
 - nintendo.net
 - nintendonetwork.net
 - nintendoswitch.net
 - offworldindustries.net
 - steam.cdn.on.net
+- optifine.net
 - pinkcore.net
 - playstation.net
 - pokemonwifi.net
@@ -701,6 +706,7 @@ domain_suffix_set:
 - quiltmc.org
 - rblx.org
 - roblox.org
+- spigotmc.org
 - xbox.org
 - xbox360.org
 - garena.ph

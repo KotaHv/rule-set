@@ -1,4 +1,4 @@
-# Total: 6284 rules
+# Total: 6287 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1123,7 +1123,6 @@ domain_set:
 - mirror.mythic-beasts.com
 - static.namebeta.com
 - files.namecheap.com
-- s.namemc.com
 - static.narrativ.com
 - 3dna.nationbuilder.com
 - assets.nationbuilder.com
@@ -2289,7 +2288,6 @@ domain_set:
 - az764295.vo.msecnd.net
 - cdn.myfonts.net
 - deb-mir1.naitways.net
-- maven.neoforged.net
 - mirrors.neterra.net
 - mirrors.netix.net
 - mirror.us-midwest-1.nexcess.net
@@ -2565,8 +2563,6 @@ domain_set:
 - mirror.siwoo.org
 - s.slideme.org
 - light.spicegems.org
-- proxy.spigotmc.org
-- static.spigotmc.org
 - assets.squarewebsites.org
 - mirror.stjschools.org
 - deb.sury.org
@@ -3208,6 +3204,7 @@ domain_suffix_set:
 - chrome.com
 - chromeexperiments.com
 - chromestatus.com
+- chunkbase.com
 - circle-artifacts.com
 - circleci.com
 - cisco.com
@@ -3988,6 +3985,7 @@ domain_suffix_set:
 - mytvsuper.com
 - n0vadesktop.com
 - aacdn.nagich.com
+- namemc.com
 - naver.com
 - nbc.com
 - nbclosangeles.com
@@ -5484,6 +5482,7 @@ domain_suffix_set:
 - microsoftsilverlight.net
 - minecraft.net
 - minecraft-services.net
+- minecraftforge.net
 - minecraftforum.net
 - minotar.net
 - mirrorsedge.net
@@ -5503,6 +5502,7 @@ domain_suffix_set:
 - naixi.net
 - nelreports.net
 - nentindo.net
+- neoforged.net
 - netflix.net
 - newpipe.net
 - nflximg.net
@@ -5522,6 +5522,7 @@ domain_suffix_set:
 - nel.measure.office.net
 - offworldindustries.net
 - steam.cdn.on.net
+- optifine.net
 - osdn.net
 - osmand.net
 - ospray.net
@@ -5924,6 +5925,7 @@ domain_suffix_set:
 - sourcehut.org
 - south-plus.org
 - spec.org
+- spigotmc.org
 - sqlite.org
 - stackage.org
 - streamhentai.org
@@ -6272,6 +6274,7 @@ ip_cidr_set:
 - 185.9.188.0/22
 - 185.76.151.0/24
 - 192.173.64.0/18
+- 196.55.216.167/32
 - 198.38.96.0/19
 - 198.45.48.0/20
 - 208.75.76.0/22

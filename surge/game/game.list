@@ -1,4 +1,4 @@
-# Total: 740 rules
+# Total: 746 rules
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
@@ -154,6 +154,7 @@ DOMAIN-SUFFIX,capitalgames.com
 DOMAIN-SUFFIX,capturingreality.com
 DOMAIN-SUFFIX,championshipseriesleague.com
 DOMAIN-SUFFIX,chillingo.com
+DOMAIN-SUFFIX,chunkbase.com
 DOMAIN-SUFFIX,clash.com
 DOMAIN-SUFFIX,clashmini.com
 DOMAIN-SUFFIX,clashofclans.com
@@ -310,6 +311,7 @@ DOMAIN-SUFFIX,mysimsracing.com
 DOMAIN-SUFFIX,mythicentertainment.com
 DOMAIN-SUFFIX,mythicgames.com
 DOMAIN-SUFFIX,n0vadesktop.com
+DOMAIN-SUFFIX,namemc.com
 DOMAIN-SUFFIX,needforspeed.com
 DOMAIN-SUFFIX,needforspeedboost.com
 DOMAIN-SUFFIX,needforspeeddriftkings.com
@@ -652,14 +654,17 @@ DOMAIN-SUFFIX,lolfanart.net
 DOMAIN-SUFFIX,maddenseason.net
 DOMAIN-SUFFIX,minecraft.net
 DOMAIN-SUFFIX,minecraft-services.net
+DOMAIN-SUFFIX,minecraftforge.net
 DOMAIN-SUFFIX,mirrorsedge.net
 DOMAIN-SUFFIX,mythicentertainment.net
 DOMAIN-SUFFIX,nentindo.net
+DOMAIN-SUFFIX,neoforged.net
 DOMAIN-SUFFIX,nintendo.net
 DOMAIN-SUFFIX,nintendonetwork.net
 DOMAIN-SUFFIX,nintendoswitch.net
 DOMAIN-SUFFIX,offworldindustries.net
 DOMAIN-SUFFIX,steam.cdn.on.net
+DOMAIN-SUFFIX,optifine.net
 DOMAIN-SUFFIX,pinkcore.net
 DOMAIN-SUFFIX,playstation.net
 DOMAIN-SUFFIX,pokemonwifi.net
@@ -698,6 +703,7 @@ DOMAIN-SUFFIX,prismlauncher.org
 DOMAIN-SUFFIX,quiltmc.org
 DOMAIN-SUFFIX,rblx.org
 DOMAIN-SUFFIX,roblox.org
+DOMAIN-SUFFIX,spigotmc.org
 DOMAIN-SUFFIX,xbox.org
 DOMAIN-SUFFIX,xbox360.org
 DOMAIN-SUFFIX,garena.ph
