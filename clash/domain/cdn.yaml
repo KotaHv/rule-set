@@ -1,4 +1,4 @@
-# Total: 4399 rules
+# Total: 4400 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3439,6 +3439,7 @@
 - '+.drivecdn.com'
 - '+.dropboxstatic.com'
 - '+.drtst.com'
+- '+.dubassets.com'
 - '+.dubcdn.com'
 - '+.dummyimage.com'
 - '+.dummyjson.com'
