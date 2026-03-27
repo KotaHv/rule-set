@@ -1,4 +1,4 @@
-# Total: 4479 rules
+# Total: 4480 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1956,6 +1956,7 @@ domain_set:
 - status.ui.com
 - cdn.academy.svc.ui.com
 - account-cdn.svc.ui.com
+- cdn.casestudies.svc.ui.com
 - content-cdn.svc.ui.com
 - files.svc.ui.com
 - fonts.svc.ui.com
