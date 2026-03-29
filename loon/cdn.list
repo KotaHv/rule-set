@@ -1,4 +1,4 @@
-# Total: 4423 rules
+# Total: 4427 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -3134,6 +3134,8 @@ DOMAIN,p-cdnstatic.svc.litv.tv
 DOMAIN,player.svc.litv.tv
 DOMAIN,s-cdnstatic.svc.litv.tv
 DOMAIN,static.svc.litv.tv
+DOMAIN,images.nebula.tv
+DOMAIN,starlight.nebula.tv
 DOMAIN,images.pluto.tv
 DOMAIN,static-homepage-en.pluto.tv
 DOMAIN,static.tella.tv
@@ -3525,6 +3527,7 @@ DOMAIN-SUFFIX,storage.googleapis.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,widget.cluster.groovehq.com
+DOMAIN-SUFFIX,grouponcdn.com
 DOMAIN-SUFFIX,fonts.gsma.com
 DOMAIN-SUFFIX,metric.gstatic.com
 DOMAIN-SUFFIX,gsuus.com
@@ -4242,6 +4245,7 @@ DOMAIN-SUFFIX,storage.yandexcloud.net
 DOMAIN-SUFFIX,yastatic.net
 DOMAIN-SUFFIX,z4a.net
 DOMAIN-SUFFIX,zkcdn.net
+DOMAIN-SUFFIX,zobj.net
 DOMAIN-SUFFIX,ipfs.eth.aragon.network
 DOMAIN-SUFFIX,cdnjs.network
 DOMAIN-SUFFIX,mangadex.network

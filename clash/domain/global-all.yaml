@@ -1,4 +1,4 @@
-# Total: 6167 rules
+# Total: 6171 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2689,6 +2689,8 @@
 - 'player.svc.litv.tv'
 - 's-cdnstatic.svc.litv.tv'
 - 'static.svc.litv.tv'
+- 'images.nebula.tv'
+- 'starlight.nebula.tv'
 - 'static.tella.tv'
 - 'tubi.tv'
 - 'www.tubi.tv'
@@ -3580,6 +3582,7 @@
 - '+.gravatar.com'
 - '+.grindr.com'
 - '+.widget.cluster.groovehq.com'
+- '+.grouponcdn.com'
 - '+.fonts.gsma.com'
 - '+.gstatic.com'
 - '+.gsuus.com'
@@ -5651,6 +5654,7 @@
 - '+.mirrors.zagrio.net'
 - '+.zerochan.net'
 - '+.zkcdn.net'
+- '+.zobj.net'
 - '+.network'
 - '+.cdn.neustar'
 - '+.new'

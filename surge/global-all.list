@@ -1,4 +1,4 @@
-# Total: 6357 rules
+# Total: 6361 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -2688,6 +2688,8 @@ DOMAIN,p-cdnstatic.svc.litv.tv
 DOMAIN,player.svc.litv.tv
 DOMAIN,s-cdnstatic.svc.litv.tv
 DOMAIN,static.svc.litv.tv
+DOMAIN,images.nebula.tv
+DOMAIN,starlight.nebula.tv
 DOMAIN,static.tella.tv
 DOMAIN,tubi.tv
 DOMAIN,www.tubi.tv
@@ -3579,6 +3581,7 @@ DOMAIN-SUFFIX,grammarly.com
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,grindr.com
 DOMAIN-SUFFIX,widget.cluster.groovehq.com
+DOMAIN-SUFFIX,grouponcdn.com
 DOMAIN-SUFFIX,fonts.gsma.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,gsuus.com
@@ -5650,6 +5653,7 @@ DOMAIN-SUFFIX,z4a.net
 DOMAIN-SUFFIX,mirrors.zagrio.net
 DOMAIN-SUFFIX,zerochan.net
 DOMAIN-SUFFIX,zkcdn.net
+DOMAIN-SUFFIX,zobj.net
 DOMAIN-SUFFIX,network
 DOMAIN-SUFFIX,cdn.neustar
 DOMAIN-SUFFIX,new

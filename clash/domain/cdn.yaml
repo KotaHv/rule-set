@@ -1,4 +1,4 @@
-# Total: 4402 rules
+# Total: 4406 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3135,6 +3135,8 @@
 - 'player.svc.litv.tv'
 - 's-cdnstatic.svc.litv.tv'
 - 'static.svc.litv.tv'
+- 'images.nebula.tv'
+- 'starlight.nebula.tv'
 - 'images.pluto.tv'
 - 'static-homepage-en.pluto.tv'
 - 'static.tella.tv'
@@ -3526,6 +3528,7 @@
 - '+.googleusercontent.com'
 - '+.gravatar.com'
 - '+.widget.cluster.groovehq.com'
+- '+.grouponcdn.com'
 - '+.fonts.gsma.com'
 - '+.metric.gstatic.com'
 - '+.gsuus.com'
@@ -4243,6 +4246,7 @@
 - '+.yastatic.net'
 - '+.z4a.net'
 - '+.zkcdn.net'
+- '+.zobj.net'
 - '+.ipfs.eth.aragon.network'
 - '+.cdnjs.network'
 - '+.mangadex.network'

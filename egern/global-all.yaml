@@ -1,4 +1,4 @@
-# Total: 6293 rules
+# Total: 6297 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2690,6 +2690,8 @@ domain_set:
 - player.svc.litv.tv
 - s-cdnstatic.svc.litv.tv
 - static.svc.litv.tv
+- images.nebula.tv
+- starlight.nebula.tv
 - static.tella.tv
 - tubi.tv
 - www.tubi.tv
@@ -3582,6 +3584,7 @@ domain_suffix_set:
 - gravatar.com
 - grindr.com
 - widget.cluster.groovehq.com
+- grouponcdn.com
 - fonts.gsma.com
 - gstatic.com
 - gsuus.com
@@ -5653,6 +5656,7 @@ domain_suffix_set:
 - mirrors.zagrio.net
 - zerochan.net
 - zkcdn.net
+- zobj.net
 - network
 - cdn.neustar
 - new
