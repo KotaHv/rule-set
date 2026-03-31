@@ -1,4 +1,4 @@
-# Total: 6307 rules
+# Total: 6315 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -715,6 +715,13 @@ domain_set:
 - m3.gab.com
 - media.gamestop.com
 - certona.gap.com
+- download.garmin.com
+- share-assets.fe.garmin.com
+- fonts.garmin.com
+- omtmapupdate.garmin.com
+- worldwide.omtmapupdate.garmin.com
+- res.garmin.com
+- static.garmin.com
 - a.gawby.com
 - i.gawby.com
 - mirrors.gbnetwork.com
@@ -3520,6 +3527,7 @@ domain_suffix_set:
 - gammacdn.com
 - garena.com
 - garenanow.com
+- garmincdn.com
 - gartner.com
 - scripts.gatorapi.com
 - gauthstatic.com

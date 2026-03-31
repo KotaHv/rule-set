@@ -1,4 +1,4 @@
-# Total: 4485 rules
+# Total: 4490 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -847,6 +847,10 @@ domain_set:
 - m3.gab.com
 - media.gamestop.com
 - certona.gap.com
+- share-assets.fe.garmin.com
+- fonts.garmin.com
+- res.garmin.com
+- static.garmin.com
 - a.gawby.com
 - i.gawby.com
 - account-widget-mfe.gcore.com
@@ -3498,6 +3502,7 @@ domain_suffix_set:
 - gamccdn.com
 - gamesgamescdn.com
 - gammacdn.com
+- garmincdn.com
 - static.gartner.com
 - scripts.gatorapi.com
 - gauthstatic.com

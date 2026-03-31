@@ -1,4 +1,4 @@
-# Total: 6181 rules
+# Total: 6189 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -714,6 +714,13 @@
 - 'm3.gab.com'
 - 'media.gamestop.com'
 - 'certona.gap.com'
+- 'download.garmin.com'
+- 'share-assets.fe.garmin.com'
+- 'fonts.garmin.com'
+- 'omtmapupdate.garmin.com'
+- 'worldwide.omtmapupdate.garmin.com'
+- 'res.garmin.com'
+- 'static.garmin.com'
 - 'a.gawby.com'
 - 'i.gawby.com'
 - 'mirrors.gbnetwork.com'
@@ -3518,6 +3525,7 @@
 - '+.gammacdn.com'
 - '+.garena.com'
 - '+.garenanow.com'
+- '+.garmincdn.com'
 - '+.gartner.com'
 - '+.scripts.gatorapi.com'
 - '+.gauthstatic.com'

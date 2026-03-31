@@ -1,4 +1,4 @@
-# Total: 4406 rules
+# Total: 4411 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -846,6 +846,10 @@
 - 'm3.gab.com'
 - 'media.gamestop.com'
 - 'certona.gap.com'
+- 'share-assets.fe.garmin.com'
+- 'fonts.garmin.com'
+- 'res.garmin.com'
+- 'static.garmin.com'
 - 'a.gawby.com'
 - 'i.gawby.com'
 - 'account-widget-mfe.gcore.com'
@@ -3496,6 +3500,7 @@
 - '+.gamccdn.com'
 - '+.gamesgamescdn.com'
 - '+.gammacdn.com'
+- '+.garmincdn.com'
 - '+.static.gartner.com'
 - '+.scripts.gatorapi.com'
 - '+.gauthstatic.com'

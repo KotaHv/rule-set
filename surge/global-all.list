@@ -1,4 +1,4 @@
-# Total: 6371 rules
+# Total: 6379 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -713,6 +713,13 @@ DOMAIN,images.g2crowd.com
 DOMAIN,m3.gab.com
 DOMAIN,media.gamestop.com
 DOMAIN,certona.gap.com
+DOMAIN,download.garmin.com
+DOMAIN,share-assets.fe.garmin.com
+DOMAIN,fonts.garmin.com
+DOMAIN,omtmapupdate.garmin.com
+DOMAIN,worldwide.omtmapupdate.garmin.com
+DOMAIN,res.garmin.com
+DOMAIN,static.garmin.com
 DOMAIN,a.gawby.com
 DOMAIN,i.gawby.com
 DOMAIN,mirrors.gbnetwork.com
@@ -3517,6 +3524,7 @@ DOMAIN-SUFFIX,gamesstack.com
 DOMAIN-SUFFIX,gammacdn.com
 DOMAIN-SUFFIX,garena.com
 DOMAIN-SUFFIX,garenanow.com
+DOMAIN-SUFFIX,garmincdn.com
 DOMAIN-SUFFIX,gartner.com
 DOMAIN-SUFFIX,scripts.gatorapi.com
 DOMAIN-SUFFIX,gauthstatic.com

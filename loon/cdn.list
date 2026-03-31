@@ -1,4 +1,4 @@
-# Total: 4427 rules
+# Total: 4432 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -845,6 +845,10 @@ DOMAIN,images.g2crowd.com
 DOMAIN,m3.gab.com
 DOMAIN,media.gamestop.com
 DOMAIN,certona.gap.com
+DOMAIN,share-assets.fe.garmin.com
+DOMAIN,fonts.garmin.com
+DOMAIN,res.garmin.com
+DOMAIN,static.garmin.com
 DOMAIN,a.gawby.com
 DOMAIN,i.gawby.com
 DOMAIN,account-widget-mfe.gcore.com
@@ -3495,6 +3499,7 @@ DOMAIN-SUFFIX,gadgets360cdn.com
 DOMAIN-SUFFIX,gamccdn.com
 DOMAIN-SUFFIX,gamesgamescdn.com
 DOMAIN-SUFFIX,gammacdn.com
+DOMAIN-SUFFIX,garmincdn.com
 DOMAIN-SUFFIX,static.gartner.com
 DOMAIN-SUFFIX,scripts.gatorapi.com
 DOMAIN-SUFFIX,gauthstatic.com

@@ -1,4 +1,4 @@
-# Total: 1903 rules
+# Total: 1906 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -232,6 +232,9 @@
 - 'rsync.fjordos.com'
 - 'download.fosshub.com'
 - 'data.gameflare.com'
+- 'download.garmin.com'
+- 'omtmapupdate.garmin.com'
+- 'worldwide.omtmapupdate.garmin.com'
 - 'mirrors.gbnetwork.com'
 - 'mirror.ghproxy.com'
 - 'download.gigabyte.com'

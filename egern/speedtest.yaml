@@ -1,4 +1,4 @@
-# Total: 3035 rules
+# Total: 3037 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -693,6 +693,7 @@ domain_set:
 - wrsw-speedtest-02.brightspeed.com
 - speedtest.brnchost.com
 - speedtest2.networks.bt.com
+- speedtest3.networks.bt.com
 - speed.btcbroadband.com
 - one.speed.c4g7.com
 - chicago1.cabospeed.com
@@ -2494,6 +2495,7 @@ domain_set:
 - ukms-speedtest.tropicalgames.net
 - st0.dal.tularosa.net
 - speedtest.tularosa.net
+- speedtest61.turk.net
 - speedtest.turnkeyinternet.net
 - speedtest-srv01.tut.net
 - speedtest.twerion.net
