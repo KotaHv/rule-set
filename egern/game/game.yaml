@@ -1,4 +1,4 @@
-# Total: 746 rules
+# Total: 757 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -100,6 +100,7 @@ domain_suffix_set:
 - dungeonkeeper.cn
 - mo.co
 - rblx.co
+- wgcdn.co
 - xbox.co
 - xbox360.co
 - xboxone.co
@@ -296,6 +297,7 @@ domain_suffix_set:
 - mariosupersluggers.com
 - masseffect.com
 - masseffectarchives.com
+- masteroforion.com
 - maxis.com
 - miitomo.com
 - miiverse.com
@@ -520,6 +522,7 @@ domain_suffix_set:
 - vigorgame.com
 - visceralgames.com
 - vrchat.com
+- wargaming.com
 - wariolandshakeit.com
 - wariowarediy.com
 - warnerbrosgames.com
@@ -534,7 +537,12 @@ domain_suffix_set:
 - wiisports.com
 - wiisportsresort.com
 - wiiugamepad.com
+- worldoftanks.com
 - worldofwarcraft.com
+- worldofwarplanes.com
+- worldofwarships.com
+- wotblitz.com
+- wowsblitz.com
 - wtmobile.com
 - xbox.com
 - xbox360.com
@@ -567,6 +575,7 @@ domain_suffix_set:
 - nintendo.es
 - nintendo.eu
 - roblox.eu
+- worldoftanks.eu
 - xbox.eu
 - xbox360.eu
 - xboxone.eu
@@ -595,6 +604,7 @@ domain_suffix_set:
 - nexon.io
 - papermc.io
 - rgpub.io
+- wgcrowd.io
 - nintendo.it
 - roblox.it
 - bluearchive.jp
@@ -685,6 +695,7 @@ domain_suffix_set:
 - supremacy.net
 - swtor.net
 - vrchat.net
+- wargaming.net
 - wiivc.net
 - xn--mts47c3w9b1qr.net
 - ynoproject.net

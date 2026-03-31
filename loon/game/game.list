@@ -1,4 +1,4 @@
-# Total: 745 rules
+# Total: 756 rules
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
@@ -97,6 +97,7 @@ DOMAIN-SUFFIX,dungeonkeeper.com.cn
 DOMAIN-SUFFIX,dungeonkeeper.cn
 DOMAIN-SUFFIX,mo.co
 DOMAIN-SUFFIX,rblx.co
+DOMAIN-SUFFIX,wgcdn.co
 DOMAIN-SUFFIX,xbox.co
 DOMAIN-SUFFIX,xbox360.co
 DOMAIN-SUFFIX,xboxone.co
@@ -293,6 +294,7 @@ DOMAIN-SUFFIX,mariokart8.com
 DOMAIN-SUFFIX,mariosupersluggers.com
 DOMAIN-SUFFIX,masseffect.com
 DOMAIN-SUFFIX,masseffectarchives.com
+DOMAIN-SUFFIX,masteroforion.com
 DOMAIN-SUFFIX,maxis.com
 DOMAIN-SUFFIX,miitomo.com
 DOMAIN-SUFFIX,miiverse.com
@@ -517,6 +519,7 @@ DOMAIN-SUFFIX,valvesoftware.com
 DOMAIN-SUFFIX,vigorgame.com
 DOMAIN-SUFFIX,visceralgames.com
 DOMAIN-SUFFIX,vrchat.com
+DOMAIN-SUFFIX,wargaming.com
 DOMAIN-SUFFIX,wariolandshakeit.com
 DOMAIN-SUFFIX,wariowarediy.com
 DOMAIN-SUFFIX,warnerbrosgames.com
@@ -531,7 +534,12 @@ DOMAIN-SUFFIX,wiipartyu.com
 DOMAIN-SUFFIX,wiisports.com
 DOMAIN-SUFFIX,wiisportsresort.com
 DOMAIN-SUFFIX,wiiugamepad.com
+DOMAIN-SUFFIX,worldoftanks.com
 DOMAIN-SUFFIX,worldofwarcraft.com
+DOMAIN-SUFFIX,worldofwarplanes.com
+DOMAIN-SUFFIX,worldofwarships.com
+DOMAIN-SUFFIX,wotblitz.com
+DOMAIN-SUFFIX,wowsblitz.com
 DOMAIN-SUFFIX,wtmobile.com
 DOMAIN-SUFFIX,xbox.com
 DOMAIN-SUFFIX,xbox360.com
@@ -564,6 +572,7 @@ DOMAIN-SUFFIX,rayark.download
 DOMAIN-SUFFIX,nintendo.es
 DOMAIN-SUFFIX,nintendo.eu
 DOMAIN-SUFFIX,roblox.eu
+DOMAIN-SUFFIX,worldoftanks.eu
 DOMAIN-SUFFIX,xbox.eu
 DOMAIN-SUFFIX,xbox360.eu
 DOMAIN-SUFFIX,xboxone.eu
@@ -592,6 +601,7 @@ DOMAIN-SUFFIX,itch.io
 DOMAIN-SUFFIX,nexon.io
 DOMAIN-SUFFIX,papermc.io
 DOMAIN-SUFFIX,rgpub.io
+DOMAIN-SUFFIX,wgcrowd.io
 DOMAIN-SUFFIX,nintendo.it
 DOMAIN-SUFFIX,roblox.it
 DOMAIN-SUFFIX,bluearchive.jp
@@ -682,6 +692,7 @@ DOMAIN-SUFFIX,supercell.net
 DOMAIN-SUFFIX,supremacy.net
 DOMAIN-SUFFIX,swtor.net
 DOMAIN-SUFFIX,vrchat.net
+DOMAIN-SUFFIX,wargaming.net
 DOMAIN-SUFFIX,wiivc.net
 DOMAIN-SUFFIX,xn--mts47c3w9b1qr.net
 DOMAIN-SUFFIX,ynoproject.net
