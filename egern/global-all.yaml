@@ -1,4 +1,4 @@
-# Total: 6315 rules
+# Total: 6317 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -535,6 +535,7 @@ domain_set:
 - storage.courtlistener.com
 - static.cloud.coveo.com
 - sf-coze-web-cdn.coze.com
+- cdn.cr-proxy.com
 - prod-api.crackle.com
 - media.crazyshit.com
 - css.createsend1.com
@@ -1527,6 +1528,7 @@ domain_set:
 - static.threatlocker.com
 - thumbsnap.com
 - tile.thunderforest.com
+- assets.tigerdata.com
 - cdn.tinypass.com
 - mirror.tngnet.com
 - resource.tnlmediagene.com
