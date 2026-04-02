@@ -1,4 +1,4 @@
-# Total: 4413 rules
+# Total: 4416 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -2850,6 +2850,7 @@
 - 's1.zerochan.net'
 - 'static.zerochan.net'
 - 'mixin-images.zeromesh.net'
+- 'assets.tangled.network'
 - 'content.api.news'
 - 'static.bad.news'
 - 'web-api-cdn.ground.news'
@@ -3039,6 +3040,7 @@
 - 'cdn.cracked.sh'
 - 's3.doujin.sh'
 - 'static.scarf.sh'
+- 'avatar.tangled.sh'
 - 'flo.uri.sh'
 - 'assets.vantage.sh'
 - 'api-frameworks.vercel.sh'
@@ -4343,6 +4345,7 @@
 - '+.webp.se'
 - '+.esm.sh'
 - '+.now.sh'
+- '+.gateway.scarf.sh'
 - '+.surge.sh'
 - '+.ttl.sh'
 - '+.gcr.si'

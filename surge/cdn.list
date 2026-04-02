@@ -1,4 +1,4 @@
-# Total: 4492 rules
+# Total: 4495 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -2849,6 +2849,7 @@ DOMAIN,vjs.zencdn.net
 DOMAIN,s1.zerochan.net
 DOMAIN,static.zerochan.net
 DOMAIN,mixin-images.zeromesh.net
+DOMAIN,assets.tangled.network
 DOMAIN,content.api.news
 DOMAIN,static.bad.news
 DOMAIN,web-api-cdn.ground.news
@@ -3038,6 +3039,7 @@ DOMAIN,proxy.cors.sh
 DOMAIN,cdn.cracked.sh
 DOMAIN,s3.doujin.sh
 DOMAIN,static.scarf.sh
+DOMAIN,avatar.tangled.sh
 DOMAIN,flo.uri.sh
 DOMAIN,assets.vantage.sh
 DOMAIN,api-frameworks.vercel.sh
@@ -4342,6 +4344,7 @@ DOMAIN-SUFFIX,ipfs.best-practice.se
 DOMAIN-SUFFIX,webp.se
 DOMAIN-SUFFIX,esm.sh
 DOMAIN-SUFFIX,now.sh
+DOMAIN-SUFFIX,gateway.scarf.sh
 DOMAIN-SUFFIX,surge.sh
 DOMAIN-SUFFIX,ttl.sh
 DOMAIN-SUFFIX,gcr.si
