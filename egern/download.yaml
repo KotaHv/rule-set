@@ -1,4 +1,4 @@
-# Total: 1914 rules
+# Total: 1917 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -181,6 +181,7 @@ domain_set:
 - dist.blizzard.com
 - level3.blizzard.com
 - componentupdater.brave.com
+- extensionupdater.brave.com
 - go-updater.brave.com
 - updates.bravesoftware.com
 - updates-cdn.bravesoftware.com
@@ -394,6 +395,7 @@ domain_set:
 - dl.tailscale.com
 - pkgs.tailscale.com
 - mirror.team-cymru.com
+- download.technitium.com
 - mirror.pit.teraswitch.com
 - autoupdate.termius.com
 - mirror.tngnet.com
@@ -1845,6 +1847,7 @@ domain_suffix_set:
 - mirror.frontiernet.net
 - mirror.gtcomm.net
 - mirror.iphh.net
+- launchpadcontent.net
 - launchpadlibrarian.net
 - mirrors.lucidnetworks.net
 - download.minecraft.net

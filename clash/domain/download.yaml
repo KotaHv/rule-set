@@ -1,4 +1,4 @@
-# Total: 1906 rules
+# Total: 1909 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -180,6 +180,7 @@
 - 'dist.blizzard.com'
 - 'level3.blizzard.com'
 - 'componentupdater.brave.com'
+- 'extensionupdater.brave.com'
 - 'go-updater.brave.com'
 - 'updates.bravesoftware.com'
 - 'updates-cdn.bravesoftware.com'
@@ -393,6 +394,7 @@
 - 'dl.tailscale.com'
 - 'pkgs.tailscale.com'
 - 'mirror.team-cymru.com'
+- 'download.technitium.com'
 - 'mirror.pit.teraswitch.com'
 - 'autoupdate.termius.com'
 - 'mirror.tngnet.com'
@@ -1843,6 +1845,7 @@
 - '+.mirror.frontiernet.net'
 - '+.mirror.gtcomm.net'
 - '+.mirror.iphh.net'
+- '+.launchpadcontent.net'
 - '+.launchpadlibrarian.net'
 - '+.mirrors.lucidnetworks.net'
 - '+.download.minecraft.net'
