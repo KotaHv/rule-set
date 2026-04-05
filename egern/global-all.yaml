@@ -1,4 +1,4 @@
-# Total: 6319 rules
+# Total: 6322 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -293,6 +293,7 @@ domain_set:
 - cdn.apponic.com
 - img.apponic.com
 - boot.arcboxcdn.com
+- release.arcboxcdn.com
 - tiledbasemaps.arcgis.com
 - tiles.arcgis.com
 - server.arcgisonline.com
@@ -1249,6 +1250,7 @@ domain_set:
 - pcdn-my.pcloud.com
 - pcdn-www.pcloud.com
 - i.pcmag.com
+- cdna.pcpartpicker.com
 - assets.peatio.com
 - b.peatio.com
 - static.peatio.com
@@ -2335,6 +2337,7 @@ domain_set:
 - devnull.perfops.net
 - img.perfops.net
 - rum-cdn.perfops.net
+- origin.picgo.net
 - ftp.piotrkosoft.net
 - static.plus.net
 - mirror.plusline.net

@@ -1,4 +1,4 @@
-# Total: 6193 rules
+# Total: 6196 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -292,6 +292,7 @@
 - 'cdn.apponic.com'
 - 'img.apponic.com'
 - 'boot.arcboxcdn.com'
+- 'release.arcboxcdn.com'
 - 'tiledbasemaps.arcgis.com'
 - 'tiles.arcgis.com'
 - 'server.arcgisonline.com'
@@ -1248,6 +1249,7 @@
 - 'pcdn-my.pcloud.com'
 - 'pcdn-www.pcloud.com'
 - 'i.pcmag.com'
+- 'cdna.pcpartpicker.com'
 - 'assets.peatio.com'
 - 'b.peatio.com'
 - 'static.peatio.com'
@@ -2334,6 +2336,7 @@
 - 'devnull.perfops.net'
 - 'img.perfops.net'
 - 'rum-cdn.perfops.net'
+- 'origin.picgo.net'
 - 'ftp.piotrkosoft.net'
 - 'static.plus.net'
 - 'mirror.plusline.net'
