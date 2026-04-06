@@ -1474,9 +1474,7 @@ domain_set:
 - static-oforms.onlyoffice.com
 - static-www.onlyoffice.com
 - assets.ontrack.com
-- package-assets.oomol.com
 - registry.oomol.com
-- static.oomol.com
 - cdn.openai.com
 - images.opencollective.com
 - next-images.opencollective.com
@@ -1539,6 +1537,7 @@ domain_set:
 - storage-b.picacomic.com
 - cdn.pickystory.com
 - static.pingcap.com
+- assets.pingie.com
 - widgets.pinterest.com
 - image.pitchbook.com
 - cdn.pixabay.com
@@ -1823,6 +1822,7 @@ domain_set:
 - cdn-1.strava.com
 - content-a.strava.com
 - heatmap-external-a.strava.com
+- wre-assets.prod.mapping.strava.com
 - web-assets.strava.com
 - cdn-cf-east.streamable.com
 - statics.streamable.com

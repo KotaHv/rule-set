@@ -1,4 +1,4 @@
-# Total: 3048 rules
+# Total: 3050 rules
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -584,6 +584,7 @@
 - 'speedtest.phx01.orion.cloud'
 - 'speedtest1.sailweb.cloud'
 - 'speedtest2.sailweb.cloud'
+- 'speedtest-rp.verte.cloud'
 - 'speedtest.witcom.cloud'
 - 'speedtest.zerospace.cloud'
 - 'ookla.speedtest.cnix.cn'
@@ -2501,6 +2502,7 @@
 - 'node01-eulon-free.tropicalgames.net'
 - 'ookla-london01.tropicalgames.net'
 - 'ukms-speedtest.tropicalgames.net'
+- 'ukms-speedtest-newyork.tropicalgames.net'
 - 'st0.dal.tularosa.net'
 - 'speedtest.tularosa.net'
 - 'speedtest31.turk.net'
