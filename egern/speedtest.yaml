@@ -1,4 +1,4 @@
-# Total: 3050 rules
+# Total: 3053 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1748,6 +1748,7 @@ domain_set:
 - speedtest.apexbroadband.in
 - speedtest.arktel.in
 - sp.atcinfocom.in
+- speedtest.auriganet.in
 - speedtest.mumbai.auspice.in
 - speedtest.bakcom.in
 - mumst.bfiber.in
@@ -2372,6 +2373,7 @@ domain_set:
 - speedtest.vienna.nodescrape.net
 - speedtest-syr.northland.net
 - speedtest-utc.northland.net
+- wybo-speedtest.northstate.net
 - speedtest.nt.net
 - speedtest-cbr.cdn.on.net
 - okc-speedtest.onenet.net
@@ -2694,6 +2696,7 @@ domain_set:
 - speedtest.asvt.ru
 - speed.msk.avantel.ru
 - speedtest.citytelecom.ru
+- speedtest.powernet.com.ru
 - librarian.comstar.ru
 - speedtest.msk.ertelecom.ru
 - speedtest.gatchina.ru
