@@ -1,4 +1,4 @@
-# Total: 4498 rules
+# Total: 4503 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candy.ai
@@ -78,6 +78,7 @@ DOMAIN,i.111666.best
 DOMAIN,i.loli.best
 DOMAIN,image.nmb.best
 DOMAIN,cdn4.focus.bg
+DOMAIN,media.currys.biz
 DOMAIN,pics.mf8.biz
 DOMAIN,ns-cdn.neustar.biz
 DOMAIN,avatars.micro.blog
@@ -1093,6 +1094,7 @@ DOMAIN,cache.ip-api.com
 DOMAIN,cdn.ip2location.com
 DOMAIN,assets.ipapi.com
 DOMAIN,assets.ipstack.com
+DOMAIN,static.isitetv.com
 DOMAIN,isitmaintained.com
 DOMAIN,media.istockphoto.com
 DOMAIN,assets.fe.itv.com
@@ -2433,6 +2435,7 @@ DOMAIN,media.smooch.io
 DOMAIN,static.snyk.io
 DOMAIN,cms.socialinsider.io
 DOMAIN,imgs.socialinsider.io
+DOMAIN,cdn.socket.io
 DOMAIN,apps.sophi.io
 DOMAIN,auth.split.io
 DOMAIN,cdn.split.io
@@ -2709,6 +2712,7 @@ DOMAIN,cartodb-basemaps-a.global.ssl.fastly.net
 DOMAIN,cache-05.filehippo.net
 DOMAIN,files.gempages.net
 DOMAIN,reload.getsentry.net
+DOMAIN,embed.getwally.net
 DOMAIN,headway-widget.net
 DOMAIN,cdn.highporn.net
 DOMAIN,img.highporn.net
@@ -4449,6 +4453,7 @@ DOMAIN-WILDCARD,fastly-*.allmovie.com
 DOMAIN-WILDCARD,ocsp.*.amazontrust.com
 DOMAIN-WILDCARD,cdn*.boysfood.com
 DOMAIN-WILDCARD,proxy-*.dailymotion.com
+DOMAIN-WILDCARD,*-intake.*.datadoghq.com
 DOMAIN-WILDCARD,blog-imgs-??.fc2.com
 DOMAIN-WILDCARD,video-thumbnail2.fc2.com
 DOMAIN-WILDCARD,video?-thumbnail?.fc2.com
