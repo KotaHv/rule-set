@@ -1,4 +1,4 @@
-# Total: 3053 rules
+# Total: 3057 rules
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1359,6 +1359,7 @@
 - 'nl.tanhost.com'
 - 'stdel.tatatelebusiness.com'
 - 'stmum.tatatelebusiness.com'
+- 'speedtest.technobulut.com'
 - 'speedtest-tek.teksavvy.com'
 - 'speedtest2-tor.teksavvy.com'
 - 'speedtest.telecablecr.com'
@@ -2507,8 +2508,11 @@
 - 'ukms-speedtest-newyork.tropicalgames.net'
 - 'st0.dal.tularosa.net'
 - 'speedtest.tularosa.net'
+- 'speedtest25.turk.net'
 - 'speedtest31.turk.net'
 - 'speedtest33.turk.net'
+- 'speedtest54.turk.net'
+- 'speedtest59.turk.net'
 - 'speedtest61.turk.net'
 - 'speedtest.turnkeyinternet.net'
 - 'speedtest-srv01.tut.net'
