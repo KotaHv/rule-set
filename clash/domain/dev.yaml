@@ -1,4 +1,4 @@
-# Total: 527 rules
+# Total: 528 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -389,6 +389,7 @@
 - '+.erlang.org'
 - '+.facebookappcenter.org'
 - '+.fedoraforum.org'
+- '+.fedorainfracloud.org'
 - '+.fedoramagazine.org'
 - '+.fedorapeople.org'
 - '+.fedoraproject.org'

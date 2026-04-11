@@ -1,4 +1,4 @@
-# Total: 529 rules
+# Total: 530 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -391,6 +391,7 @@ domain_suffix_set:
 - erlang.org
 - facebookappcenter.org
 - fedoraforum.org
+- fedorainfracloud.org
 - fedoramagazine.org
 - fedorapeople.org
 - fedoraproject.org

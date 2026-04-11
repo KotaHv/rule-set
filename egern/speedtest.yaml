@@ -1,4 +1,4 @@
-# Total: 3061 rules
+# Total: 3065 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1278,6 +1278,7 @@ domain_set:
 - speedtest.serveroyun.com
 - speedtest.serverpronto.com
 - chspeed.shawnee.com
+- chi-speedtest.shifthosting.com
 - speedtest.shtrueinternet.com
 - mobile.shunicomtest.com
 - speedtest.sinovatec.com
@@ -1880,6 +1881,8 @@ domain_set:
 - chinatelecom.com.cn.dns.ink
 - ookla1.the.net.1310.io
 - speedtest.bitel.io
+- edgemark-chi.cust.edgemark.io
+- edgemark-lax.cust.edgemark.io
 - mke.hostingsupport.io
 - sig-speedtest.moratelindo.io
 - hk-bgp-speedtest.nearoute.io
@@ -2940,6 +2943,7 @@ domain_set:
 - speedtestvol.optinet.co.uk
 - speedtest-m22.quickline.co.uk
 - speedtest.redactus.co.uk
+- st.thw.rocket-fibre.co.uk
 - speedtest.scotnet.co.uk
 - speedtest.toob.co.uk
 - speedtest-london-east.vodafone.co.uk
