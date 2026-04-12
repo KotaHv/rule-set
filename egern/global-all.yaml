@@ -1,4 +1,4 @@
-# Total: 6321 rules
+# Total: 6322 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1037,6 +1037,7 @@ domain_set:
 - clickup.marketlinc.com
 - lift-ai-js.marketlinc.com
 - c.marsflag.com
+- media.marshmallow-qa.com
 - assets.mastercard.com
 - images.mathworks.com
 - twemoji.maxcdn.com
@@ -2025,7 +2026,6 @@ domain_set:
 - mirror.lc
 - wl-apps.yourwebsite.life
 - disco.headliner.link
-- assets.auth.magic.link
 - nightly.link
 - cdn.koala.live
 - maps.wplace.live
@@ -5245,6 +5245,7 @@ domain_suffix_set:
 - dweb.link
 - gitcdn.link
 - hoyo.link
+- magic.link
 - nftstorage.link
 - page.link
 - trustless-gateway.link

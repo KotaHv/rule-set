@@ -1,4 +1,4 @@
-# Total: 6194 rules
+# Total: 6195 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1036,6 +1036,7 @@
 - 'clickup.marketlinc.com'
 - 'lift-ai-js.marketlinc.com'
 - 'c.marsflag.com'
+- 'media.marshmallow-qa.com'
 - 'assets.mastercard.com'
 - 'images.mathworks.com'
 - 'twemoji.maxcdn.com'
@@ -2024,7 +2025,6 @@
 - 'mirror.lc'
 - 'wl-apps.yourwebsite.life'
 - 'disco.headliner.link'
-- 'assets.auth.magic.link'
 - 'nightly.link'
 - 'cdn.koala.live'
 - 'maps.wplace.live'
@@ -5243,6 +5243,7 @@
 - '+.dweb.link'
 - '+.gitcdn.link'
 - '+.hoyo.link'
+- '+.magic.link'
 - '+.nftstorage.link'
 - '+.page.link'
 - '+.trustless-gateway.link'

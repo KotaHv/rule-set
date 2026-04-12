@@ -1,4 +1,4 @@
-# Total: 4503 rules
+# Total: 4505 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1272,6 +1272,7 @@ domain_set:
 - clickup.marketlinc.com
 - lift-ai-js.marketlinc.com
 - c.marsflag.com
+- media.marshmallow-qa.com
 - assets.mastercard.com
 - images.mathworks.com
 - twemoji.maxcdn.com
@@ -3160,6 +3161,7 @@ domain_set:
 - clips-media-assets2.twitch.tv
 - embed.twitch.tv
 - static.yfsp.tv
+- assets.clibo.tw
 - img.4gamers.com.tw
 - puku-dist.4gamers.com.tw
 - thumbor.4gamers.com.tw
