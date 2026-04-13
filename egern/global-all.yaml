@@ -1,4 +1,4 @@
-# Total: 6322 rules
+# Total: 6324 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2328,6 +2328,7 @@ domain_set:
 - mirror.eu.ossplanet.net
 - mirror.fi.ossplanet.net
 - mirror.ossplanet.net
+- mirror.tw.ossplanet.net
 - storage.gra.cloud.ovh.net
 - cdn.perfops.net
 - devnull.perfops.net
@@ -5893,6 +5894,7 @@ domain_suffix_set:
 - openwrt.org
 - tile.osm.org
 - ospray.org
+- ossplanet.org
 - packagist.org
 - paily.org
 - parceljs.org

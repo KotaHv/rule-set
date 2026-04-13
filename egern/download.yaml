@@ -1,4 +1,4 @@
-# Total: 1920 rules
+# Total: 1923 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -405,6 +405,7 @@ domain_set:
 - download.todesktop.com
 - ubuntu.tuxuri.com
 - typeless-static.com
+- cdimage.ubuntu.com
 - security.ubuntu.com
 - dl.ui.com
 - mirror.ukrnames.com
@@ -943,6 +944,7 @@ domain_set:
 - mirror.eu.ossplanet.net
 - mirror.fi.ossplanet.net
 - mirror.ossplanet.net
+- mirror.tw.ossplanet.net
 - ftp.piotrkosoft.net
 - mirror.plusline.net
 - mirror.pregi.net
@@ -1894,6 +1896,7 @@ domain_suffix_set:
 - mirrors.ionfish.org
 - mirrorservice.org
 - mirrors.tds.net.org
+- ossplanet.org
 - packagist.org
 - pypi.org
 - pythonhosted.org

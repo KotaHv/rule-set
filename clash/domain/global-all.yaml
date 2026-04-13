@@ -1,4 +1,4 @@
-# Total: 6195 rules
+# Total: 6197 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2327,6 +2327,7 @@
 - 'mirror.eu.ossplanet.net'
 - 'mirror.fi.ossplanet.net'
 - 'mirror.ossplanet.net'
+- 'mirror.tw.ossplanet.net'
 - 'storage.gra.cloud.ovh.net'
 - 'cdn.perfops.net'
 - 'devnull.perfops.net'
@@ -5891,6 +5892,7 @@
 - '+.openwrt.org'
 - '+.tile.osm.org'
 - '+.ospray.org'
+- '+.ossplanet.org'
 - '+.packagist.org'
 - '+.paily.org'
 - '+.parceljs.org'

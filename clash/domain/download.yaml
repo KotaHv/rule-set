@@ -1,4 +1,4 @@
-# Total: 1912 rules
+# Total: 1915 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -404,6 +404,7 @@
 - 'download.todesktop.com'
 - 'ubuntu.tuxuri.com'
 - 'typeless-static.com'
+- 'cdimage.ubuntu.com'
 - 'security.ubuntu.com'
 - 'dl.ui.com'
 - 'mirror.ukrnames.com'
@@ -942,6 +943,7 @@
 - 'mirror.eu.ossplanet.net'
 - 'mirror.fi.ossplanet.net'
 - 'mirror.ossplanet.net'
+- 'mirror.tw.ossplanet.net'
 - 'ftp.piotrkosoft.net'
 - 'mirror.plusline.net'
 - 'mirror.pregi.net'
@@ -1892,6 +1894,7 @@
 - '+.mirrors.ionfish.org'
 - '+.mirrorservice.org'
 - '+.mirrors.tds.net.org'
+- '+.ossplanet.org'
 - '+.packagist.org'
 - '+.pypi.org'
 - '+.pythonhosted.org'
