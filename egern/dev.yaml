@@ -1,4 +1,4 @@
-# Total: 530 rules
+# Total: 531 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -231,6 +231,7 @@ domain_suffix_set:
 - yogalayout.com
 - github.community
 - npm.community
+- archlinux.de
 - amp.dev
 - dart.dev
 - dartpad.dev

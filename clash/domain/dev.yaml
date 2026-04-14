@@ -1,4 +1,4 @@
-# Total: 528 rules
+# Total: 529 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -229,6 +229,7 @@
 - '+.yogalayout.com'
 - '+.github.community'
 - '+.npm.community'
+- '+.archlinux.de'
 - '+.amp.dev'
 - '+.dart.dev'
 - '+.dartpad.dev'
