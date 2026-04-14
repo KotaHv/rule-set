@@ -1,4 +1,4 @@
-# Total: 6198 rules
+# Total: 6204 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -222,6 +222,7 @@
 - 'static.afterpay.com'
 - 'static-us.afterpay.com'
 - 'static.ahrefs.com'
+- 'static-app.ahrefs.com'
 - 'sentry.ainopara.com'
 - 'cdn-seo.airdroid.com'
 - 'cdn1.airdroid.com'
@@ -562,6 +563,7 @@
 - 'cdn.db-ip.com'
 - 'website-media.deel.com'
 - 'import-cdn.default.com'
+- 'pixel-cdn.default.com'
 - 'cdn.delight-vr.com'
 - 'images.design-editor.com'
 - 'images7.design-editor.com'
@@ -946,6 +948,7 @@
 - 'public.komiic.com'
 - 'tiles-a.koordinates.com'
 - 'media.ra.kroll.com'
+- 'ahrefscomscreenshot-3b70.kxcdn.com'
 - 'searchanise-ef84.kxcdn.com'
 - 'wandi-6402.kxcdn.com'
 - 'wikiwandv2-19431.kxcdn.com'
@@ -1385,6 +1388,7 @@
 - 'forest-mt-s3.seekrtech.com'
 - 'static.seel.com'
 - 'cdn.segment.com'
+- 'static.semrush.com'
 - 'assets.sendinblue.com'
 - 'static-www.sendsafely.com'
 - 'thumbs2.sendvid.com'
@@ -1543,6 +1547,8 @@
 - 'widgets.tree-nation.com'
 - 'tag.trovo-tag.com'
 - 'cdn.trustedsite.com'
+- 'ph.tryprofound.com'
+- 'static.tryprofound.com'
 - 'bundle.trysavvy.com'
 - 'flows.trysavvy.com'
 - 'cdn.ttgtmedia.com'

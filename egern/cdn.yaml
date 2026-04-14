@@ -1,8 +1,9 @@
-# Total: 4506 rules
+# Total: 4513 rules
 no_resolve: true
 domain_set:
 - rules.ac
 - cdn.aimerce.ai
+- cdn.candu.ai
 - cdn.candy.ai
 - assets.cloudpilot.ai
 - limitless.cmax.ai
@@ -221,6 +222,7 @@ domain_set:
 - static.afterpay.com
 - static-us.afterpay.com
 - static.ahrefs.com
+- static-app.ahrefs.com
 - sentry.ainopara.com
 - cdn-seo.airdroid.com
 - cdn1.airdroid.com
@@ -635,6 +637,7 @@ domain_set:
 - website-media.deel.com
 - static.deepl.com
 - import-cdn.default.com
+- pixel-cdn.default.com
 - cdn.delight-vr.com
 - images.design-editor.com
 - images7.design-editor.com
@@ -1172,6 +1175,7 @@ domain_set:
 - assets.kraken.com
 - assets-cms.kraken.com
 - media.ra.kroll.com
+- ahrefscomscreenshot-3b70.kxcdn.com
 - searchanise-ef84.kxcdn.com
 - wandi-6402.kxcdn.com
 - wikiwandv2-19431.kxcdn.com
@@ -1719,6 +1723,7 @@ domain_set:
 - forest-mt-s3.seekrtech.com
 - static.seel.com
 - cdn.segment.com
+- static.semrush.com
 - assets.sendinblue.com
 - static-www.sendsafely.com
 - thumbs2.sendvid.com
@@ -1919,6 +1924,8 @@ domain_set:
 - simplicity.trustpilot.com
 - widget.trustpilot.com
 - static-assets-1.truthsocial.com
+- ph.tryprofound.com
+- static.tryprofound.com
 - bundle.trysavvy.com
 - flows.trysavvy.com
 - cdn.ttgtmedia.com
