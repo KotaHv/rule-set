@@ -1,4 +1,4 @@
-# Total: 6396 rules
+# Total: 6384 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -44,6 +44,7 @@ DOMAIN,i.snap.as
 DOMAIN,mirror.cyberbits.asia
 DOMAIN,bucket.noy.asia
 DOMAIN,img.noy.asia
+DOMAIN,static.cracked.ax
 DOMAIN,mirror.datacenter.az
 DOMAIN,mirror.ourhost.az
 DOMAIN,mirror.yer.az
@@ -59,6 +60,7 @@ DOMAIN,apache.cbox.biz
 DOMAIN,media.currys.biz
 DOMAIN,pics.mf8.biz
 DOMAIN,ns-cdn.neustar.biz
+DOMAIN,assets.zpic.biz
 DOMAIN,mirror.blue3.com.br
 DOMAIN,ubuntu-archive.locaweb.com.br
 DOMAIN,mirror.nbtelecom.com.br
@@ -253,7 +255,6 @@ DOMAIN,cdn.amcharts.com
 DOMAIN,cdn.amgreatness.com
 DOMAIN,static.ampcode.com
 DOMAIN,images.anandtech.com
-DOMAIN,mirror.anigil.com
 DOMAIN,c.animaapp.com
 DOMAIN,static.animaapp.com
 DOMAIN,cdn.animenewsnetwork.com
@@ -388,6 +389,7 @@ DOMAIN,cdn.boldmethod.com
 DOMAIN,static.prd.borderfree.com
 DOMAIN,cc.boyfriendtv.com
 DOMAIN,cdn77.boyfriendtv.com
+DOMAIN,detectportal.brave-http-only.com
 DOMAIN,assets.bravenet.com
 DOMAIN,updates.bravesoftware.com
 DOMAIN,updates-cdn.bravesoftware.com
@@ -480,7 +482,6 @@ DOMAIN,segapi.clerk.com
 DOMAIN,assets.clever-cloud.com
 DOMAIN,cdn.clever-cloud.com
 DOMAIN,components.clever-cloud.com
-DOMAIN,shopify.cleverecommerce.com
 DOMAIN,dl.cleverfiles.com
 DOMAIN,assets.clickfunnels.com
 DOMAIN,data.web.clickup.com
@@ -498,7 +499,6 @@ DOMAIN,cdn.cnx-software.com
 DOMAIN,cdn.codeblackbelt.com
 DOMAIN,static-assets.codecademy.com
 DOMAIN,assets.codeguru.com
-DOMAIN,cloudfront.codeproject.com
 DOMAIN,mirror.cogentco.com
 DOMAIN,s1.coincarp.com
 DOMAIN,s3.cointelegraph.com
@@ -533,7 +533,6 @@ DOMAIN,cookie-cdn.cookiepro.com
 DOMAIN,app.cookieyes.com
 DOMAIN,pubmirrors.dal.corespace.com
 DOMAIN,cdn.corso.com
-DOMAIN,static-landing.probiplacehold.cot.com
 DOMAIN,storage.courtlistener.com
 DOMAIN,static.cloud.coveo.com
 DOMAIN,sf-coze-web-cdn.coze.com
@@ -556,8 +555,6 @@ DOMAIN,cdn3.dan.com
 DOMAIN,static.websites.data-crypt.com
 DOMAIN,cdn.datacamp.com
 DOMAIN,media.datacenterdynamics.com
-DOMAIN,mirror.datapacket.com
-DOMAIN,mirror.nl.datapacket.com
 DOMAIN,cdn.datdota.com
 DOMAIN,cdn.db-ip.com
 DOMAIN,website-media.deel.com
@@ -718,7 +715,7 @@ DOMAIN,resource-accel.fs.com
 DOMAIN,images.g2crowd.com
 DOMAIN,m3.gab.com
 DOMAIN,media.gamestop.com
-DOMAIN,certona.gap.com
+DOMAIN,content.gapinc.com
 DOMAIN,a.gawby.com
 DOMAIN,i.gawby.com
 DOMAIN,mirrors.gbnetwork.com
@@ -739,7 +736,6 @@ DOMAIN,static.getpostman.com
 DOMAIN,sync.getpublica.com
 DOMAIN,cdn.gettr.com
 DOMAIN,media.gettr.com
-DOMAIN,mirror.ghproxy.com
 DOMAIN,images2.giant-bicycles.com
 DOMAIN,static.giant-bicycles.com
 DOMAIN,download.gigabyte.com
@@ -756,6 +752,7 @@ DOMAIN,media3.giphy.com
 DOMAIN,media4.giphy.com
 DOMAIN,m3u8.girigirilove.com
 DOMAIN,i.git99.com
+DOMAIN,fw.gl-inet.com
 DOMAIN,static.gl-inet.com
 DOMAIN,media.glassdoor.com
 DOMAIN,static.gmgard.com
@@ -1034,7 +1031,6 @@ DOMAIN,tiles2.mapiful.com
 DOMAIN,tiles.mapilion.com
 DOMAIN,tiles.mapillary.com
 DOMAIN,tiles.mapterhorn.com
-DOMAIN,tile.mapzen.com
 DOMAIN,clickup.marketlinc.com
 DOMAIN,lift-ai-js.marketlinc.com
 DOMAIN,c.marsflag.com
@@ -1131,7 +1127,6 @@ DOMAIN,cdn.myportfolio.com
 DOMAIN,pro2-ui-assets-s3-fy.myportfolio.com
 DOMAIN,r2cdn.myshopline.com
 DOMAIN,mirror.mythic-beasts.com
-DOMAIN,static.namebeta.com
 DOMAIN,files.namecheap.com
 DOMAIN,static.narrativ.com
 DOMAIN,3dna.nationbuilder.com
@@ -1201,7 +1196,7 @@ DOMAIN,static.onlyfans.com
 DOMAIN,static2.onlyfans.com
 DOMAIN,thumbs.onlyfans.com
 DOMAIN,ca1.onlyhentaistuff.com
-DOMAIN,fs2.onlyhentaistuff.com
+DOMAIN,ca2.onlyhentaistuff.com
 DOMAIN,download.onlyoffice.com
 DOMAIN,static-oforms.onlyoffice.com
 DOMAIN,static-www.onlyoffice.com
@@ -1294,6 +1289,7 @@ DOMAIN,content.powerapps.com
 DOMAIN,repo.powerdns.com
 DOMAIN,ui.powerreviews.com
 DOMAIN,cdn.powershellgallery.com
+DOMAIN,content.presspage.com
 DOMAIN,cdn.pricespider.com
 DOMAIN,media.printables.com
 DOMAIN,api.privacy.com
@@ -1564,6 +1560,7 @@ DOMAIN,canvas-lb.tubitv.com
 DOMAIN,www.tubitv.com
 DOMAIN,widgets.turnto.com
 DOMAIN,ubuntu.tuxuri.com
+DOMAIN,cdn.tvpagewidgets.com
 DOMAIN,twenty-icons.com
 DOMAIN,embed.typeform.com
 DOMAIN,images.typeform.com
@@ -1671,7 +1668,6 @@ DOMAIN,images2.welcomesoftware.com
 DOMAIN,images3.welcomesoftware.com
 DOMAIN,images4.welcomesoftware.com
 DOMAIN,content.wepik.com
-DOMAIN,image.westinyou.com
 DOMAIN,mirrors.whoishostingthis.com
 DOMAIN,desktop.wifiman.com
 DOMAIN,images.wikia.com
@@ -1774,7 +1770,6 @@ DOMAIN,dl.getaurora.dev
 DOMAIN,ubuntu.gjolly.dev
 DOMAIN,lucide.dev
 DOMAIN,stats.setapp.macpaw.dev
-DOMAIN,drive.massgrave.dev
 DOMAIN,ah-cdn.merge.dev
 DOMAIN,cdn.pika.dev
 DOMAIN,pkg-size.dev
@@ -1865,8 +1860,6 @@ DOMAIN,code.benco.io
 DOMAIN,proxy.beyondwords.io
 DOMAIN,web-cdn.bitrise.io
 DOMAIN,sandpack-cdn-staging.blazingly.io
-DOMAIN,js-cdn.blockchair.io
-DOMAIN,loutre.blockchair.io
 DOMAIN,cdn.bogos.io
 DOMAIN,cdn.boostcommerce.io
 DOMAIN,registry.bower.io
@@ -2078,7 +2071,6 @@ DOMAIN,mirror.a1.mk
 DOMAIN,mirror.t-home.mk
 DOMAIN,file.ahu.moe
 DOMAIN,static.ahu.moe
-DOMAIN,assets-cdn.anh.moe
 DOMAIN,static.chaika.moe
 DOMAIN,objects.hit.moe
 DOMAIN,touchgal-image.moyu.moe
@@ -2107,7 +2099,6 @@ DOMAIN,img-s-msn-com.akamaized.net
 DOMAIN,media-rockstargames-com.akamaized.net
 DOMAIN,melonbooks.akamaized.net
 DOMAIN,mwf-service.akamaized.net
-DOMAIN,mycommerce.akamaized.net
 DOMAIN,officecdn-microsoft-com.akamaized.net
 DOMAIN,opgg-static.akamaized.net
 DOMAIN,p-events-delivery.akamaized.net
@@ -2200,10 +2191,10 @@ DOMAIN,gravatar.cat.net
 DOMAIN,mirror.cat.net
 DOMAIN,mirrors.cat.net
 DOMAIN,thumbnails.cbsig.net
-DOMAIN,edge1.certona.net
 DOMAIN,mirror.chmuri.net
 DOMAIN,apache.communilink.net
 DOMAIN,cdn.consentmanager.net
+DOMAIN,static.contentpass.net
 DOMAIN,ftp.corbina.net
 DOMAIN,mirror.corbina.net
 DOMAIN,mirrors.coreix.net
@@ -2256,8 +2247,6 @@ DOMAIN,avatars.hubspot.net
 DOMAIN,f3b7q2p3.ssl.hwcdn.net
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
 DOMAIN,mirror.i3d.net
-DOMAIN,alt.idgesg.net
-DOMAIN,images.idgesg.net
 DOMAIN,ik.imgkit.net
 DOMAIN,static-act.imoim.net
 DOMAIN,img.imoutomoe.net
@@ -2266,7 +2255,6 @@ DOMAIN,mirror.init7.net
 DOMAIN,jsdelivr.ioiox.net
 DOMAIN,cdn.iplocation.net
 DOMAIN,mirrors.iu13.net
-DOMAIN,file.izanmei.net
 DOMAIN,static.j51.net
 DOMAIN,fiddle.jshell.net
 DOMAIN,static-r.kamihimeproject.net
@@ -2321,7 +2309,6 @@ DOMAIN,res-geo.cdn.office.net
 DOMAIN,shell.cdn.office.net
 DOMAIN,support.content.office.net
 DOMAIN,cdn.forms.office.net
-DOMAIN,cdn.graph.office.net
 DOMAIN,cdn.designerapp.osi.office.net
 DOMAIN,mirror.olnevhost.net
 DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net
@@ -2377,7 +2364,6 @@ DOMAIN,cdn.pi.spectrum.net
 DOMAIN,sourcemaps.squarespace.net
 DOMAIN,mirror.steadfast.net
 DOMAIN,apt.tetaneutral.net
-DOMAIN,cpan.tetaneutral.net
 DOMAIN,ctan.tetaneutral.net
 DOMAIN,fdroid.tetaneutral.net
 DOMAIN,mirror.tochlab.net
@@ -2513,6 +2499,7 @@ DOMAIN,ftp.harukasan.org
 DOMAIN,media.hentaifreak.org
 DOMAIN,mirrors.ibiblio.org
 DOMAIN,api.indexnow.org
+DOMAIN,file.izanm.org
 DOMAIN,repository.jboss.org
 DOMAIN,proxy.joinmastodon.org
 DOMAIN,jotai.org
@@ -2673,7 +2660,6 @@ DOMAIN,cdn.hubble.team
 DOMAIN,sdk.hubble.team
 DOMAIN,docs.mrchromebox.tech
 DOMAIN,static.pepy.tech
-DOMAIN,media.remax-prod.eng.remax.tech
 DOMAIN,mirror.kku.ac.th
 DOMAIN,mirror1.ku.ac.th
 DOMAIN,mirrors.cloudforest.co.th
@@ -2686,7 +2672,8 @@ DOMAIN,css.4jpg.top
 DOMAIN,static-cdn.bytegiftia.top
 DOMAIN,ghfast.top
 DOMAIN,repo.sleeping.town
-DOMAIN,media.d.tube
+DOMAIN,nas2.d.tube
+DOMAIN,play.d.tube
 DOMAIN,js.txxx.tube
 DOMAIN,tn.txxx.tube
 DOMAIN,imgcn.bgmbk.tv
@@ -2711,6 +2698,7 @@ DOMAIN,starlight.nebula.tv
 DOMAIN,static.tella.tv
 DOMAIN,tubi.tv
 DOMAIN,www.tubi.tv
+DOMAIN,f.upanh.tv
 DOMAIN,static.yfsp.tv
 DOMAIN,mirror.aptus.co.tz
 DOMAIN,gimp.astra.in.ua
@@ -2750,7 +2738,6 @@ DOMAIN,eomd1.fembeqq.xyz
 DOMAIN,sdk-cdn.fun.xyz
 DOMAIN,ghgo.xyz
 DOMAIN,mirror.gofoss.xyz
-DOMAIN,vod.jfly.xyz
 DOMAIN,image.jnislniv.xyz
 DOMAIN,cdn.joincommunity.xyz
 DOMAIN,cdn-longterm.mee6.xyz
@@ -3043,6 +3030,7 @@ DOMAIN-SUFFIX,ask.com
 DOMAIN-SUFFIX,askubuntu.com
 DOMAIN-SUFFIX,asobostudio.com
 DOMAIN-SUFFIX,aspnetcdn.com
+DOMAIN-SUFFIX,assets-gap.com
 DOMAIN-SUFFIX,assets-yammer.com
 DOMAIN-SUFFIX,assettype.com
 DOMAIN-SUFFIX,astrill.com

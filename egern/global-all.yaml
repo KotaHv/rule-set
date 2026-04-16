@@ -1,4 +1,4 @@
-# Total: 6332 rules
+# Total: 6320 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -46,6 +46,7 @@ domain_set:
 - mirror.cyberbits.asia
 - bucket.noy.asia
 - img.noy.asia
+- static.cracked.ax
 - mirror.datacenter.az
 - mirror.ourhost.az
 - mirror.yer.az
@@ -61,6 +62,7 @@ domain_set:
 - media.currys.biz
 - pics.mf8.biz
 - ns-cdn.neustar.biz
+- assets.zpic.biz
 - mirror.blue3.com.br
 - ubuntu-archive.locaweb.com.br
 - mirror.nbtelecom.com.br
@@ -255,7 +257,6 @@ domain_set:
 - cdn.amgreatness.com
 - static.ampcode.com
 - images.anandtech.com
-- mirror.anigil.com
 - c.animaapp.com
 - static.animaapp.com
 - cdn.animenewsnetwork.com
@@ -390,6 +391,7 @@ domain_set:
 - static.prd.borderfree.com
 - cc.boyfriendtv.com
 - cdn77.boyfriendtv.com
+- detectportal.brave-http-only.com
 - assets.bravenet.com
 - updates.bravesoftware.com
 - updates-cdn.bravesoftware.com
@@ -482,7 +484,6 @@ domain_set:
 - assets.clever-cloud.com
 - cdn.clever-cloud.com
 - components.clever-cloud.com
-- shopify.cleverecommerce.com
 - dl.cleverfiles.com
 - assets.clickfunnels.com
 - data.web.clickup.com
@@ -500,7 +501,6 @@ domain_set:
 - cdn.codeblackbelt.com
 - static-assets.codecademy.com
 - assets.codeguru.com
-- cloudfront.codeproject.com
 - mirror.cogentco.com
 - s1.coincarp.com
 - s3.cointelegraph.com
@@ -535,7 +535,6 @@ domain_set:
 - app.cookieyes.com
 - pubmirrors.dal.corespace.com
 - cdn.corso.com
-- static-landing.probiplacehold.cot.com
 - storage.courtlistener.com
 - static.cloud.coveo.com
 - sf-coze-web-cdn.coze.com
@@ -558,8 +557,6 @@ domain_set:
 - static.websites.data-crypt.com
 - cdn.datacamp.com
 - media.datacenterdynamics.com
-- mirror.datapacket.com
-- mirror.nl.datapacket.com
 - cdn.datdota.com
 - cdn.db-ip.com
 - website-media.deel.com
@@ -720,7 +717,7 @@ domain_set:
 - images.g2crowd.com
 - m3.gab.com
 - media.gamestop.com
-- certona.gap.com
+- content.gapinc.com
 - a.gawby.com
 - i.gawby.com
 - mirrors.gbnetwork.com
@@ -741,7 +738,6 @@ domain_set:
 - sync.getpublica.com
 - cdn.gettr.com
 - media.gettr.com
-- mirror.ghproxy.com
 - images2.giant-bicycles.com
 - static.giant-bicycles.com
 - download.gigabyte.com
@@ -758,6 +754,7 @@ domain_set:
 - media4.giphy.com
 - m3u8.girigirilove.com
 - i.git99.com
+- fw.gl-inet.com
 - static.gl-inet.com
 - media.glassdoor.com
 - static.gmgard.com
@@ -1036,7 +1033,6 @@ domain_set:
 - tiles.mapilion.com
 - tiles.mapillary.com
 - tiles.mapterhorn.com
-- tile.mapzen.com
 - clickup.marketlinc.com
 - lift-ai-js.marketlinc.com
 - c.marsflag.com
@@ -1133,7 +1129,6 @@ domain_set:
 - pro2-ui-assets-s3-fy.myportfolio.com
 - r2cdn.myshopline.com
 - mirror.mythic-beasts.com
-- static.namebeta.com
 - files.namecheap.com
 - static.narrativ.com
 - 3dna.nationbuilder.com
@@ -1203,7 +1198,7 @@ domain_set:
 - static2.onlyfans.com
 - thumbs.onlyfans.com
 - ca1.onlyhentaistuff.com
-- fs2.onlyhentaistuff.com
+- ca2.onlyhentaistuff.com
 - download.onlyoffice.com
 - static-oforms.onlyoffice.com
 - static-www.onlyoffice.com
@@ -1296,6 +1291,7 @@ domain_set:
 - repo.powerdns.com
 - ui.powerreviews.com
 - cdn.powershellgallery.com
+- content.presspage.com
 - cdn.pricespider.com
 - media.printables.com
 - api.privacy.com
@@ -1566,6 +1562,7 @@ domain_set:
 - www.tubitv.com
 - widgets.turnto.com
 - ubuntu.tuxuri.com
+- cdn.tvpagewidgets.com
 - twenty-icons.com
 - embed.typeform.com
 - images.typeform.com
@@ -1673,7 +1670,6 @@ domain_set:
 - images3.welcomesoftware.com
 - images4.welcomesoftware.com
 - content.wepik.com
-- image.westinyou.com
 - mirrors.whoishostingthis.com
 - desktop.wifiman.com
 - images.wikia.com
@@ -1776,7 +1772,6 @@ domain_set:
 - ubuntu.gjolly.dev
 - lucide.dev
 - stats.setapp.macpaw.dev
-- drive.massgrave.dev
 - ah-cdn.merge.dev
 - cdn.pika.dev
 - pkg-size.dev
@@ -1867,8 +1862,6 @@ domain_set:
 - proxy.beyondwords.io
 - web-cdn.bitrise.io
 - sandpack-cdn-staging.blazingly.io
-- js-cdn.blockchair.io
-- loutre.blockchair.io
 - cdn.bogos.io
 - cdn.boostcommerce.io
 - registry.bower.io
@@ -2080,7 +2073,6 @@ domain_set:
 - mirror.t-home.mk
 - file.ahu.moe
 - static.ahu.moe
-- assets-cdn.anh.moe
 - static.chaika.moe
 - objects.hit.moe
 - touchgal-image.moyu.moe
@@ -2109,7 +2101,6 @@ domain_set:
 - media-rockstargames-com.akamaized.net
 - melonbooks.akamaized.net
 - mwf-service.akamaized.net
-- mycommerce.akamaized.net
 - officecdn-microsoft-com.akamaized.net
 - opgg-static.akamaized.net
 - p-events-delivery.akamaized.net
@@ -2202,10 +2193,10 @@ domain_set:
 - mirror.cat.net
 - mirrors.cat.net
 - thumbnails.cbsig.net
-- edge1.certona.net
 - mirror.chmuri.net
 - apache.communilink.net
 - cdn.consentmanager.net
+- static.contentpass.net
 - ftp.corbina.net
 - mirror.corbina.net
 - mirrors.coreix.net
@@ -2258,8 +2249,6 @@ domain_set:
 - f3b7q2p3.ssl.hwcdn.net
 - a4e8s8k3.map2.ssl.hwcdn.net
 - mirror.i3d.net
-- alt.idgesg.net
-- images.idgesg.net
 - ik.imgkit.net
 - static-act.imoim.net
 - img.imoutomoe.net
@@ -2268,7 +2257,6 @@ domain_set:
 - jsdelivr.ioiox.net
 - cdn.iplocation.net
 - mirrors.iu13.net
-- file.izanmei.net
 - static.j51.net
 - fiddle.jshell.net
 - static-r.kamihimeproject.net
@@ -2323,7 +2311,6 @@ domain_set:
 - shell.cdn.office.net
 - support.content.office.net
 - cdn.forms.office.net
-- cdn.graph.office.net
 - cdn.designerapp.osi.office.net
 - mirror.olnevhost.net
 - appleworldwidedeveloper.hb-api.omtrdc.net
@@ -2379,7 +2366,6 @@ domain_set:
 - sourcemaps.squarespace.net
 - mirror.steadfast.net
 - apt.tetaneutral.net
-- cpan.tetaneutral.net
 - ctan.tetaneutral.net
 - fdroid.tetaneutral.net
 - mirror.tochlab.net
@@ -2515,6 +2501,7 @@ domain_set:
 - media.hentaifreak.org
 - mirrors.ibiblio.org
 - api.indexnow.org
+- file.izanm.org
 - repository.jboss.org
 - proxy.joinmastodon.org
 - jotai.org
@@ -2675,7 +2662,6 @@ domain_set:
 - sdk.hubble.team
 - docs.mrchromebox.tech
 - static.pepy.tech
-- media.remax-prod.eng.remax.tech
 - mirror.kku.ac.th
 - mirror1.ku.ac.th
 - mirrors.cloudforest.co.th
@@ -2688,7 +2674,8 @@ domain_set:
 - static-cdn.bytegiftia.top
 - ghfast.top
 - repo.sleeping.town
-- media.d.tube
+- nas2.d.tube
+- play.d.tube
 - js.txxx.tube
 - tn.txxx.tube
 - imgcn.bgmbk.tv
@@ -2713,6 +2700,7 @@ domain_set:
 - static.tella.tv
 - tubi.tv
 - www.tubi.tv
+- f.upanh.tv
 - static.yfsp.tv
 - mirror.aptus.co.tz
 - gimp.astra.in.ua
@@ -2752,7 +2740,6 @@ domain_set:
 - sdk-cdn.fun.xyz
 - ghgo.xyz
 - mirror.gofoss.xyz
-- vod.jfly.xyz
 - image.jnislniv.xyz
 - cdn.joincommunity.xyz
 - cdn-longterm.mee6.xyz
@@ -3046,6 +3033,7 @@ domain_suffix_set:
 - askubuntu.com
 - asobostudio.com
 - aspnetcdn.com
+- assets-gap.com
 - assets-yammer.com
 - assettype.com
 - astrill.com

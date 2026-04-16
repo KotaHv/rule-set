@@ -1,4 +1,4 @@
-# Total: 1923 rules
+# Total: 1922 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -163,7 +163,6 @@ domain_set:
 - mirror.alastyr.com
 - mirrors.aliyun.com
 - mirror.nl.altushost.com
-- mirror.anigil.com
 - download.anydesk.com
 - www2.aomeisoftware.com
 - downloadr2.apkmirror.com
@@ -207,8 +206,6 @@ domain_set:
 - pubmirrors.dal.corespace.com
 - download.cpuid.com
 - downloads.cursor.com
-- mirror.datapacket.com
-- mirror.nl.datapacket.com
 - addins.deepl.com
 - cpan.develooper.com
 - dl.devmate.com
@@ -241,13 +238,13 @@ domain_set:
 - omtmapupdate.garmin.com
 - worldwide.omtmapupdate.garmin.com
 - mirrors.gbnetwork.com
-- mirror.ghproxy.com
 - download.gigabyte.com
 - mirrors.gigenet.com
 - codeload.github.com
 - objects.githubusercontent.com
 - pkg-containers.githubusercontent.com
 - release-assets.githubusercontent.com
+- fw.gl-inet.com
 - gog-cdn-fastly.gog.com
 - gog-cdn-fastly-cp77.gog.com
 - dl.google.com
@@ -455,8 +452,13 @@ domain_set:
 - ftp.linux.cz
 - apache.miloslavbrada.cz
 - ftp.fi.muni.cz
+- archlinux.nic.cz
+- centos.nic.cz
+- cran.nic.cz
 - debian.nic.cz
-- mirrors.nic.cz
+- fedora.nic.cz
+- opensuse.nic.cz
+- ubuntu.nic.cz
 - debian.superhosting.cz
 - merlin.fit.vutbr.cz
 - ftp.zcu.cz
@@ -521,7 +523,6 @@ domain_set:
 - mirror.digitaloceans.dev
 - dl.getaurora.dev
 - ubuntu.gjolly.dev
-- drive.massgrave.dev
 - api-updates.orbstack.dev
 - cdn-images.orbstack.dev
 - cdn-updates.orbstack.dev
@@ -782,8 +783,8 @@ domain_set:
 - ftp.sakura.ad.jp
 - ftp.nara.wide.ad.jp
 - ftp.tsukuba.wide.ad.jp
-- client.hikarifield.co.jp
 - download.hikarifield.co.jp
+- static.hikarifield.co.jp
 - ftp.kddlabs.co.jp
 - ftp.udx.icscoe.jp
 - ftp.kddilabs.jp
@@ -796,7 +797,6 @@ domain_set:
 - ftp.kaist.ac.kr
 - blizzard.gcdn.cloudn.co.kr
 - mirror.techlabs.co.kr
-- apache.tt.co.kr
 - ftp.lanet.kr
 - repo.morgan.kr
 - mirror.fst.kz
@@ -969,7 +969,6 @@ domain_set:
 - downloads.sourceforge.net
 - mirror.steadfast.net
 - apt.tetaneutral.net
-- cpan.tetaneutral.net
 - ctan.tetaneutral.net
 - fdroid.tetaneutral.net
 - mirror.tochlab.net
@@ -1289,7 +1288,6 @@ domain_set:
 - mirror.aktkn.sg
 - mirror.djvg.sg
 - download.nus.edu.sg
-- mirror.nus.edu.sg
 - mirror.soonkeat.sg
 - kambing.uu.sg
 - mirror.xtom.sg
@@ -1321,6 +1319,8 @@ domain_set:
 - cpan.ulak.net.tr
 - ftp.linux.org.tr
 - mirror.twds.com.tw
+- mirror4.twds.com.tw
+- mirror6.twds.com.tw
 - cisco.yuntu.com.tw
 - mirrors.yuntu.com.tw
 - debian.ccns.ncku.edu.tw
@@ -1360,7 +1360,6 @@ domain_set:
 - rsync.yuki.net.uk
 - mirror.quickhost.uk
 - cdn.electronic.us
-- mirror.timkevin.us
 - mirror.xtom.us
 - mirrors.xtom.us
 - cdn.zoom.us

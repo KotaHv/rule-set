@@ -1,4 +1,4 @@
-# Total: 1923 rules
+# Total: 1922 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,downloads.claude.ai
@@ -161,7 +161,6 @@ DOMAIN,cache.agilebits.com
 DOMAIN,mirror.alastyr.com
 DOMAIN,mirrors.aliyun.com
 DOMAIN,mirror.nl.altushost.com
-DOMAIN,mirror.anigil.com
 DOMAIN,download.anydesk.com
 DOMAIN,www2.aomeisoftware.com
 DOMAIN,downloadr2.apkmirror.com
@@ -205,8 +204,6 @@ DOMAIN,mirrors.concertpass.com
 DOMAIN,pubmirrors.dal.corespace.com
 DOMAIN,download.cpuid.com
 DOMAIN,downloads.cursor.com
-DOMAIN,mirror.datapacket.com
-DOMAIN,mirror.nl.datapacket.com
 DOMAIN,addins.deepl.com
 DOMAIN,cpan.develooper.com
 DOMAIN,dl.devmate.com
@@ -239,13 +236,13 @@ DOMAIN,download.garmin.com
 DOMAIN,omtmapupdate.garmin.com
 DOMAIN,worldwide.omtmapupdate.garmin.com
 DOMAIN,mirrors.gbnetwork.com
-DOMAIN,mirror.ghproxy.com
 DOMAIN,download.gigabyte.com
 DOMAIN,mirrors.gigenet.com
 DOMAIN,codeload.github.com
 DOMAIN,objects.githubusercontent.com
 DOMAIN,pkg-containers.githubusercontent.com
 DOMAIN,release-assets.githubusercontent.com
+DOMAIN,fw.gl-inet.com
 DOMAIN,gog-cdn-fastly.gog.com
 DOMAIN,gog-cdn-fastly-cp77.gog.com
 DOMAIN,dl.google.com
@@ -453,8 +450,13 @@ DOMAIN,mirror.karneval.cz
 DOMAIN,ftp.linux.cz
 DOMAIN,apache.miloslavbrada.cz
 DOMAIN,ftp.fi.muni.cz
+DOMAIN,archlinux.nic.cz
+DOMAIN,centos.nic.cz
+DOMAIN,cran.nic.cz
 DOMAIN,debian.nic.cz
-DOMAIN,mirrors.nic.cz
+DOMAIN,fedora.nic.cz
+DOMAIN,opensuse.nic.cz
+DOMAIN,ubuntu.nic.cz
 DOMAIN,debian.superhosting.cz
 DOMAIN,merlin.fit.vutbr.cz
 DOMAIN,ftp.zcu.cz
@@ -519,7 +521,6 @@ DOMAIN,download.clashverge.dev
 DOMAIN,mirror.digitaloceans.dev
 DOMAIN,dl.getaurora.dev
 DOMAIN,ubuntu.gjolly.dev
-DOMAIN,drive.massgrave.dev
 DOMAIN,api-updates.orbstack.dev
 DOMAIN,cdn-images.orbstack.dev
 DOMAIN,cdn-updates.orbstack.dev
@@ -780,8 +781,8 @@ DOMAIN,ftp.iij.ad.jp
 DOMAIN,ftp.sakura.ad.jp
 DOMAIN,ftp.nara.wide.ad.jp
 DOMAIN,ftp.tsukuba.wide.ad.jp
-DOMAIN,client.hikarifield.co.jp
 DOMAIN,download.hikarifield.co.jp
+DOMAIN,static.hikarifield.co.jp
 DOMAIN,ftp.kddlabs.co.jp
 DOMAIN,ftp.udx.icscoe.jp
 DOMAIN,ftp.kddilabs.jp
@@ -794,7 +795,6 @@ DOMAIN,mirror.sabay.com.kh
 DOMAIN,ftp.kaist.ac.kr
 DOMAIN,blizzard.gcdn.cloudn.co.kr
 DOMAIN,mirror.techlabs.co.kr
-DOMAIN,apache.tt.co.kr
 DOMAIN,ftp.lanet.kr
 DOMAIN,repo.morgan.kr
 DOMAIN,mirror.fst.kz
@@ -967,7 +967,6 @@ DOMAIN,ftp.sotirov-bg.net
 DOMAIN,downloads.sourceforge.net
 DOMAIN,mirror.steadfast.net
 DOMAIN,apt.tetaneutral.net
-DOMAIN,cpan.tetaneutral.net
 DOMAIN,ctan.tetaneutral.net
 DOMAIN,fdroid.tetaneutral.net
 DOMAIN,mirror.tochlab.net
@@ -1287,7 +1286,6 @@ DOMAIN,mirror.0x.sg
 DOMAIN,mirror.aktkn.sg
 DOMAIN,mirror.djvg.sg
 DOMAIN,download.nus.edu.sg
-DOMAIN,mirror.nus.edu.sg
 DOMAIN,mirror.soonkeat.sg
 DOMAIN,kambing.uu.sg
 DOMAIN,mirror.xtom.sg
@@ -1319,6 +1317,8 @@ DOMAIN,mirror.sh.com.tr
 DOMAIN,cpan.ulak.net.tr
 DOMAIN,ftp.linux.org.tr
 DOMAIN,mirror.twds.com.tw
+DOMAIN,mirror4.twds.com.tw
+DOMAIN,mirror6.twds.com.tw
 DOMAIN,cisco.yuntu.com.tw
 DOMAIN,mirrors.yuntu.com.tw
 DOMAIN,debian.ccns.ncku.edu.tw
@@ -1358,7 +1358,6 @@ DOMAIN,mirror.yuki.net.uk
 DOMAIN,rsync.yuki.net.uk
 DOMAIN,mirror.quickhost.uk
 DOMAIN,cdn.electronic.us
-DOMAIN,mirror.timkevin.us
 DOMAIN,mirror.xtom.us
 DOMAIN,mirrors.xtom.us
 DOMAIN,cdn.zoom.us

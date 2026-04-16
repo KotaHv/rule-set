@@ -1,4 +1,4 @@
-# Total: 4514 rules
+# Total: 4503 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -34,8 +34,7 @@ domain_set:
 - tag.tvads.ai
 - vetted.ai
 - prod-cdn.webtune.ai
-- play.xiaoh.ai
-- file.xiaohai.ai
+- static.zanmei.ai
 - cdn.7tv.app
 - cdn.accessibly.app
 - assets.airbuddy.app
@@ -74,6 +73,7 @@ domain_set:
 - styleguide-assets.shannons.com.au
 - res.abc.net.au
 - static.sdkassets.chime.aws
+- static.cracked.ax
 - components.cyclingfactory.be
 - images.cyclingfactory.be
 - tile.osm.be
@@ -84,6 +84,7 @@ domain_set:
 - media.currys.biz
 - pics.mf8.biz
 - ns-cdn.neustar.biz
+- assets.zpic.biz
 - avatars.micro.blog
 - cdn.micro.blog
 - turbo.build
@@ -433,6 +434,7 @@ domain_set:
 - safebrowsing.brave.com
 - cdn.search.brave.com
 - imgs.search.brave.com
+- detectportal.brave-http-only.com
 - assets.bravenet.com
 - static.bravoporn.com
 - media.breitbart.com
@@ -529,7 +531,6 @@ domain_set:
 - assets.clever-cloud.com
 - cdn.clever-cloud.com
 - components.clever-cloud.com
-- shopify.cleverecommerce.com
 - assets.clickfunnels.com
 - data.web.clickup.com
 - imagecdn.clips4sale.com
@@ -562,7 +563,6 @@ domain_set:
 - static-assets.codecademy.com
 - st.codeforces.com
 - assets.codeguru.com
-- cloudfront.codeproject.com
 - assets.coinbase.com
 - dynamic-assets.coinbase.com
 - static-assets.coinbase.com
@@ -603,7 +603,6 @@ domain_set:
 - cookie-cdn.cookiepro.com
 - app.cookieyes.com
 - cdn.corso.com
-- static-landing.probiplacehold.cot.com
 - storage.courtlistener.com
 - static.cloud.coveo.com
 - sf-coze-web-cdn.coze.com
@@ -852,7 +851,7 @@ domain_set:
 - images.g2crowd.com
 - m3.gab.com
 - media.gamestop.com
-- certona.gap.com
+- content.gapinc.com
 - share-assets.fe.garmin.com
 - fonts.garmin.com
 - res.garmin.com
@@ -1272,7 +1271,6 @@ domain_set:
 - tiles.mapterhorn.com
 - cdn.maptiler.com
 - media.maptiler.com
-- tile.mapzen.com
 - clickup.marketlinc.com
 - lift-ai-js.marketlinc.com
 - c.marsflag.com
@@ -1378,7 +1376,6 @@ domain_set:
 - cdn.myportfolio.com
 - pro2-ui-assets-s3-fy.myportfolio.com
 - r2cdn.myshopline.com
-- static.namebeta.com
 - files.namecheap.com
 - s.namemc.com
 - static.narrativ.com
@@ -1477,7 +1474,7 @@ domain_set:
 - static2.onlyfans.com
 - thumbs.onlyfans.com
 - ca1.onlyhentaistuff.com
-- fs2.onlyhentaistuff.com
+- ca2.onlyhentaistuff.com
 - static-oforms.onlyoffice.com
 - static-www.onlyoffice.com
 - assets.ontrack.com
@@ -1604,6 +1601,7 @@ domain_set:
 - rebound.postmarkapp.com
 - content.powerapps.com
 - ui.powerreviews.com
+- content.presspage.com
 - cdn.pricespider.com
 - media.printables.com
 - cdn.privacy.com
@@ -1824,7 +1822,6 @@ domain_set:
 - media.steampowered.com
 - avatar.stefanjudis.com
 - cdn.stellarhosted.com
-- image.stheadline.com
 - assets.stickpng.com
 - cdn.stonly.com
 - cdn-1.strava.com
@@ -1943,6 +1940,7 @@ domain_set:
 - cdn-cms.tunein.com
 - cdn-web.tunein.com
 - widgets.turnto.com
+- cdn.tvpagewidgets.com
 - twenty-icons.com
 - analytics.twitter.com
 - fonts.twitter.com
@@ -2105,12 +2103,10 @@ domain_set:
 - images3.welcomesoftware.com
 - images4.welcomesoftware.com
 - content.wepik.com
-- image.westinyou.com
 - cdn.whoer.com
 - images.whoer.com
 - images.wikia.com
-- assets.wikiwand.com
-- cdn.wikiwand.com
+- img.wikiwand.com
 - storage.windiscover.com
 - time.windows.com
 - cdn.windowsreport.com
@@ -2157,7 +2153,6 @@ domain_set:
 - cdn.xvidzz.com
 - i.xxxshake.com
 - static.xxxshake.com
-- yep.video.yahoo.com
 - jac.yahoosandbox.com
 - cdn.yamibuy.com
 - bookface-static.ycombinator.com
@@ -2319,8 +2314,6 @@ domain_set:
 - proxy.beyondwords.io
 - web-cdn.bitrise.io
 - sandpack-cdn-staging.blazingly.io
-- js-cdn.blockchair.io
-- loutre.blockchair.io
 - cdn.bogos.io
 - cdn.boostcommerce.io
 - cdn.branch.io
@@ -2407,7 +2400,6 @@ domain_set:
 - static.mytonwallet.io
 - favicons.nextdns.io
 - cdn.nolt.io
-- static.opensea.io
 - cdn.pagefly.io
 - cdn.pendo.io
 - data.pendo.io
@@ -2583,7 +2575,6 @@ domain_set:
 - s3.acg.mn
 - file.ahu.moe
 - static.ahu.moe
-- assets-cdn.anh.moe
 - static.bangumi.moe
 - pic.cangku.moe
 - static.chaika.moe
@@ -2624,7 +2615,6 @@ domain_set:
 - img-s-msn-com.akamaized.net
 - melonbooks.akamaized.net
 - mwf-service.akamaized.net
-- mycommerce.akamaized.net
 - pic-bstarstatic.akamaized.net
 - prod-streaming-video-msn-com.akamaized.net
 - prod-video-cms-amp-microsoft-com.akamaized.net
@@ -2687,8 +2677,8 @@ domain_set:
 - fonts.cat.net
 - gravatar.cat.net
 - thumbnails.cbsig.net
-- edge1.certona.net
 - cdn.consentmanager.net
+- static.contentpass.net
 - pub.creaders.net
 - badges.crowdin.net
 - searchg2-assets.crownpeak.net
@@ -2733,8 +2723,6 @@ domain_set:
 - js.hsforms.net
 - js-eu1.hsforms.net
 - avatars.hubspot.net
-- alt.idgesg.net
-- images.idgesg.net
 - ik.imgkit.net
 - static-act.imoim.net
 - img.imoutomoe.net
@@ -2743,7 +2731,6 @@ domain_set:
 - cdn.iporntv.net
 - cdn-img2.iporntv.net
 - cdn-img3.iporntv.net
-- file.izanmei.net
 - static.j51.net
 - img.javstore.net
 - pg2dhpc3p5ec22g3.jkforum.net
@@ -2783,7 +2770,6 @@ domain_set:
 - shell.cdn.office.net
 - support.content.office.net
 - cdn.forms.office.net
-- cdn.graph.office.net
 - cdn.designerapp.osi.office.net
 - assets.openshift.net
 - data.osmand.net
@@ -2938,6 +2924,7 @@ domain_set:
 - media.hentaifreak.org
 - static.ietf.org
 - api.indexnow.org
+- file.izanm.org
 - pcz.javidol.org
 - proxy.joinmastodon.org
 - jotai.org
@@ -3014,7 +3001,6 @@ domain_set:
 - resources.whatwg.org
 - intake-logging.wikimedia.org
 - upload.wikimedia.org
-- tiles.wmflabs.org
 - tools-static.wmflabs.org
 - files.writefreely.org
 - files.mastodon.ktachibana.party
@@ -3055,7 +3041,7 @@ domain_set:
 - brew.sh
 - docs.brew.sh
 - proxy.cors.sh
-- cdn.cracked.sh
+- static.cracked.sh
 - s3.doujin.sh
 - static.scarf.sh
 - avatar.tangled.sh
@@ -3118,7 +3104,6 @@ domain_set:
 - pkg-cdn.jetbrains.team
 - docs.mrchromebox.tech
 - static.pepy.tech
-- media.remax-prod.eng.remax.tech
 - assets.dev.to
 - media.dev.to
 - media2.dev.to
@@ -3132,7 +3117,8 @@ domain_set:
 - namedotcom-cdn.name.tools
 - css.4jpg.top
 - static-cdn.bytegiftia.top
-- media.d.tube
+- nas2.d.tube
+- play.d.tube
 - js.txxx.tube
 - tn.txxx.tube
 - cdn.18jav.tv
@@ -3169,6 +3155,7 @@ domain_set:
 - assets.twitch.tv
 - clips-media-assets2.twitch.tv
 - embed.twitch.tv
+- f.upanh.tv
 - static.yfsp.tv
 - assets.clibo.tw
 - img.4gamers.com.tw
@@ -3250,7 +3237,6 @@ domain_set:
 - domain.expiring-soon.xyz
 - eomd1.fembeqq.xyz
 - sdk-cdn.fun.xyz
-- vod.jfly.xyz
 - image.jnislniv.xyz
 - cdn.joincommunity.xyz
 - cdn-longterm.mee6.xyz
@@ -3362,6 +3348,7 @@ domain_suffix_set:
 - ipfs.arching-kaos.com
 - images.arcpublishing.com
 - aspnetcdn.com
+- assets-gap.com
 - assets-yammer.com
 - assettype.com
 - cdn.autoevolution.com
@@ -3984,6 +3971,7 @@ domain_suffix_set:
 - zohowebstatic.com
 - ymq.cool
 - ipfs.slang.cx
+- zpi.cx
 - ipfs.cyou
 - tile.openstreetmap.de
 - replicate.delivery
@@ -4123,6 +4111,7 @@ domain_suffix_set:
 - yps.link
 - airio3.live
 - doppiocdn.live
+- zpicdn.lol
 - cloudflare.ltd
 - iframe.ly
 - disconnect.me
