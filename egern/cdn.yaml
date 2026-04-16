@@ -1,4 +1,4 @@
-# Total: 4513 rules
+# Total: 4514 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1924,6 +1924,7 @@ domain_set:
 - simplicity.trustpilot.com
 - widget.trustpilot.com
 - static-assets-1.truthsocial.com
+- img.api.tryprofound.com
 - ph.tryprofound.com
 - static.tryprofound.com
 - bundle.trysavvy.com
