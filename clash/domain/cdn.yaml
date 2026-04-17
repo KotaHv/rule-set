@@ -1,4 +1,4 @@
-# Total: 4423 rules
+# Total: 4431 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -248,6 +248,7 @@
 - 'fastly-s3.allmovie.com'
 - 'oaos-resources.allstate.com'
 - 'resources.allstate.com'
+- 'bcdn.alotporn.com'
 - 'd2c.aws.amazon.com'
 - 'code.buywithprime.amazon.com'
 - 'amazon-omni-cdn.com'
@@ -1790,6 +1791,10 @@
 - 'blob.sololearn.com'
 - 'lecontent.sololearn.com'
 - 'cdn-a.sonyentertainmentnetwork.com'
+- 'liveimg.sooplive.com'
+- 'res.sooplive.com'
+- 'static.sooplive.com'
+- 'stimg.sooplive.com'
 - 'w.soundcloud.com'
 - 'static.spankbang.com'
 - 'img.sparemin.com'
@@ -2066,6 +2071,7 @@
 - 'platform.vox.com'
 - 'apps.voxmedia.com'
 - 'swan.prod.merch.vpsvc.com'
+- 'assets.vrchat.com'
 - 'mcdn.vrporn.com'
 - 'mcdnds.vrporn.com'
 - 'mcdns.vrporn.com'
@@ -3813,6 +3819,7 @@
 - '+.sndcdn.com'
 - '+.sndimg.com'
 - '+.snzypic.com'
+- '+.img.sooplive.com'
 - '+.ipfs.soul-network.com'
 - '+.splunkcloud.com'
 - '+.spreadshirtmedia.com'
@@ -4096,6 +4103,7 @@
 - '+.placehold.jp'
 - '+.edge.storage-yahoo.jp'
 - '+.yimg.jp'
+- '+.files.sooplive.co.kr'
 - '+.ipfs.lain.la'
 - '+.deno.land'
 - '+.nest.land'

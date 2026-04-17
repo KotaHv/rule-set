@@ -1,4 +1,4 @@
-# Total: 6193 rules
+# Total: 6201 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1448,6 +1448,10 @@
 - 'assets.sololearn.com'
 - 'blob.sololearn.com'
 - 'lecontent.sololearn.com'
+- 'liveimg.sooplive.com'
+- 'res.sooplive.com'
+- 'static.sooplive.com'
+- 'stimg.sooplive.com'
 - 'img.sparemin.com'
 - 'img.sparknotes.com'
 - 'images.spectrumnews1.com'
@@ -3503,6 +3507,7 @@
 - '+.fsdn.com'
 - '+.fsvod1.com'
 - '+.ft.com'
+- '+.ftchinese.com'
 - '+.fuq.com'
 - '+.futpromos.com'
 - '+.futunited.com'
@@ -3694,6 +3699,7 @@
 - '+.ibyteimg.com'
 - '+.icfcdn.com'
 - '+.iconfinder.com'
+- '+.idcflare.com'
 - '+.idrive.com'
 - '+.ifixit.com'
 - '+.ifttt.com'
@@ -4430,6 +4436,7 @@
 - '+.socdm.com'
 - '+.softonic.com'
 - '+.sonyentertainmentnetwork.com'
+- '+.img.sooplive.com'
 - '+.sophos.com'
 - '+.ipfs.soul-network.com'
 - '+.soundcloud.com'
@@ -4788,6 +4795,7 @@
 - '+.wikihow.com'
 - '+.wikipedia.com'
 - '+.wikiplus-app.com'
+- '+.wikissl.com'
 - '+.wikiwand.com'
 - '+.windy.com'
 - '+.winudf.com'

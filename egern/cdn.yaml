@@ -1,4 +1,4 @@
-# Total: 4503 rules
+# Total: 4511 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -249,6 +249,7 @@ domain_set:
 - fastly-s3.allmovie.com
 - oaos-resources.allstate.com
 - resources.allstate.com
+- bcdn.alotporn.com
 - d2c.aws.amazon.com
 - code.buywithprime.amazon.com
 - amazon-omni-cdn.com
@@ -1791,6 +1792,10 @@ domain_set:
 - blob.sololearn.com
 - lecontent.sololearn.com
 - cdn-a.sonyentertainmentnetwork.com
+- liveimg.sooplive.com
+- res.sooplive.com
+- static.sooplive.com
+- stimg.sooplive.com
 - w.soundcloud.com
 - static.spankbang.com
 - img.sparemin.com
@@ -2067,6 +2072,7 @@ domain_set:
 - platform.vox.com
 - apps.voxmedia.com
 - swan.prod.merch.vpsvc.com
+- assets.vrchat.com
 - mcdn.vrporn.com
 - mcdnds.vrporn.com
 - mcdns.vrporn.com
@@ -3815,6 +3821,7 @@ domain_suffix_set:
 - sndcdn.com
 - sndimg.com
 - snzypic.com
+- img.sooplive.com
 - ipfs.soul-network.com
 - splunkcloud.com
 - spreadshirtmedia.com
@@ -4098,6 +4105,7 @@ domain_suffix_set:
 - placehold.jp
 - edge.storage-yahoo.jp
 - yimg.jp
+- files.sooplive.co.kr
 - ipfs.lain.la
 - deno.land
 - nest.land

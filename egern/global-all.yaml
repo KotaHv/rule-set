@@ -1,4 +1,4 @@
-# Total: 6320 rules
+# Total: 6328 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1449,6 +1449,10 @@ domain_set:
 - assets.sololearn.com
 - blob.sololearn.com
 - lecontent.sololearn.com
+- liveimg.sooplive.com
+- res.sooplive.com
+- static.sooplive.com
+- stimg.sooplive.com
 - img.sparemin.com
 - img.sparknotes.com
 - images.spectrumnews1.com
@@ -3505,6 +3509,7 @@ domain_suffix_set:
 - fsdn.com
 - fsvod1.com
 - ft.com
+- ftchinese.com
 - fuq.com
 - futpromos.com
 - futunited.com
@@ -3696,6 +3701,7 @@ domain_suffix_set:
 - ibyteimg.com
 - icfcdn.com
 - iconfinder.com
+- idcflare.com
 - idrive.com
 - ifixit.com
 - ifttt.com
@@ -4432,6 +4438,7 @@ domain_suffix_set:
 - socdm.com
 - softonic.com
 - sonyentertainmentnetwork.com
+- img.sooplive.com
 - sophos.com
 - ipfs.soul-network.com
 - soundcloud.com
@@ -4790,6 +4797,7 @@ domain_suffix_set:
 - wikihow.com
 - wikipedia.com
 - wikiplus-app.com
+- wikissl.com
 - wikiwand.com
 - windy.com
 - winudf.com
@@ -6285,7 +6293,6 @@ domain_keyword_set:
 - web-assets.zendesk
 - whatsapp
 ip_cidr_set:
-- 5.28.195.2/32
 - 23.246.18.0/23
 - 35.186.224.47/32
 - 37.77.184.0/21
@@ -6307,6 +6314,7 @@ ip_cidr_set:
 - 185.9.188.0/22
 - 185.76.151.0/24
 - 192.173.64.0/18
+- 194.221.61.2/32
 - 196.55.216.167/32
 - 198.38.96.0/19
 - 198.45.48.0/20

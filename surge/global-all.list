@@ -1,4 +1,4 @@
-# Total: 6384 rules
+# Total: 6392 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -1447,6 +1447,10 @@ DOMAIN,static.solarwinds.com
 DOMAIN,assets.sololearn.com
 DOMAIN,blob.sololearn.com
 DOMAIN,lecontent.sololearn.com
+DOMAIN,liveimg.sooplive.com
+DOMAIN,res.sooplive.com
+DOMAIN,static.sooplive.com
+DOMAIN,stimg.sooplive.com
 DOMAIN,img.sparemin.com
 DOMAIN,img.sparknotes.com
 DOMAIN,images.spectrumnews1.com
@@ -3502,6 +3506,7 @@ DOMAIN-SUFFIX,frostbite.com
 DOMAIN-SUFFIX,fsdn.com
 DOMAIN-SUFFIX,fsvod1.com
 DOMAIN-SUFFIX,ft.com
+DOMAIN-SUFFIX,ftchinese.com
 DOMAIN-SUFFIX,fuq.com
 DOMAIN-SUFFIX,futpromos.com
 DOMAIN-SUFFIX,futunited.com
@@ -3693,6 +3698,7 @@ DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,ibyteimg.com
 DOMAIN-SUFFIX,icfcdn.com
 DOMAIN-SUFFIX,iconfinder.com
+DOMAIN-SUFFIX,idcflare.com
 DOMAIN-SUFFIX,idrive.com
 DOMAIN-SUFFIX,ifixit.com
 DOMAIN-SUFFIX,ifttt.com
@@ -4429,6 +4435,7 @@ DOMAIN-SUFFIX,snzypic.com
 DOMAIN-SUFFIX,socdm.com
 DOMAIN-SUFFIX,softonic.com
 DOMAIN-SUFFIX,sonyentertainmentnetwork.com
+DOMAIN-SUFFIX,img.sooplive.com
 DOMAIN-SUFFIX,sophos.com
 DOMAIN-SUFFIX,ipfs.soul-network.com
 DOMAIN-SUFFIX,soundcloud.com
@@ -4787,6 +4794,7 @@ DOMAIN-SUFFIX,wikidot.com
 DOMAIN-SUFFIX,wikihow.com
 DOMAIN-SUFFIX,wikipedia.com
 DOMAIN-SUFFIX,wikiplus-app.com
+DOMAIN-SUFFIX,wikissl.com
 DOMAIN-SUFFIX,wikiwand.com
 DOMAIN-SUFFIX,windy.com
 DOMAIN-SUFFIX,winudf.com
@@ -6277,7 +6285,6 @@ DOMAIN-WILDCARD,s??.maxstream.org
 DOMAIN-WILDCARD,cdn-*.comaps.tech
 DOMAIN-WILDCARD,v.rn???.xyz
 DOMAIN-WILDCARD,*.skyearth?.xyz
-IP-CIDR,5.28.195.2/32,no-resolve
 IP-CIDR,23.246.18.0/23,no-resolve
 IP-CIDR,35.186.224.47/32,no-resolve
 IP-CIDR,37.77.184.0/21,no-resolve
@@ -6299,6 +6306,7 @@ IP-CIDR,185.2.220.0/22,no-resolve
 IP-CIDR,185.9.188.0/22,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
 IP-CIDR,192.173.64.0/18,no-resolve
+IP-CIDR,194.221.61.2/32,no-resolve
 IP-CIDR,196.55.216.167/32,no-resolve
 IP-CIDR,198.38.96.0/19,no-resolve
 IP-CIDR,198.45.48.0/20,no-resolve
