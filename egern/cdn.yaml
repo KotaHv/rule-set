@@ -1,4 +1,4 @@
-# Total: 4511 rules
+# Total: 4512 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -254,6 +254,7 @@ domain_set:
 - code.buywithprime.amazon.com
 - amazon-omni-cdn.com
 - ip-ranges.amazonaws.com
+- sdk.amazonaws.com
 - cdn.amcharts.com
 - cdn.amgreatness.com
 - static.ampcode.com

@@ -1,4 +1,4 @@
-# Total: 4431 rules
+# Total: 4432 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -253,6 +253,7 @@
 - 'code.buywithprime.amazon.com'
 - 'amazon-omni-cdn.com'
 - 'ip-ranges.amazonaws.com'
+- 'sdk.amazonaws.com'
 - 'cdn.amcharts.com'
 - 'cdn.amgreatness.com'
 - 'static.ampcode.com'
