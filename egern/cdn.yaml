@@ -1,4 +1,4 @@
-# Total: 4512 rules
+# Total: 4513 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -3010,6 +3010,7 @@ domain_set:
 - upload.wikimedia.org
 - tools-static.wmflabs.org
 - files.writefreely.org
+- images.status.page
 - files.mastodon.ktachibana.party
 - cdn1.telesco.pe
 - cdn4.telesco.pe
