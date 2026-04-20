@@ -1,4 +1,4 @@
-# Total: 757 rules
+# Total: 758 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -640,6 +640,7 @@ domain_suffix_set:
 - roblox.mx
 - garena.my
 - acesofthunder.net
+- fortnite-vod.akamaized.net
 - umamusume.akamaized.net
 - worldflipper.akamaized.net
 - battle.net

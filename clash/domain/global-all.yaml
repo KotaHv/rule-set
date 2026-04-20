@@ -1,4 +1,4 @@
-# Total: 6202 rules
+# Total: 6203 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -5331,6 +5331,7 @@
 - '+.akamaihd.net'
 - '+.dcalivedazn.akamaized.net'
 - '+.dcblivedazn.akamaized.net'
+- '+.fortnite-vod.akamaized.net'
 - '+.umamusume.akamaized.net'
 - '+.worldflipper.akamaized.net'
 - '+.media.amplience.net'

@@ -1,4 +1,4 @@
-# Total: 6329 rules
+# Total: 6330 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -5333,6 +5333,7 @@ domain_suffix_set:
 - akamaihd.net
 - dcalivedazn.akamaized.net
 - dcblivedazn.akamaized.net
+- fortnite-vod.akamaized.net
 - umamusume.akamaized.net
 - worldflipper.akamaized.net
 - media.amplience.net

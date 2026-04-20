@@ -1,4 +1,4 @@
-# Total: 756 rules
+# Total: 757 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -638,6 +638,7 @@
 - '+.roblox.mx'
 - '+.garena.my'
 - '+.acesofthunder.net'
+- '+.fortnite-vod.akamaized.net'
 - '+.umamusume.akamaized.net'
 - '+.worldflipper.akamaized.net'
 - '+.battle.net'
