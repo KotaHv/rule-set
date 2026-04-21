@@ -1,4 +1,4 @@
-# Total: 4454 rules
+# Total: 4455 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -1816,6 +1816,7 @@ DOMAIN,assets.st-note.com
 DOMAIN,cdn.st-note.com
 DOMAIN,s3.stackabuse.com
 DOMAIN,tiles.stadiamaps.com
+DOMAIN,tiles-eu.stadiamaps.com
 DOMAIN,static.staff-start.com
 DOMAIN,content-prod-live.cert.starbucks.com
 DOMAIN,assets.stash.com
@@ -1897,7 +1898,6 @@ DOMAIN,img.thingiverse.com
 DOMAIN,marketing.thingiverse.com
 DOMAIN,static.threatlocker.com
 DOMAIN,thumbsnap.com
-DOMAIN,tile.thunderforest.com
 DOMAIN,assets.tigerdata.com
 DOMAIN,assets.time.com
 DOMAIN,telemetry.timescale.com
@@ -3880,6 +3880,7 @@ DOMAIN-SUFFIX,thesourcemediaassets.com
 DOMAIN-SUFFIX,bundle.thimatic-apps.com
 DOMAIN-SUFFIX,thirdwebcdn.com
 DOMAIN-SUFFIX,thisiscdn.com
+DOMAIN-SUFFIX,tile.thunderforest.com
 DOMAIN-SUFFIX,tiktokcdn.com
 DOMAIN-SUFFIX,tiktokcdn-eu.com
 DOMAIN-SUFFIX,tiktokcdn-us.com

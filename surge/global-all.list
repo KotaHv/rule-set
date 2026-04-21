@@ -1,4 +1,4 @@
-# Total: 6394 rules
+# Total: 6396 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -1468,6 +1468,7 @@ DOMAIN,assets.st-note.com
 DOMAIN,cdn.st-note.com
 DOMAIN,s3.stackabuse.com
 DOMAIN,tiles.stadiamaps.com
+DOMAIN,tiles-eu.stadiamaps.com
 DOMAIN,static.staff-start.com
 DOMAIN,mirrors.standaloneinstaller.com
 DOMAIN,content-prod-live.cert.starbucks.com
@@ -1528,7 +1529,6 @@ DOMAIN,media.theresanaiforthat.com
 DOMAIN,cdn.thewirecutter.com
 DOMAIN,static.threatlocker.com
 DOMAIN,thumbsnap.com
-DOMAIN,tile.thunderforest.com
 DOMAIN,assets.tigerdata.com
 DOMAIN,telemetry.timescale.com
 DOMAIN,cdn.tinypass.com
@@ -2452,6 +2452,7 @@ DOMAIN,static.arxiv.org
 DOMAIN,cdn.autoketing.org
 DOMAIN,app.backinstock.org
 DOMAIN,seal-newyork.bbb.org
+DOMAIN,download.bbbike.org
 DOMAIN,ftp.byfly.by.org
 DOMAIN,bzip.org
 DOMAIN,m3u8-0.c-spanvideo.org
@@ -4609,6 +4610,7 @@ DOMAIN-SUFFIX,thisiscdn.com
 DOMAIN-SUFFIX,thisvid.com
 DOMAIN-SUFFIX,threads.com
 DOMAIN-SUFFIX,thumbzilla.com
+DOMAIN-SUFFIX,tile.thunderforest.com
 DOMAIN-SUFFIX,tiberiumalliances.com
 DOMAIN-SUFFIX,tiburon.com
 DOMAIN-SUFFIX,tidal.com

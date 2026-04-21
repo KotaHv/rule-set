@@ -1,4 +1,4 @@
-# Total: 6203 rules
+# Total: 6205 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1469,6 +1469,7 @@
 - 'cdn.st-note.com'
 - 's3.stackabuse.com'
 - 'tiles.stadiamaps.com'
+- 'tiles-eu.stadiamaps.com'
 - 'static.staff-start.com'
 - 'mirrors.standaloneinstaller.com'
 - 'content-prod-live.cert.starbucks.com'
@@ -1529,7 +1530,6 @@
 - 'cdn.thewirecutter.com'
 - 'static.threatlocker.com'
 - 'thumbsnap.com'
-- 'tile.thunderforest.com'
 - 'assets.tigerdata.com'
 - 'telemetry.timescale.com'
 - 'cdn.tinypass.com'
@@ -2453,6 +2453,7 @@
 - 'cdn.autoketing.org'
 - 'app.backinstock.org'
 - 'seal-newyork.bbb.org'
+- 'download.bbbike.org'
 - 'ftp.byfly.by.org'
 - 'bzip.org'
 - 'm3u8-0.c-spanvideo.org'
@@ -4610,6 +4611,7 @@
 - '+.thisvid.com'
 - '+.threads.com'
 - '+.thumbzilla.com'
+- '+.tile.thunderforest.com'
 - '+.tiberiumalliances.com'
 - '+.tiburon.com'
 - '+.tidal.com'

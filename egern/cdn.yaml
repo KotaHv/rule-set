@@ -1,4 +1,4 @@
-# Total: 4513 rules
+# Total: 4514 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1818,6 +1818,7 @@ domain_set:
 - cdn.st-note.com
 - s3.stackabuse.com
 - tiles.stadiamaps.com
+- tiles-eu.stadiamaps.com
 - static.staff-start.com
 - content-prod-live.cert.starbucks.com
 - assets.stash.com
@@ -1899,7 +1900,6 @@ domain_set:
 - marketing.thingiverse.com
 - static.threatlocker.com
 - thumbsnap.com
-- tile.thunderforest.com
 - assets.tigerdata.com
 - assets.time.com
 - telemetry.timescale.com
@@ -3883,6 +3883,7 @@ domain_suffix_set:
 - bundle.thimatic-apps.com
 - thirdwebcdn.com
 - thisiscdn.com
+- tile.thunderforest.com
 - tiktokcdn.com
 - tiktokcdn-eu.com
 - tiktokcdn-us.com

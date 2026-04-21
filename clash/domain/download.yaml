@@ -1,4 +1,4 @@
-# Total: 1914 rules
+# Total: 1917 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -471,6 +471,7 @@
 - 'ftp.fau.de'
 - 'ftp.fu-berlin.de'
 - 'mirror.funkfreundelandshut.de'
+- 'download.geofabrik.de'
 - 'www.gutscheinrausch.de'
 - 'ftp.gwdg.de'
 - 'ftp5.gwdg.de'
@@ -1043,6 +1044,7 @@
 - 'dl-cdn.alpinelinux.org'
 - 'repo.maven.apache.org'
 - 'mirror.apache-kr.org'
+- 'download.bbbike.org'
 - 'ftp.byfly.by.org'
 - 'bzip.org'
 - 'lethe.chinstrap.org'
@@ -1164,6 +1166,7 @@
 - 's1.animeko.openani.org'
 - 's2.animeko.openani.org'
 - 'ciscobinary.openh264.org'
+- 'planet.openstreetmap.org'
 - 'cdn.opensuse.org'
 - 'download.opensuse.org'
 - 'downloads.openwrt.org'

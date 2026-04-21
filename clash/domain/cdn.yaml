@@ -1,4 +1,4 @@
-# Total: 4433 rules
+# Total: 4434 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1817,6 +1817,7 @@
 - 'cdn.st-note.com'
 - 's3.stackabuse.com'
 - 'tiles.stadiamaps.com'
+- 'tiles-eu.stadiamaps.com'
 - 'static.staff-start.com'
 - 'content-prod-live.cert.starbucks.com'
 - 'assets.stash.com'
@@ -1898,7 +1899,6 @@
 - 'marketing.thingiverse.com'
 - 'static.threatlocker.com'
 - 'thumbsnap.com'
-- 'tile.thunderforest.com'
 - 'assets.tigerdata.com'
 - 'assets.time.com'
 - 'telemetry.timescale.com'
@@ -3881,6 +3881,7 @@
 - '+.bundle.thimatic-apps.com'
 - '+.thirdwebcdn.com'
 - '+.thisiscdn.com'
+- '+.tile.thunderforest.com'
 - '+.tiktokcdn.com'
 - '+.tiktokcdn-eu.com'
 - '+.tiktokcdn-us.com'
