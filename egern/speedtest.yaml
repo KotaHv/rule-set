@@ -1,4 +1,4 @@
-# Total: 3079 rules
+# Total: 3084 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -577,6 +577,7 @@ domain_set:
 - srv1298001.hstgr.cloud
 - srv1298003.hstgr.cloud
 - speedtest.lumischvps.cloud
+- ookla.speedtest.mbs.cloud
 - speedtest.b2.mhn.cloud
 - speedtest.mel.mhn.cloud
 - speedtest.p1.mhn.cloud
@@ -939,6 +940,7 @@ domain_set:
 - speedtest.infowest.com
 - speedtest.inovewifi.com
 - speedtest.internetsubway.com
+- speed1.sandiego.intrepidfiber.com
 - speedtest.ioflood.com
 - speedtest.ipcore.com
 - bombay-speedtest.ishancloud.com
@@ -1795,6 +1797,7 @@ domain_set:
 - speedtest.trunet.co.in
 - speedtestdelhi.ultranet.co.in
 - sp2.unpl.co.in
+- speedtest.velocitybroadband.co.in
 - speedtestdelhi.weebo.co.in
 - speeddelhi.zeonet.co.in
 - speedtest.connectzone.in
@@ -1875,6 +1878,7 @@ domain_set:
 - speedtest.theisp.in
 - speedtestdelhi.tripleplay.in
 - speedtestsirsa.tripleplay.in
+- speedtest.c-con.uniquebroadband.in
 - speedtest.willaegis.in
 - sp1.wiprabroadband.in
 - speedtest.wiprabroadband.in
@@ -2094,6 +2098,7 @@ domain_set:
 - speedtest-ams-nl.as215248.net
 - speedtest-ens-nl.as215248.net
 - speedtest.as215296.net
+- speedtest.par2.as216190.net
 - randomlake-speedtest1.as36001.net
 - speedtest.as38915.net
 - ookla.as400442.net
