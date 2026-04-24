@@ -1,4 +1,4 @@
-# Total: 4514 rules
+# Total: 4515 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1446,6 +1446,7 @@ domain_set:
 - static-production.npmjs.com
 - lc.nssurge.com
 - images.nvidia.com
+- brand-assets.cne.ngc.nvidia.com
 - assets.nypost.com
 - pbc.nypost.com
 - static.nyse.com

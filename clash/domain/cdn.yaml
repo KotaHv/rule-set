@@ -1,4 +1,4 @@
-# Total: 4434 rules
+# Total: 4435 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1445,6 +1445,7 @@
 - 'static-production.npmjs.com'
 - 'lc.nssurge.com'
 - 'images.nvidia.com'
+- 'brand-assets.cne.ngc.nvidia.com'
 - 'assets.nypost.com'
 - 'pbc.nypost.com'
 - 'static.nyse.com'
