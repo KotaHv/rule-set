@@ -1,4 +1,4 @@
-# Total: 3084 rules
+# Total: 3088 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1516,6 +1516,8 @@ domain_set:
 - speedtest01.dns-net.de
 - speedtest.edv-kossmann.de
 - net-speed1-pp.ewetel.de
+- s01.fix-speed.de
+- s02.fix-speed.de
 - speedtest.fnoh.de
 - speedtest.heuer-und-sack.de
 - speedtest.hochschule-trier.de
@@ -1560,6 +1562,7 @@ domain_set:
 - speedtest1.t-m-net.de
 - speedtest-gwn24.tele-ag.de
 - ookla.ber-01.testpub.telefonica.de
+- ookla.cgn-01.testpub.telefonica.de
 - ookla.dus-02.testpub.telefonica.de
 - ookla.ess-01.testpub.telefonica.de
 - ookla.fra-01.testpub.telefonica.de
@@ -2087,6 +2090,7 @@ domain_set:
 - speedtest1-sttlwawb.as20055.net
 - speedtest.thn.lon.network.as201838.net
 - speedtest.as203446.net
+- speedtest.pl-waw.as210558.net
 - speedtest.as210667.net
 - speedtest-1.london.network.as212655.net
 - speedtest-1.manchester.network.as212655.net
