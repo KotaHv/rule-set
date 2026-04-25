@@ -1,4 +1,4 @@
-# Total: 4456 rules
+# Total: 4460 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -2970,6 +2970,9 @@ DOMAIN,tile.openweathermap.org
 DOMAIN,cdn.pagic.org
 DOMAIN,jaws.pbs.org
 DOMAIN,user-uploads.perchance.org
+DOMAIN,ep1.pinkbike.org
+DOMAIN,es.pinkbike.org
+DOMAIN,gis.pinkbike.org
 DOMAIN,sdk.privacy-center.org
 DOMAIN,play.publicradio.org
 DOMAIN,publicsuffix.org
@@ -3944,6 +3947,7 @@ DOMAIN-SUFFIX,winudf.com
 DOMAIN-SUFFIX,csp.withgoogle.com
 DOMAIN-SUFFIX,wixmp.com
 DOMAIN-SUFFIX,wixstatic.com
+DOMAIN-SUFFIX,wklcdn.com
 DOMAIN-SUFFIX,wolongcdnm3u8.com
 DOMAIN-SUFFIX,wolongzywcdn3.com
 DOMAIN-SUFFIX,files.wordpress.com

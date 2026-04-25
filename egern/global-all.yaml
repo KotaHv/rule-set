@@ -1,4 +1,4 @@
-# Total: 6332 rules
+# Total: 6336 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2558,6 +2558,9 @@ domain_set:
 - ubuntu.osuosl.org
 - cdn.pagic.org
 - user-uploads.perchance.org
+- ep1.pinkbike.org
+- es.pinkbike.org
+- gis.pinkbike.org
 - download.pixelexperience.org
 - get.pixelexperience.org
 - sdk.privacy-center.org
@@ -4810,6 +4813,7 @@ domain_suffix_set:
 - wix.com
 - wixmp.com
 - wixstatic.com
+- wklcdn.com
 - wnacg.com
 - wolongcdnm3u8.com
 - wolongzywcdn3.com

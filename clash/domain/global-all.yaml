@@ -1,4 +1,4 @@
-# Total: 6205 rules
+# Total: 6209 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2557,6 +2557,9 @@
 - 'ubuntu.osuosl.org'
 - 'cdn.pagic.org'
 - 'user-uploads.perchance.org'
+- 'ep1.pinkbike.org'
+- 'es.pinkbike.org'
+- 'gis.pinkbike.org'
 - 'download.pixelexperience.org'
 - 'get.pixelexperience.org'
 - 'sdk.privacy-center.org'
@@ -4808,6 +4811,7 @@
 - '+.wix.com'
 - '+.wixmp.com'
 - '+.wixstatic.com'
+- '+.wklcdn.com'
 - '+.wnacg.com'
 - '+.wolongcdnm3u8.com'
 - '+.wolongzywcdn3.com'
