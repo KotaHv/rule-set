@@ -1,4 +1,4 @@
-# Total: 83044 rules
+# Total: 83059 rules
 no_resolve: true
 domain_set:
 - t.email1.samsung.ca
@@ -889,7 +889,6 @@ domain_suffix_set:
 - cookies.doutoresdaweb.com.br
 - track.e7r.com.br
 - enviou.com.br
-- facanha.com.br
 - fadadosexo.com.br
 - fazendachia.com.br
 - foneclick.com.br
@@ -4671,6 +4670,8 @@ domain_suffix_set:
 - wowjs.1www.cn
 - softdl4.360.cn
 - 360edge.cn
+- 360guard-360.cn
+- 360weishi-360.cn
 - cad.659t.cn
 - 666pool.cn
 - m.91heima.cn
@@ -4751,7 +4752,7 @@ domain_suffix_set:
 - a.dlads.cn
 - download.doumaibiji.cn
 - dweixin.cn
-- hhbs.hhu.edu.cn
+- xww.bucea.edu.cn
 - sea.net.edu.cn
 - pdns.nudt.edu.cn
 - ns2.xidian.edu.cn
@@ -5284,6 +5285,7 @@ domain_suffix_set:
 - 0x01n2ptpuz3.com
 - 0x1f4b0.com
 - libss.0x504.com
+- www2.0zz0.com
 - 1-1ads.com
 - 1-9-90.com
 - 1-bmo-client-login.com
@@ -5665,6 +5667,7 @@ domain_suffix_set:
 - 35a92e241c.30ea3091fb.com
 - 30mercantil.com
 - eca1311030.3163ba76f7.com
+- 316ee.com
 - fe7f2e3a68.317aba2b18.com
 - a4eea3ed90.31a0792482.com
 - 31b0f03f5b.com
@@ -9349,6 +9352,7 @@ domain_suffix_set:
 - autoaffiliatenetwork.com
 - autoamenities.com
 - autoaudience.com
+- autobaenasl.com
 - autobitcoinbuilder.com
 - autobk.com
 - autobtcbuilder.com
@@ -18104,6 +18108,7 @@ domain_suffix_set:
 - fajiafu50.com
 - fajnefanty.com
 - cdn.fajukc.com
+- falacerta.com
 - console.falconstudios.com
 - images.falconstudios.com
 - falcopartners.com
@@ -21142,6 +21147,7 @@ domain_suffix_set:
 - happylife-partner.com
 - happysatoshi.com
 - happytrailquest.com
+- happytugsbakery.com
 - happyvibetoday.com
 - hapyak.com
 - apps.haraads.com
@@ -22457,6 +22463,7 @@ domain_suffix_set:
 - ilbanner.com
 - acache.ilbe.com
 - ad.ilbe.com
+- static.ilclock.com
 - ileumoctant.com
 - adilk.ilikecomix.com
 - ad.ilikesponsorad.com
@@ -23818,7 +23825,6 @@ domain_suffix_set:
 - jndbmedical.com
 - jniupool.com
 - js.jnkstff.com
-- save.jnrsmcu.com
 - joanga.com
 - refer.joann.com
 - joannamartinewoolfolk.com
@@ -27349,6 +27355,7 @@ domain_suffix_set:
 - moonrocketaffiliates.com
 - moonsade.com
 - moontrkr.com
+- moonwager.com
 - moonypool.com
 - darkcoin.mooo.com
 - maaapi.mooo.com
@@ -30092,6 +30099,7 @@ domain_suffix_set:
 - paketversand-de.com
 - pakpolice.com
 - palaceerrandneighbour.com
+- palaceskateboard.com
 - palaceunlituntouched.com
 - palateserious.com
 - palelotwars.com
@@ -34924,7 +34932,6 @@ domain_suffix_set:
 - sha14.com
 - shabbydrewcleaning.com
 - shackfillingcommittee.com
-- shaderm.com
 - shadowy-complaint.com
 - shady-name.com
 - shadyharborfrenchbulldogs.com
@@ -36350,6 +36357,7 @@ domain_suffix_set:
 - spentgeographical.com
 - spentsomewhatrepresentation.com
 - spexjs.com
+- spgint.com
 - spherical-brilliant.com
 - cdn.sphinxtube.com
 - ww.sphinxtube.com
@@ -38887,6 +38895,7 @@ domain_suffix_set:
 - todaysdeals4u.com
 - todayswigcontagious.com
 - todeskapp.com
+- todeske.com
 - todeskk.com
 - todopick.com
 - tofal.com
@@ -42273,6 +42282,7 @@ domain_suffix_set:
 - wewearegogogo.com
 - wewillrocknow.com
 - images.wexinc.com
+- wezelco.com
 - wfflxx.com
 - a135.wftv.com
 - wgamaokmdqwfij.com
@@ -43033,6 +43043,7 @@ domain_suffix_set:
 - xihoqsajpap.com
 - xihvhwbgdm.com
 - analytic.xingcloud.com
+- upaicdn.xinmei365.com
 - xipteq.com
 - xiqrciamgw.com
 - xityonatallcolumn.com
@@ -43697,6 +43708,7 @@ domain_suffix_set:
 - thmep.zondacrypto.com
 - adn.zone-telechargement.com
 - zonedummy.com
+- static.zongheng.com
 - zontera.com
 - zonupiza.com
 - zoologyfibre.com
@@ -43776,6 +43788,7 @@ domain_suffix_set:
 - thepiratebay.cr
 - scontent.bip.credit
 - mn.mn.co.cu
+- robloxt.cv
 - fearmypenguin.ath.cx
 - giftcard.cx
 - goat.cx
@@ -48702,21 +48715,34 @@ domain_suffix_set:
 - jetcasino.games
 - naptheplaytogether.games
 - spacemanslot88.games
+- gravit4fluxbox.alphafluxnode.garden
 - chia.garden
-- bleuzeit8zone.dexisnetflow.garden
-- darkstarcore.dexisnetflow.garden
-- baseopenwald.qivorpaknode.garden
-- bitbluemond.raxonviewunit.garden
-- gategoldberg3.raxonviewunit.garden
-- globfastfire7.raxonviewunit.garden
-- packnoirland.raxonviewunit.garden
-- scanvertzeit.raxonviewunit.garden
-- loadpetitstar.zexislinkhub.garden
-- pathnoirbaum1.zexislinkhub.garden
-- pointrougesoft.zexislinkhub.garden
-- taskironland.zexislinkhub.garden
-- userfastzeit.zexislinkhub.garden
-- viewdarkberg9.zexislinkhub.garden
+- pointrougesoft8.dexishostpath.garden
+- f4ct0-span.lightforge.garden
+- filt3-scope.lightforge.garden
+- formpea.lightforge.garden
+- runvva-route.lightforge.garden
+- tpxovsr.lightforge.garden
+- smartmesh1sys.orbitmeshunit.garden
+- vastlogicweb.orbitmeshunit.garden
+- embermeshnode.pixelstormbase.garden
+- rapid8wavenet.pixelstormbase.garden
+- orbitmeshpath.quantumpathnet.garden
+- quant9wavegate.quantumpathnet.garden
+- staticflowsys.quantumpathnet.garden
+- arrayterminal.shadowpeak.garden
+- broad7-grid.shadowpeak.garden
+- civi-opti.shadowpeak.garden
+- normark3en.shadowpeak.garden
+- refinesail.shadowpeak.garden
+- stormloader.shadowpeak.garden
+- lead4tasksys.silicongateway.garden
+- silicon7point.silicongateway.garden
+- zincflowbase.silicongateway.garden
+- audiomeshbase.sonicwavehost.garden
+- echo2pathnode.sonicwavehost.garden
+- pitchzoneyview.sonicwavehost.garden
+- planemeshlogic.vectorpointsite.garden
 - ahqpqagt.gay
 - counter.gd
 - lnks.gd
@@ -48886,6 +48912,7 @@ domain_suffix_set:
 - content002.bet365.gr
 - ets2.gr
 - interactive.forthnet.gr
+- grantexx.gr
 - cdntm.hsbc.gr
 - hunter-greece.gr
 - bannergrabber.internet.gr
@@ -51268,7 +51295,6 @@ domain_suffix_set:
 - secure.idbank.it
 - imetrix.it
 - inkscape.it
-- italiaregina.it
 - itrack.it
 - justearn.it
 - keepass.it
@@ -51890,7 +51916,6 @@ domain_suffix_set:
 - widget.zenback.jp
 - zerocha.jp
 - info.betway.co.ke
-- codeassociates.co.ke
 - secure.jumia.co.ke
 - abfrage.etakenya.go.ke
 - cs.go.kg
@@ -52413,6 +52438,7 @@ domain_suffix_set:
 - ragerx.lol
 - rofschild.lol
 - ewrerwe.s3m4m.lol
+- senju.lol
 - shareware.lol
 - simplesvvap.lol
 - eurostreaming.superproxy.lol
@@ -52819,6 +52845,7 @@ domain_suffix_set:
 - imhard4.men
 - ad.mg
 - ads.365.mk
+- postelnini.mk
 - bmcm.ml
 - chientich-sinhnhatlienquangarenavn.ml
 - dronml.ml
@@ -52886,7 +52913,6 @@ domain_suffix_set:
 - vimomo.monster
 - vipdragonapp.monster
 - webfreesave.monster
-- wpgbf1zg-5500.euw.devtunnels.ms
 - user-stats.rbl.ms
 - adservice.google.com.mt
 - cdntm.hsbc.com.mt
@@ -54854,21 +54880,6 @@ domain_suffix_set:
 - ads-yallo-production.imgix.net
 - imitrck.net
 - imrk.net
-- dark-land-8b.dexis-serv.in.net
-- petit-fire-5.dexis-serv.in.net
-- haus-1.mivon-tech.in.net
-- vert-4.mivon-tech.in.net
-- wwj2alum.pax4moren.in.net
-- zentideen.pax4moren.in.net
-- 5ob0.qiv7moren.in.net
-- noir-2.raxos-node.in.net
-- open-6.raxos-node.in.net
-- dark-wald-3.sylix-host.in.net
-- holz-berg-5.sylix-host.in.net
-- fast-zeit-1.tal4miren.in.net
-- gold-land-3.tal4miren.in.net
-- noir-8.tal4miren.in.net
-- petit-mond-1.vok7laren.in.net
 - in3x.net
 - inbox-messages.net
 - incentivesnetwork.net
@@ -56436,6 +56447,7 @@ domain_suffix_set:
 - widget.subiz.net
 - submitnet.net
 - subsouftax.net
+- sudan-daily.net
 - sudsacoulo.net
 - sugarboxxx.net
 - suguao.net
@@ -57795,7 +57807,6 @@ domain_suffix_set:
 - afyslcffasnvl.online
 - agbfgatnhzdeb.online
 - agcapihhnhvnu.online
-- agdqpqizyvmyx.online
 - agfasjfhveoqf.online
 - agmvwgwhgpnyu.online
 - agwqcitclxjjk.online
@@ -60934,6 +60945,7 @@ domain_suffix_set:
 - xvbxbqlqnrncf.online
 - xvegvlkqovqqr.online
 - xvlblmxdtwdtw.online
+- xvmzbkpppasoe.online
 - xvtnaperelcrp.online
 - xwaairiivkxzo.online
 - xwgdcamizuhhp.online
@@ -61593,12 +61605,10 @@ domain_suffix_set:
 - cfcd.duckdns.org
 - cfceu.duckdns.org
 - cfcs1.duckdns.org
-- chanchanmiraixd.duckdns.org
 - dutchvbk.duckdns.org
 - freshzz00.duckdns.org
 - jbrj92scltrbtv7mzejvmovw.duckdns.org
 - jhondi33.duckdns.org
-- oficialrem.duckdns.org
 - sosclient.duckdns.org
 - tiwanlinm.duckdns.org
 - webwidgetz.duckdns.org
@@ -66351,6 +66361,7 @@ domain_suffix_set:
 - ads.sexvideos.rodeo
 - beoauto.alexion.rs
 - greenf.alexion.rs
+- alkon.rs
 - balkanwide-assistance.rs
 - content002.bet365.rs
 - seminarski-diplomski.co.rs
@@ -71971,6 +71982,7 @@ domain_suffix_set:
 - naj.sk
 - nana-vypredaj.sk
 - nanavypredaj.sk
+- oknoplastik.sk
 - pocitadlo.sk
 - romantic-future.sk
 - rsz.sk
@@ -76148,6 +76160,7 @@ domain_suffix_set:
 - nextel-ringtone.spb.su
 - sportbets.su
 - startmarket.su
+- church.teach-bibleong.su
 - techms-shop.su
 - h128260.s03.test-hf.su
 - tradedealvip.su
@@ -76977,6 +76990,7 @@ domain_suffix_set:
 - wyvlllooalwlj.top
 - wywkwqzkavjjr.top
 - x-photobucket.top
+- xelesex.top
 - xiaosdg.top
 - xwzsskvlvohwl.top
 - yfrnkmcdeurmk.top
@@ -77588,6 +77602,7 @@ domain_suffix_set:
 - freakhouse.us
 - frenly.us
 - giaodichdaquocgia.us
+- globalbank.us
 - gridcoin.us
 - icontent.us
 - invoc.us
@@ -82258,6 +82273,7 @@ domain_suffix_set:
 - filefindme.xyz
 - fingercough.xyz
 - firstgame.xyz
+- fiveradio.xyz
 - floveset.xyz
 - flowwiththetide.xyz
 - flyhash.xyz
@@ -83010,7 +83026,6 @@ domain_suffix_set:
 - areyouready.co.za
 - bannerignition.co.za
 - info.betway.co.za
-- blit.co.za
 - dexios.co.za
 - console.engineeringnews.co.za
 - static.engineeringnews.co.za
