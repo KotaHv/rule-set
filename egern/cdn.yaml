@@ -1,4 +1,4 @@
-# Total: 4520 rules
+# Total: 4521 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -3044,6 +3044,7 @@ domain_set:
 - img.reg.ru
 - static-effect.reg.ru
 - content.any.run
+- cdn.mer.run
 - curl.se
 - widget.datablocks.se
 - media-cdn.factba.se

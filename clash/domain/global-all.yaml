@@ -1,4 +1,4 @@
-# Total: 6209 rules
+# Total: 6210 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2637,6 +2637,7 @@
 - 'gfx-data.news-engineering.aws.wapo.pub'
 - 'mirror.bgp.rodeo'
 - 'content.any.run'
+- 'cdn.mer.run'
 - 'mirror.jeonnam.school'
 - 'ossmirror.mycloud.services'
 - 'imgfile.shop'

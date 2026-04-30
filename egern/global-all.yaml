@@ -1,4 +1,4 @@
-# Total: 6336 rules
+# Total: 6337 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2638,6 +2638,7 @@ domain_set:
 - gfx-data.news-engineering.aws.wapo.pub
 - mirror.bgp.rodeo
 - content.any.run
+- cdn.mer.run
 - mirror.jeonnam.school
 - ossmirror.mycloud.services
 - imgfile.shop
