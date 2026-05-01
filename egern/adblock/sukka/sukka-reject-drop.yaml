@@ -1,6 +1,7 @@
-# Total: 25 rules
+# Total: 26 rules
 no_resolve: true
 domain_set:
+- dataflow.biliapi.com
 - stat.youpin.mi.com
 - nom.telemetrydeck.com
 - stats.grafana.org
