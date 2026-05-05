@@ -1,4 +1,4 @@
-# Total: 4441 rules
+# Total: 4444 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -24,6 +24,7 @@
 - 's3.masto.ai'
 - 'cms.mistral.ai'
 - 'static.netify.ai'
+- 'frontend-cdn.perplexity.ai'
 - 'pplx-next-static-public.perplexity.ai'
 - 'r2cdn.perplexity.ai'
 - 'static.returngo.ai'
@@ -2237,6 +2238,7 @@
 - 'cdn-web.orbstack.dev'
 - 'cdn.pika.dev'
 - 'pkg-size.dev'
+- 'shields.rbtlog.dev'
 - 'static.reo.dev'
 - 'p.sda1.dev'
 - 'tuf-repo-cdn.sigstore.dev'
@@ -2905,6 +2907,7 @@
 - 'rawmarkdown.cloudflareaccess.org'
 - 'design.codeberg.org'
 - 'fonts.codeberg.org'
+- 'get-it-on.codeberg.org'
 - 'sub.creamycake.org'
 - 'i.creativecommons.org'
 - 'embed.culturalspot.org'

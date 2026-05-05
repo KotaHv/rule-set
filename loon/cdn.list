@@ -1,4 +1,4 @@
-# Total: 4462 rules
+# Total: 4465 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -23,6 +23,7 @@ DOMAIN,r2.leadsy.ai
 DOMAIN,s3.masto.ai
 DOMAIN,cms.mistral.ai
 DOMAIN,static.netify.ai
+DOMAIN,frontend-cdn.perplexity.ai
 DOMAIN,pplx-next-static-public.perplexity.ai
 DOMAIN,r2cdn.perplexity.ai
 DOMAIN,static.returngo.ai
@@ -2236,6 +2237,7 @@ DOMAIN,ah-cdn.merge.dev
 DOMAIN,cdn-web.orbstack.dev
 DOMAIN,cdn.pika.dev
 DOMAIN,pkg-size.dev
+DOMAIN,shields.rbtlog.dev
 DOMAIN,static.reo.dev
 DOMAIN,p.sda1.dev
 DOMAIN,tuf-repo-cdn.sigstore.dev
@@ -2904,6 +2906,7 @@ DOMAIN,moderate.cleantalk.org
 DOMAIN,rawmarkdown.cloudflareaccess.org
 DOMAIN,design.codeberg.org
 DOMAIN,fonts.codeberg.org
+DOMAIN,get-it-on.codeberg.org
 DOMAIN,sub.creamycake.org
 DOMAIN,i.creativecommons.org
 DOMAIN,embed.culturalspot.org

@@ -1,4 +1,4 @@
-# Total: 6211 rules
+# Total: 6212 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1779,6 +1779,7 @@
 - 'ah-cdn.merge.dev'
 - 'cdn.pika.dev'
 - 'pkg-size.dev'
+- 'shields.rbtlog.dev'
 - 'static.reo.dev'
 - 'p.sda1.dev'
 - 'tuf-repo-cdn.sigstore.dev'

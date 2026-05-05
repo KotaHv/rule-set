@@ -1,4 +1,4 @@
-# Total: 6338 rules
+# Total: 6339 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1780,6 +1780,7 @@ domain_set:
 - ah-cdn.merge.dev
 - cdn.pika.dev
 - pkg-size.dev
+- shields.rbtlog.dev
 - static.reo.dev
 - p.sda1.dev
 - tuf-repo-cdn.sigstore.dev

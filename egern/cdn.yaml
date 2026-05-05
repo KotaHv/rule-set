@@ -1,4 +1,4 @@
-# Total: 4521 rules
+# Total: 4524 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -25,6 +25,7 @@ domain_set:
 - s3.masto.ai
 - cms.mistral.ai
 - static.netify.ai
+- frontend-cdn.perplexity.ai
 - pplx-next-static-public.perplexity.ai
 - r2cdn.perplexity.ai
 - static.returngo.ai
@@ -2238,6 +2239,7 @@ domain_set:
 - cdn-web.orbstack.dev
 - cdn.pika.dev
 - pkg-size.dev
+- shields.rbtlog.dev
 - static.reo.dev
 - p.sda1.dev
 - tuf-repo-cdn.sigstore.dev
@@ -2906,6 +2908,7 @@ domain_set:
 - rawmarkdown.cloudflareaccess.org
 - design.codeberg.org
 - fonts.codeberg.org
+- get-it-on.codeberg.org
 - sub.creamycake.org
 - i.creativecommons.org
 - embed.culturalspot.org
