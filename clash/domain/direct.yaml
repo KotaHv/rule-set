@@ -1,4 +1,4 @@
-# Total: 851 rules
+# Total: 853 rules
 'payload':
 - 'i.dell.com'
 - 'ubisoftconnect.eo-edgefunctions7.com'
@@ -15,6 +15,8 @@
 - 'cdnstatic.tencentcs.com'
 - 'config.ubnt.com'
 - 'dl.ubnt.com'
+- 'end.shallow.ink'
+- 'end-api.shallow.ink'
 - 'v16m-default.akamaized.net'
 - 'discovery-v4.syncthing.net'
 - 'discovery-v6.syncthing.net'

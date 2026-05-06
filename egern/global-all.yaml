@@ -1,4 +1,4 @@
-# Total: 6339 rules
+# Total: 6340 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2842,6 +2842,7 @@ domain_suffix_set:
 - chrome
 - fastlane.ci
 - roblox.cl
+- supr.cl
 - anaconda.cloud
 - cloud-object-storage.appdomain.cloud
 - dreamscape.cloud

@@ -1,4 +1,4 @@
-# Total: 854 rules
+# Total: 856 rules
 no_resolve: true
 domain_set:
 - i.dell.com
@@ -16,6 +16,8 @@ domain_set:
 - cdnstatic.tencentcs.com
 - config.ubnt.com
 - dl.ubnt.com
+- end.shallow.ink
+- end-api.shallow.ink
 - v16m-default.akamaized.net
 - discovery-v4.syncthing.net
 - discovery-v6.syncthing.net

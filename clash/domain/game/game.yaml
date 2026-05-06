@@ -1,4 +1,4 @@
-# Total: 757 rules
+# Total: 758 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -93,6 +93,7 @@
 - '+.roblox.cc'
 - '+.nintendo.ch'
 - '+.roblox.cl'
+- '+.supr.cl'
 - '+.vrchat.cloud'
 - '+.dungeonkeeper.com.cn'
 - '+.dungeonkeeper.cn'
