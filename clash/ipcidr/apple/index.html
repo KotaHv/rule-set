@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple - Rule Set</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/utc.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/timezone.js"></script>
+    <script>
+        dayjs.extend(dayjs_plugin_utc);
+        dayjs.extend(dayjs_plugin_timezone);
+
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen bg-gray-50 font-display antialiased">
+    <!-- 顶部导航栏 -->
+    <nav class="bg-white/80 backdrop-blur-xl border-b border-gray-200/50 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-4">
+                    <!-- 返回按钮 -->
+                    <a href=".."
+                        class="inline-flex items-center justify-center w-10 h-10 bg-white/60 backdrop-blur-sm border border-gray-200/50 text-gray-600 rounded-xl hover:bg-white/80 hover:text-gray-800 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <!-- 标题 -->
+                    <div>
+                        <h1 class="text-xl font-light text-gray-900 tracking-wide">
+                            Apple
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- 面包屑导航 -->
+                <div class="hidden sm:flex items-center space-x-2 text-sm text-gray-500">
+                    <a href="../../../" class="hover:text-gray-700 transition-colors">Rule
+                        Set</a>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="../../"
+                        class="hover:text-gray-700 transition-colors">Clash</a>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="../"
+                        class="hover:text-gray-700 transition-colors">Ipcidr</a>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="text-gray-800 font-medium">Apple</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="max-w-6xl mx-auto px-6 lg:px-8 py-6">
+        <!-- 文件统计 -->
+        <div class="mb-6">
+            <p class="text-sm text-gray-600">
+                共 2 个文件
+            </p>
+        </div>
+
+        <!-- 文件列表 -->
+        <div class="space-y-1">
+
+            <a href="apple-services.mrs" class="group block">
+                <div
+                    class="bg-white/60 backdrop-blur-sm rounded-lg border border-gray-200/60 hover:border-gray-300/80 hover:bg-white/80 transition-all duration-200 p-4">
+                    <!-- 桌面端：一行显示 -->
+                    <div class="hidden sm:flex items-center justify-between">
+                        <div class="flex-1 min-w-0 mr-6">
+                            <h3
+                                class="font-medium text-gray-900 group-hover:text-gray-700 transition-colors duration-200 truncate">
+                                apple-services.mrs
+                            </h3>
+                        </div>
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
+                            <span class="text-gray-500 w-12">文件</span>
+                            <span class="text-gray-500 font-mono w-20">48 B</span>
+                            <span class="text-gray-500 font-mono w-48"
+                                data-utc-time="2026-05-09T07:48:37.592137+00:00">
+                                2026-05-09 07:48:37
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 移动端：左右分布 -->
+                    <div class="sm:hidden flex items-center justify-between">
+                        <div class="flex-1 min-w-0">
+                            <h3
+                                class="font-medium text-gray-900 group-hover:text-gray-700 transition-colors duration-200 truncate">
+                                apple-services.mrs
+                            </h3>
+                        </div>
+                        <div class="flex flex-col items-end space-y-1 flex-shrink-0 ml-4">
+                            <span class="text-sm text-gray-500">48 B</span>
+                            <span class="text-sm text-gray-500 font-mono"
+                                data-utc-time="2026-05-09T07:48:37.592137+00:00">
+                                2026-05-09 07:48:37
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="apple-services.yaml" class="group block">
+                <div
+                    class="bg-white/60 backdrop-blur-sm rounded-lg border border-gray-200/60 hover:border-gray-300/80 hover:bg-white/80 transition-all duration-200 p-4">
+                    <!-- 桌面端：一行显示 -->
+                    <div class="hidden sm:flex items-center justify-between">
+                        <div class="flex-1 min-w-0 mr-6">
+                            <h3
+                                class="font-medium text-gray-900 group-hover:text-gray-700 transition-colors duration-200 truncate">
+                                apple-services.yaml
+                            </h3>
+                        </div>
+                        <div class="flex items-center text-center space-x-6 flex-shrink-0">
+                            <span class="text-gray-500 w-12">文件</span>
+                            <span class="text-gray-500 font-mono w-20">43 B</span>
+                            <span class="text-gray-500 font-mono w-48"
+                                data-utc-time="2026-05-09T07:48:37.592681+00:00">
+                                2026-05-09 07:48:37
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 移动端：左右分布 -->
+                    <div class="sm:hidden flex items-center justify-between">
+                        <div class="flex-1 min-w-0">
+                            <h3
+                                class="font-medium text-gray-900 group-hover:text-gray-700 transition-colors duration-200 truncate">
+                                apple-services.yaml
+                            </h3>
+                        </div>
+                        <div class="flex flex-col items-end space-y-1 flex-shrink-0 ml-4">
+                            <span class="text-sm text-gray-500">43 B</span>
+                            <span class="text-sm text-gray-500 font-mono"
+                                data-utc-time="2026-05-09T07:48:37.592681+00:00">
+                                2026-05-09 07:48:37
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // 时区转换：将UTC时间转换为用户本地时区
+        document.addEventListener('DOMContentLoaded', function () {
+            const timeElements = document.querySelectorAll('[data-utc-time]');
+
+            timeElements.forEach(element => {
+                const utcTime = element.getAttribute('data-utc-time');
+                if (utcTime) {
+                    try {
+                        // 解析UTC时间并转换为本地时间
+                        const localTime = dayjs.utc(utcTime).tz(dayjs.tz.guess());
+                        const formattedDateTime = localTime.format('YYYY-MM-DD HH:mm:ss');
+                        element.textContent = formattedDateTime;
+                    } catch (error) {
+                        console.error('时间转换错误:', error);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

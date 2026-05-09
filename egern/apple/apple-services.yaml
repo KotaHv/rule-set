@@ -1,4 +1,4 @@
-# Total: 16 rules
+# Total: 17 rules
 no_resolve: true
 domain_suffix_set:
 - apple.co
@@ -17,3 +17,5 @@ domain_suffix_set:
 - apple-dns.net
 - apple.news
 - appsto.re
+ip_cidr_set:
+- 17.0.0.0/8
