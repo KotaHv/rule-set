@@ -1,4 +1,4 @@
-# Total: 3106 rules
+# Total: 3108 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1764,6 +1764,7 @@ domain_set:
 - speedtestmoh1.airtelbroadband.in
 - speed10.aitspl.in
 - speedtestslg.alliancebroadband.in
+- ns1.anlnetwork.in
 - st1.anonet.in
 - speedtest.apexbroadband.in
 - speedtest.arktel.in
@@ -2733,6 +2734,7 @@ domain_set:
 - sea.st.spacecore.pro
 - sg.st.spacecore.pro
 - tyo.st.spacecore.pro
+- jp.speedtest.bug.pw
 - speedtest.ddl.red
 - speed.srv.rent
 - speedtest.byteshield.ro
