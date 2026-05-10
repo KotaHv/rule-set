@@ -1,9 +1,10 @@
-# Total: 1926 rules
+# Total: 1946 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,downloads.claude.ai
 DOMAIN,updates.64gr.am
 DOMAIN,mirrors.asnet.am
+DOMAIN,kali.itsec.am
 DOMAIN,mirrors.teamcloud.am
 DOMAIN,fdisk.5play.app
 DOMAIN,updates.istatmenus.app
@@ -157,6 +158,7 @@ DOMAIN,mirror.eu.4psacloud.com
 DOMAIN,pkg.adfinis.com
 DOMAIN,static.adguard.com
 DOMAIN,mirrors.advancedhosters.com
+DOMAIN,mirror.africloud.com
 DOMAIN,app-updates.agilebits.com
 DOMAIN,cache.agilebits.com
 DOMAIN,mirror.alastyr.com
@@ -190,7 +192,10 @@ DOMAIN,mirror.brightridge.com
 DOMAIN,downloads.broadcom.com
 DOMAIN,downloads2.broadcom.com
 DOMAIN,ftpdownloads.broadcom.com
+DOMAIN,mirror.es.cdn-perfprod.com
+DOMAIN,mirror.fr.cdn-perfprod.com
 DOMAIN,mirror.nl.cdn-perfprod.com
+DOMAIN,mirror.us.cdn-perfprod.com
 DOMAIN,dl.circleci.com
 DOMAIN,mirror.citrahost.com
 DOMAIN,vfat.classicreload.com
@@ -204,6 +209,7 @@ DOMAIN,mirror.cogentco.com
 DOMAIN,mirrors.concertpass.com
 DOMAIN,pubmirrors.dal.corespace.com
 DOMAIN,download.cpuid.com
+DOMAIN,mirror.cspacehostings.com
 DOMAIN,downloads.cursor.com
 DOMAIN,addins.deepl.com
 DOMAIN,cpan.develooper.com
@@ -294,6 +300,7 @@ DOMAIN,mirror.us-ny2.kamatera.com
 DOMAIN,mirror.us-sc.kamatera.com
 DOMAIN,mirror.us-tx.kamatera.com
 DOMAIN,mirror.keiminem.com
+DOMAIN,mirror2.keiminem.com
 DOMAIN,mirrors.layeronline.com
 DOMAIN,mirror.leitecastro.com
 DOMAIN,downloads.lemonsqueezy.com
@@ -618,6 +625,7 @@ DOMAIN,ctan.crest.fr
 DOMAIN,apache.crihan.fr
 DOMAIN,ftp.crihan.fr
 DOMAIN,ftp.ec-m.fr
+DOMAIN,ftp.free.fr
 DOMAIN,mirror.ibcp.fr
 DOMAIN,mirror.in2p3.fr
 DOMAIN,mirrors.ircam.fr
@@ -693,6 +701,7 @@ DOMAIN,mirror.papua.go.id
 DOMAIN,mr.heru.id
 DOMAIN,kartolo.sby.datautama.net.id
 DOMAIN,cpan.pesat.net.id
+DOMAIN,mirror.primelink.net.id
 DOMAIN,ftp.heanet.ie
 DOMAIN,mirror.webworld.ie
 DOMAIN,debian.interhost.co.il
@@ -738,6 +747,7 @@ DOMAIN,mirror.katapult.io
 DOMAIN,u.keka.io
 DOMAIN,ubuntu.letscloud.io
 DOMAIN,dl.min.io
+DOMAIN,xsrv.moratelindo.io
 DOMAIN,pkgs.netbird.io
 DOMAIN,repo.nextdns.io
 DOMAIN,dl.nwjs.io
@@ -799,6 +809,7 @@ DOMAIN,blizzard.gcdn.cloudn.co.kr
 DOMAIN,mirror.techlabs.co.kr
 DOMAIN,ftp.lanet.kr
 DOMAIN,repo.morgan.kr
+DOMAIN,mirror.wane.kr
 DOMAIN,mirror.fst.kz
 DOMAIN,mirror.hoster.kz
 DOMAIN,mirror.neolabs.kz
@@ -810,6 +821,7 @@ DOMAIN,mirror.cloudhosting.lv
 DOMAIN,ftp.linux.edu.lv
 DOMAIN,centos-stream.koyanet.lv
 DOMAIN,debian.koyanet.lv
+DOMAIN,kali.koyanet.lv
 DOMAIN,ubuntu.koyanet.lv
 DOMAIN,mirror.marwan.ma
 DOMAIN,mirror.ihost.md
@@ -891,6 +903,7 @@ DOMAIN,ota.googlezip.net
 DOMAIN,ota-cache1.googlezip.net
 DOMAIN,mirror.sov.uk.goscomb.net
 DOMAIN,mirror.hashy0917.net
+DOMAIN,mirror.hemino.net
 DOMAIN,mirrors.hopbox.net
 DOMAIN,mirror.hosthink.net
 DOMAIN,mirror.i3d.net
@@ -990,6 +1003,7 @@ DOMAIN,mirror.vorboss.net
 DOMAIN,mirror.za.web4africa.net
 DOMAIN,apache.website-solution.net
 DOMAIN,mirror.webtastix.net
+DOMAIN,mirror.wonchan.net
 DOMAIN,mirror.xenyth.net
 DOMAIN,dl2.xmind.net
 DOMAIN,dl3.xmind.net
@@ -1036,7 +1050,6 @@ DOMAIN,mirror.aut.ac.nz
 DOMAIN,ucmirror.canterbury.ac.nz
 DOMAIN,ubuntu.btit.nz
 DOMAIN,cpan.inspire.net.nz
-DOMAIN,mirror.fsmg.org.nz
 DOMAIN,mirror.squ.edu.om
 DOMAIN,mirror.group.one
 DOMAIN,mirrors.gethosted.online
@@ -1134,18 +1147,18 @@ DOMAIN,ftp.harukasan.org
 DOMAIN,mirrors.ibiblio.org
 DOMAIN,repository.jboss.org
 DOMAIN,archive.kali.org
+DOMAIN,archive-4.kali.org
 DOMAIN,cdimage.kali.org
 DOMAIN,http.kali.org
 DOMAIN,cdn.kde.org
 DOMAIN,download.kde.org
 DOMAIN,invent.kde.org
-DOMAIN,eu.edge.kernel.org
-DOMAIN,mirrors.edge.kernel.org
 DOMAIN,mirrors.kernel.org
 DOMAIN,mirrors.us.kernel.org
 DOMAIN,mirror.keystealth.org
 DOMAIN,http.krfoss.org
 DOMAIN,mirror.krfoss.org
+DOMAIN,mirror2.krfoss.org
 DOMAIN,ftp.ktug.org
 DOMAIN,mirrorbits.lineageos.org
 DOMAIN,ubuntu.linux-bg.org
@@ -1180,6 +1193,7 @@ DOMAIN,download.pixelexperience.org
 DOMAIN,get.pixelexperience.org
 DOMAIN,i18n.prismlauncher.org
 DOMAIN,meta.prismlauncher.org
+DOMAIN,mirror.pyratelan.org
 DOMAIN,static.redox-os.org
 DOMAIN,mirrors.hostingromania.ro.org
 DOMAIN,mirrors.rpmfusion.org
@@ -1296,6 +1310,7 @@ DOMAIN,mirror.xtom.sg
 DOMAIN,mirrors.xtom.sg
 DOMAIN,formulae.brew.sh
 DOMAIN,repo.carbon.sh
+DOMAIN,kali.darklab.sh
 DOMAIN,binaries.prisma.sh
 DOMAIN,ftp.arnes.si
 DOMAIN,ftp.antik.sk
@@ -1395,6 +1410,8 @@ DOMAIN,ftp.is.co.za
 DOMAIN,mirror.is.co.za
 DOMAIN-SUFFIX,mirror.homacloud.ai
 DOMAIN-SUFFIX,mirror.gnc.am
+DOMAIN-SUFFIX,mirror1.gnc.am
+DOMAIN-SUFFIX,mirror2.gnc.am
 DOMAIN-SUFFIX,mirror.amaze.com.au
 DOMAIN-SUFFIX,mirror.digitalpacific.com.au
 DOMAIN-SUFFIX,mirror.serversaustralia.com.au
@@ -1755,6 +1772,7 @@ DOMAIN-SUFFIX,egdownload.fastly-edge.com
 DOMAIN-SUFFIX,fuwamofu.com
 DOMAIN-SUFFIX,releases.hashicorp.com
 DOMAIN-SUFFIX,mirrors.hoobly.com
+DOMAIN-SUFFIX,mirror.ionos.com
 DOMAIN-SUFFIX,mirror.iweb.com
 DOMAIN-SUFFIX,ks3-cn-hk-1.ksyuncs.com
 DOMAIN-SUFFIX,ks3-rus.ksyuncs.com
@@ -1879,6 +1897,7 @@ DOMAIN-SUFFIX,mirror.triple-it.nl
 DOMAIN-SUFFIX,mirror.true.nl
 DOMAIN-SUFFIX,mega.co.nz
 DOMAIN-SUFFIX,mega.nz
+DOMAIN-SUFFIX,fsmg.org.nz
 DOMAIN-SUFFIX,mirror.noc.one
 DOMAIN-SUFFIX,archive.org
 DOMAIN-SUFFIX,artfiles.org
@@ -1894,6 +1913,7 @@ DOMAIN-SUFFIX,freemirror.org
 DOMAIN-SUFFIX,getcomposer.org
 DOMAIN-SUFFIX,files.ghostty.org
 DOMAIN-SUFFIX,mirrors.ionfish.org
+DOMAIN-SUFFIX,edge.kernel.org
 DOMAIN-SUFFIX,mirrorservice.org
 DOMAIN-SUFFIX,mirrors.tds.net.org
 DOMAIN-SUFFIX,ossplanet.org

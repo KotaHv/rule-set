@@ -1,8 +1,9 @@
-# Total: 6404 rules
+# Total: 6420 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
 DOMAIN,mirrors.asnet.am
+DOMAIN,kali.itsec.am
 DOMAIN,mirrors.teamcloud.am
 DOMAIN,fdisk.5play.app
 DOMAIN,cdn.7tv.app
@@ -221,6 +222,7 @@ DOMAIN,assets.adobedtm.com
 DOMAIN,map.adsbexchange.com
 DOMAIN,mirrors.advancedhosters.com
 DOMAIN,cdn1.affirm.com
+DOMAIN,mirror.africloud.com
 DOMAIN,static.afterpay.com
 DOMAIN,static-us.afterpay.com
 DOMAIN,static.ahrefs.com
@@ -443,7 +445,10 @@ DOMAIN,cdn-stamplib.casetify.com
 DOMAIN,events.ld.catamorphic.com
 DOMAIN,public-pages.cbinsights.com
 DOMAIN,sequoia.cdn-apple.com
+DOMAIN,mirror.es.cdn-perfprod.com
+DOMAIN,mirror.fr.cdn-perfprod.com
 DOMAIN,mirror.nl.cdn-perfprod.com
+DOMAIN,mirror.us.cdn-perfprod.com
 DOMAIN,eu.cdnbye.com
 DOMAIN,opensignal.cdnbye.com
 DOMAIN,signal.cdnbye.com
@@ -546,6 +551,7 @@ DOMAIN,cdn.credible.com
 DOMAIN,images.store.crowdstrike.com
 DOMAIN,images.crunchbase.com
 DOMAIN,proxy.csidetm.com
+DOMAIN,mirror.cspacehostings.com
 DOMAIN,script.custobar.com
 DOMAIN,cdn.cxense.com
 DOMAIN,assets.cyberghostvpn.com
@@ -926,6 +932,7 @@ DOMAIN,content.kaspersky-labs.com
 DOMAIN,img.kbhgames.com
 DOMAIN,kdata1.com
 DOMAIN,mirror.keiminem.com
+DOMAIN,mirror2.keiminem.com
 DOMAIN,tour-content-cdn.kellymadisonmedia.com
 DOMAIN,assets.khoros.com
 DOMAIN,a.kickstarter.com
@@ -1941,6 +1948,7 @@ DOMAIN,assets-next.mattersprotocol.io
 DOMAIN,cdn.metadata.io
 DOMAIN,images.microcms-assets.io
 DOMAIN,dl.min.io
+DOMAIN,xsrv.moratelindo.io
 DOMAIN,marfeelexperimentsexperienceengine.mrf.io
 DOMAIN,media.mstdn.io
 DOMAIN,static.mytonwallet.io
@@ -2042,6 +2050,7 @@ DOMAIN,mirror.cloudhosting.lv
 DOMAIN,ftp.linux.edu.lv
 DOMAIN,centos-stream.koyanet.lv
 DOMAIN,debian.koyanet.lv
+DOMAIN,kali.koyanet.lv
 DOMAIN,ubuntu.koyanet.lv
 DOMAIN,i.mt.lv
 DOMAIN,static.salidzini.lv
@@ -2244,6 +2253,7 @@ DOMAIN,mirrors.glesys.net
 DOMAIN,mirror.sov.uk.goscomb.net
 DOMAIN,mirror.hashy0917.net
 DOMAIN,headway-widget.net
+DOMAIN,mirror.hemino.net
 DOMAIN,file1.hkepc.net
 DOMAIN,i.hkepc.net
 DOMAIN,rink.hockeyapp.net
@@ -2413,6 +2423,7 @@ DOMAIN,cdn.wikimg.net
 DOMAIN,cdn.wishpond.net
 DOMAIN,fast.wistia.net
 DOMAIN,avts.wmlabs.net
+DOMAIN,mirror.wonchan.net
 DOMAIN,cdn.writeas.net
 DOMAIN,images.wsjcommerce.net
 DOMAIN,images.wurstclient.net
@@ -2515,6 +2526,7 @@ DOMAIN,design.keyoxide.org
 DOMAIN,mirror.keystealth.org
 DOMAIN,http.krfoss.org
 DOMAIN,mirror.krfoss.org
+DOMAIN,mirror2.krfoss.org
 DOMAIN,ftp.ktug.org
 DOMAIN,cdn.libravatar.org
 DOMAIN,seccdn.libravatar.org
@@ -2566,6 +2578,7 @@ DOMAIN,get.pixelexperience.org
 DOMAIN,sdk.privacy-center.org
 DOMAIN,play.publicradio.org
 DOMAIN,publicsuffix.org
+DOMAIN,mirror.pyratelan.org
 DOMAIN,pytorch.org
 DOMAIN,static.redox-os.org
 DOMAIN,assets.repair.org
@@ -2763,6 +2776,8 @@ DOMAIN,cr.yandex
 DOMAIN-SUFFIX,ac
 DOMAIN-SUFFIX,ai
 DOMAIN-SUFFIX,mirror.gnc.am
+DOMAIN-SUFFIX,mirror1.gnc.am
+DOMAIN-SUFFIX,mirror2.gnc.am
 DOMAIN-SUFFIX,instagr.am
 DOMAIN-SUFFIX,android
 DOMAIN-SUFFIX,ajay.app
@@ -3755,6 +3770,7 @@ DOMAIN-SUFFIX,intercomassets.com
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,intodns.com
 DOMAIN-SUFFIX,invisionapp-cdn.com
+DOMAIN-SUFFIX,mirror.ionos.com
 DOMAIN-SUFFIX,edns.ip-api.com
 DOMAIN-SUFFIX,ipstatp.com
 DOMAIN-SUFFIX,iq.com

@@ -1,10 +1,11 @@
-# Total: 6340 rules
+# Total: 6356 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
 - mirror.host.ag
 - updates.64gr.am
 - mirrors.asnet.am
+- kali.itsec.am
 - mirrors.teamcloud.am
 - fdisk.5play.app
 - cdn.7tv.app
@@ -223,6 +224,7 @@ domain_set:
 - map.adsbexchange.com
 - mirrors.advancedhosters.com
 - cdn1.affirm.com
+- mirror.africloud.com
 - static.afterpay.com
 - static-us.afterpay.com
 - static.ahrefs.com
@@ -445,7 +447,10 @@ domain_set:
 - events.ld.catamorphic.com
 - public-pages.cbinsights.com
 - sequoia.cdn-apple.com
+- mirror.es.cdn-perfprod.com
+- mirror.fr.cdn-perfprod.com
 - mirror.nl.cdn-perfprod.com
+- mirror.us.cdn-perfprod.com
 - eu.cdnbye.com
 - opensignal.cdnbye.com
 - signal.cdnbye.com
@@ -548,6 +553,7 @@ domain_set:
 - images.store.crowdstrike.com
 - images.crunchbase.com
 - proxy.csidetm.com
+- mirror.cspacehostings.com
 - script.custobar.com
 - cdn.cxense.com
 - assets.cyberghostvpn.com
@@ -928,6 +934,7 @@ domain_set:
 - img.kbhgames.com
 - kdata1.com
 - mirror.keiminem.com
+- mirror2.keiminem.com
 - tour-content-cdn.kellymadisonmedia.com
 - assets.khoros.com
 - a.kickstarter.com
@@ -1943,6 +1950,7 @@ domain_set:
 - cdn.metadata.io
 - images.microcms-assets.io
 - dl.min.io
+- xsrv.moratelindo.io
 - marfeelexperimentsexperienceengine.mrf.io
 - media.mstdn.io
 - static.mytonwallet.io
@@ -2044,6 +2052,7 @@ domain_set:
 - ftp.linux.edu.lv
 - centos-stream.koyanet.lv
 - debian.koyanet.lv
+- kali.koyanet.lv
 - ubuntu.koyanet.lv
 - i.mt.lv
 - static.salidzini.lv
@@ -2246,6 +2255,7 @@ domain_set:
 - mirror.sov.uk.goscomb.net
 - mirror.hashy0917.net
 - headway-widget.net
+- mirror.hemino.net
 - file1.hkepc.net
 - i.hkepc.net
 - rink.hockeyapp.net
@@ -2415,6 +2425,7 @@ domain_set:
 - cdn.wishpond.net
 - fast.wistia.net
 - avts.wmlabs.net
+- mirror.wonchan.net
 - cdn.writeas.net
 - images.wsjcommerce.net
 - images.wurstclient.net
@@ -2517,6 +2528,7 @@ domain_set:
 - mirror.keystealth.org
 - http.krfoss.org
 - mirror.krfoss.org
+- mirror2.krfoss.org
 - ftp.ktug.org
 - cdn.libravatar.org
 - seccdn.libravatar.org
@@ -2568,6 +2580,7 @@ domain_set:
 - sdk.privacy-center.org
 - play.publicradio.org
 - publicsuffix.org
+- mirror.pyratelan.org
 - pytorch.org
 - static.redox-os.org
 - assets.repair.org
@@ -2766,6 +2779,8 @@ domain_suffix_set:
 - ac
 - ai
 - mirror.gnc.am
+- mirror1.gnc.am
+- mirror2.gnc.am
 - instagr.am
 - android
 - ajay.app
@@ -3758,6 +3773,7 @@ domain_suffix_set:
 - intercomcdn.com
 - intodns.com
 - invisionapp-cdn.com
+- mirror.ionos.com
 - edns.ip-api.com
 - ipstatp.com
 - iq.com

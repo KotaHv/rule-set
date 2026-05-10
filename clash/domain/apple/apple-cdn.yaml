@@ -1,4 +1,4 @@
-# Total: 172 rules
+# Total: 174 rules
 'payload':
 - '+.appldnld.g.aaplimg.com'
 - '+.iosapps.itunes.g.aaplimg.com'
@@ -44,6 +44,7 @@
 - '+.itunes.apple.com'
 - '+.itunesconnect.apple.com'
 - '+.gsp10-ssl-cn.ls.apple.com'
+- '+.gsp11-cn.ls.apple.com'
 - '+.gsp12-cn.ls.apple.com'
 - '+.gsp13-cn.ls.apple.com'
 - '+.gsp4-cn.ls.apple.com'
@@ -165,6 +166,7 @@
 - '+.init-p01md-lb.push-apple.com.akadns.net'
 - '+.init-p01st-lb.push-apple.com.akadns.net'
 - '+.init-s01st-lb.push-apple.com.akadns.net'
+- '+.cl2.apple.com.edgekey.net.globalredir.akadns.net'
 - '+.images.apple.com.edgekey.net.globalredir.akadns.net'
 - '+.gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net'
 - '+.store.apple.com.edgekey.net.globalredir.akadns.net'

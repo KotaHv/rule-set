@@ -1,4 +1,4 @@
-# Total: 172 rules
+# Total: 174 rules
 DOMAIN-SUFFIX,appldnld.g.aaplimg.com
 DOMAIN-SUFFIX,iosapps.itunes.g.aaplimg.com
 DOMAIN-SUFFIX,osxapps.itunes.g.aaplimg.com
@@ -43,6 +43,7 @@ DOMAIN-SUFFIX,iphone-ld.apple.com
 DOMAIN-SUFFIX,itunes.apple.com
 DOMAIN-SUFFIX,itunesconnect.apple.com
 DOMAIN-SUFFIX,gsp10-ssl-cn.ls.apple.com
+DOMAIN-SUFFIX,gsp11-cn.ls.apple.com
 DOMAIN-SUFFIX,gsp12-cn.ls.apple.com
 DOMAIN-SUFFIX,gsp13-cn.ls.apple.com
 DOMAIN-SUFFIX,gsp4-cn.ls.apple.com
@@ -164,6 +165,7 @@ DOMAIN-SUFFIX,valid.origin-apple.com.akadns.net
 DOMAIN-SUFFIX,init-p01md-lb.push-apple.com.akadns.net
 DOMAIN-SUFFIX,init-p01st-lb.push-apple.com.akadns.net
 DOMAIN-SUFFIX,init-s01st-lb.push-apple.com.akadns.net
+DOMAIN-SUFFIX,cl2.apple.com.edgekey.net.globalredir.akadns.net
 DOMAIN-SUFFIX,images.apple.com.edgekey.net.globalredir.akadns.net
 DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net
 DOMAIN-SUFFIX,store.apple.com.edgekey.net.globalredir.akadns.net
