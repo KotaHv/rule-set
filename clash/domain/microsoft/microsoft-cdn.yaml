@@ -1,11 +1,10 @@
-# Total: 56 rules
+# Total: 54 rules
 'payload':
 - 'res-h3.public.cdn.office.net'
 - 'res.cdn.office.net'
 - 'res-1.cdn.office.net'
 - 'res-2.cdn.office.net'
 - 'statics.teams.cdn.office.net'
-- '+.wscont1.apps.microsoft.com'
 - '+.wscont2.apps.microsoft.com'
 - '+.devblogs.microsoft.com'
 - '+.developer.microsoft.com'
@@ -34,7 +33,6 @@
 - '+.msdn.download.prss.microsoft.com'
 - '+.msdprod-ad.download.prss.microsoft.com'
 - '+.msproduct.download.prss.microsoft.com'
-- '+.msproductuat.download.prss.microsoft.com'
 - '+.myvs.download.prss.microsoft.com'
 - '+.oemsoc.download.prss.microsoft.com'
 - '+.oemsocuat.download.prss.microsoft.com'

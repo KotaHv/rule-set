@@ -1,10 +1,9 @@
-# Total: 58 rules
+# Total: 56 rules
 DOMAIN,res-h3.public.cdn.office.net
 DOMAIN,res.cdn.office.net
 DOMAIN,res-1.cdn.office.net
 DOMAIN,res-2.cdn.office.net
 DOMAIN,statics.teams.cdn.office.net
-DOMAIN-SUFFIX,wscont1.apps.microsoft.com
 DOMAIN-SUFFIX,wscont2.apps.microsoft.com
 DOMAIN-SUFFIX,devblogs.microsoft.com
 DOMAIN-SUFFIX,developer.microsoft.com
@@ -33,7 +32,6 @@ DOMAIN-SUFFIX,mpnbenefitsrtluat.download.prss.microsoft.com
 DOMAIN-SUFFIX,msdn.download.prss.microsoft.com
 DOMAIN-SUFFIX,msdprod-ad.download.prss.microsoft.com
 DOMAIN-SUFFIX,msproduct.download.prss.microsoft.com
-DOMAIN-SUFFIX,msproductuat.download.prss.microsoft.com
 DOMAIN-SUFFIX,myvs.download.prss.microsoft.com
 DOMAIN-SUFFIX,oemsoc.download.prss.microsoft.com
 DOMAIN-SUFFIX,oemsocuat.download.prss.microsoft.com

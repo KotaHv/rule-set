@@ -1,4 +1,4 @@
-# Total: 3108 rules
+# Total: 3109 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -2413,6 +2413,7 @@ domain_set:
 - speedtest.vienna.nodescrape.net
 - speedtest-syr.northland.net
 - speedtest-utc.northland.net
+- asbn-speedtest.northstate.net
 - wybo-speedtest.northstate.net
 - speedtest.nt.net
 - speedtest-cbr.cdn.on.net

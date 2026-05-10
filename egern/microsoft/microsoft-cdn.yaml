@@ -1,4 +1,4 @@
-# Total: 58 rules
+# Total: 56 rules
 no_resolve: true
 domain_set:
 - res-h3.public.cdn.office.net
@@ -7,7 +7,6 @@ domain_set:
 - res-2.cdn.office.net
 - statics.teams.cdn.office.net
 domain_suffix_set:
-- wscont1.apps.microsoft.com
 - wscont2.apps.microsoft.com
 - devblogs.microsoft.com
 - developer.microsoft.com
@@ -36,7 +35,6 @@ domain_suffix_set:
 - msdn.download.prss.microsoft.com
 - msdprod-ad.download.prss.microsoft.com
 - msproduct.download.prss.microsoft.com
-- msproductuat.download.prss.microsoft.com
 - myvs.download.prss.microsoft.com
 - oemsoc.download.prss.microsoft.com
 - oemsocuat.download.prss.microsoft.com
