@@ -1,4 +1,4 @@
-# Total: 83633 rules
+# Total: 83614 rules
 no_resolve: true
 domain_set:
 - t.email1.samsung.ca
@@ -78,6 +78,7 @@ domain_suffix_set:
 - posture.mtoken.zand.ae
 - mobile-appdyn.absa.africa
 - miningpool.africa
+- exodus.com.ag
 - old.sermitsiaq.ag
 - adspublicidades.agency
 - advg.agency
@@ -4748,6 +4749,7 @@ domain_suffix_set:
 - ad.allyes.cn
 - taobaoafp.allyes.cn
 - bangyoul.cn
+- qishui.bj.cn
 - byscy.cn
 - cdnmaster.cn
 - cdxyb.cn
@@ -4757,72 +4759,56 @@ domain_suffix_set:
 - a.cntv.cn
 - log.vdn.apps.cntv.cn
 - d.cntv.cn
-- a-todesk.com.cn
 - a32a.com.cn
-- aaa-youdao.com.cn
-- ai-sogou.com.cn
-- apd-todesk.com.cn
-- app-dingding.com.cn
+- aisi-zhi.com.cn
+- aisiapp.com.cn
+- apps-wps-offce.com.cn
 - as-i4.com.cn
-- bp-sogou.com.cn
 - ns.cac.com.cn
 - stratus.campaign-image.com.cn
 - zc1.campaign-view.com.cn
 - cctvgb.com.cn
+- ch-qishui-music.com.cn
 - cn-wps-zh.com.cn
 - daliantong.com.cn
 - datamaster.com.cn
-- de-todesk.com.cn
 - ads.doit.com.cn
-- ee-web-youdao.com.cn
-- f-sogou.com.cn
-- fanxa-youdao.com.cn
 - firefox-zh.com.cn
+- gf-qishuiapp.com.cn
 - ggooglle-chrrome.com.cn
-- go-youdao.com.cn
 - google-ch-chrome.com.cn
 - google-zhcn-chrome.com.cn
 - helloeos.com.cn
-- hj-wps.com.cn
-- hq-wps.com.cn
-- hv-youdao.com.cn
 - ipinyou.com.cn
-- kb-wps.com.cn
-- ks-wps.com.cn
 - lepool.com.cn
 - lineapps.com.cn
 - lline.com.cn
-- m-todesk.com.cn
 - zc1.maillist-manage.com.cn
 - moodoo.com.cn
 - mu-qishuimusic.com.cn
-- n-todesk.com.cn
 - synad2.nuffnang.com.cn
-- offiio-wps.com.cn
-- pc-todesk.com.cn
 - ads.people.com.cn
-- po-todesk.com.cn
-- q-sogou.com.cn
 - qishmusic.com.cn
+- qishui-eom.com.cn
+- qishui-gf.com.cn
 - qishuide.com.cn
 - qishuiq.com.cn
+- qishuiyy.com.cn
 - qishuui.com.cn
+- ql-qishui.com.cn
 - down.qqfarmer.com.cn
 - qufu.com.cn
+- sh-qishuimusic.com.cn
+- sogou-ai.com.cn
 - sogou2.com.cn
 - sougoupy.com.cn
+- sowgou.com.cn
 - todeskappa.com.cn
-- translate-youdao.com.cn
 - tranyasy.com.cn
 - vhs.vivo.com.cn
-- w-dingding.com.cn
-- w-todesk.com.cn
-- web-todesk.com.cn
-- wk-wps.com.cn
-- www-office-wps.com.cn
+- ww-qishui.com.cn
 - www-qishiu.com.cn
 - yu-qishui.com.cn
-- zhcn-chrome-chrome.com.cn
 - cssa.cn
 - ctags.cn
 - best.obs.cn-sz1.ctyun.cn
@@ -4848,24 +4834,27 @@ domain_suffix_set:
 - app-google-zh.hl.cn
 - apps-chrome-zh.hl.cn
 - apps-google-hl.hl.cn
-- chrome-chrome-cn.hl.cn
-- chrome-chrome-zh.hl.cn
 - chrome-gooogle-zh.hl.cn
 - chrome-hl.hl.cn
 - cn-qishui-music-zh.hl.cn
 - cnzh-google-apps.hl.cn
+- dy-qishuimusic.hl.cn
 - go-todesk.hl.cn
 - googgle-chrrome.hl.cn
 - google-chrrome-zh.hl.cn
 - google-google-chrome-google-com.hl.cn
 - line-go.hl.cn
+- music-qishuiyinle.hl.cn
 - office-wps-hl.hl.cn
 - qh-qishuiyinyue.hl.cn
 - qishui-yinle.hl.cn
 - qishui-zn.hl.cn
+- qishuimusic-cn.hl.cn
+- qishuiyinyue-music.hl.cn
 - todesk-web.hl.cn
 - todesk-zh.hl.cn
 - yd-fanyi.hl.cn
+- yinyue-qishui.hl.cn
 - zh-googlle-chrome.hl.cn
 - zh-todesk-cn.hl.cn
 - zhcn-googele.hl.cn
@@ -4897,6 +4886,7 @@ domain_suffix_set:
 - shurufa-sogou.org.cn
 - www-cn-google.org.cn
 - p0y.cn
+- pccare-360.cn
 - pcpr.cn
 - download.pdf00.cn
 - vendhelpuous.pgvjmp.cn
@@ -4914,7 +4904,6 @@ domain_suffix_set:
 - ads.serving-sys.cn
 - shilian168.cn
 - shilla.skrfgrl.cn
-- sogou-sogou.cn
 - soorbka.cn
 - sougoucom.cn
 - steam66.cn
@@ -4938,7 +4927,7 @@ domain_suffix_set:
 - whibbit.cn
 - wilf.cn
 - ce.wlaoc.cn
-- ww-sogou.cn
+- wpp-wps.cn
 - u.xogu.cn
 - static.youdm.cn
 - yrwap.cn
@@ -5018,6 +5007,8 @@ domain_suffix_set:
 - isiore.com.co
 - content.nu.com.co
 - validacion.rayo.com.co
+- safepal.com.co
+- tronlink.com.co
 - com-cloud.co
 - comin.co
 - copool.co
@@ -5484,6 +5475,7 @@ domain_suffix_set:
 - 168pool.com
 - 16c1717207.com
 - 16ca8cd3e5.com
+- 16gift.com
 - cc8f653011.17180d187e.com
 - 6118a9c9fe.171c856581.com
 - 3629b5de24.17282cd89c.com
@@ -8796,7 +8788,6 @@ domain_suffix_set:
 - app-momentum.com
 - app-shake.com
 - app-utility-hub.com
-- app-wegame.com
 - app-wg.com
 - app11ee.com
 - appanonymity.com
@@ -16252,7 +16243,6 @@ domain_suffix_set:
 - dkroger.com
 - dksundhed.com
 - dl-downfast.com
-- dl-sogou.com
 - dldyjy.com
 - dlglpost.com
 - dlinktour.com
@@ -16875,6 +16865,7 @@ domain_suffix_set:
 - e-outlook-online.com
 - e-referrer.com
 - e-sacombank.com
+- e-sanpei.com
 - e-scopes.com
 - e-transfer-cra.com
 - e-trn-incm.com
@@ -18286,7 +18277,6 @@ domain_suffix_set:
 - stats.eyeviewdigital.com
 - eyewonder.com
 - eyewondermedia.com
-- eyeyjacatpxweoa.com
 - eykcjdmmtsoykl.com
 - eyxhmwwipjkfjcf.com
 - refer.ez2290.com
@@ -20809,7 +20799,6 @@ domain_suffix_set:
 - adsatt.espn.go.com
 - unid.go.com
 - analytics.ext.go-tellm.com
-- go-wegame.com
 - em8561.go2bank.com
 - share.go2bank.com
 - go2bdmbet.com
@@ -22199,7 +22188,6 @@ domain_suffix_set:
 - holy-push.com
 - holyclock.com
 - home-stays.com
-- home-wegame.com
 - home4ugoog10you.com
 - tmcdn.homeaway.com
 - homebrink.com
@@ -22513,7 +22501,6 @@ domain_suffix_set:
 - huaxinapp5.com
 - analytics.hub-js.com
 - marketing.hub-js.com
-- hub-wegame.com
 - hubbyrangerfry.com
 - hubbytelephonedetermine.com
 - hubpd.com
@@ -22603,6 +22590,7 @@ domain_suffix_set:
 - ddata.huntingtonbank.com
 - huobipool.com
 - huopool.com
+- huoronggh.com
 - huoronggk.com
 - hurra.com
 - hurrayed.com
@@ -26057,6 +26045,7 @@ domain_suffix_set:
 - logistrafic.com
 - lognatera.com
 - logoradar.com
+- logoswitch.com
 - logshissdisinterested.com
 - cdn.logsnag.com
 - logtoatera.com
@@ -29875,7 +29864,6 @@ domain_suffix_set:
 - officesoftcn.com
 - official-kmspico.com
 - official-ledgrlive.com
-- official-wegame.com
 - officialiqtests.com
 - officialkmspico.com
 - officials-kmspico.com
@@ -37565,7 +37553,6 @@ domain_suffix_set:
 - storagerecurrent.com
 - store-app-master.com
 - store-downloads.com
-- store-sogou.com
 - storegpt.com
 - storehaiyen.com
 - storeplaystation.com
@@ -38601,7 +38588,6 @@ domain_suffix_set:
 - teafortune.com
 - teakwornil.com
 - tealeaf.com
-- team-wegame.com
 - team8save.com
 - teamdoge.com
 - teamramco.com
@@ -38620,7 +38606,6 @@ domain_suffix_set:
 - teaspoonwrenpursue.com
 - tech-33.com
 - tech-softwares.com
-- tech-sogou.com
 - banner.techarp.com
 - techbeat.com
 - techbytemedia.com
@@ -39697,7 +39682,6 @@ domain_suffix_set:
 - top-tube-video.com
 - top-video-content.com
 - top-web-secure.com
-- top-wegame.com
 - top100bloggers.com
 - top100webshops.com
 - top10sportsites.com
@@ -42999,7 +42983,6 @@ domain_suffix_set:
 - weephostessscissors.com
 - weepy-attack.com
 - weepylack.com
-- wegameesport.com
 - consent.wegotthiscovered.com
 - weight-tracking.com
 - 0.www.weightabsenteekmonthly.com
@@ -43253,7 +43236,6 @@ domain_suffix_set:
 - wimpimpatience.com
 - win-big-here.com
 - win-free-prizes.com
-- win-sogou.com
 - winaffiliates.com
 - winaffiliates1.com
 - windaily.com
@@ -43720,7 +43702,6 @@ domain_suffix_set:
 - wzeocharram.com
 - x-album.com
 - x-images.com
-- x-sogou.com
 - x-traceur.com
 - ads.x17online.com
 - mediacdn.x1hub.com
@@ -49865,6 +49846,7 @@ domain_suffix_set:
 - wrmoadl.guru
 - zpool.guru
 - 3o9s.short.gy
+- mk.wiremanse.hair
 - refer.baddie.health
 - 1-directshipmtdhlsexpress-order.help
 - auspose.help
@@ -50126,6 +50108,7 @@ domain_suffix_set:
 - upcloud.host
 - vivahost.host
 - widget.admiral.hr
+- clicks.njuskalo.hr
 - smind.hr
 - campaign-remp.444.hu
 - ad.hu
@@ -65678,7 +65661,6 @@ domain_suffix_set:
 - mentaryrewet.qpon
 - meriahlabrose.qpon
 - mescallevi.qpon
-- methsnacritepreview.qpon
 - mewlergushercrinate.qpon
 - mezuzahbangkokhoyle.qpon
 - midasbirders.qpon
@@ -70430,7 +70412,6 @@ domain_suffix_set:
 - iylmylijdicmv.site
 - iymvmpyfsqnui.site
 - iyqnahkspthlb.site
-- iyqtpifqeoavq.site
 - iyresfhhvgqex.site
 - iyykavopdpkxx.site
 - izcftgjuemufo.site

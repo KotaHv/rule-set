@@ -1,4 +1,4 @@
-# Total: 3109 rules
+# Total: 3114 rules
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -913,6 +913,7 @@
 - 'csl.hkspeedtest.com'
 - 'hkt.hkspeedtest.com'
 - 'sunmobile.hkspeedtest.com'
+- 'speedtest.hlinknet.com'
 - 'speedtest.homecomminc.com'
 - 'venusone.horystech.com'
 - 'speedtest-ams-nl.host-palace.com'
@@ -1271,6 +1272,7 @@
 - 'akron.speedtest.rtc1.com'
 - 'rochester.speedtest.rtc1.com'
 - 'albuquerque-speedtest.sacredwindcommunications.com'
+- 'speedtest.sahinotomotiv.com'
 - 'speedtest.samparkinfo.com'
 - 'speedtest-sd-da1.scalematrix.com'
 - 'st1.scaleway.com'
@@ -1515,6 +1517,7 @@
 - 'speedtest.creolineserver.de'
 - 'speedtest3.dacor.de'
 - 'speedtest.fra01.datascheune.de'
+- 'ookla.dns-net.de'
 - 'speedtest01.dns-net.de'
 - 'speedtest.edv-kossmann.de'
 - 'net-speed1-pp.ewetel.de'
@@ -2413,6 +2416,8 @@
 - 'speedtest-syr.northland.net'
 - 'speedtest-utc.northland.net'
 - 'asbn-speedtest.northstate.net'
+- 'atl-speedtest.northstate.net'
+- 'mia-speedtest.northstate.net'
 - 'wybo-speedtest.northstate.net'
 - 'speedtest.nt.net'
 - 'speedtest-cbr.cdn.on.net'

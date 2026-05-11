@@ -1,4 +1,4 @@
-# Total: 3109 rules
+# Total: 3114 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -914,6 +914,7 @@ domain_set:
 - csl.hkspeedtest.com
 - hkt.hkspeedtest.com
 - sunmobile.hkspeedtest.com
+- speedtest.hlinknet.com
 - speedtest.homecomminc.com
 - venusone.horystech.com
 - speedtest-ams-nl.host-palace.com
@@ -1272,6 +1273,7 @@ domain_set:
 - akron.speedtest.rtc1.com
 - rochester.speedtest.rtc1.com
 - albuquerque-speedtest.sacredwindcommunications.com
+- speedtest.sahinotomotiv.com
 - speedtest.samparkinfo.com
 - speedtest-sd-da1.scalematrix.com
 - st1.scaleway.com
@@ -1516,6 +1518,7 @@ domain_set:
 - speedtest.creolineserver.de
 - speedtest3.dacor.de
 - speedtest.fra01.datascheune.de
+- ookla.dns-net.de
 - speedtest01.dns-net.de
 - speedtest.edv-kossmann.de
 - net-speed1-pp.ewetel.de
@@ -2414,6 +2417,8 @@ domain_set:
 - speedtest-syr.northland.net
 - speedtest-utc.northland.net
 - asbn-speedtest.northstate.net
+- atl-speedtest.northstate.net
+- mia-speedtest.northstate.net
 - wybo-speedtest.northstate.net
 - speedtest.nt.net
 - speedtest-cbr.cdn.on.net
