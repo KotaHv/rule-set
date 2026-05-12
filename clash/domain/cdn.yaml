@@ -1,4 +1,4 @@
-# Total: 4444 rules
+# Total: 4448 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -172,6 +172,7 @@
 - 'cdn.stackoverflow.co'
 - 'app-static.turtl.co'
 - 'cdn.vector.co'
+- 'cdn.videy.co'
 - 's.w-x.co'
 - 'v.w-x.co'
 - 'waitlisted.co'
@@ -1836,6 +1837,7 @@
 - 'content-a.strava.com'
 - 'heatmap-external-a.strava.com'
 - 'wre-assets.prod.mapping.strava.com'
+- 'tiles.strava.com'
 - 'web-assets.strava.com'
 - 'cdn-cf-east.streamable.com'
 - 'statics.streamable.com'
@@ -2206,6 +2208,7 @@
 - 'static.zuora.com'
 - 'cimg.cnyes.cool'
 - 'sfiles.cnyes.cool'
+- 'mapserver.mapy.cz'
 - 'tile.mtbmap.cz'
 - 'cdn.decrypt.day'
 - 'www.acgpix.de'
@@ -2969,7 +2972,6 @@
 - 'tiles.maps.opensearch.org'
 - 'tiles.openskimap.org'
 - 'static.opensuse.org'
-- 'tile.opentopomap.org'
 - 'tile.openweathermap.org'
 - 'cdn.pagic.org'
 - 'jaws.pbs.org'
@@ -4331,6 +4333,7 @@
 - '+.pool.ntp.org'
 - '+.openinframap.org'
 - '+.tile.openstreetmap.org'
+- '+.tile.opentopomap.org'
 - '+.tile.osm.org'
 - '+.parceljs.org'
 - '+.cdn.pbs.org'
@@ -4382,6 +4385,7 @@
 - '+.registry.gitplac.si'
 - '+.zenwave56.site'
 - '+.cdn-zlib.sk'
+- '+.tiles.freemap.sk'
 - '+.pstorage.space'
 - '+.tutu1.space'
 - '+.shoppulse88.store'

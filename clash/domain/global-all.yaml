@@ -1,4 +1,4 @@
-# Total: 6229 rules
+# Total: 6230 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -186,6 +186,7 @@
 - 'static1.smartbear.co'
 - 'app-static.turtl.co'
 - 'cdn.vector.co'
+- 'cdn.videy.co'
 - 's.w-x.co'
 - 'v.w-x.co'
 - 'waitlisted.co'
@@ -2561,7 +2562,6 @@
 - 'tiles.openseamap.org'
 - 'tiles.maps.opensearch.org'
 - 'tiles.openskimap.org'
-- 'tile.opentopomap.org'
 - 'tile.openweathermap.org'
 - 'debian.osuosl.org'
 - 'ftp.osuosl.org'
@@ -5919,6 +5919,7 @@
 - '+.openssl.org'
 - '+.openstreetmap.org'
 - '+.opensuse.org'
+- '+.tile.opentopomap.org'
 - '+.opentranslatorstothings.org'
 - '+.openvinotoolkit.org'
 - '+.openwrt.org'

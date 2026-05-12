@@ -1,4 +1,4 @@
-# Total: 6356 rules
+# Total: 6357 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -187,6 +187,7 @@ domain_set:
 - static1.smartbear.co
 - app-static.turtl.co
 - cdn.vector.co
+- cdn.videy.co
 - s.w-x.co
 - v.w-x.co
 - waitlisted.co
@@ -2562,7 +2563,6 @@ domain_set:
 - tiles.openseamap.org
 - tiles.maps.opensearch.org
 - tiles.openskimap.org
-- tile.opentopomap.org
 - tile.openweathermap.org
 - debian.osuosl.org
 - ftp.osuosl.org
@@ -5921,6 +5921,7 @@ domain_suffix_set:
 - openssl.org
 - openstreetmap.org
 - opensuse.org
+- tile.opentopomap.org
 - opentranslatorstothings.org
 - openvinotoolkit.org
 - openwrt.org

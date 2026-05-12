@@ -1,4 +1,4 @@
-# Total: 4465 rules
+# Total: 4469 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -171,6 +171,7 @@ DOMAIN,static1.smartbear.co
 DOMAIN,cdn.stackoverflow.co
 DOMAIN,app-static.turtl.co
 DOMAIN,cdn.vector.co
+DOMAIN,cdn.videy.co
 DOMAIN,s.w-x.co
 DOMAIN,v.w-x.co
 DOMAIN,waitlisted.co
@@ -1835,6 +1836,7 @@ DOMAIN,cdn-1.strava.com
 DOMAIN,content-a.strava.com
 DOMAIN,heatmap-external-a.strava.com
 DOMAIN,wre-assets.prod.mapping.strava.com
+DOMAIN,tiles.strava.com
 DOMAIN,web-assets.strava.com
 DOMAIN,cdn-cf-east.streamable.com
 DOMAIN,statics.streamable.com
@@ -2205,6 +2207,7 @@ DOMAIN,barracuda-cdn.zoovu.com
 DOMAIN,static.zuora.com
 DOMAIN,cimg.cnyes.cool
 DOMAIN,sfiles.cnyes.cool
+DOMAIN,mapserver.mapy.cz
 DOMAIN,tile.mtbmap.cz
 DOMAIN,cdn.decrypt.day
 DOMAIN,www.acgpix.de
@@ -2968,7 +2971,6 @@ DOMAIN,tiles.openseamap.org
 DOMAIN,tiles.maps.opensearch.org
 DOMAIN,tiles.openskimap.org
 DOMAIN,static.opensuse.org
-DOMAIN,tile.opentopomap.org
 DOMAIN,tile.openweathermap.org
 DOMAIN,cdn.pagic.org
 DOMAIN,jaws.pbs.org
@@ -4330,6 +4332,7 @@ DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,openinframap.org
 DOMAIN-SUFFIX,tile.openstreetmap.org
+DOMAIN-SUFFIX,tile.opentopomap.org
 DOMAIN-SUFFIX,tile.osm.org
 DOMAIN-SUFFIX,parceljs.org
 DOMAIN-SUFFIX,cdn.pbs.org
@@ -4381,6 +4384,7 @@ DOMAIN-SUFFIX,gitpage.si
 DOMAIN-SUFFIX,registry.gitplac.si
 DOMAIN-SUFFIX,zenwave56.site
 DOMAIN-SUFFIX,cdn-zlib.sk
+DOMAIN-SUFFIX,tiles.freemap.sk
 DOMAIN-SUFFIX,pstorage.space
 DOMAIN-SUFFIX,tutu1.space
 DOMAIN-SUFFIX,shoppulse88.store

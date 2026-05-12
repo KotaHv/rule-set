@@ -1,4 +1,4 @@
-# Total: 3114 rules
+# Total: 3116 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -623,6 +623,7 @@ domain_set:
 - speedtest-lax.advinservers.com
 - speedtest-6.aebc.com
 - ookla-1.aerioncloud.com
+- ookla-toronto.aerioncloud.com
 - speedtest.airmaxnetwork.com
 - speedtest.airnetnetworks.com
 - airspeed.airwavesinternet.com
@@ -2510,6 +2511,7 @@ domain_set:
 - speedtest.sogetel.net
 - speedtest.dfw1.sonic.net
 - speedtest.dfw2.sonic.net
+- speedtest.lax2.sonic.net
 - speedtest.sjc.sonic.net
 - speed.sparcs.net
 - speed1.spitfireuk.net

@@ -1,4 +1,4 @@
-# Total: 6370 rules
+# Total: 6371 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -185,6 +185,7 @@ DOMAIN,mirrors.pardisco.co
 DOMAIN,static1.smartbear.co
 DOMAIN,app-static.turtl.co
 DOMAIN,cdn.vector.co
+DOMAIN,cdn.videy.co
 DOMAIN,s.w-x.co
 DOMAIN,v.w-x.co
 DOMAIN,waitlisted.co
@@ -2560,7 +2561,6 @@ DOMAIN,tiles.openrailwaymap.org
 DOMAIN,tiles.openseamap.org
 DOMAIN,tiles.maps.opensearch.org
 DOMAIN,tiles.openskimap.org
-DOMAIN,tile.opentopomap.org
 DOMAIN,tile.openweathermap.org
 DOMAIN,debian.osuosl.org
 DOMAIN,ftp.osuosl.org
@@ -5918,6 +5918,7 @@ DOMAIN-SUFFIX,openresty.org
 DOMAIN-SUFFIX,openssl.org
 DOMAIN-SUFFIX,openstreetmap.org
 DOMAIN-SUFFIX,opensuse.org
+DOMAIN-SUFFIX,tile.opentopomap.org
 DOMAIN-SUFFIX,opentranslatorstothings.org
 DOMAIN-SUFFIX,openvinotoolkit.org
 DOMAIN-SUFFIX,openwrt.org
