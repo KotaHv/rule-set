@@ -1,4 +1,4 @@
-# Total: 6357 rules
+# Total: 6361 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -7,6 +7,7 @@ domain_set:
 - mirrors.asnet.am
 - kali.itsec.am
 - mirrors.teamcloud.am
+- cdn.tabarn.ap
 - fdisk.5play.app
 - cdn.7tv.app
 - cdn.accessibly.app
@@ -1061,6 +1062,7 @@ domain_set:
 - mgx-backend-cdn.metadl.com
 - public-frontend-cos.metadl.com
 - meteorclient.com
+- cdn.app.metorik.com
 - cdn.mewe.com
 - public-img.mewe.com
 - image.mgstage.com
@@ -1959,6 +1961,7 @@ domain_set:
 - cdn.nolt.io
 - dl.nwjs.io
 - dl2.nwjs.io
+- cdn-static.okendo.io
 - cdn.pagefly.io
 - cdn.pendo.io
 - data.pendo.io
@@ -2469,6 +2472,7 @@ domain_set:
 - app.backinstock.org
 - seal-newyork.bbb.org
 - download.bbbike.org
+- uploads.bikeindex.org
 - ftp.byfly.by.org
 - bzip.org
 - m3u8-0.c-spanvideo.org
