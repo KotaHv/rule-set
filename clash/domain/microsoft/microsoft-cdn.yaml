@@ -1,4 +1,4 @@
-# Total: 53 rules
+# Total: 52 rules
 'payload':
 - 'res-h3.public.cdn.office.net'
 - 'res.cdn.office.net'
@@ -8,7 +8,6 @@
 - '+.devblogs.microsoft.com'
 - '+.developer.microsoft.com'
 - '+.download.microsoft.com'
-- '+.fs.microsoft.com'
 - '+.dl.delivery.mp.microsoft.com'
 - '+.storeedgefd.dsx.mp.microsoft.com'
 - '+.officecdn.microsoft.com'

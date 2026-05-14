@@ -1,4 +1,4 @@
-# Total: 55 rules
+# Total: 54 rules
 no_resolve: true
 domain_set:
 - res-h3.public.cdn.office.net
@@ -10,7 +10,6 @@ domain_suffix_set:
 - devblogs.microsoft.com
 - developer.microsoft.com
 - download.microsoft.com
-- fs.microsoft.com
 - dl.delivery.mp.microsoft.com
 - storeedgefd.dsx.mp.microsoft.com
 - officecdn.microsoft.com
