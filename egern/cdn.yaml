@@ -1,4 +1,4 @@
-# Total: 4532 rules
+# Total: 4533 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2222,6 +2222,7 @@ domain_set:
 - api.iconify.design
 - code.iconify.design
 - npm.antfu.dev
+- img.appledb.dev
 - cdn.builderprofile.aws.dev
 - cdn.us-east-1.prod.moon.dubai.aws.dev
 - cdn.bfe.dev

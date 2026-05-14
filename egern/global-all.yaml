@@ -1,4 +1,4 @@
-# Total: 6361 rules
+# Total: 6362 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1768,6 +1768,7 @@ domain_set:
 - api.iconify.design
 - code.iconify.design
 - npm.antfu.dev
+- img.appledb.dev
 - cdn.bfe.dev
 - biomejs.dev
 - static.bit.dev
