@@ -1,4 +1,4 @@
-# Total: 6235 rules
+# Total: 6240 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -656,6 +656,8 @@
 - 'mirrors.evowise.com'
 - 'web-sdk.eyefitu.com'
 - 'web-sdk-cdn.eyefitu.com'
+- 'cdn.f5.com'
+- 'cdn.studio.f5.com'
 - 'cdn.faire.com'
 - 'athome.fandango.com'
 - 'images.fandango.com'
@@ -1397,6 +1399,7 @@
 - 'cdn.segment.com'
 - 'static.semrush.com'
 - 'assets.sendinblue.com'
+- 'app-static.sendsafely.com'
 - 'static-www.sendsafely.com'
 - 'thumbs2.sendvid.com'
 - 'videos2-h.sendvid.com'
@@ -3419,6 +3422,7 @@
 - '+.easportsmma.com'
 - '+.easportsworld.com'
 - '+.eastore.com'
+- '+.cdn.easyling.com'
 - '+.ebayimg.com'
 - '+.ebaystatic.com'
 - '+.ipfs.ecolatam.com'
@@ -3454,6 +3458,7 @@
 - '+.expressvpn.com'
 - '+.externulls.com'
 - '+.ezocdn.com'
+- '+.tags.f5.com'
 - '+.f8.com'
 - '+.fab.com'
 - '+.faceit.com'

@@ -1,4 +1,4 @@
-# Total: 1938 rules
+# Total: 1940 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1336,6 +1336,7 @@
 - 'mirror.sh.com.tr'
 - 'cpan.ulak.net.tr'
 - 'ftp.linux.org.tr'
+- 'mirror.archlinux.tw'
 - 'mirror.twds.com.tw'
 - 'mirror4.twds.com.tw'
 - 'mirror6.twds.com.tw'
@@ -1803,6 +1804,7 @@
 - '+.download.dm.origin.com'
 - '+.mirrors.pair.com'
 - '+.pixeldrain.com'
+- '+.mirror.pkgbuild.com'
 - '+.mirror.rackspace.com'
 - '+.steamcontent.com'
 - '+.content.steampowered.com'

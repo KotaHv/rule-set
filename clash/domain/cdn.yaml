@@ -1,4 +1,4 @@
-# Total: 4453 rules
+# Total: 4458 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -740,6 +740,8 @@
 - 'images.everyplate.com'
 - 'web-sdk.eyefitu.com'
 - 'web-sdk-cdn.eyefitu.com'
+- 'cdn.f5.com'
+- 'cdn.studio.f5.com'
 - 'graph.facebook.com'
 - 'cdn.faire.com'
 - 'images.fandango.com'
@@ -1729,6 +1731,7 @@
 - 'cdn.segment.com'
 - 'static.semrush.com'
 - 'assets.sendinblue.com'
+- 'app-static.sendsafely.com'
 - 'static-www.sendsafely.com'
 - 'thumbs2.sendvid.com'
 - 'videos2-h.sendvid.com'
@@ -3485,6 +3488,7 @@
 - '+.dummyimage.com'
 - '+.dummyjson.com'
 - '+.dynamic-static-assets.com'
+- '+.cdn.easyling.com'
 - '+.ebayimg.com'
 - '+.ebaystatic.com'
 - '+.ipfs.ecolatam.com'
@@ -3501,6 +3505,7 @@
 - '+.exp-tas.com'
 - '+.externulls.com'
 - '+.ezocdn.com'
+- '+.tags.f5.com'
 - '+.fakestoreapi.com'
 - '+.fastlycdn.com'
 - '+.favicone.com'

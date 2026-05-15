@@ -1,4 +1,4 @@
-# Total: 1946 rules
+# Total: 1948 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1337,6 +1337,7 @@ domain_set:
 - mirror.sh.com.tr
 - cpan.ulak.net.tr
 - ftp.linux.org.tr
+- mirror.archlinux.tw
 - mirror.twds.com.tw
 - mirror4.twds.com.tw
 - mirror6.twds.com.tw
@@ -1805,6 +1806,7 @@ domain_suffix_set:
 - download.dm.origin.com
 - mirrors.pair.com
 - pixeldrain.com
+- mirror.pkgbuild.com
 - mirror.rackspace.com
 - steamcontent.com
 - content.steampowered.com
