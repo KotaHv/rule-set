@@ -1,4 +1,4 @@
-# Total: 556 rules
+# Total: 557 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -539,6 +539,7 @@ domain_suffix_set:
 - x.org
 - ziglang.org
 - zsh.org
+- archlinux.page
 - codeberg.page
 - modperl.pl
 - hex.pm

@@ -1,4 +1,4 @@
-# Total: 1737 rules
+# Total: 1738 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -1637,6 +1637,7 @@ domain_suffix_set:
 - xquartz.org
 - ziglang.org
 - zsh.org
+- archlinux.page
 - codeberg.page
 - party
 - pe

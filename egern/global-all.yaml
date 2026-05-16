@@ -1,4 +1,4 @@
-# Total: 6367 rules
+# Total: 6368 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -6067,6 +6067,7 @@ domain_suffix_set:
 - ziglang.org
 - zsh.org
 - bmp.ovh
+- archlinux.page
 - codeberg.page
 - instant.page
 - kinsta.page

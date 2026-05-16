@@ -1,4 +1,4 @@
-# Total: 555 rules
+# Total: 556 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -537,6 +537,7 @@
 - '+.x.org'
 - '+.ziglang.org'
 - '+.zsh.org'
+- '+.archlinux.page'
 - '+.codeberg.page'
 - '+.modperl.pl'
 - '+.hex.pm'

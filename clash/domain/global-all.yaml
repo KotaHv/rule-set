@@ -1,4 +1,4 @@
-# Total: 6240 rules
+# Total: 6241 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -6065,6 +6065,7 @@
 - '+.ziglang.org'
 - '+.zsh.org'
 - '+.bmp.ovh'
+- '+.archlinux.page'
 - '+.codeberg.page'
 - '+.instant.page'
 - '+.kinsta.page'
