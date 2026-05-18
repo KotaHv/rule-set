@@ -1,4 +1,4 @@
-# Total: 759 rules
+# Total: 779 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -269,8 +269,13 @@ domain_suffix_set:
 - hyprsense.com
 - industrialtoys.com
 - joinsquad.com
+- kgisystems.com
 - kirbysepicyarn.com
 - kirbysuperstarultra.com
+- konami.com
+- konamicrossmedia.com
+- konamigaming.com
+- konamionline.com
 - kraftonde.com
 - kyurem.com
 - lcsmerch.com
@@ -419,6 +424,7 @@ domain_suffix_set:
 - reachthefinals.com
 - realityscan.com
 - renovacionxboxlive.com
+- resellablue.com
 - respawn.com
 - riot.com
 - riot-games.com
@@ -562,6 +568,7 @@ domain_suffix_set:
 - yogify.com
 - yoshisnewisland.com
 - yostarplat.com
+- yugioh-card.com
 - zenlesszonezero.com
 - zynga.com
 - zyngaplayersupport.com
@@ -608,8 +615,10 @@ domain_suffix_set:
 - wgcrowd.io
 - nintendo.it
 - roblox.it
+- 573.jp
 - bluearchive.jp
 - cygames.co.jp
+- konami.co.jp
 - nexon.co.jp
 - nintendo.co.jp
 - roblox.co.jp
@@ -619,13 +628,19 @@ domain_suffix_set:
 - crysis.jp
 - cygames.jp
 - easports.jp
+- kiwi.jp
+- konamiopen.jp
+- konamisportsclub.jp
+- konamistyle.jp
 - mirrorsedge.jp
 - priconne-redive.jp
+- resella.jp
 - riotgames.jp
 - roblox.jp
 - pjsekai.sega.jp
 - stellasora.jp
 - worldflipper.jp
+- konami
 - eakorea.co.kr
 - leagueoflegends.co.kr
 - lolshop.co.kr
@@ -664,6 +679,8 @@ domain_suffix_set:
 - gaijin.net
 - historyofdota.net
 - joyjoy.net
+- konami.net
+- konamigaming.net
 - leagueoflegends.net
 - lolfanart.net
 - maddenseason.net
@@ -709,9 +726,12 @@ domain_suffix_set:
 - 2kct.onl
 - 2kcoretech.online
 - 2kweb.online
+- konami-igaming.online
+- konamigaming.online
 - sekai.colorfulpalette.org
 - historyofdota.org
 - instituteofwar.org
+- konami.org
 - leagueoflegends.org
 - lolclub.org
 - maddenseason.org

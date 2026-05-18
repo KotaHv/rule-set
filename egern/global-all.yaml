@@ -1,4 +1,4 @@
-# Total: 6368 rules
+# Total: 6381 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -3822,6 +3822,7 @@ domain_suffix_set:
 - kakao.com
 - kc-usercontent.com
 - keycdn.com
+- kgisystems.com
 - app.khoros.com
 - kick.com
 - kik.com
@@ -3842,6 +3843,10 @@ domain_suffix_set:
 - kobo.com
 - komoot.com
 - konachan.com
+- konami.com
+- konamicrossmedia.com
+- konamigaming.com
+- konamionline.com
 - kraftonde.com
 - kraken.com
 - krakenjs.com
@@ -4366,6 +4371,7 @@ domain_suffix_set:
 - replicateassets.com
 - replit.com
 - report-uri.com
+- resellablue.com
 - respawn.com
 - returnyoutubedislike.com
 - returnyoutubedislikeapi.com
@@ -4929,6 +4935,7 @@ domain_suffix_set:
 - ypcdn.com
 - ypncdn.com
 - ytimg.com
+- yugioh-card.com
 - z.com
 - zdassets.com
 - zdnet.com
@@ -5276,6 +5283,7 @@ domain_suffix_set:
 - jp
 - mirror.ac.ke
 - kg
+- konami
 - kr
 - hitomi.la
 - ipfs.lain.la
@@ -5534,6 +5542,8 @@ domain_suffix_set:
 - kisscos.net
 - klarnacdn.net
 - komoot.net
+- konami.net
+- konamigaming.net
 - laby.net
 - launchpad.net
 - launchpadcontent.net
@@ -5739,6 +5749,8 @@ domain_suffix_set:
 - 2kcoretech.online
 - 2kweb.online
 - am-cdn.online
+- konami-igaming.online
+- konamigaming.online
 - 01.org
 - 18comic.org
 - 4cdn.org
@@ -5874,6 +5886,7 @@ domain_suffix_set:
 - kali.org
 - kde.org
 - kernel.org
+- konami.org
 - kotlinlang.org
 - launchpadlibrarian.org
 - leagueoflegends.org

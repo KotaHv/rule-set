@@ -1,4 +1,4 @@
-# Total: 758 rules
+# Total: 778 rules
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
@@ -266,8 +266,13 @@ DOMAIN-SUFFIX,hutpromos.com
 DOMAIN-SUFFIX,hyprsense.com
 DOMAIN-SUFFIX,industrialtoys.com
 DOMAIN-SUFFIX,joinsquad.com
+DOMAIN-SUFFIX,kgisystems.com
 DOMAIN-SUFFIX,kirbysepicyarn.com
 DOMAIN-SUFFIX,kirbysuperstarultra.com
+DOMAIN-SUFFIX,konami.com
+DOMAIN-SUFFIX,konamicrossmedia.com
+DOMAIN-SUFFIX,konamigaming.com
+DOMAIN-SUFFIX,konamionline.com
 DOMAIN-SUFFIX,kraftonde.com
 DOMAIN-SUFFIX,kyurem.com
 DOMAIN-SUFFIX,lcsmerch.com
@@ -416,6 +421,7 @@ DOMAIN-SUFFIX,rbxtrk.com
 DOMAIN-SUFFIX,reachthefinals.com
 DOMAIN-SUFFIX,realityscan.com
 DOMAIN-SUFFIX,renovacionxboxlive.com
+DOMAIN-SUFFIX,resellablue.com
 DOMAIN-SUFFIX,respawn.com
 DOMAIN-SUFFIX,riot.com
 DOMAIN-SUFFIX,riot-games.com
@@ -559,6 +565,7 @@ DOMAIN-SUFFIX,yo-star.com
 DOMAIN-SUFFIX,yogify.com
 DOMAIN-SUFFIX,yoshisnewisland.com
 DOMAIN-SUFFIX,yostarplat.com
+DOMAIN-SUFFIX,yugioh-card.com
 DOMAIN-SUFFIX,zenlesszonezero.com
 DOMAIN-SUFFIX,zynga.com
 DOMAIN-SUFFIX,zyngaplayersupport.com
@@ -605,8 +612,10 @@ DOMAIN-SUFFIX,rgpub.io
 DOMAIN-SUFFIX,wgcrowd.io
 DOMAIN-SUFFIX,nintendo.it
 DOMAIN-SUFFIX,roblox.it
+DOMAIN-SUFFIX,573.jp
 DOMAIN-SUFFIX,bluearchive.jp
 DOMAIN-SUFFIX,cygames.co.jp
+DOMAIN-SUFFIX,konami.co.jp
 DOMAIN-SUFFIX,nexon.co.jp
 DOMAIN-SUFFIX,nintendo.co.jp
 DOMAIN-SUFFIX,roblox.co.jp
@@ -616,13 +625,19 @@ DOMAIN-SUFFIX,yostar-pictures.co.jp
 DOMAIN-SUFFIX,crysis.jp
 DOMAIN-SUFFIX,cygames.jp
 DOMAIN-SUFFIX,easports.jp
+DOMAIN-SUFFIX,kiwi.jp
+DOMAIN-SUFFIX,konamiopen.jp
+DOMAIN-SUFFIX,konamisportsclub.jp
+DOMAIN-SUFFIX,konamistyle.jp
 DOMAIN-SUFFIX,mirrorsedge.jp
 DOMAIN-SUFFIX,priconne-redive.jp
+DOMAIN-SUFFIX,resella.jp
 DOMAIN-SUFFIX,riotgames.jp
 DOMAIN-SUFFIX,roblox.jp
 DOMAIN-SUFFIX,pjsekai.sega.jp
 DOMAIN-SUFFIX,stellasora.jp
 DOMAIN-SUFFIX,worldflipper.jp
+DOMAIN-SUFFIX,konami
 DOMAIN-SUFFIX,eakorea.co.kr
 DOMAIN-SUFFIX,leagueoflegends.co.kr
 DOMAIN-SUFFIX,lolshop.co.kr
@@ -661,6 +676,8 @@ DOMAIN-SUFFIX,forzamotorsport.net
 DOMAIN-SUFFIX,gaijin.net
 DOMAIN-SUFFIX,historyofdota.net
 DOMAIN-SUFFIX,joyjoy.net
+DOMAIN-SUFFIX,konami.net
+DOMAIN-SUFFIX,konamigaming.net
 DOMAIN-SUFFIX,leagueoflegends.net
 DOMAIN-SUFFIX,lolfanart.net
 DOMAIN-SUFFIX,maddenseason.net
@@ -706,9 +723,12 @@ DOMAIN-SUFFIX,steam.cdn.orcon.net.nz
 DOMAIN-SUFFIX,2kct.onl
 DOMAIN-SUFFIX,2kcoretech.online
 DOMAIN-SUFFIX,2kweb.online
+DOMAIN-SUFFIX,konami-igaming.online
+DOMAIN-SUFFIX,konamigaming.online
 DOMAIN-SUFFIX,sekai.colorfulpalette.org
 DOMAIN-SUFFIX,historyofdota.org
 DOMAIN-SUFFIX,instituteofwar.org
+DOMAIN-SUFFIX,konami.org
 DOMAIN-SUFFIX,leagueoflegends.org
 DOMAIN-SUFFIX,lolclub.org
 DOMAIN-SUFFIX,maddenseason.org
