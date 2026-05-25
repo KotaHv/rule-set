@@ -1,4 +1,4 @@
-# Total: 6254 rules
+# Total: 6255 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -3458,6 +3458,7 @@
 - '+.expressvpn.com'
 - '+.externulls.com'
 - '+.ezocdn.com'
+- '+.f-cdn.com'
 - '+.tags.f5.com'
 - '+.f8.com'
 - '+.fab.com'

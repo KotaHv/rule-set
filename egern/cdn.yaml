@@ -1,4 +1,4 @@
-# Total: 4539 rules
+# Total: 4542 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -12,11 +12,13 @@ domain_set:
 - assets-docs.dify.ai
 - widget.docsbot.ai
 - cdn.engagement.ai
+- widget.prod.equally.ai
 - media.evolv.ai
 - participants.evolv.ai
 - cdn.fellou.ai
 - cdn.fera.ai
 - solve-widget.forethought.ai
+- cdn.gist.ai
 - api.instantly.ai
 - bot.ivy.ai
 - metrics.kapa.ai
@@ -3508,6 +3510,7 @@ domain_suffix_set:
 - exp-tas.com
 - externulls.com
 - ezocdn.com
+- f-cdn.com
 - tags.f5.com
 - fakestoreapi.com
 - fastlycdn.com
