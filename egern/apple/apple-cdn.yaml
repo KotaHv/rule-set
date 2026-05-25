@@ -1,4 +1,4 @@
-# Total: 174 rules
+# Total: 157 rules
 no_resolve: true
 domain_suffix_set:
 - appldnld.g.aaplimg.com
@@ -10,7 +10,6 @@ domain_suffix_set:
 - swallow-apple-com.v.aaplimg.com
 - adcdownload.apple.com
 - appldnld.apple.com
-- apps.apple.com
 - cds.apple.com
 - cdsassets.apple.com
 - certs.apple.com
@@ -37,7 +36,6 @@ domain_suffix_set:
 - gs-loc-cn.apple.com
 - guzzoni.apple.com
 - iadsdk.apple.com
-- images.apple.com
 - init-kt.apple.com
 - init-p01md.apple.com
 - ipcdn.apple.com
@@ -54,7 +52,6 @@ domain_suffix_set:
 - gspe19-2-cn-ssl.ls.apple.com
 - gspe19-cn.ls.apple.com
 - gspe19-cn-ssl.ls.apple.com
-- gspe21.ls.apple.com
 - gspe21-ssl.ls.apple.com
 - gspe35-ssl.ls.apple.com
 - gspe79-cn-ssl.ls.apple.com
@@ -66,18 +63,12 @@ domain_suffix_set:
 - oscdn.apple.com
 - pancake.apple.com
 - pba0.apple.com
-- init-p01st.push.apple.com
-- init-s01st.push.apple.com
-- reserve-prime.apple.com
 - sequoia.apple.com
 - sh-pod2-smp-device.apple.com
 - probe.siri.apple.com
 - seed.siri.apple.com
 - seed-sequoia.siri.apple.com
 - seed-swallow.siri.apple.com
-- api-p-ap-c.smoot.apple.com
-- api-p-ap-d.smoot.apple.com
-- api-p-ap-e.smoot.apple.com
 - guzzoni.smoot.apple.com
 - smp-device-content.apple.com
 - stocks-sparkline.apple.com
@@ -109,7 +100,6 @@ domain_suffix_set:
 - app-site-association.cdn-apple.com
 - appleid.cdn-apple.com
 - cstat.cdn-apple.com
-- icloud.cdn-apple.com
 - ml.cdn-apple.com
 - publicassets.cdn-apple.com
 - shazam-insights.cdn-apple.com
@@ -139,20 +129,15 @@ domain_suffix_set:
 - cds.apple.com.akadns.net
 - clientflow.apple.com.akadns.net
 - configuration.apple.com.akadns.net
-- images.apple.com.akadns.net
 - mesu-cdn.apple.com.akadns.net
 - mesu-china.apple.com.akadns.net
-- ocsp-lb.apple.com.akadns.net
-- ocsp2-lb.apple.com.akadns.net
 - stocks-sparkline-lb.apple.com.akadns.net
 - store.storeimages.apple.com.akadns.net
 - swcatalog-cdn.apple.com.akadns.net
 - swdist.apple.com.akadns.net
 - swscan-cdn.apple.com.akadns.net
 - weather-data.apple.com.akadns.net
-- pancake.cdn-apple.com.akadns.net
 - updates-http.cdn-apple.com.akadns.net
-- icloud-cdn.icloud.com.akadns.net
 - itunes-apple.com.akadns.net
 - gspe19-2-cn-ssl.ls-apple.com.akadns.net
 - gspe19-cn.ls-apple.com.akadns.net
@@ -172,6 +157,4 @@ domain_suffix_set:
 - gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net
 - store.apple.com.edgekey.net.globalredir.akadns.net
 - www.apple.com.edgekey.net.globalredir.akadns.net
-- gsp4-cn.ls.apple.com.edgekey.net
 - store.apple.com.edgekey.net
-- www.apple.com.edgekey.net
