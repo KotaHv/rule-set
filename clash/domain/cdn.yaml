@@ -1,4 +1,4 @@
-# Total: 4462 rules
+# Total: 4464 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -2912,6 +2912,7 @@
 - 'm3u8-0.c-spanvideo.org'
 - 'static.c-spanvideo.org'
 - 'ximage.c-spanvideo.org'
+- 'error.c.cdn77.org'
 - 'cdn.cfr.org'
 - 'assets.change.org'
 - 'assets-fe.change.org'
@@ -4059,6 +4060,7 @@
 - '+.characterai.io'
 - '+.cloudimg.io'
 - '+.combinatronics.io'
+- '+.fonts.coollabs.io'
 - '+.corsproxy.io'
 - '+.rum.cronitor.io'
 - '+.crossbell.io'

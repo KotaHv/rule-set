@@ -1,4 +1,4 @@
-# Total: 6382 rules
+# Total: 6384 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2482,6 +2482,7 @@ domain_set:
 - m3u8-0.c-spanvideo.org
 - static.c-spanvideo.org
 - ximage.c-spanvideo.org
+- error.c.cdn77.org
 - lethe.chinstrap.org
 - apache.claz.org
 - moderate.cleantalk.org
@@ -5129,6 +5130,7 @@ domain_suffix_set:
 - compose-spec.io
 - conda.io
 - consul.io
+- fonts.coollabs.io
 - corecode.io
 - corsproxy.io
 - coveralls.io
