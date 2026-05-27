@@ -1,4 +1,4 @@
-# Total: 6387 rules
+# Total: 6389 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -578,6 +578,8 @@ domain_set:
 - cdn.devdojo.com
 - cpan.develooper.com
 - dl.devmate.com
+- updateinfo.devmate.com
+- updates.devmate.com
 - mirror.dewabiz.com
 - cdn.dexscreener.com
 - dd.dexscreener.com

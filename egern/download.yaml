@@ -1,4 +1,4 @@
-# Total: 1948 rules
+# Total: 1950 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -216,6 +216,8 @@ domain_set:
 - addins.deepl.com
 - cpan.develooper.com
 - dl.devmate.com
+- updateinfo.devmate.com
+- updates.devmate.com
 - mirror.dewabiz.com
 - mirror.dimensiondata.com
 - download.dlsite.com
