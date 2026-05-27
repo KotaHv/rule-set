@@ -1,4 +1,4 @@
-# Total: 1738 rules
+# Total: 1745 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -801,6 +801,7 @@ domain_suffix_set:
 - swiftcapital.com
 - swiftfinancial.com
 - synergyse.com
+- system76.com
 - t66y.com
 - tailscale.com
 - tailwindcss.com
@@ -1079,6 +1080,7 @@ domain_suffix_set:
 - datalore.io
 - docker.io
 - draw.io
+- elementary.io
 - etherscan.io
 - explainthis.io
 - firebase.io
@@ -1459,6 +1461,7 @@ domain_suffix_set:
 - getoutline.org
 - getzola.org
 - gmoney.org
+- gnome.org
 - gnu.org
 - go-lang.org
 - godbolt.org
@@ -1494,11 +1497,13 @@ domain_suffix_set:
 - linuxfromscratch.org
 - lua.org
 - lumendatabase.org
+- lxqt-project.org
 - lynxjs.org
 - macosforge.org
 - macports.org
 - macruby.org
 - mariadb.org
+- mate-desktop.org
 - matrix.org
 - mayoclinic.org
 - mcrouter.org
@@ -1543,6 +1548,7 @@ domain_suffix_set:
 - phantomjs.org
 - piwheels.org
 - pixiv.org
+- plasma-mobile.org
 - polymer-project.org
 - polymerproject.org
 - postgresql.org
@@ -1633,6 +1639,7 @@ domain_suffix_set:
 - wordpress.org
 - wpewebkit.org
 - x.org
+- xfce.org
 - xhlive.org
 - xquartz.org
 - ziglang.org

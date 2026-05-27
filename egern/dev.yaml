@@ -1,4 +1,4 @@
-# Total: 557 rules
+# Total: 565 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -232,6 +232,7 @@ domain_suffix_set:
 - strikinglycdn.com
 - sublimetext.com
 - superuser.com
+- system76.com
 - termius.com
 - termux.com
 - thegithubshop.com
@@ -294,6 +295,7 @@ domain_suffix_set:
 - crates.io
 - datalore.io
 - docker.io
+- elementary.io
 - firebase.io
 - fury.io
 - gcr.io
@@ -434,6 +436,7 @@ domain_suffix_set:
 - getcomposer.org
 - getfedora.org
 - getzola.org
+- gnome.org
 - gnu.org
 - go-lang.org
 - godbolt.org
@@ -448,6 +451,7 @@ domain_suffix_set:
 - js.org
 - jupyter.org
 - kali.org
+- kde.org
 - kernel.org
 - kotlinlang.org
 - launchpadlibrarian.org
@@ -456,10 +460,12 @@ domain_suffix_set:
 - linuxfoundation.org
 - linuxfromscratch.org
 - lua.org
+- lxqt-project.org
 - macosforge.org
 - macports.org
 - macruby.org
 - mariadb.org
+- mate-desktop.org
 - mcrouter.org
 - metacpan.org
 - microbit.org
@@ -492,6 +498,7 @@ domain_suffix_set:
 - perl.org
 - phantomjs.org
 - piwheels.org
+- plasma-mobile.org
 - polymer-project.org
 - polymerproject.org
 - postgresql.org
@@ -537,6 +544,7 @@ domain_suffix_set:
 - wireshark.org
 - wpewebkit.org
 - x.org
+- xfce.org
 - ziglang.org
 - zsh.org
 - archlinux.page

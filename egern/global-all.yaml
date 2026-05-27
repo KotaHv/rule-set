@@ -1,4 +1,4 @@
-# Total: 6384 rules
+# Total: 6387 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2520,9 +2520,6 @@ domain_set:
 - media.geeksforgeeks.org
 - dennou-k.gfd-dennou.org
 - download.gimp.org
-- ftp.gnome.org
-- static.gnome.org
-- tileserver.gnome.org
 - www.gnupg.org
 - releases.grapheneos.org
 - ftp.harukasan.org
@@ -4599,6 +4596,7 @@ domain_suffix_set:
 - swtor.com
 - sxccdn.com
 - synergyse.com
+- system76.com
 - t66y.com
 - t8cdn.com
 - tacdn.com
@@ -5143,7 +5141,7 @@ domain_suffix_set:
 - ipfs.denarius.io
 - docker.io
 - draw.io
-- dl.elementary.io
+- elementary.io
 - emotivecdn.io
 - ipfs.eternum.io
 - etherscan.io
@@ -5854,6 +5852,7 @@ domain_suffix_set:
 - getzola.org
 - files.ghostty.org
 - gmoney.org
+- gnome.org
 - gnu.org
 - go-lang.org
 - godbolt.org
@@ -5904,12 +5903,14 @@ domain_suffix_set:
 - lsposed.org
 - lua.org
 - lumendatabase.org
+- lxqt-project.org
 - lynxjs.org
 - macosforge.org
 - macports.org
 - macruby.org
 - maddenseason.org
 - mariadb.org
+- mate-desktop.org
 - matrix.org
 - mayoclinic.org
 - mcrouter.org
@@ -5964,6 +5965,7 @@ domain_suffix_set:
 - phantomjs.org
 - piwheels.org
 - pixiv.org
+- plasma-mobile.org
 - polymer-project.org
 - polymerproject.org
 - postgresql.org
@@ -6077,6 +6079,7 @@ domain_suffix_set:
 - x.org
 - xbox.org
 - xbox360.org
+- xfce.org
 - xhlive.org
 - xquartz.org
 - pgl.yoyo.org
