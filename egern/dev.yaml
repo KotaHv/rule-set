@@ -1,4 +1,4 @@
-# Total: 565 rules
+# Total: 567 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -351,6 +351,7 @@ domain_suffix_set:
 - devopsassessment.net
 - dot.net
 - facebookappcenter.net
+- getpaint.net
 - gitlab.net
 - gitlab-static.net
 - go-lang.net
@@ -371,6 +372,7 @@ domain_suffix_set:
 - newpipe.net
 - osdn.net
 - ospray.net
+- paint.net
 - php.net
 - remirepo.net
 - researchkit.net

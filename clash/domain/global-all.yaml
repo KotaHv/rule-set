@@ -1,4 +1,4 @@
-# Total: 6262 rules
+# Total: 6264 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -5492,6 +5492,7 @@
 - '+.ftcdn.net'
 - '+.futurecdn.net'
 - '+.gaijin.net'
+- '+.getpaint.net'
 - '+.gitlab.net'
 - '+.gitlab-static.net'
 - '+.go-lang.net'
@@ -5614,6 +5615,7 @@
 - '+.ospray.net'
 - '+.mirrors.ovh.net'
 - '+.paily.net'
+- '+.paint.net'
 - '+.pawoo.net'
 - '+.php.net'
 - '+.pinkcore.net'

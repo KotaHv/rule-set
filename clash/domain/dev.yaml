@@ -1,4 +1,4 @@
-# Total: 564 rules
+# Total: 566 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -349,6 +349,7 @@
 - '+.devopsassessment.net'
 - '+.dot.net'
 - '+.facebookappcenter.net'
+- '+.getpaint.net'
 - '+.gitlab.net'
 - '+.gitlab-static.net'
 - '+.go-lang.net'
@@ -369,6 +370,7 @@
 - '+.newpipe.net'
 - '+.osdn.net'
 - '+.ospray.net'
+- '+.paint.net'
 - '+.php.net'
 - '+.remirepo.net'
 - '+.researchkit.net'
