@@ -1,4 +1,4 @@
-# Total: 1950 rules
+# Total: 1951 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -540,6 +540,7 @@ domain_set:
 - packages.termux.dev
 - packages-cf.termux.dev
 - releases.warp.dev
+- mirror.tejas101k.workers.dev
 - mirror.eliv.digital
 - mirrors.fibianet.dk
 - ftp.klid.dk

@@ -1,4 +1,4 @@
-# Total: 1942 rules
+# Total: 1943 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -539,6 +539,7 @@
 - 'packages.termux.dev'
 - 'packages-cf.termux.dev'
 - 'releases.warp.dev'
+- 'mirror.tejas101k.workers.dev'
 - 'mirror.eliv.digital'
 - 'mirrors.fibianet.dk'
 - 'ftp.klid.dk'
