@@ -1,4 +1,4 @@
-# Total: 1729 rules
+# Total: 1730 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -686,6 +686,7 @@
 - '+.poeditor.com'
 - '+.porkbun.com'
 - '+.poshtestgallery.com'
+- '+.posthog.com'
 - '+.postmarkapp.com'
 - '+.pp-soc.com'
 - '+.pppds.com'

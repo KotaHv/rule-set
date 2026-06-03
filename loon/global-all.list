@@ -1,4 +1,4 @@
-# Total: 6406 rules
+# Total: 6403 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -1297,10 +1297,6 @@ DOMAIN,static.politico.com
 DOMAIN,static.polldaddy.com
 DOMAIN,assets.positional-bucket.com
 DOMAIN,mirror.positive-internet.com
-DOMAIN,app-static-prod.posthog.com
-DOMAIN,app-static.eu.posthog.com
-DOMAIN,eu-assets.i.posthog.com
-DOMAIN,us-assets.i.posthog.com
 DOMAIN,content.powerapps.com
 DOMAIN,repo.powerdns.com
 DOMAIN,ui.powerreviews.com
@@ -4278,6 +4274,7 @@ DOMAIN-SUFFIX,poki-cdn.com
 DOMAIN-SUFFIX,popcap.com
 DOMAIN-SUFFIX,porkbun.com
 DOMAIN-SUFFIX,poshtestgallery.com
+DOMAIN-SUFFIX,posthog.com
 DOMAIN-SUFFIX,postmarkapp.com
 DOMAIN-SUFFIX,pp-soc.com
 DOMAIN-SUFFIX,pplusstatic.com

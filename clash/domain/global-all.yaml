@@ -1,4 +1,4 @@
-# Total: 6265 rules
+# Total: 6262 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1298,10 +1298,6 @@
 - 'static.polldaddy.com'
 - 'assets.positional-bucket.com'
 - 'mirror.positive-internet.com'
-- 'app-static-prod.posthog.com'
-- 'app-static.eu.posthog.com'
-- 'eu-assets.i.posthog.com'
-- 'us-assets.i.posthog.com'
 - 'content.powerapps.com'
 - 'repo.powerdns.com'
 - 'ui.powerreviews.com'
@@ -4279,6 +4275,7 @@
 - '+.popcap.com'
 - '+.porkbun.com'
 - '+.poshtestgallery.com'
+- '+.posthog.com'
 - '+.postmarkapp.com'
 - '+.pp-soc.com'
 - '+.pplusstatic.com'
