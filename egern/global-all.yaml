@@ -1,4 +1,4 @@
-# Total: 6389 rules
+# Total: 6392 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1101,6 +1101,7 @@ domain_set:
 - cdn.minecraft-server-list.com
 - cdn.miohentai.com
 - assets4.mist-train-girls.com
+- bn.d.miui.com
 - cdnorg.d.miui.com
 - mirrors.mivocloud.com
 - imagecdn.mixlr.com
@@ -2155,6 +2156,7 @@ domain_set:
 - mirror.as43289.net
 - damassets.autodesk.net
 - amp.azure.net
+- cdn-ota.azureedge.net
 - claritystatic.azureedge.net
 - edge-cloud-resource-static.azureedge.net
 - edge-consumer-static.azureedge.net
@@ -2564,6 +2566,7 @@ domain_set:
 - s2.animeko.openani.org
 - tile2.opencyclemap.org
 - ciscobinary.openh264.org
+- assets.openlogi.org
 - tiles.openrailwaymap.org
 - tiles.openseamap.org
 - tiles.maps.opensearch.org

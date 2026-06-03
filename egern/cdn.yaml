@@ -1,4 +1,4 @@
-# Total: 4545 rules
+# Total: 4546 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2980,6 +2980,7 @@ domain_set:
 - tile2.opencyclemap.org
 - tiles.openfreemap.org
 - covers.openlibrary.org
+- assets.openlogi.org
 - tiles.openrailwaymap.org
 - tiles.openseamap.org
 - tiles.maps.opensearch.org

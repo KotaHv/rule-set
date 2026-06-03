@@ -1,4 +1,4 @@
-# Total: 1943 rules
+# Total: 1945 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -330,6 +330,7 @@
 - 'mirrors.middlendian.com'
 - 'download.mikrotik.com'
 - 'apache.mindstudios.com'
+- 'bn.d.miui.com'
 - 'cdnorg.d.miui.com'
 - 'mirrors.mivocloud.com'
 - 'ubuntu.mobinhost.com'
@@ -866,6 +867,7 @@
 - 'mirror.as29550.net'
 - 'mirror.as35701.net'
 - 'mirror.as43289.net'
+- 'cdn-ota.azureedge.net'
 - 'pf-cdn-content-prod.azureedge.net'
 - 'playwright.azureedge.net'
 - 'playwright-akamai.azureedge.net'

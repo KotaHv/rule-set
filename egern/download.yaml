@@ -1,4 +1,4 @@
-# Total: 1951 rules
+# Total: 1953 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -331,6 +331,7 @@ domain_set:
 - mirrors.middlendian.com
 - download.mikrotik.com
 - apache.mindstudios.com
+- bn.d.miui.com
 - cdnorg.d.miui.com
 - mirrors.mivocloud.com
 - ubuntu.mobinhost.com
@@ -867,6 +868,7 @@ domain_set:
 - mirror.as29550.net
 - mirror.as35701.net
 - mirror.as43289.net
+- cdn-ota.azureedge.net
 - pf-cdn-content-prod.azureedge.net
 - playwright.azureedge.net
 - playwright-akamai.azureedge.net
