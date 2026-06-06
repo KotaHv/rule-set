@@ -1,4 +1,4 @@
-# Total: 566 rules
+# Total: 570 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -115,6 +115,7 @@
 - '+.braventures.com'
 - '+.braveux.com'
 - '+.buckbuild.com'
+- '+.bugsnag.com'
 - '+.canonical.com'
 - '+.codethemicrobit.com'
 - '+.cygwin.com'
@@ -301,6 +302,7 @@
 - '+.ghcr.io'
 - '+.git.io'
 - '+.gitbook.io'
+- '+.gitgud.io'
 - '+.github.io'
 - '+.gitlab.io'
 - '+.graphengine.io'
@@ -425,6 +427,7 @@
 - '+.fedorapeople.org'
 - '+.fedoraproject.org'
 - '+.ffmpeg.org'
+- '+.filezilla-project.org'
 - '+.flathub.org'
 - '+.flatpak.org'
 - '+.flow.org'
@@ -474,6 +477,7 @@
 - '+.mingw.org'
 - '+.mochajs.org'
 - '+.mongodb.org'
+- '+.msys2.org'
 - '+.netfilter.org'
 - '+.nftables.org'
 - '+.nginx.org'

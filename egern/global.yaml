@@ -1,4 +1,4 @@
-# Total: 1748 rules
+# Total: 1753 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -224,6 +224,7 @@ domain_suffix_set:
 - braveux.com
 - broadcom.com
 - buckbuild.com
+- bugsnag.com
 - businessinsider.com
 - bybit.com
 - bycsi.com
@@ -1095,6 +1096,7 @@ domain_suffix_set:
 - ghcr.io
 - git.io
 - gitbook.io
+- gitgud.io
 - github.io
 - gitlab.io
 - globalping.io
@@ -1449,6 +1451,7 @@ domain_suffix_set:
 - fedorapeople.org
 - fedoraproject.org
 - ffmpeg.org
+- filezilla-project.org
 - flathub.org
 - flatpak.org
 - flow.org
@@ -1519,6 +1522,7 @@ domain_suffix_set:
 - mochajs.org
 - mongodb.org
 - mozilla.org
+- msys2.org
 - netfilter.org
 - nextjs.org
 - nftables.org
@@ -1710,6 +1714,7 @@ domain_suffix_set:
 - pscp.tv
 - pypl.tv
 - researchkit.tv
+- trakt.tv
 - twitch.tv
 - tw
 - uk

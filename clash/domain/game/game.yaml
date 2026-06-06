@@ -1,4 +1,4 @@
-# Total: 778 rules
+# Total: 779 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -71,6 +71,7 @@
 - 'roblox-poc.global.ssl.fastly.net'
 - 'f3b7q2p3.ssl.hwcdn.net'
 - 'a4e8s8k3.map2.ssl.hwcdn.net'
+- 'hb.imgix.net'
 - 'robloxcorp.s.llnwi.net'
 - 'ea.tt.omtrdc.net'
 - 'prodforza.blob.core.windows.net'

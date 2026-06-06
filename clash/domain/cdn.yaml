@@ -1,4 +1,4 @@
-# Total: 4468 rules
+# Total: 4472 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1271,6 +1271,7 @@
 - 'asset.mansionglobal.com'
 - 'mantisloader.mantis-awx.com'
 - 'loader.mantis-intelligence.com'
+- 'b.manufact.com'
 - 'img.manyse.com'
 - 'test.manyse.com'
 - 'static-assets.mapbox.com'
@@ -1376,6 +1377,7 @@
 - 'stream.mux.com'
 - 'appassets.mvtdev.com'
 - 'int.mwbbiz.com'
+- 'uploadcare.mwcglobalprofile.com'
 - 'i.mydramalist.com'
 - 'cms.myfonts.com'
 - 'static-webfonts.myfonts.com'
@@ -3185,6 +3187,8 @@
 - 'images.pluto.tv'
 - 'static-homepage-en.pluto.tv'
 - 'static.tella.tv'
+- 'media.trakt.tv'
+- 'walter-r2.trakt.tv'
 - 'assets.twitch.tv'
 - 'clips-media-assets2.twitch.tv'
 - 'embed.twitch.tv'

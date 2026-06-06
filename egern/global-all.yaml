@@ -1,4 +1,4 @@
-# Total: 6394 rules
+# Total: 6399 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1042,6 +1042,7 @@ domain_set:
 - asset.mansionglobal.com
 - mantisloader.mantis-awx.com
 - loader.mantis-intelligence.com
+- b.manufact.com
 - img.manyse.com
 - test.manyse.com
 - tiles2.mapiful.com
@@ -1138,6 +1139,7 @@ domain_set:
 - mirror.mvizn.com
 - appassets.mvtdev.com
 - int.mwbbiz.com
+- uploadcare.mwcglobalprofile.com
 - download.mxfast.com
 - i.mydramalist.com
 - cms.myfonts.com
@@ -3191,8 +3193,7 @@ domain_suffix_set:
 - bstarstatic.com
 - bstatic.com
 - buckbuild.com
-- notify.bugsnag.com
-- sessions.bugsnag.com
+- bugsnag.com
 - bunnycdn.com
 - businessinsider.com
 - bybit.com
@@ -5164,6 +5165,7 @@ domain_suffix_set:
 - ghcr.io
 - git.io
 - gitbook.io
+- gitgud.io
 - github.io
 - gitlab.io
 - globalping.io
@@ -5841,6 +5843,7 @@ domain_suffix_set:
 - fedorapeople.org
 - fedoraproject.org
 - ffmpeg.org
+- filezilla-project.org
 - flathub.org
 - flatpak.org
 - flow.org
@@ -5931,6 +5934,7 @@ domain_suffix_set:
 - mochajs.org
 - mongodb.org
 - mozilla.org
+- msys2.org
 - mirrors.tds.net.org
 - netfilter.org
 - nextjs.org
@@ -6217,6 +6221,7 @@ domain_suffix_set:
 - roblox.tv
 - steam.tv
 - storry.tv
+- trakt.tv
 - twitch.tv
 - viu.tv
 - tw

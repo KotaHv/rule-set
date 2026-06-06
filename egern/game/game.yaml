@@ -1,4 +1,4 @@
-# Total: 779 rules
+# Total: 780 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -72,6 +72,7 @@ domain_set:
 - roblox-poc.global.ssl.fastly.net
 - f3b7q2p3.ssl.hwcdn.net
 - a4e8s8k3.map2.ssl.hwcdn.net
+- hb.imgix.net
 - robloxcorp.s.llnwi.net
 - ea.tt.omtrdc.net
 - prodforza.blob.core.windows.net

@@ -1,4 +1,4 @@
-# Total: 1730 rules
+# Total: 1735 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -222,6 +222,7 @@
 - '+.braveux.com'
 - '+.broadcom.com'
 - '+.buckbuild.com'
+- '+.bugsnag.com'
 - '+.businessinsider.com'
 - '+.bybit.com'
 - '+.bycsi.com'
@@ -1093,6 +1094,7 @@
 - '+.ghcr.io'
 - '+.git.io'
 - '+.gitbook.io'
+- '+.gitgud.io'
 - '+.github.io'
 - '+.gitlab.io'
 - '+.globalping.io'
@@ -1447,6 +1449,7 @@
 - '+.fedorapeople.org'
 - '+.fedoraproject.org'
 - '+.ffmpeg.org'
+- '+.filezilla-project.org'
 - '+.flathub.org'
 - '+.flatpak.org'
 - '+.flow.org'
@@ -1517,6 +1520,7 @@
 - '+.mochajs.org'
 - '+.mongodb.org'
 - '+.mozilla.org'
+- '+.msys2.org'
 - '+.netfilter.org'
 - '+.nextjs.org'
 - '+.nftables.org'
@@ -1708,6 +1712,7 @@
 - '+.pscp.tv'
 - '+.pypl.tv'
 - '+.researchkit.tv'
+- '+.trakt.tv'
 - '+.twitch.tv'
 - '+.tw'
 - '+.uk'
