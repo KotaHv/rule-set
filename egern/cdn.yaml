@@ -1,4 +1,4 @@
-# Total: 4552 rules
+# Total: 4553 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -741,6 +741,7 @@ domain_set:
 - cdn.evbstatic.com
 - cdntranscend.eventbrite.com
 - images.everyplate.com
+- cdn.evgnet.com
 - web-sdk.eyefitu.com
 - web-sdk-cdn.eyefitu.com
 - cdn.f5.com
