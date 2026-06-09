@@ -1,4 +1,4 @@
-# Total: 6276 rules
+# Total: 6278 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2161,6 +2161,7 @@
 - 'mirror.as43289.net'
 - 'damassets.autodesk.net'
 - 'amp.azure.net'
+- 'catalogartifact.azureedge.net'
 - 'cdn-ota.azureedge.net'
 - 'claritystatic.azureedge.net'
 - 'edge-cloud-resource-static.azureedge.net'
@@ -2408,6 +2409,7 @@
 - 'debian-archive.trafficmanager.net'
 - 'vscode-sync.trafficmanager.net'
 - 'vscode-sync-insiders.trafficmanager.net'
+- 'assets.transfernow.net'
 - 'mirror.transip.net'
 - 'download-core.sys.truenas.net'
 - 'components.trynow.net'

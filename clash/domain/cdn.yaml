@@ -1,4 +1,4 @@
-# Total: 4477 rules
+# Total: 4480 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -440,6 +440,7 @@
 - 'safebrowsing.brave.com'
 - 'cdn.search.brave.com'
 - 'imgs.search.brave.com'
+- 'variations.brave.com'
 - 'detectportal.brave-http-only.com'
 - 'assets.bravenet.com'
 - 'static.bravoporn.com'
@@ -2655,6 +2656,7 @@
 - 'cdn.arstechnica.net'
 - 'damassets.autodesk.net'
 - 'amp.azure.net'
+- 'catalogartifact.azureedge.net'
 - 'claritystatic.azureedge.net'
 - 'edge-cloud-resource-static.azureedge.net'
 - 'edge-consumer-static.azureedge.net'
@@ -2837,6 +2839,7 @@
 - 'torrindex.net'
 - 'vscode-sync.trafficmanager.net'
 - 'vscode-sync-insiders.trafficmanager.net'
+- 'assets.transfernow.net'
 - 'components.trynow.net'
 - 'static.twitchcdn.net'
 - 'p.typekit.net'

@@ -1,4 +1,4 @@
-# Total: 4498 rules
+# Total: 4501 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -439,6 +439,7 @@ DOMAIN,js.braintreegateway.com
 DOMAIN,safebrowsing.brave.com
 DOMAIN,cdn.search.brave.com
 DOMAIN,imgs.search.brave.com
+DOMAIN,variations.brave.com
 DOMAIN,detectportal.brave-http-only.com
 DOMAIN,assets.bravenet.com
 DOMAIN,static.bravoporn.com
@@ -2654,6 +2655,7 @@ DOMAIN,s3.arkjp.net
 DOMAIN,cdn.arstechnica.net
 DOMAIN,damassets.autodesk.net
 DOMAIN,amp.azure.net
+DOMAIN,catalogartifact.azureedge.net
 DOMAIN,claritystatic.azureedge.net
 DOMAIN,edge-cloud-resource-static.azureedge.net
 DOMAIN,edge-consumer-static.azureedge.net
@@ -2836,6 +2838,7 @@ DOMAIN,cdn.tokyo-motion.net
 DOMAIN,torrindex.net
 DOMAIN,vscode-sync.trafficmanager.net
 DOMAIN,vscode-sync-insiders.trafficmanager.net
+DOMAIN,assets.transfernow.net
 DOMAIN,components.trynow.net
 DOMAIN,static.twitchcdn.net
 DOMAIN,p.typekit.net

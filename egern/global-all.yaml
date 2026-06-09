@@ -1,4 +1,4 @@
-# Total: 6403 rules
+# Total: 6405 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2162,6 +2162,7 @@ domain_set:
 - mirror.as43289.net
 - damassets.autodesk.net
 - amp.azure.net
+- catalogartifact.azureedge.net
 - cdn-ota.azureedge.net
 - claritystatic.azureedge.net
 - edge-cloud-resource-static.azureedge.net
@@ -2409,6 +2410,7 @@ domain_set:
 - debian-archive.trafficmanager.net
 - vscode-sync.trafficmanager.net
 - vscode-sync-insiders.trafficmanager.net
+- assets.transfernow.net
 - mirror.transip.net
 - download-core.sys.truenas.net
 - components.trynow.net
