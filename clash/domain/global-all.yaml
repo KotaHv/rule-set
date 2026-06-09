@@ -1,4 +1,4 @@
-# Total: 6273 rules
+# Total: 6276 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -585,6 +585,7 @@
 - 'api.dicebear.com'
 - 'avatars.dicebear.com'
 - 'cacerts.digicert.com'
+- 'crl3.digicert.com'
 - 'ocsp.digicert.com'
 - 'chat.digitalgenius.com'
 - 'ui-cdn.digitalocean-ui.com'
@@ -2053,6 +2054,7 @@
 - 'wl-apps.yourwebsite.life'
 - 'disco.headliner.link'
 - 'nightly.link'
+- 'edge.zerofs.link'
 - 'cdn.koala.live'
 - 'maps.wplace.live'
 - 'media.webtoo.ls'
@@ -5690,6 +5692,7 @@
 - '+.swtor.net'
 - '+.syncthing.net'
 - '+.sysctl-explorer.net'
+- '+.t-assets.net'
 - '+.tampermonkey.net'
 - '+.tapecontent.net'
 - '+.mirrors.tds.net'

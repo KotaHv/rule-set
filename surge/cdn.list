@@ -1,4 +1,4 @@
-# Total: 4553 rules
+# Total: 4557 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -653,6 +653,7 @@ DOMAIN,api.dicebear.com
 DOMAIN,avatars.dicebear.com
 DOMAIN,assets.dictionary.com
 DOMAIN,cacerts.digicert.com
+DOMAIN,crl3.digicert.com
 DOMAIN,ocsp.digicert.com
 DOMAIN,chat.digitalgenius.com
 DOMAIN,anchor.digitalocean.com
@@ -754,6 +755,7 @@ DOMAIN,staticm.fastcomments.com
 DOMAIN,img.fastcybers.com
 DOMAIN,assets.fastly.com
 DOMAIN,google-ohttp-relay-safebrowsing.fastly-edge.com
+DOMAIN,mozilla-ohttp.fastly-edge.com
 DOMAIN,ohttp-relay1.fastly-edge.com
 DOMAIN,aimg.fc2.com
 DOMAIN,contents-thumbnail2.fc2.com
@@ -2936,6 +2938,7 @@ DOMAIN,s3.documentcloud.org
 DOMAIN,eslint.org
 DOMAIN,assets.exercism.org
 DOMAIN,media.fidoalliance.org
+DOMAIN,imgproxy.flathub.org
 DOMAIN,cdn.fosstodon.org
 DOMAIN,cdn.freecodecamp.org
 DOMAIN,cdn-media-0.freecodecamp.org
@@ -4289,6 +4292,7 @@ DOMAIN-SUFFIX,smmallcdn.net
 DOMAIN-SUFFIX,sstatic.net
 DOMAIN-SUFFIX,staticstack.net
 DOMAIN-SUFFIX,staticworld.net
+DOMAIN-SUFFIX,t-assets.net
 DOMAIN-SUFFIX,tapecontent.net
 DOMAIN-SUFFIX,tildacdn.net
 DOMAIN-SUFFIX,turboimg.net

@@ -1,4 +1,4 @@
-# Total: 3220 rules
+# Total: 3222 rules
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1057,6 +1057,8 @@
 - 'speedtest.sc1.loopinternet.com'
 - 'speedtest.wb1.loopinternet.com'
 - 'librespeed.lukas-heinrich.com'
+- 'kr1-speedtest-infra.lunaiz.com'
+- 'kr2-speedtest-infra.lunaiz.com'
 - 'speedtest.lungustefan.com'
 - 'spd1.m5hosting.com'
 - 'speedtest.maanglobalnetworks.com'

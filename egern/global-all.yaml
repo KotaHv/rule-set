@@ -1,4 +1,4 @@
-# Total: 6400 rules
+# Total: 6403 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -586,6 +586,7 @@ domain_set:
 - api.dicebear.com
 - avatars.dicebear.com
 - cacerts.digicert.com
+- crl3.digicert.com
 - ocsp.digicert.com
 - chat.digitalgenius.com
 - ui-cdn.digitalocean-ui.com
@@ -2054,6 +2055,7 @@ domain_set:
 - wl-apps.yourwebsite.life
 - disco.headliner.link
 - nightly.link
+- edge.zerofs.link
 - cdn.koala.live
 - maps.wplace.live
 - media.webtoo.ls
@@ -5692,6 +5694,7 @@ domain_suffix_set:
 - swtor.net
 - syncthing.net
 - sysctl-explorer.net
+- t-assets.net
 - tampermonkey.net
 - tapecontent.net
 - mirrors.tds.net
