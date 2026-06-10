@@ -1,4 +1,4 @@
-# Total: 1753 rules
+# Total: 1764 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -316,6 +316,7 @@ domain_suffix_set:
 - dynv6.com
 - economist.com
 - elasticbeanstalk.com
+- elegantthemes.com
 - embedly.com
 - engadget.com
 - etsy.com
@@ -580,6 +581,7 @@ domain_suffix_set:
 - moomoo.com
 - mooo.com
 - motherless.com
+- motopress.com
 - moviefap.com
 - mozilla.com
 - msdn.com
@@ -888,6 +890,7 @@ domain_suffix_set:
 - vice.com
 - victoriassecret.com
 - videojs.com
+- videopress.com
 - vikacg.com
 - vimeo.com
 - visualstudio.com
@@ -929,6 +932,9 @@ domain_suffix_set:
 - wordtune.com
 - workday.com
 - wp.com
+- wp-themes.com
+- wpmailsmtp.com
+- wpvip.com
 - wsj.com
 - wwwxoom.com
 - x.com
@@ -1104,6 +1110,7 @@ domain_suffix_set:
 - graphengine.io
 - greenhouse.io
 - hackmd.io
+- hivepress.io
 - holopin.io
 - home-assistant.io
 - hyperscan.io
@@ -1372,6 +1379,7 @@ domain_suffix_set:
 - waifu2x.net
 - whoer.net
 - windows.net
+- wordpress.net
 - wsj.net
 - yandex.net
 - zerochan.net
@@ -1617,6 +1625,7 @@ domain_suffix_set:
 - vfsforgit.org
 - videolan.org
 - vim.org
+- w.org
 - waveprotocol.org
 - waybackmachine.org
 - webkit.org
@@ -1643,6 +1652,7 @@ domain_suffix_set:
 - wireshark.org
 - wmflabs.org
 - wmfusercontent.org
+- wordcamp.org
 - wordpress.org
 - wpewebkit.org
 - x.org
@@ -1716,6 +1726,7 @@ domain_suffix_set:
 - researchkit.tv
 - trakt.tv
 - twitch.tv
+- wordpress.tv
 - tw
 - uk
 - us

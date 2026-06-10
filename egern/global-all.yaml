@@ -1,4 +1,4 @@
-# Total: 6405 rules
+# Total: 6414 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2634,8 +2634,6 @@ domain_set:
 - tiles.versatiles.org
 - kebo.vlsm.org
 - vuejs.org
-- ps.w.org
-- s.w.org
 - tile.waymarkedtrails.org
 - releases.whatpulse.org
 - resources.whatwg.org
@@ -3442,6 +3440,7 @@ domain_suffix_set:
 - elasticbeanstalk.com
 - elderscrolls.com
 - electronicarts.com
+- elegantthemes.com
 - els-cdn.com
 - embark-studios.com
 - embedgram.com
@@ -4009,6 +4008,7 @@ domain_suffix_set:
 - mooo.com
 - motherless.com
 - motherlessmedia.com
+- motopress.com
 - moviefap.com
 - mozilla.com
 - msdn.com
@@ -4785,6 +4785,7 @@ domain_suffix_set:
 - vice.com
 - victoriassecret.com
 - videojs.com
+- videopress.com
 - vigorgame.com
 - vikacg.com
 - vimeo.com
@@ -4875,8 +4876,11 @@ domain_suffix_set:
 - wowmodels.com
 - wowsblitz.com
 - wp.com
+- wp-themes.com
 - wpcomstaging.com
+- wpmailsmtp.com
 - wpmucdn.com
+- wpvip.com
 - wsimg.com
 - wsj.com
 - wtmobile.com
@@ -5180,6 +5184,7 @@ domain_suffix_set:
 - gw3.io
 - hackmd.io
 - hayabusa.io
+- hivepress.io
 - holopin.io
 - home-assistant.io
 - hyperscan.io
@@ -5738,6 +5743,7 @@ domain_suffix_set:
 - widencdn.net
 - wiivc.net
 - windows.net
+- wordpress.net
 - wsj.net
 - xn--mts47c3w9b1qr.net
 - yandex.net
@@ -6065,6 +6071,7 @@ domain_suffix_set:
 - vfsforgit.org
 - videolan.org
 - vim.org
+- w.org
 - waveprotocol.org
 - waybackmachine.org
 - webkit.org
@@ -6091,6 +6098,7 @@ domain_suffix_set:
 - wireshark.org
 - wmflabs.org
 - wmfusercontent.org
+- wordcamp.org
 - wordpress.org
 - wpewebkit.org
 - x.org
@@ -6230,6 +6238,7 @@ domain_suffix_set:
 - trakt.tv
 - twitch.tv
 - viu.tv
+- wordpress.tv
 - tw
 - uk
 - us

@@ -1,4 +1,4 @@
-# Total: 571 rules
+# Total: 585 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -122,6 +122,7 @@ DOMAIN-SUFFIX,deno.com
 DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,dockerstatic.com
+DOMAIN-SUFFIX,elegantthemes.com
 DOMAIN-SUFFIX,embedly.com
 DOMAIN-SUFFIX,f8.com
 DOMAIN-SUFFIX,facebookconnect.com
@@ -187,6 +188,7 @@ DOMAIN-SUFFIX,microsoftsqlserver.com
 DOMAIN-SUFFIX,mmdnn.com
 DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,mono-project.com
+DOMAIN-SUFFIX,motopress.com
 DOMAIN-SUFFIX,msdn.com
 DOMAIN-SUFFIX,msinnovationchallenge.com
 DOMAIN-SUFFIX,mspairlift.com
@@ -248,10 +250,16 @@ DOMAIN-SUFFIX,vagrantcloud.com
 DOMAIN-SUFFIX,vagrantup.com
 DOMAIN-SUFFIX,vfsforgit.com
 DOMAIN-SUFFIX,videojs.com
+DOMAIN-SUFFIX,videopress.com
 DOMAIN-SUFFIX,visualstudio.com
 DOMAIN-SUFFIX,visualstudio-staging.com
 DOMAIN-SUFFIX,webflow.com
 DOMAIN-SUFFIX,webobjects.com
+DOMAIN-SUFFIX,wordpress.com
+DOMAIN-SUFFIX,wp.com
+DOMAIN-SUFFIX,wp-themes.com
+DOMAIN-SUFFIX,wpmailsmtp.com
+DOMAIN-SUFFIX,wpvip.com
 DOMAIN-SUFFIX,xamarin.com
 DOMAIN-SUFFIX,yarnpkg.com
 DOMAIN-SUFFIX,yogalayout.com
@@ -305,6 +313,7 @@ DOMAIN-SUFFIX,gitgud.io
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,gitlab.io
 DOMAIN-SUFFIX,graphengine.io
+DOMAIN-SUFFIX,hivepress.io
 DOMAIN-SUFFIX,hyperscan.io
 DOMAIN-SUFFIX,ius.io
 DOMAIN-SUFFIX,jenkins.io
@@ -387,6 +396,7 @@ DOMAIN-SUFFIX,ubuntu.net
 DOMAIN-SUFFIX,visualstudio.net
 DOMAIN-SUFFIX,vscode-cdn.net
 DOMAIN-SUFFIX,vscode-unpkg.net
+DOMAIN-SUFFIX,wordpress.net
 DOMAIN-SUFFIX,repo.new
 DOMAIN-SUFFIX,01.org
 DOMAIN-SUFFIX,alpinelinux.org
@@ -541,10 +551,13 @@ DOMAIN-SUFFIX,v8project.org
 DOMAIN-SUFFIX,vfsforgit.org
 DOMAIN-SUFFIX,videolan.org
 DOMAIN-SUFFIX,vim.org
+DOMAIN-SUFFIX,w.org
 DOMAIN-SUFFIX,webkit.org
 DOMAIN-SUFFIX,webkitgtk.org
 DOMAIN-SUFFIX,weblate.org
 DOMAIN-SUFFIX,wireshark.org
+DOMAIN-SUFFIX,wordcamp.org
+DOMAIN-SUFFIX,wordpress.org
 DOMAIN-SUFFIX,wpewebkit.org
 DOMAIN-SUFFIX,x.org
 DOMAIN-SUFFIX,xfce.org
@@ -565,6 +578,7 @@ DOMAIN-SUFFIX,jetbrains.team
 DOMAIN-SUFFIX,dev.to
 DOMAIN-SUFFIX,fastlane.tools
 DOMAIN-SUFFIX,researchkit.tv
+DOMAIN-SUFFIX,wordpress.tv
 DOMAIN-SUFFIX,visualstudio.co.uk
 DOMAIN-SUFFIX,greenend.org.uk
 DOMAIN-SUFFIX,framer.website
