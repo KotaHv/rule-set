@@ -1,4 +1,4 @@
-# Total: 1764 rules
+# Total: 1767 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -291,6 +291,7 @@ domain_suffix_set:
 - dialogflow.com
 - dictionary.com
 - digitalocean.com
+- discourse-cdn.com
 - dish.com
 - disqus.com
 - distrowatch.com
@@ -389,6 +390,7 @@ domain_suffix_set:
 - getchu.com
 - gettyimages.com
 - ggpht.com
+- ghe.com
 - ghostery.com
 - girlsgogames.com
 - git-scm.com
@@ -1438,6 +1440,7 @@ domain_suffix_set:
 - cython.org
 - dartlang.org
 - debian.org
+- discourse.org
 - dnschecker.org
 - dnsleaktest.org
 - dotdeb.org

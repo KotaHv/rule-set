@@ -1,4 +1,4 @@
-# Total: 584 rules
+# Total: 588 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -120,6 +120,7 @@ DOMAIN-SUFFIX,codethemicrobit.com
 DOMAIN-SUFFIX,cygwin.com
 DOMAIN-SUFFIX,deno.com
 DOMAIN-SUFFIX,dependabot.com
+DOMAIN-SUFFIX,discourse-cdn.com
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,dockerstatic.com
 DOMAIN-SUFFIX,elegantthemes.com
@@ -148,6 +149,7 @@ DOMAIN-SUFFIX,framerusercontent.com
 DOMAIN-SUFFIX,gamesstack.com
 DOMAIN-SUFFIX,gemfury.com
 DOMAIN-SUFFIX,getbootstrap.com
+DOMAIN-SUFFIX,ghe.com
 DOMAIN-SUFFIX,git-scm.com
 DOMAIN-SUFFIX,gitbook.com
 DOMAIN-SUFFIX,github.com
@@ -283,6 +285,7 @@ DOMAIN-SUFFIX,stackoverflow.email
 DOMAIN-SUFFIX,visualstudio.eu
 DOMAIN-SUFFIX,lfai.foundation
 DOMAIN-SUFFIX,jb.gg
+DOMAIN-SUFFIX,discourse.group
 DOMAIN-SUFFIX,opensource.guide
 DOMAIN-SUFFIX,fury.help
 DOMAIN-SUFFIX,stackoverflow.help
@@ -423,6 +426,7 @@ DOMAIN-SUFFIX,cve.org
 DOMAIN-SUFFIX,cython.org
 DOMAIN-SUFFIX,dartlang.org
 DOMAIN-SUFFIX,debian.org
+DOMAIN-SUFFIX,discourse.org
 DOMAIN-SUFFIX,dotdeb.org
 DOMAIN-SUFFIX,draftjs.org
 DOMAIN-SUFFIX,electronjs.org

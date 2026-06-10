@@ -1,4 +1,4 @@
-# Total: 585 rules
+# Total: 589 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -123,6 +123,7 @@ domain_suffix_set:
 - cygwin.com
 - deno.com
 - dependabot.com
+- discourse-cdn.com
 - docker.com
 - dockerstatic.com
 - elegantthemes.com
@@ -151,6 +152,7 @@ domain_suffix_set:
 - gamesstack.com
 - gemfury.com
 - getbootstrap.com
+- ghe.com
 - git-scm.com
 - gitbook.com
 - github.com
@@ -286,6 +288,7 @@ domain_suffix_set:
 - visualstudio.eu
 - lfai.foundation
 - jb.gg
+- discourse.group
 - opensource.guide
 - fury.help
 - stackoverflow.help
@@ -426,6 +429,7 @@ domain_suffix_set:
 - cython.org
 - dartlang.org
 - debian.org
+- discourse.org
 - dotdeb.org
 - draftjs.org
 - electronjs.org

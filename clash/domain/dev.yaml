@@ -1,4 +1,4 @@
-# Total: 584 rules
+# Total: 588 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -121,6 +121,7 @@
 - '+.cygwin.com'
 - '+.deno.com'
 - '+.dependabot.com'
+- '+.discourse-cdn.com'
 - '+.docker.com'
 - '+.dockerstatic.com'
 - '+.elegantthemes.com'
@@ -149,6 +150,7 @@
 - '+.gamesstack.com'
 - '+.gemfury.com'
 - '+.getbootstrap.com'
+- '+.ghe.com'
 - '+.git-scm.com'
 - '+.gitbook.com'
 - '+.github.com'
@@ -284,6 +286,7 @@
 - '+.visualstudio.eu'
 - '+.lfai.foundation'
 - '+.jb.gg'
+- '+.discourse.group'
 - '+.opensource.guide'
 - '+.fury.help'
 - '+.stackoverflow.help'
@@ -424,6 +427,7 @@
 - '+.cython.org'
 - '+.dartlang.org'
 - '+.debian.org'
+- '+.discourse.org'
 - '+.dotdeb.org'
 - '+.draftjs.org'
 - '+.electronjs.org'

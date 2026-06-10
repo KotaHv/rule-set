@@ -1,4 +1,4 @@
-# Total: 3222 rules
+# Total: 3226 rules
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -7,6 +7,7 @@
 - 'sg.cloudhost.asia'
 - 'speedtest.blizznet.at'
 - 'speed.cablelink.at'
+- 'speedy-ookla.cablelink.at'
 - 'speedtest.cablevision.at'
 - 'speedtest.citynet.at'
 - 'speedtest.drei.at'
@@ -1317,6 +1318,7 @@
 - 'stwoodstock.rogers.com'
 - 'stwoodstockwireless.rogers.com'
 - 'speedtest.roweinternet.com'
+- 'speedtest.rpmgllc.com'
 - 'rsghost.rsgsn.com'
 - 'chispeedtest.rtatel.com'
 - 'dalspeedtest.rtatel.com'
@@ -2430,6 +2432,7 @@
 - 'speedtest.kabelnoord.net'
 - 'speedtest-kc.kanren.net'
 - 'speedtest-wichita.kanren.net'
+- 'speedtest2-kc.kanren.net'
 - 'speedtest.kapper.net'
 - 'speedtest.kazzara.net'
 - 'perf.keyyo.net'
@@ -2581,6 +2584,7 @@
 - 'mit1.speedtest.mire.sfr.net'
 - 'nic2.speedtest.mire.sfr.net'
 - 'ren1.speedtest.mire.sfr.net'
+- 'tls3.speedtest.mire.sfr.net'
 - 'speedtest.ams.sharktech.net'
 - 'amsspeed.sharktech.net'
 - 'ookla.la.ca.sharktech.net'

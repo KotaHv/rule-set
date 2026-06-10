@@ -1,4 +1,4 @@
-# Total: 780 rules
+# Total: 784 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -217,7 +217,6 @@ domain_suffix_set:
 - elderscrolls.com
 - electronicarts.com
 - embark-studios.com
-- eneba.com
 - epicgames.com
 - epicgamescdn.com
 - escapefromtarkov.com
@@ -226,6 +225,7 @@ domain_suffix_set:
 - faceit.com
 - fanatical.com
 - egdownload.fastly-edge.com
+- ficgs.com
 - fifastreet.com
 - fifastreet3.com
 - fire-emblem-heroes.com
@@ -242,6 +242,8 @@ domain_suffix_set:
 - gaijinent.com
 - gamepass.com
 - gamesfirsthelsinki.com
+- gamesplanet.com
+- gametap.com
 - garena.com
 - garenanow.com
 - genshinimpact.com
@@ -253,6 +255,7 @@ domain_suffix_set:
 - gog.com
 - gog-statics.com
 - gooblox.com
+- gpstatic.com
 - hackyourconsole.com
 - hayday.com
 - haydaygame.com
@@ -596,7 +599,6 @@ domain_suffix_set:
 - cubicodyssey.game
 - beth.games
 - embark.games
-- eneba.games
 - op.gg
 - stellasora.global
 - nintendo.com.hk
@@ -646,6 +648,7 @@ domain_suffix_set:
 - leagueoflegends.co.kr
 - lolshop.co.kr
 - nexoncdn.co.kr
+- nexongames.co.kr
 - nintendo.co.kr
 - riotgames.co.kr
 - leagueoflegends.kr
@@ -692,6 +695,7 @@ domain_suffix_set:
 - mythicentertainment.net
 - nentindo.net
 - neoforged.net
+- nexon.net
 - nintendo.net
 - nintendonetwork.net
 - nintendoswitch.net

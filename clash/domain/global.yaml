@@ -1,4 +1,4 @@
-# Total: 1746 rules
+# Total: 1749 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -289,6 +289,7 @@
 - '+.dialogflow.com'
 - '+.dictionary.com'
 - '+.digitalocean.com'
+- '+.discourse-cdn.com'
 - '+.dish.com'
 - '+.disqus.com'
 - '+.distrowatch.com'
@@ -387,6 +388,7 @@
 - '+.getchu.com'
 - '+.gettyimages.com'
 - '+.ggpht.com'
+- '+.ghe.com'
 - '+.ghostery.com'
 - '+.girlsgogames.com'
 - '+.git-scm.com'
@@ -1436,6 +1438,7 @@
 - '+.cython.org'
 - '+.dartlang.org'
 - '+.debian.org'
+- '+.discourse.org'
 - '+.dnschecker.org'
 - '+.dnsleaktest.org'
 - '+.dotdeb.org'

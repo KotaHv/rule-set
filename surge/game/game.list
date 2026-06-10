@@ -1,4 +1,4 @@
-# Total: 780 rules
+# Total: 784 rules
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
@@ -214,7 +214,6 @@ DOMAIN-SUFFIX,eft-store.com
 DOMAIN-SUFFIX,elderscrolls.com
 DOMAIN-SUFFIX,electronicarts.com
 DOMAIN-SUFFIX,embark-studios.com
-DOMAIN-SUFFIX,eneba.com
 DOMAIN-SUFFIX,epicgames.com
 DOMAIN-SUFFIX,epicgamescdn.com
 DOMAIN-SUFFIX,escapefromtarkov.com
@@ -223,6 +222,7 @@ DOMAIN-SUFFIX,fab.com
 DOMAIN-SUFFIX,faceit.com
 DOMAIN-SUFFIX,fanatical.com
 DOMAIN-SUFFIX,egdownload.fastly-edge.com
+DOMAIN-SUFFIX,ficgs.com
 DOMAIN-SUFFIX,fifastreet.com
 DOMAIN-SUFFIX,fifastreet3.com
 DOMAIN-SUFFIX,fire-emblem-heroes.com
@@ -239,6 +239,8 @@ DOMAIN-SUFFIX,futunited.com
 DOMAIN-SUFFIX,gaijinent.com
 DOMAIN-SUFFIX,gamepass.com
 DOMAIN-SUFFIX,gamesfirsthelsinki.com
+DOMAIN-SUFFIX,gamesplanet.com
+DOMAIN-SUFFIX,gametap.com
 DOMAIN-SUFFIX,garena.com
 DOMAIN-SUFFIX,garenanow.com
 DOMAIN-SUFFIX,genshinimpact.com
@@ -250,6 +252,7 @@ DOMAIN-SUFFIX,goblox.com
 DOMAIN-SUFFIX,gog.com
 DOMAIN-SUFFIX,gog-statics.com
 DOMAIN-SUFFIX,gooblox.com
+DOMAIN-SUFFIX,gpstatic.com
 DOMAIN-SUFFIX,hackyourconsole.com
 DOMAIN-SUFFIX,hayday.com
 DOMAIN-SUFFIX,haydaygame.com
@@ -593,7 +596,6 @@ DOMAIN-SUFFIX,activematter.game
 DOMAIN-SUFFIX,cubicodyssey.game
 DOMAIN-SUFFIX,beth.games
 DOMAIN-SUFFIX,embark.games
-DOMAIN-SUFFIX,eneba.games
 DOMAIN-SUFFIX,op.gg
 DOMAIN-SUFFIX,stellasora.global
 DOMAIN-SUFFIX,nintendo.com.hk
@@ -643,6 +645,7 @@ DOMAIN-SUFFIX,eakorea.co.kr
 DOMAIN-SUFFIX,leagueoflegends.co.kr
 DOMAIN-SUFFIX,lolshop.co.kr
 DOMAIN-SUFFIX,nexoncdn.co.kr
+DOMAIN-SUFFIX,nexongames.co.kr
 DOMAIN-SUFFIX,nintendo.co.kr
 DOMAIN-SUFFIX,riotgames.co.kr
 DOMAIN-SUFFIX,leagueoflegends.kr
@@ -689,6 +692,7 @@ DOMAIN-SUFFIX,mirrorsedge.net
 DOMAIN-SUFFIX,mythicentertainment.net
 DOMAIN-SUFFIX,nentindo.net
 DOMAIN-SUFFIX,neoforged.net
+DOMAIN-SUFFIX,nexon.net
 DOMAIN-SUFFIX,nintendo.net
 DOMAIN-SUFFIX,nintendonetwork.net
 DOMAIN-SUFFIX,nintendoswitch.net
