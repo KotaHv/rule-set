@@ -1,4 +1,4 @@
-# Total: 589 rules
+# Total: 590 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -120,6 +120,7 @@ domain_suffix_set:
 - bugsnag.com
 - canonical.com
 - codethemicrobit.com
+- crashlytics.com
 - cygwin.com
 - deno.com
 - dependabot.com

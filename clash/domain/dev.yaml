@@ -1,4 +1,4 @@
-# Total: 588 rules
+# Total: 589 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -118,6 +118,7 @@
 - '+.bugsnag.com'
 - '+.canonical.com'
 - '+.codethemicrobit.com'
+- '+.crashlytics.com'
 - '+.cygwin.com'
 - '+.deno.com'
 - '+.dependabot.com'
