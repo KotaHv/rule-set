@@ -1,4 +1,4 @@
-# Total: 3226 rules
+# Total: 3230 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1059,6 +1059,7 @@ domain_set:
 - speedtest.sc1.loopinternet.com
 - speedtest.wb1.loopinternet.com
 - librespeed.lukas-heinrich.com
+- jp1-speedtest-infra.lunaiz.com
 - kr1-speedtest-infra.lunaiz.com
 - kr2-speedtest-infra.lunaiz.com
 - speedtest.lungustefan.com
@@ -1717,6 +1718,7 @@ domain_set:
 - speedtest.ibertic.es
 - testdevelocidad.imatel.es
 - speedtest.yecla.interfibra.es
+- speedtest.itegal.es
 - speedpilas.liberatel.es
 - speed.netassist.es
 - speedtest.ohz.es
@@ -2060,6 +2062,7 @@ domain_set:
 - sp2.navigabene.it
 - ookla-mi01.nexim.it
 - sp3.novaconn.it
+- speedtest.nuclearhost.it
 - speedtest2.openfiber.it
 - speedtest.planetel.it
 - speedtest-milano.proxad.it
@@ -2946,6 +2949,7 @@ domain_set:
 - speedtest.fixnet.com.tr
 - konyaspeed.fizynet.com.tr
 - speedbodrum.fizynet.com.tr
+- speedkonya.fizynet.com.tr
 - speed.giganet.com.tr
 - zdt-iptv.highspeed.com.tr
 - hiztesti.hiperbox.com.tr
