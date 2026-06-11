@@ -1,4 +1,4 @@
-# Total: 39 rules
+# Total: 41 rules
 no_resolve: true
 domain_set:
 - steamcdn-a.akamaihd.net
@@ -17,6 +17,7 @@ domain_set:
 - a4e8s8k3.map2.ssl.hwcdn.net
 - steamcloudsweden.blob.core.windows.net
 domain_suffix_set:
+- dota2.com
 - playartifact.com
 - steam.apac.qtlglb.com
 - steam.eca.qtlglb.com
@@ -36,6 +37,7 @@ domain_suffix_set:
 - edge.steam-dns.top.comcast.net
 - steam.cdn.on.net
 - steamserver.net
+- valve.net
 - steam.cdn.slingshot.co.nz
 - steam.cdn.orcon.net.nz
 - steam.cdn.webra.ru

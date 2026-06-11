@@ -1,4 +1,4 @@
-# Total: 39 rules
+# Total: 41 rules
 'payload':
 - 'steamcdn-a.akamaihd.net'
 - 'steamcommunity-a.akamaihd.net'
@@ -15,6 +15,7 @@
 - 'f3b7q2p3.ssl.hwcdn.net'
 - 'a4e8s8k3.map2.ssl.hwcdn.net'
 - 'steamcloudsweden.blob.core.windows.net'
+- '+.dota2.com'
 - '+.playartifact.com'
 - '+.steam.apac.qtlglb.com'
 - '+.steam.eca.qtlglb.com'
@@ -34,6 +35,7 @@
 - '+.edge.steam-dns.top.comcast.net'
 - '+.steam.cdn.on.net'
 - '+.steamserver.net'
+- '+.valve.net'
 - '+.steam.cdn.slingshot.co.nz'
 - '+.steam.cdn.orcon.net.nz'
 - '+.steam.cdn.webra.ru'

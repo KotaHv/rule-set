@@ -1,4 +1,4 @@
-# Total: 783 rules
+# Total: 785 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -185,6 +185,7 @@
 - '+.dkr.com'
 - '+.donkeykongcountryreturns.com'
 - '+.doom.com'
+- '+.dota2.com'
 - '+.dragonage.com'
 - '+.dragonagekeep.com'
 - '+.dragonagemovie.com'
@@ -716,6 +717,7 @@
 - '+.supercell.net'
 - '+.supremacy.net'
 - '+.swtor.net'
+- '+.valve.net'
 - '+.vrchat.net'
 - '+.wargaming.net'
 - '+.wiivc.net'

@@ -1,4 +1,4 @@
-# Total: 6292 rules
+# Total: 6295 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -13,6 +13,7 @@
 - 'assets.airbuddy.app'
 - 'cdn.announcekit.app'
 - 'img.announcekit.app'
+- 'assets.dataflare.app'
 - 'bundle.dyn-rev.app'
 - 'videos.elephas.app'
 - 'do.featurebase.app'
@@ -3381,6 +3382,7 @@
 - '+.donkeykongcountryreturns.com'
 - '+.doom.com'
 - '+.doppiocdn.com'
+- '+.dota2.com'
 - '+.doujins.com'
 - '+.downdetector.com'
 - '+.downdetectorapi.com'
@@ -5727,6 +5729,7 @@
 - '+.underhentai.net'
 - '+.ungrounded.net'
 - '+.v-cdn.net'
+- '+.valve.net'
 - '+.venmo.net'
 - '+.vesselfinder.net'
 - '+.video-cdn.net'

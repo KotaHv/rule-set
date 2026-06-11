@@ -1,4 +1,4 @@
-# Total: 784 rules
+# Total: 786 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -187,6 +187,7 @@ domain_suffix_set:
 - dkr.com
 - donkeykongcountryreturns.com
 - doom.com
+- dota2.com
 - dragonage.com
 - dragonagekeep.com
 - dragonagemovie.com
@@ -718,6 +719,7 @@ domain_suffix_set:
 - supercell.net
 - supremacy.net
 - swtor.net
+- valve.net
 - vrchat.net
 - wargaming.net
 - wiivc.net

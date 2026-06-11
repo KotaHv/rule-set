@@ -1,4 +1,4 @@
-# Total: 6419 rules
+# Total: 6422 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -14,6 +14,7 @@ domain_set:
 - assets.airbuddy.app
 - cdn.announcekit.app
 - img.announcekit.app
+- assets.dataflare.app
 - bundle.dyn-rev.app
 - videos.elephas.app
 - do.featurebase.app
@@ -3383,6 +3384,7 @@ domain_suffix_set:
 - donkeykongcountryreturns.com
 - doom.com
 - doppiocdn.com
+- dota2.com
 - doujins.com
 - downdetector.com
 - downdetectorapi.com
@@ -5729,6 +5731,7 @@ domain_suffix_set:
 - underhentai.net
 - ungrounded.net
 - v-cdn.net
+- valve.net
 - venmo.net
 - vesselfinder.net
 - video-cdn.net
