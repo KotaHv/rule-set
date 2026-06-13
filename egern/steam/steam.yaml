@@ -1,4 +1,4 @@
-# Total: 41 rules
+# Total: 42 rules
 no_resolve: true
 domain_set:
 - steamcdn-a.akamaihd.net
@@ -16,6 +16,7 @@ domain_set:
 - f3b7q2p3.ssl.hwcdn.net
 - a4e8s8k3.map2.ssl.hwcdn.net
 - steamcloudsweden.blob.core.windows.net
+- steamugcquincy.blob.core.windows.net
 domain_suffix_set:
 - dota2.com
 - playartifact.com

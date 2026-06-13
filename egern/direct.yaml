@@ -1,4 +1,4 @@
-# Total: 862 rules
+# Total: 865 rules
 no_resolve: true
 domain_set:
 - i.dell.com
@@ -98,6 +98,7 @@ domain_suffix_set:
 - air-matters.com
 - aixifan.com
 - aki-game.com
+- aki-game2.com
 - alibaba.com
 - alibaba-inc.com
 - alibabachengdun.com
@@ -406,6 +407,8 @@ domain_suffix_set:
 - kuaishou.com
 - kuaishouzt.com
 - kugou.com
+- kurobbs.com
+- kurogame.com
 - kurogames.com
 - kwaicdn.com
 - lagou.com
@@ -796,7 +799,6 @@ domain_suffix_set:
 - ipanda.net
 - ipip.net
 - jb51.net
-- kurogames.net
 - lf127.net
 - ludoworld.net
 - mahjongai.net
@@ -860,6 +862,7 @@ domain_suffix_set:
 - landian.vip
 - xdys.vip
 - c-t.work
+- kurogame.xyz
 - nz99.xyz
 domain_wildcard_set:
 - '*.qhimgs?.com'

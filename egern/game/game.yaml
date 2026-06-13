@@ -1,4 +1,4 @@
-# Total: 786 rules
+# Total: 787 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -77,6 +77,7 @@ domain_set:
 - ea.tt.omtrdc.net
 - prodforza.blob.core.windows.net
 - steamcloudsweden.blob.core.windows.net
+- steamugcquincy.blob.core.windows.net
 - a.ppy.sh
 - assets.ppy.sh
 - c.ppy.sh

@@ -1,4 +1,4 @@
-# Total: 859 rules
+# Total: 862 rules
 'payload':
 - 'i.dell.com'
 - 'ubisoftconnect.eo-edgefunctions7.com'
@@ -96,6 +96,7 @@
 - '+.air-matters.com'
 - '+.aixifan.com'
 - '+.aki-game.com'
+- '+.aki-game2.com'
 - '+.alibaba.com'
 - '+.alibaba-inc.com'
 - '+.alibabachengdun.com'
@@ -404,6 +405,8 @@
 - '+.kuaishou.com'
 - '+.kuaishouzt.com'
 - '+.kugou.com'
+- '+.kurobbs.com'
+- '+.kurogame.com'
 - '+.kurogames.com'
 - '+.kwaicdn.com'
 - '+.lagou.com'
@@ -794,7 +797,6 @@
 - '+.ipanda.net'
 - '+.ipip.net'
 - '+.jb51.net'
-- '+.kurogames.net'
 - '+.lf127.net'
 - '+.ludoworld.net'
 - '+.mahjongai.net'
@@ -858,4 +860,5 @@
 - '+.landian.vip'
 - '+.xdys.vip'
 - '+.c-t.work'
+- '+.kurogame.xyz'
 - '+.nz99.xyz'

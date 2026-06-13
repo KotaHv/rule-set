@@ -1,4 +1,4 @@
-# Total: 182 rules
+# Total: 186 rules
 no_resolve: true
 domain_set:
 - lv.queniujq.cn
@@ -38,6 +38,7 @@ domain_suffix_set:
 - taptap.cn
 - texasholdemcup.cn
 - wmsj.cn
+- wutheringwaves.cn
 - xd.cn
 - xn--owtw8cc49ajfl.cn
 - yximg.cn
@@ -49,6 +50,7 @@ domain_suffix_set:
 - steamstatic.com.8686c.com
 - 9xgame.com
 - aki-game.com
+- aki-game2.com
 - aligames.com
 - anticheatexpert.com
 - astral-vector.com
@@ -88,6 +90,8 @@ domain_suffix_set:
 - ihappystudio.com
 - jiaoyimao.com
 - juequling.com
+- kurobbs.com
+- kurogame.com
 - kurogames.com
 - langrenclub.com
 - ledu.com
@@ -169,7 +173,6 @@ domain_suffix_set:
 - biligame.net
 - st.dl.bscstorage.net
 - gotolink.net
-- kurogames.net
 - ludoworld.net
 - mahjongai.net
 - mahjongcup.net
@@ -183,5 +186,6 @@ domain_suffix_set:
 - goto-game.org
 - in.th
 - tgpro.top
+- kurogame.xyz
 domain_regex_set:
 - ^.+-mihayo\.akamaized\.net$
