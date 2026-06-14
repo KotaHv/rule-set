@@ -1,4 +1,4 @@
-# Total: 786 rules
+# Total: 787 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -478,6 +478,7 @@
 - '+.steam-api.com'
 - '+.steam-chat.com'
 - '+.steamcommunity.com'
+- '+.steamconnecttest.com'
 - '+.steamcontent.com'
 - '+.steamdeck.com'
 - '+.steamgames.com'

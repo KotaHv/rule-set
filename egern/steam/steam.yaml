@@ -1,4 +1,4 @@
-# Total: 42 rules
+# Total: 43 rules
 no_resolve: true
 domain_set:
 - steamcdn-a.akamaihd.net
@@ -27,6 +27,7 @@ domain_suffix_set:
 - steam-api.com
 - steam-chat.com
 - steamcommunity.com
+- steamconnecttest.com
 - steamcontent.com
 - steamdeck.com
 - steamgames.com
