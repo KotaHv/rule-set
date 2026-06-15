@@ -1,4 +1,4 @@
-# Total: 4480 rules
+# Total: 4483 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -348,6 +348,7 @@
 - 'imgs02.aventertainments.com'
 - 'static2.avg.com'
 - 'static-clst.avgle.com'
+- 'static.captcha.awswaf.com'
 - 'assets.awwwards.com'
 - 'axiecdn.axieinfinity.com'
 - 'cdn.axieinfinity.com'
@@ -912,6 +913,7 @@
 - 'static.gitbook.com'
 - 'static-2c.gitbook.com'
 - 'static-2v.gitbook.com'
+- 'cafe.github.com'
 - 'raw.github.com'
 - 'tuf-repo.github.com'
 - 'telemetry.business.githubcopilot.com'
@@ -4143,6 +4145,7 @@
 - '+.redd.it'
 - '+.unsplash.it'
 - '+.media.ci-en.jp'
+- '+.img.gmo.jp'
 - '+.ismcdn.jp'
 - '+.misskeyusercontent.jp'
 - '+.cdn.nimg.jp'

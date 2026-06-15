@@ -1,4 +1,4 @@
-# Total: 6424 rules
+# Total: 6425 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -323,6 +323,7 @@ domain_set:
 - widgets.automizely.com
 - ubuntu.avalicense.com
 - imgs02.aventertainments.com
+- static.captcha.awswaf.com
 - assets.awwwards.com
 - axiecdn.axieinfinity.com
 - cdn.axieinfinity.com
