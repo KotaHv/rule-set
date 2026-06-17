@@ -1,4 +1,4 @@
-# Total: 3236 rules
+# Total: 3238 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -834,6 +834,7 @@ domain_set:
 - testenew.eibroadband.com
 - tr-bursa.elmashost.com
 - tr-istanbul.elmashost.com
+- netspeed.empireaccess.com
 - speedtest.empireaccess.com
 - speedtest-marseille-10g.emtelnet.com
 - seawa00-speedtest.etstelco.com
@@ -2836,6 +2837,7 @@ domain_set:
 - speedtest.gravelines.valtrix.org
 - speedtest.warsaw.valtrix.org
 - speedtest-wa.waveip.org
+- speedtests.ord.your.org
 - fr-1.node.delton.ovh
 - pl-1.node.delton.ovh
 - velocidad.fiberlink.com.pa
