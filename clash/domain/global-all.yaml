@@ -1,4 +1,4 @@
-# Total: 6300 rules
+# Total: 6301 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -822,6 +822,7 @@
 - 'img.hellofresh.com'
 - 'app.hellosign.com'
 - 'static.helpjuice.com'
+- 'supercell.helpshift.com'
 - 'hentai0.com'
 - 'cdn1.hentaicity.com'
 - 'hls.hentaicity.com'
@@ -3684,7 +3685,6 @@
 - '+.hcaptcha.com'
 - '+.hclips.com'
 - '+.hdzyk-cdn.com'
-- '+.supercell.helpshift.com'
 - '+.hembed.com'
 - '+.hentaicdn.com'
 - '+.images.hentaicity.com'
@@ -3872,6 +3872,7 @@
 - '+.kwcdn.com'
 - '+.kym-cdn.com'
 - '+.kyurem.com'
+- '+.larksuitepkg.com'
 - '+.launchdarkly.com'
 - '+.launchpadlibrarian.com'
 - '+.lazcdn.com'

@@ -1,4 +1,4 @@
-# Total: 788 rules
+# Total: 789 rules
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
@@ -6,8 +6,10 @@ DOMAIN,ubisoft-uplay-savegames.s3.amazonaws.com
 DOMAIN,wb-agora-hydra-file-storage-k1.s3.amazonaws.com
 DOMAIN,roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
 DOMAIN,pubg1.battleye.com
+DOMAIN,supercell.helpshift.com
 DOMAIN,datarouter.apps.netherrealm.com
 DOMAIN,ubisoft.siteintercept.qualtrics.com
+DOMAIN,supercell.zendesk.com
 DOMAIN,blizzard.nefficient.co.kr
 DOMAIN,avatargarenanow-a.akamaihd.net
 DOMAIN,blizzcon-a.akamaihd.net
@@ -258,7 +260,6 @@ DOMAIN-SUFFIX,gpstatic.com
 DOMAIN-SUFFIX,hackyourconsole.com
 DOMAIN-SUFFIX,hayday.com
 DOMAIN-SUFFIX,haydaygame.com
-DOMAIN-SUFFIX,supercell.helpshift.com
 DOMAIN-SUFFIX,heroesofdragonage.com
 DOMAIN-SUFFIX,heroesofthestorm.com
 DOMAIN-SUFFIX,historyofdota.com

@@ -1,4 +1,4 @@
-# Total: 6427 rules
+# Total: 6428 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -823,6 +823,7 @@ domain_set:
 - img.hellofresh.com
 - app.hellosign.com
 - static.helpjuice.com
+- supercell.helpshift.com
 - hentai0.com
 - cdn1.hentaicity.com
 - hls.hentaicity.com
@@ -3686,7 +3687,6 @@ domain_suffix_set:
 - hcaptcha.com
 - hclips.com
 - hdzyk-cdn.com
-- supercell.helpshift.com
 - hembed.com
 - hentaicdn.com
 - images.hentaicity.com
@@ -3874,6 +3874,7 @@ domain_suffix_set:
 - kwcdn.com
 - kym-cdn.com
 - kyurem.com
+- larksuitepkg.com
 - launchdarkly.com
 - launchpadlibrarian.com
 - lazcdn.com

@@ -1,4 +1,4 @@
-# Total: 788 rules
+# Total: 789 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -8,8 +8,10 @@ domain_set:
 - wb-agora-hydra-file-storage-k1.s3.amazonaws.com
 - roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
 - pubg1.battleye.com
+- supercell.helpshift.com
 - datarouter.apps.netherrealm.com
 - ubisoft.siteintercept.qualtrics.com
+- supercell.zendesk.com
 - blizzard.nefficient.co.kr
 - avatargarenanow-a.akamaihd.net
 - blizzcon-a.akamaihd.net
@@ -261,7 +263,6 @@ domain_suffix_set:
 - hackyourconsole.com
 - hayday.com
 - haydaygame.com
-- supercell.helpshift.com
 - heroesofdragonage.com
 - heroesofthestorm.com
 - historyofdota.com
