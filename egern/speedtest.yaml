@@ -1,4 +1,4 @@
-# Total: 3238 rules
+# Total: 3250 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1462,6 +1462,7 @@ domain_set:
 - speedtest.trepicnetworks.com
 - speedtest.tri-cogo.com
 - speedtest.tricolinksc.com
+- speedtest.troccolisistemi.com
 - speedtest.tulix.com
 - speed.turbodc.com
 - speedtest.tushino.com
@@ -1549,6 +1550,7 @@ domain_set:
 - speedtest.wtcks.com
 - speed.x-idleb.com
 - speed.x-sy.com
+- speedtest.x-tabqa.com
 - speedtest1.xbase.com
 - speedtest.xcdtelecom.com
 - speedtest.xipnet.com
@@ -1833,6 +1835,8 @@ domain_set:
 - sg-speedtest.fast.net.id
 - speedtest.sg.hsp.net.id
 - speedtest-sg.iconpln.net.id
+- speedtest1.tmg.net.id
+- speedtest2.tmg.net.id
 - speedtest.ny.sptrnd.id
 - speedtest.sin.sptrnd.id
 - speedtest-nl.cloudlease.co.il
@@ -1934,6 +1938,7 @@ domain_set:
 - speedtestmum.mahabalnet.in
 - speedtest.maxnetdigital.in
 - speedtestbirpara.meghbelabroadband.in
+- speedtestmum.meghbelabroadband.in
 - speedtestslg.meghbelabroadband.in
 - speedtestversatile.meghbelabroadband.in
 - speedtest2.micronet.in
@@ -2017,9 +2022,11 @@ domain_set:
 - two.speed.airc.it
 - ookla.apuacom.it
 - speedtest-1.apvinvestimenti.it
+- srv-st03.arcolink.it
 - srv-st04.arcolink.it
 - srv-st08.arcolink.it
 - srv-st10.arcolink.it
+- srv-st12.arcolink.it
 - it3.speedtest.aruba.it
 - speedtest.bbbell.it
 - speedtest-mi1.cloudfire.it
@@ -2034,6 +2041,8 @@ domain_set:
 - speedtest-mi.enegan.it
 - speedtest-rm.enegan.it
 - test.eolo.it
+- sp1.etruriacom.it
+- emr1-ookla.perf.fastedge.it
 - lmb1-ookla.perf.fastedge.it
 - spd-pub-mi-01-01.fastwebnet.it
 - spd-pub-rm-01-01.fastwebnet.it
@@ -2056,6 +2065,7 @@ domain_set:
 - speedtestmassa.ivoweb.it
 - speedtestmi.ktsolutions.it
 - speedt-mi.lakenetworks.it
+- speedtest3.lepida.it
 - speedtest.lumianetwork.it
 - speedtest.mikronet.it
 - st01.mynet.it
@@ -2091,6 +2101,7 @@ domain_set:
 - speedtest019.telecomitalia.it
 - speedtest020.telecomitalia.it
 - speedtest021.telecomitalia.it
+- speedtestfi1.telecomitalia.it
 - speedtestge1.telecomitalia.it
 - speedtestmi1.telecomitalia.it
 - speedtestrm1.telecomitalia.it
@@ -2193,6 +2204,7 @@ domain_set:
 - speed.sgf01.as17303.net
 - ooklaspeedtest.as198053.net
 - speedtest.pa5.as198831.net
+- speed.as198997.net
 - speedtest-ntt-fra.as20011.net
 - speedtest-ntt-ldn.as20011.net
 - speedtest1-sttlwawb.as20055.net
