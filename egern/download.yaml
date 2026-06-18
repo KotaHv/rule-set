@@ -1,4 +1,4 @@
-# Total: 1955 rules
+# Total: 1956 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1439,6 +1439,7 @@ domain_suffix_set:
 - s3-website.nl-ams.scw.cloud
 - s3.pl-waw.scw.cloud
 - s3-website.pl-waw.scw.cloud
+- cdn.hf.co
 - files.1drv.com
 - 1fichier.com
 - oss-accelerate-overseas.aliyuncs.com

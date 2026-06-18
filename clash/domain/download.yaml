@@ -1,4 +1,4 @@
-# Total: 1947 rules
+# Total: 1948 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1437,6 +1437,7 @@
 - '+.s3-website.nl-ams.scw.cloud'
 - '+.s3.pl-waw.scw.cloud'
 - '+.s3-website.pl-waw.scw.cloud'
+- '+.cdn.hf.co'
 - '+.files.1drv.com'
 - '+.1fichier.com'
 - '+.oss-accelerate-overseas.aliyuncs.com'

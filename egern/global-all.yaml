@@ -1,4 +1,4 @@
-# Total: 6428 rules
+# Total: 6429 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2917,6 +2917,7 @@ domain_suffix_set:
 - fury.co
 - g.co
 - h-cdn.co
+- cdn.hf.co
 - cdn-lfs.hf.co
 - cdn-lfs-eu-1.hf.co
 - cdn-lfs-us-1.hf.co
