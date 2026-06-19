@@ -1,4 +1,4 @@
-# Total: 6429 rules
+# Total: 6432 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -157,6 +157,7 @@ domain_set:
 - log-collector.17app.co
 - webcdn.17app.co
 - cdn.chord.co
+- assets.churnkey.co
 - cdn.cloudcraft.co
 - js.convertflow.co
 - load.csell.co
@@ -505,6 +506,7 @@ domain_set:
 - assets.cmcmarkets.com
 - cdn.cmcmarkets.com
 - cdn.cms-twdigitalassets.com
+- embed-audio.cnevids.com
 - player.cnevids.com
 - player-frontend.cnevids.com
 - cdn.cnx-software.com
@@ -1117,6 +1119,7 @@ domain_set:
 - api.mixpanel.com
 - api-eu.mixpanel.com
 - img.ml0987.com
+- bytescale.mobbin.com
 - ubuntu.mobinhost.com
 - public.mocortech.com
 - static.mocortech.com

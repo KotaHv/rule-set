@@ -1,4 +1,4 @@
-# Total: 4566 rules
+# Total: 4569 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -143,6 +143,7 @@ domain_set:
 - s3.anilist.co
 - s4.anilist.co
 - cdn.chord.co
+- assets.churnkey.co
 - cdn.cloudcraft.co
 - js.convertflow.co
 - static.convertio.co
@@ -562,6 +563,7 @@ domain_set:
 - zephr-templates.cnbc.com
 - image.cnbcfm.com
 - static-redesign.cnbcfm.com
+- embed-audio.cnevids.com
 - player.cnevids.com
 - player-frontend.cnevids.com
 - cdn.cnn.com
@@ -1347,6 +1349,7 @@ domain_set:
 - api.mixpanel.com
 - api-eu.mixpanel.com
 - img.ml0987.com
+- bytescale.mobbin.com
 - attach.mobile01.com
 - attach2.mobile01.com
 - public.mocortech.com

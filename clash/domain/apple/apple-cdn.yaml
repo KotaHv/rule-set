@@ -1,4 +1,4 @@
-# Total: 157 rules
+# Total: 158 rules
 'payload':
 - '+.appldnld.g.aaplimg.com'
 - '+.iosapps.itunes.g.aaplimg.com'
@@ -99,6 +99,7 @@
 - '+.app-site-association.cdn-apple.com'
 - '+.appleid.cdn-apple.com'
 - '+.cstat.cdn-apple.com'
+- '+.mensura.cdn-apple.com'
 - '+.ml.cdn-apple.com'
 - '+.publicassets.cdn-apple.com'
 - '+.shazam-insights.cdn-apple.com'

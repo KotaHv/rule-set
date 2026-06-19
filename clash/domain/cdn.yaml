@@ -1,4 +1,4 @@
-# Total: 4486 rules
+# Total: 4489 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -142,6 +142,7 @@
 - 's3.anilist.co'
 - 's4.anilist.co'
 - 'cdn.chord.co'
+- 'assets.churnkey.co'
 - 'cdn.cloudcraft.co'
 - 'js.convertflow.co'
 - 'static.convertio.co'
@@ -561,6 +562,7 @@
 - 'zephr-templates.cnbc.com'
 - 'image.cnbcfm.com'
 - 'static-redesign.cnbcfm.com'
+- 'embed-audio.cnevids.com'
 - 'player.cnevids.com'
 - 'player-frontend.cnevids.com'
 - 'cdn.cnn.com'
@@ -1346,6 +1348,7 @@
 - 'api.mixpanel.com'
 - 'api-eu.mixpanel.com'
 - 'img.ml0987.com'
+- 'bytescale.mobbin.com'
 - 'attach.mobile01.com'
 - 'attach2.mobile01.com'
 - 'public.mocortech.com'
