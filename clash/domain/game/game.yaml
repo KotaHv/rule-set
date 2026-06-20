@@ -1,4 +1,4 @@
-# Total: 788 rules
+# Total: 790 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -58,6 +58,7 @@
 - 'blznav.akamaized.net'
 - 'bnetshopus.akamaized.net'
 - 'gamedownloads-rockstargames-com.akamaized.net'
+- 'gog-cdn.akamaized.net'
 - 'media-rockstargames-com.akamaized.net'
 - 'opgg-static.akamaized.net'
 - 'prd-priconne-redive.akamaized.net'
@@ -71,6 +72,7 @@
 - 'd1unuk07s6td74.cloudfront.net'
 - 'steamcommunity-a.akamaihd.net.edgesuite.net'
 - 'roblox-poc.global.ssl.fastly.net'
+- 'gog-cdn-lumen.secure2.footprint.net'
 - 'f3b7q2p3.ssl.hwcdn.net'
 - 'a4e8s8k3.map2.ssl.hwcdn.net'
 - 'hb.imgix.net'

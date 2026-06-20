@@ -1,4 +1,4 @@
-# Total: 6432 rules
+# Total: 6433 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2272,6 +2272,7 @@ domain_set:
 - down.filen-3.net
 - down.filen-4.net
 - down.filen-5.net
+- gog-cdn-lumen.secure2.footprint.net
 - files.gempages.net
 - reload.getsentry.net
 - embed.getwally.net
