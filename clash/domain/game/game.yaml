@@ -1,4 +1,4 @@
-# Total: 790 rules
+# Total: 792 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -257,7 +257,9 @@
 - '+.goblocks.com'
 - '+.goblox.com'
 - '+.gog.com'
+- '+.gog-services.com'
 - '+.gog-statics.com'
+- '+.gogalaxy.com'
 - '+.gooblox.com'
 - '+.gpstatic.com'
 - '+.hackyourconsole.com'

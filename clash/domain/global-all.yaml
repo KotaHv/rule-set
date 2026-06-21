@@ -1,4 +1,4 @@
-# Total: 6306 rules
+# Total: 6308 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -3639,7 +3639,9 @@
 - '+.godaddy.com'
 - '+.gofundme.com'
 - '+.gog.com'
+- '+.gog-services.com'
 - '+.gog-statics.com'
+- '+.gogalaxy.com'
 - '+.golang.com'
 - '+.gooblox.com'
 - '+.goodreads.com'

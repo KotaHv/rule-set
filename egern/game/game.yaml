@@ -1,4 +1,4 @@
-# Total: 791 rules
+# Total: 793 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -259,7 +259,9 @@ domain_suffix_set:
 - goblocks.com
 - goblox.com
 - gog.com
+- gog-services.com
 - gog-statics.com
+- gogalaxy.com
 - gooblox.com
 - gpstatic.com
 - hackyourconsole.com
