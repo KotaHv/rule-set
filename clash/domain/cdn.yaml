@@ -1,4 +1,4 @@
-# Total: 4489 rules
+# Total: 4490 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -709,6 +709,7 @@
 - 'cdn.earthroulette.com'
 - 'comm.res.easebar.com'
 - 'cmp-cdn.p.aws.economist.com'
+- 'wall-ui-cdn.p.aws.economist.com'
 - 'marber-cdn.economist.com'
 - 'videos2.edclub.com'
 - 'cdn1.edgedatg.com'

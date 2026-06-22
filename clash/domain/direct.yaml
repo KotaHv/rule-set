@@ -1,4 +1,4 @@
-# Total: 875 rules
+# Total: 879 rules
 'payload':
 - 'i.dell.com'
 - 'ubisoftconnect.eo-edgefunctions7.com'
@@ -15,6 +15,10 @@
 - 'cdnstatic.tencentcs.com'
 - 'config.ubnt.com'
 - 'dl.ubnt.com'
+- 'viayoo.com'
+- 'app.viayoo.com'
+- 'res.viayoo.com'
+- 'www.viayoo.com'
 - 'end.shallow.ink'
 - 'end-api.shallow.ink'
 - 'v16m-default.akamaized.net'

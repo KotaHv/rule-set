@@ -1,4 +1,4 @@
-# Total: 4569 rules
+# Total: 4570 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -710,6 +710,7 @@ domain_set:
 - cdn.earthroulette.com
 - comm.res.easebar.com
 - cmp-cdn.p.aws.economist.com
+- wall-ui-cdn.p.aws.economist.com
 - marber-cdn.economist.com
 - videos2.edclub.com
 - cdn1.edgedatg.com

@@ -1,4 +1,4 @@
-# Total: 878 rules
+# Total: 882 rules
 no_resolve: true
 domain_set:
 - i.dell.com
@@ -16,6 +16,10 @@ domain_set:
 - cdnstatic.tencentcs.com
 - config.ubnt.com
 - dl.ubnt.com
+- viayoo.com
+- app.viayoo.com
+- res.viayoo.com
+- www.viayoo.com
 - end.shallow.ink
 - end-api.shallow.ink
 - v16m-default.akamaized.net
