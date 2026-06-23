@@ -1,4 +1,4 @@
-# Total: 6435 rules
+# Total: 6443 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -513,6 +513,7 @@ domain_set:
 - cdn.codeblackbelt.com
 - static-assets.codecademy.com
 - assets.codeguru.com
+- unleash.codeium.com
 - mirror.cogentco.com
 - s1.coincarp.com
 - s3.cointelegraph.com
@@ -680,6 +681,7 @@ domain_set:
 - static.fc2id.com
 - icons.ferndocs.com
 - genesis-cdn.ff.com
+- digitalhub.fifa.com
 - s3.filebase.com
 - static.filehorse.com
 - images.filepuma.com
@@ -1092,6 +1094,7 @@ domain_set:
 - cdn.create.microsoft.com
 - csp.microsoft.com
 - developer.microsoft.com
+- builds.dotnet.microsoft.com
 - images.ecomm.microsoft.com
 - edgeupdates.microsoft.com
 - learn-attachment.microsoft.com
@@ -1289,6 +1292,7 @@ domain_set:
 - softwareupdate.pilotmoon.com
 - static.pingcap.com
 - assets.pingie.com
+- assets.pingone.com
 - image.pitchbook.com
 - cdn.pixabay.com
 - assets.pixlee.com
@@ -1640,6 +1644,7 @@ domain_set:
 - crt.usertrust.com
 - ocsp.usertrust.com
 - widget.uservoice.com
+- stories.usestoryteller.com
 - mirrors.usinternet.com
 - img.utdstc.com
 - stc.utdstc.com
@@ -2259,6 +2264,7 @@ domain_set:
 - steamcommunity-a.akamaihd.net.edgesuite.net
 - hamifans.emome.net
 - static.esimplus.net
+- cdn1.espn.net
 - cdn1.ettoday.net
 - cdn2.ettoday.net
 - media.ettoday.net
@@ -3321,6 +3327,7 @@ domain_suffix_set:
 - cubicmotion.com
 - curseforge.com
 - cursor.com
+- cursor-cdn.com
 - customerioforms.com
 - customeriomail.com
 - cwwcdn.com
@@ -4774,6 +4781,7 @@ domain_suffix_set:
 - js.usemessages.com
 - userapi.com
 - usertesting.com
+- cdn.usestoryteller.com
 - ut-assets.com
 - uvcdn.com
 - uwpcommunitytoolkit.com

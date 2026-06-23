@@ -1,4 +1,4 @@
-# Total: 1956 rules
+# Total: 1958 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -208,6 +208,7 @@ domain_set:
 - downloads.cloudflareclient.com
 - pkg.cloudflareclient.com
 - download.cnet.com
+- unleash.codeium.com
 - mirror.cogentco.com
 - mirrors.concertpass.com
 - pubmirrors.dal.corespace.com
@@ -322,6 +323,7 @@ domain_set:
 - amupdatedl3.microsoft.com
 - amupdatedl4.microsoft.com
 - amupdatedl5.microsoft.com
+- builds.dotnet.microsoft.com
 - edgeupdates.microsoft.com
 - mcr.microsoft.com
 - msdl.microsoft.com

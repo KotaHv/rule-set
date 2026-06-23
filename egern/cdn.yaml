@@ -1,4 +1,4 @@
-# Total: 4570 rules
+# Total: 4576 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -777,6 +777,7 @@ domain_set:
 - s1.feedly.com
 - icons.ferndocs.com
 - genesis-cdn.ff.com
+- digitalhub.fifa.com
 - errors.figma.com
 - marketing.figma.com
 - s3-alpha.figma.com
@@ -1569,6 +1570,7 @@ domain_set:
 - cdn.pickystory.com
 - static.pingcap.com
 - assets.pingie.com
+- assets.pingone.com
 - widgets.pinterest.com
 - image.pitchbook.com
 - cdn.pixabay.com
@@ -2055,6 +2057,7 @@ domain_set:
 - crt.usertrust.com
 - ocsp.usertrust.com
 - widget.uservoice.com
+- stories.usestoryteller.com
 - img.utdstc.com
 - stc.utdstc.com
 - cdn.v2ex.com
@@ -2740,6 +2743,7 @@ domain_set:
 - jnmedia.ero-video.net
 - static.eroterest.net
 - static.esimplus.net
+- cdn1.espn.net
 - cdn1.ettoday.net
 - cdn2.ettoday.net
 - media.ettoday.net
@@ -3489,6 +3493,7 @@ domain_suffix_set:
 - e.crashlytics.com
 - settings.crashlytics.com
 - crunchyrollcdn.com
+- cursor-cdn.com
 - customerioforms.com
 - customeriomail.com
 - cwwcdn.com
@@ -3968,6 +3973,7 @@ domain_suffix_set:
 - devrum.uptime.com
 - js.usemessages.com
 - userapi.com
+- cdn.usestoryteller.com
 - ut-assets.com
 - uvcdn.com
 - valnetcdn.com
