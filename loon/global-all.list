@@ -1,4 +1,4 @@
-# Total: 6457 rules
+# Total: 6464 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -1781,8 +1781,6 @@ DOMAIN,barracuda-cdn.zoovu.com
 DOMAIN,static.zuora.com
 DOMAIN,cimg.cnyes.cool
 DOMAIN,sfiles.cnyes.cool
-DOMAIN,mirrors.ucr.ac.cr
-DOMAIN,ubuntu.ucr.ac.cr
 DOMAIN,cdn.decrypt.day
 DOMAIN,api.iconify.design
 DOMAIN,code.iconify.design
@@ -2828,6 +2826,7 @@ DOMAIN-SUFFIX,sih.app
 DOMAIN-SUFFIX,tauri.app
 DOMAIN-SUFFIX,udify.app
 DOMAIN-SUFFIX,vercel.app
+DOMAIN-SUFFIX,vscodeedu.app
 DOMAIN-SUFFIX,web.app
 DOMAIN-SUFFIX,xlog.app
 DOMAIN-SUFFIX,safebrowsing.apple
@@ -2853,6 +2852,7 @@ DOMAIN-SUFFIX,addons.business
 DOMAIN-SUFFIX,tile.openstreetmap.bzh
 DOMAIN-SUFFIX,ca
 DOMAIN-SUFFIX,cafe
+DOMAIN-SUFFIX,github.career
 DOMAIN-SUFFIX,pixiv.cat
 DOMAIN-SUFFIX,pomf.cat
 DOMAIN-SUFFIX,520cc.cc
@@ -4827,6 +4827,7 @@ DOMAIN-SUFFIX,vpnunlimited.com
 DOMAIN-SUFFIX,cloudinary.vpsvc.com
 DOMAIN-SUFFIX,swupdate.vray.com
 DOMAIN-SUFFIX,vrchat.com
+DOMAIN-SUFFIX,vscodeedu.com
 DOMAIN-SUFFIX,vultrobjects.com
 DOMAIN-SUFFIX,vx-cdn.com
 DOMAIN-SUFFIX,vxtwitter.com
@@ -4997,6 +4998,7 @@ DOMAIN-SUFFIX,mirror.zzunipark.com
 DOMAIN-SUFFIX,community
 DOMAIN-SUFFIX,x.company
 DOMAIN-SUFFIX,ymq.cool
+DOMAIN-SUFFIX,cr
 DOMAIN-SUFFIX,cx
 DOMAIN-SUFFIX,cy
 DOMAIN-SUFFIX,ipfs.cyou
@@ -5451,6 +5453,7 @@ DOMAIN-SUFFIX,bloomberg.net
 DOMAIN-SUFFIX,bohemia.net
 DOMAIN-SUFFIX,boxcdn.net
 DOMAIN-SUFFIX,briantreepayments.net
+DOMAIN-SUFFIX,busybox.net
 DOMAIN-SUFFIX,buyfast-paysmart.net
 DOMAIN-SUFFIX,bwh1.net
 DOMAIN-SUFFIX,c-dn.net
@@ -5758,6 +5761,7 @@ DOMAIN-SUFFIX,visualstudio.net
 DOMAIN-SUFFIX,vrchat.net
 DOMAIN-SUFFIX,vscode-cdn.net
 DOMAIN-SUFFIX,vscode-unpkg.net
+DOMAIN-SUFFIX,vscode-webview.net
 DOMAIN-SUFFIX,vusercontent.net
 DOMAIN-SUFFIX,waifu2x.net
 DOMAIN-SUFFIX,wargaming.net
@@ -5806,6 +5810,7 @@ DOMAIN-SUFFIX,91pic.org
 DOMAIN-SUFFIX,adguard.org
 DOMAIN-SUFFIX,adtidy.org
 DOMAIN-SUFFIX,afraid.org
+DOMAIN-SUFFIX,almalinux.org
 DOMAIN-SUFFIX,alpinelinux.org
 DOMAIN-SUFFIX,ampproject.org
 DOMAIN-SUFFIX,anaconda.org
@@ -5957,6 +5962,7 @@ DOMAIN-SUFFIX,macosforge.org
 DOMAIN-SUFFIX,macports.org
 DOMAIN-SUFFIX,macruby.org
 DOMAIN-SUFFIX,maddenseason.org
+DOMAIN-SUFFIX,manjaro.org
 DOMAIN-SUFFIX,mariadb.org
 DOMAIN-SUFFIX,mate-desktop.org
 DOMAIN-SUFFIX,matrix.org
@@ -6051,6 +6057,7 @@ DOMAIN-SUFFIX,rfc-editor.org
 DOMAIN-SUFFIX,rferl.org
 DOMAIN-SUFFIX,roblox.org
 DOMAIN-SUFFIX,rocksdb.org
+DOMAIN-SUFFIX,rockylinux.org
 DOMAIN-SUFFIX,rollupjs.org
 DOMAIN-SUFFIX,rpmfusion.org
 DOMAIN-SUFFIX,ruby-lang.org

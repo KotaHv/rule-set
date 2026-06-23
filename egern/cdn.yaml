@@ -1,4 +1,4 @@
-# Total: 4576 rules
+# Total: 4578 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -574,6 +574,7 @@ domain_set:
 - static-assets.codecademy.com
 - st.codeforces.com
 - assets.codeguru.com
+- unleash.codeium.com
 - assets.coinbase.com
 - dynamic-assets.coinbase.com
 - static-assets.coinbase.com
@@ -2235,6 +2236,7 @@ domain_set:
 - static.zuora.com
 - cimg.cnyes.cool
 - sfiles.cnyes.cool
+- img.kemono.cr
 - mapserver.mapy.cz
 - tile.mtbmap.cz
 - cdn.decrypt.day

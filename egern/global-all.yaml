@@ -1,4 +1,4 @@
-# Total: 6443 rules
+# Total: 6450 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1783,8 +1783,6 @@ domain_set:
 - static.zuora.com
 - cimg.cnyes.cool
 - sfiles.cnyes.cool
-- mirrors.ucr.ac.cr
-- ubuntu.ucr.ac.cr
 - cdn.decrypt.day
 - api.iconify.design
 - code.iconify.design
@@ -2831,6 +2829,7 @@ domain_suffix_set:
 - tauri.app
 - udify.app
 - vercel.app
+- vscodeedu.app
 - web.app
 - xlog.app
 - safebrowsing.apple
@@ -2856,6 +2855,7 @@ domain_suffix_set:
 - tile.openstreetmap.bzh
 - ca
 - cafe
+- github.career
 - pixiv.cat
 - pomf.cat
 - 520cc.cc
@@ -4830,6 +4830,7 @@ domain_suffix_set:
 - cloudinary.vpsvc.com
 - swupdate.vray.com
 - vrchat.com
+- vscodeedu.com
 - vultrobjects.com
 - vx-cdn.com
 - vxtwitter.com
@@ -5000,6 +5001,7 @@ domain_suffix_set:
 - community
 - x.company
 - ymq.cool
+- cr
 - cx
 - cy
 - ipfs.cyou
@@ -5454,6 +5456,7 @@ domain_suffix_set:
 - bohemia.net
 - boxcdn.net
 - briantreepayments.net
+- busybox.net
 - buyfast-paysmart.net
 - bwh1.net
 - c-dn.net
@@ -5761,6 +5764,7 @@ domain_suffix_set:
 - vrchat.net
 - vscode-cdn.net
 - vscode-unpkg.net
+- vscode-webview.net
 - vusercontent.net
 - waifu2x.net
 - wargaming.net
@@ -5809,6 +5813,7 @@ domain_suffix_set:
 - adguard.org
 - adtidy.org
 - afraid.org
+- almalinux.org
 - alpinelinux.org
 - ampproject.org
 - anaconda.org
@@ -5960,6 +5965,7 @@ domain_suffix_set:
 - macports.org
 - macruby.org
 - maddenseason.org
+- manjaro.org
 - mariadb.org
 - mate-desktop.org
 - matrix.org
@@ -6054,6 +6060,7 @@ domain_suffix_set:
 - rferl.org
 - roblox.org
 - rocksdb.org
+- rockylinux.org
 - rollupjs.org
 - rpmfusion.org
 - ruby-lang.org

@@ -1,4 +1,4 @@
-# Total: 590 rules
+# Total: 598 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -75,12 +75,14 @@ domain_suffix_set:
 - jetbrains.ai
 - openvino.ai
 - android
+- vscodeedu.app
 - ecr.aws
 - fury.blog
 - github.blog
 - stackmod.blog
 - stackoverflow.blog
 - buck.build
+- github.career
 - fasttext.cc
 - tilda.cc
 - fastlane.ci
@@ -259,6 +261,7 @@ domain_suffix_set:
 - videopress.com
 - visualstudio.com
 - visualstudio-staging.com
+- vscodeedu.com
 - webflow.com
 - webobjects.com
 - wordpress.com
@@ -363,6 +366,7 @@ domain_suffix_set:
 - apisof.net
 - badgen.net
 - blazor.net
+- busybox.net
 - devopsassessment.net
 - dot.net
 - facebookappcenter.net
@@ -403,9 +407,11 @@ domain_suffix_set:
 - visualstudio.net
 - vscode-cdn.net
 - vscode-unpkg.net
+- vscode-webview.net
 - wordpress.net
 - repo.new
 - 01.org
+- almalinux.org
 - alpinelinux.org
 - ampproject.org
 - anaconda.org
@@ -484,6 +490,7 @@ domain_suffix_set:
 - macosforge.org
 - macports.org
 - macruby.org
+- manjaro.org
 - mariadb.org
 - mate-desktop.org
 - mcrouter.org
@@ -541,6 +548,7 @@ domain_suffix_set:
 - researchandcare.org
 - researchkit.org
 - rocksdb.org
+- rockylinux.org
 - rpmfusion.org
 - ruby-lang.org
 - rubygems.org

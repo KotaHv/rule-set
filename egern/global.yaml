@@ -1,4 +1,4 @@
-# Total: 1768 rules
+# Total: 1777 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -42,6 +42,7 @@ domain_suffix_set:
 - linear.app
 - run.app
 - vercel.app
+- vscodeedu.app
 - signal.art
 - at
 - au
@@ -59,6 +60,7 @@ domain_suffix_set:
 - buck.build
 - ca
 - cafe
+- github.career
 - pomf.cat
 - 520cc.cc
 - airav.cc
@@ -904,6 +906,7 @@ domain_suffix_set:
 - voanews.com
 - vpnunlimited.com
 - vrchat.com
+- vscodeedu.com
 - vxtwitter.com
 - vzw.com
 - w3schools.com
@@ -978,6 +981,7 @@ domain_suffix_set:
 - zoominfo.com
 - community
 - x.company
+- cr
 - cx
 - cy
 - cz
@@ -1250,6 +1254,7 @@ domain_suffix_set:
 - blazor.net
 - bloomberg.net
 - briantreepayments.net
+- busybox.net
 - buyfast-paysmart.net
 - bwh1.net
 - cachefly.net
@@ -1378,6 +1383,7 @@ domain_suffix_set:
 - visualstudio.net
 - vscode-cdn.net
 - vscode-unpkg.net
+- vscode-webview.net
 - waifu2x.net
 - whoer.net
 - windows.net
@@ -1401,6 +1407,7 @@ domain_suffix_set:
 - adguard.org
 - adtidy.org
 - afraid.org
+- almalinux.org
 - alpinelinux.org
 - ampproject.org
 - anaconda.org
@@ -1520,6 +1527,7 @@ domain_suffix_set:
 - macosforge.org
 - macports.org
 - macruby.org
+- manjaro.org
 - mariadb.org
 - mate-desktop.org
 - matrix.org
@@ -1594,6 +1602,7 @@ domain_suffix_set:
 - rfc-editor.org
 - rferl.org
 - rocksdb.org
+- rockylinux.org
 - rpmfusion.org
 - ruby-lang.org
 - rubygems.org
