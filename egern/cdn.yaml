@@ -1,4 +1,4 @@
-# Total: 4578 rules
+# Total: 4579 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1624,8 +1624,6 @@ domain_set:
 - assets.positional-bucket.com
 - app-static-prod.posthog.com
 - app-static.eu.posthog.com
-- eu-assets.i.posthog.com
-- us-assets.i.posthog.com
 - newsletter.postmarkapp.com
 - public-assets.postmarkapp.com
 - rebound.postmarkapp.com
@@ -1668,7 +1666,9 @@ domain_set:
 - quriobot.com
 - s1.qwant.com
 - s2.qwant.com
+- cms.railway.com
 - devicons.railway.com
+- luminaire.railway.com
 - tilecache.rainviewer.com
 - static.rakuten.com
 - cacerts.rapidssl.com
@@ -3802,6 +3802,7 @@ domain_suffix_set:
 - poki-cdn.com
 - porn-cdn.com
 - porndudecdn.com
+- i.posthog.com
 - pplusstatic.com
 - pressablecdn.com
 - pressidiumcdn.com

@@ -1,4 +1,4 @@
-# Total: 4498 rules
+# Total: 4499 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1623,8 +1623,6 @@
 - 'assets.positional-bucket.com'
 - 'app-static-prod.posthog.com'
 - 'app-static.eu.posthog.com'
-- 'eu-assets.i.posthog.com'
-- 'us-assets.i.posthog.com'
 - 'newsletter.postmarkapp.com'
 - 'public-assets.postmarkapp.com'
 - 'rebound.postmarkapp.com'
@@ -1667,7 +1665,9 @@
 - 'quriobot.com'
 - 's1.qwant.com'
 - 's2.qwant.com'
+- 'cms.railway.com'
 - 'devicons.railway.com'
+- 'luminaire.railway.com'
 - 'tilecache.rainviewer.com'
 - 'static.rakuten.com'
 - 'cacerts.rapidssl.com'
@@ -3800,6 +3800,7 @@
 - '+.poki-cdn.com'
 - '+.porn-cdn.com'
 - '+.porndudecdn.com'
+- '+.i.posthog.com'
 - '+.pplusstatic.com'
 - '+.pressablecdn.com'
 - '+.pressidiumcdn.com'

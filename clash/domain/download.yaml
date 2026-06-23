@@ -1,4 +1,4 @@
-# Total: 1949 rules
+# Total: 1950 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1837,6 +1837,7 @@
 - '+.mirror.tudos.de'
 - '+.pkg.dev'
 - '+.r2.dev'
+- '+.t3.storageapi.dev'
 - '+.mirrors.utermux.dev'
 - '+.kali.download'
 - '+.nitro.download'

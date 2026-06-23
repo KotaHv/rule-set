@@ -1,4 +1,4 @@
-# Total: 6450 rules
+# Total: 6453 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1349,7 +1349,9 @@ domain_set:
 - s1.qwant.com
 - s2.qwant.com
 - mirrors.rackhosting.com
+- cms.railway.com
 - devicons.railway.com
+- luminaire.railway.com
 - tilecache.rainviewer.com
 - mirror.raiolanetworks.com
 - static.rakuten.com
@@ -5043,6 +5045,7 @@ domain_suffix_set:
 - rss3.dev
 - sentry.dev
 - skypack.dev
+- t3.storageapi.dev
 - termux.dev
 - tg.dev
 - usercontent.dev

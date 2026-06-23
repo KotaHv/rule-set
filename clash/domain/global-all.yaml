@@ -1,4 +1,4 @@
-# Total: 6323 rules
+# Total: 6326 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1348,7 +1348,9 @@
 - 's1.qwant.com'
 - 's2.qwant.com'
 - 'mirrors.rackhosting.com'
+- 'cms.railway.com'
 - 'devicons.railway.com'
+- 'luminaire.railway.com'
 - 'tilecache.rainviewer.com'
 - 'mirror.raiolanetworks.com'
 - 'static.rakuten.com'
@@ -5041,6 +5043,7 @@
 - '+.rss3.dev'
 - '+.sentry.dev'
 - '+.skypack.dev'
+- '+.t3.storageapi.dev'
 - '+.termux.dev'
 - '+.tg.dev'
 - '+.usercontent.dev'
