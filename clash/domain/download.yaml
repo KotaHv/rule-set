@@ -1,4 +1,4 @@
-# Total: 1950 rules
+# Total: 1953 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -346,6 +346,7 @@
 - 'mirror.navercorp.com'
 - 'download.nektony.com'
 - 'mirrors.nepalicloud.com'
+- 'store.nethunter.com'
 - 'mirror.nevacloud.com'
 - 'mirror.nforce.com'
 - 'mirrors.nhanhoa.com'
@@ -496,6 +497,7 @@
 - 'packages.hs-regensburg.de'
 - 'debian.intergenia.de'
 - 'mirror.ipb.de'
+- 'apt.izzysoft.de'
 - 'mirror.kamp.de'
 - 'mirror.liquidrp.de'
 - 'ftp.mpi-inf.mpg.de'
@@ -1072,6 +1074,7 @@
 - 'lethe.chinstrap.org'
 - 'apache.claz.org'
 - 'cdn.cocoapods.org'
+- 'packages.codeberg.org'
 - 'mirrors.codec-cluster.org'
 - 'ftp.cpan.org'
 - 'cpan.cpantesters.org'

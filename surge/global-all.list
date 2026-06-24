@@ -1,4 +1,4 @@
-# Total: 6517 rules
+# Total: 6524 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -734,6 +734,8 @@ DOMAIN,media.fs.com
 DOMAIN,resource.fs.com
 DOMAIN,resource-accel.fs.com
 DOMAIN,fullstackopen.com
+DOMAIN,cdn.fundraiseup.com
+DOMAIN,static.fundraiseup.com
 DOMAIN,images.g2crowd.com
 DOMAIN,m3.gab.com
 DOMAIN,media.gamestop.com
@@ -1179,6 +1181,7 @@ DOMAIN,cdn.app.neononepay.com
 DOMAIN,mirrors.nepalicloud.com
 DOMAIN,cdn.nerdschalk.com
 DOMAIN,datarouter.apps.netherrealm.com
+DOMAIN,store.nethunter.com
 DOMAIN,featureflags.netlify.com
 DOMAIN,cdn.networklessons.com
 DOMAIN,cdn-forum.networklessons.com
@@ -1721,6 +1724,7 @@ DOMAIN,fast.wistia.com
 DOMAIN,bundler.wix-code.com
 DOMAIN,static-documents.wizards.com
 DOMAIN,frontend-apps.workos.com
+DOMAIN,frontend-apps-multi-region.workos.com
 DOMAIN,wctour-images.worldchess.com
 DOMAIN,cms.worldpokerdeals.com
 DOMAIN,cdn.worldvectorlogo.com
@@ -1963,6 +1967,7 @@ DOMAIN,cdn-edge.karte.io
 DOMAIN,mirror.katapult.io
 DOMAIN,u.keka.io
 DOMAIN,assets.keysquare.io
+DOMAIN,embed.lantern.io
 DOMAIN,media.lantern.io
 DOMAIN,ubuntu.letscloud.io
 DOMAIN,cdn.logbase.io
@@ -2549,6 +2554,7 @@ DOMAIN,media.hentaifreak.org
 DOMAIN,mirrors.ibiblio.org
 DOMAIN,api.indexnow.org
 DOMAIN,file.izanm.org
+DOMAIN,dlstats.izzyondroid.org
 DOMAIN,repository.jboss.org
 DOMAIN,proxy.joinmastodon.org
 DOMAIN,jotai.org
@@ -4894,6 +4900,7 @@ DOMAIN-SUFFIX,wordpress.com
 DOMAIN-SUFFIX,wordtune.com
 DOMAIN-SUFFIX,workday.com
 DOMAIN-SUFFIX,cdn.workos.com
+DOMAIN-SUFFIX,workoscdn.com
 DOMAIN-SUFFIX,worldoftanks.com
 DOMAIN-SUFFIX,worldofwarcraft.com
 DOMAIN-SUFFIX,worldofwarplanes.com

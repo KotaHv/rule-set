@@ -1,4 +1,4 @@
-# Total: 1958 rules
+# Total: 1961 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -347,6 +347,7 @@ domain_set:
 - mirror.navercorp.com
 - download.nektony.com
 - mirrors.nepalicloud.com
+- store.nethunter.com
 - mirror.nevacloud.com
 - mirror.nforce.com
 - mirrors.nhanhoa.com
@@ -497,6 +498,7 @@ domain_set:
 - packages.hs-regensburg.de
 - debian.intergenia.de
 - mirror.ipb.de
+- apt.izzysoft.de
 - mirror.kamp.de
 - mirror.liquidrp.de
 - ftp.mpi-inf.mpg.de
@@ -1073,6 +1075,7 @@ domain_set:
 - lethe.chinstrap.org
 - apache.claz.org
 - cdn.cocoapods.org
+- packages.codeberg.org
 - mirrors.codec-cluster.org
 - ftp.cpan.org
 - cpan.cpantesters.org

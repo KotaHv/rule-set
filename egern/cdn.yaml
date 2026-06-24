@@ -1,4 +1,4 @@
-# Total: 4579 rules
+# Total: 4585 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -865,6 +865,8 @@ domain_set:
 - consent-manager.ft.com
 - consent-notice.ft.com
 - fullstackopen.com
+- cdn.fundraiseup.com
+- static.fundraiseup.com
 - assets.fxnetworks.com
 - mosaic.fxtwitter.com
 - mosaic-blender.fxtwitter.com
@@ -2164,6 +2166,7 @@ domain_set:
 - static.community.workday.com
 - static.workday.com
 - frontend-apps.workos.com
+- frontend-apps-multi-region.workos.com
 - wctour-images.worldchess.com
 - cms.worldpokerdeals.com
 - cdn.worldvectorlogo.com
@@ -2428,6 +2431,7 @@ domain_set:
 - cdn-blocks.karte.io
 - cdn-edge.karte.io
 - assets.keysquare.io
+- embed.lantern.io
 - media.lantern.io
 - cdn.logbase.io
 - purehalo.logto.io
@@ -2975,6 +2979,7 @@ domain_set:
 - static.ietf.org
 - api.indexnow.org
 - file.izanm.org
+- dlstats.izzyondroid.org
 - pcz.javidol.org
 - proxy.joinmastodon.org
 - jotai.org
@@ -4009,6 +4014,7 @@ domain_suffix_set:
 - wolongzywcdn3.com
 - files.wordpress.com
 - cdn.workos.com
+- workoscdn.com
 - wowmodels.com
 - wp.com
 - wpcomstaging.com

@@ -1,4 +1,4 @@
-# Total: 4579 rules
+# Total: 4585 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -863,6 +863,8 @@ DOMAIN,resource-accel.fs.com
 DOMAIN,consent-manager.ft.com
 DOMAIN,consent-notice.ft.com
 DOMAIN,fullstackopen.com
+DOMAIN,cdn.fundraiseup.com
+DOMAIN,static.fundraiseup.com
 DOMAIN,assets.fxnetworks.com
 DOMAIN,mosaic.fxtwitter.com
 DOMAIN,mosaic-blender.fxtwitter.com
@@ -2162,6 +2164,7 @@ DOMAIN,s0.wordpress.com
 DOMAIN,static.community.workday.com
 DOMAIN,static.workday.com
 DOMAIN,frontend-apps.workos.com
+DOMAIN,frontend-apps-multi-region.workos.com
 DOMAIN,wctour-images.worldchess.com
 DOMAIN,cms.worldpokerdeals.com
 DOMAIN,cdn.worldvectorlogo.com
@@ -2426,6 +2429,7 @@ DOMAIN,cdn.jetboost.io
 DOMAIN,cdn-blocks.karte.io
 DOMAIN,cdn-edge.karte.io
 DOMAIN,assets.keysquare.io
+DOMAIN,embed.lantern.io
 DOMAIN,media.lantern.io
 DOMAIN,cdn.logbase.io
 DOMAIN,purehalo.logto.io
@@ -2973,6 +2977,7 @@ DOMAIN,media.hentaifreak.org
 DOMAIN,static.ietf.org
 DOMAIN,api.indexnow.org
 DOMAIN,file.izanm.org
+DOMAIN,dlstats.izzyondroid.org
 DOMAIN,pcz.javidol.org
 DOMAIN,proxy.joinmastodon.org
 DOMAIN,jotai.org
@@ -4006,6 +4011,7 @@ DOMAIN-SUFFIX,wolongcdnm3u8.com
 DOMAIN-SUFFIX,wolongzywcdn3.com
 DOMAIN-SUFFIX,files.wordpress.com
 DOMAIN-SUFFIX,cdn.workos.com
+DOMAIN-SUFFIX,workoscdn.com
 DOMAIN-SUFFIX,wowmodels.com
 DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,wpcomstaging.com
