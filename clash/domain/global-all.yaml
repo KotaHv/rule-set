@@ -1,4 +1,4 @@
-# Total: 6333 rules
+# Total: 6335 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1829,6 +1829,7 @@
 - 'i.jpg.dog'
 - 'cdn.onetime.dog'
 - 'screenshot.domains'
+- 'dl.orangefox.download'
 - 'assets.buttondown.email'
 - 'media.infosec.exchange'
 - 'cdn.usd.fan'
@@ -5392,6 +5393,7 @@
 - '+.t.me'
 - '+.telegram.me'
 - '+.textnow.me'
+- '+.dl.twrp.me'
 - '+.tx.me'
 - '+.wa.me'
 - '+.emby.media'

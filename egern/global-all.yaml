@@ -1,4 +1,4 @@
-# Total: 6460 rules
+# Total: 6462 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1830,6 +1830,7 @@ domain_set:
 - i.jpg.dog
 - cdn.onetime.dog
 - screenshot.domains
+- dl.orangefox.download
 - assets.buttondown.email
 - media.infosec.exchange
 - cdn.usd.fan
@@ -5394,6 +5395,7 @@ domain_suffix_set:
 - t.me
 - telegram.me
 - textnow.me
+- dl.twrp.me
 - tx.me
 - wa.me
 - emby.media

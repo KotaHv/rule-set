@@ -1,4 +1,4 @@
-# Total: 43 rules
+# Total: 44 rules
 no_resolve: true
 domain_set:
 - stun.douyucdn.cn
@@ -36,6 +36,7 @@ domain_suffix_set:
 - bsccdn.net
 - yfcdn.net
 - yfp2p.net
+- bvmlt.top
 domain_wildcard_set:
 - dyp2p-*.douyucdn.cn
 - p2p-*.douyucdn.cn

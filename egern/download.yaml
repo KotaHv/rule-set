@@ -1,4 +1,4 @@
-# Total: 1961 rules
+# Total: 1963 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -550,6 +550,7 @@ domain_set:
 - mirrors.fibianet.dk
 - ftp.klid.dk
 - mirror.netsite.dk
+- dl.orangefox.download
 - mirror.cedia.org.ec
 - mirror.arizona.edu
 - mirrors.ocf.berkeley.edu
@@ -1869,6 +1870,7 @@ domain_suffix_set:
 - mirror.vu.lt
 - mirror.root.lu
 - mirrors.cicku.me
+- dl.twrp.me
 - catbox.moe
 - ubuntu.nautile.nc
 - mirror.anlx.net

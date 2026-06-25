@@ -1,4 +1,4 @@
-# Total: 4585 rules
+# Total: 4586 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1912,6 +1912,7 @@ domain_set:
 - image.telanganatoday.com
 - media.telanganatoday.com
 - cdnstatic.tencentcs.com
+- c.tenor.com
 - media.tenor.com
 - media1.tenor.com
 - cdn.termius.com

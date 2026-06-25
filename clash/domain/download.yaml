@@ -1,4 +1,4 @@
-# Total: 1953 rules
+# Total: 1955 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -549,6 +549,7 @@
 - 'mirrors.fibianet.dk'
 - 'ftp.klid.dk'
 - 'mirror.netsite.dk'
+- 'dl.orangefox.download'
 - 'mirror.cedia.org.ec'
 - 'mirror.arizona.edu'
 - 'mirrors.ocf.berkeley.edu'
@@ -1867,6 +1868,7 @@
 - '+.mirror.vu.lt'
 - '+.mirror.root.lu'
 - '+.mirrors.cicku.me'
+- '+.dl.twrp.me'
 - '+.catbox.moe'
 - '+.ubuntu.nautile.nc'
 - '+.mirror.anlx.net'
