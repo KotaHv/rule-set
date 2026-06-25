@@ -1,4 +1,4 @@
-# Total: 598 rules
+# Total: 597 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -31,7 +31,6 @@ domain_set:
 - android.googlesource.com
 - developer.microsoft.com
 - packages.microsoft.com
-- download.visualstudio.microsoft.com
 - amp.akamaized.net
 - p-events-delivery.akamaized.net
 - dtlgalleryint.cloudapp.net

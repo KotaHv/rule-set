@@ -1,4 +1,4 @@
-# Total: 597 rules
+# Total: 596 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -30,7 +30,6 @@
 - 'android.googlesource.com'
 - 'developer.microsoft.com'
 - 'packages.microsoft.com'
-- 'download.visualstudio.microsoft.com'
 - 'amp.akamaized.net'
 - 'p-events-delivery.akamaized.net'
 - 'dtlgalleryint.cloudapp.net'
