@@ -1,4 +1,4 @@
-# Total: 3271 rules
+# Total: 3282 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -433,6 +433,7 @@ domain_set:
 - sp01.rbfibra.net.br
 - redeultramf.net.br
 - velocidade.rltelecom.net.br
+- sp1.semfronteiras.net.br
 - sp2.semfronteiras.net.br
 - velocidade.softtelecom.net.br
 - velocity.softtelecom.net.br
@@ -2362,7 +2363,12 @@ domain_set:
 - sp-sea-01.ezeefiber.net
 - speedtest4.ezeefiber.net
 - speed.farknet.net
+- speedtest.ams.fdcservers.net
+- speedtest.atl.fdcservers.net
+- speedtest.chie.fdcservers.net
 - speedtest.hnd.fdcservers.net
+- speedtest.la3eq.fdcservers.net
+- speedtest.ld7.fdcservers.net
 - lg-ams.fdcservers.net
 - lg-atl.fdcservers.net
 - lg-chie.fdcservers.net
@@ -2386,6 +2392,9 @@ domain_set:
 - lg-vie.fdcservers.net
 - lg-war.fdcservers.net
 - speedtest.mia.fdcservers.net
+- speedtest.tor.fdcservers.net
+- speedtest.vie.fdcservers.net
+- speedtest.war.fdcservers.net
 - speedtest.fibercast.net
 - speedtest.fibercomm.net
 - speedtest.fiberlinknetwork.net
@@ -2485,6 +2494,7 @@ domain_set:
 - speedtest.lrecok.net
 - lsdspeed01.lsdops.net
 - lsdspeed02.lsdops.net
+- hkg.speedtest.lshiy.net
 - speedtest.lumos.net
 - ookla.lunoxia.net
 - netservice01.ber01.lwlcom.net
@@ -3088,6 +3098,7 @@ domain_set:
 - speedtest.pulse.web.tr
 - ookla-server.vim.web.tr
 - gigenet.tstt.net.tt
+- speedtest.tstt.net.tt
 - speedtestwa1.sweet.tv
 - speedtest.15.com.tw
 - speed.cable-giant.com.tw

@@ -1,4 +1,4 @@
-# Total: 1963 rules
+# Total: 1965 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -359,6 +359,7 @@ domain_set:
 - dl.nssurge.com
 - mirrors.nxtgen.com
 - mirrors.nxthost.com
+- persistent.oaistatic.com
 - mirror.one.com
 - onepluscommunityserver.com
 - download.onlyoffice.com
@@ -1193,6 +1194,7 @@ domain_set:
 - s1.animeko.openani.org
 - s2.animeko.openani.org
 - ciscobinary.openh264.org
+- updates.openlogi.org
 - planet.openstreetmap.org
 - cdn.opensuse.org
 - download.opensuse.org

@@ -1,4 +1,4 @@
-# Total: 6462 rules
+# Total: 6463 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2597,6 +2597,7 @@ domain_set:
 - tile2.opencyclemap.org
 - ciscobinary.openh264.org
 - assets.openlogi.org
+- updates.openlogi.org
 - tiles.openrailwaymap.org
 - tiles.openseamap.org
 - tiles.maps.opensearch.org
