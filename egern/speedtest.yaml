@@ -1,4 +1,4 @@
-# Total: 3283 rules
+# Total: 3249 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -590,7 +590,6 @@ domain_set:
 - srv1298001.hstgr.cloud
 - srv1298003.hstgr.cloud
 - speedtest.lumischvps.cloud
-- ookla.speedtest.mbs.cloud
 - speedtest.b2.mhn.cloud
 - speedtest.mel.mhn.cloud
 - speedtest.p1.mhn.cloud
@@ -687,7 +686,6 @@ domain_set:
 - speedtest-van.beanfield.com
 - speedtest.belmontcountygig.com
 - speedtest001.bfinetworks.com
-- inbbhaldwani.speedtest.bhaukaalbaba.com
 - nms.bhrbroadband.com
 - ookla.bigredne.com
 - speedtest.bigventuresmedia.com
@@ -695,9 +693,6 @@ domain_set:
 - fast.blackbearfiber.com
 - miaspeedtest.blackburn-pr.com
 - stdel.blazencr.com
-- sahuarita.speedtest.bluespan.com
-- tucson.speedtest.bluespan.com
-- flagstaff.speedtest.bluespanwireless.com
 - speedtest.bnsdfw.com
 - speedtest.boltfiber.com
 - stceuti1.borecom.com
@@ -714,12 +709,6 @@ domain_set:
 - grnr-speedtest-02.brightspeed.com
 - lcrs-speedtest-02.brightspeed.com
 - rcmt-speedtest-02.brightspeed.com
-- chicago.speedtest.brightspeed.com
-- columbia.speedtest.brightspeed.com
-- hinesville.speedtest.brightspeed.com
-- indianapolis.speedtest.brightspeed.com
-- kansas-city.speedtest.brightspeed.com
-- warrensburg.speedtest.brightspeed.com
 - wrbg-speedtest-02.brightspeed.com
 - wrsw-speedtest-02.brightspeed.com
 - speedtest.brnchost.com
@@ -764,7 +753,6 @@ domain_set:
 - speedtest.circlebwirelessllc.com
 - speed.circlecityinternet.com
 - speedtest.citycom-austria.com
-- nmx.cvt.speedtest.civitanet.com
 - cwf-speedtest-se.clearwave.com
 - speedtest.cltel.com
 - speedtest.cmltelephone.com
@@ -853,14 +841,10 @@ domain_set:
 - ns1.fab5network.com
 - ns10.fab5network.com
 - speedtest4.fastfortechnologies.com
-- blar.speedtest.fastwyre.com
-- kscy.speedtest.fastwyre.com
 - speedtest.fbc-tele.com
 - ookla-01.ind.fd-ix.com
 - speedtest.fiber91.com
 - speedtestda.fiberfasthomes.com
-- mesa.speedtest.fiberfirst.com
-- omaha.speedtest.fiberfirst.com
 - dgtookla01.fibering.com
 - speedtest.fibra-amg.com
 - speedtest1.fibratown.com
@@ -1228,7 +1212,6 @@ domain_set:
 - st.racsanntechnologies.com
 - speedtest.raftarnet.com
 - speedtestnet.rapidsys.com
-- manchester.speedtest.razorblue.com
 - test.rconnects.com
 - speedtest-obd.redeconecta.com
 - speedtest-stm.redeconecta.com
@@ -1335,8 +1318,6 @@ domain_set:
 - rsghost.rsgsn.com
 - chispeedtest.rtatel.com
 - dalspeedtest.rtatel.com
-- akron.speedtest.rtc1.com
-- rochester.speedtest.rtc1.com
 - speedtest.s3rdv.com
 - albuquerque-speedtest.sacredwindcommunications.com
 - speedtest.sahinotomotiv.com
@@ -1345,9 +1326,6 @@ domain_set:
 - speedtest-sd-da1.scalematrix.com
 - st1.scaleway.com
 - speedtest.securenetfiber.com
-- brd.speedtest.secv.com
-- hzl.speedtest.secv.com
-- pnt.speedtest.secv.com
 - speedtest1.seiontec.com
 - speedtest.sercomm.com
 - ookla-anc.seroficom.com
@@ -1405,7 +1383,6 @@ domain_set:
 - speedtest.stradacomm.com
 - speedtest.stratoone.com
 - st1.stratusnet.com
-- sipl.speedtest.sukaininfoway.com
 - speed-server1.summit-broadband.com
 - speed-server2.summit-broadband.com
 - speed-server3.summit-broadband.com
@@ -1424,7 +1401,6 @@ domain_set:
 - spd03-syd.au.superloop.com
 - speed.supersonicinternet.com
 - st3.surajnetwork.com
-- chcg.ookla.surfinternet.com
 - speedtest.surfshark.com
 - speedtest.surrytel.com
 - speedtest-dallas.swyftfiber.com
@@ -1619,7 +1595,6 @@ domain_set:
 - speedtest.hannover.jonasdevries.de
 - speedtest.leer.jonasdevries.de
 - speedtest.wol.jonasdevries.de
-- dus.speedtest.komdsl.de
 - speed.ktk.de
 - ookla.kues-data.de
 - speedtest.macht-dicht.de
@@ -1665,13 +1640,9 @@ domain_set:
 - ham.wsqm.telekom-dienste.de
 - hmb-tc.wsqm.telekom-dienste.de
 - ookla-speedtest.tkrz.de
-- ookla.speed.tng.de
-- ookla1.speedtest.tng.de
 - speedtest.twl-kom.de
 - armageddon.uvensys.de
-- a400.speedtest.wobcom.de
 - speedtest.wtnet.de
-- speedtest.ookla.ham1.x-ion.de
 - speed.xiweb.de
 - speedtest.lazco.dev
 - speedtest.voiceone.dev
@@ -1778,19 +1749,6 @@ domain_set:
 - ooklaserver.aryk.fr
 - speedtest.as211733.fr
 - speedperf.axione.fr
-- gre.bbr.ookla.bytel.fr
-- idf.bbr.ookla.bytel.fr
-- lens.bbr.ookla.bytel.fr
-- nancy.bbr.ookla.bytel.fr
-- nice.bbr.ookla.bytel.fr
-- pau.bbr.ookla.bytel.fr
-- idf.cubic.ookla.bytel.fr
-- lil.cubic.ookla.bytel.fr
-- lyo.cubic.ookla.bytel.fr
-- mrs.cubic.ookla.bytel.fr
-- poi.cubic.ookla.bytel.fr
-- str.cubic.ookla.bytel.fr
-- tls.cubic.ookla.bytel.fr
 - speedtest.dscw.fr
 - testdebithom.enes.fr
 - bass.fc-net.fr
@@ -1939,7 +1897,6 @@ domain_set:
 - speedtest.dl.gtel.in
 - srmakspeed.hostycare.in
 - speedkle.htspl.in
-- bom.speedtest.hybridmail.in
 - speedtest.igennetworks.in
 - speedtest.joshicommunication.in
 - speedtest.jprdigital.in
@@ -1977,9 +1934,6 @@ domain_set:
 - speedtest01.qualitynet.in
 - serv.qwistel.in
 - speedtest02.radinet.in
-- delhi.speedtest.railtel.in
-- gwh.speedtest.railtel.in
-- mum.speedtest.railtel.in
 - sp1.realtel.in
 - sp2.realtel.in
 - speedtest.satellitenetcom.in
@@ -2040,7 +1994,6 @@ domain_set:
 - srv-st08.arcolink.it
 - srv-st10.arcolink.it
 - srv-st12.arcolink.it
-- it3.speedtest.aruba.it
 - speedtest.bbbell.it
 - speedtest-mi1.cloudfire.it
 - speedtest-re1.cloudfire.it
@@ -2127,7 +2080,6 @@ domain_set:
 - speedtest.unidata.it
 - speedtest.vodafone.it
 - speedtestrm1.vodafone.it
-- massarosa-1.speedtest.welcomeitalia.it
 - speedtest.wifi4all.it
 - speedtest-altavilla.wifiweb.it
 - speedtest-asiago.wifiweb.it
@@ -2355,7 +2307,6 @@ domain_set:
 - speedtest.ediscom.net
 - speedtest4.ekowebtech.net
 - speedtest.elsynet.net
-- fargo.ookla.enventis.net
 - iperf-ams-nl.eranium.net
 - sp.esim-international.net
 - speedtest.excom.net
@@ -2410,7 +2361,6 @@ domain_set:
 - st01.fynncloud.net
 - st02.fynncloud.net
 - speedtest01-cty-gfld-ma-prod.gcet.net
-- ptb.speedtest.gci.net
 - speedtest.getwireless.net
 - speedtest.giganetbroadband.net
 - owst.gilat.net
@@ -2495,7 +2445,6 @@ domain_set:
 - speedtest.lrecok.net
 - lsdspeed01.lsdops.net
 - lsdspeed02.lsdops.net
-- hkg.speedtest.lshiy.net
 - speedtest.lumos.net
 - ookla.lunoxia.net
 - netservice01.ber01.lwlcom.net
@@ -2629,12 +2578,6 @@ domain_set:
 - speedtest.sentco.net
 - nets-mad01.servihosting.net
 - speedtest-tr-bursa.servosphere.net
-- lil2.speedtest.mire.sfr.net
-- lyo1.speedtest.mire.sfr.net
-- mit1.speedtest.mire.sfr.net
-- nic2.speedtest.mire.sfr.net
-- ren1.speedtest.mire.sfr.net
-- tls3.speedtest.mire.sfr.net
 - speedtest.ams.sharktech.net
 - amsspeed.sharktech.net
 - ookla.la.ca.sharktech.net
@@ -2650,11 +2593,6 @@ domain_set:
 - speedtest.ok.shawcable.net
 - speedtest.vc.shawcable.net
 - speedtest.wp.shawcable.net
-- ashbn-va.speedtest.shentel.net
-- chil-oh.speedtest.shentel.net
-- edinburg-va.speedtest.shentel.net
-- redwood-va.speedtest.shentel.net
-- weston-wv.speedtest.shentel.net
 - sp1.simplybits.net
 - speedtest.sinetonline.net
 - speedtest1.sistectelecom.net
@@ -2889,7 +2827,6 @@ domain_set:
 - speedtest.jmdi.pl
 - speedtest.skynet.net.pl
 - warsaw.netia.pl
-- war-o1.speedtest.orange.pl
 - speedtestooklabal1.plus.pl
 - smtest.supermedia.pl
 - au.st.spacecore.pro
@@ -2900,7 +2837,6 @@ domain_set:
 - sea.st.spacecore.pro
 - sg.st.spacecore.pro
 - tyo.st.spacecore.pro
-- jp.speedtest.bug.pw
 - speedtest.ddl.red
 - speed.srv.rent
 - speedtest.byteshield.ro
@@ -3216,12 +3152,20 @@ domain_suffix_set:
 - linknetspeedtest.net.br
 - srvr.bell.ca
 - speedtest.vianet.ca
+- speedtest.mbs.cloud
 - speedtest.airlinkdc.com
+- speedtest.bhaukaalbaba.com
+- speedtest.bluespan.com
+- speedtest.bluespanwireless.com
+- speedtest.brightspeed.com
+- speedtest.civitanet.com
 - speed.cloudflare.com
 - speedtest.dchost.com
 - ookla.ddnsgeek.com
 - ookla-speedtests.e2ro.com
 - fast.com
+- speedtest.fastwyre.com
+- speedtest.fiberfirst.com
 - speedtest.frontier.com
 - ookla-speedtest.fsr.com
 - speedtest.gslnetworks.com
@@ -3230,19 +3174,34 @@ domain_suffix_set:
 - speedtest.kansuiun.com
 - speedtest.linode.com
 - netspeedtestmaster.com
+- speedtest.razorblue.com
+- speedtest.rtc1.com
+- speedtest.secv.com
 - speedtest.serverside.com
 - speedtest.soraxus.com
 - speedtestcustom.com
 - speedtestkorea.com
 - speedtest.starhub.com
+- speedtest.sukaininfoway.com
+- ookla.surfinternet.com
 - speedtest.telus.com
 - speedtest.tjokas.com
 - wifiman.ubncloud.com
 - wifiman-stability-test.ubncloud.com
 - speedtest.waicore.com
 - wifiman.com
+- speedtest.komdsl.de
+- speed.tng.de
+- speedtest.tng.de
+- speedtest.wobcom.de
+- ookla.ham1.x-ion.de
+- ookla.bytel.fr
 - speedtest.orange.fr
 - speed.pfm.gg
+- speedtest.hybridmail.in
+- speedtest.railtel.in
+- speedtest.aruba.it
+- speedtest.welcomeitalia.it
 - speedtest.moack.co.kr
 - speedtest.love
 - wifiman.me
@@ -3251,13 +3210,16 @@ domain_suffix_set:
 - speedtest.clouvider.net
 - speedtest.cmcnetworks.net
 - speedtest.contabo.net
+- ookla.enventis.net
 - speedtest.faelix.net
+- speedtest.gci.net
 - speed.googlefiber.net
 - speed.hinet.net
 - speedtest.i3d.net
 - speedtest.jsinfo.net
 - speedtest.labixe.net
 - speedtest.seattle.wa.limewave.net
+- speedtest.lshiy.net
 - measurementlab.net
 - nperf.net
 - ooklaserver.net
@@ -3266,6 +3228,8 @@ domain_suffix_set:
 - ookla.rcp.net
 - speedtest.royalehosting.net
 - speedtest.sbcglobal.net
+- speedtest.mire.sfr.net
+- speedtest.shentel.net
 - speedtest.net
 - speedtest.telstra.net
 - speedtest.warian.net
@@ -3273,6 +3237,8 @@ domain_suffix_set:
 - speed.misaka.one
 - backend.librespeed.org
 - measurement-lab.org
+- speedtest.orange.pl
+- speedtest.bug.pw
 - speedtest.rascom.ru
 - speedtest.rt.ru
 - speedtest.timeweb.ru
