@@ -1,4 +1,4 @@
-# Total: 4527 rules
+# Total: 4529 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -63,6 +63,7 @@ DOMAIN,cdn.matterhorn.app
 DOMAIN,disco-static.productessentials.app
 DOMAIN,cdn.rive.app
 DOMAIN,images.rss.app
+DOMAIN,widget.rss.app
 DOMAIN,assets.slater.app
 DOMAIN,phishing.army
 DOMAIN,img.fzf404.art
@@ -2368,6 +2369,7 @@ DOMAIN,analytics.canarymail.io
 DOMAIN,status.canarymail.io
 DOMAIN,assets.canny.io
 DOMAIN,assets2.canny.io
+DOMAIN,changelog-widget.canny.io
 DOMAIN,canny-assets.io
 DOMAIN,fast.chameleon.io
 DOMAIN,cdn.channel.io

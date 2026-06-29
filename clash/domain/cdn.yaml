@@ -1,4 +1,4 @@
-# Total: 4506 rules
+# Total: 4508 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -64,6 +64,7 @@
 - 'disco-static.productessentials.app'
 - 'cdn.rive.app'
 - 'images.rss.app'
+- 'widget.rss.app'
 - 'assets.slater.app'
 - 'phishing.army'
 - 'img.fzf404.art'
@@ -2369,6 +2370,7 @@
 - 'status.canarymail.io'
 - 'assets.canny.io'
 - 'assets2.canny.io'
+- 'changelog-widget.canny.io'
 - 'canny-assets.io'
 - 'fast.chameleon.io'
 - 'cdn.channel.io'

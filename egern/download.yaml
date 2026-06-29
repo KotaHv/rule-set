@@ -1,4 +1,4 @@
-# Total: 1965 rules
+# Total: 1966 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1074,6 +1074,7 @@ domain_set:
 - download.bbbike.org
 - ftp.byfly.by.org
 - bzip.org
+- data.caida.org
 - lethe.chinstrap.org
 - apache.claz.org
 - cdn.cocoapods.org

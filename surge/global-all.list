@@ -1,4 +1,4 @@
-# Total: 6527 rules
+# Total: 6532 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -30,6 +30,7 @@ DOMAIN,builds.parsec.app
 DOMAIN,disco-static.productessentials.app
 DOMAIN,cdn.rive.app
 DOMAIN,images.rss.app
+DOMAIN,widget.rss.app
 DOMAIN,assets.slater.app
 DOMAIN,dl.vanadium.app
 DOMAIN,dl.vibeisland.app
@@ -1912,6 +1913,7 @@ DOMAIN,cdn.builder.io
 DOMAIN,assets.bwbx.io
 DOMAIN,assets.canny.io
 DOMAIN,assets2.canny.io
+DOMAIN,changelog-widget.canny.io
 DOMAIN,canny-assets.io
 DOMAIN,fast.chameleon.io
 DOMAIN,cdn.channel.io
@@ -2510,6 +2512,7 @@ DOMAIN,bzip.org
 DOMAIN,m3u8-0.c-spanvideo.org
 DOMAIN,static.c-spanvideo.org
 DOMAIN,ximage.c-spanvideo.org
+DOMAIN,data.caida.org
 DOMAIN,error.c.cdn77.org
 DOMAIN,lethe.chinstrap.org
 DOMAIN,apache.claz.org
@@ -5190,6 +5193,7 @@ DOMAIN-SUFFIX,cuty.io
 DOMAIN-SUFFIX,datalore.io
 DOMAIN-SUFFIX,ipfs.decoo.io
 DOMAIN-SUFFIX,ipfs.denarius.io
+DOMAIN-SUFFIX,desec.io
 DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,draw.io
 DOMAIN-SUFFIX,elementary.io
@@ -5482,6 +5486,7 @@ DOMAIN-SUFFIX,mirror.choon.net
 DOMAIN-SUFFIX,cloudapp.net
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,cloudfunctions.net
+DOMAIN-SUFFIX,cloudns.net
 DOMAIN-SUFFIX,mirrors.clouvider.net
 DOMAIN-SUFFIX,mirror.colo-serv.net
 DOMAIN-SUFFIX,edge.steam-dns.top.comcast.net

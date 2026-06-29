@@ -1,4 +1,4 @@
-# Total: 6463 rules
+# Total: 6468 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -32,6 +32,7 @@ domain_set:
 - disco-static.productessentials.app
 - cdn.rive.app
 - images.rss.app
+- widget.rss.app
 - assets.slater.app
 - dl.vanadium.app
 - dl.vibeisland.app
@@ -1914,6 +1915,7 @@ domain_set:
 - assets.bwbx.io
 - assets.canny.io
 - assets2.canny.io
+- changelog-widget.canny.io
 - canny-assets.io
 - fast.chameleon.io
 - cdn.channel.io
@@ -2512,6 +2514,7 @@ domain_set:
 - m3u8-0.c-spanvideo.org
 - static.c-spanvideo.org
 - ximage.c-spanvideo.org
+- data.caida.org
 - error.c.cdn77.org
 - lethe.chinstrap.org
 - apache.claz.org
@@ -5193,6 +5196,7 @@ domain_suffix_set:
 - datalore.io
 - ipfs.decoo.io
 - ipfs.denarius.io
+- desec.io
 - docker.io
 - draw.io
 - elementary.io
@@ -5485,6 +5489,7 @@ domain_suffix_set:
 - cloudapp.net
 - cloudfront.net
 - cloudfunctions.net
+- cloudns.net
 - mirrors.clouvider.net
 - mirror.colo-serv.net
 - edge.steam-dns.top.comcast.net

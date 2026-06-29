@@ -1,4 +1,4 @@
-# Total: 6336 rules
+# Total: 6341 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -31,6 +31,7 @@
 - 'disco-static.productessentials.app'
 - 'cdn.rive.app'
 - 'images.rss.app'
+- 'widget.rss.app'
 - 'assets.slater.app'
 - 'dl.vanadium.app'
 - 'dl.vibeisland.app'
@@ -1913,6 +1914,7 @@
 - 'assets.bwbx.io'
 - 'assets.canny.io'
 - 'assets2.canny.io'
+- 'changelog-widget.canny.io'
 - 'canny-assets.io'
 - 'fast.chameleon.io'
 - 'cdn.channel.io'
@@ -2511,6 +2513,7 @@
 - 'm3u8-0.c-spanvideo.org'
 - 'static.c-spanvideo.org'
 - 'ximage.c-spanvideo.org'
+- 'data.caida.org'
 - 'error.c.cdn77.org'
 - 'lethe.chinstrap.org'
 - 'apache.claz.org'
@@ -5191,6 +5194,7 @@
 - '+.datalore.io'
 - '+.ipfs.decoo.io'
 - '+.ipfs.denarius.io'
+- '+.desec.io'
 - '+.docker.io'
 - '+.draw.io'
 - '+.elementary.io'
@@ -5483,6 +5487,7 @@
 - '+.cloudapp.net'
 - '+.cloudfront.net'
 - '+.cloudfunctions.net'
+- '+.cloudns.net'
 - '+.mirrors.clouvider.net'
 - '+.mirror.colo-serv.net'
 - '+.edge.steam-dns.top.comcast.net'

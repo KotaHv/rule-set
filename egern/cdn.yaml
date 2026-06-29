@@ -1,4 +1,4 @@
-# Total: 4586 rules
+# Total: 4588 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -65,6 +65,7 @@ domain_set:
 - disco-static.productessentials.app
 - cdn.rive.app
 - images.rss.app
+- widget.rss.app
 - assets.slater.app
 - phishing.army
 - img.fzf404.art
@@ -2370,6 +2371,7 @@ domain_set:
 - status.canarymail.io
 - assets.canny.io
 - assets2.canny.io
+- changelog-widget.canny.io
 - canny-assets.io
 - fast.chameleon.io
 - cdn.channel.io

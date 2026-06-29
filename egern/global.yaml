@@ -1,4 +1,4 @@
-# Total: 1776 rules
+# Total: 1778 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -1091,6 +1091,7 @@ domain_suffix_set:
 - crates.io
 - cuty.io
 - datalore.io
+- desec.io
 - docker.io
 - draw.io
 - elementary.io
@@ -1262,6 +1263,7 @@ domain_suffix_set:
 - cloudapp.net
 - cloudfront.net
 - cloudfunctions.net
+- cloudns.net
 - creaders.net
 - daum.net
 - deviantart.net

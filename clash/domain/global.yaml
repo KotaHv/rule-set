@@ -1,4 +1,4 @@
-# Total: 1758 rules
+# Total: 1760 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -1089,6 +1089,7 @@
 - '+.crates.io'
 - '+.cuty.io'
 - '+.datalore.io'
+- '+.desec.io'
 - '+.docker.io'
 - '+.draw.io'
 - '+.elementary.io'
@@ -1260,6 +1261,7 @@
 - '+.cloudapp.net'
 - '+.cloudfront.net'
 - '+.cloudfunctions.net'
+- '+.cloudns.net'
 - '+.creaders.net'
 - '+.daum.net'
 - '+.deviantart.net'
