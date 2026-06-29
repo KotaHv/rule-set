@@ -1,4 +1,4 @@
-# Total: 3252 rules
+# Total: 3253 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1779,6 +1779,7 @@ domain_set:
 - speedtest.bellevueia.gov
 - ookla.rbn.gr
 - us-central1-c.gcp.spd.synthesis.health
+- ookla-speedtest.hgconair.hgc.com.hk
 - ookla-speedtest-central.hgconair.hgc.com.hk
 - sosimhk.datapath.three.com.hk
 - speedtest.three.com.hk
