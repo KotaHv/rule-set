@@ -1,4 +1,4 @@
-# Total: 166 rules
+# Total: 167 rules
 payload:
 - DOMAIN-WILDCARD,analytics-*.aasaam.com
 - DOMAIN-WILDCARD,pixel*.adswizz.com
@@ -94,6 +94,7 @@ payload:
 - DOMAIN-KEYWORD,dolce-gusto.
 - DOMAIN-KEYWORD,doubleclick.
 - DOMAIN-KEYWORD,dubester.
+- DOMAIN-KEYWORD,ebis-tracking.
 - DOMAIN-KEYWORD,engage.3m.
 - DOMAIN-KEYWORD,fb-business-appeal
 - DOMAIN-KEYWORD,fb-community-standards
