@@ -1,4 +1,4 @@
-# Total: 4588 rules
+# Total: 4589 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2155,6 +2155,7 @@ domain_set:
 - cdn.windowsreport.com
 - img.windy.com
 - ims.windy.com
+- sat.windy.com
 - tiles.windy.com
 - media.wired.com
 - embed-cloudfront.wistia.com
