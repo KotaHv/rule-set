@@ -1,4 +1,4 @@
-# Total: 1958 rules
+# Total: 1959 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1187,6 +1187,7 @@
 - 'download.mozilla.org'
 - 'd.myani.org'
 - 'd2.myani.org'
+- 'artifacts.nixos.org'
 - 'nobara-images.nobaraproject.org'
 - 'lzip.nongnu.org'
 - 'registry.npmjs.org'

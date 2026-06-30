@@ -1,4 +1,4 @@
-# Total: 1966 rules
+# Total: 1967 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1188,6 +1188,7 @@ domain_set:
 - download.mozilla.org
 - d.myani.org
 - d2.myani.org
+- artifacts.nixos.org
 - nobara-images.nobaraproject.org
 - lzip.nongnu.org
 - registry.npmjs.org
