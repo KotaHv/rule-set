@@ -1,4 +1,4 @@
-# Total: 6341 rules
+# Total: 6349 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -148,6 +148,8 @@
 - 'cdn-builds.paw.cloud'
 - 'cdn-static.paw.cloud'
 - 'ir.ubuntu.sindad.cloud'
+- 'steamdeck-images.steamos.cloud'
+- 'steamdeck-packages.steamos.cloud'
 - 'mirror.thunderhosting.cloud'
 - 'cdn.tiny.cloud'
 - 'cdn.kinopio.club'
@@ -166,6 +168,7 @@
 - 'cdn.delve.co'
 - 'assets.dub.co'
 - 'mirror.unimagdalena.edu.co'
+- 'gannett-cdn.ex.co'
 - 'previews.fleek.co'
 - 'storageapi.fleek.co'
 - 'storageapi2.fleek.co'
@@ -706,6 +709,9 @@
 - 'api.fontshare.com'
 - 'cdn.fontshare.com'
 - 'cdn-live.foreignaffairs.com'
+- 'consent.formula1.com'
+- 'media.formula1.com'
+- 'static.formula1.com'
 - 'filestore.fortinet.com'
 - 'cdn.app.fossa.com'
 - 'cdn.fourthwall.com'
@@ -1655,6 +1661,7 @@
 - 'stc.utdstc.com'
 - 'static.vanta.com'
 - 'vectorified.com'
+- 'cdn.veeam.com'
 - 'mirror.veesp.com'
 - 'cdn.vemetric.com'
 - 'cdn.verifypass.com'
@@ -3601,6 +3608,7 @@
 - '+.gamesstack.com'
 - '+.gametap.com'
 - '+.gammacdn.com'
+- '+.gannett-cdn.com'
 - '+.garena.com'
 - '+.garenanow.com'
 - '+.garmin.com'

@@ -1,4 +1,4 @@
-# Total: 6482 rules
+# Total: 6490 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -147,6 +147,8 @@ DOMAIN,mirror.improve.nordlo.cloud
 DOMAIN,cdn-builds.paw.cloud
 DOMAIN,cdn-static.paw.cloud
 DOMAIN,ir.ubuntu.sindad.cloud
+DOMAIN,steamdeck-images.steamos.cloud
+DOMAIN,steamdeck-packages.steamos.cloud
 DOMAIN,mirror.thunderhosting.cloud
 DOMAIN,cdn.tiny.cloud
 DOMAIN,cdn.kinopio.club
@@ -165,6 +167,7 @@ DOMAIN,img.decrypt.co
 DOMAIN,cdn.delve.co
 DOMAIN,assets.dub.co
 DOMAIN,mirror.unimagdalena.edu.co
+DOMAIN,gannett-cdn.ex.co
 DOMAIN,previews.fleek.co
 DOMAIN,storageapi.fleek.co
 DOMAIN,storageapi2.fleek.co
@@ -705,6 +708,9 @@ DOMAIN,cdn.fluidplayer.com
 DOMAIN,api.fontshare.com
 DOMAIN,cdn.fontshare.com
 DOMAIN,cdn-live.foreignaffairs.com
+DOMAIN,consent.formula1.com
+DOMAIN,media.formula1.com
+DOMAIN,static.formula1.com
 DOMAIN,filestore.fortinet.com
 DOMAIN,cdn.app.fossa.com
 DOMAIN,cdn.fourthwall.com
@@ -1654,6 +1660,7 @@ DOMAIN,img.utdstc.com
 DOMAIN,stc.utdstc.com
 DOMAIN,static.vanta.com
 DOMAIN,vectorified.com
+DOMAIN,cdn.veeam.com
 DOMAIN,mirror.veesp.com
 DOMAIN,cdn.vemetric.com
 DOMAIN,cdn.verifypass.com
@@ -3600,6 +3607,7 @@ DOMAIN-SUFFIX,gamesplanet.com
 DOMAIN-SUFFIX,gamesstack.com
 DOMAIN-SUFFIX,gametap.com
 DOMAIN-SUFFIX,gammacdn.com
+DOMAIN-SUFFIX,gannett-cdn.com
 DOMAIN-SUFFIX,garena.com
 DOMAIN-SUFFIX,garenanow.com
 DOMAIN-SUFFIX,garmin.com

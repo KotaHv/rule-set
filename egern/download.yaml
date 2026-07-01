@@ -1,4 +1,4 @@
-# Total: 1967 rules
+# Total: 1969 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -146,6 +146,8 @@ domain_set:
 - mirror.improve.nordlo.cloud
 - cdn-builds.paw.cloud
 - ir.ubuntu.sindad.cloud
+- steamdeck-images.steamos.cloud
+- steamdeck-packages.steamos.cloud
 - mirror.thunderhosting.cloud
 - mirror.unimagdalena.edu.co
 - cas-bridge.xethub.hf.co
