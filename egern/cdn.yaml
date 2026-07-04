@@ -1,4 +1,4 @@
-# Total: 4595 rules
+# Total: 4599 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -49,6 +49,7 @@ domain_set:
 - bundle.dyn-rev.app
 - videos.elephas.app
 - do.featurebase.app
+- legacy-us-images.foundryco.app
 - chat-assets.front.app
 - cdn.giftcardpro.app
 - widgets.goaffpro.app
@@ -361,6 +362,7 @@ domain_set:
 - static.axios.com
 - pkgs.dev.azure.com
 - cdn.prod.ext.web.purview.azure.com
+- b2b-contenthub.com
 - cdn.babylonjs.com
 - s3.eu-central-003.backblazeb2.com
 - f000.backblazeb2.com
@@ -1564,6 +1566,7 @@ domain_set:
 - pcdn-my.pcloud.com
 - pcdn-www.pcloud.com
 - i.pcmag.com
+- sm.pcmag.com
 - cdna.pcpartpicker.com
 - assets.peatio.com
 - b.peatio.com
@@ -3221,6 +3224,7 @@ domain_set:
 - starlight.nebula.tv
 - images.pluto.tv
 - static-homepage-en.pluto.tv
+- assets.pscp.tv
 - static.tella.tv
 - media.trakt.tv
 - walter-r2.trakt.tv
