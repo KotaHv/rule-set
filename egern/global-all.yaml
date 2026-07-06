@@ -1,4 +1,4 @@
-# Total: 6479 rules
+# Total: 6484 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1080,6 +1080,7 @@ domain_set:
 - twemoji.maxcdn.com
 - download.maxmind.com
 - static.maxmind.com
+- cdn.mcp-use.com
 - assets.media-platform.com
 - i.mediatek.com
 - static.meiguo.com
@@ -1397,6 +1398,7 @@ domain_set:
 - embed.runkit.com
 - runkit-packages-static.com
 - runkit-packages-static-executables.com
+- assets.ryanair.com
 - c.s-microsoft.com
 - store-images.s-microsoft.com
 - public.saasexch.com
@@ -1535,6 +1537,7 @@ domain_set:
 - sp.streamlabs.com
 - assets.streamlinehq.com
 - cdn-service.jp.sumologic.com
+- cdn-o.suno.com
 - cdn.sunofbeaches.com
 - frontend-assets.supabase.com
 - cdn.super.com
@@ -2525,6 +2528,7 @@ domain_set:
 - static.c-spanvideo.org
 - ximage.c-spanvideo.org
 - data.caida.org
+- cdn.candid.org
 - error.c.cdn77.org
 - lethe.chinstrap.org
 - apache.claz.org
@@ -4556,6 +4560,7 @@ domain_suffix_set:
 - sqlserveronlinux.com
 - sqspcdn.com
 - squadbusters.com
+- squarecdn.com
 - squarespace-cdn.com
 - srcdn.com
 - ss-cdn.com

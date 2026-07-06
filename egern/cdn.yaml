@@ -1,4 +1,4 @@
-# Total: 4599 rules
+# Total: 4604 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1312,6 +1312,7 @@ domain_set:
 - images.mathworks.com
 - twemoji.maxcdn.com
 - static.maxmind.com
+- cdn.mcp-use.com
 - resources.digital-cloud.medallia.com
 - assets.media-platform.com
 - static.mediafire.com
@@ -1729,6 +1730,7 @@ domain_set:
 - embed.runkit.com
 - runkit-packages-static.com
 - runkit-packages-static-executables.com
+- assets.ryanair.com
 - c.s-microsoft.com
 - store-images.s-microsoft.com
 - public.saasexch.com
@@ -1889,6 +1891,7 @@ domain_set:
 - js.stripe.com
 - cdn.substack.com
 - cdn-service.jp.sumologic.com
+- cdn-o.suno.com
 - cdn.sunofbeaches.com
 - frontend-assets.supabase.com
 - cdn.super.com
@@ -2953,6 +2956,7 @@ domain_set:
 - m3u8-0.c-spanvideo.org
 - static.c-spanvideo.org
 - ximage.c-spanvideo.org
+- cdn.candid.org
 - error.c.cdn77.org
 - cdn.cfr.org
 - assets.change.org
@@ -3904,6 +3908,7 @@ domain_suffix_set:
 - splunkcloud.com
 - spreadshirtmedia.com
 - sqspcdn.com
+- squarecdn.com
 - squarespace-cdn.com
 - srcdn.com
 - ss-cdn.com

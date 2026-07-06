@@ -1,4 +1,4 @@
-# Total: 6352 rules
+# Total: 6357 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1079,6 +1079,7 @@
 - 'twemoji.maxcdn.com'
 - 'download.maxmind.com'
 - 'static.maxmind.com'
+- 'cdn.mcp-use.com'
 - 'assets.media-platform.com'
 - 'i.mediatek.com'
 - 'static.meiguo.com'
@@ -1396,6 +1397,7 @@
 - 'embed.runkit.com'
 - 'runkit-packages-static.com'
 - 'runkit-packages-static-executables.com'
+- 'assets.ryanair.com'
 - 'c.s-microsoft.com'
 - 'store-images.s-microsoft.com'
 - 'public.saasexch.com'
@@ -1534,6 +1536,7 @@
 - 'sp.streamlabs.com'
 - 'assets.streamlinehq.com'
 - 'cdn-service.jp.sumologic.com'
+- 'cdn-o.suno.com'
 - 'cdn.sunofbeaches.com'
 - 'frontend-assets.supabase.com'
 - 'cdn.super.com'
@@ -2524,6 +2527,7 @@
 - 'static.c-spanvideo.org'
 - 'ximage.c-spanvideo.org'
 - 'data.caida.org'
+- 'cdn.candid.org'
 - 'error.c.cdn77.org'
 - 'lethe.chinstrap.org'
 - 'apache.claz.org'
@@ -4554,6 +4558,7 @@
 - '+.sqlserveronlinux.com'
 - '+.sqspcdn.com'
 - '+.squadbusters.com'
+- '+.squarecdn.com'
 - '+.squarespace-cdn.com'
 - '+.srcdn.com'
 - '+.ss-cdn.com'
