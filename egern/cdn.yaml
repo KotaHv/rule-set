@@ -1,4 +1,4 @@
-# Total: 4604 rules
+# Total: 4605 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -302,6 +302,7 @@ domain_set:
 - static.ess.apple.com
 - events-delivery.apple.com
 - events-live.apple.com
+- hls-svod.itunes.apple.com
 - news-assets.apple.com
 - pba.apple.com
 - time.apple.com

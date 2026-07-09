@@ -1,4 +1,4 @@
-# Total: 6357 rules
+# Total: 6358 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -293,6 +293,7 @@
 - 'events-live.apple.com'
 - 'hls.itunes.apple.com'
 - 'hls-amt.itunes.apple.com'
+- 'hls-svod.itunes.apple.com'
 - 'np-edge.itunes.apple.com'
 - 'play-edge.itunes.apple.com'
 - 'uts-api.itunes.apple.com'
