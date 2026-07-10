@@ -1,4 +1,4 @@
-# Total: 6487 rules
+# Total: 6491 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -27,6 +27,7 @@ domain_set:
 - pic.macked.app
 - cdn.matterhorn.app
 - dl.motrix.app
+- pha-prx.ops.cloud.nx.app
 - meta.omaps.app
 - cdn.organicmaps.app
 - builds.parsec.app
@@ -854,6 +855,7 @@ domain_set:
 - code.highcharts.com
 - cdn.himetrica.com
 - cdn.hinative.com
+- cdn-assets.hinative.com
 - cdn.hongkongcard.com
 - mirror.hoobly.com
 - ulises.hostalia.com
@@ -1414,6 +1416,8 @@ domain_set:
 - images.samsung.com
 - mirrors.sarata.com
 - embed.savvycal.com
+- cdn.scalar.com
+- magic.scalar.com
 - assets.scaleflex.com
 - mirror.scaleuptech.com
 - assets.scaleway.com
