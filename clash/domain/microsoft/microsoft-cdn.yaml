@@ -1,13 +1,13 @@
-# Total: 55 rules
+# Total: 54 rules
 'payload':
 - 'res-h3.public.cdn.office.net'
 - 'res.cdn.office.net'
 - 'res-1.cdn.office.net'
 - 'res-2.cdn.office.net'
+- 'statics.teams.cdn.office.net'
 - '+.developer.microsoft.com'
 - '+.download.microsoft.com'
 - '+.dl.delivery.mp.microsoft.com'
-- '+.storeedgefd.dsx.mp.microsoft.com'
 - '+.officecdn.microsoft.com'
 - '+.azuremigrate.download.prss.microsoft.com'
 - '+.azuremigratetest.download.prss.microsoft.com'
@@ -52,6 +52,5 @@
 - '+.ctldl.windowsupdate.com'
 - '+.download.windowsupdate.com'
 - '+.shell.cdn.office.net'
-- '+.statics.teams.cdn.office.net'
 - '+.b.c2r.ts.cdn.office.net'
 - '+.f.c2r.ts.cdn.office.net'

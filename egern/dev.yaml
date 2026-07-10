@@ -1,4 +1,4 @@
-# Total: 598 rules
+# Total: 600 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -122,6 +122,7 @@ domain_suffix_set:
 - canonical.com
 - codethemicrobit.com
 - crashlytics.com
+- crocoblock.com
 - cygwin.com
 - deno.com
 - dependabot.com
@@ -195,6 +196,7 @@ domain_suffix_set:
 - mmdnn.com
 - mongodb.com
 - mono-project.com
+- motocms.com
 - motopress.com
 - msdn.com
 - msinnovationchallenge.com
