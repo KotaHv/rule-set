@@ -1,4 +1,4 @@
-# Total: 599 rules
+# Total: 601 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -153,6 +153,7 @@
 - '+.gamesstack.com'
 - '+.gemfury.com'
 - '+.getbootstrap.com'
+- '+.getsentry.com'
 - '+.ghe.com'
 - '+.git-scm.com'
 - '+.gitbook.com'
@@ -284,6 +285,7 @@
 - '+.githubpreview.dev'
 - '+.go.dev'
 - '+.pub.dev'
+- '+.sentry.dev'
 - '+.termux.dev'
 - '+.v8.dev'
 - '+.vscode.dev'

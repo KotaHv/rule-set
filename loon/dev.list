@@ -1,4 +1,4 @@
-# Total: 599 rules
+# Total: 601 rules
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -152,6 +152,7 @@ DOMAIN-SUFFIX,framerusercontent.com
 DOMAIN-SUFFIX,gamesstack.com
 DOMAIN-SUFFIX,gemfury.com
 DOMAIN-SUFFIX,getbootstrap.com
+DOMAIN-SUFFIX,getsentry.com
 DOMAIN-SUFFIX,ghe.com
 DOMAIN-SUFFIX,git-scm.com
 DOMAIN-SUFFIX,gitbook.com
@@ -283,6 +284,7 @@ DOMAIN-SUFFIX,github.dev
 DOMAIN-SUFFIX,githubpreview.dev
 DOMAIN-SUFFIX,go.dev
 DOMAIN-SUFFIX,pub.dev
+DOMAIN-SUFFIX,sentry.dev
 DOMAIN-SUFFIX,termux.dev
 DOMAIN-SUFFIX,v8.dev
 DOMAIN-SUFFIX,vscode.dev

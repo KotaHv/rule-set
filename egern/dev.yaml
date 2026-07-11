@@ -1,4 +1,4 @@
-# Total: 600 rules
+# Total: 602 rules
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -155,6 +155,7 @@ domain_suffix_set:
 - gamesstack.com
 - gemfury.com
 - getbootstrap.com
+- getsentry.com
 - ghe.com
 - git-scm.com
 - gitbook.com
@@ -286,6 +287,7 @@ domain_suffix_set:
 - githubpreview.dev
 - go.dev
 - pub.dev
+- sentry.dev
 - termux.dev
 - v8.dev
 - vscode.dev

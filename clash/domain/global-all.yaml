@@ -1,4 +1,4 @@
-# Total: 6364 rules
+# Total: 6365 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -3643,6 +3643,7 @@
 - '+.getchu.com'
 - '+.cdn.getfeedback.com'
 - '+.assets.getpocket.com'
+- '+.getsentry.com'
 - '+.gettyimages.com'
 - '+.ggpht.com'
 - '+.ghe.com'
