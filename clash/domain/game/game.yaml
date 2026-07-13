@@ -1,4 +1,4 @@
-# Total: 792 rules
+# Total: 791 rules
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -649,7 +649,6 @@
 - '+.pjsekai.sega.jp'
 - '+.stellasora.jp'
 - '+.worldflipper.jp'
-- '+.konami'
 - '+.eakorea.co.kr'
 - '+.leagueoflegends.co.kr'
 - '+.lolshop.co.kr'

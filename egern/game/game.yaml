@@ -1,4 +1,4 @@
-# Total: 793 rules
+# Total: 792 rules
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -651,7 +651,6 @@ domain_suffix_set:
 - pjsekai.sega.jp
 - stellasora.jp
 - worldflipper.jp
-- konami
 - eakorea.co.kr
 - leagueoflegends.co.kr
 - lolshop.co.kr
