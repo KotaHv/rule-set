@@ -1,4 +1,4 @@
-# Total: 6365 rules
+# Total: 6369 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -170,6 +170,7 @@
 - 'cdn.delve.co'
 - 'assets.dub.co'
 - 'mirror.unimagdalena.edu.co'
+- 'exbd.ex.co'
 - 'gannett-cdn.ex.co'
 - 'previews.fleek.co'
 - 'storageapi.fleek.co'
@@ -578,6 +579,7 @@
 - 'static.websites.data-crypt.com'
 - 'cdn.datacamp.com'
 - 'media.datacenterdynamics.com'
+- 'imgix.datadoghq.com'
 - 'cdn.datdota.com'
 - 'cdn.db-ip.com'
 - 'website-media.deel.com'
@@ -5525,6 +5527,7 @@
 - '+.daum.net'
 - '+.daumcdn.net'
 - '+.dc-telemetry.net'
+- '+.dd-static.net'
 - '+.deviantart.net'
 - '+.devopsassessment.net'
 - '+.diagrams.net'
@@ -5972,6 +5975,7 @@
 - '+.icann.org'
 - '+.ietf.org'
 - '+.imageglass.org'
+- '+.imgproxy.org'
 - '+.instituteofwar.org'
 - '+.intellij.org'
 - '+.internet.org'

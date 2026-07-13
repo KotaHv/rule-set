@@ -1,4 +1,4 @@
-# Total: 6492 rules
+# Total: 6496 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -171,6 +171,7 @@ domain_set:
 - cdn.delve.co
 - assets.dub.co
 - mirror.unimagdalena.edu.co
+- exbd.ex.co
 - gannett-cdn.ex.co
 - previews.fleek.co
 - storageapi.fleek.co
@@ -579,6 +580,7 @@ domain_set:
 - static.websites.data-crypt.com
 - cdn.datacamp.com
 - media.datacenterdynamics.com
+- imgix.datadoghq.com
 - cdn.datdota.com
 - cdn.db-ip.com
 - website-media.deel.com
@@ -5527,6 +5529,7 @@ domain_suffix_set:
 - daum.net
 - daumcdn.net
 - dc-telemetry.net
+- dd-static.net
 - deviantart.net
 - devopsassessment.net
 - diagrams.net
@@ -5974,6 +5977,7 @@ domain_suffix_set:
 - icann.org
 - ietf.org
 - imageglass.org
+- imgproxy.org
 - instituteofwar.org
 - intellij.org
 - internet.org

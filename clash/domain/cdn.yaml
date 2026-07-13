@@ -1,4 +1,4 @@
-# Total: 4530 rules
+# Total: 4534 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -154,6 +154,7 @@
 - 'img.decrypt.co'
 - 'cdn.delve.co'
 - 'assets.dub.co'
+- 'exbd.ex.co'
 - 'gannett-cdn.ex.co'
 - 'previews.fleek.co'
 - 'storageapi.fleek.co'
@@ -648,6 +649,7 @@
 - 'static.websites.data-crypt.com'
 - 'cdn.datacamp.com'
 - 'media.datacenterdynamics.com'
+- 'imgix.datadoghq.com'
 - 'cdn.datdota.com'
 - 'cdn.db-ip.com'
 - 'website-media.deel.com'
@@ -4256,6 +4258,7 @@
 - '+.cdn.cwinfo.net'
 - '+.daumcdn.net'
 - '+.dc-telemetry.net'
+- '+.dd-static.net'
 - '+.directupload.net'
 - '+.divio-media.net'
 - '+.dlunar.net'
@@ -4404,6 +4407,7 @@
 - '+.haproxy.org'
 - '+.hsto.org'
 - '+.cdn.icann.org'
+- '+.imgproxy.org'
 - '+.js.org'
 - '+.jspm.org'
 - '+.jw-cdn.org'
