@@ -1,4 +1,4 @@
-# Total: 105 rules
+# Total: 106 rules
 payload:
 - DOMAIN-WILDCARD,cdn-*.comaps.app
 - DOMAIN-WILDCARD,cdn-*.organicmaps.app
@@ -9,6 +9,7 @@ payload:
 - DOMAIN-WILDCARD,cdn?.18girlssex.com
 - DOMAIN-WILDCARD,blog-imgs-??.2nt.com
 - DOMAIN-WILDCARD,fastly-*.allmovie.com
+- DOMAIN-WILDCARD,s3.*.backblazeb2.com
 - DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
 - DOMAIN-WILDCARD,cdn*.boysfood.com
 - DOMAIN-WILDCARD,*-intake.*.datadoghq.com

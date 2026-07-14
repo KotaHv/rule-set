@@ -1,4 +1,4 @@
-# Total: 1970 rules
+# Total: 1981 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -9,12 +9,17 @@ domain_set:
 - kali.itsec.am
 - mirrors.teamcloud.am
 - fdisk.5play.app
+- cdn-fi-1.comaps.app
+- cdn-us-1.comaps.app
+- mapgen-fi-1.comaps.app
 - assets.dataflare.app
 - updates.istatmenus.app
 - releases.landrop.app
 - dl.motrix.app
 - meta.omaps.app
 - cdn.organicmaps.app
+- cdn-nl1.organicmaps.app
+- cdn-uk1.organicmaps.app
 - builds.parsec.app
 - dl.vanadium.app
 - dl.vibeisland.app
@@ -488,6 +493,7 @@ domain_set:
 - mirror.checkdomain.de
 - mirror.dogado.de
 - ftp.fau.de
+- comaps.firewall-gateway.de
 - ftp.fu-berlin.de
 - mirror.funkfreundelandshut.de
 - download.geofabrik.de
@@ -652,6 +658,7 @@ domain_set:
 - cpan.mines-albi.fr
 - ctan.mines-albi.fr
 - debian.obspm.fr
+- comaps.openstreetmap.fr
 - debian.polytech-lille.fr
 - ubuntu.syxpi.fr
 - ftp.u-picardie.fr
@@ -795,6 +802,7 @@ domain_set:
 - ftp.eutelia.it
 - ftp.linux.it
 - mirror.nohup.it
+- comaps-it1.unfoxo.it
 - giano.com.dist.unige.it
 - mirror.units.it
 - ftp.jaist.ac.jp
@@ -1344,6 +1352,7 @@ domain_set:
 - mirror.vnet.sk
 - repository.su
 - mirror.kumi.systems
+- cdn-us-2.comaps.tech
 - mirror.kku.ac.th
 - mirror1.ku.ac.th
 - mirrors.cloudforest.co.th
@@ -1955,6 +1964,7 @@ domain_suffix_set:
 - mirrors.linux.ro
 - repo.jing.rocks
 - mirror.ftn.uns.ac.rs
+- s3-website.cloud.ru
 - fnbuilds.services
 - temp.sh
 - apache.si
@@ -1967,6 +1977,7 @@ domain_suffix_set:
 domain_wildcard_set:
 - cdn-*.comaps.app
 - cdn-*.organicmaps.app
+- s3.*.backblazeb2.com
 - '*.s3.*.backblazeb2.com'
 - download*.mediafire.com
 - ftp.??.debian.org

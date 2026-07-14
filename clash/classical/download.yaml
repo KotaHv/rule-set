@@ -1,7 +1,8 @@
-# Total: 7 rules
+# Total: 8 rules
 payload:
 - DOMAIN-WILDCARD,cdn-*.comaps.app
 - DOMAIN-WILDCARD,cdn-*.organicmaps.app
+- DOMAIN-WILDCARD,s3.*.backblazeb2.com
 - DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
 - DOMAIN-WILDCARD,download*.mediafire.com
 - DOMAIN-WILDCARD,ftp.??.debian.org

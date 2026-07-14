@@ -1,4 +1,4 @@
-# Total: 6559 rules
+# Total: 6566 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -12,6 +12,9 @@ DOMAIN,cdn.accessibly.app
 DOMAIN,assets.airbuddy.app
 DOMAIN,cdn.announcekit.app
 DOMAIN,img.announcekit.app
+DOMAIN,cdn-fi-1.comaps.app
+DOMAIN,cdn-us-1.comaps.app
+DOMAIN,mapgen-fi-1.comaps.app
 DOMAIN,assets.dataflare.app
 DOMAIN,bundle.dyn-rev.app
 DOMAIN,videos.elephas.app
@@ -28,6 +31,8 @@ DOMAIN,dl.motrix.app
 DOMAIN,pha-prx.ops.cloud.nx.app
 DOMAIN,meta.omaps.app
 DOMAIN,cdn.organicmaps.app
+DOMAIN,cdn-nl1.organicmaps.app
+DOMAIN,cdn-uk1.organicmaps.app
 DOMAIN,builds.parsec.app
 DOMAIN,disco-static.productessentials.app
 DOMAIN,cdn.rive.app
@@ -2744,6 +2749,7 @@ DOMAIN,static.ada.support
 DOMAIN,mirror.kumi.systems
 DOMAIN,cdn.hubble.team
 DOMAIN,sdk.hubble.team
+DOMAIN,cdn-us-2.comaps.tech
 DOMAIN,docs.mrchromebox.tech
 DOMAIN,static.pepy.tech
 DOMAIN,mirror.kku.ac.th
@@ -6426,6 +6432,7 @@ DOMAIN-WILDCARD,*-intake-*-datadoghq.com
 DOMAIN-WILDCARD,cdn?.18girlssex.com
 DOMAIN-WILDCARD,blog-imgs-??.2nt.com
 DOMAIN-WILDCARD,fastly-*.allmovie.com
+DOMAIN-WILDCARD,s3.*.backblazeb2.com
 DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
 DOMAIN-WILDCARD,cdn*.boysfood.com
 DOMAIN-WILDCARD,*-intake.*.datadoghq.com

@@ -1,4 +1,4 @@
-# Total: 1963 rules
+# Total: 1973 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,downloads.claude.ai
@@ -7,12 +7,17 @@ DOMAIN,mirrors.asnet.am
 DOMAIN,kali.itsec.am
 DOMAIN,mirrors.teamcloud.am
 DOMAIN,fdisk.5play.app
+DOMAIN,cdn-fi-1.comaps.app
+DOMAIN,cdn-us-1.comaps.app
+DOMAIN,mapgen-fi-1.comaps.app
 DOMAIN,assets.dataflare.app
 DOMAIN,updates.istatmenus.app
 DOMAIN,releases.landrop.app
 DOMAIN,dl.motrix.app
 DOMAIN,meta.omaps.app
 DOMAIN,cdn.organicmaps.app
+DOMAIN,cdn-nl1.organicmaps.app
+DOMAIN,cdn-uk1.organicmaps.app
 DOMAIN,builds.parsec.app
 DOMAIN,dl.vanadium.app
 DOMAIN,dl.vibeisland.app
@@ -486,6 +491,7 @@ DOMAIN,debian.charite.de
 DOMAIN,mirror.checkdomain.de
 DOMAIN,mirror.dogado.de
 DOMAIN,ftp.fau.de
+DOMAIN,comaps.firewall-gateway.de
 DOMAIN,ftp.fu-berlin.de
 DOMAIN,mirror.funkfreundelandshut.de
 DOMAIN,download.geofabrik.de
@@ -650,6 +656,7 @@ DOMAIN,www-ftp.lip6.fr
 DOMAIN,cpan.mines-albi.fr
 DOMAIN,ctan.mines-albi.fr
 DOMAIN,debian.obspm.fr
+DOMAIN,comaps.openstreetmap.fr
 DOMAIN,debian.polytech-lille.fr
 DOMAIN,ubuntu.syxpi.fr
 DOMAIN,ftp.u-picardie.fr
@@ -793,6 +800,7 @@ DOMAIN,debian.dynamica.it
 DOMAIN,ftp.eutelia.it
 DOMAIN,ftp.linux.it
 DOMAIN,mirror.nohup.it
+DOMAIN,comaps-it1.unfoxo.it
 DOMAIN,giano.com.dist.unige.it
 DOMAIN,mirror.units.it
 DOMAIN,ftp.jaist.ac.jp
@@ -1342,6 +1350,7 @@ DOMAIN,ftp.upjs.sk
 DOMAIN,mirror.vnet.sk
 DOMAIN,repository.su
 DOMAIN,mirror.kumi.systems
+DOMAIN,cdn-us-2.comaps.tech
 DOMAIN,mirror.kku.ac.th
 DOMAIN,mirror1.ku.ac.th
 DOMAIN,mirrors.cloudforest.co.th
@@ -1952,6 +1961,7 @@ DOMAIN-SUFFIX,mirror.linux.ro
 DOMAIN-SUFFIX,mirrors.linux.ro
 DOMAIN-SUFFIX,repo.jing.rocks
 DOMAIN-SUFFIX,mirror.ftn.uns.ac.rs
+DOMAIN-SUFFIX,s3-website.cloud.ru
 DOMAIN-SUFFIX,fnbuilds.services
 DOMAIN-SUFFIX,temp.sh
 DOMAIN-SUFFIX,apache.si

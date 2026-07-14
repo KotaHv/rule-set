@@ -1,4 +1,4 @@
-# Total: 6368 rules
+# Total: 6374 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -13,6 +13,9 @@
 - 'assets.airbuddy.app'
 - 'cdn.announcekit.app'
 - 'img.announcekit.app'
+- 'cdn-fi-1.comaps.app'
+- 'cdn-us-1.comaps.app'
+- 'mapgen-fi-1.comaps.app'
 - 'assets.dataflare.app'
 - 'bundle.dyn-rev.app'
 - 'videos.elephas.app'
@@ -29,6 +32,8 @@
 - 'pha-prx.ops.cloud.nx.app'
 - 'meta.omaps.app'
 - 'cdn.organicmaps.app'
+- 'cdn-nl1.organicmaps.app'
+- 'cdn-uk1.organicmaps.app'
 - 'builds.parsec.app'
 - 'disco-static.productessentials.app'
 - 'cdn.rive.app'
@@ -2745,6 +2750,7 @@
 - 'mirror.kumi.systems'
 - 'cdn.hubble.team'
 - 'sdk.hubble.team'
+- 'cdn-us-2.comaps.tech'
 - 'docs.mrchromebox.tech'
 - 'static.pepy.tech'
 - 'mirror.kku.ac.th'
