@@ -1,4 +1,4 @@
-# Total: 56 rules
+# Total: 54 rules
 no_resolve: true
 domain_set:
 - res-h3.public.cdn.office.net
@@ -7,7 +7,6 @@ domain_set:
 - res-2.cdn.office.net
 - statics.teams.cdn.office.net
 domain_suffix_set:
-- developer.microsoft.com
 - download.microsoft.com
 - dl.delivery.mp.microsoft.com
 - officecdn.microsoft.com
@@ -53,7 +52,6 @@ domain_suffix_set:
 - cn.windowssearch.com
 - ctldl.windowsupdate.com
 - download.windowsupdate.com
-- shell.cdn.office.net
 - b.c2r.ts.cdn.office.net
 - f.c2r.ts.cdn.office.net
 url_regex_set:
