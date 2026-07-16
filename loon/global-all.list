@@ -1,4 +1,4 @@
-# Total: 6519 rules
+# Total: 6510 rules
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -425,7 +425,6 @@ DOMAIN,player.interactivity.brightcove.com
 DOMAIN,assets.map.brightcove.com
 DOMAIN,mirror.brightridge.com
 DOMAIN,cdn.britannica.com
-DOMAIN,img.bttimg.com
 DOMAIN,icons.buffer.com
 DOMAIN,start-page.buffer.com
 DOMAIN,static.buffer.com
@@ -446,6 +445,7 @@ DOMAIN,assets.calendly.com
 DOMAIN,cdn.calibermind.com
 DOMAIN,e.calibermind.com
 DOMAIN,cdn.cameo.com
+DOMAIN,cdn2.cameo.com
 DOMAIN,cdn.camweara.com
 DOMAIN,chunk-composing.canva.com
 DOMAIN,content-management-files.canva.com
@@ -732,8 +732,6 @@ DOMAIN,static-cf.foxdata.com
 DOMAIN,cdn.foxycart.com
 DOMAIN,badges.frapsoft.com
 DOMAIN,cdn.freebiesupply.com
-DOMAIN,images.freeimages.com
-DOMAIN,static.freeimages.com
 DOMAIN,static-gcp.freepikcompany.com
 DOMAIN,stories.freepiklabs.com
 DOMAIN,assets.freespeechcoalition.com
@@ -1394,7 +1392,6 @@ DOMAIN,redircdn.com
 DOMAIN,staticsource1.redotpay.com
 DOMAIN,tools.refokus.com
 DOMAIN,static-images.remax.com
-DOMAIN,img.represent.com
 DOMAIN,prod-images.rippling.com
 DOMAIN,img.riskified.com
 DOMAIN,media-cdn.rollcall.com
@@ -1661,7 +1658,6 @@ DOMAIN,www-cdn.uscardforum.com
 DOMAIN,backinstock.useamp.com
 DOMAIN,usehooks-ts.com
 DOMAIN,apichatwidget.usepylon.com
-DOMAIN,chatwidgetmetrics-proxy.usepylon.com
 DOMAIN,widget.usepylon.com
 DOMAIN,media.user.com
 DOMAIN,widget.user.com
@@ -1756,7 +1752,6 @@ DOMAIN,cms.worldpokerdeals.com
 DOMAIN,cdn.worldvectorlogo.com
 DOMAIN,image.worthepenny.com
 DOMAIN,website-prod.cache.wpscdn.com
-DOMAIN,cdn.scripts.wtwhmedia.com
 DOMAIN,downloads.x-wrt.com
 DOMAIN,mirror.xeonbd.com
 DOMAIN,img.xhacgn.com
@@ -1800,7 +1795,6 @@ DOMAIN,icons.zeabur.com
 DOMAIN,service-icons.zeabur.com
 DOMAIN,assets.zephr.com
 DOMAIN,assets.zerohedge.com
-DOMAIN,cdn.zhujiwiki.com
 DOMAIN,cdn.zigpoll.com
 DOMAIN,assets.zilliz.com
 DOMAIN,webfonts.zoho.com
@@ -2151,7 +2145,6 @@ DOMAIN,objects.hit.moe
 DOMAIN,touchgal-image.moyu.moe
 DOMAIN,ovo.wxw.moe
 DOMAIN,zzz.wxw.moe
-DOMAIN,img.m.mw
 DOMAIN,download.nust.na
 DOMAIN,pics.hentai.name
 DOMAIN,cpan.lagoon.nc
@@ -2207,7 +2200,6 @@ DOMAIN,mirror.as43289.net
 DOMAIN,damassets.autodesk.net
 DOMAIN,amp.azure.net
 DOMAIN,catalogartifact.azureedge.net
-DOMAIN,cdn-ota.azureedge.net
 DOMAIN,claritystatic.azureedge.net
 DOMAIN,edge-cloud-resource-static.azureedge.net
 DOMAIN,edge-consumer-static.azureedge.net
@@ -2765,7 +2757,6 @@ DOMAIN,openreplay-new.deel.tools
 DOMAIN,gotest.tools
 DOMAIN,namedotcom-cdn.name.tools
 DOMAIN,css.4jpg.top
-DOMAIN,static-cdn.bytegiftia.top
 DOMAIN,ghfast.top
 DOMAIN,repo.sleeping.town
 DOMAIN,nas2.d.tube

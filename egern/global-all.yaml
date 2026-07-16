@@ -1,4 +1,4 @@
-# Total: 6506 rules
+# Total: 6497 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -427,7 +427,6 @@ domain_set:
 - assets.map.brightcove.com
 - mirror.brightridge.com
 - cdn.britannica.com
-- img.bttimg.com
 - icons.buffer.com
 - start-page.buffer.com
 - static.buffer.com
@@ -448,6 +447,7 @@ domain_set:
 - cdn.calibermind.com
 - e.calibermind.com
 - cdn.cameo.com
+- cdn2.cameo.com
 - cdn.camweara.com
 - chunk-composing.canva.com
 - content-management-files.canva.com
@@ -734,8 +734,6 @@ domain_set:
 - cdn.foxycart.com
 - badges.frapsoft.com
 - cdn.freebiesupply.com
-- images.freeimages.com
-- static.freeimages.com
 - static-gcp.freepikcompany.com
 - stories.freepiklabs.com
 - assets.freespeechcoalition.com
@@ -1396,7 +1394,6 @@ domain_set:
 - staticsource1.redotpay.com
 - tools.refokus.com
 - static-images.remax.com
-- img.represent.com
 - prod-images.rippling.com
 - img.riskified.com
 - media-cdn.rollcall.com
@@ -1663,7 +1660,6 @@ domain_set:
 - backinstock.useamp.com
 - usehooks-ts.com
 - apichatwidget.usepylon.com
-- chatwidgetmetrics-proxy.usepylon.com
 - widget.usepylon.com
 - media.user.com
 - widget.user.com
@@ -1758,7 +1754,6 @@ domain_set:
 - cdn.worldvectorlogo.com
 - image.worthepenny.com
 - website-prod.cache.wpscdn.com
-- cdn.scripts.wtwhmedia.com
 - downloads.x-wrt.com
 - mirror.xeonbd.com
 - img.xhacgn.com
@@ -1802,7 +1797,6 @@ domain_set:
 - service-icons.zeabur.com
 - assets.zephr.com
 - assets.zerohedge.com
-- cdn.zhujiwiki.com
 - cdn.zigpoll.com
 - assets.zilliz.com
 - webfonts.zoho.com
@@ -2153,7 +2147,6 @@ domain_set:
 - touchgal-image.moyu.moe
 - ovo.wxw.moe
 - zzz.wxw.moe
-- img.m.mw
 - download.nust.na
 - pics.hentai.name
 - cpan.lagoon.nc
@@ -2209,7 +2202,6 @@ domain_set:
 - damassets.autodesk.net
 - amp.azure.net
 - catalogartifact.azureedge.net
-- cdn-ota.azureedge.net
 - claritystatic.azureedge.net
 - edge-cloud-resource-static.azureedge.net
 - edge-consumer-static.azureedge.net
@@ -2767,7 +2759,6 @@ domain_set:
 - gotest.tools
 - namedotcom-cdn.name.tools
 - css.4jpg.top
-- static-cdn.bytegiftia.top
 - ghfast.top
 - repo.sleeping.town
 - nas2.d.tube

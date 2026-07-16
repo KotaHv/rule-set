@@ -1,4 +1,4 @@
-# Total: 4560 rules
+# Total: 4551 rules
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -460,7 +460,6 @@ DOMAIN,app.brightback.com
 DOMAIN,player.interactivity.brightcove.com
 DOMAIN,assets.map.brightcove.com
 DOMAIN,cdn.britannica.com
-DOMAIN,img.bttimg.com
 DOMAIN,icons.buffer.com
 DOMAIN,start-page.buffer.com
 DOMAIN,static.buffer.com
@@ -482,6 +481,7 @@ DOMAIN,assets.calendly.com
 DOMAIN,cdn.calibermind.com
 DOMAIN,e.calibermind.com
 DOMAIN,cdn.cameo.com
+DOMAIN,cdn2.cameo.com
 DOMAIN,cdn.camweara.com
 DOMAIN,chunk-composing.canva.com
 DOMAIN,content-management-files.canva.com
@@ -848,8 +848,6 @@ DOMAIN,s2.freebeacon.com
 DOMAIN,s3.freebeacon.com
 DOMAIN,s4.freebeacon.com
 DOMAIN,cdn.freebiesupply.com
-DOMAIN,images.freeimages.com
-DOMAIN,static.freeimages.com
 DOMAIN,avatar.freepik.com
 DOMAIN,cdn-front.freepik.com
 DOMAIN,image.freepik.com
@@ -1135,11 +1133,11 @@ DOMAIN,assets.ipstack.com
 DOMAIN,static.isitetv.com
 DOMAIN,isitmaintained.com
 DOMAIN,media.istockphoto.com
+DOMAIN,static.istockphoto.com
 DOMAIN,assets.fe.itv.com
 DOMAIN,ovp.itv.com
 DOMAIN,asset.jamieoliver.com
 DOMAIN,cdn.jamieoliver.com
-DOMAIN,img2.javdove.com
 DOMAIN,creator-image.javhd.com
 DOMAIN,static.javhd.com
 DOMAIN,cdn.javmg.com
@@ -1713,7 +1711,6 @@ DOMAIN,staticsource1.redotpay.com
 DOMAIN,tools.refokus.com
 DOMAIN,static-images.remax.com
 DOMAIN,sp.replit.com
-DOMAIN,img.represent.com
 DOMAIN,cdn.playersupport.riotgames.com
 DOMAIN,prod-images.rippling.com
 DOMAIN,img.riskified.com
@@ -2065,7 +2062,6 @@ DOMAIN,www-cdn.uscardforum.com
 DOMAIN,backinstock.useamp.com
 DOMAIN,usehooks-ts.com
 DOMAIN,apichatwidget.usepylon.com
-DOMAIN,chatwidgetmetrics-proxy.usepylon.com
 DOMAIN,widget.usepylon.com
 DOMAIN,media.user.com
 DOMAIN,widget.user.com
@@ -2193,7 +2189,6 @@ DOMAIN,cdn.worldvectorlogo.com
 DOMAIN,image.worthepenny.com
 DOMAIN,website-prod.cache.wpscdn.com
 DOMAIN,pbc.wsj.com
-DOMAIN,cdn.scripts.wtwhmedia.com
 DOMAIN,img.xbooru.com
 DOMAIN,assets-www.xbox.com
 DOMAIN,assets.play.xbox.com
@@ -2245,7 +2240,6 @@ DOMAIN,service-icons.zeabur.com
 DOMAIN,assets.zendesk.com
 DOMAIN,assets.zephr.com
 DOMAIN,assets.zerohedge.com
-DOMAIN,cdn.zhujiwiki.com
 DOMAIN,cdn.zigpoll.com
 DOMAIN,assets.zilliz.com
 DOMAIN,webfonts.zoho.com
@@ -2661,7 +2655,6 @@ DOMAIN,cdn01.jotfor.ms
 DOMAIN,cdn02.jotfor.ms
 DOMAIN,cdn03.jotfor.ms
 DOMAIN,assets.onestore.ms
-DOMAIN,img.m.mw
 DOMAIN,cdn.plu.mx
 DOMAIN,pics.hentai.name
 DOMAIN,assets-cdn.abcotvs.net
@@ -3129,7 +3122,6 @@ DOMAIN,brew.sh
 DOMAIN,docs.brew.sh
 DOMAIN,proxy.cors.sh
 DOMAIN,static.cracked.sh
-DOMAIN,s3.doujin.sh
 DOMAIN,static.scarf.sh
 DOMAIN,avatar.tangled.sh
 DOMAIN,flo.uri.sh
@@ -3203,7 +3195,6 @@ DOMAIN,pics.javhd.today
 DOMAIN,openreplay-new.deel.tools
 DOMAIN,namedotcom-cdn.name.tools
 DOMAIN,css.4jpg.top
-DOMAIN,static-cdn.bytegiftia.top
 DOMAIN,nas2.d.tube
 DOMAIN,play.d.tube
 DOMAIN,js.txxx.tube

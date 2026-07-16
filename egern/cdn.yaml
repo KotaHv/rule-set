@@ -1,4 +1,4 @@
-# Total: 4619 rules
+# Total: 4610 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -462,7 +462,6 @@ domain_set:
 - player.interactivity.brightcove.com
 - assets.map.brightcove.com
 - cdn.britannica.com
-- img.bttimg.com
 - icons.buffer.com
 - start-page.buffer.com
 - static.buffer.com
@@ -484,6 +483,7 @@ domain_set:
 - cdn.calibermind.com
 - e.calibermind.com
 - cdn.cameo.com
+- cdn2.cameo.com
 - cdn.camweara.com
 - chunk-composing.canva.com
 - content-management-files.canva.com
@@ -850,8 +850,6 @@ domain_set:
 - s3.freebeacon.com
 - s4.freebeacon.com
 - cdn.freebiesupply.com
-- images.freeimages.com
-- static.freeimages.com
 - avatar.freepik.com
 - cdn-front.freepik.com
 - image.freepik.com
@@ -1137,11 +1135,11 @@ domain_set:
 - static.isitetv.com
 - isitmaintained.com
 - media.istockphoto.com
+- static.istockphoto.com
 - assets.fe.itv.com
 - ovp.itv.com
 - asset.jamieoliver.com
 - cdn.jamieoliver.com
-- img2.javdove.com
 - creator-image.javhd.com
 - static.javhd.com
 - cdn.javmg.com
@@ -1715,7 +1713,6 @@ domain_set:
 - tools.refokus.com
 - static-images.remax.com
 - sp.replit.com
-- img.represent.com
 - cdn.playersupport.riotgames.com
 - prod-images.rippling.com
 - img.riskified.com
@@ -2067,7 +2064,6 @@ domain_set:
 - backinstock.useamp.com
 - usehooks-ts.com
 - apichatwidget.usepylon.com
-- chatwidgetmetrics-proxy.usepylon.com
 - widget.usepylon.com
 - media.user.com
 - widget.user.com
@@ -2195,7 +2191,6 @@ domain_set:
 - image.worthepenny.com
 - website-prod.cache.wpscdn.com
 - pbc.wsj.com
-- cdn.scripts.wtwhmedia.com
 - img.xbooru.com
 - assets-www.xbox.com
 - assets.play.xbox.com
@@ -2247,7 +2242,6 @@ domain_set:
 - assets.zendesk.com
 - assets.zephr.com
 - assets.zerohedge.com
-- cdn.zhujiwiki.com
 - cdn.zigpoll.com
 - assets.zilliz.com
 - webfonts.zoho.com
@@ -2663,7 +2657,6 @@ domain_set:
 - cdn02.jotfor.ms
 - cdn03.jotfor.ms
 - assets.onestore.ms
-- img.m.mw
 - cdn.plu.mx
 - pics.hentai.name
 - assets-cdn.abcotvs.net
@@ -3131,7 +3124,6 @@ domain_set:
 - docs.brew.sh
 - proxy.cors.sh
 - static.cracked.sh
-- s3.doujin.sh
 - static.scarf.sh
 - avatar.tangled.sh
 - flo.uri.sh
@@ -3205,7 +3197,6 @@ domain_set:
 - openreplay-new.deel.tools
 - namedotcom-cdn.name.tools
 - css.4jpg.top
-- static-cdn.bytegiftia.top
 - nas2.d.tube
 - play.d.tube
 - js.txxx.tube

@@ -1,4 +1,4 @@
-# Total: 1981 rules
+# Total: 1973 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -97,7 +97,6 @@ domain_set:
 - ftp.byfly.by
 - mirror.datacenter.by
 - mirror.unet.by
-- mirror.its.dal.ca
 - mirror.dst.ca
 - mirror.estone.ca
 - gimp.ca
@@ -250,7 +249,6 @@ domain_set:
 - desktop.figma.com
 - mirror.fjordos.com
 - rsync.fjordos.com
-- download.fosshub.com
 - data.gameflare.com
 - download.garmin.com
 - omtmapupdate.garmin.com
@@ -476,7 +474,6 @@ domain_set:
 - apache.miloslavbrada.cz
 - ftp.fi.muni.cz
 - archlinux.nic.cz
-- centos.nic.cz
 - cran.nic.cz
 - debian.nic.cz
 - fedora.nic.cz
@@ -500,10 +497,10 @@ domain_set:
 - www.gutscheinrausch.de
 - ftp.gwdg.de
 - ftp5.gwdg.de
+- mirror1.hcgen.de
 - ftp.hosteurope.de
 - ftp-stud.hs-esslingen.de
 - mirror.hs-esslingen.de
-- mirror1.hs-esslingen.de
 - mirror.informatik.hs-fulda.de
 - packages.hs-regensburg.de
 - debian.intergenia.de
@@ -582,7 +579,6 @@ domain_set:
 - mirror.cs.jmu.edu
 - debian.cc.lehigh.edu
 - mirrors.maine.edu
-- lug.mines.edu
 - debian.csail.mit.edu
 - mirrors.mit.edu
 - mirrors.egr.msu.edu
@@ -635,7 +631,6 @@ domain_set:
 - debian.uvigo.es
 - ftp.uvigo.es
 - ubuntu.uvigo.es
-- mirror.battern.eu
 - mirror.cyberbits.eu
 - mirror.serverloft.eu
 - mirror.5i.fi
@@ -792,7 +787,6 @@ domain_set:
 - apt.xpipe.io
 - rpm.xpipe.io
 - mirror.arvancloud.ir
-- mirror.kernel.ir
 - repo.linuxmirrors.ir
 - centos.is
 - ubuntu.hysing.is
@@ -886,7 +880,6 @@ domain_set:
 - mirror.as29550.net
 - mirror.as35701.net
 - mirror.as43289.net
-- cdn-ota.azureedge.net
 - pf-cdn-content-prod.azureedge.net
 - playwright.azureedge.net
 - playwright-akamai.azureedge.net
@@ -1326,7 +1319,6 @@ domain_set:
 - mirror.accum.se
 - ftp.lysator.liu.se
 - debian.lth.se
-- ftp.ludd.ltu.se
 - ftp.acc.umu.se
 - ossmirror.mycloud.services
 - mirror.0x.sg
