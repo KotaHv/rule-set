@@ -1,4 +1,4 @@
-# Total: 4610 rules
+# Total: 4611 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -71,6 +71,7 @@ domain_set:
 - assets.slater.app
 - phishing.army
 - img.fzf404.art
+- data.peer.as
 - i.snap.as
 - bucket.noy.asia
 - img.noy.asia

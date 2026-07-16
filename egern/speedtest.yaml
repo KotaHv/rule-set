@@ -1,4 +1,4 @@
-# Total: 3276 rules
+# Total: 3278 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -2508,6 +2508,7 @@ domain_set:
 - okokcyspeedtest01.mybluepeak.net
 - txdllsspeedtest01.mybluepeak.net
 - speedtest.il.mycci.net
+- speedtest2.il.mycci.net
 - speedtest.me.mycci.net
 - speedtest2.pa.mycci.net
 - speedtest.vt.mycci.net
@@ -2542,6 +2543,7 @@ domain_set:
 - speedtest-utc.northland.net
 - asbn-speedtest.northstate.net
 - atl-speedtest.northstate.net
+- hmc-speedtest.northstate.net
 - mia-speedtest.northstate.net
 - wybo-speedtest.northstate.net
 - speedtest.nt.net
