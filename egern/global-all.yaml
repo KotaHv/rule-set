@@ -1,4 +1,4 @@
-# Total: 6499 rules
+# Total: 6500 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -593,6 +593,7 @@ domain_set:
 - import-cdn.default.com
 - pixel-cdn.default.com
 - cdn.delight-vr.com
+- st3.depositphotos.com
 - images.design-editor.com
 - images7.design-editor.com
 - images8.design-editor.com
