@@ -1,4 +1,4 @@
-# Total: 4534 rules
+# Total: 4536 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -953,6 +953,7 @@
 - 'cdn.gofundme.com'
 - 'android-safebrowsing.google.com'
 - 'static.corp.google.com'
+- 'kh.google.com'
 - 'safebrowsing.google.com'
 - 'time.google.com'
 - 'ajax.googleapis.com'
@@ -2304,6 +2305,7 @@
 - 'i.jpg.dog'
 - 'cdn.onetime.dog'
 - 'screenshot.domains'
+- 'tiles.zoom.earth'
 - 'assets.buttondown.email'
 - 'utteranc.es'
 - 'versionbadg.es'
