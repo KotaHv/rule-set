@@ -1,4 +1,4 @@
-# Total: 3284 rules
+# Total: 3287 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -2399,6 +2399,8 @@ domain_set:
 - speedtest.gobec.net
 - speedtest.goetel.net
 - speed.golddata.net
+- speedtest1.atl1-us.gozfly.net
+- speedtest1.dfw1-us.gozfly.net
 - speedtest1.lax1-us.gozfly.net
 - speedtest.greenhills.net
 - speedtest.grm.net
@@ -2853,6 +2855,7 @@ domain_set:
 - fr-1.node.delton.ovh
 - pl-1.node.delton.ovh
 - velocidad.fiberlink.com.pa
+- speedtest.fiberlink.com.pe
 - sjdm-speedtest.globe.com.ph
 - speedtest-ng.atman.pl
 - speedtest.exatel.pl
