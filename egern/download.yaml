@@ -1,4 +1,4 @@
-# Total: 1973 rules
+# Total: 1974 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -251,6 +251,7 @@ domain_set:
 - rsync.fjordos.com
 - data.gameflare.com
 - download.garmin.com
+- omtapp.garmin.com
 - omtmapupdate.garmin.com
 - worldwide.omtmapupdate.garmin.com
 - mirrors.gbnetwork.com
