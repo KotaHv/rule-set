@@ -1,4 +1,4 @@
-# Total: 3291 rules
+# Total: 3292 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -2405,6 +2405,7 @@ domain_set:
 - speed.golddata.net
 - speedtest1.atl1-us.gozfly.net
 - speedtest1.dfw1-us.gozfly.net
+- speedtest1.iad1-us.gozfly.net
 - speedtest1.lax1-us.gozfly.net
 - speedtest.greenhills.net
 - speedtest.grm.net
