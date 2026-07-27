@@ -1,4 +1,4 @@
-# Total: 601 rules
+# Total: 602 rules
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -165,6 +165,7 @@
 - '+.githubhackathon.com'
 - '+.githubnext.com'
 - '+.githubstatus.com'
+- '+.githubsupport.com'
 - '+.githubuniverse.com'
 - '+.githubusercontent.com'
 - '+.gitlab.com'
