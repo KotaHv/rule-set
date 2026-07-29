@@ -1,4 +1,4 @@
-# Total: 4617 rules
+# Total: 4625 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -100,6 +100,7 @@ domain_set:
 - turbo.build
 - cdn.adsninja.ca
 - tiles.arcticconnect.ca
+- img.novipnoad.ca
 - img.apk.cafe
 - assets.toot.cafe
 - cpp-content.bhn.cards
@@ -114,6 +115,7 @@ domain_set:
 - pic.imge.cc
 - static.k2s.cc
 - static-cache.k2s.cc
+- img.novipnoad.cc
 - t1.picb.cc
 - t2.picb.cc
 - t3.picb.cc
@@ -918,6 +920,7 @@ domain_set:
 - cdn.ghostery.com
 - images2.giant-bicycles.com
 - static.giant-bicycles.com
+- static.giffgaff.com
 - static.gigabyte.com
 - cdn.gigya.com
 - cdns.gigya.com
@@ -1479,6 +1482,7 @@ domain_set:
 - ph.northflank.com
 - cdn.northropgrumman.com
 - connect.nosto.com
+- img.novipnoad.com
 - images-news.now.com
 - images-sports.now.com
 - images.now-tv.com
@@ -2840,6 +2844,7 @@ domain_set:
 - t2.nhentai.net
 - bundler.nice-team.net
 - cdn-bundler.nice-team.net
+- img.novipnoad.net
 - attachments.office.net
 - res-3.cdn.office.net
 - res-geo.cdn.office.net
@@ -3295,10 +3300,12 @@ domain_set:
 - secure.telegraph.co.uk
 - static.telegraph.co.uk
 - assets.vodafone.co.uk
+- img.novipnoad.uk
 - assets.orz.uno
 - media.orz.uno
 - cdn.donmai.us
 - appstatico.electronic.us
+- img.novipnoad.us
 - tile.ourmap.us
 - eu01ccistatic.zoom.us
 - file.zoom.us
@@ -3331,6 +3338,7 @@ domain_set:
 - image.jnislniv.xyz
 - cdn.joincommunity.xyz
 - cdn-longterm.mee6.xyz
+- img.novipnoad.xyz
 - media.pullopen.xyz
 - cdn.redwap.xyz
 - img.timero.xyz

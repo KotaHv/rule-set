@@ -1,4 +1,4 @@
-# Total: 1783 rules
+# Total: 1785 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -172,6 +172,7 @@ domain_suffix_set:
 - askubuntu.com
 - astrill.com
 - atlassian.com
+- atmeta.com
 - atom.com
 - atscaleconference.com
 - augment-assets.com
@@ -1633,6 +1634,7 @@ domain_suffix_set:
 - termux.org
 - themoviedb.org
 - thepiratebay.org
+- tmdb.org
 - toolforge.org
 - travis-ci.org
 - tronscan.org

@@ -1,4 +1,4 @@
-# Total: 1765 rules
+# Total: 1767 rules
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -170,6 +170,7 @@
 - '+.askubuntu.com'
 - '+.astrill.com'
 - '+.atlassian.com'
+- '+.atmeta.com'
 - '+.atom.com'
 - '+.atscaleconference.com'
 - '+.augment-assets.com'
@@ -1631,6 +1632,7 @@
 - '+.termux.org'
 - '+.themoviedb.org'
 - '+.thepiratebay.org'
+- '+.tmdb.org'
 - '+.toolforge.org'
 - '+.travis-ci.org'
 - '+.tronscan.org'

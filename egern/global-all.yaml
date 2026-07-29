@@ -1,4 +1,4 @@
-# Total: 6500 rules
+# Total: 6506 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -117,6 +117,7 @@ domain_set:
 - pic.imge.cc
 - static.k2s.cc
 - static-cache.k2s.cc
+- img.novipnoad.cc
 - t1.picb.cc
 - t2.picb.cc
 - t3.picb.cc
@@ -782,6 +783,7 @@ domain_set:
 - media.gettr.com
 - images2.giant-bicycles.com
 - static.giant-bicycles.com
+- static.giffgaff.com
 - download.gigabyte.com
 - static.gigabyte.com
 - mirrors.gigenet.com
@@ -1228,6 +1230,7 @@ domain_set:
 - ph.northflank.com
 - cdn.northropgrumman.com
 - connect.nosto.com
+- img.novipnoad.com
 - images.now-tv.com
 - im.np-payment-gateway.com
 - cdn.nperf.com
@@ -2383,6 +2386,7 @@ domain_set:
 - bundler.nice-team.net
 - cdn-bundler.nice-team.net
 - mirror.novg.net
+- img.novipnoad.net
 - mirror.nyi.net
 - attachments.office.net
 - res-3.cdn.office.net
@@ -2671,7 +2675,6 @@ domain_set:
 - s3.teckids.org
 - ftp.ticklers.org
 - mirrors.tino.org
-- image.tmdb.org
 - tug.org
 - tukaani.org
 - mirror2.tuxinator.org
@@ -2834,6 +2837,7 @@ domain_set:
 - cdn.joincommunity.xyz
 - cdn-longterm.mee6.xyz
 - boot.netboot.xyz
+- img.novipnoad.xyz
 - media.pullopen.xyz
 - cdn.redwap.xyz
 - img.timero.xyz
@@ -3134,6 +3138,7 @@ domain_suffix_set:
 - assettype.com
 - astrill.com
 - atlassian.com
+- atmeta.com
 - atom.com
 - atscaleconference.com
 - augment-assets.com
@@ -6141,6 +6146,7 @@ domain_suffix_set:
 - termux.org
 - themoviedb.org
 - thepiratebay.org
+- tmdb.org
 - tmpfiles.org
 - tnmr.org
 - toolforge.org
