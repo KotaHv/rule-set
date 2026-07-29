@@ -1,4 +1,4 @@
-# Total: 3293 rules
+# Total: 3297 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -606,6 +606,7 @@ domain_set:
 - speedtest.phx01.orion.cloud
 - speedtest1.sailweb.cloud
 - speedtest2.sailweb.cloud
+- speedtest.uania.cloud
 - speedtest-rp.verte.cloud
 - speedtest.witcom.cloud
 - speedtest.zerospace.cloud
@@ -1607,6 +1608,7 @@ domain_set:
 - speedtest.frachtwerk.de
 - speedtest.heuer-und-sack.de
 - speedtest.hochschule-trier.de
+- speedtest.homestube.de
 - speedtest.host-unlimited.de
 - speedtest02.htp-tel.de
 - speedtest.intersaar.de
@@ -2594,6 +2596,7 @@ domain_set:
 - speedtest.quadro.net
 - ooklaspeedtest-ist1.quickzone.net
 - sprk1.radiokable.net
+- ookla.radishnetworks.net
 - speedtest2.rainbowtel.net
 - speedtestnet.relaix.net
 - los-angeles-speedtest.reliablesite.net
@@ -2940,6 +2943,7 @@ domain_set:
 - skynet.level3.support
 - speed-mix.dispaisy.systems
 - speedtest-net-fra.dispaisy.systems
+- speed.fs-it.systems
 - ams-speedtest.isp.htb.systems
 - st.bardia.tech
 - speedtest1.cfoc.tech
