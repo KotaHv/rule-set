@@ -1,4 +1,4 @@
-# Total: 6379 rules
+# Total: 6380 rules
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -5102,6 +5102,7 @@
 - '+.vsmarketplacebadges.dev'
 - '+.web.dev'
 - '+.workers.dev'
+- '+.zed.dev'
 - '+.zenn.dev'
 - '+.dk'
 - '+.linux.do'

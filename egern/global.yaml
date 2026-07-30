@@ -1,4 +1,4 @@
-# Total: 1785 rules
+# Total: 1786 rules
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -1014,6 +1014,7 @@ domain_suffix_set:
 - vscode.dev
 - web.dev
 - workers.dev
+- zed.dev
 - zenn.dev
 - dk
 - linux.do

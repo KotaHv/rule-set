@@ -1,4 +1,4 @@
-# Total: 6506 rules
+# Total: 6507 rules
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -5104,6 +5104,7 @@ domain_suffix_set:
 - vsmarketplacebadges.dev
 - web.dev
 - workers.dev
+- zed.dev
 - zenn.dev
 - dk
 - linux.do
