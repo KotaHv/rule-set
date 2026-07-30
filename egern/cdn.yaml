@@ -1,4 +1,4 @@
-# Total: 4625 rules
+# Total: 4626 rules
 no_resolve: true
 domain_set:
 - rules.ac
@@ -3047,6 +3047,7 @@ domain_set:
 - tiles.openseamap.org
 - tiles.maps.opensearch.org
 - tiles.openskimap.org
+- community-cdn.openstreetmap.org
 - static.opensuse.org
 - tile.openweathermap.org
 - cdn.pagic.org

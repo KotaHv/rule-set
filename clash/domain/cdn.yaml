@@ -1,4 +1,4 @@
-# Total: 4545 rules
+# Total: 4546 rules
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3046,6 +3046,7 @@
 - 'tiles.openseamap.org'
 - 'tiles.maps.opensearch.org'
 - 'tiles.openskimap.org'
+- 'community-cdn.openstreetmap.org'
 - 'static.opensuse.org'
 - 'tile.openweathermap.org'
 - 'cdn.pagic.org'
