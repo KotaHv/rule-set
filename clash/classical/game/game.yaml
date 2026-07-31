@@ -1,3 +1,4 @@
 # Total: 1 rules
+# Last Updated: 2026-07-31T10:23:51.865036+00:00
 payload:
 - DOMAIN-REGEX,^epicgames-download\d\.akamaized\.net$

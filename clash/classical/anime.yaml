@@ -1,4 +1,5 @@
 # Total: 2 rules
+# Last Updated: 2026-07-31T10:23:59.384538+00:00
 payload:
 - DOMAIN-WILDCARD,svip.high*-playback.com
 - DOMAIN-WILDCARD,v16*.akamaized.net

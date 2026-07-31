@@ -1,4 +1,5 @@
 # Total: 3 rules
+# Last Updated: 2026-07-31T10:24:27.929276+00:00
 payload:
 - DOMAIN-WILDCARD,*.qhimgs?.com
 - DOMAIN-REGEX,.+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$
