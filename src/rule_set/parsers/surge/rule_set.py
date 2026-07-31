@@ -10,8 +10,8 @@ from .base import BaseParser
 class RuleSetParser(BaseParser):
     def parse(self) -> RuleModel:
         for line in self.data_lines:
-            processed_line = line.split(",")
-            rule_type, rule = processed_line[0].lower(), processed_line[1].strip()
+            segments = line.split(",")
+            rule_type, rule = segments[0].lower(), segments[1].strip()
             if rule_type == "domain":
                 if not validate_domain(rule):
                     logger.warning(f"Invalid domain: '{rule}'")
@@ -33,7 +33,7 @@ class RuleSetParser(BaseParser):
             elif rule_type == "ip-asn":
                 self.result.ip_asn.add(rule)
             elif rule_type == "user-agent":
-                self.result.ua.add(rule)
+                self.result.user_agent.add(rule)
             elif rule_type == "process-name":
                 self.result.process.add(rule)
             elif is_logical_keyword(rule_type):

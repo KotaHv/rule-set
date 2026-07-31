@@ -44,8 +44,8 @@ def keyword_to_regex(domain_keyword: str) -> str:
 
 
 def regex_to_wildcard(domain_regex: str) -> list[str]:
-    ast = sre_parser.parse(domain_regex)
-    return _ast_to_wildcard(ast)
+    parsed_pattern = sre_parser.parse(domain_regex)
+    return _ast_to_wildcard(parsed_pattern)
 
 
 _star_re = re.compile(r"\*+")
@@ -62,44 +62,64 @@ def fix_leading_wildcard(s: str) -> str:
     return _leading_wildcard_re.sub("*.", s)
 
 
-def _ast_to_wildcard(ast: sre_parser.SubPattern) -> list[str]:
+def _ast_to_wildcard(parsed_pattern: sre_parser.SubPattern) -> list[str]:
     wildcards = [""]
-    for op, arg in ast:
-        if op in (sre_parser.MAX_REPEAT, sre_parser.MIN_REPEAT):
-            min_r, max_r, sub_pattern = arg
+    for token_type, token_value in parsed_pattern:
+        if token_type in (sre_parser.MAX_REPEAT, sre_parser.MIN_REPEAT):
+            min_repetitions, max_repetitions, sub_pattern = token_value
             sub_wildcards = _ast_to_wildcard(sub_pattern)
             new_wildcards = []
-            for w in wildcards:
-                for sw in sub_wildcards:
-                    if min_r == max_r:
-                        new_wildcards.append(w + sw * min_r)
-                    elif max_r == sre_parser.MAXREPEAT:
+            for wildcard_prefix in wildcards:
+                for subpattern_wildcard in sub_wildcards:
+                    if min_repetitions == max_repetitions:
                         new_wildcards.append(
-                            w + (sw * min_r + "*" if min_r > 1 else "*")
+                            wildcard_prefix + subpattern_wildcard * min_repetitions
+                        )
+                    elif max_repetitions == sre_parser.MAXREPEAT:
+                        new_wildcards.append(
+                            wildcard_prefix
+                            + (
+                                subpattern_wildcard * min_repetitions + "*"
+                                if min_repetitions > 1
+                                else "*"
+                            )
                         )
                     else:
                         new_wildcards.extend(
-                            (w + sw * i for i in range(min_r, max_r + 1))
-                            if max_r - min_r <= 5
-                            else [w + sw * min_r + "*"]
+                            (
+                                wildcard_prefix + subpattern_wildcard * repetitions
+                                for repetitions in range(
+                                    min_repetitions, max_repetitions + 1
+                                )
+                            )
+                            if max_repetitions - min_repetitions <= 5
+                            else [
+                                wildcard_prefix
+                                + subpattern_wildcard * min_repetitions
+                                + "*"
+                            ]
                         )
             wildcards = new_wildcards
-        elif op == sre_parser.LITERAL:
-            char = chr(arg)
-            wildcards = [w + char for w in wildcards]
-        elif op == sre_parser.IN:
-            wildcards = [w + "?" for w in wildcards]
-        elif op == sre_parser.ANY:
-            wildcards = [w + "?" for w in wildcards]
-        elif op == sre_parser.SUBPATTERN:
-            sub_wildcards = _ast_to_wildcard(arg[-1])
-            wildcards = [w + sw for w in wildcards for sw in sub_wildcards]
-        elif op == sre_parser.BRANCH:
-            wildcards = [w + "*" for w in wildcards]
-        elif op == sre_parser.AT:
+        elif token_type == sre_parser.LITERAL:
+            literal_character = chr(token_value)
+            wildcards = [wildcard + literal_character for wildcard in wildcards]
+        elif token_type == sre_parser.IN:
+            wildcards = [wildcard + "?" for wildcard in wildcards]
+        elif token_type == sre_parser.ANY:
+            wildcards = [wildcard + "?" for wildcard in wildcards]
+        elif token_type == sre_parser.SUBPATTERN:
+            sub_wildcards = _ast_to_wildcard(token_value[-1])
+            wildcards = [
+                wildcard_prefix + subpattern_wildcard
+                for wildcard_prefix in wildcards
+                for subpattern_wildcard in sub_wildcards
+            ]
+        elif token_type == sre_parser.BRANCH:
+            wildcards = [wildcard + "*" for wildcard in wildcards]
+        elif token_type == sre_parser.AT:
             continue
-    for i, w in enumerate(wildcards):
-        w_clean = merge_star(w)
-        w_clean = fix_leading_wildcard(w_clean)
-        wildcards[i] = w_clean
+    for wildcard_index, wildcard in enumerate(wildcards):
+        normalized_wildcard = merge_star(wildcard)
+        normalized_wildcard = fix_leading_wildcard(normalized_wildcard)
+        wildcards[wildcard_index] = normalized_wildcard
     return wildcards

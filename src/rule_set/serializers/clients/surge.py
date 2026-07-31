@@ -72,7 +72,7 @@ class SurgeSerializer(BaseSerializer):
             for ip_asn in self.rules.ip_asn
         )
 
-        rules.extend(f"USER-AGENT,{ua}" for ua in self.rules.ua)
+        rules.extend(f"USER-AGENT,{ua}" for ua in self.rules.user_agent)
 
         rules.extend(f"PROCESS-NAME,{process}" for process in self.rules.process)
 

@@ -21,7 +21,7 @@ class SerializableRuleModel(BaseModel):
     ip_asn: list[str] = []
     logical: list[LogicalTree] = []
     process: list[str] = []
-    ua: list[str] = []
+    user_agent: list[str] = []
     url_regex: list[str] = []
 
 
@@ -32,7 +32,7 @@ class RuleModel(BaseModel):
     ip_asn: list[str] | set[str] = set()
     logical: list[LogicalTree] | set[LogicalTree] = set()
     process: list[str] | set[str] = set()
-    ua: list[str] | set[str] = set()
+    user_agent: list[str] | set[str] = set()
     domain_keyword: list[str] | set[str] = set()
     url_regex: list[str] | set[str] = set()
 
@@ -44,7 +44,7 @@ class RuleModel(BaseModel):
         self.ip_asn.update(other.ip_asn)
         self.logical.update(other.logical)
         self.process.update(other.process)
-        self.ua.update(other.ua)
+        self.user_agent.update(other.user_agent)
         self.url_regex.update(other.url_regex)
 
     def _deduplicate_domain_keyword(self):
@@ -124,7 +124,7 @@ class RuleModel(BaseModel):
         serializable_rule.ip_asn.extend(self.ip_asn)
         serializable_rule.logical.extend(self.logical)
         serializable_rule.process.extend(self.process)
-        serializable_rule.ua.extend(self.ua)
+        serializable_rule.user_agent.extend(self.user_agent)
         serializable_rule.url_regex.extend(self.url_regex)
         return serializable_rule
 

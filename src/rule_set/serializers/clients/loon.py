@@ -41,7 +41,7 @@ class LoonSerializer(BaseSerializer):
 
         rules.extend(f"IP-ASN,{ip_asn}" for ip_asn in self.rules.ip_asn)
 
-        rules.extend(f"USER-AGENT,{ua}" for ua in self.rules.ua)
+        rules.extend(f"USER-AGENT,{ua}" for ua in self.rules.user_agent)
 
         rules.extend(
             surge_logical_serialize(tree=tree, include=include_rule_types)

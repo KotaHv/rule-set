@@ -6,7 +6,7 @@ from rule_set.models import Artifact, ArtifactKind, Option, SerializableRuleMode
 from ..logic.clash import serialize as logical_serialize
 from .base import BaseSerializer
 
-ignore_types = ["ua", "logical"]
+ignore_types = ["user_agent", "logical"]
 
 
 class ClashSerializer(BaseSerializer):

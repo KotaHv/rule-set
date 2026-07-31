@@ -69,18 +69,20 @@ source_cache = Cache(path="source")
 
 
 def parse_data(
-    data: str | list | Path, resource: BaseResource, option: Option | V2rayDomainOption
+    resource_data: str | list | Path,
+    resource: BaseResource,
+    option: Option | V2rayDomainOption,
 ) -> RuleModel | V2rayDomainResult:
     if isinstance(resource, RuleSetResource):
-        de = RuleSetParser(data)
-        return de.parse()
+        parser = RuleSetParser(resource_data)
+        return parser.parse()
     elif isinstance(resource, DomainSetResource):
-        de = DomainSetParser(data)
-        return de.parse()
+        parser = DomainSetParser(resource_data)
+        return parser.parse()
     elif isinstance(resource, MaxMindDBResource):
-        return mmdb.parse(data, country_code=option.geo_ip.country_code)
+        return mmdb.parse(resource_data, country_code=option.geo_ip.country_code)
     elif isinstance(resource, V2rayDomainResource):
-        return v2ray_domain.parse(data, option)
+        return v2ray_domain.parse(resource_data, option)
     raise Exception(f"Unknown resource type: {type(resource)}")
 
 
@@ -92,25 +94,25 @@ def process_sources(sources: list[SourceModel], metadata_store: MetadataStore) -
             aggregated_rules = process_source(source)
         serializable_rules = aggregated_rules.to_serializable_rule_model()
 
-        target_clients = (
+        selected_serialize_formats = (
             source.include
             if source.include
             else filter(
-                lambda x: (
-                    x not in source.exclude
+                lambda serialize_format: (
+                    serialize_format not in source.exclude
                     and not (
                         source.option.geo_ip.country_code is None
-                        and x == SerializeFormat.GeoIP
+                        and serialize_format == SerializeFormat.GeoIP
                     )
                 ),
                 client_serializers.keys(),
             )
         )
-        for client in target_clients:
-            serializer_cls = client_serializers[client]
+        for serialize_format in selected_serialize_formats:
+            serializer_cls = client_serializers[serialize_format]
             serializer = serializer_cls(rules=serializable_rules, option=source.option)
             for artifact in serializer.serialize():
-                writer_cls = writer_registry[(client, artifact.kind)]
+                writer_cls = writer_registry[(serialize_format, artifact.kind)]
                 writer_cls(
                     data=artifact.data,
                     target_path=source.name,
@@ -124,9 +126,11 @@ def process_source(source: SourceModel) -> RuleModel:
 
     for resource in source.resources:
         if isinstance(resource, SourceReference):
-            referenced_target = resource.target
+            referenced_source_name = resource.target
             aggregated_rules.merge_with(
-                RuleModel.model_validate_json(source_cache.retrieve(referenced_target))
+                RuleModel.model_validate_json(
+                    source_cache.retrieve(referenced_source_name)
+                )
             )
         else:
             aggregated_rules.merge_with(process_resource(resource, source.option))
@@ -136,11 +140,13 @@ def process_source(source: SourceModel) -> RuleModel:
     return aggregated_rules
 
 
-def process_resource(root_resource: BaseResource, source_option: Option) -> RuleModel:
+def process_resource(
+    initial_resource: BaseResource, source_option: Option
+) -> RuleModel:
     aggregated_rules = RuleModel()
-    resources = [root_resource]
+    pending_resources = [initial_resource]
 
-    for resource in resources:
+    for resource in pending_resources:
         cache_key = str(resource.source)
         if isinstance(resource, V2rayDomainResource):
             cache_key += f"::attrs={resource.option.attrs}"
@@ -152,18 +158,18 @@ def process_resource(root_resource: BaseResource, source_option: Option) -> Rule
                 parsed_rules = RuleModel.model_validate_json(cached_result)
         else:
             if isinstance(resource, MaxMindDBResource):
-                data = fetcher.download_file(resource.source)
+                resource_data = fetcher.download_file(resource.source)
             else:
-                data = fetcher.get_content(resource.source)
+                resource_data = fetcher.get_content(resource.source)
             if isinstance(resource, V2rayDomainResource):
-                parsed_rules = parse_data(data, resource, resource.option)
+                parsed_rules = parse_data(resource_data, resource, resource.option)
             else:
-                parsed_rules = parse_data(data, resource, source_option)
+                parsed_rules = parse_data(resource_data, resource, source_option)
             resource_cache.store(cache_key, parsed_rules.model_dump_json())
 
         if isinstance(parsed_rules, V2rayDomainResult):
             for include in parsed_rules.includes:
-                new_resource = V2rayDomainResource(
+                included_resource = V2rayDomainResource(
                     source=build_v2ray_include_url(resource.source, include.name),
                     option=V2rayDomainOption(
                         attrs=V2rayDomainAttrs(
@@ -176,7 +182,7 @@ def process_resource(root_resource: BaseResource, source_option: Option) -> Rule
                     ),
                 )
 
-                resources.append(new_resource)
+                pending_resources.append(included_resource)
             parsed_rules = parsed_rules.rules
 
         aggregated_rules.merge_with(parsed_rules)

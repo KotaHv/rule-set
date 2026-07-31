@@ -27,7 +27,7 @@ def parse(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
         - Domain rules (domain, keyword, regexp, full) may include one or more
           attributes, each beginning with '@' and separated by spaces (e.g., @ads @cn).
     """
-    attrs = option.attrs
+    attribute_rules = option.attrs
     exclude_includes = option.exclude_includes
     rules = RuleModel()
     includes: list[V2rayDomainInclude] = []
@@ -60,7 +60,7 @@ def parse(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
                     )
                 )
             continue
-        if not attrs.filter(attributes):
+        if not attribute_rules.matches(attributes):
             continue
         if rule_type == "domain":
             rules.domain_trie.add(rule, DomainType.DOMAIN_SUFFIX)

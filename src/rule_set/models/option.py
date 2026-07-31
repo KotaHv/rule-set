@@ -17,7 +17,7 @@ class V2rayDomainAttrs(BaseModel):
                 result.append(a)
         return result
 
-    def filter(self, attrs: list[str]) -> bool:
+    def matches(self, attrs: list[str]) -> bool:
         if not self.include_attrs:
             include_flag = True
         else:
