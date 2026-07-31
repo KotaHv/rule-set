@@ -3,11 +3,11 @@ from pathlib import Path
 from loguru import logger
 
 
-def write(filepath: Path, data: str | bytes):
-    mode = "wb" if isinstance(data, bytes) else "w"
-    try:
-        with filepath.open(mode=mode) as file:
+def write(filepath: Path, data: str | bytes) -> None:
+    if isinstance(data, bytes):
+        with filepath.open(mode="wb") as file:
             file.write(data)
-        logger.success(f"{filepath} generated successfully")
-    except Exception as e:
-        logger.error(f"Failed to write to {filepath}: {e}")
+    else:
+        with filepath.open(mode="w", encoding="utf-8") as file:
+            file.write(data)
+    logger.success(f"{filepath} generated successfully")

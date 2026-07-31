@@ -2,6 +2,7 @@
 Configuration settings for the rule-set project.
 """
 
+import shutil
 from pathlib import Path
 from typing import Literal
 
@@ -32,6 +33,11 @@ class Settings(BaseSettings):
         description="Output directory for rule sets",
     )
 
+    metadata_path: Path = Field(
+        default=ROOT_DIR / ".metadata.json",
+        description="Persistent metadata file for generated rule set update timestamps",
+    )
+
     # Cache configuration
     cache_dir: Path = Field(default=ROOT_DIR / ".cache", description="Cache directory")
 
@@ -57,5 +63,7 @@ class Settings(BaseSettings):
 
 # Global settings instance
 settings = Settings()
+if not settings.metadata_path.exists():
+    shutil.rmtree(settings.build_dir, ignore_errors=True)
 settings.build_dir.mkdir(exist_ok=True)
 settings.cache_dir.mkdir(exist_ok=True)

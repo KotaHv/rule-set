@@ -1,11 +1,13 @@
 import ipaddress
 
+from rule_set.models import Artifact, ArtifactKind
+
 from ..v2ray_geo_ip import geo_ip_pb2
 from .base import BaseSerializer
 
 
 class GeoIPSerializer(BaseSerializer):
-    def serialize(self) -> bytes | None:
+    def serialize(self) -> list[Artifact]:
         ip_list = []
         ip_list.extend(self.rules.ip_cidr)
         ip_list.extend(self.rules.ip_cidr6)
@@ -22,4 +24,4 @@ class GeoIPSerializer(BaseSerializer):
         geo_ip_list = geo_ip_pb2.GeoIPList()
         geo_ip_list.entry.append(geo_ip)
         serialized_data = geo_ip_list.SerializeToString()
-        return serialized_data
+        return [Artifact(kind=ArtifactKind.DEFAULT, data=serialized_data)]

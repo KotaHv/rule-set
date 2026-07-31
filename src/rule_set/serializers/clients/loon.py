@@ -1,3 +1,5 @@
+from rule_set.models import Artifact, ArtifactKind
+
 from ..logic import surge_logical_serialize
 from .base import BaseSerializer
 
@@ -18,7 +20,7 @@ include_rule_types = [
 
 
 class LoonSerializer(BaseSerializer):
-    def serialize(self) -> str:
+    def serialize(self) -> list[Artifact]:
         rules = []
 
         rules.extend(f"DOMAIN,{domain}" for domain in self.rules.domain)
@@ -50,5 +52,5 @@ class LoonSerializer(BaseSerializer):
         filtered_rules = list(filter(None, rules))
         content = "\n".join(filtered_rules)
         if content:
-            return f"# Total: {len(filtered_rules)} rules\n{content}"
-        return content
+            content = f"# Total: {len(filtered_rules)} rules\n# Last Updated: {self.last_updated}\n{content}"
+        return [Artifact(kind=ArtifactKind.DEFAULT, data=content)]

@@ -7,12 +7,45 @@ on:
     - cron: "0 0,6,12,18 * * *"
   workflow_dispatch:
 
+concurrency:
+  group: rule-set-release
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
+      - name: Prepare previous rule sets
+        run: |
+          set -e -o pipefail
+
+          git init deploy_temp
+          git -C deploy_temp remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git -C deploy_temp config user.email "github-action@users.noreply.github.com"
+          git -C deploy_temp config user.name "GitHub Action"
+
+          if git -C deploy_temp ls-remote --exit-code --heads origin release >/dev/null; then
+            git -C deploy_temp fetch --depth=1 origin release
+            git -C deploy_temp checkout -B release FETCH_HEAD
+            rsync -a --delete \
+              --exclude='.git' \
+              --exclude='*.html' \
+              --exclude='icons/' \
+              deploy_temp/ rule-set/
+          else
+            git -C deploy_temp checkout --orphan release
+          fi
+      - name: Restore metadata
+        uses: actions/cache/restore@v6
+        with:
+          path: .metadata.json
+          key: rule-set-metadata-${{ github.run_id }}
+          restore-keys: |
+            rule-set-metadata-
       - name: Install sing-box
         run: |
           set -e -o pipefail
@@ -49,26 +82,6 @@ jobs:
             echo "rule-set generation failed"
             exit 1
           fi
-      - run: |
-          set -e -o pipefail
-
-          mkdir deploy_temp
-          cd deploy_temp
-          git init
-          git config --local user.email "github-action@users.noreply.github.com"
-          git config --local user.name "GitHub Action"
-          git remote add origin https://github-action:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git fetch origin
-          if git rev-parse --verify origin/release >/dev/null 2>&1; then
-            git checkout release
-          else
-            git checkout --orphan release
-          fi
-          cd ..
-      - name: restore timestamps
-        uses: chetan/git-restore-mtime-action@v2
-        with:
-          working-directory: "deploy_temp"
       - name: Deploy to release branch
         run: |
           set -e -o pipefail
@@ -78,12 +91,18 @@ jobs:
 
           # Generate GitHub Pages navigation
           echo "Generating pages in deploy_temp directory..."
+          test -f ../.metadata.json
           uv run gen-pages --target-path .
 
           if [[ -z $(git status --porcelain) ]]; then
               echo "No changes to commit."
           else
               git add .
-              git commit -m "Update release"
+              git commit -m "Update release (${GITHUB_SHA})"
               git push origin release
           fi
+      - name: Save metadata
+        uses: actions/cache/save@v6
+        with:
+          path: .metadata.json
+          key: rule-set-metadata-${{ github.run_id }}

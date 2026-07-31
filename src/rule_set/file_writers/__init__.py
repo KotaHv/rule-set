@@ -1,14 +1,20 @@
-from .clash import FileWriter as ClashFileWriter
-from .egern import FileWriter as EgernFileWriter
-from .geoip import FileWriter as GeoIPFileWriter
-from .loon import FileWriter as LoonFileWriter
-from .sing_box import FileWriter as SingBoxFileWriter
-from .surge import FileWriter as SurgeFileWriter
+from .clash import (
+    ClashClassicalFileWriter,
+    ClashDomainFileWriter,
+    ClashIpcidrFileWriter,
+)
+from .egern import EgernFileWriter
+from .geoip import GeoIPFileWriter
+from .loon import LoonFileWriter
+from .sing_box import SingBoxFileWriter
+from .surge import SurgeFileWriter
 
 __all__ = [
     SurgeFileWriter,
     LoonFileWriter,
-    ClashFileWriter,
+    ClashDomainFileWriter,
+    ClashIpcidrFileWriter,
+    ClashClassicalFileWriter,
     EgernFileWriter,
     SingBoxFileWriter,
     GeoIPFileWriter,

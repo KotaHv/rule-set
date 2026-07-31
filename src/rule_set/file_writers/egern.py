@@ -1,7 +1,8 @@
 from .base import BaseFileWriter
+from .middleware import MetadataMiddleware
 
 
-class FileWriter(BaseFileWriter):
+class EgernFileWriter(BaseFileWriter):
     @property
     def base_path(self) -> str:
         return "egern"
@@ -9,3 +10,7 @@ class FileWriter(BaseFileWriter):
     @property
     def suffix(self) -> str:
         return ".yaml"
+
+    @property
+    def middlewares(self):
+        return [MetadataMiddleware(self.metadata_store)]

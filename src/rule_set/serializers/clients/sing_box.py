@@ -1,5 +1,6 @@
 import json
 
+from rule_set.models import Artifact, ArtifactKind
 from rule_set.utils import domain
 
 from ..logic import sing_box_logical_serialize
@@ -7,7 +8,7 @@ from .base import BaseSerializer
 
 
 class SingBoxSerializer(BaseSerializer):
-    def serialize(self) -> str:
+    def serialize(self) -> list[Artifact]:
         json_data = {"version": 2, "rules": [{}]}
         if rules := self.rules.domain:
             json_data["rules"][0]["domain"] = rules
@@ -42,5 +43,5 @@ class SingBoxSerializer(BaseSerializer):
                 if logical_rule:
                     json_data["rules"].append(logical_rule)
         if json_data["rules"][0]:
-            return json.dumps(json_data)
-        return ""
+            return [Artifact(kind=ArtifactKind.DEFAULT, data=json.dumps(json_data))]
+        return [Artifact(kind=ArtifactKind.DEFAULT, data="")]

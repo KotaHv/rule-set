@@ -1,11 +1,8 @@
-import subprocess
-
-from loguru import logger
-
 from .base import BaseFileWriter
+from .middleware import MetadataMiddleware, SingBoxCompileMiddleware
 
 
-class FileWriter(BaseFileWriter):
+class SingBoxFileWriter(BaseFileWriter):
     @property
     def base_path(self) -> str:
         return "sing-box"
@@ -14,15 +11,9 @@ class FileWriter(BaseFileWriter):
     def suffix(self) -> str:
         return ".json"
 
-    def write(self):
-        super().write()
-        srs_path = self.filepath.with_suffix(".srs")
-        result = subprocess.run(
-            ["sing-box", "rule-set", "compile", self.filepath],
-            capture_output=True,
-            text=True,
-        )
-        if result.returncode == 0:
-            logger.success(f"{srs_path} generated successfully")
-        else:
-            logger.error(f"{srs_path} generated failed, result: {result.stderr}")
+    @property
+    def middlewares(self):
+        return [
+            SingBoxCompileMiddleware(),
+            MetadataMiddleware(self.metadata_store),
+        ]

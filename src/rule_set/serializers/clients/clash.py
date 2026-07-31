@@ -1,7 +1,7 @@
 import yaml
 from yaml import CDumper
 
-from rule_set.models import Option, SerializableRuleModel
+from rule_set.models import Artifact, ArtifactKind, Option, SerializableRuleModel
 
 from ..logic.clash import serialize as logical_serialize
 from .base import BaseSerializer
@@ -81,9 +81,7 @@ class ClashSerializer(BaseSerializer):
         payload.extend(self.serialized_logical_rules)
         return payload
 
-    def _serialize_payload(
-        self, payload: str, behavior: str, style: str
-    ) -> tuple[str, str]:
+    def _serialize_payload(self, payload: str, behavior: str, style: str) -> str:
         yaml_content = yaml.dump(
             {"payload": payload},
             sort_keys=False,
@@ -93,22 +91,37 @@ class ClashSerializer(BaseSerializer):
         )
         # Add rule count comment for clash format
         rule_count = len(payload)
-        comment = f"# Total: {rule_count} rules\n"
-        return (
-            behavior,
-            comment + yaml_content,
-        )
+        comment = f"# Total: {rule_count} rules\n# Last Updated: {self.last_updated}\n"
+        return comment + yaml_content
 
-    def serialize(self) -> tuple[str, str] | list[tuple[str, str]]:
+    def serialize(self) -> list[Artifact]:
         if self.option.geo_ip.country_code is not None:
-            return self._serialize_payload(self.ip_cidr(), "ipcidr", "'")
-        payloads = []
+            return [
+                Artifact(
+                    kind=ArtifactKind.IPCIDR,
+                    data=self._serialize_payload(self.ip_cidr(), "ipcidr", "'"),
+                )
+            ]
+        payloads: list[Artifact] = []
         if domain_payload := self.domain():
-            payloads.append(self._serialize_payload(domain_payload, "domain", "'"))
+            payloads.append(
+                Artifact(
+                    kind=ArtifactKind.DOMAIN,
+                    data=self._serialize_payload(domain_payload, "domain", "'"),
+                )
+            )
         if ip_cidr_payload := self.ip_cidr():
-            payloads.append(self._serialize_payload(ip_cidr_payload, "ipcidr", "'"))
+            payloads.append(
+                Artifact(
+                    kind=ArtifactKind.IPCIDR,
+                    data=self._serialize_payload(ip_cidr_payload, "ipcidr", "'"),
+                )
+            )
         if classical_payload := self.classical(skip_domain=True, skip_ip_cidr=True):
             payloads.append(
-                self._serialize_payload(classical_payload, "classical", None)
+                Artifact(
+                    kind=ArtifactKind.CLASSICAL,
+                    data=self._serialize_payload(classical_payload, "classical", None),
+                )
             )
         return payloads

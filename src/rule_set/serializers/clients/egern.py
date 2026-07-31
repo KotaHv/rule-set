@@ -1,12 +1,14 @@
 import yaml
 from yaml import CDumper
 
+from rule_set.models import Artifact, ArtifactKind
+
 from ..logic.egern import serialize as logical_serialize
 from .base import BaseSerializer
 
 
 class EgernSerializer(BaseSerializer):
-    def serialize(self) -> str:
+    def serialize(self) -> list[Artifact]:
         yaml_data = {"no_resolve": self.option.serialization.no_resolve}
         if self.rules.domain:
             yaml_data["domain_set"] = self.rules.domain
@@ -49,6 +51,6 @@ class EgernSerializer(BaseSerializer):
 
             yaml_content = yaml.dump(yaml_data, sort_keys=False, Dumper=CDumper)
             if rule_count > 0:
-                return f"# Total: {rule_count} rules\n{yaml_content}"
-            return yaml_content
-        return ""
+                yaml_content = f"# Total: {rule_count} rules\n# Last Updated: {self.last_updated}\n{yaml_content}"
+            return [Artifact(kind=ArtifactKind.DEFAULT, data=yaml_content)]
+        return [Artifact(kind=ArtifactKind.DEFAULT, data="")]

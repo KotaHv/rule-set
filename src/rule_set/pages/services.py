@@ -2,10 +2,13 @@
 Core services for generating HTML pages
 """
 
+import json
 import shutil
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
+
+from rule_set.config import settings
 
 from .config import config
 from .models import DirNode, FileNode, PathInfo, PathTree
@@ -25,6 +28,8 @@ class PageGenerator:
         self.rule_set_path = rule_set_path
         self.templates_dir = config.templates_dir
         self.icons_dir = config.icons_dir
+
+        self.metadata = json.loads(settings.metadata_path.read_bytes())
 
         self.env = Environment(
             loader=FileSystemLoader(str(self.templates_dir)),
@@ -64,7 +69,7 @@ class PageGenerator:
                     info=PathInfo(
                         name=child.name,
                         size=stat.st_size,
-                        mtime=stat.st_mtime,
+                        mtime=self.metadata[str(child.relative_to(self.rule_set_path))],
                         path=child,
                     ),
                     parent=node,

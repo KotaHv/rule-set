@@ -5,7 +5,9 @@ from loguru import logger
 from .cache import Cache
 from .fetcher import fetcher
 from .file_writers import (
-    ClashFileWriter,
+    ClashClassicalFileWriter,
+    ClashDomainFileWriter,
+    ClashIpcidrFileWriter,
     EgernFileWriter,
     GeoIPFileWriter,
     LoonFileWriter,
@@ -13,7 +15,9 @@ from .file_writers import (
     SurgeFileWriter,
 )
 from .file_writers.base import BaseFileWriter
+from .metadata import MetadataStore
 from .models import (
+    ArtifactKind,
     BaseResource,
     DomainSetResource,
     MaxMindDBResource,
@@ -42,15 +46,23 @@ from .serializers.clients.base import BaseSerializer
 from .sources import SOURCES
 from .utils import build_v2ray_include_url
 
-client_serializers_writers: dict[
-    SerializeFormat, tuple[BaseSerializer, BaseFileWriter]
-] = {
-    SerializeFormat.Surge: (SurgeSerializer, SurgeFileWriter),
-    SerializeFormat.Loon: (LoonSerializer, LoonFileWriter),
-    SerializeFormat.Clash: (ClashSerializer, ClashFileWriter),
-    SerializeFormat.Egern: (EgernSerializer, EgernFileWriter),
-    SerializeFormat.Sing_Box: (SingBoxSerializer, SingBoxFileWriter),
-    SerializeFormat.GeoIP: (GeoIPSerializer, GeoIPFileWriter),
+client_serializers: dict[SerializeFormat, type[BaseSerializer]] = {
+    SerializeFormat.Surge: SurgeSerializer,
+    SerializeFormat.Loon: LoonSerializer,
+    SerializeFormat.Clash: ClashSerializer,
+    SerializeFormat.Egern: EgernSerializer,
+    SerializeFormat.Sing_Box: SingBoxSerializer,
+    SerializeFormat.GeoIP: GeoIPSerializer,
+}
+writer_registry: dict[tuple[SerializeFormat, ArtifactKind], type[BaseFileWriter]] = {
+    (SerializeFormat.Surge, ArtifactKind.DEFAULT): SurgeFileWriter,
+    (SerializeFormat.Loon, ArtifactKind.DEFAULT): LoonFileWriter,
+    (SerializeFormat.Egern, ArtifactKind.DEFAULT): EgernFileWriter,
+    (SerializeFormat.Sing_Box, ArtifactKind.DEFAULT): SingBoxFileWriter,
+    (SerializeFormat.GeoIP, ArtifactKind.DEFAULT): GeoIPFileWriter,
+    (SerializeFormat.Clash, ArtifactKind.DOMAIN): ClashDomainFileWriter,
+    (SerializeFormat.Clash, ArtifactKind.IPCIDR): ClashIpcidrFileWriter,
+    (SerializeFormat.Clash, ArtifactKind.CLASSICAL): ClashClassicalFileWriter,
 }
 resource_cache = Cache(path="resource")
 source_cache = Cache(path="source")
@@ -72,7 +84,7 @@ def parse_data(
     raise Exception(f"Unknown resource type: {type(resource)}")
 
 
-def process_sources(sources: list[SourceModel]):
+def process_sources(sources: list[SourceModel], metadata_store: MetadataStore) -> None:
     for source in sources:
         if cached_result := source_cache.retrieve(source.name):
             aggregated_rules = RuleModel.model_validate_json(cached_result, strict=True)
@@ -91,15 +103,20 @@ def process_sources(sources: list[SourceModel]):
                         and x == SerializeFormat.GeoIP
                     )
                 ),
-                client_serializers_writers.keys(),
+                client_serializers.keys(),
             )
         )
         for client in target_clients:
-            serializer_cls, writer_cls = client_serializers_writers[client]
-            serialized_data = serializer_cls(
-                rules=serializable_rules, option=source.option
-            ).serialize()
-            writer_cls(data=serialized_data, target_path=source.name).write()
+            serializer_cls = client_serializers[client]
+            serializer = serializer_cls(rules=serializable_rules, option=source.option)
+            for artifact in serializer.serialize():
+                writer_cls = writer_registry[(client, artifact.kind)]
+                writer_cls(
+                    data=artifact.data,
+                    target_path=source.name,
+                    timestamp=serializer.last_updated_ts,
+                    metadata_store=metadata_store,
+                ).write()
 
 
 def process_source(source: SourceModel) -> RuleModel:
@@ -168,7 +185,9 @@ def process_resource(root_resource: BaseResource, source_option: Option) -> Rule
 
 def main():
     try:
-        process_sources(SOURCES)
+        metadata_store = MetadataStore()
+        process_sources(SOURCES, metadata_store)
+        metadata_store.save()
     except Exception as e:
         logger.exception(e)
         Path(".failure").touch()

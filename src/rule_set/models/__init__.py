@@ -3,6 +3,7 @@ Models package for rule-set project.
 Contains all data models and related types.
 """
 
+from .artifact import Artifact, ArtifactKind
 from .enum import DomainType, SerializeFormat
 from .option import (
     GeoIPOption,
@@ -30,6 +31,7 @@ from .rule import (
 )
 from .source import SourceModel
 from .type import SerializeFormats, Source
+from .write import WriteContext
 
 # For backward compatibility and convenience
 __all__ = [
@@ -38,6 +40,9 @@ __all__ = [
     # Enums
     "SerializeFormat",
     "DomainType",
+    "ArtifactKind",
+    "Artifact",
+    "WriteContext",
     # Options
     "SerializeFormats",
     "V2rayDomainAttrs",
