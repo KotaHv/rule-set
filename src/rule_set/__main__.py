@@ -4,20 +4,9 @@ from loguru import logger
 
 from .cache import Cache
 from .fetcher import fetcher
-from .file_writers import (
-    ClashClassicalFileWriter,
-    ClashDomainFileWriter,
-    ClashIpcidrFileWriter,
-    EgernFileWriter,
-    GeoIPFileWriter,
-    LoonFileWriter,
-    SingBoxFileWriter,
-    SurgeFileWriter,
-)
-from .file_writers.base import BaseFileWriter
+from .file_writers import writer_registry
 from .metadata import MetadataStore
 from .models import (
-    ArtifactKind,
     BaseResource,
     DomainSetResource,
     MaxMindDBResource,
@@ -34,36 +23,10 @@ from .models import (
 )
 from .parsers import mmdb, v2ray_domain
 from .parsers.surge import DomainSetParser, RuleSetParser
-from .serializers.clients import (
-    ClashSerializer,
-    EgernSerializer,
-    GeoIPSerializer,
-    LoonSerializer,
-    SingBoxSerializer,
-    SurgeSerializer,
-)
-from .serializers.clients.base import BaseSerializer
+from .serializers.clients import client_serializers
 from .sources import SOURCES
 from .utils import build_v2ray_include_url
 
-client_serializers: dict[SerializeFormat, type[BaseSerializer]] = {
-    SerializeFormat.Surge: SurgeSerializer,
-    SerializeFormat.Loon: LoonSerializer,
-    SerializeFormat.Clash: ClashSerializer,
-    SerializeFormat.Egern: EgernSerializer,
-    SerializeFormat.Sing_Box: SingBoxSerializer,
-    SerializeFormat.GeoIP: GeoIPSerializer,
-}
-writer_registry: dict[tuple[SerializeFormat, ArtifactKind], type[BaseFileWriter]] = {
-    (SerializeFormat.Surge, ArtifactKind.DEFAULT): SurgeFileWriter,
-    (SerializeFormat.Loon, ArtifactKind.DEFAULT): LoonFileWriter,
-    (SerializeFormat.Egern, ArtifactKind.DEFAULT): EgernFileWriter,
-    (SerializeFormat.Sing_Box, ArtifactKind.DEFAULT): SingBoxFileWriter,
-    (SerializeFormat.GeoIP, ArtifactKind.DEFAULT): GeoIPFileWriter,
-    (SerializeFormat.Clash, ArtifactKind.DOMAIN): ClashDomainFileWriter,
-    (SerializeFormat.Clash, ArtifactKind.IPCIDR): ClashIpcidrFileWriter,
-    (SerializeFormat.Clash, ArtifactKind.CLASSICAL): ClashClassicalFileWriter,
-}
 resource_cache = Cache(path="resource")
 source_cache = Cache(path="source")
 
