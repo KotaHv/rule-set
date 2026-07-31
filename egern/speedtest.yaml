@@ -1,4 +1,4 @@
-# Total: 3297 rules
+# Total: 3299 rules
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -609,6 +609,7 @@ domain_set:
 - speedtest.uania.cloud
 - speedtest-rp.verte.cloud
 - speedtest.witcom.cloud
+- speedtest.xytor.cloud
 - speedtest.zerospace.cloud
 - speedtest.zttcc.cloud
 - ookla.speedtest.cnix.cn
@@ -1612,6 +1613,7 @@ domain_set:
 - speedtest.host-unlimited.de
 - speedtest02.htp-tel.de
 - speedtest.intersaar.de
+- ookla.intracex.de
 - speedtest.ip-projects.de
 - speedtest.ip-works.de
 - speedtest.berlin.jonasdevries.de
