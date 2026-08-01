@@ -42,7 +42,9 @@ jobs:
       - name: Restore metadata
         uses: actions/cache/restore@v6
         with:
-          path: .metadata.json
+          path: |
+            .metadata.db
+            .metadata.json
           key: rule-set-metadata-${{ github.run_id }}
           restore-keys: |
             rule-set-metadata-
@@ -85,7 +87,7 @@ jobs:
 
           # Generate GitHub Pages navigation
           echo "Generating pages in deploy_temp directory..."
-          test -f ../.metadata.json
+          test -f ../.metadata.db
           uv run gen-pages --target-path .
 
           if [[ -z $(git status --porcelain) ]]; then
@@ -98,5 +100,5 @@ jobs:
       - name: Save metadata
         uses: actions/cache/save@v6
         with:
-          path: .metadata.json
+          path: .metadata.db
           key: rule-set-metadata-${{ github.run_id }}

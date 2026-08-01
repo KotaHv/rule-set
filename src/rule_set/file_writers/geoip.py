@@ -1,5 +1,4 @@
 from .base import BaseFileWriter
-from .middleware import MetadataMiddleware
 
 
 class GeoIPFileWriter(BaseFileWriter):
@@ -10,7 +9,3 @@ class GeoIPFileWriter(BaseFileWriter):
     @property
     def suffix(self) -> str:
         return ".dat"
-
-    @property
-    def middlewares(self):
-        return [MetadataMiddleware(self.metadata_store)]

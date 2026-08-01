@@ -5,7 +5,7 @@ from rule_set.config import settings
 from rule_set.metadata import MetadataStore
 from rule_set.models import WriteContext
 
-from .middleware import PostWriteMiddleware
+from .middleware import MetadataMiddleware, PostWriteMiddleware, PreWriteMiddleware
 from .write import write
 
 
@@ -34,8 +34,12 @@ class BaseFileWriter(ABC):
     def suffix(self) -> str: ...
 
     @property
-    def middlewares(self) -> list[PostWriteMiddleware]:
+    def post_write_middlewares(self) -> list[PostWriteMiddleware]:
         return []
+
+    @property
+    def pre_write_middlewares(self) -> list[PreWriteMiddleware]:
+        return [MetadataMiddleware(self.metadata_store)]
 
     def has_changes(self) -> bool:
         if self.filepath.exists():
@@ -61,12 +65,13 @@ class BaseFileWriter(ABC):
         if not self.data or not self.has_changes():
             return False
         self.filepath.parent.mkdir(parents=True, exist_ok=True)
-        write(self.filepath, self.data)
         context = WriteContext(
             filepath=self.filepath,
             timestamp=self.timestamp,
-            generated_paths=[self.filepath],
         )
-        for middleware in self.middlewares:
+        for middleware in self.pre_write_middlewares:
+            middleware.before_write(context)
+        write(self.filepath, self.data)
+        for middleware in self.post_write_middlewares:
             middleware.after_write(context)
         return True

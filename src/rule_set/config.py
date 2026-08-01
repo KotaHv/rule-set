@@ -33,8 +33,8 @@ class Settings(BaseSettings):
     )
 
     metadata_path: Path = Field(
-        default=ROOT_DIR / ".metadata.json",
-        description="Persistent metadata file for generated rule set update timestamps",
+        default=ROOT_DIR / ".metadata.db",
+        description="SQLite database for generated rule set update timestamps",
     )
 
     # Cache configuration

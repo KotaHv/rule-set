@@ -9,15 +9,22 @@ class PostWriteMiddleware(Protocol):
     def after_write(self, context: WriteContext) -> None: ...
 
 
+class PreWriteMiddleware(Protocol):
+    def before_write(self, context: WriteContext) -> None: ...
+
+
 class MetadataMiddleware:
     def __init__(self, metadata_store: MetadataStore) -> None:
         self.metadata_store = metadata_store
 
-    def after_write(self, context: WriteContext) -> None:
-        self.metadata_store.update(context.generated_paths, context.timestamp)
+    def before_write(self, context: WriteContext) -> None:
+        self.metadata_store.update([context.filepath], context.timestamp)
 
 
 class SingBoxCompileMiddleware:
+    def __init__(self, metadata_store: MetadataStore) -> None:
+        self.metadata_store = metadata_store
+
     def after_write(self, context: WriteContext) -> None:
         srs_path = context.filepath.with_suffix(".srs")
         subprocess.run(
@@ -26,12 +33,13 @@ class SingBoxCompileMiddleware:
         )
         if not srs_path.exists():
             raise FileNotFoundError(f"sing-box did not generate {srs_path}")
-        context.generated_paths.append(srs_path)
+        self.metadata_store.update([srs_path], context.timestamp)
 
 
 class MihomoCompileMiddleware:
-    def __init__(self, behavior: str) -> None:
+    def __init__(self, behavior: str, metadata_store: MetadataStore) -> None:
         self.behavior = behavior
+        self.metadata_store = metadata_store
 
     def after_write(self, context: WriteContext) -> None:
         mrs_path = context.filepath.with_suffix(".mrs")
@@ -48,4 +56,4 @@ class MihomoCompileMiddleware:
         )
         if not mrs_path.exists():
             raise FileNotFoundError(f"mihomo did not generate {mrs_path}")
-        context.generated_paths.append(mrs_path)
+        self.metadata_store.update([mrs_path], context.timestamp)

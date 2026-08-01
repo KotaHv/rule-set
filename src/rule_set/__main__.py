@@ -11,7 +11,8 @@ from .sources import SOURCES
 
 def main():
     try:
-        if not settings.metadata_path.exists():
+        legacy_metadata_path = settings.metadata_path.with_suffix(".json")
+        if not settings.metadata_path.exists() and not legacy_metadata_path.exists():
             shutil.rmtree(settings.build_dir, ignore_errors=True)
         settings.build_dir.mkdir(parents=True, exist_ok=True)
         settings.cache_dir.mkdir(parents=True, exist_ok=True)
@@ -24,7 +25,6 @@ def main():
         )
         for source in SOURCES:
             source_processor.process(source)
-        metadata_store.save()
     except Exception as e:
         logger.exception(e)
         raise
