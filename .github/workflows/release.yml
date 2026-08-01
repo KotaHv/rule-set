@@ -39,12 +39,17 @@ jobs:
           else
             git -C deploy_temp checkout --orphan release
           fi
+      - name: Restore legacy metadata
+        uses: actions/cache/restore@v6
+        with:
+          path: .metadata.json
+          key: rule-set-metadata-${{ github.run_id }}
+          restore-keys: |
+            rule-set-metadata-
       - name: Restore metadata
         uses: actions/cache/restore@v6
         with:
-          path: |
-            .metadata.db
-            .metadata.json
+          path: .metadata.db
           key: rule-set-metadata-${{ github.run_id }}
           restore-keys: |
             rule-set-metadata-

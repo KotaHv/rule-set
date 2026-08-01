@@ -9,6 +9,7 @@ class MetadataStore:
     def __init__(self) -> None:
         self.path = settings.metadata_path
         self.legacy_path = self.path.with_suffix(".json")
+        needs_migration = not self.path.exists()
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.connection = sqlite3.connect(self.path)
         with self.connection:
@@ -20,7 +21,7 @@ class MetadataStore:
                 )
                 """
             )
-        if self.legacy_path.exists():
+        if needs_migration and self.legacy_path.exists():
             self._migrate_legacy_json()
             self.legacy_path.unlink()
 
