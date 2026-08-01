@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from loguru import logger
 
 from .cache import Cache
@@ -22,4 +20,4 @@ def main():
         metadata_store.save()
     except Exception as e:
         logger.exception(e)
-        Path(".failure").touch()
+        raise

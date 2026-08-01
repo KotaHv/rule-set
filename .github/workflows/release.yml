@@ -76,12 +76,6 @@ jobs:
           set -e -o pipefail
           uv sync
           uv run rule-set
-      - name: Pre-deploy check
-        run: |
-          if [ -f .failure ]; then
-            echo "rule-set generation failed"
-            exit 1
-          fi
       - name: Deploy to release branch
         run: |
           set -e -o pipefail
