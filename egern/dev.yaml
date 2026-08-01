@@ -1,5 +1,5 @@
-# Total: 603 rules
-# Last Updated: 2026-07-31T10:23:59.190459+00:00
+# Total: 611 rules
+# Last Updated: 2026-08-01T12:58:43.143018+00:00
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -185,6 +185,7 @@ domain_suffix_set:
 - jquery.com
 - jquerymobile.com
 - jqueryui.com
+- kotlinconf.com
 - launchpadlibrarian.com
 - linuxmint.com
 - macruby.com
@@ -205,6 +206,7 @@ domain_suffix_set:
 - msinnovationchallenge.com
 - mspairlift.com
 - msropendata.com
+- myjetbrains.com
 - myoctocat.com
 - mysql.com
 - mystrikingly.com
@@ -245,6 +247,7 @@ domain_suffix_set:
 - sublimetext.com
 - superuser.com
 - system76.com
+- talkingkotlin.com
 - termius.com
 - termux.com
 - thegithubshop.com
@@ -288,6 +291,7 @@ domain_suffix_set:
 - github.dev
 - githubpreview.dev
 - go.dev
+- jetbrains.dev
 - pub.dev
 - sentry.dev
 - termux.dev
@@ -303,6 +307,7 @@ domain_suffix_set:
 - stackoverflow.help
 - researchkit.hk
 - sr.ht
+- kotl.in
 - facebookappcenter.info
 - microsoftreactor.info
 - xposed.info
@@ -333,6 +338,7 @@ domain_suffix_set:
 - ius.io
 - jenkins.io
 - k8s.io
+- ktor.io
 - kubernetes.io
 - mpv.io
 - neovim.io
@@ -479,6 +485,7 @@ domain_suffix_set:
 - haskellstack.org
 - imageglass.org
 - intellij.org
+- jetbrains.org
 - jfrog.org
 - js.org
 - jupyter.org
@@ -592,6 +599,7 @@ domain_suffix_set:
 - hexdocs.pm
 - docs.rs
 - rustup.rs
+- jetbrains.ru
 - tilda.ru
 - brew.sh
 - scoop.sh

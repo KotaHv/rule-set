@@ -1,5 +1,5 @@
-# Total: 4568 rules
-# Last Updated: 2026-07-31T19:09:33.458574+00:00
+# Total: 4571 rules
+# Last Updated: 2026-08-01T12:58:37.662524+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -672,6 +672,7 @@ DOMAIN,dd.dexscreener.com
 DOMAIN,api.dicebear.com
 DOMAIN,avatars.dicebear.com
 DOMAIN,assets.dictionary.com
+DOMAIN,cdn.dictionary.com
 DOMAIN,cacerts.digicert.com
 DOMAIN,crl3.digicert.com
 DOMAIN,ocsp.digicert.com
@@ -1948,6 +1949,8 @@ DOMAIN,sourcepoint.theguardian.com
 DOMAIN,static.theguardian.com
 DOMAIN,files.thehackernews.com
 DOMAIN,media.theporndude.com
+DOMAIN,cdn.theregister.com
+DOMAIN,image.theregister.com
 DOMAIN,media.theresanaiforthat.com
 DOMAIN,artworks.thetvdb.com
 DOMAIN,platform.theverge.com

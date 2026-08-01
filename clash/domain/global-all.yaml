@@ -1,5 +1,5 @@
-# Total: 6380 rules
-# Last Updated: 2026-07-31T10:24:28.134291+00:00
+# Total: 6386 rules
+# Last Updated: 2026-08-01T12:59:10.381689+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -3923,6 +3923,7 @@
 - '+.konamicrossmedia.com'
 - '+.konamigaming.com'
 - '+.konamionline.com'
+- '+.kotlinconf.com'
 - '+.kraftonde.com'
 - '+.kraken.com'
 - '+.krakenjs.com'
@@ -4102,6 +4103,7 @@
 - '+.myfreecams.com'
 - '+.myfutanari.com'
 - '+.myipstack.com'
+- '+.myjetbrains.com'
 - '+.myoctocat.com'
 - '+.mypikpak.com'
 - '+.cos.ap-bangkok.myqcloud.com'
@@ -4687,6 +4689,7 @@
 - '+.tailwindcss.com'
 - '+.take2games.com'
 - '+.talkcc.com'
+- '+.talkingkotlin.com'
 - '+.targetimg1.com'
 - '+.tarkov.com'
 - '+.tdesktop.com'
@@ -5077,6 +5080,7 @@
 - '+.gitkraken.dev'
 - '+.go.dev'
 - '+.hayabusa.dev'
+- '+.jetbrains.dev'
 - '+.jspm.dev'
 - '+.apac.orbitor.dev'
 - '+.eu.orbitor.dev'
@@ -5288,6 +5292,7 @@
 - '+.gravity.jup.io'
 - '+.k8s.io'
 - '+.kfs.io'
+- '+.ktor.io'
 - '+.kubernetes.io'
 - '+.mirror.letscloud.io'
 - '+.api.loganalytics.io'
@@ -5991,6 +5996,7 @@
 - '+.intellij.org'
 - '+.internet.org'
 - '+.mirrors.ionfish.org'
+- '+.jetbrains.org'
 - '+.jfrog.org'
 - '+.js.org'
 - '+.jspm.org'

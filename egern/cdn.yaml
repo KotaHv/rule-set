@@ -1,5 +1,5 @@
-# Total: 4627 rules
-# Last Updated: 2026-07-31T19:09:33.518800+00:00
+# Total: 4630 rules
+# Last Updated: 2026-08-01T12:58:37.722776+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -674,6 +674,7 @@ domain_set:
 - api.dicebear.com
 - avatars.dicebear.com
 - assets.dictionary.com
+- cdn.dictionary.com
 - cacerts.digicert.com
 - crl3.digicert.com
 - ocsp.digicert.com
@@ -1950,6 +1951,8 @@ domain_set:
 - static.theguardian.com
 - files.thehackernews.com
 - media.theporndude.com
+- cdn.theregister.com
+- image.theregister.com
 - media.theresanaiforthat.com
 - artworks.thetvdb.com
 - platform.theverge.com

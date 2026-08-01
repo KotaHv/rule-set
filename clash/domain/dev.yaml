@@ -1,5 +1,5 @@
-# Total: 602 rules
-# Last Updated: 2026-07-31T10:23:59.173679+00:00
+# Total: 610 rules
+# Last Updated: 2026-08-01T12:58:43.126614+00:00
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -183,6 +183,7 @@
 - '+.jquery.com'
 - '+.jquerymobile.com'
 - '+.jqueryui.com'
+- '+.kotlinconf.com'
 - '+.launchpadlibrarian.com'
 - '+.linuxmint.com'
 - '+.macruby.com'
@@ -203,6 +204,7 @@
 - '+.msinnovationchallenge.com'
 - '+.mspairlift.com'
 - '+.msropendata.com'
+- '+.myjetbrains.com'
 - '+.myoctocat.com'
 - '+.mysql.com'
 - '+.mystrikingly.com'
@@ -243,6 +245,7 @@
 - '+.sublimetext.com'
 - '+.superuser.com'
 - '+.system76.com'
+- '+.talkingkotlin.com'
 - '+.termius.com'
 - '+.termux.com'
 - '+.thegithubshop.com'
@@ -286,6 +289,7 @@
 - '+.github.dev'
 - '+.githubpreview.dev'
 - '+.go.dev'
+- '+.jetbrains.dev'
 - '+.pub.dev'
 - '+.sentry.dev'
 - '+.termux.dev'
@@ -301,6 +305,7 @@
 - '+.stackoverflow.help'
 - '+.researchkit.hk'
 - '+.sr.ht'
+- '+.kotl.in'
 - '+.facebookappcenter.info'
 - '+.microsoftreactor.info'
 - '+.xposed.info'
@@ -331,6 +336,7 @@
 - '+.ius.io'
 - '+.jenkins.io'
 - '+.k8s.io'
+- '+.ktor.io'
 - '+.kubernetes.io'
 - '+.mpv.io'
 - '+.neovim.io'
@@ -477,6 +483,7 @@
 - '+.haskellstack.org'
 - '+.imageglass.org'
 - '+.intellij.org'
+- '+.jetbrains.org'
 - '+.jfrog.org'
 - '+.js.org'
 - '+.jupyter.org'
@@ -590,6 +597,7 @@
 - '+.hexdocs.pm'
 - '+.docs.rs'
 - '+.rustup.rs'
+- '+.jetbrains.ru'
 - '+.tilda.ru'
 - '+.brew.sh'
 - '+.scoop.sh'

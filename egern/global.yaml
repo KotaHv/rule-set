@@ -1,5 +1,5 @@
-# Total: 1786 rules
-# Last Updated: 2026-07-31T10:24:27.191110+00:00
+# Total: 1792 rules
+# Last Updated: 2026-08-01T12:59:09.672101+00:00
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -519,6 +519,7 @@ domain_suffix_set:
 - kobo.com
 - komoot.com
 - konachan.com
+- kotlinconf.com
 - kraken.com
 - krakenjs.com
 - kucoin.com
@@ -602,6 +603,7 @@ domain_suffix_set:
 - myfreecams.com
 - myfutanari.com
 - myipstack.com
+- myjetbrains.com
 - myoctocat.com
 - mypikpak.com
 - myqnapcloud.com
@@ -819,6 +821,7 @@ domain_suffix_set:
 - tailscale.com
 - tailwindcss.com
 - talkcc.com
+- talkingkotlin.com
 - techpowerup.com
 - techspot.com
 - tenor.com
@@ -1005,6 +1008,7 @@ domain_suffix_set:
 - githubpreview.dev
 - gitkraken.dev
 - go.dev
+- jetbrains.dev
 - orbstack.dev
 - pages.dev
 - pub.dev
@@ -1136,6 +1140,7 @@ domain_suffix_set:
 - jenkins.io
 - jsr.io
 - k8s.io
+- ktor.io
 - kubernetes.io
 - logto.io
 - macaddress.io
@@ -1516,6 +1521,7 @@ domain_suffix_set:
 - imageglass.org
 - intellij.org
 - internet.org
+- jetbrains.org
 - jfrog.org
 - js.org
 - jupyter.org

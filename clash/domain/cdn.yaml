@@ -1,5 +1,5 @@
-# Total: 4547 rules
-# Last Updated: 2026-07-31T19:09:33.460119+00:00
+# Total: 4550 rules
+# Last Updated: 2026-08-01T12:58:37.664028+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -673,6 +673,7 @@
 - 'api.dicebear.com'
 - 'avatars.dicebear.com'
 - 'assets.dictionary.com'
+- 'cdn.dictionary.com'
 - 'cacerts.digicert.com'
 - 'crl3.digicert.com'
 - 'ocsp.digicert.com'
@@ -1949,6 +1950,8 @@
 - 'static.theguardian.com'
 - 'files.thehackernews.com'
 - 'media.theporndude.com'
+- 'cdn.theregister.com'
+- 'image.theregister.com'
 - 'media.theresanaiforthat.com'
 - 'artworks.thetvdb.com'
 - 'platform.theverge.com'

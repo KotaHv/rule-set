@@ -1,5 +1,5 @@
-# Total: 603 rules
-# Last Updated: 2026-07-31T10:23:59.172719+00:00
+# Total: 611 rules
+# Last Updated: 2026-08-01T12:58:43.125490+00:00
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -182,6 +182,7 @@ DOMAIN-SUFFIX,jfrog.com
 DOMAIN-SUFFIX,jquery.com
 DOMAIN-SUFFIX,jquerymobile.com
 DOMAIN-SUFFIX,jqueryui.com
+DOMAIN-SUFFIX,kotlinconf.com
 DOMAIN-SUFFIX,launchpadlibrarian.com
 DOMAIN-SUFFIX,linuxmint.com
 DOMAIN-SUFFIX,macruby.com
@@ -202,6 +203,7 @@ DOMAIN-SUFFIX,msdn.com
 DOMAIN-SUFFIX,msinnovationchallenge.com
 DOMAIN-SUFFIX,mspairlift.com
 DOMAIN-SUFFIX,msropendata.com
+DOMAIN-SUFFIX,myjetbrains.com
 DOMAIN-SUFFIX,myoctocat.com
 DOMAIN-SUFFIX,mysql.com
 DOMAIN-SUFFIX,mystrikingly.com
@@ -242,6 +244,7 @@ DOMAIN-SUFFIX,strikinglycdn.com
 DOMAIN-SUFFIX,sublimetext.com
 DOMAIN-SUFFIX,superuser.com
 DOMAIN-SUFFIX,system76.com
+DOMAIN-SUFFIX,talkingkotlin.com
 DOMAIN-SUFFIX,termius.com
 DOMAIN-SUFFIX,termux.com
 DOMAIN-SUFFIX,thegithubshop.com
@@ -285,6 +288,7 @@ DOMAIN-SUFFIX,fury.dev
 DOMAIN-SUFFIX,github.dev
 DOMAIN-SUFFIX,githubpreview.dev
 DOMAIN-SUFFIX,go.dev
+DOMAIN-SUFFIX,jetbrains.dev
 DOMAIN-SUFFIX,pub.dev
 DOMAIN-SUFFIX,sentry.dev
 DOMAIN-SUFFIX,termux.dev
@@ -300,6 +304,7 @@ DOMAIN-SUFFIX,fury.help
 DOMAIN-SUFFIX,stackoverflow.help
 DOMAIN-SUFFIX,researchkit.hk
 DOMAIN-SUFFIX,sr.ht
+DOMAIN-SUFFIX,kotl.in
 DOMAIN-SUFFIX,facebookappcenter.info
 DOMAIN-SUFFIX,microsoftreactor.info
 DOMAIN-SUFFIX,xposed.info
@@ -330,6 +335,7 @@ DOMAIN-SUFFIX,hyperscan.io
 DOMAIN-SUFFIX,ius.io
 DOMAIN-SUFFIX,jenkins.io
 DOMAIN-SUFFIX,k8s.io
+DOMAIN-SUFFIX,ktor.io
 DOMAIN-SUFFIX,kubernetes.io
 DOMAIN-SUFFIX,mpv.io
 DOMAIN-SUFFIX,neovim.io
@@ -476,6 +482,7 @@ DOMAIN-SUFFIX,haskell.org
 DOMAIN-SUFFIX,haskellstack.org
 DOMAIN-SUFFIX,imageglass.org
 DOMAIN-SUFFIX,intellij.org
+DOMAIN-SUFFIX,jetbrains.org
 DOMAIN-SUFFIX,jfrog.org
 DOMAIN-SUFFIX,js.org
 DOMAIN-SUFFIX,jupyter.org
@@ -589,6 +596,7 @@ DOMAIN-SUFFIX,hex.pm
 DOMAIN-SUFFIX,hexdocs.pm
 DOMAIN-SUFFIX,docs.rs
 DOMAIN-SUFFIX,rustup.rs
+DOMAIN-SUFFIX,jetbrains.ru
 DOMAIN-SUFFIX,tilda.ru
 DOMAIN-SUFFIX,brew.sh
 DOMAIN-SUFFIX,scoop.sh

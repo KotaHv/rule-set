@@ -1,5 +1,5 @@
-# Total: 1768 rules
-# Last Updated: 2026-07-31T10:24:27.153345+00:00
+# Total: 1774 rules
+# Last Updated: 2026-08-01T12:59:09.640494+00:00
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -517,6 +517,7 @@
 - '+.kobo.com'
 - '+.komoot.com'
 - '+.konachan.com'
+- '+.kotlinconf.com'
 - '+.kraken.com'
 - '+.krakenjs.com'
 - '+.kucoin.com'
@@ -600,6 +601,7 @@
 - '+.myfreecams.com'
 - '+.myfutanari.com'
 - '+.myipstack.com'
+- '+.myjetbrains.com'
 - '+.myoctocat.com'
 - '+.mypikpak.com'
 - '+.myqnapcloud.com'
@@ -817,6 +819,7 @@
 - '+.tailscale.com'
 - '+.tailwindcss.com'
 - '+.talkcc.com'
+- '+.talkingkotlin.com'
 - '+.techpowerup.com'
 - '+.techspot.com'
 - '+.tenor.com'
@@ -1003,6 +1006,7 @@
 - '+.githubpreview.dev'
 - '+.gitkraken.dev'
 - '+.go.dev'
+- '+.jetbrains.dev'
 - '+.orbstack.dev'
 - '+.pages.dev'
 - '+.pub.dev'
@@ -1134,6 +1138,7 @@
 - '+.jenkins.io'
 - '+.jsr.io'
 - '+.k8s.io'
+- '+.ktor.io'
 - '+.kubernetes.io'
 - '+.logto.io'
 - '+.macaddress.io'
@@ -1514,6 +1519,7 @@
 - '+.imageglass.org'
 - '+.intellij.org'
 - '+.internet.org'
+- '+.jetbrains.org'
 - '+.jfrog.org'
 - '+.js.org'
 - '+.jupyter.org'
