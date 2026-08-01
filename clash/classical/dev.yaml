@@ -1,4 +1,4 @@
 # Total: 1 rules
-# Last Updated: 2026-07-31T10:23:59.173679+00:00
+# Last Updated: 2026-08-01T13:55:02.609295+00:00
 payload:
 - DOMAIN-REGEX,.+\.dkr\.ecr\.[^\.]+\.amazonaws\.com$
