@@ -5,6 +5,7 @@ Contains all data models and related types.
 
 from .artifact import Artifact, ArtifactKind
 from .enum import DomainType, SerializeFormat
+from .metadata import MetadataRecord
 from .option import (
     GeoIPOption,
     Option,
@@ -43,6 +44,7 @@ __all__ = [
     "ArtifactKind",
     "Artifact",
     "WriteContext",
+    "MetadataRecord",
     # Options
     "SerializeFormats",
     "V2rayDomainAttrs",

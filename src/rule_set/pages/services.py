@@ -28,7 +28,9 @@ class PageGenerator:
         self.templates_dir = config.templates_dir
         self.icons_dir = config.icons_dir
 
-        self.metadata = MetadataStore().data
+        self.metadata = {
+            record.path: record.timestamp for record in MetadataStore().data
+        }
 
         self.env = Environment(
             loader=FileSystemLoader(str(self.templates_dir)),
@@ -68,7 +70,7 @@ class PageGenerator:
                     info=PathInfo(
                         name=child.name,
                         size=stat.st_size,
-                        mtime=self.metadata[str(child.relative_to(self.rule_set_path))],
+                        mtime=self.metadata[child.relative_to(self.rule_set_path)],
                         path=child,
                     ),
                     parent=node,

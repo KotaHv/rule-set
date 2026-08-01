@@ -3,6 +3,7 @@ from typing import Protocol
 
 from rule_set.metadata import MetadataStore
 from rule_set.models import WriteContext
+from rule_set.models.metadata import MetadataRecord
 
 
 class PostWriteMiddleware(Protocol):
@@ -18,7 +19,9 @@ class MetadataMiddleware:
         self.metadata_store = metadata_store
 
     def before_write(self, context: WriteContext) -> None:
-        self.metadata_store.update([context.filepath], context.timestamp)
+        self.metadata_store.update(
+            MetadataRecord(path=context.filepath, timestamp=context.timestamp)
+        )
 
 
 class SingBoxCompileMiddleware:
@@ -33,7 +36,9 @@ class SingBoxCompileMiddleware:
         )
         if not srs_path.exists():
             raise FileNotFoundError(f"sing-box did not generate {srs_path}")
-        self.metadata_store.update([srs_path], context.timestamp)
+        self.metadata_store.update(
+            MetadataRecord(path=srs_path, timestamp=context.timestamp)
+        )
 
 
 class MihomoCompileMiddleware:
@@ -56,4 +61,6 @@ class MihomoCompileMiddleware:
         )
         if not mrs_path.exists():
             raise FileNotFoundError(f"mihomo did not generate {mrs_path}")
-        self.metadata_store.update([mrs_path], context.timestamp)
+        self.metadata_store.update(
+            MetadataRecord(path=mrs_path, timestamp=context.timestamp)
+        )

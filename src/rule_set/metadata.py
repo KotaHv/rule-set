@@ -1,9 +1,8 @@
 import json
 import sqlite3
-from collections.abc import Iterable
-from pathlib import Path
 
 from .config import settings
+from .models.metadata import MetadataRecord
 
 
 class MetadataStore:
@@ -40,23 +39,23 @@ class MetadataStore:
             )
 
     @property
-    def data(self) -> dict[str, float]:
-        return dict(self.connection.execute("SELECT path, timestamp FROM metadata"))
-
-    def update(self, paths: Iterable[Path], timestamp: float) -> None:
-        rows = [
-            (path.relative_to(settings.build_dir).as_posix(), timestamp)
-            for path in paths
+    def data(self) -> list[MetadataRecord]:
+        return [
+            MetadataRecord(path=path, timestamp=timestamp)
+            for path, timestamp in self.connection.execute(
+                "SELECT path, timestamp FROM metadata"
+            )
         ]
-        if not rows:
-            return
+
+    def update(self, record: MetadataRecord) -> None:
+        relative_path = record.path.relative_to(settings.build_dir).as_posix()
         with self.connection:
-            self.connection.executemany(
+            self.connection.execute(
                 """
                 INSERT INTO metadata (path, timestamp)
                 VALUES (?, ?)
                 ON CONFLICT(path) DO UPDATE SET timestamp = excluded.timestamp
                 WHERE timestamp != excluded.timestamp
                 """,
-                rows,
+                (relative_path, record.timestamp),
             )
