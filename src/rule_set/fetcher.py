@@ -24,13 +24,14 @@ class Fetcher:
 
     def _fetch(self, url: str) -> Response:
         last_exception = None
-        for _ in range(self.max_retries):
+        for attempt in range(self.max_retries + 1):
             try:
                 response = self.http_client.get(url).raise_for_status()
                 return response
             except Exception as e:
                 last_exception = e
-                sleep(2)
+                if attempt < self.max_retries:
+                    sleep(2**attempt)
         raise Exception(
             f"Failed to fetch URL after {self.max_retries} retries: {last_exception}"
         )
