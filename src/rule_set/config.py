@@ -2,7 +2,6 @@
 Configuration settings for the rule-set project.
 """
 
-import shutil
 from pathlib import Path
 from typing import Literal
 
@@ -61,9 +60,4 @@ class Settings(BaseSettings):
         return True
 
 
-# Global settings instance
 settings = Settings()
-if not settings.metadata_path.exists():
-    shutil.rmtree(settings.build_dir, ignore_errors=True)
-settings.build_dir.mkdir(exist_ok=True)
-settings.cache_dir.mkdir(exist_ok=True)
