@@ -1,7 +1,7 @@
 from pathlib import Path
 from time import sleep
 
-from httpx import Client, HTTPTransport, Response
+from httpx import Client, ConnectError, ConnectTimeout, HTTPTransport, Response
 from loguru import logger
 from pydantic import HttpUrl
 
@@ -28,13 +28,16 @@ class Fetcher:
             try:
                 response = self.http_client.get(url).raise_for_status()
                 return response
+            except (ConnectError, ConnectTimeout) as e:
+                # HTTPTransport already retried connection failures internally.
+                raise Exception(f"Failed to fetch URL: {e}") from e
             except Exception as e:
                 last_exception = e
                 if attempt < self.max_retries:
                     sleep(2**attempt)
         raise Exception(
             f"Failed to fetch URL after {self.max_retries} retries: {last_exception}"
-        )
+        ) from last_exception
 
     def get_content(self, path: HttpUrl | Path) -> str:
         logger.info(f"Fetching content from: {path}")
