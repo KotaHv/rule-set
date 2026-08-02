@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from ..cache import Cache
+from ..errors import UnknownResourceTypeError
 from ..fetcher import fetcher
 from ..models import (
     BaseResource,
@@ -84,7 +85,7 @@ class ResourceProcessor:
             return mmdb.parse(resource_data, country_code=option.geo_ip.country_code)
         if isinstance(resource, V2rayDomainResource):
             return v2ray_domain.parse(resource_data, option)
-        raise Exception(f"Unknown resource type: {type(resource)}")
+        raise UnknownResourceTypeError(resource)
 
     @staticmethod
     def _build_v2ray_include_resources(

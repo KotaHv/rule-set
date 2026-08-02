@@ -1,5 +1,6 @@
 from loguru import logger
 
+from rule_set.errors import SerializerError, UnsupportedRuleTypeError
 from rule_set.models.logical import (
     LogicalNodeUnion,
     LogicalTree,
@@ -7,7 +8,6 @@ from rule_set.models.logical import (
     RuleNode,
 )
 
-from ..errors import SerializerError, UnsupportedRuleTypeError
 from .surge import serialize as surge_serialize
 
 type_format = {

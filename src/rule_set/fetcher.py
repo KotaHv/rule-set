@@ -7,6 +7,7 @@ from pydantic import HttpUrl
 
 from .cache import Cache
 from .config import settings
+from .errors import FetchError
 
 
 class Fetcher:
@@ -33,12 +34,12 @@ class Fetcher:
                 return response
             except (ConnectError, ConnectTimeout) as e:
                 # HTTPTransport already retried connection failures internally.
-                raise Exception(f"Failed to fetch URL: {e}") from e
+                raise FetchError(f"Failed to fetch URL: {e}") from e
             except Exception as e:
                 last_exception = e
                 if attempt < self.max_retries:
                     sleep(2**attempt)
-        raise Exception(
+        raise FetchError(
             f"Failed to fetch URL after {self.max_retries} retries: {last_exception}"
         ) from last_exception
 

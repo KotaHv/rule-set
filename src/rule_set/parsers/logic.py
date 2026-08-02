@@ -3,6 +3,7 @@ import sys
 
 from loguru import logger
 
+from rule_set.errors import ParserError
 from rule_set.models.logical import (
     AndNode,
     ConcreteRule,
@@ -13,8 +14,6 @@ from rule_set.models.logical import (
     RuleNode,
     RuleType,
 )
-
-from .errors import ParserError
 
 parentheses_re = re.compile(r"^\((.*)\)$")
 

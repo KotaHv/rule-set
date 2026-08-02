@@ -1,5 +1,6 @@
 from loguru import logger
 
+from rule_set.errors import SerializerError, UnsupportedRuleTypeError
 from rule_set.models.logical import (
     AndNode,
     LogicalNodeUnion,
@@ -8,8 +9,6 @@ from rule_set.models.logical import (
     OrNode,
     RuleNode,
 )
-
-from ..errors import SerializerError, UnsupportedRuleTypeError
 
 
 def _serialize_logical(
