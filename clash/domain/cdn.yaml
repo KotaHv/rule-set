@@ -1,5 +1,5 @@
-# Total: 4550 rules
-# Last Updated: 2026-08-01T12:58:37.664028+00:00
+# Total: 4552 rules
+# Last Updated: 2026-08-02T14:06:19.562920+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1044,6 +1044,7 @@
 - 'hls.hentaicity.com'
 - 'i.hentaifox.com'
 - 'i2.hentaifox.com'
+- 'maps.hereapi.com'
 - 'cdn.hero-sms.com'
 - 'heroicons.com'
 - 'nel.heroku.com'
@@ -2707,6 +2708,7 @@
 - 'amp.azure.net'
 - 'catalogartifact.azureedge.net'
 - 'claritystatic.azureedge.net'
+- 'connectcache20.azureedge.net'
 - 'edge-cloud-resource-static.azureedge.net'
 - 'edge-consumer-static.azureedge.net'
 - 'edge-mobile-static.azureedge.net'

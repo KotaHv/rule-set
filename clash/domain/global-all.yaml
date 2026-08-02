@@ -1,5 +1,5 @@
-# Total: 6386 rules
-# Last Updated: 2026-08-01T12:59:10.381689+00:00
+# Total: 6388 rules
+# Last Updated: 2026-08-02T14:06:51.564262+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -854,6 +854,7 @@
 - 'cdn1.hentaicity.com'
 - 'hls.hentaicity.com'
 - 'wego.here.com'
+- 'maps.hereapi.com'
 - 'cdn.hero-sms.com'
 - 'heroicons.com'
 - 'cdn.hextom.com'
@@ -2209,6 +2210,7 @@
 - 'amp.azure.net'
 - 'catalogartifact.azureedge.net'
 - 'claritystatic.azureedge.net'
+- 'connectcache20.azureedge.net'
 - 'edge-cloud-resource-static.azureedge.net'
 - 'edge-consumer-static.azureedge.net'
 - 'edge-mobile-static.azureedge.net'

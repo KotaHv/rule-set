@@ -1,5 +1,5 @@
-# Total: 4630 rules
-# Last Updated: 2026-08-01T12:58:37.722776+00:00
+# Total: 4632 rules
+# Last Updated: 2026-08-02T14:06:19.622127+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1045,6 +1045,7 @@ domain_set:
 - hls.hentaicity.com
 - i.hentaifox.com
 - i2.hentaifox.com
+- maps.hereapi.com
 - cdn.hero-sms.com
 - heroicons.com
 - nel.heroku.com
@@ -2708,6 +2709,7 @@ domain_set:
 - amp.azure.net
 - catalogartifact.azureedge.net
 - claritystatic.azureedge.net
+- connectcache20.azureedge.net
 - edge-cloud-resource-static.azureedge.net
 - edge-consumer-static.azureedge.net
 - edge-mobile-static.azureedge.net
