@@ -22,6 +22,9 @@ class Fetcher:
         )
         self.cache = Cache(path="fetcher")
 
+    def close(self) -> None:
+        self.http_client.close()
+
     def _fetch(self, url: str) -> Response:
         last_exception = None
         for attempt in range(self.max_retries + 1):

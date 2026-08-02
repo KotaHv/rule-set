@@ -28,9 +28,10 @@ class PageGenerator:
         self.templates_dir = config.templates_dir
         self.icons_dir = config.icons_dir
 
-        self.metadata = {
-            record.path: record.timestamp for record in MetadataStore().data
-        }
+        with MetadataStore() as metadata_store:
+            self.metadata = {
+                record.path: record.timestamp for record in metadata_store.data
+            }
 
         self.env = Environment(
             loader=FileSystemLoader(str(self.templates_dir)),

@@ -39,6 +39,12 @@ class MetadataStore:
                 data.items(),
             )
 
+    def __enter__(self) -> "MetadataStore":
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb) -> None:
+        self.close()
+
     @property
     def data(self) -> list[MetadataRecord]:
         return [
@@ -60,3 +66,6 @@ class MetadataStore:
                 """,
                 (relative_path, record.timestamp),
             )
+
+    def close(self) -> None:
+        self.connection.close()
