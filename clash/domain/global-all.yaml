@@ -1,5 +1,5 @@
-# Total: 6390 rules
-# Last Updated: 2026-08-03T15:24:50.166788+00:00
+# Total: 6392 rules
+# Last Updated: 2026-08-03T20:08:47.757653+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2200,6 +2200,7 @@
 - 'mirror.alwyzon.net'
 - 'download.amelabs.net'
 - 'cdn.c1.amplience.net'
+- 'webdist.data.apnic.net'
 - 'mirror.applebred.net'
 - 's3.arkjp.net'
 - 'cdn.arstechnica.net'
@@ -4783,6 +4784,7 @@
 - '+.trackerslist.com'
 - '+.tradingview.com'
 - '+.trafficdeposit.com'
+- '+.trainingpeaks.com'
 - '+.transcend-cdn.com'
 - '+.travis-ci.com'
 - '+.tripcdn.com'

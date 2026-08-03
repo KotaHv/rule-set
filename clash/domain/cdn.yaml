@@ -1,5 +1,5 @@
-# Total: 4552 rules
-# Last Updated: 2026-08-02T14:06:19.562920+00:00
+# Total: 4554 rules
+# Last Updated: 2026-08-03T20:08:12.713553+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1980,6 +1980,7 @@
 - 's3-symbol-logo.tradingview.com'
 - 'static.tradingview.com'
 - 'ui.trailhead.com'
+- 'assets.trainingpeaks.com'
 - 'cdn.transifex.com'
 - 'cdn.travis-ci.com'
 - 'widgets.tree-nation.com'
@@ -2702,6 +2703,7 @@
 - 'viu-static.akamaized.net'
 - 'd4.alternativeto.net'
 - 'cdn.c1.amplience.net'
+- 'webdist.data.apnic.net'
 - 's3.arkjp.net'
 - 'cdn.arstechnica.net'
 - 'damassets.autodesk.net'
