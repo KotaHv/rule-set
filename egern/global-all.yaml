@@ -1,5 +1,5 @@
-# Total: 6516 rules
-# Last Updated: 2026-08-03T10:12:26.432203+00:00
+# Total: 6517 rules
+# Last Updated: 2026-08-03T15:24:50.259756+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -147,6 +147,7 @@ domain_set:
 - cdn.bigcloud.click
 - mirror.za.abantu.cloud
 - mirrors.bangmod.cloud
+- node-registry.bit.cloud
 - static.bit.cloud
 - cdn.bullwhip.cloud
 - media.cleanshot.cloud
