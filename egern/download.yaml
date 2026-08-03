@@ -1,5 +1,5 @@
-# Total: 1975 rules
-# Last Updated: 2026-07-31T19:09:33.224749+00:00
+# Total: 1977 rules
+# Last Updated: 2026-08-03T10:11:53.196387+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1337,6 +1337,7 @@ domain_set:
 - kali.darklab.sh
 - binaries.prisma.sh
 - ftp.arnes.si
+- dl.pikpak.site
 - ftp.antik.sk
 - deb.bbxnet.sk
 - ftp.debian.sk
@@ -1975,6 +1976,7 @@ domain_wildcard_set:
 - s3.*.backblazeb2.com
 - '*.s3.*.backblazeb2.com'
 - download*.mediafire.com
+- dl-*.mypikpak.com
 - ftp.??.debian.org
 - ftp.??.freebsd.org
 - cdn-*.comaps.tech

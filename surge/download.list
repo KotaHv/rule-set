@@ -1,5 +1,5 @@
-# Total: 1975 rules
-# Last Updated: 2026-07-31T19:09:33.190008+00:00
+# Total: 1977 rules
+# Last Updated: 2026-08-03T10:11:53.157175+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,downloads.claude.ai
@@ -1335,6 +1335,7 @@ DOMAIN,repo.carbon.sh
 DOMAIN,kali.darklab.sh
 DOMAIN,binaries.prisma.sh
 DOMAIN,ftp.arnes.si
+DOMAIN,dl.pikpak.site
 DOMAIN,ftp.antik.sk
 DOMAIN,deb.bbxnet.sk
 DOMAIN,ftp.debian.sk
@@ -1971,6 +1972,7 @@ DOMAIN-WILDCARD,cdn-*.organicmaps.app
 DOMAIN-WILDCARD,s3.*.backblazeb2.com
 DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
 DOMAIN-WILDCARD,download*.mediafire.com
+DOMAIN-WILDCARD,dl-*.mypikpak.com
 DOMAIN-WILDCARD,ftp.??.debian.org
 DOMAIN-WILDCARD,ftp.??.freebsd.org
 DOMAIN-WILDCARD,cdn-*.comaps.tech

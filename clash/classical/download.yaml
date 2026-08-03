@@ -1,11 +1,12 @@
-# Total: 8 rules
-# Last Updated: 2026-07-31T10:23:52.055548+00:00
+# Total: 9 rules
+# Last Updated: 2026-08-03T10:11:53.161536+00:00
 payload:
 - DOMAIN-WILDCARD,cdn-*.comaps.app
 - DOMAIN-WILDCARD,cdn-*.organicmaps.app
 - DOMAIN-WILDCARD,s3.*.backblazeb2.com
 - DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
 - DOMAIN-WILDCARD,download*.mediafire.com
+- DOMAIN-WILDCARD,dl-*.mypikpak.com
 - DOMAIN-WILDCARD,ftp.??.debian.org
 - DOMAIN-WILDCARD,ftp.??.freebsd.org
 - DOMAIN-WILDCARD,cdn-*.comaps.tech
