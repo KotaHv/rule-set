@@ -1,5 +1,5 @@
-# Total: 4635 rules
-# Last Updated: 2026-08-04T20:07:33.291624+00:00
+# Total: 4640 rules
+# Last Updated: 2026-08-05T14:44:14.099522+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1262,6 +1262,10 @@ domain_set:
 - v2.listenloop.com
 - aurora-customization-usw2.lithium.com
 - cdn.livechatinc.com
+- a-tiles.locationiq.com
+- b-tiles.locationiq.com
+- c-tiles.locationiq.com
+- tiles.locationiq.com
 - resource.logitech.com
 - app-cdn.logo.com
 - img.logokit.com
@@ -2662,7 +2666,7 @@ domain_set:
 - r2.dejavu.moe
 - objects.hit.moe
 - touchgal-image.moyu.moe
-- 7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
+- 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 - hv-monsterdb-data.skk.moe
 - img.skk.moe
 - latency-test.lab.skk.moe
@@ -2743,6 +2747,7 @@ domain_set:
 - vg-bunny-cdn.b-cdn.net
 - vz-2222604c-50b.b-cdn.net
 - vz-c0fe498e-5ab.b-cdn.net
+- basemap.beacondb.net
 - cdn.beacondb.net
 - a5.behance.net
 - mir-s3-cdn-cf.behance.net
