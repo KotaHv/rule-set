@@ -1,5 +1,5 @@
-# Total: 6393 rules
-# Last Updated: 2026-08-04T20:08:15.317881+00:00
+# Total: 6394 rules
+# Last Updated: 2026-08-05T09:18:31.187641+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -3132,6 +3132,7 @@
 - '+.armaplatform.com'
 - '+.armorgames.com'
 - '+.artstation.com'
+- '+.artstationmedia.com'
 - '+.artstorm.com'
 - '+.ashemaletube.com'
 - '+.ask.com'
