@@ -1,5 +1,5 @@
-# Total: 50 rules
-# Last Updated: 2026-08-05T14:44:00.388990+00:00
+# Total: 51 rules
+# Last Updated: 2026-08-07T07:50:28.414141+00:00
 DOMAIN,api.jetbrains.ai
 DOMAIN,openrouter.ai
 DOMAIN,gateway.ai.cloudflare.com
@@ -47,6 +47,7 @@ DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
 DOMAIN-KEYWORD,openai
 URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+

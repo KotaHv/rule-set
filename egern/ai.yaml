@@ -1,5 +1,5 @@
-# Total: 50 rules
-# Last Updated: 2026-08-05T14:44:00.425091+00:00
+# Total: 51 rules
+# Last Updated: 2026-08-07T07:50:28.429686+00:00
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
@@ -50,6 +50,7 @@ domain_suffix_set:
 - gemini.google
 - generativeai.google
 - notebooklm.google
+- chatgpt.site
 domain_keyword_set:
 - alkalimakersuite-pa.clients6.google.com
 - openai
