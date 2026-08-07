@@ -1,5 +1,5 @@
-# Total: 6398 rules
-# Last Updated: 2026-08-05T14:45:02.060576+00:00
+# Total: 6402 rules
+# Last Updated: 2026-08-07T19:27:47.089244+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1034,6 +1034,7 @@
 - 'v2.listenloop.com'
 - 'aurora-customization-usw2.lithium.com'
 - 'cdn.livechatinc.com'
+- 'cdn-city.livere.com'
 - 'a-tiles.locationiq.com'
 - 'b-tiles.locationiq.com'
 - 'c-tiles.locationiq.com'
@@ -1734,6 +1735,7 @@
 - 's3.eu-central-2.wasabisys.com'
 - 'assets-cdn.watchdisneyfe.com'
 - 'cdn.wccftech.com'
+- 'assets.weather-forecast.com'
 - 'cdn.webclicks24.com'
 - 'static.webclicks24.com'
 - 'scripts.webeo.com'
@@ -3166,6 +3168,7 @@
 - '+.aweber-static.com'
 - '+.awscloud.com'
 - '+.awsstatic.com'
+- '+.awxcdn.com'
 - '+.ax1x.com'
 - '+.axios.com'
 - '+.ayudanintendo.com'
@@ -3547,6 +3550,7 @@
 - '+.mirror.famaserver.com'
 - '+.fanatical.com'
 - '+.fandom.com'
+- '+.fast-sfc.com'
 - '+.fastly-analytics.com'
 - '+.fastly-edge.com'
 - '+.fastlycdn.com'

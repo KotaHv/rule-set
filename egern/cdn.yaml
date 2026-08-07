@@ -1,5 +1,5 @@
-# Total: 4640 rules
-# Last Updated: 2026-08-05T14:44:14.099522+00:00
+# Total: 4644 rules
+# Last Updated: 2026-08-07T19:27:05.420896+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1262,6 +1262,7 @@ domain_set:
 - v2.listenloop.com
 - aurora-customization-usw2.lithium.com
 - cdn.livechatinc.com
+- cdn-city.livere.com
 - a-tiles.locationiq.com
 - b-tiles.locationiq.com
 - c-tiles.locationiq.com
@@ -2168,6 +2169,7 @@ domain_set:
 - widgets.media.weather.com
 - widgets-red.media.weather.com
 - mparticle.weather.com
+- assets.weather-forecast.com
 - cdn.webclicks24.com
 - static.webclicks24.com
 - scripts.webeo.com
@@ -3470,6 +3472,7 @@ domain_suffix_set:
 - avximg.com
 - aweber-static.com
 - awsstatic.com
+- awxcdn.com
 - ax1x.com
 - applicationinsights.azure.com
 - monitor.azure.com
@@ -3599,6 +3602,7 @@ domain_suffix_set:
 - f-cdn.com
 - tags.f5.com
 - fakestoreapi.com
+- fast-sfc.com
 - fastlycdn.com
 - favicone.com
 - fbcdn.com

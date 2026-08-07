@@ -1,5 +1,5 @@
-# Total: 4560 rules
-# Last Updated: 2026-08-05T14:44:14.035916+00:00
+# Total: 4564 rules
+# Last Updated: 2026-08-07T19:27:05.359871+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1261,6 +1261,7 @@
 - 'v2.listenloop.com'
 - 'aurora-customization-usw2.lithium.com'
 - 'cdn.livechatinc.com'
+- 'cdn-city.livere.com'
 - 'a-tiles.locationiq.com'
 - 'b-tiles.locationiq.com'
 - 'c-tiles.locationiq.com'
@@ -2167,6 +2168,7 @@
 - 'widgets.media.weather.com'
 - 'widgets-red.media.weather.com'
 - 'mparticle.weather.com'
+- 'assets.weather-forecast.com'
 - 'cdn.webclicks24.com'
 - 'static.webclicks24.com'
 - 'scripts.webeo.com'
@@ -3468,6 +3470,7 @@
 - '+.avximg.com'
 - '+.aweber-static.com'
 - '+.awsstatic.com'
+- '+.awxcdn.com'
 - '+.ax1x.com'
 - '+.applicationinsights.azure.com'
 - '+.monitor.azure.com'
@@ -3597,6 +3600,7 @@
 - '+.f-cdn.com'
 - '+.tags.f5.com'
 - '+.fakestoreapi.com'
+- '+.fast-sfc.com'
 - '+.fastlycdn.com'
 - '+.favicone.com'
 - '+.fbcdn.com'

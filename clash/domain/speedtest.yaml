@@ -1,5 +1,5 @@
-# Total: 3311 rules
-# Last Updated: 2026-08-07T07:50:28.938380+00:00
+# Total: 3314 rules
+# Last Updated: 2026-08-07T19:26:58.120970+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1348,6 +1348,8 @@
 - 'mum-speedtest.sanghviinfo.com'
 - 'speedtest-sd-da1.scalematrix.com'
 - 'st1.scaleway.com'
+- 'speedtest-iad.sectrify.com'
+- 'speedtest-sjc.sectrify.com'
 - 'speedtest.securenetfiber.com'
 - 'speedtest1.seiontec.com'
 - 'speedtest.sercomm.com'
@@ -1979,6 +1981,7 @@
 - 'speedtest.satellitenetcom.in'
 - 'str.seyfert.in'
 - 'speedtest.sgbroadband.in'
+- 'speedtest.speedcom.in'
 - 'ookla.speedking.in'
 - 'spd.spiretel.in'
 - 'speedtest001.ssstpl.in'
