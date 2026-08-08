@@ -1,5 +1,5 @@
-# Total: 4646 rules
-# Last Updated: 2026-08-08T07:27:42.881966+00:00
+# Total: 4670 rules
+# Last Updated: 2026-08-08T19:06:48.049293+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -102,6 +102,7 @@ domain_set:
 - cdn.adsninja.ca
 - tiles.arcticconnect.ca
 - img.novipnoad.ca
+- static.okx.cab
 - img.apk.cafe
 - assets.toot.cafe
 - cpp-content.bhn.cards
@@ -166,6 +167,7 @@ domain_set:
 - previews.fleek.co
 - storageapi.fleek.co
 - storageapi2.fleek.co
+- assets.game8.co
 - before.good-apps.co
 - assets0.headwayapp.co
 - cdn.headwayapp.co
@@ -867,6 +869,12 @@ domain_set:
 - assets.freespeechcoalition.com
 - assetscdn-wchat.eu.freshchat.com
 - snippets.freshchat.com
+- assets10.freshdesk.com
+- assets2.freshdesk.com
+- assets3.freshdesk.com
+- assets5.freshdesk.com
+- assets7.freshdesk.com
+- assets9.freshdesk.com
 - cdn.freshdesk.com
 - dam.freshworks.com
 - euc-widget.freshworks.com
@@ -947,6 +955,7 @@ domain_set:
 - telemetry.individual.githubcopilot.com
 - static.gl-inet.com
 - media.glassdoor.com
+- crossborder-integration.global-e.com
 - static.gmgard.com
 - widgets.coaches.gnc.com
 - cdn.registerdisney.go.com
@@ -958,6 +967,7 @@ domain_set:
 - certificates.godaddy.com
 - ocsp.godaddy.com
 - cdn.gofundme.com
+- images.gog.com
 - android-safebrowsing.google.com
 - static.corp.google.com
 - kh.google.com
@@ -1268,6 +1278,7 @@ domain_set:
 - c-tiles.locationiq.com
 - tiles.locationiq.com
 - resource.logitech.com
+- gamesapps-assets.ghub.logitechg.com
 - app-cdn.logo.com
 - img.logokit.com
 - cdn.loom.com
@@ -1733,6 +1744,8 @@ domain_set:
 - cdn.playersupport.riotgames.com
 - prod-images.rippling.com
 - img.riskified.com
+- assets.create.roblox.com
+- prod.docsiteassets.roblox.com
 - api.roboflow.com
 - app.roboflow.com
 - cdn.roboflow.com
@@ -1827,6 +1840,7 @@ domain_set:
 - prego-cache.prod.sketch.com
 - resources-cache.prod.sketch.com
 - static-web-prod.skillshare.com
+- i.skiplagged.com
 - static.skyassets.com
 - cdn.skymavis.com
 - files.slack.com
@@ -1919,6 +1933,7 @@ domain_set:
 - img.supjav.com
 - cdn.svgator.com
 - cdn.svgporn.com
+- assets.swiftkey.com
 - assets.swoogo.com
 - cdn.syftdata.com
 - cdn1.sysgears.com
@@ -2438,6 +2453,7 @@ domain_set:
 - www.envoyproxy.io
 - static.ffx.io
 - cdn.filen.io
+- consent.fmm.io
 - badge.fury.io
 - cdn-web.fydeos.io
 - geojson.io
@@ -2584,6 +2600,7 @@ domain_set:
 - mangaz-books.j-comi.jp
 - mangaz-static.j-comi.jp
 - parts.blog.livedoor.jp
+- static.mul-pay.jp
 - resource.akashic.coe.nicovideo.jp
 - listing-thumbnail.live.nicovideo.jp
 - common-header.nimg.jp
@@ -2834,6 +2851,7 @@ domain_set:
 - sdk.loyaltylion.net
 - sdk-static.loyaltylion.net
 - static.lwn.net
+- i.macsecurity.net
 - cdn.macstories.net
 - rt1.maphub.net
 - rt2.maphub.net
@@ -3115,6 +3133,7 @@ domain_set:
 - files.writefreely.org
 - images.status.page
 - files.mastodon.ktachibana.party
+- app.shop.pe
 - cdn1.telesco.pe
 - cdn4.telesco.pe
 - cdn5.telesco.pe
@@ -3444,6 +3463,7 @@ domain_suffix_set:
 - glass.adidas.com
 - static-assets.photoshop.adobe.com
 - adobeccstatic.com
+- aexp-static.com
 - agechecker-northern-apps.com
 - ahcdn.com
 - airtableusercontent.com
@@ -3571,6 +3591,7 @@ domain_suffix_set:
 - cdn.discordapp.com
 - discourse-cdn.com
 - disquscdn.com
+- dm-static.com
 - dockerstatic.com
 - dolphin-anty-cdn.com
 - doppiocdn.com
@@ -3653,6 +3674,7 @@ domain_suffix_set:
 - githubusercontent.com
 - gitmirror.com
 - glbimg.com
+- gog-statics.com
 - ogads-pa.clients6.google.com
 - crashlytics2.l.google.com
 - usercontent.google.com
@@ -3869,6 +3891,7 @@ domain_suffix_set:
 - pressidiumcdn.com
 - prhcdn.com
 - cdn.printfriendly.com
+- privacyguidesusercontent.com
 - project1content.com
 - prppsn.com
 - cdn.pubnub.com
@@ -4272,6 +4295,7 @@ domain_suffix_set:
 - prod-east.frontend.public.atl-paas.net
 - prod.public.atl-paas.net
 - cdn.prod.atlassian-dev.net
+- axis-cdn.net
 - edgestorewebcdn.azureedge.net
 - azurestaticapps.net
 - badgen.net

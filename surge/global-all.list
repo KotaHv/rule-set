@@ -1,5 +1,5 @@
-# Total: 6595 rules
-# Last Updated: 2026-08-08T07:28:16.772141+00:00
+# Total: 6613 rules
+# Last Updated: 2026-08-08T19:07:21.703337+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -99,6 +99,7 @@ DOMAIN,mirror.retentionrange.co.bw
 DOMAIN,ftp.byfly.by
 DOMAIN,mirror.datacenter.by
 DOMAIN,mirror.unet.by
+DOMAIN,static.okx.cab
 DOMAIN,cpp-content.bhn.cards
 DOMAIN,ftp.caliu.cat
 DOMAIN,ftp.csuc.cat
@@ -183,6 +184,7 @@ DOMAIN,gannett-cdn.ex.co
 DOMAIN,previews.fleek.co
 DOMAIN,storageapi.fleek.co
 DOMAIN,storageapi2.fleek.co
+DOMAIN,assets.game8.co
 DOMAIN,before.good-apps.co
 DOMAIN,assets0.headwayapp.co
 DOMAIN,cdn.headwayapp.co
@@ -742,6 +744,12 @@ DOMAIN,stories.freepiklabs.com
 DOMAIN,assets.freespeechcoalition.com
 DOMAIN,assetscdn-wchat.eu.freshchat.com
 DOMAIN,snippets.freshchat.com
+DOMAIN,assets10.freshdesk.com
+DOMAIN,assets2.freshdesk.com
+DOMAIN,assets3.freshdesk.com
+DOMAIN,assets5.freshdesk.com
+DOMAIN,assets7.freshdesk.com
+DOMAIN,assets9.freshdesk.com
 DOMAIN,cdn.freshdesk.com
 DOMAIN,dam.freshworks.com
 DOMAIN,euc-widget.freshworks.com
@@ -801,6 +809,7 @@ DOMAIN,i.git99.com
 DOMAIN,fw.gl-inet.com
 DOMAIN,static.gl-inet.com
 DOMAIN,media.glassdoor.com
+DOMAIN,crossborder-integration.global-e.com
 DOMAIN,static.gmgard.com
 DOMAIN,cdn.registerdisney.go.com
 DOMAIN,s3.go2778.com
@@ -1040,6 +1049,7 @@ DOMAIN,c-tiles.locationiq.com
 DOMAIN,tiles.locationiq.com
 DOMAIN,download01.logi.com
 DOMAIN,resource.logitech.com
+DOMAIN,gamesapps-assets.ghub.logitechg.com
 DOMAIN,app-cdn.logo.com
 DOMAIN,img.logokit.com
 DOMAIN,cdn.loom.com
@@ -1488,6 +1498,7 @@ DOMAIN,s3.sitepoint.com
 DOMAIN,uploads.sitepoint.com
 DOMAIN,cdn.sitesearch360.com
 DOMAIN,static-web-prod.skillshare.com
+DOMAIN,i.skiplagged.com
 DOMAIN,static.skyassets.com
 DOMAIN,cdn.skymavis.com
 DOMAIN,cdn.activity.smart-bdash.com
@@ -1562,6 +1573,7 @@ DOMAIN,cdn.sunofbeaches.com
 DOMAIN,frontend-assets.supabase.com
 DOMAIN,cdn.super.com
 DOMAIN,cdn.svgator.com
+DOMAIN,assets.swiftkey.com
 DOMAIN,assets.swoogo.com
 DOMAIN,cdn.syftdata.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
@@ -1974,6 +1986,7 @@ DOMAIN,www.envoyproxy.io
 DOMAIN,static.ffx.io
 DOMAIN,cdn.filen.io
 DOMAIN,down.filen.io
+DOMAIN,consent.fmm.io
 DOMAIN,geojson.io
 DOMAIN,static.getbutton.io
 DOMAIN,sdk.gleap.io
@@ -2361,6 +2374,7 @@ DOMAIN,sdk-static.loyaltylion.net
 DOMAIN,debian.ludost.net
 DOMAIN,static.lwn.net
 DOMAIN,mirror.macomnet.net
+DOMAIN,i.macsecurity.net
 DOMAIN,cdn.macstories.net
 DOMAIN,mirror.mangohost.net
 DOMAIN,rt1.maphub.net
@@ -3056,6 +3070,7 @@ DOMAIN-SUFFIX,photoshop.adobe.com
 DOMAIN-SUFFIX,adobeccstatic.com
 DOMAIN-SUFFIX,adventofcode.com
 DOMAIN-SUFFIX,aex.com
+DOMAIN-SUFFIX,aexp-static.com
 DOMAIN-SUFFIX,agechecker-northern-apps.com
 DOMAIN-SUFFIX,agilebits.com
 DOMAIN-SUFFIX,ahcdn.com
@@ -3442,6 +3457,7 @@ DOMAIN-SUFFIX,disquscdn.com
 DOMAIN-SUFFIX,distrowatch.com
 DOMAIN-SUFFIX,dkr.com
 DOMAIN-SUFFIX,dlsite.com
+DOMAIN-SUFFIX,dm-static.com
 DOMAIN-SUFFIX,dmm.com
 DOMAIN-SUFFIX,dmm-extension.com
 DOMAIN-SUFFIX,dnitv.com
@@ -4386,6 +4402,7 @@ DOMAIN-SUFFIX,prhcdn.com
 DOMAIN-SUFFIX,prime-video.com
 DOMAIN-SUFFIX,primevideo.com
 DOMAIN-SUFFIX,cdn.printfriendly.com
+DOMAIN-SUFFIX,privacyguidesusercontent.com
 DOMAIN-SUFFIX,dnsleak.privadovpn.com
 DOMAIN-SUFFIX,privateinternetaccess.com
 DOMAIN-SUFFIX,probit.com
@@ -5510,6 +5527,7 @@ DOMAIN-SUFFIX,prod.public.atl-paas.net
 DOMAIN-SUFFIX,atlassian.net
 DOMAIN-SUFFIX,cdn.prod.atlassian-dev.net
 DOMAIN-SUFFIX,av-wiki.net
+DOMAIN-SUFFIX,axis-cdn.net
 DOMAIN-SUFFIX,azure-mobile.net
 DOMAIN-SUFFIX,edgestorewebcdn.azureedge.net
 DOMAIN-SUFFIX,azurestaticapps.net

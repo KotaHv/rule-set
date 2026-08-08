@@ -1,5 +1,5 @@
-# Total: 6531 rules
-# Last Updated: 2026-08-08T07:28:16.873332+00:00
+# Total: 6549 rules
+# Last Updated: 2026-08-08T19:07:21.798146+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -101,6 +101,7 @@ domain_set:
 - ftp.byfly.by
 - mirror.datacenter.by
 - mirror.unet.by
+- static.okx.cab
 - cpp-content.bhn.cards
 - ftp.caliu.cat
 - ftp.csuc.cat
@@ -185,6 +186,7 @@ domain_set:
 - previews.fleek.co
 - storageapi.fleek.co
 - storageapi2.fleek.co
+- assets.game8.co
 - before.good-apps.co
 - assets0.headwayapp.co
 - cdn.headwayapp.co
@@ -744,6 +746,12 @@ domain_set:
 - assets.freespeechcoalition.com
 - assetscdn-wchat.eu.freshchat.com
 - snippets.freshchat.com
+- assets10.freshdesk.com
+- assets2.freshdesk.com
+- assets3.freshdesk.com
+- assets5.freshdesk.com
+- assets7.freshdesk.com
+- assets9.freshdesk.com
 - cdn.freshdesk.com
 - dam.freshworks.com
 - euc-widget.freshworks.com
@@ -803,6 +811,7 @@ domain_set:
 - fw.gl-inet.com
 - static.gl-inet.com
 - media.glassdoor.com
+- crossborder-integration.global-e.com
 - static.gmgard.com
 - cdn.registerdisney.go.com
 - s3.go2778.com
@@ -1042,6 +1051,7 @@ domain_set:
 - tiles.locationiq.com
 - download01.logi.com
 - resource.logitech.com
+- gamesapps-assets.ghub.logitechg.com
 - app-cdn.logo.com
 - img.logokit.com
 - cdn.loom.com
@@ -1490,6 +1500,7 @@ domain_set:
 - uploads.sitepoint.com
 - cdn.sitesearch360.com
 - static-web-prod.skillshare.com
+- i.skiplagged.com
 - static.skyassets.com
 - cdn.skymavis.com
 - cdn.activity.smart-bdash.com
@@ -1564,6 +1575,7 @@ domain_set:
 - frontend-assets.supabase.com
 - cdn.super.com
 - cdn.svgator.com
+- assets.swiftkey.com
 - assets.swoogo.com
 - cdn.syftdata.com
 - cbsplaylistserver.aws.syncbak.com
@@ -1976,6 +1988,7 @@ domain_set:
 - static.ffx.io
 - cdn.filen.io
 - down.filen.io
+- consent.fmm.io
 - geojson.io
 - static.getbutton.io
 - sdk.gleap.io
@@ -2363,6 +2376,7 @@ domain_set:
 - debian.ludost.net
 - static.lwn.net
 - mirror.macomnet.net
+- i.macsecurity.net
 - cdn.macstories.net
 - mirror.mangohost.net
 - rt1.maphub.net
@@ -3059,6 +3073,7 @@ domain_suffix_set:
 - adobeccstatic.com
 - adventofcode.com
 - aex.com
+- aexp-static.com
 - agechecker-northern-apps.com
 - agilebits.com
 - ahcdn.com
@@ -3445,6 +3460,7 @@ domain_suffix_set:
 - distrowatch.com
 - dkr.com
 - dlsite.com
+- dm-static.com
 - dmm.com
 - dmm-extension.com
 - dnitv.com
@@ -4389,6 +4405,7 @@ domain_suffix_set:
 - prime-video.com
 - primevideo.com
 - cdn.printfriendly.com
+- privacyguidesusercontent.com
 - dnsleak.privadovpn.com
 - privateinternetaccess.com
 - probit.com
@@ -5513,6 +5530,7 @@ domain_suffix_set:
 - atlassian.net
 - cdn.prod.atlassian-dev.net
 - av-wiki.net
+- axis-cdn.net
 - azure-mobile.net
 - edgestorewebcdn.azureedge.net
 - azurestaticapps.net
