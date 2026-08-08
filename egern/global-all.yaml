@@ -1,5 +1,5 @@
-# Total: 6529 rules
-# Last Updated: 2026-08-07T19:27:47.174270+00:00
+# Total: 6531 rules
+# Last Updated: 2026-08-08T07:28:16.873332+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2617,6 +2617,7 @@ domain_set:
 - ubuntu.linux-bg.org
 - mirrors.linux-bulgaria.org
 - mirror.linux-ia64.org
+- cache.mapcomplete.org
 - demotiles.maplibre.org
 - cdn.mathjax.org
 - repo1.maven.org
@@ -2637,7 +2638,6 @@ domain_set:
 - open-vsx.org
 - s1.animeko.openani.org
 - s2.animeko.openani.org
-- tile2.opencyclemap.org
 - ciscobinary.openh264.org
 - assets.openlogi.org
 - updates.openlogi.org
@@ -6075,6 +6075,8 @@ domain_suffix_set:
 - pool.ntp.org
 - nuget.org
 - nugettest.org
+- tile2.opencyclemap.org
+- tile3.opencyclemap.org
 - opendroneid.org
 - openfreemap.org
 - opengraphprotocol.org

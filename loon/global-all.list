@@ -1,5 +1,5 @@
-# Total: 6542 rules
-# Last Updated: 2026-08-07T19:27:47.085939+00:00
+# Total: 6544 rules
+# Last Updated: 2026-08-08T07:28:16.775881+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -2615,6 +2615,7 @@ DOMAIN,mirrorbits.lineageos.org
 DOMAIN,ubuntu.linux-bg.org
 DOMAIN,mirrors.linux-bulgaria.org
 DOMAIN,mirror.linux-ia64.org
+DOMAIN,cache.mapcomplete.org
 DOMAIN,demotiles.maplibre.org
 DOMAIN,cdn.mathjax.org
 DOMAIN,repo1.maven.org
@@ -2635,7 +2636,6 @@ DOMAIN,cdn.oneget.org
 DOMAIN,open-vsx.org
 DOMAIN,s1.animeko.openani.org
 DOMAIN,s2.animeko.openani.org
-DOMAIN,tile2.opencyclemap.org
 DOMAIN,ciscobinary.openh264.org
 DOMAIN,assets.openlogi.org
 DOMAIN,updates.openlogi.org
@@ -6072,6 +6072,8 @@ DOMAIN-SUFFIX,npr.org
 DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,nuget.org
 DOMAIN-SUFFIX,nugettest.org
+DOMAIN-SUFFIX,tile2.opencyclemap.org
+DOMAIN-SUFFIX,tile3.opencyclemap.org
 DOMAIN-SUFFIX,opendroneid.org
 DOMAIN-SUFFIX,openfreemap.org
 DOMAIN-SUFFIX,opengraphprotocol.org

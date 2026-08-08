@@ -1,5 +1,5 @@
-# Total: 4585 rules
-# Last Updated: 2026-08-07T19:27:05.357306+00:00
+# Total: 4587 rules
+# Last Updated: 2026-08-08T07:27:42.819729+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -3034,6 +3034,7 @@ DOMAIN,modules.kernelsu.org
 DOMAIN,design.keyoxide.org
 DOMAIN,cdn.libravatar.org
 DOMAIN,seccdn.libravatar.org
+DOMAIN,cache.mapcomplete.org
 DOMAIN,demotiles.maplibre.org
 DOMAIN,cdn.mathjax.org
 DOMAIN,s1.maxstream.org
@@ -3053,7 +3054,6 @@ DOMAIN,static-assets.npr.org
 DOMAIN,assets.nxtrace.org
 DOMAIN,videos.ohentai.org
 DOMAIN,open-vsx.org
-DOMAIN,tile2.opencyclemap.org
 DOMAIN,tiles.openfreemap.org
 DOMAIN,covers.openlibrary.org
 DOMAIN,assets.openlogi.org
@@ -4446,6 +4446,8 @@ DOMAIN-SUFFIX,lsposed.org
 DOMAIN-SUFFIX,nextui.org
 DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,tile2.opencyclemap.org
+DOMAIN-SUFFIX,tile3.opencyclemap.org
 DOMAIN-SUFFIX,openinframap.org
 DOMAIN-SUFFIX,tile.openstreetmap.org
 DOMAIN-SUFFIX,tile.opentopomap.org

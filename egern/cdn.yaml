@@ -1,5 +1,5 @@
-# Total: 4644 rules
-# Last Updated: 2026-08-07T19:27:05.420896+00:00
+# Total: 4646 rules
+# Last Updated: 2026-08-08T07:27:42.881966+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -3036,6 +3036,7 @@ domain_set:
 - design.keyoxide.org
 - cdn.libravatar.org
 - seccdn.libravatar.org
+- cache.mapcomplete.org
 - demotiles.maplibre.org
 - cdn.mathjax.org
 - s1.maxstream.org
@@ -3055,7 +3056,6 @@ domain_set:
 - assets.nxtrace.org
 - videos.ohentai.org
 - open-vsx.org
-- tile2.opencyclemap.org
 - tiles.openfreemap.org
 - covers.openlibrary.org
 - assets.openlogi.org
@@ -4449,6 +4449,8 @@ domain_suffix_set:
 - nextui.org
 - nodejs.org
 - pool.ntp.org
+- tile2.opencyclemap.org
+- tile3.opencyclemap.org
 - openinframap.org
 - tile.openstreetmap.org
 - tile.opentopomap.org

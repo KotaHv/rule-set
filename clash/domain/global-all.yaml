@@ -1,5 +1,5 @@
-# Total: 6402 rules
-# Last Updated: 2026-08-07T19:27:47.089244+00:00
+# Total: 6404 rules
+# Last Updated: 2026-08-08T07:28:16.780206+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2616,6 +2616,7 @@
 - 'ubuntu.linux-bg.org'
 - 'mirrors.linux-bulgaria.org'
 - 'mirror.linux-ia64.org'
+- 'cache.mapcomplete.org'
 - 'demotiles.maplibre.org'
 - 'cdn.mathjax.org'
 - 'repo1.maven.org'
@@ -2636,7 +2637,6 @@
 - 'open-vsx.org'
 - 's1.animeko.openani.org'
 - 's2.animeko.openani.org'
-- 'tile2.opencyclemap.org'
 - 'ciscobinary.openh264.org'
 - 'assets.openlogi.org'
 - 'updates.openlogi.org'
@@ -6073,6 +6073,8 @@
 - '+.pool.ntp.org'
 - '+.nuget.org'
 - '+.nugettest.org'
+- '+.tile2.opencyclemap.org'
+- '+.tile3.opencyclemap.org'
 - '+.opendroneid.org'
 - '+.openfreemap.org'
 - '+.opengraphprotocol.org'

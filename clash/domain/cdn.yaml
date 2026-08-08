@@ -1,5 +1,5 @@
-# Total: 4564 rules
-# Last Updated: 2026-08-07T19:27:05.359871+00:00
+# Total: 4566 rules
+# Last Updated: 2026-08-08T07:27:42.822444+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3035,6 +3035,7 @@
 - 'design.keyoxide.org'
 - 'cdn.libravatar.org'
 - 'seccdn.libravatar.org'
+- 'cache.mapcomplete.org'
 - 'demotiles.maplibre.org'
 - 'cdn.mathjax.org'
 - 's1.maxstream.org'
@@ -3054,7 +3055,6 @@
 - 'assets.nxtrace.org'
 - 'videos.ohentai.org'
 - 'open-vsx.org'
-- 'tile2.opencyclemap.org'
 - 'tiles.openfreemap.org'
 - 'covers.openlibrary.org'
 - 'assets.openlogi.org'
@@ -4447,6 +4447,8 @@
 - '+.nextui.org'
 - '+.nodejs.org'
 - '+.pool.ntp.org'
+- '+.tile2.opencyclemap.org'
+- '+.tile3.opencyclemap.org'
 - '+.openinframap.org'
 - '+.tile.openstreetmap.org'
 - '+.tile.opentopomap.org'
