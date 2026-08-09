@@ -1,5 +1,5 @@
-# Total: 4590 rules
-# Last Updated: 2026-08-08T19:06:47.991764+00:00
+# Total: 4592 rules
+# Last Updated: 2026-08-09T07:30:28.289150+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3525,6 +3525,8 @@
 - '+.bstatic.com'
 - '+.notify.bugsnag.com'
 - '+.sessions.bugsnag.com'
+- '+.buildkiteassets.com'
+- '+.buildkiteusercontent.com'
 - '+.bunnycdn.com'
 - '+.bytedapm.com'
 - '+.capcutstatic.com'

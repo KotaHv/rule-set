@@ -1,5 +1,5 @@
-# Total: 4670 rules
-# Last Updated: 2026-08-08T19:06:48.049293+00:00
+# Total: 4672 rules
+# Last Updated: 2026-08-09T07:30:28.351649+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -3527,6 +3527,8 @@ domain_suffix_set:
 - bstatic.com
 - notify.bugsnag.com
 - sessions.bugsnag.com
+- buildkiteassets.com
+- buildkiteusercontent.com
 - bunnycdn.com
 - bytedapm.com
 - capcutstatic.com

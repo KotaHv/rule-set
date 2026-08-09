@@ -1,5 +1,5 @@
-# Total: 4611 rules
-# Last Updated: 2026-08-08T19:06:47.989255+00:00
+# Total: 4613 rules
+# Last Updated: 2026-08-09T07:30:28.286612+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -3524,6 +3524,8 @@ DOMAIN-SUFFIX,bstarstatic.com
 DOMAIN-SUFFIX,bstatic.com
 DOMAIN-SUFFIX,notify.bugsnag.com
 DOMAIN-SUFFIX,sessions.bugsnag.com
+DOMAIN-SUFFIX,buildkiteassets.com
+DOMAIN-SUFFIX,buildkiteusercontent.com
 DOMAIN-SUFFIX,bunnycdn.com
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,capcutstatic.com
