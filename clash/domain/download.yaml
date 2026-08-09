@@ -1,5 +1,5 @@
-# Total: 1968 rules
-# Last Updated: 2026-08-05T14:44:13.780803+00:00
+# Total: 1970 rules
+# Last Updated: 2026-08-09T13:29:16.607088+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -774,6 +774,7 @@
 - 'go.opentelemetry.io'
 - 'packagecloud.io'
 - 'assets-production.packagecloud.io'
+- 'dl.pikpak.io'
 - 'downloads.portainer.io'
 - 'download.projectbluefin.io'
 - 'dl.pstmn.io'
@@ -1139,6 +1140,7 @@
 - 'f-droid.org'
 - 'cloudflare.f-droid.org'
 - 'mirror.faraso.org'
+- 'download.fcitx-im.org'
 - 'fedorapeople.org'
 - 'mirrors.fedoraproject.org'
 - 'registry.fedoraproject.org'

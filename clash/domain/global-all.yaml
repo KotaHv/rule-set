@@ -1,5 +1,5 @@
-# Total: 6424 rules
-# Last Updated: 2026-08-09T07:31:19.272912+00:00
+# Total: 6426 rules
+# Last Updated: 2026-08-09T13:29:49.474875+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2048,6 +2048,7 @@
 - 'code.piano.io'
 - 'experience-ap.piano.io'
 - 'topbar-static.piano.io'
+- 'dl.pikpak.io'
 - 'favicon.pirsch.io'
 - 'cdn.plyr.io'
 - 'downloads.portainer.io'
@@ -2595,6 +2596,7 @@
 - 'repos.del.extreme-ix.org'
 - 'repo.extreme-ix.org'
 - 'mirror.faraso.org'
+- 'download.fcitx-im.org'
 - 'media.fidoalliance.org'
 - 'cdn.fosstodon.org'
 - 'mirror.freedif.org'

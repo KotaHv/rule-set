@@ -1,5 +1,5 @@
-# Total: 6551 rules
-# Last Updated: 2026-08-09T07:31:19.366729+00:00
+# Total: 6553 rules
+# Last Updated: 2026-08-09T13:29:49.564476+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2049,6 +2049,7 @@ domain_set:
 - code.piano.io
 - experience-ap.piano.io
 - topbar-static.piano.io
+- dl.pikpak.io
 - favicon.pirsch.io
 - cdn.plyr.io
 - downloads.portainer.io
@@ -2596,6 +2597,7 @@ domain_set:
 - repos.del.extreme-ix.org
 - repo.extreme-ix.org
 - mirror.faraso.org
+- download.fcitx-im.org
 - media.fidoalliance.org
 - cdn.fosstodon.org
 - mirror.freedif.org
