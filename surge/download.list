@@ -1,5 +1,5 @@
-# Total: 1980 rules
-# Last Updated: 2026-08-09T13:29:16.599386+00:00
+# Total: 1975 rules
+# Last Updated: 2026-08-09T19:10:27.841568+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,downloads.claude.ai
@@ -498,7 +498,6 @@ DOMAIN,download.geofabrik.de
 DOMAIN,www.gutscheinrausch.de
 DOMAIN,ftp.gwdg.de
 DOMAIN,ftp5.gwdg.de
-DOMAIN,mirror1.hcgen.de
 DOMAIN,ftp.hosteurope.de
 DOMAIN,ftp-stud.hs-esslingen.de
 DOMAIN,mirror.hs-esslingen.de
@@ -656,7 +655,6 @@ DOMAIN,ctan.mines-albi.fr
 DOMAIN,debian.obspm.fr
 DOMAIN,comaps.openstreetmap.fr
 DOMAIN,debian.polytech-lille.fr
-DOMAIN,ubuntu.syxpi.fr
 DOMAIN,ftp.u-picardie.fr
 DOMAIN,ftp.u-strasbg.fr
 DOMAIN,miroir.univ-lorraine.fr
@@ -834,7 +832,6 @@ DOMAIN,mirror.hoster.kz
 DOMAIN,mirror.neolabs.kz
 DOMAIN,mirror.ps.kz
 DOMAIN,mirror.lc
-DOMAIN,edge.zerofs.link
 DOMAIN,ftp.litnet.lt
 DOMAIN,mirror.litnet.lt
 DOMAIN,mirror.cloudhosting.lv
@@ -1248,7 +1245,6 @@ DOMAIN,ftp.ubuntu-tw.org
 DOMAIN,charts.verdaccio.org
 DOMAIN,kebo.vlsm.org
 DOMAIN,releases.whatpulse.org
-DOMAIN,mirrors.wikimedia.org
 DOMAIN,downloads.wordpress.org
 DOMAIN,downloads.xiph.org
 DOMAIN,ftpmirror.your.org
@@ -1301,7 +1297,6 @@ DOMAIN,ctan.altspu.ru
 DOMAIN,mirror.bibleonline.ru
 DOMAIN,mirrors.powernet.com.ru
 DOMAIN,mirror.docker.ru
-DOMAIN,mirror.hyperdedic.ru
 DOMAIN,mirror.kpfu.ru
 DOMAIN,mirror.logol.ru
 DOMAIN,mirror.mephi.ru
@@ -1328,7 +1323,6 @@ DOMAIN,ossmirror.mycloud.services
 DOMAIN,mirror.0x.sg
 DOMAIN,mirror.aktkn.sg
 DOMAIN,mirror.djvg.sg
-DOMAIN,download.nus.edu.sg
 DOMAIN,mirror.soonkeat.sg
 DOMAIN,kambing.uu.sg
 DOMAIN,mirror.xtom.sg
@@ -1922,6 +1916,7 @@ DOMAIN-SUFFIX,mirror.tefexia.net
 DOMAIN-SUFFIX,mirrors.uk2.net
 DOMAIN-SUFFIX,blob.core.windows.net
 DOMAIN-SUFFIX,file.core.windows.net
+DOMAIN-SUFFIX,s3.yandex.net
 DOMAIN-SUFFIX,mirrors.zagrio.net
 DOMAIN-SUFFIX,mirror.intermax.nl
 DOMAIN-SUFFIX,mirror.nl

@@ -1,5 +1,5 @@
-# Total: 1980 rules
-# Last Updated: 2026-08-09T13:29:16.641801+00:00
+# Total: 1975 rules
+# Last Updated: 2026-08-09T19:10:27.903419+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -500,7 +500,6 @@ domain_set:
 - www.gutscheinrausch.de
 - ftp.gwdg.de
 - ftp5.gwdg.de
-- mirror1.hcgen.de
 - ftp.hosteurope.de
 - ftp-stud.hs-esslingen.de
 - mirror.hs-esslingen.de
@@ -658,7 +657,6 @@ domain_set:
 - debian.obspm.fr
 - comaps.openstreetmap.fr
 - debian.polytech-lille.fr
-- ubuntu.syxpi.fr
 - ftp.u-picardie.fr
 - ftp.u-strasbg.fr
 - miroir.univ-lorraine.fr
@@ -836,7 +834,6 @@ domain_set:
 - mirror.neolabs.kz
 - mirror.ps.kz
 - mirror.lc
-- edge.zerofs.link
 - ftp.litnet.lt
 - mirror.litnet.lt
 - mirror.cloudhosting.lv
@@ -1250,7 +1247,6 @@ domain_set:
 - charts.verdaccio.org
 - kebo.vlsm.org
 - releases.whatpulse.org
-- mirrors.wikimedia.org
 - downloads.wordpress.org
 - downloads.xiph.org
 - ftpmirror.your.org
@@ -1303,7 +1299,6 @@ domain_set:
 - mirror.bibleonline.ru
 - mirrors.powernet.com.ru
 - mirror.docker.ru
-- mirror.hyperdedic.ru
 - mirror.kpfu.ru
 - mirror.logol.ru
 - mirror.mephi.ru
@@ -1330,7 +1325,6 @@ domain_set:
 - mirror.0x.sg
 - mirror.aktkn.sg
 - mirror.djvg.sg
-- download.nus.edu.sg
 - mirror.soonkeat.sg
 - kambing.uu.sg
 - mirror.xtom.sg
@@ -1925,6 +1919,7 @@ domain_suffix_set:
 - mirrors.uk2.net
 - blob.core.windows.net
 - file.core.windows.net
+- s3.yandex.net
 - mirrors.zagrio.net
 - mirror.intermax.nl
 - mirror.nl

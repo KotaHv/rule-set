@@ -1,12 +1,11 @@
-# Total: 6566 rules
-# Last Updated: 2026-08-09T13:29:49.469460+00:00
+# Total: 6556 rules
+# Last Updated: 2026-08-09T19:11:06.085897+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
 DOMAIN,mirrors.asnet.am
 DOMAIN,kali.itsec.am
 DOMAIN,mirrors.teamcloud.am
-DOMAIN,cdn.tabarn.ap
 DOMAIN,fdisk.5play.app
 DOMAIN,cdn.7tv.app
 DOMAIN,cdn.accessibly.app
@@ -143,7 +142,6 @@ DOMAIN,cpan.dcc.uchile.cl
 DOMAIN,ctan.dcc.uchile.cl
 DOMAIN,mirror.uchile.cl
 DOMAIN,mirror.ufro.cl
-DOMAIN,cdn.bigcloud.click
 DOMAIN,mirror.za.abantu.cloud
 DOMAIN,mirrors.bangmod.cloud
 DOMAIN,node-registry.bit.cloud
@@ -1161,7 +1159,6 @@ DOMAIN,mirrors.mivocloud.com
 DOMAIN,imagecdn.mixlr.com
 DOMAIN,api.mixpanel.com
 DOMAIN,api-eu.mixpanel.com
-DOMAIN,img.ml0987.com
 DOMAIN,bytescale.mobbin.com
 DOMAIN,ubuntu.mobinhost.com
 DOMAIN,public.mocortech.com
@@ -1211,7 +1208,6 @@ DOMAIN,tags.nationwide.com
 DOMAIN,c.navattic.com
 DOMAIN,js.navattic.com
 DOMAIN,mirror.navercorp.com
-DOMAIN,navismithapis-cdn.com
 DOMAIN,cdn.nba.com
 DOMAIN,sp.nba.com
 DOMAIN,tags.nba.com
@@ -1407,7 +1403,6 @@ DOMAIN,vte-eu.readspeaker.com
 DOMAIN,cached.rebuyengine.com
 DOMAIN,cdn.rebuyengine.com
 DOMAIN,cms.recordedfuture.com
-DOMAIN,cdn.recovermycart.com
 DOMAIN,js.recurly.com
 DOMAIN,assets.redbullshop.com
 DOMAIN,userpic.redgifs.com
@@ -1713,7 +1708,6 @@ DOMAIN,assets.vidyard.com
 DOMAIN,cdn.vidyard.com
 DOMAIN,play.vidyard.com
 DOMAIN,cdn.viglink.com
-DOMAIN,img.vim-cn.com
 DOMAIN,marketplace-web-assets.vinted.com
 DOMAIN,static.vinted.com
 DOMAIN,static-assets.vinted.com
@@ -1864,7 +1858,6 @@ DOMAIN,shields.rbtlog.dev
 DOMAIN,static.reo.dev
 DOMAIN,p.sda1.dev
 DOMAIN,tuf-repo-cdn.sigstore.dev
-DOMAIN,cdn.tuk.dev
 DOMAIN,fonts.upset.dev
 DOMAIN,releases.warp.dev
 DOMAIN,zod.dev
@@ -2092,7 +2085,6 @@ DOMAIN,assets.stigg.io
 DOMAIN,link.storjshare.io
 DOMAIN,storage.synctrack.io
 DOMAIN,scripts.tabler.io
-DOMAIN,img.telemetr.io
 DOMAIN,tiles.terria.io
 DOMAIN,static.tokenview.io
 DOMAIN,cdn.tolt.io
@@ -2122,8 +2114,6 @@ DOMAIN,mirror.lc
 DOMAIN,wl-apps.yourwebsite.life
 DOMAIN,disco.headliner.link
 DOMAIN,nightly.link
-DOMAIN,edge.zerofs.link
-DOMAIN,cdn.koala.live
 DOMAIN,maps.wplace.live
 DOMAIN,media.webtoo.ls
 DOMAIN,ftp.litnet.lt
@@ -2850,12 +2840,10 @@ DOMAIN,api.allorigins.win
 DOMAIN,static.frame.work
 DOMAIN,fonts1.unidays.world
 DOMAIN,s3.2233778.xyz
-DOMAIN,img.catwvod.xyz
 DOMAIN,rules1.clearurls.xyz
 DOMAIN,rules2.clearurls.xyz
 DOMAIN,eslint-react.xyz
 DOMAIN,beta.eslint-react.xyz
-DOMAIN,domain.expiring-soon.xyz
 DOMAIN,eomd1.fembeqq.xyz
 DOMAIN,sdk-cdn.fun.xyz
 DOMAIN,ghgo.xyz
@@ -4167,6 +4155,7 @@ DOMAIN-SUFFIX,n0vadesktop.com
 DOMAIN-SUFFIX,aacdn.nagich.com
 DOMAIN-SUFFIX,namemc.com
 DOMAIN-SUFFIX,naver.com
+DOMAIN-SUFFIX,navismithapis-cdn.com
 DOMAIN-SUFFIX,nbc.com
 DOMAIN-SUFFIX,nbclosangeles.com
 DOMAIN-SUFFIX,nbcnews.com
@@ -6426,6 +6415,7 @@ DOMAIN-SUFFIX,zorocdn.xyz
 DOMAIN-SUFFIX,ipfs.yt
 DOMAIN-SUFFIX,za
 DOMAIN-SUFFIX,itch.zone
+DOMAIN-KEYWORD,-assets.dmm.co.jp
 DOMAIN-KEYWORD,-assets.worldsex.com
 DOMAIN-KEYWORD,-files.gitbook.io
 DOMAIN-KEYWORD,-images.disco-api.com

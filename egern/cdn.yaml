@@ -1,5 +1,5 @@
-# Total: 4672 rules
-# Last Updated: 2026-08-09T07:30:28.351649+00:00
+# Total: 4670 rules
+# Last Updated: 2026-08-09T19:10:28.265982+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -41,7 +41,6 @@ domain_set:
 - vetted.ai
 - prod-cdn.webtune.ai
 - static.zanmei.ai
-- cdn.tabarn.ap
 - cdn.7tv.app
 - cdn.accessibly.app
 - assets.airbuddy.app
@@ -100,7 +99,6 @@ domain_set:
 - cdn.micro.blog
 - turbo.build
 - cdn.adsninja.ca
-- tiles.arcticconnect.ca
 - img.novipnoad.ca
 - static.okx.cab
 - img.apk.cafe
@@ -134,7 +132,6 @@ domain_set:
 - static.infomaniak.ch
 - image.crisp.chat
 - storage.crisp.chat
-- cdn.bigcloud.click
 - static.bit.cloud
 - cdn.bullwhip.cloud
 - media.cleanshot.cloud
@@ -690,6 +687,10 @@ domain_set:
 - s1.divhunt.com
 - media.dlsite.com
 - images.dmca.com
+- awsimgsrc.dmm.com
+- imgsrc.dmm.com
+- panda.dmm.com
+- dmm-extension.com
 - assets.dnsfilter.com
 - cdn.dnsimple.com
 - sessions-bugsnag.docker.com
@@ -1391,7 +1392,6 @@ domain_set:
 - imagecdn.mixlr.com
 - api.mixpanel.com
 - api-eu.mixpanel.com
-- img.ml0987.com
 - bytescale.mobbin.com
 - attach.mobile01.com
 - attach2.mobile01.com
@@ -1453,7 +1453,6 @@ domain_set:
 - tags.nationwide.com
 - c.navattic.com
 - js.navattic.com
-- navismithapis-cdn.com
 - cdn.nba.com
 - sp.nba.com
 - tags.nba.com
@@ -1587,7 +1586,6 @@ domain_set:
 - c13.patreon.com
 - c14.patreon.com
 - c16.patreon.com
-- c17.patreon.com
 - c4.patreon.com
 - c5.patreon.com
 - c6.patreon.com
@@ -1725,7 +1723,6 @@ domain_set:
 - cached.rebuyengine.com
 - cdn.rebuyengine.com
 - cms.recordedfuture.com
-- cdn.recovermycart.com
 - js.recurly.com
 - img.redbull.com
 - rbds-static.redbull.com
@@ -2134,7 +2131,6 @@ domain_set:
 - cdn.vidyard.com
 - play.vidyard.com
 - cdn.viglink.com
-- img.vim-cn.com
 - player.vimeo.com
 - marketplace-web-assets.vinted.com
 - static.vinted.com
@@ -2330,7 +2326,6 @@ domain_set:
 - static.reo.dev
 - p.sda1.dev
 - tuf-repo-cdn.sigstore.dev
-- cdn.tuk.dev
 - fonts.upset.dev
 - zod.dev
 - res.craft.do
@@ -2560,7 +2555,6 @@ domain_set:
 - link.storjshare.io
 - storage.synctrack.io
 - scripts.tabler.io
-- img.telemetr.io
 - tiles.terria.io
 - cdn.thenewstack.io
 - static.tokenview.io
@@ -2586,8 +2580,12 @@ domain_set:
 - livedoor.blogimg.jp
 - resize.blogsys.jp
 - awsimgsrc.dmm.co.jp
-- cdn.dap.dmm.co.jp
-- doujin-assets.dmm.co.jp
+- p.book.dmm.co.jp
+- cdn.catch.dmm.co.jp
+- cdn.cds.dmm.co.jp
+- pix.cds.dmm.co.jp
+- media.games.dmm.co.jp
+- p.dmm.co.jp
 - pics.dmm.co.jp
 - cdn.rex.contents.rakuten.co.jp
 - error.rakuten.co.jp
@@ -2630,7 +2628,6 @@ domain_set:
 - disco.headliner.link
 - assets.auth.magic.link
 - nightly.link
-- cdn.koala.live
 - maps.wplace.live
 - image.acg.lol
 - media.webtoo.ls
@@ -2963,7 +2960,6 @@ domain_set:
 - cdn.yamibuy.net
 - favicon.yandex.net
 - avatars.mds.yandex.net
-- s3-zen.mds.yandex.net
 - resize.yandex.net
 - cdn.ywxi.net
 - vjs.zencdn.net
@@ -3364,12 +3360,10 @@ domain_set:
 - wimg.rule34.xxx
 - i.xozilla.xxx
 - s3.2233778.xyz
-- img.catwvod.xyz
 - rules1.clearurls.xyz
 - rules2.clearurls.xyz
 - eslint-react.xyz
 - beta.eslint-react.xyz
-- domain.expiring-soon.xyz
 - eomd1.fembeqq.xyz
 - sdk-cdn.fun.xyz
 - image.jnislniv.xyz
@@ -3833,6 +3827,7 @@ domain_suffix_set:
 - myshopapps.com
 - myspacecdn.com
 - aacdn.nagich.com
+- navismithapis-cdn.com
 - nc-img.com
 - ndtvimg.com
 - neweggimages.com
@@ -4424,6 +4419,7 @@ domain_suffix_set:
 - widen.net
 - widencdn.net
 - crash-reports.browser.yandex.net
+- cdn.yandex.net
 - storage.yandexcloud.net
 - yastatic.net
 - z4a.net
@@ -4637,6 +4633,7 @@ domain_wildcard_set:
 - cdn?.mikuclub.fun
 - file?.mikuclub.fun
 - s*.hanime1
+- cdn.*.dmm.co.jp
 - cdn-msp?.jmcomic.me
 - appcenter-filemanagement-*.cloudapp.net
 - video-thumbnail?.liaoningmovie.net
@@ -4656,6 +4653,7 @@ domain_wildcard_set:
 - v.rn???.xyz
 - '*.skyearth?.xyz'
 domain_keyword_set:
+- -assets.dmm.co.jp
 - -assets.worldsex.com
 - -cdn.eporner.com
 - -files.gitbook.io

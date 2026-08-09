@@ -1,5 +1,5 @@
-# Total: 80 rules
-# Last Updated: 2026-07-31T10:23:52.325193+00:00
+# Total: 82 rules
+# Last Updated: 2026-08-09T19:10:28.214934+00:00
 payload:
 - DOMAIN-WILDCARD,image*.cloudokyo.cloud
 - DOMAIN-WILDCARD,video*.cloudokyo.cloud
@@ -42,6 +42,7 @@ payload:
 - DOMAIN-WILDCARD,cdn?.mikuclub.fun
 - DOMAIN-WILDCARD,file?.mikuclub.fun
 - DOMAIN-WILDCARD,s*.hanime1
+- DOMAIN-WILDCARD,cdn.*.dmm.co.jp
 - DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
 - DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
 - DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
@@ -60,6 +61,7 @@ payload:
 - DOMAIN-WILDCARD,cdn-msp?.18comic.vip
 - DOMAIN-WILDCARD,v.rn???.xyz
 - DOMAIN-WILDCARD,*.skyearth?.xyz
+- DOMAIN-KEYWORD,-assets.dmm.co.jp
 - DOMAIN-KEYWORD,-assets.worldsex.com
 - DOMAIN-KEYWORD,-cdn.eporner.com
 - DOMAIN-KEYWORD,-files.gitbook.io

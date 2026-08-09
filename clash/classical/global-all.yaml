@@ -1,5 +1,5 @@
-# Total: 106 rules
-# Last Updated: 2026-07-31T10:24:28.134291+00:00
+# Total: 107 rules
+# Last Updated: 2026-08-09T19:11:06.088668+00:00
 payload:
 - DOMAIN-WILDCARD,cdn-*.comaps.app
 - DOMAIN-WILDCARD,cdn-*.organicmaps.app
@@ -38,6 +38,7 @@ payload:
 - DOMAIN-WILDCARD,v.rn???.xyz
 - DOMAIN-WILDCARD,*.skyearth?.xyz
 - DOMAIN-REGEX,^epicgames-download\d\.akamaized\.net$
+- DOMAIN-KEYWORD,-assets.dmm.co.jp
 - DOMAIN-KEYWORD,-assets.worldsex.com
 - DOMAIN-KEYWORD,-files.gitbook.io
 - DOMAIN-KEYWORD,-images.disco-api.com

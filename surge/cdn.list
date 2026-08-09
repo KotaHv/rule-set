@@ -1,5 +1,5 @@
-# Total: 4672 rules
-# Last Updated: 2026-08-09T07:30:28.280831+00:00
+# Total: 4670 rules
+# Last Updated: 2026-08-09T19:10:28.209185+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -39,7 +39,6 @@ DOMAIN,tag.tvads.ai
 DOMAIN,vetted.ai
 DOMAIN,prod-cdn.webtune.ai
 DOMAIN,static.zanmei.ai
-DOMAIN,cdn.tabarn.ap
 DOMAIN,cdn.7tv.app
 DOMAIN,cdn.accessibly.app
 DOMAIN,assets.airbuddy.app
@@ -98,7 +97,6 @@ DOMAIN,avatars.micro.blog
 DOMAIN,cdn.micro.blog
 DOMAIN,turbo.build
 DOMAIN,cdn.adsninja.ca
-DOMAIN,tiles.arcticconnect.ca
 DOMAIN,img.novipnoad.ca
 DOMAIN,static.okx.cab
 DOMAIN,img.apk.cafe
@@ -132,7 +130,6 @@ DOMAIN,pics.vpdmm.cc
 DOMAIN,static.infomaniak.ch
 DOMAIN,image.crisp.chat
 DOMAIN,storage.crisp.chat
-DOMAIN,cdn.bigcloud.click
 DOMAIN,static.bit.cloud
 DOMAIN,cdn.bullwhip.cloud
 DOMAIN,media.cleanshot.cloud
@@ -688,6 +685,10 @@ DOMAIN,global.divhunt.com
 DOMAIN,s1.divhunt.com
 DOMAIN,media.dlsite.com
 DOMAIN,images.dmca.com
+DOMAIN,awsimgsrc.dmm.com
+DOMAIN,imgsrc.dmm.com
+DOMAIN,panda.dmm.com
+DOMAIN,dmm-extension.com
 DOMAIN,assets.dnsfilter.com
 DOMAIN,cdn.dnsimple.com
 DOMAIN,sessions-bugsnag.docker.com
@@ -1389,7 +1390,6 @@ DOMAIN,thumbnailer.mixcloud.com
 DOMAIN,imagecdn.mixlr.com
 DOMAIN,api.mixpanel.com
 DOMAIN,api-eu.mixpanel.com
-DOMAIN,img.ml0987.com
 DOMAIN,bytescale.mobbin.com
 DOMAIN,attach.mobile01.com
 DOMAIN,attach2.mobile01.com
@@ -1451,7 +1451,6 @@ DOMAIN,media.nationwide.com
 DOMAIN,tags.nationwide.com
 DOMAIN,c.navattic.com
 DOMAIN,js.navattic.com
-DOMAIN,navismithapis-cdn.com
 DOMAIN,cdn.nba.com
 DOMAIN,sp.nba.com
 DOMAIN,tags.nba.com
@@ -1585,7 +1584,6 @@ DOMAIN,c11.patreon.com
 DOMAIN,c13.patreon.com
 DOMAIN,c14.patreon.com
 DOMAIN,c16.patreon.com
-DOMAIN,c17.patreon.com
 DOMAIN,c4.patreon.com
 DOMAIN,c5.patreon.com
 DOMAIN,c6.patreon.com
@@ -1723,7 +1721,6 @@ DOMAIN,vte-eu.readspeaker.com
 DOMAIN,cached.rebuyengine.com
 DOMAIN,cdn.rebuyengine.com
 DOMAIN,cms.recordedfuture.com
-DOMAIN,cdn.recovermycart.com
 DOMAIN,js.recurly.com
 DOMAIN,img.redbull.com
 DOMAIN,rbds-static.redbull.com
@@ -2132,7 +2129,6 @@ DOMAIN,assets.vidyard.com
 DOMAIN,cdn.vidyard.com
 DOMAIN,play.vidyard.com
 DOMAIN,cdn.viglink.com
-DOMAIN,img.vim-cn.com
 DOMAIN,player.vimeo.com
 DOMAIN,marketplace-web-assets.vinted.com
 DOMAIN,static.vinted.com
@@ -2328,7 +2324,6 @@ DOMAIN,shields.rbtlog.dev
 DOMAIN,static.reo.dev
 DOMAIN,p.sda1.dev
 DOMAIN,tuf-repo-cdn.sigstore.dev
-DOMAIN,cdn.tuk.dev
 DOMAIN,fonts.upset.dev
 DOMAIN,zod.dev
 DOMAIN,res.craft.do
@@ -2558,7 +2553,6 @@ DOMAIN,assets.stigg.io
 DOMAIN,link.storjshare.io
 DOMAIN,storage.synctrack.io
 DOMAIN,scripts.tabler.io
-DOMAIN,img.telemetr.io
 DOMAIN,tiles.terria.io
 DOMAIN,cdn.thenewstack.io
 DOMAIN,static.tokenview.io
@@ -2584,8 +2578,12 @@ DOMAIN,img.atwiki.jp
 DOMAIN,livedoor.blogimg.jp
 DOMAIN,resize.blogsys.jp
 DOMAIN,awsimgsrc.dmm.co.jp
-DOMAIN,cdn.dap.dmm.co.jp
-DOMAIN,doujin-assets.dmm.co.jp
+DOMAIN,p.book.dmm.co.jp
+DOMAIN,cdn.catch.dmm.co.jp
+DOMAIN,cdn.cds.dmm.co.jp
+DOMAIN,pix.cds.dmm.co.jp
+DOMAIN,media.games.dmm.co.jp
+DOMAIN,p.dmm.co.jp
 DOMAIN,pics.dmm.co.jp
 DOMAIN,cdn.rex.contents.rakuten.co.jp
 DOMAIN,error.rakuten.co.jp
@@ -2628,7 +2626,6 @@ DOMAIN,wl-apps.yourwebsite.life
 DOMAIN,disco.headliner.link
 DOMAIN,assets.auth.magic.link
 DOMAIN,nightly.link
-DOMAIN,cdn.koala.live
 DOMAIN,maps.wplace.live
 DOMAIN,image.acg.lol
 DOMAIN,media.webtoo.ls
@@ -2961,7 +2958,6 @@ DOMAIN,assets.video.yahoo.net
 DOMAIN,cdn.yamibuy.net
 DOMAIN,favicon.yandex.net
 DOMAIN,avatars.mds.yandex.net
-DOMAIN,s3-zen.mds.yandex.net
 DOMAIN,resize.yandex.net
 DOMAIN,cdn.ywxi.net
 DOMAIN,vjs.zencdn.net
@@ -3362,12 +3358,10 @@ DOMAIN,img.hentaihaven.xxx
 DOMAIN,wimg.rule34.xxx
 DOMAIN,i.xozilla.xxx
 DOMAIN,s3.2233778.xyz
-DOMAIN,img.catwvod.xyz
 DOMAIN,rules1.clearurls.xyz
 DOMAIN,rules2.clearurls.xyz
 DOMAIN,eslint-react.xyz
 DOMAIN,beta.eslint-react.xyz
-DOMAIN,domain.expiring-soon.xyz
 DOMAIN,eomd1.fembeqq.xyz
 DOMAIN,sdk-cdn.fun.xyz
 DOMAIN,image.jnislniv.xyz
@@ -3830,6 +3824,7 @@ DOMAIN-SUFFIX,myfilebase.com
 DOMAIN-SUFFIX,myshopapps.com
 DOMAIN-SUFFIX,myspacecdn.com
 DOMAIN-SUFFIX,aacdn.nagich.com
+DOMAIN-SUFFIX,navismithapis-cdn.com
 DOMAIN-SUFFIX,nc-img.com
 DOMAIN-SUFFIX,ndtvimg.com
 DOMAIN-SUFFIX,neweggimages.com
@@ -4421,6 +4416,7 @@ DOMAIN-SUFFIX,webinfcdn.net
 DOMAIN-SUFFIX,widen.net
 DOMAIN-SUFFIX,widencdn.net
 DOMAIN-SUFFIX,crash-reports.browser.yandex.net
+DOMAIN-SUFFIX,cdn.yandex.net
 DOMAIN-SUFFIX,storage.yandexcloud.net
 DOMAIN-SUFFIX,yastatic.net
 DOMAIN-SUFFIX,z4a.net
@@ -4592,6 +4588,7 @@ DOMAIN-SUFFIX,qiniuyun22.xyz
 DOMAIN-SUFFIX,skyearth8.xyz
 DOMAIN-SUFFIX,zorocdn.xyz
 DOMAIN-SUFFIX,ipfs.yt
+DOMAIN-KEYWORD,-assets.dmm.co.jp
 DOMAIN-KEYWORD,-assets.worldsex.com
 DOMAIN-KEYWORD,-cdn.eporner.com
 DOMAIN-KEYWORD,-files.gitbook.io
@@ -4654,6 +4651,7 @@ DOMAIN-WILDCARD,sdk.*.braze.eu
 DOMAIN-WILDCARD,cdn?.mikuclub.fun
 DOMAIN-WILDCARD,file?.mikuclub.fun
 DOMAIN-WILDCARD,s*.hanime1
+DOMAIN-WILDCARD,cdn.*.dmm.co.jp
 DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
 DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
 DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net

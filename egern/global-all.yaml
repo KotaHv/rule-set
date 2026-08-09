@@ -1,5 +1,5 @@
-# Total: 6553 rules
-# Last Updated: 2026-08-09T13:29:49.564476+00:00
+# Total: 6543 rules
+# Last Updated: 2026-08-09T19:11:06.151997+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -8,7 +8,6 @@ domain_set:
 - mirrors.asnet.am
 - kali.itsec.am
 - mirrors.teamcloud.am
-- cdn.tabarn.ap
 - fdisk.5play.app
 - cdn.7tv.app
 - cdn.accessibly.app
@@ -145,7 +144,6 @@ domain_set:
 - ctan.dcc.uchile.cl
 - mirror.uchile.cl
 - mirror.ufro.cl
-- cdn.bigcloud.click
 - mirror.za.abantu.cloud
 - mirrors.bangmod.cloud
 - node-registry.bit.cloud
@@ -1163,7 +1161,6 @@ domain_set:
 - imagecdn.mixlr.com
 - api.mixpanel.com
 - api-eu.mixpanel.com
-- img.ml0987.com
 - bytescale.mobbin.com
 - ubuntu.mobinhost.com
 - public.mocortech.com
@@ -1213,7 +1210,6 @@ domain_set:
 - c.navattic.com
 - js.navattic.com
 - mirror.navercorp.com
-- navismithapis-cdn.com
 - cdn.nba.com
 - sp.nba.com
 - tags.nba.com
@@ -1409,7 +1405,6 @@ domain_set:
 - cached.rebuyengine.com
 - cdn.rebuyengine.com
 - cms.recordedfuture.com
-- cdn.recovermycart.com
 - js.recurly.com
 - assets.redbullshop.com
 - userpic.redgifs.com
@@ -1715,7 +1710,6 @@ domain_set:
 - cdn.vidyard.com
 - play.vidyard.com
 - cdn.viglink.com
-- img.vim-cn.com
 - marketplace-web-assets.vinted.com
 - static.vinted.com
 - static-assets.vinted.com
@@ -1866,7 +1860,6 @@ domain_set:
 - static.reo.dev
 - p.sda1.dev
 - tuf-repo-cdn.sigstore.dev
-- cdn.tuk.dev
 - fonts.upset.dev
 - releases.warp.dev
 - zod.dev
@@ -2094,7 +2087,6 @@ domain_set:
 - link.storjshare.io
 - storage.synctrack.io
 - scripts.tabler.io
-- img.telemetr.io
 - tiles.terria.io
 - static.tokenview.io
 - cdn.tolt.io
@@ -2124,8 +2116,6 @@ domain_set:
 - wl-apps.yourwebsite.life
 - disco.headliner.link
 - nightly.link
-- edge.zerofs.link
-- cdn.koala.live
 - maps.wplace.live
 - media.webtoo.ls
 - ftp.litnet.lt
@@ -2852,12 +2842,10 @@ domain_set:
 - static.frame.work
 - fonts1.unidays.world
 - s3.2233778.xyz
-- img.catwvod.xyz
 - rules1.clearurls.xyz
 - rules2.clearurls.xyz
 - eslint-react.xyz
 - beta.eslint-react.xyz
-- domain.expiring-soon.xyz
 - eomd1.fembeqq.xyz
 - sdk-cdn.fun.xyz
 - ghgo.xyz
@@ -4170,6 +4158,7 @@ domain_suffix_set:
 - aacdn.nagich.com
 - namemc.com
 - naver.com
+- navismithapis-cdn.com
 - nbc.com
 - nbclosangeles.com
 - nbcnews.com
@@ -6469,6 +6458,7 @@ domain_wildcard_set:
 domain_regex_set:
 - ^epicgames-download\d\.akamaized\.net$
 domain_keyword_set:
+- -assets.dmm.co.jp
 - -assets.worldsex.com
 - -files.gitbook.io
 - -images.disco-api.com
