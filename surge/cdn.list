@@ -1,5 +1,5 @@
-# Total: 4670 rules
-# Last Updated: 2026-08-09T19:10:28.209185+00:00
+# Total: 4678 rules
+# Last Updated: 2026-08-10T19:28:35.337677+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -75,6 +75,7 @@ DOMAIN,data.peer.as
 DOMAIN,i.snap.as
 DOMAIN,bucket.noy.asia
 DOMAIN,img.noy.asia
+DOMAIN,media.wd40.asia
 DOMAIN,tiles.maps.eox.at
 DOMAIN,subscriptions.news.com.au
 DOMAIN,tags.news.com.au
@@ -544,6 +545,7 @@ DOMAIN,assets-docs.circleci.com
 DOMAIN,assets-growth-common.circleci.com
 DOMAIN,cdn-assets.circleci.com
 DOMAIN,image.civitai.com
+DOMAIN,status.claude.com
 DOMAIN,cmd-cdn.cleanmymac.com
 DOMAIN,img.clerk.com
 DOMAIN,scdn.clerk.com
@@ -1547,6 +1549,7 @@ DOMAIN,static-www.onlyoffice.com
 DOMAIN,assets.ontrack.com
 DOMAIN,registry.oomol.com
 DOMAIN,cdn.openai.com
+DOMAIN,status.openai.com
 DOMAIN,images.opencollective.com
 DOMAIN,next-images.opencollective.com
 DOMAIN,static.openreplay.com
@@ -1811,6 +1814,7 @@ DOMAIN,imgix.setapp.com
 DOMAIN,stats.setapp.com
 DOMAIN,attach.setn.com
 DOMAIN,b.sf-syn.com
+DOMAIN,cache.sgvafs.com
 DOMAIN,static2.sharepointonline.com
 DOMAIN,assets.shazam.com
 DOMAIN,cdn.sheetjs.com
@@ -2394,6 +2398,7 @@ DOMAIN,cdn.adguard.info
 DOMAIN,busuanzi.ibruce.info
 DOMAIN,image.theblockbeats.info
 DOMAIN,lm.visualon.info
+DOMAIN,fonts.wd40.info
 DOMAIN,cdn.cbd.int
 DOMAIN,adkit.9pub.io
 DOMAIN,s3.aaaaa.io
@@ -3557,6 +3562,7 @@ DOMAIN-SUFFIX,static.dash.cloudflare.com
 DOMAIN-SUFFIX,nel.cloudflare.com
 DOMAIN-SUFFIX,privacy-gateway.cloudflare.com
 DOMAIN-SUFFIX,cloudflare-ipfs.com
+DOMAIN-SUFFIX,cloudflarestatus.com
 DOMAIN-SUFFIX,cloudflarestream.com
 DOMAIN-SUFFIX,ipfs0.sjc.cloudsigma.com
 DOMAIN-SUFFIX,cmail19.com
@@ -3664,6 +3670,7 @@ DOMAIN-SUFFIX,app.gitbook.com
 DOMAIN-SUFFIX,githack.com
 DOMAIN-SUFFIX,pkg.github.com
 DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubstatus.com
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,gitmirror.com
 DOMAIN-SUFFIX,glbimg.com
@@ -3734,6 +3741,7 @@ DOMAIN-SUFFIX,images-iherb.com
 DOMAIN-SUFFIX,imagetwist.com
 DOMAIN-SUFFIX,img-dpreview.com
 DOMAIN-SUFFIX,imgbox.com
+DOMAIN-SUFFIX,imgcdn8.com
 DOMAIN-SUFFIX,cdn.imghaste.com
 DOMAIN-SUFFIX,imgikuncdn.com
 DOMAIN-SUFFIX,imgikzy.com

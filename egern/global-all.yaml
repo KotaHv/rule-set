@@ -1,5 +1,5 @@
-# Total: 6543 rules
-# Last Updated: 2026-08-09T19:11:06.151997+00:00
+# Total: 6549 rules
+# Last Updated: 2026-08-10T19:29:17.837650+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -59,6 +59,7 @@ domain_set:
 - mirror.cyberbits.asia
 - bucket.noy.asia
 - img.noy.asia
+- media.wd40.asia
 - static.cracked.ax
 - mirror.datacenter.az
 - mirror.ourhost.az
@@ -506,6 +507,7 @@ domain_set:
 - mirror.citrahost.com
 - image.civitai.com
 - vfat.classicreload.com
+- status.claude.com
 - cmd-cdn.cleanmymac.com
 - img.clerk.com
 - scdn.clerk.com
@@ -1279,6 +1281,7 @@ domain_set:
 - hbolb.onwardsmg.com
 - registry.oomol.com
 - cdn.openai.com
+- status.openai.com
 - static.openreplay.com
 - openseauserdata.com
 - assets.openshift.com
@@ -1475,6 +1478,7 @@ domain_set:
 - i.servimg.com
 - attach.setn.com
 - b.sf-syn.com
+- cache.sgvafs.com
 - static2.sharepointonline.com
 - assets.shazam.com
 - cdn.sheetjs.com
@@ -1931,6 +1935,7 @@ domain_set:
 - ubuntu.servering.info
 - image.theblockbeats.info
 - lm.visualon.info
+- fonts.wd40.info
 - cdn.cbd.int
 - adkit.9pub.io
 - s3.aaaaa.io
@@ -3855,6 +3860,7 @@ domain_suffix_set:
 - imdb.com
 - img-dpreview.com
 - imgbox.com
+- imgcdn8.com
 - imgflip.com
 - cdn.imghaste.com
 - imgikuncdn.com

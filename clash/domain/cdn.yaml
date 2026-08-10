@@ -1,5 +1,5 @@
-# Total: 4588 rules
-# Last Updated: 2026-08-09T19:10:28.214934+00:00
+# Total: 4596 rules
+# Last Updated: 2026-08-10T19:28:35.345617+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -76,6 +76,7 @@
 - 'i.snap.as'
 - 'bucket.noy.asia'
 - 'img.noy.asia'
+- 'media.wd40.asia'
 - 'tiles.maps.eox.at'
 - 'subscriptions.news.com.au'
 - 'tags.news.com.au'
@@ -545,6 +546,7 @@
 - 'assets-growth-common.circleci.com'
 - 'cdn-assets.circleci.com'
 - 'image.civitai.com'
+- 'status.claude.com'
 - 'cmd-cdn.cleanmymac.com'
 - 'img.clerk.com'
 - 'scdn.clerk.com'
@@ -1548,6 +1550,7 @@
 - 'assets.ontrack.com'
 - 'registry.oomol.com'
 - 'cdn.openai.com'
+- 'status.openai.com'
 - 'images.opencollective.com'
 - 'next-images.opencollective.com'
 - 'static.openreplay.com'
@@ -1812,6 +1815,7 @@
 - 'stats.setapp.com'
 - 'attach.setn.com'
 - 'b.sf-syn.com'
+- 'cache.sgvafs.com'
 - 'static2.sharepointonline.com'
 - 'assets.shazam.com'
 - 'cdn.sheetjs.com'
@@ -2395,6 +2399,7 @@
 - 'busuanzi.ibruce.info'
 - 'image.theblockbeats.info'
 - 'lm.visualon.info'
+- 'fonts.wd40.info'
 - 'cdn.cbd.int'
 - 'adkit.9pub.io'
 - 's3.aaaaa.io'
@@ -3558,6 +3563,7 @@
 - '+.nel.cloudflare.com'
 - '+.privacy-gateway.cloudflare.com'
 - '+.cloudflare-ipfs.com'
+- '+.cloudflarestatus.com'
 - '+.cloudflarestream.com'
 - '+.ipfs0.sjc.cloudsigma.com'
 - '+.cmail19.com'
@@ -3665,6 +3671,7 @@
 - '+.githack.com'
 - '+.pkg.github.com'
 - '+.githubassets.com'
+- '+.githubstatus.com'
 - '+.githubusercontent.com'
 - '+.gitmirror.com'
 - '+.glbimg.com'
@@ -3735,6 +3742,7 @@
 - '+.imagetwist.com'
 - '+.img-dpreview.com'
 - '+.imgbox.com'
+- '+.imgcdn8.com'
 - '+.cdn.imghaste.com'
 - '+.imgikuncdn.com'
 - '+.imgikzy.com'
