@@ -1,5 +1,5 @@
-# Total: 793 rules
-# Last Updated: 2026-08-05T09:17:56.890028+00:00
+# Total: 822 rules
+# Last Updated: 2026-08-11T13:50:31.669908+00:00
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -118,6 +118,9 @@ domain_suffix_set:
 - 2ksports.com
 - 3lateral.com
 - ac-pocketcamp.com
+- activision.com
+- activisionblizzard.com
+- activisionblizzardmedia.com
 - amiibo.com
 - anthemgame.com
 - anthemthegame.com
@@ -146,6 +149,7 @@ domain_suffix_set:
 - battlelog.com
 - bejeweledstars.com
 - bejewled-stars.com
+- benefitsforeveryworld.com
 - bethesdagamestudios.com
 - bethsoft.com
 - bioware.com
@@ -161,8 +165,13 @@ domain_suffix_set:
 - brawlstars.com
 - brawlstarsgame.com
 - callersbane.com
+- callofduty.com
+- callofdutyendowment.com
+- callofdutyleague.com
+- callofdutymobile.com
 - camelot-europe.com
 - camelotherald.com
+- candycrush.com
 - capitalgames.com
 - capturingreality.com
 - championshipseriesleague.com
@@ -177,6 +186,7 @@ domain_suffix_set:
 - commandandconquer.com
 - conquerwithcharacter.com
 - convrgencegame.com
+- crashbandicoot.com
 - cubicmotion.com
 - curseforge.com
 - darkageofcamelot.com
@@ -185,7 +195,9 @@ domain_suffix_set:
 - dawngatechronicles.com
 - dayz.com
 - deadspacegame.com
+- diablo.com
 - diablo3.com
+- diablo4.com
 - diabloimmortal.com
 - dialga.com
 - dicela.com
@@ -228,6 +240,7 @@ domain_suffix_set:
 - epicgames.com
 - epicgamescdn.com
 - escapefromtarkov.com
+- europeanwarzoneseries.com
 - excitebots.com
 - fab.com
 - faceit.com
@@ -271,6 +284,7 @@ domain_suffix_set:
 - haydaygame.com
 - heroesofdragonage.com
 - heroesofthestorm.com
+- highmoonstudios.com
 - historyofdota.com
 - honkaiimpact3.com
 - honkaistarrail.com
@@ -281,8 +295,10 @@ domain_suffix_set:
 - hutpromos.com
 - hyprsense.com
 - industrialtoys.com
+- infinityward.com
 - joinsquad.com
 - kgisystems.com
+- king.com
 - kirbysepicyarn.com
 - kirbysuperstarultra.com
 - konami.com
@@ -429,6 +445,7 @@ domain_suffix_set:
 - steam.ru.qtlglb.com
 - quixel.com
 - radgametools.com
+- ravensoftware.com
 - rblx.com
 - rbx.com
 - rbxcdn.com
@@ -459,19 +476,25 @@ domain_suffix_set:
 - seagroup.com
 - seaofsolitude.com
 - seeurlpcl.com
+- sekirothegame.com
 - shadowcomplex.com
+- sierragames.com
 - sih-db.com
 - silicagame.com
 - simcity.com
 - simcity-buildit.com
 - skate2.com
 - sketchfab.com
+- skylanders.com
+- sledgehammergames.com
+- solidstate.com
 - sonyentertainmentnetwork.com
 - speedhunters.com
 - speedrun.com
 - splatoon2tournament.com
 - spore.com
 - spyjinx.com
+- spyrothedragon.com
 - squadbusters.com
 - ssx3.com
 - star-conflict.com
@@ -524,6 +547,9 @@ domain_suffix_set:
 - tiburon.com
 - titanfall.com
 - tnt-ea.com
+- tonyhawk.com
+- tonyhawkthegame.com
+- treyarch.com
 - twinmotion.com
 - ubi.com
 - ubisoft.com
@@ -562,6 +588,7 @@ domain_suffix_set:
 - worldofwarcraft.com
 - worldofwarplanes.com
 - worldofwarships.com
+- worldseriesofwarzone.com
 - wotblitz.com
 - wowsblitz.com
 - wtmobile.com
@@ -680,6 +707,7 @@ domain_suffix_set:
 - crossout.net
 - crsed.net
 - daoc.net
+- demonware.net
 - dicela.net
 - eamythic.net
 - easyanticheat.net
@@ -743,6 +771,7 @@ domain_suffix_set:
 - 2kweb.online
 - konami-igaming.online
 - konamigaming.online
+- callofdutyendowment.org
 - sekai.colorfulpalette.org
 - historyofdota.org
 - instituteofwar.org

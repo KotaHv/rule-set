@@ -1,5 +1,5 @@
-# Total: 6550 rules
-# Last Updated: 2026-08-11T02:34:20.802669+00:00
+# Total: 6579 rules
+# Last Updated: 2026-08-11T13:51:08.232004+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -3059,6 +3059,9 @@ domain_suffix_set:
 - ac-pocketcamp.com
 - accountkit.com
 - acpica.com
+- activision.com
+- activisionblizzard.com
+- activisionblizzardmedia.com
 - adguard.com
 - adguard-mail.com
 - adguard-vpn.com
@@ -3216,6 +3219,7 @@ domain_suffix_set:
 - beibao.com
 - bejeweledstars.com
 - bejewled-stars.com
+- benefitsforeveryworld.com
 - bestbuy.com
 - bestfreecdn.com
 - bet365.com
@@ -3293,10 +3297,15 @@ domain_suffix_set:
 - cal.com
 - calibre-ebook.com
 - callersbane.com
+- callofduty.com
+- callofdutyendowment.com
+- callofdutyleague.com
+- callofdutymobile.com
 - cam4.com
 - camelot-europe.com
 - camelotherald.com
 - camsoda.com
+- candycrush.com
 - canonical.com
 - capcutstatic.com
 - capitalg.com
@@ -3389,6 +3398,7 @@ domain_suffix_set:
 - cool18.com
 - costco.com
 - cpuid.com
+- crashbandicoot.com
 - crashlytics.com
 - creativelab5.com
 - crocoblock.com
@@ -3434,7 +3444,9 @@ domain_suffix_set:
 - desmos.com
 - detnews.com
 - deviantart.com
+- diablo.com
 - diablo3.com
+- diablo4.com
 - diabloimmortal.com
 - dialga.com
 - dialogflow.com
@@ -3549,6 +3561,7 @@ domain_suffix_set:
 - etsy.com
 - etsystatic.com
 - euronews.com
+- europeanwarzoneseries.com
 - everymac.com
 - excitebots.com
 - exp-tas.com
@@ -3797,6 +3810,7 @@ domain_suffix_set:
 - hgimg00.com
 - hgimg01.com
 - hhvm.com
+- highmoonstudios.com
 - highwinds-cdn.com
 - himalaya.com
 - historyofdota.com
@@ -3876,6 +3890,7 @@ domain_suffix_set:
 - indaznlab.com
 - indiegogo.com
 - industrialtoys.com
+- infinityward.com
 - influxdata.com
 - storage.infomaniak.com
 - infoq.com
@@ -3935,6 +3950,7 @@ domain_suffix_set:
 - kick.com
 - kik.com
 - ipfs.kinematiks.com
+- king.com
 - kinja.com
 - kinja-img.com
 - kinja-static.com
@@ -4450,6 +4466,7 @@ domain_suffix_set:
 - raspberrypi.com
 - ravencoinipfs-gateway.com
 - ravenjs.com
+- ravensoftware.com
 - rawgit.com
 - rawgithub.com
 - raxcdn.com
@@ -4544,6 +4561,7 @@ domain_suffix_set:
 - seecdn.com
 - seeurlpcl.com
 - seeusercontent.com
+- sekirothegame.com
 - sendbird.com
 - sendspace.com
 - sentry-cdn.com
@@ -4561,6 +4579,7 @@ domain_suffix_set:
 - shoplineimg.com
 - showtime.com
 - shutterstock.com
+- sierragames.com
 - cdn.signalfx.com
 - sih-db.com
 - silicagame.com
@@ -4576,12 +4595,14 @@ domain_suffix_set:
 - skate2.com
 - sketch.com
 - sketchfab.com
+- skylanders.com
 - static.skymavis.com
 - skypeassets.com
 - slack.com
 - slack-edge.com
 - slack-imgs.com
 - slackhq.com
+- sledgehammergames.com
 - slidesharecdn.com
 - smartmailcloud.com
 - smartmediarep.com
@@ -4594,6 +4615,7 @@ domain_suffix_set:
 - snzypic.com
 - socdm.com
 - softonic.com
+- solidstate.com
 - sonyentertainmentnetwork.com
 - img.sooplive.com
 - sophos.com
@@ -4612,6 +4634,7 @@ domain_suffix_set:
 - spotilocal.com
 - spreadshirtmedia.com
 - spyjinx.com
+- spyrothedragon.com
 - sqlserveronlinux.com
 - sqspcdn.com
 - squadbusters.com
@@ -4807,6 +4830,8 @@ domain_suffix_set:
 - toiimg.com
 - tokyonline.com
 - tokyvideo.com
+- tonyhawk.com
+- tonyhawkthegame.com
 - topcoder.com
 - tpdfiles.com
 - tpucdn.com
@@ -4816,6 +4841,7 @@ domain_suffix_set:
 - trainingpeaks.com
 - transcend-cdn.com
 - travis-ci.com
+- treyarch.com
 - tripcdn.com
 - trustpilot.com
 - truthsocial.com
@@ -4986,6 +5012,7 @@ domain_suffix_set:
 - worldofwarcraft.com
 - worldofwarplanes.com
 - worldofwarships.com
+- worldseriesofwarzone.com
 - wotblitz.com
 - wowmodels.com
 - wowsblitz.com
@@ -5580,6 +5607,7 @@ domain_suffix_set:
 - daumcdn.net
 - dc-telemetry.net
 - dd-static.net
+- demonware.net
 - deviantart.net
 - devopsassessment.net
 - diagrams.net
@@ -5935,6 +5963,7 @@ domain_suffix_set:
 - bytebucket.org
 - c-span.org
 - calendarserver.org
+- callofdutyendowment.org
 - carekit.org
 - cdn-telegram.org
 - centos.org

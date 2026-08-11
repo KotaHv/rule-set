@@ -1,5 +1,5 @@
-# Total: 6563 rules
-# Last Updated: 2026-08-11T02:34:20.718847+00:00
+# Total: 6592 rules
+# Last Updated: 2026-08-11T13:51:08.149205+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -3056,6 +3056,9 @@ DOMAIN-SUFFIX,abema-tv.com
 DOMAIN-SUFFIX,ac-pocketcamp.com
 DOMAIN-SUFFIX,accountkit.com
 DOMAIN-SUFFIX,acpica.com
+DOMAIN-SUFFIX,activision.com
+DOMAIN-SUFFIX,activisionblizzard.com
+DOMAIN-SUFFIX,activisionblizzardmedia.com
 DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,adguard-mail.com
 DOMAIN-SUFFIX,adguard-vpn.com
@@ -3213,6 +3216,7 @@ DOMAIN-SUFFIX,media.beeper.com
 DOMAIN-SUFFIX,beibao.com
 DOMAIN-SUFFIX,bejeweledstars.com
 DOMAIN-SUFFIX,bejewled-stars.com
+DOMAIN-SUFFIX,benefitsforeveryworld.com
 DOMAIN-SUFFIX,bestbuy.com
 DOMAIN-SUFFIX,bestfreecdn.com
 DOMAIN-SUFFIX,bet365.com
@@ -3290,10 +3294,15 @@ DOMAIN-SUFFIX,c4assets.com
 DOMAIN-SUFFIX,cal.com
 DOMAIN-SUFFIX,calibre-ebook.com
 DOMAIN-SUFFIX,callersbane.com
+DOMAIN-SUFFIX,callofduty.com
+DOMAIN-SUFFIX,callofdutyendowment.com
+DOMAIN-SUFFIX,callofdutyleague.com
+DOMAIN-SUFFIX,callofdutymobile.com
 DOMAIN-SUFFIX,cam4.com
 DOMAIN-SUFFIX,camelot-europe.com
 DOMAIN-SUFFIX,camelotherald.com
 DOMAIN-SUFFIX,camsoda.com
+DOMAIN-SUFFIX,candycrush.com
 DOMAIN-SUFFIX,canonical.com
 DOMAIN-SUFFIX,capcutstatic.com
 DOMAIN-SUFFIX,capitalg.com
@@ -3386,6 +3395,7 @@ DOMAIN-SUFFIX,convrgencegame.com
 DOMAIN-SUFFIX,cool18.com
 DOMAIN-SUFFIX,costco.com
 DOMAIN-SUFFIX,cpuid.com
+DOMAIN-SUFFIX,crashbandicoot.com
 DOMAIN-SUFFIX,crashlytics.com
 DOMAIN-SUFFIX,creativelab5.com
 DOMAIN-SUFFIX,crocoblock.com
@@ -3431,7 +3441,9 @@ DOMAIN-SUFFIX,descopecdn.com
 DOMAIN-SUFFIX,desmos.com
 DOMAIN-SUFFIX,detnews.com
 DOMAIN-SUFFIX,deviantart.com
+DOMAIN-SUFFIX,diablo.com
 DOMAIN-SUFFIX,diablo3.com
+DOMAIN-SUFFIX,diablo4.com
 DOMAIN-SUFFIX,diabloimmortal.com
 DOMAIN-SUFFIX,dialga.com
 DOMAIN-SUFFIX,dialogflow.com
@@ -3546,6 +3558,7 @@ DOMAIN-SUFFIX,espncdn.com
 DOMAIN-SUFFIX,etsy.com
 DOMAIN-SUFFIX,etsystatic.com
 DOMAIN-SUFFIX,euronews.com
+DOMAIN-SUFFIX,europeanwarzoneseries.com
 DOMAIN-SUFFIX,everymac.com
 DOMAIN-SUFFIX,excitebots.com
 DOMAIN-SUFFIX,exp-tas.com
@@ -3794,6 +3807,7 @@ DOMAIN-SUFFIX,hgasm3.com
 DOMAIN-SUFFIX,hgimg00.com
 DOMAIN-SUFFIX,hgimg01.com
 DOMAIN-SUFFIX,hhvm.com
+DOMAIN-SUFFIX,highmoonstudios.com
 DOMAIN-SUFFIX,highwinds-cdn.com
 DOMAIN-SUFFIX,himalaya.com
 DOMAIN-SUFFIX,historyofdota.com
@@ -3873,6 +3887,7 @@ DOMAIN-SUFFIX,indazn.com
 DOMAIN-SUFFIX,indaznlab.com
 DOMAIN-SUFFIX,indiegogo.com
 DOMAIN-SUFFIX,industrialtoys.com
+DOMAIN-SUFFIX,infinityward.com
 DOMAIN-SUFFIX,influxdata.com
 DOMAIN-SUFFIX,storage.infomaniak.com
 DOMAIN-SUFFIX,infoq.com
@@ -3932,6 +3947,7 @@ DOMAIN-SUFFIX,app.khoros.com
 DOMAIN-SUFFIX,kick.com
 DOMAIN-SUFFIX,kik.com
 DOMAIN-SUFFIX,ipfs.kinematiks.com
+DOMAIN-SUFFIX,king.com
 DOMAIN-SUFFIX,kinja.com
 DOMAIN-SUFFIX,kinja-img.com
 DOMAIN-SUFFIX,kinja-static.com
@@ -4447,6 +4463,7 @@ DOMAIN-SUFFIX,radix-ui.com
 DOMAIN-SUFFIX,raspberrypi.com
 DOMAIN-SUFFIX,ravencoinipfs-gateway.com
 DOMAIN-SUFFIX,ravenjs.com
+DOMAIN-SUFFIX,ravensoftware.com
 DOMAIN-SUFFIX,rawgit.com
 DOMAIN-SUFFIX,rawgithub.com
 DOMAIN-SUFFIX,raxcdn.com
@@ -4541,6 +4558,7 @@ DOMAIN-SUFFIX,seaofsolitude.com
 DOMAIN-SUFFIX,seecdn.com
 DOMAIN-SUFFIX,seeurlpcl.com
 DOMAIN-SUFFIX,seeusercontent.com
+DOMAIN-SUFFIX,sekirothegame.com
 DOMAIN-SUFFIX,sendbird.com
 DOMAIN-SUFFIX,sendspace.com
 DOMAIN-SUFFIX,sentry-cdn.com
@@ -4558,6 +4576,7 @@ DOMAIN-SUFFIX,shopifycdn.com
 DOMAIN-SUFFIX,shoplineimg.com
 DOMAIN-SUFFIX,showtime.com
 DOMAIN-SUFFIX,shutterstock.com
+DOMAIN-SUFFIX,sierragames.com
 DOMAIN-SUFFIX,cdn.signalfx.com
 DOMAIN-SUFFIX,sih-db.com
 DOMAIN-SUFFIX,silicagame.com
@@ -4573,12 +4592,14 @@ DOMAIN-SUFFIX,sixyik.com
 DOMAIN-SUFFIX,skate2.com
 DOMAIN-SUFFIX,sketch.com
 DOMAIN-SUFFIX,sketchfab.com
+DOMAIN-SUFFIX,skylanders.com
 DOMAIN-SUFFIX,static.skymavis.com
 DOMAIN-SUFFIX,skypeassets.com
 DOMAIN-SUFFIX,slack.com
 DOMAIN-SUFFIX,slack-edge.com
 DOMAIN-SUFFIX,slack-imgs.com
 DOMAIN-SUFFIX,slackhq.com
+DOMAIN-SUFFIX,sledgehammergames.com
 DOMAIN-SUFFIX,slidesharecdn.com
 DOMAIN-SUFFIX,smartmailcloud.com
 DOMAIN-SUFFIX,smartmediarep.com
@@ -4591,6 +4612,7 @@ DOMAIN-SUFFIX,sndimg.com
 DOMAIN-SUFFIX,snzypic.com
 DOMAIN-SUFFIX,socdm.com
 DOMAIN-SUFFIX,softonic.com
+DOMAIN-SUFFIX,solidstate.com
 DOMAIN-SUFFIX,sonyentertainmentnetwork.com
 DOMAIN-SUFFIX,img.sooplive.com
 DOMAIN-SUFFIX,sophos.com
@@ -4609,6 +4631,7 @@ DOMAIN-SUFFIX,spore.com
 DOMAIN-SUFFIX,spotilocal.com
 DOMAIN-SUFFIX,spreadshirtmedia.com
 DOMAIN-SUFFIX,spyjinx.com
+DOMAIN-SUFFIX,spyrothedragon.com
 DOMAIN-SUFFIX,sqlserveronlinux.com
 DOMAIN-SUFFIX,sqspcdn.com
 DOMAIN-SUFFIX,squadbusters.com
@@ -4804,6 +4827,8 @@ DOMAIN-SUFFIX,tnt-ea.com
 DOMAIN-SUFFIX,toiimg.com
 DOMAIN-SUFFIX,tokyonline.com
 DOMAIN-SUFFIX,tokyvideo.com
+DOMAIN-SUFFIX,tonyhawk.com
+DOMAIN-SUFFIX,tonyhawkthegame.com
 DOMAIN-SUFFIX,topcoder.com
 DOMAIN-SUFFIX,tpdfiles.com
 DOMAIN-SUFFIX,tpucdn.com
@@ -4813,6 +4838,7 @@ DOMAIN-SUFFIX,trafficdeposit.com
 DOMAIN-SUFFIX,trainingpeaks.com
 DOMAIN-SUFFIX,transcend-cdn.com
 DOMAIN-SUFFIX,travis-ci.com
+DOMAIN-SUFFIX,treyarch.com
 DOMAIN-SUFFIX,tripcdn.com
 DOMAIN-SUFFIX,trustpilot.com
 DOMAIN-SUFFIX,truthsocial.com
@@ -4983,6 +5009,7 @@ DOMAIN-SUFFIX,worldoftanks.com
 DOMAIN-SUFFIX,worldofwarcraft.com
 DOMAIN-SUFFIX,worldofwarplanes.com
 DOMAIN-SUFFIX,worldofwarships.com
+DOMAIN-SUFFIX,worldseriesofwarzone.com
 DOMAIN-SUFFIX,wotblitz.com
 DOMAIN-SUFFIX,wowmodels.com
 DOMAIN-SUFFIX,wowsblitz.com
@@ -5577,6 +5604,7 @@ DOMAIN-SUFFIX,daum.net
 DOMAIN-SUFFIX,daumcdn.net
 DOMAIN-SUFFIX,dc-telemetry.net
 DOMAIN-SUFFIX,dd-static.net
+DOMAIN-SUFFIX,demonware.net
 DOMAIN-SUFFIX,deviantart.net
 DOMAIN-SUFFIX,devopsassessment.net
 DOMAIN-SUFFIX,diagrams.net
@@ -5932,6 +5960,7 @@ DOMAIN-SUFFIX,ipfs.busy.org
 DOMAIN-SUFFIX,bytebucket.org
 DOMAIN-SUFFIX,c-span.org
 DOMAIN-SUFFIX,calendarserver.org
+DOMAIN-SUFFIX,callofdutyendowment.org
 DOMAIN-SUFFIX,carekit.org
 DOMAIN-SUFFIX,cdn-telegram.org
 DOMAIN-SUFFIX,centos.org
