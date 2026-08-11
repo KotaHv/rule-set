@@ -1,5 +1,5 @@
-# Total: 4618 rules
-# Last Updated: 2026-08-10T19:28:35.342909+00:00
+# Total: 4621 rules
+# Last Updated: 2026-08-11T02:33:46.966599+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -2202,7 +2202,9 @@ DOMAIN,storage.windiscover.com
 DOMAIN,time.windows.com
 DOMAIN,cdn.windowsreport.com
 DOMAIN,img.windy.com
+DOMAIN,imgproxy.windy.com
 DOMAIN,ims.windy.com
+DOMAIN,node.windy.com
 DOMAIN,rdr.windy.com
 DOMAIN,sat.windy.com
 DOMAIN,tiles.windy.com
@@ -3117,6 +3119,7 @@ DOMAIN,static.tvtropes.org
 DOMAIN,playgroundcdn.typescriptlang.org
 DOMAIN,www.typescriptlang.org
 DOMAIN,assets.unredacted.org
+DOMAIN,assets.userstyles.org
 DOMAIN,cdn.userway.org
 DOMAIN,tiles.versatiles.org
 DOMAIN,images.videolan.org

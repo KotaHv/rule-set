@@ -1,5 +1,5 @@
-# Total: 6421 rules
-# Last Updated: 2026-08-10T19:29:17.749968+00:00
+# Total: 6422 rules
+# Last Updated: 2026-08-11T02:34:20.721655+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2705,6 +2705,7 @@
 - 'www.typescriptlang.org'
 - 'ftp.ubuntu-tw.org'
 - 'assets.unredacted.org'
+- 'assets.userstyles.org'
 - 'cdn.userway.org'
 - 'charts.verdaccio.org'
 - 'tiles.versatiles.org'

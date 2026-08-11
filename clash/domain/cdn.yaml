@@ -1,5 +1,5 @@
-# Total: 4596 rules
-# Last Updated: 2026-08-10T19:28:35.345617+00:00
+# Total: 4599 rules
+# Last Updated: 2026-08-11T02:33:46.969197+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -2203,7 +2203,9 @@
 - 'time.windows.com'
 - 'cdn.windowsreport.com'
 - 'img.windy.com'
+- 'imgproxy.windy.com'
 - 'ims.windy.com'
+- 'node.windy.com'
 - 'rdr.windy.com'
 - 'sat.windy.com'
 - 'tiles.windy.com'
@@ -3118,6 +3120,7 @@
 - 'playgroundcdn.typescriptlang.org'
 - 'www.typescriptlang.org'
 - 'assets.unredacted.org'
+- 'assets.userstyles.org'
 - 'cdn.userway.org'
 - 'tiles.versatiles.org'
 - 'images.videolan.org'
