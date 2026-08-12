@@ -1,5 +1,5 @@
-# Total: 1775 rules
-# Last Updated: 2026-08-03T20:08:47.028419+00:00
+# Total: 1785 rules
+# Last Updated: 2026-08-12T07:59:27.396208+00:00
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -602,6 +602,7 @@
 - '+.myfutanari.com'
 - '+.myipstack.com'
 - '+.myjetbrains.com'
+- '+.mynixos.com'
 - '+.myoctocat.com'
 - '+.mypikpak.com'
 - '+.myqnapcloud.com'
@@ -626,6 +627,7 @@
 - '+.nhentai.com'
 - '+.nicehash.com'
 - '+.nikkei.com'
+- '+.nixlang.com'
 - '+.nj.com'
 - '+.nodeseek.com'
 - '+.nodesource.com'
@@ -1008,6 +1010,7 @@
 - '+.gitkraken.dev'
 - '+.go.dev'
 - '+.jetbrains.dev'
+- '+.nix.dev'
 - '+.orbstack.dev'
 - '+.pages.dev'
 - '+.pub.dev'
@@ -1440,6 +1443,7 @@
 - '+.bitbucket.org'
 - '+.botorch.org'
 - '+.braintreepayments.org'
+- '+.builtwithnix.org'
 - '+.c-span.org'
 - '+.calendarserver.org'
 - '+.carekit.org'
@@ -1561,7 +1565,11 @@
 - '+.nextjs.org'
 - '+.nftables.org'
 - '+.nginx.org'
+- '+.nix-community.org'
+- '+.nixcon.org'
+- '+.nixcon2017.org'
 - '+.nixos.org'
+- '+.nixpkgs.org'
 - '+.nodejs.org'
 - '+.notepad-plus-plus.org'
 - '+.npmjs.org'
@@ -1723,6 +1731,7 @@
 - '+.social'
 - '+.jetbrains.space'
 - '+.st'
+- '+.nix.store'
 - '+.studio'
 - '+.su'
 - '+.sx'
@@ -1764,6 +1773,7 @@
 - '+.watch'
 - '+.framer.website'
 - '+.minecraft.wiki'
+- '+.nixos.wiki'
 - '+.w.wiki'
 - '+.activated.win'
 - '+.ws'

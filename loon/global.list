@@ -1,5 +1,5 @@
-# Total: 1794 rules
-# Last Updated: 2026-08-03T20:08:47.026467+00:00
+# Total: 1804 rules
+# Last Updated: 2026-08-12T07:59:27.393154+00:00
 DOMAIN,store.ui.com.cn
 DOMAIN,ccmdl.adobe.com
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -601,6 +601,7 @@ DOMAIN-SUFFIX,myfreecams.com
 DOMAIN-SUFFIX,myfutanari.com
 DOMAIN-SUFFIX,myipstack.com
 DOMAIN-SUFFIX,myjetbrains.com
+DOMAIN-SUFFIX,mynixos.com
 DOMAIN-SUFFIX,myoctocat.com
 DOMAIN-SUFFIX,mypikpak.com
 DOMAIN-SUFFIX,myqnapcloud.com
@@ -625,6 +626,7 @@ DOMAIN-SUFFIX,nginx.com
 DOMAIN-SUFFIX,nhentai.com
 DOMAIN-SUFFIX,nicehash.com
 DOMAIN-SUFFIX,nikkei.com
+DOMAIN-SUFFIX,nixlang.com
 DOMAIN-SUFFIX,nj.com
 DOMAIN-SUFFIX,nodeseek.com
 DOMAIN-SUFFIX,nodesource.com
@@ -1007,6 +1009,7 @@ DOMAIN-SUFFIX,githubpreview.dev
 DOMAIN-SUFFIX,gitkraken.dev
 DOMAIN-SUFFIX,go.dev
 DOMAIN-SUFFIX,jetbrains.dev
+DOMAIN-SUFFIX,nix.dev
 DOMAIN-SUFFIX,orbstack.dev
 DOMAIN-SUFFIX,pages.dev
 DOMAIN-SUFFIX,pub.dev
@@ -1439,6 +1442,7 @@ DOMAIN-SUFFIX,astrill.org
 DOMAIN-SUFFIX,bitbucket.org
 DOMAIN-SUFFIX,botorch.org
 DOMAIN-SUFFIX,braintreepayments.org
+DOMAIN-SUFFIX,builtwithnix.org
 DOMAIN-SUFFIX,c-span.org
 DOMAIN-SUFFIX,calendarserver.org
 DOMAIN-SUFFIX,carekit.org
@@ -1560,7 +1564,11 @@ DOMAIN-SUFFIX,netfilter.org
 DOMAIN-SUFFIX,nextjs.org
 DOMAIN-SUFFIX,nftables.org
 DOMAIN-SUFFIX,nginx.org
+DOMAIN-SUFFIX,nix-community.org
+DOMAIN-SUFFIX,nixcon.org
+DOMAIN-SUFFIX,nixcon2017.org
 DOMAIN-SUFFIX,nixos.org
+DOMAIN-SUFFIX,nixpkgs.org
 DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,notepad-plus-plus.org
 DOMAIN-SUFFIX,npmjs.org
@@ -1722,6 +1730,7 @@ DOMAIN-SUFFIX,ray.so
 DOMAIN-SUFFIX,social
 DOMAIN-SUFFIX,jetbrains.space
 DOMAIN-SUFFIX,st
+DOMAIN-SUFFIX,nix.store
 DOMAIN-SUFFIX,studio
 DOMAIN-SUFFIX,su
 DOMAIN-SUFFIX,sx
@@ -1763,6 +1772,7 @@ DOMAIN-SUFFIX,vn
 DOMAIN-SUFFIX,watch
 DOMAIN-SUFFIX,framer.website
 DOMAIN-SUFFIX,minecraft.wiki
+DOMAIN-SUFFIX,nixos.wiki
 DOMAIN-SUFFIX,w.wiki
 DOMAIN-SUFFIX,activated.win
 DOMAIN-SUFFIX,ws

@@ -1,5 +1,5 @@
-# Total: 6643 rules
-# Last Updated: 2026-08-11T13:51:08.145016+00:00
+# Total: 6653 rules
+# Last Updated: 2026-08-12T07:59:28.966343+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -4149,6 +4149,7 @@ DOMAIN-SUFFIX,myfreecams.com
 DOMAIN-SUFFIX,myfutanari.com
 DOMAIN-SUFFIX,myipstack.com
 DOMAIN-SUFFIX,myjetbrains.com
+DOMAIN-SUFFIX,mynixos.com
 DOMAIN-SUFFIX,myoctocat.com
 DOMAIN-SUFFIX,mypikpak.com
 DOMAIN-SUFFIX,cos.ap-bangkok.myqcloud.com
@@ -4243,6 +4244,7 @@ DOMAIN-SUFFIX,nintendoswitch.com
 DOMAIN-SUFFIX,nintendoswitchtogether.com
 DOMAIN-SUFFIX,nintendowii.com
 DOMAIN-SUFFIX,nitrocdn.com
+DOMAIN-SUFFIX,nixlang.com
 DOMAIN-SUFFIX,nj.com
 DOMAIN-SUFFIX,nodeseek.com
 DOMAIN-SUFFIX,nodesource.com
@@ -5141,6 +5143,7 @@ DOMAIN-SUFFIX,go.dev
 DOMAIN-SUFFIX,hayabusa.dev
 DOMAIN-SUFFIX,jetbrains.dev
 DOMAIN-SUFFIX,jspm.dev
+DOMAIN-SUFFIX,nix.dev
 DOMAIN-SUFFIX,apac.orbitor.dev
 DOMAIN-SUFFIX,eu.orbitor.dev
 DOMAIN-SUFFIX,ipfs.orbitor.dev
@@ -5956,6 +5959,7 @@ DOMAIN-SUFFIX,hits.b3log.org
 DOMAIN-SUFFIX,bitbucket.org
 DOMAIN-SUFFIX,botorch.org
 DOMAIN-SUFFIX,braintreepayments.org
+DOMAIN-SUFFIX,builtwithnix.org
 DOMAIN-SUFFIX,ipfs.busy.org
 DOMAIN-SUFFIX,bytebucket.org
 DOMAIN-SUFFIX,c-span.org
@@ -6111,7 +6115,11 @@ DOMAIN-SUFFIX,nextjs.org
 DOMAIN-SUFFIX,nextui.org
 DOMAIN-SUFFIX,nftables.org
 DOMAIN-SUFFIX,nginx.org
+DOMAIN-SUFFIX,nix-community.org
+DOMAIN-SUFFIX,nixcon.org
+DOMAIN-SUFFIX,nixcon2017.org
 DOMAIN-SUFFIX,nixos.org
+DOMAIN-SUFFIX,nixpkgs.org
 DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,notepad-plus-plus.org
 DOMAIN-SUFFIX,npmjs.org
@@ -6328,6 +6336,7 @@ DOMAIN-SUFFIX,pstorage.space
 DOMAIN-SUFFIX,telegram.space
 DOMAIN-SUFFIX,tutu1.space
 DOMAIN-SUFFIX,st
+DOMAIN-SUFFIX,nix.store
 DOMAIN-SUFFIX,shoppulse88.store
 DOMAIN-SUFFIX,surrit.store
 DOMAIN-SUFFIX,kk.stream
@@ -6414,6 +6423,7 @@ DOMAIN-SUFFIX,vn
 DOMAIN-SUFFIX,watch
 DOMAIN-SUFFIX,framer.website
 DOMAIN-SUFFIX,minecraft.wiki
+DOMAIN-SUFFIX,nixos.wiki
 DOMAIN-SUFFIX,w.wiki
 DOMAIN-SUFFIX,activated.win
 DOMAIN-SUFFIX,imglink.win

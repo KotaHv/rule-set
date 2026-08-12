@@ -1,5 +1,5 @@
-# Total: 6579 rules
-# Last Updated: 2026-08-11T13:51:08.232004+00:00
+# Total: 6589 rules
+# Last Updated: 2026-08-12T07:59:29.060314+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -4152,6 +4152,7 @@ domain_suffix_set:
 - myfutanari.com
 - myipstack.com
 - myjetbrains.com
+- mynixos.com
 - myoctocat.com
 - mypikpak.com
 - cos.ap-bangkok.myqcloud.com
@@ -4246,6 +4247,7 @@ domain_suffix_set:
 - nintendoswitchtogether.com
 - nintendowii.com
 - nitrocdn.com
+- nixlang.com
 - nj.com
 - nodeseek.com
 - nodesource.com
@@ -5144,6 +5146,7 @@ domain_suffix_set:
 - hayabusa.dev
 - jetbrains.dev
 - jspm.dev
+- nix.dev
 - apac.orbitor.dev
 - eu.orbitor.dev
 - ipfs.orbitor.dev
@@ -5959,6 +5962,7 @@ domain_suffix_set:
 - bitbucket.org
 - botorch.org
 - braintreepayments.org
+- builtwithnix.org
 - ipfs.busy.org
 - bytebucket.org
 - c-span.org
@@ -6114,7 +6118,11 @@ domain_suffix_set:
 - nextui.org
 - nftables.org
 - nginx.org
+- nix-community.org
+- nixcon.org
+- nixcon2017.org
 - nixos.org
+- nixpkgs.org
 - nodejs.org
 - notepad-plus-plus.org
 - npmjs.org
@@ -6331,6 +6339,7 @@ domain_suffix_set:
 - telegram.space
 - tutu1.space
 - st
+- nix.store
 - shoppulse88.store
 - surrit.store
 - kk.stream
@@ -6417,6 +6426,7 @@ domain_suffix_set:
 - watch
 - framer.website
 - minecraft.wiki
+- nixos.wiki
 - w.wiki
 - activated.win
 - imglink.win

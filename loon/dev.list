@@ -1,5 +1,5 @@
-# Total: 610 rules
-# Last Updated: 2026-08-01T12:58:43.126140+00:00
+# Total: 620 rules
+# Last Updated: 2026-08-12T07:59:00.812808+00:00
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -204,10 +204,12 @@ DOMAIN-SUFFIX,msinnovationchallenge.com
 DOMAIN-SUFFIX,mspairlift.com
 DOMAIN-SUFFIX,msropendata.com
 DOMAIN-SUFFIX,myjetbrains.com
+DOMAIN-SUFFIX,mynixos.com
 DOMAIN-SUFFIX,myoctocat.com
 DOMAIN-SUFFIX,mysql.com
 DOMAIN-SUFFIX,mystrikingly.com
 DOMAIN-SUFFIX,nginx.com
+DOMAIN-SUFFIX,nixlang.com
 DOMAIN-SUFFIX,nodesource.com
 DOMAIN-SUFFIX,npmjs.com
 DOMAIN-SUFFIX,octocaptcha.com
@@ -289,6 +291,7 @@ DOMAIN-SUFFIX,github.dev
 DOMAIN-SUFFIX,githubpreview.dev
 DOMAIN-SUFFIX,go.dev
 DOMAIN-SUFFIX,jetbrains.dev
+DOMAIN-SUFFIX,nix.dev
 DOMAIN-SUFFIX,pub.dev
 DOMAIN-SUFFIX,sentry.dev
 DOMAIN-SUFFIX,termux.dev
@@ -430,6 +433,7 @@ DOMAIN-SUFFIX,archlinuxarm.org
 DOMAIN-SUFFIX,archlinuxcn.org
 DOMAIN-SUFFIX,artixlinux.org
 DOMAIN-SUFFIX,botorch.org
+DOMAIN-SUFFIX,builtwithnix.org
 DOMAIN-SUFFIX,calendarserver.org
 DOMAIN-SUFFIX,carekit.org
 DOMAIN-SUFFIX,centos.org
@@ -515,7 +519,11 @@ DOMAIN-SUFFIX,msys2.org
 DOMAIN-SUFFIX,netfilter.org
 DOMAIN-SUFFIX,nftables.org
 DOMAIN-SUFFIX,nginx.org
+DOMAIN-SUFFIX,nix-community.org
+DOMAIN-SUFFIX,nixcon.org
+DOMAIN-SUFFIX,nixcon2017.org
 DOMAIN-SUFFIX,nixos.org
+DOMAIN-SUFFIX,nixpkgs.org
 DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,notepad-plus-plus.org
 DOMAIN-SUFFIX,npmjs.org
@@ -601,6 +609,7 @@ DOMAIN-SUFFIX,tilda.ru
 DOMAIN-SUFFIX,brew.sh
 DOMAIN-SUFFIX,scoop.sh
 DOMAIN-SUFFIX,jetbrains.space
+DOMAIN-SUFFIX,nix.store
 DOMAIN-SUFFIX,jetbrains.team
 DOMAIN-SUFFIX,dev.to
 DOMAIN-SUFFIX,fastlane.tools
@@ -609,4 +618,5 @@ DOMAIN-SUFFIX,wordpress.tv
 DOMAIN-SUFFIX,visualstudio.co.uk
 DOMAIN-SUFFIX,greenend.org.uk
 DOMAIN-SUFFIX,framer.website
+DOMAIN-SUFFIX,nixos.wiki
 DOMAIN-SUFFIX,tilda.ws

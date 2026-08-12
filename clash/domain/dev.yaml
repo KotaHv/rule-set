@@ -1,5 +1,5 @@
-# Total: 610 rules
-# Last Updated: 2026-08-01T12:58:43.126614+00:00
+# Total: 620 rules
+# Last Updated: 2026-08-12T07:59:00.815502+00:00
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -205,10 +205,12 @@
 - '+.mspairlift.com'
 - '+.msropendata.com'
 - '+.myjetbrains.com'
+- '+.mynixos.com'
 - '+.myoctocat.com'
 - '+.mysql.com'
 - '+.mystrikingly.com'
 - '+.nginx.com'
+- '+.nixlang.com'
 - '+.nodesource.com'
 - '+.npmjs.com'
 - '+.octocaptcha.com'
@@ -290,6 +292,7 @@
 - '+.githubpreview.dev'
 - '+.go.dev'
 - '+.jetbrains.dev'
+- '+.nix.dev'
 - '+.pub.dev'
 - '+.sentry.dev'
 - '+.termux.dev'
@@ -431,6 +434,7 @@
 - '+.archlinuxcn.org'
 - '+.artixlinux.org'
 - '+.botorch.org'
+- '+.builtwithnix.org'
 - '+.calendarserver.org'
 - '+.carekit.org'
 - '+.centos.org'
@@ -516,7 +520,11 @@
 - '+.netfilter.org'
 - '+.nftables.org'
 - '+.nginx.org'
+- '+.nix-community.org'
+- '+.nixcon.org'
+- '+.nixcon2017.org'
 - '+.nixos.org'
+- '+.nixpkgs.org'
 - '+.nodejs.org'
 - '+.notepad-plus-plus.org'
 - '+.npmjs.org'
@@ -602,6 +610,7 @@
 - '+.brew.sh'
 - '+.scoop.sh'
 - '+.jetbrains.space'
+- '+.nix.store'
 - '+.jetbrains.team'
 - '+.dev.to'
 - '+.fastlane.tools'
@@ -610,4 +619,5 @@
 - '+.visualstudio.co.uk'
 - '+.greenend.org.uk'
 - '+.framer.website'
+- '+.nixos.wiki'
 - '+.tilda.ws'

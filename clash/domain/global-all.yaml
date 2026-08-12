@@ -1,5 +1,5 @@
-# Total: 6451 rules
-# Last Updated: 2026-08-11T13:51:08.152296+00:00
+# Total: 6461 rules
+# Last Updated: 2026-08-12T07:59:28.974548+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -4150,6 +4150,7 @@
 - '+.myfutanari.com'
 - '+.myipstack.com'
 - '+.myjetbrains.com'
+- '+.mynixos.com'
 - '+.myoctocat.com'
 - '+.mypikpak.com'
 - '+.cos.ap-bangkok.myqcloud.com'
@@ -4244,6 +4245,7 @@
 - '+.nintendoswitchtogether.com'
 - '+.nintendowii.com'
 - '+.nitrocdn.com'
+- '+.nixlang.com'
 - '+.nj.com'
 - '+.nodeseek.com'
 - '+.nodesource.com'
@@ -5142,6 +5144,7 @@
 - '+.hayabusa.dev'
 - '+.jetbrains.dev'
 - '+.jspm.dev'
+- '+.nix.dev'
 - '+.apac.orbitor.dev'
 - '+.eu.orbitor.dev'
 - '+.ipfs.orbitor.dev'
@@ -5957,6 +5960,7 @@
 - '+.bitbucket.org'
 - '+.botorch.org'
 - '+.braintreepayments.org'
+- '+.builtwithnix.org'
 - '+.ipfs.busy.org'
 - '+.bytebucket.org'
 - '+.c-span.org'
@@ -6112,7 +6116,11 @@
 - '+.nextui.org'
 - '+.nftables.org'
 - '+.nginx.org'
+- '+.nix-community.org'
+- '+.nixcon.org'
+- '+.nixcon2017.org'
 - '+.nixos.org'
+- '+.nixpkgs.org'
 - '+.nodejs.org'
 - '+.notepad-plus-plus.org'
 - '+.npmjs.org'
@@ -6329,6 +6337,7 @@
 - '+.telegram.space'
 - '+.tutu1.space'
 - '+.st'
+- '+.nix.store'
 - '+.shoppulse88.store'
 - '+.surrit.store'
 - '+.kk.stream'
@@ -6415,6 +6424,7 @@
 - '+.watch'
 - '+.framer.website'
 - '+.minecraft.wiki'
+- '+.nixos.wiki'
 - '+.w.wiki'
 - '+.activated.win'
 - '+.imglink.win'
