@@ -1,5 +1,5 @@
-# Total: 6461 rules
-# Last Updated: 2026-08-12T07:59:28.974548+00:00
+# Total: 6466 rules
+# Last Updated: 2026-08-13T03:06:52.847339+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1119,6 +1119,8 @@
 - 'cdn.mercury.com'
 - 'mgx-backend-cdn.metadl.com'
 - 'public-frontend-cos.metadl.com'
+- 'maps-api-cdn.meteoblue.com'
+- 'static.meteoblue.com'
 - 'meteorclient.com'
 - 'cdn.app.metorik.com'
 - 'cdn.mewe.com'
@@ -1857,6 +1859,7 @@
 - 'lucide.dev'
 - 'stats.setapp.macpaw.dev'
 - 'ah-cdn.merge.dev'
+- 'images.motion.dev'
 - 'cdn.pika.dev'
 - 'pkg-size.dev'
 - 'shields.rbtlog.dev'
@@ -2117,6 +2120,7 @@
 - 'mirror.ps.kz'
 - 'pomf2.lain.la'
 - 'mirror.lc'
+- 'cdn.id.life'
 - 'wl-apps.yourwebsite.life'
 - 'disco.headliner.link'
 - 'nightly.link'
@@ -4622,6 +4626,7 @@
 - '+.ipfs.soul-network.com'
 - '+.soundcloud.com'
 - '+.sourcegraph.com'
+- '+.spaceship-cdn.com'
 - '+.spankbang.com'
 - '+.spankinglibrary.com'
 - '+.spankingtube.com'

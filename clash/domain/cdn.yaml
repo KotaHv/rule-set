@@ -1,5 +1,5 @@
-# Total: 4599 rules
-# Last Updated: 2026-08-11T02:33:46.969197+00:00
+# Total: 4605 rules
+# Last Updated: 2026-08-13T03:06:11.951821+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1361,6 +1361,8 @@
 - 'cdn.mercury.com'
 - 'mgx-backend-cdn.metadl.com'
 - 'public-frontend-cos.metadl.com'
+- 'maps-api-cdn.meteoblue.com'
+- 'static.meteoblue.com'
 - 'meteorclient.com'
 - 'cdn.app.metorik.com'
 - 'cdn.mewe.com'
@@ -2324,6 +2326,7 @@
 - 'lucide.dev'
 - 'stats.setapp.macpaw.dev'
 - 'ah-cdn.merge.dev'
+- 'images.motion.dev'
 - 'cdn-web.orbstack.dev'
 - 'cdn.pika.dev'
 - 'pkg-size.dev'
@@ -2344,6 +2347,7 @@
 - 'versionbadg.es'
 - 'img.agrd.eu'
 - 'st.agrd.eu'
+- 'cdn.bitrix24.eu'
 - 'cravatar.eu'
 - 'cdn.european-alternatives.eu'
 - 'upload.movim.eu'
@@ -2630,6 +2634,7 @@
 - 'img9.yna.co.kr'
 - 'static.pfrt.yna.co.kr'
 - 'pomf2.lain.la'
+- 'cdn.id.life'
 - 'wl-apps.yourwebsite.life'
 - 'disco.headliner.link'
 - 'assets.auth.magic.link'
@@ -3972,6 +3977,7 @@
 - '+.snzypic.com'
 - '+.img.sooplive.com'
 - '+.ipfs.soul-network.com'
+- '+.spaceship-cdn.com'
 - '+.splunkcloud.com'
 - '+.spreadshirtmedia.com'
 - '+.sqspcdn.com'

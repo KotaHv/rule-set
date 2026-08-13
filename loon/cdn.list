@@ -1,5 +1,5 @@
-# Total: 4621 rules
-# Last Updated: 2026-08-11T02:33:46.966599+00:00
+# Total: 4627 rules
+# Last Updated: 2026-08-13T03:06:11.948884+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -1360,6 +1360,8 @@ DOMAIN,acdn.mercury.com
 DOMAIN,cdn.mercury.com
 DOMAIN,mgx-backend-cdn.metadl.com
 DOMAIN,public-frontend-cos.metadl.com
+DOMAIN,maps-api-cdn.meteoblue.com
+DOMAIN,static.meteoblue.com
 DOMAIN,meteorclient.com
 DOMAIN,cdn.app.metorik.com
 DOMAIN,cdn.mewe.com
@@ -2323,6 +2325,7 @@ DOMAIN,assets.github.dev
 DOMAIN,lucide.dev
 DOMAIN,stats.setapp.macpaw.dev
 DOMAIN,ah-cdn.merge.dev
+DOMAIN,images.motion.dev
 DOMAIN,cdn-web.orbstack.dev
 DOMAIN,cdn.pika.dev
 DOMAIN,pkg-size.dev
@@ -2343,6 +2346,7 @@ DOMAIN,utteranc.es
 DOMAIN,versionbadg.es
 DOMAIN,img.agrd.eu
 DOMAIN,st.agrd.eu
+DOMAIN,cdn.bitrix24.eu
 DOMAIN,cravatar.eu
 DOMAIN,cdn.european-alternatives.eu
 DOMAIN,upload.movim.eu
@@ -2629,6 +2633,7 @@ DOMAIN,img8.yna.co.kr
 DOMAIN,img9.yna.co.kr
 DOMAIN,static.pfrt.yna.co.kr
 DOMAIN,pomf2.lain.la
+DOMAIN,cdn.id.life
 DOMAIN,wl-apps.yourwebsite.life
 DOMAIN,disco.headliner.link
 DOMAIN,assets.auth.magic.link
@@ -3971,6 +3976,7 @@ DOMAIN-SUFFIX,sndimg.com
 DOMAIN-SUFFIX,snzypic.com
 DOMAIN-SUFFIX,img.sooplive.com
 DOMAIN-SUFFIX,ipfs.soul-network.com
+DOMAIN-SUFFIX,spaceship-cdn.com
 DOMAIN-SUFFIX,splunkcloud.com
 DOMAIN-SUFFIX,spreadshirtmedia.com
 DOMAIN-SUFFIX,sqspcdn.com

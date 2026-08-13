@@ -1,5 +1,5 @@
-# Total: 6589 rules
-# Last Updated: 2026-08-12T07:59:29.060314+00:00
+# Total: 6594 rules
+# Last Updated: 2026-08-13T03:06:52.930212+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1120,6 +1120,8 @@ domain_set:
 - cdn.mercury.com
 - mgx-backend-cdn.metadl.com
 - public-frontend-cos.metadl.com
+- maps-api-cdn.meteoblue.com
+- static.meteoblue.com
 - meteorclient.com
 - cdn.app.metorik.com
 - cdn.mewe.com
@@ -1858,6 +1860,7 @@ domain_set:
 - lucide.dev
 - stats.setapp.macpaw.dev
 - ah-cdn.merge.dev
+- images.motion.dev
 - cdn.pika.dev
 - pkg-size.dev
 - shields.rbtlog.dev
@@ -2118,6 +2121,7 @@ domain_set:
 - mirror.ps.kz
 - pomf2.lain.la
 - mirror.lc
+- cdn.id.life
 - wl-apps.yourwebsite.life
 - disco.headliner.link
 - nightly.link
@@ -4624,6 +4628,7 @@ domain_suffix_set:
 - ipfs.soul-network.com
 - soundcloud.com
 - sourcegraph.com
+- spaceship-cdn.com
 - spankbang.com
 - spankinglibrary.com
 - spankingtube.com

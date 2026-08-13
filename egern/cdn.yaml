@@ -1,5 +1,5 @@
-# Total: 4681 rules
-# Last Updated: 2026-08-11T02:33:47.027845+00:00
+# Total: 4687 rules
+# Last Updated: 2026-08-13T03:06:12.011580+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1362,6 +1362,8 @@ domain_set:
 - cdn.mercury.com
 - mgx-backend-cdn.metadl.com
 - public-frontend-cos.metadl.com
+- maps-api-cdn.meteoblue.com
+- static.meteoblue.com
 - meteorclient.com
 - cdn.app.metorik.com
 - cdn.mewe.com
@@ -2325,6 +2327,7 @@ domain_set:
 - lucide.dev
 - stats.setapp.macpaw.dev
 - ah-cdn.merge.dev
+- images.motion.dev
 - cdn-web.orbstack.dev
 - cdn.pika.dev
 - pkg-size.dev
@@ -2345,6 +2348,7 @@ domain_set:
 - versionbadg.es
 - img.agrd.eu
 - st.agrd.eu
+- cdn.bitrix24.eu
 - cravatar.eu
 - cdn.european-alternatives.eu
 - upload.movim.eu
@@ -2631,6 +2635,7 @@ domain_set:
 - img9.yna.co.kr
 - static.pfrt.yna.co.kr
 - pomf2.lain.la
+- cdn.id.life
 - wl-apps.yourwebsite.life
 - disco.headliner.link
 - assets.auth.magic.link
@@ -3974,6 +3979,7 @@ domain_suffix_set:
 - snzypic.com
 - img.sooplive.com
 - ipfs.soul-network.com
+- spaceship-cdn.com
 - splunkcloud.com
 - spreadshirtmedia.com
 - sqspcdn.com

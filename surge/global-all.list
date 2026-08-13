@@ -1,5 +1,5 @@
-# Total: 6653 rules
-# Last Updated: 2026-08-12T07:59:28.966343+00:00
+# Total: 6658 rules
+# Last Updated: 2026-08-13T03:06:52.839153+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -1118,6 +1118,8 @@ DOMAIN,acdn.mercury.com
 DOMAIN,cdn.mercury.com
 DOMAIN,mgx-backend-cdn.metadl.com
 DOMAIN,public-frontend-cos.metadl.com
+DOMAIN,maps-api-cdn.meteoblue.com
+DOMAIN,static.meteoblue.com
 DOMAIN,meteorclient.com
 DOMAIN,cdn.app.metorik.com
 DOMAIN,cdn.mewe.com
@@ -1856,6 +1858,7 @@ DOMAIN,ubuntu.gjolly.dev
 DOMAIN,lucide.dev
 DOMAIN,stats.setapp.macpaw.dev
 DOMAIN,ah-cdn.merge.dev
+DOMAIN,images.motion.dev
 DOMAIN,cdn.pika.dev
 DOMAIN,pkg-size.dev
 DOMAIN,shields.rbtlog.dev
@@ -2116,6 +2119,7 @@ DOMAIN,mirror.neolabs.kz
 DOMAIN,mirror.ps.kz
 DOMAIN,pomf2.lain.la
 DOMAIN,mirror.lc
+DOMAIN,cdn.id.life
 DOMAIN,wl-apps.yourwebsite.life
 DOMAIN,disco.headliner.link
 DOMAIN,nightly.link
@@ -4621,6 +4625,7 @@ DOMAIN-SUFFIX,sophos.com
 DOMAIN-SUFFIX,ipfs.soul-network.com
 DOMAIN-SUFFIX,soundcloud.com
 DOMAIN-SUFFIX,sourcegraph.com
+DOMAIN-SUFFIX,spaceship-cdn.com
 DOMAIN-SUFFIX,spankbang.com
 DOMAIN-SUFFIX,spankinglibrary.com
 DOMAIN-SUFFIX,spankingtube.com
