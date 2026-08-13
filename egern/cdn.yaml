@@ -1,5 +1,5 @@
-# Total: 4687 rules
-# Last Updated: 2026-08-13T03:06:12.011580+00:00
+# Total: 4689 rules
+# Last Updated: 2026-08-13T13:55:09.270884+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1718,6 +1718,7 @@ domain_set:
 - static.rakuten.com
 - cacerts.rapidssl.com
 - assets.raspberrypi.com
+- sso-static.razer.com
 - cdn-rdstaticassets.readdle.com
 - cdn.readmoo.com
 - reader.readmoo.com
@@ -4372,6 +4373,7 @@ domain_suffix_set:
 - imagedelivery.net
 - imgair.net
 - imgix.net
+- insightcdn.net
 - intuitcdn.net
 - jscloud.net
 - jsdelivr.net

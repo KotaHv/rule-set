@@ -1,5 +1,5 @@
-# Total: 4605 rules
-# Last Updated: 2026-08-13T03:06:11.951821+00:00
+# Total: 4607 rules
+# Last Updated: 2026-08-13T13:55:09.219975+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1717,6 +1717,7 @@
 - 'static.rakuten.com'
 - 'cacerts.rapidssl.com'
 - 'assets.raspberrypi.com'
+- 'sso-static.razer.com'
 - 'cdn-rdstaticassets.readdle.com'
 - 'cdn.readmoo.com'
 - 'reader.readmoo.com'
@@ -4370,6 +4371,7 @@
 - '+.imagedelivery.net'
 - '+.imgair.net'
 - '+.imgix.net'
+- '+.insightcdn.net'
 - '+.intuitcdn.net'
 - '+.jscloud.net'
 - '+.jsdelivr.net'

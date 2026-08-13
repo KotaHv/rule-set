@@ -1,5 +1,5 @@
-# Total: 4627 rules
-# Last Updated: 2026-08-13T03:06:11.948884+00:00
+# Total: 4629 rules
+# Last Updated: 2026-08-13T13:55:09.217452+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -1716,6 +1716,7 @@ DOMAIN,tilecache.rainviewer.com
 DOMAIN,static.rakuten.com
 DOMAIN,cacerts.rapidssl.com
 DOMAIN,assets.raspberrypi.com
+DOMAIN,sso-static.razer.com
 DOMAIN,cdn-rdstaticassets.readdle.com
 DOMAIN,cdn.readmoo.com
 DOMAIN,reader.readmoo.com
@@ -4369,6 +4370,7 @@ DOMAIN-SUFFIX,image8899.net
 DOMAIN-SUFFIX,imagedelivery.net
 DOMAIN-SUFFIX,imgair.net
 DOMAIN-SUFFIX,imgix.net
+DOMAIN-SUFFIX,insightcdn.net
 DOMAIN-SUFFIX,intuitcdn.net
 DOMAIN-SUFFIX,jscloud.net
 DOMAIN-SUFFIX,jsdelivr.net

@@ -1,5 +1,5 @@
-# Total: 6594 rules
-# Last Updated: 2026-08-13T03:06:52.930212+00:00
+# Total: 6596 rules
+# Last Updated: 2026-08-13T13:55:50.679995+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1402,6 +1402,7 @@ domain_set:
 - mirror.raiolanetworks.com
 - static.rakuten.com
 - cacerts.rapidssl.com
+- sso-static.razer.com
 - cdn-rdstaticassets.readdle.com
 - assets-www.readspeaker.com
 - cdn-eu.readspeaker.com
@@ -5704,6 +5705,7 @@ domain_suffix_set:
 - imagedelivery.net
 - imgair.net
 - imgix.net
+- insightcdn.net
 - intellij.net
 - intellinuxgraphics.net
 - intuitcdn.net

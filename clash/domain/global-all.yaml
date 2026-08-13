@@ -1,5 +1,5 @@
-# Total: 6466 rules
-# Last Updated: 2026-08-13T03:06:52.847339+00:00
+# Total: 6468 rules
+# Last Updated: 2026-08-13T13:55:50.610348+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1401,6 +1401,7 @@
 - 'mirror.raiolanetworks.com'
 - 'static.rakuten.com'
 - 'cacerts.rapidssl.com'
+- 'sso-static.razer.com'
 - 'cdn-rdstaticassets.readdle.com'
 - 'assets-www.readspeaker.com'
 - 'cdn-eu.readspeaker.com'
@@ -5702,6 +5703,7 @@
 - '+.imagedelivery.net'
 - '+.imgair.net'
 - '+.imgix.net'
+- '+.insightcdn.net'
 - '+.intellij.net'
 - '+.intellinuxgraphics.net'
 - '+.intuitcdn.net'
