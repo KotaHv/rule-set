@@ -1,5 +1,5 @@
-# Total: 3321 rules
-# Last Updated: 2026-08-13T03:06:02.298761+00:00
+# Total: 3325 rules
+# Last Updated: 2026-08-13T19:32:31.977764+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -361,6 +361,7 @@ domain_set:
 - sp1.superlinkprovedor.com.br
 - teste.suprainternet.com.br
 - sp1.suprifibra.com.br
+- velocidade.tecsattelecom.com.br
 - speed.telfo.com.br
 - speedtestfla.tely.com.br
 - speed1.teratelecom.com.br
@@ -1667,6 +1668,7 @@ domain_set:
 - ookla.haj-01.testpub.telefonica.de
 - ookla.ham-02.testpub.telefonica.de
 - ber.wsqm.telekom-dienste.de
+- ber-tc.wsqm.telekom-dienste.de
 - dssd-tc.wsqm.telekom-dienste.de
 - dtmd-tc.wsqm.telekom-dienste.de
 - dus.wsqm.telekom-dienste.de
@@ -1974,6 +1976,7 @@ domain_set:
 - delhispeedtest.onebroadband.in
 - mumbaispeedtest.onebroadband.in
 - speedtest.netfix.org.in
+- stintl.ospot.in
 - speedtest.pcibroadband.in
 - speedtest01.qualitynet.in
 - serv.qwistel.in
@@ -2601,6 +2604,7 @@ domain_set:
 - speedtest.planters.net
 - speedtest4.plateautel.net
 - speedtest.pldi.net
+- speedtest.usc-dfw1.pllx.net
 - speedtest.polycomm.net
 - speedtest.premieronline.net
 - speedtest.previder.net
