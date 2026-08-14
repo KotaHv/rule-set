@@ -1,5 +1,5 @@
-# Total: 6468 rules
-# Last Updated: 2026-08-13T13:55:50.610348+00:00
+# Total: 6469 rules
+# Last Updated: 2026-08-14T19:27:19.898685+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -4058,6 +4058,7 @@
 - '+.malwarebytes.com'
 - '+.manhuabika.com'
 - '+.manhuagui.com'
+- '+.manuscdn.com'
 - '+.mapbox.com'
 - '+.maptiler.com'
 - '+.marioandluigidreamteam.com'

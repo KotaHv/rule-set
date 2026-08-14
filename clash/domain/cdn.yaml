@@ -1,5 +1,5 @@
-# Total: 4607 rules
-# Last Updated: 2026-08-13T13:55:09.219975+00:00
+# Total: 4608 rules
+# Last Updated: 2026-08-14T19:26:34.184909+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3810,6 +3810,7 @@
 - '+.macysassets.com'
 - '+.ipfsgateway.makersplace.com'
 - '+.makeuseofimages.com'
+- '+.manuscdn.com'
 - '+.tiles.mapbox.com'
 - '+.mcusercontent.com'
 - '+.cdn.medallia.com'

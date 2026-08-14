@@ -1,5 +1,5 @@
-# Total: 3325 rules
-# Last Updated: 2026-08-13T19:32:31.933285+00:00
+# Total: 3329 rules
+# Last Updated: 2026-08-14T19:26:23.181980+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1556,6 +1556,7 @@
 - 'phxme0001speedtestserver01.wiline.com'
 - 'sansd0001speedtestserver01.wiline.com'
 - 'sfosj0096speedtestserver01.wiline.com'
+- 'sfosj0096speedtestserver02.wiline.com'
 - 'tpataspeedtest.wiline.com'
 - 'speedtest.wilsontelephone.com'
 - 'speedtest.winchesterwireless.com'
@@ -1839,6 +1840,7 @@
 - 'ookla1.btd.co.id'
 - 'speedtest-sg.napinfo.co.id'
 - 'speedtest-intl.xl.co.id'
+- 'speedtest.difusi.id'
 - 'speedsg.genznet.id'
 - 'speedtest-sg.cni.net.id'
 - 'sg-speedtest.fast.net.id'
@@ -2953,6 +2955,7 @@
 - 'speedtest.axclusive.com.sg'
 - 'm1speedtest1.m1net.com.sg'
 - 'speedtest.myrepublic.com.sg'
+- 'speedtest.whizcomms.com.sg'
 - 'speedtest-sg1.simba.sg'
 - 'speedtest2.telin.sg'
 - 'speedtest.vsm.sh'
@@ -3097,6 +3100,7 @@
 - 'speedtest.sunucum.net.tr'
 - 'speedtest01.tek.net.tr'
 - 'hiztesti.turbo.net.tr'
+- 'speedtest.turbo.net.tr'
 - 'speedtest.wifi.net.tr'
 - 'speedtestacibadem.netspeed.tr'
 - 'st20.netspeed.tr'
