@@ -1,5 +1,5 @@
-# Total: 6596 rules
-# Last Updated: 2026-08-14T19:27:19.985940+00:00
+# Total: 6594 rules
+# Last Updated: 2026-08-19T01:59:42.078003+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -639,6 +639,7 @@ domain_set:
 - static.driffle.com
 - tiles.meteoguard.dtn.com
 - s3.duellinksmeta.com
+- cdn.dyn.com
 - cdn.dynamicyield.com
 - cdn-eu.dynamicyield.com
 - st.dynamicyield.com
@@ -6498,7 +6499,6 @@ domain_wildcard_set:
 - s3.*.wasabisys.com
 - cdn?.mikuclub.fun
 - file?.mikuclub.fun
-- s*.hanime1
 - cdn-msp?.jmcomic.me
 - video-thumbnail?.liaoningmovie.net
 - video?-thumbnail?.liaoningmovie.net
@@ -6536,7 +6536,6 @@ domain_keyword_set:
 - dualstack.apiproxy-
 - dualstack.ichnaea-web-
 - facebook
-- fonts.hanime1
 - google
 - images.trustpilot.com
 - images.trustpilot.net
@@ -6558,7 +6557,6 @@ domain_keyword_set:
 - static.trustpilot.com
 - tvbanywhere
 - uk-live
-- vdownload.hanime1
 - vod-adaptive.akamaized.net
 - voddazn
 - web-assets.zendesk

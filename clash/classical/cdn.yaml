@@ -1,5 +1,5 @@
-# Total: 82 rules
-# Last Updated: 2026-08-09T19:10:28.214934+00:00
+# Total: 79 rules
+# Last Updated: 2026-08-19T01:59:01.832914+00:00
 payload:
 - DOMAIN-WILDCARD,image*.cloudokyo.cloud
 - DOMAIN-WILDCARD,video*.cloudokyo.cloud
@@ -41,7 +41,6 @@ payload:
 - DOMAIN-WILDCARD,sdk.*.braze.eu
 - DOMAIN-WILDCARD,cdn?.mikuclub.fun
 - DOMAIN-WILDCARD,file?.mikuclub.fun
-- DOMAIN-WILDCARD,s*.hanime1
 - DOMAIN-WILDCARD,cdn.*.dmm.co.jp
 - DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
 - DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
@@ -74,12 +73,10 @@ payload:
 - DOMAIN-KEYWORD,cdn.adultempire.com
 - DOMAIN-KEYWORD,cdn.trustpilot.net
 - DOMAIN-KEYWORD,dsn.algolia.net
-- DOMAIN-KEYWORD,fonts.hanime1
 - DOMAIN-KEYWORD,images.trustpilot.com
 - DOMAIN-KEYWORD,images.trustpilot.net
 - DOMAIN-KEYWORD,scripts.trustpilot.com
 - DOMAIN-KEYWORD,static.grammarly.com
 - DOMAIN-KEYWORD,static.trustpilot.com
-- DOMAIN-KEYWORD,vdownload.hanime1
 - DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 - DOMAIN-KEYWORD,web-assets.zendesk

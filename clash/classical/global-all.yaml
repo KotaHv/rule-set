@@ -1,5 +1,5 @@
-# Total: 107 rules
-# Last Updated: 2026-08-09T19:11:06.088668+00:00
+# Total: 104 rules
+# Last Updated: 2026-08-19T01:59:41.994222+00:00
 payload:
 - DOMAIN-WILDCARD,cdn-*.comaps.app
 - DOMAIN-WILDCARD,cdn-*.organicmaps.app
@@ -26,7 +26,6 @@ payload:
 - DOMAIN-WILDCARD,s3.*.wasabisys.com
 - DOMAIN-WILDCARD,cdn?.mikuclub.fun
 - DOMAIN-WILDCARD,file?.mikuclub.fun
-- DOMAIN-WILDCARD,s*.hanime1
 - DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
 - DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
 - DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
@@ -62,7 +61,6 @@ payload:
 - DOMAIN-KEYWORD,dualstack.apiproxy-
 - DOMAIN-KEYWORD,dualstack.ichnaea-web-
 - DOMAIN-KEYWORD,facebook
-- DOMAIN-KEYWORD,fonts.hanime1
 - DOMAIN-KEYWORD,google
 - DOMAIN-KEYWORD,images.trustpilot.com
 - DOMAIN-KEYWORD,images.trustpilot.net
@@ -84,7 +82,6 @@ payload:
 - DOMAIN-KEYWORD,static.trustpilot.com
 - DOMAIN-KEYWORD,tvbanywhere
 - DOMAIN-KEYWORD,uk-live
-- DOMAIN-KEYWORD,vdownload.hanime1
 - DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 - DOMAIN-KEYWORD,voddazn
 - DOMAIN-KEYWORD,web-assets.zendesk

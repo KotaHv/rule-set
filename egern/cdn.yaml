@@ -1,5 +1,5 @@
-# Total: 4690 rules
-# Last Updated: 2026-08-14T19:26:34.247898+00:00
+# Total: 4687 rules
+# Last Updated: 2026-08-19T01:59:01.847006+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -4652,7 +4652,6 @@ domain_wildcard_set:
 - sdk.*.braze.eu
 - cdn?.mikuclub.fun
 - file?.mikuclub.fun
-- s*.hanime1
 - cdn.*.dmm.co.jp
 - cdn-msp?.jmcomic.me
 - appcenter-filemanagement-*.cloudapp.net
@@ -4686,12 +4685,10 @@ domain_keyword_set:
 - cdn.adultempire.com
 - cdn.trustpilot.net
 - dsn.algolia.net
-- fonts.hanime1
 - images.trustpilot.com
 - images.trustpilot.net
 - scripts.trustpilot.com
 - static.grammarly.com
 - static.trustpilot.com
-- vdownload.hanime1
 - vod-adaptive.akamaized.net
 - web-assets.zendesk

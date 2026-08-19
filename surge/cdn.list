@@ -1,5 +1,5 @@
-# Total: 4690 rules
-# Last Updated: 2026-08-14T19:26:34.174387+00:00
+# Total: 4687 rules
+# Last Updated: 2026-08-19T01:59:01.827291+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -4621,13 +4621,11 @@ DOMAIN-KEYWORD,assets.trustpilot.net
 DOMAIN-KEYWORD,cdn.adultempire.com
 DOMAIN-KEYWORD,cdn.trustpilot.net
 DOMAIN-KEYWORD,dsn.algolia.net
-DOMAIN-KEYWORD,fonts.hanime1
 DOMAIN-KEYWORD,images.trustpilot.com
 DOMAIN-KEYWORD,images.trustpilot.net
 DOMAIN-KEYWORD,scripts.trustpilot.com
 DOMAIN-KEYWORD,static.grammarly.com
 DOMAIN-KEYWORD,static.trustpilot.com
-DOMAIN-KEYWORD,vdownload.hanime1
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-WILDCARD,image*.cloudokyo.cloud
@@ -4670,7 +4668,6 @@ DOMAIN-WILDCARD,s3.*.wasabisys.com
 DOMAIN-WILDCARD,sdk.*.braze.eu
 DOMAIN-WILDCARD,cdn?.mikuclub.fun
 DOMAIN-WILDCARD,file?.mikuclub.fun
-DOMAIN-WILDCARD,s*.hanime1
 DOMAIN-WILDCARD,cdn.*.dmm.co.jp
 DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
 DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
