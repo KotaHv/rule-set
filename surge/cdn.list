@@ -1,5 +1,5 @@
-# Total: 4687 rules
-# Last Updated: 2026-08-19T01:59:01.827291+00:00
+# Total: 4689 rules
+# Last Updated: 2026-08-20T13:25:32.613774+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -23,6 +23,7 @@ DOMAIN,bot.ivy.ai
 DOMAIN,metrics.kapa.ai
 DOMAIN,widget.kapa.ai
 DOMAIN,r2.leadsy.ai
+DOMAIN,cdn.leonardo.ai
 DOMAIN,s3.masto.ai
 DOMAIN,cms.mistral.ai
 DOMAIN,static.netify.ai
@@ -2397,6 +2398,7 @@ DOMAIN,static-cdn.spot.im
 DOMAIN,polyfill-fe.toss.im
 DOMAIN,static.toss.im
 DOMAIN,img.toto.im
+DOMAIN,cdn.getmerlin.in
 DOMAIN,object.innei.in
 DOMAIN,sellon.shiprocket.in
 DOMAIN,sr-cdn-1.shiprocket.in

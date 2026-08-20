@@ -1,5 +1,5 @@
-# Total: 4687 rules
-# Last Updated: 2026-08-19T01:59:01.847006+00:00
+# Total: 4689 rules
+# Last Updated: 2026-08-20T13:25:32.680444+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -25,6 +25,7 @@ domain_set:
 - metrics.kapa.ai
 - widget.kapa.ai
 - r2.leadsy.ai
+- cdn.leonardo.ai
 - s3.masto.ai
 - cms.mistral.ai
 - static.netify.ai
@@ -2399,6 +2400,7 @@ domain_set:
 - polyfill-fe.toss.im
 - static.toss.im
 - img.toto.im
+- cdn.getmerlin.in
 - object.innei.in
 - sellon.shiprocket.in
 - sr-cdn-1.shiprocket.in

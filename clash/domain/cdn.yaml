@@ -1,5 +1,5 @@
-# Total: 4608 rules
-# Last Updated: 2026-08-14T19:26:34.184909+00:00
+# Total: 4610 rules
+# Last Updated: 2026-08-20T13:25:32.621319+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -24,6 +24,7 @@
 - 'metrics.kapa.ai'
 - 'widget.kapa.ai'
 - 'r2.leadsy.ai'
+- 'cdn.leonardo.ai'
 - 's3.masto.ai'
 - 'cms.mistral.ai'
 - 'static.netify.ai'
@@ -2398,6 +2399,7 @@
 - 'polyfill-fe.toss.im'
 - 'static.toss.im'
 - 'img.toto.im'
+- 'cdn.getmerlin.in'
 - 'object.innei.in'
 - 'sellon.shiprocket.in'
 - 'sr-cdn-1.shiprocket.in'
