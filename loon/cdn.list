@@ -1,5 +1,5 @@
-# Total: 4630 rules
-# Last Updated: 2026-08-20T13:25:32.618839+00:00
+# Total: 4627 rules
+# Last Updated: 2026-08-20T19:10:15.978744+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -596,6 +596,7 @@ DOMAIN,downloads.coindesk.com
 DOMAIN,assets.coingecko.com
 DOMAIN,static.coingecko.com
 DOMAIN,academy-public.coinmarketcap.com
+DOMAIN,s3.beta.coinmarketcap.com
 DOMAIN,s2.coinmarketcap.com
 DOMAIN,s3.coinmarketcap.com
 DOMAIN,s3.cointelegraph.com
@@ -603,8 +604,6 @@ DOMAIN,cover.comicbz.com
 DOMAIN,css.comicbz.com
 DOMAIN,image.comicbz.com
 DOMAIN,static.comicbz.com
-DOMAIN,cdn.commandbar.com
-DOMAIN,frames-commandbar-prod.commandbar.com
 DOMAIN,crt.comodoca.com
 DOMAIN,ocsp.comodoca.com
 DOMAIN,cdn.comparitech.com
@@ -1742,6 +1741,7 @@ DOMAIN,redircdn.com
 DOMAIN,staticsource1.redotpay.com
 DOMAIN,tools.refokus.com
 DOMAIN,static-images.remax.com
+DOMAIN,fonts.reown.com
 DOMAIN,sp.replit.com
 DOMAIN,cdn.playersupport.riotgames.com
 DOMAIN,prod-images.rippling.com
@@ -2410,7 +2410,6 @@ DOMAIN,lm.visualon.info
 DOMAIN,fonts.wd40.info
 DOMAIN,cdn.cbd.int
 DOMAIN,adkit.9pub.io
-DOMAIN,s3.aaaaa.io
 DOMAIN,netlify.apollo.io
 DOMAIN,static.assetlab.io
 DOMAIN,img.badgesize.io
@@ -2707,7 +2706,6 @@ DOMAIN,cdn.jotfor.ms
 DOMAIN,cdn01.jotfor.ms
 DOMAIN,cdn02.jotfor.ms
 DOMAIN,cdn03.jotfor.ms
-DOMAIN,assets.onestore.ms
 DOMAIN,cdn.plu.mx
 DOMAIN,pics.hentai.name
 DOMAIN,assets-cdn.abcotvs.net
@@ -2981,7 +2979,6 @@ DOMAIN,static.zerochan.net
 DOMAIN,mixin-images.zeromesh.net
 DOMAIN,assets.tangled.network
 DOMAIN,content.api.news
-DOMAIN,static.bad.news
 DOMAIN,web-api-cdn.ground.news
 DOMAIN,assets.matters.news
 DOMAIN,assets-next.matters.news

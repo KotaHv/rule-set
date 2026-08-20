@@ -1,5 +1,5 @@
-# Total: 6608 rules
-# Last Updated: 2026-08-19T01:59:41.991395+00:00
+# Total: 6606 rules
+# Last Updated: 2026-08-20T19:10:56.799349+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,updates.64gr.am
@@ -539,8 +539,6 @@ DOMAIN,cover.comicbz.com
 DOMAIN,css.comicbz.com
 DOMAIN,image.comicbz.com
 DOMAIN,static.comicbz.com
-DOMAIN,cdn.commandbar.com
-DOMAIN,frames-commandbar-prod.commandbar.com
 DOMAIN,crt.comodoca.com
 DOMAIN,ocsp.comodoca.com
 DOMAIN,cdn.comparitech.com
@@ -1417,6 +1415,7 @@ DOMAIN,redircdn.com
 DOMAIN,staticsource1.redotpay.com
 DOMAIN,tools.refokus.com
 DOMAIN,static-images.remax.com
+DOMAIN,fonts.reown.com
 DOMAIN,prod-images.rippling.com
 DOMAIN,img.riskified.com
 DOMAIN,media-cdn.rollcall.com
@@ -1941,7 +1940,6 @@ DOMAIN,lm.visualon.info
 DOMAIN,fonts.wd40.info
 DOMAIN,cdn.cbd.int
 DOMAIN,adkit.9pub.io
-DOMAIN,s3.aaaaa.io
 DOMAIN,cdn.affonso.io
 DOMAIN,download.ameliorated.io
 DOMAIN,netlify.apollo.io

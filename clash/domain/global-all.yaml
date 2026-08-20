@@ -1,5 +1,5 @@
-# Total: 6470 rules
-# Last Updated: 2026-08-19T01:59:41.994222+00:00
+# Total: 6468 rules
+# Last Updated: 2026-08-20T19:10:56.802036+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -540,8 +540,6 @@
 - 'css.comicbz.com'
 - 'image.comicbz.com'
 - 'static.comicbz.com'
-- 'cdn.commandbar.com'
-- 'frames-commandbar-prod.commandbar.com'
 - 'crt.comodoca.com'
 - 'ocsp.comodoca.com'
 - 'cdn.comparitech.com'
@@ -1418,6 +1416,7 @@
 - 'staticsource1.redotpay.com'
 - 'tools.refokus.com'
 - 'static-images.remax.com'
+- 'fonts.reown.com'
 - 'prod-images.rippling.com'
 - 'img.riskified.com'
 - 'media-cdn.rollcall.com'
@@ -1942,7 +1941,6 @@
 - 'fonts.wd40.info'
 - 'cdn.cbd.int'
 - 'adkit.9pub.io'
-- 's3.aaaaa.io'
 - 'cdn.affonso.io'
 - 'download.ameliorated.io'
 - 'netlify.apollo.io'

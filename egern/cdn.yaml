@@ -1,5 +1,5 @@
-# Total: 4689 rules
-# Last Updated: 2026-08-20T13:25:32.680444+00:00
+# Total: 4686 rules
+# Last Updated: 2026-08-20T19:10:16.026963+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -598,6 +598,7 @@ domain_set:
 - assets.coingecko.com
 - static.coingecko.com
 - academy-public.coinmarketcap.com
+- s3.beta.coinmarketcap.com
 - s2.coinmarketcap.com
 - s3.coinmarketcap.com
 - s3.cointelegraph.com
@@ -605,8 +606,6 @@ domain_set:
 - css.comicbz.com
 - image.comicbz.com
 - static.comicbz.com
-- cdn.commandbar.com
-- frames-commandbar-prod.commandbar.com
 - crt.comodoca.com
 - ocsp.comodoca.com
 - cdn.comparitech.com
@@ -1744,6 +1743,7 @@ domain_set:
 - staticsource1.redotpay.com
 - tools.refokus.com
 - static-images.remax.com
+- fonts.reown.com
 - sp.replit.com
 - cdn.playersupport.riotgames.com
 - prod-images.rippling.com
@@ -2412,7 +2412,6 @@ domain_set:
 - fonts.wd40.info
 - cdn.cbd.int
 - adkit.9pub.io
-- s3.aaaaa.io
 - netlify.apollo.io
 - static.assetlab.io
 - img.badgesize.io
@@ -2709,7 +2708,6 @@ domain_set:
 - cdn01.jotfor.ms
 - cdn02.jotfor.ms
 - cdn03.jotfor.ms
-- assets.onestore.ms
 - cdn.plu.mx
 - pics.hentai.name
 - assets-cdn.abcotvs.net
@@ -2983,7 +2981,6 @@ domain_set:
 - mixin-images.zeromesh.net
 - assets.tangled.network
 - content.api.news
-- static.bad.news
 - web-api-cdn.ground.news
 - assets.matters.news
 - assets-next.matters.news
