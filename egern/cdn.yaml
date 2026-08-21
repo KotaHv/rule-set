@@ -1,5 +1,5 @@
-# Total: 4686 rules
-# Last Updated: 2026-08-20T19:10:16.026963+00:00
+# Total: 4687 rules
+# Last Updated: 2026-08-21T13:25:11.383292+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1282,6 +1282,7 @@ domain_set:
 - tiles.locationiq.com
 - resource.logitech.com
 - gamesapps-assets.ghub.logitechg.com
+- resource.logitechg.com
 - app-cdn.logo.com
 - img.logokit.com
 - cdn.loom.com

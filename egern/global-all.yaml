@@ -1,5 +1,5 @@
-# Total: 6592 rules
-# Last Updated: 2026-08-20T19:10:56.869195+00:00
+# Total: 6593 rules
+# Last Updated: 2026-08-21T13:25:45.413356+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1051,6 +1051,7 @@ domain_set:
 - download01.logi.com
 - resource.logitech.com
 - gamesapps-assets.ghub.logitechg.com
+- resource.logitechg.com
 - app-cdn.logo.com
 - img.logokit.com
 - cdn.loom.com

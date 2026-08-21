@@ -1,5 +1,5 @@
-# Total: 4607 rules
-# Last Updated: 2026-08-20T19:10:15.981007+00:00
+# Total: 4608 rules
+# Last Updated: 2026-08-21T13:25:11.319674+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1281,6 +1281,7 @@
 - 'tiles.locationiq.com'
 - 'resource.logitech.com'
 - 'gamesapps-assets.ghub.logitechg.com'
+- 'resource.logitechg.com'
 - 'app-cdn.logo.com'
 - 'img.logokit.com'
 - 'cdn.loom.com'
