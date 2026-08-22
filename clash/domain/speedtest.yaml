@@ -1,5 +1,5 @@
-# Total: 3335 rules
-# Last Updated: 2026-08-21T19:05:13.848780+00:00
+# Total: 3337 rules
+# Last Updated: 2026-08-22T18:55:38.670437+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -2557,6 +2557,7 @@
 - 'speedtest2.pa.mycci.net'
 - 'speedtest.vt.mycci.net'
 - 'test.mycloudvps.net'
+- 'speedtest2.myninestar.net'
 - 'speedtest3.myninestar.net'
 - 'speedtest.gretna.myriverstreet.net'
 - 'spdms.mytpn.net'
@@ -2867,6 +2868,7 @@
 - 'wipl-speedtest.wipl.online'
 - 'speedtest.advps.org'
 - 'speedtest.chanute.org'
+- 'alzenspeedtest.duckdns.org'
 - 'speedtest.eidnet.org'
 - 'ookla.esu10.org'
 - 'speedtest.esu5.org'

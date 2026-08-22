@@ -1,5 +1,5 @@
-# Total: 3335 rules
-# Last Updated: 2026-08-21T19:05:13.900287+00:00
+# Total: 3337 rules
+# Last Updated: 2026-08-22T18:55:38.717084+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -2558,6 +2558,7 @@ domain_set:
 - speedtest2.pa.mycci.net
 - speedtest.vt.mycci.net
 - test.mycloudvps.net
+- speedtest2.myninestar.net
 - speedtest3.myninestar.net
 - speedtest.gretna.myriverstreet.net
 - spdms.mytpn.net
@@ -2868,6 +2869,7 @@ domain_set:
 - wipl-speedtest.wipl.online
 - speedtest.advps.org
 - speedtest.chanute.org
+- alzenspeedtest.duckdns.org
 - speedtest.eidnet.org
 - ookla.esu10.org
 - speedtest.esu5.org
