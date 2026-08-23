@@ -1,5 +1,5 @@
-# Total: 4608 rules
-# Last Updated: 2026-08-21T13:25:11.319674+00:00
+# Total: 4613 rules
+# Last Updated: 2026-08-23T02:07:57.524921+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -658,6 +658,7 @@
 - 'media.datacenterdynamics.com'
 - 'imgix.datadoghq.com'
 - 'cdn.datdota.com'
+- 'static.dazndn.com'
 - 'cdn.db-ip.com'
 - 'website-media.deel.com'
 - 'static.deepl.com'
@@ -1131,6 +1132,9 @@
 - 'go.imperva.com'
 - 'static.incapsula.com'
 - 'spcdn.incartupsell.com'
+- 'image.discovery.indazn.com'
+- 'contentful-asset-proxy.sd.indazn.com'
+- 'dazn-content-proxy.sd.indazn.com'
 - 'images.indianexpress.com'
 - 'media-central.indianexpress.com'
 - 'jssocdn.indiatimes.com'
@@ -3761,6 +3765,7 @@
 - '+.stack.imgur.com'
 - '+.imgyzzy.com'
 - '+.imostatic.com'
+- '+.fe.indazn.com'
 - '+.cloud.influxdata.com'
 - '+.cloud1.influxdata.com'
 - '+.cloud2.influxdata.com'

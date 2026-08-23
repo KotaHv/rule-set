@@ -1,5 +1,5 @@
-# Total: 4687 rules
-# Last Updated: 2026-08-21T13:25:11.310193+00:00
+# Total: 4692 rules
+# Last Updated: 2026-08-23T02:07:57.518577+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.candu.ai
@@ -657,6 +657,7 @@ DOMAIN,cdn.datacamp.com
 DOMAIN,media.datacenterdynamics.com
 DOMAIN,imgix.datadoghq.com
 DOMAIN,cdn.datdota.com
+DOMAIN,static.dazndn.com
 DOMAIN,cdn.db-ip.com
 DOMAIN,website-media.deel.com
 DOMAIN,static.deepl.com
@@ -1130,6 +1131,9 @@ DOMAIN,s.imgur.com
 DOMAIN,go.imperva.com
 DOMAIN,static.incapsula.com
 DOMAIN,spcdn.incartupsell.com
+DOMAIN,image.discovery.indazn.com
+DOMAIN,contentful-asset-proxy.sd.indazn.com
+DOMAIN,dazn-content-proxy.sd.indazn.com
 DOMAIN,images.indianexpress.com
 DOMAIN,media-central.indianexpress.com
 DOMAIN,jssocdn.indiatimes.com
@@ -3760,6 +3764,7 @@ DOMAIN-SUFFIX,imgtp.com
 DOMAIN-SUFFIX,stack.imgur.com
 DOMAIN-SUFFIX,imgyzzy.com
 DOMAIN-SUFFIX,imostatic.com
+DOMAIN-SUFFIX,fe.indazn.com
 DOMAIN-SUFFIX,cloud.influxdata.com
 DOMAIN-SUFFIX,cloud1.influxdata.com
 DOMAIN-SUFFIX,cloud2.influxdata.com
