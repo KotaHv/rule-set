@@ -1,5 +1,5 @@
-# Total: 3337 rules
-# Last Updated: 2026-08-22T18:55:38.717084+00:00
+# Total: 3344 rules
+# Last Updated: 2026-08-23T18:54:50.129555+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -2381,6 +2381,10 @@ domain_set:
 - speedtest.ams.fdcservers.net
 - speedtest.atl.fdcservers.net
 - speedtest.chie.fdcservers.net
+- speedtest.dfw.fdcservers.net
+- speedtest.dme.fdcservers.net
+- speedtest.fr8.fdcservers.net
+- speedtest.hkg.fdcservers.net
 - speedtest.hnd.fdcservers.net
 - speedtest.la3eq.fdcservers.net
 - speedtest.ld7.fdcservers.net
@@ -2406,7 +2410,10 @@ domain_set:
 - lg-tor.fdcservers.net
 - lg-vie.fdcservers.net
 - lg-war.fdcservers.net
+- speedtest.mad.fdcservers.net
 - speedtest.mia.fdcservers.net
+- speedtest.pa10.fdcservers.net
+- speedtest.sea.fdcservers.net
 - speedtest.sg.fdcservers.net
 - speedtest.tor.fdcservers.net
 - speedtest.vie.fdcservers.net
