@@ -1,5 +1,5 @@
-# Total: 3344 rules
-# Last Updated: 2026-08-23T18:54:50.080814+00:00
+# Total: 3346 rules
+# Last Updated: 2026-08-24T19:09:31.017842+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -807,6 +807,7 @@
 - 'speedtest.datatr.com'
 - 'speedtest.dathannetworks.com'
 - 'speedtest.datonofibra.com'
+- 'speedtest.datos101.com'
 - 'speedtest.deltacable.com'
 - 'mum-speedtest.digianaspeednet.com'
 - 'digital-net-isp.com'
@@ -2385,6 +2386,7 @@
 - 'speedtest.fr8.fdcservers.net'
 - 'speedtest.hkg.fdcservers.net'
 - 'speedtest.hnd.fdcservers.net'
+- 'speedtest.iad.fdcservers.net'
 - 'speedtest.la3eq.fdcservers.net'
 - 'speedtest.ld7.fdcservers.net'
 - 'lg-ams.fdcservers.net'

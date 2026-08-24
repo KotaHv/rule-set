@@ -1,5 +1,5 @@
-# Total: 3344 rules
-# Last Updated: 2026-08-23T18:54:50.129555+00:00
+# Total: 3346 rules
+# Last Updated: 2026-08-24T19:09:31.069386+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -808,6 +808,7 @@ domain_set:
 - speedtest.datatr.com
 - speedtest.dathannetworks.com
 - speedtest.datonofibra.com
+- speedtest.datos101.com
 - speedtest.deltacable.com
 - mum-speedtest.digianaspeednet.com
 - digital-net-isp.com
@@ -2386,6 +2387,7 @@ domain_set:
 - speedtest.fr8.fdcservers.net
 - speedtest.hkg.fdcservers.net
 - speedtest.hnd.fdcservers.net
+- speedtest.iad.fdcservers.net
 - speedtest.la3eq.fdcservers.net
 - speedtest.ld7.fdcservers.net
 - lg-ams.fdcservers.net
