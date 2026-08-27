@@ -1,5 +1,5 @@
-# Total: 4613 rules
-# Last Updated: 2026-08-23T02:07:57.524921+00:00
+# Total: 4614 rules
+# Last Updated: 2026-08-27T22:27:50.720959+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3930,6 +3930,7 @@
 - '+.rbxcdn.com'
 - '+.rdtcdn.com'
 - '+.rechargecdn.com'
+- '+.reconvert-cdn.com'
 - '+.redditmedia.com'
 - '+.redditstatic.com'
 - '+.app.render.com'
