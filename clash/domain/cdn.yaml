@@ -1,8 +1,9 @@
-# Total: 4614 rules
-# Last Updated: 2026-08-27T22:27:50.720959+00:00
+# Total: 4621 rules
+# Last Updated: 2026-08-29T21:02:57.750966+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
+- 'files.blocktempo.ai'
 - 'cdn.candu.ai'
 - 'cdn.candy.ai'
 - 'assets.cloudpilot.ai'
@@ -439,6 +440,7 @@
 - 'blade-public-static.blade-group.com'
 - 'cms.blavity.com'
 - 'images.blockscan.com'
+- 'image.blocktempo.com'
 - 'cdn.blogarama.com'
 - 'sourcepointcmp.bloomberg.com'
 - 'assets2.blubrry.com'
@@ -2041,6 +2043,7 @@
 - 'widgets.turnto.com'
 - 'cdn.tvpagewidgets.com'
 - 'twenty-icons.com'
+- 'delivery.twentythree.com'
 - 'analytics.twitter.com'
 - 'fonts.twitter.com'
 - 'platform.twitter.com'
@@ -2591,6 +2594,8 @@
 - 'osint.digitalside.it'
 - 'cdn.download.it'
 - 'assets.garr.it'
+- 'static2.giroditalia.it'
+- 'video.giroditalia.it'
 - 'cdn.scaleflex.it'
 - 'st.transfer.it'
 - 'img.atwiki.jp'
@@ -4265,7 +4270,9 @@
 - '+.vsassets.io'
 - '+.local.webcontainer.io'
 - '+.wixstudio.io'
+- '+.gazzettaobjects.it'
 - '+.place-hold.it'
+- '+.rcsobjects.it'
 - '+.redd.it'
 - '+.unsplash.it'
 - '+.media.ci-en.jp'

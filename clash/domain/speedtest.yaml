@@ -1,5 +1,5 @@
-# Total: 3353 rules
-# Last Updated: 2026-08-29T07:13:19.213606+00:00
+# Total: 3355 rules
+# Last Updated: 2026-08-29T21:02:47.929827+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1498,6 +1498,7 @@
 - 'yjl-speed.twmbroadband.com'
 - 'st1.tzulo.com'
 - 'speed-test.ukservers.com'
+- 'spt-noc.umal-nds.com'
 - 'beijing.unicomtest.com'
 - 'speedtest-de.unihost.com'
 - 'speedtest-jp.unihost.com'
@@ -2884,6 +2885,7 @@
 - 'speedtest.advps.org'
 - 'speedtest.chanute.org'
 - 'alzenspeedtest.duckdns.org'
+- 'cns-speedtest.duckdns.org'
 - 'speedtest.eidnet.org'
 - 'ookla.esu10.org'
 - 'speedtest.esu5.org'

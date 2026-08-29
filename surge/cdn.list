@@ -1,7 +1,8 @@
-# Total: 4693 rules
-# Last Updated: 2026-08-27T22:27:50.711314+00:00
+# Total: 4700 rules
+# Last Updated: 2026-08-29T21:02:57.733780+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
+DOMAIN,files.blocktempo.ai
 DOMAIN,cdn.candu.ai
 DOMAIN,cdn.candy.ai
 DOMAIN,assets.cloudpilot.ai
@@ -438,6 +439,7 @@ DOMAIN,jslibs.blackmagicdesign.com
 DOMAIN,blade-public-static.blade-group.com
 DOMAIN,cms.blavity.com
 DOMAIN,images.blockscan.com
+DOMAIN,image.blocktempo.com
 DOMAIN,cdn.blogarama.com
 DOMAIN,sourcepointcmp.bloomberg.com
 DOMAIN,assets2.blubrry.com
@@ -2040,6 +2042,7 @@ DOMAIN,cdn-web.tunein.com
 DOMAIN,widgets.turnto.com
 DOMAIN,cdn.tvpagewidgets.com
 DOMAIN,twenty-icons.com
+DOMAIN,delivery.twentythree.com
 DOMAIN,analytics.twitter.com
 DOMAIN,fonts.twitter.com
 DOMAIN,platform.twitter.com
@@ -2590,6 +2593,8 @@ DOMAIN,lib.arvancloud.ir
 DOMAIN,osint.digitalside.it
 DOMAIN,cdn.download.it
 DOMAIN,assets.garr.it
+DOMAIN,static2.giroditalia.it
+DOMAIN,video.giroditalia.it
 DOMAIN,cdn.scaleflex.it
 DOMAIN,st.transfer.it
 DOMAIN,img.atwiki.jp
@@ -4264,7 +4269,9 @@ DOMAIN-SUFFIX,statuspage.io
 DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,local.webcontainer.io
 DOMAIN-SUFFIX,wixstudio.io
+DOMAIN-SUFFIX,gazzettaobjects.it
 DOMAIN-SUFFIX,place-hold.it
+DOMAIN-SUFFIX,rcsobjects.it
 DOMAIN-SUFFIX,redd.it
 DOMAIN-SUFFIX,unsplash.it
 DOMAIN-SUFFIX,media.ci-en.jp

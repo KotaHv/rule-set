@@ -1,5 +1,5 @@
-# Total: 1966 rules
-# Last Updated: 2026-08-19T01:59:01.616763+00:00
+# Total: 1967 rules
+# Last Updated: 2026-08-29T21:02:57.102544+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -387,6 +387,7 @@
 - 'repo.powerdns.com'
 - 'cdn.powershellgallery.com'
 - 'enterprise.proxmox.com'
+- 'assets-tcpviewer.proxyman.com'
 - 'download.proxyman.com'
 - 'steam.apac.qtlglb.com'
 - 'steam.eca.qtlglb.com'

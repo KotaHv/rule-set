@@ -1,5 +1,5 @@
-# Total: 1976 rules
-# Last Updated: 2026-08-19T01:59:01.649848+00:00
+# Total: 1977 rules
+# Last Updated: 2026-08-29T21:02:57.154010+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -388,6 +388,7 @@ domain_set:
 - repo.powerdns.com
 - cdn.powershellgallery.com
 - enterprise.proxmox.com
+- assets-tcpviewer.proxyman.com
 - download.proxyman.com
 - steam.apac.qtlglb.com
 - steam.eca.qtlglb.com

@@ -1,9 +1,10 @@
-# Total: 4693 rules
-# Last Updated: 2026-08-27T22:27:50.783840+00:00
+# Total: 4700 rules
+# Last Updated: 2026-08-29T21:02:57.816552+00:00
 no_resolve: true
 domain_set:
 - rules.ac
 - cdn.aimerce.ai
+- files.blocktempo.ai
 - cdn.candu.ai
 - cdn.candy.ai
 - assets.cloudpilot.ai
@@ -440,6 +441,7 @@ domain_set:
 - blade-public-static.blade-group.com
 - cms.blavity.com
 - images.blockscan.com
+- image.blocktempo.com
 - cdn.blogarama.com
 - sourcepointcmp.bloomberg.com
 - assets2.blubrry.com
@@ -2042,6 +2044,7 @@ domain_set:
 - widgets.turnto.com
 - cdn.tvpagewidgets.com
 - twenty-icons.com
+- delivery.twentythree.com
 - analytics.twitter.com
 - fonts.twitter.com
 - platform.twitter.com
@@ -2592,6 +2595,8 @@ domain_set:
 - osint.digitalside.it
 - cdn.download.it
 - assets.garr.it
+- static2.giroditalia.it
+- video.giroditalia.it
 - cdn.scaleflex.it
 - st.transfer.it
 - img.atwiki.jp
@@ -4267,7 +4272,9 @@ domain_suffix_set:
 - vsassets.io
 - local.webcontainer.io
 - wixstudio.io
+- gazzettaobjects.it
 - place-hold.it
+- rcsobjects.it
 - redd.it
 - unsplash.it
 - media.ci-en.jp
