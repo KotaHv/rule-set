@@ -1,5 +1,5 @@
-# Total: 3350 rules
-# Last Updated: 2026-08-26T20:21:50.558132+00:00
+# Total: 3353 rules
+# Last Updated: 2026-08-29T07:13:19.256849+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -115,6 +115,8 @@ domain_set:
 - ookla.p2.neptune.net.au
 - ookla.sy1.neptune.net.au
 - speedtest.syd.netsg.net.au
+- speedtest01.mel01.nexthop.net.au
+- speedtest01.syd01.nexthop.net.au
 - sydspeedtest.solitary.net.au
 - speedtest01.adl1.spintel.net.au
 - speedtest01.bne1.spintel.net.au
@@ -3051,6 +3053,7 @@ domain_set:
 - speedtest-ist-34-node.netzone.com.tr
 - st1.osawi.com.tr
 - speedtest2.plusnet.com.tr
+- ookla.premierdc.com.tr
 - speedhn.radius2online.com.tr
 - ookla.sh.com.tr
 - str01.spnet.com.tr
