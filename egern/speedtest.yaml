@@ -1,5 +1,5 @@
-# Total: 3355 rules
-# Last Updated: 2026-08-29T21:02:48.041595+00:00
+# Total: 3358 rules
+# Last Updated: 2026-08-30T21:17:47.442165+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -806,6 +806,7 @@ domain_set:
 - speedtest.cubedns.com
 - d-pcommunications.com
 - speedtest.dakshbroadband.com
+- speedtest.dashcloudly.com
 - speedtest.dataspindle.com
 - speedtest.datatr.com
 - speedtest.dathannetworks.com
@@ -2518,6 +2519,7 @@ domain_set:
 - speedtest.kazzara.net
 - perf.keyyo.net
 - speedtest.kos.net
+- speedtest.krottisrv.net
 - speedtest.ktis.net
 - speedtest.kyouma.net
 - speedtest.lagrangeremcisp.net
@@ -3240,6 +3242,7 @@ domain_set:
 - speed.onlinedersm.xyz
 - speedtest-msk.refoxcloud.xyz
 - speedtest.speedfi.xyz
+- speedtest.stormclient.xyz
 - speed1.yasarnet.xyz
 - speedtestuk1.cybersmart.co.za
 - speedtest-ld8.mindthespeed.co.za
