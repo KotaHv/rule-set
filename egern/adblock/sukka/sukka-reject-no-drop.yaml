@@ -1,5 +1,5 @@
-# Total: 45 rules
-# Last Updated: 2026-08-05T14:43:31.412142+00:00
+# Total: 46 rules
+# Last Updated: 2026-08-30T12:04:16.289878+00:00
 no_resolve: true
 domain_set:
 - stun.douyucdn.cn
@@ -45,6 +45,7 @@ domain_wildcard_set:
 - p2pchunk-*.douyucdn.cn
 - p2plive-*.douyucdn.cn
 - stun*.douyucdn.cn
+- upos-sz-302*.bilivideo.com
 - p2p*.qq.com
 domain_keyword_set:
 - -p2p-v2.pull.yximgs.com

@@ -1,5 +1,5 @@
-# Total: 4621 rules
-# Last Updated: 2026-08-29T21:02:57.750966+00:00
+# Total: 4627 rules
+# Last Updated: 2026-08-30T12:04:46.230036+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -493,6 +493,7 @@
 - 'cdn.cameo.com'
 - 'cdn2.cameo.com'
 - 'cdn.camweara.com'
+- 'cdn.candycode.com'
 - 'chunk-composing.canva.com'
 - 'content-management-files.canva.com'
 - 'font-public.canva.com'
@@ -3153,6 +3154,8 @@
 - 'files.mastodon.ktachibana.party'
 - 'app.shop.pe'
 - 'cdn1.telesco.pe'
+- 'cdn2.telesco.pe'
+- 'cdn3.telesco.pe'
 - 'cdn4.telesco.pe'
 - 'cdn5.telesco.pe'
 - 'static.generated.photos'
@@ -3227,6 +3230,8 @@
 - 'cdn.deta.space'
 - 'cdn.hiive.space'
 - 'cdn1.telegram.space'
+- 'cdn2.telegram.space'
+- 'cdn3.telegram.space'
 - 'cdn4.telegram.space'
 - 'cdn5.telegram.space'
 - '0x0.st'
@@ -3391,6 +3396,7 @@
 - 'image.jnislniv.xyz'
 - 'cdn.joincommunity.xyz'
 - 'cdn-longterm.mee6.xyz'
+- 'websiteres.nmteam.xyz'
 - 'img.novipnoad.xyz'
 - 'media.pullopen.xyz'
 - 'cdn.redwap.xyz'

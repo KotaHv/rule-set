@@ -1,11 +1,12 @@
-# Total: 9 rules
-# Last Updated: 2026-07-31T10:23:17.329181+00:00
+# Total: 10 rules
+# Last Updated: 2026-08-30T12:04:16.287932+00:00
 payload:
 - DOMAIN-WILDCARD,dyp2p-*.douyucdn.cn
 - DOMAIN-WILDCARD,p2p-*.douyucdn.cn
 - DOMAIN-WILDCARD,p2pchunk-*.douyucdn.cn
 - DOMAIN-WILDCARD,p2plive-*.douyucdn.cn
 - DOMAIN-WILDCARD,stun*.douyucdn.cn
+- DOMAIN-WILDCARD,upos-sz-302*.bilivideo.com
 - DOMAIN-WILDCARD,p2p*.qq.com
 - DOMAIN-KEYWORD,-p2p-v2.pull.yximgs.com
 - DOMAIN-KEYWORD,-p2p.pull.yximgs.com
