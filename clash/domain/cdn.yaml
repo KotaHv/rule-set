@@ -1,5 +1,5 @@
-# Total: 4627 rules
-# Last Updated: 2026-08-30T12:04:46.230036+00:00
+# Total: 4628 rules
+# Last Updated: 2026-08-31T14:13:35.388647+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -205,6 +205,7 @@
 - 'oss.1p3a.com'
 - 'app.1password.com'
 - 'c.1password.com'
+- 'client-log-forwarder.1password.com'
 - 'i.1password.com'
 - 'b5x-sentry.1passwordservices.com'
 - 'telemetry.1passwordservices.com'
