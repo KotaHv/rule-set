@@ -1,5 +1,5 @@
-# Total: 3358 rules
-# Last Updated: 2026-08-30T21:17:47.442165+00:00
+# Total: 3360 rules
+# Last Updated: 2026-09-01T21:11:14.344845+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -104,6 +104,7 @@ domain_set:
 - speed-syd.gigacomm.net.au
 - speedtest.ade01.launtel.net.au
 - speedtest.bri01.launtel.net.au
+- speedtest.drw2.launtel.net.au
 - speedtest.mel01.launtel.net.au
 - speedtest-hob.launtel.net.au
 - speedtest-lton.launtel.net.au
@@ -2097,6 +2098,7 @@ domain_set:
 - speedtestmi.ktsolutions.it
 - speedt-mi.lakenetworks.it
 - speedtest3.lepida.it
+- speedtest4.lepida.it
 - speedtest.lumianetwork.it
 - speedtest.mikronet.it
 - st01.mynet.it
