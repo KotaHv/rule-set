@@ -1,5 +1,5 @@
-# Total: 4648 rules
-# Last Updated: 2026-08-31T14:13:35.386088+00:00
+# Total: 4652 rules
+# Last Updated: 2026-09-02T11:32:47.395118+00:00
 DOMAIN,rules.ac
 DOMAIN,cdn.aimerce.ai
 DOMAIN,files.blocktempo.ai
@@ -1062,6 +1062,7 @@ DOMAIN,hls.hentaicity.com
 DOMAIN,i.hentaifox.com
 DOMAIN,i2.hentaifox.com
 DOMAIN,maps.hereapi.com
+DOMAIN,vector.hereapi.com
 DOMAIN,cdn.hero-sms.com
 DOMAIN,heroicons.com
 DOMAIN,nel.heroku.com
@@ -1505,7 +1506,6 @@ DOMAIN,assets.nintendo.com
 DOMAIN,i.niupic.com
 DOMAIN,media.nngroup.com
 DOMAIN,cms-assets.nodecraft.com
-DOMAIN,cdn.nodeimage.com
 DOMAIN,edge.nodeseek.com
 DOMAIN,assets.northflank.com
 DOMAIN,ph.northflank.com
@@ -1952,6 +1952,7 @@ DOMAIN,cdn1.sysgears.com
 DOMAIN,cdn2.sysgears.com
 DOMAIN,cdn3.sysgears.com
 DOMAIN,cdn4.sysgears.com
+DOMAIN,cdn.system1.com
 DOMAIN,events.tableplus.com
 DOMAIN,c.tadst.com
 DOMAIN,cdn.tailwindcss.com
@@ -3235,6 +3236,7 @@ DOMAIN,cdn3.telegram.space
 DOMAIN,cdn4.telegram.space
 DOMAIN,cdn5.telegram.space
 DOMAIN,0x0.st
+DOMAIN,layers.mapq.st
 DOMAIN,api.web3.storage
 DOMAIN,images.web3.storage
 DOMAIN,cdn.one.store
@@ -3848,6 +3850,7 @@ DOMAIN-SUFFIX,mngbcn.com
 DOMAIN-SUFFIX,sny.monosnap.com
 DOMAIN-SUFFIX,motherlessmedia.com
 DOMAIN-SUFFIX,push.services.mozilla.com
+DOMAIN-SUFFIX,mqcdn.com
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,msftstatic.com
@@ -3868,6 +3871,7 @@ DOMAIN-SUFFIX,nhentaimg.com
 DOMAIN-SUFFIX,nincontent.com
 DOMAIN-SUFFIX,nineyu.com
 DOMAIN-SUFFIX,nitrocdn.com
+DOMAIN-SUFFIX,nodeimage.com
 DOMAIN-SUFFIX,nordcdn.com
 DOMAIN-SUFFIX,agechecker.northern-apps.com
 DOMAIN-SUFFIX,notion-static.com

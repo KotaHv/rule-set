@@ -1,5 +1,5 @@
-# Total: 6475 rules
-# Last Updated: 2026-08-30T12:05:16.816740+00:00
+# Total: 6478 rules
+# Last Updated: 2026-09-02T11:33:31.005230+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -866,6 +866,7 @@
 - 'hls.hentaicity.com'
 - 'wego.here.com'
 - 'maps.hereapi.com'
+- 'vector.hereapi.com'
 - 'cdn.hero-sms.com'
 - 'heroicons.com'
 - 'cdn.hextom.com'
@@ -1243,7 +1244,6 @@
 - 'i.niupic.com'
 - 'media.nngroup.com'
 - 'cms-assets.nodecraft.com'
-- 'cdn.nodeimage.com'
 - 'mirror.nodesdirect.com'
 - 'assets.northflank.com'
 - 'ph.northflank.com'
@@ -1590,6 +1590,7 @@
 - 'cdn3.sysgears.com'
 - 'cdn4.sysgears.com'
 - 'download.sysinternals.com'
+- 'cdn.system1.com'
 - 'events.tableplus.com'
 - 'c.tadst.com'
 - 'cdn-static.talent.com'
@@ -4140,6 +4141,7 @@
 - '+.motopress.com'
 - '+.moviefap.com'
 - '+.mozilla.com'
+- '+.mqcdn.com'
 - '+.msdn.com'
 - '+.msftconnecttest.com'
 - '+.msftncsi.com'
@@ -4258,6 +4260,7 @@
 - '+.nitrocdn.com'
 - '+.nixlang.com'
 - '+.nj.com'
+- '+.nodeimage.com'
 - '+.nodeseek.com'
 - '+.nodesource.com'
 - '+.noip.com'

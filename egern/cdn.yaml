@@ -1,5 +1,5 @@
-# Total: 4707 rules
-# Last Updated: 2026-08-31T14:13:35.448807+00:00
+# Total: 4711 rules
+# Last Updated: 2026-09-02T11:32:47.458391+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1064,6 +1064,7 @@ domain_set:
 - i.hentaifox.com
 - i2.hentaifox.com
 - maps.hereapi.com
+- vector.hereapi.com
 - cdn.hero-sms.com
 - heroicons.com
 - nel.heroku.com
@@ -1507,7 +1508,6 @@ domain_set:
 - i.niupic.com
 - media.nngroup.com
 - cms-assets.nodecraft.com
-- cdn.nodeimage.com
 - edge.nodeseek.com
 - assets.northflank.com
 - ph.northflank.com
@@ -1954,6 +1954,7 @@ domain_set:
 - cdn2.sysgears.com
 - cdn3.sysgears.com
 - cdn4.sysgears.com
+- cdn.system1.com
 - events.tableplus.com
 - c.tadst.com
 - cdn.tailwindcss.com
@@ -3237,6 +3238,7 @@ domain_set:
 - cdn4.telegram.space
 - cdn5.telegram.space
 - 0x0.st
+- layers.mapq.st
 - api.web3.storage
 - images.web3.storage
 - cdn.one.store
@@ -3851,6 +3853,7 @@ domain_suffix_set:
 - sny.monosnap.com
 - motherlessmedia.com
 - push.services.mozilla.com
+- mqcdn.com
 - msftconnecttest.com
 - msftncsi.com
 - msftstatic.com
@@ -3871,6 +3874,7 @@ domain_suffix_set:
 - nincontent.com
 - nineyu.com
 - nitrocdn.com
+- nodeimage.com
 - nordcdn.com
 - agechecker.northern-apps.com
 - notion-static.com

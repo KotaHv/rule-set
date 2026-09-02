@@ -1,5 +1,5 @@
-# Total: 6599 rules
-# Last Updated: 2026-08-30T12:05:16.881772+00:00
+# Total: 6602 rules
+# Last Updated: 2026-09-02T11:33:31.093723+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -867,6 +867,7 @@ domain_set:
 - hls.hentaicity.com
 - wego.here.com
 - maps.hereapi.com
+- vector.hereapi.com
 - cdn.hero-sms.com
 - heroicons.com
 - cdn.hextom.com
@@ -1244,7 +1245,6 @@ domain_set:
 - i.niupic.com
 - media.nngroup.com
 - cms-assets.nodecraft.com
-- cdn.nodeimage.com
 - mirror.nodesdirect.com
 - assets.northflank.com
 - ph.northflank.com
@@ -1591,6 +1591,7 @@ domain_set:
 - cdn3.sysgears.com
 - cdn4.sysgears.com
 - download.sysinternals.com
+- cdn.system1.com
 - events.tableplus.com
 - c.tadst.com
 - cdn-static.talent.com
@@ -4142,6 +4143,7 @@ domain_suffix_set:
 - motopress.com
 - moviefap.com
 - mozilla.com
+- mqcdn.com
 - msdn.com
 - msftconnecttest.com
 - msftncsi.com
@@ -4260,6 +4262,7 @@ domain_suffix_set:
 - nitrocdn.com
 - nixlang.com
 - nj.com
+- nodeimage.com
 - nodeseek.com
 - nodesource.com
 - noip.com
