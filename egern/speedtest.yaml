@@ -1,5 +1,5 @@
-# Total: 3363 rules
-# Last Updated: 2026-09-03T21:11:13.851218+00:00
+# Total: 3365 rules
+# Last Updated: 2026-09-04T20:53:43.523979+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -619,6 +619,7 @@ domain_set:
 - speedtest2.sailweb.cloud
 - speedtest.uania.cloud
 - speedtest-rp.verte.cloud
+- speedtest.virtical.cloud
 - speedtest.witcom.cloud
 - speedtest.xytor.cloud
 - speedtest.zerospace.cloud
@@ -2610,6 +2611,7 @@ domain_set:
 - speedtest-utc.northland.net
 - asbn-speedtest.northstate.net
 - atl-speedtest.northstate.net
+- dlls-speedtest.northstate.net
 - hmc-speedtest.northstate.net
 - mia-speedtest.northstate.net
 - wybo-speedtest.northstate.net

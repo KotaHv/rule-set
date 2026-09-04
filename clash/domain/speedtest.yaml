@@ -1,5 +1,5 @@
-# Total: 3363 rules
-# Last Updated: 2026-09-03T21:11:13.805000+00:00
+# Total: 3365 rules
+# Last Updated: 2026-09-04T20:53:43.483964+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -618,6 +618,7 @@
 - 'speedtest2.sailweb.cloud'
 - 'speedtest.uania.cloud'
 - 'speedtest-rp.verte.cloud'
+- 'speedtest.virtical.cloud'
 - 'speedtest.witcom.cloud'
 - 'speedtest.xytor.cloud'
 - 'speedtest.zerospace.cloud'
@@ -2609,6 +2610,7 @@
 - 'speedtest-utc.northland.net'
 - 'asbn-speedtest.northstate.net'
 - 'atl-speedtest.northstate.net'
+- 'dlls-speedtest.northstate.net'
 - 'hmc-speedtest.northstate.net'
 - 'mia-speedtest.northstate.net'
 - 'wybo-speedtest.northstate.net'
