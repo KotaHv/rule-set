@@ -1,5 +1,5 @@
-# Total: 4633 rules
-# Last Updated: 2026-09-04T04:49:37.995872+00:00
+# Total: 4635 rules
+# Last Updated: 2026-09-05T10:47:50.481473+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3190,6 +3190,7 @@
 - 'widget.datablocks.se'
 - 'media-cdn.factba.se'
 - 'cdp.sph.com.sg'
+- 'static.idp.sph.com.sg'
 - 'static.mysph.sph.com.sg'
 - 'cassette.sphdigital.com.sg'
 - 'static.zaobao.com.sg'
@@ -3908,6 +3909,7 @@
 - '+.patientpop.com'
 - '+.patreonusercontent.com'
 - '+.paypalobjects.com'
+- '+.pgimgs.com'
 - '+.phncdn.com'
 - '+.photobucket.com'
 - '+.phprcdn.com'
