@@ -1,5 +1,5 @@
 # Total: 6480 rules
-# Last Updated: 2026-09-05T10:48:24.863885+00:00
+# Last Updated: 2026-09-05T15:24:09.809210+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1564,7 +1564,6 @@
 - 'content-prod-live.cert.starbucks.com'
 - 'assets.stash.com'
 - 'cdn.stash.com'
-- 'assets.static-upwork.com'
 - 'cdn.staticdelivr.com'
 - 'cdn.staticswin.com'
 - 'avatar.stefanjudis.com'
@@ -4686,6 +4685,7 @@
 - '+.starwarsfallenorder.com'
 - '+.starwarsjedifallenorder.com'
 - '+.starwarstheoldrepublic.com'
+- '+.static-upwork.com'
 - '+.staticaly.com'
 - '+.staticblitz.com'
 - '+.staticflickr.com'

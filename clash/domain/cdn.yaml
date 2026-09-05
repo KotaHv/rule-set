@@ -1,5 +1,5 @@
 # Total: 4635 rules
-# Last Updated: 2026-09-05T10:47:50.481473+00:00
+# Last Updated: 2026-09-05T15:23:34.894374+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -1914,7 +1914,6 @@
 - 'content-prod-live.cert.starbucks.com'
 - 'assets.stash.com'
 - 'cdn.stash.com'
-- 'assets.static-upwork.com'
 - 'cdn.staticdelivr.com'
 - 'cdn.staticswin.com'
 - 'media.steampowered.com'
@@ -4023,6 +4022,7 @@
 - '+.proxy1.startpage.com'
 - '+.proxy2.startpage.com'
 - '+.proxy3.startpage.com'
+- '+.static-upwork.com'
 - '+.staticaly.com'
 - '+.staticblitz.com'
 - '+.staticflickr.com'

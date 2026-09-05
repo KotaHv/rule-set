@@ -1,5 +1,5 @@
 # Total: 6604 rules
-# Last Updated: 2026-09-05T10:48:24.951945+00:00
+# Last Updated: 2026-09-05T15:24:09.876975+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1565,7 +1565,6 @@ domain_set:
 - content-prod-live.cert.starbucks.com
 - assets.stash.com
 - cdn.stash.com
-- assets.static-upwork.com
 - cdn.staticdelivr.com
 - cdn.staticswin.com
 - avatar.stefanjudis.com
@@ -4688,6 +4687,7 @@ domain_suffix_set:
 - starwarsfallenorder.com
 - starwarsjedifallenorder.com
 - starwarstheoldrepublic.com
+- static-upwork.com
 - staticaly.com
 - staticblitz.com
 - staticflickr.com
