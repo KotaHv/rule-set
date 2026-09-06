@@ -1,5 +1,5 @@
-# Total: 3366 rules
-# Last Updated: 2026-09-05T20:31:42.238321+00:00
+# Total: 3368 rules
+# Last Updated: 2026-09-06T20:34:44.797275+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -737,6 +737,7 @@
 - 'speedtest.brnchost.com'
 - 'speedtest2.networks.bt.com'
 - 'speedtest3.networks.bt.com'
+- 'speedtest.btc-bci.com'
 - 'speed.btcbroadband.com'
 - 'speedtest.buzzbroadband.com'
 - 'one.speed.c4g7.com'
@@ -2253,6 +2254,7 @@
 - 'speedtest.nl-ams.as210558.net'
 - 'speedtest.pl-waw.as210558.net'
 - 'speedtest.as210667.net'
+- 'speedtest.as210699.net'
 - 'speedtest-1.london.network.as212655.net'
 - 'speedtest-1.manchester.network.as212655.net'
 - 'speedtest.as212683.net'
