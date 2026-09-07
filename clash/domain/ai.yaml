@@ -1,5 +1,5 @@
-# Total: 48 rules
-# Last Updated: 2026-08-07T07:50:28.417370+00:00
+# Total: 49 rules
+# Last Updated: 2026-09-07T21:38:34.646186+00:00
 'payload':
 - 'api.jetbrains.ai'
 - 'openrouter.ai'
@@ -48,4 +48,5 @@
 - '+.gemini.google'
 - '+.generativeai.google'
 - '+.notebooklm.google'
+- '+.cursor.sh'
 - '+.chatgpt.site'
