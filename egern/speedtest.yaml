@@ -1,5 +1,5 @@
-# Total: 3373 rules
-# Last Updated: 2026-09-09T21:02:39.253900+00:00
+# Total: 3377 rules
+# Last Updated: 2026-09-10T21:01:41.127651+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -808,6 +808,7 @@ domain_set:
 - speedtest.ctsiok.com
 - speedtest1.ctstelecom.com
 - speedtest.cubedns.com
+- ooklaspeedtest.d-pcomm.com
 - d-pcommunications.com
 - speedtest.dakshbroadband.com
 - speedtest.dashcloudly.com
@@ -816,6 +817,7 @@ domain_set:
 - speedtest.dathannetworks.com
 - speedtest.datonofibra.com
 - speedtest.datos101.com
+- sp1-de.delska.com
 - speedtest.deltacable.com
 - mum-speedtest.digianaspeednet.com
 - digital-net-isp.com
@@ -1853,6 +1855,7 @@ domain_set:
 - speedtest.hk.aixxycode.id
 - speedtest.sg.aixxycode.id
 - speedtest-sg.cbn.id
+- ookla.ams.atharva.co.id
 - speedtest.ams.atharva.co.id
 - speedtest.sin.atharva.co.id
 - speedtest.singapore.atharva.co.id
@@ -2616,6 +2619,7 @@ domain_set:
 - speedtest-utc.northland.net
 - asbn-speedtest.northstate.net
 - atl-speedtest.northstate.net
+- chi-speedtest.northstate.net
 - dlls-speedtest.northstate.net
 - hmc-speedtest.northstate.net
 - mia-speedtest.northstate.net
