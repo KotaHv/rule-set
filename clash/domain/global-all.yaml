@@ -1,5 +1,5 @@
-# Total: 6481 rules
-# Last Updated: 2026-09-12T15:41:17.787707+00:00
+# Total: 6483 rules
+# Last Updated: 2026-09-12T20:44:41.382118+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -808,6 +808,7 @@
 - 'media4.giphy.com'
 - 'm3u8.girigirilove.com'
 - 'i.git99.com'
+- 'dl.gl-inet.com'
 - 'fw.gl-inet.com'
 - 'static.gl-inet.com'
 - 'media.glassdoor.com'
@@ -3279,6 +3280,7 @@
 - '+.botsrv2.com'
 - '+.bowsersinsidestory.com'
 - '+.box.com'
+- '+.boxcloud.com'
 - '+.braintreegateway.com'
 - '+.braintreepayments.com'
 - '+.braintreepaymentsolutions.com'

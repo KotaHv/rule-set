@@ -1,5 +1,5 @@
-# Total: 1803 rules
-# Last Updated: 2026-08-12T07:59:27.435533+00:00
+# Total: 1804 rules
+# Last Updated: 2026-09-12T20:44:37.804060+00:00
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -218,6 +218,7 @@ domain_suffix_set:
 - bootstrapcdn.com
 - botframework.com
 - box.com
+- boxcloud.com
 - braintreegateway.com
 - braintreepayments.com
 - braintreepaymentsolutions.com

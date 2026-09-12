@@ -1,5 +1,5 @@
-# Total: 1967 rules
-# Last Updated: 2026-08-29T21:02:57.102544+00:00
+# Total: 1968 rules
+# Last Updated: 2026-09-12T20:43:55.853819+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -263,6 +263,7 @@
 - 'objects.githubusercontent.com'
 - 'pkg-containers.githubusercontent.com'
 - 'release-assets.githubusercontent.com'
+- 'dl.gl-inet.com'
 - 'fw.gl-inet.com'
 - 'gog-cdn-fastly.gog.com'
 - 'gog-cdn-fastly-cp77.gog.com'

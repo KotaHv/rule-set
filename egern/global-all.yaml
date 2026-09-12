@@ -1,5 +1,5 @@
-# Total: 6605 rules
-# Last Updated: 2026-09-12T15:41:17.873094+00:00
+# Total: 6607 rules
+# Last Updated: 2026-09-12T20:44:41.464601+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -809,6 +809,7 @@ domain_set:
 - media4.giphy.com
 - m3u8.girigirilove.com
 - i.git99.com
+- dl.gl-inet.com
 - fw.gl-inet.com
 - static.gl-inet.com
 - media.glassdoor.com
@@ -3281,6 +3282,7 @@ domain_suffix_set:
 - botsrv2.com
 - bowsersinsidestory.com
 - box.com
+- boxcloud.com
 - braintreegateway.com
 - braintreepayments.com
 - braintreepaymentsolutions.com

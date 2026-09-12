@@ -1,5 +1,5 @@
-# Total: 1785 rules
-# Last Updated: 2026-08-12T07:59:27.396208+00:00
+# Total: 1786 rules
+# Last Updated: 2026-09-12T20:44:37.766330+00:00
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -216,6 +216,7 @@
 - '+.bootstrapcdn.com'
 - '+.botframework.com'
 - '+.box.com'
+- '+.boxcloud.com'
 - '+.braintreegateway.com'
 - '+.braintreepayments.com'
 - '+.braintreepaymentsolutions.com'

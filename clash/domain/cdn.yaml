@@ -1,5 +1,5 @@
-# Total: 4636 rules
-# Last Updated: 2026-09-12T15:40:37.790103+00:00
+# Total: 4637 rules
+# Last Updated: 2026-09-12T20:43:56.139860+00:00
 'payload':
 - 'rules.ac'
 - 'cdn.aimerce.ai'
@@ -3149,6 +3149,7 @@
 - 'resources.whatwg.org'
 - 'intake-logging.wikimedia.org'
 - 'maps.wikimedia.org'
+- 'thumb.wikimedia.org'
 - 'upload.wikimedia.org'
 - 'tools-static.wmflabs.org'
 - 'files.writefreely.org'

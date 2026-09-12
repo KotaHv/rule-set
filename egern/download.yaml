@@ -1,5 +1,5 @@
-# Total: 1977 rules
-# Last Updated: 2026-08-29T21:02:57.154010+00:00
+# Total: 1978 rules
+# Last Updated: 2026-09-12T20:43:55.888846+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -264,6 +264,7 @@ domain_set:
 - objects.githubusercontent.com
 - pkg-containers.githubusercontent.com
 - release-assets.githubusercontent.com
+- dl.gl-inet.com
 - fw.gl-inet.com
 - gog-cdn-fastly.gog.com
 - gog-cdn-fastly-cp77.gog.com

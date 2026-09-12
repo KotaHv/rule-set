@@ -1,5 +1,5 @@
-# Total: 4715 rules
-# Last Updated: 2026-09-12T15:40:37.853941+00:00
+# Total: 4716 rules
+# Last Updated: 2026-09-12T20:43:56.201684+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -3150,6 +3150,7 @@ domain_set:
 - resources.whatwg.org
 - intake-logging.wikimedia.org
 - maps.wikimedia.org
+- thumb.wikimedia.org
 - upload.wikimedia.org
 - tools-static.wmflabs.org
 - files.writefreely.org
