@@ -1,6 +1,7 @@
-# Total: 4657 rules
-# Last Updated: 2026-09-12T20:43:56.137035+00:00
+# Total: 4663 rules
+# Last Updated: 2026-09-13T12:10:53.696079+00:00
 DOMAIN,rules.ac
+DOMAIN,static.jup.ag
 DOMAIN,cdn.aimerce.ai
 DOMAIN,files.blocktempo.ai
 DOMAIN,cdn.candu.ai
@@ -598,6 +599,7 @@ DOMAIN,static-assets.coinbase.com
 DOMAIN,s1.coincarp.com
 DOMAIN,downloads.coindesk.com
 DOMAIN,assets.coingecko.com
+DOMAIN,coin-images.coingecko.com
 DOMAIN,static.coingecko.com
 DOMAIN,academy-public.coinmarketcap.com
 DOMAIN,s3.beta.coinmarketcap.com
@@ -2354,6 +2356,8 @@ DOMAIN,i.jpg.dog
 DOMAIN,cdn.onetime.dog
 DOMAIN,screenshot.domains
 DOMAIN,tiles.zoom.earth
+DOMAIN,assets.production.linktr.ee
+DOMAIN,ugc.production.linktr.ee
 DOMAIN,assets.buttondown.email
 DOMAIN,utteranc.es
 DOMAIN,versionbadg.es
@@ -2378,6 +2382,7 @@ DOMAIN,cdn.robinpro.gallery
 DOMAIN,cdn.gdl.gg
 DOMAIN,cdn.now.gg
 DOMAIN,cms-cdn.now.gg
+DOMAIN,thumbnails.padre.gg
 DOMAIN,cdn.sc.gl
 DOMAIN,c.pki.goog
 DOMAIN,tile.loc.gov
@@ -4215,6 +4220,7 @@ DOMAIN-SUFFIX,myvideos.info
 DOMAIN-SUFFIX,4everland.io
 DOMAIN-SUFFIX,angular.io
 DOMAIN-SUFFIX,cdn.applicationinsights.io
+DOMAIN-SUFFIX,axiom-cdn.io
 DOMAIN-SUFFIX,events.backtrace.io
 DOMAIN-SUFFIX,bigcontent.io
 DOMAIN-SUFFIX,bitbucket.io

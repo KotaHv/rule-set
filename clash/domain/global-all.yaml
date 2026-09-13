@@ -1,8 +1,9 @@
-# Total: 6483 rules
-# Last Updated: 2026-09-12T20:44:41.382118+00:00
+# Total: 6485 rules
+# Last Updated: 2026-09-13T12:11:36.503891+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
+- 'static.jup.ag'
 - 'updates.64gr.am'
 - 'mirrors.asnet.am'
 - 'kali.itsec.am'
@@ -5288,6 +5289,7 @@
 - '+.cdn.applicationinsights.io'
 - '+.atom.io'
 - '+.avtoday.io'
+- '+.axiom-cdn.io'
 - '+.azurecontainer.io'
 - '+.azurecr.io'
 - '+.events.backtrace.io'

@@ -1,8 +1,9 @@
-# Total: 4716 rules
-# Last Updated: 2026-09-12T20:43:56.201684+00:00
+# Total: 4722 rules
+# Last Updated: 2026-09-13T12:10:53.761807+00:00
 no_resolve: true
 domain_set:
 - rules.ac
+- static.jup.ag
 - cdn.aimerce.ai
 - files.blocktempo.ai
 - cdn.candu.ai
@@ -600,6 +601,7 @@ domain_set:
 - s1.coincarp.com
 - downloads.coindesk.com
 - assets.coingecko.com
+- coin-images.coingecko.com
 - static.coingecko.com
 - academy-public.coinmarketcap.com
 - s3.beta.coinmarketcap.com
@@ -2356,6 +2358,8 @@ domain_set:
 - cdn.onetime.dog
 - screenshot.domains
 - tiles.zoom.earth
+- assets.production.linktr.ee
+- ugc.production.linktr.ee
 - assets.buttondown.email
 - utteranc.es
 - versionbadg.es
@@ -2380,6 +2384,7 @@ domain_set:
 - cdn.gdl.gg
 - cdn.now.gg
 - cms-cdn.now.gg
+- thumbnails.padre.gg
 - cdn.sc.gl
 - c.pki.goog
 - tile.loc.gov
@@ -4218,6 +4223,7 @@ domain_suffix_set:
 - 4everland.io
 - angular.io
 - cdn.applicationinsights.io
+- axiom-cdn.io
 - events.backtrace.io
 - bigcontent.io
 - bitbucket.io

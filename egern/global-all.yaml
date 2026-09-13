@@ -1,9 +1,10 @@
-# Total: 6607 rules
-# Last Updated: 2026-09-12T20:44:41.464601+00:00
+# Total: 6609 rules
+# Last Updated: 2026-09-13T12:11:36.588640+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
 - mirror.host.ag
+- static.jup.ag
 - updates.64gr.am
 - mirrors.asnet.am
 - kali.itsec.am
@@ -5290,6 +5291,7 @@ domain_suffix_set:
 - cdn.applicationinsights.io
 - atom.io
 - avtoday.io
+- axiom-cdn.io
 - azurecontainer.io
 - azurecr.io
 - events.backtrace.io
