@@ -1,5 +1,5 @@
-# Total: 77354 rules
-# Last Updated: 2026-09-15T05:05:45.687358+00:00
+# Total: 77353 rules
+# Last Updated: 2026-09-15T11:55:51.214166+00:00
 'payload':
 - 'mepodownload.mediatek.com'
 - 'mgepodownload.mediatek.com'
@@ -37921,7 +37921,6 @@
 - '+.traffic-exchange.com'
 - '+.traffic-gold.com'
 - '+.traffic-links.com'
-- '+.traffic-monetizer.com'
 - '+.traffic-offer.com'
 - '+.andr0id.traffic-smart.com'
 - '+.traffic2bitcoin.com'
@@ -47406,7 +47405,7 @@
 - '+.bpool.id'
 - '+.cnode.id'
 - '+.accesstrade.co.id'
-- '+.adplus.co.id'
+- '+.ssp.adplus.co.id'
 - '+.adstarsmedia.co.id'
 - '+.cgmt.co.id'
 - '+.content22.citibank.co.id'
