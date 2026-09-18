@@ -1,5 +1,5 @@
-# Total: 4722 rules
-# Last Updated: 2026-09-13T12:10:53.761807+00:00
+# Total: 4725 rules
+# Last Updated: 2026-09-18T21:04:00.679293+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -104,6 +104,7 @@ domain_set:
 - turbo.build
 - cdn.adsninja.ca
 - img.novipnoad.ca
+- images.radio-canada.ca
 - static.okx.cab
 - img.apk.cafe
 - assets.toot.cafe
@@ -777,6 +778,7 @@ domain_set:
 - cdntranscend.eventbrite.com
 - images.everyplate.com
 - cdn.evgnet.com
+- cdn.eye-able.com
 - web-sdk.eyefitu.com
 - web-sdk-cdn.eyefitu.com
 - cdn.f5.com
@@ -2527,6 +2529,7 @@ domain_set:
 - favicons.nextdns.io
 - cdn.nolt.io
 - cdn-static.okendo.io
+- static.okou.io
 - cdn.pagefly.io
 - cdn.pendo.io
 - data.pendo.io
@@ -4091,7 +4094,6 @@ domain_suffix_set:
 - trackerslist.com
 - trafficdeposit.com
 - transcend-cdn.com
-- tripcdn.com
 - ttcache.com
 - ttwstatic.com
 - assets.tumblr.com
@@ -4450,6 +4452,7 @@ domain_suffix_set:
 - redcdn.net
 - rsb.net
 - rspcdn.net
+- seecdn.net
 - sftcdn.net
 - sitescdn.net
 - smassets.net

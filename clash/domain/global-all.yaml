@@ -1,5 +1,5 @@
-# Total: 6485 rules
-# Last Updated: 2026-09-13T12:11:36.503891+00:00
+# Total: 6488 rules
+# Last Updated: 2026-09-18T21:04:42.680060+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -687,6 +687,7 @@
 - 'mirror2.evolution-host.com'
 - 'mirror.evowise.com'
 - 'mirrors.evowise.com'
+- 'cdn.eye-able.com'
 - 'web-sdk.eyefitu.com'
 - 'web-sdk-cdn.eyefitu.com'
 - 'cdn.f5.com'
@@ -1801,6 +1802,7 @@
 - 'mirror.xtom.com'
 - 'mirror-cdn.xtom.com'
 - 'mirrors.xtom.com'
+- 'repo.xtom.com'
 - 'cdn.xvidzz.com'
 - 'i.xxxshake.com'
 - 'static.xxxshake.com'
@@ -2047,6 +2049,7 @@
 - 'dl.nwjs.io'
 - 'dl2.nwjs.io'
 - 'cdn-static.okendo.io'
+- 'static.okou.io'
 - 'cdn.pagefly.io'
 - 'cdn.pendo.io'
 - 'data.pendo.io'
@@ -4864,7 +4867,6 @@
 - '+.transcend-cdn.com'
 - '+.travis-ci.com'
 - '+.treyarch.com'
-- '+.tripcdn.com'
 - '+.trustpilot.com'
 - '+.truthsocial.com'
 - '+.ttcache.com'
@@ -5850,6 +5852,7 @@
 - '+.mirror.uk.sargasso.net'
 - '+.sc-cdn.net'
 - '+.scp-wiki.net'
+- '+.seecdn.net'
 - '+.sendgrid.net'
 - '+.sf.net'
 - '+.sftcdn.net'

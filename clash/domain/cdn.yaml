@@ -1,5 +1,5 @@
-# Total: 4643 rules
-# Last Updated: 2026-09-13T12:10:53.698762+00:00
+# Total: 4646 rules
+# Last Updated: 2026-09-18T21:04:00.622219+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -103,6 +103,7 @@
 - 'turbo.build'
 - 'cdn.adsninja.ca'
 - 'img.novipnoad.ca'
+- 'images.radio-canada.ca'
 - 'static.okx.cab'
 - 'img.apk.cafe'
 - 'assets.toot.cafe'
@@ -776,6 +777,7 @@
 - 'cdntranscend.eventbrite.com'
 - 'images.everyplate.com'
 - 'cdn.evgnet.com'
+- 'cdn.eye-able.com'
 - 'web-sdk.eyefitu.com'
 - 'web-sdk-cdn.eyefitu.com'
 - 'cdn.f5.com'
@@ -2526,6 +2528,7 @@
 - 'favicons.nextdns.io'
 - 'cdn.nolt.io'
 - 'cdn-static.okendo.io'
+- 'static.okou.io'
 - 'cdn.pagefly.io'
 - 'cdn.pendo.io'
 - 'data.pendo.io'
@@ -4089,7 +4092,6 @@
 - '+.trackerslist.com'
 - '+.trafficdeposit.com'
 - '+.transcend-cdn.com'
-- '+.tripcdn.com'
 - '+.ttcache.com'
 - '+.ttwstatic.com'
 - '+.assets.tumblr.com'
@@ -4448,6 +4450,7 @@
 - '+.redcdn.net'
 - '+.rsb.net'
 - '+.rspcdn.net'
+- '+.seecdn.net'
 - '+.sftcdn.net'
 - '+.sitescdn.net'
 - '+.smassets.net'
