@@ -1,5 +1,5 @@
-# Total: 4725 rules
-# Last Updated: 2026-09-18T21:04:00.679293+00:00
+# Total: 4726 rules
+# Last Updated: 2026-09-19T15:59:02.860451+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -332,6 +332,7 @@ domain_set:
 - images.en.aptoide.com
 - static-images.aptoide.com
 - ws2-cache.aptoide.com
+- js.arcgis.com
 - tiledbasemaps.arcgis.com
 - tiles.arcgis.com
 - server.arcgisonline.com

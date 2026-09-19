@@ -1,5 +1,5 @@
-# Total: 6612 rules
-# Last Updated: 2026-09-18T21:04:42.767299+00:00
+# Total: 6613 rules
+# Last Updated: 2026-09-19T15:59:39.249798+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -324,6 +324,7 @@ domain_set:
 - img.apponic.com
 - boot.arcboxcdn.com
 - release.arcboxcdn.com
+- js.arcgis.com
 - tiledbasemaps.arcgis.com
 - tiles.arcgis.com
 - server.arcgisonline.com

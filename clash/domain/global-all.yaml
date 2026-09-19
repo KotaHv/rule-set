@@ -1,5 +1,5 @@
-# Total: 6488 rules
-# Last Updated: 2026-09-18T21:04:42.680060+00:00
+# Total: 6489 rules
+# Last Updated: 2026-09-19T15:59:39.170188+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -323,6 +323,7 @@
 - 'img.apponic.com'
 - 'boot.arcboxcdn.com'
 - 'release.arcboxcdn.com'
+- 'js.arcgis.com'
 - 'tiledbasemaps.arcgis.com'
 - 'tiles.arcgis.com'
 - 'server.arcgisonline.com'
