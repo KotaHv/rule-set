@@ -1,5 +1,5 @@
-# Total: 4667 rules
-# Last Updated: 2026-09-19T15:59:02.797013+00:00
+# Total: 4673 rules
+# Last Updated: 2026-09-20T11:39:29.443532+00:00
 DOMAIN,rules.ac
 DOMAIN,static.jup.ag
 DOMAIN,cdn.aimerce.ai
@@ -834,6 +834,8 @@ DOMAIN,cdn-uicons.flaticon.com
 DOMAIN,media.flaticon.com
 DOMAIN,embedr.flickr.com
 DOMAIN,widgets.flickr.com
+DOMAIN,photos.flightaware.com
+DOMAIN,tiles.flightaware.com
 DOMAIN,images.flightradar24.com
 DOMAIN,static-assets-web.flixcart.com
 DOMAIN,resizing.flixster.com
@@ -1851,6 +1853,7 @@ DOMAIN,cdn.sift.com
 DOMAIN,api.simplesvg.com
 DOMAIN,icons.simplesvg.com
 DOMAIN,statics.simpshub.com
+DOMAIN,cdn1.singteldigital.com
 DOMAIN,s3.sitepoint.com
 DOMAIN,uploads.sitepoint.com
 DOMAIN,cdn.sitesearch360.com
@@ -2796,6 +2799,7 @@ DOMAIN,todoist.b-cdn.net
 DOMAIN,vg-bunny-cdn.b-cdn.net
 DOMAIN,vz-2222604c-50b.b-cdn.net
 DOMAIN,vz-c0fe498e-5ab.b-cdn.net
+DOMAIN,tileserver.b10s.net
 DOMAIN,basemap.beacondb.net
 DOMAIN,cdn.beacondb.net
 DOMAIN,a5.behance.net
@@ -2865,6 +2869,7 @@ DOMAIN,avatars.hubspot.net
 DOMAIN,ik.imgkit.net
 DOMAIN,static-act.imoim.net
 DOMAIN,img.imoutomoe.net
+DOMAIN,cdn.infrawire.net
 DOMAIN,jsdelivr.ioiox.net
 DOMAIN,cdn.iplocation.net
 DOMAIN,cdn.iporntv.net
@@ -3270,6 +3275,7 @@ DOMAIN,packages.jetbrains.team
 DOMAIN,pkg-cdn.jetbrains.team
 DOMAIN,docs.mrchromebox.tech
 DOMAIN,static.pepy.tech
+DOMAIN,image-tc.galaxy.tf
 DOMAIN,assets.dev.to
 DOMAIN,media.dev.to
 DOMAIN,media2.dev.to

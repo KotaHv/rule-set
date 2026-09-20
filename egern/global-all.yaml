@@ -1,5 +1,5 @@
-# Total: 6613 rules
-# Last Updated: 2026-09-19T15:59:39.249798+00:00
+# Total: 6622 rules
+# Last Updated: 2026-09-20T11:40:06.631892+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -722,6 +722,8 @@ domain_set:
 - cdn-teams-slug.flaticon.com
 - cdn-uicons.flaticon.com
 - media.flaticon.com
+- photos.flightaware.com
+- tiles.flightaware.com
 - static-assets-web.flixcart.com
 - resizing.flixster.com
 - frontend.floatplane.com
@@ -1507,6 +1509,7 @@ domain_set:
 - api.simplesvg.com
 - icons.simplesvg.com
 - statics.simpshub.com
+- cdn1.singteldigital.com
 - s3.sitepoint.com
 - uploads.sitepoint.com
 - cdn.sitesearch360.com
@@ -2280,6 +2283,7 @@ domain_set:
 - vg-bunny-cdn.b-cdn.net
 - vz-2222604c-50b.b-cdn.net
 - vz-c0fe498e-5ab.b-cdn.net
+- tileserver.b10s.net
 - mirror.bahnhof.net
 - debian.balt.net
 - mirrors.centos.behostings.net
@@ -2367,6 +2371,7 @@ domain_set:
 - static-act.imoim.net
 - img.imoutomoe.net
 - ftpmirror1.infania.net
+- cdn.infrawire.net
 - mirror.init7.net
 - jsdelivr.ioiox.net
 - cdn.iplocation.net
@@ -2797,6 +2802,7 @@ domain_set:
 - cdn-us-2.comaps.tech
 - docs.mrchromebox.tech
 - static.pepy.tech
+- image-tc.galaxy.tf
 - mirror.kku.ac.th
 - mirror1.ku.ac.th
 - mirrors.cloudforest.co.th
@@ -3400,6 +3406,7 @@ domain_suffix_set:
 - cnet.com
 - cnn.com
 - cnyes.com
+- codebuff.com
 - codeforces.com
 - codepenassets.com
 - codethemicrobit.com
@@ -3668,6 +3675,7 @@ domain_suffix_set:
 - framerstatic.com
 - framerusercontent.com
 - freebeacon.com
+- freebuff.com
 - freepik.com
 - frontapp.com
 - frostbite.com
@@ -5159,6 +5167,7 @@ domain_suffix_set:
 - dartpad.dev
 - delegated-ipfs.dev
 - epicgames.dev
+- firebase.dev
 - flow.dev
 - flutter.dev
 - fly.dev

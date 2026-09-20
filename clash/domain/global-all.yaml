@@ -1,5 +1,5 @@
-# Total: 6489 rules
-# Last Updated: 2026-09-19T15:59:39.170188+00:00
+# Total: 6498 rules
+# Last Updated: 2026-09-20T11:40:06.551892+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -721,6 +721,8 @@
 - 'cdn-teams-slug.flaticon.com'
 - 'cdn-uicons.flaticon.com'
 - 'media.flaticon.com'
+- 'photos.flightaware.com'
+- 'tiles.flightaware.com'
 - 'static-assets-web.flixcart.com'
 - 'resizing.flixster.com'
 - 'frontend.floatplane.com'
@@ -1506,6 +1508,7 @@
 - 'api.simplesvg.com'
 - 'icons.simplesvg.com'
 - 'statics.simpshub.com'
+- 'cdn1.singteldigital.com'
 - 's3.sitepoint.com'
 - 'uploads.sitepoint.com'
 - 'cdn.sitesearch360.com'
@@ -2279,6 +2282,7 @@
 - 'vg-bunny-cdn.b-cdn.net'
 - 'vz-2222604c-50b.b-cdn.net'
 - 'vz-c0fe498e-5ab.b-cdn.net'
+- 'tileserver.b10s.net'
 - 'mirror.bahnhof.net'
 - 'debian.balt.net'
 - 'mirrors.centos.behostings.net'
@@ -2366,6 +2370,7 @@
 - 'static-act.imoim.net'
 - 'img.imoutomoe.net'
 - 'ftpmirror1.infania.net'
+- 'cdn.infrawire.net'
 - 'mirror.init7.net'
 - 'jsdelivr.ioiox.net'
 - 'cdn.iplocation.net'
@@ -2796,6 +2801,7 @@
 - 'cdn-us-2.comaps.tech'
 - 'docs.mrchromebox.tech'
 - 'static.pepy.tech'
+- 'image-tc.galaxy.tf'
 - 'mirror.kku.ac.th'
 - 'mirror1.ku.ac.th'
 - 'mirrors.cloudforest.co.th'
@@ -3398,6 +3404,7 @@
 - '+.cnet.com'
 - '+.cnn.com'
 - '+.cnyes.com'
+- '+.codebuff.com'
 - '+.codeforces.com'
 - '+.codepenassets.com'
 - '+.codethemicrobit.com'
@@ -3666,6 +3673,7 @@
 - '+.framerstatic.com'
 - '+.framerusercontent.com'
 - '+.freebeacon.com'
+- '+.freebuff.com'
 - '+.freepik.com'
 - '+.frontapp.com'
 - '+.frostbite.com'
@@ -5157,6 +5165,7 @@
 - '+.dartpad.dev'
 - '+.delegated-ipfs.dev'
 - '+.epicgames.dev'
+- '+.firebase.dev'
 - '+.flow.dev'
 - '+.flutter.dev'
 - '+.fly.dev'

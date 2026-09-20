@@ -1,5 +1,5 @@
-# Total: 1786 rules
-# Last Updated: 2026-09-12T20:44:37.766330+00:00
+# Total: 1789 rules
+# Last Updated: 2026-09-20T11:40:05.421803+00:00
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -258,6 +258,7 @@
 - '+.cnet.com'
 - '+.cnn.com'
 - '+.cnyes.com'
+- '+.codebuff.com'
 - '+.codeforces.com'
 - '+.codethemicrobit.com'
 - '+.coinbase.com'
@@ -370,6 +371,7 @@
 - '+.framerstatic.com'
 - '+.framerusercontent.com'
 - '+.freebeacon.com'
+- '+.freebuff.com'
 - '+.freepik.com'
 - '+.ft.com'
 - '+.ftchinese.com'
@@ -1001,6 +1003,7 @@
 - '+.aws.dev'
 - '+.dart.dev'
 - '+.dartpad.dev'
+- '+.firebase.dev'
 - '+.flow.dev'
 - '+.flutter.dev'
 - '+.fly.dev'

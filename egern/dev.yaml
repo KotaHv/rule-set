@@ -1,5 +1,5 @@
-# Total: 621 rules
-# Last Updated: 2026-08-12T07:59:00.837265+00:00
+# Total: 626 rules
+# Last Updated: 2026-09-20T11:39:39.417413+00:00
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -17,9 +17,10 @@ domain_set:
 - docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 - default.exp-tas.com
 - developers.facebook.com
-- firebase.google.com
 - firebase.googleapis.com
 - firebaseappcheck.googleapis.com
+- firebaseappdistribution.googleapis.com
+- firebaseapptesters.googleapis.com
 - firebasedynamiclinks.googleapis.com
 - firebasedynamiclinks-ipv4.googleapis.com
 - firebasedynamiclinks-ipv6.googleapis.com
@@ -121,6 +122,7 @@ domain_suffix_set:
 - buckbuild.com
 - bugsnag.com
 - canonical.com
+- codebuff.com
 - codethemicrobit.com
 - crashlytics.com
 - crocoblock.com
@@ -153,6 +155,7 @@ domain_suffix_set:
 - framercanvas.com
 - framerstatic.com
 - framerusercontent.com
+- freebuff.com
 - gamesstack.com
 - gemfury.com
 - getbootstrap.com
@@ -174,6 +177,7 @@ domain_suffix_set:
 - gitlab.com
 - go-lang.com
 - golang.com
+- firebase.google.com
 - hashicorp.com
 - hhvm.com
 - insiderdevtour.com
@@ -287,6 +291,7 @@ domain_suffix_set:
 - amp.dev
 - dart.dev
 - dartpad.dev
+- firebase.dev
 - flow.dev
 - flutter.dev
 - fury.dev

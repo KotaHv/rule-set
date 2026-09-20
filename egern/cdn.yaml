@@ -1,5 +1,5 @@
-# Total: 4726 rules
-# Last Updated: 2026-09-19T15:59:02.860451+00:00
+# Total: 4732 rules
+# Last Updated: 2026-09-20T11:39:29.504052+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -836,6 +836,8 @@ domain_set:
 - media.flaticon.com
 - embedr.flickr.com
 - widgets.flickr.com
+- photos.flightaware.com
+- tiles.flightaware.com
 - images.flightradar24.com
 - static-assets-web.flixcart.com
 - resizing.flixster.com
@@ -1853,6 +1855,7 @@ domain_set:
 - api.simplesvg.com
 - icons.simplesvg.com
 - statics.simpshub.com
+- cdn1.singteldigital.com
 - s3.sitepoint.com
 - uploads.sitepoint.com
 - cdn.sitesearch360.com
@@ -2798,6 +2801,7 @@ domain_set:
 - vg-bunny-cdn.b-cdn.net
 - vz-2222604c-50b.b-cdn.net
 - vz-c0fe498e-5ab.b-cdn.net
+- tileserver.b10s.net
 - basemap.beacondb.net
 - cdn.beacondb.net
 - a5.behance.net
@@ -2867,6 +2871,7 @@ domain_set:
 - ik.imgkit.net
 - static-act.imoim.net
 - img.imoutomoe.net
+- cdn.infrawire.net
 - jsdelivr.ioiox.net
 - cdn.iplocation.net
 - cdn.iporntv.net
@@ -3272,6 +3277,7 @@ domain_set:
 - pkg-cdn.jetbrains.team
 - docs.mrchromebox.tech
 - static.pepy.tech
+- image-tc.galaxy.tf
 - assets.dev.to
 - media.dev.to
 - media2.dev.to

@@ -1,5 +1,5 @@
-# Total: 6677 rules
-# Last Updated: 2026-09-19T15:59:39.162633+00:00
+# Total: 6686 rules
+# Last Updated: 2026-09-20T11:40:06.545529+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -720,6 +720,8 @@ DOMAIN,cdn-share-sprites.flaticon.com
 DOMAIN,cdn-teams-slug.flaticon.com
 DOMAIN,cdn-uicons.flaticon.com
 DOMAIN,media.flaticon.com
+DOMAIN,photos.flightaware.com
+DOMAIN,tiles.flightaware.com
 DOMAIN,static-assets-web.flixcart.com
 DOMAIN,resizing.flixster.com
 DOMAIN,frontend.floatplane.com
@@ -1505,6 +1507,7 @@ DOMAIN,cdn.sift.com
 DOMAIN,api.simplesvg.com
 DOMAIN,icons.simplesvg.com
 DOMAIN,statics.simpshub.com
+DOMAIN,cdn1.singteldigital.com
 DOMAIN,s3.sitepoint.com
 DOMAIN,uploads.sitepoint.com
 DOMAIN,cdn.sitesearch360.com
@@ -2278,6 +2281,7 @@ DOMAIN,todoist.b-cdn.net
 DOMAIN,vg-bunny-cdn.b-cdn.net
 DOMAIN,vz-2222604c-50b.b-cdn.net
 DOMAIN,vz-c0fe498e-5ab.b-cdn.net
+DOMAIN,tileserver.b10s.net
 DOMAIN,mirror.bahnhof.net
 DOMAIN,debian.balt.net
 DOMAIN,mirrors.centos.behostings.net
@@ -2365,6 +2369,7 @@ DOMAIN,ik.imgkit.net
 DOMAIN,static-act.imoim.net
 DOMAIN,img.imoutomoe.net
 DOMAIN,ftpmirror1.infania.net
+DOMAIN,cdn.infrawire.net
 DOMAIN,mirror.init7.net
 DOMAIN,jsdelivr.ioiox.net
 DOMAIN,cdn.iplocation.net
@@ -2795,6 +2800,7 @@ DOMAIN,sdk.hubble.team
 DOMAIN,cdn-us-2.comaps.tech
 DOMAIN,docs.mrchromebox.tech
 DOMAIN,static.pepy.tech
+DOMAIN,image-tc.galaxy.tf
 DOMAIN,mirror.kku.ac.th
 DOMAIN,mirror1.ku.ac.th
 DOMAIN,mirrors.cloudforest.co.th
@@ -3397,6 +3403,7 @@ DOMAIN-SUFFIX,cncrivals.com
 DOMAIN-SUFFIX,cnet.com
 DOMAIN-SUFFIX,cnn.com
 DOMAIN-SUFFIX,cnyes.com
+DOMAIN-SUFFIX,codebuff.com
 DOMAIN-SUFFIX,codeforces.com
 DOMAIN-SUFFIX,codepenassets.com
 DOMAIN-SUFFIX,codethemicrobit.com
@@ -3665,6 +3672,7 @@ DOMAIN-SUFFIX,framercdn.com
 DOMAIN-SUFFIX,framerstatic.com
 DOMAIN-SUFFIX,framerusercontent.com
 DOMAIN-SUFFIX,freebeacon.com
+DOMAIN-SUFFIX,freebuff.com
 DOMAIN-SUFFIX,freepik.com
 DOMAIN-SUFFIX,frontapp.com
 DOMAIN-SUFFIX,frostbite.com
@@ -5156,6 +5164,7 @@ DOMAIN-SUFFIX,dart.dev
 DOMAIN-SUFFIX,dartpad.dev
 DOMAIN-SUFFIX,delegated-ipfs.dev
 DOMAIN-SUFFIX,epicgames.dev
+DOMAIN-SUFFIX,firebase.dev
 DOMAIN-SUFFIX,flow.dev
 DOMAIN-SUFFIX,flutter.dev
 DOMAIN-SUFFIX,fly.dev

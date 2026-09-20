@@ -1,5 +1,5 @@
-# Total: 1804 rules
-# Last Updated: 2026-09-12T20:44:37.804060+00:00
+# Total: 1807 rules
+# Last Updated: 2026-09-20T11:40:05.461433+00:00
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -260,6 +260,7 @@ domain_suffix_set:
 - cnet.com
 - cnn.com
 - cnyes.com
+- codebuff.com
 - codeforces.com
 - codethemicrobit.com
 - coinbase.com
@@ -372,6 +373,7 @@ domain_suffix_set:
 - framerstatic.com
 - framerusercontent.com
 - freebeacon.com
+- freebuff.com
 - freepik.com
 - ft.com
 - ftchinese.com
@@ -1003,6 +1005,7 @@ domain_suffix_set:
 - aws.dev
 - dart.dev
 - dartpad.dev
+- firebase.dev
 - flow.dev
 - flutter.dev
 - fly.dev

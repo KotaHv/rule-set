@@ -1,5 +1,5 @@
-# Total: 621 rules
-# Last Updated: 2026-08-12T07:59:00.807522+00:00
+# Total: 626 rules
+# Last Updated: 2026-09-20T11:39:39.393260+00:00
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -15,9 +15,10 @@ DOMAIN,github-api.arkoselabs.com
 DOMAIN,docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 DOMAIN,default.exp-tas.com
 DOMAIN,developers.facebook.com
-DOMAIN,firebase.google.com
 DOMAIN,firebase.googleapis.com
 DOMAIN,firebaseappcheck.googleapis.com
+DOMAIN,firebaseappdistribution.googleapis.com
+DOMAIN,firebaseapptesters.googleapis.com
 DOMAIN,firebasedynamiclinks.googleapis.com
 DOMAIN,firebasedynamiclinks-ipv4.googleapis.com
 DOMAIN,firebasedynamiclinks-ipv6.googleapis.com
@@ -118,6 +119,7 @@ DOMAIN-SUFFIX,braveux.com
 DOMAIN-SUFFIX,buckbuild.com
 DOMAIN-SUFFIX,bugsnag.com
 DOMAIN-SUFFIX,canonical.com
+DOMAIN-SUFFIX,codebuff.com
 DOMAIN-SUFFIX,codethemicrobit.com
 DOMAIN-SUFFIX,crashlytics.com
 DOMAIN-SUFFIX,crocoblock.com
@@ -150,6 +152,7 @@ DOMAIN-SUFFIX,framer.com
 DOMAIN-SUFFIX,framercanvas.com
 DOMAIN-SUFFIX,framerstatic.com
 DOMAIN-SUFFIX,framerusercontent.com
+DOMAIN-SUFFIX,freebuff.com
 DOMAIN-SUFFIX,gamesstack.com
 DOMAIN-SUFFIX,gemfury.com
 DOMAIN-SUFFIX,getbootstrap.com
@@ -171,6 +174,7 @@ DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,gitlab.com
 DOMAIN-SUFFIX,go-lang.com
 DOMAIN-SUFFIX,golang.com
+DOMAIN-SUFFIX,firebase.google.com
 DOMAIN-SUFFIX,hashicorp.com
 DOMAIN-SUFFIX,hhvm.com
 DOMAIN-SUFFIX,insiderdevtour.com
@@ -284,6 +288,7 @@ DOMAIN-SUFFIX,archlinux.de
 DOMAIN-SUFFIX,amp.dev
 DOMAIN-SUFFIX,dart.dev
 DOMAIN-SUFFIX,dartpad.dev
+DOMAIN-SUFFIX,firebase.dev
 DOMAIN-SUFFIX,flow.dev
 DOMAIN-SUFFIX,flutter.dev
 DOMAIN-SUFFIX,fury.dev
