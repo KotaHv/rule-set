@@ -1,5 +1,5 @@
-# Total: 6498 rules
-# Last Updated: 2026-09-20T11:40:06.551892+00:00
+# Total: 6500 rules
+# Last Updated: 2026-09-21T13:05:41.961974+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -879,6 +879,8 @@
 - 'cdn2.hextom.com'
 - 'cdn3.hextom.com'
 - 'cdn5.hextom.com'
+- 'images.hibob.com'
+- 'media-process.hibob.com'
 - 'themes.hibootstrap.com'
 - 'code.highcharts.com'
 - 'cdn.himetrica.com'
