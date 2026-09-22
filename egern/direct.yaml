@@ -1,5 +1,5 @@
 # Total: 907 rules
-# Last Updated: 2026-09-22T05:12:50.166262+00:00
+# Last Updated: 2026-09-22T21:32:43.346163+00:00
 no_resolve: true
 domain_set:
 - i.dell.com
@@ -908,7 +908,7 @@ domain_suffix_set:
 - kurogame.xyz
 - nz99.xyz
 domain_wildcard_set:
-- '*.qhimgs?.com'
+- qhimgs?.com
 domain_regex_set:
 - .+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$
 - ^.+-mihayo\.akamaized\.net$

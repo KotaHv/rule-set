@@ -1,5 +1,5 @@
-# Total: 3391 rules
-# Last Updated: 2026-09-19T20:52:53.747305+00:00
+# Total: 3395 rules
+# Last Updated: 2026-09-22T21:31:59.523336+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -444,6 +444,7 @@
 - 'speedtest.macapatelecom.net.br'
 - 'speedtest.maisnetfibra.net.br'
 - 'spdtest.omegatelecom.net.br'
+- 'ookla.pgservicos.net.br'
 - 'speedtest.pinguimtelecom.net.br'
 - 'ookla.playmaisreverso.net.br'
 - 'stmanaquiri.pplink.net.br'
@@ -1741,6 +1742,7 @@
 - 'speedtest3.avatel.es'
 - 'speedtest.beconet.es'
 - 'speedtest.citelia.es'
+- 'speedtest1.co-fi.es'
 - 'speedtest.comvive.es'
 - 'speedtest1.conecta-3.es'
 - 'speedtest.conecta-t.es'
@@ -2107,6 +2109,7 @@
 - 'st-be-bo1.infra.garr.it'
 - 'st-be-rm2.infra.garr.it'
 - 'speedtest.hynetwifi.it'
+- 'speedtest-2.hynetwifi.it'
 - 'speedtestmm01.interplanet.it'
 - 'speedtestvr01.interplanet.it'
 - 'test.intred.it'
@@ -2640,6 +2643,7 @@
 - 'speedtest-cbr.cdn.on.net'
 - 'okc-speedtest.onenet.net'
 - 'tul-speedtest.onenet.net'
+- 'ookla.onivia.net'
 - 'speedtest.ontarionet.net'
 - 'web01.onthepixel.net'
 - 'speedgauge2.optonline.net'
