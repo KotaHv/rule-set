@@ -1,5 +1,5 @@
-# Total: 3403 rules
-# Last Updated: 2026-09-28T23:24:59.934575+00:00
+# Total: 3404 rules
+# Last Updated: 2026-09-29T22:28:15.293231+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -602,6 +602,7 @@
 - 'speedtest.brightstar.cloud'
 - 'pauseq4vost1.datamossa.cloud'
 - 'speedtest-nl1.expresshost.cloud'
+- 'speedtest-pl1.expresshost.cloud'
 - 'speedtest.fra01.fusionflare.cloud'
 - 'speedtest.herza.cloud'
 - 'srv1297868.hstgr.cloud'

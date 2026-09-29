@@ -1,5 +1,5 @@
-# Total: 3403 rules
-# Last Updated: 2026-09-28T23:24:59.980955+00:00
+# Total: 3404 rules
+# Last Updated: 2026-09-29T22:28:15.340473+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -603,6 +603,7 @@ domain_set:
 - speedtest.brightstar.cloud
 - pauseq4vost1.datamossa.cloud
 - speedtest-nl1.expresshost.cloud
+- speedtest-pl1.expresshost.cloud
 - speedtest.fra01.fusionflare.cloud
 - speedtest.herza.cloud
 - srv1297868.hstgr.cloud
