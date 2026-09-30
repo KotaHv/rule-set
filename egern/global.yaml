@@ -1,5 +1,5 @@
-# Total: 1807 rules
-# Last Updated: 2026-09-20T11:40:05.461433+00:00
+# Total: 1808 rules
+# Last Updated: 2026-09-30T12:51:42.437537+00:00
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -80,6 +80,7 @@ domain_suffix_set:
 - ch
 - chrome
 - fastlane.ci
+- tokens.ci
 - anaconda.cloud
 - jetbrains.cloud
 - sketch.cloud

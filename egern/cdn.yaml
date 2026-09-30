@@ -1,5 +1,5 @@
-# Total: 4737 rules
-# Last Updated: 2026-09-28T05:38:59.249915+00:00
+# Total: 4739 rules
+# Last Updated: 2026-09-30T12:51:03.639452+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1067,6 +1067,8 @@ domain_set:
 - cdn.hellofresh.com
 - img.hellofresh.com
 - static.helpjuice.com
+- img.helpnetsecurity.com
+- img2.helpnetsecurity.com
 - hentai0.com
 - cdn1.hentaicity.com
 - hls.hentaicity.com

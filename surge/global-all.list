@@ -1,5 +1,5 @@
-# Total: 6691 rules
-# Last Updated: 2026-09-28T05:39:35.660881+00:00
+# Total: 6696 rules
+# Last Updated: 2026-09-30T12:51:45.177944+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -867,6 +867,8 @@ DOMAIN,cdn.hellofresh.com
 DOMAIN,img.hellofresh.com
 DOMAIN,app.hellosign.com
 DOMAIN,static.helpjuice.com
+DOMAIN,img.helpnetsecurity.com
+DOMAIN,img2.helpnetsecurity.com
 DOMAIN,supercell.helpshift.com
 DOMAIN,hentai0.com
 DOMAIN,cdn1.hentaicity.com
@@ -1945,6 +1947,7 @@ DOMAIN,s3.c.im
 DOMAIN,favicon.im
 DOMAIN,badges.gitter.im
 DOMAIN,img.majors.im
+DOMAIN,download.manus.im
 DOMAIN,polyfill-fe.toss.im
 DOMAIN,static.toss.im
 DOMAIN,img.toto.im
@@ -2019,6 +2022,7 @@ DOMAIN,cdn.growthbook.io
 DOMAIN,gtranslate.io
 DOMAIN,media.hachyderm.io
 DOMAIN,cdn.hackaday.io
+DOMAIN,dl.heycue.io
 DOMAIN,packages.httpie.io
 DOMAIN,libraries.hund.io
 DOMAIN,icon.icepanel.io
@@ -2977,6 +2981,7 @@ DOMAIN-SUFFIX,whoer.cc
 DOMAIN-SUFFIX,ch
 DOMAIN-SUFFIX,chrome
 DOMAIN-SUFFIX,fastlane.ci
+DOMAIN-SUFFIX,tokens.ci
 DOMAIN-SUFFIX,roblox.cl
 DOMAIN-SUFFIX,supr.cl
 DOMAIN-SUFFIX,anaconda.cloud

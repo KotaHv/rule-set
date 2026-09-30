@@ -1,5 +1,5 @@
-# Total: 6503 rules
-# Last Updated: 2026-09-28T05:39:35.769311+00:00
+# Total: 6508 rules
+# Last Updated: 2026-09-30T12:51:45.184035+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -868,6 +868,8 @@
 - 'img.hellofresh.com'
 - 'app.hellosign.com'
 - 'static.helpjuice.com'
+- 'img.helpnetsecurity.com'
+- 'img2.helpnetsecurity.com'
 - 'supercell.helpshift.com'
 - 'hentai0.com'
 - 'cdn1.hentaicity.com'
@@ -1946,6 +1948,7 @@
 - 'favicon.im'
 - 'badges.gitter.im'
 - 'img.majors.im'
+- 'download.manus.im'
 - 'polyfill-fe.toss.im'
 - 'static.toss.im'
 - 'img.toto.im'
@@ -2020,6 +2023,7 @@
 - 'gtranslate.io'
 - 'media.hachyderm.io'
 - 'cdn.hackaday.io'
+- 'dl.heycue.io'
 - 'packages.httpie.io'
 - 'libraries.hund.io'
 - 'icon.icepanel.io'
@@ -2978,6 +2982,7 @@
 - '+.ch'
 - '+.chrome'
 - '+.fastlane.ci'
+- '+.tokens.ci'
 - '+.roblox.cl'
 - '+.supr.cl'
 - '+.anaconda.cloud'

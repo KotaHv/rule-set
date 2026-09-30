@@ -1,5 +1,5 @@
-# Total: 904 rules
-# Last Updated: 2026-09-22T05:12:50.150594+00:00
+# Total: 905 rules
+# Last Updated: 2026-09-30T12:51:44.992756+00:00
 'payload':
 - 'i.dell.com'
 - 'ubisoftconnect.eo-edgefunctions7.com'
@@ -27,6 +27,7 @@
 - 'discovery-v4.syncthing.net'
 - 'discovery-v6.syncthing.net'
 - 'stun.syncthing.net'
+- 'time.xtracloud.net'
 - 'kms.03k.org'
 - 'injections.adguard.org'
 - 'local.adguard.org'

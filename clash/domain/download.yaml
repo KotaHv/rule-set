@@ -1,5 +1,5 @@
-# Total: 1969 rules
-# Last Updated: 2026-09-18T21:04:00.168984+00:00
+# Total: 1971 rules
+# Last Updated: 2026-09-30T12:51:03.247780+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -729,6 +729,7 @@
 - 'ubuntu-archive.interhost.co.il'
 - 'apache.spd.co.il'
 - 'mirror.isoc.org.il'
+- 'download.manus.im'
 - 'npm.im'
 - 'mirror.ietlucknow.ac.in'
 - 'mirrors.iitd.ac.in'
@@ -760,6 +761,7 @@
 - 'down.filen.io'
 - 'download.fydeos.io'
 - 'store1.gofile.io'
+- 'dl.heycue.io'
 - 'packages.httpie.io'
 - 'dl.iina.io'
 - 'dl-portal.iina.io'

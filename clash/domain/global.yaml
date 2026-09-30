@@ -1,5 +1,5 @@
-# Total: 1789 rules
-# Last Updated: 2026-09-20T11:40:05.421803+00:00
+# Total: 1790 rules
+# Last Updated: 2026-09-30T12:51:42.399778+00:00
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -78,6 +78,7 @@
 - '+.ch'
 - '+.chrome'
 - '+.fastlane.ci'
+- '+.tokens.ci'
 - '+.anaconda.cloud'
 - '+.jetbrains.cloud'
 - '+.sketch.cloud'
