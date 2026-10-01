@@ -1,5 +1,5 @@
-# Total: 3406 rules
-# Last Updated: 2026-09-30T22:26:40.596102+00:00
+# Total: 3408 rules
+# Last Updated: 2026-10-01T22:48:53.016339+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -150,6 +150,7 @@
 - 'velocidade.amazoniatelecom.com.br'
 - 'speedtest.amazontelecom.com.br'
 - 'speedtest.apnet-rr.com.br'
+- 'speedtest.apnetbv.com.br'
 - 'aragonnetspeedtest.com.br'
 - 'ookla.araujotelecom.com.br'
 - 'speedtest.auratelecom.com.br'
@@ -823,6 +824,7 @@
 - 'speedtest.datonofibra.com'
 - 'speedtest.datos101.com'
 - 'sp1-de.delska.com'
+- 'sp1-nl.delska.com'
 - 'speedtest.deltacable.com'
 - 'mum-speedtest.digianaspeednet.com'
 - 'digital-net-isp.com'

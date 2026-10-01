@@ -1,5 +1,5 @@
-# Total: 4660 rules
-# Last Updated: 2026-09-30T12:51:03.578773+00:00
+# Total: 4662 rules
+# Last Updated: 2026-10-01T22:49:02.144185+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -1861,6 +1861,7 @@
 - 'api.simplesvg.com'
 - 'icons.simplesvg.com'
 - 'statics.simpshub.com'
+- 'assets.singaporeair.com'
 - 'cdn1.singteldigital.com'
 - 's3.sitepoint.com'
 - 'uploads.sitepoint.com'
@@ -4345,6 +4346,7 @@
 - '+.mycdn.me'
 - '+.randomuser.me'
 - '+.rocketcdn.me'
+- '+.fal.media'
 - '+.ipfs.telos.miami'
 - '+.static.microsoft'
 - '+.cdn.skk.moe'

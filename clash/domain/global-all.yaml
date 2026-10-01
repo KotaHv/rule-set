@@ -1,5 +1,5 @@
-# Total: 6508 rules
-# Last Updated: 2026-09-30T12:51:45.184035+00:00
+# Total: 6510 rules
+# Last Updated: 2026-10-01T22:49:41.959878+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1515,6 +1515,7 @@
 - 'api.simplesvg.com'
 - 'icons.simplesvg.com'
 - 'statics.simpshub.com'
+- 'assets.singaporeair.com'
 - 'cdn1.singteldigital.com'
 - 's3.sitepoint.com'
 - 'uploads.sitepoint.com'
@@ -5552,6 +5553,7 @@
 - '+.tx.me'
 - '+.wa.me'
 - '+.emby.media'
+- '+.fal.media'
 - '+.github.media'
 - '+.hayabusa.media'
 - '+.smashing.media'

@@ -1,5 +1,5 @@
-# Total: 6632 rules
-# Last Updated: 2026-09-30T12:51:45.264996+00:00
+# Total: 6634 rules
+# Last Updated: 2026-10-01T22:49:42.039201+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1516,6 +1516,7 @@ domain_set:
 - api.simplesvg.com
 - icons.simplesvg.com
 - statics.simpshub.com
+- assets.singaporeair.com
 - cdn1.singteldigital.com
 - s3.sitepoint.com
 - uploads.sitepoint.com
@@ -5554,6 +5555,7 @@ domain_suffix_set:
 - tx.me
 - wa.me
 - emby.media
+- fal.media
 - github.media
 - hayabusa.media
 - smashing.media
