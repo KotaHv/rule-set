@@ -1,5 +1,5 @@
-# Total: 3408 rules
-# Last Updated: 2026-10-01T22:48:53.016339+00:00
+# Total: 3409 rules
+# Last Updated: 2026-10-02T12:55:46.811810+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -3402,6 +3402,7 @@
 - '+.speedtest.timeweb.ru'
 - '+.speedtest.singnet.com.sg'
 - '+.speedtest.com.sg'
+- '+.speedtest.sg'
 - '+.speedtest.comnet.com.tr'
 - '+.speedtest.gibir.net.tr'
 - '+.speednet.net.tr'
