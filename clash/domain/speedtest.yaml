@@ -1,5 +1,5 @@
-# Total: 3409 rules
-# Last Updated: 2026-10-02T12:55:46.811810+00:00
+# Total: 3411 rules
+# Last Updated: 2026-10-02T22:24:15.047971+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -602,6 +602,7 @@
 - 'speedtest3.airbeam.cloud'
 - 'speedtest.brightstar.cloud'
 - 'pauseq4vost1.datamossa.cloud'
+- 'speedtest-de1.expresshost.cloud'
 - 'speedtest-nl1.expresshost.cloud'
 - 'speedtest-pl1.expresshost.cloud'
 - 'speedtest.fra01.fusionflare.cloud'
@@ -1747,6 +1748,7 @@
 - 'speedtest1.avatel.es'
 - 'speedtest2.avatel.es'
 - 'speedtest3.avatel.es'
+- 'speedtest.b3online.es'
 - 'speedtest.beconet.es'
 - 'speedtest.citelia.es'
 - 'speedtest1.co-fi.es'
