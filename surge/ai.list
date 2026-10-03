@@ -1,5 +1,5 @@
-# Total: 52 rules
-# Last Updated: 2026-09-07T21:38:34.512182+00:00
+# Total: 53 rules
+# Last Updated: 2026-10-03T16:33:39.523218+00:00
 DOMAIN,api.jetbrains.ai
 DOMAIN,openrouter.ai
 DOMAIN,gateway.ai.cloudflare.com
@@ -43,6 +43,7 @@ DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,generativeai.google

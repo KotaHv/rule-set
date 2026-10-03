@@ -1,5 +1,5 @@
-# Total: 49 rules
-# Last Updated: 2026-09-07T21:38:34.646186+00:00
+# Total: 50 rules
+# Last Updated: 2026-10-03T16:33:39.526089+00:00
 'payload':
 - 'api.jetbrains.ai'
 - 'openrouter.ai'
@@ -44,6 +44,7 @@
 - '+.oaistatic.com'
 - '+.poe.com'
 - '+.sora.com'
+- '+.clau.de'
 - '+.deepmind.google'
 - '+.gemini.google'
 - '+.generativeai.google'
