@@ -1,5 +1,5 @@
-# Total: 6510 rules
-# Last Updated: 2026-10-01T22:49:41.959878+00:00
+# Total: 6515 rules
+# Last Updated: 2026-10-08T13:48:47.080478+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -512,6 +512,7 @@
 - 'mirror.citrahost.com'
 - 'image.civitai.com'
 - 'vfat.classicreload.com'
+- 'releases.claude.com'
 - 'status.claude.com'
 - 'cmd-cdn.cleanmymac.com'
 - 'img.clerk.com'
@@ -1512,6 +1513,7 @@
 - 'data.cdn.siemens.com'
 - 'cache.industry.siemens.com'
 - 'cdn.sift.com'
+- 'rum-ingest.us1.signalfx.com'
 - 'api.simplesvg.com'
 - 'icons.simplesvg.com'
 - 'statics.simpshub.com'
@@ -1552,6 +1554,7 @@
 - 'assets.sololearn.com'
 - 'blob.sololearn.com'
 - 'lecontent.sololearn.com'
+- 'static.acm.account.sony.com'
 - 'liveimg.sooplive.com'
 - 'res.sooplive.com'
 - 'static.sooplive.com'
@@ -1721,7 +1724,6 @@
 - 'mirrors.usinternet.com'
 - 'img.utdstc.com'
 - 'stc.utdstc.com'
-- 'static.vanta.com'
 - 'vectorified.com'
 - 'cdn.veeam.com'
 - 'mirror.veesp.com'
@@ -4772,6 +4774,7 @@
 - '+.surfsharkdns.com'
 - '+.surge-activation.com'
 - '+.surrit.com'
+- '+.surveymonkey.com'
 - '+.susercontent.com'
 - '+.svbtleusercontent.com'
 - '+.sway-cdn.com'
@@ -4950,6 +4953,7 @@
 - '+.vancdn.com'
 - '+.vanillicon.com'
 - '+.vanityfair.com'
+- '+.vanta.com'
 - '+.vcmdiawe.com'
 - '+.venmo.com'
 - '+.venmo-touch.com'
@@ -6401,6 +6405,7 @@
 - '+.mirror.globo.tech'
 - '+.garena.co.th'
 - '+.to'
+- '+.approveit.today'
 - '+.archive.today'
 - '+.bgp.tools'
 - '+.dnscheck.tools'

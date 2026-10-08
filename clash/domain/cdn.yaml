@@ -1,5 +1,5 @@
-# Total: 4662 rules
-# Last Updated: 2026-10-01T22:49:02.144185+00:00
+# Total: 4666 rules
+# Last Updated: 2026-10-08T13:48:09.454458+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -1858,6 +1858,7 @@
 - 'data.cdn.siemens.com'
 - 'cache.industry.siemens.com'
 - 'cdn.sift.com'
+- 'rum-ingest.us1.signalfx.com'
 - 'api.simplesvg.com'
 - 'icons.simplesvg.com'
 - 'statics.simpshub.com'
@@ -1899,6 +1900,7 @@
 - 'assets.sololearn.com'
 - 'blob.sololearn.com'
 - 'lecontent.sololearn.com'
+- 'static.acm.account.sony.com'
 - 'cdn-a.sonyentertainmentnetwork.com'
 - 'liveimg.sooplive.com'
 - 'res.sooplive.com'
@@ -2146,6 +2148,7 @@
 - 'stc.utdstc.com'
 - 'cdn.v2ex.com'
 - 'static.v2ex.com'
+- 'assets.vanta.com'
 - 'static.vanta.com'
 - 'vectorified.com'
 - 'cdn.veeam.com'
@@ -3294,6 +3297,7 @@
 - 'img.sflix.to'
 - 'embed.tawk.to'
 - 'embed-v2.testimonial.to'
+- 'n.approveit.today'
 - 'pics.javhd.today'
 - 'openreplay-new.deel.tools'
 - 'namedotcom-cdn.name.tools'

@@ -1,5 +1,5 @@
-# Total: 1971 rules
-# Last Updated: 2026-09-30T12:51:03.247780+00:00
+# Total: 1972 rules
+# Last Updated: 2026-10-08T13:48:09.074404+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -209,6 +209,7 @@
 - 'dl.circleci.com'
 - 'mirror.citrahost.com'
 - 'vfat.classicreload.com'
+- 'releases.claude.com'
 - 'dl.cleverfiles.com'
 - 'mirror.clientvps.com'
 - 'pkg.cloudflare.com'

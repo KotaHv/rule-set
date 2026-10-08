@@ -1,5 +1,5 @@
-# Total: 79 rules
-# Last Updated: 2026-08-19T01:59:01.832914+00:00
+# Total: 80 rules
+# Last Updated: 2026-10-08T13:48:09.454458+00:00
 payload:
 - DOMAIN-WILDCARD,image*.cloudokyo.cloud
 - DOMAIN-WILDCARD,video*.cloudokyo.cloud
@@ -37,6 +37,7 @@ payload:
 - DOMAIN-WILDCARD,s???.pornone.com
 - DOMAIN-WILDCARD,th-*.pornone.com
 - DOMAIN-WILDCARD,*.img.*.sendibm?.com
+- DOMAIN-WILDCARD,rum-ingest.*.signalfx.com
 - DOMAIN-WILDCARD,s3.*.wasabisys.com
 - DOMAIN-WILDCARD,sdk.*.braze.eu
 - DOMAIN-WILDCARD,cdn?.mikuclub.fun

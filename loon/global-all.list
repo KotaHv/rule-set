@@ -1,5 +1,5 @@
-# Total: 6648 rules
-# Last Updated: 2026-10-01T22:49:41.957103+00:00
+# Total: 6653 rules
+# Last Updated: 2026-10-08T13:48:47.077341+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -511,6 +511,7 @@ DOMAIN,sf-flow-web-cdn.ciciai.com
 DOMAIN,mirror.citrahost.com
 DOMAIN,image.civitai.com
 DOMAIN,vfat.classicreload.com
+DOMAIN,releases.claude.com
 DOMAIN,status.claude.com
 DOMAIN,cmd-cdn.cleanmymac.com
 DOMAIN,img.clerk.com
@@ -1511,6 +1512,7 @@ DOMAIN,cdn.shoppinggives.com
 DOMAIN,data.cdn.siemens.com
 DOMAIN,cache.industry.siemens.com
 DOMAIN,cdn.sift.com
+DOMAIN,rum-ingest.us1.signalfx.com
 DOMAIN,api.simplesvg.com
 DOMAIN,icons.simplesvg.com
 DOMAIN,statics.simpshub.com
@@ -1551,6 +1553,7 @@ DOMAIN,static.solarwinds.com
 DOMAIN,assets.sololearn.com
 DOMAIN,blob.sololearn.com
 DOMAIN,lecontent.sololearn.com
+DOMAIN,static.acm.account.sony.com
 DOMAIN,liveimg.sooplive.com
 DOMAIN,res.sooplive.com
 DOMAIN,static.sooplive.com
@@ -1720,7 +1723,6 @@ DOMAIN,stories.usestoryteller.com
 DOMAIN,mirrors.usinternet.com
 DOMAIN,img.utdstc.com
 DOMAIN,stc.utdstc.com
-DOMAIN,static.vanta.com
 DOMAIN,vectorified.com
 DOMAIN,cdn.veeam.com
 DOMAIN,mirror.veesp.com
@@ -4771,6 +4773,7 @@ DOMAIN-SUFFIX,surfshark.com
 DOMAIN-SUFFIX,surfsharkdns.com
 DOMAIN-SUFFIX,surge-activation.com
 DOMAIN-SUFFIX,surrit.com
+DOMAIN-SUFFIX,surveymonkey.com
 DOMAIN-SUFFIX,susercontent.com
 DOMAIN-SUFFIX,svbtleusercontent.com
 DOMAIN-SUFFIX,sway-cdn.com
@@ -4949,6 +4952,7 @@ DOMAIN-SUFFIX,valvesoftware.com
 DOMAIN-SUFFIX,vancdn.com
 DOMAIN-SUFFIX,vanillicon.com
 DOMAIN-SUFFIX,vanityfair.com
+DOMAIN-SUFFIX,vanta.com
 DOMAIN-SUFFIX,vcmdiawe.com
 DOMAIN-SUFFIX,venmo.com
 DOMAIN-SUFFIX,venmo-touch.com
@@ -6400,6 +6404,7 @@ DOMAIN-SUFFIX,s.team
 DOMAIN-SUFFIX,mirror.globo.tech
 DOMAIN-SUFFIX,garena.co.th
 DOMAIN-SUFFIX,to
+DOMAIN-SUFFIX,approveit.today
 DOMAIN-SUFFIX,archive.today
 DOMAIN-SUFFIX,bgp.tools
 DOMAIN-SUFFIX,dnscheck.tools

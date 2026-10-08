@@ -1,5 +1,5 @@
-# Total: 6634 rules
-# Last Updated: 2026-10-01T22:49:42.039201+00:00
+# Total: 6640 rules
+# Last Updated: 2026-10-08T13:48:47.160674+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -513,6 +513,7 @@ domain_set:
 - mirror.citrahost.com
 - image.civitai.com
 - vfat.classicreload.com
+- releases.claude.com
 - status.claude.com
 - cmd-cdn.cleanmymac.com
 - img.clerk.com
@@ -1513,6 +1514,7 @@ domain_set:
 - data.cdn.siemens.com
 - cache.industry.siemens.com
 - cdn.sift.com
+- rum-ingest.us1.signalfx.com
 - api.simplesvg.com
 - icons.simplesvg.com
 - statics.simpshub.com
@@ -1553,6 +1555,7 @@ domain_set:
 - assets.sololearn.com
 - blob.sololearn.com
 - lecontent.sololearn.com
+- static.acm.account.sony.com
 - liveimg.sooplive.com
 - res.sooplive.com
 - static.sooplive.com
@@ -1722,7 +1725,6 @@ domain_set:
 - mirrors.usinternet.com
 - img.utdstc.com
 - stc.utdstc.com
-- static.vanta.com
 - vectorified.com
 - cdn.veeam.com
 - mirror.veesp.com
@@ -4774,6 +4776,7 @@ domain_suffix_set:
 - surfsharkdns.com
 - surge-activation.com
 - surrit.com
+- surveymonkey.com
 - susercontent.com
 - svbtleusercontent.com
 - sway-cdn.com
@@ -4952,6 +4955,7 @@ domain_suffix_set:
 - vancdn.com
 - vanillicon.com
 - vanityfair.com
+- vanta.com
 - vcmdiawe.com
 - venmo.com
 - venmo-touch.com
@@ -6403,6 +6407,7 @@ domain_suffix_set:
 - mirror.globo.tech
 - garena.co.th
 - to
+- approveit.today
 - archive.today
 - bgp.tools
 - dnscheck.tools
@@ -6536,6 +6541,7 @@ domain_wildcard_set:
 - cdn-*.microsoft.com
 - chunk-*.mux.com
 - '*.img.*.sendibm?.com'
+- rum-ingest.*.signalfx.com
 - s3.*.wasabisys.com
 - cdn?.mikuclub.fun
 - file?.mikuclub.fun

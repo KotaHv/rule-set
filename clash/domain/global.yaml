@@ -1,5 +1,5 @@
-# Total: 1790 rules
-# Last Updated: 2026-09-30T12:51:42.399778+00:00
+# Total: 1793 rules
+# Last Updated: 2026-10-08T13:48:45.947175+00:00
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -817,6 +817,7 @@
 - '+.surfshark.com'
 - '+.surfsharkdns.com'
 - '+.surge-activation.com'
+- '+.surveymonkey.com'
 - '+.swiftcapital.com'
 - '+.swiftfinancial.com'
 - '+.synergyse.com'
@@ -896,6 +897,7 @@
 - '+.vagrantcloud.com'
 - '+.vagrantup.com'
 - '+.vanityfair.com'
+- '+.vanta.com'
 - '+.venmo.com'
 - '+.venmo-touch.com'
 - '+.vercel.com'
@@ -1743,6 +1745,7 @@
 - '+.taipei'
 - '+.jetbrains.team'
 - '+.to'
+- '+.approveit.today'
 - '+.archive.today'
 - '+.bgp.tools'
 - '+.dnscheck.tools'

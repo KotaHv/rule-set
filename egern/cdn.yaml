@@ -1,5 +1,5 @@
-# Total: 4741 rules
-# Last Updated: 2026-10-01T22:49:02.199641+00:00
+# Total: 4746 rules
+# Last Updated: 2026-10-08T13:48:09.515038+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -1859,6 +1859,7 @@ domain_set:
 - data.cdn.siemens.com
 - cache.industry.siemens.com
 - cdn.sift.com
+- rum-ingest.us1.signalfx.com
 - api.simplesvg.com
 - icons.simplesvg.com
 - statics.simpshub.com
@@ -1900,6 +1901,7 @@ domain_set:
 - assets.sololearn.com
 - blob.sololearn.com
 - lecontent.sololearn.com
+- static.acm.account.sony.com
 - cdn-a.sonyentertainmentnetwork.com
 - liveimg.sooplive.com
 - res.sooplive.com
@@ -2147,6 +2149,7 @@ domain_set:
 - stc.utdstc.com
 - cdn.v2ex.com
 - static.v2ex.com
+- assets.vanta.com
 - static.vanta.com
 - vectorified.com
 - cdn.veeam.com
@@ -3295,6 +3298,7 @@ domain_set:
 - img.sflix.to
 - embed.tawk.to
 - embed-v2.testimonial.to
+- n.approveit.today
 - pics.javhd.today
 - openreplay-new.deel.tools
 - namedotcom-cdn.name.tools
@@ -4702,6 +4706,7 @@ domain_wildcard_set:
 - s???.pornone.com
 - th-*.pornone.com
 - '*.img.*.sendibm?.com'
+- rum-ingest.*.signalfx.com
 - s3.*.wasabisys.com
 - sdk.*.braze.eu
 - cdn?.mikuclub.fun
