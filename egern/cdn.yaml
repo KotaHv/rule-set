@@ -1,5 +1,5 @@
-# Total: 4746 rules
-# Last Updated: 2026-10-08T13:48:09.515038+00:00
+# Total: 4747 rules
+# Last Updated: 2026-10-12T15:49:29.726854+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -3221,6 +3221,7 @@ domain_set:
 - static.mysph.sph.com.sg
 - cassette.sphdigital.com.sg
 - static.zaobao.com.sg
+- tiles.onemap.gov.sg
 - brew.sh
 - docs.brew.sh
 - proxy.cors.sh

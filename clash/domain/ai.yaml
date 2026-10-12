@@ -1,9 +1,11 @@
-# Total: 50 rules
-# Last Updated: 2026-10-03T16:33:39.526089+00:00
+# Total: 53 rules
+# Last Updated: 2026-10-12T15:49:20.738102+00:00
 'payload':
 - 'api.jetbrains.ai'
 - 'openrouter.ai'
 - 'gateway.ai.cloudflare.com'
+- 'inference.codeium.com'
+- 'server.codeium.com'
 - 'api.github.com'
 - 'alkalicore-pa.clients6.google.com'
 - 'jules.google.com'
@@ -11,6 +13,7 @@
 - 'aisandbox-pa.googleapis.com'
 - 'daily-cloudcode-pa.googleapis.com'
 - 'robinfrontend-pa.googleapis.com'
+- 'server.self-serve.windsurf.com'
 - 'ai.google.dev'
 - 'antigravity-unleash.goog'
 - 'antigravity.google'

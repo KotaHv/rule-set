@@ -1,8 +1,10 @@
-# Total: 53 rules
-# Last Updated: 2026-10-03T16:33:39.524839+00:00
+# Total: 56 rules
+# Last Updated: 2026-10-12T15:49:20.736623+00:00
 DOMAIN,api.jetbrains.ai
 DOMAIN,openrouter.ai
 DOMAIN,gateway.ai.cloudflare.com
+DOMAIN,inference.codeium.com
+DOMAIN,server.codeium.com
 DOMAIN,api.github.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,jules.google.com
@@ -10,6 +12,7 @@ DOMAIN,aida.googleapis.com
 DOMAIN,aisandbox-pa.googleapis.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
 DOMAIN,robinfrontend-pa.googleapis.com
+DOMAIN,server.self-serve.windsurf.com
 DOMAIN,ai.google.dev
 DOMAIN,antigravity-unleash.goog
 DOMAIN,antigravity.google
