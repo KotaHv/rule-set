@@ -1,5 +1,5 @@
-# Total: 3427 rules
-# Last Updated: 2026-10-15T04:56:16.589421+00:00
+# Total: 3429 rules
+# Last Updated: 2026-10-15T21:34:26.453761+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -444,6 +444,7 @@
 - 'speedtest.impactusnet.net.br'
 - 'speedtest.infogamesvr.net.br'
 - 'speedtest.infortec.net.br'
+- 'speedtest.infortectelecom.net.br'
 - 'velocidade.kingnet.net.br'
 - 'test.logae.net.br'
 - 'velocidade.lplink.net.br'
@@ -1629,6 +1630,7 @@
 - 'speedtest1.claro.cr'
 - 'speedtest.ct.co.cr'
 - 'speedtest.tigo.co.cr'
+- 'speedtest.ufinet.co.cr'
 - 'speed.data.cr'
 - 'speed.fibraencasa.cr'
 - 'speedtest.luminet.cr'
