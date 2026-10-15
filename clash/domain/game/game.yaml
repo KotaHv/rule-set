@@ -1,5 +1,5 @@
-# Total: 822 rules
-# Last Updated: 2026-08-13T13:55:08.882398+00:00
+# Total: 823 rules
+# Last Updated: 2026-10-15T11:49:06.227462+00:00
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -405,6 +405,7 @@
 - '+.playoverwatch.com'
 - '+.playparagon.com'
 - '+.playstation.com'
+- '+.playstationnetwork.com'
 - '+.playvalorant.com'
 - '+.playwarcraft3.com'
 - '+.pogo.com'
