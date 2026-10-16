@@ -1,5 +1,5 @@
-# Total: 6644 rules
-# Last Updated: 2026-10-15T11:49:42.451020+00:00
+# Total: 6646 rules
+# Last Updated: 2026-10-16T11:43:10.008502+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1000,6 +1000,8 @@ domain_set:
 - mirror.us-sc.kamatera.com
 - mirror.us-tx.kamatera.com
 - media.karousell.com
+- mweb-cdn.karousell.com
+- sl3-cdn.karousell.com
 - content.kaspersky-labs.com
 - img.kbhgames.com
 - kdata1.com

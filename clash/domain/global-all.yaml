@@ -1,5 +1,5 @@
-# Total: 6519 rules
-# Last Updated: 2026-10-15T11:49:42.373440+00:00
+# Total: 6521 rules
+# Last Updated: 2026-10-16T11:43:09.927211+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -999,6 +999,8 @@
 - 'mirror.us-sc.kamatera.com'
 - 'mirror.us-tx.kamatera.com'
 - 'media.karousell.com'
+- 'mweb-cdn.karousell.com'
+- 'sl3-cdn.karousell.com'
 - 'content.kaspersky-labs.com'
 - 'img.kbhgames.com'
 - 'kdata1.com'

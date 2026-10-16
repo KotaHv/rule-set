@@ -1,5 +1,5 @@
-# Total: 4671 rules
-# Last Updated: 2026-10-15T11:49:06.844410+00:00
+# Total: 4673 rules
+# Last Updated: 2026-10-16T11:42:39.184617+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -1225,6 +1225,8 @@
 - 'cdnsecakmi.kaltura.com'
 - 'cfvod.kaltura.com'
 - 'media.karousell.com'
+- 'mweb-cdn.karousell.com'
+- 'sl3-cdn.karousell.com'
 - 'content.kaspersky-labs.com'
 - 'img.kbhgames.com'
 - 'kdata1.com'
