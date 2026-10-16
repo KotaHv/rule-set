@@ -1,5 +1,5 @@
-# Total: 3429 rules
-# Last Updated: 2026-10-15T21:34:26.501991+00:00
+# Total: 3432 rules
+# Last Updated: 2026-10-16T21:27:30.222792+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1135,6 +1135,7 @@ domain_set:
 - ookla-in.mercuryfiber.com
 - ookla-ks.mercuryfiber.com
 - min-r450-speedtest.metrocomm.com
+- pri-r450-speedtest.metrocomm.com
 - ran-r450-speedtest.metrocomm.com
 - sul-r450-speedtest.metrocomm.com
 - speedtest.amesiaaa.metronetinc.com
@@ -1764,6 +1765,7 @@ domain_set:
 - speedtest.beconet.es
 - speedtest.citelia.es
 - speedtest1.co-fi.es
+- speedtest2.co-fi.es
 - speedtest.comvive.es
 - speedtest1.conecta-3.es
 - speedtest.conecta-t.es
@@ -2216,6 +2218,7 @@ domain_set:
 - speed.udx.icscoe.jp
 - speedtest.kairun.jp
 - speedtest-xg-oki.glbb.ne.jp
+- speedtest.fiberlinksolutionsltd.co.ke
 - speedtest11.hotspot.koeln
 - speedtest21.hotspot.koeln
 - sp.corce.link
