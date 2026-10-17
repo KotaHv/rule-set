@@ -1,5 +1,5 @@
-# Total: 3432 rules
-# Last Updated: 2026-10-16T21:27:30.176994+00:00
+# Total: 3438 rules
+# Last Updated: 2026-10-17T20:47:03.740227+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1281,6 +1281,7 @@
 - 'speedtest.resoundnetworks.com'
 - 'speedtest.respawnhost.com'
 - 'speedtest2.rhitcr.com'
+- 'de.riospeed.com'
 - 'speedtest-atlanta.ripplefiber.com'
 - 'speedtest-chicago.ripplefiber.com'
 - 'speedtest-losangeles.ripplefiber.com'
@@ -2702,6 +2703,10 @@
 - 'speedtest.prometeus.net'
 - 'speedtest.provedoracesso.net'
 - 'speedtest.provisiondata.net'
+- 'ookla-dc3.services.proxad.net'
+- 'ookla-dc5.services.proxad.net'
+- 'ookla-lyo.services.proxad.net'
+- 'ookla-mrs.services.proxad.net'
 - 'speedtest1.ptd.net'
 - 'speedtest3.ptd.net'
 - 'speedtest.ptsi.net'
@@ -3280,6 +3285,7 @@
 - 'speedtest-london-east.vodafone.co.uk'
 - 'speedtest-manchester.vodafone.co.uk'
 - 'speedtest2.voicehost.co.uk'
+- 'yyc-speedtest.xeronetworks.co.uk'
 - 'speedtest.hyperwave.uk'
 - 'speedtest-lon.krystal.uk'
 - 'speedtest-thn.krystal.uk'
