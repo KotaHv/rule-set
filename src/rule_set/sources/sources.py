@@ -118,7 +118,11 @@ sources = [
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/ai.conf")
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/ai.conf"),
+            RuleSetResource(source="https://ruleset.skk.moe/List/ip/ai.conf"),
+            RuleSetResource(
+                source="https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
+            ),
         ],
         name="ai",
     ),
