@@ -1,10 +1,11 @@
-# Total: 823 rules
-# Last Updated: 2026-10-15T11:49:06.225980+00:00
+# Total: 826 rules
+# Last Updated: 2026-10-18T04:51:36.052963+00:00
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
 DOMAIN,ubisoft-uplay-savegames.s3.amazonaws.com
 DOMAIN,wb-agora-hydra-file-storage-k1.s3.amazonaws.com
+DOMAIN,devforum-uploads.s3.dualstack.us-east-2.amazonaws.com
 DOMAIN,roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
 DOMAIN,pubg1.battleye.com
 DOMAIN,supercell.helpshift.com
@@ -70,6 +71,8 @@ DOMAIN,steampipe-partner.akamaized.net
 DOMAIN,videos-rockstargames-com.akamaized.net
 DOMAIN,flightsimulator.azureedge.net
 DOMAIN,d1unuk07s6td74.cloudfront.net
+DOMAIN,d348twzf7a8p5.cloudfront.net
+DOMAIN,doy2mn9upadnk.cloudfront.net
 DOMAIN,steamcommunity-a.akamaihd.net.edgesuite.net
 DOMAIN,roblox-poc.global.ssl.fastly.net
 DOMAIN,gog-cdn-lumen.secure2.footprint.net

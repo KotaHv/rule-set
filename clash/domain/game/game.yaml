@@ -1,11 +1,12 @@
-# Total: 823 rules
-# Last Updated: 2026-10-15T11:49:06.227462+00:00
+# Total: 826 rules
+# Last Updated: 2026-10-18T04:51:36.054703+00:00
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
 - 'ubisoft-orbit-savegames.s3.amazonaws.com'
 - 'ubisoft-uplay-savegames.s3.amazonaws.com'
 - 'wb-agora-hydra-file-storage-k1.s3.amazonaws.com'
+- 'devforum-uploads.s3.dualstack.us-east-2.amazonaws.com'
 - 'roblox-load-generator-configuration.s3.us-east-2.amazonaws.com'
 - 'pubg1.battleye.com'
 - 'supercell.helpshift.com'
@@ -71,6 +72,8 @@
 - 'videos-rockstargames-com.akamaized.net'
 - 'flightsimulator.azureedge.net'
 - 'd1unuk07s6td74.cloudfront.net'
+- 'd348twzf7a8p5.cloudfront.net'
+- 'doy2mn9upadnk.cloudfront.net'
 - 'steamcommunity-a.akamaihd.net.edgesuite.net'
 - 'roblox-poc.global.ssl.fastly.net'
 - 'gog-cdn-lumen.secure2.footprint.net'
