@@ -325,6 +325,10 @@ sources = [
         name="anime",
     ),
     SourceModel(
+        resources=[RuleSetResource(source="sources/direct/novel.txt")],
+        name="novel",
+    ),
+    SourceModel(
         resources=[
             MaxMindDBResource(
                 source="https://raw.githubusercontent.com/NobyDa/geoip/release/Private-GeoIP-CN.mmdb"
