@@ -1,5 +1,5 @@
-# Total: 827 rules
-# Last Updated: 2026-10-18T04:51:36.075456+00:00
+# Total: 824 rules
+# Last Updated: 2026-10-18T13:24:33.689179+00:00
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -71,7 +71,6 @@ domain_set:
 - steampipe-kr.akamaized.net
 - steampipe-partner.akamaized.net
 - videos-rockstargames-com.akamaized.net
-- flightsimulator.azureedge.net
 - d1unuk07s6td74.cloudfront.net
 - d348twzf7a8p5.cloudfront.net
 - doy2mn9upadnk.cloudfront.net
@@ -135,7 +134,6 @@ domain_suffix_set:
 - artstation.com
 - artstationmedia.com
 - artstorm.com
-- asobostudio.com
 - awayoutgame.com
 - ayudanintendo.com
 - battlebreakers.com
@@ -255,7 +253,6 @@ domain_suffix_set:
 - fire-emblem-heroes.com
 - fireemblemawakening.com
 - firesidegatherings.com
-- flightsimulator.com
 - flipnotestudio.com
 - fortnite.com
 - forzaracingchampionship.com

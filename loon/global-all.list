@@ -1,5 +1,5 @@
-# Total: 6659 rules
-# Last Updated: 2026-10-16T11:43:09.924063+00:00
+# Total: 6657 rules
+# Last Updated: 2026-10-18T13:25:06.073061+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -2268,7 +2268,6 @@ DOMAIN,edge-consumer-static.azureedge.net
 DOMAIN,edge-mobile-static.azureedge.net
 DOMAIN,edgeassetservice.azureedge.net
 DOMAIN,edgestatic.azureedge.net
-DOMAIN,flightsimulator.azureedge.net
 DOMAIN,mobilecenter.azureedge.net
 DOMAIN,ni-assets.azureedge.net
 DOMAIN,pf-cdn-content-prod.azureedge.net
@@ -2956,6 +2955,7 @@ DOMAIN-SUFFIX,stackmod.blog
 DOMAIN-SUFFIX,stackoverflow.blog
 DOMAIN-SUFFIX,buck.build
 DOMAIN-SUFFIX,addons.business
+DOMAIN-SUFFIX,plex.bz
 DOMAIN-SUFFIX,tile.openstreetmap.bzh
 DOMAIN-SUFFIX,ca
 DOMAIN-SUFFIX,cafe
@@ -3199,7 +3199,6 @@ DOMAIN-SUFFIX,artstorm.com
 DOMAIN-SUFFIX,ashemaletube.com
 DOMAIN-SUFFIX,ask.com
 DOMAIN-SUFFIX,askubuntu.com
-DOMAIN-SUFFIX,asobostudio.com
 DOMAIN-SUFFIX,aspnetcdn.com
 DOMAIN-SUFFIX,assets-gap.com
 DOMAIN-SUFFIX,assets-yammer.com
@@ -3662,7 +3661,6 @@ DOMAIN-SUFFIX,flagcdn.com
 DOMAIN-SUFFIX,flaglog.com
 DOMAIN-SUFFIX,flickr.com
 DOMAIN-SUFFIX,flightradar24.com
-DOMAIN-SUFFIX,flightsimulator.com
 DOMAIN-SUFFIX,flipboard.com
 DOMAIN-SUFFIX,flipkart.com
 DOMAIN-SUFFIX,flipnotestudio.com

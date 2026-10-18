@@ -1,5 +1,5 @@
-# Total: 826 rules
-# Last Updated: 2026-10-18T04:51:36.054703+00:00
+# Total: 823 rules
+# Last Updated: 2026-10-18T13:24:33.618503+00:00
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -70,7 +70,6 @@
 - 'steampipe-kr.akamaized.net'
 - 'steampipe-partner.akamaized.net'
 - 'videos-rockstargames-com.akamaized.net'
-- 'flightsimulator.azureedge.net'
 - 'd1unuk07s6td74.cloudfront.net'
 - 'd348twzf7a8p5.cloudfront.net'
 - 'doy2mn9upadnk.cloudfront.net'
@@ -133,7 +132,6 @@
 - '+.artstation.com'
 - '+.artstationmedia.com'
 - '+.artstorm.com'
-- '+.asobostudio.com'
 - '+.awayoutgame.com'
 - '+.ayudanintendo.com'
 - '+.battlebreakers.com'
@@ -253,7 +251,6 @@
 - '+.fire-emblem-heroes.com'
 - '+.fireemblemawakening.com'
 - '+.firesidegatherings.com'
-- '+.flightsimulator.com'
 - '+.flipnotestudio.com'
 - '+.fortnite.com'
 - '+.forzaracingchampionship.com'
