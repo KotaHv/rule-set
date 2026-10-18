@@ -86,6 +86,14 @@ sources = [
     ),
     SourceModel(
         resources=[
+            DomainSetResource(
+                source="https://ruleset.skk.moe/List/domainset/reject_phishing.conf"
+            )
+        ],
+        name="adblock/sukka/sukka-reject-phishing",
+    ),
+    SourceModel(
+        resources=[
             RuleSetResource(
                 source="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list"
             )
