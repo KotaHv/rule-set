@@ -1,5 +1,5 @@
-# Total: 626 rules
-# Last Updated: 2026-09-20T11:39:39.417413+00:00
+# Total: 627 rules
+# Last Updated: 2026-10-19T13:45:13.389163+00:00
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -225,6 +225,7 @@ domain_suffix_set:
 - parse.com
 - pkgbuild.com
 - poshtestgallery.com
+- postman.com
 - pwabuilder.com
 - react.com
 - reactjs.com

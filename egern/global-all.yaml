@@ -1,5 +1,5 @@
-# Total: 6644 rules
-# Last Updated: 2026-10-18T13:25:06.138425+00:00
+# Total: 6649 rules
+# Last Updated: 2026-10-19T13:45:40.151970+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -227,6 +227,7 @@ domain_set:
 - img.4khd.com
 - mirror.eu.4psacloud.com
 - bundle.5gtb.com
+- vcc-assets.8x8.com
 - images.991.com
 - bundle.9gtb.com
 - content.9gtb.com
@@ -1065,6 +1066,7 @@ domain_set:
 - aurora-customization-usw2.lithium.com
 - cdn.livechatinc.com
 - cdn-city.livere.com
+- frontend2.locally.com
 - a-tiles.locationiq.com
 - b-tiles.locationiq.com
 - c-tiles.locationiq.com
@@ -1659,6 +1661,7 @@ domain_set:
 - ui.trailhead.com
 - cdn.transifex.com
 - widgets.tree-nation.com
+- media.trekbikes.com
 - tag.trovo-tag.com
 - cdn.trustedsite.com
 - img.api.tryprofound.com
@@ -4302,6 +4305,7 @@ domain_suffix_set:
 - nordvpn.com
 - agechecker.northern-apps.com
 - note.com
+- notion.com
 - notion-static.com
 - notionusercontent.com
 - now.com
@@ -4460,6 +4464,7 @@ domain_suffix_set:
 - porkbun.com
 - poshtestgallery.com
 - posthog.com
+- postman.com
 - postmarkapp.com
 - pp-soc.com
 - pplusstatic.com

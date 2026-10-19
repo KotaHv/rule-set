@@ -1,5 +1,5 @@
-# Total: 1794 rules
-# Last Updated: 2026-10-18T13:25:04.795564+00:00
+# Total: 1796 rules
+# Last Updated: 2026-10-19T13:45:39.230605+00:00
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -639,6 +639,7 @@
 - '+.noip.com'
 - '+.nordvpn.com'
 - '+.note.com'
+- '+.notion.com'
 - '+.now.com'
 - '+.nownews.com'
 - '+.npmjs.com'
@@ -708,6 +709,7 @@
 - '+.porkbun.com'
 - '+.poshtestgallery.com'
 - '+.posthog.com'
+- '+.postman.com'
 - '+.postmarkapp.com'
 - '+.pp-soc.com'
 - '+.pppds.com'
