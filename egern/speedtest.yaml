@@ -1,5 +1,5 @@
-# Total: 3439 rules
-# Last Updated: 2026-10-18T20:56:15.645242+00:00
+# Total: 3441 rules
+# Last Updated: 2026-10-19T22:31:46.119596+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -2389,6 +2389,7 @@ domain_set:
 - secretspeedsterserver2364.cpe.nj.crnrstn.comcast.net
 - qoeookla-mimi-01.sys.comcast.net
 - qoeookla-ncst-01.sys.comcast.net
+- qoeookla-rmnd-01.sys.comcast.net
 - stosat-agta-01.sys.comcast.net
 - stosat-albq-01.sys.comcast.net
 - stosat-atlt-01.sys.comcast.net
@@ -2712,6 +2713,7 @@ domain_set:
 - speedtest1.ptd.net
 - speedtest3.ptd.net
 - speedtest.ptsi.net
+- syd.speedtest.pttnz.net
 - speedtest.nikhef.qonnected.net
 - speedtest.quadro.net
 - ooklaspeedtest-ist1.quickzone.net
