@@ -1,5 +1,5 @@
-# Total: 4756 rules
-# Last Updated: 2026-10-19T13:45:06.659928+00:00
+# Total: 4758 rules
+# Last Updated: 2026-10-20T17:24:21.526352+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2035,6 +2035,7 @@ domain_set:
 - static.touhoudb.com
 - static.tp-link.com
 - static-community.tp-link.com
+- static-page.tp-link.com
 - cdn.tracxn.com
 - s3.tradingview.com
 - s3-symbol-logo.tradingview.com
@@ -2433,6 +2434,7 @@ domain_set:
 - favicon.im
 - badges.gitter.im
 - img.majors.im
+- metrics.manus.im
 - assets.monica.im
 - images.spot.im
 - launcher.spot.im

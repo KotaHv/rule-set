@@ -1,5 +1,5 @@
-# Total: 6524 rules
-# Last Updated: 2026-10-19T13:45:40.070511+00:00
+# Total: 6525 rules
+# Last Updated: 2026-10-20T17:25:00.799929+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1304,7 +1304,6 @@
 - 'hbolb.onwardsmg.com'
 - 'registry.oomol.com'
 - 'cdn.openai.com'
-- 'releases.openai.com'
 - 'status.openai.com'
 - 'static.openreplay.com'
 - 'openseauserdata.com'
@@ -1656,6 +1655,7 @@
 - 'static.touhoudb.com'
 - 'static.tp-link.com'
 - 'static-community.tp-link.com'
+- 'static-page.tp-link.com'
 - 'cdn.tracxn.com'
 - 'ui.trailhead.com'
 - 'cdn.transifex.com'
@@ -1959,6 +1959,7 @@
 - 'badges.gitter.im'
 - 'img.majors.im'
 - 'download.manus.im'
+- 'metrics.manus.im'
 - 'polyfill-fe.toss.im'
 - 'static.toss.im'
 - 'img.toto.im'

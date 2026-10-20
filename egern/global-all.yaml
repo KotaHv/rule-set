@@ -1,5 +1,5 @@
-# Total: 6649 rules
-# Last Updated: 2026-10-19T13:45:40.151970+00:00
+# Total: 6650 rules
+# Last Updated: 2026-10-20T17:25:00.890410+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1305,7 +1305,6 @@ domain_set:
 - hbolb.onwardsmg.com
 - registry.oomol.com
 - cdn.openai.com
-- releases.openai.com
 - status.openai.com
 - static.openreplay.com
 - openseauserdata.com
@@ -1657,6 +1656,7 @@ domain_set:
 - static.touhoudb.com
 - static.tp-link.com
 - static-community.tp-link.com
+- static-page.tp-link.com
 - cdn.tracxn.com
 - ui.trailhead.com
 - cdn.transifex.com
@@ -1960,6 +1960,7 @@ domain_set:
 - badges.gitter.im
 - img.majors.im
 - download.manus.im
+- metrics.manus.im
 - polyfill-fe.toss.im
 - static.toss.im
 - img.toto.im

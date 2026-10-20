@@ -1,5 +1,5 @@
-# Total: 4676 rules
-# Last Updated: 2026-10-19T13:45:06.601047+00:00
+# Total: 4678 rules
+# Last Updated: 2026-10-20T17:24:21.468045+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -2034,6 +2034,7 @@
 - 'static.touhoudb.com'
 - 'static.tp-link.com'
 - 'static-community.tp-link.com'
+- 'static-page.tp-link.com'
 - 'cdn.tracxn.com'
 - 's3.tradingview.com'
 - 's3-symbol-logo.tradingview.com'
@@ -2432,6 +2433,7 @@
 - 'favicon.im'
 - 'badges.gitter.im'
 - 'img.majors.im'
+- 'metrics.manus.im'
 - 'assets.monica.im'
 - 'images.spot.im'
 - 'launcher.spot.im'

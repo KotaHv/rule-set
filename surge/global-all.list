@@ -1,5 +1,5 @@
-# Total: 6713 rules
-# Last Updated: 2026-10-19T13:45:40.062288+00:00
+# Total: 6714 rules
+# Last Updated: 2026-10-20T17:25:00.792214+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -1303,7 +1303,6 @@ DOMAIN,assets.ontrack.com
 DOMAIN,hbolb.onwardsmg.com
 DOMAIN,registry.oomol.com
 DOMAIN,cdn.openai.com
-DOMAIN,releases.openai.com
 DOMAIN,status.openai.com
 DOMAIN,static.openreplay.com
 DOMAIN,openseauserdata.com
@@ -1655,6 +1654,7 @@ DOMAIN,top1cdn.top1health.com
 DOMAIN,static.touhoudb.com
 DOMAIN,static.tp-link.com
 DOMAIN,static-community.tp-link.com
+DOMAIN,static-page.tp-link.com
 DOMAIN,cdn.tracxn.com
 DOMAIN,ui.trailhead.com
 DOMAIN,cdn.transifex.com
@@ -1958,6 +1958,7 @@ DOMAIN,favicon.im
 DOMAIN,badges.gitter.im
 DOMAIN,img.majors.im
 DOMAIN,download.manus.im
+DOMAIN,metrics.manus.im
 DOMAIN,polyfill-fe.toss.im
 DOMAIN,static.toss.im
 DOMAIN,img.toto.im
