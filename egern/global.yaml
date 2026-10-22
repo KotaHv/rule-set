@@ -1,5 +1,5 @@
-# Total: 1814 rules
-# Last Updated: 2026-10-19T13:45:39.263169+00:00
+# Total: 1819 rules
+# Last Updated: 2026-10-22T05:08:07.119846+00:00
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -397,6 +397,7 @@ domain_suffix_set:
 - getbootstrap.com
 - getbraintree.com
 - getchu.com
+- getsafety.com
 - getsentry.com
 - gettyimages.com
 - ggpht.com
@@ -767,6 +768,7 @@ domain_suffix_set:
 - rule34video.com
 - rumble.com
 - s-xoom.com
+- safetycli.com
 - saucenao.com
 - scp-wiki.com
 - scpwiki.com
@@ -834,6 +836,7 @@ domain_suffix_set:
 - talkingkotlin.com
 - techpowerup.com
 - techspot.com
+- templatemonster.com
 - tenor.com
 - terabox.com
 - termius.com
@@ -868,6 +871,7 @@ domain_suffix_set:
 - tinyurl.com
 - tktube.com
 - tmagazine.com
+- tmimgcdn.com
 - tnaflix.com
 - tokyonline.com
 - topcoder.com
@@ -1178,6 +1182,7 @@ domain_suffix_set:
 - prometheus.io
 - pypa.io
 - pypi.io
+- pyup.io
 - qt.io
 - quay.io
 - readthedocs.io

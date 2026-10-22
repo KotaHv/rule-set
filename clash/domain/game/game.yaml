@@ -1,5 +1,5 @@
-# Total: 823 rules
-# Last Updated: 2026-10-18T13:24:33.618503+00:00
+# Total: 830 rules
+# Last Updated: 2026-10-22T05:07:23.450419+00:00
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -95,6 +95,7 @@
 - 'spectator.ppy.sh'
 - '+.easy.ac'
 - '+.sih.app'
+- '+.worldofwarships.asia'
 - '+.nintendo.at'
 - '+.nintendo.be'
 - '+.leagueoflegends.ca'
@@ -103,6 +104,7 @@
 - '+.nintendo.ch'
 - '+.roblox.cl'
 - '+.supr.cl'
+- '+.steamos.cloud'
 - '+.vrchat.cloud'
 - '+.dungeonkeeper.com.cn'
 - '+.dungeonkeeper.cn'
@@ -259,6 +261,7 @@
 - '+.futpromos.com'
 - '+.futunited.com'
 - '+.gaijinent.com'
+- '+.gamebanana.com'
 - '+.gamepass.com'
 - '+.gamesfirsthelsinki.com'
 - '+.gamesplanet.com'
@@ -443,6 +446,7 @@
 - '+.steam.naeu.qtlglb.com'
 - '+.steam.ru.qtlglb.com'
 - '+.quixel.com'
+- '+.r2modman.com'
 - '+.radgametools.com'
 - '+.ravensoftware.com'
 - '+.rblx.com'
@@ -651,6 +655,7 @@
 - '+.nexon.io'
 - '+.papermc.io'
 - '+.rgpub.io'
+- '+.thunderstore.io'
 - '+.wgcrowd.io'
 - '+.nintendo.it'
 - '+.roblox.it'
@@ -691,6 +696,7 @@
 - '+.spearhead.kr'
 - '+.hoyo.link'
 - '+.garena.live'
+- '+.wplace.live'
 - '+.xbx.lv'
 - '+.rsg.ms'
 - '+.roblox.mx'
@@ -784,6 +790,7 @@
 - '+.rblx.org'
 - '+.roblox.org'
 - '+.spigotmc.org'
+- '+.thunderstore.org'
 - '+.xbox.org'
 - '+.xbox360.org'
 - '+.garena.ph'

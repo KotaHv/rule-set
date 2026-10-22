@@ -1,5 +1,5 @@
-# Total: 823 rules
-# Last Updated: 2026-10-18T13:24:33.617037+00:00
+# Total: 830 rules
+# Last Updated: 2026-10-22T05:07:23.448090+00:00
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
@@ -94,6 +94,7 @@ DOMAIN,sentry.ppy.sh
 DOMAIN,spectator.ppy.sh
 DOMAIN-SUFFIX,easy.ac
 DOMAIN-SUFFIX,sih.app
+DOMAIN-SUFFIX,worldofwarships.asia
 DOMAIN-SUFFIX,nintendo.at
 DOMAIN-SUFFIX,nintendo.be
 DOMAIN-SUFFIX,leagueoflegends.ca
@@ -102,6 +103,7 @@ DOMAIN-SUFFIX,roblox.cc
 DOMAIN-SUFFIX,nintendo.ch
 DOMAIN-SUFFIX,roblox.cl
 DOMAIN-SUFFIX,supr.cl
+DOMAIN-SUFFIX,steamos.cloud
 DOMAIN-SUFFIX,vrchat.cloud
 DOMAIN-SUFFIX,dungeonkeeper.com.cn
 DOMAIN-SUFFIX,dungeonkeeper.cn
@@ -258,6 +260,7 @@ DOMAIN-SUFFIX,frostbite.com
 DOMAIN-SUFFIX,futpromos.com
 DOMAIN-SUFFIX,futunited.com
 DOMAIN-SUFFIX,gaijinent.com
+DOMAIN-SUFFIX,gamebanana.com
 DOMAIN-SUFFIX,gamepass.com
 DOMAIN-SUFFIX,gamesfirsthelsinki.com
 DOMAIN-SUFFIX,gamesplanet.com
@@ -442,6 +445,7 @@ DOMAIN-SUFFIX,steam.eca.qtlglb.com
 DOMAIN-SUFFIX,steam.naeu.qtlglb.com
 DOMAIN-SUFFIX,steam.ru.qtlglb.com
 DOMAIN-SUFFIX,quixel.com
+DOMAIN-SUFFIX,r2modman.com
 DOMAIN-SUFFIX,radgametools.com
 DOMAIN-SUFFIX,ravensoftware.com
 DOMAIN-SUFFIX,rblx.com
@@ -650,6 +654,7 @@ DOMAIN-SUFFIX,itch.io
 DOMAIN-SUFFIX,nexon.io
 DOMAIN-SUFFIX,papermc.io
 DOMAIN-SUFFIX,rgpub.io
+DOMAIN-SUFFIX,thunderstore.io
 DOMAIN-SUFFIX,wgcrowd.io
 DOMAIN-SUFFIX,nintendo.it
 DOMAIN-SUFFIX,roblox.it
@@ -690,6 +695,7 @@ DOMAIN-SUFFIX,roblox.kr
 DOMAIN-SUFFIX,spearhead.kr
 DOMAIN-SUFFIX,hoyo.link
 DOMAIN-SUFFIX,garena.live
+DOMAIN-SUFFIX,wplace.live
 DOMAIN-SUFFIX,xbx.lv
 DOMAIN-SUFFIX,rsg.ms
 DOMAIN-SUFFIX,roblox.mx
@@ -783,6 +789,7 @@ DOMAIN-SUFFIX,quiltmc.org
 DOMAIN-SUFFIX,rblx.org
 DOMAIN-SUFFIX,roblox.org
 DOMAIN-SUFFIX,spigotmc.org
+DOMAIN-SUFFIX,thunderstore.org
 DOMAIN-SUFFIX,xbox.org
 DOMAIN-SUFFIX,xbox360.org
 DOMAIN-SUFFIX,garena.ph

@@ -1,5 +1,5 @@
-# Total: 1796 rules
-# Last Updated: 2026-10-19T13:45:39.230605+00:00
+# Total: 1801 rules
+# Last Updated: 2026-10-22T05:08:07.082501+00:00
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -395,6 +395,7 @@
 - '+.getbootstrap.com'
 - '+.getbraintree.com'
 - '+.getchu.com'
+- '+.getsafety.com'
 - '+.getsentry.com'
 - '+.gettyimages.com'
 - '+.ggpht.com'
@@ -765,6 +766,7 @@
 - '+.rule34video.com'
 - '+.rumble.com'
 - '+.s-xoom.com'
+- '+.safetycli.com'
 - '+.saucenao.com'
 - '+.scp-wiki.com'
 - '+.scpwiki.com'
@@ -832,6 +834,7 @@
 - '+.talkingkotlin.com'
 - '+.techpowerup.com'
 - '+.techspot.com'
+- '+.templatemonster.com'
 - '+.tenor.com'
 - '+.terabox.com'
 - '+.termius.com'
@@ -866,6 +869,7 @@
 - '+.tinyurl.com'
 - '+.tktube.com'
 - '+.tmagazine.com'
+- '+.tmimgcdn.com'
 - '+.tnaflix.com'
 - '+.tokyonline.com'
 - '+.topcoder.com'
@@ -1176,6 +1180,7 @@
 - '+.prometheus.io'
 - '+.pypa.io'
 - '+.pypi.io'
+- '+.pyup.io'
 - '+.qt.io'
 - '+.quay.io'
 - '+.readthedocs.io'

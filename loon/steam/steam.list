@@ -1,5 +1,5 @@
-# Total: 43 rules
-# Last Updated: 2026-07-31T10:23:45.651244+00:00
+# Total: 44 rules
+# Last Updated: 2026-10-22T05:07:05.346217+00:00
 DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN,steamcommunity-a.akamaihd.net
 DOMAIN,steamstore-a.akamaihd.net
@@ -16,6 +16,7 @@ DOMAIN,f3b7q2p3.ssl.hwcdn.net
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
 DOMAIN,steamcloudsweden.blob.core.windows.net
 DOMAIN,steamugcquincy.blob.core.windows.net
+DOMAIN-SUFFIX,steamos.cloud
 DOMAIN-SUFFIX,dota2.com
 DOMAIN-SUFFIX,playartifact.com
 DOMAIN-SUFFIX,steam.apac.qtlglb.com

@@ -1,5 +1,5 @@
-# Total: 6652 rules
-# Last Updated: 2026-10-21T21:53:05.369094+00:00
+# Total: 6661 rules
+# Last Updated: 2026-10-22T05:08:08.552939+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -163,8 +163,6 @@ domain_set:
 - cdn-builds.paw.cloud
 - cdn-static.paw.cloud
 - ir.ubuntu.sindad.cloud
-- steamdeck-images.steamos.cloud
-- steamdeck-packages.steamos.cloud
 - mirror.thunderhosting.cloud
 - cdn.tiny.cloud
 - cdn.kinopio.club
@@ -2161,7 +2159,6 @@ domain_set:
 - wl-apps.yourwebsite.life
 - disco.headliner.link
 - nightly.link
-- maps.wplace.live
 - media.webtoo.ls
 - ftp.litnet.lt
 - mirror.litnet.lt
@@ -2945,6 +2942,7 @@ domain_suffix_set:
 - safebrowsing.apple
 - ipfs.kaleido.art
 - signal.art
+- worldofwarships.asia
 - at
 - au
 - fish.audio
@@ -3014,6 +3012,7 @@ domain_suffix_set:
 - s3.pl-waw.scw.cloud
 - s3-website.pl-waw.scw.cloud
 - sketch.cloud
+- steamos.cloud
 - vrchat.cloud
 - youtrack.cloud
 - sfmcompile.club
@@ -3714,6 +3713,7 @@ domain_suffix_set:
 - gadgets360cdn.com
 - gaijinent.com
 - gamccdn.com
+- gamebanana.com
 - gameflare.com
 - gameloft.com
 - gamepad-tester.com
@@ -3746,6 +3746,7 @@ domain_suffix_set:
 - getchu.com
 - cdn.getfeedback.com
 - assets.getpocket.com
+- getsafety.com
 - getsentry.com
 - gettyimages.com
 - ggpht.com
@@ -4515,6 +4516,7 @@ domain_suffix_set:
 - quora.com
 - quotemedia.com
 - qz.com
+- r2modman.com
 - rackcdn.com
 - mirror.rackspace.com
 - radgametools.com
@@ -4600,6 +4602,7 @@ domain_suffix_set:
 - s-nbcnews.com
 - s-xoom.com
 - www.s81c.com
+- safetycli.com
 - sascdn.com
 - saucenao.com
 - sb-cd.com
@@ -4816,6 +4819,7 @@ domain_suffix_set:
 - techspot.com
 - tedcdn.com
 - tellmewhygame.com
+- templatemonster.com
 - tenor.com
 - teo-rum.com
 - terabox.com
@@ -4883,6 +4887,7 @@ domain_suffix_set:
 - tkcdns.com
 - tktube.com
 - tmagazine.com
+- tmimgcdn.com
 - tmsimg.com
 - tnaflix.com
 - tnastatic.com
@@ -5460,6 +5465,7 @@ domain_suffix_set:
 - prometheus.io
 - pypa.io
 - pypi.io
+- pyup.io
 - qt.io
 - quay.io
 - raygun.io
@@ -5494,6 +5500,7 @@ domain_suffix_set:
 - storj.io
 - terraform.io
 - thenewstack.io
+- thunderstore.io
 - production-public.tubi.io
 - typora.io
 - ubuntu-touch.io
@@ -5533,6 +5540,7 @@ domain_suffix_set:
 - doppiocdn.live
 - garena.live
 - vercel.live
+- wplace.live
 - lol
 - mirror.serveriai.lt
 - mirror.vu.lt
@@ -6292,6 +6300,7 @@ domain_suffix_set:
 - termux.org
 - themoviedb.org
 - thepiratebay.org
+- thunderstore.org
 - tmdb.org
 - tmpfiles.org
 - tnmr.org

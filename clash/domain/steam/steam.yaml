@@ -1,5 +1,5 @@
-# Total: 43 rules
-# Last Updated: 2026-07-31T10:23:45.651487+00:00
+# Total: 44 rules
+# Last Updated: 2026-10-22T05:07:05.348083+00:00
 'payload':
 - 'steamcdn-a.akamaihd.net'
 - 'steamcommunity-a.akamaihd.net'
@@ -17,6 +17,7 @@
 - 'a4e8s8k3.map2.ssl.hwcdn.net'
 - 'steamcloudsweden.blob.core.windows.net'
 - 'steamugcquincy.blob.core.windows.net'
+- '+.steamos.cloud'
 - '+.dota2.com'
 - '+.playartifact.com'
 - '+.steam.apac.qtlglb.com'

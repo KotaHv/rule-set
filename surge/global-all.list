@@ -1,5 +1,5 @@
-# Total: 6716 rules
-# Last Updated: 2026-10-21T21:53:05.277694+00:00
+# Total: 6725 rules
+# Last Updated: 2026-10-22T05:08:08.463974+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -161,8 +161,6 @@ DOMAIN,mirror.improve.nordlo.cloud
 DOMAIN,cdn-builds.paw.cloud
 DOMAIN,cdn-static.paw.cloud
 DOMAIN,ir.ubuntu.sindad.cloud
-DOMAIN,steamdeck-images.steamos.cloud
-DOMAIN,steamdeck-packages.steamos.cloud
 DOMAIN,mirror.thunderhosting.cloud
 DOMAIN,cdn.tiny.cloud
 DOMAIN,cdn.kinopio.club
@@ -2159,7 +2157,6 @@ DOMAIN,cdn.id.life
 DOMAIN,wl-apps.yourwebsite.life
 DOMAIN,disco.headliner.link
 DOMAIN,nightly.link
-DOMAIN,maps.wplace.live
 DOMAIN,media.webtoo.ls
 DOMAIN,ftp.litnet.lt
 DOMAIN,mirror.litnet.lt
@@ -2942,6 +2939,7 @@ DOMAIN-SUFFIX,xlog.app
 DOMAIN-SUFFIX,safebrowsing.apple
 DOMAIN-SUFFIX,ipfs.kaleido.art
 DOMAIN-SUFFIX,signal.art
+DOMAIN-SUFFIX,worldofwarships.asia
 DOMAIN-SUFFIX,at
 DOMAIN-SUFFIX,au
 DOMAIN-SUFFIX,fish.audio
@@ -3011,6 +3009,7 @@ DOMAIN-SUFFIX,s3-website.nl-ams.scw.cloud
 DOMAIN-SUFFIX,s3.pl-waw.scw.cloud
 DOMAIN-SUFFIX,s3-website.pl-waw.scw.cloud
 DOMAIN-SUFFIX,sketch.cloud
+DOMAIN-SUFFIX,steamos.cloud
 DOMAIN-SUFFIX,vrchat.cloud
 DOMAIN-SUFFIX,youtrack.cloud
 DOMAIN-SUFFIX,sfmcompile.club
@@ -3711,6 +3710,7 @@ DOMAIN-SUFFIX,g2.com
 DOMAIN-SUFFIX,gadgets360cdn.com
 DOMAIN-SUFFIX,gaijinent.com
 DOMAIN-SUFFIX,gamccdn.com
+DOMAIN-SUFFIX,gamebanana.com
 DOMAIN-SUFFIX,gameflare.com
 DOMAIN-SUFFIX,gameloft.com
 DOMAIN-SUFFIX,gamepad-tester.com
@@ -3743,6 +3743,7 @@ DOMAIN-SUFFIX,getbraintree.com
 DOMAIN-SUFFIX,getchu.com
 DOMAIN-SUFFIX,cdn.getfeedback.com
 DOMAIN-SUFFIX,assets.getpocket.com
+DOMAIN-SUFFIX,getsafety.com
 DOMAIN-SUFFIX,getsentry.com
 DOMAIN-SUFFIX,gettyimages.com
 DOMAIN-SUFFIX,ggpht.com
@@ -4512,6 +4513,7 @@ DOMAIN-SUFFIX,quixel.com
 DOMAIN-SUFFIX,quora.com
 DOMAIN-SUFFIX,quotemedia.com
 DOMAIN-SUFFIX,qz.com
+DOMAIN-SUFFIX,r2modman.com
 DOMAIN-SUFFIX,rackcdn.com
 DOMAIN-SUFFIX,mirror.rackspace.com
 DOMAIN-SUFFIX,radgametools.com
@@ -4597,6 +4599,7 @@ DOMAIN-SUFFIX,runkitcdn.com
 DOMAIN-SUFFIX,s-nbcnews.com
 DOMAIN-SUFFIX,s-xoom.com
 DOMAIN-SUFFIX,www.s81c.com
+DOMAIN-SUFFIX,safetycli.com
 DOMAIN-SUFFIX,sascdn.com
 DOMAIN-SUFFIX,saucenao.com
 DOMAIN-SUFFIX,sb-cd.com
@@ -4813,6 +4816,7 @@ DOMAIN-SUFFIX,techpowerup.com
 DOMAIN-SUFFIX,techspot.com
 DOMAIN-SUFFIX,tedcdn.com
 DOMAIN-SUFFIX,tellmewhygame.com
+DOMAIN-SUFFIX,templatemonster.com
 DOMAIN-SUFFIX,tenor.com
 DOMAIN-SUFFIX,teo-rum.com
 DOMAIN-SUFFIX,terabox.com
@@ -4880,6 +4884,7 @@ DOMAIN-SUFFIX,titanfall.com
 DOMAIN-SUFFIX,tkcdns.com
 DOMAIN-SUFFIX,tktube.com
 DOMAIN-SUFFIX,tmagazine.com
+DOMAIN-SUFFIX,tmimgcdn.com
 DOMAIN-SUFFIX,tmsimg.com
 DOMAIN-SUFFIX,tnaflix.com
 DOMAIN-SUFFIX,tnastatic.com
@@ -5457,6 +5462,7 @@ DOMAIN-SUFFIX,cdn.prismic.io
 DOMAIN-SUFFIX,prometheus.io
 DOMAIN-SUFFIX,pypa.io
 DOMAIN-SUFFIX,pypi.io
+DOMAIN-SUFFIX,pyup.io
 DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,quay.io
 DOMAIN-SUFFIX,raygun.io
@@ -5491,6 +5497,7 @@ DOMAIN-SUFFIX,statuspage.io
 DOMAIN-SUFFIX,storj.io
 DOMAIN-SUFFIX,terraform.io
 DOMAIN-SUFFIX,thenewstack.io
+DOMAIN-SUFFIX,thunderstore.io
 DOMAIN-SUFFIX,production-public.tubi.io
 DOMAIN-SUFFIX,typora.io
 DOMAIN-SUFFIX,ubuntu-touch.io
@@ -5530,6 +5537,7 @@ DOMAIN-SUFFIX,airio3.live
 DOMAIN-SUFFIX,doppiocdn.live
 DOMAIN-SUFFIX,garena.live
 DOMAIN-SUFFIX,vercel.live
+DOMAIN-SUFFIX,wplace.live
 DOMAIN-SUFFIX,lol
 DOMAIN-SUFFIX,mirror.serveriai.lt
 DOMAIN-SUFFIX,mirror.vu.lt
@@ -6289,6 +6297,7 @@ DOMAIN-SUFFIX,tensorflow.org
 DOMAIN-SUFFIX,termux.org
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,thepiratebay.org
+DOMAIN-SUFFIX,thunderstore.org
 DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,tmpfiles.org
 DOMAIN-SUFFIX,tnmr.org

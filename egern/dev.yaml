@@ -1,5 +1,5 @@
-# Total: 627 rules
-# Last Updated: 2026-10-19T13:45:13.389163+00:00
+# Total: 632 rules
+# Last Updated: 2026-10-22T05:07:38.168871+00:00
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -159,6 +159,7 @@ domain_suffix_set:
 - gamesstack.com
 - gemfury.com
 - getbootstrap.com
+- getsafety.com
 - getsentry.com
 - ghe.com
 - git-scm.com
@@ -235,6 +236,7 @@ domain_suffix_set:
 - redislabs.com
 - regex101.com
 - rocksdb.com
+- safetycli.com
 - sentry-cdn.com
 - serverfault.com
 - sourcegraph.com
@@ -255,6 +257,7 @@ domain_suffix_set:
 - superuser.com
 - system76.com
 - talkingkotlin.com
+- templatemonster.com
 - termius.com
 - termux.com
 - thegithubshop.com
@@ -262,6 +265,7 @@ domain_suffix_set:
 - tildaapi.com
 - tildacdn.com
 - timelinestoryteller.com
+- tmimgcdn.com
 - topcoder.com
 - ubuntu.com
 - unity.com
@@ -359,6 +363,7 @@ domain_suffix_set:
 - playerjs.io
 - pypa.io
 - pypi.io
+- pyup.io
 - qt.io
 - quay.io
 - readthedocs.io

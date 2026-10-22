@@ -1,5 +1,5 @@
-# Total: 627 rules
-# Last Updated: 2026-10-19T13:45:13.363541+00:00
+# Total: 632 rules
+# Last Updated: 2026-10-22T05:07:38.141847+00:00
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -156,6 +156,7 @@ DOMAIN-SUFFIX,freebuff.com
 DOMAIN-SUFFIX,gamesstack.com
 DOMAIN-SUFFIX,gemfury.com
 DOMAIN-SUFFIX,getbootstrap.com
+DOMAIN-SUFFIX,getsafety.com
 DOMAIN-SUFFIX,getsentry.com
 DOMAIN-SUFFIX,ghe.com
 DOMAIN-SUFFIX,git-scm.com
@@ -232,6 +233,7 @@ DOMAIN-SUFFIX,redhat.com
 DOMAIN-SUFFIX,redislabs.com
 DOMAIN-SUFFIX,regex101.com
 DOMAIN-SUFFIX,rocksdb.com
+DOMAIN-SUFFIX,safetycli.com
 DOMAIN-SUFFIX,sentry-cdn.com
 DOMAIN-SUFFIX,serverfault.com
 DOMAIN-SUFFIX,sourcegraph.com
@@ -252,6 +254,7 @@ DOMAIN-SUFFIX,sublimetext.com
 DOMAIN-SUFFIX,superuser.com
 DOMAIN-SUFFIX,system76.com
 DOMAIN-SUFFIX,talkingkotlin.com
+DOMAIN-SUFFIX,templatemonster.com
 DOMAIN-SUFFIX,termius.com
 DOMAIN-SUFFIX,termux.com
 DOMAIN-SUFFIX,thegithubshop.com
@@ -259,6 +262,7 @@ DOMAIN-SUFFIX,thesffblog.com
 DOMAIN-SUFFIX,tildaapi.com
 DOMAIN-SUFFIX,tildacdn.com
 DOMAIN-SUFFIX,timelinestoryteller.com
+DOMAIN-SUFFIX,tmimgcdn.com
 DOMAIN-SUFFIX,topcoder.com
 DOMAIN-SUFFIX,ubuntu.com
 DOMAIN-SUFFIX,unity.com
@@ -356,6 +360,7 @@ DOMAIN-SUFFIX,packer.io
 DOMAIN-SUFFIX,playerjs.io
 DOMAIN-SUFFIX,pypa.io
 DOMAIN-SUFFIX,pypi.io
+DOMAIN-SUFFIX,pyup.io
 DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,quay.io
 DOMAIN-SUFFIX,readthedocs.io

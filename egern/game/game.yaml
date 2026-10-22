@@ -1,5 +1,5 @@
-# Total: 824 rules
-# Last Updated: 2026-10-18T13:24:33.689179+00:00
+# Total: 831 rules
+# Last Updated: 2026-10-22T05:07:23.476792+00:00
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -97,6 +97,7 @@ domain_set:
 domain_suffix_set:
 - easy.ac
 - sih.app
+- worldofwarships.asia
 - nintendo.at
 - nintendo.be
 - leagueoflegends.ca
@@ -105,6 +106,7 @@ domain_suffix_set:
 - nintendo.ch
 - roblox.cl
 - supr.cl
+- steamos.cloud
 - vrchat.cloud
 - dungeonkeeper.com.cn
 - dungeonkeeper.cn
@@ -261,6 +263,7 @@ domain_suffix_set:
 - futpromos.com
 - futunited.com
 - gaijinent.com
+- gamebanana.com
 - gamepass.com
 - gamesfirsthelsinki.com
 - gamesplanet.com
@@ -445,6 +448,7 @@ domain_suffix_set:
 - steam.naeu.qtlglb.com
 - steam.ru.qtlglb.com
 - quixel.com
+- r2modman.com
 - radgametools.com
 - ravensoftware.com
 - rblx.com
@@ -653,6 +657,7 @@ domain_suffix_set:
 - nexon.io
 - papermc.io
 - rgpub.io
+- thunderstore.io
 - wgcrowd.io
 - nintendo.it
 - roblox.it
@@ -693,6 +698,7 @@ domain_suffix_set:
 - spearhead.kr
 - hoyo.link
 - garena.live
+- wplace.live
 - xbx.lv
 - rsg.ms
 - roblox.mx
@@ -786,6 +792,7 @@ domain_suffix_set:
 - rblx.org
 - roblox.org
 - spigotmc.org
+- thunderstore.org
 - xbox.org
 - xbox360.org
 - garena.ph
