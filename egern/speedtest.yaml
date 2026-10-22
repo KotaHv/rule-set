@@ -1,5 +1,5 @@
-# Total: 3442 rules
-# Last Updated: 2026-10-20T21:46:37.790427+00:00
+# Total: 3446 rules
+# Last Updated: 2026-10-22T21:48:13.406640+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -1223,6 +1223,7 @@ domain_set:
 - speedtest-pit.omnifiber.com
 - speedtest.oopaya.com
 - fl.speedtest.openinfra.com
+- tx.speedtest.openinfra.com
 - speedtest.us.openinfra.com
 - speedtest.optic-communications.com
 - ookla.opticaltel.com
@@ -1669,6 +1670,7 @@ domain_set:
 - speedtest.homestube.de
 - speedtest.host-unlimited.de
 - speedtest02.htp-tel.de
+- speedtest-net.hyprnode.de
 - speedtest.intersaar.de
 - ookla.intracex.de
 - speedtest.ip-projects.de
@@ -2100,6 +2102,7 @@ domain_set:
 - speedtest.4isp.it
 - speedtest.agsmtel.it
 - two.speed.airc.it
+- ookla.alida.it
 - ookla.apuacom.it
 - speedtest-1.apvinvestimenti.it
 - srv-st03.arcolink.it
@@ -2739,6 +2742,7 @@ domain_set:
 - dal-speedtest.net.sangoma.net
 - sea-speedtest.net.sangoma.net
 - tor-speedtest.net.sangoma.net
+- perf1.moji1.sapi.net
 - speedtest.603.sbaedge.net
 - sp1.scinternet.net
 - speedtest.sentco.net
