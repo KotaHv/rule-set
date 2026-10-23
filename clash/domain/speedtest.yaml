@@ -1,5 +1,5 @@
-# Total: 3446 rules
-# Last Updated: 2026-10-22T21:48:13.361003+00:00
+# Total: 3448 rules
+# Last Updated: 2026-10-23T21:33:27.579438+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1220,6 +1220,7 @@
 - 'speedtest.okencore.com'
 - 'sp1.omnetbroadband.com'
 - 'speedtest-pit.omnifiber.com'
+- 'speedtest.onetouchexpress.com'
 - 'speedtest.oopaya.com'
 - 'fl.speedtest.openinfra.com'
 - 'tx.speedtest.openinfra.com'
@@ -1282,6 +1283,7 @@
 - 'speedtest-stm.redeconecta.com'
 - 'ooklatins.redeconexaonet.com'
 - 'speedtest.resoundnetworks.com'
+- 'speedtest-lenexa.resoundnetworks.com'
 - 'speedtest.respawnhost.com'
 - 'speedtest2.rhitcr.com'
 - 'de.riospeed.com'
