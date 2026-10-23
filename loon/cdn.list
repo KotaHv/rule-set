@@ -1,5 +1,5 @@
-# Total: 4700 rules
-# Last Updated: 2026-10-21T21:52:33.024181+00:00
+# Total: 4707 rules
+# Last Updated: 2026-10-23T11:53:10.479184+00:00
 DOMAIN,rules.ac
 DOMAIN,static.jup.ag
 DOMAIN,cdn.aimerce.ai
@@ -153,6 +153,9 @@ DOMAIN,app.groove.cm
 DOMAIN,cdn.17app.co
 DOMAIN,log-collector.17app.co
 DOMAIN,webcdn.17app.co
+DOMAIN,assets-static.99.co
+DOMAIN,assets-v2.99.co
+DOMAIN,pic2.99.co
 DOMAIN,s3.anilist.co
 DOMAIN,s4.anilist.co
 DOMAIN,cdn.chord.co
@@ -1004,6 +1007,8 @@ DOMAIN,cdn.googlesource.com
 DOMAIN,static.gopro.com
 DOMAIN,play.gotolstoy.com
 DOMAIN,widget.gotolstoy.com
+DOMAIN,assets.grab.com
+DOMAIN,scribe-web-sdk.grab.com
 DOMAIN,rsi.grafana.com
 DOMAIN,assets.grammarly.com
 DOMAIN,assets.extension.grammarly.com
@@ -2831,6 +2836,7 @@ DOMAIN,assets.bitstamp.net
 DOMAIN,logs.blip.net
 DOMAIN,static.blip.net
 DOMAIN,cf-images.ap-northeast-1.prod.boltdns.net
+DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net
 DOMAIN,cf-images.us-east-1.prod.boltdns.net
 DOMAIN,players.brightcove.net
 DOMAIN,fonts.bunny.net
@@ -3228,6 +3234,7 @@ DOMAIN,cdp.sph.com.sg
 DOMAIN,static.idp.sph.com.sg
 DOMAIN,static.mysph.sph.com.sg
 DOMAIN,cassette.sphdigital.com.sg
+DOMAIN,static1.straitstimes.com.sg
 DOMAIN,static.zaobao.com.sg
 DOMAIN,tiles.onemap.gov.sg
 DOMAIN,brew.sh

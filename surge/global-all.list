@@ -1,5 +1,5 @@
-# Total: 6725 rules
-# Last Updated: 2026-10-22T05:08:08.463974+00:00
+# Total: 6732 rules
+# Last Updated: 2026-10-23T11:53:36.749400+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -169,6 +169,9 @@ DOMAIN,store.ui.com.cn
 DOMAIN,cdn.17app.co
 DOMAIN,log-collector.17app.co
 DOMAIN,webcdn.17app.co
+DOMAIN,assets-static.99.co
+DOMAIN,assets-v2.99.co
+DOMAIN,pic2.99.co
 DOMAIN,cdn.chord.co
 DOMAIN,assets.churnkey.co
 DOMAIN,cdn.cloudcraft.co
@@ -831,6 +834,8 @@ DOMAIN,static.gopro.com
 DOMAIN,mirror.gotmyhost.com
 DOMAIN,play.gotolstoy.com
 DOMAIN,widget.gotolstoy.com
+DOMAIN,assets.grab.com
+DOMAIN,scribe-web-sdk.grab.com
 DOMAIN,media.graphassets.com
 DOMAIN,assets.grooveapps.com
 DOMAIN,app.groovefunnels.com
@@ -2310,6 +2315,7 @@ DOMAIN,assets.bitstamp.net
 DOMAIN,logs.blip.net
 DOMAIN,static.blip.net
 DOMAIN,cf-images.ap-northeast-1.prod.boltdns.net
+DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net
 DOMAIN,manifest.prod.boltdns.net
 DOMAIN,cf-images.us-east-1.prod.boltdns.net
 DOMAIN,players.brightcove.net
@@ -6612,6 +6618,7 @@ DOMAIN-WILDCARD,s3.*.wasabisys.com
 DOMAIN-WILDCARD,cdn?.mikuclub.fun
 DOMAIN-WILDCARD,file?.mikuclub.fun
 DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
+DOMAIN-WILDCARD,cf-images.*.prod.boltdns.net
 DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,cdn.*.office.net

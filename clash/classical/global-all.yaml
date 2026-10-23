@@ -1,5 +1,5 @@
-# Total: 105 rules
-# Last Updated: 2026-10-08T13:48:47.080478+00:00
+# Total: 106 rules
+# Last Updated: 2026-10-23T11:53:36.753915+00:00
 payload:
 - DOMAIN-WILDCARD,cdn-*.comaps.app
 - DOMAIN-WILDCARD,cdn-*.organicmaps.app
@@ -28,6 +28,7 @@ payload:
 - DOMAIN-WILDCARD,cdn?.mikuclub.fun
 - DOMAIN-WILDCARD,file?.mikuclub.fun
 - DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
+- DOMAIN-WILDCARD,cf-images.*.prod.boltdns.net
 - DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
 - DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 - DOMAIN-WILDCARD,cdn.*.office.net

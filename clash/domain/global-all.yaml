@@ -1,5 +1,5 @@
-# Total: 6536 rules
-# Last Updated: 2026-10-22T05:08:08.470773+00:00
+# Total: 6542 rules
+# Last Updated: 2026-10-23T11:53:36.753915+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -170,6 +170,9 @@
 - 'cdn.17app.co'
 - 'log-collector.17app.co'
 - 'webcdn.17app.co'
+- 'assets-static.99.co'
+- 'assets-v2.99.co'
+- 'pic2.99.co'
 - 'cdn.chord.co'
 - 'assets.churnkey.co'
 - 'cdn.cloudcraft.co'
@@ -832,6 +835,8 @@
 - 'mirror.gotmyhost.com'
 - 'play.gotolstoy.com'
 - 'widget.gotolstoy.com'
+- 'assets.grab.com'
+- 'scribe-web-sdk.grab.com'
 - 'media.graphassets.com'
 - 'assets.grooveapps.com'
 - 'app.groovefunnels.com'
@@ -2311,6 +2316,7 @@
 - 'logs.blip.net'
 - 'static.blip.net'
 - 'cf-images.ap-northeast-1.prod.boltdns.net'
+- 'cf-images.ap-southeast-1.prod.boltdns.net'
 - 'manifest.prod.boltdns.net'
 - 'cf-images.us-east-1.prod.boltdns.net'
 - 'players.brightcove.net'

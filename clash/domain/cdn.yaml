@@ -1,5 +1,5 @@
-# Total: 4680 rules
-# Last Updated: 2026-10-21T21:52:33.026796+00:00
+# Total: 4687 rules
+# Last Updated: 2026-10-23T11:53:10.481138+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -154,6 +154,9 @@
 - 'cdn.17app.co'
 - 'log-collector.17app.co'
 - 'webcdn.17app.co'
+- 'assets-static.99.co'
+- 'assets-v2.99.co'
+- 'pic2.99.co'
 - 's3.anilist.co'
 - 's4.anilist.co'
 - 'cdn.chord.co'
@@ -1005,6 +1008,8 @@
 - 'static.gopro.com'
 - 'play.gotolstoy.com'
 - 'widget.gotolstoy.com'
+- 'assets.grab.com'
+- 'scribe-web-sdk.grab.com'
 - 'rsi.grafana.com'
 - 'assets.grammarly.com'
 - 'assets.extension.grammarly.com'
@@ -2832,6 +2837,7 @@
 - 'logs.blip.net'
 - 'static.blip.net'
 - 'cf-images.ap-northeast-1.prod.boltdns.net'
+- 'cf-images.ap-southeast-1.prod.boltdns.net'
 - 'cf-images.us-east-1.prod.boltdns.net'
 - 'players.brightcove.net'
 - 'fonts.bunny.net'
@@ -3229,6 +3235,7 @@
 - 'static.idp.sph.com.sg'
 - 'static.mysph.sph.com.sg'
 - 'cassette.sphdigital.com.sg'
+- 'static1.straitstimes.com.sg'
 - 'static.zaobao.com.sg'
 - 'tiles.onemap.gov.sg'
 - 'brew.sh'
