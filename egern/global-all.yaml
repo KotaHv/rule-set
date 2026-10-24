@@ -1,5 +1,5 @@
-# Total: 6668 rules
-# Last Updated: 2026-10-23T11:53:36.798438+00:00
+# Total: 6675 rules
+# Last Updated: 2026-10-24T11:21:59.106574+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -3392,6 +3392,8 @@ domain_suffix_set:
 - cdnjs.com
 - cdnpure.com
 - cdntrex.com
+- cdprojekt.com
+- cdprojektred.com
 - cf-ipfs.com
 - championshipseriesleague.com
 - channel4.com
@@ -4430,6 +4432,7 @@ domain_suffix_set:
 - playartifact.com
 - playbattlegrounds.com
 - playboy.com
+- playgwent.com
 - playhearthstone.com
 - playnintendo.com
 - playoverwatch.com
@@ -4856,6 +4859,7 @@ domain_suffix_set:
 - thesourcemediaassets.com
 - thetvdb.com
 - theverge.com
+- thewitcher.com
 - thewonderful101.com
 - bundle.thimatic-apps.com
 - thingiverse.com
@@ -5682,6 +5686,7 @@ domain_suffix_set:
 - crsed.net
 - ctfassets.net
 - cdn.cwinfo.net
+- cyberpunk.net
 - daoc.net
 - daum.net
 - daumcdn.net
@@ -6386,6 +6391,7 @@ domain_suffix_set:
 - roblox.pt
 - ubuntumirror.dei.uc.pt
 - re
+- cdprojekt.red
 - rip
 - ro
 - rocks
@@ -6399,6 +6405,7 @@ domain_suffix_set:
 - 2ch.sc
 - rsg.sc
 - se
+- cdpred.services
 - fnbuilds.services
 - sex
 - sg

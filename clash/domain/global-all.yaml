@@ -1,5 +1,5 @@
-# Total: 6542 rules
-# Last Updated: 2026-10-23T11:53:36.753915+00:00
+# Total: 6549 rules
+# Last Updated: 2026-10-24T11:21:59.024474+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -3390,6 +3390,8 @@
 - '+.cdnjs.com'
 - '+.cdnpure.com'
 - '+.cdntrex.com'
+- '+.cdprojekt.com'
+- '+.cdprojektred.com'
 - '+.cf-ipfs.com'
 - '+.championshipseriesleague.com'
 - '+.channel4.com'
@@ -4428,6 +4430,7 @@
 - '+.playartifact.com'
 - '+.playbattlegrounds.com'
 - '+.playboy.com'
+- '+.playgwent.com'
 - '+.playhearthstone.com'
 - '+.playnintendo.com'
 - '+.playoverwatch.com'
@@ -4854,6 +4857,7 @@
 - '+.thesourcemediaassets.com'
 - '+.thetvdb.com'
 - '+.theverge.com'
+- '+.thewitcher.com'
 - '+.thewonderful101.com'
 - '+.bundle.thimatic-apps.com'
 - '+.thingiverse.com'
@@ -5680,6 +5684,7 @@
 - '+.crsed.net'
 - '+.ctfassets.net'
 - '+.cdn.cwinfo.net'
+- '+.cyberpunk.net'
 - '+.daoc.net'
 - '+.daum.net'
 - '+.daumcdn.net'
@@ -6384,6 +6389,7 @@
 - '+.roblox.pt'
 - '+.ubuntumirror.dei.uc.pt'
 - '+.re'
+- '+.cdprojekt.red'
 - '+.rip'
 - '+.ro'
 - '+.rocks'
@@ -6397,6 +6403,7 @@
 - '+.2ch.sc'
 - '+.rsg.sc'
 - '+.se'
+- '+.cdpred.services'
 - '+.fnbuilds.services'
 - '+.sex'
 - '+.sg'

@@ -1,5 +1,5 @@
-# Total: 830 rules
-# Last Updated: 2026-10-22T05:07:23.450419+00:00
+# Total: 837 rules
+# Last Updated: 2026-10-24T11:21:18.657650+00:00
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -175,6 +175,8 @@
 - '+.candycrush.com'
 - '+.capitalgames.com'
 - '+.capturingreality.com'
+- '+.cdprojekt.com'
+- '+.cdprojektred.com'
 - '+.championshipseriesleague.com'
 - '+.chillingo.com'
 - '+.chunkbase.com'
@@ -403,6 +405,7 @@
 - '+.playapex.com'
 - '+.playartifact.com'
 - '+.playbattlegrounds.com'
+- '+.playgwent.com'
 - '+.playhearthstone.com'
 - '+.playnintendo.com'
 - '+.playoverwatch.com'
@@ -545,6 +548,7 @@
 - '+.thesims3.com'
 - '+.thesims4.com'
 - '+.thesimssocial.com'
+- '+.thewitcher.com'
 - '+.thewonderful101.com'
 - '+.tiberiumalliances.com'
 - '+.tiburon.com'
@@ -712,6 +716,7 @@
 - '+.edge.steam-dns.top.comcast.net'
 - '+.crossout.net'
 - '+.crsed.net'
+- '+.cyberpunk.net'
 - '+.daoc.net'
 - '+.demonware.net'
 - '+.dicela.net'
@@ -799,12 +804,14 @@
 - '+.nintendo.com.pt'
 - '+.nintendo.pt'
 - '+.roblox.pt'
+- '+.cdprojekt.red'
 - '+.nintendo.ru'
 - '+.steam.cdn.webra.ru'
 - '+.rsg.sc'
 - '+.dice.se'
 - '+.nintendo.se'
 - '+.quixel.se'
+- '+.cdpred.services'
 - '+.garena.sg'
 - '+.dodi-repacks.site'
 - '+.fitgirl-repacks.site'

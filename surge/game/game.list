@@ -1,5 +1,5 @@
-# Total: 831 rules
-# Last Updated: 2026-10-22T05:07:23.438908+00:00
+# Total: 838 rules
+# Last Updated: 2026-10-24T11:21:18.653588+00:00
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
@@ -174,6 +174,8 @@ DOMAIN-SUFFIX,camelotherald.com
 DOMAIN-SUFFIX,candycrush.com
 DOMAIN-SUFFIX,capitalgames.com
 DOMAIN-SUFFIX,capturingreality.com
+DOMAIN-SUFFIX,cdprojekt.com
+DOMAIN-SUFFIX,cdprojektred.com
 DOMAIN-SUFFIX,championshipseriesleague.com
 DOMAIN-SUFFIX,chillingo.com
 DOMAIN-SUFFIX,chunkbase.com
@@ -402,6 +404,7 @@ DOMAIN-SUFFIX,play4free.com
 DOMAIN-SUFFIX,playapex.com
 DOMAIN-SUFFIX,playartifact.com
 DOMAIN-SUFFIX,playbattlegrounds.com
+DOMAIN-SUFFIX,playgwent.com
 DOMAIN-SUFFIX,playhearthstone.com
 DOMAIN-SUFFIX,playnintendo.com
 DOMAIN-SUFFIX,playoverwatch.com
@@ -544,6 +547,7 @@ DOMAIN-SUFFIX,thesims.com
 DOMAIN-SUFFIX,thesims3.com
 DOMAIN-SUFFIX,thesims4.com
 DOMAIN-SUFFIX,thesimssocial.com
+DOMAIN-SUFFIX,thewitcher.com
 DOMAIN-SUFFIX,thewonderful101.com
 DOMAIN-SUFFIX,tiberiumalliances.com
 DOMAIN-SUFFIX,tiburon.com
@@ -711,6 +715,7 @@ DOMAIN-SUFFIX,camelotherald.net
 DOMAIN-SUFFIX,edge.steam-dns.top.comcast.net
 DOMAIN-SUFFIX,crossout.net
 DOMAIN-SUFFIX,crsed.net
+DOMAIN-SUFFIX,cyberpunk.net
 DOMAIN-SUFFIX,daoc.net
 DOMAIN-SUFFIX,demonware.net
 DOMAIN-SUFFIX,dicela.net
@@ -798,12 +803,14 @@ DOMAIN-SUFFIX,playstation
 DOMAIN-SUFFIX,nintendo.com.pt
 DOMAIN-SUFFIX,nintendo.pt
 DOMAIN-SUFFIX,roblox.pt
+DOMAIN-SUFFIX,cdprojekt.red
 DOMAIN-SUFFIX,nintendo.ru
 DOMAIN-SUFFIX,steam.cdn.webra.ru
 DOMAIN-SUFFIX,rsg.sc
 DOMAIN-SUFFIX,dice.se
 DOMAIN-SUFFIX,nintendo.se
 DOMAIN-SUFFIX,quixel.se
+DOMAIN-SUFFIX,cdpred.services
 DOMAIN-SUFFIX,garena.sg
 DOMAIN-SUFFIX,dodi-repacks.site
 DOMAIN-SUFFIX,fitgirl-repacks.site

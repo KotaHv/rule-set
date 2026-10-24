@@ -1,5 +1,5 @@
-# Total: 831 rules
-# Last Updated: 2026-10-22T05:07:23.476792+00:00
+# Total: 838 rules
+# Last Updated: 2026-10-24T11:21:18.678157+00:00
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -177,6 +177,8 @@ domain_suffix_set:
 - candycrush.com
 - capitalgames.com
 - capturingreality.com
+- cdprojekt.com
+- cdprojektred.com
 - championshipseriesleague.com
 - chillingo.com
 - chunkbase.com
@@ -405,6 +407,7 @@ domain_suffix_set:
 - playapex.com
 - playartifact.com
 - playbattlegrounds.com
+- playgwent.com
 - playhearthstone.com
 - playnintendo.com
 - playoverwatch.com
@@ -547,6 +550,7 @@ domain_suffix_set:
 - thesims3.com
 - thesims4.com
 - thesimssocial.com
+- thewitcher.com
 - thewonderful101.com
 - tiberiumalliances.com
 - tiburon.com
@@ -714,6 +718,7 @@ domain_suffix_set:
 - edge.steam-dns.top.comcast.net
 - crossout.net
 - crsed.net
+- cyberpunk.net
 - daoc.net
 - demonware.net
 - dicela.net
@@ -801,12 +806,14 @@ domain_suffix_set:
 - nintendo.com.pt
 - nintendo.pt
 - roblox.pt
+- cdprojekt.red
 - nintendo.ru
 - steam.cdn.webra.ru
 - rsg.sc
 - dice.se
 - nintendo.se
 - quixel.se
+- cdpred.services
 - garena.sg
 - dodi-repacks.site
 - fitgirl-repacks.site
