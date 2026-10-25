@@ -1,5 +1,5 @@
-# Total: 4712 rules
-# Last Updated: 2026-10-25T11:52:30.887084+00:00
+# Total: 4697 rules
+# Last Updated: 2026-10-25T16:38:34.208515+00:00
 DOMAIN,rules.ac
 DOMAIN,static.jup.ag
 DOMAIN,cdn.aimerce.ai
@@ -14,8 +14,6 @@ DOMAIN,assets-docs.dify.ai
 DOMAIN,widget.docsbot.ai
 DOMAIN,cdn.engagement.ai
 DOMAIN,widget.prod.equally.ai
-DOMAIN,media.evolv.ai
-DOMAIN,participants.evolv.ai
 DOMAIN,cdn.fellou.ai
 DOMAIN,cdn.fera.ai
 DOMAIN,solve-widget.forethought.ai
@@ -35,7 +33,6 @@ DOMAIN,pplx-next-static-public.perplexity.ai
 DOMAIN,r2cdn.perplexity.ai
 DOMAIN,static.returngo.ai
 DOMAIN,cdn.roof.ai
-DOMAIN,cdn.seedance2.ai
 DOMAIN,cdn1.suno.ai
 DOMAIN,cdn2.suno.ai
 DOMAIN,code.trygravity.ai
@@ -310,7 +307,6 @@ DOMAIN,static.anysex.com
 DOMAIN,vcdn.anysex.com
 DOMAIN,g-static.ap4r.com
 DOMAIN,assets.apilayer.com
-DOMAIN,imgrs.apkcombo.com
 DOMAIN,static.apkpure.com
 DOMAIN,assets.apnews.com
 DOMAIN,dims.apnews.com
@@ -720,11 +716,9 @@ DOMAIN,source.domaintools.com
 DOMAIN,cdn.doofinder.com
 DOMAIN,cdn.dotaoutpost.com
 DOMAIN,static.doujins.com
-DOMAIN,cdn.downdetector.com
 DOMAIN,cdn2.downdetector.com
-DOMAIN,v-tiles1.downdetector.com
-DOMAIN,v-tiles2.downdetector.com
-DOMAIN,v-tiles3.downdetector.com
+DOMAIN,cdn3.downdetector.com
+DOMAIN,cdn4.downdetector.com
 DOMAIN,screenshots.downloadtorrentfile.com
 DOMAIN,cdn.drata.com
 DOMAIN,images.drata.com
@@ -1168,7 +1162,6 @@ DOMAIN,images.indianexpress.com
 DOMAIN,media-central.indianexpress.com
 DOMAIN,jssocdn.indiatimes.com
 DOMAIN,static.inflect.com
-DOMAIN,w2.influxdata.com
 DOMAIN,cdn.infoq.com
 DOMAIN,imgopt.infoq.com
 DOMAIN,static.iris.informa.com
@@ -1491,7 +1484,6 @@ DOMAIN,static.narrativ.com
 DOMAIN,3dna.nationbuilder.com
 DOMAIN,assets.nationbuilder.com
 DOMAIN,media.nationwide.com
-DOMAIN,tags.nationwide.com
 DOMAIN,c.navattic.com
 DOMAIN,js.navattic.com
 DOMAIN,cdn.nba.com
@@ -1621,7 +1613,6 @@ DOMAIN,cdn.parsely.com
 DOMAIN,js.partnerstack.com
 DOMAIN,cdn.pathfactory.com
 DOMAIN,cdn-app.pathfactory.com
-DOMAIN,c1.patreon.com
 DOMAIN,c10.patreon.com
 DOMAIN,c11.patreon.com
 DOMAIN,c13.patreon.com
@@ -1856,7 +1847,6 @@ DOMAIN,imgix.setapp.com
 DOMAIN,stats.setapp.com
 DOMAIN,attach.setn.com
 DOMAIN,b.sf-syn.com
-DOMAIN,cache.sgvafs.com
 DOMAIN,static2.sharepointonline.com
 DOMAIN,assets.shazam.com
 DOMAIN,cdn.sheetjs.com
@@ -2117,6 +2107,7 @@ DOMAIN,cdn.casestudies.svc.ui.com
 DOMAIN,content-cdn.svc.ui.com
 DOMAIN,files.svc.ui.com
 DOMAIN,fonts.svc.ui.com
+DOMAIN,image.icon-gen.svc.ui.com
 DOMAIN,images.svc.ui.com
 DOMAIN,net-fe-static-assets.network-controller.svc.ui.com
 DOMAIN,cdn.pkg.svc.ui.com
@@ -2618,7 +2609,6 @@ DOMAIN,static.status.io
 DOMAIN,telemetry.stepsecurity.io
 DOMAIN,assets.stigg.io
 DOMAIN,link.storjshare.io
-DOMAIN,storage.synctrack.io
 DOMAIN,scripts.tabler.io
 DOMAIN,tiles.terria.io
 DOMAIN,cdn.thenewstack.io
@@ -2842,6 +2832,7 @@ DOMAIN,logs.blip.net
 DOMAIN,static.blip.net
 DOMAIN,cf-images.ap-northeast-1.prod.boltdns.net
 DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net
+DOMAIN,manifest.prod.boltdns.net
 DOMAIN,cf-images.us-east-1.prod.boltdns.net
 DOMAIN,players.brightcove.net
 DOMAIN,fonts.bunny.net
@@ -3014,7 +3005,6 @@ DOMAIN,static.whatsapp.net
 DOMAIN,cdn.wikimg.net
 DOMAIN,cdn.wishpond.net
 DOMAIN,fast.wistia.net
-DOMAIN,avts.wmlabs.net
 DOMAIN,cdn.writeas.net
 DOMAIN,images.wsj.net
 DOMAIN,m.wsj.net
@@ -3051,7 +3041,6 @@ DOMAIN,static.nrk.no
 DOMAIN,media.masto.nu
 DOMAIN,secure.fanboy.co.nz
 DOMAIN,cdn.geekzone.co.nz
-DOMAIN,storageapi.fleek.one
 DOMAIN,cdn-msp.jmcomic-zzz.one
 DOMAIN,wiki.metacubex.one
 DOMAIN,static.xns.one
@@ -3244,7 +3233,6 @@ DOMAIN,static.zaobao.com.sg
 DOMAIN,tiles.onemap.gov.sg
 DOMAIN,brew.sh
 DOMAIN,docs.brew.sh
-DOMAIN,proxy.cors.sh
 DOMAIN,static.cracked.sh
 DOMAIN,static.scarf.sh
 DOMAIN,avatar.tangled.sh
@@ -3323,7 +3311,6 @@ DOMAIN,n.approveit.today
 DOMAIN,pics.javhd.today
 DOMAIN,openreplay-new.deel.tools
 DOMAIN,namedotcom-cdn.name.tools
-DOMAIN,css.4jpg.top
 DOMAIN,nas2.d.tube
 DOMAIN,play.d.tube
 DOMAIN,js.txxx.tube
@@ -3362,7 +3349,6 @@ DOMAIN,assets.pscp.tv
 DOMAIN,resources.redbull.tv
 DOMAIN,static.tella.tv
 DOMAIN,media.trakt.tv
-DOMAIN,walter-r2.trakt.tv
 DOMAIN,assets.twitch.tv
 DOMAIN,clips-media-assets2.twitch.tv
 DOMAIN,embed.twitch.tv
@@ -3435,7 +3421,6 @@ DOMAIN,tubi.video
 DOMAIN,cdn.violet.vin
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,tanju.vip
-DOMAIN,www.10086.win
 DOMAIN,api.allorigins.win
 DOMAIN,static.frame.work
 DOMAIN,fonts1.unidays.world

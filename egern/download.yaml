@@ -1,5 +1,5 @@
-# Total: 1982 rules
-# Last Updated: 2026-10-20T17:24:21.042979+00:00
+# Total: 1979 rules
+# Last Updated: 2026-10-25T16:38:33.974272+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -176,7 +176,6 @@ domain_set:
 - mirrors.aliyun.com
 - mirror.nl.altushost.com
 - download.anydesk.com
-- www2.aomeisoftware.com
 - downloadr2.apkmirror.com
 - boot.arcboxcdn.com
 - release.arcboxcdn.com
@@ -265,6 +264,7 @@ domain_set:
 - objects.githubusercontent.com
 - pkg-containers.githubusercontent.com
 - release-assets.githubusercontent.com
+- registry.gitlab.com
 - dl.gl-inet.com
 - fw.gl-inet.com
 - gog-cdn-fastly.gog.com
@@ -818,7 +818,6 @@ domain_set:
 - ftp.iij.ad.jp
 - ftp.sakura.ad.jp
 - ftp.nara.wide.ad.jp
-- ftp.tsukuba.wide.ad.jp
 - download.hikarifield.co.jp
 - static.hikarifield.co.jp
 - ftp.kddlabs.co.jp
@@ -949,7 +948,6 @@ domain_set:
 - debian.ludost.net
 - mirror.macomnet.net
 - mirror.mangohost.net
-- mirror.marcusn.net
 - mx-app-blob-prod.maxon.net
 - b2.mcarchive.net
 - apache.melbourneitmirror.net
@@ -1329,7 +1327,6 @@ domain_set:
 - debian.lth.se
 - ftp.acc.umu.se
 - ossmirror.mycloud.services
-- mirror.0x.sg
 - mirror.aktkn.sg
 - mirror.djvg.sg
 - mirror.soonkeat.sg

@@ -1,5 +1,5 @@
-# Total: 4773 rules
-# Last Updated: 2026-10-25T11:52:30.949082+00:00
+# Total: 4758 rules
+# Last Updated: 2026-10-25T16:38:34.245986+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -16,8 +16,6 @@ domain_set:
 - widget.docsbot.ai
 - cdn.engagement.ai
 - widget.prod.equally.ai
-- media.evolv.ai
-- participants.evolv.ai
 - cdn.fellou.ai
 - cdn.fera.ai
 - solve-widget.forethought.ai
@@ -37,7 +35,6 @@ domain_set:
 - r2cdn.perplexity.ai
 - static.returngo.ai
 - cdn.roof.ai
-- cdn.seedance2.ai
 - cdn1.suno.ai
 - cdn2.suno.ai
 - code.trygravity.ai
@@ -312,7 +309,6 @@ domain_set:
 - vcdn.anysex.com
 - g-static.ap4r.com
 - assets.apilayer.com
-- imgrs.apkcombo.com
 - static.apkpure.com
 - assets.apnews.com
 - dims.apnews.com
@@ -722,11 +718,9 @@ domain_set:
 - cdn.doofinder.com
 - cdn.dotaoutpost.com
 - static.doujins.com
-- cdn.downdetector.com
 - cdn2.downdetector.com
-- v-tiles1.downdetector.com
-- v-tiles2.downdetector.com
-- v-tiles3.downdetector.com
+- cdn3.downdetector.com
+- cdn4.downdetector.com
 - screenshots.downloadtorrentfile.com
 - cdn.drata.com
 - images.drata.com
@@ -1170,7 +1164,6 @@ domain_set:
 - media-central.indianexpress.com
 - jssocdn.indiatimes.com
 - static.inflect.com
-- w2.influxdata.com
 - cdn.infoq.com
 - imgopt.infoq.com
 - static.iris.informa.com
@@ -1493,7 +1486,6 @@ domain_set:
 - 3dna.nationbuilder.com
 - assets.nationbuilder.com
 - media.nationwide.com
-- tags.nationwide.com
 - c.navattic.com
 - js.navattic.com
 - cdn.nba.com
@@ -1623,7 +1615,6 @@ domain_set:
 - js.partnerstack.com
 - cdn.pathfactory.com
 - cdn-app.pathfactory.com
-- c1.patreon.com
 - c10.patreon.com
 - c11.patreon.com
 - c13.patreon.com
@@ -1858,7 +1849,6 @@ domain_set:
 - stats.setapp.com
 - attach.setn.com
 - b.sf-syn.com
-- cache.sgvafs.com
 - static2.sharepointonline.com
 - assets.shazam.com
 - cdn.sheetjs.com
@@ -2119,6 +2109,7 @@ domain_set:
 - content-cdn.svc.ui.com
 - files.svc.ui.com
 - fonts.svc.ui.com
+- image.icon-gen.svc.ui.com
 - images.svc.ui.com
 - net-fe-static-assets.network-controller.svc.ui.com
 - cdn.pkg.svc.ui.com
@@ -2620,7 +2611,6 @@ domain_set:
 - telemetry.stepsecurity.io
 - assets.stigg.io
 - link.storjshare.io
-- storage.synctrack.io
 - scripts.tabler.io
 - tiles.terria.io
 - cdn.thenewstack.io
@@ -2844,6 +2834,7 @@ domain_set:
 - static.blip.net
 - cf-images.ap-northeast-1.prod.boltdns.net
 - cf-images.ap-southeast-1.prod.boltdns.net
+- manifest.prod.boltdns.net
 - cf-images.us-east-1.prod.boltdns.net
 - players.brightcove.net
 - fonts.bunny.net
@@ -3016,7 +3007,6 @@ domain_set:
 - cdn.wikimg.net
 - cdn.wishpond.net
 - fast.wistia.net
-- avts.wmlabs.net
 - cdn.writeas.net
 - images.wsj.net
 - m.wsj.net
@@ -3053,7 +3043,6 @@ domain_set:
 - media.masto.nu
 - secure.fanboy.co.nz
 - cdn.geekzone.co.nz
-- storageapi.fleek.one
 - cdn-msp.jmcomic-zzz.one
 - wiki.metacubex.one
 - static.xns.one
@@ -3246,7 +3235,6 @@ domain_set:
 - tiles.onemap.gov.sg
 - brew.sh
 - docs.brew.sh
-- proxy.cors.sh
 - static.cracked.sh
 - static.scarf.sh
 - avatar.tangled.sh
@@ -3325,7 +3313,6 @@ domain_set:
 - pics.javhd.today
 - openreplay-new.deel.tools
 - namedotcom-cdn.name.tools
-- css.4jpg.top
 - nas2.d.tube
 - play.d.tube
 - js.txxx.tube
@@ -3364,7 +3351,6 @@ domain_set:
 - resources.redbull.tv
 - static.tella.tv
 - media.trakt.tv
-- walter-r2.trakt.tv
 - assets.twitch.tv
 - clips-media-assets2.twitch.tv
 - embed.twitch.tv
@@ -3437,7 +3423,6 @@ domain_set:
 - cdn.violet.vin
 - cdn-msp.18comic.vip
 - tanju.vip
-- www.10086.win
 - api.allorigins.win
 - static.frame.work
 - fonts1.unidays.world

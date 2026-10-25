@@ -1,5 +1,5 @@
-# Total: 6679 rules
-# Last Updated: 2026-10-25T11:53:01.112723+00:00
+# Total: 6671 rules
+# Last Updated: 2026-10-25T16:39:01.066961+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -300,7 +300,6 @@ domain_set:
 - s-cdn.anthropic.com
 - www-cdn.anthropic.com
 - download.anydesk.com
-- www2.aomeisoftware.com
 - g-static.ap4r.com
 - assets.apilayer.com
 - app-spm.com
@@ -1239,7 +1238,6 @@ domain_set:
 - 3dna.nationbuilder.com
 - assets.nationbuilder.com
 - media.nationwide.com
-- tags.nationwide.com
 - c.navattic.com
 - js.navattic.com
 - mirror.navercorp.com
@@ -1511,7 +1509,6 @@ domain_set:
 - i.servimg.com
 - attach.setn.com
 - b.sf-syn.com
-- cache.sgvafs.com
 - static2.sharepointonline.com
 - assets.shazam.com
 - cdn.sheetjs.com
@@ -2136,7 +2133,6 @@ domain_set:
 - telemetry.stepsecurity.io
 - assets.stigg.io
 - link.storjshare.io
-- storage.synctrack.io
 - scripts.tabler.io
 - tiles.terria.io
 - static.tokenview.io
@@ -2428,7 +2424,6 @@ domain_set:
 - rt2.maphub.net
 - rt3.maphub.net
 - static.maphub.net
-- mirror.marcusn.net
 - images.mattel.net
 - assets.maxon.net
 - mx-app-blob-prod.maxon.net
@@ -2562,7 +2557,6 @@ domain_set:
 - cdn.wikimg.net
 - cdn.wishpond.net
 - fast.wistia.net
-- avts.wmlabs.net
 - mirror.wonchan.net
 - cdn.writeas.net
 - images.wsjcommerce.net
@@ -2839,7 +2833,6 @@ domain_set:
 - openreplay-new.deel.tools
 - gotest.tools
 - namedotcom-cdn.name.tools
-- css.4jpg.top
 - ghfast.top
 - repo.sleeping.town
 - nas2.d.tube
@@ -2894,7 +2887,6 @@ domain_set:
 - tubi.video
 - cdn.violet.vin
 - tanju.vip
-- www.10086.win
 - api.allorigins.win
 - static.frame.work
 - fonts1.unidays.world

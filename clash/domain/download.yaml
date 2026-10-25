@@ -1,5 +1,5 @@
-# Total: 1972 rules
-# Last Updated: 2026-10-20T17:24:21.008179+00:00
+# Total: 1969 rules
+# Last Updated: 2026-10-25T16:38:33.952626+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -175,7 +175,6 @@
 - 'mirrors.aliyun.com'
 - 'mirror.nl.altushost.com'
 - 'download.anydesk.com'
-- 'www2.aomeisoftware.com'
 - 'downloadr2.apkmirror.com'
 - 'boot.arcboxcdn.com'
 - 'release.arcboxcdn.com'
@@ -264,6 +263,7 @@
 - 'objects.githubusercontent.com'
 - 'pkg-containers.githubusercontent.com'
 - 'release-assets.githubusercontent.com'
+- 'registry.gitlab.com'
 - 'dl.gl-inet.com'
 - 'fw.gl-inet.com'
 - 'gog-cdn-fastly.gog.com'
@@ -817,7 +817,6 @@
 - 'ftp.iij.ad.jp'
 - 'ftp.sakura.ad.jp'
 - 'ftp.nara.wide.ad.jp'
-- 'ftp.tsukuba.wide.ad.jp'
 - 'download.hikarifield.co.jp'
 - 'static.hikarifield.co.jp'
 - 'ftp.kddlabs.co.jp'
@@ -948,7 +947,6 @@
 - 'debian.ludost.net'
 - 'mirror.macomnet.net'
 - 'mirror.mangohost.net'
-- 'mirror.marcusn.net'
 - 'mx-app-blob-prod.maxon.net'
 - 'b2.mcarchive.net'
 - 'apache.melbourneitmirror.net'
@@ -1328,7 +1326,6 @@
 - 'debian.lth.se'
 - 'ftp.acc.umu.se'
 - 'ossmirror.mycloud.services'
-- 'mirror.0x.sg'
 - 'mirror.aktkn.sg'
 - 'mirror.djvg.sg'
 - 'mirror.soonkeat.sg'
