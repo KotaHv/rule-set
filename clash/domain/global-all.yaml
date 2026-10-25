@@ -1,5 +1,5 @@
-# Total: 6550 rules
-# Last Updated: 2026-10-24T16:09:27.252810+00:00
+# Total: 6553 rules
+# Last Updated: 2026-10-25T11:53:01.032410+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -467,6 +467,9 @@
 - 'media.canva.com'
 - 'static.canva.com'
 - 'dma.canyon.com'
+- 'static.capcom.com'
+- 'cdn.capcom-unity.com'
+- 'cdn.promo.capcomusa.com'
 - 'static.captcha-delivery.com'
 - 'assets.capterra.com'
 - 'reviews-badge.capterra.com'

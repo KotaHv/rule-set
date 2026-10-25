@@ -1,5 +1,5 @@
-# Total: 4689 rules
-# Last Updated: 2026-10-24T16:08:55.291674+00:00
+# Total: 4692 rules
+# Last Updated: 2026-10-25T11:52:30.889600+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -511,6 +511,9 @@
 - 'media.canva.com'
 - 'static.canva.com'
 - 'dma.canyon.com'
+- 'static.capcom.com'
+- 'cdn.capcom-unity.com'
+- 'cdn.promo.capcomusa.com'
 - 'static.captcha-delivery.com'
 - 'assets.capterra.com'
 - 'reviews-badge.capterra.com'

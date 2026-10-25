@@ -1,5 +1,5 @@
-# Total: 6676 rules
-# Last Updated: 2026-10-24T16:09:27.338690+00:00
+# Total: 6679 rules
+# Last Updated: 2026-10-25T11:53:01.112723+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -468,6 +468,9 @@ domain_set:
 - media.canva.com
 - static.canva.com
 - dma.canyon.com
+- static.capcom.com
+- cdn.capcom-unity.com
+- cdn.promo.capcomusa.com
 - static.captcha-delivery.com
 - assets.capterra.com
 - reviews-badge.capterra.com
