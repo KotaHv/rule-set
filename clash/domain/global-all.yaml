@@ -1,5 +1,5 @@
-# Total: 6547 rules
-# Last Updated: 2026-10-26T14:14:21.695385+00:00
+# Total: 6546 rules
+# Last Updated: 2026-10-26T14:19:35.591801+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -884,7 +884,6 @@
 - 'wego.here.com'
 - 'maps.hereapi.com'
 - 'vector.hereapi.com'
-- 'cdn.hero-sms.com'
 - 'heroicons.com'
 - 'cdn.hextom.com'
 - 'cdn2.hextom.com'
@@ -3844,6 +3843,7 @@
 - '+.hentaifox.com'
 - '+.hentaipaw.com'
 - '+.hentaistream.com'
+- '+.hero-sms.com'
 - '+.heroesofdragonage.com'
 - '+.heroesofthestorm.com'
 - '+.heroku.com'
@@ -5490,7 +5490,6 @@
 - '+.short.io'
 - '+.shw.io'
 - '+.ipfs.smartholdem.io'
-- '+.sms-activate.io'
 - '+.snap-telemetry.io'
 - '+.snapcraft.io'
 - '+.snapstore.io'

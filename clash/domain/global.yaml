@@ -1,5 +1,5 @@
 # Total: 1805 rules
-# Last Updated: 2026-10-26T14:14:20.613228+00:00
+# Last Updated: 2026-10-26T14:19:34.449200+00:00
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -451,6 +451,7 @@
 - '+.hentaifox.com'
 - '+.hentaipaw.com'
 - '+.hentaistream.com'
+- '+.hero-sms.com'
 - '+.heroku.com'
 - '+.herokuapp.com'
 - '+.hetzner.com'
@@ -1193,7 +1194,6 @@
 - '+.shodan.io'
 - '+.short.io'
 - '+.shw.io'
-- '+.sms-activate.io'
 - '+.snap-telemetry.io'
 - '+.snapcraft.io'
 - '+.snapstore.io'
