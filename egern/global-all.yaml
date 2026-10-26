@@ -1,5 +1,5 @@
-# Total: 6671 rules
-# Last Updated: 2026-10-25T16:39:01.066961+00:00
+# Total: 6673 rules
+# Last Updated: 2026-10-26T14:14:21.776243+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -403,7 +403,6 @@ domain_set:
 - mirrors.binaryracks.com
 - static.news.bitcoin.com
 - cdn.bitmovin.com
-- assets.bitwarden.com
 - mirror.biznetgio.com
 - organizer.bizzabo.com
 - dd.blackhawknetwork.com
@@ -3018,18 +3017,13 @@ domain_suffix_set:
 - vrchat.cloud
 - youtrack.cloud
 - sfmcompile.club
-- anfutong.cn
 - applicationinsights.azure.cn
-- beibao.cn
-- anfutong.com.cn
-- beibao.com.cn
 - dungeonkeeper.com.cn
 - dungeonkeeper.cn
-- xoom.net.cn
 - softonic.cn
 - szjal.cn
-- xn--bnq297cix3a.cn
 - anilist.co
+- btwrdn.co
 - widget.clutch.co
 - convertio.co
 - doodcdn.co
@@ -3293,6 +3287,7 @@ domain_suffix_set:
 - bitly.com
 - bitmex.com
 - bitvise.com
+- bitwarden.com
 - blackboxgames.com
 - bleepingcomputer.com
 - bleepstatic.com
@@ -3331,6 +3326,7 @@ domain_suffix_set:
 - broadcom.com
 - bstarstatic.com
 - bstatic.com
+- btwrdn.com
 - buckbuild.com
 - bugsnag.com
 - buildkiteassets.com
@@ -4491,6 +4487,7 @@ domain_suffix_set:
 - project1content.com
 - projectapex.com
 - protondb.com
+- protonmail.com
 - protonstatus.com
 - protonvpn.com
 - protonweb.com
@@ -5234,6 +5231,7 @@ domain_suffix_set:
 - sentry.dev
 - skypack.dev
 - t3.storageapi.dev
+- svelte.dev
 - termux.dev
 - tg.dev
 - usercontent.dev
@@ -5575,6 +5573,7 @@ domain_suffix_set:
 - mycdn.me
 - ogp.me
 - pikpak.me
+- pm.me
 - proton.me
 - randomuser.me
 - rocketcdn.me
@@ -5649,6 +5648,7 @@ domain_suffix_set:
 - bethesda.net
 - billmelater.net
 - mm.bing.net
+- bitwarden.net
 - blackbaudcdn.net
 - blazor.net
 - mirror.blendbyte.net
@@ -5796,6 +5796,7 @@ domain_suffix_set:
 - komoot.net
 - konami.net
 - konamigaming.net
+- kovidgoyal.net
 - laby.net
 - launchpad.net
 - launchpadcontent.net
@@ -6114,7 +6115,7 @@ domain_suffix_set:
 - getfedora.org
 - getoutline.org
 - getzola.org
-- files.ghostty.org
+- ghostty.org
 - gmoney.org
 - gnome.org
 - gnu.org
@@ -6254,6 +6255,7 @@ domain_suffix_set:
 - pythonhosted.org
 - qbittorrent.org
 - qt-project.org
+- quicwg.org
 - quiltmc.org
 - r-project.org
 - raspberrypi.org

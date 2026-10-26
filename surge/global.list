@@ -1,5 +1,5 @@
-# Total: 1820 rules
-# Last Updated: 2026-10-22T05:08:07.077175+00:00
+# Total: 1824 rules
+# Last Updated: 2026-10-26T14:14:20.608444+00:00
 DOMAIN,store.ui.com.cn
 DOMAIN,ccmdl.adobe.com
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -84,14 +84,9 @@ DOMAIN-SUFFIX,jetbrains.cloud
 DOMAIN-SUFFIX,sketch.cloud
 DOMAIN-SUFFIX,youtrack.cloud
 DOMAIN-SUFFIX,sfmcompile.club
-DOMAIN-SUFFIX,anfutong.cn
-DOMAIN-SUFFIX,beibao.cn
-DOMAIN-SUFFIX,anfutong.com.cn
-DOMAIN-SUFFIX,beibao.com.cn
-DOMAIN-SUFFIX,xoom.net.cn
 DOMAIN-SUFFIX,softonic.cn
-DOMAIN-SUFFIX,xn--bnq297cix3a.cn
 DOMAIN-SUFFIX,anilist.co
+DOMAIN-SUFFIX,btwrdn.co
 DOMAIN-SUFFIX,convertio.co
 DOMAIN-SUFFIX,feeder.co
 DOMAIN-SUFFIX,fury.co
@@ -207,6 +202,7 @@ DOMAIN-SUFFIX,bitfinex.com
 DOMAIN-SUFFIX,bitly.com
 DOMAIN-SUFFIX,bitmex.com
 DOMAIN-SUFFIX,bitvise.com
+DOMAIN-SUFFIX,bitwarden.com
 DOMAIN-SUFFIX,bleepingcomputer.com
 DOMAIN-SUFFIX,blizzard.com
 DOMAIN-SUFFIX,blogblog.com
@@ -226,6 +222,7 @@ DOMAIN-SUFFIX,brave.com
 DOMAIN-SUFFIX,braventures.com
 DOMAIN-SUFFIX,braveux.com
 DOMAIN-SUFFIX,broadcom.com
+DOMAIN-SUFFIX,btwrdn.com
 DOMAIN-SUFFIX,buckbuild.com
 DOMAIN-SUFFIX,bugsnag.com
 DOMAIN-SUFFIX,businessinsider.com
@@ -718,6 +715,7 @@ DOMAIN-SUFFIX,dnsleak.privadovpn.com
 DOMAIN-SUFFIX,privateinternetaccess.com
 DOMAIN-SUFFIX,probit.com
 DOMAIN-SUFFIX,producthunt.com
+DOMAIN-SUFFIX,protonmail.com
 DOMAIN-SUFFIX,protonstatus.com
 DOMAIN-SUFFIX,protonvpn.com
 DOMAIN-SUFFIX,protonweb.com
@@ -1029,6 +1027,7 @@ DOMAIN-SUFFIX,pages.dev
 DOMAIN-SUFFIX,pub.dev
 DOMAIN-SUFFIX,pydantic.dev
 DOMAIN-SUFFIX,sentry.dev
+DOMAIN-SUFFIX,svelte.dev
 DOMAIN-SUFFIX,termux.dev
 DOMAIN-SUFFIX,v8.dev
 DOMAIN-SUFFIX,vscode.dev
@@ -1242,6 +1241,7 @@ DOMAIN-SUFFIX,mangafox.me
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,ogp.me
 DOMAIN-SUFFIX,pikpak.me
+DOMAIN-SUFFIX,pm.me
 DOMAIN-SUFFIX,proton.me
 DOMAIN-SUFFIX,textnow.me
 DOMAIN-SUFFIX,wa.me
@@ -1279,6 +1279,7 @@ DOMAIN-SUFFIX,badgen.net
 DOMAIN-SUFFIX,beacondb.net
 DOMAIN-SUFFIX,behance.net
 DOMAIN-SUFFIX,billmelater.net
+DOMAIN-SUFFIX,bitwarden.net
 DOMAIN-SUFFIX,blazor.net
 DOMAIN-SUFFIX,bloomberg.net
 DOMAIN-SUFFIX,briantreepayments.net
@@ -1333,6 +1334,7 @@ DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,jsfiddle.net
 DOMAIN-SUFFIX,kisscos.net
 DOMAIN-SUFFIX,komoot.net
+DOMAIN-SUFFIX,kovidgoyal.net
 DOMAIN-SUFFIX,laby.net
 DOMAIN-SUFFIX,launchpad.net
 DOMAIN-SUFFIX,launchpadcontent.net
@@ -1516,6 +1518,7 @@ DOMAIN-SUFFIX,getcomposer.org
 DOMAIN-SUFFIX,getfedora.org
 DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,getzola.org
+DOMAIN-SUFFIX,ghostty.org
 DOMAIN-SUFFIX,gmoney.org
 DOMAIN-SUFFIX,gnome.org
 DOMAIN-SUFFIX,gnu.org
@@ -1623,6 +1626,7 @@ DOMAIN-SUFFIX,pyrobot.org
 DOMAIN-SUFFIX,python.org
 DOMAIN-SUFFIX,pythonhosted.org
 DOMAIN-SUFFIX,qt-project.org
+DOMAIN-SUFFIX,quicwg.org
 DOMAIN-SUFFIX,r-project.org
 DOMAIN-SUFFIX,raspberrypi.org
 DOMAIN-SUFFIX,raspbian.org

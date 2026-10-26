@@ -1,9 +1,15 @@
-# Total: 6 rules
-# Last Updated: 2026-07-31T10:23:59.362072+00:00
+# Total: 12 rules
+# Last Updated: 2026-10-26T14:13:53.521092+00:00
 'payload':
 - '+.reddit.com'
+- '+.redditblog.com'
+- '+.reddithelp.com'
+- '+.redditinc.com'
 - '+.redditmail.com'
 - '+.redditmedia.com'
 - '+.redditspace.com'
 - '+.redditstatic.com'
+- '+.redditstatus.com'
 - '+.redd.it'
+- '+.reddit.app.link'
+- '+.reddit.map.fastly.net'

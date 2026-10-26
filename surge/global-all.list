@@ -1,5 +1,5 @@
-# Total: 6735 rules
-# Last Updated: 2026-10-25T16:39:01.008161+00:00
+# Total: 6737 rules
+# Last Updated: 2026-10-26T14:14:21.688677+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -401,7 +401,6 @@ DOMAIN,upos-sz-mirrorcosbstar1.bilivideo.com
 DOMAIN,mirrors.binaryracks.com
 DOMAIN,static.news.bitcoin.com
 DOMAIN,cdn.bitmovin.com
-DOMAIN,assets.bitwarden.com
 DOMAIN,mirror.biznetgio.com
 DOMAIN,organizer.bizzabo.com
 DOMAIN,dd.blackhawknetwork.com
@@ -3015,18 +3014,13 @@ DOMAIN-SUFFIX,steamos.cloud
 DOMAIN-SUFFIX,vrchat.cloud
 DOMAIN-SUFFIX,youtrack.cloud
 DOMAIN-SUFFIX,sfmcompile.club
-DOMAIN-SUFFIX,anfutong.cn
 DOMAIN-SUFFIX,applicationinsights.azure.cn
-DOMAIN-SUFFIX,beibao.cn
-DOMAIN-SUFFIX,anfutong.com.cn
-DOMAIN-SUFFIX,beibao.com.cn
 DOMAIN-SUFFIX,dungeonkeeper.com.cn
 DOMAIN-SUFFIX,dungeonkeeper.cn
-DOMAIN-SUFFIX,xoom.net.cn
 DOMAIN-SUFFIX,softonic.cn
 DOMAIN-SUFFIX,szjal.cn
-DOMAIN-SUFFIX,xn--bnq297cix3a.cn
 DOMAIN-SUFFIX,anilist.co
+DOMAIN-SUFFIX,btwrdn.co
 DOMAIN-SUFFIX,widget.clutch.co
 DOMAIN-SUFFIX,convertio.co
 DOMAIN-SUFFIX,doodcdn.co
@@ -3290,6 +3284,7 @@ DOMAIN-SUFFIX,bitgetimg.com
 DOMAIN-SUFFIX,bitly.com
 DOMAIN-SUFFIX,bitmex.com
 DOMAIN-SUFFIX,bitvise.com
+DOMAIN-SUFFIX,bitwarden.com
 DOMAIN-SUFFIX,blackboxgames.com
 DOMAIN-SUFFIX,bleepingcomputer.com
 DOMAIN-SUFFIX,bleepstatic.com
@@ -3328,6 +3323,7 @@ DOMAIN-SUFFIX,brightspotcdn.com
 DOMAIN-SUFFIX,broadcom.com
 DOMAIN-SUFFIX,bstarstatic.com
 DOMAIN-SUFFIX,bstatic.com
+DOMAIN-SUFFIX,btwrdn.com
 DOMAIN-SUFFIX,buckbuild.com
 DOMAIN-SUFFIX,bugsnag.com
 DOMAIN-SUFFIX,buildkiteassets.com
@@ -4488,6 +4484,7 @@ DOMAIN-SUFFIX,producthunt.com
 DOMAIN-SUFFIX,project1content.com
 DOMAIN-SUFFIX,projectapex.com
 DOMAIN-SUFFIX,protondb.com
+DOMAIN-SUFFIX,protonmail.com
 DOMAIN-SUFFIX,protonstatus.com
 DOMAIN-SUFFIX,protonvpn.com
 DOMAIN-SUFFIX,protonweb.com
@@ -5231,6 +5228,7 @@ DOMAIN-SUFFIX,rss3.dev
 DOMAIN-SUFFIX,sentry.dev
 DOMAIN-SUFFIX,skypack.dev
 DOMAIN-SUFFIX,t3.storageapi.dev
+DOMAIN-SUFFIX,svelte.dev
 DOMAIN-SUFFIX,termux.dev
 DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,usercontent.dev
@@ -5572,6 +5570,7 @@ DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,mycdn.me
 DOMAIN-SUFFIX,ogp.me
 DOMAIN-SUFFIX,pikpak.me
+DOMAIN-SUFFIX,pm.me
 DOMAIN-SUFFIX,proton.me
 DOMAIN-SUFFIX,randomuser.me
 DOMAIN-SUFFIX,rocketcdn.me
@@ -5646,6 +5645,7 @@ DOMAIN-SUFFIX,behance.net
 DOMAIN-SUFFIX,bethesda.net
 DOMAIN-SUFFIX,billmelater.net
 DOMAIN-SUFFIX,mm.bing.net
+DOMAIN-SUFFIX,bitwarden.net
 DOMAIN-SUFFIX,blackbaudcdn.net
 DOMAIN-SUFFIX,blazor.net
 DOMAIN-SUFFIX,mirror.blendbyte.net
@@ -5793,6 +5793,7 @@ DOMAIN-SUFFIX,klarnacdn.net
 DOMAIN-SUFFIX,komoot.net
 DOMAIN-SUFFIX,konami.net
 DOMAIN-SUFFIX,konamigaming.net
+DOMAIN-SUFFIX,kovidgoyal.net
 DOMAIN-SUFFIX,laby.net
 DOMAIN-SUFFIX,launchpad.net
 DOMAIN-SUFFIX,launchpadcontent.net
@@ -6111,7 +6112,7 @@ DOMAIN-SUFFIX,getcomposer.org
 DOMAIN-SUFFIX,getfedora.org
 DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,getzola.org
-DOMAIN-SUFFIX,files.ghostty.org
+DOMAIN-SUFFIX,ghostty.org
 DOMAIN-SUFFIX,gmoney.org
 DOMAIN-SUFFIX,gnome.org
 DOMAIN-SUFFIX,gnu.org
@@ -6251,6 +6252,7 @@ DOMAIN-SUFFIX,python.org
 DOMAIN-SUFFIX,pythonhosted.org
 DOMAIN-SUFFIX,qbittorrent.org
 DOMAIN-SUFFIX,qt-project.org
+DOMAIN-SUFFIX,quicwg.org
 DOMAIN-SUFFIX,quiltmc.org
 DOMAIN-SUFFIX,r-project.org
 DOMAIN-SUFFIX,raspberrypi.org

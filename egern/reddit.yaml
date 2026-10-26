@@ -1,10 +1,16 @@
-# Total: 6 rules
-# Last Updated: 2026-07-31T10:23:59.371570+00:00
+# Total: 12 rules
+# Last Updated: 2026-10-26T14:13:53.533241+00:00
 no_resolve: true
 domain_suffix_set:
 - reddit.com
+- redditblog.com
+- reddithelp.com
+- redditinc.com
 - redditmail.com
 - redditmedia.com
 - redditspace.com
 - redditstatic.com
+- redditstatus.com
 - redd.it
+- reddit.app.link
+- reddit.map.fastly.net

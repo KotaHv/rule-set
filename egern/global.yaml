@@ -1,5 +1,5 @@
-# Total: 1819 rules
-# Last Updated: 2026-10-22T05:08:07.119846+00:00
+# Total: 1823 rules
+# Last Updated: 2026-10-26T14:14:20.645221+00:00
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -87,14 +87,9 @@ domain_suffix_set:
 - sketch.cloud
 - youtrack.cloud
 - sfmcompile.club
-- anfutong.cn
-- beibao.cn
-- anfutong.com.cn
-- beibao.com.cn
-- xoom.net.cn
 - softonic.cn
-- xn--bnq297cix3a.cn
 - anilist.co
+- btwrdn.co
 - convertio.co
 - feeder.co
 - fury.co
@@ -210,6 +205,7 @@ domain_suffix_set:
 - bitly.com
 - bitmex.com
 - bitvise.com
+- bitwarden.com
 - bleepingcomputer.com
 - blizzard.com
 - blogblog.com
@@ -229,6 +225,7 @@ domain_suffix_set:
 - braventures.com
 - braveux.com
 - broadcom.com
+- btwrdn.com
 - buckbuild.com
 - bugsnag.com
 - businessinsider.com
@@ -721,6 +718,7 @@ domain_suffix_set:
 - privateinternetaccess.com
 - probit.com
 - producthunt.com
+- protonmail.com
 - protonstatus.com
 - protonvpn.com
 - protonweb.com
@@ -1032,6 +1030,7 @@ domain_suffix_set:
 - pub.dev
 - pydantic.dev
 - sentry.dev
+- svelte.dev
 - termux.dev
 - v8.dev
 - vscode.dev
@@ -1245,6 +1244,7 @@ domain_suffix_set:
 - mikanani.me
 - ogp.me
 - pikpak.me
+- pm.me
 - proton.me
 - textnow.me
 - wa.me
@@ -1282,6 +1282,7 @@ domain_suffix_set:
 - beacondb.net
 - behance.net
 - billmelater.net
+- bitwarden.net
 - blazor.net
 - bloomberg.net
 - briantreepayments.net
@@ -1336,6 +1337,7 @@ domain_suffix_set:
 - jsfiddle.net
 - kisscos.net
 - komoot.net
+- kovidgoyal.net
 - laby.net
 - launchpad.net
 - launchpadcontent.net
@@ -1519,6 +1521,7 @@ domain_suffix_set:
 - getfedora.org
 - getoutline.org
 - getzola.org
+- ghostty.org
 - gmoney.org
 - gnome.org
 - gnu.org
@@ -1626,6 +1629,7 @@ domain_suffix_set:
 - python.org
 - pythonhosted.org
 - qt-project.org
+- quicwg.org
 - r-project.org
 - raspberrypi.org
 - raspbian.org
