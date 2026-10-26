@@ -27,10 +27,10 @@ sources = [
             V2rayDomainResource(
                 source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/flutter"
             ),
-            V2rayDomainResource(
-                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/paypal"
-            ),
+            SourceReference(target="paypal"),
             SourceReference(target="dev"),
+            SourceReference(target="proton"),
+            SourceReference(target="bitwarden"),
         ],
         name="global",
         option=Option(
@@ -38,7 +38,7 @@ sources = [
                 exclude_rule_types=["ip_trie", "ip_trie6", "ip_asn"],
             ),
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttrs(exclude_attrs=["ads"]),
+                attrs=V2rayDomainAttrs(exclude_attrs=["ads", "cn"]),
             ),
         ),
     ),
@@ -325,11 +325,21 @@ sources = [
         ),
     ),
     SourceModel(
-        resources=[RuleSetResource(source="sources/global/ehentai.txt")],
+        resources=[
+            RuleSetResource(source="sources/global/ehentai.txt"),
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/ehentai"
+            ),
+        ],
         name="e-hentai",
     ),
     SourceModel(
-        resources=[RuleSetResource(source="sources/global/reddit.txt")],
+        resources=[
+            RuleSetResource(source="sources/global/reddit.txt"),
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/reddit"
+            ),
+        ],
         name="reddit",
     ),
     SourceModel(
@@ -339,6 +349,36 @@ sources = [
     SourceModel(
         resources=[RuleSetResource(source="sources/direct/novel.txt")],
         name="novel",
+    ),
+    SourceModel(
+        resources=[
+            RuleSetResource(source="sources/global/proton.txt"),
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/protonmail"
+            ),
+        ],
+        name="proton",
+    ),
+    SourceModel(
+        resources=[
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bitwarden"
+            ),
+        ],
+        name="bitwarden",
+    ),
+    SourceModel(
+        resources=[
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/paypal"
+            ),
+        ],
+        name="paypal",
+        option=Option(
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttrs(exclude_attrs=["cn"]),
+            ),
+        ),
     ),
     SourceModel(
         resources=[
