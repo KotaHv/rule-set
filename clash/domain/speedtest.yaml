@@ -1,5 +1,5 @@
-# Total: 3454 rules
-# Last Updated: 2026-10-26T22:48:24.274872+00:00
+# Total: 3456 rules
+# Last Updated: 2026-10-27T22:27:40.922093+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1094,6 +1094,7 @@
 - 'iola-st-ookla.kwikom.com'
 - 'speedtest.lakelandnetworks.com'
 - 'speedtest.lamasatpro.com'
+- 'speedtest.lecrintv.com'
 - 'st1.liberty-connect.com'
 - 'speedtest.lightsource1.com'
 - 'st1.ligtel.com'
@@ -1843,6 +1844,7 @@
 - 'ooklaserver.aryk.fr'
 - 'speedtest.as211733.fr'
 - 'speedperf.axione.fr'
+- 'srv01-speedtest-pa5.ptr.corenix.fr'
 - 'speedtest.dscw.fr'
 - 'testdebithom.enes.fr'
 - 'bass.fc-net.fr'
