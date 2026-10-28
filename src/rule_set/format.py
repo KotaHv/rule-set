@@ -35,6 +35,21 @@ RULE_TYPES = [
 
 COMMENTS = ["#", ";", "//"]
 
+NO_RESOLVE = "no-resolve"
+EXTENDED_MATCHING = "extended-matching"
+
+RULE_OPTIONS: dict[str, str] = {
+    "IP-CIDR": NO_RESOLVE,
+    "IP-CIDR6": NO_RESOLVE,
+    "GEOIP": NO_RESOLVE,
+    "IP-ASN": NO_RESOLVE,
+    "DOMAIN": EXTENDED_MATCHING,
+    "DOMAIN-SUFFIX": EXTENDED_MATCHING,
+    "DOMAIN-KEYWORD": EXTENDED_MATCHING,
+    "DOMAIN-WILDCARD": EXTENDED_MATCHING,
+    "URL-REGEX": EXTENDED_MATCHING,
+}
+
 
 @dataclass(frozen=True)
 class Rule:
@@ -43,19 +58,26 @@ class Rule:
     rule_type: str
     content: str
     is_commented: bool = False
+    option: str | None = None
 
     def __str__(self) -> str:
         rule_str = f"{self.rule_type},{self.content}"
+        if self.option:
+            rule_str = f"{rule_str},{self.option}"
         return f"# {rule_str}" if self.is_commented else rule_str
 
     def __hash__(self) -> int:
-        # Deduplication ignores comment status, only considers type and content
-        return hash((self.rule_type, self.content))
+        # Deduplication ignores comment status, considers type, content and option
+        return hash((self.rule_type, self.content, self.option))
 
     def __eq__(self, other) -> bool:
         if not isinstance(other, Rule):
             return False
-        return self.rule_type == other.rule_type and self.content == other.content
+        return (
+            self.rule_type == other.rule_type
+            and self.content == other.content
+            and self.option == other.option
+        )
 
 
 @dataclass
@@ -95,26 +117,20 @@ class Section:
 
     def _sort_rules_by_type(self, rule_type: str, rules: list[Rule]) -> list[Rule]:
         """Sort rules by type"""
-        if rule_type == "IP-CIDR":
+        if rule_type in ("IP-CIDR", "IP-CIDR6"):
             return sorted(
                 rules,
-                key=lambda r: (
-                    ipaddress.IPv4Network(r.content).network_address,
-                    r.is_commented,
-                ),
+                key=lambda r: (ipaddress.ip_network(r.content), r.option or ""),
             )
-        elif rule_type == "IP-CIDR6":
+        if rule_type == "IP-ASN":
             return sorted(
                 rules,
-                key=lambda r: (
-                    ipaddress.IPv6Network(r.content).network_address,
-                    r.is_commented,
-                ),
+                key=lambda r: (int(r.content), r.option or "", r.is_commented),
             )
-        elif rule_type == "IP-ASN":
-            return sorted(rules, key=lambda r: (int(r.content), r.is_commented))
-        else:
-            return sorted(rules, key=lambda r: (r.content.lower(), r.is_commented))
+        return sorted(
+            rules,
+            key=lambda r: (r.content.lower(), r.option or "", r.is_commented),
+        )
 
 
 class Format:
@@ -159,11 +175,32 @@ class Format:
                 f"Unknown rule type: '{rule_type} in '{original_line}' - Supported types: {', '.join(RULE_TYPES)}"
             )
 
-        content = parts[1].strip()
+        content, option = self._split_option(rule_type, parts[1].strip())
         if not content:
             raise ValueError(f"Rule content cannot be empty: '{original_line}'")
 
-        return Rule(rule_type=rule_type, content=content, is_commented=is_commented)
+        return Rule(
+            rule_type=rule_type,
+            content=content,
+            is_commented=is_commented,
+            option=option,
+        )
+
+    @staticmethod
+    def _split_option(rule_type: str, content: str) -> tuple[str, str | None]:
+        """Separate a trailing rule option (e.g. no-resolve) from the content."""
+        expected_option = RULE_OPTIONS.get(rule_type)
+        if expected_option is None:
+            return content, None
+
+        try:
+            content_part, option = content.rsplit(",", 1)
+        except ValueError:
+            return content, None
+
+        if option.strip().lower() == expected_option:
+            return content_part.strip(), expected_option
+        return content, None
 
     def _parse_lines(self, lines: list[str]) -> None:
         """Parse all lines"""
