@@ -1,5 +1,5 @@
-# Total: 6672 rules
-# Last Updated: 2026-10-26T14:19:35.672749+00:00
+# Total: 6674 rules
+# Last Updated: 2026-10-28T16:43:29.976397+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -2156,6 +2156,7 @@ domain_set:
 - mirror.hoster.kz
 - mirror.neolabs.kz
 - mirror.ps.kz
+- imgur.la
 - pomf2.lain.la
 - mirror.lc
 - cdn.id.life
@@ -6387,6 +6388,7 @@ domain_suffix_set:
 - nintendo.pt
 - roblox.pt
 - ubuntumirror.dei.uc.pt
+- static.pub
 - re
 - cdprojekt.red
 - rip

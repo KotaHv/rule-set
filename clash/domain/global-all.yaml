@@ -1,5 +1,5 @@
-# Total: 6546 rules
-# Last Updated: 2026-10-26T14:19:35.591801+00:00
+# Total: 6548 rules
+# Last Updated: 2026-10-28T16:43:29.885085+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -2155,6 +2155,7 @@
 - 'mirror.hoster.kz'
 - 'mirror.neolabs.kz'
 - 'mirror.ps.kz'
+- 'imgur.la'
 - 'pomf2.lain.la'
 - 'mirror.lc'
 - 'cdn.id.life'
@@ -6385,6 +6386,7 @@
 - '+.nintendo.pt'
 - '+.roblox.pt'
 - '+.ubuntumirror.dei.uc.pt'
+- '+.static.pub'
 - '+.re'
 - '+.cdprojekt.red'
 - '+.rip'

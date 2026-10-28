@@ -1,5 +1,5 @@
-# Total: 4758 rules
-# Last Updated: 2026-10-25T16:38:34.245986+00:00
+# Total: 4760 rules
+# Last Updated: 2026-10-28T16:42:49.069323+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -2682,6 +2682,7 @@ domain_set:
 - img8.yna.co.kr
 - img9.yna.co.kr
 - static.pfrt.yna.co.kr
+- imgur.la
 - pomf2.lain.la
 - cdn.id.life
 - wl-apps.yourwebsite.life
@@ -4592,6 +4593,7 @@ domain_suffix_set:
 - picsum.photos
 - am-cdn.pics
 - fakeimg.pl
+- static.pub
 - pixiv.re
 - ipfs.kavin.rocks
 - images.androeed.ru

@@ -1,5 +1,5 @@
-# Total: 4677 rules
-# Last Updated: 2026-10-25T16:38:34.210636+00:00
+# Total: 4679 rules
+# Last Updated: 2026-10-28T16:42:49.000555+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -2681,6 +2681,7 @@
 - 'img8.yna.co.kr'
 - 'img9.yna.co.kr'
 - 'static.pfrt.yna.co.kr'
+- 'imgur.la'
 - 'pomf2.lain.la'
 - 'cdn.id.life'
 - 'wl-apps.yourwebsite.life'
@@ -4590,6 +4591,7 @@
 - '+.picsum.photos'
 - '+.am-cdn.pics'
 - '+.fakeimg.pl'
+- '+.static.pub'
 - '+.pixiv.re'
 - '+.ipfs.kavin.rocks'
 - '+.images.androeed.ru'
