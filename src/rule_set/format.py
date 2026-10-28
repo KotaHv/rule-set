@@ -1,4 +1,5 @@
 import ipaddress
+import re
 from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -34,6 +35,7 @@ RULE_TYPES = [
 ]
 
 COMMENTS = ["#", ";", "//"]
+INLINE_COMMENT_PATTERN = re.compile(r"(?P<content>.*?)\s+(?P<comment>(?:#|;|//).*)")
 
 NO_RESOLVE = "no-resolve"
 EXTENDED_MATCHING = "extended-matching"
@@ -59,11 +61,14 @@ class Rule:
     content: str
     is_commented: bool = False
     option: str | None = None
+    comment: str | None = None
 
     def __str__(self) -> str:
         rule_str = f"{self.rule_type},{self.content}"
         if self.option:
             rule_str = f"{rule_str},{self.option}"
+        if self.comment:
+            rule_str = f"{rule_str} {self.comment}"
         return f"# {rule_str}" if self.is_commented else rule_str
 
     def __hash__(self) -> int:
@@ -179,7 +184,8 @@ class Format:
                 f"Unknown rule type: '{rule_type} in '{original_line}' - Supported types: {', '.join(RULE_TYPES)}"
             )
 
-        content, option = self._split_option(rule_type, parts[1].strip())
+        content, comment = self._split_comment(parts[1])
+        content, option = self._split_option(rule_type, content)
         if not content:
             raise ValueError(f"Rule content cannot be empty: '{original_line}'")
 
@@ -188,7 +194,16 @@ class Format:
             content=content,
             is_commented=is_commented,
             option=option,
+            comment=comment,
         )
+
+    @staticmethod
+    def _split_comment(content: str) -> tuple[str, str | None]:
+        """Separate a trailing inline comment from the rule content."""
+        match = INLINE_COMMENT_PATTERN.fullmatch(content)
+        if match is None:
+            return content.strip(), None
+        return match["content"].strip(), match["comment"].strip()
 
     @staticmethod
     def _split_option(rule_type: str, content: str) -> tuple[str, str | None]:
