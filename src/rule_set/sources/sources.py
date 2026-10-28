@@ -287,6 +287,7 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/domestic.conf"),
+            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/direct.conf"),
             RuleSetResource(source="sources/direct/direct.txt"),
             V2rayDomainResource(
                 source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon"
@@ -296,6 +297,9 @@ sources = [
         ],
         name="direct",
         option=Option(
+            processing=ProcessingOption(
+                exclude_rule_types=["process"],
+            ),
             v2ray_domain=V2rayDomainOption(
                 attrs=V2rayDomainAttrs(include_attrs=["cn"]),
             ),
@@ -316,7 +320,6 @@ sources = [
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source="https://ruleset.skk.moe/List/non_ip/lan.conf"),
             RuleSetResource(source="https://ruleset.skk.moe/List/ip/lan.conf"),
         ],
         name="lan",
