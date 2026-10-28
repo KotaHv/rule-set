@@ -534,6 +534,8 @@ for source in sources:
                     "7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe",
                     "th1s_rule5et_1s_m4d3_by_5ukk4w_ruleset.skk.moe",
                     "this_ruleset_is_made_by_sukkaw.ruleset.skk.moe",
+                    "7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe",
+                    "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
                 ],
             )
             break
