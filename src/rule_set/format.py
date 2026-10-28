@@ -120,7 +120,11 @@ class Section:
         if rule_type in ("IP-CIDR", "IP-CIDR6"):
             return sorted(
                 rules,
-                key=lambda r: (ipaddress.ip_network(r.content), r.option or ""),
+                key=lambda r: (
+                    ipaddress.ip_network(r.content),
+                    r.option or "",
+                    r.is_commented,
+                ),
             )
         if rule_type == "IP-ASN":
             return sorted(
@@ -129,7 +133,7 @@ class Section:
             )
         return sorted(
             rules,
-            key=lambda r: (r.content.lower(), r.option or "", r.is_commented),
+            key=lambda r: (r.content, r.option or "", r.is_commented),
         )
 
 
