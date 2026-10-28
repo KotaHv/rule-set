@@ -138,7 +138,12 @@ class Section:
             )
         return sorted(
             rules,
-            key=lambda r: (r.content, r.option or "", r.is_commented),
+            key=lambda r: (
+                r.content.lower(),
+                r.content,
+                r.option or "",
+                r.is_commented,
+            ),
         )
 
 
