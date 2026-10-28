@@ -1,6 +1,15 @@
-# Total: 3 rules
-# Last Updated: 2026-09-22T21:32:43.341526+00:00
+# Total: 12 rules
+# Last Updated: 2026-10-28T17:04:38.332975+00:00
 payload:
 - DOMAIN-WILDCARD,qhimgs?.com
 - DOMAIN-REGEX,.+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$
 - DOMAIN-REGEX,^.+-mihayo\.akamaized\.net$
+- DOMAIN-KEYWORD,cnki.net
+- DOMAIN-KEYWORD,deepdyve
+- DOMAIN-KEYWORD,els-cdn
+- DOMAIN-KEYWORD,elsevier
+- DOMAIN-KEYWORD,pkulaw
+- DOMAIN-KEYWORD,readcube
+- DOMAIN-KEYWORD,sciencedirect
+- DOMAIN-KEYWORD,wanfangdata
+- DOMAIN-KEYWORD,westlawchina
