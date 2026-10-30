@@ -1,5 +1,5 @@
-# Total: 6548 rules
-# Last Updated: 2026-10-28T16:43:29.885085+00:00
+# Total: 6550 rules
+# Last Updated: 2026-10-30T13:17:25.774930+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -3141,6 +3141,7 @@
 - '+.contenthub.allstate.com'
 - '+.alonestreaming.com'
 - '+.amaicdn.com'
+- '+.amdgaming.com'
 - '+.amebame.com'
 - '+.amebaownd.com'
 - '+.amebaowndme.com'
@@ -5215,6 +5216,7 @@
 - '+.jetbrains.dev'
 - '+.jspm.dev'
 - '+.nix.dev'
+- '+.npmx.dev'
 - '+.apac.orbitor.dev'
 - '+.eu.orbitor.dev'
 - '+.ipfs.orbitor.dev'

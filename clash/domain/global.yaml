@@ -1,5 +1,5 @@
-# Total: 1805 rules
-# Last Updated: 2026-10-26T14:19:34.449200+00:00
+# Total: 1806 rules
+# Last Updated: 2026-10-30T13:17:24.364146+00:00
 'payload':
 - 'store.ui.com.cn'
 - 'ccmdl.adobe.com'
@@ -1024,6 +1024,7 @@
 - '+.go.dev'
 - '+.jetbrains.dev'
 - '+.nix.dev'
+- '+.npmx.dev'
 - '+.orbstack.dev'
 - '+.pages.dev'
 - '+.pub.dev'

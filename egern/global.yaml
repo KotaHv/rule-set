@@ -1,5 +1,5 @@
-# Total: 1823 rules
-# Last Updated: 2026-10-26T14:19:34.484348+00:00
+# Total: 1824 rules
+# Last Updated: 2026-10-30T13:17:24.404314+00:00
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -1026,6 +1026,7 @@ domain_suffix_set:
 - go.dev
 - jetbrains.dev
 - nix.dev
+- npmx.dev
 - orbstack.dev
 - pages.dev
 - pub.dev

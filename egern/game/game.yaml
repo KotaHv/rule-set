@@ -1,5 +1,5 @@
-# Total: 838 rules
-# Last Updated: 2026-10-24T11:21:18.678157+00:00
+# Total: 839 rules
+# Last Updated: 2026-10-30T13:16:46.927419+00:00
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -125,6 +125,7 @@ domain_suffix_set:
 - activision.com
 - activisionblizzard.com
 - activisionblizzardmedia.com
+- amdgaming.com
 - amiibo.com
 - anthemgame.com
 - anthemthegame.com

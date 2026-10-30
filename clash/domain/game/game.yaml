@@ -1,5 +1,5 @@
-# Total: 837 rules
-# Last Updated: 2026-10-24T11:21:18.657650+00:00
+# Total: 838 rules
+# Last Updated: 2026-10-30T13:16:46.899410+00:00
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -123,6 +123,7 @@
 - '+.activision.com'
 - '+.activisionblizzard.com'
 - '+.activisionblizzardmedia.com'
+- '+.amdgaming.com'
 - '+.amiibo.com'
 - '+.anthemgame.com'
 - '+.anthemthegame.com'
