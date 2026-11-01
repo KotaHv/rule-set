@@ -1,5 +1,5 @@
-# Total: 632 rules
-# Last Updated: 2026-10-22T05:07:38.168871+00:00
+# Total: 647 rules
+# Last Updated: 2026-11-01T18:00:59.083566+00:00
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -115,6 +115,7 @@ domain_suffix_set:
 - bintray.com
 - bitvise.com
 - blogoverflow.com
+- boldgrid.com
 - bootstrapcdn.com
 - botframework.com
 - braventures.com
@@ -132,6 +133,7 @@ domain_suffix_set:
 - discourse-cdn.com
 - docker.com
 - dockerstatic.com
+- editorx.com
 - elegantthemes.com
 - embedly.com
 - f8.com
@@ -223,6 +225,7 @@ domain_suffix_set:
 - octocaptcha.com
 - oneapi.com
 - opengraphprotocol.com
+- parastorage.com
 - parse.com
 - pkgbuild.com
 - poshtestgallery.com
@@ -281,7 +284,15 @@ domain_suffix_set:
 - visualstudio-staging.com
 - vscodeedu.com
 - webflow.com
+- webflow-ext.com
 - webobjects.com
+- website-files.com
+- wix.com
+- wix-code.com
+- wixanswers.com
+- wixmp.com
+- wixsite.com
+- wixstatic.com
 - wordpress.com
 - wp.com
 - wp-themes.com
@@ -294,6 +305,7 @@ domain_suffix_set:
 - npm.community
 - archlinux.de
 - amp.dev
+- cloudwp.dev
 - dart.dev
 - dartpad.dev
 - firebase.dev
@@ -380,6 +392,7 @@ domain_suffix_set:
 - vsassets.io
 - wapm.io
 - wasmer.io
+- webflow.io
 - compass.is
 - java
 - deno.land
@@ -391,6 +404,7 @@ domain_suffix_set:
 - apisof.net
 - badgen.net
 - blazor.net
+- bmonkeys.net
 - busybox.net
 - devopsassessment.net
 - dot.net
@@ -434,6 +448,7 @@ domain_suffix_set:
 - vscode-cdn.net
 - vscode-unpkg.net
 - vscode-webview.net
+- wixapps.net
 - wordpress.net
 - repo.new
 - 01.org

@@ -1,15 +1,17 @@
-# Total: 28 rules
-# Last Updated: 2026-10-28T17:27:05.399681+00:00
+# Total: 30 rules
+# Last Updated: 2026-11-01T18:00:11.531685+00:00
 no_resolve: true
 domain_set:
 - dataflow.biliapi.com
 - data.bilibili.com
 - stat.youpin.mi.com
 - nom.telemetrydeck.com
+- api.segment.io
 - stats.grafana.org
 domain_suffix_set:
 - jpush.cn
 - geo2.adobe.com
+- amplitude.com
 - in.applicationinsights.azure.com
 - easytomessage.com
 - gepush.com

@@ -1,5 +1,5 @@
-# Total: 1825 rules
-# Last Updated: 2026-10-30T13:17:24.362105+00:00
+# Total: 1839 rules
+# Last Updated: 2026-11-01T18:01:24.536027+00:00
 DOMAIN,store.ui.com.cn
 DOMAIN,ccmdl.adobe.com
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -210,6 +210,7 @@ DOMAIN-SUFFIX,blogger.com
 DOMAIN-SUFFIX,blogoverflow.com
 DOMAIN-SUFFIX,bloomberg.com
 DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,boldgrid.com
 DOMAIN-SUFFIX,bootstrapcdn.com
 DOMAIN-SUFFIX,botframework.com
 DOMAIN-SUFFIX,box.com
@@ -318,6 +319,7 @@ DOMAIN-SUFFIX,dwnews.com
 DOMAIN-SUFFIX,dynu.com
 DOMAIN-SUFFIX,dynv6.com
 DOMAIN-SUFFIX,economist.com
+DOMAIN-SUFFIX,editorx.com
 DOMAIN-SUFFIX,elasticbeanstalk.com
 DOMAIN-SUFFIX,elegantthemes.com
 DOMAIN-SUFFIX,embedly.com
@@ -677,6 +679,7 @@ DOMAIN-SUFFIX,paaypal.com
 DOMAIN-SUFFIX,packagephobia.com
 DOMAIN-SUFFIX,pagesix.com
 DOMAIN-SUFFIX,paipal.com
+DOMAIN-SUFFIX,parastorage.com
 DOMAIN-SUFFIX,parse.com
 DOMAIN-SUFFIX,pastebin.com
 DOMAIN-SUFFIX,patreon.com
@@ -937,9 +940,11 @@ DOMAIN-SUFFIX,waze.com
 DOMAIN-SUFFIX,wdfiles.com
 DOMAIN-SUFFIX,weather.com
 DOMAIN-SUFFIX,webflow.com
+DOMAIN-SUFFIX,webflow-ext.com
 DOMAIN-SUFFIX,webmoneyinfo.com
 DOMAIN-SUFFIX,webobjects.com
 DOMAIN-SUFFIX,webpkgcache.com
+DOMAIN-SUFFIX,website-files.com
 DOMAIN-SUFFIX,weebly.com
 DOMAIN-SUFFIX,whoer.com
 DOMAIN-SUFFIX,widevine.com
@@ -952,6 +957,11 @@ DOMAIN-SUFFIX,windy.com
 DOMAIN-SUFFIX,wireguard.com
 DOMAIN-SUFFIX,wiremoneytoirelandwithxoomeasierandcheaper.com
 DOMAIN-SUFFIX,wix.com
+DOMAIN-SUFFIX,wix-code.com
+DOMAIN-SUFFIX,wixanswers.com
+DOMAIN-SUFFIX,wixmp.com
+DOMAIN-SUFFIX,wixsite.com
+DOMAIN-SUFFIX,wixstatic.com
 DOMAIN-SUFFIX,wnacg.com
 DOMAIN-SUFFIX,wordpress.com
 DOMAIN-SUFFIX,wordtune.com
@@ -1009,6 +1019,7 @@ DOMAIN-SUFFIX,de
 DOMAIN-SUFFIX,ant.design
 DOMAIN-SUFFIX,amp.dev
 DOMAIN-SUFFIX,aws.dev
+DOMAIN-SUFFIX,cloudwp.dev
 DOMAIN-SUFFIX,dart.dev
 DOMAIN-SUFFIX,dartpad.dev
 DOMAIN-SUFFIX,firebase.dev
@@ -1209,6 +1220,7 @@ DOMAIN-SUFFIX,vaultproject.io
 DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,wapm.io
 DOMAIN-SUFFIX,wasmer.io
+DOMAIN-SUFFIX,webflow.io
 DOMAIN-SUFFIX,xoom.io
 DOMAIN-SUFFIX,ir
 DOMAIN-SUFFIX,is
@@ -1283,6 +1295,7 @@ DOMAIN-SUFFIX,billmelater.net
 DOMAIN-SUFFIX,bitwarden.net
 DOMAIN-SUFFIX,blazor.net
 DOMAIN-SUFFIX,bloomberg.net
+DOMAIN-SUFFIX,bmonkeys.net
 DOMAIN-SUFFIX,briantreepayments.net
 DOMAIN-SUFFIX,busybox.net
 DOMAIN-SUFFIX,buyfast-paysmart.net
@@ -1420,6 +1433,7 @@ DOMAIN-SUFFIX,vscode-webview.net
 DOMAIN-SUFFIX,waifu2x.net
 DOMAIN-SUFFIX,whoer.net
 DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,wixapps.net
 DOMAIN-SUFFIX,wordpress.net
 DOMAIN-SUFFIX,wsj.net
 DOMAIN-SUFFIX,yandex.net

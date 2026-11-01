@@ -1,5 +1,5 @@
-# Total: 1824 rules
-# Last Updated: 2026-10-30T13:17:24.404314+00:00
+# Total: 1838 rules
+# Last Updated: 2026-11-01T18:01:24.583185+00:00
 no_resolve: true
 domain_set:
 - store.ui.com.cn
@@ -213,6 +213,7 @@ domain_suffix_set:
 - blogoverflow.com
 - bloomberg.com
 - bnbstatic.com
+- boldgrid.com
 - bootstrapcdn.com
 - botframework.com
 - box.com
@@ -321,6 +322,7 @@ domain_suffix_set:
 - dynu.com
 - dynv6.com
 - economist.com
+- editorx.com
 - elasticbeanstalk.com
 - elegantthemes.com
 - embedly.com
@@ -680,6 +682,7 @@ domain_suffix_set:
 - packagephobia.com
 - pagesix.com
 - paipal.com
+- parastorage.com
 - parse.com
 - pastebin.com
 - patreon.com
@@ -940,9 +943,11 @@ domain_suffix_set:
 - wdfiles.com
 - weather.com
 - webflow.com
+- webflow-ext.com
 - webmoneyinfo.com
 - webobjects.com
 - webpkgcache.com
+- website-files.com
 - weebly.com
 - whoer.com
 - widevine.com
@@ -955,6 +960,11 @@ domain_suffix_set:
 - wireguard.com
 - wiremoneytoirelandwithxoomeasierandcheaper.com
 - wix.com
+- wix-code.com
+- wixanswers.com
+- wixmp.com
+- wixsite.com
+- wixstatic.com
 - wnacg.com
 - wordpress.com
 - wordtune.com
@@ -1012,6 +1022,7 @@ domain_suffix_set:
 - ant.design
 - amp.dev
 - aws.dev
+- cloudwp.dev
 - dart.dev
 - dartpad.dev
 - firebase.dev
@@ -1212,6 +1223,7 @@ domain_suffix_set:
 - vsassets.io
 - wapm.io
 - wasmer.io
+- webflow.io
 - xoom.io
 - ir
 - is
@@ -1286,6 +1298,7 @@ domain_suffix_set:
 - bitwarden.net
 - blazor.net
 - bloomberg.net
+- bmonkeys.net
 - briantreepayments.net
 - busybox.net
 - buyfast-paysmart.net
@@ -1423,6 +1436,7 @@ domain_suffix_set:
 - waifu2x.net
 - whoer.net
 - windows.net
+- wixapps.net
 - wordpress.net
 - wsj.net
 - yandex.net

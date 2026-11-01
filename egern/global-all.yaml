@@ -1,5 +1,5 @@
-# Total: 6676 rules
-# Last Updated: 2026-10-30T13:17:25.868239+00:00
+# Total: 6686 rules
+# Last Updated: 2026-11-01T18:01:25.876525+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1804,7 +1804,6 @@ domain_set:
 - embed-cloudfront.wistia.com
 - embed-ssl.wistia.com
 - fast.wistia.com
-- bundler.wix-code.com
 - static-documents.wizards.com
 - frontend-apps.workos.com
 - frontend-apps-multi-region.workos.com
@@ -3305,6 +3304,7 @@ domain_suffix_set:
 - blz-contentstack.com
 - bnbstatic.com
 - storage.boilerplate.com
+- boldgrid.com
 - boombeach.com
 - boomio-cdn.com
 - bootstrapcdn.com
@@ -3586,6 +3586,7 @@ domain_suffix_set:
 - economist.com
 - dtci-pe-vp-image-resizer.platform.edgedatg.com
 - mirror.edgeuno.com
+- editorx.com
 - eft-store.com
 - elasticbeanstalk.com
 - elderscrolls.com
@@ -5042,6 +5043,7 @@ domain_suffix_set:
 - mirror.wearetriple.com
 - weather.com
 - webflow.com
+- webflow-ext.com
 - webmoneyinfo.com
 - webobjects.com
 - webpkgcache.com
@@ -5069,7 +5071,10 @@ domain_suffix_set:
 - wiremoneytoirelandwithxoomeasierandcheaper.com
 - withyoutube.com
 - wix.com
+- wix-code.com
+- wixanswers.com
 - wixmp.com
+- wixsite.com
 - wixstatic.com
 - wklcdn.com
 - wnacg.com
@@ -5200,6 +5205,7 @@ domain_suffix_set:
 - angular.dev
 - ingest.atoms.dev
 - aws.dev
+- cloudwp.dev
 - dart.dev
 - dartpad.dev
 - delegated-ipfs.dev
@@ -5292,6 +5298,7 @@ domain_suffix_set:
 - assets-servd.host
 - sr.ht
 - roblox.hu
+- steampeek.hu
 - cthd.icu
 - intervals.icu
 - id
@@ -5516,6 +5523,7 @@ domain_suffix_set:
 - wapm.io
 - wasmer.io
 - local.webcontainer.io
+- webflow.io
 - wgcrowd.io
 - wixstudio.io
 - xoom.io
@@ -5655,6 +5663,7 @@ domain_suffix_set:
 - blazor.net
 - mirror.blendbyte.net
 - bloomberg.net
+- bmonkeys.net
 - bohemia.net
 - boxcdn.net
 - briantreepayments.net
@@ -5983,6 +5992,7 @@ domain_suffix_set:
 - widencdn.net
 - wiivc.net
 - windows.net
+- wixapps.net
 - wordpress.net
 - wsj.net
 - xn--mts47c3w9b1qr.net

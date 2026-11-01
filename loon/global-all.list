@@ -1,5 +1,5 @@
-# Total: 6688 rules
-# Last Updated: 2026-10-30T13:17:25.770949+00:00
+# Total: 6698 rules
+# Last Updated: 2026-11-01T18:01:25.783956+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -1802,7 +1802,6 @@ DOMAIN,media.wired.com
 DOMAIN,embed-cloudfront.wistia.com
 DOMAIN,embed-ssl.wistia.com
 DOMAIN,fast.wistia.com
-DOMAIN,bundler.wix-code.com
 DOMAIN,static-documents.wizards.com
 DOMAIN,frontend-apps.workos.com
 DOMAIN,frontend-apps-multi-region.workos.com
@@ -3302,6 +3301,7 @@ DOMAIN-SUFFIX,blox.com
 DOMAIN-SUFFIX,blz-contentstack.com
 DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,storage.boilerplate.com
+DOMAIN-SUFFIX,boldgrid.com
 DOMAIN-SUFFIX,boombeach.com
 DOMAIN-SUFFIX,boomio-cdn.com
 DOMAIN-SUFFIX,bootstrapcdn.com
@@ -3583,6 +3583,7 @@ DOMAIN-SUFFIX,ebaystatic.com
 DOMAIN-SUFFIX,economist.com
 DOMAIN-SUFFIX,dtci-pe-vp-image-resizer.platform.edgedatg.com
 DOMAIN-SUFFIX,mirror.edgeuno.com
+DOMAIN-SUFFIX,editorx.com
 DOMAIN-SUFFIX,eft-store.com
 DOMAIN-SUFFIX,elasticbeanstalk.com
 DOMAIN-SUFFIX,elderscrolls.com
@@ -5039,6 +5040,7 @@ DOMAIN-SUFFIX,wdfiles.com
 DOMAIN-SUFFIX,mirror.wearetriple.com
 DOMAIN-SUFFIX,weather.com
 DOMAIN-SUFFIX,webflow.com
+DOMAIN-SUFFIX,webflow-ext.com
 DOMAIN-SUFFIX,webmoneyinfo.com
 DOMAIN-SUFFIX,webobjects.com
 DOMAIN-SUFFIX,webpkgcache.com
@@ -5066,7 +5068,10 @@ DOMAIN-SUFFIX,wireguard.com
 DOMAIN-SUFFIX,wiremoneytoirelandwithxoomeasierandcheaper.com
 DOMAIN-SUFFIX,withyoutube.com
 DOMAIN-SUFFIX,wix.com
+DOMAIN-SUFFIX,wix-code.com
+DOMAIN-SUFFIX,wixanswers.com
 DOMAIN-SUFFIX,wixmp.com
+DOMAIN-SUFFIX,wixsite.com
 DOMAIN-SUFFIX,wixstatic.com
 DOMAIN-SUFFIX,wklcdn.com
 DOMAIN-SUFFIX,wnacg.com
@@ -5197,6 +5202,7 @@ DOMAIN-SUFFIX,amp.dev
 DOMAIN-SUFFIX,angular.dev
 DOMAIN-SUFFIX,ingest.atoms.dev
 DOMAIN-SUFFIX,aws.dev
+DOMAIN-SUFFIX,cloudwp.dev
 DOMAIN-SUFFIX,dart.dev
 DOMAIN-SUFFIX,dartpad.dev
 DOMAIN-SUFFIX,delegated-ipfs.dev
@@ -5289,6 +5295,7 @@ DOMAIN-SUFFIX,icon.horse
 DOMAIN-SUFFIX,assets-servd.host
 DOMAIN-SUFFIX,sr.ht
 DOMAIN-SUFFIX,roblox.hu
+DOMAIN-SUFFIX,steampeek.hu
 DOMAIN-SUFFIX,cthd.icu
 DOMAIN-SUFFIX,intervals.icu
 DOMAIN-SUFFIX,id
@@ -5513,6 +5520,7 @@ DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,wapm.io
 DOMAIN-SUFFIX,wasmer.io
 DOMAIN-SUFFIX,local.webcontainer.io
+DOMAIN-SUFFIX,webflow.io
 DOMAIN-SUFFIX,wgcrowd.io
 DOMAIN-SUFFIX,wixstudio.io
 DOMAIN-SUFFIX,xoom.io
@@ -5652,6 +5660,7 @@ DOMAIN-SUFFIX,blackbaudcdn.net
 DOMAIN-SUFFIX,blazor.net
 DOMAIN-SUFFIX,mirror.blendbyte.net
 DOMAIN-SUFFIX,bloomberg.net
+DOMAIN-SUFFIX,bmonkeys.net
 DOMAIN-SUFFIX,bohemia.net
 DOMAIN-SUFFIX,boxcdn.net
 DOMAIN-SUFFIX,briantreepayments.net
@@ -5980,6 +5989,7 @@ DOMAIN-SUFFIX,widen.net
 DOMAIN-SUFFIX,widencdn.net
 DOMAIN-SUFFIX,wiivc.net
 DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,wixapps.net
 DOMAIN-SUFFIX,wordpress.net
 DOMAIN-SUFFIX,wsj.net
 DOMAIN-SUFFIX,xn--mts47c3w9b1qr.net

@@ -1,12 +1,14 @@
-# Total: 28 rules
-# Last Updated: 2026-10-28T17:27:05.371534+00:00
+# Total: 30 rules
+# Last Updated: 2026-11-01T18:00:11.507357+00:00
 DOMAIN,dataflow.biliapi.com
 DOMAIN,data.bilibili.com
 DOMAIN,stat.youpin.mi.com
 DOMAIN,nom.telemetrydeck.com
+DOMAIN,api.segment.io
 DOMAIN,stats.grafana.org
 DOMAIN-SUFFIX,jpush.cn
 DOMAIN-SUFFIX,geo2.adobe.com
+DOMAIN-SUFFIX,amplitude.com
 DOMAIN-SUFFIX,in.applicationinsights.azure.com
 DOMAIN-SUFFIX,easytomessage.com
 DOMAIN-SUFFIX,gepush.com

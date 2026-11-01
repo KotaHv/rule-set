@@ -1,5 +1,5 @@
-# Total: 632 rules
-# Last Updated: 2026-10-22T05:07:38.141847+00:00
+# Total: 647 rules
+# Last Updated: 2026-11-01T18:00:59.053834+00:00
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -112,6 +112,7 @@ DOMAIN-SUFFIX,atscaleconference.com
 DOMAIN-SUFFIX,bintray.com
 DOMAIN-SUFFIX,bitvise.com
 DOMAIN-SUFFIX,blogoverflow.com
+DOMAIN-SUFFIX,boldgrid.com
 DOMAIN-SUFFIX,bootstrapcdn.com
 DOMAIN-SUFFIX,botframework.com
 DOMAIN-SUFFIX,braventures.com
@@ -129,6 +130,7 @@ DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,discourse-cdn.com
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,dockerstatic.com
+DOMAIN-SUFFIX,editorx.com
 DOMAIN-SUFFIX,elegantthemes.com
 DOMAIN-SUFFIX,embedly.com
 DOMAIN-SUFFIX,f8.com
@@ -220,6 +222,7 @@ DOMAIN-SUFFIX,npmjs.com
 DOMAIN-SUFFIX,octocaptcha.com
 DOMAIN-SUFFIX,oneapi.com
 DOMAIN-SUFFIX,opengraphprotocol.com
+DOMAIN-SUFFIX,parastorage.com
 DOMAIN-SUFFIX,parse.com
 DOMAIN-SUFFIX,pkgbuild.com
 DOMAIN-SUFFIX,poshtestgallery.com
@@ -278,7 +281,15 @@ DOMAIN-SUFFIX,visualstudio.com
 DOMAIN-SUFFIX,visualstudio-staging.com
 DOMAIN-SUFFIX,vscodeedu.com
 DOMAIN-SUFFIX,webflow.com
+DOMAIN-SUFFIX,webflow-ext.com
 DOMAIN-SUFFIX,webobjects.com
+DOMAIN-SUFFIX,website-files.com
+DOMAIN-SUFFIX,wix.com
+DOMAIN-SUFFIX,wix-code.com
+DOMAIN-SUFFIX,wixanswers.com
+DOMAIN-SUFFIX,wixmp.com
+DOMAIN-SUFFIX,wixsite.com
+DOMAIN-SUFFIX,wixstatic.com
 DOMAIN-SUFFIX,wordpress.com
 DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,wp-themes.com
@@ -291,6 +302,7 @@ DOMAIN-SUFFIX,github.community
 DOMAIN-SUFFIX,npm.community
 DOMAIN-SUFFIX,archlinux.de
 DOMAIN-SUFFIX,amp.dev
+DOMAIN-SUFFIX,cloudwp.dev
 DOMAIN-SUFFIX,dart.dev
 DOMAIN-SUFFIX,dartpad.dev
 DOMAIN-SUFFIX,firebase.dev
@@ -377,6 +389,7 @@ DOMAIN-SUFFIX,vaultproject.io
 DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,wapm.io
 DOMAIN-SUFFIX,wasmer.io
+DOMAIN-SUFFIX,webflow.io
 DOMAIN-SUFFIX,compass.is
 DOMAIN-SUFFIX,java
 DOMAIN-SUFFIX,deno.land
@@ -388,6 +401,7 @@ DOMAIN-SUFFIX,ampproject.net
 DOMAIN-SUFFIX,apisof.net
 DOMAIN-SUFFIX,badgen.net
 DOMAIN-SUFFIX,blazor.net
+DOMAIN-SUFFIX,bmonkeys.net
 DOMAIN-SUFFIX,busybox.net
 DOMAIN-SUFFIX,devopsassessment.net
 DOMAIN-SUFFIX,dot.net
@@ -431,6 +445,7 @@ DOMAIN-SUFFIX,visualstudio.net
 DOMAIN-SUFFIX,vscode-cdn.net
 DOMAIN-SUFFIX,vscode-unpkg.net
 DOMAIN-SUFFIX,vscode-webview.net
+DOMAIN-SUFFIX,wixapps.net
 DOMAIN-SUFFIX,wordpress.net
 DOMAIN-SUFFIX,repo.new
 DOMAIN-SUFFIX,01.org

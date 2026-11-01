@@ -1,5 +1,5 @@
-# Total: 839 rules
-# Last Updated: 2026-10-30T13:16:46.927419+00:00
+# Total: 840 rules
+# Last Updated: 2026-11-01T18:00:52.538549+00:00
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -650,6 +650,7 @@ domain_suffix_set:
 - stellasora.global
 - nintendo.com.hk
 - roblox.hu
+- steampeek.hu
 - garena.co.id
 - leagueoflegends.info
 - leaguesharp.info
