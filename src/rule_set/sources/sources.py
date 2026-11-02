@@ -27,8 +27,13 @@ sources = [
             V2rayDomainResource(
                 source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/flutter"
             ),
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon"
+            ),
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/nvidia"
+            ),
             SourceReference(target="paypal"),
-            SourceReference(target="dev"),
             SourceReference(target="proton"),
             SourceReference(target="bitwarden"),
         ],
@@ -292,6 +297,9 @@ sources = [
             V2rayDomainResource(
                 source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon"
             ),
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/nvidia"
+            ),
             SourceReference(target="game/game-cn"),
             SourceReference(target="game/game-download-cn"),
         ],
@@ -520,6 +528,11 @@ sources = [
             SourceReference(target="game/game-download"),
         ],
         name="global-all",
+        option=Option(
+            processing=ProcessingOption(
+                exclude_rule_types=["url_regex", "ip_trie", "ip_trie6", "ip_asn"]
+            )
+        ),
     ),
 ]
 
