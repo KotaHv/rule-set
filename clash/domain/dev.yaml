@@ -1,5 +1,5 @@
-# Total: 646 rules
-# Last Updated: 2026-11-01T18:00:59.058833+00:00
+# Total: 644 rules
+# Last Updated: 2026-11-02T05:04:10.060773+00:00
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -25,8 +25,6 @@
 - 'firebasedynamiclinks-ipv6.googleapis.com'
 - 'firebaseinappmessaging.googleapis.com'
 - 'firebaseinstallations.googleapis.com'
-- 'firebaselogging.googleapis.com'
-- 'firebaselogging-pa.googleapis.com'
 - 'firebaseperusertopics-pa.googleapis.com'
 - 'firebaseremoteconfig.googleapis.com'
 - 'android.googlesource.com'

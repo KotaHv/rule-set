@@ -1,5 +1,5 @@
-# Total: 647 rules
-# Last Updated: 2026-11-01T18:00:59.083566+00:00
+# Total: 645 rules
+# Last Updated: 2026-11-02T05:04:10.088205+00:00
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -26,8 +26,6 @@ domain_set:
 - firebasedynamiclinks-ipv6.googleapis.com
 - firebaseinappmessaging.googleapis.com
 - firebaseinstallations.googleapis.com
-- firebaselogging.googleapis.com
-- firebaselogging-pa.googleapis.com
 - firebaseperusertopics-pa.googleapis.com
 - firebaseremoteconfig.googleapis.com
 - android.googlesource.com

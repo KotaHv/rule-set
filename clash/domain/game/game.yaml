@@ -1,5 +1,5 @@
-# Total: 839 rules
-# Last Updated: 2026-11-01T18:00:52.511492+00:00
+# Total: 838 rules
+# Last Updated: 2026-11-02T05:04:04.150076+00:00
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -91,7 +91,6 @@
 - 'm1.ppy.sh'
 - 'notify.ppy.sh'
 - 'osu.ppy.sh'
-- 'sentry.ppy.sh'
 - 'spectator.ppy.sh'
 - '+.easy.ac'
 - '+.sih.app'

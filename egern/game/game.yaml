@@ -1,5 +1,5 @@
-# Total: 840 rules
-# Last Updated: 2026-11-01T18:00:52.538549+00:00
+# Total: 839 rules
+# Last Updated: 2026-11-02T05:04:04.178159+00:00
 no_resolve: true
 domain_set:
 - cloudsync-prod.s3.amazonaws.com
@@ -92,7 +92,6 @@ domain_set:
 - m1.ppy.sh
 - notify.ppy.sh
 - osu.ppy.sh
-- sentry.ppy.sh
 - spectator.ppy.sh
 domain_suffix_set:
 - easy.ac

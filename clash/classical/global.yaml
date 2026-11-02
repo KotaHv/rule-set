@@ -1,7 +1,7 @@
-# Total: 18 rules
-# Last Updated: 2026-07-31T10:24:27.153345+00:00
+# Total: 16 rules
+# Last Updated: 2026-11-02T05:04:36.734833+00:00
 payload:
-- DOMAIN-KEYWORD,amazon
+- DOMAIN-REGEX,.+\.awsdns-[0-9][0-9]\.(co\.uk|com|net|org)$
 - DOMAIN-KEYWORD,blogspot
 - DOMAIN-KEYWORD,browserleaks
 - DOMAIN-KEYWORD,cloudflare
@@ -10,9 +10,7 @@ payload:
 - DOMAIN-KEYWORD,facebook
 - DOMAIN-KEYWORD,google
 - DOMAIN-KEYWORD,jav
-- DOMAIN-KEYWORD,kindle
 - DOMAIN-KEYWORD,missav
-- DOMAIN-KEYWORD,nvidia
 - DOMAIN-KEYWORD,paypal
 - DOMAIN-KEYWORD,pinterest
 - DOMAIN-KEYWORD,porn
