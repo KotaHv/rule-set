@@ -43,7 +43,7 @@ sources = [
                 exclude_rule_types=["ip_trie", "ip_trie6", "ip_asn"],
             ),
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttrs(exclude_attrs=["ads", "cn"]),
+                attrs=V2rayDomainAttrs(exclude_attrs=["ads", "cn", "telemetry"]),
             ),
         ),
     ),
@@ -254,7 +254,7 @@ sources = [
         name="game/game-cn",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttrs(exclude_attrs=["!cn", "ads"]),
+                attrs=V2rayDomainAttrs(exclude_attrs=["!cn", "ads", "telemetry"]),
                 exclude_includes=["4399", "cowlevel", "tgbus", "vrzwk"],
             ),
         ),
@@ -269,7 +269,7 @@ sources = [
         name="game/game",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttrs(exclude_attrs=["cn", "ads"]),
+                attrs=V2rayDomainAttrs(exclude_attrs=["cn", "ads", "telemetry"]),
             ),
         ),
     ),
@@ -322,7 +322,7 @@ sources = [
         name="dev",
         option=Option(
             v2ray_domain=V2rayDomainOption(
-                attrs=V2rayDomainAttrs(exclude_attrs=["cn", "ads"]),
+                attrs=V2rayDomainAttrs(exclude_attrs=["cn", "ads", "telemetry"]),
             ),
         ),
     ),
