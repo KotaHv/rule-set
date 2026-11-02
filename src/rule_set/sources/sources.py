@@ -115,11 +115,17 @@ sources = [
     ),
     SourceModel(
         resources=[
-            RuleSetResource(
-                source="https://raw.githubusercontent.com/EAlyce/conf/main/Rule/FQNovelAdvertising.list"
-            )
+            RuleSetResource(source="sources/reject/fqnovel-ad.txt"),
+            V2rayDomainResource(
+                source="https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/fqnovel"
+            ),
         ],
         name="adblock/fqnovel-ad",
+        option=Option(
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttrs(include_attrs=["ads", "telemetry"]),
+            ),
+        ),
     ),
     SourceModel(
         resources=[
