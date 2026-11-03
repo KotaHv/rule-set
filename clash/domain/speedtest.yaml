@@ -1,5 +1,5 @@
-# Total: 3459 rules
-# Last Updated: 2026-11-01T22:14:30.429701+00:00
+# Total: 3461 rules
+# Last Updated: 2026-11-03T05:32:55.675976+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1478,6 +1478,7 @@
 - 'spd01-per.au.superloop.com'
 - 'spd03-syd.au.superloop.com'
 - 'speed.supersonicinternet.com'
+- 'speed1.supersonicinternet.com'
 - 'st3.surajnetwork.com'
 - 'speedtest.surfshark.com'
 - 'speedtest.surrytel.com'
@@ -2004,6 +2005,7 @@
 - 'ns1.fybrg.in'
 - 'speedtest.galaxynet.in'
 - 'speedtest-jgn.galaxynet.in'
+- 'speedtest.geniusnetwork.in'
 - 'speedtest.gigazone.in'
 - 'sp1.gleamnet.in'
 - 'speedtest.gorkhainfotech.in'
