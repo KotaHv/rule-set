@@ -1,5 +1,5 @@
 # Total: 41 rules
-# Last Updated: 2026-11-03T13:52:50.754605+00:00
+# Last Updated: 2026-11-03T17:54:27.304067+00:00
 no_resolve: true
 domain_set:
 - livewebbs2pcdn.msstatic.com
@@ -46,8 +46,7 @@ domain_keyword_set:
 - -p2p-v2.pull.yximgs.com
 - -p2p.pull.yximgs.com
 and_set:
-- match:
-  - '!protocol':
-      match: UDP
-  - '!domain_suffix':
-      match: googlevideo.com
+- - !protocol
+    match: UDP
+  - !domain_suffix
+    match: googlevideo.com

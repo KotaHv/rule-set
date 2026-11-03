@@ -1,5 +1,5 @@
-# Total: 57 rules
-# Last Updated: 2026-10-28T17:27:32.691692+00:00
+# Total: 58 rules
+# Last Updated: 2026-11-03T17:54:56.831922+00:00
 'payload':
 - 'api.jetbrains.ai'
 - 'openrouter.ai'
@@ -12,6 +12,7 @@
 - 'server.codeium.com'
 - 'apple-relay.fastly-edge.com'
 - 'api.github.com'
+- 'api.individual.githubcopilot.com'
 - 'alkalicore-pa.clients6.google.com'
 - 'jules.google.com'
 - 'aida.googleapis.com'

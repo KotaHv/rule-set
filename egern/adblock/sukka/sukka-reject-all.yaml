@@ -1,5 +1,5 @@
 # Total: 371696 rules
-# Last Updated: 2026-11-03T13:54:45.531189+00:00
+# Last Updated: 2026-11-03T17:55:44.442744+00:00
 no_resolve: true
 domain_set:
 - api.cortana.ai
@@ -371701,11 +371701,10 @@ asn_set:
 - '62853'
 - '401111'
 and_set:
-- match:
-  - '!protocol':
-      match: UDP
-  - '!domain_suffix':
-      match: googlevideo.com
+- - !protocol
+    match: UDP
+  - !domain_suffix
+    match: googlevideo.com
 url_regex_set:
 - /\d+/resolve
 - /\d+/sign_d
