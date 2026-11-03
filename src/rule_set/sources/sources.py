@@ -555,6 +555,7 @@ sources = [
             RuleSetResource(
                 source="https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/alibaba.conf"
             ),
+            RuleSetResource(source="sources/dns/bilibili/ali.txt"),
         ],
         name="dns/alibaba",
     ),
