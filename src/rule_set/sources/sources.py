@@ -144,6 +144,7 @@ sources = [
             RuleSetResource(
                 source="https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
             ),
+            RuleSetResource(source="sources/ai.txt"),
         ],
         name="ai",
     ),
