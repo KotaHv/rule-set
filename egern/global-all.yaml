@@ -1,5 +1,5 @@
-# Total: 6380 rules
-# Last Updated: 2026-11-02T05:04:37.185163+00:00
+# Total: 6348 rules
+# Last Updated: 2026-11-03T13:54:54.886988+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -15,8 +15,6 @@ domain_set:
 - assets.airbuddy.app
 - cdn.announcekit.app
 - img.announcekit.app
-- cdn-fi-1.comaps.app
-- cdn-us-1.comaps.app
 - mapgen-fi-1.comaps.app
 - assets.dataflare.app
 - bundle.dyn-rev.app
@@ -35,8 +33,6 @@ domain_set:
 - pha-prx.ops.cloud.nx.app
 - meta.omaps.app
 - cdn.organicmaps.app
-- cdn-nl1.organicmaps.app
-- cdn-uk1.organicmaps.app
 - builds.parsec.app
 - disco-static.productessentials.app
 - cdn.rive.app
@@ -278,8 +274,6 @@ domain_set:
 - mirrors.aliyun.com
 - cdn.allkeyshop.com
 - widget.allkeyshop.com
-- fastly-gce.allmovie.com
-- fastly-s3.allmovie.com
 - oaos-resources.allstate.com
 - resources.allstate.com
 - mirror.nl.altushost.com
@@ -356,15 +350,11 @@ domain_set:
 - cdn.prod.ext.web.purview.azure.com
 - b2b-contenthub.com
 - cdn.babylonjs.com
-- s3.eu-central-003.backblazeb2.com
 - f000.backblazeb2.com
 - f001.backblazeb2.com
 - f002.backblazeb2.com
 - f003.backblazeb2.com
 - f004.backblazeb2.com
-- s3.us-west-000.backblazeb2.com
-- s3.us-west-001.backblazeb2.com
-- s3.us-west-004.backblazeb2.com
 - mirror.bacloud.com
 - cloudfront.barilliance.com
 - assets.basehub.com
@@ -765,12 +755,6 @@ domain_set:
 - assets.freespeechcoalition.com
 - assetscdn-wchat.eu.freshchat.com
 - snippets.freshchat.com
-- assets10.freshdesk.com
-- assets2.freshdesk.com
-- assets3.freshdesk.com
-- assets5.freshdesk.com
-- assets7.freshdesk.com
-- assets9.freshdesk.com
 - cdn.freshdesk.com
 - dam.freshworks.com
 - euc-widget.freshworks.com
@@ -1172,8 +1156,6 @@ domain_set:
 - amupdatedl3.microsoft.com
 - amupdatedl4.microsoft.com
 - amupdatedl5.microsoft.com
-- cdn-dynmedia-1.microsoft.com
-- cdn.create.microsoft.com
 - csp.microsoft.com
 - builds.dotnet.microsoft.com
 - images.ecomm.microsoft.com
@@ -1186,11 +1168,9 @@ domain_set:
 - packages.microsoft.com
 - cmtycdn.powerpages.microsoft.com
 - store-images.microsoft.com
-- cdn.techcommunity.microsoft.com
 - uhf.microsoft.com
 - download.visualstudio.microsoft.com
 - wcpstatic.microsoft.com
-- cdn.winget.microsoft.com
 - image.email.microsoftemail.com
 - mirrors.middlendian.com
 - apache.mindstudios.com
@@ -1536,7 +1516,6 @@ domain_set:
 - data.cdn.siemens.com
 - cache.industry.siemens.com
 - cdn.sift.com
-- rum-ingest.us1.signalfx.com
 - api.simplesvg.com
 - icons.simplesvg.com
 - statics.simpshub.com
@@ -1800,7 +1779,6 @@ domain_set:
 - cdnstatic.w1mp.com
 - cdnstatic.w4nkr.com
 - explorer-api.walletconnect.com
-- s3.eu-central-2.wasabisys.com
 - assets-cdn.watchdisneyfe.com
 - cdn.wccftech.com
 - assets.weather-forecast.com
@@ -2312,10 +2290,7 @@ domain_set:
 - assets.bitstamp.net
 - logs.blip.net
 - static.blip.net
-- cf-images.ap-northeast-1.prod.boltdns.net
-- cf-images.ap-southeast-1.prod.boltdns.net
 - manifest.prod.boltdns.net
-- cf-images.us-east-1.prod.boltdns.net
 - players.brightcove.net
 - fonts.bunny.net
 - mirrors.c0urier.net
@@ -2454,8 +2429,6 @@ domain_set:
 - res-geo.cdn.office.net
 - shell.cdn.office.net
 - support.content.office.net
-- cdn.forms.office.net
-- cdn.designerapp.osi.office.net
 - mirror.olnevhost.net
 - ea.tt.omtrdc.net
 - nvidia.tt.omtrdc.net
@@ -2641,7 +2614,6 @@ domain_set:
 - media.fidoalliance.org
 - cdn.fosstodon.org
 - distcache.freebsd.org
-- ftp.kr.freebsd.org
 - mirror.freedif.org
 - cdn.freesound.org
 - directory.fsf.org
@@ -2689,9 +2661,6 @@ domain_set:
 - demotiles.maplibre.org
 - cdn.mathjax.org
 - repo1.maven.org
-- s1.maxstream.org
-- s13.maxstream.org
-- s8.maxstream.org
 - cpan.metacpan.org
 - images.mobilism.org
 - img.moedog.org
@@ -2848,7 +2817,6 @@ domain_set:
 - sdk.hubble.team
 - packages.jetbrains.team
 - pkg-cdn.jetbrains.team
-- cdn-us-2.comaps.tech
 - docs.mrchromebox.tech
 - static.pepy.tech
 - image-tc.galaxy.tf

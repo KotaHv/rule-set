@@ -1,5 +1,5 @@
-# Total: 1086 rules
-# Last Updated: 2026-10-28T17:28:12.721601+00:00
+# Total: 1087 rules
+# Last Updated: 2026-11-03T13:54:54.506810+00:00
 DOMAIN,captive.apple.com
 DOMAIN,instant.arubanetworks.com
 DOMAIN,setmeup.arubanetworks.com
@@ -552,6 +552,7 @@ DOMAIN-SUFFIX,miwifi.com
 DOMAIN-SUFFIX,miyoushe.com
 DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,mobike.com
+DOMAIN-SUFFIX,modeldial.com
 DOMAIN-SUFFIX,mojicdn.com
 DOMAIN-SUFFIX,morefreegame.com
 DOMAIN-SUFFIX,msstatic.com
@@ -1084,5 +1085,5 @@ USER-AGENT,%E4%BC%98%E9%85%B7*
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
 USER-AGENT,%E8%BF%85%E9%9B%B7
 USER-AGENT,TeslaMap
-DOMAIN-WILDCARD,*.awsdns-cn-??.*
+DOMAIN-WILDCARD,*.awsdns-cn-[0-9][0-9].*
 DOMAIN-WILDCARD,*-mihayo.akamaized.net

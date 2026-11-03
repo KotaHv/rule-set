@@ -1,5 +1,5 @@
-# Total: 4759 rules
-# Last Updated: 2026-10-28T17:27:41.775000+00:00
+# Total: 4727 rules
+# Last Updated: 2026-11-03T13:53:42.694359+00:00
 DOMAIN,rules.ac
 DOMAIN,static.jup.ag
 DOMAIN,cdn.aimerce.ai
@@ -269,8 +269,6 @@ DOMAIN,static.airtable.com
 DOMAIN,time.akamai.com
 DOMAIN,cdn.allkeyshop.com
 DOMAIN,widget.allkeyshop.com
-DOMAIN,fastly-gce.allmovie.com
-DOMAIN,fastly-s3.allmovie.com
 DOMAIN,oaos-resources.allstate.com
 DOMAIN,resources.allstate.com
 DOMAIN,bcdn.alotporn.com
@@ -815,10 +813,6 @@ DOMAIN,genesis-cdn.ff.com
 DOMAIN,digitalhub.fifa.com
 DOMAIN,errors.figma.com
 DOMAIN,marketing.figma.com
-DOMAIN,s3-alpha.figma.com
-DOMAIN,s3-alpha-sig.figma.com
-DOMAIN,s3-figma-force-client-reloads-production.figma.com
-DOMAIN,s3-figma-plugin-images-production-sig.figma.com
 DOMAIN,sprig.figma.com
 DOMAIN,static.figma.com
 DOMAIN,s3.filebase.com
@@ -887,12 +881,6 @@ DOMAIN,stories.freepiklabs.com
 DOMAIN,assets.freespeechcoalition.com
 DOMAIN,assetscdn-wchat.eu.freshchat.com
 DOMAIN,snippets.freshchat.com
-DOMAIN,assets10.freshdesk.com
-DOMAIN,assets2.freshdesk.com
-DOMAIN,assets3.freshdesk.com
-DOMAIN,assets5.freshdesk.com
-DOMAIN,assets7.freshdesk.com
-DOMAIN,assets9.freshdesk.com
 DOMAIN,cdn.freshdesk.com
 DOMAIN,dam.freshworks.com
 DOMAIN,euc-widget.freshworks.com
@@ -1401,15 +1389,12 @@ DOMAIN,public-img.mewe.com
 DOMAIN,image.mgstage.com
 DOMAIN,cf.mhgui.com
 DOMAIN,ajax.microsoft.com
-DOMAIN,cdn-dynmedia-1.microsoft.com
-DOMAIN,cdn.create.microsoft.com
 DOMAIN,csp.microsoft.com
 DOMAIN,images.ecomm.microsoft.com
 DOMAIN,learn-attachment.microsoft.com
 DOMAIN,oneocsp.microsoft.com
 DOMAIN,cmtycdn.powerpages.microsoft.com
 DOMAIN,store-images.microsoft.com
-DOMAIN,cdn.techcommunity.microsoft.com
 DOMAIN,uhf.microsoft.com
 DOMAIN,wcpstatic.microsoft.com
 DOMAIN,image.email.microsoftemail.com
@@ -1680,9 +1665,6 @@ DOMAIN,static.polldaddy.com
 DOMAIN,assets-cdn.porn.com
 DOMAIN,pictures-cdn.porn.com
 DOMAIN,m.porn3dx.com
-DOMAIN,cdn-1.porn87.com
-DOMAIN,cdn-2.porn87.com
-DOMAIN,cdn-3.porn87.com
 DOMAIN,assets.porndig.com
 DOMAIN,cdn-static-push.porndig.com
 DOMAIN,celebrities-small.porndig.com
@@ -1861,7 +1843,6 @@ DOMAIN,image.shutterstock.com
 DOMAIN,data.cdn.siemens.com
 DOMAIN,cache.industry.siemens.com
 DOMAIN,cdn.sift.com
-DOMAIN,rum-ingest.us1.signalfx.com
 DOMAIN,api.simplesvg.com
 DOMAIN,icons.simplesvg.com
 DOMAIN,statics.simpshub.com
@@ -2213,7 +2194,6 @@ DOMAIN,ss7.vzw.com
 DOMAIN,cdnstatic.w1mp.com
 DOMAIN,cdnstatic.w4nkr.com
 DOMAIN,explorer-api.walletconnect.com
-DOMAIN,s3.eu-central-2.wasabisys.com
 DOMAIN,img.washingtonpost.com
 DOMAIN,talk.washingtonpost.com
 DOMAIN,assets-cdn.watchdisneyfe.com
@@ -2638,8 +2618,6 @@ DOMAIN,livedoor.blogimg.jp
 DOMAIN,resize.blogsys.jp
 DOMAIN,awsimgsrc.dmm.co.jp
 DOMAIN,p.book.dmm.co.jp
-DOMAIN,cdn.catch.dmm.co.jp
-DOMAIN,cdn.cds.dmm.co.jp
 DOMAIN,pix.cds.dmm.co.jp
 DOMAIN,media.games.dmm.co.jp
 DOMAIN,p.dmm.co.jp
@@ -2830,10 +2808,7 @@ DOMAIN,img.biguz.net
 DOMAIN,assets.bitstamp.net
 DOMAIN,logs.blip.net
 DOMAIN,static.blip.net
-DOMAIN,cf-images.ap-northeast-1.prod.boltdns.net
-DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net
 DOMAIN,manifest.prod.boltdns.net
-DOMAIN,cf-images.us-east-1.prod.boltdns.net
 DOMAIN,players.brightcove.net
 DOMAIN,fonts.bunny.net
 DOMAIN,app.cart-bot.net
@@ -2931,10 +2906,8 @@ DOMAIN,akamai-origin.myanimelist.net
 DOMAIN,cdn.myanimelist.net
 DOMAIN,cdn.myfonts.net
 DOMAIN,i.nhentai.net
-DOMAIN,i2.nhentai.net
 DOMAIN,static.nhentai.net
 DOMAIN,t.nhentai.net
-DOMAIN,t2.nhentai.net
 DOMAIN,bundler.nice-team.net
 DOMAIN,cdn-bundler.nice-team.net
 DOMAIN,img.novipnoad.net
@@ -2943,8 +2916,6 @@ DOMAIN,res-3.cdn.office.net
 DOMAIN,res-geo.cdn.office.net
 DOMAIN,shell.cdn.office.net
 DOMAIN,support.content.office.net
-DOMAIN,cdn.forms.office.net
-DOMAIN,cdn.designerapp.osi.office.net
 DOMAIN,assets.openshift.net
 DOMAIN,data.osmand.net
 DOMAIN,maptile.osmand.net
@@ -3112,9 +3083,6 @@ DOMAIN,seccdn.libravatar.org
 DOMAIN,cache.mapcomplete.org
 DOMAIN,demotiles.maplibre.org
 DOMAIN,cdn.mathjax.org
-DOMAIN,s1.maxstream.org
-DOMAIN,s13.maxstream.org
-DOMAIN,s8.maxstream.org
 DOMAIN,assets.mayoclinic.org
 DOMAIN,design.mayoclinic.org
 DOMAIN,images.mobilism.org

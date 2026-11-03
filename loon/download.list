@@ -1,5 +1,5 @@
-# Total: 1969 rules
-# Last Updated: 2026-10-28T17:27:41.311994+00:00
+# Total: 1930 rules
+# Last Updated: 2026-11-03T13:53:42.168911+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,downloads.claude.ai
@@ -8,8 +8,6 @@ DOMAIN,mirrors.asnet.am
 DOMAIN,kali.itsec.am
 DOMAIN,mirrors.teamcloud.am
 DOMAIN,fdisk.5play.app
-DOMAIN,cdn-fi-1.comaps.app
-DOMAIN,cdn-us-1.comaps.app
 DOMAIN,mapgen-fi-1.comaps.app
 DOMAIN,assets.dataflare.app
 DOMAIN,updates.istatmenus.app
@@ -17,8 +15,6 @@ DOMAIN,releases.landrop.app
 DOMAIN,dl.motrix.app
 DOMAIN,meta.omaps.app
 DOMAIN,cdn.organicmaps.app
-DOMAIN,cdn-nl1.organicmaps.app
-DOMAIN,cdn-uk1.organicmaps.app
 DOMAIN,builds.parsec.app
 DOMAIN,dl.vanadium.app
 DOMAIN,dl.vibeisland.app
@@ -1094,40 +1090,7 @@ DOMAIN,eclats.crans.org
 DOMAIN,tug.ctan.org
 DOMAIN,mirror.cyberchains.org
 DOMAIN,mirror.netcologne.de.org
-DOMAIN,ftp.at.debian.org
-DOMAIN,ftp.au.debian.org
-DOMAIN,ftp.be.debian.org
-DOMAIN,ftp.bg.debian.org
-DOMAIN,ftp.br.debian.org
-DOMAIN,ftp.ca.debian.org
-DOMAIN,ftp.ch.debian.org
-DOMAIN,ftp.cl.debian.org
-DOMAIN,ftp.cn.debian.org
-DOMAIN,ftp.cz.debian.org
-DOMAIN,ftp.de.debian.org
-DOMAIN,ftp.dk.debian.org
-DOMAIN,ftp.es.debian.org
-DOMAIN,ftp.fi.debian.org
-DOMAIN,ftp.fr.debian.org
-DOMAIN,ftp.hk.debian.org
-DOMAIN,ftp.hr.debian.org
-DOMAIN,ftp.is.debian.org
-DOMAIN,ftp.it.debian.org
-DOMAIN,ftp.jp.debian.org
-DOMAIN,ftp.lt.debian.org
-DOMAIN,ftp.nc.debian.org
-DOMAIN,ftp.nl.debian.org
-DOMAIN,ftp.nz.debian.org
-DOMAIN,ftp.pl.debian.org
-DOMAIN,ftp.pt.debian.org
-DOMAIN,ftp.ru.debian.org
-DOMAIN,ftp.se.debian.org
 DOMAIN,security.debian.org
-DOMAIN,ftp.si.debian.org
-DOMAIN,ftp.sk.debian.org
-DOMAIN,ftp.tw.debian.org
-DOMAIN,ftp.uk.debian.org
-DOMAIN,ftp.us.debian.org
 DOMAIN,ftp.debianclub.org
 DOMAIN,repo.debiancn.org
 DOMAIN,openvsx.eclipsecontent.org
@@ -1146,7 +1109,6 @@ DOMAIN,mirrors.fedoraproject.org
 DOMAIN,registry.fedoraproject.org
 DOMAIN,dl.flathub.org
 DOMAIN,distcache.freebsd.org
-DOMAIN,ftp.kr.freebsd.org
 DOMAIN,mirror.freedif.org
 DOMAIN,files2.freedownloadmanager.org
 DOMAIN,directory.fsf.org
@@ -1346,7 +1308,6 @@ DOMAIN,ftp.upjs.sk
 DOMAIN,mirror.vnet.sk
 DOMAIN,repository.su
 DOMAIN,mirror.kumi.systems
-DOMAIN,cdn-us-2.comaps.tech
 DOMAIN,mirror.kku.ac.th
 DOMAIN,mirror1.ku.ac.th
 DOMAIN,mirrors.cloudforest.co.th

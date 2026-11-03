@@ -1,5 +1,5 @@
-# Total: 1978 rules
-# Last Updated: 2026-10-28T17:27:41.350311+00:00
+# Total: 1939 rules
+# Last Updated: 2026-11-03T13:53:42.230023+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -10,8 +10,6 @@ domain_set:
 - kali.itsec.am
 - mirrors.teamcloud.am
 - fdisk.5play.app
-- cdn-fi-1.comaps.app
-- cdn-us-1.comaps.app
 - mapgen-fi-1.comaps.app
 - assets.dataflare.app
 - updates.istatmenus.app
@@ -19,8 +17,6 @@ domain_set:
 - dl.motrix.app
 - meta.omaps.app
 - cdn.organicmaps.app
-- cdn-nl1.organicmaps.app
-- cdn-uk1.organicmaps.app
 - builds.parsec.app
 - dl.vanadium.app
 - dl.vibeisland.app
@@ -1096,40 +1092,7 @@ domain_set:
 - tug.ctan.org
 - mirror.cyberchains.org
 - mirror.netcologne.de.org
-- ftp.at.debian.org
-- ftp.au.debian.org
-- ftp.be.debian.org
-- ftp.bg.debian.org
-- ftp.br.debian.org
-- ftp.ca.debian.org
-- ftp.ch.debian.org
-- ftp.cl.debian.org
-- ftp.cn.debian.org
-- ftp.cz.debian.org
-- ftp.de.debian.org
-- ftp.dk.debian.org
-- ftp.es.debian.org
-- ftp.fi.debian.org
-- ftp.fr.debian.org
-- ftp.hk.debian.org
-- ftp.hr.debian.org
-- ftp.is.debian.org
-- ftp.it.debian.org
-- ftp.jp.debian.org
-- ftp.lt.debian.org
-- ftp.nc.debian.org
-- ftp.nl.debian.org
-- ftp.nz.debian.org
-- ftp.pl.debian.org
-- ftp.pt.debian.org
-- ftp.ru.debian.org
-- ftp.se.debian.org
 - security.debian.org
-- ftp.si.debian.org
-- ftp.sk.debian.org
-- ftp.tw.debian.org
-- ftp.uk.debian.org
-- ftp.us.debian.org
 - ftp.debianclub.org
 - repo.debiancn.org
 - openvsx.eclipsecontent.org
@@ -1148,7 +1111,6 @@ domain_set:
 - registry.fedoraproject.org
 - dl.flathub.org
 - distcache.freebsd.org
-- ftp.kr.freebsd.org
 - mirror.freedif.org
 - files2.freedownloadmanager.org
 - directory.fsf.org
@@ -1348,7 +1310,6 @@ domain_set:
 - mirror.vnet.sk
 - repository.su
 - mirror.kumi.systems
-- cdn-us-2.comaps.tech
 - mirror.kku.ac.th
 - mirror1.ku.ac.th
 - mirrors.cloudforest.co.th

@@ -1,8 +1,6 @@
-# Total: 86 rules
-# Last Updated: 2026-11-03T06:30:55.492850+00:00
+# Total: 85 rules
+# Last Updated: 2026-11-03T13:54:24.374749+00:00
 DOMAIN,upos-sz-estgoss.bilivideo.com
-DOMAIN,upos-sz-mirrorali.bilivideo.com
-DOMAIN,upos-sz-mirroralib.bilivideo.com
 DOMAIN-SUFFIX,9game.cn
 DOMAIN-SUFFIX,alios.cn
 DOMAIN-SUFFIX,alipay.cn
@@ -86,3 +84,4 @@ DOMAIN-SUFFIX,cibntv.net
 DOMAIN-SUFFIX,xiami.net
 DOMAIN-SUFFIX,aliapp.org
 DOMAIN-SUFFIX,taobao.org
+DOMAIN-WILDCARD,upos-sz-mirrorali*.bilivideo.com

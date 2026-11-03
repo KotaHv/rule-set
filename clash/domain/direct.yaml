@@ -1,5 +1,5 @@
-# Total: 1070 rules
-# Last Updated: 2026-10-28T17:28:12.725260+00:00
+# Total: 1071 rules
+# Last Updated: 2026-11-03T13:54:54.512117+00:00
 'payload':
 - 'captive.apple.com'
 - 'instant.arubanetworks.com'
@@ -553,6 +553,7 @@
 - '+.miyoushe.com'
 - '+.mmstat.com'
 - '+.mobike.com'
+- '+.modeldial.com'
 - '+.mojicdn.com'
 - '+.morefreegame.com'
 - '+.msstatic.com'

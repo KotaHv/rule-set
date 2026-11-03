@@ -1,10 +1,8 @@
-# Total: 86 rules
-# Last Updated: 2026-11-03T06:30:55.515309+00:00
+# Total: 85 rules
+# Last Updated: 2026-11-03T13:54:24.400932+00:00
 no_resolve: true
 domain_set:
 - upos-sz-estgoss.bilivideo.com
-- upos-sz-mirrorali.bilivideo.com
-- upos-sz-mirroralib.bilivideo.com
 domain_suffix_set:
 - 9game.cn
 - alios.cn
@@ -89,3 +87,5 @@ domain_suffix_set:
 - xiami.net
 - aliapp.org
 - taobao.org
+domain_wildcard_set:
+- upos-sz-mirrorali*.bilivideo.com
