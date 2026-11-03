@@ -21,7 +21,7 @@ class DirNode(BaseModel):
     """Directory node in the tree structure"""
 
     info: PathInfo
-    children: list[Self | "FileNode"] = Field(
+    children: list[Self | FileNode] = Field(
         default_factory=list, exclude=True, repr=False
     )
     parent: Self | None = Field(exclude=True, repr=False)

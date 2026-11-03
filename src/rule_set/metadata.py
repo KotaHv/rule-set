@@ -39,7 +39,7 @@ class MetadataStore:
                 data.items(),
             )
 
-    def __enter__(self) -> "MetadataStore":
+    def __enter__(self) -> MetadataStore:
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb) -> None:
