@@ -99,6 +99,16 @@ sources = [
     ),
     SourceModel(
         resources=[
+            SourceReference(target="adblock/sukka/sukka-reject-no-drop"),
+            SourceReference(target="adblock/sukka/sukka-reject-drop"),
+            SourceReference(target="adblock/sukka/sukka-reject"),
+            SourceReference(target="adblock/sukka/sukka-reject-extra"),
+            SourceReference(target="adblock/sukka/sukka-reject-phishing"),
+        ],
+        name="adblock/sukka/sukka-reject-all",
+    ),
+    SourceModel(
+        resources=[
             RuleSetResource(
                 source="https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list"
             )
