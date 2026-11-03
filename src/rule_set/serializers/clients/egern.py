@@ -3,8 +3,23 @@ from yaml import CDumper
 
 from rule_set.models import Artifact, ArtifactKind
 
+from ..logic.egern import TaggedMapping
 from ..logic.egern import serialize as logical_serialize
 from .base import BaseSerializer
+
+
+class EgernDumper(CDumper):
+    pass
+
+
+def _represent_tagged_mapping(dumper: EgernDumper, value: TaggedMapping):
+    fields: dict[str, object] = {"match": value.match}
+    if value.no_resolve:
+        fields["no_resolve"] = True
+    return dumper.represent_mapping(value.tag, fields)
+
+
+EgernDumper.add_representer(TaggedMapping, _represent_tagged_mapping)
 
 
 class EgernSerializer(BaseSerializer):
@@ -27,19 +42,12 @@ class EgernSerializer(BaseSerializer):
         if self.rules.ip_asn:
             yaml_data["asn_set"] = self.rules.ip_asn
         if self.rules.logical:
-            yaml_data["and_set"] = []
-            yaml_data["or_set"] = []
-            yaml_data["not_set"] = []
+            logical_sets: dict[str, list] = {}
             for rule in self.rules.logical:
                 if result := logical_serialize(tree=rule):
-                    logical_set, rule = result
-                    yaml_data[logical_set].append(rule)
-            if not yaml_data["and_set"]:
-                del yaml_data["and_set"]
-            if not yaml_data["or_set"]:
-                del yaml_data["or_set"]
-            if not yaml_data["not_set"]:
-                del yaml_data["not_set"]
+                    logical_set, item = result
+                    logical_sets.setdefault(logical_set, []).append(item)
+            yaml_data.update(logical_sets)
         if self.rules.url_regex:
             yaml_data["url_regex_set"] = self.rules.url_regex
         if len(yaml_data.keys()) > 1:
@@ -49,7 +57,7 @@ class EgernSerializer(BaseSerializer):
                 if key != "no_resolve" and isinstance(value, list):
                     rule_count += len(value)
 
-            yaml_content = yaml.dump(yaml_data, sort_keys=False, Dumper=CDumper)
+            yaml_content = yaml.dump(yaml_data, sort_keys=False, Dumper=EgernDumper)
             if rule_count > 0:
                 yaml_content = f"# Total: {rule_count} rules\n# Last Updated: {self.last_updated}\n{yaml_content}"
             return [Artifact(kind=ArtifactKind.DEFAULT, data=yaml_content)]

@@ -1,14 +1,26 @@
+from dataclasses import dataclass
+
 from loguru import logger
 
 from rule_set.errors import SerializerError, UnsupportedRuleTypeError
 from rule_set.models.logical import (
+    AndNode,
     LogicalNodeUnion,
     LogicalTree,
     NotNode,
+    OrNode,
     RuleNode,
 )
 
 from .surge import serialize as surge_serialize
+
+
+@dataclass(frozen=True)
+class TaggedMapping:
+    tag: str
+    match: str | TaggedMapping | list[TaggedMapping]
+    no_resolve: bool = False
+
 
 include_type = [
     "DOMAIN",
@@ -46,44 +58,39 @@ type_format = {
 }
 
 
-def _serialize_logical(*, node: LogicalNodeUnion) -> dict[str, dict[str, str | bool]]:
+def _serialize_logical(*, node: LogicalNodeUnion) -> TaggedMapping:
     if isinstance(node, RuleNode):
         return format_rule(node.rule.rule_type, node.rule.rule_values)
 
-    rule = {}
-    logical_type = f"!{node.operator.lower()}"
     if isinstance(node, NotNode):
-        rule[logical_type] = {"match": _serialize_logical(node=node.child)}
-    else:
-        rule[logical_type] = {"match": []}
-        for child in node.get_children():
-            rule[logical_type]["match"].append(_serialize_logical(node=child))
-    return rule
+        return TaggedMapping("!not", _serialize_logical(node=node.child))
+
+    logical_type = f"!{node.operator.lower()}"
+    return TaggedMapping(
+        logical_type, [_serialize_logical(node=child) for child in node.get_children()]
+    )
 
 
 def serialize(
     *, tree: LogicalTree
-) -> tuple[str, list[dict[str, str]] | dict[str, str]] | None:
+) -> tuple[str, list[TaggedMapping] | TaggedMapping] | None:
     try:
         logical_type = tree.root.operator.lower()
-        logical_set, logical_type = f"{logical_type}_set", f"!{logical_type}"
-        return logical_set, _serialize_logical(node=tree.root)[logical_type]
+        logical_set = f"{logical_type}_set"
+        if isinstance(tree.root, AndNode | OrNode):
+            return logical_set, [
+                _serialize_logical(node=child) for child in tree.root.get_children()
+            ]
+        return logical_set, _serialize_logical(node=tree.root.child)
     except UnsupportedRuleTypeError as e:
         logger.error(f"rule: {surge_serialize(tree=tree)}, err: {e}")
     except SerializerError as e:
         logger.error(e)
 
 
-def format_rule(
-    rule_type: str, rule_values: list[str]
-) -> dict[str, dict[str, str | bool]]:
+def format_rule(rule_type: str, rule_values: list[str]) -> TaggedMapping:
     rule_type = rule_type.upper()
     if rule_type not in include_type:
         raise UnsupportedRuleTypeError(rule_type)
-    rule = {f"!{type_format[rule_type]}": {"match": rule_values[0]}}
-    for value in rule_values[1:]:
-        if value.lower() == "no-resolve":
-            rule["match"]["no-resolve"] = True
-            break
-
-    return rule
+    no_resolve = any(value.lower() == "no-resolve" for value in rule_values[1:])
+    return TaggedMapping(f"!{type_format[rule_type]}", rule_values[0], no_resolve)
