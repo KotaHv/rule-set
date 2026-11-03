@@ -1,7 +1,7 @@
 from pathlib import Path
 from time import sleep
 
-from httpx import Client, ConnectError, ConnectTimeout, HTTPTransport, Response
+from httpx2 import Client, ConnectError, ConnectTimeout, HTTPTransport, Response
 from loguru import logger
 from pydantic import HttpUrl
 

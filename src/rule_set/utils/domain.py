@@ -20,12 +20,33 @@ def is_eTLD(domain: str) -> bool:
 
 def wildcard_to_regex(domain_wildcard: str) -> str:
     """Convert domain wildcard pattern to regex pattern."""
-    domain_regex = (
-        domain_wildcard.replace(".", r"\.")
-        .replace("?", r"[\w.-]")
-        .replace("*", r"[\w.-]*?")
-    )
-    return f"^{domain_regex}$"
+    parts: list[str] = []
+    index, length = 0, len(domain_wildcard)
+    while index < length:
+        char = domain_wildcard[index]
+        if char == "*":
+            parts.append(".*")
+            index += 1
+        elif char == "?":
+            parts.append(".")
+            index += 1
+        elif char == "[":
+            end = domain_wildcard.find("]", index + 1)
+            if end == -1:
+                raise ValueError(f"unclosed '[' in {domain_wildcard!r}")
+            content = domain_wildcard[index + 1 : end]
+            if not content or content in ("!", "^"):
+                raise ValueError(f"empty character class in {domain_wildcard!r}")
+            if "[" in content or "\\" in content:
+                raise ValueError(f"unsupported character class in {domain_wildcard!r}")
+            if content.startswith("!"):
+                content = "^" + content[1:]
+            parts.append(f"[{content}]")
+            index = end + 1
+        else:
+            parts.append(re.escape(char))
+            index += 1
+    return f"^{''.join(parts)}$"
 
 
 def domain_to_regex(domain: str) -> str:
@@ -62,49 +83,60 @@ def fix_leading_wildcard(s: str) -> str:
     return _leading_wildcard_re.sub("*.", s)
 
 
+def _in_to_wildcard(tokens) -> str | None:
+    """Convert an ``IN`` (character class) node to a wildcard class."""
+    negate = tokens[0][0] == sre_parser.NEGATE
+    content = ""
+    for token_type, token_value in tokens[1:] if negate else tokens:
+        if token_type == sre_parser.LITERAL:
+            character = chr(token_value)
+        elif token_type == sre_parser.RANGE:
+            character = f"{chr(token_value[0])}-{chr(token_value[1])}"
+        elif token_type == sre_parser.CATEGORY:
+            # Only \d is used by the existing rules.
+            character = "0-9" if token_value == sre_parser.CATEGORY_DIGIT else ""
+        else:
+            return None
+        if not character or character in "[]\\":
+            return None
+        content += character
+    if not content or (not negate and content[0] in "^!"):
+        return None
+    return f"[{'!' if negate else ''}{content}]"
+
+
 def _ast_to_wildcard(parsed_pattern: sre_parser.SubPattern) -> list[str]:
     wildcards = [""]
     for token_type, token_value in parsed_pattern:
         if token_type in (sre_parser.MAX_REPEAT, sre_parser.MIN_REPEAT):
             min_repetitions, max_repetitions, sub_pattern = token_value
-            sub_wildcards = _ast_to_wildcard(sub_pattern)
-            new_wildcards = []
-            for wildcard_prefix in wildcards:
-                for subpattern_wildcard in sub_wildcards:
-                    if min_repetitions == max_repetitions:
-                        new_wildcards.append(
-                            wildcard_prefix + subpattern_wildcard * min_repetitions
-                        )
-                    elif max_repetitions == sre_parser.MAXREPEAT:
-                        new_wildcards.append(
-                            wildcard_prefix
-                            + (
-                                subpattern_wildcard * min_repetitions + "*"
-                                if min_repetitions > 1
-                                else "*"
-                            )
-                        )
-                    else:
-                        new_wildcards.extend(
-                            (
-                                wildcard_prefix + subpattern_wildcard * repetitions
-                                for repetitions in range(
-                                    min_repetitions, max_repetitions + 1
-                                )
-                            )
-                            if max_repetitions - min_repetitions <= 5
-                            else [
-                                wildcard_prefix
-                                + subpattern_wildcard * min_repetitions
-                                + "*"
-                            ]
-                        )
-            wildcards = new_wildcards
+            if max_repetitions - min_repetitions > 5:
+                # Unbounded or too wide to expand: the wildcard syntax can only
+                # express "any string".
+                wildcards = [wildcard + "*" for wildcard in wildcards]
+            else:
+                sub_wildcards = _ast_to_wildcard(sub_pattern)
+                wildcards = [
+                    wildcard_prefix + subpattern_wildcard * repetitions
+                    for wildcard_prefix in wildcards
+                    for subpattern_wildcard in sub_wildcards
+                    for repetitions in range(min_repetitions, max_repetitions + 1)
+                ]
         elif token_type == sre_parser.LITERAL:
             literal_character = chr(token_value)
             wildcards = [wildcard + literal_character for wildcard in wildcards]
         elif token_type == sre_parser.IN:
-            wildcards = [wildcard + "?" for wildcard in wildcards]
+            character_class = _in_to_wildcard(token_value)
+            if character_class is None:
+                character_class = "?"
+            wildcards = [wildcard + character_class for wildcard in wildcards]
+        elif token_type == sre_parser.NOT_LITERAL:
+            # A single negated literal is parsed as NOT_LITERAL, e.g. [^a].
+            character = chr(token_value)
+            if character in "[]\\":
+                wildcards = [wildcard + "?" for wildcard in wildcards]
+            else:
+                wildcards = [wildcard + f"[!{character}]" for wildcard in wildcards]
         elif token_type == sre_parser.ANY:
             wildcards = [wildcard + "?" for wildcard in wildcards]
         elif token_type == sre_parser.SUBPATTERN:

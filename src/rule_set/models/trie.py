@@ -1,11 +1,14 @@
+import re
 from collections.abc import Iterator
 from typing import Any, Self
 
+from loguru import logger
 from pydantic import GetCoreSchemaHandler
 from pydantic_core import core_schema
 from pygtrie import Trie
 from pytricia import PyTricia
 
+from ..utils.domain import wildcard_to_regex
 from .enum import DomainType
 
 
@@ -44,6 +47,62 @@ class DomainTrie:
             if d == parts:
                 continue
             del self._trie[d]
+
+    def filter_by_wildcard(self):
+        wildcards_without_suffix = []
+        for parts, domain_type in list(self._trie.iteritems()):
+            if domain_type != DomainType.DOMAIN_WILDCARD:
+                continue
+            pattern = self._reversed_parts_to_domain(parts, domain_type)
+            regex = re.compile(wildcard_to_regex(pattern), re.IGNORECASE)
+            wildcard_index = next(
+                (
+                    index
+                    for index, label in enumerate(parts)
+                    if any(character in label for character in "*?[")
+                ),
+                len(parts),
+            )
+            prefix = parts[:wildcard_index]
+            if not prefix:
+                wildcards_without_suffix.append((pattern, regex))
+                continue
+
+            for candidate_parts, candidate_type in list(
+                self._trie.iteritems(prefix=prefix)
+            ):
+                if candidate_type not in (
+                    DomainType.DOMAIN,
+                    DomainType.DOMAIN_SUFFIX,
+                ):
+                    continue
+                if (
+                    candidate_type == DomainType.DOMAIN_SUFFIX
+                    and not pattern.startswith("*")
+                ):
+                    continue
+                domain = self._reversed_parts_to_domain(candidate_parts, candidate_type)
+                if not regex.fullmatch(domain):
+                    continue
+                self._trie.pop(candidate_parts, None)
+                logger.error(f"{candidate_type},{domain} -> DOMAIN-WILDCARD,{pattern}")
+
+        if wildcards_without_suffix:
+            for parts, domain_type in list(self._trie.iteritems()):
+                if domain_type not in (DomainType.DOMAIN, DomainType.DOMAIN_SUFFIX):
+                    continue
+                domain = self._reversed_parts_to_domain(parts, domain_type)
+                for pattern, regex in wildcards_without_suffix:
+                    if (
+                        domain_type == DomainType.DOMAIN_SUFFIX
+                        and not pattern.startswith("*")
+                    ):
+                        continue
+                    if not regex.fullmatch(domain):
+                        continue
+                    self._trie.pop(parts, None)
+                    logger.error(f"{domain_type},{domain} -> DOMAIN-WILDCARD,{pattern}")
+                    break
 
     def remove(self, domain: str, domain_type: DomainType):
         parts = self._domain_to_reversed_parts(domain, domain_type)

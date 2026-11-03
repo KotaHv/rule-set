@@ -75,6 +75,7 @@ class RuleModel(BaseModel):
                 setattr(self, rule_type, set())
         for domain in option.processing.exclude_suffixes:
             self.domain_trie.filter_by_domain(domain)
+        self.domain_trie.filter_by_wildcard()
         self.domain_keyword = set(
             filter(self._deduplicate_domain_keyword(), self.domain_keyword)
         )
