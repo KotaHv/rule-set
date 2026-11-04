@@ -79,7 +79,7 @@ class RuleModel(BaseModel):
                 continue
             for domain_regex, regex in regexes:
                 if regex.search(domain):
-                    self.domain_trie.remove(domain, domain_type)
+                    self.domain_trie.remove(domain)
                     logger.error(f"DOMAIN,{domain} -> DOMAIN-REGEX,{domain_regex}")
                     break
 
@@ -107,7 +107,7 @@ class RuleModel(BaseModel):
             for domain, domain_type in self.domain_trie.items():
                 is_matched, keyword = aho.matched(domain)
                 if is_matched:
-                    self.domain_trie.remove(domain, domain_type)
+                    self.domain_trie.remove(domain)
                     logger.error(f"{domain_type},{domain} -> DOMAIN-KEYWORD,{keyword}")
             for domain_regex in list(self.domain_regex):
                 is_matched, keyword = aho.matched(domain_regex.replace(r"\.", "."))

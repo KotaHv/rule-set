@@ -93,7 +93,7 @@ class DomainTrie:
                     logger.error(f"{domain_type},{domain} -> DOMAIN-WILDCARD,{pattern}")
                     break
 
-    def remove(self, domain: str, domain_type: DomainType):
+    def remove(self, domain: str):
         parts = self._domain_to_reversed_parts(domain)
         self._trie.pop(parts, None)
 
