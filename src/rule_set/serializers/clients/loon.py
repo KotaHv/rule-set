@@ -1,4 +1,5 @@
 from rule_set.models import Artifact, ArtifactKind
+from rule_set.utils.domain import regex_to_wildcard
 
 from ..logic import surge_logical_serialize
 from .base import BaseSerializer
@@ -6,6 +7,7 @@ from .base import BaseSerializer
 include_rule_types = [
     "DOMAIN",
     "DOMAIN-SUFFIX",
+    "DOMAIN-WILDCARD",
     "DOMAIN-KEYWORD",
     "IP-CIDR",
     "IP-CIDR6",
@@ -16,6 +18,7 @@ include_rule_types = [
     "SRC-PORT",
     "DEST-PORT",
     "PROTOCOL",
+    "PROCESS-NAME",
 ]
 
 
@@ -31,6 +34,11 @@ class LoonSerializer(BaseSerializer):
         )
 
         rules.extend(
+            f"DOMAIN-WILDCARD,{domain_wildcard}"
+            for domain_wildcard in self.rules.domain_wildcard
+        )
+
+        rules.extend(
             f"DOMAIN-KEYWORD,{domain_keyword}"
             for domain_keyword in self.rules.domain_keyword
         )
@@ -43,12 +51,19 @@ class LoonSerializer(BaseSerializer):
 
         rules.extend(f"USER-AGENT,{ua}" for ua in self.rules.user_agent)
 
+        rules.extend(f"PROCESS-NAME,{process}" for process in self.rules.process)
+
         rules.extend(
             surge_logical_serialize(tree=tree, include=include_rule_types)
             for tree in self.rules.logical
         )
 
         rules.extend(f"URL-REGEX,{url_regex}" for url_regex in self.rules.url_regex)
+        rules.extend(
+            f"DOMAIN-WILDCARD,{w}"
+            for domain_regex in self.rules.domain_regex
+            for w in regex_to_wildcard(domain_regex)
+        )
         filtered_rules = list(filter(None, rules))
         content = "\n".join(filtered_rules)
         if content:
