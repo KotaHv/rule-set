@@ -25,13 +25,8 @@ class SingBoxSerializer(BaseSerializer):
                 json_data["rules"][0]["domain_regex"] = rules
         if rules := self.rules.domain_keyword:
             json_data["rules"][0]["domain_keyword"] = rules
-        if rules := self.rules.ip_cidr:
-            json_data["rules"][0]["ip_cidr"] = rules
-        if rules := self.rules.ip_cidr6:
-            if json_data["rules"][0]["ip_cidr"]:
-                json_data["rules"][0]["ip_cidr"].extend(rules)
-            else:
-                json_data["rules"][0]["ip_cidr"] = rules
+        if ip_cidr := [*self.rules.ip_cidr, *self.rules.ip_cidr6]:
+            json_data["rules"][0]["ip_cidr"] = ip_cidr
         if rules := self.rules.process:
             if json_data["rules"][0]:
                 json_data["rules"].append({"process_name": rules})
