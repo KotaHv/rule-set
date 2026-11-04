@@ -6,8 +6,6 @@ from rule_set.models import Artifact, ArtifactKind, Option, SerializableRuleMode
 from ..logic.clash import serialize as logical_serialize
 from .base import BaseSerializer
 
-ignore_types = ["user_agent", "logical"]
-
 
 class ClashSerializer(BaseSerializer):
     def __init__(self, *, rules: SerializableRuleModel, option: Option) -> None:
@@ -19,7 +17,7 @@ class ClashSerializer(BaseSerializer):
             )
         )
 
-    def domain(self) -> list:
+    def domain(self) -> list[str]:
         payload = []
         payload.extend(self.rules.domain)
         payload.extend(
@@ -27,21 +25,14 @@ class ClashSerializer(BaseSerializer):
         )
         return payload
 
-    def ip_cidr(self) -> list:
+    def ip_cidr(self) -> list[str]:
         payload = []
         payload.extend(self.rules.ip_cidr)
         payload.extend(self.rules.ip_cidr6)
         return payload
 
-    def classical(self, skip_domain: bool = False, skip_ip_cidr: bool = False) -> list:
+    def classical(self) -> list[str]:
         payload = []
-        if not skip_domain:
-            payload.extend(f"DOMAIN,{domain}" for domain in self.rules.domain)
-            payload.extend(
-                f"DOMAIN-SUFFIX,{domain_suffix}"
-                for domain_suffix in self.rules.domain_suffix
-            )
-
         payload.extend(
             f"DOMAIN-WILDCARD,{domain_wildcard}"
             for domain_wildcard in self.rules.domain_wildcard
@@ -55,19 +46,6 @@ class ClashSerializer(BaseSerializer):
             f"DOMAIN-KEYWORD,{domain_keyword}"
             for domain_keyword in self.rules.domain_keyword
         )
-        if not skip_ip_cidr:
-            payload.extend(
-                f"IP-CIDR,{ip_cidr},no-resolve"
-                if self.option.serialization.no_resolve
-                else f"IP-CIDR,{ip_cidr}"
-                for ip_cidr in self.rules.ip_cidr
-            )
-            payload.extend(
-                f"IP-CIDR6,{ip_cidr6},no-resolve"
-                if self.option.serialization.no_resolve
-                else f"IP-CIDR6,{ip_cidr6}"
-                for ip_cidr6 in self.rules.ip_cidr6
-            )
 
         payload.extend(
             f"IP-ASN,{ip_asn},no-resolve"
@@ -81,7 +59,7 @@ class ClashSerializer(BaseSerializer):
         payload.extend(self.serialized_logical_rules)
         return payload
 
-    def _serialize_payload(self, payload: str, behavior: str, style: str) -> str:
+    def _serialize_payload(self, payload: list[str], style: str | None) -> str:
         yaml_content = yaml.dump(
             {"payload": payload},
             sort_keys=False,
@@ -99,7 +77,7 @@ class ClashSerializer(BaseSerializer):
             return [
                 Artifact(
                     kind=ArtifactKind.IPCIDR,
-                    data=self._serialize_payload(self.ip_cidr(), "ipcidr", "'"),
+                    data=self._serialize_payload(self.ip_cidr(), "'"),
                 )
             ]
         payloads: list[Artifact] = []
@@ -107,21 +85,21 @@ class ClashSerializer(BaseSerializer):
             payloads.append(
                 Artifact(
                     kind=ArtifactKind.DOMAIN,
-                    data=self._serialize_payload(domain_payload, "domain", "'"),
+                    data=self._serialize_payload(domain_payload, "'"),
                 )
             )
         if ip_cidr_payload := self.ip_cidr():
             payloads.append(
                 Artifact(
                     kind=ArtifactKind.IPCIDR,
-                    data=self._serialize_payload(ip_cidr_payload, "ipcidr", "'"),
+                    data=self._serialize_payload(ip_cidr_payload, "'"),
                 )
             )
-        if classical_payload := self.classical(skip_domain=True, skip_ip_cidr=True):
+        if classical_payload := self.classical():
             payloads.append(
                 Artifact(
                     kind=ArtifactKind.CLASSICAL,
-                    data=self._serialize_payload(classical_payload, "classical", None),
+                    data=self._serialize_payload(classical_payload, None),
                 )
             )
         return payloads
