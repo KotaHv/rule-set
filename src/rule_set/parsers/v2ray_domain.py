@@ -69,6 +69,6 @@ def parse(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
         elif rule_type == "full":
             rules.domain_trie.add(rule, DomainType.DOMAIN)
         elif rule_type == "regexp":
-            rules.domain_trie.add(rule, DomainType.DOMAIN_REGEX)
+            rules.domain_regex.add(rule)
 
     return V2rayDomainResult(rules=rules, includes=includes)

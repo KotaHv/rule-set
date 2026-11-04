@@ -16,25 +16,14 @@ class DomainTrie:
     def __init__(self):
         self._trie = Trie()
 
-    def _domain_to_reversed_parts(
-        self, domain: str, domain_type: DomainType
-    ) -> tuple[str, ...]:
-        sep = "." if domain_type != DomainType.DOMAIN_REGEX else r"\."
-        if domain_type == DomainType.DOMAIN_REGEX:
-            domain = domain.rstrip("$")
-        return tuple(domain.split(sep)[::-1])
+    def _domain_to_reversed_parts(self, domain: str) -> tuple[str, ...]:
+        return tuple(domain.split(".")[::-1])
 
-    def _reversed_parts_to_domain(
-        self, parts: tuple[str, ...], domain_type: DomainType
-    ) -> str:
-        sep = "." if domain_type != DomainType.DOMAIN_REGEX else r"\."
-        domain = sep.join(parts[::-1])
-        if domain_type == DomainType.DOMAIN_REGEX:
-            domain += "$"
-        return domain
+    def _reversed_parts_to_domain(self, parts: tuple[str, ...]) -> str:
+        return ".".join(parts[::-1])
 
     def add(self, domain: str, domain_type: DomainType):
-        parts = self._domain_to_reversed_parts(domain, domain_type)
+        parts = self._domain_to_reversed_parts(domain)
         # Check if already covered by parent suffix or self is already a suffix
         for _, dt in self._trie.prefixes(parts):
             if dt == DomainType.DOMAIN_SUFFIX:
@@ -53,7 +42,7 @@ class DomainTrie:
         for parts, domain_type in list(self._trie.iteritems()):
             if domain_type != DomainType.DOMAIN_WILDCARD:
                 continue
-            pattern = self._reversed_parts_to_domain(parts, domain_type)
+            pattern = self._reversed_parts_to_domain(parts)
             regex = re.compile(wildcard_to_regex(pattern), re.IGNORECASE)
             wildcard_index = next(
                 (
@@ -81,7 +70,7 @@ class DomainTrie:
                     and not pattern.startswith("*")
                 ):
                     continue
-                domain = self._reversed_parts_to_domain(candidate_parts, candidate_type)
+                domain = self._reversed_parts_to_domain(candidate_parts)
                 if not regex.fullmatch(domain):
                     continue
                 self._trie.pop(candidate_parts, None)
@@ -91,7 +80,7 @@ class DomainTrie:
             for parts, domain_type in list(self._trie.iteritems()):
                 if domain_type not in (DomainType.DOMAIN, DomainType.DOMAIN_SUFFIX):
                     continue
-                domain = self._reversed_parts_to_domain(parts, domain_type)
+                domain = self._reversed_parts_to_domain(parts)
                 for pattern, regex in wildcards_without_suffix:
                     if (
                         domain_type == DomainType.DOMAIN_SUFFIX
@@ -105,12 +94,12 @@ class DomainTrie:
                     break
 
     def remove(self, domain: str, domain_type: DomainType):
-        parts = self._domain_to_reversed_parts(domain, domain_type)
+        parts = self._domain_to_reversed_parts(domain)
         self._trie.pop(parts, None)
 
     def filter_by_domain(self, domain: str):
         try:
-            parts = self._domain_to_reversed_parts(domain, DomainType.DOMAIN_SUFFIX)
+            parts = self._domain_to_reversed_parts(domain)
             for d in self._trie.keys(prefix=parts):
                 del self._trie[d]
         except KeyError:
@@ -122,7 +111,7 @@ class DomainTrie:
 
     def iteritems(self) -> Iterator[tuple[str, DomainType]]:
         for d, dt in self._trie.iteritems():
-            d = self._reversed_parts_to_domain(d, dt)
+            d = self._reversed_parts_to_domain(d)
             yield d, dt
 
     def items(self) -> list[tuple[str, DomainType]]:

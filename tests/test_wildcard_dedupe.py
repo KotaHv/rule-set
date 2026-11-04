@@ -6,7 +6,6 @@ from rule_set.models.trie import DomainTrie
 DOMAIN = DomainType.DOMAIN
 SUFFIX = DomainType.DOMAIN_SUFFIX
 WILDCARD = DomainType.DOMAIN_WILDCARD
-REGEX = DomainType.DOMAIN_REGEX
 
 
 @pytest.mark.parametrize(
@@ -110,19 +109,6 @@ REGEX = DomainType.DOMAIN_REGEX
                 ("keep.com", SUFFIX),
             ],
             [("*.foo.com", WILDCARD), ("keep.com", SUFFIX)],
-        ),
-        # other rule types are left alone
-        (
-            [
-                ("^ads\\.foo\\.com$", REGEX),
-                ("*.foo.com", WILDCARD),
-                ("keep.com", DOMAIN),
-            ],
-            [
-                ("^ads\\.foo\\.com$", REGEX),
-                ("*.foo.com", WILDCARD),
-                ("keep.com", DOMAIN),
-            ],
         ),
         # only the matching wildcard is used
         (

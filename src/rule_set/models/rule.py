@@ -27,6 +27,7 @@ class SerializableRuleModel(BaseModel):
 
 class RuleModel(BaseModel):
     domain_trie: DomainTrie = Field(default_factory=DomainTrie)
+    domain_regex: list[str] | set[str] = Field(default_factory=set)
     ip_trie: IPTrie = Field(default_factory=IPTrie)
     ip_trie6: IPTrie6 = Field(default_factory=IPTrie6)
     ip_asn: list[str] | set[str] = set()
@@ -38,6 +39,7 @@ class RuleModel(BaseModel):
 
     def merge_with(self, other: Self) -> None:
         self.domain_trie.merge(other.domain_trie)
+        self.domain_regex.update(other.domain_regex)
         self.domain_keyword.update(other.domain_keyword)
         self.ip_trie.merge(other.ip_trie)
         self.ip_trie6.merge(other.ip_trie6)
@@ -84,15 +86,17 @@ class RuleModel(BaseModel):
         if keywords:
             aho = Aho(keywords)
             for domain, domain_type in self.domain_trie.items():
-                processed_domain = (
-                    domain
-                    if domain_type != DomainType.DOMAIN_REGEX
-                    else domain.replace(r"\.", ".")
-                )
-                is_matched, keyword = aho.matched(processed_domain)
+                is_matched, keyword = aho.matched(domain)
                 if is_matched:
                     self.domain_trie.remove(domain, domain_type)
                     logger.error(f"{domain_type},{domain} -> DOMAIN-KEYWORD,{keyword}")
+            for domain_regex in list(self.domain_regex):
+                is_matched, keyword = aho.matched(domain_regex.replace(r"\.", "."))
+                if is_matched:
+                    self.domain_regex.remove(domain_regex)
+                    logger.error(
+                        f"DOMAIN_REGEX,{domain_regex} -> DOMAIN-KEYWORD,{keyword}"
+                    )
 
     def sort(self):
         for key in RuleModel.model_fields.keys():
@@ -117,8 +121,7 @@ class RuleModel(BaseModel):
                 serializable_rule.domain_suffix.append(domain)
             elif domain_type == DomainType.DOMAIN_WILDCARD:
                 serializable_rule.domain_wildcard.append(domain)
-            elif domain_type == DomainType.DOMAIN_REGEX:
-                serializable_rule.domain_regex.append(domain)
+        serializable_rule.domain_regex.extend(sorted(self.domain_regex))
         serializable_rule.domain_keyword.extend(self.domain_keyword)
         serializable_rule.ip_cidr.extend(self.ip_trie.iteritems())
         serializable_rule.ip_cidr6.extend(self.ip_trie6.iteritems())
