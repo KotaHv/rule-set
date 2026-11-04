@@ -1,3 +1,4 @@
+import re
 from typing import Self
 
 from loguru import logger
@@ -64,6 +65,24 @@ class RuleModel(BaseModel):
 
         return is_duplicate
 
+    def _deduplicate_domain_regex(self) -> None:
+        """Remove DOMAIN rules already matched by a DOMAIN_REGEX rule."""
+        regexes: list[tuple[str, re.Pattern[str]]] = []
+        for domain_regex in self.domain_regex:
+            try:
+                regexes.append((domain_regex, re.compile(domain_regex)))
+            except re.error as error:
+                logger.error(f"Cannot compile DOMAIN_REGEX,{domain_regex}: {error}")
+
+        for domain, domain_type in self.domain_trie.items():
+            if domain_type != DomainType.DOMAIN:
+                continue
+            for domain_regex, regex in regexes:
+                if regex.search(domain):
+                    self.domain_trie.remove(domain, domain_type)
+                    logger.error(f"DOMAIN,{domain} -> DOMAIN-REGEX,{domain_regex}")
+                    break
+
     def filter(self, option: Option):
         """Apply various optimization and filtering rules to clean up and optimize the rule set."""
         for rule_type in option.processing.exclude_rule_types:
@@ -97,6 +116,7 @@ class RuleModel(BaseModel):
                     logger.error(
                         f"DOMAIN_REGEX,{domain_regex} -> DOMAIN-KEYWORD,{keyword}"
                     )
+        self._deduplicate_domain_regex()
 
     def sort(self):
         for key in RuleModel.model_fields.keys():
