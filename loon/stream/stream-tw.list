@@ -1,5 +1,5 @@
-# Total: 37 rules
-# Last Updated: 2026-10-28T17:28:10.538981+00:00
+# Total: 38 rules
+# Last Updated: 2026-11-04T16:48:52.541181+00:00
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 DOMAIN,hbounify-prod.evergent.com
 DOMAIN,cdi.ofiii.com
@@ -37,3 +37,4 @@ USER-AGENT,Anime*
 USER-AGENT,KKTV*
 USER-AGENT,LINE TV*
 USER-AGENT,com.kktv.ios.kktv*
+PROCESS-NAME,com.linecorp.linetv

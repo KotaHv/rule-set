@@ -1,5 +1,5 @@
-# Total: 838 rules
-# Last Updated: 2026-11-02T05:04:04.150076+00:00
+# Total: 843 rules
+# Last Updated: 2026-11-04T16:48:19.939593+00:00
 'payload':
 - 'cloudsync-prod.s3.amazonaws.com'
 - 'r5-pc.s3.amazonaws.com'
@@ -316,6 +316,7 @@
 - '+.leagueoflegendsscripts.com'
 - '+.leaguoflegends.com'
 - '+.learnwithleague.com'
+- '+.limbuscompanyapi.com'
 - '+.lol-europe.com'
 - '+.lolespor.com'
 - '+.lolesports.com'
@@ -491,6 +492,7 @@
 - '+.simcity-buildit.com'
 - '+.skate2.com'
 - '+.sketchfab.com'
+- '+.skinswap.com'
 - '+.skylanders.com'
 - '+.sledgehammergames.com'
 - '+.solidstate.com'
@@ -644,6 +646,7 @@
 - '+.beth.games'
 - '+.embark.games'
 - '+.op.gg'
+- '+.limbuscompany.global'
 - '+.stellasora.global'
 - '+.nintendo.com.hk'
 - '+.roblox.hu'
@@ -789,6 +792,7 @@
 - '+.instituteofwar.org'
 - '+.konami.org'
 - '+.leagueoflegends.org'
+- '+.limbuscompanycdn.org'
 - '+.lolclub.org'
 - '+.maddenseason.org'
 - '+.prismlauncher.org'
@@ -818,6 +822,7 @@
 - '+.fitgirl-repacks.site'
 - '+.game-repack.site'
 - '+.roblox.sk'
+- '+.projectmoon.studio'
 - '+.s.team'
 - '+.garena.co.th'
 - '+.garena.tv'

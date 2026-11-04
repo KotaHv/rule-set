@@ -1,5 +1,5 @@
-# Total: 30 rules
-# Last Updated: 2026-11-01T18:00:11.531685+00:00
+# Total: 31 rules
+# Last Updated: 2026-11-04T16:47:37.558949+00:00
 no_resolve: true
 domain_set:
 - dataflow.biliapi.com
@@ -17,6 +17,7 @@ domain_suffix_set:
 - gepush.com
 - getui.com
 - data.grammarly.com
+- gnar.grammarly.com
 - data.microsoft.com
 - tracking.intl.miui.com
 - tracking.miui.com

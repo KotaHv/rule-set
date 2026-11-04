@@ -1,5 +1,5 @@
-# Total: 6348 rules
-# Last Updated: 2026-11-03T13:54:54.886988+00:00
+# Total: 6354 rules
+# Last Updated: 2026-11-04T16:49:12.582397+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1630,6 +1630,7 @@ domain_set:
 - upload.teftera.com
 - image.telanganatoday.com
 - media.telanganatoday.com
+- assets.temporary-phone-number.com
 - cdnstatic.tencentcs.com
 - mirror.pit.teraswitch.com
 - static.test-beta.com
@@ -4045,6 +4046,7 @@ domain_suffix_set:
 - leetcode.com
 - liangzipic.com
 - lihkg.com
+- limbuscompanyapi.com
 - line-apps.com
 - line-apps-beta.com
 - line-apps-rc.com
@@ -4618,6 +4620,7 @@ domain_suffix_set:
 - skate2.com
 - sketch.com
 - sketchfab.com
+- skinswap.com
 - skylanders.com
 - static.skymavis.com
 - skypeassets.com
@@ -5195,6 +5198,7 @@ domain_suffix_set:
 - gg
 - gl
 - gle
+- limbuscompany.global
 - stellasora.global
 - goog
 - gov
@@ -5958,6 +5962,7 @@ domain_suffix_set:
 - lencr.org
 - letsencrypt.org
 - lichess1.org
+- limbuscompanycdn.org
 - lolclub.org
 - lsposed.org
 - lumendatabase.org
@@ -6307,6 +6312,7 @@ domain_wildcard_set:
 - '*.skyearth?.xyz'
 domain_regex_set:
 - .+\.awsdns-[0-9][0-9]\.(co\.uk|com|net|org)$
+- ^epicgames-download\d\.akamaized\.net$
 domain_keyword_set:
 - -assets.dmm.co.jp
 - -assets.worldsex.com

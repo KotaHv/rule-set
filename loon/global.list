@@ -1,5 +1,5 @@
-# Total: 1504 rules
-# Last Updated: 2026-11-02T05:04:36.732782+00:00
+# Total: 1505 rules
+# Last Updated: 2026-11-04T16:49:11.891357+00:00
 DOMAIN,store.ui.com.cn
 DOMAIN,ccmdl.adobe.com
 DOMAIN,nvidia.custhelp.com
@@ -1504,3 +1504,4 @@ DOMAIN-KEYWORD,sci-hub
 DOMAIN-KEYWORD,spotify
 DOMAIN-KEYWORD,whatsapp
 USER-AGENT,Roam*
+DOMAIN-WILDCARD,*.awsdns-[0-9][0-9].*

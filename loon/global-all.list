@@ -1,5 +1,5 @@
-# Total: 6359 rules
-# Last Updated: 2026-11-03T13:54:54.787632+00:00
+# Total: 6418 rules
+# Last Updated: 2026-11-04T16:49:12.471826+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -1628,6 +1628,7 @@ DOMAIN,embed.ted.com
 DOMAIN,upload.teftera.com
 DOMAIN,image.telanganatoday.com
 DOMAIN,media.telanganatoday.com
+DOMAIN,assets.temporary-phone-number.com
 DOMAIN,cdnstatic.tencentcs.com
 DOMAIN,mirror.pit.teraswitch.com
 DOMAIN,static.test-beta.com
@@ -4042,6 +4043,7 @@ DOMAIN-SUFFIX,ledger.com
 DOMAIN-SUFFIX,leetcode.com
 DOMAIN-SUFFIX,liangzipic.com
 DOMAIN-SUFFIX,lihkg.com
+DOMAIN-SUFFIX,limbuscompanyapi.com
 DOMAIN-SUFFIX,line-apps.com
 DOMAIN-SUFFIX,line-apps-beta.com
 DOMAIN-SUFFIX,line-apps-rc.com
@@ -4615,6 +4617,7 @@ DOMAIN-SUFFIX,sixyik.com
 DOMAIN-SUFFIX,skate2.com
 DOMAIN-SUFFIX,sketch.com
 DOMAIN-SUFFIX,sketchfab.com
+DOMAIN-SUFFIX,skinswap.com
 DOMAIN-SUFFIX,skylanders.com
 DOMAIN-SUFFIX,static.skymavis.com
 DOMAIN-SUFFIX,skypeassets.com
@@ -5192,6 +5195,7 @@ DOMAIN-SUFFIX,gd
 DOMAIN-SUFFIX,gg
 DOMAIN-SUFFIX,gl
 DOMAIN-SUFFIX,gle
+DOMAIN-SUFFIX,limbuscompany.global
 DOMAIN-SUFFIX,stellasora.global
 DOMAIN-SUFFIX,goog
 DOMAIN-SUFFIX,gov
@@ -5955,6 +5959,7 @@ DOMAIN-SUFFIX,leagueoflegends.org
 DOMAIN-SUFFIX,lencr.org
 DOMAIN-SUFFIX,letsencrypt.org
 DOMAIN-SUFFIX,lichess1.org
+DOMAIN-SUFFIX,limbuscompanycdn.org
 DOMAIN-SUFFIX,lolclub.org
 DOMAIN-SUFFIX,lsposed.org
 DOMAIN-SUFFIX,lumendatabase.org
@@ -6263,6 +6268,44 @@ DOMAIN-SUFFIX,ipfs.yt
 DOMAIN-SUFFIX,za
 DOMAIN-SUFFIX,zappos
 DOMAIN-SUFFIX,itch.zone
+DOMAIN-WILDCARD,cdn-*.comaps.app
+DOMAIN-WILDCARD,cdn-*.organicmaps.app
+DOMAIN-WILDCARD,image*.cloudokyo.cloud
+DOMAIN-WILDCARD,video*.cloudokyo.cloud
+DOMAIN-WILDCARD,assets.*.imaga.co
+DOMAIN-WILDCARD,*-intake-*-datadoghq.com
+DOMAIN-WILDCARD,cdn?.18girlssex.com
+DOMAIN-WILDCARD,blog-imgs-??.2nt.com
+DOMAIN-WILDCARD,fastly-*.allmovie.com
+DOMAIN-WILDCARD,s3.*.backblazeb2.com
+DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
+DOMAIN-WILDCARD,cdn*.boysfood.com
+DOMAIN-WILDCARD,*-intake.*.datadoghq.com
+DOMAIN-WILDCARD,assets*.freshdesk.com
+DOMAIN-WILDCARD,*.fsvod?.com
+DOMAIN-WILDCARD,cdns.*.gigya.com
+DOMAIN-WILDCARD,uploads-*.insided.com
+DOMAIN-WILDCARD,*.kuaikan-cdn?.com
+DOMAIN-WILDCARD,cdn.*.microsoft.com
+DOMAIN-WILDCARD,cdn-*.microsoft.com
+DOMAIN-WILDCARD,chunk-*.mux.com
+DOMAIN-WILDCARD,*.img.*.sendibm?.com
+DOMAIN-WILDCARD,rum-ingest.*.signalfx.com
+DOMAIN-WILDCARD,s3.*.wasabisys.com
+DOMAIN-WILDCARD,cdn?.mikuclub.fun
+DOMAIN-WILDCARD,file?.mikuclub.fun
+DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
+DOMAIN-WILDCARD,cf-images.*.prod.boltdns.net
+DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
+DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
+DOMAIN-WILDCARD,cdn.*.office.net
+DOMAIN-WILDCARD,object-storage-*.vexxhost.net
+DOMAIN-WILDCARD,ftp.??.freebsd.org
+DOMAIN-WILDCARD,s?.maxstream.org
+DOMAIN-WILDCARD,s??.maxstream.org
+DOMAIN-WILDCARD,cdn-*.comaps.tech
+DOMAIN-WILDCARD,v.rn???.xyz
+DOMAIN-WILDCARD,*.skyearth?.xyz
 DOMAIN-KEYWORD,-assets.dmm.co.jp
 DOMAIN-KEYWORD,-assets.worldsex.com
 DOMAIN-KEYWORD,-files.gitbook.io
@@ -6359,3 +6402,19 @@ USER-AGENT,com.kktv.ios.kktv*
 USER-AGENT,discovery+*
 USER-AGENT,encoreTVB*
 USER-AGENT,mytv*
+PROCESS-NAME,com.amazon.avod.thirdpartyclient
+PROCESS-NAME,com.bstar.intl
+PROCESS-NAME,com.hktve.viutv
+PROCESS-NAME,com.hulu.plus
+PROCESS-NAME,com.linecorp.linetv
+PROCESS-NAME,com.netflix.mediaclient
+PROCESS-NAME,com.tencent.ibg.joox
+PROCESS-NAME,com.twgood.android
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu
+PROCESS-NAME,music
+PROCESS-NAME,tv
+PROCESS-NAME,tv.twitch.android.app
+DOMAIN-WILDCARD,*.awsdns-[0-9][0-9].*
+DOMAIN-WILDCARD,epicgames-download[0-9].akamaized.net

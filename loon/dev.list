@@ -1,5 +1,5 @@
-# Total: 644 rules
-# Last Updated: 2026-11-02T05:04:10.058853+00:00
+# Total: 645 rules
+# Last Updated: 2026-11-04T16:48:30.414062+00:00
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -644,3 +644,4 @@ DOMAIN-SUFFIX,greenend.org.uk
 DOMAIN-SUFFIX,framer.website
 DOMAIN-SUFFIX,nixos.wiki
 DOMAIN-SUFFIX,tilda.ws
+DOMAIN-WILDCARD,*.dkr.ecr.*.amazonaws.com

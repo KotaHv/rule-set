@@ -1,5 +1,5 @@
-# Total: 78 rules
-# Last Updated: 2026-10-18T13:24:42.574708+00:00
+# Total: 80 rules
+# Last Updated: 2026-11-04T16:48:30.878609+00:00
 DOMAIN,vr2.libvio.cloud
 DOMAIN,s5.bfengbf.com
 DOMAIN,bfikuncdn.com
@@ -78,3 +78,5 @@ DOMAIN-SUFFIX,ylsp.tv
 DOMAIN-SUFFIX,mifun.tw
 DOMAIN-SUFFIX,agedm.vip
 DOMAIN-SUFFIX,mxdm.xyz
+DOMAIN-WILDCARD,svip.high*-playback.com
+DOMAIN-WILDCARD,v16*.akamaized.net

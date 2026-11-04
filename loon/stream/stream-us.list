@@ -1,5 +1,5 @@
-# Total: 51 rules
-# Last Updated: 2026-10-28T17:28:09.624674+00:00
+# Total: 52 rules
+# Last Updated: 2026-11-04T16:48:50.590526+00:00
 DOMAIN,edge.api.brightcove.com
 DOMAIN,prod-api.crackle.com
 DOMAIN,athome.fandango.com
@@ -51,3 +51,4 @@ USER-AGENT,PeacockMobile*
 USER-AGENT,TVer-Release*
 USER-AGENT,discovery+*
 USER-AGENT,encoreTVB*
+PROCESS-NAME,com.hulu.plus

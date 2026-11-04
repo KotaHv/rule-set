@@ -1,5 +1,5 @@
-# Total: 31 rules
-# Last Updated: 2026-10-28T17:28:10.356807+00:00
+# Total: 36 rules
+# Last Updated: 2026-11-04T16:48:51.914839+00:00
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 DOMAIN,hbounify-prod.evergent.com
 DOMAIN,hbolb.onwardsmg.com
@@ -31,3 +31,8 @@ DOMAIN-KEYWORD,nowtv100
 DOMAIN-KEYWORD,rthklive
 USER-AGENT,Viu*
 USER-AGENT,mytv*
+PROCESS-NAME,com.bstar.intl
+PROCESS-NAME,com.hktve.viutv
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu

@@ -1,5 +1,5 @@
-# Total: 29 rules
-# Last Updated: 2026-11-01T18:00:11.516085+00:00
+# Total: 30 rules
+# Last Updated: 2026-11-04T16:47:37.527172+00:00
 'payload':
 - 'dataflow.biliapi.com'
 - 'data.bilibili.com'
@@ -15,6 +15,7 @@
 - '+.gepush.com'
 - '+.getui.com'
 - '+.data.grammarly.com'
+- '+.gnar.grammarly.com'
 - '+.data.microsoft.com'
 - '+.tracking.intl.miui.com'
 - '+.tracking.miui.com'

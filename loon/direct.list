@@ -1,5 +1,5 @@
-# Total: 1084 rules
-# Last Updated: 2026-11-03T13:54:54.510167+00:00
+# Total: 1088 rules
+# Last Updated: 2026-11-04T16:49:12.225816+00:00
 DOMAIN,captive.apple.com
 DOMAIN,instant.arubanetworks.com
 DOMAIN,setmeup.arubanetworks.com
@@ -1071,6 +1071,7 @@ DOMAIN-SUFFIX,blutopia.xyz
 DOMAIN-SUFFIX,hd4.xyz
 DOMAIN-SUFFIX,kurogame.xyz
 DOMAIN-SUFFIX,nz99.xyz
+DOMAIN-WILDCARD,qhimgs?.com
 DOMAIN-KEYWORD,cnki.net
 DOMAIN-KEYWORD,deepdyve
 DOMAIN-KEYWORD,els-cdn
@@ -1084,3 +1085,6 @@ USER-AGENT,%E4%BC%98%E9%85%B7*
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
 USER-AGENT,%E8%BF%85%E9%9B%B7
 USER-AGENT,TeslaMap
+DOMAIN-WILDCARD,*.awsdns-cn-[0-9][0-9].*
+DOMAIN-WILDCARD,*.awsdns-cn-[0-9][a-e0-9].cn
+DOMAIN-WILDCARD,*-mihayo.akamaized.net

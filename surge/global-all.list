@@ -1,5 +1,5 @@
-# Total: 6412 rules
-# Last Updated: 2026-11-03T13:54:54.782963+00:00
+# Total: 6418 rules
+# Last Updated: 2026-11-04T16:49:12.468916+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -1628,6 +1628,7 @@ DOMAIN,embed.ted.com
 DOMAIN,upload.teftera.com
 DOMAIN,image.telanganatoday.com
 DOMAIN,media.telanganatoday.com
+DOMAIN,assets.temporary-phone-number.com
 DOMAIN,cdnstatic.tencentcs.com
 DOMAIN,mirror.pit.teraswitch.com
 DOMAIN,static.test-beta.com
@@ -4042,6 +4043,7 @@ DOMAIN-SUFFIX,ledger.com
 DOMAIN-SUFFIX,leetcode.com
 DOMAIN-SUFFIX,liangzipic.com
 DOMAIN-SUFFIX,lihkg.com
+DOMAIN-SUFFIX,limbuscompanyapi.com
 DOMAIN-SUFFIX,line-apps.com
 DOMAIN-SUFFIX,line-apps-beta.com
 DOMAIN-SUFFIX,line-apps-rc.com
@@ -4615,6 +4617,7 @@ DOMAIN-SUFFIX,sixyik.com
 DOMAIN-SUFFIX,skate2.com
 DOMAIN-SUFFIX,sketch.com
 DOMAIN-SUFFIX,sketchfab.com
+DOMAIN-SUFFIX,skinswap.com
 DOMAIN-SUFFIX,skylanders.com
 DOMAIN-SUFFIX,static.skymavis.com
 DOMAIN-SUFFIX,skypeassets.com
@@ -5192,6 +5195,7 @@ DOMAIN-SUFFIX,gd
 DOMAIN-SUFFIX,gg
 DOMAIN-SUFFIX,gl
 DOMAIN-SUFFIX,gle
+DOMAIN-SUFFIX,limbuscompany.global
 DOMAIN-SUFFIX,stellasora.global
 DOMAIN-SUFFIX,goog
 DOMAIN-SUFFIX,gov
@@ -5955,6 +5959,7 @@ DOMAIN-SUFFIX,leagueoflegends.org
 DOMAIN-SUFFIX,lencr.org
 DOMAIN-SUFFIX,letsencrypt.org
 DOMAIN-SUFFIX,lichess1.org
+DOMAIN-SUFFIX,limbuscompanycdn.org
 DOMAIN-SUFFIX,lolclub.org
 DOMAIN-SUFFIX,lsposed.org
 DOMAIN-SUFFIX,lumendatabase.org
@@ -6412,3 +6417,4 @@ PROCESS-NAME,music
 PROCESS-NAME,tv
 PROCESS-NAME,tv.twitch.android.app
 DOMAIN-WILDCARD,*.awsdns-[0-9][0-9].*
+DOMAIN-WILDCARD,epicgames-download[0-9].akamaized.net
