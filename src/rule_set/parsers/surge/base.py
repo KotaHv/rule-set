@@ -3,7 +3,9 @@ from abc import ABC, abstractmethod
 
 from rule_set.models import RuleModel
 
-COMMENT_PATTERNS = ["#", ";", r"(?<!http:)(?<!https:)//"]
+# A "//" immediately after a colon is part of a URL scheme (e.g. http://,
+# https://, ftp://, or the regex form https?://), not a comment.
+COMMENT_PATTERNS = ["#", ";", r"(?<!:)//"]
 comment_pattern = f"({'|'.join(COMMENT_PATTERNS)})"
 start_comment_pattern = re.compile(f"^({comment_pattern})")
 inline_comment_pattern = re.compile(comment_pattern)
