@@ -41,8 +41,6 @@ class SerializationOption(BaseModel):
 
 class ProcessingOption(BaseModel):
     exclude_rule_types: list[str] = []
-    optimize_domains: bool = False
-    exclude_optimized_domains: list[str] = []
     exclude_keywords: list[str] = []
     exclude_suffixes: list[str] = []
 

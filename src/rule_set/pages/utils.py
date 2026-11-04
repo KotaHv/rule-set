@@ -3,7 +3,6 @@ Utility functions for gen_pages package
 """
 
 from datetime import UTC, datetime
-from pathlib import Path
 
 
 def format_datetime(timestamp: float) -> str:
@@ -31,16 +30,6 @@ def format_file_size(size: int) -> str:
         return f"{size / 1024:.1f} KB"
     else:
         return f"{size / (1024 * 1024):.1f} MB"
-
-
-def get_icon_path(icon_name: str, icon_prefix: str = "") -> str:
-    """Get icon path with prefix"""
-    return f"{icon_prefix}icons/{icon_name}.svg"
-
-
-def ensure_directory(path: Path) -> None:
-    """Ensure directory exists, create if not"""
-    path.mkdir(parents=True, exist_ok=True)
 
 
 def is_valid_filename(filename: str) -> bool:

@@ -49,21 +49,6 @@ def wildcard_to_regex(domain_wildcard: str) -> str:
     return f"^{''.join(parts)}$"
 
 
-def domain_to_regex(domain: str) -> str:
-    domain_regex = domain.replace(".", r"\.")
-    return f"^{domain_regex}$"
-
-
-def suffix_to_regex(domain_suffix: str) -> str:
-    domain_regex = domain_suffix.replace(".", r"\.")
-    return rf"[\w.-]*?\.{domain_regex}$"
-
-
-def keyword_to_regex(domain_keyword: str) -> str:
-    domain_regex = domain_keyword.replace(".", r"\.")
-    return domain_regex
-
-
 def regex_to_wildcard(domain_regex: str) -> list[str]:
     parsed_pattern = sre_parser.parse(domain_regex)
     return _ast_to_wildcard(parsed_pattern)
