@@ -1,20 +1,13 @@
-# Total: 177 rules
-# Last Updated: 2026-11-03T05:33:43.407296+00:00
+# Total: 167 rules
+# Last Updated: 2026-11-05T13:35:00.010598+00:00
 payload:
-- DOMAIN-WILDCARD,dyp2p-*.douyucdn.cn
-- DOMAIN-WILDCARD,p2p-*.douyucdn.cn
-- DOMAIN-WILDCARD,p2pchunk-*.douyucdn.cn
-- DOMAIN-WILDCARD,p2plive-*.douyucdn.cn
-- DOMAIN-WILDCARD,stun*.douyucdn.cn
 - DOMAIN-WILDCARD,analytics-*.aasaam.com
 - DOMAIN-WILDCARD,pixel*.adswizz.com
 - DOMAIN-WILDCARD,info.*.aleragroup.com
-- DOMAIN-WILDCARD,upos-sz-302*.bilivideo.com
 - DOMAIN-WILDCARD,mon-*.byteoversea.com
 - DOMAIN-WILDCARD,beacons*.gvt?.com
 - DOMAIN-WILDCARD,tracking.*.miui.com
 - DOMAIN-WILDCARD,*.tracking.*.miui.com
-- DOMAIN-WILDCARD,p2p*.qq.com
 - DOMAIN-WILDCARD,ads-*.tiktok.com
 - DOMAIN-WILDCARD,log*-normal-*.tiktokv.com
 - DOMAIN-WILDCARD,ads-*.xhscdn.com
@@ -40,8 +33,6 @@ payload:
 - DOMAIN-KEYWORD,-logsdk.kwai-pro.com
 - DOMAIN-KEYWORD,-mktg.vodafone.com
 - DOMAIN-KEYWORD,-normal.zijieapi.com
-- DOMAIN-KEYWORD,-p2p-v2.pull.yximgs.com
-- DOMAIN-KEYWORD,-p2p.pull.yximgs.com
 - DOMAIN-KEYWORD,-rtb.gravite.net
 - DOMAIN-KEYWORD,-s2s.sensic.net
 - DOMAIN-KEYWORD,-spiky.clevertap-prod.com
@@ -177,4 +168,3 @@ payload:
 - IP-ASN,62489,no-resolve
 - IP-ASN,62853,no-resolve
 - IP-ASN,401111,no-resolve
-- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,googlevideo.com))
