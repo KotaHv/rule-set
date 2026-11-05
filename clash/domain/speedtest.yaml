@@ -1,5 +1,5 @@
-# Total: 3463 rules
-# Last Updated: 2026-11-04T06:47:17.142177+00:00
+# Total: 3465 rules
+# Last Updated: 2026-11-05T07:07:23.303969+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1634,6 +1634,7 @@
 - 'speedtest.zentrointernet.com'
 - 'speedtest.zetrikcloud.com'
 - 'siliguri.zitatel.com'
+- 'ooklaspdtstsvr.zitel.com'
 - 'speedtest.zoomtelcom.com'
 - 'speedtest.lucas.company'
 - 'speedtest.brooketel.coop'
@@ -2902,6 +2903,7 @@
 - 'speedtest.lax01.xfernet.net'
 - 'speedtest.phoenix.xiber.net'
 - 'speed.xiber.net'
+- 'fra-de-008.xvperf.net'
 - 'speedtest.yalniz.net'
 - 'speedtest.zoominternet.net'
 - 'speedtest-ad-1.zoominternet.net'
