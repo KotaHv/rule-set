@@ -4,7 +4,7 @@ from typing import Self
 from pydantic import BaseModel, model_validator
 
 from .option import Option
-from .resource import ResourceList
+from .resource import ContentResource, ResourceList, V2rayDomainResource
 from .type import SerializeFormats
 
 
@@ -23,7 +23,7 @@ class SourceModel(BaseModel):
 
         for resource in self.resources:
             if (
-                hasattr(resource, "source")  # Check if it's a BaseResource
+                isinstance(resource, ContentResource)
                 and isinstance(resource.source, Path)
                 and resource.source.is_dir()
             ):
@@ -43,9 +43,7 @@ class SourceModel(BaseModel):
     def merge_v2ray_domain_options(self) -> Self:
         """Merge V2rayDomainOption from global option to individual V2rayDomainResource"""
         for resource in self.resources:
-            if hasattr(resource, "option") and hasattr(
-                resource.option, "attrs"
-            ):  # V2rayDomainResource
+            if isinstance(resource, V2rayDomainResource):
                 # Merge attrs field
                 if resource.option.attrs is None:
                     resource.option.attrs = self.option.v2ray_domain.attrs

@@ -1,7 +1,14 @@
 from ..cache import Cache
+from ..errors import UnknownResourceTypeError
 from ..file_writers import writer_registry
 from ..metadata import MetadataStore
-from ..models import RuleModel, SerializeFormat, SourceModel, SourceReference
+from ..models import (
+    ContentResource,
+    RuleModel,
+    SerializeFormat,
+    SourceModel,
+    SourceReference,
+)
 from ..serializers.clients import client_serializers
 from .resource import ResourceProcessor
 
@@ -46,10 +53,12 @@ class SourceProcessor:
                 aggregated_rules.merge_with(
                     RuleModel.model_validate_json(self.cache.retrieve(resource.target))
                 )
-            else:
+            elif isinstance(resource, ContentResource):
                 aggregated_rules.merge_with(
                     self.resource_processor.process(resource, source.option)
                 )
+            else:
+                raise UnknownResourceTypeError(resource)
         aggregated_rules.filter(source.option)
         aggregated_rules.sort()
         self.cache.store(source.name, aggregated_rules.model_dump_json())

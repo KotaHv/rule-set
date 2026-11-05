@@ -3,6 +3,7 @@ from pathlib import Path
 from pydantic import HttpUrl
 
 from rule_set.models import (
+    ContentResource,
     DomainSetResource,
     GeoIPOption,
     MaxMindDBResource,
@@ -662,7 +663,7 @@ sources = [
 
 for source in sources:
     for resource in source.resources:
-        if isinstance(resource, SourceReference):
+        if not isinstance(resource, ContentResource):
             continue
         if str(resource.source).startswith("https://ruleset.skk.moe"):
             source.option.processing.exclude_suffixes.extend(

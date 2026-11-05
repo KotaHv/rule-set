@@ -1,7 +1,8 @@
 from collections.abc import Iterator
 from pathlib import Path
 
-from rule_set.models import BaseResource, SourceModel
+from rule_set.errors import UnknownResourceTypeError
+from rule_set.models import ContentResource, SourceModel, SourceReference
 
 from .dep_resolver import DependencyResolver
 
@@ -20,14 +21,16 @@ class SourceRegistry:
             if source.split_resources:
                 # Create separate SourceModel for each resource
                 for resource in source.resources:
-                    if isinstance(resource, BaseResource):
+                    if isinstance(resource, ContentResource):
                         stem = (
                             resource.source.stem
                             if isinstance(resource.source, Path)
                             else resource.source.unicode_string().split("/")[-1]
                         )
-                    else:
+                    elif isinstance(resource, SourceReference):
                         stem = resource.target
+                    else:
+                        raise UnknownResourceTypeError(resource)
                     result.append(
                         source.model_copy(
                             update={

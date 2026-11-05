@@ -4,7 +4,7 @@ from ..cache import Cache
 from ..errors import UnknownResourceTypeError
 from ..fetcher import fetcher
 from ..models import (
-    BaseResource,
+    ContentResource,
     DomainSetResource,
     MaxMindDBResource,
     Option,
@@ -25,7 +25,7 @@ class ResourceProcessor:
         self.cache = cache
 
     def process(
-        self, initial_resource: BaseResource, source_option: Option
+        self, initial_resource: ContentResource, source_option: Option
     ) -> RuleModel:
         aggregated_rules = RuleModel()
         pending_resources = [initial_resource]
@@ -44,7 +44,7 @@ class ResourceProcessor:
         return aggregated_rules
 
     def _get_rules(
-        self, resource: BaseResource, source_option: Option
+        self, resource: ContentResource, source_option: Option
     ) -> RuleModel | V2rayDomainResult:
         cache_key = self._cache_key(resource)
         if cached_result := self.cache.retrieve(cache_key):
@@ -65,7 +65,7 @@ class ResourceProcessor:
         return parsed_rules
 
     @staticmethod
-    def _cache_key(resource: BaseResource) -> str:
+    def _cache_key(resource: ContentResource) -> str:
         cache_key = str(resource.source)
         if isinstance(resource, V2rayDomainResource):
             cache_key += f"::attrs={resource.option.attrs}"
@@ -74,7 +74,7 @@ class ResourceProcessor:
     @staticmethod
     def _parse_data(
         resource_data: str | list | Path,
-        resource: BaseResource,
+        resource: ContentResource,
         option: Option | V2rayDomainOption,
     ) -> RuleModel | V2rayDomainResult:
         if isinstance(resource, RuleSetResource):

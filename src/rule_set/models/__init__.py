@@ -16,10 +16,10 @@ from .option import (
 )
 from .resource import (
     BaseResource,
+    ContentResource,
     DomainSetResource,
     MaxMindDBResource,
     ResourceList,
-    ResourceType,
     RuleSetResource,
     SourceReference,
     V2rayDomainResource,
@@ -55,12 +55,12 @@ __all__ = [
     "Option",
     # Resources
     "BaseResource",
+    "ContentResource",
     "RuleSetResource",
     "DomainSetResource",
     "V2rayDomainResource",
     "MaxMindDBResource",
     "SourceReference",
-    "ResourceType",
     "ResourceList",
     # Rules
     "RuleModel",
