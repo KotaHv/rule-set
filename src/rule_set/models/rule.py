@@ -28,15 +28,15 @@ class SerializableRuleModel(BaseModel):
 
 class RuleModel(BaseModel):
     domain_trie: DomainTrie = Field(default_factory=DomainTrie)
-    domain_regex: list[str] | set[str] = Field(default_factory=set)
+    domain_regex: set[str] = Field(default_factory=set)
     ip_trie: IPTrie = Field(default_factory=IPTrie)
     ip_trie6: IPTrie6 = Field(default_factory=IPTrie6)
-    ip_asn: list[str] | set[str] = set()
-    logical: list[LogicalTree] | set[LogicalTree] = set()
-    process: list[str] | set[str] = set()
-    user_agent: list[str] | set[str] = set()
-    domain_keyword: list[str] | set[str] = set()
-    url_regex: list[str] | set[str] = set()
+    ip_asn: set[str] = Field(default_factory=set)
+    logical: set[LogicalTree] = Field(default_factory=set)
+    process: set[str] = Field(default_factory=set)
+    user_agent: set[str] = Field(default_factory=set)
+    domain_keyword: set[str] = Field(default_factory=set)
+    url_regex: set[str] = Field(default_factory=set)
 
     def merge_with(self, other: Self) -> None:
         self.domain_trie.merge(other.domain_trie)
@@ -100,8 +100,7 @@ class RuleModel(BaseModel):
         self.domain_keyword = set(
             filter(self._deduplicate_domain_keyword(), self.domain_keyword)
         )
-        keywords = list(self.domain_keyword)
-        keywords.extend(option.processing.exclude_keywords)
+        keywords = [*self.domain_keyword, *option.processing.exclude_keywords]
         if keywords:
             aho = Aho(keywords)
             for domain, domain_type in self.domain_trie.items():
@@ -118,20 +117,6 @@ class RuleModel(BaseModel):
                     )
         self._deduplicate_domain_regex()
 
-    def sort(self):
-        for key in RuleModel.model_fields.keys():
-            if key in ["domain_trie", "ip_trie", "ip_trie6"]:
-                continue
-            value = getattr(self, key)
-            if key == "ip_asn":
-                value = sorted(
-                    value,
-                    key=lambda x: int(x),
-                )
-            else:
-                value = sorted(value)
-            setattr(self, key, value)
-
     def to_serializable_rule_model(self) -> SerializableRuleModel:
         serializable_rule = SerializableRuleModel()
         for domain, domain_type in self.domain_trie.sorted_iteritems():
@@ -142,14 +127,14 @@ class RuleModel(BaseModel):
             elif domain_type == DomainType.DOMAIN_WILDCARD:
                 serializable_rule.domain_wildcard.append(domain)
         serializable_rule.domain_regex.extend(sorted(self.domain_regex))
-        serializable_rule.domain_keyword.extend(self.domain_keyword)
+        serializable_rule.domain_keyword.extend(sorted(self.domain_keyword))
         serializable_rule.ip_cidr.extend(self.ip_trie.iteritems())
         serializable_rule.ip_cidr6.extend(self.ip_trie6.iteritems())
-        serializable_rule.ip_asn.extend(self.ip_asn)
-        serializable_rule.logical.extend(self.logical)
-        serializable_rule.process.extend(self.process)
-        serializable_rule.user_agent.extend(self.user_agent)
-        serializable_rule.url_regex.extend(self.url_regex)
+        serializable_rule.ip_asn.extend(sorted(self.ip_asn, key=int))
+        serializable_rule.logical.extend(sorted(self.logical))
+        serializable_rule.process.extend(sorted(self.process))
+        serializable_rule.user_agent.extend(sorted(self.user_agent))
+        serializable_rule.url_regex.extend(sorted(self.url_regex))
         return serializable_rule
 
 

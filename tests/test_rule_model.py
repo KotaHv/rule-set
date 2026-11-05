@@ -134,7 +134,7 @@ def test_filter_applies_keywords_to_trie_and_regex():
     assert rules.domain_regex == {r"^keep\.example\.com$"}
 
 
-def test_sort_orders_rule_fields():
+def test_serialization_orders_rule_fields():
     rules = RuleModel(
         domain_regex={r"^b", r"^a"},
         domain_keyword={"b", "a"},
@@ -144,14 +144,14 @@ def test_sort_orders_rule_fields():
         url_regex={"b", "a"},
     )
 
-    rules.sort()
+    serializable = rules.to_serializable_rule_model()
 
-    assert rules.domain_regex == [r"^a", r"^b"]
-    assert rules.domain_keyword == ["a", "b"]
-    assert rules.ip_asn == ["2", "10"]
-    assert rules.process == ["a", "z"]
-    assert rules.user_agent == ["a", "b"]
-    assert rules.url_regex == ["a", "b"]
+    assert serializable.domain_regex == [r"^a", r"^b"]
+    assert serializable.domain_keyword == ["a", "b"]
+    assert serializable.ip_asn == ["2", "10"]
+    assert serializable.process == ["a", "z"]
+    assert serializable.user_agent == ["a", "b"]
+    assert serializable.url_regex == ["a", "b"]
 
 
 def test_to_serializable_rule_model_maps_all_rule_kinds():

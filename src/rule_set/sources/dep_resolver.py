@@ -65,10 +65,10 @@ class DependencyResolver:
 
         return cycles
 
-    def resolve_order(self) -> list[str]:
+    def resolve_order(self) -> list[SourceModel]:
         """
         Resolve processing order using topological sort.
-        Returns a list of target_paths sorted by dependency order.
+        Returns sources sorted by dependency order.
         """
         # Detect circular dependencies
         cycles = self._detect_cycles()

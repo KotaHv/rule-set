@@ -60,7 +60,6 @@ class SourceProcessor:
             else:
                 raise UnknownResourceTypeError(resource)
         aggregated_rules.filter(source.option)
-        aggregated_rules.sort()
         self.cache.store(source.name, aggregated_rules.model_dump_json())
         return aggregated_rules
 
