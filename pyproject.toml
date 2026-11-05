@@ -63,7 +63,11 @@ extend-immutable-calls = [
 keep-runtime-typing = true
 
 [dependency-groups]
-dev = ["pytest>=9.2.0"]
+dev = [
+    "basedpyright>=1.40.2",
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
