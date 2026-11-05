@@ -99,8 +99,21 @@ sources = [
     ),
     SourceModel(
         resources=[
-            SourceReference(target="adblock/sukka/sukka-reject-no-drop"),
-            SourceReference(target="adblock/sukka/sukka-reject-drop"),
+            SourceReference(target="adblock/sukka/sukka-reject"),
+            SourceReference(target="adblock/sukka/sukka-reject-extra"),
+        ],
+        name="adblock/sukka/sukka-reject+extra",
+    ),
+    SourceModel(
+        resources=[
+            SourceReference(target="adblock/sukka/sukka-reject"),
+            SourceReference(target="adblock/sukka/sukka-reject-extra"),
+            SourceReference(target="adblock/sukka/sukka-reject-phishing"),
+        ],
+        name="adblock/sukka/sukka-reject+extra+phishing",
+    ),
+    SourceModel(
+        resources=[
             SourceReference(target="adblock/sukka/sukka-reject"),
             SourceReference(target="adblock/sukka/sukka-reject-extra"),
             SourceReference(target="adblock/sukka/sukka-reject-phishing"),
