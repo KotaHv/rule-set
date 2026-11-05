@@ -1,8 +1,16 @@
+from pathlib import Path
+
+from pydantic import HttpUrl
+
 from rule_set.models import (
     DomainType,
+    Option,
+    ResourceList,
+    SourceModel,
     V2rayDomainAttrs,
     V2rayDomainInclude,
     V2rayDomainOption,
+    V2rayDomainResource,
 )
 from rule_set.parsers.v2ray_domain import parse
 
@@ -20,6 +28,57 @@ def _option(
         ),
         exclude_includes=exclude_includes or [],
     )
+
+
+def _source(resource_option: V2rayDomainOption | None = None) -> SourceModel:
+    resources: ResourceList = [
+        V2rayDomainResource(
+            source=HttpUrl("https://example.com/list"),
+            option=(
+                V2rayDomainOption() if resource_option is None else resource_option
+            ),
+        )
+    ]
+    return SourceModel(
+        name=Path("test"),
+        resources=resources,
+        option=Option(
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttrs(include_attrs=["cn"]),
+                exclude_includes=["blocked"],
+            )
+        ),
+    )
+
+
+def test_resource_inherits_both_fields_when_unset():
+    resource = _source().resources[0]
+    assert isinstance(resource, V2rayDomainResource)
+
+    assert resource.option.attrs.include_attrs == ["@cn"]
+    assert resource.option.exclude_includes == ["blocked"]
+
+
+def test_resource_inherits_only_unset_field():
+    resource = _source(V2rayDomainOption(exclude_includes=[])).resources[0]
+    assert isinstance(resource, V2rayDomainResource)
+
+    assert resource.option.attrs.include_attrs == ["@cn"]
+    assert resource.option.exclude_includes == []
+
+
+def test_resource_keeps_explicit_empty_values():
+    resource = _source(
+        V2rayDomainOption(
+            attrs=V2rayDomainAttrs(exclude_attrs=["ads"]),
+            exclude_includes=[],
+        )
+    ).resources[0]
+    assert isinstance(resource, V2rayDomainResource)
+
+    assert resource.option.attrs.include_attrs == []
+    assert resource.option.attrs.exclude_attrs == ["@ads"]
+    assert resource.option.exclude_includes == []
 
 
 def test_v2ray_regex_is_stored_separately_and_serialized():

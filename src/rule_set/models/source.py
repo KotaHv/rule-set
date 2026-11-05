@@ -44,12 +44,10 @@ class SourceModel(BaseModel):
         """Merge V2rayDomainOption from global option to individual V2rayDomainResource"""
         for resource in self.resources:
             if isinstance(resource, V2rayDomainResource):
-                # Merge attrs field
-                if resource.option.attrs is None:
+                if "attrs" not in resource.option.model_fields_set:
                     resource.option.attrs = self.option.v2ray_domain.attrs
 
-                # Merge exclude_includes field
-                if resource.option.exclude_includes is None:
+                if "exclude_includes" not in resource.option.model_fields_set:
                     resource.option.exclude_includes = (
                         self.option.v2ray_domain.exclude_includes
                     )

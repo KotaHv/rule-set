@@ -46,8 +46,8 @@ class ProcessingOption(BaseModel):
 
 
 class V2rayDomainOption(BaseModel):
-    attrs: V2rayDomainAttrs | None = None
-    exclude_includes: list[str] | None = None
+    attrs: V2rayDomainAttrs = V2rayDomainAttrs()
+    exclude_includes: list[str] = []
 
 
 class GeoIPOption(BaseModel):
@@ -59,16 +59,5 @@ class Option(BaseModel):
 
     serialization: SerializationOption = SerializationOption()
     processing: ProcessingOption = ProcessingOption()
-    v2ray_domain: V2rayDomainOption = V2rayDomainOption(
-        attrs=V2rayDomainAttrs(), exclude_includes=[]
-    )
+    v2ray_domain: V2rayDomainOption = V2rayDomainOption()
     geo_ip: GeoIPOption = GeoIPOption()
-
-    @field_validator("v2ray_domain", mode="before")
-    def set_default_v2ray_domain_option(cls, v: V2rayDomainOption) -> V2rayDomainOption:
-        """Set default values for V2rayDomainOption fields if they are None."""
-        if v.attrs is None:
-            v.attrs = V2rayDomainAttrs()
-        if v.exclude_includes is None:
-            v.exclude_includes = []
-        return v
