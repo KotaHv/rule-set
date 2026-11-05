@@ -1,3 +1,5 @@
+from collections.abc import Iterable
+
 import ahocorasick
 
 from rule_set.utils import generate_cache_key
@@ -6,7 +8,8 @@ AHO_CACHE: dict[str, ahocorasick.Automaton] = {}
 
 
 class Aho:
-    def __init__(self, keywords: list[str]):
+    def __init__(self, keywords: Iterable[str]):
+        keywords = sorted(set(keywords))
         cache_key = generate_cache_key(keywords)
         self.aho = AHO_CACHE.get(cache_key)
         if self.aho is None:
