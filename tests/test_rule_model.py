@@ -62,26 +62,30 @@ def test_invalid_domain_regex_does_not_break_filtering():
 
 
 def test_merge_with_merges_rule_collections():
-    rules = RuleModel(
-        domain_regex={r"^a\."},
-        domain_keyword={"ads"},
-        ip_trie=["1.1.1.0/24"],
-        ip_trie6=["2001:db8::/32"],
-        ip_asn={"13335"},
-        process={"first-process"},
-        user_agent={"first-agent"},
-        url_regex={"first-url"},
+    rules = RuleModel.model_validate(
+        {
+            "domain_regex": {r"^a\."},
+            "domain_keyword": {"ads"},
+            "ip_trie": ["1.1.1.0/24"],
+            "ip_trie6": ["2001:db8::/32"],
+            "ip_asn": {"13335"},
+            "process": {"first-process"},
+            "user_agent": {"first-agent"},
+            "url_regex": {"first-url"},
+        }
     )
     rules.domain_trie.add("a.example.com", DOMAIN)
-    other = RuleModel(
-        domain_regex={r"^b\."},
-        domain_keyword={"tracking"},
-        ip_trie=["2.2.2.0/24"],
-        ip_trie6=["2001:db9::/32"],
-        ip_asn={"15169"},
-        process={"second-process"},
-        user_agent={"second-agent"},
-        url_regex={"second-url"},
+    other = RuleModel.model_validate(
+        {
+            "domain_regex": {r"^b\."},
+            "domain_keyword": {"tracking"},
+            "ip_trie": ["2.2.2.0/24"],
+            "ip_trie6": ["2001:db9::/32"],
+            "ip_asn": {"15169"},
+            "process": {"second-process"},
+            "user_agent": {"second-agent"},
+            "url_regex": {"second-url"},
+        }
     )
     other.domain_trie.add("b.example.com", DOMAIN)
 
@@ -108,10 +112,12 @@ def test_merge_with_merges_rule_collections():
     ["ip_trie", "ip_trie6", "domain_trie", "domain_regex"],
 )
 def test_filter_excludes_rule_types(rule_type):
-    rules = RuleModel(
-        domain_regex={r"^ads\."},
-        ip_trie=["1.1.1.0/24"],
-        ip_trie6=["2001:db8::/32"],
+    rules = RuleModel.model_validate(
+        {
+            "domain_regex": {r"^ads\."},
+            "ip_trie": ["1.1.1.0/24"],
+            "ip_trie6": ["2001:db8::/32"],
+        }
     )
     rules.domain_trie.add("ads.example.com", DOMAIN)
 
@@ -195,15 +201,17 @@ def test_serialization_orders_logical_rules_without_canonicalizing_children():
 
 
 def test_to_serializable_rule_model_maps_all_rule_kinds():
-    rules = RuleModel(
-        domain_regex={r"^b", r"^a"},
-        domain_keyword={"b", "a"},
-        ip_trie=["2.2.2.0/24", "1.1.1.0/24"],
-        ip_trie6=["2001:db9::/32", "2001:db8::/32"],
-        ip_asn={"10", "2"},
-        process={"b", "a"},
-        user_agent={"b", "a"},
-        url_regex={"b", "a"},
+    rules = RuleModel.model_validate(
+        {
+            "domain_regex": {r"^b", r"^a"},
+            "domain_keyword": {"b", "a"},
+            "ip_trie": ["2.2.2.0/24", "1.1.1.0/24"],
+            "ip_trie6": ["2001:db9::/32", "2001:db8::/32"],
+            "ip_asn": {"10", "2"},
+            "process": {"b", "a"},
+            "user_agent": {"b", "a"},
+            "url_regex": {"b", "a"},
+        }
     )
     rules.domain_trie.add("b.example.com", DOMAIN)
     rules.domain_trie.add("a.example.com", DOMAIN)
