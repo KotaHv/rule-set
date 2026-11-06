@@ -74,8 +74,9 @@ def test_rule_set_parser_parses_logical_rules():
 
     tree = next(iter(result.logical))
     assert tree.root.op is LogicalOperator.AND
-    assert all(isinstance(child, Rule) for child in tree.root.children)
-    assert [child.rule.rule_values for child in tree.root.children] == [
+    children = tuple(child for child in tree.root.children if isinstance(child, Rule))
+    assert len(children) == len(tree.root.children)
+    assert [child.rule.rule_values for child in children] == [
         ("example.com",),
         ("ads",),
     ]
