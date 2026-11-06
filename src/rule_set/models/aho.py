@@ -12,13 +12,14 @@ class Aho:
     def __init__(self, keywords: Iterable[str]):
         keywords = sorted(set(keywords))
         cache_key = generate_cache_key(json.dumps(keywords))
-        self.aho = AHO_CACHE.get(cache_key)
-        if self.aho is None:
-            self.aho = ahocorasick.Automaton()
+        aho = AHO_CACHE.get(cache_key)
+        if aho is None:
+            aho = ahocorasick.Automaton()
             for keyword in keywords:
-                self.aho.add_word(keyword, keyword)
-            self.aho.make_automaton()
-            AHO_CACHE[cache_key] = self.aho
+                aho.add_word(keyword, keyword)
+            aho.make_automaton()
+            AHO_CACHE[cache_key] = aho
+        self.aho = aho
 
     def matched(self, text: str) -> tuple[bool, str | None]:
         for _, keyword in self.aho.iter(text):
