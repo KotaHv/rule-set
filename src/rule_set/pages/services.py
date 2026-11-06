@@ -159,9 +159,9 @@ class PageGenerator:
             else:
                 files.append(child)
 
-        breadcrumb_path = []
-        current = node
-        while current != self.path_tree.root:
+        breadcrumb_path: list[str] = []
+        current: DirNode | None = node
+        while current is not None and current is not self.path_tree.root:
             breadcrumb_path.append(current.info.name)
             current = current.parent
 
