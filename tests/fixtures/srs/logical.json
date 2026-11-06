@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": ["example.com"],
+      "ip_cidr": ["1.1.1.0/24"]
+    },
+    {
+      "type": "logical",
+      "mode": "and",
+      "rules": [
+        {"domain_suffix": "example.com"},
+        {"domain_keyword": "ads"},
+        {
+          "type": "logical",
+          "mode": "or",
+          "invert": true,
+          "rules": [
+            {"network": "tcp"},
+            {"port": 443},
+            {"query_type": [1, 28]}
+          ]
+        }
+      ]
+    },
+    {
+      "type": "logical",
+      "mode": "or",
+      "invert": true,
+      "rules": [
+        {"ip_cidr": "1.1.1.0/24"},
+        {"process_name": ["curl", "wget"]}
+      ]
+    }
+  ]
+}

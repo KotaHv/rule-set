@@ -1,0 +1,28 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "query_type": [1, 28],
+      "network": ["tcp", "udp"],
+      "domain_keyword": ["ads"],
+      "domain_regex": ["^ads\\."],
+      "source_ip_cidr": ["203.0.113.0/24"],
+      "ip_cidr": ["192.0.2.0/24"],
+      "source_port": [53, 853],
+      "source_port_range": ["1000-2000"],
+      "port": [80, 443],
+      "port_range": ["3000-4000"],
+      "process_name": ["curl"],
+      "process_path": ["/usr/bin/curl"],
+      "process_path_regex": ["^/usr/bin/"],
+      "package_name": ["com.example.app"],
+      "package_name_regex": ["^com\\.example\\."],
+      "network_type": ["wifi"],
+      "network_is_expensive": true,
+      "network_is_constrained": true,
+      "wifi_ssid": ["home"],
+      "wifi_bssid": ["00:11:22:33:44:55"],
+      "invert": true
+    }
+  ]
+}
