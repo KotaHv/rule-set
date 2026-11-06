@@ -1,5 +1,5 @@
 from .base import BaseFileWriter
-from .middleware import SingBoxCompileMiddleware
+from .middleware import PostWriteMiddleware, SingBoxCompileMiddleware
 
 
 class SingBoxFileWriter(BaseFileWriter):
@@ -12,5 +12,5 @@ class SingBoxFileWriter(BaseFileWriter):
         return ".json"
 
     @property
-    def post_write_middlewares(self):
+    def post_write_middlewares(self) -> list[PostWriteMiddleware]:
         return [SingBoxCompileMiddleware(self.metadata_store)]

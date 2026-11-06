@@ -1,5 +1,5 @@
 from .base import BaseFileWriter
-from .middleware import MihomoCompileMiddleware
+from .middleware import MihomoCompileMiddleware, PostWriteMiddleware
 
 
 class BaseClashFileWriter(BaseFileWriter):
@@ -18,7 +18,7 @@ class ClashDomainFileWriter(BaseClashFileWriter):
     behavior = "domain"
 
     @property
-    def post_write_middlewares(self):
+    def post_write_middlewares(self) -> list[PostWriteMiddleware]:
         return [MihomoCompileMiddleware(self.behavior, self.metadata_store)]
 
 
@@ -26,7 +26,7 @@ class ClashIpcidrFileWriter(BaseClashFileWriter):
     behavior = "ipcidr"
 
     @property
-    def post_write_middlewares(self):
+    def post_write_middlewares(self) -> list[PostWriteMiddleware]:
         return [MihomoCompileMiddleware(self.behavior, self.metadata_store)]
 
 
