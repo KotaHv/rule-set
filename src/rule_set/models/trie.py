@@ -25,8 +25,8 @@ class DomainTrie:
     def add(self, domain: str, domain_type: DomainType):
         parts = self._domain_to_reversed_parts(domain)
         # Check if already covered by parent suffix or self is already a suffix
-        for _, dt in self._trie.prefixes(parts):
-            if dt == DomainType.DOMAIN_SUFFIX:
+        for step in self._trie.prefixes(parts):
+            if step.value == DomainType.DOMAIN_SUFFIX:
                 return
         self._trie[parts] = domain_type
         if domain_type != DomainType.DOMAIN_SUFFIX:
