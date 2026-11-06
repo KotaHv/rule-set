@@ -1,7 +1,7 @@
-from pathlib import Path
+from pydantic import HttpUrl
 
 from ..cache import Cache
-from ..errors import UnknownResourceTypeError
+from ..errors import ResourceError, UnknownResourceTypeError
 from ..fetcher import fetcher
 from ..models import (
     ContentResource,
@@ -53,14 +53,25 @@ class ResourceProcessor:
             return RuleModel.model_validate_json(cached_result)
 
         if isinstance(resource, MaxMindDBResource):
-            resource_data = fetcher.download_file(resource.source)
+            if not isinstance(resource.source, HttpUrl):
+                raise ResourceError(
+                    f"MaxMindDB resource requires an HTTP URL: {resource.source}"
+                )
+            parsed_rules = mmdb.parse(
+                fetcher.download_file(resource.source),
+                country_code=source_option.geo_ip.country_code,
+            )
+        elif isinstance(resource, V2rayDomainResource):
+            parsed_rules = v2ray_domain.parse(
+                fetcher.get_content(resource.source), resource.option
+            )
+        elif isinstance(resource, RuleSetResource):
+            parsed_rules = RuleSetParser(fetcher.get_content(resource.source)).parse()
+        elif isinstance(resource, DomainSetResource):
+            parsed_rules = DomainSetParser(fetcher.get_content(resource.source)).parse()
         else:
-            resource_data = fetcher.get_content(resource.source)
+            raise UnknownResourceTypeError(resource)
 
-        if isinstance(resource, V2rayDomainResource):
-            parsed_rules = self._parse_data(resource_data, resource, resource.option)
-        else:
-            parsed_rules = self._parse_data(resource_data, resource, source_option)
         self.cache.store(cache_key, parsed_rules.model_dump_json())
         return parsed_rules
 
@@ -72,25 +83,13 @@ class ResourceProcessor:
         return cache_key
 
     @staticmethod
-    def _parse_data(
-        resource_data: str | list | Path,
-        resource: ContentResource,
-        option: Option | V2rayDomainOption,
-    ) -> RuleModel | V2rayDomainResult:
-        if isinstance(resource, RuleSetResource):
-            return RuleSetParser(resource_data).parse()
-        if isinstance(resource, DomainSetResource):
-            return DomainSetParser(resource_data).parse()
-        if isinstance(resource, MaxMindDBResource):
-            return mmdb.parse(resource_data, country_code=option.geo_ip.country_code)
-        if isinstance(resource, V2rayDomainResource):
-            return v2ray_domain.parse(resource_data, option)
-        raise UnknownResourceTypeError(resource)
-
-    @staticmethod
     def _build_v2ray_include_resources(
         resource: V2rayDomainResource, result: V2rayDomainResult
     ) -> list[V2rayDomainResource]:
+        if not isinstance(resource.source, HttpUrl):
+            raise ResourceError(
+                f"Cannot resolve includes for non-HTTP source: {resource.source}"
+            )
         return [
             V2rayDomainResource(
                 source=build_v2ray_include_url(resource.source, include.name),
