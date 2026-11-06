@@ -4,6 +4,7 @@ import json
 import pytest
 import yaml
 
+from rule_set.errors import SerializerError
 from rule_set.models import (
     ArtifactKind,
     GeoIPOption,
@@ -265,3 +266,10 @@ def test_geo_ip_serializer_encodes_country_and_network_prefixes():
         entry.cidr[1].ip == ipaddress.ip_network("2001:db8::/32").network_address.packed
     )
     assert entry.cidr[1].prefix == 32
+
+
+def test_geo_ip_serializer_requires_country_code():
+    rules = SerializableRuleModel(ip_cidr=["1.1.1.0/24"])
+
+    with pytest.raises(SerializerError, match="country code"):
+        GeoIPSerializer(rules=rules, option=Option()).serialize()

@@ -1,3 +1,9 @@
+// Regenerate from the repository root with protoc 36.2:
+//   protoc --python_out=src/rule_set/serializers/v2ray_geo_ip \
+//     --pyi_out=src/rule_set/serializers/v2ray_geo_ip \
+//     --proto_path=src/rule_set/serializers/v2ray_geo_ip \
+//     src/rule_set/serializers/v2ray_geo_ip/geo_ip.proto
+
 syntax = "proto3";
 // IP for routing decision, in CIDR form.
 message CIDR {
