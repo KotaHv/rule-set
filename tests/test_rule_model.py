@@ -1,10 +1,38 @@
 import pytest
 
 from rule_set.models import DomainType, Option, ProcessingOption, RuleModel
+from rule_set.models.logical import (
+    ConcreteRule,
+    Logical,
+    LogicalOperator,
+    LogicalTree,
+    Rule,
+    RuleType,
+)
 
 DOMAIN = DomainType.DOMAIN
 SUFFIX = DomainType.DOMAIN_SUFFIX
 WILDCARD = DomainType.DOMAIN_WILDCARD
+
+
+def _and(*values: str) -> LogicalTree:
+    return LogicalTree(
+        root=Logical(
+            op=LogicalOperator.AND,
+            children=tuple(
+                Rule(rule=ConcreteRule(rule_type=RuleType.DOMAIN, rule_values=(value,)))
+                for value in values
+            ),
+        )
+    )
+
+
+def _domain_values(tree: LogicalTree) -> tuple[str, ...]:
+    return tuple(
+        child.rule.rule_values[0]
+        for child in tree.root.children
+        if isinstance(child, Rule)
+    )
 
 
 def test_domain_regex_removes_covered_domains_only():
@@ -152,6 +180,18 @@ def test_serialization_orders_rule_fields():
     assert serializable.process == ["a", "z"]
     assert serializable.user_agent == ["a", "b"]
     assert serializable.url_regex == ["a", "b"]
+
+
+def test_serialization_orders_logical_rules_without_canonicalizing_children():
+    b = _and("b", "d")
+    c = _and("c", "a")
+
+    serializable = RuleModel(logical={c, b}).to_serializable_rule_model()
+
+    assert [_domain_values(tree) for tree in serializable.logical] == [
+        ("b", "d"),
+        ("c", "a"),
+    ]
 
 
 def test_to_serializable_rule_model_maps_all_rule_kinds():

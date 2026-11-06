@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 
 from .aho import Aho
 from .enum import DomainType
-from .logical import LogicalTree
+from .logical import LogicalTree, output_sort_key
 from .option import Option
 from .trie import DomainTrie, IPTrie, IPTrie6
 
@@ -131,7 +131,9 @@ class RuleModel(BaseModel):
         serializable_rule.ip_cidr.extend(self.ip_trie.iteritems())
         serializable_rule.ip_cidr6.extend(self.ip_trie6.iteritems())
         serializable_rule.ip_asn.extend(sorted(self.ip_asn, key=int))
-        serializable_rule.logical.extend(sorted(self.logical))
+        serializable_rule.logical.extend(
+            sorted(self.logical, key=lambda tree: output_sort_key(tree.root))
+        )
         serializable_rule.process.extend(sorted(self.process))
         serializable_rule.user_agent.extend(sorted(self.user_agent))
         serializable_rule.url_regex.extend(sorted(self.url_regex))

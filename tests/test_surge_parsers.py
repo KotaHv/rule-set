@@ -1,7 +1,7 @@
 import pytest
 
 from rule_set.models import DomainType
-from rule_set.models.logical import AndNode, RuleNode
+from rule_set.models.logical import LogicalOperator, Rule
 from rule_set.parsers.surge import DomainSetParser, RuleSetParser
 
 
@@ -73,8 +73,8 @@ def test_rule_set_parser_parses_logical_rules():
     ).parse()
 
     tree = next(iter(result.logical))
-    assert isinstance(tree.root, AndNode)
-    assert all(isinstance(child, RuleNode) for child in tree.root.children)
+    assert tree.root.op is LogicalOperator.AND
+    assert all(isinstance(child, Rule) for child in tree.root.children)
     assert [child.rule.rule_values for child in tree.root.children] == [
         ("example.com",),
         ("ads",),

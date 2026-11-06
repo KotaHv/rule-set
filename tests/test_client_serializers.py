@@ -6,10 +6,11 @@ import yaml
 
 from rule_set.models import ArtifactKind, Option, SerializableRuleModel
 from rule_set.models.logical import (
-    AndNode,
     ConcreteRule,
+    Logical,
+    LogicalOperator,
     LogicalTree,
-    RuleNode,
+    Rule,
     RuleType,
 )
 from rule_set.serializers.clients.clash import ClashSerializer
@@ -22,21 +23,22 @@ from rule_set.serializers.v2ray_geo_ip import geo_ip_pb2
 
 def _logical_tree() -> LogicalTree:
     return LogicalTree(
-        root=AndNode(
+        root=Logical(
+            op=LogicalOperator.AND,
             children=(
-                RuleNode(
+                Rule(
                     rule=ConcreteRule(
                         rule_type=RuleType.DOMAIN_SUFFIX,
                         rule_values=("example.com",),
                     )
                 ),
-                RuleNode(
+                Rule(
                     rule=ConcreteRule(
                         rule_type=RuleType.DOMAIN_KEYWORD,
                         rule_values=("ads",),
                     )
                 ),
-            )
+            ),
         )
     )
 

@@ -2,12 +2,11 @@ from loguru import logger
 
 from rule_set.errors import SerializerError, UnsupportedRuleTypeError
 from rule_set.models.logical import (
-    AndNode,
-    LogicalNodeUnion,
+    Logical,
+    LogicalOperator,
     LogicalTree,
-    NotNode,
-    OrNode,
-    RuleNode,
+    Node,
+    Rule,
 )
 
 from .surge import serialize as surge_serialize
@@ -47,31 +46,27 @@ include_rule_types = [
 type_format = {"PROTOCOL": "NETWORK", "DEST-PORT": "DST-PORT"}
 
 
-def _serialize_logical(*, node: LogicalNodeUnion) -> str:
+def _serialize_logical(*, node: Node) -> str:
     """Serialize logical node to string."""
-    if isinstance(node, RuleNode):
-        rule_type = type_format.get(node.rule.rule_type, node.rule.rule_type)
-        if rule_type in include_rule_types:
-            if rule_type == "NETWORK" and node.rule.rule_values[0].upper() not in [
-                "UDP",
-                "TCP",
-            ]:
-                raise UnsupportedRuleTypeError(node.rule.rule_type)
-            return f"({rule_type},{','.join(node.rule.rule_values)}),"
-        raise UnsupportedRuleTypeError(node.rule.rule_type)
+    match node:
+        case Rule(rule=rule):
+            rule_type = type_format.get(rule.rule_type, rule.rule_type)
+            if rule_type in include_rule_types:
+                if rule_type == "NETWORK" and rule.rule_values[0].upper() not in [
+                    "UDP",
+                    "TCP",
+                ]:
+                    raise UnsupportedRuleTypeError(rule.rule_type)
+                return f"({rule_type},{','.join(rule.rule_values)}),"
+            raise UnsupportedRuleTypeError(rule.rule_type)
 
-    if isinstance(node, NotNode):
-        rule = f"({node.operator},("
-        rule += _serialize_logical(node=node.child)
-        rule = rule.rstrip(",") + ")),"
-        return rule
+        case Logical(op=LogicalOperator.NOT, children=(child,)):
+            inner = _serialize_logical(node=child)
+            return f"({node.op},({inner.rstrip(',')})),"
 
-    elif isinstance(node, AndNode | OrNode):
-        rule = f"({node.operator},("
-        for child in node.get_children():
-            rule += _serialize_logical(node=child)
-        rule = rule.rstrip(",") + ")),"
-        return rule
+        case Logical(op=op, children=children):
+            inner = "".join(_serialize_logical(node=child) for child in children)
+            return f"({op},({inner.rstrip(',')})),"
 
 
 def serialize(*, tree: LogicalTree) -> str | None:

@@ -2,13 +2,16 @@ from loguru import logger
 
 from rule_set.errors import SerializerError, UnsupportedRuleTypeError
 from rule_set.models.logical import (
-    LogicalNodeUnion,
+    Logical,
+    LogicalOperator,
     LogicalTree,
-    NotNode,
-    RuleNode,
+    Node,
+    Rule,
 )
 
 from .surge import serialize as surge_serialize
+
+type SingBoxRule = dict[str, str | bool | int | list[SingBoxRule]]
 
 type_format = {
     "domain-suffix": "domain_suffix",
@@ -59,44 +62,31 @@ protocol_types = [
 protocol_types_format = {"https": "tls"}
 
 
-def _serialize_logical(
-    *, node: LogicalNodeUnion
-) -> dict[str, list[dict[str, str]] | str]:
+def _serialize_logical(*, node: Node, invert: bool | None = None) -> SingBoxRule:
     """Serialize logical node to string."""
-    if isinstance(node, RuleNode):
-        return format_rule(node.rule.rule_type, node.rule.rule_values[0])
-    if isinstance(node, NotNode):
-        return _serialize_not_logical(node=node)
+    match node:
+        case Rule(rule=rule):
+            entry = format_rule(rule.rule_type, rule.rule_values[0])
+            if invert is not None:
+                entry["invert"] = invert
+            return entry
 
-    else:
-        rule = {"type": "logical", "rules": [], "mode": node.operator.lower()}
-        for child_node in node.get_children():
-            rule["rules"].append(_serialize_logical(node=child_node))
-        return rule
+        case Logical(op=LogicalOperator.NOT, children=(child,)):
+            next_invert = True if invert is None else not invert
+            return _serialize_logical(node=child, invert=next_invert)
 
-
-def _serialize_not_logical(
-    *, node: LogicalNodeUnion, invert: bool = True
-) -> dict[str, list[dict[str, str]] | str]:
-    child_node = node.child
-    if isinstance(child_node, RuleNode):
-        rule = format_rule(child_node.rule.rule_type, child_node.rule.rule_values[0])
-        rule["invert"] = invert
-        return rule
-    if isinstance(child_node, NotNode):
-        return _serialize_not_logical(node=child_node, invert=not invert)
-    rule = {
-        "type": "logical",
-        "rules": [],
-        "mode": child_node.operator.lower(),
-        "invert": invert,
-    }
-    for child in child_node.get_children():
-        rule["rules"].append(_serialize_logical(node=child))
-    return rule
+        case Logical(op=op, children=children):
+            result: SingBoxRule = {
+                "type": "logical",
+                "rules": [_serialize_logical(node=child) for child in children],
+                "mode": op.lower(),
+            }
+            if invert is not None:
+                result["invert"] = invert
+            return result
 
 
-def serialize(*, tree: LogicalTree) -> dict | None:
+def serialize(*, tree: LogicalTree) -> SingBoxRule | None:
     try:
         return _serialize_logical(node=tree.root)
     except UnsupportedRuleTypeError as e:
@@ -105,7 +95,7 @@ def serialize(*, tree: LogicalTree) -> dict | None:
         logger.error(e)
 
 
-def format_rule(rule_type: str, rule: str) -> dict[str, str]:
+def format_rule(rule_type: str, rule: str) -> SingBoxRule:
     rule_type = rule_type.lower()
     rule_type = type_format.get(rule_type, rule_type)
     if rule_type in include_types:

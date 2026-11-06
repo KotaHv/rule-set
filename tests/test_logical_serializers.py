@@ -1,12 +1,12 @@
 import yaml
 
 from rule_set.models.logical import (
-    AndNode,
     ConcreteRule,
+    Logical,
+    LogicalOperator,
     LogicalTree,
-    NotNode,
-    OrNode,
-    RuleNode,
+    Node,
+    Rule,
     RuleType,
 )
 from rule_set.models.option import Option
@@ -17,22 +17,27 @@ from rule_set.serializers.logic.sing_box import serialize as serialize_sing_box
 from rule_set.serializers.logic.surge import serialize as serialize_surge
 
 
-def _rule_node(rule_type: RuleType, *values: str) -> RuleNode:
-    return RuleNode(rule=ConcreteRule(rule_type=rule_type, rule_values=values))
+def _rule(rule_type: RuleType, *values: str) -> Rule:
+    return Rule(rule=ConcreteRule(rule_type=rule_type, rule_values=values))
+
+
+def _logical(op: LogicalOperator, *children: Node) -> Logical:
+    return Logical(op=op, children=children)
 
 
 def test_surge_serializes_nested_logical_rules():
     tree = LogicalTree(
-        root=AndNode(
-            children=(
-                _rule_node(RuleType.DOMAIN_SUFFIX, "example.com"),
-                OrNode(
-                    children=(
-                        _rule_node(RuleType.IP_CIDR, "192.0.2.0/24", "no-resolve"),
-                        NotNode(child=_rule_node(RuleType.DOMAIN_KEYWORD, "ads")),
-                    )
+        root=_logical(
+            LogicalOperator.AND,
+            _rule(RuleType.DOMAIN_SUFFIX, "example.com"),
+            _logical(
+                LogicalOperator.OR,
+                _rule(RuleType.IP_CIDR, "192.0.2.0/24", "no-resolve"),
+                _logical(
+                    LogicalOperator.NOT,
+                    _rule(RuleType.DOMAIN_KEYWORD, "ads"),
                 ),
-            )
+            ),
         )
     )
 
@@ -45,11 +50,10 @@ def test_surge_serializes_nested_logical_rules():
 
 def test_clash_maps_logical_rule_aliases():
     tree = LogicalTree(
-        root=OrNode(
-            children=(
-                _rule_node(RuleType.PROTOCOL, "udp"),
-                _rule_node(RuleType.DEST_PORT, "443"),
-            )
+        root=_logical(
+            LogicalOperator.OR,
+            _rule(RuleType.PROTOCOL, "udp"),
+            _rule(RuleType.DEST_PORT, "443"),
         )
     )
 
@@ -78,19 +82,20 @@ def _serialize_egern_rules(logical: list[LogicalTree]) -> dict:
 def test_egern_serializes_and_rule_sets_as_condition_groups():
     logical = [
         LogicalTree(
-            root=AndNode(
-                children=(
-                    _rule_node(RuleType.IP_CIDR, "192.0.2.0/24", "no-resolve"),
-                    _rule_node(RuleType.DOMAIN_SUFFIX, "googlevideo.com"),
-                )
+            root=_logical(
+                LogicalOperator.AND,
+                _rule(RuleType.IP_CIDR, "192.0.2.0/24", "no-resolve"),
+                _rule(RuleType.DOMAIN_SUFFIX, "googlevideo.com"),
             )
         ),
         LogicalTree(
-            root=AndNode(
-                children=(
-                    _rule_node(RuleType.IP_CIDR, "192.0.2.0/24", "no-resolve"),
-                    NotNode(child=_rule_node(RuleType.DOMAIN_SUFFIX, "example.com")),
-                )
+            root=_logical(
+                LogicalOperator.AND,
+                _rule(RuleType.IP_CIDR, "192.0.2.0/24", "no-resolve"),
+                _logical(
+                    LogicalOperator.NOT,
+                    _rule(RuleType.DOMAIN_SUFFIX, "example.com"),
+                ),
             )
         ),
     ]
@@ -112,27 +117,47 @@ def test_egern_serializes_and_rule_sets_as_condition_groups():
 
 def test_egern_serializes_multiple_standalone_not_rules():
     logical = [
-        LogicalTree(root=NotNode(child=_rule_node(RuleType.PROTOCOL, "UDP"))),
         LogicalTree(
-            root=NotNode(child=_rule_node(RuleType.DOMAIN_WILDCARD, "p2p*.qq.com"))
-        ),
-        LogicalTree(
-            root=NotNode(child=_rule_node(RuleType.DOMAIN_SUFFIX, "example.com"))
-        ),
-        LogicalTree(root=NotNode(child=_rule_node(RuleType.DOMAIN_KEYWORD, "ads"))),
-        LogicalTree(
-            root=NotNode(
-                child=AndNode(
-                    children=(
-                        _rule_node(RuleType.DOMAIN_SUFFIX, "example.com"),
-                        _rule_node(RuleType.DOMAIN_KEYWORD, "ads"),
-                    )
-                )
+            root=_logical(
+                LogicalOperator.NOT,
+                _rule(RuleType.PROTOCOL, "UDP"),
             )
         ),
         LogicalTree(
-            root=NotNode(
-                child=NotNode(child=_rule_node(RuleType.DOMAIN_SUFFIX, "example.com"))
+            root=_logical(
+                LogicalOperator.NOT,
+                _rule(RuleType.DOMAIN_WILDCARD, "p2p*.qq.com"),
+            )
+        ),
+        LogicalTree(
+            root=_logical(
+                LogicalOperator.NOT,
+                _rule(RuleType.DOMAIN_SUFFIX, "example.com"),
+            )
+        ),
+        LogicalTree(
+            root=_logical(
+                LogicalOperator.NOT,
+                _rule(RuleType.DOMAIN_KEYWORD, "ads"),
+            )
+        ),
+        LogicalTree(
+            root=_logical(
+                LogicalOperator.NOT,
+                _logical(
+                    LogicalOperator.AND,
+                    _rule(RuleType.DOMAIN_SUFFIX, "example.com"),
+                    _rule(RuleType.DOMAIN_KEYWORD, "ads"),
+                ),
+            )
+        ),
+        LogicalTree(
+            root=_logical(
+                LogicalOperator.NOT,
+                _logical(
+                    LogicalOperator.NOT,
+                    _rule(RuleType.DOMAIN_SUFFIX, "example.com"),
+                ),
             )
         ),
     ]
@@ -159,13 +184,13 @@ def test_egern_serializes_multiple_standalone_not_rules():
 
 def test_sing_box_serializes_negated_logical_group():
     tree = LogicalTree(
-        root=NotNode(
-            child=AndNode(
-                children=(
-                    _rule_node(RuleType.DOMAIN_SUFFIX, "example.com"),
-                    _rule_node(RuleType.DOMAIN_KEYWORD, "ads"),
-                )
-            )
+        root=_logical(
+            LogicalOperator.NOT,
+            _logical(
+                LogicalOperator.AND,
+                _rule(RuleType.DOMAIN_SUFFIX, "example.com"),
+                _rule(RuleType.DOMAIN_KEYWORD, "ads"),
+            ),
         )
     )
 
@@ -182,8 +207,12 @@ def test_sing_box_serializes_negated_logical_group():
 
 def test_sing_box_double_negation_restores_rule():
     tree = LogicalTree(
-        root=NotNode(
-            child=NotNode(child=_rule_node(RuleType.DOMAIN_SUFFIX, "example.com"))
+        root=_logical(
+            LogicalOperator.NOT,
+            _logical(
+                LogicalOperator.NOT,
+                _rule(RuleType.DOMAIN_SUFFIX, "example.com"),
+            ),
         )
     )
 
