@@ -8,8 +8,8 @@ from rule_set.config import settings
 from rule_set.errors import SerializerError
 from rule_set.file_writers.sing_box import SingBoxFileWriter
 from rule_set.metadata import MetadataStore
+from rule_set.serializers.encoding.binary import ByteWriter
 from rule_set.serializers.srs import encode_rule_set
-from rule_set.serializers.srs.binary import ByteWriter
 
 FIXTURES = Path(__file__).parent / "fixtures" / "srs"
 

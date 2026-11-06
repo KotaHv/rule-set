@@ -31,27 +31,15 @@ class ByteWriter:
             raise SerializerError(f"uint32 out of range: {value}")
         self._data.extend(value.to_bytes(4, "big"))
 
+    def write_int64_be(self, value: int) -> None:
+        if not -(1 << 63) <= value < (1 << 63):
+            raise SerializerError(f"int64 out of range: {value}")
+        self._data.extend(value.to_bytes(8, "big", signed=True))
+
     def write_uint64_be(self, value: int) -> None:
         if not 0 <= value <= 0xFFFFFFFFFFFFFFFF:
             raise SerializerError(f"uint64 out of range: {value}")
         self._data.extend(value.to_bytes(8, "big"))
-
-    def write_string_list(self, value: list[str]) -> None:
-        self.write_uvarint(len(value))
-        for item in value:
-            encoded = item.encode("utf-8")
-            self.write_uvarint(len(encoded))
-            self.write_bytes(encoded)
-
-    def write_uint16_list(self, value: list[int]) -> None:
-        self.write_uvarint(len(value))
-        for item in value:
-            self.write_uint16_be(item)
-
-    def write_uint8_list(self, value: list[int]) -> None:
-        self.write_uvarint(len(value))
-        for item in value:
-            self.write_byte(item)
 
     def to_bytes(self) -> bytes:
         return bytes(self._data)

@@ -1,4 +1,4 @@
-from collections.abc import Callable, Sequence
+from collections.abc import Callable
 from enum import IntEnum
 from typing import Annotated, ClassVar, Literal
 
@@ -6,7 +6,7 @@ from pydantic import BaseModel, BeforeValidator, ConfigDict, Field
 
 from rule_set.errors import SerializerError
 
-from .binary import ByteWriter
+from ..encoding.binary import ByteWriter
 from .domain import build_domain_matcher
 from .ip import build_ip_set
 
@@ -122,26 +122,46 @@ class RuleSetSource(BaseModel):
     rules: list[DefaultRuleSource | LogicalRuleSource] = []
 
 
+def _write_string_list(writer: ByteWriter, values: list[str]) -> None:
+    writer.write_uvarint(len(values))
+    for value in values:
+        encoded = value.encode("utf-8")
+        writer.write_uvarint(len(encoded))
+        writer.write_bytes(encoded)
+
+
+def _write_uint16_list(writer: ByteWriter, values: list[int]) -> None:
+    writer.write_uvarint(len(values))
+    for value in values:
+        writer.write_uint16_be(value)
+
+
+def _write_uint8_list(writer: ByteWriter, values: list[int]) -> None:
+    writer.write_uvarint(len(values))
+    for value in values:
+        writer.write_byte(value)
+
+
 def _write_string_item(
-    writer: ByteWriter, item_type: _RuleItem, values: Sequence[str]
+    writer: ByteWriter, item_type: _RuleItem, values: list[str]
 ) -> None:
     writer.write_byte(item_type)
-    writer.write_string_list(list(values))
+    _write_string_list(writer, values)
 
 
 def _write_optional_string_item(
-    writer: ByteWriter, item_type: _RuleItem, values: Sequence[str]
+    writer: ByteWriter, item_type: _RuleItem, values: list[str]
 ) -> None:
     if values:
         _write_string_item(writer, item_type, values)
 
 
 def _write_optional_uint16_item(
-    writer: ByteWriter, item_type: _RuleItem, values: Sequence[int]
+    writer: ByteWriter, item_type: _RuleItem, values: list[int]
 ) -> None:
     if values:
         writer.write_byte(item_type)
-        writer.write_uint16_list(list(values))
+        _write_uint16_list(writer, values)
 
 
 def _interface_type(value: _InterfaceType) -> int:
@@ -207,7 +227,9 @@ def _write_default_rule(
                 "network_type is only supported in rule-set version 3 or later"
             )
         writer.write_byte(_RuleItem.NETWORK_TYPE)
-        writer.write_uint8_list([_interface_type(value) for value in rule.network_type])
+        _write_uint8_list(
+            writer, [_interface_type(value) for value in rule.network_type]
+        )
 
     if rule.network_is_expensive:
         if version < 3:
@@ -261,7 +283,7 @@ def encode_payload(rule_set: RuleSetSource, version: int) -> bytes:
 
 
 def _has_default_rule(
-    rules: Sequence[DefaultRuleSource | LogicalRuleSource],
+    rules: list[DefaultRuleSource | LogicalRuleSource],
     predicate: Callable[[DefaultRuleSource], bool],
 ) -> bool:
     for rule in rules:

@@ -1,10 +1,9 @@
 import ipaddress
-from collections.abc import Sequence
 from dataclasses import dataclass
 
 from rule_set.errors import SerializerError
 
-from .binary import ByteWriter
+from ..encoding.binary import ByteWriter
 
 
 @dataclass(frozen=True, slots=True)
@@ -42,7 +41,7 @@ def _prefix_range(value: str) -> tuple[int, _IPRange]:
     )
 
 
-def build_ip_set(values: Sequence[str]) -> bytes:
+def build_ip_set(values: list[str]) -> bytes:
     ranges4: list[_IPRange] = []
     ranges6: list[_IPRange] = []
 

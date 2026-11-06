@@ -1,6 +1,6 @@
 import zlib
 
-from .binary import ByteWriter
+from ..encoding.binary import ByteWriter
 from .rules import RuleSetSource, encode_payload, output_version
 
 
