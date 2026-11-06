@@ -1,0 +1,8 @@
+payload:
+  - İ.example
+  - ΟΣ.example
+  # Σ at the end must stay U+03C3; str.lower() would use final sigma U+03C2.
+  - test.ΟΣ
+  - BÜCHER.example
+  - 例子.COM
+  - İSTANBUL.example
