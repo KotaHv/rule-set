@@ -9,7 +9,7 @@ def validate_domain(domain: str) -> bool:
     """Validate domain format."""
     if "." not in domain:
         return True
-    return validators.domain(domain, rfc_2782=True)
+    return validators.domain(domain, rfc_2782=True) is True
 
 
 def is_eTLD(domain: str) -> bool:
