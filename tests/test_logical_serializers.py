@@ -9,7 +9,7 @@ from rule_set.models.logical import (
     Rule,
     RuleType,
 )
-from rule_set.models.option import Option
+from rule_set.models.option import Option, SerializationOption
 from rule_set.models.rule import SerializableRuleModel
 from rule_set.serializers.clients.egern import EgernSerializer
 from rule_set.serializers.logic.clash import serialize as serialize_clash
@@ -74,7 +74,7 @@ EgernTestLoader.add_multi_constructor("!", _construct_tagged_mapping)
 def _serialize_egern_rules(logical: list[LogicalTree]) -> dict:
     serializer = EgernSerializer(
         rules=SerializableRuleModel(logical=logical),
-        option=Option(serialization={"no_resolve": False}),
+        option=Option(serialization=SerializationOption(no_resolve=False)),
     )
     return yaml.load(serializer.serialize()[0].data, Loader=EgernTestLoader)
 

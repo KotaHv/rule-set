@@ -4,7 +4,13 @@ import json
 import pytest
 import yaml
 
-from rule_set.models import ArtifactKind, Option, SerializableRuleModel
+from rule_set.models import (
+    ArtifactKind,
+    GeoIPOption,
+    Option,
+    SerializableRuleModel,
+    SerializationOption,
+)
 from rule_set.models.logical import (
     ConcreteRule,
     Logical,
@@ -89,7 +95,7 @@ def test_clash_splits_rules_into_domain_ipcidr_and_classical_artifacts():
 
     geo_ip_artifacts = ClashSerializer(
         rules=rules,
-        option=Option(geo_ip={"country_code": "CN"}),
+        option=Option(geo_ip=GeoIPOption(country_code="CN")),
     ).serialize()
     assert [artifact.kind for artifact in geo_ip_artifacts] == [ArtifactKind.IPCIDR]
 
@@ -109,7 +115,7 @@ def test_clash_honors_no_resolve_for_asn(no_resolve, expected_asn):
 
     artifacts = ClashSerializer(
         rules=rules,
-        option=Option(serialization={"no_resolve": no_resolve}),
+        option=Option(serialization=SerializationOption(no_resolve=no_resolve)),
     ).serialize()
     classical = next(
         artifact for artifact in artifacts if artifact.kind == ArtifactKind.CLASSICAL
@@ -158,7 +164,7 @@ def test_surge_honors_no_resolve_for_ip_and_asn(no_resolve, suffix):
     data = (
         SurgeSerializer(
             rules=rules,
-            option=Option(serialization={"no_resolve": no_resolve}),
+            option=Option(serialization=SerializationOption(no_resolve=no_resolve)),
         )
         .serialize()[0]
         .data
@@ -240,7 +246,7 @@ def test_geo_ip_serializer_encodes_country_and_network_prefixes():
     data = (
         GeoIPSerializer(
             rules=rules,
-            option=Option(geo_ip={"country_code": "CN"}),
+            option=Option(geo_ip=GeoIPOption(country_code="CN")),
         )
         .serialize()[0]
         .data
