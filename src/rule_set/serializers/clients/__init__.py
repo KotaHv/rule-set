@@ -17,11 +17,11 @@ client_serializers: dict[SerializeFormat, type[BaseSerializer]] = {
 }
 
 __all__ = [
-    SurgeSerializer,
-    LoonSerializer,
-    ClashSerializer,
-    EgernSerializer,
-    SingBoxSerializer,
-    GeoIPSerializer,
-    client_serializers,
+    "SurgeSerializer",
+    "LoonSerializer",
+    "ClashSerializer",
+    "EgernSerializer",
+    "SingBoxSerializer",
+    "GeoIPSerializer",
+    "client_serializers",
 ]

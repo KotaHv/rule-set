@@ -23,13 +23,13 @@ writer_registry: dict[tuple[SerializeFormat, ArtifactKind], type[BaseFileWriter]
 }
 
 __all__ = [
-    SurgeFileWriter,
-    LoonFileWriter,
-    ClashDomainFileWriter,
-    ClashIpcidrFileWriter,
-    ClashClassicalFileWriter,
-    EgernFileWriter,
-    SingBoxFileWriter,
-    GeoIPFileWriter,
-    writer_registry,
+    "SurgeFileWriter",
+    "LoonFileWriter",
+    "ClashDomainFileWriter",
+    "ClashIpcidrFileWriter",
+    "ClashClassicalFileWriter",
+    "EgernFileWriter",
+    "SingBoxFileWriter",
+    "GeoIPFileWriter",
+    "writer_registry",
 ]
