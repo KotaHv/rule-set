@@ -57,10 +57,6 @@ jobs:
           key: rule-set-metadata-${{ github.run_id }}
           restore-keys: |
             rule-set-metadata-
-      - name: Install sing-box
-        run: |
-          set -e -o pipefail
-          bash <(curl -fsSL https://sing-box.app/install.sh)
       - name: Install mihomo
         run: |
           set -e -o pipefail
