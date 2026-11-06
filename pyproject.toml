@@ -69,5 +69,8 @@ dev = [
     "ruff>=0.17.3",
 ]
 
+[tool.basedpyright]
+typeCheckingMode = "standard"
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
