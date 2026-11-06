@@ -21,10 +21,15 @@ def _represent_tagged_mapping(dumper: EgernDumper, value: TaggedMapping):
 
 EgernDumper.add_representer(TaggedMapping, _represent_tagged_mapping)
 
+type LogicalSetValue = TaggedMapping | list[TaggedMapping]
+type EgernYamlValue = bool | list[str] | list[LogicalSetValue]
+
 
 class EgernSerializer(BaseSerializer):
     def serialize(self) -> list[Artifact]:
-        yaml_data = {"no_resolve": self.option.serialization.no_resolve}
+        yaml_data: dict[str, EgernYamlValue] = {
+            "no_resolve": self.option.serialization.no_resolve
+        }
         if self.rules.domain:
             yaml_data["domain_set"] = self.rules.domain
         if self.rules.domain_suffix:
@@ -42,7 +47,7 @@ class EgernSerializer(BaseSerializer):
         if self.rules.ip_asn:
             yaml_data["asn_set"] = self.rules.ip_asn
         if self.rules.logical:
-            logical_sets: dict[str, list] = {}
+            logical_sets: dict[str, list[LogicalSetValue]] = {}
             for rule in self.rules.logical:
                 if result := logical_serialize(tree=rule):
                     logical_set, item = result
