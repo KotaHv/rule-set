@@ -47,7 +47,7 @@ class ResourceProcessor:
         self, resource: ContentResource, source_option: Option
     ) -> RuleModel | V2rayDomainResult:
         cache_key = self._cache_key(resource)
-        if cached_result := self.cache.retrieve(cache_key):
+        if (cached_result := self.cache.retrieve_text(cache_key)) is not None:
             if isinstance(resource, V2rayDomainResource):
                 return V2rayDomainResult.model_validate_json(cached_result)
             return RuleModel.model_validate_json(cached_result)

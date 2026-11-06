@@ -1,3 +1,4 @@
+import json
 from collections.abc import Iterable
 
 import ahocorasick
@@ -10,7 +11,7 @@ AHO_CACHE: dict[str, ahocorasick.Automaton] = {}
 class Aho:
     def __init__(self, keywords: Iterable[str]):
         keywords = sorted(set(keywords))
-        cache_key = generate_cache_key(keywords)
+        cache_key = generate_cache_key(json.dumps(keywords))
         self.aho = AHO_CACHE.get(cache_key)
         if self.aho is None:
             self.aho = ahocorasick.Automaton()

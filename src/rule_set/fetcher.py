@@ -49,21 +49,29 @@ class Fetcher:
             with path.open() as file:
                 return file.read()
         url = path.unicode_string()
-        if cached_content := self.cache.retrieve(url):
+        if (cached_content := self.cache.retrieve_text(url)) is not None:
             return cached_content
         response = self._fetch(url)
         content = response.text
+        if not content:
+            logger.warning(f"Empty response from: {url}")
+            return content
         self.cache.store(url, content)
         return content
 
     def download_file(self, url: HttpUrl) -> Path:
         logger.info(f"Downloading file from: {url}")
-        url = url.unicode_string()
-        filepath = self.cache.get_file_path(url)
-        if filepath.exists():
-            return filepath
-        response = self._fetch(url)
-        filepath = self.cache.store(url, response.content)
+        url_str = url.unicode_string()
+        cached_path = self.cache.retrieve_path(url_str)
+        if cached_path is not None:
+            return cached_path
+        response = self._fetch(url_str)
+        content = response.content
+        if not content:
+            raise FetchError(f"Empty response from: {url_str}")
+        filepath = self.cache.store(url_str, content)
+        if filepath is None:
+            raise FetchError(f"Failed to cache downloaded file: {url_str}")
         return filepath
 
 

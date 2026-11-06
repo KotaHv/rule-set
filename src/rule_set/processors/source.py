@@ -1,5 +1,5 @@
 from ..cache import Cache
-from ..errors import UnknownResourceTypeError
+from ..errors import ResourceError, UnknownResourceTypeError
 from ..file_writers import writer_registry
 from ..metadata import MetadataStore
 from ..models import (
@@ -41,7 +41,9 @@ class SourceProcessor:
                 ).write()
 
     def _get_rules(self, source: SourceModel) -> RuleModel:
-        if cached_result := self.cache.retrieve(source.name):
+        if (
+            cached_result := self.cache.retrieve_text(source.name.as_posix())
+        ) is not None:
             return RuleModel.model_validate_json(cached_result, strict=True)
         return self._process_rules(source)
 
@@ -50,8 +52,13 @@ class SourceProcessor:
 
         for resource in source.resources:
             if isinstance(resource, SourceReference):
+                cached_result = self.cache.retrieve_text(resource.target)
+                if cached_result is None:
+                    raise ResourceError(
+                        f"Missing cached rules for referenced source '{resource.target}'"
+                    )
                 aggregated_rules.merge_with(
-                    RuleModel.model_validate_json(self.cache.retrieve(resource.target))
+                    RuleModel.model_validate_json(cached_result)
                 )
             elif isinstance(resource, ContentResource):
                 aggregated_rules.merge_with(
@@ -60,7 +67,7 @@ class SourceProcessor:
             else:
                 raise UnknownResourceTypeError(resource)
         aggregated_rules.filter(source.option)
-        self.cache.store(source.name, aggregated_rules.model_dump_json())
+        self.cache.store(source.name.as_posix(), aggregated_rules.model_dump_json())
         return aggregated_rules
 
     @staticmethod
