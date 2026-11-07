@@ -113,6 +113,16 @@ def test_merge_with_merges_rule_collections():
     assert rules.url_regex == {"first-url", "second-url"}
 
 
+def test_merge_all_combines_models_and_handles_empty():
+    first = RuleModel(domain_regex={r"^a\."})
+    second = RuleModel(domain_regex={r"^b\."})
+
+    merged = RuleModel.merge_all([first, second])
+
+    assert merged.domain_regex == {r"^a\.", r"^b\."}
+    assert RuleModel.merge_all([]).domain_regex == set()
+
+
 def _populated_rules() -> RuleModel:
     rules = RuleModel.model_validate(
         {

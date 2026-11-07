@@ -1,3 +1,5 @@
+from collections.abc import Iterator
+
 from ..cache import Cache
 from ..errors import ResourceError, UnknownResourceTypeError
 from ..file_writers import writer_registry
@@ -48,8 +50,12 @@ class SourceProcessor:
         return self._process_rules(source)
 
     def _process_rules(self, source: SourceModel) -> RuleModel:
-        aggregated_rules = RuleModel()
+        aggregated_rules = RuleModel.merge_all(self._iter_rule_models(source))
+        aggregated_rules.filter(source.option)
+        _ = self.cache.store(source.name.as_posix(), aggregated_rules.model_dump_json())
+        return aggregated_rules
 
+    def _iter_rule_models(self, source: SourceModel) -> Iterator[RuleModel]:
         for resource in source.resources:
             if isinstance(resource, SourceReference):
                 cached_result = self.cache.retrieve_text(resource.target)
@@ -57,18 +63,13 @@ class SourceProcessor:
                     raise ResourceError(
                         f"Missing cached rules for referenced source '{resource.target}'"
                     )
-                aggregated_rules.merge_with(
-                    RuleModel.model_validate_json(cached_result)
-                )
+                yield RuleModel.model_validate_json(cached_result)
             elif isinstance(resource, ContentResource):
-                aggregated_rules.merge_with(
-                    self.resource_processor.process(resource, source.option)
+                yield from self.resource_processor.iter_rule_models(
+                    resource, source.option
                 )
             else:
                 raise UnknownResourceTypeError(resource)
-        aggregated_rules.filter(source.option)
-        _ = self.cache.store(source.name.as_posix(), aggregated_rules.model_dump_json())
-        return aggregated_rules
 
     @staticmethod
     def _get_serialize_formats(source: SourceModel) -> list[SerializeFormat]:

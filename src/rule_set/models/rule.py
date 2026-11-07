@@ -1,4 +1,5 @@
 import re
+from collections.abc import Iterable
 from typing import Self
 
 from loguru import logger
@@ -49,6 +50,23 @@ class RuleModel(BaseModel):
         self.process.update(other.process)
         self.user_agent.update(other.user_agent)
         self.url_regex.update(other.url_regex)
+
+    @classmethod
+    def merge_all(cls, models: Iterable[Self]) -> Self:
+        """Merge models in order, reusing and returning the first one.
+
+        The first model is mutated in place. The caller must own it and must
+        not share it with other code.
+        """
+        iterator = iter(models)
+        try:
+            merged = next(iterator)
+        except StopIteration:
+            return cls()
+
+        for model in iterator:
+            merged.merge_with(model)
+        return merged
 
     def _deduplicate_domain_keyword(self):
         """Remove domain-keyword rules that are already covered by shorter keywords."""

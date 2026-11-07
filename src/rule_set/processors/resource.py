@@ -1,3 +1,5 @@
+from collections.abc import Iterator
+
 from pydantic import HttpUrl
 
 from ..cache import Cache
@@ -24,10 +26,9 @@ class ResourceProcessor:
     def __init__(self, cache: Cache) -> None:
         self.cache: Cache = cache
 
-    def process(
+    def iter_rule_models(
         self, initial_resource: ContentResource, source_option: Option
-    ) -> RuleModel:
-        aggregated_rules = RuleModel()
+    ) -> Iterator[RuleModel]:
         pending_resources = [initial_resource]
 
         for resource in pending_resources:
@@ -40,8 +41,7 @@ class ResourceProcessor:
                 )
                 parsed_rules = parsed_rules.rules
 
-            aggregated_rules.merge_with(parsed_rules)
-        return aggregated_rules
+            yield parsed_rules
 
     def _get_rules(
         self, resource: ContentResource, source_option: Option
