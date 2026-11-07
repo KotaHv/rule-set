@@ -6,9 +6,7 @@ from rule_set.parsers.logic import parse
 
 def test_parse_nested_operators():
     tree = parse(
-        "AND,((DOMAIN-SUFFIX,example.com),"
-        "(OR,((IP-CIDR,192.0.2.0/24,no-resolve),"
-        "(NOT,((DOMAIN-KEYWORD,ads))))))"
+        "AND,((DOMAIN-SUFFIX,example.com),(OR,((IP-CIDR,192.0.2.0/24,no-resolve),(NOT,((DOMAIN-KEYWORD,ads))))))"
     )
 
     assert tree is not None

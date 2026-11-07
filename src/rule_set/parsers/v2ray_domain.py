@@ -46,7 +46,8 @@ def parse(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
             rule, *attributes = line.split()
         if rule_type == "include":
             if rule not in exclude_includes:
-                include_attrs, exclude_attrs = [], []
+                include_attrs: list[str] = []
+                exclude_attrs: list[str] = []
                 for attr in attributes:
                     if attr.startswith("@-"):
                         exclude_attrs.append(attr[2:])

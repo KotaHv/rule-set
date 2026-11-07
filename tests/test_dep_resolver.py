@@ -50,7 +50,7 @@ def test_resolve_order_handles_diamond_dependencies():
 
 def test_unknown_source_raises_value_error():
     with pytest.raises(ValueError, match="references unknown source 'missing'"):
-        DependencyResolver([_source("app", "missing")])
+        _ = DependencyResolver([_source("app", "missing")])
 
 
 def test_circular_dependency_raises_value_error():
@@ -62,4 +62,4 @@ def test_circular_dependency_raises_value_error():
     )
 
     with pytest.raises(ValueError, match="Circular dependencies detected"):
-        resolver.resolve_order()
+        _ = resolver.resolve_order()

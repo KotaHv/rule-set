@@ -1,4 +1,7 @@
 # pyright: reportAttributeAccessIssue=false, reportOperatorIssue=false, reportArgumentType=false
+# pyright: reportMissingParameterType=false, reportMissingTypeStubs=false
+# pyright: reportUnknownArgumentType=false, reportUnknownMemberType=false
+# pyright: reportUnknownParameterType=false, reportUnknownVariableType=false
 import re._parser as sre_parser
 
 from .wildcard import normalize_wildcard

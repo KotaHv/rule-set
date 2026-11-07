@@ -8,15 +8,15 @@ from .dep_resolver import DependencyResolver
 
 
 class SourceRegistry:
-    def __init__(self, sources: list[SourceModel]):
+    def __init__(self, sources: list[SourceModel]) -> None:
         # Preprocess sources to handle split_resources
         expanded_sources = self._preprocess_sources(sources)
         resolver = DependencyResolver(expanded_sources)
-        self._sources = resolver.resolve_order()
+        self._sources: list[SourceModel] = resolver.resolve_order()
 
     def _preprocess_sources(self, sources: list[SourceModel]) -> list[SourceModel]:
         """Preprocess sources to handle split_resources expansion"""
-        result = []
+        result: list[SourceModel] = []
         for source in sources:
             if source.split_resources:
                 # Create separate SourceModel for each resource

@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import override
 
 import pytest
 
@@ -9,10 +10,12 @@ from rule_set.metadata import MetadataStore
 
 class _TestFileWriter(BaseFileWriter):
     @property
+    @override
     def base_path(self) -> str:
         return "test"
 
     @property
+    @override
     def suffix(self) -> str:
         return ".txt"
 

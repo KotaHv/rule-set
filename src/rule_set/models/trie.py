@@ -1,6 +1,7 @@
+# pyright: reportUnknownMemberType=false, reportUnknownVariableType=false, reportUnannotatedClassAttribute=false
 import re
 from collections.abc import Iterator
-from typing import Any, Self
+from typing import ClassVar, Self, override
 
 from loguru import logger
 from pydantic import GetCoreSchemaHandler
@@ -14,7 +15,7 @@ from .enum import DomainType
 
 class DomainTrie:
     def __init__(self):
-        self._trie = Trie()
+        self._trie: Trie[tuple[str, ...], DomainType, str] = Trie()
 
     def _domain_to_reversed_parts(self, domain: str) -> tuple[str, ...]:
         return tuple(domain.split(".")[::-1])
@@ -38,7 +39,7 @@ class DomainTrie:
             del self._trie[d]
 
     def filter_by_wildcard(self):
-        wildcards_without_suffix = []
+        wildcards_without_suffix: list[tuple[str, re.Pattern[str]]] = []
         for parts, domain_type in list(self._trie.iteritems()):
             if domain_type != DomainType.DOMAIN_WILDCARD:
                 continue
@@ -73,7 +74,7 @@ class DomainTrie:
                 domain = self._reversed_parts_to_domain(candidate_parts)
                 if not regex.fullmatch(domain):
                     continue
-                self._trie.pop(candidate_parts, None)
+                _ = self._trie.pop(candidate_parts, None)
                 logger.error(f"{candidate_type},{domain} -> DOMAIN-WILDCARD,{pattern}")
 
         if wildcards_without_suffix:
@@ -89,13 +90,13 @@ class DomainTrie:
                         continue
                     if not regex.fullmatch(domain):
                         continue
-                    self._trie.pop(parts, None)
+                    _ = self._trie.pop(parts, None)
                     logger.error(f"{domain_type},{domain} -> DOMAIN-WILDCARD,{pattern}")
                     break
 
     def remove(self, domain: str):
         parts = self._domain_to_reversed_parts(domain)
-        self._trie.pop(parts, None)
+        _ = self._trie.pop(parts, None)
 
     def filter_by_domain(self, domain: str):
         try:
@@ -122,6 +123,7 @@ class DomainTrie:
         yield from self.iteritems()
         self.enable_sorting(False)
 
+    @override
     def __repr__(self) -> str:
         return ", ".join(f"<'{d}' - {dt}>" for d, dt in self.iteritems())
 
@@ -134,7 +136,7 @@ class DomainTrie:
     @classmethod
     def __get_pydantic_core_schema__(
         cls,
-        _source_type: Any,
+        _source_type: type[Self],
         _handler: GetCoreSchemaHandler,
     ) -> core_schema.CoreSchema:
         def validate_from_dict(value: dict[DomainType, list[str]]) -> Self:
@@ -147,7 +149,9 @@ class DomainTrie:
 
         def serialize_to_dict(instance: Self) -> dict[DomainType, list[str]]:
             """Serialize to dict"""
-            data = {domain_type: [] for domain_type in DomainType}
+            data: dict[DomainType, list[str]] = {
+                domain_type: [] for domain_type in DomainType
+            }
             for domain, domain_type in instance.iteritems():
                 data[domain_type].append(domain)
             return data
@@ -175,9 +179,11 @@ class DomainTrie:
         )
 
 
-class IPTrie:
+class _BaseIPTrie:
+    maxbits: ClassVar[int]
+
     def __init__(self):
-        self._trie = PyTricia()
+        self._trie = PyTricia(self.maxbits)
 
     def add(self, ip: str):
         if self._trie.get_key(ip):
@@ -193,13 +199,14 @@ class IPTrie:
         for ip in other.iteritems():
             self.add(ip)
 
+    @override
     def __repr__(self) -> str:
         return ", ".join(ip for ip in self.iteritems())
 
     @classmethod
     def __get_pydantic_core_schema__(
         cls,
-        _source_type: Any,
+        _source_type: type[Self],
         _handler: GetCoreSchemaHandler,
     ) -> core_schema.CoreSchema:
         def validate_from_list(value: list[str]) -> Self:
@@ -231,6 +238,9 @@ class IPTrie:
         )
 
 
-class IPTrie6(IPTrie):
-    def __init__(self):
-        self._trie = PyTricia(128)
+class IPTrie(_BaseIPTrie):
+    maxbits: ClassVar[int] = 32
+
+
+class IPTrie6(_BaseIPTrie):
+    maxbits: ClassVar[int] = 128

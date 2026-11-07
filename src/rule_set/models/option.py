@@ -1,3 +1,5 @@
+from typing import override
+
 from pydantic import BaseModel, field_validator
 
 from .enum import ProcessingRuleType
@@ -10,7 +12,7 @@ class V2rayDomainAttrs(BaseModel):
     @field_validator("include_attrs", "exclude_attrs")
     @classmethod
     def ensure_at_prefix(cls, v: list[str]) -> list[str]:
-        result = []
+        result: list[str] = []
         for a in v:
             a = a.strip()
             if not a.startswith("@"):
@@ -30,9 +32,11 @@ class V2rayDomainAttrs(BaseModel):
             exclude_flag = not bool(set(self.exclude_attrs) & set(attrs))
         return include_flag and exclude_flag
 
+    @override
     def __repr__(self) -> str:
         return f"include_attrs={self.include_attrs}, exclude_attrs={self.exclude_attrs}"
 
+    @override
     def __str__(self) -> str:
         return self.__repr__()
 

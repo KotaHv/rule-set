@@ -12,8 +12,14 @@ from .enum import SerializeFormat
 type Source = HttpUrl | Path
 
 
+def _ensure_list(value: object) -> object:
+    if isinstance(value, SerializeFormat):
+        return [value]
+    return value
+
+
 # Type aliases
 SerializeFormats = Annotated[
     list[SerializeFormat],
-    BeforeValidator(lambda x: [x] if isinstance(x, SerializeFormat) else x),
+    BeforeValidator(_ensure_list),
 ]

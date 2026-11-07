@@ -1,5 +1,5 @@
 from enum import StrEnum
-from typing import Literal, Self
+from typing import Literal, Self, override
 
 from pydantic import BaseModel, field_validator, model_validator
 
@@ -109,11 +109,13 @@ def output_sort_key(node: Node) -> SortKey:
 class LogicalTree(BaseModel, frozen=True):
     root: Logical
 
+    @override
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, LogicalTree):
             return NotImplemented
         return canonical_key(self.root) == canonical_key(other.root)
 
+    @override
     def __hash__(self) -> int:
         return hash(canonical_key(self.root))
 

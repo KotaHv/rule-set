@@ -12,8 +12,8 @@ from .errors import FetchError
 
 class Fetcher:
     def __init__(self) -> None:
-        self.max_retries = settings.http_max_retries
-        self.http_client = Client(
+        self.max_retries: int = settings.http_max_retries
+        self.http_client: Client = Client(
             http2=True,
             timeout=settings.http_timeout,
             transport=HTTPTransport(
@@ -21,7 +21,7 @@ class Fetcher:
             ),
             follow_redirects=True,
         )
-        self.cache = Cache(path="fetcher")
+        self.cache: Cache = Cache(path="fetcher")
 
     def close(self) -> None:
         self.http_client.close()
@@ -38,7 +38,7 @@ class Fetcher:
             except Exception as e:
                 last_exception = e
                 if attempt < self.max_retries:
-                    sleep(2**attempt)
+                    sleep(2.0**attempt)
         raise FetchError(
             f"Failed to fetch URL after {self.max_retries} retries: {last_exception}"
         ) from last_exception
@@ -56,7 +56,7 @@ class Fetcher:
         if not content:
             logger.warning(f"Empty response from: {url}")
             return content
-        self.cache.store(url, content)
+        _ = self.cache.store(url, content)
         return content
 
     def download_file(self, url: HttpUrl) -> Path:

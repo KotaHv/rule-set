@@ -1,3 +1,5 @@
+from typing import override
+
 from rule_set.models import Artifact, ArtifactKind
 from rule_set.utils.domain import regex_to_wildcard
 
@@ -31,8 +33,9 @@ include_rule_types = [
 
 
 class SurgeSerializer(BaseSerializer):
+    @override
     def serialize(self) -> list[Artifact]:
-        rules = []
+        rules: list[str] = []
 
         rules.extend(f"DOMAIN,{domain}" for domain in self.rules.domain)
 
@@ -77,8 +80,10 @@ class SurgeSerializer(BaseSerializer):
         rules.extend(f"PROCESS-NAME,{process}" for process in self.rules.process)
 
         rules.extend(
-            surge_logical_serialize(tree=tree, include=include_rule_types)
+            rule
             for tree in self.rules.logical
+            if (rule := surge_logical_serialize(tree=tree, include=include_rule_types))
+            is not None
         )
 
         rules.extend(f"URL-REGEX,{url_regex}" for url_regex in self.rules.url_regex)

@@ -71,7 +71,7 @@ def _construct_tagged_mapping(loader, tag_suffix, node):
 EgernTestLoader.add_multi_constructor("!", _construct_tagged_mapping)
 
 
-def _serialize_egern_rules(logical: list[LogicalTree]) -> dict:
+def _serialize_egern_rules(logical: list[LogicalTree]) -> dict[str, object]:
     serializer = EgernSerializer(
         rules=SerializableRuleModel(logical=logical),
         option=Option(serialization=SerializationOption(no_resolve=False)),

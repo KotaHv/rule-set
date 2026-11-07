@@ -18,12 +18,12 @@ class BaseParser(ABC):
     ) -> None:
         if isinstance(data, str):
             data = data.splitlines()
-        self.data_lines = data
-        self.result = RuleModel()
+        self.data_lines: list[str] = data
+        self.result: RuleModel = RuleModel()
         self.process()
 
-    def process(self):
-        processed_lines = []
+    def process(self) -> None:
+        processed_lines: list[str] = []
         for line in self.data_lines:
             line = line.strip()
             if not line or start_comment_pattern.search(line):

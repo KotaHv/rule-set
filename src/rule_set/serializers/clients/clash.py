@@ -1,3 +1,5 @@
+from typing import TypedDict, override
+
 import yaml
 from yaml import CDumper
 
@@ -7,18 +9,21 @@ from ..logic.clash import serialize as logical_serialize
 from .base import BaseSerializer
 
 
+class ClashPayload(TypedDict):
+    payload: list[str]
+
+
 class ClashSerializer(BaseSerializer):
     def __init__(self, *, rules: SerializableRuleModel, option: Option) -> None:
         super().__init__(rules=rules, option=option)
-        self.serialized_logical_rules = list(
-            filter(
-                None,
-                [logical_serialize(tree=tree) for tree in self.rules.logical],
-            )
-        )
+        self.serialized_logical_rules: list[str] = [
+            serialized
+            for tree in self.rules.logical
+            if (serialized := logical_serialize(tree=tree)) is not None
+        ]
 
     def domain(self) -> list[str]:
-        payload = []
+        payload: list[str] = []
         payload.extend(self.rules.domain)
         payload.extend(
             f"+.{domain_suffix}" for domain_suffix in self.rules.domain_suffix
@@ -26,13 +31,13 @@ class ClashSerializer(BaseSerializer):
         return payload
 
     def ip_cidr(self) -> list[str]:
-        payload = []
+        payload: list[str] = []
         payload.extend(self.rules.ip_cidr)
         payload.extend(self.rules.ip_cidr6)
         return payload
 
     def classical(self) -> list[str]:
-        payload = []
+        payload: list[str] = []
         payload.extend(
             f"DOMAIN-WILDCARD,{domain_wildcard}"
             for domain_wildcard in self.rules.domain_wildcard
@@ -61,7 +66,7 @@ class ClashSerializer(BaseSerializer):
 
     def _serialize_payload(self, payload: list[str], style: str | None) -> str:
         yaml_content = yaml.dump(
-            {"payload": payload},
+            ClashPayload(payload=payload),
             sort_keys=False,
             Dumper=CDumper,
             width=-1,
@@ -72,6 +77,7 @@ class ClashSerializer(BaseSerializer):
         comment = f"# Total: {rule_count} rules\n# Last Updated: {self.last_updated}\n"
         return comment + yaml_content
 
+    @override
     def serialize(self) -> list[Artifact]:
         payloads: list[Artifact] = []
         if domain_payload := self.domain():

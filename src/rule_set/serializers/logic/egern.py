@@ -1,5 +1,6 @@
 from collections.abc import Sequence
 from dataclasses import dataclass
+from typing import Literal
 
 from loguru import logger
 
@@ -14,6 +15,8 @@ from rule_set.models.logical import (
 )
 
 from .surge import serialize as surge_serialize
+
+type LogicalSetName = Literal["and_set", "or_set", "not_set"]
 
 
 @dataclass(frozen=True)
@@ -76,18 +79,17 @@ def _serialize_logical(*, node: Node) -> TaggedMapping:
 
 def serialize(
     *, tree: LogicalTree
-) -> tuple[str, list[TaggedMapping] | TaggedMapping] | None:
+) -> tuple[LogicalSetName, list[TaggedMapping] | TaggedMapping] | None:
     try:
-        root = tree.root
-        logical_type = root.op.lower()
-        logical_set = f"{logical_type}_set"
-        match root:
+        match tree.root:
             case Logical(op=LogicalOperator.NOT, children=(child,)):
-                return logical_set, _serialize_logical(node=child)
-            case Logical(children=children):
-                return logical_set, [
-                    _serialize_logical(node=child) for child in children
-                ]
+                return "not_set", _serialize_logical(node=child)
+            case Logical(op=LogicalOperator.AND, children=children):
+                return "and_set", [_serialize_logical(node=child) for child in children]
+            case Logical(op=LogicalOperator.OR, children=children):
+                return "or_set", [_serialize_logical(node=child) for child in children]
+            case _:
+                return None
     except UnsupportedRuleTypeError as e:
         logger.error(f"rule: {surge_serialize(tree=tree)}, err: {e}")
     except SerializerError as e:

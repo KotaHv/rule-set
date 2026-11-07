@@ -1,4 +1,5 @@
 import ipaddress
+from typing import override
 
 from rule_set.errors import SerializerError
 from rule_set.models import Artifact, ArtifactKind
@@ -8,12 +9,13 @@ from .base import BaseSerializer
 
 
 class GeoIPSerializer(BaseSerializer):
+    @override
     def serialize(self) -> list[Artifact]:
         country_code = self.option.geo_ip.country_code
         if country_code is None:
             raise SerializerError("GeoIP serialization requires a country code")
 
-        ip_list = []
+        ip_list: list[str] = []
         ip_list.extend(self.rules.ip_cidr)
         ip_list.extend(self.rules.ip_cidr6)
         geo_ip = geo_ip_pb2.GeoIP()
@@ -21,9 +23,9 @@ class GeoIPSerializer(BaseSerializer):
         geo_ip.inverse_match = False
         for ip in ip_list:
             cidr = geo_ip_pb2.CIDR()
-            ip = ipaddress.ip_network(ip)
-            cidr.ip = ip.network_address.packed
-            cidr.prefix = ip.prefixlen
+            network = ipaddress.ip_network(ip)
+            cidr.ip = network.network_address.packed
+            cidr.prefix = network.prefixlen
             geo_ip.cidr.append(cidr)
 
         geo_ip_list = geo_ip_pb2.GeoIPList()

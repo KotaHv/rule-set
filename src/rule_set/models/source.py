@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Self
+from typing import Self, override
 
 from pydantic import BaseModel, model_validator
 
@@ -19,7 +19,7 @@ class SourceModel(BaseModel):
     @model_validator(mode="after")
     def expand_directory_resources(self) -> Self:
         """Expand directory resources to individual file resources"""
-        expanded_resources = []
+        expanded_resources: ResourceList = []
 
         for resource in self.resources:
             if (
@@ -54,8 +54,10 @@ class SourceModel(BaseModel):
 
         return self
 
+    @override
     def __repr__(self) -> str:
         return f"{self.name}: {self.resources}"
 
+    @override
     def __str__(self) -> str:
         return self.__repr__()

@@ -22,7 +22,7 @@ from ..utils import build_v2ray_include_url
 
 class ResourceProcessor:
     def __init__(self, cache: Cache) -> None:
-        self.cache = cache
+        self.cache: Cache = cache
 
     def process(
         self, initial_resource: ContentResource, source_option: Option
@@ -72,7 +72,7 @@ class ResourceProcessor:
         else:
             raise UnknownResourceTypeError(resource)
 
-        self.cache.store(cache_key, parsed_rules.model_dump_json())
+        _ = self.cache.store(cache_key, parsed_rules.model_dump_json())
         return parsed_rules
 
     @staticmethod

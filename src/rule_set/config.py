@@ -3,7 +3,7 @@ Configuration settings for the rule-set project.
 """
 
 from pathlib import Path
-from typing import Literal
+from typing import ClassVar, Literal
 
 from pydantic import Field, ValidationInfo, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -14,7 +14,7 @@ ROOT_DIR = Path(__file__).parent.parent.parent
 class Settings(BaseSettings):
     """Application settings with environment-based configuration."""
 
-    model_config = SettingsConfigDict(
+    model_config: ClassVar[SettingsConfigDict] = SettingsConfigDict(
         env_file=ROOT_DIR / ".env",
         env_file_encoding="utf-8",
         case_sensitive=False,

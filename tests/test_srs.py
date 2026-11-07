@@ -51,41 +51,45 @@ def test_downgrades_version_when_features_are_absent() -> None:
 
 def test_rejects_unknown_rule_fields() -> None:
     with pytest.raises(ValidationError):
-        encode_rule_set(
+        _ = encode_rule_set(
             '{"version": 2, "rules": [{"adguard_domain": ["||ads.example^"]}]}'
         )
 
 
 def test_rejects_network_type_before_version_3() -> None:
     with pytest.raises(SerializerError, match="version 3"):
-        encode_rule_set('{"version": 2, "rules": [{"network_type": ["wifi"]}]}')
+        _ = encode_rule_set('{"version": 2, "rules": [{"network_type": ["wifi"]}]}')
 
 
 def test_rejects_package_name_regex_before_version_5() -> None:
     with pytest.raises(SerializerError, match="version 5"):
-        encode_rule_set('{"version": 2, "rules": [{"package_name_regex": ["^com"]}]}')
+        _ = encode_rule_set(
+            '{"version": 2, "rules": [{"package_name_regex": ["^com"]}]}'
+        )
 
 
 def test_rejects_unknown_network_type() -> None:
     with pytest.raises(ValidationError):
-        encode_rule_set('{"version": 3, "rules": [{"network_type": ["bluetooth"]}]}')
+        _ = encode_rule_set(
+            '{"version": 3, "rules": [{"network_type": ["bluetooth"]}]}'
+        )
 
 
 def test_rejects_empty_logical_rule() -> None:
     with pytest.raises(ValidationError):
-        encode_rule_set(
+        _ = encode_rule_set(
             '{"version": 2, "rules": [{"type": "logical", "mode": "and", "rules": []}]}'
         )
 
 
 def test_rejects_empty_domain_item() -> None:
     with pytest.raises(SerializerError, match="domain_suffix"):
-        encode_rule_set('{"version": 2, "rules": [{"domain_suffix": [""]}]}')
+        _ = encode_rule_set('{"version": 2, "rules": [{"domain_suffix": [""]}]}')
 
 
 def test_rejects_invalid_ip_cidr() -> None:
     with pytest.raises(SerializerError, match="invalid ip_cidr"):
-        encode_rule_set('{"version": 2, "rules": [{"ip_cidr": ["not-a-cidr"]}]}')
+        _ = encode_rule_set('{"version": 2, "rules": [{"ip_cidr": ["not-a-cidr"]}]}')
 
 
 @pytest.mark.parametrize(
@@ -99,7 +103,7 @@ def test_rejects_invalid_ip_cidr() -> None:
 )
 def test_rejects_boolean_uint16_values(payload: str) -> None:
     with pytest.raises(ValidationError):
-        encode_rule_set(payload)
+        _ = encode_rule_set(payload)
 
 
 def _fail_subprocess(*_args: object, **_kwargs: object) -> None:

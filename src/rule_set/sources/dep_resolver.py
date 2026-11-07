@@ -12,13 +12,15 @@ from rule_set.models import SourceModel, SourceReference
 class DependencyResolver:
     """Dependency Resolver"""
 
-    def __init__(self, sources: list[SourceModel]):
-        self.sources = {str(source.name): source for source in sources}
-        self.dependencies = self._build_dependency_graph()
+    def __init__(self, sources: list[SourceModel]) -> None:
+        self.sources: dict[str, SourceModel] = {
+            str(source.name): source for source in sources
+        }
+        self.dependencies: dict[str, set[str]] = self._build_dependency_graph()
 
     def _build_dependency_graph(self) -> dict[str, set[str]]:
         """Build dependency graph, return {source_path: {set of dependent source_paths}}"""
-        dependencies = defaultdict(set)
+        dependencies: defaultdict[str, set[str]] = defaultdict(set)
 
         for name, source in self.sources.items():
             for resource in source.resources:
@@ -35,9 +37,9 @@ class DependencyResolver:
 
     def _detect_cycles(self) -> list[list[str]]:
         """Detect circular dependencies"""
-        visited = set()
-        rec_stack = set()
-        cycles = []
+        visited: set[str] = set()
+        rec_stack: set[str] = set()
+        cycles: list[list[str]] = []
 
         def dfs(node: str, path: list[str]) -> bool:
             if node in rec_stack:
@@ -61,7 +63,7 @@ class DependencyResolver:
 
         for source_name in self.sources:
             if source_name not in visited:
-                dfs(source_name, [])
+                _ = dfs(source_name, [])
 
         return cycles
 
@@ -89,7 +91,7 @@ class DependencyResolver:
         queue = deque(
             [source_name for source_name, degree in in_degree.items() if degree == 0]
         )
-        result = []
+        result: list[str] = []
 
         while queue:
             current = queue.popleft()
@@ -116,9 +118,9 @@ class DependencyResolver:
 
     def get_all_dependencies(self, name: str) -> set[str]:
         """Get all dependencies (including indirect) of the specified source"""
-        all_deps = set()
-        to_visit = deque([name])
-        visited = set()
+        all_deps: set[str] = set()
+        to_visit: deque[str] = deque([name])
+        visited: set[str] = set()
 
         while to_visit:
             current = to_visit.popleft()

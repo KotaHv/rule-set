@@ -1,3 +1,4 @@
+# pyright: reportUnknownMemberType=false, reportUnknownVariableType=false, reportUnannotatedClassAttribute=false
 import json
 from collections.abc import Iterable
 

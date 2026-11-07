@@ -3,6 +3,7 @@ import re
 from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
+from typing import override
 
 from .config import ROOT_DIR
 
@@ -63,6 +64,7 @@ class Rule:
     option: str | None = None
     comment: str | None = None
 
+    @override
     def __str__(self) -> str:
         rule_str = f"{self.rule_type},{self.content}"
         if self.option:
@@ -71,11 +73,13 @@ class Rule:
             rule_str = f"{rule_str} {self.comment}"
         return f"# {rule_str}" if self.is_commented else rule_str
 
+    @override
     def __hash__(self) -> int:
         # Deduplication ignores comment status, considers type, content and option
         return hash((self.rule_type, self.content, self.option))
 
-    def __eq__(self, other) -> bool:
+    @override
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, Rule):
             return False
         return (
@@ -149,9 +153,9 @@ class Section:
 
 class Format:
     def __init__(self, filepath: str | Path) -> None:
-        self.filepath = Path(filepath) if isinstance(filepath, str) else filepath
+        self.filepath: Path = Path(filepath) if isinstance(filepath, str) else filepath
         self.sections: list[Section] = []
-        self._original_count = 0
+        self._original_count: int = 0
 
     def _read_file(self) -> list[str]:
         """Read file content"""
@@ -279,7 +283,7 @@ class Format:
     def _write_file(self, lines: list[str]) -> None:
         """Write to file"""
         with self.filepath.open("w", encoding="utf-8") as f:
-            f.write("\n".join(lines))
+            _ = f.write("\n".join(lines))
 
     def _calculate_stats(self) -> None:
         """Calculate and print statistics"""

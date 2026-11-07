@@ -20,6 +20,8 @@ from rule_set.models.logical import (
     Rule,
     RuleType,
 )
+from rule_set.models.sing_box import SingBoxConfig
+from rule_set.serializers.clients.base import BaseSerializer
 from rule_set.serializers.clients.clash import ClashSerializer
 from rule_set.serializers.clients.loon import LoonSerializer
 from rule_set.serializers.clients.sing_box import SingBoxSerializer
@@ -112,7 +114,7 @@ def test_clash_splits_rules_into_domain_ipcidr_and_classical_artifacts():
         (False, "IP-ASN,13335"),
     ],
 )
-def test_clash_honors_no_resolve_for_asn(no_resolve, expected_asn):
+def test_clash_honors_no_resolve_for_asn(no_resolve: bool, expected_asn: str) -> None:
     rules = SerializableRuleModel(
         domain=["example.com"],
         ip_asn=["13335"],
@@ -129,11 +131,13 @@ def test_clash_honors_no_resolve_for_asn(no_resolve, expected_asn):
     assert expected_asn in _payload(classical)
 
 
-TEXT_SERIALIZERS = [SurgeSerializer, LoonSerializer]
+TEXT_SERIALIZERS: list[type[BaseSerializer]] = [SurgeSerializer, LoonSerializer]
 
 
 @pytest.mark.parametrize("serializer_type", TEXT_SERIALIZERS)
-def test_text_serializers_convert_domain_regex_to_wildcard(serializer_type):
+def test_text_serializers_convert_domain_regex_to_wildcard(
+    serializer_type: type[BaseSerializer],
+) -> None:
     rules = SerializableRuleModel(domain_regex=[r"^ads-[0-9]\.example\.com$"])
 
     data = serializer_type(rules=rules, option=Option()).serialize()[0].data
@@ -142,7 +146,9 @@ def test_text_serializers_convert_domain_regex_to_wildcard(serializer_type):
 
 
 @pytest.mark.parametrize("serializer_type", TEXT_SERIALIZERS)
-def test_text_serializers_return_empty_content_for_no_rules(serializer_type):
+def test_text_serializers_return_empty_content_for_no_rules(
+    serializer_type: type[BaseSerializer],
+) -> None:
     artifact = serializer_type(
         rules=SerializableRuleModel(),
         option=Option(),
@@ -159,7 +165,7 @@ def test_text_serializers_return_empty_content_for_no_rules(serializer_type):
         (False, ""),
     ],
 )
-def test_surge_honors_no_resolve_for_ip_and_asn(no_resolve, suffix):
+def test_surge_honors_no_resolve_for_ip_and_asn(no_resolve: bool, suffix: str) -> None:
     rules = SerializableRuleModel(
         ip_cidr=["1.1.1.0/24"],
         ip_cidr6=["2001:db8::/32"],
@@ -193,22 +199,22 @@ def test_sing_box_merges_equivalent_fields_and_keeps_process_and_logical_separat
         logical=[_logical_tree()],
     )
 
-    data = json.loads(
+    data: SingBoxConfig = json.loads(
         SingBoxSerializer(rules=rules, option=Option()).serialize()[0].data
     )
     first_rule = data["rules"][0]
 
     assert data["version"] == 2
-    assert first_rule["domain"] == ["example.com"]
-    assert set(first_rule["domain_regex"]) == {
+    assert first_rule.get("domain") == ["example.com"]
+    assert set(first_rule.get("domain_regex", [])) == {
         r"^.*\.example\.org$",
         r"^ads\.",
     }
-    assert set(first_rule["ip_cidr"]) == {
+    assert set(first_rule.get("ip_cidr", [])) == {
         "1.1.1.0/24",
         "2001:db8::/32",
     }
-    assert first_rule["domain_keyword"] == ["ads"]
+    assert first_rule.get("domain_keyword") == ["ads"]
     assert "process_name" not in first_rule
     assert {"process_name": ["curl"]} in data["rules"]
     assert data["rules"][-1] == {
@@ -224,11 +230,11 @@ def test_sing_box_merges_equivalent_fields_and_keeps_process_and_logical_separat
 def test_sing_box_serializes_ipv6_only():
     rules = SerializableRuleModel(ip_cidr6=["2001:db8::/32"])
 
-    data = json.loads(
+    data: SingBoxConfig = json.loads(
         SingBoxSerializer(rules=rules, option=Option()).serialize()[0].data
     )
 
-    assert data["rules"][0]["ip_cidr"] == ["2001:db8::/32"]
+    assert data["rules"][0].get("ip_cidr") == ["2001:db8::/32"]
 
 
 def test_sing_box_does_not_mutate_ip_cidr_when_merging():
@@ -237,9 +243,31 @@ def test_sing_box_does_not_mutate_ip_cidr_when_merging():
         ip_cidr6=["2001:db8::/32"],
     )
 
-    SingBoxSerializer(rules=rules, option=Option()).serialize()
+    _ = SingBoxSerializer(rules=rules, option=Option()).serialize()
 
     assert rules.ip_cidr == ["1.1.1.0/24"]
+
+
+def test_sing_box_keeps_logical_rule_when_no_other_rules():
+    rules = SerializableRuleModel(logical=[_logical_tree()])
+
+    data: SingBoxConfig = json.loads(
+        SingBoxSerializer(rules=rules, option=Option()).serialize()[0].data
+    )
+
+    assert data == {
+        "version": 2,
+        "rules": [
+            {
+                "type": "logical",
+                "rules": [
+                    {"domain_suffix": "example.com"},
+                    {"domain_keyword": "ads"},
+                ],
+                "mode": "and",
+            }
+        ],
+    }
 
 
 def test_geo_ip_serializer_encodes_country_and_network_prefixes():
@@ -276,4 +304,4 @@ def test_geo_ip_serializer_requires_country_code():
     rules = SerializableRuleModel(ip_cidr=["1.1.1.0/24"])
 
     with pytest.raises(SerializerError, match="country code"):
-        GeoIPSerializer(rules=rules, option=Option()).serialize()
+        _ = GeoIPSerializer(rules=rules, option=Option()).serialize()

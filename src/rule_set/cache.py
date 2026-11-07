@@ -13,12 +13,14 @@ from .utils import generate_cache_key
 
 class Cache:
     def __init__(self, *, path: Path | str, ttl_hours: int | None = None) -> None:
-        self.cache_directory = settings.cache_dir / Path(path)
+        self.cache_directory: Path = settings.cache_dir / Path(path)
         self.cache_directory.mkdir(exist_ok=True, parents=True)
-        self.ttl_hours = settings.cache_ttl_hours if ttl_hours is None else ttl_hours
+        self.ttl_hours: int = (
+            settings.cache_ttl_hours if ttl_hours is None else ttl_hours
+        )
 
         # Automatically clean up expired files on initialization
-        self.clear_expired()
+        _ = self.clear_expired()
 
     def retrieve_text(self, key: str) -> str | None:
         return self._retrieve(key, as_bytes=False)
@@ -87,11 +89,11 @@ class Cache:
         try:
             if isinstance(value, bytes):
                 with tmp_path.open("wb") as file:
-                    file.write(value)
+                    _ = file.write(value)
             else:
                 with tmp_path.open("w", encoding="utf-8") as file:
-                    file.write(value)
-            tmp_path.replace(filepath)
+                    _ = file.write(value)
+            _ = tmp_path.replace(filepath)
         except OSError as e:
             logger.error(f'Failed to cache key "{key}" at "{filepath}": {e}')
             with suppress(OSError):

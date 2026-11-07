@@ -24,23 +24,23 @@ class PageGenerator:
     """Main class for generating HTML pages"""
 
     def __init__(self, rule_set_path: Path):
-        self.rule_set_path = rule_set_path
-        self.templates_dir = config.templates_dir
-        self.icons_dir = config.icons_dir
+        self.rule_set_path: Path = rule_set_path
+        self.templates_dir: Path = config.templates_dir
+        self.icons_dir: Path = config.icons_dir
 
         with MetadataStore() as metadata_store:
-            self.metadata = {
+            self.metadata: dict[Path, float] = {
                 record.path: record.timestamp for record in metadata_store.data
             }
 
-        self.env = Environment(
+        self.env: Environment = Environment(
             loader=FileSystemLoader(str(self.templates_dir)),
             autoescape=True,
             trim_blocks=True,
             lstrip_blocks=True,
         )
 
-        self.path_tree = PathTree(
+        self.path_tree: PathTree = PathTree(
             root=DirNode(
                 info=PathInfo(
                     name=rule_set_path.name,
@@ -95,10 +95,10 @@ class PageGenerator:
         # Copy all icon files
         for icon_file in self.icons_dir.iterdir():
             if icon_file.is_file() and not icon_file.name.startswith("."):
-                shutil.copy2(icon_file, target_icons_dir)
+                _ = shutil.copy2(icon_file, target_icons_dir)
                 print(f"Copied: {icon_file.name} to {target_icons_dir}")
 
-    def _get_icon_data(self, icon_prefix: str = "") -> dict:
+    def _get_icon_data(self, icon_prefix: str = "") -> dict[str, str]:
         """Get icon data for templates"""
         return {
             "clash": f"""<img src="{icon_prefix}icons/clash.svg" alt="Clash" class="w-8 h-8">""",
@@ -111,7 +111,7 @@ class PageGenerator:
             </svg>""",
         }
 
-    def _get_directory_icon_data(self, icon_prefix: str = "") -> dict:
+    def _get_directory_icon_data(self, icon_prefix: str = "") -> dict[str, str]:
         """Get icon data for directory templates"""
         return {
             "clash": f"""<img src="{icon_prefix}icons/clash.svg" alt="Clash" class="w-6 h-6">""",
@@ -194,7 +194,7 @@ class PageGenerator:
         # Generate root index
         root_html = self.generate_root_index()
         with open(self.rule_set_path / "index.html", "w", encoding="utf-8") as f:
-            f.write(root_html)
+            _ = f.write(root_html)
         print(f"Generated: {self.rule_set_path}/index.html")
 
         dirs = [
@@ -207,7 +207,7 @@ class PageGenerator:
             dir_node = dirs.pop()
             html_content = self.generate_directory_index(dir_node)
             with open(dir_node.info.path / "index.html", "w", encoding="utf-8") as f:
-                f.write(html_content)
+                _ = f.write(html_content)
             print(f"Generated: {dir_node.info.path}/index.html")
             dirs.extend(
                 child for child in dir_node.children if isinstance(child, DirNode)

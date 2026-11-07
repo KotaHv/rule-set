@@ -20,9 +20,9 @@ class SourceProcessor:
         resource_processor: ResourceProcessor,
         metadata_store: MetadataStore,
     ) -> None:
-        self.cache = cache
-        self.resource_processor = resource_processor
-        self.metadata_store = metadata_store
+        self.cache: Cache = cache
+        self.resource_processor: ResourceProcessor = resource_processor
+        self.metadata_store: MetadataStore = metadata_store
 
     def process(self, source: SourceModel) -> None:
         rules = self._get_rules(source)
@@ -33,7 +33,7 @@ class SourceProcessor:
             serializer = serializer_cls(rules=serializable_rules, option=source.option)
             for artifact in serializer.serialize():
                 writer_cls = writer_registry[(serialize_format, artifact.kind)]
-                writer_cls(
+                _ = writer_cls(
                     data=artifact.data,
                     target_path=source.name,
                     timestamp=serializer.last_updated_ts,
@@ -67,7 +67,7 @@ class SourceProcessor:
             else:
                 raise UnknownResourceTypeError(resource)
         aggregated_rules.filter(source.option)
-        self.cache.store(source.name.as_posix(), aggregated_rules.model_dump_json())
+        _ = self.cache.store(source.name.as_posix(), aggregated_rules.model_dump_json())
         return aggregated_rules
 
     @staticmethod

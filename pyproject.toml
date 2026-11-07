@@ -5,20 +5,20 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "httpx2[http2]>=2.16.0",
-    "jinja2>=3.1.6",
-    "loguru>=0.7.3",
-    "maxminddb>=2.8.2",
-    "protobuf>=7.36.2",
-    "pyahocorasick>=2.2.0",
-    "pydantic>=2.11.7",
-    "pydantic-settings>=2.10.1",
-    "pygtrie>=2.5.0",
-    "pytricia>=1.2.0",
-    "pyyaml>=6.0.2",
-    "tldextract>=5.3.0",
-    "typer>=0.17.3",
-    "validators>=0.35.0",
+  "httpx2[http2]>=2.16.0",
+  "jinja2>=3.1.6",
+  "loguru>=0.7.3",
+  "maxminddb>=2.8.2",
+  "protobuf>=7.36.2",
+  "pyahocorasick>=2.2.0",
+  "pydantic>=2.11.7",
+  "pydantic-settings>=2.10.1",
+  "pygtrie>=2.5.0",
+  "pytricia>=1.2.0",
+  "pyyaml>=6.0.2",
+  "tldextract>=5.3.0",
+  "typer>=0.17.3",
+  "validators>=0.35.0",
 ]
 
 [project.scripts]
@@ -38,36 +38,58 @@ extend-exclude = ["*_pb2.py", "*_pb2.pyi"]
 
 [tool.ruff.lint]
 select = [
-    "E",      # pycodestyle errors
-    "W",      # pycodestyle warnings
-    "F",      # pyflakes
-    "I",      # isort
-    "B",      # flake8-bugbear
-    "C4",     # flake8-comprehensions
-    "UP",     # pyupgrade
-    "ARG001", # unused arguments in functions
+  "E", # pycodestyle errors
+  "W", # pycodestyle warnings
+  "F", # pyflakes
+  "I", # isort
+  "B", # flake8-bugbear
+  "C4", # flake8-comprehensions
+  "UP", # pyupgrade
+  "ARG001", # unused arguments in functions
 ]
 
 ignore = [
-    "E501", # line too long
+  "E501", # line too long
 ]
 
 
 [tool.ruff.lint.flake8-bugbear]
 extend-immutable-calls = [
-    # Whitelisted default arguments
-    "typer.Option",
+  # Whitelisted default arguments
+  "typer.Option",
 ]
 
 [dependency-groups]
-dev = [
-    "basedpyright>=1.40.2",
-    "pytest>=9.2.0",
-    "ruff>=0.17.3",
-]
+dev = ["basedpyright>=1.40.2", "pytest>=9.2.0", "ruff>=0.17.3"]
 
 [tool.basedpyright]
-typeCheckingMode = "standard"
+typeCheckingMode = "recommended"
+extraPaths = ["src"]
+ignore = ["**/*_pb2.py", "**/*_pb2.pyi"]
+failOnWarnings = false
+allowedUntypedLibraries = [
+    "ahocorasick",
+    "maxminddb",
+    "pygtrie",
+    "pytricia",
+    "yaml",
+]
+
+reportUnusedCallResult = "error"
+reportCallInDefaultInitializer = "none"
+reportExplicitAny = "none"
+reportImplicitOverride = "error"
+reportUnusedCoroutine = "error"
+reportMatchNotExhaustive = "error"
+reportRedeclaration = "error"
+reportUnusedExpression = "error"
+reportIgnoreCommentWithoutRule = "error"
+reportUnannotatedClassAttribute = "error"
+reportInvalidTypeVarUse = "error"
+
+executionEnvironments = [
+    { root = "tests", reportAny = "none", reportExplicitAny = "none", reportMissingParameterType = "none", reportUnknownArgumentType = "none", reportUnknownMemberType = "none", reportUnknownParameterType = "none", reportUnknownVariableType = "none" },
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

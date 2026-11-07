@@ -1,3 +1,5 @@
+from typing import override
+
 from loguru import logger
 
 from rule_set.models import DomainType, RuleModel
@@ -7,6 +9,7 @@ from .base import BaseParser
 
 
 class DomainSetParser(BaseParser):
+    @override
     def parse(self) -> RuleModel:
         for domain in self.data_lines:
             if domain.startswith("."):

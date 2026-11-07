@@ -8,10 +8,13 @@ from rule_set.models.logical import (
     Node,
     Rule,
 )
+from rule_set.models.sing_box import (
+    SingBoxLeafRule,
+    SingBoxLogicalRule,
+    SingBoxRule,
+)
 
 from .surge import serialize as surge_serialize
-
-type SingBoxRule = dict[str, str | bool | int | list[SingBoxRule]]
 
 type_format = {
     "domain-suffix": "domain_suffix",
@@ -26,26 +29,6 @@ type_format = {
     "src-ip": "source_ip_cidr",
     "src-ip-cidr": "source_ip_cidr",
 }
-
-include_types = [
-    "query_type",
-    "network",
-    "domain",
-    "domain_suffix",
-    "domain_keyword",
-    "domain_regex",
-    "source_ip_cidr",
-    "ip_cidr",
-    "source_port",
-    "source_port_range",
-    "port",
-    "port_range",
-    "process_name",
-    "process_path",
-    "package_name",
-    "wifi_ssid",
-    "wifi_bssid",
-]
 
 protocol_types = [
     "http",
@@ -63,7 +46,7 @@ protocol_types_format = {"https": "tls"}
 
 
 def _serialize_logical(*, node: Node, invert: bool | None = None) -> SingBoxRule:
-    """Serialize logical node to string."""
+    """Serialize logical node to SingBoxRule."""
     match node:
         case Rule(rule=rule):
             entry = format_rule(rule.rule_type, rule.rule_values[0])
@@ -76,10 +59,10 @@ def _serialize_logical(*, node: Node, invert: bool | None = None) -> SingBoxRule
             return _serialize_logical(node=child, invert=next_invert)
 
         case Logical(op=op, children=children):
-            result: SingBoxRule = {
+            result: SingBoxLogicalRule = {
                 "type": "logical",
                 "rules": [_serialize_logical(node=child) for child in children],
-                "mode": op.lower(),
+                "mode": "and" if op is LogicalOperator.AND else "or",
             }
             if invert is not None:
                 result["invert"] = invert
@@ -95,19 +78,52 @@ def serialize(*, tree: LogicalTree) -> SingBoxRule | None:
         logger.error(e)
 
 
-def format_rule(rule_type: str, rule: str) -> SingBoxRule:
+def format_rule(rule_type: str, rule: str) -> SingBoxLeafRule:
     rule_type = rule_type.lower()
     rule_type = type_format.get(rule_type, rule_type)
-    if rule_type in include_types:
-        if rule_type == "port":
-            return {"port": int(rule)}
-        return {rule_type: rule}
-    if rule_type == "protocol":
-        rule = rule.lower()
-        rule = protocol_types_format.get(rule, rule)
-        if rule in ["udp", "tcp"]:
+    match rule_type:
+        case "query_type":
+            return {"query_type": rule}
+        case "network":
             return {"network": rule}
-        if rule in protocol_types:
-            return {"protocol": rule}
+        case "domain":
+            return {"domain": rule}
+        case "domain_suffix":
+            return {"domain_suffix": rule}
+        case "domain_keyword":
+            return {"domain_keyword": rule}
+        case "domain_regex":
+            return {"domain_regex": rule}
+        case "source_ip_cidr":
+            return {"source_ip_cidr": rule}
+        case "ip_cidr":
+            return {"ip_cidr": rule}
+        case "source_port":
+            return {"source_port": int(rule)}
+        case "source_port_range":
+            return {"source_port_range": rule}
+        case "port":
+            return {"port": int(rule)}
+        case "port_range":
+            return {"port_range": rule}
+        case "process_name":
+            return {"process_name": rule}
+        case "process_path":
+            return {"process_path": rule}
+        case "package_name":
+            return {"package_name": rule}
+        case "wifi_ssid":
+            return {"wifi_ssid": rule}
+        case "wifi_bssid":
+            return {"wifi_bssid": rule}
+        case "protocol":
+            protocol = rule.lower()
+            protocol = protocol_types_format.get(protocol, protocol)
+            if protocol in ["udp", "tcp"]:
+                return {"network": protocol}
+            if protocol in protocol_types:
+                return {"protocol": protocol}
 
-    raise UnsupportedRuleTypeError(rule_type)
+            raise UnsupportedRuleTypeError(rule_type)
+        case _:
+            raise UnsupportedRuleTypeError(rule_type)

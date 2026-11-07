@@ -1,3 +1,5 @@
+from typing import override
+
 from loguru import logger
 
 from rule_set.models import DomainType, RuleModel
@@ -8,6 +10,7 @@ from .base import BaseParser
 
 
 class RuleSetParser(BaseParser):
+    @override
     def parse(self) -> RuleModel:
         for line in self.data_lines:
             segments = line.split(",")

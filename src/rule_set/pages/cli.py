@@ -3,24 +3,27 @@ Command line interface for gen_pages
 """
 
 from pathlib import Path
+from typing import Annotated
 
 import typer
 
 from .services import PageGenerator
 
 
-def main():
+def main() -> None:
     """Main entry point"""
     typer.run(_main)
 
 
 def _main(
-    target_path: Path | None = typer.Option(
-        None,
-        "--target-path",
-        "-t",
-        help="Target path for generating pages, e.g., deploy_temp, ./rule-set, etc. If not specified, uses the default path from config file.",
-    ),
+    target_path: Annotated[
+        Path | None,
+        typer.Option(
+            "--target-path",
+            "-t",
+            help="Target path for generating pages, e.g., deploy_temp, ./rule-set, etc. If not specified, uses the default path from config file.",
+        ),
+    ] = None,
 ) -> None:
     """Generate GitHub Pages navigation files for rule-set directories.
 

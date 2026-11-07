@@ -18,10 +18,10 @@ class BaseFileWriter(ABC):
         timestamp: float,
         metadata_store: MetadataStore,
     ) -> None:
-        self.data = data
-        self.timestamp = timestamp
-        self.metadata_store = metadata_store
-        self.filepath = (
+        self.data: str | bytes = data
+        self.timestamp: float = timestamp
+        self.metadata_store: MetadataStore = metadata_store
+        self.filepath: Path = (
             settings.build_dir / self.base_path / target_path.with_suffix(self.suffix)
         )
 
