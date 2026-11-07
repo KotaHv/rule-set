@@ -7,11 +7,16 @@ from .re_parser import parse_regex_to_wildcards
 
 
 def validate_domain(domain: str) -> bool:
-    """Validate domain format."""
+    """Validate domain format.
+
+    ``validators.domain`` requires at least two labels. Single-label domains
+    are validated by prefixing a fake label, so malformed values such as
+    ``domain:`` are still rejected.
+    """
     if not domain.strip():
         return False
     if "." not in domain:
-        return True
+        domain = f"x.{domain}"
     return validators.domain(domain, rfc_2782=True) is True
 
 

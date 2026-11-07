@@ -8,6 +8,7 @@ from rule_set.utils import validate_domain
     [
         "example.com",
         "xn----gtbspbbmkef.xn--p1aic",
+        "localhost",
     ],
 )
 def test_validate_domain_accepts_valid_domains(domain: str) -> None:
@@ -21,6 +22,9 @@ def test_validate_domain_accepts_valid_domains(domain: str) -> None:
         " \t ",
         "-bad.example",
         "example..com",
+        "domain:",
+        "unknown:value",
+        "-bad",
     ],
 )
 def test_validate_domain_rejects_invalid_domains(domain: str) -> None:
