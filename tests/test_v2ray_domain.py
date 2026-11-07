@@ -171,3 +171,21 @@ def test_parse_prefixless_lines_default_to_domain_suffix():
         ("plain.example", DomainType.DOMAIN_SUFFIX),
         ("plain-with-attrs.example", DomainType.DOMAIN_SUFFIX),
     }
+
+
+def test_parse_skips_invalid_domain_rules():
+    data = """
+        domain:valid-suffix.example
+        domain:-invalid.example
+        domain:example..com
+        full:valid-full.example
+        full:-invalid.example
+        full:example..com
+    """
+
+    result = parse(data, _option())
+
+    assert set(result.rules.domain_trie.items()) == {
+        ("valid-suffix.example", DomainType.DOMAIN_SUFFIX),
+        ("valid-full.example", DomainType.DOMAIN),
+    }

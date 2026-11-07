@@ -1,5 +1,7 @@
 import re
 
+from loguru import logger
+
 from rule_set.models import (
     DomainType,
     RuleModel,
@@ -7,10 +9,16 @@ from rule_set.models import (
     V2rayDomainOption,
     V2rayDomainResult,
 )
+from rule_set.utils import validate_domain
 
 LINE_PATTERN = re.compile(
     r"^(?P<type>domain|keyword|full|regexp|include):(?P<rule>.+?)(?:\s+(?P<attrs>@-?!?\w+(?:\s+@-?!?\w+)*))?$"
 )
+
+_DOMAIN_RULE_TYPES: dict[str, DomainType] = {
+    "domain": DomainType.DOMAIN_SUFFIX,
+    "full": DomainType.DOMAIN,
+}
 
 
 def parse(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
@@ -63,12 +71,13 @@ def parse(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
             continue
         if not attribute_rules.matches(attributes):
             continue
-        if rule_type == "domain":
-            rules.domain_trie.add(rule, DomainType.DOMAIN_SUFFIX)
+        if domain_type := _DOMAIN_RULE_TYPES.get(rule_type):
+            if not validate_domain(rule):
+                logger.warning(f"Invalid domain: '{rule}'")
+                continue
+            rules.domain_trie.add(rule, domain_type)
         elif rule_type == "keyword":
             rules.domain_keyword.add(rule)
-        elif rule_type == "full":
-            rules.domain_trie.add(rule, DomainType.DOMAIN)
         elif rule_type == "regexp":
             rules.domain_regex.add(rule)
 
