@@ -1,5 +1,5 @@
-# Total: 644 rules
-# Last Updated: 2026-11-02T05:04:10.060773+00:00
+# Total: 645 rules
+# Last Updated: 2026-11-07T22:07:27.452795+00:00
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -13,6 +13,7 @@
 - 'notary-submissions-prod.s3.us-west-2.amazonaws.com'
 - 'vsmarketplacebadge.apphb.com'
 - 'github-api.arkoselabs.com'
+- 'production-copilot-host-westus.webpubsub.azure.com'
 - 'docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com'
 - 'default.exp-tas.com'
 - 'developers.facebook.com'
