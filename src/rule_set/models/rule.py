@@ -5,7 +5,7 @@ from loguru import logger
 from pydantic import BaseModel, Field
 
 from .aho import Aho
-from .enum import DomainType
+from .enum import DomainType, ProcessingRuleType
 from .logical import LogicalTree, output_sort_key
 from .option import Option
 from .trie import DomainTrie, IPTrie, IPTrie6
@@ -83,17 +83,48 @@ class RuleModel(BaseModel):
                     logger.error(f"DOMAIN,{domain} -> DOMAIN-REGEX,{domain_regex}")
                     break
 
+    def _remove_domains_of_type(self, domain_type: DomainType) -> None:
+        for domain, current_domain_type in self.domain_trie.items():
+            if current_domain_type == domain_type:
+                self.domain_trie.remove(domain)
+
+    def _remove_rules_of_type(self, rule_type: ProcessingRuleType) -> None:
+        match rule_type:
+            case ProcessingRuleType.DOMAIN:
+                self._remove_domains_of_type(DomainType.DOMAIN)
+            case ProcessingRuleType.DOMAIN_SUFFIX:
+                self._remove_domains_of_type(DomainType.DOMAIN_SUFFIX)
+            case ProcessingRuleType.DOMAIN_WILDCARD:
+                self._remove_domains_of_type(DomainType.DOMAIN_WILDCARD)
+            case ProcessingRuleType.DOMAIN_REGEX:
+                self.domain_regex.clear()
+            case ProcessingRuleType.DOMAIN_KEYWORD:
+                self.domain_keyword.clear()
+            case ProcessingRuleType.IP_CIDR:
+                self.ip_trie = IPTrie()
+            case ProcessingRuleType.IP_CIDR6:
+                self.ip_trie6 = IPTrie6()
+            case ProcessingRuleType.IP_ASN:
+                self.ip_asn.clear()
+            case ProcessingRuleType.LOGICAL:
+                self.logical.clear()
+            case ProcessingRuleType.PROCESS_NAME:
+                self.process.clear()
+            case ProcessingRuleType.USER_AGENT:
+                self.user_agent.clear()
+            case ProcessingRuleType.URL_REGEX:
+                self.url_regex.clear()
+
     def filter(self, option: Option):
         """Apply various optimization and filtering rules to clean up and optimize the rule set."""
-        for rule_type in option.processing.exclude_rule_types:
-            if rule_type == "ip_trie":
-                setattr(self, rule_type, IPTrie())
-            elif rule_type == "ip_trie6":
-                setattr(self, rule_type, IPTrie6())
-            elif rule_type == "domain_trie":
-                setattr(self, rule_type, DomainTrie())
-            else:
-                setattr(self, rule_type, set())
+        processing = option.processing
+        if processing.include_rule_types:
+            included_rule_types = set(processing.include_rule_types)
+            for rule_type in ProcessingRuleType:
+                if rule_type not in included_rule_types:
+                    self._remove_rules_of_type(rule_type)
+        for rule_type in processing.exclude_rule_types:
+            self._remove_rules_of_type(rule_type)
         for domain in option.processing.exclude_suffixes:
             self.domain_trie.filter_by_domain(domain)
         self.domain_trie.filter_by_wildcard()

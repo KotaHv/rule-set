@@ -73,13 +73,6 @@ class ClashSerializer(BaseSerializer):
         return comment + yaml_content
 
     def serialize(self) -> list[Artifact]:
-        if self.option.geo_ip.country_code is not None:
-            return [
-                Artifact(
-                    kind=ArtifactKind.IPCIDR,
-                    data=self._serialize_payload(self.ip_cidr(), "'"),
-                )
-            ]
         payloads: list[Artifact] = []
         if domain_payload := self.domain():
             payloads.append(

@@ -1,6 +1,12 @@
 import pytest
 
-from rule_set.models import DomainType, Option, ProcessingOption, RuleModel
+from rule_set.models import (
+    DomainType,
+    Option,
+    ProcessingOption,
+    ProcessingRuleType,
+    RuleModel,
+)
 from rule_set.models.logical import (
     ConcreteRule,
     Logical,
@@ -107,30 +113,89 @@ def test_merge_with_merges_rule_collections():
     assert rules.url_regex == {"first-url", "second-url"}
 
 
-@pytest.mark.parametrize(
-    "rule_type",
-    ["ip_trie", "ip_trie6", "domain_trie", "domain_regex"],
-)
-def test_filter_excludes_rule_types(rule_type):
+def _populated_rules() -> RuleModel:
     rules = RuleModel.model_validate(
         {
             "domain_regex": {r"^ads\."},
+            "domain_keyword": {"tracking"},
             "ip_trie": ["1.1.1.0/24"],
             "ip_trie6": ["2001:db8::/32"],
+            "ip_asn": {"13335"},
+            "process": {"curl"},
+            "user_agent": {"agent"},
+            "url_regex": {"^https://"},
         }
     )
-    rules.domain_trie.add("ads.example.com", DOMAIN)
+    rules.domain_trie.add("example.com", DOMAIN)
+    rules.domain_trie.add("example.net", SUFFIX)
+    rules.domain_trie.add("*.example.org", WILDCARD)
+    rules.logical.add(_and("b", "d"))
+    return rules
+
+
+def _rule_type_state(rules: RuleModel) -> dict[ProcessingRuleType, list[str]]:
+    domains: dict[DomainType, list[str]] = {
+        domain_type: [] for domain_type in DomainType
+    }
+    for domain, domain_type in rules.domain_trie.items():
+        domains[domain_type].append(domain)
+    return {
+        ProcessingRuleType.DOMAIN: sorted(domains[DomainType.DOMAIN]),
+        ProcessingRuleType.DOMAIN_SUFFIX: sorted(domains[DomainType.DOMAIN_SUFFIX]),
+        ProcessingRuleType.DOMAIN_WILDCARD: sorted(domains[DomainType.DOMAIN_WILDCARD]),
+        ProcessingRuleType.DOMAIN_REGEX: sorted(rules.domain_regex),
+        ProcessingRuleType.DOMAIN_KEYWORD: sorted(rules.domain_keyword),
+        ProcessingRuleType.IP_CIDR: sorted(rules.ip_trie.iteritems()),
+        ProcessingRuleType.IP_CIDR6: sorted(rules.ip_trie6.iteritems()),
+        ProcessingRuleType.IP_ASN: sorted(rules.ip_asn, key=int),
+        ProcessingRuleType.LOGICAL: sorted(
+            tree.model_dump_json() for tree in rules.logical
+        ),
+        ProcessingRuleType.PROCESS_NAME: sorted(rules.process),
+        ProcessingRuleType.USER_AGENT: sorted(rules.user_agent),
+        ProcessingRuleType.URL_REGEX: sorted(rules.url_regex),
+    }
+
+
+@pytest.mark.parametrize("rule_type", list(ProcessingRuleType))
+def test_filter_clears_each_rule_type(rule_type: ProcessingRuleType):
+    rules = _populated_rules()
+    before = _rule_type_state(rules)
+    assert set(before) == set(ProcessingRuleType)
+    assert before[rule_type], f"{rule_type} fixture is empty"
 
     rules.filter(Option(processing=ProcessingOption(exclude_rule_types=[rule_type])))
 
-    if rule_type == "domain_trie":
-        assert rules.domain_trie.items() == []
-    elif rule_type == "ip_trie":
-        assert list(rules.ip_trie.iteritems()) == []
-    elif rule_type == "ip_trie6":
-        assert list(rules.ip_trie6.iteritems()) == []
-    else:
-        assert rules.domain_regex == set()
+    after = _rule_type_state(rules)
+    expected = before.copy()
+    expected[rule_type] = []
+    assert after == expected
+
+
+def test_filter_includes_only_requested_rule_types():
+    rules = _populated_rules()
+
+    rules.filter(
+        Option(
+            processing=ProcessingOption(
+                include_rule_types=[
+                    ProcessingRuleType.DOMAIN_SUFFIX,
+                    ProcessingRuleType.IP_CIDR,
+                ]
+            )
+        )
+    )
+
+    assert rules.domain_trie.items() == [("example.net", SUFFIX)]
+    assert set(rules.ip_trie.iteritems()) == {"1.1.1.0/24"}
+    assert list(rules.ip_trie6.iteritems()) == []
+    assert rules.domain_regex == set()
+    assert rules.domain_keyword == set()
+    assert rules.ip_asn == set()
+    assert rules.logical == set()
+    assert rules.process == set()
+    assert rules.user_agent == set()
+    assert rules.url_regex == set()
 
 
 def test_filter_excludes_suffixes():

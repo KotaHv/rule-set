@@ -9,6 +9,7 @@ from rule_set.models import (
     MaxMindDBResource,
     Option,
     ProcessingOption,
+    ProcessingRuleType,
     RuleSetResource,
     SerializationOption,
     SourceModel,
@@ -57,7 +58,11 @@ sources = [
         name=Path("global"),
         option=Option(
             processing=ProcessingOption(
-                exclude_rule_types=["ip_trie", "ip_trie6", "ip_asn"],
+                exclude_rule_types=[
+                    ProcessingRuleType.IP_CIDR,
+                    ProcessingRuleType.IP_CIDR6,
+                    ProcessingRuleType.IP_ASN,
+                ],
             ),
             v2ray_domain=V2rayDomainOption(
                 attrs=V2rayDomainAttrs(exclude_attrs=["ads", "cn", "telemetry"]),
@@ -411,7 +416,7 @@ sources = [
         name=Path("direct"),
         option=Option(
             processing=ProcessingOption(
-                exclude_rule_types=["process"],
+                exclude_rule_types=[ProcessingRuleType.PROCESS_NAME],
             ),
             v2ray_domain=V2rayDomainOption(
                 attrs=V2rayDomainAttrs(include_attrs=["cn"]),
@@ -439,6 +444,12 @@ sources = [
         ],
         name=Path("lan"),
         option=Option(
+            processing=ProcessingOption(
+                include_rule_types=[
+                    ProcessingRuleType.IP_CIDR,
+                    ProcessingRuleType.IP_CIDR6,
+                ]
+            ),
             serialization=SerializationOption(no_resolve=False),
         ),
     ),
@@ -518,6 +529,12 @@ sources = [
         ],
         name=Path("cn-ip/cn-nobyda"),
         option=Option(
+            processing=ProcessingOption(
+                include_rule_types=[
+                    ProcessingRuleType.IP_CIDR,
+                    ProcessingRuleType.IP_CIDR6,
+                ]
+            ),
             serialization=SerializationOption(no_resolve=False),
             geo_ip=GeoIPOption(country_code="CN"),
         ),
@@ -532,6 +549,12 @@ sources = [
         ],
         name=Path("cn-ip/cn-ipinfo"),
         option=Option(
+            processing=ProcessingOption(
+                include_rule_types=[
+                    ProcessingRuleType.IP_CIDR,
+                    ProcessingRuleType.IP_CIDR6,
+                ]
+            ),
             serialization=SerializationOption(no_resolve=False),
             geo_ip=GeoIPOption(country_code="CN"),
         ),
@@ -546,6 +569,12 @@ sources = [
         ],
         name=Path("cn-ip/cn-ip2location"),
         option=Option(
+            processing=ProcessingOption(
+                include_rule_types=[
+                    ProcessingRuleType.IP_CIDR,
+                    ProcessingRuleType.IP_CIDR6,
+                ]
+            ),
             serialization=SerializationOption(no_resolve=False),
             geo_ip=GeoIPOption(country_code="CN"),
         ),
@@ -560,6 +589,12 @@ sources = [
         ],
         name=Path("cn-ip/cn-alecthw"),
         option=Option(
+            processing=ProcessingOption(
+                include_rule_types=[
+                    ProcessingRuleType.IP_CIDR,
+                    ProcessingRuleType.IP_CIDR6,
+                ]
+            ),
             serialization=SerializationOption(no_resolve=False),
             geo_ip=GeoIPOption(country_code="CN"),
         ),
@@ -575,6 +610,12 @@ sources = [
         ],
         name=Path("cn-ip/cn-sukka"),
         option=Option(
+            processing=ProcessingOption(
+                include_rule_types=[
+                    ProcessingRuleType.IP_CIDR,
+                    ProcessingRuleType.IP_CIDR6,
+                ]
+            ),
             serialization=SerializationOption(no_resolve=False),
             geo_ip=GeoIPOption(country_code="CN"),
         ),
@@ -673,7 +714,12 @@ sources = [
         name=Path("global-all"),
         option=Option(
             processing=ProcessingOption(
-                exclude_rule_types=["url_regex", "ip_trie", "ip_trie6", "ip_asn"]
+                exclude_rule_types=[
+                    ProcessingRuleType.URL_REGEX,
+                    ProcessingRuleType.IP_CIDR,
+                    ProcessingRuleType.IP_CIDR6,
+                    ProcessingRuleType.IP_ASN,
+                ]
             )
         ),
     ),

@@ -1,5 +1,7 @@
 from pydantic import BaseModel, field_validator
 
+from .enum import ProcessingRuleType
+
 
 class V2rayDomainAttrs(BaseModel):
     include_attrs: list[str] = []
@@ -40,7 +42,8 @@ class SerializationOption(BaseModel):
 
 
 class ProcessingOption(BaseModel):
-    exclude_rule_types: list[str] = []
+    include_rule_types: list[ProcessingRuleType] = []
+    exclude_rule_types: list[ProcessingRuleType] = []
     exclude_keywords: list[str] = []
     exclude_suffixes: list[str] = []
 

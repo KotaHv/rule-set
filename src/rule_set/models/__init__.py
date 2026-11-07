@@ -4,7 +4,7 @@ Contains all data models and related types.
 """
 
 from .artifact import Artifact, ArtifactKind
-from .enum import DomainType, SerializeFormat
+from .enum import DomainType, ProcessingRuleType, SerializeFormat
 from .metadata import MetadataRecord
 from .option import (
     GeoIPOption,
@@ -41,6 +41,7 @@ __all__ = [
     # Enums
     "SerializeFormat",
     "DomainType",
+    "ProcessingRuleType",
     "ArtifactKind",
     "Artifact",
     "WriteContext",

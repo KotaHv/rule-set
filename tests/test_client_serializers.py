@@ -98,7 +98,11 @@ def test_clash_splits_rules_into_domain_ipcidr_and_classical_artifacts():
         rules=rules,
         option=Option(geo_ip=GeoIPOption(country_code="CN")),
     ).serialize()
-    assert [artifact.kind for artifact in geo_ip_artifacts] == [ArtifactKind.IPCIDR]
+    assert {artifact.kind for artifact in geo_ip_artifacts} == {
+        ArtifactKind.DOMAIN,
+        ArtifactKind.IPCIDR,
+        ArtifactKind.CLASSICAL,
+    }
 
 
 @pytest.mark.parametrize(
