@@ -21,22 +21,34 @@ from rule_set.models import (
 sources = [
     SourceModel(
         resources=[
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/global.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/global.conf")
+            ),
             RuleSetResource(source=Path("sources/global")),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/python")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/python"
+                )
             ),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/rust")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/rust"
+                )
             ),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/flutter")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/flutter"
+                )
             ),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon"
+                )
             ),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/nvidia")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/nvidia"
+                )
             ),
             SourceReference(target="paypal"),
             SourceReference(target="proton"),
@@ -55,7 +67,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf"
+                )
             )
         ],
         name=Path("adblock/sukka/sukka-reject-no-drop"),
@@ -73,8 +87,12 @@ sources = [
             DomainSetResource(
                 source=HttpUrl("https://ruleset.skk.moe/List/domainset/reject.conf")
             ),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/reject.conf")),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/reject.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/reject.conf")
+            ),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/reject.conf")
+            ),
         ],
         name=Path("adblock/sukka/sukka-reject"),
         option=Option(
@@ -89,7 +107,9 @@ sources = [
     SourceModel(
         resources=[
             DomainSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/List/domainset/reject_extra.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/List/domainset/reject_extra.conf"
+                )
             )
         ],
         name=Path("adblock/sukka/sukka-reject-extra"),
@@ -97,7 +117,9 @@ sources = [
     SourceModel(
         resources=[
             DomainSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/List/domainset/reject_phishing.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/List/domainset/reject_phishing.conf"
+                )
             )
         ],
         name=Path("adblock/sukka/sukka-reject-phishing"),
@@ -128,7 +150,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list"
+                )
             )
         ],
         name=Path("adblock/cats-team-ad"),
@@ -136,7 +160,9 @@ sources = [
     SourceModel(
         resources=[
             DomainSetResource(
-                source=HttpUrl("https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
+                )
             )
         ],
         name=Path("adblock/anti-ad"),
@@ -145,7 +171,9 @@ sources = [
         resources=[
             RuleSetResource(source=Path("sources/reject/fqnovel-ad.txt")),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/fqnovel")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/fqnovel"
+                )
             ),
         ],
         name=Path("adblock/fqnovel-ad"),
@@ -157,10 +185,14 @@ sources = [
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/ai.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/ai.conf")
+            ),
             RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/ai.conf")),
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
+                )
             ),
             RuleSetResource(source=Path("sources/ai.txt")),
         ],
@@ -179,14 +211,18 @@ sources = [
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/apple_cn.conf"))
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/apple_cn.conf")
+            )
         ],
         name=Path("apple/apple-cn"),
     ),
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/apple_services.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/List/non_ip/apple_services.conf"
+                )
             ),
         ],
         name=Path("apple/apple-services"),
@@ -201,15 +237,23 @@ sources = [
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/microsoft.conf"))
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/microsoft.conf")
+            )
         ],
         name=Path("microsoft/microsoft"),
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/telegram.conf")),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/telegram.conf")),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/telegram_asn.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/telegram.conf")
+            ),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/telegram.conf")
+            ),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/telegram_asn.conf")
+            ),
         ],
         name=Path("telegram"),
     ),
@@ -228,7 +272,9 @@ sources = [
     SourceModel(
         resources=[
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam"
+                )
             )
         ],
         name=Path("steam/steam-cn"),
@@ -241,7 +287,9 @@ sources = [
     SourceModel(
         resources=[
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam"
+                )
             )
         ],
         name=Path("steam/steam"),
@@ -254,7 +302,9 @@ sources = [
     SourceModel(
         resources=[
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download"
+                )
             )
         ],
         name=Path("game/game-download-cn"),
@@ -267,7 +317,9 @@ sources = [
     SourceModel(
         resources=[
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-game-platforms-download"
+                )
             ),
             RuleSetResource(source=Path("sources/game/download.txt")),
         ],
@@ -281,7 +333,9 @@ sources = [
     SourceModel(
         resources=[
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-games-cn")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-games-cn"
+                )
             ),
             RuleSetResource(source=Path("sources/game/cn.txt")),
             SourceReference(target="steam/steam-cn"),
@@ -297,7 +351,9 @@ sources = [
     SourceModel(
         resources=[
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-games-!cn")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-games-!cn"
+                )
             ),
             RuleSetResource(source=Path("sources/game/global.txt")),
         ],
@@ -310,7 +366,9 @@ sources = [
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/download.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/download.conf")
+            ),
             DomainSetResource(
                 source=HttpUrl("https://ruleset.skk.moe/List/domainset/download.conf")
             ),
@@ -319,21 +377,33 @@ sources = [
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/cdn.conf")),
-            DomainSetResource(source=HttpUrl("https://ruleset.skk.moe/List/domainset/cdn.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/cdn.conf")
+            ),
+            DomainSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/domainset/cdn.conf")
+            ),
         ],
         name=Path("cdn"),
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/domestic.conf")),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/direct.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/domestic.conf")
+            ),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/direct.conf")
+            ),
             RuleSetResource(source=Path("sources/direct/direct.txt")),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon"
+                )
             ),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/nvidia")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/nvidia"
+                )
             ),
             SourceReference(target="game/game-cn"),
             SourceReference(target="game/game-download-cn"),
@@ -351,7 +421,9 @@ sources = [
     SourceModel(
         resources=[
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-dev")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-dev"
+                )
             )
         ],
         name=Path("dev"),
@@ -374,7 +446,9 @@ sources = [
         resources=[
             RuleSetResource(source=Path("sources/global/ehentai.txt")),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/ehentai")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/ehentai"
+                )
             ),
         ],
         name=Path("e-hentai"),
@@ -383,7 +457,9 @@ sources = [
         resources=[
             RuleSetResource(source=Path("sources/global/reddit.txt")),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/reddit")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/reddit"
+                )
             ),
         ],
         name=Path("reddit"),
@@ -400,7 +476,9 @@ sources = [
         resources=[
             RuleSetResource(source=Path("sources/global/proton.txt")),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/protonmail")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/protonmail"
+                )
             ),
         ],
         name=Path("proton"),
@@ -408,7 +486,9 @@ sources = [
     SourceModel(
         resources=[
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bitwarden")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bitwarden"
+                )
             ),
         ],
         name=Path("bitwarden"),
@@ -416,7 +496,9 @@ sources = [
     SourceModel(
         resources=[
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/paypal")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/paypal"
+                )
             ),
         ],
         name=Path("paypal"),
@@ -429,7 +511,9 @@ sources = [
     SourceModel(
         resources=[
             MaxMindDBResource(
-                source=HttpUrl("https://raw.githubusercontent.com/NobyDa/geoip/release/Private-GeoIP-CN.mmdb")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/NobyDa/geoip/release/Private-GeoIP-CN.mmdb"
+                )
             )
         ],
         name=Path("cn-ip/cn-nobyda"),
@@ -441,7 +525,9 @@ sources = [
     SourceModel(
         resources=[
             MaxMindDBResource(
-                source=HttpUrl("https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb")
+                source=HttpUrl(
+                    "https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb"
+                )
             )
         ],
         name=Path("cn-ip/cn-ipinfo"),
@@ -453,7 +539,9 @@ sources = [
     SourceModel(
         resources=[
             MaxMindDBResource(
-                source=HttpUrl("https://github.com/xream/geoip/releases/latest/download/ip2location.country.mmdb")
+                source=HttpUrl(
+                    "https://github.com/xream/geoip/releases/latest/download/ip2location.country.mmdb"
+                )
             )
         ],
         name=Path("cn-ip/cn-ip2location"),
@@ -465,7 +553,9 @@ sources = [
     SourceModel(
         resources=[
             MaxMindDBResource(
-                source=HttpUrl("https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/Country.mmdb")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/Country.mmdb"
+                )
             )
         ],
         name=Path("cn-ip/cn-alecthw"),
@@ -476,7 +566,9 @@ sources = [
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/china_ip.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/china_ip.conf")
+            ),
             RuleSetResource(
                 source=HttpUrl("https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf")
             ),
@@ -492,7 +584,9 @@ sources = [
             RuleSetResource(
                 source=HttpUrl("https://ruleset.skk.moe/List/non_ip/stream_us.conf")
             ),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_us.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_us.conf")
+            ),
         ],
         name=Path("stream/stream-us"),
     ),
@@ -501,7 +595,9 @@ sources = [
             RuleSetResource(
                 source=HttpUrl("https://ruleset.skk.moe/List/non_ip/stream_eu.conf")
             ),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_eu.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_eu.conf")
+            ),
         ],
         name=Path("stream/stream-eu"),
     ),
@@ -510,7 +606,9 @@ sources = [
             RuleSetResource(
                 source=HttpUrl("https://ruleset.skk.moe/List/non_ip/stream_jp.conf")
             ),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_jp.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_jp.conf")
+            ),
         ],
         name=Path("stream/stream-jp"),
     ),
@@ -519,7 +617,9 @@ sources = [
             RuleSetResource(
                 source=HttpUrl("https://ruleset.skk.moe/List/non_ip/stream_kr.conf")
             ),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_kr.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_kr.conf")
+            ),
         ],
         name=Path("stream/stream-kr"),
     ),
@@ -528,7 +628,9 @@ sources = [
             RuleSetResource(
                 source=HttpUrl("https://ruleset.skk.moe/List/non_ip/stream_hk.conf")
             ),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_hk.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_hk.conf")
+            ),
         ],
         name=Path("stream/stream-hk"),
     ),
@@ -537,14 +639,20 @@ sources = [
             RuleSetResource(
                 source=HttpUrl("https://ruleset.skk.moe/List/non_ip/stream_tw.conf")
             ),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_tw.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/stream_tw.conf")
+            ),
         ],
         name=Path("stream/stream-tw"),
     ),
     SourceModel(
         resources=[
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/non_ip/stream.conf")),
-            RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/stream.conf")),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/non_ip/stream.conf")
+            ),
+            RuleSetResource(
+                source=HttpUrl("https://ruleset.skk.moe/List/ip/stream.conf")
+            ),
         ],
         name=Path("stream/stream"),
     ),
@@ -572,7 +680,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/alibaba.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/alibaba.conf"
+                )
             ),
             RuleSetResource(source=Path("sources/dns/bilibili/ali.txt")),
         ],
@@ -581,7 +691,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/tencent.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/tencent.conf"
+                )
             ),
         ],
         name=Path("dns/tencent"),
@@ -589,7 +701,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/bilibili.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/bilibili.conf"
+                )
             ),
         ],
         name=Path("dns/bilibili"),
@@ -597,7 +711,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/xiaomi.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/xiaomi.conf"
+                )
             ),
         ],
         name=Path("dns/xiaomi"),
@@ -605,10 +721,14 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/bytedance.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/bytedance.conf"
+                )
             ),
             V2rayDomainResource(
-                source=HttpUrl("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/fqnovel")
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/fqnovel"
+                )
             ),
         ],
         name=Path("dns/bytedance"),
@@ -621,7 +741,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/baidu.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/baidu.conf"
+                )
             ),
         ],
         name=Path("dns/baidu"),
@@ -629,7 +751,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/qihoo360.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/qihoo360.conf"
+                )
             ),
         ],
         name=Path("dns/qihoo360"),
@@ -637,7 +761,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/hotspot_captive_portal.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/hotspot_captive_portal.conf"
+                )
             ),
         ],
         name=Path("dns/hotspot_captive_portal"),
@@ -645,7 +771,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/lan_without_real_ip.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/lan_without_real_ip.conf"
+                )
             ),
         ],
         name=Path("dns/lan_without_real_ip"),
@@ -653,7 +781,9 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(
-                source=HttpUrl("https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/lan_with_realip.conf")
+                source=HttpUrl(
+                    "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/lan_with_realip.conf"
+                )
             ),
         ],
         name=Path("dns/lan_with_realip"),
