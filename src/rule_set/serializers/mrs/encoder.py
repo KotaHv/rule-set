@@ -32,7 +32,9 @@ class _RuleSetYaml(BaseModel):
 
 def _load_payload(source: str | bytes) -> list[str]:
     try:
-        rule_set = _RuleSetYaml.model_validate(yaml.safe_load(source))
+        rule_set = _RuleSetYaml.model_validate(
+            yaml.load(source, Loader=yaml.CSafeLoader)
+        )
     except yaml.YAMLError as exc:
         raise SerializerError(f"invalid rule-set YAML: {exc}") from exc
 

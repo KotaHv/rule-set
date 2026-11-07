@@ -107,6 +107,19 @@ def test_clash_splits_rules_into_domain_ipcidr_and_classical_artifacts():
     }
 
 
+def test_clash_domain_payload_preserves_unicode() -> None:
+    domains = ["例子.测试", "BÜCHER.example"]
+    artifacts = ClashSerializer(
+        rules=SerializableRuleModel(domain=domains),
+        option=Option(),
+    ).serialize()
+    domain = next(
+        artifact for artifact in artifacts if artifact.kind == ArtifactKind.DOMAIN
+    )
+
+    assert _payload(domain) == domains
+
+
 @pytest.mark.parametrize(
     ("no_resolve", "expected_asn"),
     [

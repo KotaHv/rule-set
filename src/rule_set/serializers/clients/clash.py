@@ -64,18 +64,25 @@ class ClashSerializer(BaseSerializer):
         payload.extend(self.serialized_logical_rules)
         return payload
 
-    def _serialize_payload(self, payload: list[str], style: str | None) -> str:
+    def _serialize_payload_lines(self, payload: list[str]) -> str:
+        lines = "".join(f"- '{value}'\n" for value in payload)
+        return self._with_header(payload, f"'payload':\n{lines}")
+
+    def _serialize_payload_with_pyyaml(self, payload: list[str]) -> str:
         yaml_content = yaml.dump(
             ClashPayload(payload=payload),
             sort_keys=False,
             Dumper=CDumper,
             width=-1,
-            default_style=style,
         )
-        # Add rule count comment for clash format
-        rule_count = len(payload)
-        comment = f"# Total: {rule_count} rules\n# Last Updated: {self.last_updated}\n"
-        return comment + yaml_content
+        return self._with_header(payload, yaml_content)
+
+    def _with_header(self, payload: list[str], content: str) -> str:
+        return (
+            f"# Total: {len(payload)} rules\n"
+            f"# Last Updated: {self.last_updated}\n"
+            f"{content}"
+        )
 
     @override
     def serialize(self) -> list[Artifact]:
@@ -84,21 +91,21 @@ class ClashSerializer(BaseSerializer):
             payloads.append(
                 Artifact(
                     kind=ArtifactKind.DOMAIN,
-                    data=self._serialize_payload(domain_payload, "'"),
+                    data=self._serialize_payload_lines(domain_payload),
                 )
             )
         if ip_cidr_payload := self.ip_cidr():
             payloads.append(
                 Artifact(
                     kind=ArtifactKind.IPCIDR,
-                    data=self._serialize_payload(ip_cidr_payload, "'"),
+                    data=self._serialize_payload_lines(ip_cidr_payload),
                 )
             )
         if classical_payload := self.classical():
             payloads.append(
                 Artifact(
                     kind=ArtifactKind.CLASSICAL,
-                    data=self._serialize_payload(classical_payload, None),
+                    data=self._serialize_payload_with_pyyaml(classical_payload),
                 )
             )
         return payloads
