@@ -85,6 +85,8 @@ class RuleModel(BaseModel):
 
     def _deduplicate_domain_regex(self) -> None:
         """Remove DOMAIN rules already matched by a DOMAIN_REGEX rule."""
+        if not self.domain_regex:
+            return
         regexes: list[tuple[str, re.Pattern[str]]] = []
         for domain_regex in self.domain_regex:
             try:

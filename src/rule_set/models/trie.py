@@ -16,6 +16,7 @@ from .enum import DomainType
 class DomainTrie:
     def __init__(self):
         self._trie: Trie[tuple[str, ...], DomainType, str] = Trie()
+        self._seen_wildcard: bool = False
 
     def _domain_to_reversed_parts(self, domain: str) -> tuple[str, ...]:
         return tuple(domain.split(".")[::-1])
@@ -30,6 +31,8 @@ class DomainTrie:
             if step.value == DomainType.DOMAIN_SUFFIX:
                 return
         self._trie[parts] = domain_type
+        if domain_type == DomainType.DOMAIN_WILDCARD:
+            self._seen_wildcard = True
         if domain_type != DomainType.DOMAIN_SUFFIX:
             return
         # Clear children if suffix
@@ -39,6 +42,8 @@ class DomainTrie:
             del self._trie[d]
 
     def filter_by_wildcard(self):
+        if not self._seen_wildcard:
+            return
         wildcards_without_suffix: list[tuple[str, re.Pattern[str]]] = []
         for parts, domain_type in list(self._trie.iteritems()):
             if domain_type != DomainType.DOMAIN_WILDCARD:

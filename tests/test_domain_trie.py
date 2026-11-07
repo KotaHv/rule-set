@@ -78,3 +78,17 @@ def test_pydantic_schema_round_trip():
         SUFFIX: ["example.net"],
         WILDCARD: ["*.example.org"],
     }
+
+
+def test_pydantic_deserialized_trie_dedupes_wildcards():
+    adapter = TypeAdapter(DomainTrie)
+    trie = adapter.validate_python(
+        {
+            DOMAIN: ["bar.foo.com"],
+            WILDCARD: ["*.foo.com"],
+        }
+    )
+
+    trie.filter_by_wildcard()
+
+    assert trie.items() == [("*.foo.com", WILDCARD)]
