@@ -441,6 +441,7 @@ sources = [
     SourceModel(
         resources=[
             RuleSetResource(source=HttpUrl("https://ruleset.skk.moe/List/ip/lan.conf")),
+            RuleSetResource(source=Path("sources/lan.txt")),
         ],
         name=Path("lan"),
         option=Option(
