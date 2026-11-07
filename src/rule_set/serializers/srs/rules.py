@@ -259,11 +259,11 @@ def _write_logical_rule(
     writer.write_byte(0 if rule.mode == "and" else 1)
     writer.write_uvarint(len(rule.rules))
     for child in rule.rules:
-        write_rule(writer, child, version)
+        _write_rule(writer, child, version)
     writer.write_byte(1 if rule.invert else 0)
 
 
-def write_rule(
+def _write_rule(
     writer: ByteWriter,
     rule: DefaultRuleSource | LogicalRuleSource,
     version: int,
@@ -278,7 +278,7 @@ def encode_payload(rule_set: RuleSetSource, version: int) -> bytes:
     writer = ByteWriter()
     writer.write_uvarint(len(rule_set.rules))
     for rule in rule_set.rules:
-        write_rule(writer, rule, version)
+        _write_rule(writer, rule, version)
     return writer.to_bytes()
 
 
