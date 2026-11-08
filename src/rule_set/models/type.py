@@ -3,13 +3,15 @@ from typing import Annotated
 
 from pydantic import (
     BeforeValidator,
+    Field,
     HttpUrl,
 )
 
 from .enum import SerializeFormat
 
-# New resource type system - using Python 3.13 syntax
-type Source = HttpUrl | Path
+# Try HttpUrl before Path: Pydantic's smart union otherwise parses URL
+# strings from cache as local paths.
+type Source = Annotated[HttpUrl | Path, Field(union_mode="left_to_right")]
 
 
 def _ensure_list(value: object) -> object:

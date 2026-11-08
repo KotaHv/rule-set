@@ -9,6 +9,7 @@ from .aho import Aho
 from .enum import DomainType, ProcessingRuleType
 from .logical import LogicalTree, output_sort_key
 from .option import Option
+from .resource import V2rayDomainResource
 from .trie import DomainTrie, IPTrie, IPTrie6
 
 
@@ -191,12 +192,6 @@ class RuleModel(BaseModel):
         return serializable_rule
 
 
-class V2rayDomainInclude(BaseModel):
-    name: str
-    include_attrs: list[str] = []
-    exclude_attrs: list[str] = []
-
-
 class V2rayDomainResult(BaseModel):
     rules: RuleModel = RuleModel()
-    includes: list[V2rayDomainInclude] = []
+    resources: list[V2rayDomainResource] = []

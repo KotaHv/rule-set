@@ -27,7 +27,6 @@ from .resource import (
 from .rule import (
     RuleModel,
     SerializableRuleModel,
-    V2rayDomainInclude,
     V2rayDomainResult,
 )
 from .source import SourceModel
@@ -63,7 +62,6 @@ __all__ = [
     # Rules
     "RuleModel",
     "V2rayDomainResult",
-    "V2rayDomainInclude",
     "SerializableRuleModel",
     # Sources
     "SourceModel",

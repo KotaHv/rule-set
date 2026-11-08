@@ -8,9 +8,9 @@ from rule_set.models import (
     ResourceList,
     SourceModel,
     V2rayDomainAttrs,
-    V2rayDomainInclude,
     V2rayDomainOption,
     V2rayDomainResource,
+    V2rayDomainResult,
 )
 from rule_set.parsers.v2ray_domain import parse
 
@@ -27,6 +27,23 @@ def _option(
             exclude_attrs=exclude_attrs or [],
         ),
         exclude_includes=exclude_includes or [],
+    )
+
+
+def _resource(
+    *,
+    include_attrs: list[str] | None = None,
+    exclude_attrs: list[str] | None = None,
+    exclude_includes: list[str] | None = None,
+    source: str = "https://example.com/list",
+) -> V2rayDomainResource:
+    return V2rayDomainResource(
+        source=HttpUrl(source),
+        option=_option(
+            include_attrs=include_attrs,
+            exclude_attrs=exclude_attrs,
+            exclude_includes=exclude_includes,
+        ),
     )
 
 
@@ -82,7 +99,7 @@ def test_resource_keeps_explicit_empty_values():
 
 
 def test_v2ray_regex_is_stored_separately_and_serialized():
-    result = parse(r"regexp:^ads\.example\.com$", _option())
+    result = parse(r"regexp:^ads\.example\.com$", _resource())
 
     assert result.rules.domain_trie.items() == []
     assert result.rules.domain_regex == {r"^ads\.example\.com$"}
@@ -98,23 +115,67 @@ def test_parse_include_rules_with_attributes_and_exclude_includes():
         include:telemetry @-!cn # inline comment
     """
 
-    result = parse(data, _option(exclude_includes=["blocked"]))
-
-    assert result.includes == [
-        V2rayDomainInclude(
-            name="ads",
-            include_attrs=["cn"],
-            exclude_attrs=["ads"],
+    result = parse(
+        data,
+        _resource(
+            include_attrs=["parent-cn"],
+            exclude_attrs=["parent-ads"],
+            exclude_includes=["blocked"],
         ),
-        V2rayDomainInclude(
-            name="telemetry",
-            include_attrs=[],
-            exclude_attrs=["!cn"],
+    )
+
+    assert result.resources == [
+        V2rayDomainResource(
+            source=HttpUrl("https://example.com/ads"),
+            option=V2rayDomainOption(
+                attrs=V2rayDomainAttrs(
+                    include_attrs=["cn", "parent-cn"],
+                    exclude_attrs=["ads", "parent-ads"],
+                ),
+                exclude_includes=["blocked"],
+            ),
+        ),
+        V2rayDomainResource(
+            source=HttpUrl("https://example.com/telemetry"),
+            option=V2rayDomainOption(
+                attrs=V2rayDomainAttrs(
+                    include_attrs=["parent-cn"],
+                    exclude_attrs=["!cn", "parent-ads"],
+                ),
+                exclude_includes=["blocked"],
+            ),
         ),
     ]
     assert result.rules.domain_trie.items() == []
     assert result.rules.domain_keyword == set()
     assert result.rules.domain_regex == set()
+
+
+def test_parse_include_resolves_relative_to_local_source():
+    resource = V2rayDomainResource(
+        source=Path("lists/main.txt"),
+        option=_option(),
+    )
+
+    result = parse("include:ads @cn", resource)
+
+    assert result.resources == [
+        V2rayDomainResource(
+            source=Path("lists/ads"),
+            option=V2rayDomainOption(
+                attrs=V2rayDomainAttrs(include_attrs=["cn"]),
+            ),
+        )
+    ]
+
+
+def test_v2ray_result_cache_roundtrip_preserves_http_source():
+    result = parse("include:ads", _resource())
+
+    restored = V2rayDomainResult.model_validate_json(result.model_dump_json())
+
+    assert restored.resources == result.resources
+    assert isinstance(restored.resources[0].source, HttpUrl)
 
 
 def test_parse_attribute_matching_applies_to_all_rule_types():
@@ -132,7 +193,7 @@ def test_parse_attribute_matching_applies_to_all_rule_types():
 
     result = parse(
         data,
-        _option(include_attrs=["cn"], exclude_attrs=["ads"]),
+        _resource(include_attrs=["cn"], exclude_attrs=["ads"]),
     )
 
     assert set(result.rules.domain_trie.items()) == {
@@ -151,7 +212,7 @@ def test_parse_inline_comments_are_ignored():
         filtered.example # @cn stays part of the comment
     """
 
-    result = parse(data, _option(include_attrs=["cn"]))
+    result = parse(data, _resource(include_attrs=["cn"]))
 
     assert set(result.rules.domain_trie.items()) == {
         ("commented.example", DomainType.DOMAIN_SUFFIX),
@@ -165,7 +226,7 @@ def test_parse_prefixless_lines_default_to_domain_suffix():
         plain-with-attrs.example @cn # trailing comment
     """
 
-    result = parse(data, _option())
+    result = parse(data, _resource())
 
     assert set(result.rules.domain_trie.items()) == {
         ("plain.example", DomainType.DOMAIN_SUFFIX),
@@ -183,7 +244,7 @@ def test_parse_skips_invalid_domain_rules():
         full:example..com
     """
 
-    result = parse(data, _option())
+    result = parse(data, _resource())
 
     assert set(result.rules.domain_trie.items()) == {
         ("valid-suffix.example", DomainType.DOMAIN_SUFFIX),

@@ -5,11 +5,12 @@ from loguru import logger
 from rule_set.models import (
     DomainType,
     RuleModel,
-    V2rayDomainInclude,
+    V2rayDomainAttrs,
     V2rayDomainOption,
+    V2rayDomainResource,
     V2rayDomainResult,
 )
-from rule_set.utils import validate_domain
+from rule_set.utils import build_v2ray_include_url, validate_domain
 
 LINE_PATTERN = re.compile(
     r"^(?P<type>domain|keyword|full|regexp|include):(?P<rule>.+?)(?:\s+(?P<attrs>@-?!?\w+(?:\s+@-?!?\w+)*))?$"
@@ -21,7 +22,7 @@ _DOMAIN_RULE_TYPES: dict[str, DomainType] = {
 }
 
 
-def parse(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
+def parse(data: str, resource: V2rayDomainResource) -> V2rayDomainResult:
     """
     V2Ray domain syntax:
         - Lines starting with '#' are comments and ignored.
@@ -35,10 +36,8 @@ def parse(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
         - Domain rules (domain, keyword, regexp, full) may include one or more
           attributes, each beginning with '@' and separated by spaces (e.g., @ads @cn).
     """
-    attribute_rules = option.attrs
-    exclude_includes = option.exclude_includes
     rules = RuleModel()
-    includes: list[V2rayDomainInclude] = []
+    resources: list[V2rayDomainResource] = []
 
     for line in data.splitlines():
         line = line.strip()
@@ -53,23 +52,31 @@ def parse(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
             rule_type = "domain"
             rule, *attributes = line.split()
         if rule_type == "include":
-            if rule not in exclude_includes:
-                include_attrs: list[str] = []
-                exclude_attrs: list[str] = []
-                for attr in attributes:
-                    if attr.startswith("@-"):
-                        exclude_attrs.append(attr[2:])
-                    else:
-                        include_attrs.append(attr[1:])
-                includes.append(
-                    V2rayDomainInclude(
-                        name=rule,
-                        include_attrs=include_attrs,
-                        exclude_attrs=exclude_attrs,
-                    )
+            if rule in resource.option.exclude_includes:
+                continue
+            include_attrs: list[str] = []
+            exclude_attrs: list[str] = []
+            for attr in attributes:
+                if attr.startswith("@-"):
+                    exclude_attrs.append(attr[2:])
+                else:
+                    include_attrs.append(attr[1:])
+            resources.append(
+                V2rayDomainResource(
+                    source=build_v2ray_include_url(resource.source, rule),
+                    option=V2rayDomainOption(
+                        attrs=V2rayDomainAttrs(
+                            include_attrs=include_attrs
+                            + resource.option.attrs.include_attrs,
+                            exclude_attrs=exclude_attrs
+                            + resource.option.attrs.exclude_attrs,
+                        ),
+                        exclude_includes=resource.option.exclude_includes,
+                    ),
                 )
+            )
             continue
-        if not attribute_rules.matches(attributes):
+        if not resource.option.attrs.matches(attributes):
             continue
         if domain_type := _DOMAIN_RULE_TYPES.get(rule_type):
             if not validate_domain(rule):
@@ -81,4 +88,4 @@ def parse(data: str, option: V2rayDomainOption) -> V2rayDomainResult:
         elif rule_type == "regexp":
             rules.domain_regex.add(rule)
 
-    return V2rayDomainResult(rules=rules, includes=includes)
+    return V2rayDomainResult(rules=rules, resources=resources)
