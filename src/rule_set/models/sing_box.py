@@ -19,7 +19,6 @@ class SingBoxLeafRule(TypedDict, total=False):
     package_name: str
     wifi_ssid: str
     wifi_bssid: str
-    protocol: str
     invert: bool
 
 

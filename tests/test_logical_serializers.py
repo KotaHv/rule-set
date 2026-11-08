@@ -1,3 +1,4 @@
+import pytest
 import yaml
 
 from rule_set.models.logical import (
@@ -220,3 +221,36 @@ def test_sing_box_double_negation_restores_rule():
         "domain_suffix": "example.com",
         "invert": False,
     }
+
+
+@pytest.mark.parametrize("protocol", ["tcp", "UDP"])
+def test_sing_box_maps_protocol_to_network(protocol: str) -> None:
+    tree = LogicalTree(
+        root=_logical(
+            LogicalOperator.AND,
+            _rule(RuleType.PROTOCOL, protocol),
+            _rule(RuleType.DOMAIN_SUFFIX, "example.com"),
+        )
+    )
+
+    assert serialize_sing_box(tree=tree) == {
+        "type": "logical",
+        "rules": [
+            {"network": protocol.lower()},
+            {"domain_suffix": "example.com"},
+        ],
+        "mode": "and",
+    }
+
+
+@pytest.mark.parametrize("protocol", ["https", "tls", "http", "quic"])
+def test_sing_box_rejects_protocol_without_network_equivalent(protocol: str) -> None:
+    tree = LogicalTree(
+        root=_logical(
+            LogicalOperator.AND,
+            _rule(RuleType.PROTOCOL, protocol),
+            _rule(RuleType.DOMAIN_SUFFIX, "example.com"),
+        )
+    )
+
+    assert serialize_sing_box(tree=tree) is None

@@ -30,19 +30,7 @@ type_format = {
     "src-ip-cidr": "source_ip_cidr",
 }
 
-protocol_types = [
-    "http",
-    "tls",
-    "quic",
-    "stun",
-    "dns",
-    "bittorrent",
-    "dtls",
-    "ssh",
-    "rdp",
-    "ntp",
-]
-protocol_types_format = {"https": "tls"}
+network_types = {"tcp", "udp"}
 
 
 def _serialize_logical(*, node: Node, invert: bool | None = None) -> SingBoxRule:
@@ -118,11 +106,8 @@ def format_rule(rule_type: str, rule: str) -> SingBoxLeafRule:
             return {"wifi_bssid": rule}
         case "protocol":
             protocol = rule.lower()
-            protocol = protocol_types_format.get(protocol, protocol)
-            if protocol in ["udp", "tcp"]:
+            if protocol in network_types:
                 return {"network": protocol}
-            if protocol in protocol_types:
-                return {"protocol": protocol}
 
             raise UnsupportedRuleTypeError(rule_type)
         case _:
