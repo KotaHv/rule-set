@@ -1,53 +1,58 @@
 import json
 from typing import override
 
-from rule_set.models import Artifact, ArtifactKind
+from rule_set.models import SerializableRuleModel
 from rule_set.models.sing_box import (
     SingBoxClientRule,
-    SingBoxConfig,
     SingBoxRule,
+    SingBoxRuleSet,
 )
 from rule_set.utils import domain
 
 from ..logic import sing_box_logical_serialize
-from .base import BaseSerializer
+from ..srs import encode_rule_set
+from .base import BaseRuleSerializer, BaseSerializer
 
 
-class SingBoxSerializer(BaseSerializer):
+class SingBoxRuleSetSerializer(BaseRuleSerializer[SingBoxRuleSet]):
     @override
-    def serialize(self) -> list[Artifact]:
-        rules: list[SingBoxClientRule | SingBoxRule] = []
+    def serialize(self, rules: SerializableRuleModel) -> SingBoxRuleSet:
+        serialized_rules: list[SingBoxClientRule | SingBoxRule] = []
 
         rule: SingBoxClientRule = {}
-        if self.rules.domain:
-            rule["domain"] = self.rules.domain
-        if self.rules.domain_suffix:
-            rule["domain_suffix"] = self.rules.domain_suffix
+        if rules.domain:
+            rule["domain"] = rules.domain
+        if rules.domain_suffix:
+            rule["domain_suffix"] = rules.domain_suffix
         domain_regex = [
-            *(domain.wildcard_to_regex(item) for item in self.rules.domain_wildcard),
-            *self.rules.domain_regex,
+            *(domain.wildcard_to_regex(item) for item in rules.domain_wildcard),
+            *rules.domain_regex,
         ]
         if domain_regex:
             rule["domain_regex"] = domain_regex
-        if self.rules.domain_keyword:
-            rule["domain_keyword"] = self.rules.domain_keyword
-        if ip_cidr := [*self.rules.ip_cidr, *self.rules.ip_cidr6]:
+        if rules.domain_keyword:
+            rule["domain_keyword"] = rules.domain_keyword
+        if ip_cidr := [*rules.ip_cidr, *rules.ip_cidr6]:
             rule["ip_cidr"] = ip_cidr
 
         if rule:
-            rules.append(rule)
-        if self.rules.process:
-            rules.append({"process_name": self.rules.process})
-        for tree in self.rules.logical:
+            serialized_rules.append(rule)
+        if rules.process:
+            serialized_rules.append({"process_name": rules.process})
+        for tree in rules.logical:
             if logical_rule := sing_box_logical_serialize(tree=tree):
-                rules.append(logical_rule)
+                serialized_rules.append(logical_rule)
 
-        if not rules:
-            return [Artifact(kind=ArtifactKind.DEFAULT, data="")]
+        return SingBoxRuleSet(version=2, rules=serialized_rules)
 
-        return [
-            Artifact(
-                kind=ArtifactKind.DEFAULT,
-                data=json.dumps(SingBoxConfig(version=2, rules=rules)),
-            )
-        ]
+
+class SingBoxJsonSerializer(BaseSerializer[SingBoxRuleSet, str]):
+    @override
+    def serialize(self, rule_set: SingBoxRuleSet) -> str:
+        return json.dumps(rule_set)
+
+
+class SingBoxSrsSerializer(BaseSerializer[SingBoxRuleSet, bytes]):
+    @override
+    def serialize(self, rule_set: SingBoxRuleSet) -> bytes:
+        return encode_rule_set(rule_set)

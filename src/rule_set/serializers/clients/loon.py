@@ -1,10 +1,10 @@
 from typing import override
 
-from rule_set.models import Artifact, ArtifactKind
+from rule_set.models import SerializableRuleModel
 from rule_set.utils.domain import regex_to_wildcard
 
 from ..logic import surge_logical_serialize
-from .base import BaseSerializer
+from .base import BaseRuleSerializer
 
 include_rule_types = [
     "DOMAIN",
@@ -24,53 +24,54 @@ include_rule_types = [
 ]
 
 
-class LoonSerializer(BaseSerializer):
+class LoonSerializer(BaseRuleSerializer[str]):
     @override
-    def serialize(self) -> list[Artifact]:
-        rules: list[str] = []
+    def serialize(self, rules: SerializableRuleModel) -> str:
+        serialized_rules: list[str] = []
 
-        rules.extend(f"DOMAIN,{domain}" for domain in self.rules.domain)
+        serialized_rules.extend(f"DOMAIN,{domain}" for domain in rules.domain)
 
-        rules.extend(
-            f"DOMAIN-SUFFIX,{domain_suffix}"
-            for domain_suffix in self.rules.domain_suffix
+        serialized_rules.extend(
+            f"DOMAIN-SUFFIX,{domain_suffix}" for domain_suffix in rules.domain_suffix
         )
 
-        rules.extend(
+        serialized_rules.extend(
             f"DOMAIN-WILDCARD,{domain_wildcard}"
-            for domain_wildcard in self.rules.domain_wildcard
+            for domain_wildcard in rules.domain_wildcard
         )
 
-        rules.extend(
+        serialized_rules.extend(
             f"DOMAIN-KEYWORD,{domain_keyword}"
-            for domain_keyword in self.rules.domain_keyword
+            for domain_keyword in rules.domain_keyword
         )
 
-        rules.extend(f"IP-CIDR,{ip_cidr}" for ip_cidr in self.rules.ip_cidr)
+        serialized_rules.extend(f"IP-CIDR,{ip_cidr}" for ip_cidr in rules.ip_cidr)
 
-        rules.extend(f"IP-CIDR6,{ip_cidr6}" for ip_cidr6 in self.rules.ip_cidr6)
+        serialized_rules.extend(f"IP-CIDR6,{ip_cidr6}" for ip_cidr6 in rules.ip_cidr6)
 
-        rules.extend(f"IP-ASN,{ip_asn}" for ip_asn in self.rules.ip_asn)
+        serialized_rules.extend(f"IP-ASN,{ip_asn}" for ip_asn in rules.ip_asn)
 
-        rules.extend(f"USER-AGENT,{ua}" for ua in self.rules.user_agent)
+        serialized_rules.extend(f"USER-AGENT,{ua}" for ua in rules.user_agent)
 
-        rules.extend(f"PROCESS-NAME,{process}" for process in self.rules.process)
+        serialized_rules.extend(f"PROCESS-NAME,{process}" for process in rules.process)
 
-        rules.extend(
+        serialized_rules.extend(
             rule
-            for tree in self.rules.logical
+            for tree in rules.logical
             if (rule := surge_logical_serialize(tree=tree, include=include_rule_types))
             is not None
         )
 
-        rules.extend(f"URL-REGEX,{url_regex}" for url_regex in self.rules.url_regex)
-        rules.extend(
-            f"DOMAIN-WILDCARD,{w}"
-            for domain_regex in self.rules.domain_regex
-            for w in regex_to_wildcard(domain_regex)
+        serialized_rules.extend(
+            f"URL-REGEX,{url_regex}" for url_regex in rules.url_regex
         )
-        filtered_rules = list(filter(None, rules))
+        serialized_rules.extend(
+            f"DOMAIN-WILDCARD,{wildcard}"
+            for domain_regex in rules.domain_regex
+            for wildcard in regex_to_wildcard(domain_regex)
+        )
+        filtered_rules = list(filter(None, serialized_rules))
         content = "\n".join(filtered_rules)
         if content:
             content = f"# Total: {len(filtered_rules)} rules\n# Last Updated: {self.last_updated}\n{content}"
-        return [Artifact(kind=ArtifactKind.DEFAULT, data=content)]
+        return content

@@ -72,7 +72,11 @@ class MetadataStore:
         ]
 
     def update(self, record: MetadataRecord) -> None:
-        relative_path = record.path.relative_to(settings.build_dir).as_posix()
+        """Store the update timestamp for a build-relative output path."""
+        if record.path.is_absolute():
+            raise ValueError(
+                f"metadata path must be relative to the build directory: {record.path}"
+            )
         with self.connection:
             _ = self.connection.execute(
                 """
@@ -81,7 +85,7 @@ class MetadataStore:
                 ON CONFLICT(path) DO UPDATE SET timestamp = excluded.timestamp
                 WHERE timestamp != excluded.timestamp
                 """,
-                (relative_path, record.timestamp),
+                (record.path.as_posix(), record.timestamp),
             )
 
     def close(self) -> None:

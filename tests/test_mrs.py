@@ -3,13 +3,15 @@ from compression import zstd
 from pathlib import Path
 
 import pytest
+import yaml
 
 from rule_set.config import settings
 from rule_set.errors import SerializerError
-from rule_set.file_writers.base import BaseFileWriter
-from rule_set.file_writers.clash import ClashDomainFileWriter, ClashIpcidrFileWriter
-from rule_set.metadata import MetadataStore
-from rule_set.serializers.mrs import MrsBehavior, encode_rule_set
+from rule_set.file_writers import write_if_changed
+from rule_set.models import ArtifactKind
+from rule_set.output import CLASH_MRS_OUTPUTS
+from rule_set.serializers.clients.clash import ClashMrsSerializer, ClashPayload
+from rule_set.serializers.mrs import MrsBehavior, encode_domain, encode_ipcidr
 
 FIXTURES = Path(__file__).parent / "fixtures" / "mrs"
 
@@ -26,9 +28,13 @@ _BEHAVIOR_BYTES: dict[MrsBehavior, int] = {"domain": 0, "ipcidr": 1}
     ],
 )
 def test_mrs_matches_mihomo_reference(behavior: MrsBehavior, stem: str) -> None:
-    source = (FIXTURES / f"{stem}.yaml").read_bytes()
+    source = yaml.load(
+        (FIXTURES / f"{stem}.yaml").read_bytes(), Loader=yaml.CSafeLoader
+    )
+    payload = source["payload"]
     reference = (FIXTURES / f"{stem}.mrs").read_bytes()
-    actual = encode_rule_set(source, behavior=behavior)
+    encoder = encode_domain if behavior == "domain" else encode_ipcidr
+    actual = encoder(payload)
     actual_payload = zstd.decompress(actual)
     reference_payload = zstd.decompress(reference)
 
@@ -37,18 +43,18 @@ def test_mrs_matches_mihomo_reference(behavior: MrsBehavior, stem: str) -> None:
     assert actual_payload[4] == _BEHAVIOR_BYTES[behavior]
 
 
-def test_count_uses_source_rule_count() -> None:
-    source = "payload:\n- example.com\n- example.com\n- '+.example.com'\n"
-    payload = zstd.decompress(encode_rule_set(source, behavior="domain"))
-    count = struct.unpack(">q", payload[5:13])[0]
+def test_count_includes_duplicate_domains() -> None:
+    payload = ["example.com", "example.com", "+.example.com"]
+    decoded = zstd.decompress(encode_domain(payload))
+    count = struct.unpack(">q", decoded[5:13])[0]
 
     assert count == 3
 
 
-@pytest.mark.parametrize("source", ["payload: []\n", "rules: []\n"])
-def test_rejects_empty_rule_set(source: str) -> None:
+@pytest.mark.parametrize("encoder", [encode_domain, encode_ipcidr])
+def test_rejects_empty_rule_set(encoder) -> None:
     with pytest.raises(SerializerError, match="empty rule"):
-        _ = encode_rule_set(source, behavior="domain")
+        _ = encoder([])
 
 
 @pytest.mark.parametrize(
@@ -61,14 +67,13 @@ def test_rejects_empty_rule_set(source: str) -> None:
     ],
 )
 def test_rejects_invalid_domain(domain: str) -> None:
-    source = f"payload:\n- '{domain}'\n"
     with pytest.raises(SerializerError, match="invalid domain"):
-        _ = encode_rule_set(source, behavior="domain")
+        _ = encode_domain([domain])
 
 
 def test_rejects_invalid_ip_cidr() -> None:
     with pytest.raises(SerializerError, match="invalid ip_cidr"):
-        _ = encode_rule_set("payload:\n- not-a-cidr\n", behavior="ipcidr")
+        _ = encode_ipcidr(["not-a-cidr"])
 
 
 def _fail_subprocess(*_args: object, **_kwargs: object) -> None:
@@ -76,39 +81,32 @@ def _fail_subprocess(*_args: object, **_kwargs: object) -> None:
 
 
 @pytest.mark.parametrize(
-    ("writer_type", "behavior", "stem"),
+    ("kind", "behavior", "stem"),
     [
-        (ClashDomainFileWriter, "domain", "domain"),
-        (ClashIpcidrFileWriter, "ipcidr", "ipcidr"),
+        (ArtifactKind.DOMAIN, "domain", "domain"),
+        (ArtifactKind.IPCIDR, "ipcidr", "ipcidr"),
     ],
 )
-def test_file_writer_generates_mrs_without_mihomo(
+def test_mrs_writer_generates_mrs_without_mihomo(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
-    writer_type: type[BaseFileWriter],
+    kind: ArtifactKind,
     behavior: MrsBehavior,
     stem: str,
 ) -> None:
     monkeypatch.setattr(settings, "build_dir", tmp_path)
-    monkeypatch.setattr(settings, "metadata_path", tmp_path / "metadata.db")
     monkeypatch.setattr("subprocess.run", _fail_subprocess)
-    data = (FIXTURES / f"{stem}.yaml").read_text(encoding="utf-8")
+    source = yaml.load(
+        (FIXTURES / f"{stem}.yaml").read_bytes(), Loader=yaml.CSafeLoader
+    )
+    payload = ClashPayload(kind=kind, rules=source["payload"])
     reference = (FIXTURES / f"{stem}.mrs").read_bytes()
+    data = ClashMrsSerializer().serialize(payload)
 
-    with MetadataStore() as metadata_store:
-        writer = writer_type(
-            data=data,
-            target_path=Path("sample"),
-            timestamp=123.0,
-            metadata_store=metadata_store,
-        )
+    mrs_path = CLASH_MRS_OUTPUTS[kind].path(Path("sample"))
 
-        assert writer.write() is True
-        mrs_path = tmp_path / "clash" / behavior / "sample.mrs"
-        actual = mrs_path.read_bytes()
+    assert write_if_changed(mrs_path, data) is True
+    assert mrs_path == tmp_path / "clash" / behavior / "sample.mrs"
+    actual = mrs_path.read_bytes()
 
-        assert zstd.decompress(actual) == zstd.decompress(reference)
-        assert {record.path for record in metadata_store.data} == {
-            Path(f"clash/{behavior}/sample.yaml"),
-            Path(f"clash/{behavior}/sample.mrs"),
-        }
+    assert zstd.decompress(actual) == zstd.decompress(reference)

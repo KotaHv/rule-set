@@ -6,10 +6,7 @@ rule-set.
 """
 
 from compression import zstd
-from typing import ClassVar, Literal
-
-import yaml
-from pydantic import BaseModel, ConfigDict
+from typing import Literal
 
 from rule_set.errors import SerializerError
 
@@ -24,28 +21,10 @@ _BEHAVIOR_BYTES: dict[MrsBehavior, int] = {"domain": 0, "ipcidr": 1}
 _ZSTD_LEVEL = 3
 
 
-class _RuleSetYaml(BaseModel):
-    payload: list[str] = []
-    rules: list[str] = []
-    model_config: ClassVar[ConfigDict] = ConfigDict(extra="ignore")
-
-
-def _load_payload(source: str | bytes) -> list[str]:
-    try:
-        rule_set = _RuleSetYaml.model_validate(
-            yaml.load(source, Loader=yaml.CSafeLoader)
-        )
-    except yaml.YAMLError as exc:
-        raise SerializerError(f"invalid rule-set YAML: {exc}") from exc
-
-    payload = rule_set.payload or rule_set.rules
+def _encode(payload: list[str], *, behavior: MrsBehavior) -> bytes:
     if not payload:
         raise SerializerError("empty rule")
-    return payload
 
-
-def encode_rule_set(source: str | bytes, *, behavior: MrsBehavior) -> bytes:
-    payload = _load_payload(source)
     body = (
         encode_domain_set(payload) if behavior == "domain" else encode_ip_set(payload)
     )
@@ -57,3 +36,11 @@ def encode_rule_set(source: str | bytes, *, behavior: MrsBehavior) -> bytes:
     writer.write_int64_be(0)
     writer.write_bytes(body)
     return zstd.compress(writer.to_bytes(), level=_ZSTD_LEVEL)
+
+
+def encode_domain(payload: list[str]) -> bytes:
+    return _encode(payload, behavior="domain")
+
+
+def encode_ipcidr(payload: list[str]) -> bytes:
+    return _encode(payload, behavior="ipcidr")

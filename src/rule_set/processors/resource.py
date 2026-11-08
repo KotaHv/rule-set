@@ -46,7 +46,7 @@ class ResourceProcessor:
     def _get_rules(
         self, resource: ContentResource, source_option: Option
     ) -> RuleModel | V2rayDomainResult:
-        cache_key = self._cache_key(resource)
+        cache_key = self._cache_key(resource, source_option)
         if (cached_result := self.cache.retrieve_text(cache_key)) is not None:
             if isinstance(resource, V2rayDomainResource):
                 return V2rayDomainResult.model_validate_json(cached_result)
@@ -76,10 +76,12 @@ class ResourceProcessor:
         return parsed_rules
 
     @staticmethod
-    def _cache_key(resource: ContentResource) -> str:
+    def _cache_key(resource: ContentResource, source_option: Option) -> str:
         cache_key = str(resource.source)
         if isinstance(resource, V2rayDomainResource):
             cache_key += f"::attrs={resource.option.attrs}"
+        elif isinstance(resource, MaxMindDBResource):
+            cache_key += f"::country_code={source_option.geo_ip.country_code}"
         return cache_key
 
     @staticmethod

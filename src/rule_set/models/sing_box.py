@@ -41,6 +41,6 @@ class SingBoxClientRule(TypedDict, total=False):
 type SingBoxRule = SingBoxLeafRule | SingBoxLogicalRule
 
 
-class SingBoxConfig(TypedDict):
+class SingBoxRuleSet(TypedDict):
     version: Literal[2]
     rules: list[SingBoxClientRule | SingBoxRule]

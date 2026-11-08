@@ -74,10 +74,11 @@ EgernTestLoader.add_multi_constructor("!", _construct_tagged_mapping)
 
 def _serialize_egern_rules(logical: list[LogicalTree]) -> dict[str, object]:
     serializer = EgernSerializer(
-        rules=SerializableRuleModel(logical=logical),
         option=Option(serialization=SerializationOption(no_resolve=False)),
+        last_updated="2026-01-01T00:00:00+00:00",
     )
-    return yaml.load(serializer.serialize()[0].data, Loader=EgernTestLoader)
+    data = serializer.serialize(SerializableRuleModel(logical=logical))
+    return yaml.load(data, Loader=EgernTestLoader)
 
 
 def test_egern_serializes_and_rule_sets_as_condition_groups():

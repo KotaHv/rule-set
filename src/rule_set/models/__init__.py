@@ -3,7 +3,7 @@ Models package for rule-set project.
 Contains all data models and related types.
 """
 
-from .artifact import Artifact, ArtifactKind
+from .artifact import ArtifactKind
 from .enum import DomainType, ProcessingRuleType, SerializeFormat
 from .metadata import MetadataRecord
 from .option import (
@@ -32,7 +32,6 @@ from .rule import (
 )
 from .source import SourceModel
 from .type import SerializeFormats, Source
-from .write import WriteContext
 
 # For backward compatibility and convenience
 __all__ = [
@@ -43,8 +42,6 @@ __all__ = [
     "DomainType",
     "ProcessingRuleType",
     "ArtifactKind",
-    "Artifact",
-    "WriteContext",
     "MetadataRecord",
     # Options
     "SerializeFormats",

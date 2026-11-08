@@ -26,7 +26,7 @@ def main():
             metadata_store=metadata_store,
         )
         for source in SOURCES:
-            source_processor.process(source)
+            source_processor.build(source)
     except Exception as e:
         logger.exception(e)
         raise
