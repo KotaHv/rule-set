@@ -1,5 +1,5 @@
-# Total: 43 rules
-# Last Updated: 2026-11-02T05:17:31.912903+00:00
+# Total: 50 rules
+# Last Updated: 2026-11-08T16:54:51.403675+00:00
 no_resolve: true
 domain_set:
 - zlink.ugsdk.cn
@@ -14,15 +14,20 @@ domain_set:
 - p3-webcast-sign.douyinpic.com
 - log3-applog.fqnovel.com
 - log3-applog-hl.fqnovel.com
+- log3-applog-lf.fqnovel.com
 - log5-applog.fqnovel.com
 - log5-applog-hl.fqnovel.com
+- log5-applog-lf.fqnovel.com
 - mon11-misc.fqnovel.com
+- mon11-misc-lf.fqnovel.com
 - mon11-misc-lq.fqnovel.com
 - mon3-misc.fqnovel.com
 - rtlog3-applog.fqnovel.com
 - rtlog3-applog-hl.fqnovel.com
+- rtlog3-applog-lf.fqnovel.com
 - rtlog5-applog.fqnovel.com
 - rtlog5-applog-hl.fqnovel.com
+- rtlog5-applog-lf.fqnovel.com
 - effect.snssdk.com
 - i.snssdk.com
 - is.snssdk.com
@@ -31,6 +36,7 @@ domain_set:
 - vas.snssdk.com
 - mon.toutiaocloud.com
 - abtest3-misc.zijieapi.com
+- abtest3-misc-lf.zijieapi.com
 - ads3-normal.zijieapi.com
 - ads3-normal-hl.zijieapi.com
 - ads5-normal.zijieapi.com
@@ -38,6 +44,7 @@ domain_set:
 - feedback-c.zijieapi.com
 - gecko3.zijieapi.com
 - gecko5.zijieapi.com
+- gecko5-lf.zijieapi.com
 - ma.zijieapi.com
 - minigame3-normal.zijieapi.com
 - minigame5-normal.zijieapi.com

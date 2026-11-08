@@ -1,5 +1,5 @@
-# Total: 43 rules
-# Last Updated: 2026-11-02T05:17:31.168838+00:00
+# Total: 50 rules
+# Last Updated: 2026-11-08T16:54:51.403675+00:00
 DOMAIN,zlink.ugsdk.cn
 DOMAIN,lf-normal-gr-sourcecdn.bytegecko.com
 DOMAIN,lf-webcast-gr-sourcecdn.bytegecko.com
@@ -12,15 +12,20 @@ DOMAIN,p11-webcast-sign.douyinpic.com
 DOMAIN,p3-webcast-sign.douyinpic.com
 DOMAIN,log3-applog.fqnovel.com
 DOMAIN,log3-applog-hl.fqnovel.com
+DOMAIN,log3-applog-lf.fqnovel.com
 DOMAIN,log5-applog.fqnovel.com
 DOMAIN,log5-applog-hl.fqnovel.com
+DOMAIN,log5-applog-lf.fqnovel.com
 DOMAIN,mon11-misc.fqnovel.com
+DOMAIN,mon11-misc-lf.fqnovel.com
 DOMAIN,mon11-misc-lq.fqnovel.com
 DOMAIN,mon3-misc.fqnovel.com
 DOMAIN,rtlog3-applog.fqnovel.com
 DOMAIN,rtlog3-applog-hl.fqnovel.com
+DOMAIN,rtlog3-applog-lf.fqnovel.com
 DOMAIN,rtlog5-applog.fqnovel.com
 DOMAIN,rtlog5-applog-hl.fqnovel.com
+DOMAIN,rtlog5-applog-lf.fqnovel.com
 DOMAIN,effect.snssdk.com
 DOMAIN,i.snssdk.com
 DOMAIN,is.snssdk.com
@@ -29,6 +34,7 @@ DOMAIN,security.snssdk.com
 DOMAIN,vas.snssdk.com
 DOMAIN,mon.toutiaocloud.com
 DOMAIN,abtest3-misc.zijieapi.com
+DOMAIN,abtest3-misc-lf.zijieapi.com
 DOMAIN,ads3-normal.zijieapi.com
 DOMAIN,ads3-normal-hl.zijieapi.com
 DOMAIN,ads5-normal.zijieapi.com
@@ -36,6 +42,7 @@ DOMAIN,ads5-normal-hl.zijieapi.com
 DOMAIN,feedback-c.zijieapi.com
 DOMAIN,gecko3.zijieapi.com
 DOMAIN,gecko5.zijieapi.com
+DOMAIN,gecko5-lf.zijieapi.com
 DOMAIN,ma.zijieapi.com
 DOMAIN,minigame3-normal.zijieapi.com
 DOMAIN,minigame5-normal.zijieapi.com
