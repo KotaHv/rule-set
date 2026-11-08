@@ -1,5 +1,5 @@
-# Total: 1084 rules
-# Last Updated: 2026-11-06T07:07:53.356643+00:00
+# Total: 1112 rules
+# Last Updated: 2026-11-08T14:51:17.489349+00:00
 no_resolve: true
 domain_set:
 - captive.apple.com
@@ -157,6 +157,7 @@ domain_suffix_set:
 - 9xiu.com
 - abchina.com
 - acgvideo.com
+- activity-zhendingtech.com
 - aicdn.com
 - aicoinstorge.com
 - air-matters.com
@@ -259,6 +260,7 @@ domain_suffix_set:
 - cdnjtzy.com
 - cgpeers.com
 - cgyouxi.com
+- changdunovel.com
 - changyan.com
 - changyou.com
 - chaoxing.com
@@ -347,6 +349,16 @@ domain_suffix_set:
 - elemecdn.com
 - etao.com
 - fang.com
+- fanqiecopyright.com
+- fanqienovel.com
+- fanqieopen.com
+- fanqieopenpic.com
+- fanqieopenstatic.com
+- fanqieopenvod.com
+- fanqiesdk.com
+- fanqiesdkpic.com
+- fanqiesdkstatic.com
+- fanqiesdkvod.com
 - feihuo.com
 - feiliao.com
 - feishucdn.com
@@ -359,7 +371,13 @@ domain_suffix_set:
 - flyme.com
 - forevernine.com
 - fqnovel.com
+- fqnovel-op.com
+- fqnovelim.com
+- fqnovelop.com
 - fqnovelpic.com
+- fqnovelstatic.com
+- fqnovelvod.com
+- fqopenplatform.com
 - frdic.com
 - freshhema.com
 - freshippo.com
@@ -451,6 +469,7 @@ domain_suffix_set:
 - ifeng.com
 - ifengimg.com
 - igamecj.com
+- ihaohaoxuexi.com
 - ihappystudio.com
 - ip138.com
 - ipanda.com
@@ -563,6 +582,7 @@ domain_suffix_set:
 - mszdld.com
 - mtyun.com
 - mubu.com
+- muyewx.com
 - mxhichina.com
 - myalicdn.com
 - myapp.com
@@ -579,6 +599,10 @@ domain_suffix_set:
 - ngabbs.com
 - niu.com
 - nlark.com
+- novelfm.com
+- novelfmpic.com
+- novelfmstatic.com
+- novelfmvod.com
 - npmmirror.com
 - npupt.com
 - nubia.com
@@ -647,6 +671,10 @@ domain_suffix_set:
 - client-update.queniuqe.com
 - qyer.com
 - qyerstatic.com
+- qznovel.com
+- qznovelpic.com
+- qznovelstatic.com
+- qznovelvod.com
 - qzone.com
 - r5reloaded.com
 - realcybertron.com
