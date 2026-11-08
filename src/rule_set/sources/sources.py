@@ -412,6 +412,7 @@ sources = [
             ),
             SourceReference(target="game/game-cn"),
             SourceReference(target="game/game-download-cn"),
+            SourceReference(target="fqnovel"),
         ],
         name=Path("direct"),
         option=Option(
@@ -772,11 +773,7 @@ sources = [
                     "https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/bytedance.conf"
                 )
             ),
-            V2rayDomainResource(
-                source=HttpUrl(
-                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/fqnovel"
-                )
-            ),
+            SourceReference(target="fqnovel"),
         ],
         name=Path("dns/bytedance"),
         option=Option(
@@ -834,6 +831,21 @@ sources = [
             ),
         ],
         name=Path("dns/lan_with_realip"),
+    ),
+    SourceModel(
+        resources=[
+            V2rayDomainResource(
+                source=HttpUrl(
+                    "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/fqnovel"
+                )
+            ),
+        ],
+        name=Path("fqnovel"),
+        option=Option(
+            v2ray_domain=V2rayDomainOption(
+                attrs=V2rayDomainAttrs(exclude_attrs=["ads", "telemetry"]),
+            ),
+        ),
     ),
 ]
 
