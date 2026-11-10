@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, SerializeAsAny, computed_field
 
 from .option import V2rayDomainOption
 from .type import Source
@@ -6,6 +6,11 @@ from .type import Source
 
 class BaseResource(BaseModel):
     """Base class for all resources"""
+
+    @computed_field
+    @property
+    def kind(self) -> str:
+        return type(self).__name__
 
 
 class ContentResource(BaseResource):
@@ -45,4 +50,4 @@ class SourceReference(BaseResource):
 
 
 # Resource list type
-type ResourceList = list[BaseResource]
+type ResourceList = list[SerializeAsAny[BaseResource]]

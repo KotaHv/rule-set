@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Self, override
+from typing import Self
 
 from pydantic import BaseModel, model_validator
 
@@ -53,11 +53,3 @@ class SourceModel(BaseModel):
                     )
 
         return self
-
-    @override
-    def __repr__(self) -> str:
-        return f"{self.name}: {self.resources}"
-
-    @override
-    def __str__(self) -> str:
-        return self.__repr__()

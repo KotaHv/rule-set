@@ -71,14 +71,7 @@ class ResourceProcessor:
 
     @staticmethod
     def _cache_key(resource: ContentResource, source_option: Option) -> str:
-        cache_key = str(resource.source)
-        if isinstance(resource, V2rayDomainResource):
-            attrs = resource.option.attrs
-            cache_key += (
-                f"::include_attrs={sorted(attrs.include_attrs)}"
-                f"::exclude_attrs={sorted(attrs.exclude_attrs)}"
-                f"::exclude_includes={sorted(resource.option.exclude_includes)}"
-            )
-        elif isinstance(resource, MaxMindDBResource):
-            cache_key += f"::country_code={source_option.geo_ip.country_code}"
+        cache_key = resource.model_dump_json()
+        if isinstance(resource, MaxMindDBResource):
+            cache_key += f":{source_option.geo_ip.country_code}"
         return cache_key
