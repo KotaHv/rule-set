@@ -1,5 +1,5 @@
-# Total: 646 rules
-# Last Updated: 2026-11-07T22:07:27.448456+00:00
+# Total: 648 rules
+# Last Updated: 2026-11-10T07:34:27.180849+00:00
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -177,6 +177,7 @@ DOMAIN-SUFFIX,gitlab.com
 DOMAIN-SUFFIX,go-lang.com
 DOMAIN-SUFFIX,golang.com
 DOMAIN-SUFFIX,firebase.google.com
+DOMAIN-SUFFIX,grafana.com
 DOMAIN-SUFFIX,hashicorp.com
 DOMAIN-SUFFIX,hhvm.com
 DOMAIN-SUFFIX,insiderdevtour.com
@@ -410,6 +411,7 @@ DOMAIN-SUFFIX,gitlab.net
 DOMAIN-SUFFIX,gitlab-static.net
 DOMAIN-SUFFIX,go-lang.net
 DOMAIN-SUFFIX,golang.net
+DOMAIN-SUFFIX,grafana.net
 DOMAIN-SUFFIX,intellij.net
 DOMAIN-SUFFIX,intellinuxgraphics.net
 DOMAIN-SUFFIX,java.net

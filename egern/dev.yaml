@@ -1,5 +1,5 @@
-# Total: 646 rules
-# Last Updated: 2026-11-07T22:07:27.463931+00:00
+# Total: 648 rules
+# Last Updated: 2026-11-10T07:34:27.180849+00:00
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -180,6 +180,7 @@ domain_suffix_set:
 - go-lang.com
 - golang.com
 - firebase.google.com
+- grafana.com
 - hashicorp.com
 - hhvm.com
 - insiderdevtour.com
@@ -413,6 +414,7 @@ domain_suffix_set:
 - gitlab-static.net
 - go-lang.net
 - golang.net
+- grafana.net
 - intellij.net
 - intellinuxgraphics.net
 - java.net
