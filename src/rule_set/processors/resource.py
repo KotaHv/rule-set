@@ -1,6 +1,7 @@
 from collections.abc import Iterator
 
-from pydantic import HttpUrl
+from loguru import logger
+from pydantic import HttpUrl, ValidationError
 
 from ..cache import Cache
 from ..errors import ResourceError, UnknownResourceTypeError
@@ -42,9 +43,14 @@ class ResourceProcessor:
     ) -> RuleModel | V2rayDomainResult:
         cache_key = self._cache_key(resource, source_option)
         if (cached_result := self.cache.retrieve_text(cache_key)) is not None:
-            if isinstance(resource, V2rayDomainResource):
-                return V2rayDomainResult.model_validate_json(cached_result)
-            return RuleModel.model_validate_json(cached_result)
+            try:
+                if isinstance(resource, V2rayDomainResource):
+                    return V2rayDomainResult.model_validate_json(cached_result)
+                return RuleModel.model_validate_json(cached_result)
+            except ValidationError as error:
+                logger.warning(
+                    f"Ignoring invalid cached rules for resource '{cache_key}': {error}"
+                )
 
         if isinstance(resource, MaxMindDBResource):
             if not isinstance(resource.source, HttpUrl):

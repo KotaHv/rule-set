@@ -3,6 +3,9 @@ from datetime import UTC, datetime
 from pathlib import Path
 from time import time
 
+from loguru import logger
+from pydantic import ValidationError
+
 from ..cache import Cache
 from ..config import settings
 from ..errors import ResourceError, SerializerError, UnknownResourceTypeError
@@ -229,7 +232,12 @@ class SourceProcessor:
         if (
             cached_result := self.cache.retrieve_text(source.name.as_posix())
         ) is not None:
-            return RuleModel.model_validate_json(cached_result, strict=True)
+            try:
+                return RuleModel.model_validate_json(cached_result, strict=True)
+            except ValidationError as error:
+                logger.warning(
+                    f"Ignoring invalid cached rules for source '{source.name}': {error}"
+                )
         return self._build_rules(source)
 
     def _build_rules(self, source: SourceModel) -> RuleModel:
@@ -246,7 +254,12 @@ class SourceProcessor:
                     raise ResourceError(
                         f"Missing cached rules for referenced source '{resource.target}'"
                     )
-                yield RuleModel.model_validate_json(cached_result)
+                try:
+                    yield RuleModel.model_validate_json(cached_result)
+                except ValidationError as error:
+                    raise ResourceError(
+                        f"Invalid cached rules for referenced source '{resource.target}'"
+                    ) from error
             elif isinstance(resource, ContentResource):
                 yield from self.resource_processor.iter_rule_models(
                     resource, source.option

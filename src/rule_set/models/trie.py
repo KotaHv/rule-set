@@ -1,4 +1,5 @@
 # pyright: reportUnknownMemberType=false, reportUnknownVariableType=false, reportUnannotatedClassAttribute=false
+import ipaddress
 import re
 from collections.abc import Iterator
 from typing import ClassVar, Self, override
@@ -190,7 +191,7 @@ class _BaseIPTrie:
     def __init__(self):
         self._trie = PyTricia(self.maxbits)
 
-    def add(self, ip: str):
+    def add(self, ip: str | ipaddress.IPv4Network | ipaddress.IPv6Network):
         if self._trie.get_key(ip):
             return
         self._trie[ip] = None

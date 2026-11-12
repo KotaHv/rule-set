@@ -11,13 +11,13 @@ def parse(filepath: Path, country_code: str | None = None) -> RuleModel:
     with maxminddb.open_database(filepath) as reader:
         if country_code is None:
             for ip, _ in reader:
-                ip_trie = rules.ip_trie if ip.version == 4 else rules.ip_trie6
-                ip_trie.add(str(ip))
+                ip_cidr = rules.ip_cidr if ip.version == 4 else rules.ip_cidr6
+                ip_cidr.add(str(ip))
         else:
             for ip, info in reader:
                 if not info:
                     continue
                 if info["country"]["iso_code"] == country_code:
-                    ip_trie = rules.ip_trie if ip.version == 4 else rules.ip_trie6
-                    ip_trie.add(str(ip))
+                    ip_cidr = rules.ip_cidr if ip.version == 4 else rules.ip_cidr6
+                    ip_cidr.add(str(ip))
     return rules

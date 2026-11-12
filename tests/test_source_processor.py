@@ -6,7 +6,6 @@ from rule_set.cache import Cache
 from rule_set.config import settings
 from rule_set.metadata import MetadataStore
 from rule_set.models import (
-    DomainType,
     GeoIPOption,
     Option,
     RuleModel,
@@ -21,10 +20,7 @@ from rule_set.serializers.clients.sing_box import SingBoxSrsSerializer
 
 
 def _rules(domain: str = "example.com") -> RuleModel:
-    rules = RuleModel()
-    rules.domain_trie.add(domain, DomainType.DOMAIN)
-    rules.ip_trie.add("1.1.1.0/24")
-    return rules
+    return RuleModel(domain={domain}, ip_cidr={"1.1.1.0/24"})
 
 
 @pytest.fixture

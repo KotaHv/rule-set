@@ -1,6 +1,5 @@
 import pytest
 
-from rule_set.models import DomainType
 from rule_set.models.logical import LogicalOperator, Rule
 from rule_set.parsers.surge import DomainSetParser, RuleSetParser
 
@@ -23,12 +22,12 @@ def test_domain_set_parser_maps_domains_comments_and_invalid_lines():
 
     result = DomainSetParser(data).parse()
 
-    assert set(result.domain_trie.items()) == {
-        ("example.com", DomainType.DOMAIN_SUFFIX),
-        ("plain.example", DomainType.DOMAIN),
-        ("inline-hash.example", DomainType.DOMAIN),
-        ("inline-semicolon.example", DomainType.DOMAIN),
-        ("inline-slash.example", DomainType.DOMAIN),
+    assert result.domain_suffix == {"example.com"}
+    assert result.domain == {
+        "plain.example",
+        "inline-hash.example",
+        "inline-semicolon.example",
+        "inline-slash.example",
     }
 
 
@@ -93,7 +92,6 @@ def test_rule_set_parser_skips_invalid_and_unknown_rules_and_continues():
         """
     ).parse()
 
-    assert set(result.domain_trie.items()) == {
-        ("kept.example.com", DomainType.DOMAIN),
-    }
+    assert result.domain == {"kept.example.com"}
+    assert result.domain_suffix == set()
     assert result.logical == set()

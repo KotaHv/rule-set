@@ -3,7 +3,6 @@ from pathlib import Path
 from pydantic import HttpUrl
 
 from rule_set.models import (
-    DomainType,
     Option,
     ResourceList,
     SourceModel,
@@ -101,7 +100,8 @@ def test_resource_keeps_explicit_empty_values():
 def test_v2ray_regex_is_stored_separately_and_serialized():
     result = parse(r"regexp:^ads\.example\.com$", _resource())
 
-    assert result.rules.domain_trie.items() == []
+    assert result.rules.domain == set()
+    assert result.rules.domain_suffix == set()
     assert result.rules.domain_regex == {r"^ads\.example\.com$"}
     assert result.rules.to_serializable_rule_model().domain_regex == [
         r"^ads\.example\.com$"
@@ -146,7 +146,8 @@ def test_parse_include_rules_with_attributes_and_exclude_includes():
             ),
         ),
     ]
-    assert result.rules.domain_trie.items() == []
+    assert result.rules.domain == set()
+    assert result.rules.domain_suffix == set()
     assert result.rules.domain_keyword == set()
     assert result.rules.domain_regex == set()
 
@@ -196,10 +197,8 @@ def test_parse_attribute_matching_applies_to_all_rule_types():
         _resource(include_attrs=["cn"], exclude_attrs=["ads"]),
     )
 
-    assert set(result.rules.domain_trie.items()) == {
-        ("included.example", DomainType.DOMAIN_SUFFIX),
-        ("www.full.example", DomainType.DOMAIN),
-    }
+    assert result.rules.domain_suffix == {"included.example"}
+    assert result.rules.domain == {"www.full.example"}
     assert result.rules.domain_keyword == {"included-keyword"}
     assert result.rules.domain_regex == {r"^included\."}
 
@@ -214,9 +213,8 @@ def test_parse_inline_comments_are_ignored():
 
     result = parse(data, _resource(include_attrs=["cn"]))
 
-    assert set(result.rules.domain_trie.items()) == {
-        ("commented.example", DomainType.DOMAIN_SUFFIX),
-    }
+    assert result.rules.domain_suffix == {"commented.example"}
+    assert result.rules.domain == set()
     assert result.rules.domain_keyword == {"commented-keyword"}
 
 
@@ -228,10 +226,11 @@ def test_parse_prefixless_lines_default_to_domain_suffix():
 
     result = parse(data, _resource())
 
-    assert set(result.rules.domain_trie.items()) == {
-        ("plain.example", DomainType.DOMAIN_SUFFIX),
-        ("plain-with-attrs.example", DomainType.DOMAIN_SUFFIX),
+    assert result.rules.domain_suffix == {
+        "plain.example",
+        "plain-with-attrs.example",
     }
+    assert result.rules.domain == set()
 
 
 def test_parse_skips_invalid_domain_rules():
@@ -246,7 +245,5 @@ def test_parse_skips_invalid_domain_rules():
 
     result = parse(data, _resource())
 
-    assert set(result.rules.domain_trie.items()) == {
-        ("valid-suffix.example", DomainType.DOMAIN_SUFFIX),
-        ("valid-full.example", DomainType.DOMAIN),
-    }
+    assert result.rules.domain_suffix == {"valid-suffix.example"}
+    assert result.rules.domain == {"valid-full.example"}

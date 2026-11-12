@@ -82,7 +82,10 @@ def parse(data: str, resource: V2rayDomainResource) -> V2rayDomainResult:
             if not validate_domain(rule):
                 logger.warning(f"Invalid domain: '{rule}'")
                 continue
-            rules.domain_trie.add(rule, domain_type)
+            if domain_type == DomainType.DOMAIN:
+                rules.domain.add(rule)
+            else:
+                rules.domain_suffix.add(rule)
         elif rule_type == "keyword":
             rules.domain_keyword.add(rule)
         elif rule_type == "regexp":

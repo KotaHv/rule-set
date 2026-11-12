@@ -2,7 +2,7 @@ from typing import override
 
 from loguru import logger
 
-from rule_set.models import DomainType, RuleModel
+from rule_set.models import RuleModel
 from rule_set.parsers import logic
 from rule_set.utils import is_logical_keyword, validate_domain
 
@@ -19,20 +19,20 @@ class RuleSetParser(BaseParser):
                 if not validate_domain(rule):
                     logger.warning(f"Invalid domain: '{rule}'")
                     continue
-                self.result.domain_trie.add(rule, DomainType.DOMAIN)
+                self.result.domain.add(rule)
             elif rule_type == "domain-suffix":
                 if not validate_domain(rule):
                     logger.warning(f"Invalid domain: '{rule}'")
                     continue
-                self.result.domain_trie.add(rule, DomainType.DOMAIN_SUFFIX)
+                self.result.domain_suffix.add(rule)
             elif rule_type == "domain-keyword":
                 self.result.domain_keyword.add(rule)
             elif rule_type == "domain-wildcard":
-                self.result.domain_trie.add(rule, DomainType.DOMAIN_WILDCARD)
+                self.result.domain_wildcard.add(rule)
             elif rule_type == "ip-cidr":
-                self.result.ip_trie.add(rule)
+                self.result.ip_cidr.add(rule)
             elif rule_type == "ip-cidr6":
-                self.result.ip_trie6.add(rule)
+                self.result.ip_cidr6.add(rule)
             elif rule_type == "ip-asn":
                 self.result.ip_asn.add(rule)
             elif rule_type == "user-agent":

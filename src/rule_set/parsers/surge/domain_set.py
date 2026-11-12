@@ -2,7 +2,7 @@ from typing import override
 
 from loguru import logger
 
-from rule_set.models import DomainType, RuleModel
+from rule_set.models import RuleModel
 from rule_set.utils import validate_domain
 
 from .base import BaseParser
@@ -17,10 +17,10 @@ class DomainSetParser(BaseParser):
                 if not validate_domain(domain):
                     logger.warning(f"Invalid domain: '{domain}'")
                     continue
-                self.result.domain_trie.add(domain, DomainType.DOMAIN_SUFFIX)
+                self.result.domain_suffix.add(domain)
             else:
                 if not validate_domain(domain):
                     logger.warning(f"Invalid domain: '{domain}'")
                     continue
-                self.result.domain_trie.add(domain, DomainType.DOMAIN)
+                self.result.domain.add(domain)
         return self.result
