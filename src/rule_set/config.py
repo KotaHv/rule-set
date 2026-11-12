@@ -10,6 +10,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT_DIR = Path(__file__).parent.parent.parent
 
+LogLevel = Literal["TRACE", "DEBUG", "INFO", "SUCCESS", "WARNING", "ERROR", "CRITICAL"]
+
 
 class Settings(BaseSettings):
     """Application settings with environment-based configuration."""
@@ -25,6 +27,9 @@ class Settings(BaseSettings):
     environment: Literal["development", "production"] = Field(
         default="production", description="Application environment"
     )
+
+    # Logging configuration
+    log_level: LogLevel = Field(default="INFO", description="Loguru log level")
 
     # Output directory configuration
     build_dir: Path = Field(
@@ -58,6 +63,12 @@ class Settings(BaseSettings):
         if info.data["environment"] == "development":
             return False
         return True
+
+    @field_validator("log_level", mode="before")
+    def normalize_log_level(cls, value: object) -> object:
+        if isinstance(value, str):
+            return value.upper()
+        return value
 
 
 settings = Settings()

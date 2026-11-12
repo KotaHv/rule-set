@@ -1,4 +1,5 @@
 import shutil
+import sys
 
 from loguru import logger
 
@@ -7,12 +8,16 @@ from .config import settings
 from .fetcher import fetcher
 from .metadata import MetadataStore
 from .processors import ResourceProcessor, SourceProcessor
-from .sources import SOURCES
+from .sources import SourceRegistry, sources
 
 
 def main():
+    logger.remove()
+    _ = logger.add(sys.stderr, level=settings.log_level)
+
     metadata_store = None
     try:
+        source_registry = SourceRegistry(sources)
         legacy_metadata_path = settings.metadata_path.with_suffix(".json")
         if not settings.metadata_path.exists() and not legacy_metadata_path.exists():
             shutil.rmtree(settings.build_dir, ignore_errors=True)
@@ -25,7 +30,7 @@ def main():
             resource_processor=resource_processor,
             metadata_store=metadata_store,
         )
-        for source in SOURCES:
+        for source in source_registry:
             source_processor.build(source)
     except Exception as e:
         logger.exception(e)

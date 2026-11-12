@@ -62,6 +62,8 @@ jobs:
       - name: Install dependencies
         run: uv sync
       - name: Build rule sets
+        env:
+          LOG_LEVEL: ${{ runner.debug == '1' && 'DEBUG' || 'WARNING' }}
         run: uv run rule-set
       - name: Deploy to release branch
         run: |
