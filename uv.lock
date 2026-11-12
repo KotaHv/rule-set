@@ -865,7 +865,7 @@ requires-dist = [
     { name = "pyahocorasick", specifier = ">=2.2.0" },
     { name = "pydantic", specifier = ">=2.11.7" },
     { name = "pydantic-settings", specifier = ">=2.10.1" },
-    { name = "pygtrie", specifier = ">=2.5.0" },
+    { name = "pygtrie", specifier = ">=2.6.2" },
     { name = "pytricia", specifier = ">=1.2.0" },
     { name = "pyyaml", specifier = ">=6.0.2" },
     { name = "tldextract", specifier = ">=5.3.0" },

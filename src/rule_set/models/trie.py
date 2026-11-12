@@ -31,16 +31,13 @@ class DomainTrie:
         for step in self._trie.prefixes(parts):
             if step.value == DomainType.DOMAIN_SUFFIX:
                 return
+        # A suffix replaces the whole subtree.  Slicing deletes it in one
+        # operation instead of removing every descendant individually.
+        if domain_type == DomainType.DOMAIN_SUFFIX and self._trie.has_subtrie(parts):
+            del self._trie[parts:]
         self._trie[parts] = domain_type
         if domain_type == DomainType.DOMAIN_WILDCARD:
             self._seen_wildcard = True
-        if domain_type != DomainType.DOMAIN_SUFFIX:
-            return
-        # Clear children if suffix
-        for d in self._trie.keys(prefix=parts):
-            if d == parts:
-                continue
-            del self._trie[d]
 
     def filter_by_wildcard(self):
         if not self._seen_wildcard:
@@ -80,7 +77,7 @@ class DomainTrie:
                 domain = self._reversed_parts_to_domain(candidate_parts)
                 if not regex.fullmatch(domain):
                     continue
-                _ = self._trie.pop(candidate_parts, None)
+                del self._trie[candidate_parts]
                 logger.error(f"{candidate_type},{domain} -> DOMAIN-WILDCARD,{pattern}")
 
         if wildcards_without_suffix:
@@ -106,9 +103,7 @@ class DomainTrie:
 
     def filter_by_domain(self, domain: str):
         try:
-            parts = self._domain_to_reversed_parts(domain)
-            for d in self._trie.keys(prefix=parts):
-                del self._trie[d]
+            del self._trie[self._domain_to_reversed_parts(domain) :]
         except KeyError:
             pass
 
