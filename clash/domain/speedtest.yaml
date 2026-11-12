@@ -1,11 +1,12 @@
-# Total: 3483 rules
-# Last Updated: 2026-11-11T06:52:04.237448+00:00
+# Total: 3485 rules
+# Last Updated: 2026-11-12T07:28:57.370198+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
 - 'speedtest.skyplay.app'
 - 'speedtest.58243.as'
 - 'sg.cloudhost.asia'
+- 'speedtest.alpenhost.at'
 - 'speedtest.blizznet.at'
 - 'speed.cablelink.at'
 - 'speedy-ookla.cablelink.at'
@@ -1812,6 +1813,7 @@
 - 'speedtest.ibertic.es'
 - 'testdevelocidad.imatel.es'
 - 'speedtest.yecla.interfibra.es'
+- 'speedtest.internetarribes.es'
 - 'speed.isrcomunicaciones.es'
 - 'speedtest.itegal.es'
 - 'speedpilas.liberatel.es'
