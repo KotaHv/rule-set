@@ -545,11 +545,11 @@ sources = [
         resources=[
             MaxMindDBResource(
                 source=HttpUrl(
-                    "https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb"
+                    "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb"
                 )
             )
         ],
-        name=Path("cn-ip/cn-ipinfo"),
+        name=Path("cn-ip/cn-loyalsoldier"),
         option=Option(
             processing=ProcessingOption(
                 include_rule_types=[
@@ -565,27 +565,7 @@ sources = [
         resources=[
             MaxMindDBResource(
                 source=HttpUrl(
-                    "https://github.com/xream/geoip/releases/latest/download/ip2location.country.mmdb"
-                )
-            )
-        ],
-        name=Path("cn-ip/cn-ip2location"),
-        option=Option(
-            processing=ProcessingOption(
-                include_rule_types=[
-                    ProcessingRuleType.IP_CIDR,
-                    ProcessingRuleType.IP_CIDR6,
-                ]
-            ),
-            serialization=SerializationOption(no_resolve=False),
-            geo_ip=GeoIPOption(country_code="CN"),
-        ),
-    ),
-    SourceModel(
-        resources=[
-            MaxMindDBResource(
-                source=HttpUrl(
-                    "https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/Country.mmdb"
+                    "https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/lite/Country.mmdb"
                 )
             )
         ],
