@@ -1,5 +1,5 @@
-# Total: 6354 rules
-# Last Updated: 2026-11-04T16:49:12.582397+00:00
+# Total: 6355 rules
+# Last Updated: 2026-11-12T16:01:00.442608+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -952,6 +952,7 @@ domain_set:
 - debian.ipacct.com
 - ubuntu.ipacct.com
 - assets.ipapi.com
+- iprsoftwaremedia.com
 - mirrors.ipserverone.com
 - assets.ipstack.com
 - cache.video.iqiyi.com
