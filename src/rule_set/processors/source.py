@@ -262,9 +262,7 @@ class SourceProcessor:
                         f"Invalid cached rules for referenced source '{resource.target}'"
                     ) from error
             elif isinstance(resource, ContentResource):
-                yield from self.resource_processor.iter_rule_models(
-                    resource, source.option
-                )
+                yield from self.resource_processor.iter_rule_models(resource)
             else:
                 raise UnknownResourceTypeError(resource)
 

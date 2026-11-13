@@ -10,7 +10,6 @@ from ..models import (
     ContentResource,
     DomainSetResource,
     MaxMindDBResource,
-    Option,
     RuleModel,
     RuleSetResource,
     V2rayDomainResource,
@@ -25,12 +24,12 @@ class ResourceProcessor:
         self.cache: Cache = cache
 
     def iter_rule_models(
-        self, initial_resource: ContentResource, source_option: Option
+        self, initial_resource: ContentResource
     ) -> Iterator[RuleModel]:
         pending_resources = [initial_resource]
 
         for resource in pending_resources:
-            parsed_rules = self._get_rules(resource, source_option)
+            parsed_rules = self.load(resource)
 
             if isinstance(parsed_rules, V2rayDomainResult):
                 pending_resources.extend(parsed_rules.resources)
@@ -38,10 +37,8 @@ class ResourceProcessor:
 
             yield parsed_rules
 
-    def _get_rules(
-        self, resource: ContentResource, source_option: Option
-    ) -> RuleModel | V2rayDomainResult:
-        cache_key = self._cache_key(resource, source_option)
+    def load(self, resource: ContentResource) -> RuleModel | V2rayDomainResult:
+        cache_key = resource.cache_key()
         if (cached_result := self.cache.retrieve_text(cache_key)) is not None:
             try:
                 if isinstance(resource, V2rayDomainResource):
@@ -59,7 +56,7 @@ class ResourceProcessor:
                 )
             parsed_rules = mmdb.parse(
                 fetcher.download_file(resource.source),
-                country_code=source_option.geo_ip.country_code,
+                country_code=resource.option.country_code,
             )
         elif isinstance(resource, V2rayDomainResource):
             parsed_rules = v2ray_domain.parse(
@@ -74,10 +71,3 @@ class ResourceProcessor:
 
         _ = self.cache.store(cache_key, parsed_rules.model_dump_json())
         return parsed_rules
-
-    @staticmethod
-    def _cache_key(resource: ContentResource, source_option: Option) -> str:
-        cache_key = resource.model_dump_json()
-        if isinstance(resource, MaxMindDBResource):
-            cache_key += f":{source_option.geo_ip.country_code}"
-        return cache_key

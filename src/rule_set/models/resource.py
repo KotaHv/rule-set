@@ -1,6 +1,6 @@
 from pydantic import BaseModel, SerializeAsAny, computed_field
 
-from .option import V2rayDomainOption
+from .option import GeoIPOption, V2rayDomainOption
 from .type import Source
 
 
@@ -17,6 +17,10 @@ class ContentResource(BaseResource):
     """Base class for resources with a source"""
 
     source: Source
+
+    def cache_key(self) -> str:
+        """Return the cache key identifying this resource and its options."""
+        return self.model_dump_json()
 
 
 class RuleSetResource(ContentResource):
@@ -40,7 +44,7 @@ class V2rayDomainResource(ContentResource):
 class MaxMindDBResource(ContentResource):
     """MaxMind database resource"""
 
-    pass
+    option: GeoIPOption = GeoIPOption()
 
 
 class SourceReference(BaseResource):

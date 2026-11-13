@@ -4,7 +4,12 @@ from typing import Self
 from pydantic import BaseModel, model_validator
 
 from .option import Option
-from .resource import ContentResource, ResourceList, V2rayDomainResource
+from .resource import (
+    ContentResource,
+    MaxMindDBResource,
+    ResourceList,
+    V2rayDomainResource,
+)
 from .type import SerializeFormats
 
 
@@ -40,8 +45,8 @@ class SourceModel(BaseModel):
         return self
 
     @model_validator(mode="after")
-    def merge_v2ray_domain_options(self) -> Self:
-        """Merge V2rayDomainOption from global option to individual V2rayDomainResource"""
+    def merge_resource_options(self) -> Self:
+        """Merge source-level options into individual resources"""
         for resource in self.resources:
             if isinstance(resource, V2rayDomainResource):
                 if "attrs" not in resource.option.model_fields_set:
@@ -51,5 +56,8 @@ class SourceModel(BaseModel):
                     resource.option.exclude_includes = (
                         self.option.v2ray_domain.exclude_includes
                     )
+            elif isinstance(resource, MaxMindDBResource):
+                if "option" not in resource.model_fields_set:
+                    resource.option = self.option.geo_ip
 
         return self
