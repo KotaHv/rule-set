@@ -1,5 +1,5 @@
-# Total: 1099 rules
-# Last Updated: 2026-11-08T14:51:17.489349+00:00
+# Total: 1101 rules
+# Last Updated: 2026-11-13T10:24:27.729642+00:00
 'payload':
 - 'captive.apple.com'
 - 'instant.arubanetworks.com'
@@ -12,6 +12,8 @@
 - 'console.gl-inet.com'
 - 'ocsp.globalsign.com'
 - 'ocsp2.globalsign.com'
+- 'app.jianguoyun.com'
+- 'comet.jianguoyun.com'
 - 'www.layuicdn.com'
 - 'cn.download.nvidia.com'
 - 'me.plexapp.com'

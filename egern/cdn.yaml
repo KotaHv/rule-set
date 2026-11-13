@@ -1,5 +1,5 @@
-# Total: 4729 rules
-# Last Updated: 2026-11-12T15:59:53.636220+00:00
+# Total: 4730 rules
+# Last Updated: 2026-11-13T10:23:30.439587+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -68,6 +68,7 @@ domain_set:
 - pic.macked.app
 - cdn.matterhorn.app
 - pha-prx.ops.cloud.nx.app
+- public.popclip.app
 - disco-static.productessentials.app
 - cdn.rive.app
 - images.rss.app
