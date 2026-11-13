@@ -7,6 +7,7 @@ from .config import settings
 from .fetcher import fetcher
 from .log import setup_logging
 from .metadata import MetadataStore
+from .prefetch import prefetch_resources
 from .processors import ResourceProcessor, SourceProcessor
 from .sources import SourceRegistry, sources
 
@@ -22,6 +23,7 @@ def main():
             shutil.rmtree(settings.build_dir, ignore_errors=True)
         settings.build_dir.mkdir(parents=True, exist_ok=True)
         settings.cache_dir.mkdir(parents=True, exist_ok=True)
+        prefetch_resources(source_registry)
         metadata_store = MetadataStore()
         resource_processor = ResourceProcessor(Cache(path="resource"))
         source_processor = SourceProcessor(

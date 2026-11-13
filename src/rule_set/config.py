@@ -56,6 +56,12 @@ class Settings(BaseSettings):
         default=5, ge=0, description="Maximum HTTP retry attempts"
     )
 
+    http_concurrency: int = Field(
+        default=8,
+        ge=1,
+        description="Concurrent HTTP requests during resource prefetch",
+    )
+
     http_verify_ssl: bool = Field(default=True, description="Verify SSL certificates")
 
     @field_validator("http_verify_ssl", mode="after")
