@@ -1,19 +1,18 @@
 import shutil
-import sys
 
 from loguru import logger
 
 from .cache import Cache
 from .config import settings
 from .fetcher import fetcher
+from .log import setup_logging
 from .metadata import MetadataStore
 from .processors import ResourceProcessor, SourceProcessor
 from .sources import SourceRegistry, sources
 
 
 def main():
-    logger.remove()
-    _ = logger.add(sys.stderr, level=settings.log_level)
+    setup_logging()
 
     metadata_store = None
     try:

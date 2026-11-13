@@ -242,7 +242,8 @@ class SourceProcessor:
 
     def _build_rules(self, source: SourceModel) -> RuleModel:
         aggregated_rules = RuleModel.merge_all(self._iter_rule_models(source))
-        aggregated_rules.filter(source.option)
+        with logger.contextualize(source=source.name):
+            aggregated_rules.filter(source.option)
         _ = self.cache.store(source.name.as_posix(), aggregated_rules.model_dump_json())
         return aggregated_rules
 
