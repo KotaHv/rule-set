@@ -1,5 +1,5 @@
-# Total: 1101 rules
-# Last Updated: 2026-11-13T10:24:27.729642+00:00
+# Total: 1102 rules
+# Last Updated: 2026-11-15T16:51:01.258789+00:00
 'payload':
 - 'captive.apple.com'
 - 'instant.arubanetworks.com'
@@ -15,6 +15,7 @@
 - 'app.jianguoyun.com'
 - 'comet.jianguoyun.com'
 - 'www.layuicdn.com'
+- 'loopback.nssurge.com'
 - 'cn.download.nvidia.com'
 - 'me.plexapp.com'
 - 'resources-cdn.plexapp.com'

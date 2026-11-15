@@ -1,5 +1,5 @@
-# Total: 50 rules
-# Last Updated: 2026-11-08T16:54:51.403675+00:00
+# Total: 54 rules
+# Last Updated: 2026-11-15T16:50:24.707014+00:00
 'payload':
 - 'zlink.ugsdk.cn'
 - 'lf-normal-gr-sourcecdn.bytegecko.com'
@@ -18,6 +18,7 @@
 - 'log5-applog-hl.fqnovel.com'
 - 'log5-applog-lf.fqnovel.com'
 - 'mon11-misc.fqnovel.com'
+- 'mon11-misc-hl.fqnovel.com'
 - 'mon11-misc-lf.fqnovel.com'
 - 'mon11-misc-lq.fqnovel.com'
 - 'mon3-misc.fqnovel.com'
@@ -35,11 +36,14 @@
 - 'vas.snssdk.com'
 - 'mon.toutiaocloud.com'
 - 'abtest3-misc.zijieapi.com'
+- 'abtest3-misc-hl.zijieapi.com'
 - 'abtest3-misc-lf.zijieapi.com'
 - 'ads3-normal.zijieapi.com'
 - 'ads3-normal-hl.zijieapi.com'
+- 'ads3-normal-lf.zijieapi.com'
 - 'ads5-normal.zijieapi.com'
 - 'ads5-normal-hl.zijieapi.com'
+- 'ads5-normal-lf.zijieapi.com'
 - 'feedback-c.zijieapi.com'
 - 'gecko3.zijieapi.com'
 - 'gecko5.zijieapi.com'

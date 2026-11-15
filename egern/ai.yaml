@@ -1,5 +1,5 @@
-# Total: 600 rules
-# Last Updated: 2026-11-12T14:14:23.810791+00:00
+# Total: 603 rules
+# Last Updated: 2026-11-15T16:50:24.718263+00:00
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
@@ -16,12 +16,15 @@ domain_set:
 - api.individual.githubcopilot.com
 - alkalicore-pa.clients6.google.com
 - jules.google.com
+- aicode.googleapis.com
 - aida.googleapis.com
 - aisandbox-pa.googleapis.com
 - daily-cloudcode-pa.googleapis.com
 - robinfrontend-pa.googleapis.com
+- daily-cloudcode-pa.sandbox.googleapis.com
 - server.self-serve.windsurf.com
 - ai.google.dev
+- cloud.zed.dev
 - antigravity-unleash.goog
 - antigravity.google
 domain_suffix_set:

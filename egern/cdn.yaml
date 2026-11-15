@@ -1,5 +1,5 @@
-# Total: 4730 rules
-# Last Updated: 2026-11-13T10:23:30.439587+00:00
+# Total: 4732 rules
+# Last Updated: 2026-11-15T16:50:24.873878+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -670,6 +670,7 @@ domain_set:
 - cdn3.dan.com
 - static.websites.data-crypt.com
 - cdn.datacamp.com
+- media.datacamp.com
 - media.datacenterdynamics.com
 - imgix.datadoghq.com
 - cdn.datdota.com
@@ -1220,6 +1221,7 @@ domain_set:
 - media.karousell.com
 - mweb-cdn.karousell.com
 - sl3-cdn.karousell.com
+- static.karousell.com
 - content.kaspersky-labs.com
 - img.kbhgames.com
 - kdata1.com

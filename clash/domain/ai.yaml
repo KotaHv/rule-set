@@ -1,5 +1,5 @@
-# Total: 58 rules
-# Last Updated: 2026-11-03T17:54:56.831922+00:00
+# Total: 61 rules
+# Last Updated: 2026-11-15T16:50:24.718263+00:00
 'payload':
 - 'api.jetbrains.ai'
 - 'openrouter.ai'
@@ -15,12 +15,15 @@
 - 'api.individual.githubcopilot.com'
 - 'alkalicore-pa.clients6.google.com'
 - 'jules.google.com'
+- 'aicode.googleapis.com'
 - 'aida.googleapis.com'
 - 'aisandbox-pa.googleapis.com'
 - 'daily-cloudcode-pa.googleapis.com'
 - 'robinfrontend-pa.googleapis.com'
+- 'daily-cloudcode-pa.sandbox.googleapis.com'
 - 'server.self-serve.windsurf.com'
 - 'ai.google.dev'
+- 'cloud.zed.dev'
 - 'antigravity-unleash.goog'
 - 'antigravity.google'
 - '+.claude.ai'

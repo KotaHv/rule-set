@@ -1,5 +1,5 @@
-# Total: 647 rules
-# Last Updated: 2026-11-10T07:34:27.180849+00:00
+# Total: 650 rules
+# Last Updated: 2026-11-15T16:50:24.952920+00:00
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -30,6 +30,7 @@
 - 'firebaseremoteconfig.googleapis.com'
 - 'android.googlesource.com'
 - 'developer.microsoft.com'
+- 'builds.dotnet.microsoft.com'
 - 'packages.microsoft.com'
 - 'amp.akamaized.net'
 - 'p-events-delivery.akamaized.net'
@@ -43,6 +44,8 @@
 - 'appleworldwidedeveloper.hb-api.omtrdc.net'
 - 'appleworldwidedeveloper.sc.omtrdc.net'
 - 'bingsettingssearch.trafficmanager.net'
+- 'dotnetcli.trafficmanager.net'
+- 'sundry-star-net-geo.trafficmanager.net'
 - 'vscode-sync.trafficmanager.net'
 - 'vscode-sync-insiders.trafficmanager.net'
 - 'copilotprodattachments.blob.core.windows.net'

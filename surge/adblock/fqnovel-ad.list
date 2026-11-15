@@ -1,5 +1,5 @@
-# Total: 50 rules
-# Last Updated: 2026-11-08T16:54:51.403675+00:00
+# Total: 54 rules
+# Last Updated: 2026-11-15T16:50:24.707014+00:00
 DOMAIN,zlink.ugsdk.cn
 DOMAIN,lf-normal-gr-sourcecdn.bytegecko.com
 DOMAIN,lf-webcast-gr-sourcecdn.bytegecko.com
@@ -17,6 +17,7 @@ DOMAIN,log5-applog.fqnovel.com
 DOMAIN,log5-applog-hl.fqnovel.com
 DOMAIN,log5-applog-lf.fqnovel.com
 DOMAIN,mon11-misc.fqnovel.com
+DOMAIN,mon11-misc-hl.fqnovel.com
 DOMAIN,mon11-misc-lf.fqnovel.com
 DOMAIN,mon11-misc-lq.fqnovel.com
 DOMAIN,mon3-misc.fqnovel.com
@@ -34,11 +35,14 @@ DOMAIN,security.snssdk.com
 DOMAIN,vas.snssdk.com
 DOMAIN,mon.toutiaocloud.com
 DOMAIN,abtest3-misc.zijieapi.com
+DOMAIN,abtest3-misc-hl.zijieapi.com
 DOMAIN,abtest3-misc-lf.zijieapi.com
 DOMAIN,ads3-normal.zijieapi.com
 DOMAIN,ads3-normal-hl.zijieapi.com
+DOMAIN,ads3-normal-lf.zijieapi.com
 DOMAIN,ads5-normal.zijieapi.com
 DOMAIN,ads5-normal-hl.zijieapi.com
+DOMAIN,ads5-normal-lf.zijieapi.com
 DOMAIN,feedback-c.zijieapi.com
 DOMAIN,gecko3.zijieapi.com
 DOMAIN,gecko5.zijieapi.com

@@ -1,5 +1,5 @@
-# Total: 648 rules
-# Last Updated: 2026-11-10T07:34:27.180849+00:00
+# Total: 651 rules
+# Last Updated: 2026-11-15T16:50:24.952920+00:00
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -29,6 +29,7 @@ DOMAIN,firebaseperusertopics-pa.googleapis.com
 DOMAIN,firebaseremoteconfig.googleapis.com
 DOMAIN,android.googlesource.com
 DOMAIN,developer.microsoft.com
+DOMAIN,builds.dotnet.microsoft.com
 DOMAIN,packages.microsoft.com
 DOMAIN,amp.akamaized.net
 DOMAIN,p-events-delivery.akamaized.net
@@ -42,6 +43,8 @@ DOMAIN,az764295.vo.msecnd.net
 DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net
 DOMAIN,appleworldwidedeveloper.sc.omtrdc.net
 DOMAIN,bingsettingssearch.trafficmanager.net
+DOMAIN,dotnetcli.trafficmanager.net
+DOMAIN,sundry-star-net-geo.trafficmanager.net
 DOMAIN,vscode-sync.trafficmanager.net
 DOMAIN,vscode-sync-insiders.trafficmanager.net
 DOMAIN,copilotprodattachments.blob.core.windows.net

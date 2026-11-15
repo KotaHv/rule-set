@@ -1,5 +1,5 @@
-# Total: 4649 rules
-# Last Updated: 2026-11-13T10:23:30.439587+00:00
+# Total: 4651 rules
+# Last Updated: 2026-11-15T16:50:24.873878+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -669,6 +669,7 @@
 - 'cdn3.dan.com'
 - 'static.websites.data-crypt.com'
 - 'cdn.datacamp.com'
+- 'media.datacamp.com'
 - 'media.datacenterdynamics.com'
 - 'imgix.datadoghq.com'
 - 'cdn.datdota.com'
@@ -1219,6 +1220,7 @@
 - 'media.karousell.com'
 - 'mweb-cdn.karousell.com'
 - 'sl3-cdn.karousell.com'
+- 'static.karousell.com'
 - 'content.kaspersky-labs.com'
 - 'img.kbhgames.com'
 - 'kdata1.com'
