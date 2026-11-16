@@ -1,5 +1,5 @@
-# Total: 1102 rules
-# Last Updated: 2026-11-15T16:51:01.258789+00:00
+# Total: 1110 rules
+# Last Updated: 2026-11-16T06:55:58.563607+00:00
 'payload':
 - 'captive.apple.com'
 - 'instant.arubanetworks.com'
@@ -84,6 +84,7 @@
 - '+.alpharatio.cc'
 - '+.avgv.cc'
 - '+.heavenlywind.cc'
+- '+.hgto.cc'
 - '+.m-team.cc'
 - '+.ncore.cc'
 - '+.open.cd'
@@ -194,6 +195,7 @@
 - '+.antpcdn.com'
 - '+.lcdn-locator.apple.com'
 - '+.appsimg.com'
+- '+.arknights.com'
 - '+.astral-vector.com'
 - '+.asusrouter.com'
 - '+.autonavi.com'
@@ -459,6 +461,8 @@
 - '+.hwht.com'
 - '+.hwtrip.com'
 - '+.hwwt8.com'
+- '+.hycdn.com'
+- '+.hypergryph.com'
 - '+.ialicdn.com'
 - '+.ibreader.com'
 - '+.ibuscloud.com'
@@ -608,6 +612,7 @@
 - '+.npupt.com'
 - '+.nubia.com'
 - '+.oceanengine.com'
+- '+.octavedge.com'
 - '+.okr.com'
 - '+.oneplusbbs.com'
 - '+.onlinedown.com'
@@ -712,6 +717,7 @@
 - '+.sinaedge.com'
 - '+.sinaimg.com'
 - '+.sinajs.com'
+- '+.skland.com'
 - '+.skyey2.com'
 - '+.sl916.com'
 - '+.smzdm.com'
@@ -979,6 +985,7 @@
 - '+.gfxpeers.net'
 - '+.godic.net'
 - '+.gotolink.net'
+- '+.hypergryph.net'
 - '+.ipanda.net'
 - '+.ipip.net'
 - '+.jb51.net'
@@ -1007,6 +1014,7 @@
 - '+.researchgate.net'
 - '+.routerlogin.net'
 - '+.sandai.net'
+- '+.skland.net'
 - '+.smtcdns.net'
 - '+.springsunday.net'
 - '+.staticdn.net'

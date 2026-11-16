@@ -1,5 +1,5 @@
-# Total: 6272 rules
-# Last Updated: 2026-11-15T16:51:01.338393+00:00
+# Total: 6273 rules
+# Last Updated: 2026-11-16T06:55:58.639556+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -3490,6 +3490,7 @@
 - '+.customerioforms.com'
 - '+.customeriomail.com'
 - '+.cwwcdn.com'
+- '+.cygames.com'
 - '+.dailymail.com'
 - '+.dailymotion.com'
 - '+.dailywire.com'

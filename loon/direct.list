@@ -1,5 +1,5 @@
-# Total: 1119 rules
-# Last Updated: 2026-11-15T16:51:01.258789+00:00
+# Total: 1127 rules
+# Last Updated: 2026-11-16T06:55:58.563607+00:00
 DOMAIN,captive.apple.com
 DOMAIN,instant.arubanetworks.com
 DOMAIN,setmeup.arubanetworks.com
@@ -83,6 +83,7 @@ DOMAIN-SUFFIX,bogon
 DOMAIN-SUFFIX,alpharatio.cc
 DOMAIN-SUFFIX,avgv.cc
 DOMAIN-SUFFIX,heavenlywind.cc
+DOMAIN-SUFFIX,hgto.cc
 DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,ncore.cc
 DOMAIN-SUFFIX,open.cd
@@ -193,6 +194,7 @@ DOMAIN-SUFFIX,anticheatexpert.com
 DOMAIN-SUFFIX,antpcdn.com
 DOMAIN-SUFFIX,lcdn-locator.apple.com
 DOMAIN-SUFFIX,appsimg.com
+DOMAIN-SUFFIX,arknights.com
 DOMAIN-SUFFIX,astral-vector.com
 DOMAIN-SUFFIX,asusrouter.com
 DOMAIN-SUFFIX,autonavi.com
@@ -458,6 +460,8 @@ DOMAIN-SUFFIX,hwccpc.com
 DOMAIN-SUFFIX,hwht.com
 DOMAIN-SUFFIX,hwtrip.com
 DOMAIN-SUFFIX,hwwt8.com
+DOMAIN-SUFFIX,hycdn.com
+DOMAIN-SUFFIX,hypergryph.com
 DOMAIN-SUFFIX,ialicdn.com
 DOMAIN-SUFFIX,ibreader.com
 DOMAIN-SUFFIX,ibuscloud.com
@@ -607,6 +611,7 @@ DOMAIN-SUFFIX,npmmirror.com
 DOMAIN-SUFFIX,npupt.com
 DOMAIN-SUFFIX,nubia.com
 DOMAIN-SUFFIX,oceanengine.com
+DOMAIN-SUFFIX,octavedge.com
 DOMAIN-SUFFIX,okr.com
 DOMAIN-SUFFIX,oneplusbbs.com
 DOMAIN-SUFFIX,onlinedown.com
@@ -711,6 +716,7 @@ DOMAIN-SUFFIX,sinaapp.com
 DOMAIN-SUFFIX,sinaedge.com
 DOMAIN-SUFFIX,sinaimg.com
 DOMAIN-SUFFIX,sinajs.com
+DOMAIN-SUFFIX,skland.com
 DOMAIN-SUFFIX,skyey2.com
 DOMAIN-SUFFIX,sl916.com
 DOMAIN-SUFFIX,smzdm.com
@@ -978,6 +984,7 @@ DOMAIN-SUFFIX,gazellegames.net
 DOMAIN-SUFFIX,gfxpeers.net
 DOMAIN-SUFFIX,godic.net
 DOMAIN-SUFFIX,gotolink.net
+DOMAIN-SUFFIX,hypergryph.net
 DOMAIN-SUFFIX,ipanda.net
 DOMAIN-SUFFIX,ipip.net
 DOMAIN-SUFFIX,jb51.net
@@ -1006,6 +1013,7 @@ DOMAIN-SUFFIX,qy.net
 DOMAIN-SUFFIX,researchgate.net
 DOMAIN-SUFFIX,routerlogin.net
 DOMAIN-SUFFIX,sandai.net
+DOMAIN-SUFFIX,skland.net
 DOMAIN-SUFFIX,smtcdns.net
 DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,staticdn.net

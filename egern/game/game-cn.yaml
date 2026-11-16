@@ -1,5 +1,5 @@
-# Total: 228 rules
-# Last Updated: 2026-11-06T07:07:51.626921+00:00
+# Total: 240 rules
+# Last Updated: 2026-11-16T06:55:58.520536+00:00
 no_resolve: true
 domain_set:
 - lv.queniujq.cn
@@ -9,18 +9,23 @@ domain_set:
 - end-api.shallow.ink
 domain_suffix_set:
 - heavenlywind.cc
+- hgto.cc
 - 9game.cn
 - arcaea.cn
 - bilibiligame.cn
 - brawlstars.cn
 - 37.com.cn
+- arknights.com.cn
 - csgo.com.cn
 - dota2.com.cn
+- hypergryph.com.cn
 - nikkigames.com.cn
 - wegame.com.cn
 - werepository.com.cn
 - duoyigroup.cn
 - haydaypop.cn
+- hycdn.cn
+- hypergryph.cn
 - ihappystudio.cn
 - jiaoyimao.cn
 - labycore.cn
@@ -72,6 +77,7 @@ domain_suffix_set:
 - aki-game2.com
 - aligames.com
 - anticheatexpert.com
+- arknights.com
 - astral-vector.com
 - bcfmglobal.com
 - benghuai.com
@@ -112,6 +118,8 @@ domain_suffix_set:
 - heroesports.com
 - herogame.com
 - hkgcloudcs.com
+- hycdn.com
+- hypergryph.com
 - ihappystudio.com
 - jiaoyimao.com
 - juequling.com
@@ -140,6 +148,7 @@ domain_suffix_set:
 - mszdld.com
 - nagcloudcs.com
 - nextstudios.com
+- octavedge.com
 - papegames.com
 - st.dl.pinyuncloud.com
 - playcool.com
@@ -161,6 +170,7 @@ domain_suffix_set:
 - seasunwbl.com
 - shengqugames.com
 - shyxhy.com
+- skland.com
 - sl916.com
 - steamchina.com
 - syxlgame.com
@@ -216,11 +226,13 @@ domain_suffix_set:
 - biligame.net
 - st.dl.bscstorage.net
 - gotolink.net
+- hypergryph.net
 - ludoworld.net
 - mahjongai.net
 - mahjongcup.net
 - mszdld.net
 - nextworkshop.net
+- skland.net
 - tapimg.net
 - texasholdemcup.net
 - tgprocs.net
