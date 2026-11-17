@@ -1,6 +1,10 @@
 import { describe, expect, test } from "bun:test";
 
-import { formatFileSize, formatName } from "@/utils/format";
+import {
+  fileExtension,
+  formatFileSize,
+  formatName,
+} from "@/utils/format";
 
 describe("formatName", () => {
   test.each<[string, string]>([
@@ -13,6 +17,17 @@ describe("formatName", () => {
     ["cn-域名", "Cn-域名"],
   ])("formats %s as %s", (name, expected) => {
     expect(formatName(name)).toBe(expected);
+  });
+});
+
+describe("fileExtension", () => {
+  test.each<[string, string | undefined]>([
+    ["ai.yaml", "yaml"],
+    ["archive.tar.gz", "gz"],
+    ["Makefile", undefined],
+    [".env", undefined],
+  ])("extracts the extension from %s", (name, expected) => {
+    expect(fileExtension(name)).toBe(expected);
   });
 });
 

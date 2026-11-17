@@ -30,6 +30,13 @@ export function formatName(name: string): string {
   });
 }
 
+export function fileExtension(name: string): string | undefined {
+  const index = name.lastIndexOf(".");
+  return index > 0 && index < name.length - 1
+    ? name.slice(index + 1)
+    : undefined;
+}
+
 export function formatFileSize(size: number): string {
   if (size < 1024) {
     return `${size} B`;

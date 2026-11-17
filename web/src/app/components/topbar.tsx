@@ -12,10 +12,10 @@ import {
 import { Button } from "@/components/ui/button";
 import { LocalTime } from "@/components/shared/local-time";
 import {
-  DIRECTORY_ROUTE_ID,
-  type DirectoryPageData,
-  type loadDirectoryPage,
-} from "@/features/rules/api/directory";
+  BROWSER_ROUTE_ID,
+  type BrowserPageData,
+  type loadBrowserPage,
+} from "@/features/rules/api/browser";
 import { useManifest } from "@/features/rules/hooks/use-manifest";
 import { directoryRoute, parentRoute } from "@/features/rules/utils/tree";
 import { formatName } from "@/utils/format";
@@ -23,9 +23,7 @@ import { formatName } from "@/utils/format";
 const LOGO_URL = `${import.meta.env.BASE_URL}logo.webp`;
 
 export function TopBar() {
-  const directory = useRouteLoaderData<typeof loadDirectoryPage>(
-    DIRECTORY_ROUTE_ID,
-  );
+  const page = useRouteLoaderData<typeof loadBrowserPage>(BROWSER_ROUTE_ID);
   const { latestUpdate } = useManifest();
 
   return (
@@ -45,7 +43,7 @@ export function TopBar() {
           />
         </Link>
 
-        {directory ? <DirectoryBar directory={directory} /> : null}
+        {page ? <BrowserBar page={page} /> : null}
 
         <LocalTime
           timestamp={latestUpdate}
@@ -56,13 +54,15 @@ export function TopBar() {
   );
 }
 
-function DirectoryBar({ directory }: { directory: DirectoryPageData }) {
-  const ancestors = directory.trail.slice(0, -1);
+function BrowserBar({ page }: { page: BrowserPageData }) {
+  const ancestors = page.trail.slice(0, -1);
+  const currentName =
+    page.node.type === "file" ? page.node.name : formatName(page.node.name);
 
   return (
     <div className="flex min-w-0 items-center gap-2">
       <Button asChild variant="ghost" size="icon-sm" className="sm:hidden">
-        <Link to={parentRoute(directory.node.path)} aria-label="返回上级目录">
+        <Link to={parentRoute(page.node.path)} aria-label="返回上级目录">
           <ChevronLeftIcon />
         </Link>
       </Button>
@@ -91,7 +91,7 @@ function DirectoryBar({ directory }: { directory: DirectoryPageData }) {
         aria-hidden="true"
       />
       <h1 className="truncate font-display text-base font-semibold tracking-wide text-stone-900">
-        {formatName(directory.node.name)}
+        {currentName}
       </h1>
     </div>
   );

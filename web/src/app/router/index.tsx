@@ -2,12 +2,12 @@ import { createHashRouter } from "react-router";
 
 import { AppLayout } from "@/app/layouts/app-layout";
 import { RootLayout } from "@/app/layouts/root-layout";
-import { DirectoryPage } from "@/app/routes/directory";
+import { BrowserPage } from "@/app/routes/browser";
 import { HomePage } from "@/app/routes/home";
 import {
-  DIRECTORY_ROUTE_ID,
-  loadDirectoryPage,
-} from "@/features/rules/api/directory";
+  BROWSER_ROUTE_ID,
+  loadBrowserPage,
+} from "@/features/rules/api/browser";
 import { loadManifest, MANIFEST_ROUTE_ID } from "@/features/rules/api/manifest";
 import { AppErrorBoundary } from "./app-error-boundary";
 
@@ -29,10 +29,10 @@ export const router = createHashRouter([
         children: [
           { index: true, Component: HomePage },
           {
-            id: DIRECTORY_ROUTE_ID,
+            id: BROWSER_ROUTE_ID,
             path: ":clientSlug/*",
-            loader: loadDirectoryPage,
-            Component: DirectoryPage,
+            loader: loadBrowserPage,
+            Component: BrowserPage,
           },
         ],
       },

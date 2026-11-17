@@ -1,7 +1,15 @@
-import type { ManifestDirectory, ManifestFile } from "@/types/manifest";
+import type {
+  ManifestDirectory,
+  ManifestFile,
+  ManifestNode,
+} from "@/types/manifest";
+
+function encodePath(path: string): string {
+  return path.split("/").map(encodeURIComponent).join("/");
+}
 
 export function directoryRoute(path: string): string {
-  return path ? `/${path}/` : "/";
+  return path ? `/${encodePath(path)}/` : "/";
 }
 
 export function parentRoute(path: string): string {
@@ -10,32 +18,65 @@ export function parentRoute(path: string): string {
 }
 
 export function fileHref(path: string): string {
-  const encoded = path.split("/").map(encodeURIComponent).join("/");
-  return `${import.meta.env.BASE_URL}${encoded}`;
+  return `${import.meta.env.BASE_URL}${encodePath(path)}`;
 }
 
-export function directoryTrail(
+export function fileRoute(path: string): string {
+  return `/${encodePath(path)}`;
+}
+
+export function nodeTrail(
   root: ManifestDirectory,
   path: string,
-): ManifestDirectory[] | undefined {
-  const trail = [root];
-  let node = root;
+): ManifestNode[] | undefined {
+  const trail: ManifestNode[] = [root];
+  const segments = path.split("/").filter(Boolean);
+  let directory = root;
 
-  for (const segment of path.split("/").filter(Boolean)) {
-    const child = node.children.find(
-      (entry): entry is ManifestDirectory =>
-        entry.type === "dir" && entry.name === segment,
-    );
+  for (const [index, segment] of segments.entries()) {
+    const child = directory.children.find((entry) => entry.name === segment);
 
     if (!child) {
       return undefined;
     }
 
     trail.push(child);
-    node = child;
+
+    if (child.type === "file") {
+      return index === segments.length - 1 ? trail : undefined;
+    }
+
+    directory = child;
   }
 
   return trail;
+}
+
+export function directoryTrail(
+  root: ManifestDirectory,
+  path: string,
+): ManifestDirectory[] | undefined {
+  const trail = nodeTrail(root, path);
+  if (!trail) {
+    return undefined;
+  }
+
+  return trail[trail.length - 1].type === "dir"
+    ? (trail as ManifestDirectory[])
+    : undefined;
+}
+
+export function fileTrail(
+  root: ManifestDirectory,
+  path: string,
+): { trail: ManifestNode[]; node: ManifestFile } | undefined {
+  const trail = nodeTrail(root, path);
+  if (!trail) {
+    return undefined;
+  }
+
+  const node = trail[trail.length - 1];
+  return node.type === "file" ? { trail, node } : undefined;
 }
 
 export function splitChildren(node: ManifestDirectory): {

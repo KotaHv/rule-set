@@ -1,6 +1,14 @@
 import { describe, expect, test } from "bun:test";
 
-import { directoryTrail, splitChildren } from "@/features/rules/utils/tree";
+import {
+  directoryRoute,
+  directoryTrail,
+  fileRoute,
+  fileTrail,
+  nodeTrail,
+  parentRoute,
+  splitChildren,
+} from "@/features/rules/utils/tree";
 import type {
   ManifestDirectory,
   ManifestFile,
@@ -19,9 +27,11 @@ function file(name: string, path: string): ManifestFile {
   return { type: "file", name, path, mtime: 0, size: 0 };
 }
 
-const apple = directory("apple", "clash/domain/apple", [
-  file("apple-cn.yaml", "clash/domain/apple/apple-cn.yaml"),
-]);
+const appleYaml = file(
+  "apple-cn.yaml",
+  "clash/domain/apple/apple-cn.yaml",
+);
+const apple = directory("apple", "clash/domain/apple", [appleYaml]);
 const microsoft = directory("microsoft", "clash/domain/microsoft");
 const domain = directory("domain", "clash/domain", [apple, microsoft]);
 const ipcidr = directory("ipcidr", "clash/ipcidr");
@@ -52,6 +62,68 @@ describe("directoryTrail", () => {
 
   test("does not resolve files", () => {
     expect(directoryTrail(root, "domain.yaml")).toBeUndefined();
+  });
+});
+
+describe("nodeTrail", () => {
+  test("resolves files at the end of the path", () => {
+    expect(nodeTrail(root, "domain/apple/apple-cn.yaml")).toEqual([
+      root,
+      domain,
+      apple,
+      appleYaml,
+    ]);
+    expect(nodeTrail(root, "domain.yaml")).toEqual([root, domainYaml]);
+  });
+
+  test("rejects segments after a file", () => {
+    expect(nodeTrail(root, "domain.yaml/child")).toBeUndefined();
+  });
+
+  test("returns undefined for unknown paths", () => {
+    expect(nodeTrail(root, "domain/unknown")).toBeUndefined();
+  });
+});
+
+describe("fileTrail", () => {
+  test("returns the file trail", () => {
+    expect(fileTrail(root, "domain/apple/apple-cn.yaml")).toEqual({
+      trail: [root, domain, apple, appleYaml],
+      node: appleYaml,
+    });
+  });
+
+  test("rejects directories", () => {
+    expect(fileTrail(root, "domain")).toBeUndefined();
+  });
+});
+
+describe("directoryRoute", () => {
+  test("encodes special characters in each segment", () => {
+    expect(directoryRoute("clash/domain/a b/#?")).toBe(
+      "/clash/domain/a%20b/%23%3F/",
+    );
+    expect(parentRoute("clash/domain/a b/#?/file.yaml")).toBe(
+      "/clash/domain/a%20b/%23%3F/",
+    );
+  });
+});
+
+describe("fileRoute", () => {
+  test("routes nested files by path", () => {
+    expect(fileRoute("clash/domain/apple/apple-cn.yaml")).toBe(
+      "/clash/domain/apple/apple-cn.yaml",
+    );
+  });
+
+  test("routes root files by path", () => {
+    expect(fileRoute("clash/domain.yaml")).toBe("/clash/domain.yaml");
+  });
+
+  test("encodes special characters in each segment", () => {
+    expect(fileRoute("clash/domain/a b/#?.yaml")).toBe(
+      "/clash/domain/a%20b/%23%3F.yaml",
+    );
   });
 });
 

@@ -1,14 +1,12 @@
-import { useLoaderData } from "react-router";
-
-import type { loadDirectoryPage } from "@/features/rules/api/directory";
+import type { DirectoryPageData } from "@/features/rules/api/browser";
 import { DirectoryRow } from "@/features/rules/components/directory-row";
 import { EmptyState } from "@/features/rules/components/empty-state";
 import { FileRow } from "@/features/rules/components/file-row";
 import { splitChildren } from "@/features/rules/utils/tree";
 import { formatName } from "@/utils/format";
 
-export function DirectoryPage() {
-  const { node } = useLoaderData<typeof loadDirectoryPage>();
+export function DirectoryPage({ data }: { data: DirectoryPageData }) {
+  const { node } = data;
   const { directories, files } = splitChildren(node);
   const total = directories.length + files.length;
 

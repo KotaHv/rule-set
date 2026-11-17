@@ -1,60 +1,58 @@
 import { DownloadIcon } from "lucide-react";
+import { Link } from "react-router";
 
 import { LocalTime } from "@/components/shared/local-time";
 import { FileGlyph } from "@/features/rules/components/entity-icon";
-import { fileHref } from "@/features/rules/utils/tree";
-import { formatFileSize } from "@/utils/format";
+import { fileHref, fileRoute } from "@/features/rules/utils/tree";
+import { fileExtension, formatFileSize } from "@/utils/format";
 import type { ManifestFile } from "@/types/manifest";
 
 interface FileRowProps {
   node: ManifestFile;
 }
 
-function extensionOf(name: string): string | undefined {
-  const index = name.lastIndexOf(".");
-  return index > 0 && index < name.length - 1
-    ? name.slice(index + 1)
-    : undefined;
-}
-
 export function FileRow({ node }: FileRowProps) {
   return (
-    <a
-      href={fileHref(node.path)}
-      aria-label={`获取 ${node.name}`}
-      className="group block rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-stone-900/20"
-    >
-      <div className="flex items-center gap-3 rounded-lg border border-stone-200/60 bg-white/60 p-3 backdrop-blur-sm transition-all duration-200 group-hover:border-stone-300/80 group-hover:bg-white/80 sm:gap-4">
-        <FileGlyph extension={extensionOf(node.name)} />
+    <div className="group relative flex items-center gap-3 rounded-lg border border-stone-200/60 bg-white/60 p-3 backdrop-blur-sm transition-all duration-200 hover:border-stone-300/80 hover:bg-white/80 sm:gap-4">
+      <Link
+        to={fileRoute(node.path)}
+        aria-label={`预览 ${node.name}`}
+        className="absolute inset-0 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-stone-900/20 focus-visible:ring-inset"
+      />
 
-        <div className="min-w-0 flex-1">
-          <h2 className="truncate text-stone-700 transition-colors duration-200 group-hover:text-stone-900">
-            {node.name}
-          </h2>
-          <LocalTime
-            timestamp={node.mtime}
-            aria-hidden="true"
-            className="mt-0.5 block font-mono text-xs text-stone-400 sm:hidden"
-          />
-        </div>
+      <FileGlyph extension={fileExtension(node.name)} />
 
-        <div className="flex shrink-0 items-center gap-6 text-sm text-stone-500">
-          <span className="font-mono tabular-nums sm:w-20 sm:text-right">
-            {formatFileSize(node.size)}
-          </span>
-          {/* Mobile: sr-only for screen readers, while the title copy above is
-              visual-only. sm+: this copy becomes the visible right column. */}
-          <LocalTime
-            timestamp={node.mtime}
-            className="sr-only font-mono sm:not-sr-only sm:block sm:w-48 sm:text-right"
-          />
-        </div>
-
-        <DownloadIcon
-          className="size-4 shrink-0 text-stone-300 transition-colors duration-200 group-hover:text-stone-700"
+      <div className="pointer-events-none relative min-w-0 flex-1">
+        <h2 className="truncate text-stone-700 transition-colors duration-200 group-hover:text-stone-900">
+          {node.name}
+        </h2>
+        <LocalTime
+          timestamp={node.mtime}
           aria-hidden="true"
+          className="mt-0.5 block font-mono text-xs text-stone-400 sm:hidden"
         />
       </div>
-    </a>
+
+      <div className="pointer-events-none relative flex shrink-0 items-center gap-6 text-sm text-stone-500">
+        <span className="font-mono tabular-nums sm:w-20 sm:text-right">
+          {formatFileSize(node.size)}
+        </span>
+        {/* Mobile: sr-only for screen readers, while the title copy above is
+            visual-only. sm+: this copy becomes the visible right column. */}
+        <LocalTime
+          timestamp={node.mtime}
+          className="sr-only font-mono sm:not-sr-only sm:block sm:w-48 sm:text-right"
+        />
+      </div>
+
+      <a
+        href={fileHref(node.path)}
+        download={node.name}
+        aria-label={`下载 ${node.name}`}
+        className="relative z-10 -m-2 shrink-0 rounded-lg p-2 text-stone-300 transition-colors duration-200 hover:text-stone-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-900/20"
+      >
+        <DownloadIcon className="size-4" aria-hidden="true" />
+      </a>
+    </div>
   );
 }
