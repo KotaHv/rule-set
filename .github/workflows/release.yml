@@ -22,8 +22,28 @@ jobs:
       - name: Run tests
         run: uv run pytest
 
+  test-web:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.4
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+      - name: Typecheck
+        run: bun run typecheck
+      - name: Lint
+        run: bun run lint
+      - name: Run tests
+        run: bun run test
+
   build:
-    needs: test
+    needs: [test, test-web]
     runs-on: ubuntu-24.04
     permissions:
       contents: write
@@ -46,6 +66,9 @@ jobs:
               --exclude='.git' \
               --exclude='*.html' \
               --exclude='icons/' \
+              --exclude='assets/' \
+              --exclude='manifest.json' \
+              --exclude='.nojekyll' \
               deploy_temp/ rule-set/
           else
             git -C deploy_temp checkout --orphan release
@@ -65,17 +88,22 @@ jobs:
         env:
           LOG_LEVEL: ${{ runner.debug == '1' && 'DEBUG' || 'WARNING' }}
         run: uv run rule-set
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.4
+      - name: Build web
+        working-directory: web
+        run: |
+          bun install --frozen-lockfile
+          bun run build
       - name: Deploy to release branch
         run: |
           set -e -o pipefail
 
           cd deploy_temp
           rsync -rvc --delete --exclude='.git' ../rule-set/ .
-
-          # Generate GitHub Pages navigation
-          echo "Generating pages in deploy_temp directory..."
-          test -f ../.metadata.db
-          uv run gen-pages --target-path .
+          rsync -a ../web/dist/ .
 
           if [[ -z $(git status --porcelain) ]]; then
               echo "No changes to commit."

@@ -26,3 +26,22 @@ repos:
         language: system
         pass_filenames: false
         always_run: true
+
+      - id: web-typecheck
+        name: web typecheck
+        files: ^web/
+        entry: bun run --cwd web typecheck
+        language: system
+        pass_filenames: false
+      - id: web-lint
+        name: web lint
+        files: ^web/
+        entry: bun run --cwd web lint
+        language: system
+        pass_filenames: false
+      - id: web-test
+        name: web test
+        files: ^web/
+        entry: bun run --cwd web test
+        language: system
+        pass_filenames: false
