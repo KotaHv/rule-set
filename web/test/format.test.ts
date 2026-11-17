@@ -5,6 +5,9 @@ import { formatFileSize, formatName } from "@/utils/format";
 describe("formatName", () => {
   test.each<[string, string]>([
     ["geoip", "GeoIP"],
+    ["cn-ip", "CN-IP"],
+    ["CN-IP", "CN-IP"],
+    ["ipcidr", "IPCIDR"],
     ["sing-box", "Sing-Box"],
     ["CLASH", "Clash"],
     ["cn-域名", "Cn-域名"],

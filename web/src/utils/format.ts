@@ -10,10 +10,17 @@ const localTimeFormatter = new Intl.DateTimeFormat("en-CA", {
 
 const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
+// Exact display names for exceptions that title-casing would mangle.
+const DISPLAY_NAMES = new Map([
+  ["cn-ip", "CN-IP"],
+  ["geoip", "GeoIP"],
+  ["ipcidr", "IPCIDR"],
+]);
+
 export function formatName(name: string): string {
-  // The generic title-caser would turn the "IP" acronym into "Geoip".
-  if (name === "geoip") {
-    return "GeoIP";
+  const displayName = DISPLAY_NAMES.get(name.toLowerCase());
+  if (displayName) {
+    return displayName;
   }
 
   // Title-case every ASCII word, leaving non-ASCII text untouched:
