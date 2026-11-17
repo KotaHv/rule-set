@@ -30,7 +30,7 @@ export function DirectoryPage() {
             <div className="mb-6">
               <p className="text-sm text-stone-600">{summary}</p>
             </div>
-            <ul className="space-y-1">
+            <ul className="space-y-1.5">
               {directories.map((child) => (
                 <li key={child.path}>
                   <DirectoryRow node={child} />
