@@ -10,6 +10,7 @@ export function BrowserPage() {
   return data.type === "directory" ? (
     <DirectoryPage data={data} />
   ) : (
-    <FilePage data={data} />
+    // Remount on navigation so copy status and scroll reset.
+    <FilePage key={data.node.path} data={data} />
   );
 }

@@ -1,4 +1,5 @@
 import type { ManifestFile, ManifestNode } from "@/types/manifest";
+import type { FilePreview, FilePreviewKind } from "@/types/preview";
 import { fileExtension } from "@/utils/format";
 import { fileHref } from "../utils/tree";
 
@@ -23,15 +24,7 @@ const TEXT_EXTENSIONS = new Set([
   "yml",
 ]);
 
-export type FilePreviewKind = "text" | "binary" | "too-large" | "error";
-
-export interface FilePreview {
-  kind: FilePreviewKind;
-  content: string | null;
-  error?: string;
-}
-
-export interface FilePageData extends FilePreview {
+export interface FilePageData {
   type: "file";
   trail: ManifestNode[];
   node: ManifestFile;
@@ -39,7 +32,7 @@ export interface FilePageData extends FilePreview {
 
 export async function readFilePreview(
   node: ManifestFile,
-  request: Request,
+  signal?: AbortSignal,
 ): Promise<FilePreview> {
   const extension = fileExtension(node.name)?.toLowerCase();
   let kind: FilePreviewKind = "text";
@@ -56,7 +49,7 @@ export async function readFilePreview(
   try {
     const response = await fetch(fileHref(node.path), {
       cache: "no-cache",
-      signal: request.signal,
+      signal,
     });
 
     if (!response.ok) {
@@ -66,7 +59,7 @@ export async function readFilePreview(
     const content = (await response.text()).replace(/^\uFEFF/, "");
     return { kind: "text", content };
   } catch (error) {
-    if (request.signal.aborted) {
+    if (signal?.aborted) {
       throw error;
     }
 

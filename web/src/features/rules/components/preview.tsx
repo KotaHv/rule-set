@@ -7,7 +7,6 @@ import {
   LinkIcon,
   RotateCwIcon,
 } from "lucide-react";
-import { useRevalidator } from "react-router";
 
 import { Button } from "@/components/ui/button";
 import { MAX_PREVIEW_BYTES } from "@/features/rules/api/file";
@@ -23,6 +22,15 @@ import { fileExtension, formatFileSize } from "@/utils/format";
 type CopyStatus = "copied" | "error";
 
 const LARGE_FILE_LINES = 10000;
+
+const SKELETON_WIDTHS = [
+  "w-11/12",
+  "w-7/12",
+  "w-10/12",
+  "w-5/12",
+  "w-9/12",
+  "w-6/12",
+] as const;
 
 function useCopyStatus() {
   const [status, setStatus] = useState<CopyStatus | null>(null);
@@ -110,6 +118,46 @@ export function TextPreview({ name, path, size, content }: TextPreviewProps) {
           这是一个空文件
         </p>
       )}
+    </section>
+  );
+}
+
+export function PreviewLoading({ name, size }: { name: string; size: number }) {
+  const extension = fileExtension(name);
+
+  return (
+    <section
+      aria-busy="true"
+      aria-label={`${name} 正在加载`}
+      className="overflow-hidden rounded-xl border border-stone-200/70 bg-white/70 shadow-sm backdrop-blur-sm"
+    >
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-b border-stone-200/60 px-4 py-2.5">
+        <span className="font-mono text-xs font-medium tracking-wider text-stone-500 uppercase">
+          {extension ?? "FILE"}
+        </span>
+        <span className="text-xs text-stone-400">{formatFileSize(size)}</span>
+        <span
+          role="status"
+          className="ml-auto flex items-center gap-2 text-xs text-stone-400"
+        >
+          <span
+            aria-hidden="true"
+            className="size-3.5 animate-spin rounded-full border-2 border-stone-200 border-t-stone-500"
+          />
+          正在加载
+        </span>
+      </div>
+      <div
+        aria-hidden="true"
+        className="space-y-3 px-4 py-5 motion-safe:animate-pulse"
+      >
+        {SKELETON_WIDTHS.map((width) => (
+          <div key={width} className="flex items-center gap-4">
+            <span className="h-2.5 w-6 shrink-0 rounded-full bg-stone-100" />
+            <span className={`h-2.5 rounded-full bg-stone-100 ${width}`} />
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
@@ -251,6 +299,7 @@ interface PreviewUnavailableProps {
   size: number;
   kind: "binary" | "too-large" | "error";
   error?: string;
+  onRetry?: () => void;
 }
 
 export function PreviewUnavailable({
@@ -259,10 +308,8 @@ export function PreviewUnavailable({
   size,
   kind,
   error,
+  onRetry,
 }: PreviewUnavailableProps) {
-  const revalidator = useRevalidator();
-  const retrying = revalidator.state !== "idle";
-
   const title =
     kind === "binary"
       ? "无法预览此文件"
@@ -286,18 +333,10 @@ export function PreviewUnavailable({
         {description}
       </p>
       <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
-        {kind === "error" ? (
-          <Button
-            type="button"
-            onClick={() => revalidator.revalidate()}
-            disabled={retrying}
-            aria-busy={retrying || undefined}
-          >
-            <RotateCwIcon
-              aria-hidden="true"
-              className={retrying ? "motion-safe:animate-spin" : undefined}
-            />
-            {retrying ? "重试中" : "重试"}
+        {kind === "error" && onRetry ? (
+          <Button type="button" onClick={onRetry}>
+            <RotateCwIcon aria-hidden="true" />
+            重试
           </Button>
         ) : null}
         <Button asChild>

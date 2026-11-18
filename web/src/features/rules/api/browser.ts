@@ -2,7 +2,7 @@ import { data, type LoaderFunctionArgs } from "react-router";
 
 import type { ManifestDirectory } from "@/types/manifest";
 import { nodeTrail } from "../utils/tree";
-import { readFilePreview, type FilePageData } from "./file";
+import type { FilePageData } from "./file";
 import { loadManifest } from "./manifest";
 
 export const BROWSER_ROUTE_ID = "browser";
@@ -17,7 +17,6 @@ export type BrowserPageData = DirectoryPageData | FilePageData;
 
 export async function loadBrowserPage({
   params,
-  request,
 }: LoaderFunctionArgs): Promise<BrowserPageData> {
   const manifest = await loadManifest();
   const client = manifest.clients.find(
@@ -41,6 +40,5 @@ export async function loadBrowserPage({
     type: "file",
     trail,
     node,
-    ...(await readFilePreview(node, request)),
   };
 }
