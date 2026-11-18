@@ -78,47 +78,71 @@ export function TextPreview({ name, path, size, content }: TextPreviewProps) {
         lineCount={lineCount}
       />
 
-      {lineCount > 0 ? (
-        <div
-          className={
-            large
-              ? "h-[calc(100dvh-12rem)] overflow-auto overscroll-contain"
-              : "max-h-[calc(100dvh-12rem)] overflow-auto overscroll-contain"
-          }
-          role="region"
-          aria-label={`${name} 文件内容`}
-          tabIndex={0}
-        >
-          {large ? (
-            <pre className="w-max min-w-full px-4 py-3 font-mono text-[13px] leading-6 tab-4">
-              {displayContent}
-            </pre>
-          ) : (
-            <pre className="w-max min-w-full py-3 font-mono text-[13px] leading-6 tab-4">
-              <code className="block">
-                {lines.map((line, index) => (
-                  <span key={index} className="group/line flex">
-                    <span
-                      aria-hidden="true"
-                      className="sticky left-0 z-10 w-14 shrink-0 select-none border-r border-stone-100 bg-white/95 pr-3 text-right text-stone-300 group-hover/line:text-stone-500"
-                    >
-                      {index + 1}
-                    </span>
-                    <span className="whitespace-pre px-4 text-stone-700 group-hover/line:bg-stone-100/60">
-                      {line || " "}
-                    </span>
-                  </span>
-                ))}
-              </code>
-            </pre>
-          )}
-        </div>
-      ) : (
-        <p className="px-4 py-16 text-center text-sm text-stone-500">
-          这是一个空文件
-        </p>
-      )}
+      <TextPreviewContent
+        content={displayContent}
+        large={large}
+        lineCount={lineCount}
+        lines={lines}
+        name={name}
+      />
     </section>
+  );
+}
+
+interface TextPreviewContentProps {
+  name: string;
+  content: string;
+  lines: string[];
+  large: boolean;
+  lineCount: number;
+}
+
+function TextPreviewContent({
+  name,
+  content,
+  lines,
+  large,
+  lineCount,
+}: TextPreviewContentProps) {
+  if (lineCount === 0) {
+    return (
+      <p className="px-4 py-16 text-center text-sm text-stone-500">
+        这是一个空文件
+      </p>
+    );
+  }
+
+  return (
+    <div
+      className="max-h-[calc(100dvh-12rem)] overflow-x-hidden overflow-y-auto overscroll-contain md:overflow-auto"
+      role="region"
+      aria-label={`${name} 文件内容`}
+      tabIndex={0}
+    >
+      {large ? (
+        <pre className="min-w-full px-4 py-3 font-mono text-[13px] leading-6 tab-4 whitespace-pre-wrap break-all md:w-max md:whitespace-pre">
+          {content}
+        </pre>
+      ) : (
+        <pre className="min-w-full py-3 font-mono text-[13px] leading-6 tab-4 whitespace-pre-wrap break-all md:w-max md:whitespace-pre">
+          <code className="block">
+            {lines.map((line, index) => (
+              <span key={index} className="group/line flex">
+                <span
+                  aria-hidden="true"
+                  className="sticky left-0 z-10 w-14 shrink-0 select-none border-r border-stone-100 bg-white/95 pr-3 text-right text-stone-300 group-hover/line:text-stone-500"
+                >
+                  {index + 1}
+                </span>
+                <span className="min-w-0 flex-1 whitespace-pre-wrap break-all px-4 text-stone-700 group-hover/line:bg-stone-100/60 md:flex-none md:whitespace-pre">
+                  {line || " "}
+                </span>
+              </span>
+            ))}
+          </code>
+        </pre>
+      )}
+    </div>
   );
 }
 
