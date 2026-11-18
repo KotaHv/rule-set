@@ -1,5 +1,5 @@
-# Total: 3490 rules
-# Last Updated: 2026-11-14T22:38:46.227730+00:00
+# Total: 3492 rules
+# Last Updated: 2026-11-18T07:11:02.425081+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -43,6 +43,7 @@
 - 'speedtest.capti.com.au'
 - 'speedtest2.comvergence.com.au'
 - 'speedtest.mirror.digitalpacific.com.au'
+- 'speedtest-bne0.encoo.com.au'
 - 'speedtest-mel0.encoo.com.au'
 - 'speedtest-syd0.encoo.com.au'
 - 'speedtest1.gigafy.com.au'
@@ -638,6 +639,7 @@
 - 'speedtest.syd.mhn.cloud'
 - 'speedtest.net360.cloud'
 - 'speedtest.phx01.orion.cloud'
+- 'dallas.outboundrix.cloud'
 - 'speedtest1.sailweb.cloud'
 - 'speedtest2.sailweb.cloud'
 - 'speedtest.uania.cloud'
