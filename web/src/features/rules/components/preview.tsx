@@ -69,7 +69,7 @@ export function TextPreview({ name, path, size, content }: TextPreviewProps) {
   );
 
   return (
-    <section className="overflow-hidden rounded-xl border border-stone-200/70 bg-white/70 shadow-sm backdrop-blur-sm">
+    <section className="overflow-hidden rounded-xl border border-white/10 bg-white/[0.035] shadow-xl shadow-black/20 backdrop-blur-sm">
       <PreviewToolbar
         content={content}
         extension={extension}
@@ -106,7 +106,7 @@ function TextPreviewContent({
 }: TextPreviewContentProps) {
   if (lineCount === 0) {
     return (
-      <p className="px-4 py-16 text-center text-sm text-stone-500">
+      <p className="px-4 py-16 text-center text-sm text-stone-400">
         这是一个空文件
       </p>
     );
@@ -120,21 +120,21 @@ function TextPreviewContent({
       tabIndex={0}
     >
       {large ? (
-        <pre className="min-w-full px-4 py-3 font-mono text-[13px] leading-6 tab-4 whitespace-pre-wrap break-all md:w-max md:whitespace-pre">
+        <pre className="min-w-full px-4 py-3 font-mono text-[13px] leading-6 text-stone-300 tab-4 whitespace-pre-wrap break-all md:w-max md:whitespace-pre">
           {content}
         </pre>
       ) : (
-        <pre className="min-w-full py-3 font-mono text-[13px] leading-6 tab-4 whitespace-pre-wrap break-all md:w-max md:whitespace-pre">
+        <pre className="min-w-full py-3 font-mono text-[13px] leading-6 text-stone-300 tab-4 whitespace-pre-wrap break-all md:w-max md:whitespace-pre">
           <code className="block">
             {lines.map((line, index) => (
               <span key={index} className="group/line flex">
                 <span
                   aria-hidden="true"
-                  className="sticky left-0 z-10 w-14 shrink-0 select-none border-r border-stone-100 bg-white/95 pr-3 text-right text-stone-300 group-hover/line:text-stone-500"
+                  className="sticky left-0 z-10 w-14 shrink-0 select-none border-r border-white/10 bg-stone-950/95 pr-3 text-right text-stone-500 group-hover/line:text-stone-300"
                 >
                   {index + 1}
                 </span>
-                <span className="min-w-0 flex-1 whitespace-pre-wrap break-all px-4 text-stone-700 group-hover/line:bg-stone-100/60 md:flex-none md:whitespace-pre">
+                <span className="min-w-0 flex-1 whitespace-pre-wrap break-all px-4 text-stone-300 group-hover/line:bg-white/[0.035] md:flex-none md:whitespace-pre">
                   {line || " "}
                 </span>
               </span>
@@ -153,10 +153,10 @@ export function PreviewLoading({ name, size }: { name: string; size: number }) {
     <section
       aria-busy="true"
       aria-label={`${name} 正在加载`}
-      className="overflow-hidden rounded-xl border border-stone-200/70 bg-white/70 shadow-sm backdrop-blur-sm"
+      className="overflow-hidden rounded-xl border border-white/10 bg-white/[0.035] shadow-xl shadow-black/20 backdrop-blur-sm"
     >
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-b border-stone-200/60 px-4 py-2.5">
-        <span className="font-mono text-xs font-medium tracking-wider text-stone-500 uppercase">
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-b border-white/10 px-4 py-2.5">
+        <span className="font-mono text-xs font-medium tracking-wider text-stone-400 uppercase">
           {extension ?? "FILE"}
         </span>
         <span className="text-xs text-stone-400">{formatFileSize(size)}</span>
@@ -166,7 +166,7 @@ export function PreviewLoading({ name, size }: { name: string; size: number }) {
         >
           <span
             aria-hidden="true"
-            className="size-3.5 animate-spin rounded-full border-2 border-stone-200 border-t-stone-500"
+            className="size-3.5 animate-spin rounded-full border-2 border-white/15 border-t-stone-300"
           />
           正在加载
         </span>
@@ -177,8 +177,8 @@ export function PreviewLoading({ name, size }: { name: string; size: number }) {
       >
         {SKELETON_WIDTHS.map((width) => (
           <div key={width} className="flex items-center gap-4">
-            <span className="h-2.5 w-6 shrink-0 rounded-full bg-stone-100" />
-            <span className={`h-2.5 rounded-full bg-stone-100 ${width}`} />
+            <span className="h-2.5 w-6 shrink-0 rounded-full bg-white/[0.06]" />
+            <span className={`h-2.5 rounded-full bg-white/[0.06] ${width}`} />
           </div>
         ))}
       </div>
@@ -213,8 +213,8 @@ function PreviewToolbar({
   }
 
   return (
-    <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-b border-stone-200/60 px-4 py-2.5">
-      <span className="font-mono text-xs font-medium tracking-wider text-stone-500 uppercase">
+    <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-b border-white/10 px-4 py-2.5">
+      <span className="font-mono text-xs font-medium tracking-wider text-stone-400 uppercase">
         {extension ?? "FILE"}
       </span>
       <span className="text-xs text-stone-400">
@@ -229,7 +229,7 @@ function PreviewToolbar({
           size="sm"
           onClick={() => void copyContent()}
           title="复制原始内容"
-          className="text-stone-500 hover:text-stone-900"
+          className="text-stone-400 hover:text-stone-100"
         >
           {contentStatus === "copied" ? (
             <CheckIcon aria-hidden="true" />
@@ -247,7 +247,7 @@ function PreviewToolbar({
           variant="ghost"
           size="sm"
           title="打开原始文件"
-          className="text-stone-500 hover:text-stone-900"
+          className="text-stone-400 hover:text-stone-100"
         >
           <a
             href={fileHref(path)}
@@ -262,7 +262,7 @@ function PreviewToolbar({
         <CopyLinkButton
           path={path}
           label="链接"
-          className="text-stone-500 hover:text-stone-900"
+          className="text-stone-400 hover:text-stone-100"
         />
       </div>
     </div>
@@ -348,12 +348,12 @@ export function PreviewUnavailable({
         : (error ?? "请稍后重试，或下载文件后查看。");
 
   return (
-    <section className="rounded-xl border border-stone-200/70 bg-white/60 px-6 py-16 text-center shadow-sm backdrop-blur-sm">
-      <div className="mx-auto flex size-12 items-center justify-center rounded-2xl bg-stone-100 text-stone-500">
+    <section className="rounded-xl border border-white/10 bg-white/[0.035] px-6 py-16 text-center shadow-xl shadow-black/20 backdrop-blur-sm">
+      <div className="mx-auto flex size-12 items-center justify-center rounded-2xl bg-white/[0.06] text-stone-400">
         <FileGlyph extension={fileExtension(name)} />
       </div>
-      <h2 className="mt-4 text-lg font-medium text-stone-800">{title}</h2>
-      <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-stone-500">
+      <h2 className="mt-4 text-lg font-medium text-stone-100">{title}</h2>
+      <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-stone-400">
         {description}
       </p>
       <div className="mt-6 flex flex-wrap items-center justify-center gap-2">

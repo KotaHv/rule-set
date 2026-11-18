@@ -26,7 +26,7 @@ export function DirectoryPage({ data }: { data: DirectoryPageData }) {
         {total > 0 ? (
           <>
             <div className="mb-6">
-              <p className="text-sm text-stone-600">{summary}</p>
+              <p className="text-sm text-stone-400">{summary}</p>
             </div>
             <ul className="space-y-1.5">
               {directories.map((child) => (

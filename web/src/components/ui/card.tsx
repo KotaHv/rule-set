@@ -19,7 +19,7 @@ function Card({
         "group/card flex flex-col gap-(--card-spacing) overflow-hidden rounded-xl py-(--card-spacing) text-sm text-card-foreground transition-all duration-300 [--card-spacing:--spacing(4)] has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
         variant === "default"
           ? "bg-card ring-1 ring-foreground/10"
-          : "relative border border-stone-200/60 bg-white/60 ring-0 backdrop-blur-sm [--card-spacing:--spacing(6)] hover:-translate-y-1 hover:border-stone-900/40 hover:bg-white/80 hover:shadow-xl hover:shadow-stone-900/10",
+          : "relative border border-white/10 bg-white/[0.035] ring-0 backdrop-blur-sm [--card-spacing:--spacing(6)] hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.06] hover:shadow-xl hover:shadow-black/40",
         className
       )}
       {...props}

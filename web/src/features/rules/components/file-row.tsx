@@ -13,17 +13,17 @@ interface FileRowProps {
 
 export function FileRow({ node }: FileRowProps) {
   return (
-    <div className="group relative flex items-center gap-3 rounded-lg border border-stone-200/60 bg-white/60 p-3 backdrop-blur-sm transition-all duration-200 hover:border-stone-300/80 hover:bg-white/80 sm:gap-4">
+    <div className="group relative flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.025] p-3 backdrop-blur-sm transition-all duration-200 hover:border-white/20 hover:bg-white/[0.06] sm:gap-4">
       <Link
         to={fileRoute(node.path)}
         aria-label={`预览 ${node.name}`}
-        className="absolute inset-0 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-stone-900/20 focus-visible:ring-inset"
+        className="absolute inset-0 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-white/20 focus-visible:ring-inset"
       />
 
       <FileGlyph extension={fileExtension(node.name)} />
 
       <div className="pointer-events-none relative min-w-0 flex-1">
-        <h2 className="truncate text-stone-700 transition-colors duration-200 group-hover:text-stone-900">
+        <h2 className="truncate text-stone-200 transition-colors duration-200 group-hover:text-stone-50">
           {node.name}
         </h2>
         <LocalTime
@@ -33,7 +33,7 @@ export function FileRow({ node }: FileRowProps) {
         />
       </div>
 
-      <div className="pointer-events-none relative flex shrink-0 items-center gap-6 text-sm text-stone-500">
+      <div className="pointer-events-none relative flex shrink-0 items-center gap-6 text-sm text-stone-400">
         <span className="font-mono tabular-nums sm:w-20 sm:text-right">
           {formatFileSize(node.size)}
         </span>
@@ -49,7 +49,7 @@ export function FileRow({ node }: FileRowProps) {
         href={fileHref(node.path)}
         download={node.name}
         aria-label={`下载 ${node.name}`}
-        className="relative z-10 -m-2 shrink-0 rounded-lg p-2 text-stone-300 transition-colors duration-200 hover:text-stone-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-900/20"
+        className="relative z-10 -m-2 shrink-0 rounded-lg p-2 text-stone-500 transition-colors duration-200 hover:text-stone-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
       >
         <DownloadIcon className="size-4" aria-hidden="true" />
       </a>

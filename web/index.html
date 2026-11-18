@@ -1,7 +1,8 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="dark">
   <head>
     <meta charset="UTF-8" />
+    <meta name="theme-color" content="#0c0a09" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link
       rel="preload"
@@ -27,7 +28,11 @@
 
       body {
         margin: 0;
-        background: #fafaf9;
+        background: #0c0a09;
+      }
+
+      html {
+        color-scheme: dark;
       }
 
       .boot-screen {
@@ -40,7 +45,7 @@
         justify-items: center;
         gap: 2rem;
         padding: 1.5rem;
-        background: #fafaf9;
+        background: #0c0a09;
       }
 
       /*
@@ -77,7 +82,7 @@
         width: 96px;
         height: 1px;
         overflow: hidden;
-        background: #e7e5e4;
+        background: #292524;
       }
 
       .boot-track::after {
@@ -85,7 +90,7 @@
         position: absolute;
         inset: 0;
         width: 40%;
-        background: #44403c;
+        background: #fafaf9;
         animation: boot-sweep 1.6s ease-in-out infinite;
       }
 

@@ -27,7 +27,7 @@ export function TopBar() {
   const { latestUpdate } = useManifest();
 
   return (
-    <header className="sticky top-0 z-30 border-b border-stone-200/50 bg-white/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-30 border-b border-white/10 bg-stone-950/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-6 lg:px-8">
         <Link
           to={directoryRoute("")}
@@ -39,7 +39,7 @@ export function TopBar() {
             alt=""
             width={44}
             height={44}
-            className="block size-11"
+            className="block size-11 rounded-lg ring-1 ring-white/10"
           />
         </Link>
 
@@ -47,7 +47,7 @@ export function TopBar() {
 
         <LocalTime
           timestamp={latestUpdate}
-          className="ml-auto hidden shrink-0 text-sm text-stone-500 sm:block"
+          className="ml-auto hidden shrink-0 text-sm text-stone-400 sm:block"
         />
       </div>
     </header>
@@ -87,10 +87,10 @@ function BrowserBar({ page }: { page: BrowserPageData }) {
       ) : null}
 
       <ChevronRightIcon
-        className="hidden size-3.5 shrink-0 text-stone-400 sm:block"
+        className="hidden size-3.5 shrink-0 text-stone-600 sm:block"
         aria-hidden="true"
       />
-      <h1 className="truncate font-display text-base font-semibold tracking-wide text-stone-900">
+      <h1 className="truncate font-display text-base font-semibold tracking-wide text-stone-100">
         {currentName}
       </h1>
     </div>

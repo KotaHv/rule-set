@@ -4,7 +4,7 @@ export function FolderGlyph() {
   return (
     <svg
       viewBox="0 0 24 24"
-      className="size-6 shrink-0 text-stone-400 transition-colors duration-200 group-hover:text-stone-600"
+      className="size-6 shrink-0 text-stone-500 transition-colors duration-200 group-hover:text-stone-300"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -24,7 +24,7 @@ export function FileGlyph({ extension }: FileGlyphProps) {
   return (
     <svg
       viewBox="0 0 24 24"
-      className="size-6 shrink-0 text-stone-400 transition-colors duration-200 group-hover:text-stone-600"
+      className="size-6 shrink-0 text-stone-500 transition-colors duration-200 group-hover:text-stone-300"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
@@ -39,7 +39,7 @@ export function FileGlyph({ extension }: FileGlyphProps) {
           y="17.5"
           textAnchor="middle"
           stroke="none"
-          className="fill-stone-600 font-mono text-[6px] font-semibold tracking-tight uppercase transition-colors duration-200 group-hover:fill-stone-800"
+          className="fill-stone-400 font-mono text-[6px] font-semibold tracking-tight uppercase transition-colors duration-200 group-hover:fill-stone-200"
         >
           {extension}
         </text>

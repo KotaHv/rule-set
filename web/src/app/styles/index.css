@@ -125,9 +125,15 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-stone-50 font-display text-stone-900 antialiased;
+    @apply bg-stone-950 font-display text-stone-100 antialiased;
   }
   html {
-    @apply font-sans;
+    @apply bg-stone-950 font-sans;
+    color-scheme: dark;
+    scrollbar-color: #57534e #0c0a09;
+  }
+  ::selection {
+    background: #fafaf9;
+    color: #0c0a09;
   }
 }

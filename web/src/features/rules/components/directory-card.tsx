@@ -18,28 +18,28 @@ export function DirectoryCard({ client }: DirectoryCardProps) {
       <Card variant="glass" className="h-full">
         <CardContent className="flex h-full flex-col">
           <div className="mb-6 flex justify-center">
-            <div className="flex size-16 items-center justify-center rounded-2xl bg-linear-to-br from-stone-50 to-stone-100">
-              <div className="text-stone-500 transition-colors duration-300 group-hover:text-stone-900">
+            <div className="flex size-16 items-center justify-center rounded-2xl bg-stone-100 ring-1 ring-white/10 transition-colors duration-300 group-hover:bg-white">
+              <div className="text-stone-700 transition-colors duration-300 group-hover:text-stone-950">
                 <ClientIcon name={client.slug} />
               </div>
             </div>
           </div>
 
           <div className="mb-4 flex-1 text-center">
-            <h2 className="mb-3 text-xl font-medium text-stone-900">
+            <h2 className="mb-3 text-xl font-medium text-stone-100">
               {CLIENT_LABELS[client.slug]}
             </h2>
           </div>
 
           <div className="mt-auto text-center">
-            <div className="rounded-lg bg-stone-50/50 px-3 py-2 text-sm font-mono text-stone-500">
+            <div className="rounded-lg bg-white/[0.04] px-3 py-2 font-mono text-sm text-stone-400">
               <LocalTime timestamp={client.root.mtime} />
             </div>
           </div>
         </CardContent>
 
         <div className="absolute top-4 right-4 opacity-0 transition-all duration-300 group-hover:opacity-100">
-          <ChevronRightIcon className="size-5 text-stone-900" />
+          <ChevronRightIcon className="size-5 text-stone-100" />
         </div>
       </Card>
     </Link>
