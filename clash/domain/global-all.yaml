@@ -1,5 +1,5 @@
-# Total: 6273 rules
-# Last Updated: 2026-11-16T06:55:58.639556+00:00
+# Total: 6276 rules
+# Last Updated: 2026-11-19T07:44:09.142233+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -511,6 +511,9 @@
 - 'vfat.classicreload.com'
 - 'releases.claude.com'
 - 'status.claude.com'
+- 'assets.claudeusercontent.com'
+- 'static.claudeusercontent.com'
+- 'upload.claudeusercontent.com'
 - 'cmd-cdn.cleanmymac.com'
 - 'img.clerk.com'
 - 'scdn.clerk.com'
@@ -3440,7 +3443,7 @@
 - '+.clashofclans.com'
 - '+.clashroyale.com'
 - '+.clashroyaleapp.com'
-- '+.claudeusercontent.com'
+- '+.frame.claudeusercontent.com'
 - '+.cldup.com'
 - '+.clips4sale.com'
 - '+.cloudatacdn.com'

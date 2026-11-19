@@ -1,5 +1,5 @@
-# Total: 4732 rules
-# Last Updated: 2026-11-15T16:50:24.873878+00:00
+# Total: 4735 rules
+# Last Updated: 2026-11-19T07:43:19.015686+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -562,6 +562,9 @@ domain_set:
 - cdn-assets.circleci.com
 - image.civitai.com
 - status.claude.com
+- assets.claudeusercontent.com
+- static.claudeusercontent.com
+- upload.claudeusercontent.com
 - cmd-cdn.cleanmymac.com
 - img.clerk.com
 - scdn.clerk.com
@@ -3596,7 +3599,7 @@ domain_suffix_set:
 - chargebeestaticv2.com
 - chasecdn.com
 - chesscomfiles.com
-- claudeusercontent.com
+- frame.claudeusercontent.com
 - cldup.com
 - cloudatacdn.com
 - storage.cloudconvert.com

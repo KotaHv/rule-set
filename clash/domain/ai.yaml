@@ -1,10 +1,11 @@
-# Total: 61 rules
-# Last Updated: 2026-11-15T16:50:24.718263+00:00
+# Total: 63 rules
+# Last Updated: 2026-11-19T07:43:18.687177+00:00
 'payload':
 - 'api.jetbrains.ai'
 - 'openrouter.ai'
 - 'apple-relay.apple.com'
 - 'gspe1-ssl.ls.apple.com'
+- 'bridge.claudeusercontent.com'
 - 'gateway.ai.cloudflare.com'
 - 'apple-relay.cloudflare.com'
 - 'cp4.cloudflare.com'
@@ -26,6 +27,7 @@
 - 'cloud.zed.dev'
 - 'antigravity-unleash.goog'
 - 'antigravity.google'
+- 'claude.site'
 - '+.claude.ai'
 - '+.dify.ai'
 - '+.g.ai'

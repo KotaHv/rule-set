@@ -1,5 +1,5 @@
-# Total: 6359 rules
-# Last Updated: 2026-11-16T06:55:58.639556+00:00
+# Total: 6362 rules
+# Last Updated: 2026-11-19T07:44:09.142233+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -512,6 +512,9 @@ domain_set:
 - vfat.classicreload.com
 - releases.claude.com
 - status.claude.com
+- assets.claudeusercontent.com
+- static.claudeusercontent.com
+- upload.claudeusercontent.com
 - cmd-cdn.cleanmymac.com
 - img.clerk.com
 - scdn.clerk.com
@@ -3442,7 +3445,7 @@ domain_suffix_set:
 - clashofclans.com
 - clashroyale.com
 - clashroyaleapp.com
-- claudeusercontent.com
+- frame.claudeusercontent.com
 - cldup.com
 - clips4sale.com
 - cloudatacdn.com

@@ -1,5 +1,5 @@
-# Total: 4732 rules
-# Last Updated: 2026-11-15T16:50:24.873878+00:00
+# Total: 4735 rules
+# Last Updated: 2026-11-19T07:43:19.015686+00:00
 DOMAIN,rules.ac
 DOMAIN,static.jup.ag
 DOMAIN,cdn.aimerce.ai
@@ -560,6 +560,9 @@ DOMAIN,assets-growth-common.circleci.com
 DOMAIN,cdn-assets.circleci.com
 DOMAIN,image.civitai.com
 DOMAIN,status.claude.com
+DOMAIN,assets.claudeusercontent.com
+DOMAIN,static.claudeusercontent.com
+DOMAIN,upload.claudeusercontent.com
 DOMAIN,cmd-cdn.cleanmymac.com
 DOMAIN,img.clerk.com
 DOMAIN,scdn.clerk.com
@@ -3593,7 +3596,7 @@ DOMAIN-SUFFIX,static.chaosgroup.com
 DOMAIN-SUFFIX,chargebeestaticv2.com
 DOMAIN-SUFFIX,chasecdn.com
 DOMAIN-SUFFIX,chesscomfiles.com
-DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,frame.claudeusercontent.com
 DOMAIN-SUFFIX,cldup.com
 DOMAIN-SUFFIX,cloudatacdn.com
 DOMAIN-SUFFIX,storage.cloudconvert.com

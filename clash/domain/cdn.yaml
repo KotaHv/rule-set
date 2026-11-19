@@ -1,5 +1,5 @@
-# Total: 4651 rules
-# Last Updated: 2026-11-15T16:50:24.873878+00:00
+# Total: 4654 rules
+# Last Updated: 2026-11-19T07:43:19.015686+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -561,6 +561,9 @@
 - 'cdn-assets.circleci.com'
 - 'image.civitai.com'
 - 'status.claude.com'
+- 'assets.claudeusercontent.com'
+- 'static.claudeusercontent.com'
+- 'upload.claudeusercontent.com'
 - 'cmd-cdn.cleanmymac.com'
 - 'img.clerk.com'
 - 'scdn.clerk.com'
@@ -3594,7 +3597,7 @@
 - '+.chargebeestaticv2.com'
 - '+.chasecdn.com'
 - '+.chesscomfiles.com'
-- '+.claudeusercontent.com'
+- '+.frame.claudeusercontent.com'
 - '+.cldup.com'
 - '+.cloudatacdn.com'
 - '+.storage.cloudconvert.com'

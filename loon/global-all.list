@@ -1,5 +1,5 @@
-# Total: 6423 rules
-# Last Updated: 2026-11-16T06:55:58.639556+00:00
+# Total: 6426 rules
+# Last Updated: 2026-11-19T07:44:09.142233+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -510,6 +510,9 @@ DOMAIN,image.civitai.com
 DOMAIN,vfat.classicreload.com
 DOMAIN,releases.claude.com
 DOMAIN,status.claude.com
+DOMAIN,assets.claudeusercontent.com
+DOMAIN,static.claudeusercontent.com
+DOMAIN,upload.claudeusercontent.com
 DOMAIN,cmd-cdn.cleanmymac.com
 DOMAIN,img.clerk.com
 DOMAIN,scdn.clerk.com
@@ -3439,7 +3442,7 @@ DOMAIN-SUFFIX,clashmini.com
 DOMAIN-SUFFIX,clashofclans.com
 DOMAIN-SUFFIX,clashroyale.com
 DOMAIN-SUFFIX,clashroyaleapp.com
-DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,frame.claudeusercontent.com
 DOMAIN-SUFFIX,cldup.com
 DOMAIN-SUFFIX,clips4sale.com
 DOMAIN-SUFFIX,cloudatacdn.com

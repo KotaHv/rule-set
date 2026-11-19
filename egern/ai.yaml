@@ -1,11 +1,12 @@
-# Total: 474 rules
-# Last Updated: 2026-11-16T06:55:27.233051+00:00
+# Total: 476 rules
+# Last Updated: 2026-11-19T07:43:18.687177+00:00
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
 - openrouter.ai
 - apple-relay.apple.com
 - gspe1-ssl.ls.apple.com
+- bridge.claudeusercontent.com
 - gateway.ai.cloudflare.com
 - apple-relay.cloudflare.com
 - cp4.cloudflare.com
@@ -27,6 +28,7 @@ domain_set:
 - cloud.zed.dev
 - antigravity-unleash.goog
 - antigravity.google
+- claude.site
 domain_suffix_set:
 - claude.ai
 - dify.ai

@@ -1,5 +1,5 @@
-# Total: 3492 rules
-# Last Updated: 2026-11-18T07:11:02.425081+00:00
+# Total: 3494 rules
+# Last Updated: 2026-11-19T07:43:18.759850+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -2193,6 +2193,7 @@
 - 'sp3.novaconn.it'
 - 'speedtest.nuclearhost.it'
 - 'speedtest2.openfiber.it'
+- 'speedtest.opiquad.it'
 - 'test-pbx.opiquad.it'
 - 'speedtest.planetel.it'
 - 'speedtest-bg.planetel.it'
@@ -3313,6 +3314,7 @@
 - 'fetzl1.seed.net.tw'
 - 'seednet-tc1.seed.net.tw'
 - 'seednet-tn1.seed.net.tw'
+- 'seednet-tp1.seed.net.tw'
 - 'seednet-ty1.seed.net.tw'
 - 'spt1.seed.net.tw'
 - 'custom.tbcnet.net.tw'

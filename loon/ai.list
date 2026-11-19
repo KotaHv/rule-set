@@ -1,9 +1,10 @@
-# Total: 474 rules
-# Last Updated: 2026-11-16T06:55:27.233051+00:00
+# Total: 476 rules
+# Last Updated: 2026-11-19T07:43:18.687177+00:00
 DOMAIN,api.jetbrains.ai
 DOMAIN,openrouter.ai
 DOMAIN,apple-relay.apple.com
 DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN,bridge.claudeusercontent.com
 DOMAIN,gateway.ai.cloudflare.com
 DOMAIN,apple-relay.cloudflare.com
 DOMAIN,cp4.cloudflare.com
@@ -25,6 +26,7 @@ DOMAIN,ai.google.dev
 DOMAIN,cloud.zed.dev
 DOMAIN,antigravity-unleash.goog
 DOMAIN,antigravity.google
+DOMAIN,claude.site
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,dify.ai
 DOMAIN-SUFFIX,g.ai
