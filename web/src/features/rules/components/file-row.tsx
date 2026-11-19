@@ -13,7 +13,7 @@ interface FileRowProps {
 
 export function FileRow({ node }: FileRowProps) {
   return (
-    <div className="group relative flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.025] p-3 backdrop-blur-sm transition-all duration-200 hover:border-white/20 hover:bg-white/[0.06] sm:gap-4">
+    <div className="group relative flex items-center gap-3 rounded-lg border border-white/10 bg-white/2.5 p-3 backdrop-blur-sm transition-all duration-200 hover:border-white/20 hover:bg-white/6 sm:gap-4">
       <Link
         to={fileRoute(node.path)}
         aria-label={`预览 ${node.name}`}

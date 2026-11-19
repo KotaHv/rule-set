@@ -17,7 +17,7 @@ export function DirectoryRow({ node }: DirectoryRowProps) {
       aria-label={`打开目录 ${node.name}`}
       className="group block rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-white/20"
     >
-      <div className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-3 backdrop-blur-sm transition-all duration-200 group-hover:border-white/20 group-hover:bg-white/[0.06] sm:gap-4">
+      <div className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/3 p-3 backdrop-blur-sm transition-all duration-200 group-hover:border-white/20 group-hover:bg-white/6 sm:gap-4">
         <FolderGlyph />
 
         <div className="min-w-0 flex-1">

@@ -11,7 +11,7 @@ export function EmptyState({
 }: EmptyStateProps) {
   return (
     <div className="py-20 text-center">
-      <div className="mx-auto mb-6 flex size-20 items-center justify-center rounded-full bg-white/[0.04] ring-1 ring-white/10">
+      <div className="mx-auto mb-6 flex size-20 items-center justify-center rounded-full bg-white/4 ring-1 ring-white/10">
         <InboxIcon className="size-10 text-stone-500" strokeWidth={1.5} />
       </div>
       <h2 className="mb-3 text-2xl font-medium text-stone-200">{title}</h2>

@@ -69,7 +69,7 @@ export function TextPreview({ name, path, size, content }: TextPreviewProps) {
   );
 
   return (
-    <section className="overflow-hidden rounded-xl border border-white/10 bg-white/[0.035] shadow-xl shadow-black/20 backdrop-blur-sm">
+    <section className="overflow-hidden rounded-xl border border-white/10 bg-white/3.5 shadow-xl shadow-black/20 backdrop-blur-sm">
       <PreviewToolbar
         content={content}
         extension={extension}
@@ -134,7 +134,7 @@ function TextPreviewContent({
                 >
                   {index + 1}
                 </span>
-                <span className="min-w-0 flex-1 whitespace-pre-wrap break-all px-4 text-stone-300 group-hover/line:bg-white/[0.035] md:flex-none md:whitespace-pre">
+                <span className="min-w-0 flex-1 whitespace-pre-wrap break-all px-4 text-stone-300 group-hover/line:bg-white/3.5 md:flex-none md:whitespace-pre">
                   {line || " "}
                 </span>
               </span>
@@ -153,7 +153,7 @@ export function PreviewLoading({ name, size }: { name: string; size: number }) {
     <section
       aria-busy="true"
       aria-label={`${name} 正在加载`}
-      className="overflow-hidden rounded-xl border border-white/10 bg-white/[0.035] shadow-xl shadow-black/20 backdrop-blur-sm"
+      className="overflow-hidden rounded-xl border border-white/10 bg-white/3.5 shadow-xl shadow-black/20 backdrop-blur-sm"
     >
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-b border-white/10 px-4 py-2.5">
         <span className="font-mono text-xs font-medium tracking-wider text-stone-400 uppercase">
@@ -177,8 +177,8 @@ export function PreviewLoading({ name, size }: { name: string; size: number }) {
       >
         {SKELETON_WIDTHS.map((width) => (
           <div key={width} className="flex items-center gap-4">
-            <span className="h-2.5 w-6 shrink-0 rounded-full bg-white/[0.06]" />
-            <span className={`h-2.5 rounded-full bg-white/[0.06] ${width}`} />
+            <span className="h-2.5 w-6 shrink-0 rounded-full bg-white/6" />
+            <span className={`h-2.5 rounded-full bg-white/6 ${width}`} />
           </div>
         ))}
       </div>
@@ -348,8 +348,8 @@ export function PreviewUnavailable({
         : (error ?? "请稍后重试，或下载文件后查看。");
 
   return (
-    <section className="rounded-xl border border-white/10 bg-white/[0.035] px-6 py-16 text-center shadow-xl shadow-black/20 backdrop-blur-sm">
-      <div className="mx-auto flex size-12 items-center justify-center rounded-2xl bg-white/[0.06] text-stone-400">
+    <section className="rounded-xl border border-white/10 bg-white/3.5 px-6 py-16 text-center shadow-xl shadow-black/20 backdrop-blur-sm">
+      <div className="mx-auto flex size-12 items-center justify-center rounded-2xl bg-white/6 text-stone-400">
         <FileGlyph extension={fileExtension(name)} />
       </div>
       <h2 className="mt-4 text-lg font-medium text-stone-100">{title}</h2>
