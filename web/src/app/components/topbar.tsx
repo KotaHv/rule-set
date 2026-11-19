@@ -90,7 +90,7 @@ function BrowserBar({ page }: { page: BrowserPageData }) {
         className="hidden size-3.5 shrink-0 text-stone-600 sm:block"
         aria-hidden="true"
       />
-      <h1 className="truncate font-display text-base font-semibold tracking-wide text-stone-100">
+      <h1 className="truncate text-base font-semibold tracking-wide text-stone-100">
         {currentName}
       </h1>
     </div>

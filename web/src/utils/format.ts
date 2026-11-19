@@ -47,6 +47,10 @@ export function formatFileSize(size: number): string {
   return `${(size / (1024 * 1024)).toFixed(1)} MB`;
 }
 
+export function isoDateTime(timestamp: number): string {
+  return new Date(timestamp * 1000).toISOString();
+}
+
 export function formatLocalTime(timestamp: number): string {
   if (timestamp <= 0) {
     return "—";
