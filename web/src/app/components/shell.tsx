@@ -1,7 +1,10 @@
 import type { ReactNode } from "react";
+import { ClockIcon } from "lucide-react";
 import { Link } from "react-router";
 
 import { Breadcrumbs } from "@/app/components/breadcrumbs";
+import { LocalTime } from "@/components/shared/local-time";
+import { MetaItem } from "@/components/shared/meta-item";
 import type { Crumb } from "@/features/rules/utils/crumbs";
 
 const LOGO_URL = `${import.meta.env.BASE_URL}logo.webp`;
@@ -9,21 +12,34 @@ const LOGO_URL = `${import.meta.env.BASE_URL}logo.webp`;
 interface ShellProps {
   title: string;
   crumbs?: Crumb[];
+  updatedAt: number;
   meta?: ReactNode;
   children: ReactNode;
 }
 
-function ShellMeta({ children }: { children?: ReactNode }) {
-  if (!children) {
-    return null;
-  }
-
+function ShellMeta({
+  updatedAt,
+  meta,
+}: {
+  updatedAt: number;
+  meta?: ReactNode;
+}) {
   return (
-    <div className="mt-4 text-sm leading-5 text-stone-500">{children}</div>
+    <div className="mt-4 flex flex-col gap-4 text-sm leading-5">
+      {meta}
+      <MetaItem icon={ClockIcon}>
+        更新于 <LocalTime timestamp={updatedAt} />
+      </MetaItem>
+    </div>
   );
 }
 
-function ShellRail({ title, crumbs = [], meta }: Omit<ShellProps, "children">) {
+function ShellRail({
+  title,
+  crumbs = [],
+  updatedAt,
+  meta,
+}: Omit<ShellProps, "children">) {
   return (
     <header className="py-5 lg:sticky lg:top-0 lg:flex lg:h-dvh lg:w-88 lg:shrink-0 lg:flex-col lg:justify-center lg:py-14">
       <div className="flex items-center gap-3 lg:gap-4">
@@ -47,7 +63,7 @@ function ShellRail({ title, crumbs = [], meta }: Omit<ShellProps, "children">) {
 
       <Breadcrumbs crumbs={crumbs} />
 
-      <ShellMeta>{meta}</ShellMeta>
+      <ShellMeta updatedAt={updatedAt} meta={meta} />
     </header>
   );
 }
@@ -56,12 +72,23 @@ function ShellRail({ title, crumbs = [], meta }: Omit<ShellProps, "children">) {
  * The shared frame for the rule index. The left rail stays put on large
  * screens while the content scrolls; on small screens it becomes the header.
  */
-export function Shell({ title, crumbs, meta, children }: ShellProps) {
+export function Shell({
+  title,
+  crumbs,
+  updatedAt,
+  meta,
+  children,
+}: ShellProps) {
   return (
     <div className="min-h-dvh bg-black font-sans text-stone-100">
       <div className="mx-auto max-w-6xl px-5 lg:px-10">
         <div className="lg:flex lg:gap-16">
-          <ShellRail title={title} crumbs={crumbs} meta={meta} />
+          <ShellRail
+            title={title}
+            crumbs={crumbs}
+            updatedAt={updatedAt}
+            meta={meta}
+          />
 
           <div className="min-w-0 flex-1 pb-14 lg:flex lg:min-h-dvh lg:flex-col lg:justify-center lg:py-14">
             {children}

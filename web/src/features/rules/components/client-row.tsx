@@ -1,7 +1,8 @@
-import { ChevronRightIcon } from "lucide-react";
+import { ChevronRightIcon, ClockIcon } from "lucide-react";
 import { Link } from "react-router";
 
 import { LocalTime } from "@/components/shared/local-time";
+import { MetaItem } from "@/components/shared/meta-item";
 import {
   Card,
   CardAction,
@@ -55,10 +56,12 @@ export function ClientRow({ client }: ClientRowProps) {
           </CardTitle>
 
           <CardDescription className="sm:shrink-0">
-            <LocalTime
-              timestamp={client.root.mtime}
-              className="whitespace-nowrap font-mono text-xs leading-tight tracking-tight text-stone-400 sm:text-sm"
-            />
+            <MetaItem icon={ClockIcon}>
+              <LocalTime
+                timestamp={client.root.mtime}
+                className="text-[11px] min-[360px]:text-xs sm:text-sm"
+              />
+            </MetaItem>
           </CardDescription>
         </div>
 

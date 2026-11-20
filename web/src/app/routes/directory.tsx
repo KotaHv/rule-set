@@ -1,9 +1,8 @@
 import type { ReactNode } from "react";
 
-import { ClockIcon, FileIcon, FolderIcon } from "lucide-react";
+import { FileIcon, FolderIcon } from "lucide-react";
 
 import { Shell } from "@/app/components/shell";
-import { LocalTime } from "@/components/shared/local-time";
 import { MetaItem } from "@/components/shared/meta-item";
 import { DirectoryCard } from "@/features/rules/components/directory-card";
 import { EmptyState } from "@/features/rules/components/empty-state";
@@ -40,25 +39,22 @@ function CardGroup({
 function DirectoryMeta({
   directoryCount,
   fileCount,
-  mtime,
 }: {
   directoryCount: number;
   fileCount: number;
-  mtime: number;
 }) {
+  if (directoryCount === 0 && fileCount === 0) {
+    return null;
+  }
+
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex flex-wrap gap-x-4 gap-y-1">
-        {directoryCount > 0 && (
-          <MetaItem icon={FolderIcon}>{directoryCount} 个目录</MetaItem>
-        )}
-        {fileCount > 0 && (
-          <MetaItem icon={FileIcon}>{fileCount} 个文件</MetaItem>
-        )}
-      </div>
-      <MetaItem icon={ClockIcon}>
-        更新于 <LocalTime timestamp={mtime} />
-      </MetaItem>
+    <div className="flex flex-wrap gap-x-4 gap-y-1">
+      {directoryCount > 0 && (
+        <MetaItem icon={FolderIcon}>{directoryCount} 个目录</MetaItem>
+      )}
+      {fileCount > 0 && (
+        <MetaItem icon={FileIcon}>{fileCount} 个文件</MetaItem>
+      )}
     </div>
   );
 }
@@ -109,11 +105,11 @@ export function DirectoryPage({ data }: { data: DirectoryPageData }) {
           ...ancestorCrumbs(trail),
           { label: formatName(node.name) },
         ]}
+        updatedAt={node.mtime}
         meta={
           <DirectoryMeta
             directoryCount={directories.length}
             fileCount={files.length}
-            mtime={node.mtime}
           />
         }
       >
