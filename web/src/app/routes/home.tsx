@@ -13,7 +13,7 @@ export function HomePage() {
         title="Rule Set"
         meta={
           <>
-            <p className="text-xs tracking-[0.12em] text-stone-500">
+            <p className="text-xs tracking-[0.12em] text-stone-400">
               最近更新
             </p>
             <LocalTime

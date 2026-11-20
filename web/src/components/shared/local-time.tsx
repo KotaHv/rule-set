@@ -2,11 +2,7 @@ import type { ComponentProps } from "react";
 
 import { cn } from "cn";
 
-import {
-  formatLocalTime,
-  isoDateTime,
-  utcTimeTitle,
-} from "@/utils/format";
+import { formatLocalTime, isoDateTime, utcTimeTitle } from "@/utils/format";
 
 interface LocalTimeProps extends ComponentProps<"time"> {
   timestamp: number;

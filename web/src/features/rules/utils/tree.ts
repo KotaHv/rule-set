@@ -21,6 +21,10 @@ export function fileHref(path: string): string {
   return `${import.meta.env.BASE_URL}${encodePath(path)}`;
 }
 
+export function fileUrl(path: string): string {
+  return new URL(fileHref(path), window.location.href).href;
+}
+
 export function fileRoute(path: string): string {
   return `/${encodePath(path)}`;
 }

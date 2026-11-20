@@ -4,13 +4,13 @@ import {
   CopyIcon,
   DownloadIcon,
   ExternalLinkIcon,
+  FileIcon,
   LinkIcon,
   RotateCwIcon,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { MAX_PREVIEW_BYTES } from "@/features/rules/api/file";
-import { FileGlyph } from "@/features/rules/components/entity-icon";
 import {
   countLines,
   prettyPrintJson,
@@ -130,7 +130,7 @@ function TextPreviewContent({
               <span key={index} className="group/line flex">
                 <span
                   aria-hidden="true"
-                  className="sticky left-0 z-10 w-14 shrink-0 select-none border-r border-white/10 bg-stone-950/95 pr-3 text-right text-stone-500 group-hover/line:text-stone-300"
+                  className="sticky left-0 z-10 w-14 shrink-0 select-none border-r border-white/10 bg-stone-950/95 pr-3 text-right text-stone-400 group-hover/line:text-stone-200"
                 >
                   {index + 1}
                 </span>
@@ -350,7 +350,7 @@ export function PreviewUnavailable({
   return (
     <section className="rounded-xl border border-white/10 bg-white/3.5 px-6 py-16 text-center shadow-xl shadow-black/20 backdrop-blur-sm">
       <div className="mx-auto flex size-12 items-center justify-center rounded-2xl bg-white/6 text-stone-400">
-        <FileGlyph extension={fileExtension(name)} />
+        <FileIcon className="size-6" strokeWidth={1.75} aria-hidden="true" />
       </div>
       <h2 className="mt-4 text-lg font-medium text-stone-100">{title}</h2>
       <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-stone-400">
