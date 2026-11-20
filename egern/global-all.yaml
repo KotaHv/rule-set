@@ -1,5 +1,5 @@
-# Total: 6362 rules
-# Last Updated: 2026-11-19T07:44:09.142233+00:00
+# Total: 6364 rules
+# Last Updated: 2026-11-20T20:37:21.610555+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -1199,6 +1199,7 @@ domain_set:
 - static.moegoat.com
 - momentjs.com
 - assets.monei.com
+- assets.monetizationos.com
 - antiqua-ux-cdn.monotype.com
 - pp-static.monotype.com
 - static.monotype.com
@@ -5138,6 +5139,7 @@ domain_suffix_set:
 - angular.dev
 - ingest.atoms.dev
 - aws.dev
+- butterfly-effect-cdn.dev
 - delegated-ipfs.dev
 - epicgames.dev
 - flutter.dev

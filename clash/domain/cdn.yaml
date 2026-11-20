@@ -1,5 +1,5 @@
-# Total: 4654 rules
-# Last Updated: 2026-11-19T07:43:19.015686+00:00
+# Total: 4656 rules
+# Last Updated: 2026-11-20T20:36:47.346823+00:00
 'payload':
 - 'rules.ac'
 - 'static.jup.ag'
@@ -1434,6 +1434,7 @@
 - 'launchercontent.mojang.com'
 - 'momentjs.com'
 - 'assets.monei.com'
+- 'assets.monetizationos.com'
 - 'antiqua-ux-cdn.monotype.com'
 - 'pp-static.monotype.com'
 - 'static.monotype.com'
@@ -4193,6 +4194,7 @@
 - '+.cdn.chrome.marketplace.aws.dev'
 - '+.widgets.marketplace.aws.dev'
 - '+.assets.shortbread.aws.dev'
+- '+.butterfly-effect-cdn.dev'
 - '+.delegated-ipfs.dev'
 - '+.jspm.dev'
 - '+.apac.orbitor.dev'

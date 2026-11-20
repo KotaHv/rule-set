@@ -1,5 +1,5 @@
-# Total: 6276 rules
-# Last Updated: 2026-11-19T07:44:09.142233+00:00
+# Total: 6278 rules
+# Last Updated: 2026-11-20T20:37:21.610555+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -1198,6 +1198,7 @@
 - 'static.moegoat.com'
 - 'momentjs.com'
 - 'assets.monei.com'
+- 'assets.monetizationos.com'
 - 'antiqua-ux-cdn.monotype.com'
 - 'pp-static.monotype.com'
 - 'static.monotype.com'
@@ -5136,6 +5137,7 @@
 - '+.angular.dev'
 - '+.ingest.atoms.dev'
 - '+.aws.dev'
+- '+.butterfly-effect-cdn.dev'
 - '+.delegated-ipfs.dev'
 - '+.epicgames.dev'
 - '+.flutter.dev'
