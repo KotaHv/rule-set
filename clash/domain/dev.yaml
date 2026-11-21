@@ -1,5 +1,5 @@
-# Total: 650 rules
-# Last Updated: 2026-11-15T16:50:24.952920+00:00
+# Total: 652 rules
+# Last Updated: 2026-11-21T19:35:33.932879+00:00
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -239,6 +239,7 @@
 - '+.redhat.com'
 - '+.redislabs.com'
 - '+.regex101.com'
+- '+.replit.com'
 - '+.rocksdb.com'
 - '+.safetycli.com'
 - '+.sentry-cdn.com'
@@ -610,6 +611,7 @@
 - '+.stackage.org'
 - '+.swift.org'
 - '+.termux.org'
+- '+.tortoisegit.org'
 - '+.ubuntuforums.org'
 - '+.universalscalablefirmware.org'
 - '+.v8project.org'

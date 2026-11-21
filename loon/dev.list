@@ -1,5 +1,5 @@
-# Total: 651 rules
-# Last Updated: 2026-11-15T16:50:24.952920+00:00
+# Total: 653 rules
+# Last Updated: 2026-11-21T19:35:33.932879+00:00
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -238,6 +238,7 @@ DOMAIN-SUFFIX,readthedocs-hosted.com
 DOMAIN-SUFFIX,redhat.com
 DOMAIN-SUFFIX,redislabs.com
 DOMAIN-SUFFIX,regex101.com
+DOMAIN-SUFFIX,replit.com
 DOMAIN-SUFFIX,rocksdb.com
 DOMAIN-SUFFIX,safetycli.com
 DOMAIN-SUFFIX,sentry-cdn.com
@@ -609,6 +610,7 @@ DOMAIN-SUFFIX,sqlite.org
 DOMAIN-SUFFIX,stackage.org
 DOMAIN-SUFFIX,swift.org
 DOMAIN-SUFFIX,termux.org
+DOMAIN-SUFFIX,tortoisegit.org
 DOMAIN-SUFFIX,ubuntuforums.org
 DOMAIN-SUFFIX,universalscalablefirmware.org
 DOMAIN-SUFFIX,v8project.org
