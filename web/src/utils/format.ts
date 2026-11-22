@@ -13,8 +13,9 @@ const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 // Exact display names for exceptions that title-casing would mangle.
 const DISPLAY_NAMES = new Map([
   ["cn-ip", "CN-IP"],
+  ["dns", "DNS"],
   ["geoip", "GeoIP"],
-  ["ipcidr", "IPCIDR"],
+  ["ipcidr", "IP-CIDR"],
 ]);
 
 export function formatName(name: string): string {
