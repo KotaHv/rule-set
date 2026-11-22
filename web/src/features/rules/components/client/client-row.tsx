@@ -1,4 +1,9 @@
-import { ChevronRightIcon, ClockIcon, FilesIcon } from "lucide-react";
+import {
+  ChevronRightIcon,
+  ClockIcon,
+  FilesIcon,
+  HardDriveIcon,
+} from "lucide-react";
 import { Link } from "react-router";
 
 import { LocalTime } from "@/components/shared/local-time";
@@ -61,10 +66,14 @@ export function ClientRow({ client }: ClientRowProps) {
           </CardTitle>
 
           <CardDescription className="flex flex-col items-start gap-1 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-4">
-            <MetaItem icon={FilesIcon} className={META_TEXT_SIZE}>
-              {stats.files.toLocaleString()} 个文件 ·{" "}
-              {formatFileSize(stats.size)}
-            </MetaItem>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+              <MetaItem icon={FilesIcon} className={META_TEXT_SIZE}>
+                {stats.files.toLocaleString()} 个文件
+              </MetaItem>
+              <MetaItem icon={HardDriveIcon} className={META_TEXT_SIZE}>
+                {formatFileSize(stats.size)}
+              </MetaItem>
+            </div>
             <MetaItem icon={ClockIcon} className={META_TEXT_SIZE}>
               <LocalTime timestamp={client.root.mtime} />
             </MetaItem>

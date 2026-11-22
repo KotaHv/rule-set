@@ -1,4 +1,4 @@
-import { FilesIcon } from "lucide-react";
+import { FilesIcon, HardDriveIcon } from "lucide-react";
 
 import { Shell } from "@/app/components/shell";
 import { GitHubIcon } from "@/components/shared/github-icon";
@@ -20,10 +20,14 @@ export function HomePage() {
         updatedAt={manifest.latestUpdate}
         meta={
           <div className="flex flex-col gap-4">
-            <MetaItem icon={FilesIcon}>
-              {stats.files.toLocaleString()} 个文件 ·{" "}
-              {formatFileSize(stats.size)}
-            </MetaItem>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+              <MetaItem icon={FilesIcon}>
+                {stats.files.toLocaleString()} 个文件
+              </MetaItem>
+              <MetaItem icon={HardDriveIcon}>
+                {formatFileSize(stats.size)}
+              </MetaItem>
+            </div>
             <MetaItem icon={GitHubIcon} asChild>
               <a
                 href="https://github.com/KotaHv/rule-set"
