@@ -1,5 +1,5 @@
-# Total: 3497 rules
-# Last Updated: 2026-11-21T07:30:20.671374+00:00
+# Total: 3499 rules
+# Last Updated: 2026-11-22T07:11:04.218281+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -641,6 +641,7 @@ domain_set:
 - speedtest.net360.cloud
 - speedtest.phx01.orion.cloud
 - dallas.outboundrix.cloud
+- msk.speedtest.reynard.cloud
 - speedtest1.sailweb.cloud
 - speedtest2.sailweb.cloud
 - speedtest.uania.cloud
@@ -2474,6 +2475,7 @@ domain_set:
 - speed1.e-caps.net
 - ookla2.eaglecable.net
 - speedtest.ecfaccess.net
+- speedtest.edgefox.net
 - speedtest.lon1.edgoo.net
 - speedtest.mad2.edgoo.net
 - speedtest.ediscom.net
