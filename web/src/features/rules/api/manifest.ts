@@ -5,6 +5,16 @@ const MANIFEST_URL = `${import.meta.env.BASE_URL}manifest.json`;
 
 export const MANIFEST_ROUTE_ID = "manifest";
 
+export class ManifestHttpError extends Error {
+  readonly status: number;
+
+  constructor(status: number) {
+    super(`Manifest request failed: HTTP ${status}`);
+    this.name = "ManifestHttpError";
+    this.status = status;
+  }
+}
+
 let manifest: Manifest | undefined;
 let manifestRequest: Promise<Manifest> | undefined;
 
@@ -46,12 +56,12 @@ function isManifest(value: unknown): value is Manifest {
 async function fetchManifest(): Promise<Manifest> {
   const response = await fetch(MANIFEST_URL, { cache: "no-cache" });
   if (!response.ok) {
-    throw new Error(`请求失败（HTTP ${response.status}）`);
+    throw new ManifestHttpError(response.status);
   }
 
   const data: unknown = await response.json();
   if (!isManifest(data)) {
-    throw new Error("manifest.json 格式不正确");
+    throw new Error("Invalid manifest payload");
   }
 
   return data;
@@ -74,16 +84,4 @@ export function loadManifest(): Promise<Manifest> {
     });
 
   return manifestRequest;
-}
-
-export function manifestErrorMessage(error: unknown): string {
-  if (error instanceof TypeError) {
-    return "网络请求失败，请检查网络连接后重试";
-  }
-
-  if (error instanceof SyntaxError) {
-    return "manifest.json 格式不正确";
-  }
-
-  return error instanceof Error ? error.message : "未知错误";
 }

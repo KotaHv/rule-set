@@ -1,8 +1,27 @@
 import { AlertTriangleIcon, RotateCwIcon } from "lucide-react";
 import { useRevalidator, useRouteError } from "react-router";
 
+import { cn } from "cn";
+
+import { StatusScreen } from "@/app/components/status-screen";
 import { Button } from "@/components/ui/button";
-import { manifestErrorMessage } from "@/features/rules/api/manifest";
+import { ManifestHttpError } from "@/features/rules/api/manifest";
+
+function errorDescription(error: unknown): string {
+  if (error instanceof TypeError) {
+    return "网络连接失败，请检查网络后重试";
+  }
+
+  if (error instanceof SyntaxError) {
+    return "规则数据格式不正确，请稍后重试";
+  }
+
+  if (error instanceof ManifestHttpError) {
+    return "服务暂时不可用，请稍后重试";
+  }
+
+  return "规则数据加载失败，请稍后重试";
+}
 
 export function ErrorScreen() {
   const error = useRouteError();
@@ -12,34 +31,26 @@ export function ErrorScreen() {
   return (
     <>
       <title>加载失败 - Rule Set</title>
-      <main className="grid min-h-dvh place-items-center p-6">
-        <section className="w-full max-w-sm text-center">
-          <div className="mx-auto flex size-12 items-center justify-center rounded-2xl bg-white/4 text-stone-400 ring-1 ring-white/10">
-            <AlertTriangleIcon className="size-6" />
-          </div>
-          <p className="mt-4 text-sm font-semibold tracking-[0.2em] text-stone-400 uppercase">
-            Error
-          </p>
-          <h1 className="mt-3 text-2xl font-semibold tracking-tight text-stone-100">
-            无法加载规则列表
-          </h1>
-          <p className="mt-3 text-sm leading-6 text-stone-400">
-            {manifestErrorMessage(error)}
-          </p>
-          <Button
-            type="button"
-            onClick={() => revalidator.revalidate()}
-            disabled={retrying}
-            aria-busy={retrying || undefined}
-            className="mt-6"
-          >
-            <RotateCwIcon
-              className={retrying ? "motion-safe:animate-spin" : undefined}
-            />
-            {retrying ? "重试中" : "重试"}
-          </Button>
-        </section>
-      </main>
+      <StatusScreen
+        icon={AlertTriangleIcon}
+        eyebrow="Error"
+        title="无法加载规则列表"
+        description={errorDescription(error)}
+      >
+        <Button
+          type="button"
+          onClick={() => revalidator.revalidate()}
+          disabled={retrying}
+          aria-busy={retrying || undefined}
+          size="lg"
+        >
+          <RotateCwIcon
+            aria-hidden="true"
+            className={cn("size-4", retrying && "motion-safe:animate-spin")}
+          />
+          {retrying ? "重试中" : "重试"}
+        </Button>
+      </StatusScreen>
     </>
   );
 }
