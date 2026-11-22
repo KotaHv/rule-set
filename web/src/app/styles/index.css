@@ -7,6 +7,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  --breakpoint-2xs: 20rem;
+  --breakpoint-xs: 22.5rem;
   --font-sans: "Atkinson Hyperlegible Next Variable", "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --font-mono: "Atkinson Hyperlegible Mono Variable", "SFMono-Regular",
