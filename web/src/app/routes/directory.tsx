@@ -4,9 +4,9 @@ import { FileIcon, FolderIcon } from "lucide-react";
 
 import { Shell } from "@/app/components/shell";
 import { MetaItem } from "@/components/shared/meta-item";
-import { DirectoryCard } from "@/features/rules/components/directory-card";
-import { EmptyState } from "@/features/rules/components/empty-state";
-import { FileCard } from "@/features/rules/components/file-card";
+import { DirectoryCard } from "@/features/rules/components/listing/directory-card";
+import { FileCard } from "@/features/rules/components/listing/file-card";
+import { EmptyState } from "@/features/rules/components/shared/empty-state";
 import type { DirectoryPageData } from "@/features/rules/api/browser";
 import { ancestorCrumbs } from "@/features/rules/utils/crumbs";
 import { splitChildren } from "@/features/rules/utils/tree";
@@ -43,19 +43,15 @@ function DirectoryMeta({
   directoryCount: number;
   fileCount: number;
 }) {
-  if (directoryCount === 0 && fileCount === 0) {
-    return null;
-  }
-
   return (
-    <div className="flex flex-wrap gap-x-4 gap-y-1">
+    <>
       {directoryCount > 0 && (
         <MetaItem icon={FolderIcon}>{directoryCount} 个目录</MetaItem>
       )}
       {fileCount > 0 && (
         <MetaItem icon={FileIcon}>{fileCount} 个文件</MetaItem>
       )}
-    </div>
+    </>
   );
 }
 
@@ -66,10 +62,6 @@ function DirectoryContents({
   directories: ManifestDirectory[];
   files: ManifestFile[];
 }) {
-  if (directories.length === 0 && files.length === 0) {
-    return <EmptyState />;
-  }
-
   return (
     <div className="space-y-8">
       {directories.length > 0 && (
@@ -91,29 +83,33 @@ function DirectoryContents({
 }
 
 export function DirectoryPage({ data }: { data: DirectoryPageData }) {
-  const { node, trail } = data;
-  const client = trail[0];
+  const { client, node, trail } = data;
   const { directories, files } = splitChildren(node);
+  const clientName = formatName(client.root.name);
+  const isEmpty = directories.length === 0 && files.length === 0;
+  const content = isEmpty ? (
+    <EmptyState />
+  ) : (
+    <DirectoryContents directories={directories} files={files} />
+  );
 
   return (
     <>
-      <title>{`${formatName(client.name)} - Rule Set`}</title>
+      <title>{`${clientName} - Rule Set`}</title>
       <Shell
-        title={formatName(client.name)}
-        crumbs={[
-          { label: "Home", to: "/" },
-          ...ancestorCrumbs(trail),
-          { label: formatName(node.name) },
-        ]}
+        title={clientName}
+        crumbs={ancestorCrumbs(trail)}
         updatedAt={node.mtime}
         meta={
-          <DirectoryMeta
-            directoryCount={directories.length}
-            fileCount={files.length}
-          />
+          !isEmpty && (
+            <DirectoryMeta
+              directoryCount={directories.length}
+              fileCount={files.length}
+            />
+          )
         }
       >
-        <DirectoryContents directories={directories} files={files} />
+        {content}
       </Shell>
     </>
   );

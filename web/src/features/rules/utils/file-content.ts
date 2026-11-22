@@ -1,5 +1,7 @@
-// Count without materializing an array: splitLines is only affordable
-// below the large-file cutoff, but this runs before that decision.
+import type { PreviewDocument } from "@/types/preview";
+import { fileExtension } from "@/utils/format";
+
+// Count without materializing an array.
 export function countLines(content: string): number {
   if (!content) {
     return 0;
@@ -32,10 +34,32 @@ export function splitLines(content: string): string[] {
   return withoutTrailingNewline.split("\n");
 }
 
-export function prettyPrintJson(content: string): string {
+function prettyPrintJson(content: string): string {
   try {
     return JSON.stringify(JSON.parse(content), null, 2);
   } catch {
     return content;
   }
+}
+
+function formatPreviewContent(name: string, content: string): string {
+  return fileExtension(name)?.toLowerCase() === "json"
+    ? prettyPrintJson(content)
+    : content;
+}
+
+export function previewDocument(
+  name: string,
+  content: string,
+): PreviewDocument {
+  const display = formatPreviewContent(name, content);
+  return {
+    content,
+    display,
+    lineCount: countLines(display),
+  };
+}
+
+export function isCommentLine(line: string): boolean {
+  return /^\s*(#|\/\/)/.test(line);
 }

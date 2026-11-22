@@ -1,5 +1,10 @@
 import type { ClientSlug } from "@/types/manifest";
 
+export const CODE_TYPE =
+  "font-mono text-[0.8125rem]/relaxed lg:text-sm/relaxed";
+
+export const MAX_PREVIEW_BYTES = 20 * 1024 * 1024;
+
 export const CLIENT_META: Record<
   ClientSlug,
   { label: string; color: string }

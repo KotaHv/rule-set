@@ -1,5 +1,5 @@
 import { Shell } from "@/app/components/shell";
-import { ClientList } from "@/features/rules/components/client-list";
+import { ClientList } from "@/features/rules/components/client/client-list";
 import { useManifest } from "@/features/rules/hooks/use-manifest";
 
 export function HomePage() {

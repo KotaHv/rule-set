@@ -2,9 +2,7 @@ import { describe, expect, test } from "bun:test";
 
 import {
   directoryRoute,
-  directoryTrail,
   fileRoute,
-  fileTrail,
   nodeTrail,
   parentRoute,
   splitChildren,
@@ -38,42 +36,32 @@ const ipcidr = directory("ipcidr", "clash/ipcidr");
 const domainYaml = file("domain.yaml", "clash/domain.yaml");
 const root = directory("clash", "clash", [domain, ipcidr, domainYaml]);
 
-describe("directoryTrail", () => {
-  test("returns the root for an empty path", () => {
-    expect(directoryTrail(root, "")).toEqual([root]);
-    expect(directoryTrail(root, "/")).toEqual([root]);
+describe("nodeTrail", () => {
+  test("resolves files without including the file in trail", () => {
+    expect(nodeTrail(root, "domain/apple/apple-cn.yaml")).toEqual({
+      trail: [root, domain, apple],
+      node: appleYaml,
+    });
+    expect(nodeTrail(root, "domain.yaml")).toEqual({
+      trail: [root],
+      node: domainYaml,
+    });
   });
 
-  test("resolves nested directories", () => {
-    expect(directoryTrail(root, "domain/apple")).toEqual([root, domain, apple]);
+  test("resolves directories with the current directory in trail", () => {
+    expect(nodeTrail(root, "")).toEqual({ trail: [root], node: root });
+    expect(nodeTrail(root, "/")).toEqual({ trail: [root], node: root });
+    expect(nodeTrail(root, "domain/apple")).toEqual({
+      trail: [root, domain, apple],
+      node: apple,
+    });
   });
 
   test("ignores empty and trailing segments", () => {
-    expect(directoryTrail(root, "/domain//apple/")).toEqual([
-      root,
-      domain,
-      apple,
-    ]);
-  });
-
-  test("returns undefined for unknown directories", () => {
-    expect(directoryTrail(root, "domain/unknown")).toBeUndefined();
-  });
-
-  test("does not resolve files", () => {
-    expect(directoryTrail(root, "domain.yaml")).toBeUndefined();
-  });
-});
-
-describe("nodeTrail", () => {
-  test("resolves files at the end of the path", () => {
-    expect(nodeTrail(root, "domain/apple/apple-cn.yaml")).toEqual([
-      root,
-      domain,
-      apple,
-      appleYaml,
-    ]);
-    expect(nodeTrail(root, "domain.yaml")).toEqual([root, domainYaml]);
+    expect(nodeTrail(root, "/domain//apple/")).toEqual({
+      trail: [root, domain, apple],
+      node: apple,
+    });
   });
 
   test("rejects segments after a file", () => {
@@ -82,19 +70,6 @@ describe("nodeTrail", () => {
 
   test("returns undefined for unknown paths", () => {
     expect(nodeTrail(root, "domain/unknown")).toBeUndefined();
-  });
-});
-
-describe("fileTrail", () => {
-  test("returns the file trail", () => {
-    expect(fileTrail(root, "domain/apple/apple-cn.yaml")).toEqual({
-      trail: [root, domain, apple, appleYaml],
-      node: appleYaml,
-    });
-  });
-
-  test("rejects directories", () => {
-    expect(fileTrail(root, "domain")).toBeUndefined();
   });
 });
 

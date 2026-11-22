@@ -1,9 +1,8 @@
-import type { ManifestFile, ManifestNode } from "@/types/manifest";
-import type { FilePreview, FilePreviewKind } from "@/types/preview";
+import type { ManifestFile } from "@/types/manifest";
+import type { FilePreviewPayload } from "@/types/preview";
 import { fileExtension } from "@/utils/format";
+import { MAX_PREVIEW_BYTES } from "../constants";
 import { fileHref } from "../utils/tree";
-
-export const MAX_PREVIEW_BYTES = 20 * 1024 * 1024;
 
 const TEXT_EXTENSIONS = new Set([
   "conf",
@@ -24,31 +23,20 @@ const TEXT_EXTENSIONS = new Set([
   "yml",
 ]);
 
-export interface FilePageData {
-  type: "file";
-  trail: ManifestNode[];
-  node: ManifestFile;
-}
-
 export async function readFilePreview(
   node: ManifestFile,
   signal?: AbortSignal,
-): Promise<FilePreview> {
+): Promise<FilePreviewPayload> {
   const extension = fileExtension(node.name)?.toLowerCase();
-  let kind: FilePreviewKind = "text";
   if (!extension || !TEXT_EXTENSIONS.has(extension)) {
-    kind = "binary";
-  } else if (node.size > MAX_PREVIEW_BYTES) {
-    kind = "too-large";
+    return { kind: "binary" };
   }
-
-  if (kind !== "text") {
-    return { kind, content: null };
+  if (node.size > MAX_PREVIEW_BYTES) {
+    return { kind: "too-large" };
   }
 
   try {
-    const response = await fetch(fileHref(node.path), {
-      cache: "no-cache",
+    const response = await fetch(`${fileHref(node.path)}?v=${node.mtime}`, {
       signal,
     });
 
@@ -65,7 +53,6 @@ export async function readFilePreview(
 
     return {
       kind: "error",
-      content: null,
       error: error instanceof Error ? error.message : "未知错误",
     };
   }

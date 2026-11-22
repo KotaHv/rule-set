@@ -33,7 +33,7 @@ export function FileCard({ node }: { node: ManifestFile }) {
           variant="ghost"
           icon={LinkIcon}
           label={`复制 ${node.name} 的链接`}
-          getText={() => fileUrl(node.path)}
+          value={fileUrl(node.path)}
         />
       }
     />

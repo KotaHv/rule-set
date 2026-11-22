@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { ClockIcon } from "lucide-react";
+import { cn } from "cn";
 import { Link } from "react-router";
 
 import { Breadcrumbs } from "@/app/components/breadcrumbs";
@@ -14,6 +15,17 @@ interface ShellProps {
   crumbs?: Crumb[];
   updatedAt: number;
   meta?: ReactNode;
+  /**
+   * Page actions. When present, the phone action-bar layout is also enabled:
+   * the bar is fixed to the bottom edge and main reserves its height.
+   */
+  actions?: ReactNode;
+  /**
+   * Let the page own the phone viewport; its content must scroll internally.
+   * The 30rem minimum reserves room for the page's 10rem preview floor, the
+   * rail, and the fixed action bar in phone landscape.
+   */
+  fillViewport?: boolean;
   children: ReactNode;
 }
 
@@ -26,7 +38,9 @@ function ShellMeta({
 }) {
   return (
     <div className="mt-4 flex flex-col gap-4 text-sm leading-5">
-      {meta}
+      {meta && (
+        <div className="flex flex-wrap gap-x-4 gap-y-1">{meta}</div>
+      )}
       <MetaItem icon={ClockIcon}>
         更新于 <LocalTime timestamp={updatedAt} />
       </MetaItem>
@@ -39,7 +53,8 @@ function ShellRail({
   crumbs = [],
   updatedAt,
   meta,
-}: Omit<ShellProps, "children">) {
+  actions,
+}: Omit<ShellProps, "children" | "fillViewport">) {
   return (
     <header className="py-5 lg:sticky lg:top-0 lg:flex lg:h-dvh lg:w-88 lg:shrink-0 lg:flex-col lg:justify-center lg:py-14">
       <div className="flex items-center gap-3 lg:gap-4">
@@ -64,35 +79,59 @@ function ShellRail({
       <Breadcrumbs crumbs={crumbs} />
 
       <ShellMeta updatedAt={updatedAt} meta={meta} />
+
+      {actions && (
+        <div className="fixed inset-x-0 bottom-0 z-20 flex items-center gap-2 border-t border-white/10 bg-black/95 px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] backdrop-blur-xl lg:static lg:inset-auto lg:z-auto lg:mt-4 lg:flex lg:flex-col lg:items-stretch lg:gap-4 lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
+          {actions}
+        </div>
+      )}
     </header>
   );
 }
 
 /**
- * The shared frame for the rule index. The left rail stays put on large
- * screens while the content scrolls; on small screens it becomes the header.
+ * Shared frame for the rule index. On desktop the left rail stays fixed while
+ * the content scrolls; on small screens the rail becomes the header.
  */
 export function Shell({
   title,
   crumbs,
   updatedAt,
   meta,
+  actions,
+  fillViewport = false,
   children,
 }: ShellProps) {
+  const hasActions = actions != null;
+
   return (
-    <div className="min-h-dvh bg-black font-sans text-stone-100">
-      <div className="mx-auto max-w-6xl px-5 lg:px-10">
-        <div className="lg:flex lg:gap-16">
+    <div
+      className={cn(
+        "flex min-h-dvh flex-col bg-black font-sans text-stone-100",
+        fillViewport &&
+          "h-[max(100dvh,30rem)] overflow-x-clip lg:block lg:h-auto",
+      )}
+    >
+      <div className="mx-auto flex w-full max-w-6xl min-h-0 flex-1 flex-col px-5 lg:block lg:px-10">
+        <div className="flex min-w-0 min-h-0 flex-1 flex-col lg:flex-row lg:gap-16">
           <ShellRail
             title={title}
             crumbs={crumbs}
             updatedAt={updatedAt}
             meta={meta}
+            actions={actions}
           />
 
-          <div className="min-w-0 flex-1 pb-14 lg:flex lg:min-h-dvh lg:flex-col lg:justify-center lg:py-14">
+          <main
+            className={cn(
+              "flex min-w-0 min-h-0 flex-1 flex-col lg:min-h-dvh lg:justify-center lg:py-14",
+              hasActions
+                ? "pb-[calc(4.5rem+env(safe-area-inset-bottom))] lg:pb-14"
+                : "pb-14",
+            )}
+          >
             {children}
-          </div>
+          </main>
         </div>
       </div>
     </div>

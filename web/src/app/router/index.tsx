@@ -1,6 +1,5 @@
 import { createHashRouter } from "react-router";
 
-import { AppLayout } from "@/app/layouts/app-layout";
 import { RootLayout } from "@/app/layouts/root-layout";
 import { BrowserPage } from "@/app/routes/browser";
 import { HomePage } from "@/app/routes/home";
@@ -25,7 +24,6 @@ export const router = createHashRouter([
         path: "/",
         loader: loadManifest,
         ErrorBoundary: AppErrorBoundary,
-        Component: AppLayout,
         children: [
           { index: true, Component: HomePage },
           {

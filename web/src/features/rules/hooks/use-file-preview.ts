@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { readFilePreview } from "@/features/rules/api/file";
+import { previewDocument } from "@/features/rules/utils/file-content";
 import type { FilePreviewState } from "@/types/preview";
 import type { ManifestFile } from "@/types/manifest";
 
@@ -16,7 +17,14 @@ export function useFilePreview(node: ManifestFile) {
     void readFilePreview(node, controller.signal)
       .then((next) => {
         if (!controller.signal.aborted) {
-          setPreview(next);
+          setPreview(
+            next.kind === "text"
+              ? {
+                  kind: "text",
+                  document: previewDocument(node.name, next.content),
+                }
+              : next,
+          );
         }
       })
       .catch((error: unknown) => {
@@ -28,7 +36,6 @@ export function useFilePreview(node: ManifestFile) {
 
         setPreview({
           kind: "error",
-          content: null,
           error: error instanceof Error ? error.message : "无法读取文件内容",
         });
       });

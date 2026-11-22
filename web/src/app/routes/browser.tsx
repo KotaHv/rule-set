@@ -10,7 +10,8 @@ export function BrowserPage() {
   return data.type === "directory" ? (
     <DirectoryPage data={data} />
   ) : (
-    // Remount on navigation so copy status and scroll reset.
+    // Remount on navigation so the new page never briefly shows the previous
+    // file's preview; this also resets copy status and scroll position.
     <FilePage key={data.node.path} data={data} />
   );
 }

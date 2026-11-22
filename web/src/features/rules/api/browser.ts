@@ -1,16 +1,27 @@
 import { data, type LoaderFunctionArgs } from "react-router";
 
-import type { ManifestDirectory } from "@/types/manifest";
+import type {
+  ManifestClient,
+  ManifestDirectory,
+  ManifestFile,
+} from "@/types/manifest";
 import { nodeTrail } from "../utils/tree";
-import type { FilePageData } from "./file";
 import { loadManifest } from "./manifest";
 
 export const BROWSER_ROUTE_ID = "browser";
 
 export interface DirectoryPageData {
   type: "directory";
+  client: ManifestClient;
   trail: ManifestDirectory[];
   node: ManifestDirectory;
+}
+
+export interface FilePageData {
+  type: "file";
+  client: ManifestClient;
+  trail: ManifestDirectory[];
+  node: ManifestFile;
 }
 
 export type BrowserPageData = DirectoryPageData | FilePageData;
@@ -22,22 +33,31 @@ export async function loadBrowserPage({
   const client = manifest.clients.find(
     (entry) => entry.slug === params.clientSlug,
   );
-  const trail = client
-    ? nodeTrail(client.root, params["*"] ?? "")
-    : undefined;
 
-  if (!trail) {
+  if (!client) {
     throw data("页面不存在", { status: 404 });
   }
 
-  const node = trail[trail.length - 1];
+  const result = nodeTrail(client.root, params["*"] ?? "");
+
+  if (!result) {
+    throw data("页面不存在", { status: 404 });
+  }
+
+  const { trail, node } = result;
 
   if (node.type === "dir") {
-    return { type: "directory", trail: trail as ManifestDirectory[], node };
+    return {
+      type: "directory",
+      client,
+      trail,
+      node,
+    };
   }
 
   return {
     type: "file",
+    client,
     trail,
     node,
   };

@@ -2,7 +2,8 @@ import { describe, expect, test } from "bun:test";
 
 import {
   countLines,
-  prettyPrintJson,
+  isCommentLine,
+  previewDocument,
   splitLines,
 } from "@/features/rules/utils/file-content";
 
@@ -110,16 +111,46 @@ describe("file content line semantics", () => {
   }
 });
 
-describe("prettyPrintJson", () => {
-  test("pretty-prints valid JSON with two-space indentation", () => {
-    expect(prettyPrintJson('{"version":2,"rules":[]}')).toBe(`{
+describe("previewDocument", () => {
+  test("keeps raw content and formatted display separate", () => {
+    const raw = '{"version":2,"rules":[]}';
+    const document = previewDocument("config.json", raw);
+
+    expect(document.content).toBe(raw);
+    expect(document.display).toBe(`{
   "version": 2,
   "rules": []
 }`);
+    expect(document.lineCount).toBe(4);
   });
 
-  test("returns malformed JSON unchanged", () => {
-    const malformed = '{"rules":[}';
-    expect(prettyPrintJson(malformed)).toBe(malformed);
+  test("leaves malformed JSON unchanged", () => {
+    const raw = '{"rules":[}';
+    const document = previewDocument("config.json", raw);
+
+    expect(document.content).toBe(raw);
+    expect(document.display).toBe(raw);
+    expect(document.lineCount).toBe(1);
+  });
+
+  test("uses raw content when no formatting applies", () => {
+    const raw = "payload:\n  - rule\n";
+    const document = previewDocument("rules.yaml", raw);
+
+    expect(document.content).toBe(raw);
+    expect(document.display).toBe(raw);
+    expect(document.lineCount).toBe(2);
+  });
+});
+
+describe("isCommentLine", () => {
+  test("recognizes hash and slash comments after indentation", () => {
+    expect(isCommentLine("# Total: 58 rules")).toBe(true);
+    expect(isCommentLine("  // temporary")).toBe(true);
+  });
+
+  test("does not treat a rule containing a hash or URL as a comment", () => {
+    expect(isCommentLine("DOMAIN-SUFFIX,example.com # note")).toBe(false);
+    expect(isCommentLine("https://example.com")).toBe(false);
   });
 });

@@ -1,4 +1,4 @@
-import type { ManifestNode } from "@/types/manifest";
+import type { ManifestDirectory } from "@/types/manifest";
 import { formatName } from "@/utils/format";
 
 import { directoryRoute } from "./tree";
@@ -8,9 +8,12 @@ export interface Crumb {
   to?: string;
 }
 
-export function ancestorCrumbs(trail: ManifestNode[]): Crumb[] {
-  return trail.slice(0, -1).map((entry) => ({
-    label: formatName(entry.name),
-    to: directoryRoute(entry.path),
-  }));
+export function ancestorCrumbs(trail: ManifestDirectory[]): Crumb[] {
+  return [
+    { label: "Home", to: "/" },
+    ...trail.map((entry) => ({
+      label: formatName(entry.name),
+      to: directoryRoute(entry.path),
+    })),
+  ];
 }

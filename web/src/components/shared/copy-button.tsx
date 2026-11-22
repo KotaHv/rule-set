@@ -1,53 +1,33 @@
-import { useEffect, useState } from "react";
-
 import { CheckIcon, CircleAlertIcon, type LucideIcon } from "lucide-react";
 import type { VariantProps } from "class-variance-authority";
 
 import { Button, type buttonVariants } from "@/components/ui/button";
+import { COPY_STATUS_LABELS, useCopy } from "@/hooks/use-copy";
+import { cn } from "cn";
 
-type CopyStatus = "idle" | "copied" | "error";
-
-const STATUS_RESET_MS = 2000;
-
-const STATUS_LABELS = { copied: "已复制", error: "复制失败" } as const;
-
-function useCopy() {
-  const [status, setStatus] = useState<CopyStatus>("idle");
-  const [copyCount, setCopyCount] = useState(0);
-
-  useEffect(() => {
-    if (status === "idle") {
-      return;
-    }
-
-    const timer = window.setTimeout(() => setStatus("idle"), STATUS_RESET_MS);
-    return () => window.clearTimeout(timer);
-  }, [status, copyCount]);
-
-  async function copy(text: string) {
-    try {
-      await navigator.clipboard.writeText(text);
-      setStatus("copied");
-    } catch {
-      setStatus("error");
-    }
-    setCopyCount((count) => count + 1);
-  }
-
-  return { status, copy };
-}
-
-interface CopyButtonProps extends VariantProps<typeof buttonVariants> {
-  getText: () => string;
+interface CopyButtonProps {
+  /** null = nothing to copy yet; the button disables itself. */
+  value: string | null;
   icon: LucideIcon;
   label: string;
+  variant?: VariantProps<typeof buttonVariants>["variant"];
+  /** Render the label next to the icon; omit for icon-only buttons. */
+  showLabel?: boolean;
+  disabled?: boolean;
+  className?: string;
+  /** Label visibility, e.g. "hidden lg:inline"; only applies when showLabel is set. */
+  labelClassName?: string;
 }
 
 export function CopyButton({
-  getText,
+  value,
   icon: Icon,
   label,
-  ...variants
+  variant,
+  showLabel = false,
+  disabled,
+  className,
+  labelClassName,
 }: CopyButtonProps) {
   const { status, copy } = useCopy();
   const Glyph =
@@ -60,18 +40,26 @@ export function CopyButton({
   return (
     <>
       <Button
-        {...variants}
-        size="icon"
+        type="button"
+        variant={variant}
+        size={showLabel ? "default" : "icon"}
+        disabled={disabled ?? value === null}
         aria-label={label}
-        onClick={() => void copy(getText())}
+        className={cn(showLabel && "gap-2.5", className)}
+        onClick={() => value !== null && void copy(value)}
       >
         <Glyph
           aria-hidden="true"
           className={status === "error" ? "text-red-400" : undefined}
         />
+        {showLabel && (
+          <span aria-hidden="true" className={labelClassName}>
+            {status === "idle" ? label : COPY_STATUS_LABELS[status]}
+          </span>
+        )}
       </Button>
       <span className="sr-only" role="status">
-        {status === "idle" ? "" : STATUS_LABELS[status]}
+        {status === "idle" ? "" : COPY_STATUS_LABELS[status]}
       </span>
     </>
   );

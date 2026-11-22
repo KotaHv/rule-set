@@ -29,11 +29,16 @@ export function fileRoute(path: string): string {
   return `/${encodePath(path)}`;
 }
 
+/**
+ * Resolves a manifest path.
+ * Directory hits include the current directory as the last trail entry;
+ * file hits include only the ancestor directories.
+ */
 export function nodeTrail(
   root: ManifestDirectory,
   path: string,
-): ManifestNode[] | undefined {
-  const trail: ManifestNode[] = [root];
+): { trail: ManifestDirectory[]; node: ManifestNode } | undefined {
+  const trail: ManifestDirectory[] = [root];
   const segments = path.split("/").filter(Boolean);
   let directory = root;
 
@@ -44,43 +49,15 @@ export function nodeTrail(
       return undefined;
     }
 
-    trail.push(child);
-
     if (child.type === "file") {
-      return index === segments.length - 1 ? trail : undefined;
+      return index === segments.length - 1 ? { trail, node: child } : undefined;
     }
 
+    trail.push(child);
     directory = child;
   }
 
-  return trail;
-}
-
-export function directoryTrail(
-  root: ManifestDirectory,
-  path: string,
-): ManifestDirectory[] | undefined {
-  const trail = nodeTrail(root, path);
-  if (!trail) {
-    return undefined;
-  }
-
-  return trail[trail.length - 1].type === "dir"
-    ? (trail as ManifestDirectory[])
-    : undefined;
-}
-
-export function fileTrail(
-  root: ManifestDirectory,
-  path: string,
-): { trail: ManifestNode[]; node: ManifestFile } | undefined {
-  const trail = nodeTrail(root, path);
-  if (!trail) {
-    return undefined;
-  }
-
-  const node = trail[trail.length - 1];
-  return node.type === "file" ? { trail, node } : undefined;
+  return { trail, node: directory };
 }
 
 export function splitChildren(node: ManifestDirectory): {

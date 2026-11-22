@@ -16,8 +16,9 @@ const domain = directory("domain", "clash/domain", [apple]);
 const root = directory("clash", "clash", [domain]);
 
 describe("ancestorCrumbs", () => {
-  test("links every ancestor except the current node", () => {
-    expect(ancestorCrumbs([root, domain, apple])).toEqual([
+  test("links the home root and every provided ancestor", () => {
+    expect(ancestorCrumbs([root, domain])).toEqual([
+      { label: "Home", to: "/" },
       { label: "Clash", to: "/clash/" },
       { label: "Domain", to: "/clash/domain/" },
     ]);
