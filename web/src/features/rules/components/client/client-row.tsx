@@ -1,4 +1,4 @@
-import { ChevronRightIcon, ClockIcon } from "lucide-react";
+import { ChevronRightIcon, ClockIcon, FilesIcon } from "lucide-react";
 import { Link } from "react-router";
 
 import { LocalTime } from "@/components/shared/local-time";
@@ -11,13 +11,17 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { CLIENT_META } from "@/features/rules/constants";
+import { treeStats } from "@/features/rules/utils/stats";
 import { directoryRoute } from "@/features/rules/utils/tree";
 import type { ClientSlug, ManifestClient } from "@/types/manifest";
+import { formatFileSize } from "@/utils/format";
 import { ClientIcon } from "./client-icon";
 
 interface ClientRowProps {
   client: ManifestClient;
 }
+
+const META_TEXT_SIZE = "text-[11px] min-[360px]:text-xs sm:text-sm";
 
 function ClientBadge({ slug }: { slug: ClientSlug }) {
   return (
@@ -34,6 +38,7 @@ function ClientBadge({ slug }: { slug: ClientSlug }) {
 
 export function ClientRow({ client }: ClientRowProps) {
   const meta = CLIENT_META[client.slug];
+  const stats = treeStats(client.root);
 
   return (
     <Card className="group relative gap-0 rounded-2xl border border-white/15 bg-white/6 py-0 ring-0 transition-colors hover:border-stone-100/20 hover:bg-white/10">
@@ -46,21 +51,22 @@ export function ClientRow({ client }: ClientRowProps) {
       <CardHeader className="flex flex-row items-center gap-2 px-4 py-3 sm:gap-4 sm:px-5 sm:py-3.5">
         <ClientBadge slug={client.slug} />
 
-        <div className="flex min-w-0 flex-1 flex-col gap-1 sm:flex-row sm:items-center sm:gap-2">
+        <div className="flex min-w-0 flex-1 flex-col gap-1 sm:gap-2 xl:flex-row xl:items-center">
           <CardTitle
             role="heading"
             aria-level={2}
-            className="min-w-0 wrap-break-word text-xl leading-tight font-bold tracking-tight text-stone-100 sm:flex-1 sm:text-2xl"
+            className="min-w-0 wrap-break-word text-xl leading-tight font-bold tracking-tight text-stone-100 sm:text-2xl xl:flex-1"
           >
             {meta.label}
           </CardTitle>
 
-          <CardDescription className="sm:shrink-0">
-            <MetaItem icon={ClockIcon}>
-              <LocalTime
-                timestamp={client.root.mtime}
-                className="text-[11px] min-[360px]:text-xs sm:text-sm"
-              />
+          <CardDescription className="flex flex-col items-start gap-1 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-4">
+            <MetaItem icon={FilesIcon} className={META_TEXT_SIZE}>
+              {stats.files.toLocaleString()} 个文件 ·{" "}
+              {formatFileSize(stats.size)}
+            </MetaItem>
+            <MetaItem icon={ClockIcon} className={META_TEXT_SIZE}>
+              <LocalTime timestamp={client.root.mtime} />
             </MetaItem>
           </CardDescription>
         </div>

@@ -1,18 +1,36 @@
-import type { ReactNode } from "react";
+import type { ComponentProps, ComponentType } from "react";
+import { Slot } from "radix-ui";
 
-import type { LucideIcon } from "lucide-react";
+import { cn } from "cn";
 
-interface MetaItemProps {
-  icon: LucideIcon;
-  children: ReactNode;
+interface MetaItemProps extends ComponentProps<"span"> {
+  icon: ComponentType<{ className?: string }>;
+  asChild?: boolean;
 }
 
-/** One fact with its icon, so a row of them can be scanned instead of read. */
-export function MetaItem({ icon: Icon, children }: MetaItemProps) {
+const BASE =
+  "inline-flex items-center gap-1.5 text-sm text-stone-400 tabular-nums";
+const LINK =
+  "rounded transition-colors hover:text-stone-100 focus-visible:ring-2 focus-visible:ring-stone-100/40 focus-visible:outline-none";
+
+/** One fact with its icon. Use `asChild` to render as a link. */
+export function MetaItem({
+  icon: Icon,
+  asChild = false,
+  className,
+  children,
+  ...props
+}: MetaItemProps) {
+  const Comp = asChild ? Slot.Root : "span";
+
   return (
-    <span className="inline-flex items-center gap-1.5 text-sm text-stone-400 tabular-nums">
+    <Comp
+      data-slot="meta-item"
+      className={cn(BASE, asChild && LINK, className)}
+      {...props}
+    >
       <Icon aria-hidden="true" className="size-4 shrink-0 text-stone-500" />
-      {children}
-    </span>
+      <Slot.Slottable>{children}</Slot.Slottable>
+    </Comp>
   );
 }

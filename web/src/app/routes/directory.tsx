@@ -46,10 +46,12 @@ function DirectoryMeta({
   return (
     <>
       {directoryCount > 0 && (
-        <MetaItem icon={FolderIcon}>{directoryCount} 个目录</MetaItem>
+        <MetaItem icon={FolderIcon}>
+          {directoryCount.toLocaleString()} 个目录
+        </MetaItem>
       )}
       {fileCount > 0 && (
-        <MetaItem icon={FileIcon}>{fileCount} 个文件</MetaItem>
+        <MetaItem icon={FileIcon}>{fileCount.toLocaleString()} 个文件</MetaItem>
       )}
     </>
   );

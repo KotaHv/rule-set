@@ -37,10 +37,8 @@ function ShellMeta({
   meta?: ReactNode;
 }) {
   return (
-    <div className="mt-4 flex flex-col gap-4 text-sm leading-5">
-      {meta && (
-        <div className="flex flex-wrap gap-x-4 gap-y-1">{meta}</div>
-      )}
+    <div className="flex flex-col gap-4 text-sm leading-5">
+      {meta && <div className="flex flex-wrap gap-x-4 gap-y-1">{meta}</div>}
       <MetaItem icon={ClockIcon}>
         更新于 <LocalTime timestamp={updatedAt} />
       </MetaItem>
@@ -56,8 +54,8 @@ function ShellRail({
   actions,
 }: Omit<ShellProps, "children" | "fillViewport">) {
   return (
-    <header className="py-5 lg:sticky lg:top-0 lg:flex lg:h-dvh lg:w-88 lg:shrink-0 lg:flex-col lg:justify-center lg:py-14">
-      <div className="flex items-center gap-3 lg:gap-4">
+    <header className="flex flex-col gap-4 py-5 lg:sticky lg:top-0 lg:h-dvh lg:w-88 lg:shrink-0 lg:justify-center lg:py-14">
+      <div className="flex items-center gap-4">
         <Link
           to="/"
           aria-label="Rule Set 首页"
@@ -81,7 +79,7 @@ function ShellRail({
       <ShellMeta updatedAt={updatedAt} meta={meta} />
 
       {actions && (
-        <div className="fixed inset-x-0 bottom-0 z-20 flex items-center gap-2 border-t border-white/10 bg-black/95 px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] backdrop-blur-xl lg:static lg:inset-auto lg:z-auto lg:mt-4 lg:flex lg:flex-col lg:items-stretch lg:gap-4 lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
+        <div className="fixed inset-x-0 bottom-0 z-20 flex items-center gap-2 border-t border-white/10 bg-black/95 px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] backdrop-blur-xl lg:static lg:inset-auto lg:z-auto lg:flex lg:flex-col lg:items-stretch lg:gap-4 lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
           {actions}
         </div>
       )}
