@@ -1,5 +1,5 @@
-# Total: 3499 rules
-# Last Updated: 2026-11-22T07:11:04.218281+00:00
+# Total: 3500 rules
+# Last Updated: 2026-11-23T07:57:43.103287+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -1288,6 +1288,7 @@
 - 'ldnspeedtest.rackdog.com'
 - 'sydspeedtest.rackdog.com'
 - 'vaspeedtest.rackdog.com'
+- 'librespeed-dtw.rackgenius.com'
 - 'mispeed.rackgenius.com'
 - 'ookla-mispeed.rackgenius.com'
 - 'speedtest.rackoona.com'
