@@ -1,5 +1,5 @@
-# Total: 652 rules
-# Last Updated: 2026-11-21T19:35:33.932879+00:00
+# Total: 655 rules
+# Last Updated: 2026-11-24T10:11:12.500465+00:00
 'payload':
 - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
 - 'docker-pinata-support.s3.amazonaws.com'
@@ -284,6 +284,7 @@
 - '+.videopress.com'
 - '+.visualstudio.com'
 - '+.visualstudio-staging.com'
+- '+.vivox.com'
 - '+.vscodeedu.com'
 - '+.webflow.com'
 - '+.webflow-ext.com'
@@ -411,6 +412,7 @@
 - '+.devopsassessment.net'
 - '+.dot.net'
 - '+.facebookappcenter.net'
+- '+.debian.map.fastlydns.net'
 - '+.getpaint.net'
 - '+.gitlab.net'
 - '+.gitlab-static.net'
@@ -466,6 +468,7 @@
 - '+.artixlinux.org'
 - '+.botorch.org'
 - '+.builtwithnix.org'
+- '+.cachix.org'
 - '+.calendarserver.org'
 - '+.carekit.org'
 - '+.centos.org'

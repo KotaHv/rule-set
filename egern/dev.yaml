@@ -1,5 +1,5 @@
-# Total: 653 rules
-# Last Updated: 2026-11-21T19:35:33.932879+00:00
+# Total: 656 rules
+# Last Updated: 2026-11-24T10:11:12.500465+00:00
 no_resolve: true
 domain_set:
 - gitlab-assets.oss-cn-hongkong.aliyuncs.com
@@ -286,6 +286,7 @@ domain_suffix_set:
 - videopress.com
 - visualstudio.com
 - visualstudio-staging.com
+- vivox.com
 - vscodeedu.com
 - webflow.com
 - webflow-ext.com
@@ -413,6 +414,7 @@ domain_suffix_set:
 - devopsassessment.net
 - dot.net
 - facebookappcenter.net
+- debian.map.fastlydns.net
 - getpaint.net
 - gitlab.net
 - gitlab-static.net
@@ -468,6 +470,7 @@ domain_suffix_set:
 - artixlinux.org
 - botorch.org
 - builtwithnix.org
+- cachix.org
 - calendarserver.org
 - carekit.org
 - centos.org

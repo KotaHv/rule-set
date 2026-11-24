@@ -1,5 +1,5 @@
-# Total: 653 rules
-# Last Updated: 2026-11-21T19:35:33.932879+00:00
+# Total: 656 rules
+# Last Updated: 2026-11-24T10:11:12.500465+00:00
 DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,github-cloud.s3.amazonaws.com
@@ -283,6 +283,7 @@ DOMAIN-SUFFIX,videojs.com
 DOMAIN-SUFFIX,videopress.com
 DOMAIN-SUFFIX,visualstudio.com
 DOMAIN-SUFFIX,visualstudio-staging.com
+DOMAIN-SUFFIX,vivox.com
 DOMAIN-SUFFIX,vscodeedu.com
 DOMAIN-SUFFIX,webflow.com
 DOMAIN-SUFFIX,webflow-ext.com
@@ -410,6 +411,7 @@ DOMAIN-SUFFIX,busybox.net
 DOMAIN-SUFFIX,devopsassessment.net
 DOMAIN-SUFFIX,dot.net
 DOMAIN-SUFFIX,facebookappcenter.net
+DOMAIN-SUFFIX,debian.map.fastlydns.net
 DOMAIN-SUFFIX,getpaint.net
 DOMAIN-SUFFIX,gitlab.net
 DOMAIN-SUFFIX,gitlab-static.net
@@ -465,6 +467,7 @@ DOMAIN-SUFFIX,archlinuxcn.org
 DOMAIN-SUFFIX,artixlinux.org
 DOMAIN-SUFFIX,botorch.org
 DOMAIN-SUFFIX,builtwithnix.org
+DOMAIN-SUFFIX,cachix.org
 DOMAIN-SUFFIX,calendarserver.org
 DOMAIN-SUFFIX,carekit.org
 DOMAIN-SUFFIX,centos.org
