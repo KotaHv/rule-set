@@ -1,5 +1,5 @@
-# Total: 1129 rules
-# Last Updated: 2026-11-18T16:37:44.409955+00:00
+# Total: 1133 rules
+# Last Updated: 2026-11-24T00:10:04.825525+00:00
 DOMAIN,captive.apple.com
 DOMAIN,instant.arubanetworks.com
 DOMAIN,setmeup.arubanetworks.com
@@ -798,6 +798,9 @@ DOMAIN-SUFFIX,volccdn.com
 DOMAIN-SUFFIX,volcengine.com
 DOMAIN-SUFFIX,volces.com
 DOMAIN-SUFFIX,volcvideo.com
+DOMAIN-SUFFIX,chunithm.wahlap.com
+DOMAIN-SUFFIX,maimai.wahlap.com
+DOMAIN-SUFFIX,tgk-wcaime.wahlap.com
 DOMAIN-SUFFIX,wallstreetcn.com
 DOMAIN-SUFFIX,wandoujia.com
 DOMAIN-SUFFIX,wangsu.com
@@ -1029,6 +1032,7 @@ DOMAIN-SUFFIX,tplinkmodem.net
 DOMAIN-SUFFIX,tplinkplclogin.net
 DOMAIN-SUFFIX,tplinkrepeater.net
 DOMAIN-SUFFIX,tplinkwifi.net
+DOMAIN-SUFFIX,wahlap.net
 DOMAIN-SUFFIX,webok.net
 DOMAIN-SUFFIX,wenku8.net
 DOMAIN-SUFFIX,winegame.net

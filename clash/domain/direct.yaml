@@ -1,5 +1,5 @@
-# Total: 1112 rules
-# Last Updated: 2026-11-18T16:37:44.409955+00:00
+# Total: 1116 rules
+# Last Updated: 2026-11-24T00:10:04.825525+00:00
 'payload':
 - 'captive.apple.com'
 - 'instant.arubanetworks.com'
@@ -799,6 +799,9 @@
 - '+.volcengine.com'
 - '+.volces.com'
 - '+.volcvideo.com'
+- '+.chunithm.wahlap.com'
+- '+.maimai.wahlap.com'
+- '+.tgk-wcaime.wahlap.com'
 - '+.wallstreetcn.com'
 - '+.wandoujia.com'
 - '+.wangsu.com'
@@ -1030,6 +1033,7 @@
 - '+.tplinkplclogin.net'
 - '+.tplinkrepeater.net'
 - '+.tplinkwifi.net'
+- '+.wahlap.net'
 - '+.webok.net'
 - '+.wenku8.net'
 - '+.winegame.net'
