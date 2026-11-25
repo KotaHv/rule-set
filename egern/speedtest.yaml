@@ -1,5 +1,5 @@
-# Total: 3504 rules
-# Last Updated: 2026-11-24T10:11:12.314946+00:00
+# Total: 3505 rules
+# Last Updated: 2026-11-25T08:56:38.181125+00:00
 no_resolve: true
 domain_set:
 - speedtest-ams.baremetal.ae
@@ -2785,6 +2785,7 @@ domain_set:
 - speedtest.revolutionbroadband.net
 - speedtest.rfchost.net
 - speedtest.rfnow.net
+- kc.speedtest.rustbanned.net
 - lhr.speedtest.rustbanned.net
 - chi-speedtest.net.sangoma.net
 - dal-speedtest.net.sangoma.net
