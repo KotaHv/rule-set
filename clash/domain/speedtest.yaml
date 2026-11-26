@@ -1,5 +1,5 @@
-# Total: 3505 rules
-# Last Updated: 2026-11-25T08:56:38.181125+00:00
+# Total: 3507 rules
+# Last Updated: 2026-11-26T08:41:54.245057+00:00
 'payload':
 - 'speedtest-ams.baremetal.ae'
 - 'sghome.govpro.app'
@@ -367,6 +367,7 @@
 - 'ookla.siditelecom-isp.com.br'
 - 'ookla.slimnet.com.br'
 - 'speedtest.snnet.com.br'
+- 'speedtest.speednetmacapa.com.br'
 - 'velocimetro.speednetworks.com.br'
 - 'servidor.speedplay.com.br'
 - 'speedtestalmtelecom.com.br'
@@ -3024,6 +3025,7 @@
 - 'fla.brisanet.eu.org'
 - 'speedtest-srv-a.homeworks.org'
 - 'speedtest.inclusivebytes.org'
+- 'speed-fra.laudat.org'
 - 'akrd-speedtest.loni.org'
 - 'bsnlooklachd.mywire.org'
 - 'speedtest.nwlab.org'
