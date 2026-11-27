@@ -1,5 +1,5 @@
-# Total: 4736 rules
-# Last Updated: 2026-11-26T21:47:24.202986+00:00
+# Total: 4726 rules
+# Last Updated: 2026-11-27T21:30:50.475033+00:00
 no_resolve: true
 domain_set:
 - rules.ac
@@ -138,6 +138,7 @@ domain_set:
 - static.infomaniak.ch
 - image.crisp.chat
 - storage.crisp.chat
+- cdn-resize-prod-com.500px.cloud
 - static.bit.cloud
 - cdn.bullwhip.cloud
 - media.cleanshot.cloud
@@ -236,7 +237,6 @@ domain_set:
 - image.p-c2-x.abema-tv.com
 - cdn2.abiresearch.com
 - assets.aboutamazon.com
-- showcase.abovemarket.com
 - prod.addictinggames.com
 - static.addtoany.com
 - cdn.adguard.com
@@ -423,7 +423,6 @@ domain_set:
 - cdn8.bigcommerce.com
 - cdn9.bigcommerce.com
 - checkout-sdk.bigcommerce.com
-- spotlightimage.biggo.com
 - upos-sz-mirroralibstar1.bilivideo.com
 - upos-sz-mirrorcosbstar1.bilivideo.com
 - r.bing.com
@@ -567,8 +566,7 @@ domain_set:
 - upload.claudeusercontent.com
 - cmd-cdn.cleanmymac.com
 - img.clerk.com
-- scdn.clerk.com
-- segapi.clerk.com
+- cdn.protect.clerk.com
 - assets.clever-cloud.com
 - cdn.clever-cloud.com
 - components.clever-cloud.com
@@ -2342,7 +2340,6 @@ domain_set:
 - cdn.bfe.dev
 - biomejs.dev
 - static.bit.dev
-- r2cdn.c7d.dev
 - logos.composio.dev
 - pkg.csb.dev
 - cdn.daily.dev
@@ -2482,8 +2479,6 @@ domain_set:
 - uploads.codesandbox.io
 - cdn.concert.io
 - images.contentstack.io
-- assets.mcp.corespeed.io
-- r2cdn.corespeed.io
 - static.corespeed.io
 - assets.customer.io
 - cdn.cuty.io
@@ -2981,7 +2976,6 @@ domain_set:
 - assets.visioncritical.net
 - social-cdn.vivaldi.net
 - static.vocadb.net
-- unlimited-cdn.waifu2x.net
 - scontent.whatsapp.net
 - static.whatsapp.net
 - cdn.wikimg.net
@@ -3029,8 +3023,6 @@ domain_set:
 - files.mastodon.online
 - ooo.0o0.ooo
 - cdn-msp.18comic.org
-- drscdn.500px.org
-- pacdn.500px.org
 - easylist-downloads.adblockplus.org
 - static.aizanmei.org
 - creativajs.altervista.org
@@ -3079,7 +3071,6 @@ domain_set:
 - static.gnome.org
 - tileserver.gnome.org
 - godoc.org
-- media.hentaifreak.org
 - static.ietf.org
 - api.indexnow.org
 - file.izanm.org
@@ -3332,7 +3323,6 @@ domain_set:
 - clips-media-assets2.twitch.tv
 - embed.twitch.tv
 - f.upanh.tv
-- static.yfsp.tv
 - assets.clibo.tw
 - img.4gamers.com.tw
 - puku-dist.4gamers.com.tw

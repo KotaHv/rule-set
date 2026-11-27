@@ -1,5 +1,5 @@
-# Total: 4736 rules
-# Last Updated: 2026-11-26T21:47:24.202986+00:00
+# Total: 4726 rules
+# Last Updated: 2026-11-27T21:30:50.475033+00:00
 DOMAIN,rules.ac
 DOMAIN,static.jup.ag
 DOMAIN,cdn.aimerce.ai
@@ -136,6 +136,7 @@ DOMAIN,cdn.priv.center
 DOMAIN,static.infomaniak.ch
 DOMAIN,image.crisp.chat
 DOMAIN,storage.crisp.chat
+DOMAIN,cdn-resize-prod-com.500px.cloud
 DOMAIN,static.bit.cloud
 DOMAIN,cdn.bullwhip.cloud
 DOMAIN,media.cleanshot.cloud
@@ -234,7 +235,6 @@ DOMAIN,s.abcnews.com
 DOMAIN,image.p-c2-x.abema-tv.com
 DOMAIN,cdn2.abiresearch.com
 DOMAIN,assets.aboutamazon.com
-DOMAIN,showcase.abovemarket.com
 DOMAIN,prod.addictinggames.com
 DOMAIN,static.addtoany.com
 DOMAIN,cdn.adguard.com
@@ -421,7 +421,6 @@ DOMAIN,cdn7.bigcommerce.com
 DOMAIN,cdn8.bigcommerce.com
 DOMAIN,cdn9.bigcommerce.com
 DOMAIN,checkout-sdk.bigcommerce.com
-DOMAIN,spotlightimage.biggo.com
 DOMAIN,upos-sz-mirroralibstar1.bilivideo.com
 DOMAIN,upos-sz-mirrorcosbstar1.bilivideo.com
 DOMAIN,r.bing.com
@@ -565,8 +564,7 @@ DOMAIN,static.claudeusercontent.com
 DOMAIN,upload.claudeusercontent.com
 DOMAIN,cmd-cdn.cleanmymac.com
 DOMAIN,img.clerk.com
-DOMAIN,scdn.clerk.com
-DOMAIN,segapi.clerk.com
+DOMAIN,cdn.protect.clerk.com
 DOMAIN,assets.clever-cloud.com
 DOMAIN,cdn.clever-cloud.com
 DOMAIN,components.clever-cloud.com
@@ -2340,7 +2338,6 @@ DOMAIN,cdn.us-east-1.prod.moon.dubai.aws.dev
 DOMAIN,cdn.bfe.dev
 DOMAIN,biomejs.dev
 DOMAIN,static.bit.dev
-DOMAIN,r2cdn.c7d.dev
 DOMAIN,logos.composio.dev
 DOMAIN,pkg.csb.dev
 DOMAIN,cdn.daily.dev
@@ -2480,8 +2477,6 @@ DOMAIN,stats.codesandbox.io
 DOMAIN,uploads.codesandbox.io
 DOMAIN,cdn.concert.io
 DOMAIN,images.contentstack.io
-DOMAIN,assets.mcp.corespeed.io
-DOMAIN,r2cdn.corespeed.io
 DOMAIN,static.corespeed.io
 DOMAIN,assets.customer.io
 DOMAIN,cdn.cuty.io
@@ -2979,7 +2974,6 @@ DOMAIN,ecn.dev.virtualearth.net
 DOMAIN,assets.visioncritical.net
 DOMAIN,social-cdn.vivaldi.net
 DOMAIN,static.vocadb.net
-DOMAIN,unlimited-cdn.waifu2x.net
 DOMAIN,scontent.whatsapp.net
 DOMAIN,static.whatsapp.net
 DOMAIN,cdn.wikimg.net
@@ -3027,8 +3021,6 @@ DOMAIN,static.xns.one
 DOMAIN,files.mastodon.online
 DOMAIN,ooo.0o0.ooo
 DOMAIN,cdn-msp.18comic.org
-DOMAIN,drscdn.500px.org
-DOMAIN,pacdn.500px.org
 DOMAIN,easylist-downloads.adblockplus.org
 DOMAIN,static.aizanmei.org
 DOMAIN,creativajs.altervista.org
@@ -3077,7 +3069,6 @@ DOMAIN,media.geeksforgeeks.org
 DOMAIN,static.gnome.org
 DOMAIN,tileserver.gnome.org
 DOMAIN,godoc.org
-DOMAIN,media.hentaifreak.org
 DOMAIN,static.ietf.org
 DOMAIN,api.indexnow.org
 DOMAIN,file.izanm.org
@@ -3330,7 +3321,6 @@ DOMAIN,assets.twitch.tv
 DOMAIN,clips-media-assets2.twitch.tv
 DOMAIN,embed.twitch.tv
 DOMAIN,f.upanh.tv
-DOMAIN,static.yfsp.tv
 DOMAIN,assets.clibo.tw
 DOMAIN,img.4gamers.com.tw
 DOMAIN,puku-dist.4gamers.com.tw

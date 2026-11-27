@@ -1,5 +1,5 @@
-# Total: 1930 rules
-# Last Updated: 2026-11-10T07:34:18.749890+00:00
+# Total: 1925 rules
+# Last Updated: 2026-11-27T21:30:50.382195+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -149,7 +149,6 @@
 - 'ir.ubuntu.sindad.cloud'
 - 'steamdeck-images.steamos.cloud'
 - 'steamdeck-packages.steamos.cloud'
-- 'mirror.thunderhosting.cloud'
 - 'mirror.unimagdalena.edu.co'
 - 'cas-bridge.xethub.hf.co'
 - 'mirrors.atlas.net.co'
@@ -464,7 +463,6 @@
 - 'oss.ypt.com'
 - 'mirrors.ucr.ac.cr'
 - 'ubuntu.ucr.ac.cr'
-- 'mirror.library.ucy.ac.cy'
 - 'ftp.cvut.cz'
 - 'ftp.sh.cvut.cz'
 - 'ftp.debian.cz'
@@ -652,7 +650,6 @@
 - 'distrib-coffee.ipsl.jussieu.fr'
 - 'ftp.lip6.fr'
 - 'www-ftp.lip6.fr'
-- 'cpan.mines-albi.fr'
 - 'ctan.mines-albi.fr'
 - 'debian.obspm.fr'
 - 'comaps.openstreetmap.fr'
@@ -1091,7 +1088,6 @@
 - 'eclats.crans.org'
 - 'tug.ctan.org'
 - 'mirror.cyberchains.org'
-- 'mirror.netcologne.de.org'
 - 'security.debian.org'
 - 'ftp.debianclub.org'
 - 'repo.debiancn.org'
@@ -1148,7 +1144,6 @@
 - 'http.krfoss.org'
 - 'mirror.krfoss.org'
 - 'mirror2.krfoss.org'
-- 'ftp.ktug.org'
 - 'mirrorbits.lineageos.org'
 - 'ubuntu.linux-bg.org'
 - 'mirrors.linux-bulgaria.org'

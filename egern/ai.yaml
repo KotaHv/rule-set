@@ -1,5 +1,5 @@
-# Total: 509 rules
-# Last Updated: 2026-11-25T08:56:38.131752+00:00
+# Total: 508 rules
+# Last Updated: 2026-11-27T21:30:50.279222+00:00
 no_resolve: true
 domain_set:
 - api.jetbrains.ai
@@ -10,7 +10,6 @@ domain_set:
 - gateway.ai.cloudflare.com
 - apple-relay.cloudflare.com
 - cp4.cloudflare.com
-- inference.codeium.com
 - server.codeium.com
 - apple-relay.fastly-edge.com
 - api.github.com

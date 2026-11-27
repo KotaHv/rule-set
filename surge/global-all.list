@@ -1,5 +1,5 @@
-# Total: 6427 rules
-# Last Updated: 2026-11-26T21:47:59.634789+00:00
+# Total: 6417 rules
+# Last Updated: 2026-11-27T21:31:22.255839+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -143,6 +143,7 @@ DOMAIN,cpan.dcc.uchile.cl
 DOMAIN,ctan.dcc.uchile.cl
 DOMAIN,mirror.uchile.cl
 DOMAIN,mirror.ufro.cl
+DOMAIN,cdn-resize-prod-com.500px.cloud
 DOMAIN,mirror.za.abantu.cloud
 DOMAIN,mirrors.bangmod.cloud
 DOMAIN,node-registry.bit.cloud
@@ -158,7 +159,6 @@ DOMAIN,mirror.improve.nordlo.cloud
 DOMAIN,cdn-builds.paw.cloud
 DOMAIN,cdn-static.paw.cloud
 DOMAIN,ir.ubuntu.sindad.cloud
-DOMAIN,mirror.thunderhosting.cloud
 DOMAIN,cdn.tiny.cloud
 DOMAIN,cdn.kinopio.club
 DOMAIN,app.groove.cm
@@ -233,7 +233,6 @@ DOMAIN,assets-cdn.abcnews.com
 DOMAIN,keyframe-cdn.abcnews.com
 DOMAIN,s.abcnews.com
 DOMAIN,cdn2.abiresearch.com
-DOMAIN,showcase.abovemarket.com
 DOMAIN,prod.addictinggames.com
 DOMAIN,static.addtoany.com
 DOMAIN,pkg.adfinis.com
@@ -386,7 +385,6 @@ DOMAIN,cdn7.bigcommerce.com
 DOMAIN,cdn8.bigcommerce.com
 DOMAIN,cdn9.bigcommerce.com
 DOMAIN,checkout-sdk.bigcommerce.com
-DOMAIN,spotlightimage.biggo.com
 DOMAIN,upos-sz-mirroralibstar1.bilivideo.com
 DOMAIN,upos-sz-mirrorcosbstar1.bilivideo.com
 DOMAIN,mirrors.binaryracks.com
@@ -515,8 +513,7 @@ DOMAIN,static.claudeusercontent.com
 DOMAIN,upload.claudeusercontent.com
 DOMAIN,cmd-cdn.cleanmymac.com
 DOMAIN,img.clerk.com
-DOMAIN,scdn.clerk.com
-DOMAIN,segapi.clerk.com
+DOMAIN,cdn.protect.clerk.com
 DOMAIN,assets.clever-cloud.com
 DOMAIN,cdn.clever-cloud.com
 DOMAIN,components.clever-cloud.com
@@ -1884,7 +1881,6 @@ DOMAIN,img.appledb.dev
 DOMAIN,cdn.bfe.dev
 DOMAIN,biomejs.dev
 DOMAIN,static.bit.dev
-DOMAIN,r2cdn.c7d.dev
 DOMAIN,download.clashverge.dev
 DOMAIN,logos.composio.dev
 DOMAIN,pkg.csb.dev
@@ -2016,8 +2012,6 @@ DOMAIN,dl.cloudsmith.io
 DOMAIN,docker.cloudsmith.io
 DOMAIN,cdn.concert.io
 DOMAIN,images.contentstack.io
-DOMAIN,assets.mcp.corespeed.io
-DOMAIN,r2cdn.corespeed.io
 DOMAIN,static.corespeed.io
 DOMAIN,assets.customer.io
 DOMAIN,update.cyberduck.io
@@ -2600,7 +2594,6 @@ DOMAIN,tug.ctan.org
 DOMAIN,embed.culturalspot.org
 DOMAIN,mirror.cyberchains.org
 DOMAIN,david-dm.org
-DOMAIN,mirror.netcologne.de.org
 DOMAIN,ftp.debianclub.org
 DOMAIN,repo.debiancn.org
 DOMAIN,storage.deepin.org
@@ -2641,7 +2634,6 @@ DOMAIN,www.gnu.org
 DOMAIN,www.gnupg.org
 DOMAIN,releases.grapheneos.org
 DOMAIN,ftp.harukasan.org
-DOMAIN,media.hentaifreak.org
 DOMAIN,mirrors.ibiblio.org
 DOMAIN,api.indexnow.org
 DOMAIN,file.izanm.org
@@ -2657,7 +2649,6 @@ DOMAIN,mirror.keystealth.org
 DOMAIN,http.krfoss.org
 DOMAIN,mirror.krfoss.org
 DOMAIN,mirror2.krfoss.org
-DOMAIN,ftp.ktug.org
 DOMAIN,cdn.libravatar.org
 DOMAIN,seccdn.libravatar.org
 DOMAIN,mirrorbits.lineageos.org
@@ -2865,7 +2856,6 @@ DOMAIN,static.tella.tv
 DOMAIN,tubi.tv
 DOMAIN,www.tubi.tv
 DOMAIN,f.upanh.tv
-DOMAIN,static.yfsp.tv
 DOMAIN,mirror.aptus.co.tz
 DOMAIN,gimp.astra.in.ua
 DOMAIN,ftp.gnu.org.ua

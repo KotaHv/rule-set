@@ -1,5 +1,5 @@
-# Total: 845 rules
-# Last Updated: 2026-11-16T06:55:27.300026+00:00
+# Total: 846 rules
+# Last Updated: 2026-11-27T21:30:50.344760+00:00
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,r5-pc.s3.amazonaws.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
@@ -645,6 +645,7 @@ DOMAIN-SUFFIX,activematter.game
 DOMAIN-SUFFIX,cubicodyssey.game
 DOMAIN-SUFFIX,beth.games
 DOMAIN-SUFFIX,embark.games
+DOMAIN-SUFFIX,fce.gg
 DOMAIN-SUFFIX,op.gg
 DOMAIN-SUFFIX,limbuscompany.global
 DOMAIN-SUFFIX,stellasora.global
