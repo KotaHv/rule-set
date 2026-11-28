@@ -1,5 +1,5 @@
-# Total: 1935 rules
-# Last Updated: 2026-11-27T21:30:50.382195+00:00
+# Total: 1939 rules
+# Last Updated: 2026-11-28T20:25:22.650984+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,downloads.claude.ai
@@ -172,6 +172,9 @@ DOMAIN,download.anydesk.com
 DOMAIN,downloadr2.apkmirror.com
 DOMAIN,boot.arcboxcdn.com
 DOMAIN,release.arcboxcdn.com
+DOMAIN,apt.armbian.com
+DOMAIN,beta.armbian.com
+DOMAIN,github.armbian.com
 DOMAIN,mirrors.arpnetworks.com
 DOMAIN,gnu.askapache.com
 DOMAIN,dlcdnets.asus.com
@@ -1908,6 +1911,7 @@ DOMAIN-SUFFIX,packagist.org
 DOMAIN-SUFFIX,pypi.org
 DOMAIN-SUFFIX,pythonhosted.org
 DOMAIN-SUFFIX,iso.reactos.org
+DOMAIN-SUFFIX,sbcmirror.org
 DOMAIN-SUFFIX,tmpfiles.org
 DOMAIN-SUFFIX,dl.wireshark.org
 DOMAIN-SUFFIX,ubuntumirror.dei.uc.pt

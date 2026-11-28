@@ -1,5 +1,5 @@
-# Total: 6267 rules
-# Last Updated: 2026-11-27T21:31:22.255839+00:00
+# Total: 6271 rules
+# Last Updated: 2026-11-28T20:26:15.986962+00:00
 'payload':
 - 'mirror.bg.host.ag'
 - 'mirror.host.ag'
@@ -328,6 +328,9 @@
 - 'server.arcgisonline.com'
 - 'images.arigatotravel.com'
 - 'cdn.designsystem.arm.com'
+- 'apt.armbian.com'
+- 'beta.armbian.com'
+- 'github.armbian.com'
 - 'wa.arounddeal.com'
 - 'mirrors.arpnetworks.com'
 - 'cdn.ashbyprd.com'
@@ -6021,6 +6024,7 @@
 - '+.rollupjs.org'
 - '+.rust-lang.org'
 - '+.sagernet.org'
+- '+.sbcmirror.org'
 - '+.schema.org'
 - '+.schemastore.org'
 - '+.scpdb.org'

@@ -1,5 +1,5 @@
-# Total: 1935 rules
-# Last Updated: 2026-11-27T21:30:50.382195+00:00
+# Total: 1939 rules
+# Last Updated: 2026-11-28T20:25:22.650984+00:00
 no_resolve: true
 domain_set:
 - mirror.bg.host.ag
@@ -174,6 +174,9 @@ domain_set:
 - downloadr2.apkmirror.com
 - boot.arcboxcdn.com
 - release.arcboxcdn.com
+- apt.armbian.com
+- beta.armbian.com
+- github.armbian.com
 - mirrors.arpnetworks.com
 - gnu.askapache.com
 - dlcdnets.asus.com
@@ -1911,6 +1914,7 @@ domain_suffix_set:
 - pypi.org
 - pythonhosted.org
 - iso.reactos.org
+- sbcmirror.org
 - tmpfiles.org
 - dl.wireshark.org
 - ubuntumirror.dei.uc.pt

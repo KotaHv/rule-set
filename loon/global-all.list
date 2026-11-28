@@ -1,5 +1,5 @@
-# Total: 6417 rules
-# Last Updated: 2026-11-27T21:31:22.255839+00:00
+# Total: 6421 rules
+# Last Updated: 2026-11-28T20:26:15.986962+00:00
 DOMAIN,mirror.bg.host.ag
 DOMAIN,mirror.host.ag
 DOMAIN,static.jup.ag
@@ -327,6 +327,9 @@ DOMAIN,tiles.arcgis.com
 DOMAIN,server.arcgisonline.com
 DOMAIN,images.arigatotravel.com
 DOMAIN,cdn.designsystem.arm.com
+DOMAIN,apt.armbian.com
+DOMAIN,beta.armbian.com
+DOMAIN,github.armbian.com
 DOMAIN,wa.arounddeal.com
 DOMAIN,mirrors.arpnetworks.com
 DOMAIN,cdn.ashbyprd.com
@@ -6020,6 +6023,7 @@ DOMAIN-SUFFIX,roblox.org
 DOMAIN-SUFFIX,rollupjs.org
 DOMAIN-SUFFIX,rust-lang.org
 DOMAIN-SUFFIX,sagernet.org
+DOMAIN-SUFFIX,sbcmirror.org
 DOMAIN-SUFFIX,schema.org
 DOMAIN-SUFFIX,schemastore.org
 DOMAIN-SUFFIX,scpdb.org
